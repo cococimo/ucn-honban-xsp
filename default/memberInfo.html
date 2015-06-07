@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja"><!-- InstanceBegin template="/Templates/PC_tmp_mall_4.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- ********** include:header.jsp ********** -->
+<!-- head -->
+<meta http-equiv="content-type" content="text/html; charset=Windows-31J">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta m:id="e_var_shop" content="">
+<meta m:id="e_var_headerComponent" content="">
+<meta m:id="e_var_testSite" content="">
+<meta m:id="e_var_member" content="">
+<meta m:id="description" name="description" content="データベースから値を取得し表示します">
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<title m:id="title" arg1="" arg2="">データベースから値を取得し表示します</title>
+<link m:id="favicon" rel="shortcut icon" href="../../../contents/favicon/favicon.ico">
+<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
+<link m:id="shop_css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
+<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="shop.html" />
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+<script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
+
+<!--/ head -->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!--/ ********** include:header.jsp ********** -->
+<!-- InstanceBeginEditable name="head" -->
+<script><!--
+var clicked = false;
+//--></script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="body" --><!-- InstanceEndEditable -->
+<!-- コンテナ -->
+<div id="container">
+<!-- ********** include:mall/header.jsp ********** -->
+<!-- モールヘッダー -->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
+<span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
+<a name="header"></a>
+<div id="header">
+		<div id="mall_header">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="mall_header_logo"><span m:id="l_notEmp_shop_image_file"><a m:id="e_link_logo_mall" href="shop.html"><img m:id="i_img_logo_mall" src="../../../contents/shop/00000002/image/mall_logo.jpg" alt="モール" border="0"></a></span></td>
+				<td>
+					<div id="mall_header_link">
+						<!-- モール用キャッチコピー -->
+						<div class="mall_header_copy_txt">
+							<img m:id="static_img" src="../../../contents/shop/00000002/image/mall_header_txt.gif" alt="私のキレイがここにある　化粧品のことなら！何でも探せる！見つかる！イーストモールモール" width="466" height="56" border="0">
+						</div>
+						<!--/ モール用キャッチコピー -->
+	                    <div m:id="l_notPre_member_login_button">
+							<div class="mall_header_bt"><a m:id="e_link_login" href="memberLogin.html" class="login_bt" title="ログイン"></a></div>
+	                    </div>
+	                    <div m:id="l_pre_member_logout_button">
+							<div class="mall_header_bt"><a m:id="e_link_logout" href="shop.html" class="logout_bt" title="ログアウト"></a></div>
+	                    </div>
+	                    <div m:id="l_pre_member_mypage_button">
+		                    <div class="mall_header_bt"><a m:id="e_link_mypage" href="memberMypage.html" class="mypage_bt" title="マイページ"></a></div>
+	                    </div>
+	                    <div class="mall_header_link_txt">
+	                        <div m:id="l_notPre_member_login">
+	                            <ul>
+	                                <li><a m:id="e_link_memberAdd" href="memberAddInput.html">新規会員登録はこちらから</a></li>
+	                                <li><a m:id="e_link_reminder" href="memberReminderPwdInput.html">パスワードを忘れた方</a></li>
+	                            </ul>
+							</div>
+	                    </div>
+					</div>				
+            	</td>
+			</tr>
+			</table>
+		</div>
+
+</div>
+<!--/ モールヘッダー -->
+<!--/ ********** include:mall/header.jsp ********** -->
+
+
+
+ 
+<!-- ********** include:navigator.jsp ********** -->
+<!-- パンくず・検索 -->
+<!--/ パンくず・検索 -->
+<!--/ ********** include:navigator.jsp ********** -->
+
+
+<!-- メインコンテンツ_外枠 -->
+<div id="contents_waku">
+
+	<!-- メインコンテンツ -->
+	<div id="contents">
+	<!-- InstanceBeginEditable name="contents" -->
+		<!-- PAGE:会員情報変更確認 -->
+
+		<object class="xsp_obj" m:id="e_var_prefectureMap"></object>
+		<object class="xsp_obj" m:id="e_var_sexMap"></object>
+		<object class="xsp_obj" m:id="e_var_jobMap"></object>
+
+		<form m:id="h_form_memberModComplete" method="POST" action="memberModComplete.html">
+
+			<!-- タイトル -->
+			<div class="member_page_tit">会員情報確認</div>
+			<!--/ タイトル -->
+
+			<!-- 説明 -->
+			<div class="page_txt">
+				お引越しなど、情報変更をご希望のお客様は、お手数ですがコールセンターまでご連絡ください。<br />
+				0120-xxx-xxx
+			</div>
+			<!--/ 説明 -->
+
+<!-- 
+			<div class="formBox_tit">ログイン情報入力</div>
+
+			<div class="formBox">
+				<div class="form_area">
+					<div class="form_question">ログインID&nbsp;</div>
+					<div class="form_answer">
+						<span m:id="b_wr_login_id">loginid</span>
+					</div>
+				</div>
+				<input m:id="h_hid_password" type="hidden" name="password" /><input m:id="h_hid_password_confirm" type="hidden" name="password_confirm" />
+			</div>
+ -->
+			<div class="formBox_tit">お客様情報入力</div>
+			<div class="formBox">
+				<div class="form_area form_area_border">
+					<div class="form_question">お名前&nbsp;</div>
+					<div class="form_answer">
+						<span m:id="b_wr_name_sei">鈴木</span>&nbsp;&nbsp;<span m:id="b_wr_name_mei">太郎</span>
+					</div>
+				</div>
+				<input m:id="h_hid_name_sei" type="hidden" name="name_sei" /><input m:id="h_hid_name_mei" type="hidden" name="name_mei" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">フリガナ&nbsp;</div>
+					<div class="form_answer">
+						<span m:id="b_wr_name_sei_kana">スズキ</span>&nbsp;&nbsp;<span m:id="b_wr_name_mei_kana">タロウ</span>
+					</div>
+				</div>	
+				<input m:id="h_hid_name_sei_kana" type="hidden" name="name_sei_kana" /><input m:id="h_hid_name_mei_kana" type="hidden" name="name_mei_kana" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">PCメールアドレス&nbsp;</div>
+					<div class="form_answer">
+						<span m:id="b_wr_email_pc">yokohama@xxxx.co.jp</span>
+					</div>
+				</div>
+				<input m:id="h_hid_email_pc" type="hidden" name="email_pc" /><input m:id="h_hid_email_pc_confirm" type="hidden" name="email_pc_confirm" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">郵便番号</div>
+					<div class="form_answer"><span m:id="b_wr_post_code">2400005</span></div>
+				</div>
+				<input m:id="h_hid_post_code" type="hidden" name="post_code" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">住所(都道府県)
+					</div>
+					<div class="form_answer">
+						<span m:id="disp_Area_code_name">神奈川県</span>
+					</div>
+				</div>
+				<input m:id="h_hid_area_cd" type="hidden" name="area_cd" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">住所(市区群)</div>
+					<div class="form_answer"><span m:id="b_wr_address1">横浜市保土ヶ谷区</span></div>
+				</div>
+				<input m:id="h_hid_address1" type="hidden" name="address1" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">住所（町村字）</div>
+					<div class="form_answer"><span m:id="b_wr_address2">神戸町</span></div>
+				</div>
+				<input m:id="h_hid_address2" type="hidden" name="address2" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">住所(番地)</div>
+					<div class="form_answer"><span m:id="b_wr_address3">１３４番地</span></div>
+				</div>
+				<input m:id="h_hid_address3" type="hidden" name="address3" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">住所(建物名・部屋番号)</div>
+					<div class="form_answer"><span m:id="b_wr_address4">横浜ビジネスパーク イーストタワー １４階</span></div>
+				</div>
+				<input m:id="h_hid_address4" type="hidden" name="address4" />
+				
+				<div class="form_area form_area_border">
+					<div class="form_question">様方</div>
+					<div class="form_answer"><span m:id="b_wr_address_co_sei">鈴木</span>&nbsp&nbsp<span m:id="b_wr_address_co_mei">次郎</span></div>
+				</div>
+				<input m:id="h_hid_address_co_sei" type="hidden" name="address_co_sei" />
+				<input m:id="h_hid_address_co_mei" type="hidden" name="address_co_mei" />
+				
+				<div class="form_area form_area_border">
+					<div class="form_question">電話番号(自宅)</div>
+					<div class="form_answer"><span m:id="b_wr_tel_no">045-332-6655</span></div>
+				</div>
+				<input m:id="h_hid_tel_no1" type="hidden" name="tel_no1" /><input m:id="h_hid_tel_no2" type="hidden" name="tel_no2" /><input m:id="h_hid_tel_no3" type="hidden" name="tel_no3" />
+
+				<div class="form_area form_area_border">
+					<div class="form_question">電話番号(携帯など)</div>
+					<div class="form_answer"><span m:id="b_wr_mobile_no">090-1234-1234</span></div>
+				</div>
+				<input m:id="h_hid_mobile_no1" type="hidden" name="mobile_no1" /><input m:id="h_hid_mobile_no2" type="hidden" name="mobile_no2" /><input m:id="h_hid_mobile_no3" type="hidden" name="mobile_no3" />
+
+				<div m:id="l_pre_disp_sex_code_name">
+					<div class="form_area form_area_border">
+						<div class="form_question2">性別</div>
+						<div class="form_answer">
+							<span m:id="disp_sex_code_name">男性</span>
+						</div>
+					</div>
+					<input m:id="h_hid_sex" type="hidden" name="sex" />
+				</div>
+
+				<div class="form_area form_area_border">
+					<div class="form_question">生年月日&nbsp;</div>
+					<div class="form_answer">
+						<span m:id="b_wr_year">1980</span>年<span m:id="b_wr_month">01</span>月<span m:id="b_wr_day">01</span>日
+						<!-- <span m:id="b_wr_birthday">19860217</span> -->
+					</div>
+				</div>
+				<input m:id="h_hid_year" type="hidden" name="year" />
+				<input m:id="h_hid_month" type="hidden" name="month" />
+				<input m:id="h_hid_day" type="hidden" name="day" />
+				<!-- <input m:id="h_hid_birthday" type="hidden" name="birthday" /> -->
+				
+				<div m:id="l_pre_disp_job_code_name">
+					<div class="form_area form_area_border">
+						<div class="form_question">職業
+						</div>
+						<div class="form_answer">
+							<span m:id="disp_job_code_name">会社員</span>
+						</div>
+					</div>
+				</div>
+				<input m:id="h_hid_job" type="hidden" name="job" />
+
+				<div class="form_area">
+					<div class="form_question2">メールマガジン</div>
+					<div class="form_answer">
+						<span m:id="disp_mail_magazine_pres_on">希望する</span>
+						<span m:id="disp_mail_magazine_pres_off">希望しない</span>
+					</div>
+				</div>
+				<input m:id="h_hid_mail_magazine_pres" type="hidden" name="mail_magazine_pres" />
+			</div>
+			<!-- ボタン -->
+			<div class="bt_waku">
+				<a m:id="e_link_mypage" href="memberMypage.html"><img m:id="static_img" src="../../../contents/shop/00000002/image/bt_back.jpg" width="151" height="34" alt="戻る"></a>
+			</div>
+			<!--/ ボタン -->
+		</form>
+
+
+		<!-- InstanceEndEditable -->
+	  <!-- ページトップ -->
+	  <div class="pagetop"><a href="#" onclick="return goPageTop();">このページのトップへ</a></div>
+		<!--/ ページトップ -->
+
+	</div>
+	<!--/ メインコンテンツ -->
+
+<!-- ********** include:mallMenu.jsp ********** -->
+	<!-- サイドメニュー -->
+
+	<div id="side_menu">
+
+		<!-- ログイン氏名・カート情報 -->
+		<div class="cartBox">
+		<object class="xsp_obj" m:id="e_var_total_price_amt"></object>
+		<object class="xsp_obj" m:id="e_var_total_point_amt"></object>
+		<object class="xsp_obj" m:id="e_var_total_order_num"></object>
+			<div class="cartBox_tit">
+				<div class="cartBox_welcome">Welcome</div>
+				<div class="cartBox_name">
+					<span m:id="l_pre_login_member_name">
+						<span m:id="disp_member_name">山田　太郎 </span>様
+					</span>
+					<span m:id="l_notPre_login_member_name">
+						ゲスト様
+					</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="cartBox_bt"><a m:id="h_link_show_cart_link" href="cart.html" class="cart_bt" title="カートを見る"></a></div>
+			<div class="cartSummaryBox_t"><img m:id="static_img" src="../../../contents/shop/00000002/image/login_top.gif" height="5" width="162"></div>
+			<div class="cartSummaryBox">
+				<div class="cartSummaryBox_txtarea">
+					<div class="cartSummaryBox_tit">商品点数</div>
+					<div class="cartSummaryBox_uni"><span m:id="b_wr_side_total_order_num">10</span>&nbsp;点</div>
+					<div class="clear"></div>
+				</div>
+				<div class="cartSummaryBox_txtarea">
+					<div class="cartSummaryBox_tit">金額小計</div>
+					<div class="cartSummaryBox_uni"><span m:id="b_wr_side_total_price_amt">10,000</span>&nbsp;円</div>
+					<div class="clear"></div>
+				</div>
+				<div class="cartSummaryBox_txtarea">
+					<div class="cartSummaryBox_tit">Point小計</div>
+					<div class="cartSummaryBox_uni"><span m:id="l_equ_side_member"><span m:id="b_wr_side_total_point_amt">50</span></span><span m:id="l_notequ_side_member">0</span>&nbsp;pt</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="cartSummaryBox_b"><img m:id="static_img" src="../../../contents/shop/00000002/image/login_bottom.gif" height="5" width="162"></div>
+		</div>
+		<!--/ ログイン氏名・カート情報 -->
+		<!-- メールアドレス登録確認 -->
+        <!--
+		<span m:id="l_pre_email_member">
+			<span m:id="l_notPre_email_resistered">
+				<div class="mall_side_link_txt">
+					<ul>
+						<span class="mall_side_txt">PCメールアドレスが登録されておりません。</span>
+						<li><a m:id="e_link_memberModInput" href="../pages/pc/default/memberModInput.html">会員情報変更</a></li>
+					</ul>
+				</div>
+			</span>
+		</span>
+        -->
+		<!--/ メールアドレス登録確認 -->
+
+		<!-- 会員メニュー -->
+		<div class="memberMenuBox_tit">会員メニュー</div>
+		<div class="memberMenuBox">
+			<ul>
+				<li class="gb"><a m:id="e_link_memberMenu_memberPointHistory" href="memberPointHistory.html">ポイント履歴</a></li>
+				<li class="wb"><a m:id="e_link_memberMenu_memberOrderLogList" href="memberOrderLogList.html">注文履歴</a></li>
+                
+				<li class="gb"><a m:id="e_link_memberMenu_memberInfo" href="memberModInput.html">会員情報参照</a></li>
+                
+				<li class="wb"><a m:id="e_link_memberMenu_memberAddressBook" href="memberAddressBook.html">住所録登録・修正</a></li>
+				<li class="gb"><a m:id="e_link_memberMenu_memberResignInput" href="memberResignInput.html">退会申請</a></li>
+			</ul>
+		</div>
+		<!--/ 会員メニュー -->
+
+		<!-- DM送付履歴 -->
+		<object class="xsp_obj" m:id="e_var_memberDmList"></object>
+        <span m:id="l_notEmp_dmHistoryList">
+        	<div class="dmHistoryBox_menu_tit">DM送付履歴</div>
+            <div class="dmHistoryBox_menu">
+             <span m:id="l_ite_dmHistoryList">
+                <div class="dmHistoryBox_menu_detail"><a m:id="h_link_dmHistoryList" href="goodsSearchShop_shop.html"><span m:id="disp_dmHistory_name">悠々快適１</span></a></div>
+             </span>
+             <span m:id="dummy">
+                <div class="dmHistoryBox_menu_detail"><a href="goodsSearchShop_shop.html">悠々快適２</a></div>
+              </span>
+             <span m:id="dummy">
+                <div class="dmHistoryBox_menu_detail"><a href="goodsSearchShop_shop.html">悠々快適３</a></div>
+              </span>
+             <span m:id="dummy">
+                <div class="dmHistoryBox_menu_detail"><a href="goodsSearchShop_shop.html">悠々快適４</a></div>
+              </span>
+             <span m:id="dummy">
+                <div class="dmHistoryBox_menu_detail"><a href="goodsSearchShop_shop.html">悠々快適５</a></div>
+              </span>
+            </div>
+            <div class="clear"></div>
+        </span>
+        <!--/ DM送付履歴 -->
+
+		<!-- 閲覧商品一覧 -->
+		<object class="xsp_obj" m:id="e_var_browsingGoodsList"></object>
+		<span m:id="l_notEmp_browsingGoodsList">
+			<div class="browsingHistoryBox_tit">閲覧商品一覧</div>
+			<div class="browsingHistoryBox">
+				<span m:id="l_ite_browsingGoodsList">
+					<span m:id="l_notEqu_idx">
+						<div class="browsingHistoryBox_line"></div>
+					</span>
+					<div class="browsingHistoryBox_img">
+						<a m:id="h_link_browsingGoodsList" href="goodsDetail.html">
+							<img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" alt="○○商品" width="78" border="0" />
+						</a>
+					</div>
+					<div class="browsingHistoryBox_detail">
+						<p class="browsingHistoryBox_name">
+							<a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">○○商品</span></a>
+						</p>
+						<p class="browsingHistoryBox_price"></p>
+					</div>
+				</span>
+				<span m:id="dummy">
+					<div class="browsingHistoryBox_line"></div>
+					<div class="browsingHistoryBox_img">
+						<a href="goodsDetail.html">
+							<img src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" alt="ダミー１" width="78" border="0" />
+						</a>
+					</div>
+					<div class="browsingHistoryBox_detail">
+						<p class="browsingHistoryBox_name">
+							<a href="goodsDetail.html">ダミー１</a>
+						</p>
+						<p class="browsingHistoryBox_price"></p>
+					</div>
+				</span>
+				<span m:id="dummy">
+					<div class="browsingHistoryBox_line"></div>
+					<div class="browsingHistoryBox_img">
+						<a href="goodsDetail.html">
+							<img src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" alt="ダミー２" width="78" border="0" />
+						</a>
+					</div>
+					<div class="browsingHistoryBox_detail">
+						<p class="browsingHistoryBox_name">
+							<a href="goodsDetail.html">ダミー２</a>
+						</p>
+						<p class="browsingHistoryBox_price"></p>
+					</div>
+				</span>				
+				<div class="clear"></div>
+			</div>
+		</span>
+		<!--/ 閲覧商品一覧 -->
+
+
+	</div>
+	<!--/ サイドメニュー -->
+<!--/ ********** include:mallMenu.jsp ********** -->
+
+</div>
+<!--/ メインコンテンツ_外枠 -->
+
+
+
+<!-- ********** include:mall/footer.jsp ********** -->
+<!-- フッター -->
+<div id="footer">
+	<div class="footer_link"> 
+		<ul>
+		<li><a m:id="e_link_inquiry" href="inquiryInput.html">お問合せ</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/protection.html">個人情報保護方針</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/notation.html">特定商取引に関するご案内</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/company.html">会社情報</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/agreement.html">利用規約</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/business.html">事業概要</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/recruit.html">リクルート</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/sitemap.html">サイトマップ</a></li>
+		</ul>
+	</div>
+	<div class="footer_copy">Copyright (c) 2009-2010 ELTEX, Inc. All Rights Reserved.</div>
+</div>
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+<!--/ フッター -->
+<!--/ ********** include:shop/footer.jsp ********** -->
+
+</div>
+<!--/ コンテナ -->
+<!-- InstanceBeginEditable name="sitecatalyst" -->
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
