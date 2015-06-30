@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+
+
+
+
+
+
+
+div.sub{
+width:100%;
+overflow:hidden;
+
+}
+ul.example{
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+
+	}
+
+ul.example li{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+ul.example a{
+	color:#0000ff;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+
+
+
+/* design */
+
+ul.ex-dr-context{
+	
+
+	text-align:left;
+	z-index:100;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+}
+
+ul.ex-dr-context{
+
+	/*border:solid 1px #ccc;*/
+	background-color:#f4f4f4;
+	white-space: nowrap;
+	min-width:180px;
+	
+}
+
+ul.ex-dr-context li{
+	/*border-bottom:dotted 1px #ccc;*/
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+	min-width:180px;
+	
+	
+}
+
+ul.ex-dr-context li:last-child{
+border-bottom:none;
+}
+
+ul.ex-dr-context li:hover{
+	background-color:#DEEEE5;
+
+}
+
+
+#p_0 {
+  display: block !important;
+  padding:0;
+  margin:0;
+}
+
+#p_1 {
+  display: none !important;
+  padding:0;
+  margin:0;
+}
+
+ul.example li:hover{
+	background-color:#DEEEE5;
+}
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+
+ul.ex-dr-context{
+	display:none !important;
+}
+
+
+#p_0 {
+  display: block !important;
+  padding:0;
+  margin:0;
+}
+
+#p_1 {
+  display: none !important;
+  padding:0;
+  margin:0;
+}
+
+
+ul.example li:hover{
+	background-color:#fff;
+}
+
+.l_con_list_01 li a:hover {
+	display:block;
+	background:url(../shop/image/pc_l_cate_bt_icon.gif) no-repeat right center;
+	background-size:contain;
+}
+
+ul.ex-dr-context li:hover{
+	background-color:#fff;
+
+}
+
+
+}
+
+
+

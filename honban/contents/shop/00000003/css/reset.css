@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+margin:0;
+padding:0;
+font-style:normal;
+font-weight:normal;
+font-variant:normal;
+text-decoration:none;
+font-family:"メイリオ", meiryo, Verdana, Arial, sans-serif;
+}
+
+hr
+{
+display:none;
+}
+
+body
+{
+padding:0;
+margin:0;
+overflow-y:scroll;
+
+}
+
+/* ---------------- block element */
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+address
+{
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+/* -------- blockquote */
+blockquote
+{
+margin:1em 2em;
+padding:0 1em;
+}
+
+blockquote p
+{
+margin:1em 0 1em 0;
+padding:0;
+}
+
+/* -------- pre */
+pre
+{
+width:95%;
+overflow:scroll;
+margin:1.5em 0;
+padding:0.5em 0.8em;
+font-size:95%;
+}
+
+div.section > pre
+{
+overflow:visible;
+/*\*/
+  overflow:scroll;/**/
+}
+
+/* -------- del */
+del
+{
+color:#CCC;
+font-weight:normal;
+text-decoration:line-through;
+}
+
+/* -------- ins */
+ins
+{
+display:block;
+margin:0;
+padding:1em;
+color:#333;
+}
+
+del ins
+{
+text-decoration:line-through;
+}
+
+ins h1,
+ins h2,
+ins h3,
+ins h4,
+ins h5,
+ins h6,
+ins div,
+ins p,
+ins pre,
+ins address,
+ins blockquote,
+ins dl,
+ins form,
+ins fieldset,
+ins table
+{
+margin:0;
+padding:0;
+}
+
+h1 ins,
+h2 ins,
+h3 ins,
+h4 ins,
+h5 ins,
+h6 ins,
+p ins,
+pre ins,
+address ins,
+li ins,
+dt ins,
+dd ins
+{
+display:inline;
+margin:0;
+padding:2px 5px;
+text-decoration:none;
+}
+
+pre ins,
+code ins,
+samp ins,
+var ins,
+kbd ins
+{
+border:none;
+margin:0;
+padding:0;
+text-decoration:underline;
+}
+
+/* ---------------- inline element */
+a,
+abbr,
+acronym,
+bdo,
+big,
+cite,
+code,
+dfn,
+em,
+img,
+kbd,
+object,
+q,
+ruby,
+samp,
+small,
+span,
+strong,
+sub,
+sup,
+var
+{
+display:inline;
+}
+
+abbr,
+abbr,
+acronym
+{
+border-width:0 0 1px 0;
+border-style:dotted;
+cursor:help;
+}
+
+dfn
+{
+border-width:0 0 1px 0;
+border-style:dotted;
+}
+
+a
+{
+font-weight:normal;
+text-decoration:none;
+}
+
+/* -------- img */
+img
+{
+margin:0;
+padding:0;
+vertical-align:text-bottom;
+}
+
+a img
+{
+border:none;
+text-decoration:none;
+}
+
+/* -------- sub sup */
+sub,
+sup
+{
+font-size:90%;
+}
+
+/* -------- q */
+q
+{
+margin:0 0.5em;
+padding:0;
+font-style:italic;
+}
+
+/* -------- strong */
+strong
+{
+margin:0 0.2em;
+padding:0;
+font-weight:bold;
+}
+
+/* -------- em */
+em
+{
+margin:0 0.2em;
+padding:0;
+font-weight:normal;
+font-style: italic;
+}
+
+/* ---------------- list element */
+ul,
+ol
+{
+display:block;
+}
+
+ol,
+ul,
+li
+{
+margin:0;
+padding:0;
+}
+
+ol li
+{
+margin:1em 0 1em 2em;
+list-style-type:decimal;
+}
+
+/* -- form */
+
+form
+{
+display:block;
+line-height:1.0;
+margin:0;
+padding:0;
+}
+
+fieldset
+{
+margin:0;
+padding:0;
+border:none;
+}
+
+fieldset dt
+{
+border:none;
+}
+
+fieldset ul,
+fieldset ol,
+fieldset dl
+{
+display:block;
+margin:1em 0 1em 0.5em;
+}
+
+legend
+{
+display:none;
+}
+
+label
+{
+vertical-align:middle;
+margin:0 0.5em 0 0;
+padding:0;
+text-transform:capitalize;
+}
+
+input
+{
+vertical-align:middle;
+}
+
+
+/* -------- noscript */
+noscript
+{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+}
+
+noscript p
+{
+padding:0.5em 0;
+border-bottom:1px solid #99CC99;
+color:#666;
+text-align:center;
+background-color:#CCFFCC;
+}
+
+/* Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	content: ".";
+}
+.clearfix {
+	display: inline-table;
+	min-height: 1%;
+}
+*html .clearfix { /* ie6 */
+	zoom: 1;
+}
+*:first-child+html .clearfix { /* ie7 */
+	zoom: 1;
+}
+*html .clearfix { /* ie6 */
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+

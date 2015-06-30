@@ -1,0 +1,217 @@
+/*PCメールが登録されていない場合の会員修正画面へのリンク色*/
+a:link.needPcMail_link {
+	color:#FF0000;
+	text-decoration:underline;
+}
+a:visited.needPcMail_link {
+	color:#FF0000;
+	text-decoration:underline;
+}
+a:hover.needPcMail_link {
+	color:#FF0000;
+	text-decoration:underline;
+}
+a:active.needPcMail_link {
+	color:#FF0000;
+	text-decoration:underline;
+}
+/* 会員系画面タイトル */
+.member_page_tit {
+	height:24px;
+	width:685px;
+	background:#99CC33;
+	border:1px solid #669900;
+	border-left:8px solid #669900;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:16px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+/*マイページ*/
+/*お気に入りの商品タイトル*/
+.mypage_favoriteBox_tit {
+	height:22px;
+	width:700px;
+	background:url(../image/bg_mypage_title.jpg) no-repeat left top;
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:10px;
+	padding-top:7px;
+}
+/*お気に入りの商品*/
+.mypage_favoriteBox {
+	width:688px;
+	border:1px solid #AAAAAA;
+	padding:10px;
+	margin-bottom:10px;
+}
+/*マイページニュースタイトル*/
+.mypage_newsBox_tit {
+	height:22px;
+	width:700px;
+	background:url(../image/bg_mypage_title.jpg) no-repeat left top;
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:10px;
+	padding-top:7px;
+}
+/*マイページニュース*/
+.mypage_newsBox {
+	width:688px;
+	border:1px solid #AAAAAA;
+	padding:10px;
+	margin-bottom:10px;
+}
+.mypage_newsBox_in {
+	width:666px;
+	border:1px solid #AAAAAA;
+	padding:10px;
+	margin-bottom:10px;
+}
+.mypage_newsBox_line {
+	background:url(../image/mall_top_line01.gif) left top;
+	height:19px;
+	width:666px;
+}
+/*関連商品タイトル*/
+.mypage_relateBox_tit {
+	height:22px;
+	width:700px;
+	background:url(../image/bg_mypage_title.jpg) no-repeat left top;
+	padding-top:7px;
+	padding-left:10px;
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+/*関連商品*/
+.mypage_relateBox {
+	width:688px;
+	border:1px solid #AAAAAA;
+	padding:10px;
+	margin-bottom:10px;
+}
+/*住所録タイトル*/
+.address_bookBox_tit {
+	height:22px;
+	width:700px;
+	background:url(../image/bg_mypage_title.jpg) no-repeat left top;
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+	padding-left:10px;
+	padding-top:7px;
+}
+/*住所録外枠*/
+.address_bookBox {
+	width:688px;
+	border:1px solid #AAAAAA;
+	padding:10px;
+	margin-bottom:10px;
+}
+/*住所録一覧*/
+.address_book_list {
+	clear:both;
+	width:660px;
+	background:#ffffff;
+	padding:10px;
+	overflow:hidden;
+}
+.address_book_list:after {
+	content:"";
+	display:block;
+	clear:both;
+	height:0px;
+	overflow:hidden;
+}
+/*住所録一覧_ボタン*/
+.address_book_list_btn {
+	float:left;
+	padding:0 0 0 10px;
+}
+/*住所録一覧_説明*/
+.address_book_list_txt {
+	clear:both;
+	float:left;
+	width:590px;
+	padding:0;
+	overflow:hidden;
+}
+.address_book_list_txt_waku {
+	clear:both;
+	width:580px;
+	padding:4px 5px 3px 5px;
+	overflow:hidden;
+}
+.address_book_list_txt_waku:after {
+	content:"";
+	display:block;
+	clear:both;
+	height:0px;
+	overflow:hidden;
+}
+/*住所録一覧_説明（グループ名）*/
+.address_book_list_txt_group_name {
+	float:left;
+	width:100px;
+	padding:0 10px 0 0;
+}
+/*住所録一覧_説明（会社名）*/
+.address_book_list_txt_office_name {
+	float:left;
+	width:220px;
+}
+/*住所録一覧_説明（郵便番号）*/
+.address_book_list_txt_post_code {
+	float:left;
+	width:70px;
+	padding:0 10px 0 0;
+}
+/*住所録一覧_説明（住所）*/
+.address_book_list_txt_address {
+	float:left;
+	width:500px;
+}
+/*住所録一覧_説明（連絡先電話番号）*/
+.address_book_list_txt_tel_no {
+	float:left;
+}
+/*住所録一覧_説明（名前）*/
+.address_book_list_txt_name {
+	float:left;
+	width:250px;
+	color:#ff6600;
+	font-weight:bold;
+}
+.address_book_list_txt_name a{
+	color:#ff6600;
+}
+.address_book_list_txt_name a:visited{
+	color:#ff6600;
+}
+.address_book_list_txt_name a:hover{
+	color:#ff6600;
+}
+.address_book_list_txt_name a:active{
+	color:#ff6600;
+}
+/* 住所録新規作成リンク */
+.address_book_new_link {
+	float:left;
+	padding:4px 0 0 0;
+}
+.address_book_new_link a {
+	color:#ff6600 !important;
+}
+/*区切り線*/
+.mypage_line {
+	background:url(../image/mypage_line.gif) repeat-x left top;
+	height:19px;
+	clear:both;
+	margin-right:10px;
+	margin-left:10px;
+}

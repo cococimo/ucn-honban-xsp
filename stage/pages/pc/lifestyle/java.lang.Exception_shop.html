@@ -1,0 +1,922 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_shop_kigokochi.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- head -->
+<meta http-equiv="content-language" content="ja">
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<!--<meta name="viewport" content="width=768">-->
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<meta m:id="e_var_shop" content="">
+<meta m:id="e_var_headerComponent" content="">
+<meta m:id="e_var_testSite" content="">
+<meta m:id="e_var_member" content="">
+<!-- InstanceBeginEditable name="head_1" -->
+<meta m:id="description" name="description" content="データベースから値を取得し表示します">
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<title m:id="title" arg1="" arg2="">データベースから値を取得し表示します</title>
+<!-- InstanceEndEditable -->
+<!-- common css -->
+<link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
+
+<!-- common js -->
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/yuga.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/drop.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.ad-gallery.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.flexslider.js"></script>
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+<script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
+<script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
+
+		<script>
+		/*
+			jQuery(function($){
+				$('ul.example').exDropDown();
+			});
+			*/
+
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop').on('click',function(){
+				$('.gsearchShop').submit();
+					return false;
+				});
+				
+				
+				
+				
+
+			});
+		</script>
+<!-- InstanceBeginEditable name="head_css_js" -->		
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/side_menu.css" type="text/css" media="all" />	
+
+		
+<script type="text/javascript">
+  $(function() {
+ 
+    var galleries = $('.ad-gallery').adGallery();
+ 
+    galleries[0].addAnimation('wild',
+      function(img_container, direction, desc) {
+        var current_left = parseInt(img_container.css('left'), 10);
+        var current_top = parseInt(img_container.css('top'), 10);
+        if(direction == 'left') {
+          var old_image_left = '-'+ this.image_wrapper_width +'px';
+          img_container.css('left',this.image_wrapper_width +'px');
+          var old_image_top = '-'+ this.image_wrapper_height +'px';
+          img_container.css('top', this.image_wrapper_height +'px');
+        } else {
+          var old_image_left = this.image_wrapper_width +'px';
+          img_container.css('left','-'+ this.image_wrapper_width +'px');
+          var old_image_top = this.image_wrapper_height +'px';
+          img_container.css('top', '-'+ this.image_wrapper_height +'px');
+        };
+        if(desc) {
+          desc.css('bottom', '-'+ desc[0].offsetHeight +'px');
+          desc.animate({bottom: 0}, this.settings.animation_speed * 2);
+        };
+        img_container.css('opacity', 0);
+        return {old_image: {left: old_image_left, top: old_image_top, opacity: 0},
+                new_image: {left: current_left, top: current_top, opacity: 1},
+                easing: 'easeInBounce',
+                speed: 2500};
+      }
+    );
+  });
+  function debug(str) {
+    if(window.console && window.console.log && jQuery.browser.mozilla) {
+      console.log(str);
+    } else {
+      $('#debug').show().val($('#debug').val() + str +'\n');
+    }
+  }
+  </script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+		animation: "slide", 
+		controlNav: true,
+		directionNav: false,
+		randomize: true,
+		reverse: true,
+		slideshowSpeed: 5000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+animationSpeed: 500,
+pausePlay: false, 
+nextText: "",
+
+	});
+  });
+</script>
+
+<!-- InstanceEndEditable -->
+<!--/ head -->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- ********** include:mall/header.jsp ********** -->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
+<span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
+<!-- InstanceEndEditable -->
+</head>
+ 
+<body id="top">
+<!-- name="body" -->
+<!-- EndEditable -->
+
+<div id="container">
+
+<div id="header">
+<div id="header_wrap" class="clearfix">
+<!-- InstanceBeginEditable name="head_h1" -->
+<h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+<!-- InstanceEndEditable -->
+<a m:id="e_link_logo_shop_shop" href="/">
+
+<!-- header追加 -->
+<!-- name="header_logo" -->
+
+<div id="header_logo">
+<span m:id="l_notEmp_shop_image_file_shop">
+【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
+</span>
+</div>
+<!-- EndEditable -->
+</a>
+<!-- <div class="logoText">
+<img m:id="static_img" src="../contents/shop/00000005/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
+</div> -->
+
+    
+        <div id="header_r" class="clearfix">
+            <div id="header_r_01" class="clearfix header_r_color">
+            
+  
+            
+    <!-- ▼▼▼検索▼▼▼ -->
+<div id="header_search" >
+		<div class="clearfix header_search_in">
+		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+		<input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+		<input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+		<input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+		<input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+		<input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+		<input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+		<input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+		<input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+		<input m:id="searchForm_page" type="hidden" name="page" value="1">
+		<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+		</form>
+		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_02">
+    <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+    </div>
+		</form>
+	  <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
+        <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+        <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+        <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+      </form>
+</div>
+</div>
+            
+            <!-- ▲▲▲検索▲▲▲ -->  
+            
+            
+            <div class="header_lists clearfix pc_not">
+              <!-- ▼▼▼新規会員登録▼▼▼ -->
+              <div m:id="l_notPre_member_login_shop">
+                <ul class="header_list_01">
+                <li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
+                </ul>
+              </div>
+              <!-- ▲▲▲新規会員登録▲▲▲ -->
+              
+              
+			<ul class="header_list_02">
+                          <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
+
+			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
+			  <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
+			  <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
+                <!-- InstanceBeginEditable name="kigokochi" -->
+                <!--<li id="header_kigokochi">
+                    <a  href="/shop/lifestyle/static/kigokochi/" class="kigokochi_bt" title="">着心地のいい服</a>
+                </li>-->
+				<!-- InstanceEndEditable -->
+			</ul>
+            </div>
+            
+    
+            
+            
+            <div class="clearfix pc_not">
+            	<span m:id="l_equ_hierarchy_3_shop">
+                <div class="clearfix pc_only">
+                    <ul class="header_list_03">
+                   <li><a href="/shop/lifestyle/static/guide/">ショッピングガイド</a></li>
+                    <li><a m:id="e_link_inquiry" href="
+/shop/inquiryInputCheck.do">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="header_cart">
+                    <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
+s.linkTrackVars='events'; 
+s.linkTrackEvents='scView';
+s.events='scView';
+s.tl(this,'o','cartview',null,'navigate');return false
+">
+                    お買い物かごを見る
+                    </a>
+                </div>
+                
+                <div class="header_cate">
+                    <a href="#catLink">カテゴリ一覧</a>
+                </div>
+                
+                </span>
+                
+             </div>
+            
+            </div><!-- header_r_01 -->
+        
+        </div>
+    
+    
+    <!--<div class="comm_box"><p>現在、検証中の為、会員登録、お買い物など全てのサービスはご利用できません。</p>
+    </div>-->
+    </div><!--header_wrap-->
+    
+  <!--▼▼▼sp_menu▼▼▼-->
+ <div m:id="l_notPre_member_login_shop">
+        <ul class="sp_menu_only sp_member">
+        	<li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
+        </ul>
+    </div>
+    
+    <div m:id="l_pre_member_logout_button_shop">
+        <ul class="sp_menu_only sp_member">
+    <li><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></li>
+         </ul>
+    </div>             
+    
+    <ul class="sp_menu_only sp_login_menu">
+            
+<li id="header_login"><div m:id="l_notPre_member_login_button_shop">
+<a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div>
+</li>
+              <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
+                <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
+    </ul>
+
+    
+    <div class="sp_top_menu sp_menu_only">
+    	<a href="/">m</a>
+    </div>
+    
+    <div class="sp_top_home sp_menu_only">
+    	<a href="/lifestyle/">m</a>
+    </div>
+    
+    <div class="sp_header_cart sp_menu_only">
+                    <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
+s.linkTrackVars='events'; 
+s.linkTrackEvents='scView';
+s.events='scView';
+s.tl(this,'o','cartview',null,'navigate');return false
+">お買い物かごを見る</a>
+     </div>
+
+    
+    <div class="sp_nav">
+    
+  <!-- カテゴリナビ -->
+    <script type="text/javascript">
+		//<![CDATA[
+		function switchHidden(categoryCode){
+		    var cat=document.getElementById("dd_"+categoryCode);
+		    var plus=document.getElementById("plus_"+categoryCode);
+		    var minus=document.getElementById("minus_"+categoryCode);
+		    if(cat.style.display=="none"){
+		        cat.style.display="block";
+		        plus.style.display="none";
+		        minus.style.display="inline";
+		    }else{
+		        cat.style.display="none";
+		        plus.style.display="inline";
+		        minus.style.display="none";
+		    }
+		    return false;
+		}
+		function HideandUNhideObj(ThisObj){
+		    nav=document.getElementById(ThisObj).style
+		    navp=document.getElementById(ThisObj+"_plus").style
+		    navm=document.getElementById(ThisObj+"_minus").style
+		    
+		    if(nav.display=="none"){
+		        nav.display='block';
+		        navm.display='inline';
+		        navp.display='none';
+		    }else{
+		        nav.display='none';
+		        var childN1 = document.getElementById(ThisObj).childNodes[0];
+		        if (childN1 != null) {
+		            var childN2 = childN1.childNodes[1];
+		            if (childN2 != null && childN2.tagName == "DT") {
+		                navp.display='inline';
+		                navm.display='none';
+		            }
+		        }
+		    }
+		}
+		function openParent(parent){
+			if(parent){
+				if(parent!=defaultCategoryCode&&defaultCategoryCode.indexOf(parent)>-1){
+					var idx=document.getElementById("index_"+parent).value;
+					document.getElementById("plus_"+idx).style.display="none";
+					document.getElementById("minus_"+idx).style.display="inline";
+					document.getElementById("dd_"+idx).style.display="block";
+				}
+			}
+		}
+		//]]>
+		</script>
+  <object class="xsp_obj" m:id="e_var_standardCategory">
+  </object>
+  <object class="xsp_obj" m:id="e_var_campaignCategory">
+  </object>
+  <object class="xsp_obj" m:id="count">
+  </object>
+  <object class="xsp_obj" m:id="cate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate2_count">
+  </object>
+  <object class="xsp_obj" m:id="e_var_dmHistory">
+  </object>    
+  <!-- InstanceBeginEditable name="header_category" --> 
+<!--▼▼▼カテゴリー▼▼▼-->
+<span m:id="l_pre_standardCategory">
+<span m:id="l_notEmp_standardCategory_childCategories">
+
+<div class="l_con_box_01">
+<div class="sp_nav_close"><a href="/">メニューを閉じる</a></div>
+<div class="sub">
+  <span m:id="l_ite_standardCategory">
+    <span m:id="l_equ_cate_checkPeriod">
+      <span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+      <object class="xsp_obj" m:id="count_sub1"></object>
+      <ul class="l_con_list_01 clearfix example">
+        <span  m:id="l_ite_cate">
+          <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+          <li class="ctList">
+              
+            <div class="p_0">
+              <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+              <span m:id="span_subCate_arrow" id="arrow_1">
+                  <span m:id="disp_subCate_category_name">ファッション</span>
+              </span>
+              </a>
+            </div>
+            <div id="p_1">
+              <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+              <span m:id="span_subCate_arrow" id="arrow_1">
+                  <span m:id="disp_subCate_category_name">ファッション</span>
+              </span>
+              </a>
+            </div>						<ul m:id="tag_dd_subCate" class="clearfix">
+                <span m:id="l_ite_subCate"> 
+                    <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
+                    <li class="ctArrow">
+                      <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+                    </li>
+                    </span>
+                </span>
+                </ul>
+          </li>
+          </span>
+        </span>
+        </ul>
+      </span>
+    </span>
+</div>
+</span></span>
+<!--▲▲▲カテゴリー▲▲▲-->
+<!-- InstanceEndEditable -->    
+             
+    </div>
+     
+<!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
+
+<div id="contents">
+
+<!--<div id="pan-navi" >
+  <ul class="clearfix">
+    <li><a m:id="pankuzu_top_link" href="shop.html"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+    <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
+  </ul>
+</div>-->
+<div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
+
+
+  <!-- メインコンテンツ -->
+<div class="r_con_box_04">
+	<div class="r_con_box_04_in">
+	<h3 class="temp_tit_n02 temp_tit_n02_cor">エラー!</h3>
+	
+	<div class="sec_02 clearfix">
+
+		<!-- エラーメッセージ -->
+		<div class="error"><span m:id="h_err_1">エラーメッセージ</span></div>
+		<!--/ エラーメッセージ -->
+	<br>
+		<!-- エラーメッセージ（例外の種類により固定で出力するメッセージ -->
+		<div m:id="l_pre_err_per_exception" class="error"><span m:id="h_err_per_exception">エラーメッセージ</span></div>
+		<!-- /エラーメッセージ（例外の種類により固定で出力するメッセージ -->
+		<div class="wrap_txt_left">
+		<!-- コメント -->
+		<!-- debugメッセージの表示 -->
+		<span m:id="l_pre_debug_message">
+		<hr>
+		<b>[Debug Mode]</b><br>
+			<span m:id="debug_message" >Debugメッセージ</span>
+		</span>
+		<!--/ コメント -->
+		</div>
+
+	<!-- ボタン -->
+	<div class="mt20pb30">
+	<a href="http://www-st.cococimo.jp/lifestyle/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/inq_sousin_bt_04.png" alt="トップに戻る" /></a>
+	</div>
+	<!--/ ボタン -->
+
+	</div>
+	</div><!--r_con_box_04_in-->
+</div><!--r_con_box_04-->
+
+
+
+
+</div>
+<!--contents_r-->
+<div id="contents_l">
+  <object class="xsp_obj" m:id="e_var_standardCategory">
+  </object>
+  <object class="xsp_obj" m:id="e_var_campaignCategory">
+  </object>
+  <object class="xsp_obj" m:id="count">
+  </object>
+  <object class="xsp_obj" m:id="cate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate2_count">
+  </object>
+  <object class="xsp_obj" m:id="e_var_dmHistory">
+  </object>
+<!--▼▼▼カテゴリー▼▼▼-->
+<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
+<div class="l_con_box_01">
+<div id="l_tit_01">カテゴリーから探す"></div>
+
+<div class="sub">
+	<span m:id="l_ite_standardCategory">
+		<span m:id="l_equ_cate_checkPeriod">
+			<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+			<object class="xsp_obj" m:id="count_sub1"></object>
+			<ul class="l_con_list_01 clearfix example">
+				<span  m:id="l_ite_cate">
+					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+					<li>
+					
+					<div id="p_0">
+					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+					<span m:id="span_subCate_arrow" id="arrow_1">
+						<span m:id="disp_subCate_category_name">ファッション</span>
+					</span>
+					</a>
+					</div>
+					
+					
+					
+						<ul m:id="tag_dd_subCate">
+						<span m:id="l_ite_subCate"> 
+							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
+							<li>
+							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+							</li>
+							</span>
+						</span>
+						</ul>
+					</li>
+					</span>
+				</span>
+			</ul>
+		</span>
+	</span>
+</div>
+</span></span>
+<!--▲▲▲カテゴリー▲▲▲-->
+  <!--▼▼▼ログイン者表示▼▼▼-->
+  <object class="xsp_obj" m:id="e_var_total_price_amt">
+  </object>
+  <object class="xsp_obj" m:id="e_var_total_point_amt">
+  </object>
+  <object class="xsp_obj" m:id="e_var_total_order_num">
+  </object>
+  <div class="l_con_box_01 pc_only">
+    <h2 id="l_tit_02"><span m:id="l_pre_login_member_name"> <span m:id="disp_member_name">山田　太郎</span></span><span m:id="l_notPre_login_member_name">ゲスト</span></h2>
+    <dl class="l_con_list_02">
+      <dt>商品点数</dt>
+      <dd><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span>点</dd>
+      <dt>金額小計</dt>
+      <dd><span m:id="b_wr_side_total_price_amt"><span m:id="dummy">●●●●</span></span>円</dd>
+    </dl>
+    <div id="l_bt_01"> <a m:id="h_link_show_cart_link" href="cart.html">お買い物かごを見る</a></div>
+  </div>
+  <!--▲▲▲ログイン者表示▲▲▲-->
+  <!--▼▼▼DM▼▼▼-->
+  <div>
+  <span m:id="l_pre_member_logout_button">
+	  <object class="xsp_obj" m:id="e_var_memberDmHistoryList"></object>
+	  <span m:id="l_notEmp_memberDmHistoryList">
+		<a m:id="e_link_memberMenu_memberDMHistory" href="memberDMHistory.html" >DM送付履歴はこちら</a>
+	  </span>
+  </span>
+  <span m:id="l_notPre_member_login">
+    <div id="l_bt_02"> 
+    <span m:id="l_notPre_dm_member">
+	  <a m:id="e_link_dmlogin" href="dmLogin.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_bt_02.jpg" alt="DMをご覧になった方はコチラ" /></a>
+    </span>
+    </div>
+  <!--▲▲▲DM▲▲▲-->
+  <!--▼▼▼DM送付履歴▼▼▼-->
+  <span m:id="l_pre_dm_member">
+  <object class="xsp_obj" m:id="e_var_memberDmList"></object>
+  <span m:id="l_notEmp_dmHistoryList"> <span class="dm_button">
+	<a m:id="e_link_menu_dmHistory" href="dmHistory.html" >DM送付履歴はこちら</a>
+  </span> </span>
+  </span>
+  </span>
+  </div>
+  <!--▲▲▲DM送付履歴▲▲▲-->
+  <!--▼▼▼左カラムバナー▼▼▼-->
+<!--  <div class="l_bar_list pc_only">
+    <ul>
+      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_01.jpg" width="190" height="60" /></a></li>
+      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_02.jpg" width="190" height="60" /></a></li>
+      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_03.jpg" width="190" height="60" /></a></li>
+    </ul>
+  </div>-->
+  <!--▲▲▲左カラムバナー▲▲▲-->
+ <!--▼▼▼最近チェックした商品▼▼▼-->
+  <object class="xsp_obj" m:id="e_var_browsingGoodsList">
+  </object>
+  <span m:id="l_notEmp_browsingGoodsList">
+  <div class="l_con_box_03">
+    <h2 id="l_tit_04" class="sp_r_tit_02 pc_only"><img src="../../../contents/shop/00000003/shop/image/sp/sp_sec_07_img_01.png" alt="最近チェックした商品" /></h2>
+    <h2 class="temp_tit_n02 temp_tit_n02_cor sp_only">最近チェックした商品</h2>
+    <div class="l_con_box_03_in clearfix">
+    <ul class="l_con_list_04">
+    <span m:id="l_ite_browsingGoodsList"> 
+     <span m:id="l_notDisp_other_site"> 
+     <span m:id="l_notEqu_idx">
+     
+        <li>
+          <div class="box_01 heightLine-check">
+            <div class="box_02">
+              <div class="img_box"><a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+              <h3><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
+              <p> <span m:id="l_notEqu_browsingGoods_pretaxPrice">
+			        <span class="original_price">
+			            <span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
+			        </span>&nbsp;
+			    </span>
+			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
+</p>
+            </div>
+          </div>
+        </li>
+        </span>
+    </span>
+    </span>
+        <li m:id="dummy">
+          <div class="box_01">
+            <div class="box_02">
+              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="#">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li m:id="dummy" class="sp_end">
+          <div class="box_01">
+            <div class="box_02">
+              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="#">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li m:id="dummy" class="pc_only">
+          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+          <h3><a href="#">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+        </li>
+      
+    </ul> </div>
+  </div>
+  </span>
+  <!--▲▲▲最近チェックした商品▲▲▲-->
+  <div class="pc_social pc_only">
+    <div class="pc_social_in">
+      <ul>
+        <li><a href="#top"><!--<img src="contents/shop/00000003/shop/image/fl_bt_01.jpg" width="28" height="115" alt="ホーム" />--></a></li>
+     <!--   <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_02.jpg" width="28" height="29" alt="ホーム" /></a></li>
+        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_03.jpg" width="28" height="28" alt="ホーム" /></a></li>
+        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_04.jpg" width="28" height="28" alt="ホーム" /></a></li>-->
+        <li><a href=""><!--<img src="contents/shop/00000003/shop/image/fl_bt_05.jpg" width="28" height="98" alt="ホーム" />--></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--contents_l-->
+<!--<div id="footer01" class=" pc_only">
+  <div id="footer_wrap01">
+    <h2 id="footer_tit_01">お電話・FAXでもご注文を承ります。</h2>
+    <div class="clearfix">
+      <div class="box_01"> お電話でのご注文</div>
+      <div class="box_02 clearfix">
+        <p><a href="#">FAXの注文方法について</a></p>
+        <div><a href="#"><img src="../../../contents/shop/00000003/shop/image/pc_footer_bt_001.jpg" alt="FAX申込書ページ" /></a></div>
+      </div>
+    </div>
+  </div>
+  <!--footer_wrap01-->
+<!--</div>-->
+<!--footer-->
+
+</div><!--contents-->
+
+</div><!--container-->
+
+<!-- InstanceEndEditable -->
+<!-- ガイド -->
+
+<div id="guideWrapper" class="pc_only">
+  <div class="guideTop">
+    <div class="guideTopInner clearfix">
+      <div class="guideDetail">
+        <dl>
+          <dt>送料について</dt>
+          <dd>
+            <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img01.gif" alt=""/></div>
+            <p><span>お買い物総額が5,000円（税込）未満の場合<br>→送料500円</span><br/>1回のお買い上げ総額が5,000円未満の場合500円の送料がかかります。</p>
+            <p><span>お買い物総額5,000円以上&#xFF5E;10,000円未満<br>→送料250円</span><br/>1回のお買い上げ総額が5,000円以上から10,000円 未満の場合、250円の送料がかかります。</p>
+          </dd>
+        </dl>
+        <dl>
+          <dt>品質保証・返品について</dt>
+          <dd>
+            <p>商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。<br/>なお、返品条件に関しては各商品ごとに異なりますので、各商品ページでご確認ください。</p>
+          </dd>
+        </dl>
+      </div>
+      <div class="guideDetail">
+        <dl>
+          <dt>配送について</dt>
+          <dd>
+            <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img02.gif" alt=""/></div>
+            <p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br/>時間帯指定については、下記の6つの時間帯よりお選びいただけます。</p>
+            <div><img src="/contents/shop/00000005/shop/image/kigokochi/time_zone.gif" alt=""/></div>
+          </dd>
+        </dl>
+        <dl>
+          <dt>商品のお届けの時期について</dt>
+          <dd>
+            <p>お申込みから（郵送の場合は申込書到着後）通常３&#xFF5E;６日ほどでお届けいたします。<br/>期日・時間帯をご指定いただける商品もございます。各商品詳細ページでご確認ください。</p>
+          </dd>
+        </dl>
+      </div>
+      <div class="guideDetail">
+        <dl>
+          <dt>お支払いについて</dt>
+          <dd>
+            <p><span>クレジットカード<br>手数料0円</span></p>
+            <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
+            <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
+            <p><span>代金引換<br>代引手数料300円</span></p>
+            <p><span>コンビニ・郵便局・ゆうちょ銀行<br>払込手数料0円</span></p>
+            <div class="secure clearfix">
+			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
+		    </div>          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ガイド -->
+    
+<!-- footer追加 -->
+<div id="footer02">
+  <div id="footer_wrap02">
+
+  
+<div class="add_ft_wp">  
+    <div class="add_inner">
+    <div class="inn_tit">メインメニュー</div>
+      <ul>
+        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
+        <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
+        <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
+        <li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>
+        <li><a href="/shop/lifestyle/static/protection/" style="opacity: 1;">個人情報保護方針</a></li>
+        <li><a href="/shop/lifestyle/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
+ 		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
+      </ul>      
+      </div>
+      
+<!--▼▼▼カテゴリー(フッター)▼▼▼-->
+<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
+<div class="add_inner footer_cate">
+<div class="inn_tit2">カテゴリーから探す</div>
+ <span m:id="l_ite_standardCategory">
+  <span m:id="l_equ_cate_checkPeriod">
+   <span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+   <object class="xsp_obj" m:id="count_sub1"></object>
+   <ul>
+    <span  m:id="l_ite_cate">
+     <span m:id="l_equ_subCate_checkPeriod"><span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+     <li>
+     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+      <span m:id="disp_subCate_category_name">ファッション</span>
+     </a>
+     </li>
+     </span>
+    </span>
+   </ul>
+  </span>
+ </span>
+</div>
+</span></span>
+</div>
+<!--▲▲▲カテゴリー(フッター)▲▲▲-->
+<br clear="all" />
+
+
+
+    <div class="pc_display member_signup">
+      <h3 id="icon_03">初めての方へ</h3>
+      <ul>
+        <!--<li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>-->
+        <li class="wrap_l oneb"><a href="https://www.cococimo.jp/shop/memberAdd.do">新規会員登録</a></li>
+        <li><a href="/shop/lifestyle/static/guide/">ご利用ガイド</a></li>
+        <li><a href="/shop/lifestyle/static/first/">ココチモとは</a></li>
+      </ul>
+    </div>
+    
+    <div class="pc_display">
+      <h3 id="icon_04">会員の方</h3>
+      <ul>
+        <li><a href="/shop/loginControl.do?p=%2FstaticContentsShop.do%3F_S%3D00000005%26f%3D%2Fcompany%26" title="ログイン">ログイン</a></li>
+        <li></li>
+      </ul>
+    </div>
+
+
+
+    <div id="footer03" class="pc_display">
+      <div class="clearfix" id="footer_wrap03">
+        
+        <ul class="clearfix">
+          <!--<li class="first"><a href="/shop/lifestyle/static/faq/">よくあるご質問</a></li>-->
+          <li><a href="/shop/lifestyle/static/guide/">ショッピングガイド</a></li>
+          <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
+          <li><a href="/shop/lifestyle/static/protection/">個人情報保護方針</a></li>
+          <li><a href="/shop/lifestyle/static/notation/">特定商取引に基づく表示</a></li>
+          <li><a href="/shop/lifestyle/static/company/">会社情報</a></li>
+          <!--<li class="end"><a href="#">利用規約</a></li>-->
+        </ul>
+        
+        <p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
+      </div><!--footer_wrap03-->
+    </div>
+
+    <div id="footer05" class="sp_only">
+      
+      <div class="mt10 sp_secure clearfix">
+        <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+        <p>
+    このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
+        </p>
+      </div>
+    </div>
+
+    <p>Copyright U-CAN, Inc. All Rights Reserved</p>
+
+  </div>
+</div><!-- /#footer02 -->
+	<!-- InstanceBeginEditable name="footer_script" --> 
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+
+<span m:id="site_prop13"></span>
+<!-- SiteCatalyst code version: H.26.1.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName="エラーページ"
+s.server=""
+s.channel="エラーページ"
+s.pageType=""
+s.prop1="エラーページ"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop13=s_prop13
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event4"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar34=""
+s.eVar35=""
+s.eVar36=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http(s)://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.26.1. -->
+
+
+
+
+
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<script type='text/javascript'>
+if(typeof dmids == "undefined"){var dmids = {}};
+dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
+</script>
+<script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
+</script>
+
+<!-- InstanceEndEditable -->
+
+  
+<!-- footer追加 -->
+
+</body>
+<!-- InstanceEnd --></html>

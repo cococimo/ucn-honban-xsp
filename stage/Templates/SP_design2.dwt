@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html xmlns:m="http://mayaa.seasar.org" xmlns:og="http://ogp.me/ns#" lang="ja"><!-- InstanceBegin template="/Templates/SP_base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script m:id="common_js_ext" type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>window.jQuery || document.write('<script src="contents/design1/sp/js/jquery-1.7.2.min.js"><\/script><script src="contents/design1/sp/js/jquery-ui-1.8.18.min.js"><\/script><script src="contents/design1/sp/js/jquery.easing-1.3.min.js"><\/script>')</script>
+<!-- InstanceBeginEditable name="base_script" --><script type="text/javascript">
+$(document).bind("mobileinit", function(){
+  $.mobile.ajaxEnabled = false;
+  $.mobile.ajaxLinksEnabled = false;
+  $.mobile.ajaxFormsEnabled = false;
+  $.mobile.hashListeningEnabled = true;
+});
+</script><!-- TemplateBeginEditable name="global_script" --><!-- TemplateEndEditable --><!-- InstanceEndEditable -->
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/jquery.mobile-1.1.1.min.js"></script>
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/jquery.mobile-1.1.1.min.css" />
+
+<!-- InstanceBeginEditable name="head" -->
+<meta m:id="e_var_shop" content="" />
+<meta m:id="e_var_mall" content="">
+<meta m:id="e_var_headerComponent" content="" />
+<meta m:id="e_var_testSite" content="" />
+<meta m:id="e_var_member" content="" />
+<meta m:id="e_var_favorite" content="">
+<meta m:id="e_var_mallCategory" content="">
+
+<title m:id="title">データベースから値を取得し表示します</title>
+<meta m:id="description" name="description" content="データベースから値を取得し表示します" />
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します" />
+
+<link m:id="common_contents" rel="apple-touch-icon" href="../contents/design1/sp/images/common/apple-touch-icon.png">
+<link m:id="favicon" rel="shortcut icon" href="../contents/design1/sp/favicon/favicon.ico">
+<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="../pages/sp/default/mall.html" />
+
+<!-- CSS -->
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/eastec-theme.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/jquery.ui.tabs.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/default.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/slides.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/pc/css/exvalidation.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/common.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/sp.css" media="all" />
+<link m:id="common_contents" rel="stylesheet" type="text/css" href="../contents/design1/sp/css/flexslider.css" media="all" />
+
+<!-- JS -->
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/slides.jquery.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/jquery.flexslider-min.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/exvalidation.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/exchecker-ja.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/common.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/sp/js/ddm.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".accordion h3").click(function(){
+			$('.accordion h3').not(this).removeClass('selected');
+			$(this).toggleClass("selected");
+			$('.accordion h3').not(this).next("div").hide('fast');
+			$(this).next("div").slideToggle('fast');
+		})
+	})
+</script>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceEndEditable -->
+</head>
+<body class="home">
+<!-- InstanceBeginEditable name="body" --><!-- TemplateBeginEditable name="body" --><!-- TemplateEndEditable --><!-- InstanceEndEditable -->
+<div data-role="page" data-theme="g" id="main">
+
+<header class="global">
+<!-- InstanceBeginEditable name="global_header" -->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
+<object class="xsp_obj" m:id="e_var_cart"></object>
+<object class="xsp_obj" m:id="e_var_cart_info"></object>
+<object class="xsp_obj" m:id="e_var_total_price_amt"></object>
+<object class="xsp_obj" m:id="e_var_total_point_amt"></object>
+<object class="xsp_obj" m:id="e_var_total_order_num"></object>
+<div m:id="l_equ_test_site" id="testmode"><span m:id="b_wr_test_site_time">テスト日時：YYYY/MM/DD hh:mi:ss</span></div>
+<div id="logo"><a m:id="e_link_header_logo" href="mall.html"><img m:id="i_img_header_logo" src="../contents/design1/sp/images/common/header_logo.png" alt="モール" border="0"></a></div>
+<p m:id="header_name" id="header_name">こんにちは <span m:id="l_pre_login_member_name"><span m:id="disp_member_name">鈴木 花子</span></span><span m:id="l_notPre_login_member_name">ゲスト</span> さま</p>
+<!-- TemplateBeginEditable name="global_header" --><!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+<nav>
+<div data-role="header" data-theme="g">
+<!-- InstanceBeginEditable name="header" -->
+	<div id="nav1"><span m:id="nav1exec"></span>
+		<ul id="ddm">
+			<li m:id="chk_link_login_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="touch"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu1.png" alt="ログイン" width="45" height="40"></a></li>
+			<li m:id="chk_link_memberAdd_shop"><a m:id="e_link_memberAdd_shop" href="memberAgree.html" class="touch"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu2.png" alt="会員登録" width="45" height="40"></a></li>
+			<li m:id="chk_link_logout_shop"><a m:id="e_link_logout_shop" href="mall.html" class="touch"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu6.png" alt="ログアウト" width="45" height="40"></a></li>
+			<li m:id="chk_link_mypage_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="touch"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu7.png" alt="マイページ" width="45" height="40"></a></li>
+			<li m:id="chk_link_favoriteList"><a m:id="e_link_favoriteList" href="memberFavoriteList.html" id="cart"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu4.png" alt="お気に入り" width="45" height="40"></a></li>
+			<li m:id="chk_link_show_cart_link"><a m:id="h_link_show_cart_link" href="cart.html" id="cart"><img m:id="common_contents" src="../contents/design1/sp/images/common/header_menu5.png" alt="カート" width="45" height="40"></a></li>
+		</ul>
+	</div>
+	<span m:id="l_pre_mallCategories">
+	<div id="nav2">
+		<ul>
+			<span m:id="l_ite_mallCategory1">
+			<span m:id="l_equ_mallCategory1_check">
+			<li m:id="li_mallCategory1" id="nav2_1"><a m:id="disp_mallCategory1_link" href="#nav3_1" class="touch"><span m:id="disp_mallCategory1_name">WOMEN</span></a></li>
+			</span>
+			</span>
+			<li m:id="dummy" id="nav2_2"><a href="#nav3_2" class="touch">MEN</a></li>
+			<li m:id="dummy" id="nav2_3"><a href="#nav3_3" class="touch">KIDS</a></li>
+		</ul>
+	</div>
+	</span>
+<!-- TemplateBeginEditable name="header" --><!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+</div>
+</nav>
+</header><!-- /header -->
+
+<div data-role="content" data-theme="g">
+<!-- InstanceBeginEditable name="content" --><!-- TemplateBeginEditable name="content" -->
+ここにコンテンツを記述
+<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+</div><!-- /content -->
+
+<footer class="global">
+<div data-role="footer" data-theme="g">
+<!-- InstanceBeginEditable name="footer" --><!-- TemplateBeginEditable name="footer" --><!-- TemplateEndEditable --><!-- InstanceEndEditable -->
+</div>
+<!-- InstanceBeginEditable name="global_footer" -->
+
+<div class="search">
+<form m:id="searchForm" name="searchForm" method="GET" action="goodsList.html">
+	<input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+	<input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+	<input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+	<input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+	<input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+	<input m:id="searchForm_range_code" type="hidden" name="range_code" value="" />
+	<input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+	<input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+	<input m:id="searchForm_color" type="hidden" name="color" value="" />
+	<input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+	<input m:id="searchForm_goods_list_num" type="hidden" name="goods_list_num" value="" />
+	<input m:id="searchForm_target_goods" type="hidden" name="target_goods" value="" />
+	<input m:id="searchForm_page" type="hidden" name="page" value="1">
+	<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+</form>
+<div id="searchg">
+<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsList.html">
+	<div class="ui-grid-a">
+		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002"/>
+		<div class="ui-block-a"><input m:id="h_txt_keyword" data-theme="g" type="search" name="keyword" class="search_tx" maxlength="200" placeholder="Search..."/></div>
+		<div class="ui-block-b"><a m:id="a_link_goodsSearchShop" href="goodsList.html" onClick="document.keywordSearchShop.submit(); return false;" data-role="button" data-theme="g">検索</a></div>
+	</div>
+</form>
+</div>
+</div>
+
+<div id="misc">
+	<div id="socialg">
+		<ul id="social">
+			<!-- sns -->
+			<span m:id="fs_sp_footer_sns" />
+			<!--/ sns -->
+			<!-- ${/*
+			<li><a href="#"><img m:id="common_contents" src="../contents/design1/sp/images/common/footer_social1.png" width="22" height="22">Facebook</a></li>
+			<li><a href="#"><img m:id="common_contents" src="../contents/design1/sp/images/common/footer_social2.png" width="22" height="22">Twitter</a></li>
+			*/} -->
+		</ul>
+	</div>
+</div>
+<div class="navi">
+	<ul>
+	<span m:id="l_match_smart4me_true">
+		<span m:id="l_not_inquiry_false"><li><a m:id="e_link_inquiry" href="inquiryInput.html">お問合せ</a></li></span>
+		<li><a m:id="staticContents_link" href="agreement">利用規約</a></li>
+		<li><a m:id="staticContents_link" href="help">ヘルプ</a></li>
+	</span>
+	<span m:id="l_match_smart4me_false">
+		<li><a m:id="e_link_inquiry" href="inquiryInput.html">お問合せ</a></li>
+		<li><a m:id="staticContents_link" href="protection">個人情報保護方針</a></li>
+		<li><a m:id="staticContents_link" href="notation">特定商取引に関するご案内</a></li>
+		<li><a m:id="staticContents_link" href="company">会社情報</a></li>
+		<li><a m:id="staticContents_link" href="agreement">利用規約</a></li>
+		<li><a m:id="staticContents_link" href="business">事業概要</a></li>
+		<li><a m:id="staticContents_link" href="recruit">リクルート</a></li>
+		<li><a m:id="staticContents_link" href="sitemap">サイトマップ</a></li>
+	</span>
+	</ul>
+</div>
+<div class="view">
+<ul>
+<li class="view1"><a href="#"><img m:id="common_contents" src="../contents/design1/sp/images/common/footer_view1.png" width="14" height="20">スマートフォン用</a></li>
+<li class="view2"><a m:id="l_link_for_pc" href="#"><img m:id="common_contents" src="../contents/design1/sp/images/common/footer_view2.png" width="20" height="20">PC用</a></li>
+</ul>
+</div>
+<p class="copyright"><small><span m:id="l_match_smart4me_false">Copyright (c) 2012- ELTEX, Inc. All Rights Reserved.</span>
+<span m:id="l_match_smart4me_true"><span m:id="smart4me_copyright"><span m:id="copyright">Copyright (c) 2012- ELTEX, Inc. All Rights Reserved.</span></span></span>
+</small></p>
+<!-- TemplateBeginEditable name="global_footer" --><!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+</footer><!-- /footer -->
+
+</div><!-- /page -->
+<!-- InstanceBeginEditable name="other_page_contents_waku" --><!-- TemplateBeginEditable name="other_page_contents_waku" --><!-- TemplateEndEditable --><!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="pageend" --><!-- TemplateBeginEditable name="pageend" --><!-- TemplateEndEditable -->
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
