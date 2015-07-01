@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:m="http://mayaa.seasar.org" xmlns:og="http://ogp.me/ns#" lang="ja"><!-- InstanceBegin template="/Templates/PC_design1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Windows-31J">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<!-- design1用の設定 -->
+<meta m:id="e_var_shop" content="">
+<meta m:id="e_var_mall" content="">
+<meta m:id="e_var_headerComponent" content="">
+<meta m:id="e_var_testSite" content="">
+<meta m:id="e_var_member" content="">
+<meta m:id="e_var_favorite" content="">
+<meta m:id="e_var_mallCategory" content="">
+<meta m:id="description" name="description" content="データベースから値を取得し表示します">
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<title m:id="title">データベースから値を取得し表示します</title>
+<link m:id="favicon" rel="shortcut icon" href="../contents/design1/pc/favicon/favicon.ico">
+<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="../pages/pc/default/mall.html" />
+<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script m:id="common_js_ext" type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>window.jQuery || document.write('<script src="contents/design1/pc/js/jquery-1.7.2.min.js"><\/script><script src="contents/design1/pc/js/jquery-ui-1.8.18.min.js"><\/script><script src="contents/design1/pc/js/jquery.easing-1.3.min.js"><\/script>')</script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/jquery.droppy.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/jquery.dcmegamenu.1.3.3.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/jquery.hoverIntent.minified.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/slides.jquery.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/jquery.ticker.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/exvalidation.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/exchecker-ja.js"></script>
+<script m:id="common_contents" type="text/javascript" src="../contents/design1/pc/js/common.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('img');
+</script>
+<![endif]-->
+<script type="text/javascript">
+	$(function(){
+		$('#hmenu').tabs({
+			selected: -1
+		});
+		$('#mega-menu-1').dcMegaMenu({
+			rowItems: '3',
+			speed: 'fast',
+			effect: 'slide'
+		});
+		$("#hcart").droppy();
+	});
+</script>
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/dcmegamenu.css" type="text/css" />
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/jquery.ui.tabs.css" type="text/css" />
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/slides.css" type="text/css" />
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/ticker-style.css" type="text/css" />
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/exvalidation.css" type="text/css" />
+<link m:id="common_contents" rel="stylesheet" media="all" href="../contents/design1/pc/css/common.css" type="text/css" />
+
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="header" -->
+<script type="text/javascript">
+	$(function(){
+		$('#slides_check').slides({
+			preload: true,
+			preloadImage: 'contents/design1/pc/images/slides/loading.png',
+			play: 5000,
+			pause: 2500,
+			hoverPause: true,
+			generatePagination: false
+		});
+	});
+</script>
+<!-- TemplateBeginEditable name="header" -->
+
+<!-- TemplateEndEditable --><!-- InstanceEndEditable -->
+</head>
+<body class="home">
+
+<object class="xsp_obj" m:id="e_var_cart"></object>
+<a name="TOP" id="TOP"></a>
+<!-- InstanceBeginEditable name="body" -->
+
+<!-- InstanceEndEditable -->
+<!-- ヘッダー -->
+<div id="header">
+	<div id="hframe">
+		<h1 id="hlogo"><a m:id="e_link_header_logo" href="../pages/pc/default/mall.html"><img m:id="i_img_header_logo" src="../contents/design1/pc/images/common/header_logo.png" alt="eastEC Mall" border="0"></a>
+        </h1>
+		<p id="hnavi">
+			<span m:id="l_notPre_member_login"><a m:id="e_link_memberAdd" href="../pages/pc/default/memberAgree.html">新規会員登録</a>　/　</span>
+			<span m:id="l_notPre_member_login"><a m:id="e_link_reminder" href="../pages/pc/default/memberReminderPwdInput.html">パスワードを忘れた方</a>　/　</span>
+			<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+		</p>
+		<div id="hsearch">
+			<form m:id="searchForm" name="searchForm" method="GET" action="../pages/pc/default/goodsList.html">
+				<input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+				<input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+				<input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+				<input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+				<input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+				<input m:id="searchForm_range_code" type="hidden" name="range_code" value="" />
+				<input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+				<input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+				<input m:id="searchForm_color" type="hidden" name="color" value="" />
+				<input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+				<input m:id="searchForm_goods_list_num" type="hidden" name="goods_list_num" value="" />
+				<input m:id="searchForm_target_goods" type="hidden" name="target_goods" value="" />
+				<input m:id="searchForm_page" type="hidden" name="page" value="1">
+				<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+			</form>
+			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../pages/pc/default/goodsList.html">
+				<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+				<input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="" id="hsearch_tx" /><a m:id="a_link_goodsSearchShop" href="goodsList.html" onclick="document.keywordSearchShop.submit(); return false;"><input value="検索" type="submit" id="hsearch_bt"></a>
+			</form>
+		</div>
+		<div m:id="hlogin" id="hlogin">
+			<p id="hlogin_name">こんにちは <span m:id="l_pre_member_login"><span m:id="disp_member_name">鈴木 花子</span></span><span m:id="l_notPre_member_login">ゲスト</span> さま</p>
+			<ul>
+				<span m:id="l_notPre_member_login"><li><a m:id="e_link_login" href="../pages/pc/default/memberLogin.html" title="ログイン">LOG<br />IN</a></li></span>
+				<span m:id="l_pre_member_login"><li><a m:id="e_link_logout" href="../pages/pc/default/mall.html" title="ログアウト">LOG<br />OUT</a></li></span>
+				<li><a m:id="e_link_mypage" href="../pages/pc/default/memberMypage.html" title="マイページ">MY<br />PAGE</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="hmenu">
+		<div class="hcategory">
+			<ul id="mega-menu-1" class="mega-menu">
+			<span m:id="l_pre_mallCategories">
+				<span m:id="l_ite_mallCategory1"><span m:id="l_equ_mallCategory1_check">
+				<li style="visibility:hidden"><a m:id="disp_mallCategory1_link" href="#"><span m:id="disp_mallCategory1_name">MEN</span></a>
+					<span m:id="l_notEmp_mallCategory1_child"><ul><span m:id="l_ite_mallCategory2"><span m:id="l_equ_mallCategory2_check">
+						<li><a m:id="disp_mallCategory2_link" href="goodsList.html"><span m:id="disp_mallCategory2_name">トップス</span></a>
+							<span m:id="l_notEmp_mallCategory2_child"><ul><span m:id="l_ite_mallCategory3"><span m:id="l_equ_mallCategory3_check">
+								<li><a m:id="disp_mallCategory3_link" href="goodsList.html"><span m:id="disp_mallCategory3_name">Tシャツ</span></a></li>
+								</span></span>
+							</ul></span>
+						</li></span></span>
+					</ul></span>
+				</li></span></span>
+				<li m:id="dummy"><a href="goodsList.html">WOMEN</a></li>
+				<li m:id="dummy"><a href="goodsList.html">KIDS</a></li>
+			</span>
+			</ul>
+			<p id="hfavo"><a m:id="e_link_favoriteList" href="memberFavoriteList.html" title="お気に入り">お気に入り (<span id="header_favorite_count" m:id="disp_favorite_count">2</span>)</a></p>
+			<ul id="hcart">
+				<li><a m:id="header_cart_link" href="cart.html"><img m:id="common_contents" src="../contents/design1/pc/images/common/header_cart_icon.png" alt="" />合計: ￥<span m:id="disp_header_cart_price_amt" id="header_cart_price_amt">3,940</span> (<span m:id="disp_header_cart_order_num" id="header_cart_order_num">2</span>）　|　<span m:id="disp_header_cart_point_amt" id="header_cart_point_amt">36</span> ポイント</a>
+				<ul id="header_cart_details">
+					<li class="hcart_title"><img m:id="common_contents" src="../contents/design1/pc/images/common/header_cart_tx01.png" alt="SHOPPING CART" /></li>
+<span m:id="l_ite_header_cart_shopCartList">
+					<li class="hcart_title"><a m:id="disp_header_cart_shoplink" href="shop.html"><span m:id="disp_header_cart_shopname">ショップ名</span></a></li>
+<span m:id="l_ite_header_cart_detailList">
+					<li class="hcart_item"><a m:id="disp_header_cart_detail_link" href="#"><img m:id="disp_header_cart_detail_image" src="../contents/design1/pc/images/mall/cart_pix01.jpg" width="27" alt="" /><span m:id="disp_header_cart_detail_name">ホワイトレース袖シャツ５７１</span><br />￥<span m:id="disp_header_cart_detail_price">2,390</span> × <span m:id="disp_header_cart_detail_num">2</span></a></li>
+</span>
+</span>
+					<li m:id="dummy" class="hcart_item"><a href="#"><img m:id="common_contents" src="../contents/design1/pc/images/mall/cart_pix02.jpg" width="27" alt="" />ドッキングキャミワンピースNE<br />￥3,990</a></li>
+					<li class="hcart_bt"><a m:id="e_link_cart" href="../pages/pc/default/cart.html" class="bt_viewcart">カートを見る</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- InstanceBeginEditable name="breadcrumb" -->
+
+<!-- InstanceEndEditable -->
+<div id="content">
+	<span m:id="l_equ_test_site"><div id="testmode">テストモード：テストサイト日時 <span m:id="b_wr_test_site_time"></span></div></span>
+	<span m:id="l_equ_adminOrder_true"><div id="adminorder">運営者注文モード</div></span>
+<!-- InstanceBeginEditable name="content" --><!-- TemplateBeginEditable name="content" -->
+ここにコンテンツを記述
+
+<!-- TemplateEndEditable -->
+	<object class="xsp_obj" m:id="e_var_browsingGoodsList"></object>
+	<div id="shop_check">
+		<h2><img m:id="common_contents" src="../contents/design1/pc/images/shop/check_title.png" alt="ITEMS YOU'VE CHECKED" />あなたがチェックしたアイテム</h2>
+		<div id="slides_check">
+			<div class="slides_container">
+				<span m:id="l_notEmp_browsingGoodsList">
+					<span m:id="l_ite_browsingGoodsList">
+						<span m:id="l_Equ_browsingGoodsList_slide">
+							<span m:id="browsingGoodsList_slide_start"></span>
+						</span>
+							<div class="item">
+								<p class="check_pix"><a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../contents/design1/pc/images/shop/check_pix01.jpg" alt="○○商品"/></a></p>
+							</div>
+							<div m:id="dummy" class="item">
+								<p class="check_pix"><a href="#"><img src="../contents/design1/pc/images/shop/check_pix02.jpg" alt="" /></a></p>
+							</div>
+							<div m:id="dummy" class="item">
+								<p class="check_pix"><a href="#"><img src="../contents/design1/pc/images/shop/check_pix03.jpg" alt="" /></a></p>
+							</div>
+							<div m:id="dummy" class="item">
+								<p class="check_pix"><a href="#"><img src="../contents/design1/pc/images/shop/check_pix04.jpg" alt="" /></a></p>
+							</div>
+						<span m:id=l_Equ_browsingGoodsList_slide_end>
+							<span m:id="browsingGoodsList_slide_end"></span>
+						</span>
+					</span>
+				</span>
+			</div>
+			<a href="#" class="prev"><img m:id="common_contents" src="../contents/design1/pc/images/slides/arrow-prev.png" width="28" height="56" alt="Arrow Prev" /></a>
+			<a href="#" class="next"><img m:id="common_contents" src="../contents/design1/pc/images/slides/arrow-next.png" width="28" height="56" alt="Arrow Next" /></a>
+		</div>
+	</div>
+<!-- InstanceEndEditable -->
+</div>
+<!-- InstanceBeginEditable name="footer" -->
+
+<!-- InstanceEndEditable -->
+<div id="pagetop"><a href="#TOP">PAGE TOP</a></div>
+<div id="footer">
+	<div id="fframe">
+		<div id="fbox01">
+			<h4>商品を探す</h4>
+			<h5>カテゴリー</h5>
+			<ul><span m:id="l_pre_mallCategories">
+				<span m:id="l_ite_mallCategory1"><span m:id="l_equ_mallCategory1_check"><li><a m:id="disp_mallCategory1_link_footer" href="#"><span m:id="disp_mallCategory1_name">MEN</span></a></li></span>
+				<li m:id="dummy"><a href="#">WOMEN</a></li>
+				<li m:id="dummy"><a href="#">KIDS</a></li>
+			</span></ul>
+		</div>
+		<div id="fbox02">
+			<h4>ご利用ガイド</h4>
+			<ul>
+				<li><a href="#">初めての方へ</a></li>
+				<li><a href="#">購入までの流れ</a></li>
+				<li><a href="#">お届けについて</a></li>
+				<li><a href="#">返品・返金・交換について</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">ポイントについて</a></li>
+				<li><a href="#">お支払方法について</a></li>
+			</ul>
+		</div>
+		<div id="fbox03">
+			<h4>会員機能</h4>
+			<ul>
+				<span m:id="l_notPre_member_login"><li><a m:id="e_link_memberAdd" href="../pages/pc/default/memberAgree.html">新規会員登録</a></li></span>
+				<span m:id="l_notPre_member_login"><li><a m:id="e_link_reminder" href="../pages/pc/default/memberReminderPwdInput.html">パスワードを忘れたら</a></li></span>
+				<li><a m:id="e_link_cart" href="../pages/pc/default/cart.html">カートを見る</a></li>
+				<li><a m:id="e_link_mypage" href="../pages/pc/default/memberMypage.html">マイページ</a></li>
+				<span m:id="l_notPre_member_login"><li><a m:id="e_link_login" href="../pages/pc/default/memberLogin.html">ログイン</a></li></span>
+				<span m:id="l_pre_member_login"><li><a m:id="e_link_logout" href="../pages/pc/default/mall.html">ログアウト</a></li></span>
+			</ul>
+		</div>
+		<div id="fbox04">
+			<h4>その他</h4>
+			<ul>
+				<li><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
+				<li><a m:id="staticContents_link" href="sitemap">サイトマップ</a></li>
+				<li><br/></li>
+				<li><span m:id="l_if_sp" id="link_for_sp" style="display:none;"><a m:id="l_link_for_sp" href="#">スマートフォン用サイトへ</a></span></li>
+			</ul>
+		</div>
+	</div>
+	<div id="fnavi">
+		<ul>
+			<li class="st"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
+			<li><a m:id="staticContents_link" href="protection">個人情報保護方針</a></li>
+			<li><a m:id="staticContents_link" href="notation">特定商取引に関するご案内</a></li>
+			<li><a m:id="staticContents_link" href="company">会社情報</a></li>
+			<li><a m:id="staticContents_link" href="agreement">利用規約</a></li>
+			<li><a m:id="staticContents_link" href="business">事業概要</a></li>
+			<li><a m:id="staticContents_link" href="recruit">リクルート</a></li>
+			<li><a m:id="staticContents_link" href="sitemap">サイトマップ</a></li>
+		</ul>
+		<p id="fcopy">Copyright (c) 2009- ELTEX, Inc. All Rights Reserved</p>
+	</div>
+</div>
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+<!-- ${/* ヘッダモールカテゴリの表示 */} -->
+<!-- ${/* スマートフォンリンクの表示判定 */} -->
+<script type="text/javascript">
+$(function(){
+	$('#mega-menu-1 li').css('visibility', 'visible');
+	smartPhoneLinkVisible();
+});
+</script>
+<!-- InstanceBeginEditable name="pageend" -->
+
+<!-- InstanceEndEditable -->
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,164 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #fff;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	color: #0388b1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #0388b1;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#main {
+	width: 600px;
+	height: 300px;
+	text-indent: -9999px;
+	background: url(contents/shop/00000003/include_files/static/images_a/main.jpg) no-repeat;
+}
+
+#main p {
+	display: none;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#read {
+	padding: 5px 25px 20px;
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	background: #dee8ee;
+}
+
+.attention {
+	margin: 15px 0;
+	text-align: center;
+}
+
+.boxleft {
+	float: left;
+	width: 413px;
+	margin: 0 30px 30px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.boxright {
+	float: right;
+	width: 413px;
+	margin: 0 0 30px 0;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.boxleft .left,.boxright .left {
+	float: left;
+	width: 203px;
+	margin: 0 10px 0 0;
+}
+
+.boxleft .right,.boxright .right {
+	float: right;
+	width: 200px;
+	margin: 0;
+}
+
+.boxleft p,.boxright p {
+	margin: 10px 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.boxleft .income,.boxright .income {
+	padding: 5px;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: bold;
+	background: #dee8ee;
+}
+
+.btn {
+	margin: 10px 0 0 0;
+}
+
+.box_s {
+	float: left;
+	width: 203px;
+	margin: 0 0 30px 0;
+	padding: 7px 11px;
+	border-right: 1px solid #ccc;
+}
+
+.box_s p,.box_send p {
+	height: 60px;
+	margin: 5px 0 10px 0;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.box_send {
+	float: left;
+	width: 203px;
+	margin: 0 0 30px 0;
+	padding: 7px 8px 7px 11px;
+}
+
+#fotter {
+	padding: 25px 0;
+	background: #dee8ee;
+}
+
+#fotter p {
+	margin: 0 0 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+#fotter a {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#fotter .address {
+	width: 400px;
+	margin: 30px auto 0;
+}
+
+#fotter .address .left {
+	float: left;
+	width: 150px;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+#fotter .address .right {
+	float: right;
+	width: 250px;
+	font-size: 11px;
+	line-height: 1.5;
+}

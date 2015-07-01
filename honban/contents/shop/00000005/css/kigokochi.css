@@ -1,0 +1,1694 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  color: #444;
+  font-family: "メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;
+  font-size: 100%;
+  line-height: 21px;
+  margin: 0;
+  min-width: 960px;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  border: medium none;
+  vertical-align: top;
+}
+
+input, select, textarea {
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none outside none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover img.hover {
+  opacity: 0.8;
+}
+
+a:hover img {
+  opacity: 0.6;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: "";
+}
+
+.sp_menu_only {
+  display: none;
+}
+
+html {
+  min-width: 100% !important;
+}
+
+#top #mainVisual ul li {
+  display: none;
+}
+
+#container {
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  background-color: #fff;
+}
+
+#contents {
+  margin: 0 auto;
+  width: 960px;
+  padding: 120px 0 0;
+  position:relative
+}
+#contents #pan-navi {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 25px;
+  padding-bottom: 0;
+}
+#contents #pan-navi a {
+  text-decoration: underline;
+}
+#contents #pan-navi ul {
+  float: left;
+}
+#contents #pan-navi #kigokochi-top {
+  float: right;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  margin: 0;
+}
+
+.r_con_box_03 {
+  box-shadow: none !important;
+}
+
+.social-btn {
+  margin-top: 20px;
+}
+.social-btn ul li {
+  display: inline-block;
+  margin-right: 3px;
+}
+.social-btn ul .faceBooks {
+  width: 101px;
+}
+.social-btn ul .btn-tw {
+  width: 94px;
+}
+.social-btn ul li:last-child img {
+  vertical-align: baseline;
+  width: 20px;
+  height: 20px;
+}
+
+#header {
+  background: white url(../shop/image/kigokochi/hd_line_x.gif) repeat-x 0 42px;
+  height: 96px;
+  margin-bottom: 80px;
+  padding: 0;
+  z-index: 9999;
+  position: fixed;
+}
+#header #header_wrap {
+  position: relative;
+  width: 960px;
+  height: 96px;
+  margin: 0 auto;
+  text-align: center;
+  background: white url(../shop/image/kigokochi/hd_line_x.gif) repeat-x 0px 42px;
+}
+#header #header_wrap #header_logo {
+  background-image: url(../shop/image/kigokochi/pc_logo.gif);
+  background-repeat: no-repeat;
+  width: 244px;
+  height: 23px;
+  text-indent: -9999px;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+#header #header_wrap #header_r {
+  width: 960px;
+  margin: 0 auto 0;
+  position: relative;
+  display: block;
+  float: none;
+  padding: 0;
+  height:43px !important
+}
+#header #header_wrap #header_r #header_search {
+  position: absolute;
+  top: 140%;
+  right: 0;
+  width: 250px;
+  border-radius: 0;
+  float: none;
+}
+#header #header_wrap #header_r #header_search input {
+  border: 1px solid #000;
+  display: block;
+  float: left;
+  width: 172px;
+  height: 25px;
+  border-radius: 0;
+}
+#header #header_wrap #header_r #header_search a {
+  border: 1px solid #000;
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 2px 10px 2px 25px;
+  background: black url(../shop/image/kigokochi/search_icon.png) no-repeat 5px center;
+  text-decoration: none;
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  margin: 0;
+}
+#header #header_wrap .header_lists .header_list_01 {
+  float: right;
+  width: 148px;
+  margin-right: 200px;
+  background: url(../shop/image/kigokochi/hd_line_y.gif) no-repeat left;
+  margin-left: 0;
+}
+#header #header_wrap .header_lists .header_list_01 li {
+  line-height: normal;
+  padding: 0;
+}
+#header #header_wrap .header_lists .header_list_01 a {
+  background: url(../shop/image/kigokochi/member_icon.png) no-repeat 11% center;
+  display: block;
+  padding: 15px 0 10px 27px;
+}
+#header #header_wrap .header_lists .header_list_01 a:hover {
+  text-decoration: none;
+}
+#header #header_wrap .header_lists .islogin {
+  margin-right: 200px !important;
+}
+#header #header_wrap .header_lists .header_list_02 {
+  float: right;
+  margin-right: 0;
+}
+#header #header_wrap .header_lists .header_list_02 li {
+  background: url(../shop/image/kigokochi/hd_line_y.gif) repeat-y left top;
+  float: left;
+  display: block !important;
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+#header #header_wrap .header_lists .header_list_02 li a {
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 15px 10px 45px;
+  width: auto;
+  color: #000;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+#header #header_wrap .header_lists .header_list_02 #header_login a {
+  background: url(../shop/image/kigokochi/login_icon.png) no-repeat 14% center;
+}
+#header #header_wrap .header_lists .header_list_02 #header_logout a {
+  background: url(../shop/image/kigokochi/logout_icon.png) no-repeat 14% center;
+}
+#header #header_wrap .header_lists .header_list_02 #header_home a {
+  background: url(../shop/image/kigokochi/home_icon.png) no-repeat 14% center;
+}
+#header #header_wrap .header_lists .header_list_02 #header_mypage a {
+  background: url(../shop/image/kigokochi/mypage_icon.png) no-repeat 13% center;
+  padding: 12px 15px 10px 45px;
+}
+#header #header_wrap .header_list_03 {
+  margin: -29px 0 0;
+  float: none;
+  padding: 0;
+}
+#header #header_wrap .header_list_03 li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+#header #header_wrap .header_list_03 li a {
+  background: url(../shop/image/kigokochi/list03_icon.png) no-repeat left;
+  padding-left: 15px;
+  text-decoration: underline;
+  line-height: 20px;
+}
+#header #header_wrap .header_list_03 li:first-child {
+  margin-right: 30px;
+}
+#header #header_wrap .header_cart {
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../shop/image/kigokochi/hd_line_y.gif) no-repeat left;
+}
+#header #header_wrap .header_cart a {
+  background: url(../shop/image/kigokochi/cart_icon.png) no-repeat 7% center;
+  display: block;
+  padding: 13px 0 8px 45px;
+  background-color: #000;
+  color: #fff;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+}
+
+#guideWrapper {
+  color: #696969;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  background-color: #f3f3f3;
+  clear: both;
+}
+#guideWrapper .guideTop {
+  padding: 20px 0;
+}
+#guideWrapper .guideTop .guideTopInner {
+  width: 960px;
+  margin: 0 auto;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail {
+  width: 295px;
+  float: left;
+  margin-left: 37px;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail p {
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail dl dt {
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail dl dd span {
+  font-weight: bold;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail dl dd img {
+  margin-bottom: 15px;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail:first-child {
+  margin-left: 0;
+}
+#guideWrapper .guideTop .guideTopInner .guideDetail:last-child p:first-child {
+  margin-bottom: 15px;
+}
+#guideWrapper .secure {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 6px;
+  width: 280px;
+}
+#guideWrapper .secure p {
+  font-size: 7px;
+  line-height: 13px !important;
+  text-align: left;
+  float: right;
+  width: 170px;
+  margin-left: 10px;
+  margin-bottom: 0 !important;
+}
+
+#footer02 {
+  background: #fff;
+  font-size:14px !important;
+}
+#footer02 #footer_wrap02 {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+#footer02 #footer_wrap02 .inner ul {
+  margin: 0 auto 15px;
+}
+#footer02 #footer_wrap02 .inner ul .norton {
+  display: none;
+}
+
+#container {
+  overflow: hidden;
+  min-width: 960px;
+}
+
+#top #contents_r {
+  display: block;
+  float: none;
+  width: 960px;
+  margin-right: 0;
+  font-size: 14px;
+}
+#top h2 {
+  margin-bottom: 10px;
+}
+#top #mainVisual {
+  position: relative;
+  text-align: center;
+}
+#top #mainVisual .flex-viewport {
+  overflow: visible !important;
+  height: 650px;
+  padding-bottom: 80px;
+}
+#top #mainVisual .slides {
+  position: absolute;
+}
+#top #mainVisual ul li {
+  float: left;
+}
+#top #mainVisual .flex-direction-nav img {
+  width: 13px;
+  height: auto;
+}
+#top #mainVisual .flex-direction-nav .flex-prev,
+#top #mainVisual .flex-direction-nav .flex-next {
+  width: auto;
+  top: auto;
+  bottom: 30px;
+}
+#top #mainVisual .flex-direction-nav .flex-prev {
+  left: 375px;
+}
+#top #mainVisual .flex-direction-nav .flex-next {
+  right: 375px;
+}
+#top #mainVisual .flex-control-nav {
+  bottom: 36px;
+}
+#top #topContent .itemList {
+  margin-top: -96px;
+  padding-top: 96px;
+  margin-bottom: 50px;
+}
+#top #topContent .itemList ul {
+  margin-left: -12px;
+}
+#top #topContent .itemList ul li {
+  width: 231px;
+  float: left;
+  margin-left: 12px;
+  margin-bottom: 20px;
+}
+#top #topContent .itemList ul li .topImg {
+  margin-bottom: 10px;
+}
+#top #topContent .itemList ul li .topImg img {
+  border: 1px solid #eeeeee;
+}
+#top #topContent .itemList ul li p {
+  margin-bottom: 0;
+}
+#top #topContent .itemList ul li p span {
+  font-weight: bold;
+}
+#top #topContent .checkItem {
+  /*
+        ul:last-child{
+          float: right;
+          width: 572px;
+        }
+  */
+}
+#top #topContent .checkItem ul {
+  float: left;
+}
+#top #topContent .checkItem ul li {
+  width: 184px;
+  margin-left: 10px;
+}
+#top #topContent .checkItem ul li .rankIcon {
+  margin-bottom: 10px;
+}
+#top #topContent .introduction .introL {
+  float: left;
+  width: 634px;
+}
+#top #topContent .introduction .introR {
+  float: right;
+  width: 312px;
+}
+#top #topContent .introduction .introR ul li {
+  margin-bottom: 10px;
+}
+#top .facebookArea {
+  text-align: left;
+  padding: 0;
+  width: 500px;
+  float: left;
+}
+#top .bannerList {
+  float: right;
+}
+#top .bannerList ul li {
+  margin-bottom: 10px;
+}
+#top .returnTop {
+  clear: both;
+  text-align: right;
+  margin: 60px 0 30px;
+}
+#top .returnTop a img {
+  border: medium none;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.flex-direction-nav a {
+  height: auto;
+}
+.flex-direction-nav a.flex-next:before {
+  content: '';
+}
+
+.flex-direction-nav a:before {
+  content: '';
+}
+
+.contents_left {
+  width: 540px;
+  margin-right: 40px;
+  float: left;
+}
+.contents_left .detailTop {
+  margin-bottom: 50px;
+}
+.contents_left .detailTop .topItemL {
+  float: left;
+  width: 540px;
+}
+.contents_left .detailTop .topItemL .slider {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contents_left .detailTop .topItemL .slider .sliderInner {
+  width: 540px;
+  height: 481px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.contents_left .detailTop .topItemL .slider .sliderInner ul {
+  width: 2000%;
+}
+.contents_left .detailTop .topItemL .slider .sliderInner ul li {
+  float: left;
+  display: none;
+}
+.contents_left .detailTop .topItemL .slider .sliderInner ul li p {
+  padding: 5px 0;
+}
+.contents_left .detailTop .topItemL .slider .sliderCarousel .slides li {
+  float: left !important;
+  display: none;
+}
+.contents_left .detailTop .topItemL .slider .flex-prev {
+  position: absolute;
+  top: 215px;
+  left: 0px;
+  cursor: pointer;
+}
+.contents_left .detailTop .topItemL .slider .flex-next {
+  position: absolute;
+  top: 215px;
+  right: 0px;
+  cursor: pointer;
+}
+.contents_left .detailTop .topItemL .flex-control-nav {
+  position: relative;
+  margin: 0 0 60px -10px;
+}
+.contents_left .detailTop .topItemL .flex-control-nav li {
+  float: left;
+  margin: 0 0 10px 10px;
+  cursor: pointer;
+  width: auto;
+}
+.contents_left .detailTop .topItemL .flex-control-nav li img {
+  width: auto;
+}
+.contents_left .checkItem {
+  margin-bottom: 50px;
+}
+.contents_left .checkItem .checkList {
+  position: relative;
+}
+.contents_left .checkItem .checkList ul {
+  width: 790px;
+  margin: 0 auto;
+}
+.contents_left .checkItem .checkList ul li {
+  float: left;
+  width: 150px;
+  margin-left: 10px;
+}
+.contents_left .checkItem .checkList ul li .checkImg {
+  margin-bottom: 10px;
+}
+.contents_left .checkItem .checkList ul li p span {
+  font-weight: bold;
+}
+.contents_left .checkItem .checkList ul li:first-child {
+  margin-left: 0;
+}
+.contents_left .checkItem .checkList .checkArrowL {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  cursor: pointer;
+}
+.contents_left .checkItem .checkList .checkArrowR {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  cursor: pointer;
+}
+
+.contents_right {
+  width: 380px;
+  float: right;
+}
+.contents_right .topItemR {
+  float: right;
+}
+.contents_right .topItemR h2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+.contents_right .topItemR .price {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.contents_right .topItemR .note {
+  margin-left: 0.5em;
+  font-size: 12px;
+}
+.contents_right .topItemR ul {
+  background: url(../goods/image/kigokochi/detail_line.gif) no-repeat center bottom;
+  padding-bottom: 10px;
+}
+.contents_right .topItemR ul li {
+  float: left;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.contents_right .topItemR ul li.active {
+  border: 1px solid #000;
+}
+.contents_right .topItemR ul li p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.itemDetails {
+  margin-bottom: 70px;
+  width: 540px;
+  float: left;
+}
+.itemDetails h2 {
+  margin-bottom: 30px;
+}
+.itemDetails dl, .itemDetails dt, .itemDetails dd, .itemDetails p {
+  line-height: 1.6;
+}
+.itemDetails .detailBox {
+  margin-bottom: 30px;
+}
+.itemDetails .detailBox .detailsImg {
+  margin-bottom: 20px;
+}
+.itemDetails .detailBox .detailsTxt .detailsInfo {
+  margin: 10px 0 30px;
+}
+.itemDetails .detailBox .detailsTxt .detailsInfo dl {
+  padding: 2px 5px;
+  margin: 5px 0;
+}
+.itemDetails .detailBox .detailsTxt .detailsInfo dl dt {
+  float: left;
+}
+.itemDetails .detailBox .detailsTxt .detailsInfo dl dd {
+  margin-left: 60px;
+}
+.itemDetails .detailBox .detailsTxt .detailsInfo .bgGray {
+  background-color: #f2f2f2;
+}
+.itemDetails .detailBox .detailsTxt .notes dt {
+  float: left;
+}
+.itemDetails .detailBox .detailsTxt .notes dd {
+  margin-left: 0px;
+}
+/*0602*/
+.detailsInfo dl dt {
+	padding:3px;
+	width:100px;
+	margin-right:10px;
+	background-color:#d3e6f8;
+}
+
+.add_det{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	margin:20px 0 10px 5px;
+	font-size:18px;
+	padding-left:5px;
+  border-left: 10px solid #d3e6f8;
+  border-bottom: 1px dashed #d3e6f8; /* 下ボーダーを、1px幅の破線、線色#CC3366に */	
+}
+
+.contents_bottom {
+  clear: both;
+}
+.contents_bottom .bannerList ul li {
+  float: left;
+  margin-left: 12px;
+}
+.contents_bottom .bannerList ul li:first-child {
+  margin-left: 0;
+}
+
+.returnTop {
+  text-align: right;
+  margin: 50px 0 30px;
+}
+.returnTop a {
+  color: #000;
+  text-decoration: underline;
+}
+.returnTop img {
+  vertical-align: middle;
+  /*    padding-right: 15px;*/
+}
+
+.l_con_list_03 {
+  margin-bottom: 1em;
+}
+
+.colorType {
+  padding-top: 30px;
+  background: url(../goods/image/kigokochi/detail_line.gif) no-repeat center bottom;
+  clear: both;
+}
+.colorType dl dt {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+.colorType dl dt img {
+  width: 80px;
+  height: 80px;
+}
+.colorType dl dd {
+  float: left;
+  width: 290px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.colorType dl dd p {
+  float: left;
+  width: 130px;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+.colorType dl dd .btn-cart {
+  background: black url(../shop/image/kigokochi/cart_icon.png) no-repeat 7% center;
+  border: none;
+  color: #fff;
+  padding: 15px 20px 15px 45px;
+  display: block;
+  float: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+.colorType dl dd span {
+  color: #e45959;
+}
+.colorType dl dd .noStock {
+  float: left;
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+.settleBox {
+  margin: 30px 0;
+}
+.settleBox dl dt {
+  margin-bottom: 5px;
+}
+.settleBox dl dd {
+  float: left;
+  background-color: #e45959;
+  display: block;
+  padding: 3px 20px;
+  color: #fff;
+  margin-left: 5px;
+}
+.settleBox dl .payment {
+  margin-left: 0;
+  background-color: #5da643;
+  padding: 3px 27px;
+}
+.settleBox dl dd:last-child {
+  background-color: #3954b5;
+  padding: 3px 27px;
+}
+
+.contactBtn a {
+  display: block;
+  font-weight: bold;
+  padding: 15px 0px 15px 100px;
+  color: #444444;
+  text-decoration: none;
+  background: #f2f2f2 url(../shop/image/kigokochi/contact_icon.gif) no-repeat 60px center;
+  background-size: 7%;
+}
+
+.con_box h2.kigokochi-related {
+  background: url(../shop/image/kigokochi/related_item_ttl.gif) no-repeat;
+  text-indent: -9999px;
+  margin: 0 0 1em;
+  padding: 0 0 5px;
+}
+
+@media (max-width: 640px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .sp_menu_only {
+    display: block !important;
+  }
+
+  .header_cart {
+    display: none !important;
+  }
+
+  body {
+    min-width: 100%;
+    font-size: 12px;
+    overflow-x: hidden;
+  }
+
+div.i_sec span img {
+ width: auto;
+ }
+ 
+ #mainVisual img ,.bannerList img ,.topItemR img ,.itemDetails img {
+    width: 100%;
+  }
+
+  .img_box img {
+    width: 100% !important;
+    border: 1px solid #eee;
+  }
+
+  #container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #contents {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    padding-top: 14em;
+  }
+
+  .r_con_box_03 {
+    border-radius: 0 !important;
+    box-shadow: 0 !important;
+  }
+
+  .bannerList ul {
+    width: 94%;
+    margin: 0 3%;
+  }
+  .bannerList ul li {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-bottom: 3%;
+  }
+
+  .returnTopSp {
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  .returnTopSp a {
+    background-color: #f2f2f2;
+    display: block;
+    padding: 5% 0;
+  }
+  .returnTopSp img {
+    width: 5%;
+  }
+
+  .l_con_list_03 {
+    margin-left: 0;
+  }
+  .l_con_list_03 span {
+    margin-top: 1%;
+    display: inline-block;
+    text-align: center;
+  }
+  .l_con_list_03 span img {
+    float: left;
+    width: auto;
+    margin: 0 2px;
+  }
+  .l_con_list_03 span h4 {
+    clear: both;
+    margin-top: 4%;
+  }
+  .l_con_list_03 span .error table {
+    margin: 0 auto;
+  }
+  .l_con_list_03 span .error table img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #header {
+    height: auto !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+    background: #000;
+  }
+  #header .sp_login_menu, #header .sp_member {
+    display: none !important;
+  }
+  #header .header_r_color {
+    padding-top: 0;
+    background: #fff;
+    padding-bottom: 0;
+  }
+  #header .sp_nav {
+    position: absolute;
+    /*		  top: 45px;*/
+    top: 100%;
+    left: 0px;
+    z-index: 9999;
+    width: 200px;
+    border-left: 1px solid #eee;
+  }
+  #header .sp_top_menu {
+    position: static;
+    float: left;
+    width: 33%;
+    height: 49px;
+    margin-right: 0;
+    padding-right: 0.5%;
+    background: #fff;
+  }
+  #header .sp_top_menu a {
+    background: url("../shop/image/kigokochi/sp_hd_nav01.gif") no-repeat 0 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background-size: 100% !important;
+  }
+  #header .sp_top_home {
+    position: static;
+    float: left;
+    width: 33%;
+    height: 49px;
+    margin-right: 0;
+    padding-right: 0.5%;
+    background: #fff;
+  }
+  #header .sp_top_home a {
+    background: url("../shop/image/kigokochi/sp_hd_nav02.gif") no-repeat 0 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background-size: 100%;
+  }
+  #header .sp_header_cart {
+    position: static;
+    float: left;
+    width: 33%;
+    height: 49px;
+  }
+  #header .sp_header_cart a {
+    background: url("../shop/image/kigokochi/sp_hd_nav03.gif") no-repeat 0 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background-size: 100%;
+    border-radius: 0 !important;
+  }
+  #header #header_wrap {
+    position: absolute;
+    top: 43px;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center;
+  }
+  #header #header_wrap #header_logo {
+    background-image: url(../shop/image/kigokochi/sp_logo.gif);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center center;
+    height: 56px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    background-size: 100%;
+  }
+  #header #header_wrap #header_r {
+    width: 100%;
+    display: block;
+    float: none;
+    padding: 0;
+    position: static;
+  }
+  #header #header_wrap #header_r #header_search {
+    position: absolute;
+    width: 94% !important;
+    padding: 0 3%;
+    top: 50px;
+    padding-bottom: 5%;
+    background: white url(../shop/image/kigokochi/hd_line_x.gif) no-repeat bottom;
+  }
+  #header #header_wrap #header_r #header_search .box_01 {
+    float: none !important;
+  }
+  #header #header_wrap #header_r #header_search .box_02 {
+    width: 11%;
+  }
+  #header #header_wrap #header_r #header_search input {
+    border: 1px solid #000;
+    display: block;
+    float: left;
+    width: 88% !important;
+    height: auto !important;
+    height: 30px !important;
+    line-height: 1;
+    padding: 0 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #header #header_wrap #header_r #header_search a {
+    border: 1px solid #000;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 0 22%;
+    background: black url(../shop/image/kigokochi/sp_search_icon.png) no-repeat center;
+    background-size: 60%;
+    text-decoration: none;
+    font-size: 14px;
+    width: 51%;
+    height: 30px;
+    text-indent: 0;
+    margin: 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  #top #header_wrap {
+    top: 1.7%;
+  }
+  #top #header_wrap #header_logo {
+    margin-top: 1.7%;
+  }
+  #top #contents_r {
+    width: 100%;
+  }
+  #top h2 {
+    margin-bottom: 3% !important;
+  }
+  #top #mainVisual {
+    width: 100%;
+    overflow: hidden;
+  }
+  #top #mainVisual ul {
+    width: 2000%;
+    margin-left: -200% !important;
+  }
+  #top #mainVisual ul li {
+    margin: 0 !important;
+    width: 5%;
+  }
+  #top .sliderSwich {
+    margin: 3% auto 5%;
+  }
+  #top #topContent .itemList {
+    margin-bottom: 0% !important;
+  }
+  #top #topContent .itemList ul {
+    margin: 0 3% !important;
+  }
+  #top #topContent .itemList ul li {
+    width: 48%;
+    margin: 0 1% 7% !important;
+  }
+  #top #topContent .itemList ul li p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  #top #topContent .itemList ul li .topImg {
+    margin-bottom: 3% !important;
+  }
+  #top #topContent .itemList ul li .topImg img {
+    border: 1px solid #eeeeee;
+  }
+  #top #topContent .checkItem ul {
+    float: none !important;
+    width: 94% !important;
+  }
+  #top #topContent .checkItem ul li {
+    width: 48%;
+  }
+  #top #topContent .checkItem ul li .rankIcon {
+    width: 20%;
+  }
+  #top #topContent .checkItem ul li.heightLine-rank2 {
+    width: 31%;
+  }
+  #top #topContent .introduction .introL {
+    float: none !important;
+    width: 100% !important;
+  }
+  #top #topContent .introduction .introR {
+    float: none !important;
+    width: 100% !important;
+  }
+  #top #topContent .introduction .introR ul li {
+    margin-bottom: 10px;
+  }
+  #top .con_box {
+    margin-bottom: 3%;
+  }
+  #top .facebookArea {
+    text-align: center !important;
+    float: none !important;
+    margin-bottom: 5%;
+    border: none !important;
+    width: auto !important;
+  }
+  #top .bannerList {
+    float: none !important;
+  }
+  #top .bannerList ul li {
+    margin-bottom: 10px;
+  }
+
+  .contents_left {
+    float: none;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .contents_left .detailTop {
+    margin-bottom: 0 !important;
+  }
+  .contents_left .detailTop .topItemL {
+    float: none;
+    width: 100%;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderInner {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderInner ul li {
+    width: 5%;
+    display: none;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderInner ul li img {
+    width: 86%;
+  }
+  .contents_left .detailTop .topItemL .slider .flex-prev {
+    width: 6%;
+    top: 38%;
+    left: 0%;
+  }
+  .contents_left .detailTop .topItemL .slider .flex-next {
+    width: 6%;
+    top: 38%;
+    right: 0%;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderCarousel {
+    width: 86%;
+    margin: 0 auto;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderCarousel .flex-prev {
+    width: 6%;
+    top: 93%;
+    left: 0%;
+  }
+  .contents_left .detailTop .topItemL .slider .sliderCarousel .flex-next {
+    width: 6%;
+    top: 93%;
+    right: 0%;
+  }
+  .contents_left .detailTop .topItemL .flex-control-nav {
+    position: relative;
+    margin-bottom: 10% !important;
+  }
+  .contents_left .detailTop .topItemL .flex-control-nav ul {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contents_left .detailTop .topItemL .flex-control-nav ul li {
+    width: 22%;
+  }
+
+  .contents_right {
+    width: 100% !important;
+    float: none !important;
+  }
+  .contents_right .topItemR {
+    float: none !important;
+  }
+  .contents_right .topItemR h2 {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0 !important;
+    margin-top: 2%;
+    font-weight: normal;
+  }
+  .contents_right .topItemR .price {
+    font-size: 16px !important;
+    margin-bottom: 5%;
+  }
+  .contents_right .topItemR ul {
+    background: none !important;
+    margin-top: 10px;
+  }
+  .contents_right .topItemR ul li {
+    width: 24%;
+  }
+
+  .itemDetails {
+    margin-bottom: 0 !important;
+    width: 100%;
+    float: none;
+  }
+  .itemDetails h2 {
+    margin-bottom: 5% !important;
+  }
+  .itemDetails dl, .itemDetails dt, .itemDetails dd, .itemDetails p {
+    line-height: 1.6;
+  }
+  .itemDetails .detailBox .detailsTxt {
+    text-align: left;
+  }
+  .itemDetails .detailBox .detailsTxt .detailsInfo dl dd {
+    margin-left: 14% !important;
+  }
+
+  .con_box {
+    position: relative;
+  }
+  .con_box .flex-viewport {
+    width: 82%;
+    margin: 0 9%;
+  }
+  .con_box .con_list li {
+    width: 80px;
+  }
+  .con_box .con_list li h3 {
+    font-size: 12px;
+  }
+  .con_box .flex-direction-nav li a {
+    width: 6%;
+    margin-top: 4%;
+  }
+
+  .acoBtn {
+    background-color: #f2f2f2;
+    padding: 5% 0 5% 5%;
+    text-align: left;
+    border: 1px solid #cccccc;
+    position: relative;
+  }
+  .acoBtn span {
+    position: absolute;
+    right: 5%;
+    width: 8%;
+    top: 15%;
+    border-left: 1px solid #ccc;
+    padding: 4% 0 4% 5.5%;
+  }
+
+  .acoInner {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .colorType {
+    padding-top: 0 !important;
+    background: none !important;
+  }
+  .colorType dl dd {
+    float: none !important;
+    width: 100% !important;
+    border-bottom: 1px solid #ccc;
+    padding: 2% 0;
+    margin: 0 !important;
+  }
+  .colorType dl dd .btn-cart {
+    background: black url(../shop/image/kigokochi/cart_icon.png) no-repeat center left 7%;
+    border: none;
+    color: #fff;
+    padding: 15px 20px 15px 45px;
+    margin-bottom: 0 !important;
+    float: right;
+    margin-right: 2%;
+    display: block;
+  }
+  .colorType dl dd span {
+    color: #e45959;
+  }
+  .colorType dl dd .noStock {
+    margin-bottom: 0 !important;
+    font-size: 14px;
+    float: right;
+    margin-right: 2%;
+  }
+  .colorType dl dd:last-child {
+    border-bottom: none;
+  }
+
+  .settleBox dl {
+    margin: 0 10%;
+  }
+  .settleBox dl dd {
+    padding: 3px 0 !important;
+    width: 31%;
+  }
+  .settleBox dl .payment {
+    padding: 3px 0 !important;
+  }
+  .settleBox dl dd:last-child {
+    padding: 3px 0 !important;
+  }
+
+  .contactBtn {
+    margin-bottom: 2em;
+  }
+  .contactBtn a {
+    padding: 5% 0 5% 11% !important;
+    background: #f2f2f2 url(../shop/image/kigokochi/contact_icon.gif) no-repeat 18% center;
+    background-size: 7%;
+  }
+
+  .social-btn {
+    margin-bottom: 7%;
+  }
+  .social-btn ul li {
+    overflow: hidden;
+  }
+
+  .con_box .con_list_five {
+    overflow: hidden;
+    width: 86%;
+    margin: 0 7%;
+  }
+  .con_box .con_list_five .heightLine-new01 {
+    width: 31% !important;
+  }
+  .con_box .con_list_five .heightLine-new01 .box_01 {
+    height: auto !important;
+  }
+  .con_box .con_list_five .heightLine-new01 .box_01 .box_02 {
+    margin: 0 !important;
+  }
+
+  .con_box h2.kigokochi-related {
+    background: url(../shop/image/kigokochi/sp_related_item_ttl.gif) no-repeat center;
+    padding: 0 0 40px;
+    background-size: 100%;
+  }
+
+  #footer02 #footer_wrap02 {
+    padding-top: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    background-color: #fff !important;
+  }
+  #footer02 #footer_wrap02 .member_signup {
+    display: none !important;
+  }
+  #footer02 #footer_wrap02 .inner {
+    display: none;
+  }
+  #footer02 #footer03 #footer_wrap03 {
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    width: 100% !important;
+  }
+  #footer02 #footer03 #footer_wrap03 ul li {
+    border-bottom: 2px solid #f2f2f2 !important;
+  }
+  #footer02 #footer03 #footer_wrap03 ul li a {
+    background: url("../shop/image/kigokochi/sp_footer_icon.png") no-repeat scroll 97% center white;
+    background-size: 6px 10px;
+    color: #444444;
+    font-weight: normal;
+  }
+  #footer02 .sp_secure {
+    background-color: #fff !important;
+  }
+  #footer02 .sp_secure img {
+    width: auto;
+  }
+}
+.devicePC .sliderCarousel .slides {
+  width: auto !important;
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.devicePC .sliderCarousel .slides li {
+  width: 90px !important;
+  margin-bottom: 12px;
+}
+
+.devicePC .sliderCarousel .slides li img {
+  border: 1px solid #eaeaea;
+}
+
+.devicePC .sliderCarousel .slides .flex-active-slide img {
+  border: 1px solid #000;
+}
+
+.devicePC .sliderCarousel .flex-direction-nav {
+  display: none;
+}
+
+.devicePC .slideSection .sliderInner {
+  margin-bottom: 20px !important;
+}
+
+.devicePC .flex-next,
+.devicePC .flex-prev {
+  opacity: 1 !important;
+}
+
+.devicePC .con_list.slides {
+  width: auto !important;
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+  -webkit-transform: translate3d(0px, 0px, 0px) !important;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.devicePC .con_list li {
+  width: 183px !important;
+  margin-right: 10px;
+}
+
+.devicePC .con_list li h3,
+.devicePC .con_list li p {
+  font-size: 12px;
+}
+
+.devicePC .con_list li:nth-child(5) {
+  margin-right: 0;
+}
+
+.devicePC .con_list li img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eeeeee;
+}
+
+.devicePC .con_list li:nth-child(6) {
+  display: none !important;
+}
+
+.deviceSP .con_box {
+  position: relative;
+}
+
+.deviceSP .con_list li h3,
+.deviceSP .con_list li p {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.deviceSP #header .sp_nav {
+  font-size: 100%;
+  width: 53%;
+}
+
+.deviceSP #header .sp_nav .sp_member,
+.deviceSP #header .sp_nav .sp_login_menu {
+  display: block !important;
+  position: static !important;
+  text-align: left !important;
+  background: #fff;
+}
+
+.deviceSP #header .sp_nav .sp_member a {
+  padding-left: 0;
+  width: 170px !important;
+  /*line-height: 46px !important;*/
+  margin: 0 !important;
+  display: block !important;
+  text-indent: -9999px;
+  background: url(../shop/image/kigokochi/sp_hd_member.gif) no-repeat left bottom;
+  background-size: 170px 46px;
+}
+
+.deviceSP #header .sp_nav .sp_member li,
+.deviceSP #header .sp_nav .sp_login_menu li {
+  /*background: url(../shop/image/kigokochi/sp_hd_line.gif) repeat-x left bottom;*/
+  background-color: #f2f2f2 !important;
+  background-size: 170px 3px;
+}
+
+.deviceSP #header .sp_nav .sp_login_menu {
+  display: block !important;
+  position: static !important;
+  text-align: left;
+}
+
+.deviceSP #header .sp_nav .sp_login_menu a {
+  padding-left: 0;
+  width: 100% !important;
+  background-size: 100%;
+  /*line-height: 46px !important;*/
+  margin: 0 !important;
+  display: block !important;
+  text-indent: -9999px;
+  background: url(../shop/image/kigokochi/sp_hd_login.gif) no-repeat center center;
+  background-size: 170px 46px;
+  border-radius: 0;
+}
+
+.deviceSP #header .sp_nav #header_kigokochi a {
+  padding-left: 0;
+  width: 100%;
+  line-height: 0px !important;
+  margin: 0 !important;
+  display: block !important;
+  text-indent: -9999px;
+  background: url(../shop/image/kigokochi/sp_hd_kigokochi.gif) no-repeat center center;
+  background-size: 100%;
+  border-radius: 0;
+}
+
+/* aタグ*/
+.deviceSP #header .sp_nav .logout_bt {
+  background: url(../shop/image/kigokochi/sp_hd_logout.gif) no-repeat left bottom !important;
+  line-height: 0px !important;
+  background-size: 100% !important;
+}
+
+.deviceSP #header .sp_nav .mypage_bt {
+  background: url(../shop/image/kigokochi/sp_hd_mypage.gif) no-repeat left bottom !important;
+  line-height: 0px !important;
+  background-size: 100% !important;
+}
+
+.devicePC .related_item .flex-direction-nav {
+  display: none;
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  #container {
+    width: 100% !important;
+    min-width: 100%;
+  }
+
+  #contents {
+    width: 100% !important;
+  }
+  #contents .r_con_box_03 {
+    width: 960px !important;
+  }
+
+  #header #header_wrap {
+    width: 100%;
+  }
+
+  #header #header_wrap #header_r {
+    width: 100%;
+  }
+
+  #top #contents_r {
+    width: 100%;
+  }
+
+  .header_cate {
+    float: none;
+    display: none;
+  }
+
+  #guideWrapper .guideTop .guideTopInner {
+    width: 100%;
+  }
+
+  .devicePC #top #mainVisual {
+    width: 100% !important;
+  }
+
+  #footer_wrap02 li a {
+    background: inherit;
+    color: inherit;
+    display: block;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding-left: inherit;
+    text-decoration: inherit;
+  }
+
+  .pc_only {
+    display: block !important;
+  }
+
+  .sp_only {
+    display: none !important;
+  }
+
+  #header #header_wrap .header_cart {
+    width: 150px;
+  }
+
+  #header #header_wrap .header_lists .header_list_01 {
+    margin-right: 150px;
+  }
+
+  #header #header_wrap .header_list_03 li:first-child {
+    margin-right: 10px;
+  }
+
+  .contents_left {
+    width: 56%;
+  }
+
+  #top .bannerList {
+    float: none;
+  }
+
+  #footer_wrap02 .inner ul {
+    display: inline;
+  }
+
+  .social-btn {
+    clear: both;
+  }
+
+  #footer_wrap02 li {
+    display: inline;
+    border: none;
+  }
+  #footer_wrap02 li a {
+    display: inline;
+  }
+  #footer_wrap02 #icon_04 + ul {
+    display: none;
+  }
+
+  #footer03 {
+    display: none;
+  }
+
+  #footer02 .member_signup {
+    display: none !important;
+  }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja"><!-- InstanceBegin template="/Templates/PC_tmp_shop_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- head -->
+<meta http-equiv="content-type" content="text/html; charset=Windows-31J">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta m:id="e_var_shop" content="">
+<meta m:id="e_var_headerComponent" content="">
+<meta m:id="e_var_testSite" content="">
+<meta m:id="e_var_member" content="">
+<meta m:id="description" name="description" content="データベースから値を取得し表示します">
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<link m:id="favicon" rel="shortcut icon" href="../../../contents/favicon/favicon.ico">
+<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
+<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="mall.html" />
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+<script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
+<title m:id="title">データベースから値を取得し表示します</title>
+<!--/ head -->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="head" -->
+<meta m:id="e_var_prefecture" content="" />
+<meta m:id="e_var_order" content="" />
+<meta m:id="e_var_shopSettle" content="" />
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<!-- InstanceBeginEditable name="body" -->
+<object class="xsp_obj" m:id="e_var_addressBookList"></object>
+<object class="xsp_obj" m:id="b_var_payment"></object>
+<object class="xsp_obj" m:id="b_var_destinations"></object>
+<object class="xsp_obj" m:id="b_var_destination"></object>
+<!-- InstanceEndEditable -->
+<!-- コンテナ -->
+<div id="container">
+<!-- ********** include:shop/header.jsp ********** -->
+<!-- ショップヘッダー -->
+<span m:id="l_equ_test_site_shop" class="testsite_time"><span m:id="b_wr_test_site_time_shop"></span></span>
+<a name="header"></a>
+<div id="header">
+	<span m:id="l_equ_hierarchy_3_shop">
+		<div id="logo"><span m:id="l_notEmp_shop_image_file_shop"><a m:id="e_link_logo_shop_shop" href="shop.html"><img m:id="i_img_logo_shop" src="../../../contents/shop/00000003/image/logo.jpg" alt="ショップ" border="0"></a></span></div>
+		<div id="header_link">
+			<div m:id="l_notPre_member_login_button_shop">
+				<div class="header_bt"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン"></a></div>
+			</div>
+			<div m:id="l_pre_member_logout_button_shop">
+				<div class="header_bt"><a m:id="e_link_logout_shop" href="mall.html" class="logout_bt" title="ログアウト"></a></div>
+			</div>
+			<div m:id="l_pre_member_mypage_button_shop">
+				<div class="header_bt"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"></a></div>
+			</div>
+			<div class="header_link_txt">
+				<div m:id="l_notPre_member_login_shop">
+					<ul>
+						<li><a m:id="e_link_memberAdd_shop" href="memberAgree.html">新規会員登録はこちらから</a></li>
+						<li><a m:id="e_link_reminder_shop" href="reminderPwdInput.html">パスワードを忘れた方</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</span>
+</div>
+<!--/ ショップヘッダー -->
+<!-- ヘッダーナビリンク(ショップのみ) -->
+<span m:id="l_equ_hierarchy_3_shop">
+		<!-- グローバルナビ -->
+		<div id="g_navi_line"></div>
+		<div id="g_navi">
+			<ul>
+				<li><a m:id="e_link_home" href="mall.html">HOME</a>&nbsp;&nbsp;｜</li>
+				<li><a m:id="static_link" href="../../../contents/guide/first.html">はじめての方へ</a>&nbsp;&nbsp;｜</li>
+				<li><a m:id="static_link" href="../../../contents/guide/faq.html">FAQ</a>&nbsp;&nbsp;｜</li>
+				<li><a m:id="static_link" href="../../../contents/guide/sitemap.html">サイトマップ</a></li>
+			</ul>
+		</div>
+		<!--/ グローバルナビ -->	
+</span>
+<!--/ ヘッダーナビリンク(ショップのみ) -->
+<!--/ ********** include:shop/header.jsp ********** -->
+
+ 
+<!-- パンくず・検索 -->
+<!--/ パンくず・検索 -->
+<!-- メインコンテンツ_外枠 -->
+<div id="contents_waku">
+  <!-- メインコンテンツ -->
+  <div id="contents_wide">
+  <!-- InstanceBeginEditable name="contents_wide" -->
+		<!-- PAGE:配送先住所入力-->
+			<div class="page_tit">配送先住所入力</div>
+			<div class="flow">
+				<ul>
+					<li><img m:id="static_img" src="../../../contents/shop/00000002/image/pan01_order_o.jpg" width="178" height="38" alt="お客様情報の入力" /></li>
+					<li><img m:id="static_img" src="../../../contents/shop/00000002/image/pan02_order.jpg" width="178" height="38" alt="決済情報の入力" /></li>
+					<li><img m:id="static_img" src="../../../contents/shop/00000002/image/pan03_order.jpg" width="176" height="38" alt="ご注文内容の確認" /></li>
+					<li><img m:id="static_img" src="../../../contents/shop/00000002/image/pan04_order.jpg" width="178" height="38" alt="ご注文完了" /></li>
+				</ul>
+			</div>
+			<div class="page_txt">
+				<p>配送先を入力してください。</p>
+			</div>
+			<div class="error" m:id="l_msgPre">
+				入力内容にエラーがあります。
+			</div>
+		
+			<div m:id="l_notEmp_destinations">
+				<div m:id="l_ite_destinations">
+					<div m:id="l_notEqu_index" class="destination_info" style="width:100%; margin:0px;">
+						<div class="formBox_tit">
+							<span class="destination_info_tit"><span m:id="address_id">1</span>件目の配送先</span>
+							<span class="destination_info_btn">
+								<a m:id="h_link_orderDeliveryModifyForm" href="#">修正</a>
+								&nbsp;
+								<a m:id="h_link_orderDeliveryRemoveForm" href="#">削除</a>
+							</span>
+						</div>
+						<div class="destination_info_txt">
+							<span m:id="dest_name_sei">山田</span>&nbsp;<span 
+								m:id="dest_name_mei">太郎</span>&nbsp;（<span 
+								m:id="dest_name_sei_kana">ヤマダ</span>&nbsp;<span 
+								m:id="dest_name_mei_kana">タロウ</span>） <span 
+								m:id="dest_office">株式会社山田</span><br/>
+							〒<span m:id="dest_post_code_string">000-0000</span> <span 
+								m:id="dest_area_name">神奈川県</span>&nbsp;<span 
+								m:id="dest_address1">横浜市保土ヶ谷区</span>&nbsp;<span 
+								m:id="dest_address2">神戸町１３４番地</span>&nbsp;<span 
+								m:id="dest_address3">横浜ビジネスパーク イーストタワー １４階</span><br/>
+							<span m:id="dest_tel_no">045-332-6655</span>
+						</div>
+					</div>
+					<div class="clear"></div>
+		   			<div m:id="dummy" class="destination_info" style="width:100%; margin:0px;">
+						<div class="formBox_tit">
+							<span class="destination_info_tit">2件目の配送先</span>
+							<span class="destination_info_btn">
+								<a href="orderDeliveryAddressInput.html">修正</a>
+								&nbsp;
+								<a href="orderDeliveryAddressInput.html">削除</a>
+							</span>
+						</div>
+						<div class="destination_info_txt">
+							配送先姓ダミー１&nbsp;配送先名ダミー１&nbsp;（配送先姓カナダミー１&nbsp;配送先名カナダミー１） 配送先会社名ダミー１<br/>
+						  〒000-0000 都道府県名ダミー１&nbsp;住所１ダミー１&nbsp;住所２ダミー１&nbsp;住所３ダミー１<br/>
+							090-0000-0000
+						</div>
+					</div>
+					<div m:id="dummy" class="clear"></div>
+		            <div m:id="dummy" class="destination_info" style="width:100%; margin:0px;">
+						<div class="formBox_tit">
+							<span class="destination_info_tit">3件目の配送先</span>
+							<span class="destination_info_btn">
+								<a href="orderDeliveryAddressInput.html">修正</a>
+								&nbsp;
+								<a href="orderDeliveryAddressInput.html">削除</a>
+							</span>
+						</div>
+						<div class="destination_info_txt">
+							配送先姓ダミー２&nbsp;配送先名ダミー２&nbsp;（配送先姓カナダミー２&nbsp;配送先名カナダミー２） 配送先会社名ダミー２<br/>
+						  〒000-0000 都道府県名ダミー２&nbsp;住所１ダミー２&nbsp;住所２ダミー２&nbsp;住所３ダミー２<br/>
+							090-0000-0000
+						</div>
+					</div>
+					<div m:id="dummy" class="clear"></div>
+				</div>
+				<form m:id="e_form_orderDeliveryModify" method="POST" action="#">
+					<input m:id="i_hid_key" type="hidden" name="key" value=""/>
+					<input m:id="i_hid_shop_no" type="hidden" name="_S" value=""/>
+					<input m:id="i_hid_order_hash_code" type="hidden" name="order_hash_code" value=""/>
+					<input type="hidden" name="editIndex" value=""/>
+				</form>
+				<form m:id="e_form_orderDeliveryRemove" method="POST" action="#">
+					<input m:id="i_hid_key" type="hidden" name="key" value=""/>
+					<input m:id="i_hid_shop_no" type="hidden" name="_S" value=""/>
+					<input m:id="i_hid_path" type="hidden" name="path" value="">
+					<input m:id="i_hid_order_hash_code" type="hidden" name="order_hash_code" value=""/>
+					<input type="hidden" name="editIndex" value=""/>
+				</form>
+				<div class="clear"></div>
+			</div>
+		
+			<form m:id="e_form_orderDeliveryInputPost" method="POST" action="orderDeliveryGoodsInput.html" name="orderDeliveryForm">
+				<input m:id="i_hid_key" type="hidden" name="key" value=""/>
+				<input m:id="h_hid_shop_no" type="hidden" name="_S" value=""/>
+				<input m:id="i_hid_order_hash_code" type="hidden" name="order_hash_code" value=""/>
+				<!-- 住所録 -->
+				<div m:id="l_notEmp_addressBookList">
+					<script type="text/javascript">
+						function doPagingAddrList() {
+						formOrder = document.orderDeliveryForm;
+						formOrder.action = "orderDeliveryInputAddressBook.do#ab";
+						formOrder.submit();
+						}
+					</script>
+					<input m:id="h_hid_page" type="hidden" name="${page}" value="" />
+					<div class="formBox_tit">住所録</div>
+					<div class="item_operate item_operate_deliver_attach">
+						<!-- paging indicator -->
+						<div class="item_operate_page">
+							<span><span m:id="paging_start"><a m:id="paging_href" href="orderDeliveryAddressInput.html">≪</a></span>&nbsp;&nbsp;</span>
+							<span><span m:id="paging_prev"><a m:id="paging_href" href="orderDeliveryAddressInput.html">前へ</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="paging_label"><span m:id="paging_link"><a m:id="paging_href" href="orderDeliveryAddressInput.html">1</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="dummy"><a href="orderDeliveryAddressInput.html">2</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="dummy"><a href="orderDeliveryAddressInput.html">3</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span><span m:id="paging_next"><a m:id="paging_href" href="orderDeliveryAddressInput.html">次へ</a></span>&nbsp;&nbsp;</span>
+							<span><span m:id="paging_end"><a m:id="paging_href" href="orderDeliveryAddressInput.html">≫</a></span></span>
+						</div>
+						<!-- /paging indicator -->
+					</div>
+					<div class="formBox">
+						<div m:id="l_ite_book">
+							<div class="form_area form_area_border">
+								<div class="address_select">
+									<span m:id="l_notEmp_book_group_name"><span 
+										m:id="m_wr_book_group_name">親戚</span>&nbsp;</span><a 
+										m:id="a_href_dst" href="#dst"><span 
+										m:id="book_name_sei">山田</span>&nbsp;<span
+										m:id="book_name_mei">太郎</span></a>&nbsp;（<span
+										m:id="book_name_sei_kana">ヤマダ</span>&nbsp;<span
+										m:id="book_name_mei_kana">タロウ</span>）&nbsp;<span
+										m:id="book_office">株式会社山田</span><br />
+									&nbsp;〒<span m:id="post_code">2400005</span>&nbsp;<span
+										m:id="book_area_name">神奈川県</span>&nbsp;<span
+										m:id="book_address1">横浜市保土ヶ谷区</span>&nbsp;<span
+										m:id="book_address2">神戸町１３４番地</span>&nbsp;<span 
+										m:id="book_address3">横浜ビジネスパーク イーストタワー １４階</span><br />
+									&nbsp;<span m:id="book_tel_no">090-0000-0000</span>
+								</div>
+							</div>
+							<div m:id="dummy" class="form_area form_area_border"">
+								<div class="address_select">
+									グループ名ダミー１&nbsp;<a href="#dst">&nbsp;</a>&nbsp;（住所録姓カナダミー１&nbsp;住所録名カナダミー１）&nbsp;住所録名カナダミー１<br />
+									&nbsp;〒0000000&nbsp;都道府県名ダミー１&nbsp;住所１ダミー１&nbsp;住所２ダミー１&nbsp;住所３ダミー１<br />
+									&nbsp;090-0000-0000
+								</div>
+							</div>
+							<div m:id="dummy" class="form_area form_area_border"">
+								<div class="address_select">
+									グループ名ダミー２&nbsp;<a href="#dst">&nbsp;</a>&nbsp;（住所録姓カナダミー２&nbsp;住所録名カナダミー２）&nbsp;住所録名カナダミー２<br />
+									&nbsp;〒0000000&nbsp;都道府県名ダミー２&nbsp;住所１ダミー２&nbsp;住所２ダミー２&nbsp;住所３ダミー２<br />
+									&nbsp;090-0000-0000
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- paging indicator -->
+					<div class="item_operate">
+						<div class="item_operate_page">
+							<span><span m:id="paging_start"><a m:id="paging_href" href="orderDeliveryAddressInput.html">≪</a></span>&nbsp;&nbsp;</span>
+							<span><span m:id="paging_prev"><a m:id="paging_href" href="orderDeliveryAddressInput.html">前へ</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="paging_label"><span m:id="paging_link"><a m:id="paging_href" href="orderDeliveryAddressInput.html">1</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="dummy"><a href="orderDeliveryAddressInput.html">2</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span m:id="dummy"><a href="orderDeliveryAddressInput.html">3</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<span><span m:id="paging_next"><a m:id="paging_href" href="orderDeliveryAddressInput.html">次へ</a></span>&nbsp;&nbsp;</span>
+							<span><span m:id="paging_end"><a m:id="paging_href" href="orderDeliveryAddressInput.html">≫</a></span></span>
+						</div>
+					</div>
+					<!-- /paging indicator -->
+				</div>
+				<!-- /住所録 -->
+				<!-- 配送先 -->
+				<div class="formBox_tit" id="dst">配送先情報</div>
+				<input m:id="h_hid_order_address_book_id" type="hidden" name="address_book_id" value="" />
+				<div class="formBox">
+					<div class="form_area form_area_border">
+						<div class="form_question">お名前&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							姓  <input m:id="h_txt_dst_name_sei" type="text" name="dst_name_sei" value="" class="in1" maxlength="25" />
+							名  <input m:id="h_txt_dst_name_mei" type="text" name="dst_name_mei" value="" class="in1" maxlength="25" />
+							<span m:id="l_msgPre_dst_name_sei">
+								<br /><span m:id="h_err_dst_name_sei" class="error">お名前（姓）入力エラーメッセージ</span>
+							</span>
+							<span m:id="l_msgPre_dst_name_mei">
+								<br /><span m:id="h_err_dst_name_mei" class="error">お名前（名）入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_name_2">鈴木 太郎 (全角)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">フリガナ&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							姓 <input m:id="h_txt_dst_name_sei_kana" type="text" name="dst_name_sei_kana" value="" class="in1" maxlength="50" />
+							名 <input m:id="h_txt_dst_name_mei_kana" type="text" name="dst_name_mei_kana" value="" class="in1" maxlength="50" />
+							<span m:id="l_msgPre_dst_name_sei_kana">
+								<br /><span m:id="h_err_dst_name_sei_kana" class="error">フリガナ（姓）入力エラーメッセージ</span>
+							</span>
+							<span m:id="l_msgPre_dst_name_mei_kana">
+								<br /><span m:id="h_err_dst_name_mei_kana"  class="error">フリガナ（名）入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_kana_2">スズキ タロウ (全角カナ)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">会社名</div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_office" type="text" name="dst_office" value="" class="in2" maxlength="90" />
+							<span m:id="l_msgPre_dst_office">
+								<br /><span m:id="h_err_dst_office" class="error">会社名入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_company">株式会社エルテックス</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">郵便番号&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_post_code" id="postCode" type="text" name="dst_post_code" value="" class="in1" maxlength="7" />
+							<a m:id="a_link_searchZip" href="postCode.html" onclick="return postCodeList(document.getElementById('postCode').value, 6 );"><img m:id="static_img" src="../../../contents/shop/00000002/image/bt_search_zip.gif" alt="住所検索" /></a>
+							<span m:id="l_msgPre_dst_post_code">
+								<br /><span m:id="h_err_dst_post_code" class="error">郵便番号入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_postcode">2400005 (半角数字)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">住所(都道府県)&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							<select m:id="h_sel_dst_area_code" name="dst_area_code" id="dst_area_code">
+								<option value="">▽ 選択してください</option>
+								<option m:id="h_opt_prefecture" value="">北海道</option>
+							</select>
+							<span m:id="l_msgPre_dst_area_code">
+								<br /><span class="error" m:id="h_err_dst_area_code">都道府県選択エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">&nbsp;</div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">住所(市区町村)&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_address1" type="text" name="dst_address1" value="" class="in3" id="dst_address1" maxlength="25" />
+							<span m:id="l_msgPre_dst_address1">
+								<br /><span class="error" m:id="h_err_dst_address1">住所(市区町村)入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_city">横浜市保土ヶ谷区 (全角)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">住所(番地など)&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_address2" type="text" name="dst_address2" value="" class="in3" id="dst_address2" maxlength="30"/>
+							<span m:id="l_msgPre_dst_address2">
+								<br /><span class="error" m:id="h_err_dst_address2">住所(番地など)入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_address">神戸町１３４番地&lt;br&gt;(全角)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">住所(建物名・部屋番号など)</div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_address3" type="text" name="dst_address3" value="" class="in3" maxlength="100"/>
+							<span m:id="l_msgPre_dst_address3">
+								<br /><span class="error" m:id="h_err_dst_address3">住所(建物名・部屋番号など)入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span 
+						m:id="sample_bldg">横浜ビジネスパーク イーストタワー １４階&lt;br&gt;(全角)</span></div>
+					</div>
+					<div class="form_area form_area_border">
+						<div class="form_question">連絡先電話番号&nbsp;<span class="required">(必須)</span></div>
+						<div class="form_answer">
+							<input m:id="h_txt_dst_tel_no1" type="text" name="dst_tel_no1" maxlength="5" value="" class="in1" />
+							&nbsp;-&nbsp;
+							<input m:id="h_txt_dst_tel_no2" type="text" name="dst_tel_no2" maxlength="4" value="" class="in1" />
+							&nbsp;-&nbsp;
+							<input m:id="h_txt_dst_tel_no3" type="text" name="dst_tel_no3" maxlength="4" value="" class="in1" />
+							<span m:id="l_msgPre_dst_tel_no">
+								<br /><span class="error" m:id="h_err_dst_tel_no">連絡先電話番号入力エラーメッセージ</span>
+							</span>
+						</div>
+						<div class="form_example">例：<span m:id="sample_tel_1">045-332-6655 (半角数字)</span></div>
+					</div>
+					<div m:id="l_notEmp_member">
+						<div class="form_area">
+							<div class="form_question">入力した住所を住所録に追加しますか？</div>
+							<div class="form_answer">
+								<input m:id="h_chk_dst_registerAddressBook" type="checkbox" name="dst_registerAddressBook" value="" style="border:0px; width:auto;"/>
+								（追加する場合はチェックしてください）
+								<span m:id="l_msgPre_dst_registerAddressBook">
+									<br /><span m:id="h_err_dst_registerAddressBook"></span>
+								</span>
+							</div>
+						</div>
+						<div class="form_example"></div>
+					</div>
+				</div>
+				<input m:id="i_hid_index" type="hidden" name="index" value="">
+			</form>
+			<!-- /配送先 -->
+			<div class="form_notice_tit">注意事項</div>
+			<div class="form_notice">
+				入力内容をお確かめの上、間違いがなければ「次へ進む」を押してください。
+			</div>
+			<div class="bt_waku">
+				<a m:id="h_link_orderBack" href="orderInput.html"><img m:id="static_img" src="../../../contents/shop/00000002/image/bt_back.jpg" width="151" height="34" alt="戻る" /></a>
+				<a href="" onclick="document.forms['orderDeliveryForm'].submit(); return false;"><img  m:id="static_img" src="../../../contents/shop/00000002/image/bt_next.jpg" width="151" height="34" alt="次へ進む" /></a>
+			</div>
+			
+			
+			<!-- InstanceEndEditable -->
+  
+        <!-- ページトップ -->
+        <div class="pagetop"><a href="#" onclick="return goPageTop();">このページのトップへ</a></div>
+        <!--/ ページトップ -->
+        
+  </div>
+  <!--/ メインコンテンツ -->
+
+</div>
+<!--/ メインコンテンツ_外枠 -->
+
+<!-- ********** include:shop/footer.jsp ********** -->
+<!-- フッター -->
+<div id="footer">
+	<div class="footer_link">  
+		<ul>
+		<li><a m:id="e_link_inquiry" href="inquiryInput_shop.html">お問合せ</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/protection.html">個人情報保護方針</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/notation.html">特定商取引に関するご案内</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/company.html">会社情報</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/agreement.html">利用規約</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/business.html">事業概要</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/recruit.html">リクルート</a>｜</li>
+		<li><a m:id="static_link" href="../../../contents/guide/sitemap.html">サイトマップ</a></li>
+		</ul>
+	</div>
+	<div class="footer_copy">Copyright (c) 2009-2010 ELTEX, Inc. All Rights Reserved.</div>
+</div>
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+<!--/ フッター -->
+<!--/ ********** include:shop/footer.jsp ********** -->
+</div>
+<!--/ コンテナ -->
+</body>
+<!-- InstanceEnd --></html>

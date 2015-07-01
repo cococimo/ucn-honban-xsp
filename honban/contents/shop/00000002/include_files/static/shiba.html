@@ -1,0 +1,440 @@
+
+
+<!--　ここから　-->
+<link href="contents/shop/00000003/css/contents_02.css" rel="stylesheet" type="text/css" media="all" />
+<div class="r_con_box_04">
+	<div class="r_con_box_04_in">
+	<h3 class="temp_tit_n02 temp_tit_n02_cor">愛犬しばちゃん　ご案内パンフレット予約フォーム</h3>
+	
+	<div class="wrap_shibamain">
+	<img m:id="static_img" src="contents/shop/00000003/common_sp/common_s_in/images/shiba_main.jpg" alt="" class="mainshiba">
+	<div class="shibamaintxt">事情があってペットが飼えない方にもペットと暮らす楽しさを味わって欲しい…
+	そんな想いから“愛犬しばちゃん”は
+	誕生しました。
+	あなたの家族の一員として幸せな時を運んでくれる、夢のペットです。<br>
+	<span>※デザイン、仕様、価格、発売時期等は変更される場合がありますのでご了承ください。</span></div>
+	</div>
+	<div class="sec_02 clearfix">
+	<div class="ad_navi clearfix">
+	<ul class="clearfix">
+	<span>
+	<li><div class="ad_navi_in ad_navi_t_on" id="step_input">お客様情報の入力</div></li>
+	<li><div class="ad_navi_in" id="step_confirm">確認</div></li>
+	<li class="last"><div class="ad_navi_in" id="step_thanks">登録完了</div></li>
+	</span>
+	</ul>
+	<p class="shibatxt">以下の項目を入力いただき、最後に「登録」ボタンをクリックしてください。</p>
+	<p class="shibatxt02">※<span class="imp">必須</span>マークの項目は入力必須項目です。必ず入力してください。<br>
+	※住所が変更になった場合、お手数ですが再度こちらの入力フォームよりご登録ください。</p>
+	</div>
+	</div>
+
+
+
+		<div class="sec_02 clearfix">
+		<!--<h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>-->
+		<form action="https://fofa.jp/ucan/ra.p/101" method="post">
+		
+		<!--<form action="" method="post">-->
+		<!--<input type="hidden" name="c_channel" value="Web経由" />-->
+		<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+		<tr>
+		<th>ご案内パンフレット送付<span class="imp">必須</span><br>
+		<span class="txtgray">発売時（11月末予定）にご案内パンフレットを希望しますか？</span></th>
+		<td class="bor_bottom">
+		<div class="input_area">
+		<input type="radio" name="c_DM" value="Eメールでの連絡を希望" /> Eメールでの連絡を希望<br />
+		<input type="radio" name="c_DM" value="郵送（ダイレクトメール）での連絡を希望" /> 郵送（ダイレクトメール）での連絡を希望<br />
+		<input type="radio" name="c_DM" value="どちらとも" /> どちらとも
+		</div>
+		<div id="dm_confirm"></div>
+		</td>
+		</tr>
+		<tr>
+		<th>メールアドレス<span class="imp">必須</span></th>
+		<td class="bor_bottom">
+		<div class="input_area"><input type="text" name="email" value="" class="in_w_02 pc_b_t_01" /></div>
+		<div id="email_confirm"></div></td>
+		</tr>
+		<tr>
+		<th>メールアドレス確認<span class="imp">必須</span></th>
+		<td class="bor_bottom">
+		<div class="input_area"><input type="text" name="email_confirm" value="" class="in_w_02 pc_b_t_01" /></div>
+		<div id="email2_confirm"></div></td>
+		</tr>
+		<tr>
+		<th>お名前（漢字）<span class="imp">必須</span></th>
+		<td class="bor_bottom"><div class="input_area">姓 <input type="text" name="c_name[0]" value="" class="in_w_01" />　名 <input type="text" name="c_name[1]" value="" class="in_w_01" /><span class="exp">例：山田 花子(全角)<span class="txtgray">姓名共に10文字以内</span></span>
+		</div>
+		<div id="name_confirm"></div></td>
+		</tr>
+		<tr>
+		<th>お名前（カナ）<span class="imp">必須</span></th>
+		<td class="bor_bottom"><div class="input_area">セイ <input type="text" name="c_name2[0]" value="" class="in_w_01" />　メイ <input type="text" name="c_name2[1]" value="" class="in_w_01" /><span class="exp">例：ヤマダ ハナコ(全角)<br>
+		<span class="txtgray">セイ、メイ共に15文字以内</span></span></div>
+		<div id="name2_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>郵便番号</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_post[0]" value="" class="in_w_04" /> - <input type="text" name="c_post[1]" value="" class="in_w_04" /></div>
+		<div id="post_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>都道府県</th>
+		<td class="bor_bottom"><div class="input_area"><select name="c_area1">
+		<option value="">-Select-</option>
+		<option value="北海道">北海道</option>
+		<option value="青森県">青森県</option>
+		<option value="岩手県">岩手県</option>
+		<option value="宮城県">宮城県</option>
+		<option value="秋田県">秋田県</option>
+		<option value="山形県">山形県</option>
+		<option value="福島県">福島県</option>
+		<option value="茨城県">茨城県</option>
+		<option value="栃木県">栃木県</option>
+		<option value="群馬県">群馬県</option>
+		<option value="埼玉県">埼玉県</option>
+		<option value="千葉県">千葉県</option>
+		<option value="東京都">東京都</option>
+		<option value="神奈川県">神奈川県</option>
+		<option value="新潟県">新潟県</option>
+		<option value="富山県">富山県</option>
+		<option value="石川県">石川県</option>
+		<option value="福井県">福井県</option>
+		<option value="山梨県">山梨県</option>
+		<option value="長野県">長野県</option>
+		<option value="岐阜県">岐阜県</option>
+		<option value="静岡県">静岡県</option>
+		<option value="愛知県">愛知県</option>
+		<option value="三重県">三重県</option>
+		<option value="滋賀県">滋賀県</option>
+		<option value="京都府">京都府</option>
+		<option value="大阪府">大阪府</option>
+		<option value="兵庫県">兵庫県</option>
+		<option value="奈良県">奈良県</option>
+		<option value="和歌山県">和歌山県</option>
+		<option value="鳥取県">鳥取県</option>
+		<option value="島根県">島根県</option>
+		<option value="岡山県">岡山県</option>
+		<option value="広島県">広島県</option>
+		<option value="山口県">山口県</option>
+		<option value="徳島県">徳島県</option>
+		<option value="香川県">香川県</option>
+		<option value="愛媛県">愛媛県</option>
+		<option value="高知県">高知県</option>
+		<option value="福岡県">福岡県</option>
+		<option value="佐賀県">佐賀県</option>
+		<option value="長崎県">長崎県</option>
+		<option value="熊本県">熊本県</option>
+		<option value="大分県">大分県</option>
+		<option value="宮崎県">宮崎県</option>
+		<option value="鹿児島県">鹿児島県</option>
+		<option value="沖縄県">沖縄県</option>
+		</select></div>
+		<div id="area1_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>市区郡</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_area2" value="" class="in_w_02" /><span class="exp">例：名古屋市千種区(全角)<br>
+		<span class="txtgray">１０文字以内</span></span></div>
+		<div id="area2_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>町村字</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_area3" value="" class="in_w_02" /><span class="exp">例：田代町字岩谷(全角)<br>
+		<span class="txtgray">１5文字以内</span></span></div>
+		<div id="area3_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>番地</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_area4" value="" class="in_w_02" /><span class="exp">例：４－２－３８(全角)<br>
+		<span class="txtgray">１5文字以内</span></span></div>
+		<div id="area4_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>建物名・部屋番号</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_area5" value="" class="in_w_02" /><span class="exp">例：ココチモビル１０３号室(全角)</span></div>
+		<div id="area5_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>様方</th>
+		<td class="bor_bottom"><div class="input_area">姓 <input type="text" name="c_area6[0]" value="" class="in_w_01" />　名 <input type="text" name="c_area6[1]" value="" class="in_w_01" /><span class="exp">例：鈴木一郎<br>
+		<span class="txtgray">姓名共に5文字以内</span></span></div>
+		<div id="area6_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>電話番号</th>
+		<td class="bor_bottom"><div class="input_area"><input type="text" name="c_tel[0]" value="" class="in_w_04" /> - <input type="text" name="c_tel[1]" value="" class="in_w_04" /> - <input type="text" name="c_tel[2]" value="" class="in_w_04" /><span class="exp">(半角数字) ※ご自宅・携帯どちらの番号でも構いません<br>
+		<span class="txtgray">市外局番6文字以内、市内局番４文字以内、個人番号４文字以</span></span></div>
+		<div id="tel_confirm"></div></td>
+		</tr>
+		<tr class="only_dm">
+		<th>性別</th>
+		<td class="bor_bottom"><div class="input_area"><input type="radio" name="c_sex" value="男性" /> 男性　<input type="radio" name="c_sex" value="女性" /> 女性</div>
+		<div id="sex_confirm"></div></td>
+		</tr>
+		</table>
+		
+		<div id="input_button" class="inq_input_bt_01 s_bt_350">
+		<img src="contents/shop/00000003/shop/image/inq_sousin_bt_14.png" alt="確認画面へ" id="next" />
+		</div>
+		
+		<div id="confirm_button" style="display:none;">
+		<img src="/shop/c/static/shiba/contents/shop/00000003/shop/image/inq_sousin_bt_02.png" width="157" height="75" alt="戻る" id="back" />
+		<input type="image" src="/shop/c/static/shiba/contents/shop/00000003/shop/image/inq_sousin_bt_15.png" value="送信" name="act_check" id="submit_button" disable="disable" />
+		</div>
+		</form>
+
+		</div><!--sec_02-->
+	</div><!--r_con_box_04_in-->
+
+
+
+
+
+</div><!--r_con_box_04-->
+<!--　ここまで　-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var url = location.href;
+	if (url.indexOf('channel=tel') != -1) {
+		$('input[name=c_channel]').val('電話経由');
+	}
+	
+	$('input[name=c_DM]').click(function(){
+		if ($('input[name=c_DM]:checked').val() == 'Eメールでの連絡を希望') {
+			$('.only_dm').hide();
+		} else {
+			$('.only_dm').show();
+		}
+	});
+
+	$('#next').click(function(){
+		var err = {};
+		var errCount = 0;
+
+		var dm = $('input[name=c_DM]:checked').val();
+		if (!dm) {
+			err['dm'] = 'ご案内パンフレット送付方法を選択して下さい。';
+			errCount++;
+		}
+
+		var email = $('input[name=email]').val();
+		if (email.length == 0) {
+			err['email'] = 'メールアドレスは必須です。';
+			errCount++;
+		} else {
+			if (email && !email.match(/.+@.+\..+/g)) {
+				err['email'] = 'メールアドレスの形式が不正です。';
+				errCount++;
+			}
+		}
+
+		var email2 = $('input[name=email_confirm]').val();
+		if (email2.length == 0) {
+			err['email2'] = 'メールアドレス（確認）は必須です。';
+			errCount++;
+		} else {
+			if (email != email2) {
+				err['email2'] = 'メールアドレス(確認）が不正です。';
+				errCount++;
+			}
+		}
+
+		var nameSei = $("input[name='c_name[0]']").val();
+		if (nameSei.length == 0) {
+			err['nameSei'] = '姓は必須です。';
+			errCount++;
+		} else {
+			if (nameSei.length > 10) {
+				err['nameSei'] = '姓は10文字以内で入力して下さい';
+				errCount++;
+			}
+		}
+
+		var nameMei = $("input[name='c_name[1]']").val();
+		if (nameMei.length == 0) {
+			err['nameMei'] = '名は必須です。';
+			errCount++;
+		} else {
+			if (nameMei.length > 10) {
+				err['nameMei'] = '名は10文字以内で入力して下さい';
+				errCount++;
+			}
+		}
+
+		var name2Sei = $("input[name='c_name2[0]']").val();
+		if (name2Sei.length == 0) {
+			err['name2Sei'] = 'セイは必須です。';
+			errCount++;
+		} else {
+			if (name2Sei.length > 15) {
+				err['name2Sei'] = 'セイは15文字以内で入力して下さい。';
+				errCount++;
+			} else {
+				if(!name2Sei.match(/^[ァ-ン]*$/)) {
+					err['name2Sei'] = 'セイは全角カタカナで入力して下さい。';
+					errCount++;
+				}
+			}
+		}
+
+		var name2Mei = $("input[name='c_name2[1]']").val();
+		if (name2Mei.length == 0) {
+			err['name2Mei'] = 'メイは必須です。';
+			errCount++;
+		} else {
+			if (name2Mei.length > 15) {
+				err['name2Mei'] = 'メイは15文字以内で入力して下さい';
+				errCount++;
+			} else {
+				if(!name2Mei.match(/^[ァ-ン]*$/)) {
+					err['name2Mei'] = 'メイは全角カタカナで入力して下さい。';
+					errCount++;
+				}
+			}
+		}
+
+
+		if (dm != 'Eメールでの連絡を希望') {
+			var post1 = $("input[name='c_post[0]']").val();
+			if (post1.length != 0) {
+				if (post1.length > 3) {
+					err['post1'] = '郵便番号は3ケタで入力して下さい';
+					errCount++;
+				}
+			}
+
+			var post2 = $("input[name='c_post[1]']").val();
+			if (post2.length != 0) {
+				if (post2.length > 4) {
+					err['post2'] = '郵便番号は4ケタで入力して下さい';
+					errCount++;
+				}
+			}
+
+			var area1 = $('select[name=c_area1]').val();
+//			if (area1.length == 0) {
+//				err['area1'] = '都道府県は必須です。';
+//				errCount++;
+//			}
+
+			var area2 = $('input[name=c_area2]').val();
+//			if (area2.length == 0) {
+//				err['area2'] = '市区郡名は必須です。';
+//				errCount++;
+//			} else {
+//				if (area2.length > 10) {
+//					err['area2'] = '市区郡名は10文字以内で入力して下さい';
+//					errCount++;
+//				}
+//			}
+
+			var area3 = $('input[name=c_area3]').val();
+			if (area3.length != 0) {
+				if (area3.length > 15) {
+					err['area3'] = '町村名は15文字以内で入力して下さい。';
+					errCount++;
+				}
+			}
+
+			var area4 = $('input[name=c_area4]').val();
+			if (area4.length != 0) {
+				if (area4.length > 15) {
+					err['area4'] = '番地は15文字以内で入力して下さい。';
+					errCount++;
+				}
+			}
+
+			var area6Sei = $("input[name='c_area6[0]']").val();
+			if (area6Sei.length > 5) {
+				err['area6Sei'] = '姓は5文字以内で入力して下さい';
+				errCount++;
+			}
+
+			var area6Mei = $("input[name='c_area6[1]']").val();
+			if (area6Mei.length > 5) {
+				err['area6Mei'] = '名は5文字以内で入力して下さい';
+				errCount++;
+			}
+
+			var tel1 = $("input[name='c_tel[0]']").val();
+			if (tel1.length != 0) {
+				if (tel1.length > 6) {
+					err['tel1'] = '6桁以内で入力して下さい。';
+					errCount++;
+				}
+			}
+
+			var tel2 = $("input[name='c_tel[1]']").val();
+			if (tel2.length != 0) {
+				if (tel2.length > 4) {
+					err['tel2'] = '4桁以内で入力して下さい。';
+					errCount++;
+				}
+			}
+
+			var tel3 = $("input[name='c_tel[2]']").val();
+			if (tel3.length != 0) {
+				if (tel3.length > 4) {
+					err['tel3'] = '4桁以内で入力して下さい。';
+					errCount++;
+				}
+			}
+		}
+
+		console.log(err);
+		if (errCount == 0) {
+			$('.input_area').hide();
+			$('#dm_confirm').text(dm).show();
+			$('#email_confirm').text(email).show();
+			$('#email2_confirm').text(email2).show();
+			$('#name_confirm').text(nameSei + ' ' + nameMei).show();
+			$('#name2_confirm').text(name2Sei + ' ' + name2Mei).show();
+			$('#post_confirm').text(post1 + '-' + post2).show();
+			$('#area1_confirm').text(area1).show();
+			$('#area2_confirm').text(area2).show();
+			$('#area3_confirm').text(area3).show();
+			$('#area4_confirm').text(area4).show();
+			$('#area5_confirm').text($('input[name=c_area5]').val()).show();
+			$('#area6_confirm').text(area6Sei + ' ' + area6Mei).show();
+			$('#tel_confirm').text(tel1 + '-' + tel2 + '-' + tel3).show();
+			$('#sex_confirm').text($('input[name=c_sex]:checked').val()).show();
+			$('#step_input').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');
+			$('#step_confirm').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
+
+			$('#input_button').hide();
+			$('#submit_button').disbled = false;
+			$('#confirm_button').show();
+			return false;
+		} else {
+			var message = '';
+			for (var i in err) {
+				message += err[i] + "\n";
+			}
+			
+			alert(message);
+			//alert(errCount + '個のエラーがあります。');
+			console.log(err);
+			return false;
+		}
+	});
+
+	$('#back').click(function(){
+		$('#dm_confirm, #email_confirm, #email2_confirm, #name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #area6_confirm, #tel_confirm, #sex_confirm, #confirm_button').hide();
+		$('.input_area, #input_button').show();
+		$('#step_input').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
+		$('#step_confirm').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');
+	});
+
+
+	$(function() {
+		$("input[name='c_post[0]'], input[name='c_post[1]'], input[name='c_tel[0]'], input[name='c_tel[1]'], input[name='c_tel[2]']").change(function(){
+			var txt  = $(this).val();
+			var han = txt.replace(/[Ａ-Ｚａ-ｚ０-９]/g,function(s){return String.fromCharCode(s.charCodeAt(0)-0xFEE0)});
+			$(this).val(han);
+		});
+	});
+});
+</script>
