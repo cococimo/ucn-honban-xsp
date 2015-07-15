@@ -65,6 +65,32 @@
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
+<style>
+/*sp_land_wide*/
+@media (max-width: 510px)
+{
+.add_p {
+  top:140px !important;
+}
+}
+
+/*sp_land*/
+@media (max-width: 480px) {
+#pan-navi{
+	margin:10px 0 0 0 !important;
+}
+}
+
+/*sp_port*/
+@media (max-width:320px) {
+#pan-navi{
+	margin:20px 0 0 0 !important;
+}
+.add_p {
+  top:100px !important;
+}
+}
+</style>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
@@ -478,6 +504,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- ▼▼▼▼カート▼▼▼▼ -->
+<br />
 <div id="contents">
 
 
@@ -632,7 +659,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 &nbsp;<img m:id="h_img_ok_settle_icon" src="../../../contents/shop/00000005/icon/settle_ok_s040.gif" alt="後払い可" />
 </span>
 <span m:id="l_ite_item_limit">
-&nbsp;<img m:id="h_img_settle_limit_icon" src="../../../contents/shop/00000005/icon/settle_limit_s040.gif" alt="後払い不可" /> 
+<span m:id="l_equ_item_040">
+	&nbsp;<img m:id="h_img_settle_limit_icon" src="../../../contents/shop/00000005/icon/settle_limit_s040.gif" alt="後払い不可" /> 
+</span>
 </span>
 </span>
 <!-- /チャネル別決済種別制限取得 -->
