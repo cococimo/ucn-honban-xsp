@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
-<head>
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css">
@@ -94,6 +93,7 @@ $(".faceBooks").append(ifremstr);
         
     </script>
 
+
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
@@ -176,6 +176,43 @@ function siteCatalistAddCart1(s_products){
 //-->
 </script>
 
+<style>
+/*sp_land_wide*/
+@media (max-width: 510px)
+{
+.add_p {
+  top:140px !important;
+}
+}
+
+/*sp_land*/
+@media (max-width: 480px) {
+#pan-navi{
+	margin:150px 0 0 0 !important;
+}
+.add_p {
+  top:160px !important;
+}
+
+.wrap_con{
+	margin-top:0 !important
+}
+}
+
+/*sp_port*/
+@media (max-width:320px) {
+#pan-navi{
+	margin:30px 0 0 0 !important;
+}
+.add_p {
+  top:140px !important;
+}
+
+.wrap_con{
+	margin-top:45px !important
+}
+}
+</style>
 
 <!-- detail -->
 
@@ -191,7 +228,7 @@ function siteCatalistAddCart1(s_products){
 <div id="header">
 <div id="header_wrap" class="clearfix">
 <!-- InstanceBeginEditable name="head_h1" -->
-<h1 class="add_p6">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+<h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
 <!-- InstanceEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
 
@@ -424,6 +461,48 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->   
 <!--▼▼▼カテゴリー▼▼▼-->
+<script>
+$(window).on('load resize', function(){
+    var w = $(window).width();
+    var x = 500;
+    if (w <= x) {
+  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
+		
+  $(function(){	  
+	$(".child_cat").hide();
+	$('li').removeClass('ctArrow');
+	$(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"absolute",
+		 "top":"0",
+		 "left":"140px",
+		 "width":"170px",
+		 "z-index":"999",
+		 "list-style":"none",
+		 "background-color":"#ffffff"}
+		).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").hide();
+	})
+})
+} else {
+
+  $(function(){	  
+	$(".child_cat").show();
+	$('li').removeClass('ctArrow');
+	$(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"relative",	"left":"0"}).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").show();
+	})
+})
+
+    }
+});
+</script>
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
 
@@ -437,7 +516,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<ul class="l_con_list_01 clearfix example">
 				<span  m:id="l_ite_cate">
 					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-					<li class="ctList">
+					<li class="ctList" style="position:relative"><!--基準点追加-->
 					
 					<div class="p_0">
 					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
@@ -452,7 +531,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 						<span m:id="disp_subCate_category_name">ファッション</span>
 					</span>
 					</a>
-					</div>						<ul m:id="tag_dd_subCate" class="clearfix">
+					</div>
+                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
 						<span m:id="l_ite_subCate"> 
 							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
 							<li class="ctArrow">
@@ -948,10 +1028,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <p class="guide_arrow">代金引換&#12288;&#12288;&#12288;代引手数料<span>300</span>円</p>
 </div>
 
-<div class="topLine">
-<p class="guide_arrow">コンビニ・郵便局&#12288;払込手数料<span>0</span>円<br />・ゆうちょ銀行</p>
-</div>
-
  </div>
 </div>
 
@@ -1263,7 +1339,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
             <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
             <p><span>代金引換<br>代引手数料300円</span></p>
-            <p><span>コンビニ・郵便局・ゆうちょ銀行<br>払込手数料0円</span></p>
+            
             <div class="secure clearfix">
 			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
@@ -1324,6 +1400,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/kitchen/" style="opacity: 1;">キッチン 通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/life/" style="opacity: 1;">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/" style="opacity: 1;">テーブルウェアの通販特集</a></li>        
+         <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>
       </ul>      
       </div>
 </div>
