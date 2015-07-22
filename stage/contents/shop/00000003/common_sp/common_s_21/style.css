@@ -1,0 +1,204 @@
+
+.clear{
+	clear:both;
+}
+
+.wrap_con {
+    width:730px;
+	text-align:center;
+	margin:0px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 3px 0 #666; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 3px 0 #666; /* Firefox用 */
+	box-shadow: 0 0 3px 0 #666; /* CSS3 */
+	color:#000;
+}
+
+.inner{
+    width:686px;
+    margin:auto;
+    text-align:left;
+}
+
+.inner p{
+    font-size:15px;
+    text-align:left;
+    color:#333;
+    line-height:150%;
+}
+
+
+.mainimage{
+	display:block;
+	width:700px;
+	margin:10px auto 0;
+}
+.top_comment{
+	display:block;
+	width:686px;
+	text-align:left;
+	margin:25px auto;
+	font-size:20px;
+	line-height:140%;
+	color:#333;
+}
+
+.top_comment span{
+	color:#CC0000;
+	font-weight:bold;
+}
+
+
+.title_kandou{
+	color:#151515;
+	font-weight:bold;
+	font-size:20px;
+	padding:10px;
+	background-color:#FFCC00;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	margin:15px auto;
+	text-align:center;
+}
+
+.title_kandou02{
+	color:#151515;
+	font-weight:bold;
+	font-size:20px;
+	padding:10px;
+	background-color:#FFCC00;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	margin:30px auto 15px;
+	text-align:center;
+}
+
+.kandou_left01{
+	float:left;
+	width:410px;
+}
+
+.kandou_right01{
+	float:right;
+	width:250px;
+}
+
+.kandou_left02{
+	float:left;
+	width:250px;
+}
+
+.kandou_right02{
+	float:right;
+	width:410px;
+}
+
+.subtitle_kandou{
+	color:#333;
+	font-weight:bold;
+	font-size:20px;
+	margin:15px auto 20px;
+	line-height:140%;
+}
+
+
+
+.wrap_sp{
+	display:none;
+}
+
+
+.wrap_pc{
+	width:100%;
+	margin:15px auto;
+	text-align:center;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+ 
+
+.wrap_pc{
+	display:none;
+}
+
+.wrap_sp{
+	width:100%;
+	margin:15px auto;
+	display:block;
+}
+
+
+
+.wrap_con {
+    width:100%;
+	text-align:center;
+	margin:20px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 5px 0 #333; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 5px 0 #333; /* Firefox用 */
+	box-shadow: 0 0 5px 0 #333; /* CSS3 */
+}
+
+.image96 {
+	display:block;
+    width:96%;
+	margin:0 auto;
+}
+.top_comment{
+	display:block;
+	width:96%;
+	text-align:left;
+	margin:25px auto;
+	font-size:17px;
+	line-height:140%;
+}
+
+.inner{
+    width:96%;
+    margin:auto;
+    text-align:left;
+}
+
+.inner p{
+    font-size:15px;
+    text-align:left;
+    color:#333;
+    line-height:150%;
+}
+
+.kandou_left01{
+	float:none;
+	width:96%;
+}
+
+.kandou_right01{
+	float:none;
+	width:100%;
+	text-align:center;
+}
+
+.kandou_left02{
+	float:none;
+	width:100%;
+	text-align:center;
+}
+
+.kandou_right02{
+	float:none;
+	width:96%;
+}
+
+
+
+
+
+}
