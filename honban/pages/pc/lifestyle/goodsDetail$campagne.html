@@ -415,10 +415,11 @@ $(window).on('load resize', function(){
     if (w <= x) {
   $(".con_box img")	.eq(0).css({"max-width":"100%"});	
 		
-  $(function(){	  
-	$(".child_cat").hide();
+  $(function(){
+	  
+	$(".l_con_list_01").eq(0).find(".child_cat").hide();
 	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
 		$("ul:not(:animated)",this).css(
 		{"position":"absolute",
 		 "top":"0",
@@ -436,9 +437,9 @@ $(window).on('load resize', function(){
 } else {
 
   $(function(){	  
-	$(".child_cat").show();
+	$(".l_con_list_01").eq(0).find(".child_cat").show();
 	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
 		$("ul:not(:animated)",this).css(
 		{"position":"relative",	"left":"0"}).show();
 	},
@@ -450,6 +451,7 @@ $(window).on('load resize', function(){
     }
 });
 </script>
+
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
 
@@ -1361,6 +1363,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/kitchen/">キッチン 通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>       
       </ul>   
       </div>

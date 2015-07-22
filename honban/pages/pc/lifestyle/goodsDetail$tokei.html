@@ -58,6 +58,32 @@
 });
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
+<style>
+/*sp_land_wide*/
+@media (max-width: 510px)
+{
+.add_p {
+  top:140px !important;
+}
+}
+
+/*sp_land*/
+@media (max-width: 480px) {
+#pan-navi{
+	margin:10px 0 0 0 !important;
+}
+}
+
+/*sp_port*/
+@media (max-width:320px) {
+#pan-navi{
+	margin:23px 0 0 0 !important;
+}
+.add_p {
+  top:105px !important;
+}
+}
+</style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
@@ -386,6 +412,49 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->  
 <!--▼▼▼カテゴリー▼▼▼-->
+<script>
+$(window).on('load resize', function(){
+    var w = $(window).width();
+    var x = 500;
+    if (w <= x) {
+  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
+		
+  $(function(){
+	  
+	$(".l_con_list_01").eq(0).find(".child_cat").hide();
+	$('li').removeClass('ctArrow');
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"absolute",
+		 "top":"0",
+		 "left":"140px",
+		 "width":"170px",
+		 "z-index":"999",
+		 "list-style":"none",
+		 "background-color":"#ffffff"}
+		).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").hide();
+	})
+})
+} else {
+
+  $(function(){	  
+	$(".l_con_list_01").eq(0).find(".child_cat").show();
+	$('li').removeClass('ctArrow');
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"relative",	"left":"0"}).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").show();
+	})
+})
+
+    }
+});
+</script>
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
 
@@ -399,7 +468,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<ul class="l_con_list_01 clearfix example">
 				<span  m:id="l_ite_cate">
 					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-					<li class="ctList">
+					<li class="ctList" style="position:relative"><!--基準点追加-->
 					
 					<div class="p_0">
 					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
@@ -414,7 +483,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 						<span m:id="disp_subCate_category_name">ファッション</span>
 					</span>
 					</a>
-					</div>						<ul m:id="tag_dd_subCate" class="clearfix">
+					</div>
+                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
 						<span m:id="l_ite_subCate"> 
 							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
 							<li class="ctArrow">
@@ -1380,6 +1450,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/kitchen/">キッチン 通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>       
       </ul>   
       </div>
