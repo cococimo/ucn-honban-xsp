@@ -1567,6 +1567,18 @@ div.i_sec span img {
   border-radius: 0;
 }
 
+.deviceSP #header .sp_nav #header_cumulus a {
+  padding-left: 0;
+  width: 100%;
+  line-height: 0px !important;
+  margin: 0 !important;
+  display: block !important;
+  text-indent: -9999px;
+  background: url(../shop/image/kigokochi/sp_hd_cumulus.gif) no-repeat center center;
+  background-size: 100%;
+  border-radius: 0;
+}
+
 /* aタグ*/
 .deviceSP #header .sp_nav .logout_bt {
   background: url(../shop/image/kigokochi/sp_hd_logout.gif) no-repeat left bottom !important;
@@ -1583,6 +1595,7 @@ div.i_sec span img {
 .devicePC .related_item .flex-direction-nav {
   display: none;
 }
+
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
   body {
@@ -1691,4 +1704,7 @@ div.i_sec span img {
   #footer02 .member_signup {
     display: none !important;
   }
+.rankinglist li:nth-child(3) {
+    clear: both !important;
+}
 }
