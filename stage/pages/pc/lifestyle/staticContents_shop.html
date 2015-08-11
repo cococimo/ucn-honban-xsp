@@ -40,18 +40,15 @@ return false;
 });
 </script>
 <!-- InstanceBeginEditable name="head_css_js" -->
-<!-- ★★★ デザイナー様 必要なCSSを記載してください。※ただし、このhtmlのみに使用 -->
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
-<!-- ★★★ デザイナー様 必要なスクリプトを記載してください ※ただし、このhtmlのみに使用-->
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
-
 <!-- InstanceEndEditable -->
 </head> 
 <body id="top">
@@ -101,7 +98,7 @@ return false;
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 $(document).ready(function() {
-var pagetop = $('.returnTopSp');
+var pagetop = $('.returnTop, .returnTopSp');
 pagetop.click(function () {
 $('body, html').animate({ scrollTop: 0 }, 500);
 return false;
