@@ -174,7 +174,7 @@
 #l_tit_02 {
 	background:url(../shop/image/pc_l_tit_02.jpg) no-repeat center top;
 	height:22px;
-	font-size:16px;
+	font-size:13.5px;
 	text-align:right;
 	padding-right:27px;
 	padding-top:4px;
@@ -1106,7 +1106,7 @@ h2 img, #l_tit_01 img, #l_tit_03 img, #l_tit_05 img {
 #l_tit_02 {
 	background:none;
 	height:auto;
-	font-size:16px;
+	font-size:13.5px;
 	text-align:right;
 	padding-right:27px;
 	padding-top:4px;
@@ -3701,7 +3701,7 @@ margin:0 3.125% 5% 3.125%;
 	text-align:left;
 	width:100%;
 	margin-bottom:30px;
-	background:#ececec;
+	background: #A6C9CB none repeat scroll 0% 0%;
 	border-bottom:1px solid #ececec;
 }
 
@@ -3733,7 +3733,8 @@ margin:0 3.125% 5% 3.125%;
 
 .wrap_cart04 .memadd_table_02 {
 	text-align:left;
-	width:38.2%;
+	max-width:50%;
+	min-width:38.2%;
 	margin-top:-31px;
 	background:#ececec;
 	border-right:1px solid #ececec;
@@ -4820,7 +4821,7 @@ span.error {
 	text-align:left;
 	width:100%;
 	margin-bottom:30px;
-	background:#ececec;
+	background: #A6C9CB none repeat scroll 0% 0%;
 	border-bottom:1px solid #ececec;
 }
 
@@ -6543,6 +6544,7 @@ width:100%;
 	background:#fafafa;
 	line-height:160%;
 	margin:0;
+	height:71px;
 }
 
 
