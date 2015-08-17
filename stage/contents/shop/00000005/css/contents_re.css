@@ -8121,7 +8121,8 @@ h2 img, #l_tit_03 img, #l_tit_05 img {
     float: right;
     margin-top: -31px;
     text-align: left;
-    width: 38.2%;
+    min-width: 38.2%;
+    max-width: 50%
 }
 .memadd_table_02 th {
     background: #00ada0;
