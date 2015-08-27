@@ -16,7 +16,6 @@
 <!-- TemplateBeginEditable name="head_1" -->
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
-
 <link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
 <!-- TemplateEndEditable -->
@@ -28,7 +27,6 @@
 <link rel="stylesheet" m:id="css_file" href="../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
-
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/yuga.js"></script>
@@ -42,73 +40,54 @@
 <script m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
 <link rel="stylesheet" m:id="css_file" href="../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
-
-		<script>
+		<script >
 		/*
 			jQuery(function($){
 				$('ul.example').exDropDown();
 			});
 			*/
-
 			jQuery(function($){
 			//	$('ul.example').exDropDown();
 				$('.searchShop').on('click',function(){
 				$('.gsearchShop').submit();
 					return false;
 				});
-				
-				
-				
-				
-
-			});
+							});
 		</script>
 <!-- TemplateBeginEditable name="head_css_js" -->
-
-
 <!-- TemplateEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- TemplateBeginEditable name="head" -->
-
 <!-- TemplateEndEditable -->
-</head>
- 
+</head> 
 <body id="top">
 <!-- name="body" -->
 <!-- EndEditable -->
-
 <div id="container">
-
 <div id="header">
 <div id="header_wrap" class="clearfix">
-
+<!-- TemplateBeginEditable name="head_h1" -->
+<h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+<!-- TemplateEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
-
 <!-- header追加 -->
 <!-- name="header_logo" -->
-<h1 id="header_logo">
+<div id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
 </span>
-</h1>
+</div>
 <!-- EndEditable -->
 </a>
 <!-- <div class="logoText">
 <img m:id="static_img" src="../contents/shop/00000005/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
 </div> -->
-
-    
-        <div id="header_r" class="clearfix">
-            <div id="header_r_01" class="clearfix header_r_color">
-            
-  
-            
-    <!-- ▼▼▼検索▼▼▼ -->
+<div id="header_r" class="clearfix">
+            <div id="header_r_01" class="clearfix header_r_color">    <!-- ▼▼▼検索▼▼▼ -->
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -136,12 +115,9 @@
         <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
       </form>
 </div>
-</div>
-            
+</div>           
             <!-- ▲▲▲検索▲▲▲ -->  
-            
-            
-            <div class="header_lists clearfix pc_not">
+                        <div class="header_lists clearfix pc_not">
               <!-- ▼▼▼新規会員登録▼▼▼ -->
               <div m:id="l_notPre_member_login_shop">
                 <ul class="header_list_01">
@@ -149,26 +125,20 @@
                 </ul>
               </div>
               <!-- ▲▲▲新規会員登録▲▲▲ -->
-              
-              
-			<ul class="header_list_02">
+              			<ul class="header_list_02">
                           <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
 
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
 			  <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
 			  <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
                 <!-- TemplateBeginEditable name="kigokochi" -->
-                <li id="header_kigokochi">
+                <!--<li id="header_kigokochi">
                     <a  href="/shop/lifestyle/static/kigokochi/" class="kigokochi_bt" title="">着心地のいい服</a>
-                </li>
+                </li>-->
 				<!-- TemplateEndEditable -->
 			</ul>
             </div>
-            
-    
-            
-            
-            <div class="clearfix pc_not">
+                        <div class="clearfix pc_not">
             	<span m:id="l_equ_hierarchy_3_shop">
                 <div class="clearfix pc_only">
                     <ul class="header_list_03">
@@ -177,9 +147,7 @@
 /shop/inquiryInputCheck.do">お問い合わせ</a></li>
                     </ul>
                 </div>
-                
-                
-                <div class="header_cart">
+                                <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
 s.linkTrackEvents='scView';
@@ -192,21 +160,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 
                 <div class="header_cate">
                     <a href="#catLink">カテゴリ一覧</a>
-                </div>
-                
+                </div>                
                 </span>
-                
-             </div>
-            
+				</div>            
             </div><!-- header_r_01 -->
-        
-        </div>
-    
-    
-    <!--<div class="comm_box"><p>現在、検証中の為、会員登録、お買い物など全てのサービスはご利用できません。</p>
-    </div>-->
-    </div><!--header_wrap-->
-    
+           </div>
+    </div><!--header_wrap-->   
   <!--▼▼▼sp_menu▼▼▼-->
  <div m:id="l_notPre_member_login_shop">
         <ul class="sp_menu_only sp_member">
@@ -219,25 +178,19 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <li><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></li>
          </ul>
     </div>             
-    
-    <ul class="sp_menu_only sp_login_menu">
-            
+        <ul class="sp_menu_only sp_login_menu">  
 <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
 <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div>
 </li>
               <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
                 <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
-    </ul>
-
-    
+    </ul>    
     <div class="sp_top_menu sp_menu_only">
     	<a href="/">m</a>
-    </div>
-    
+    </div>    
     <div class="sp_top_home sp_menu_only">
     	<a href="/lifestyle/">m</a>
-    </div>
-    
+    </div>    
     <div class="sp_header_cart sp_menu_only">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
@@ -246,11 +199,8 @@ s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
      </div>
-
-    
     <div class="sp_nav">
-    
-  <!-- カテゴリナビ -->
+      <!-- カテゴリナビ -->
     <script type="text/javascript">
 		//<![CDATA[
 		function switchHidden(categoryCode){
@@ -330,8 +280,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
                                             <ul class="l_con_list_01 clearfix example">
                                                 <span  m:id="l_ite_cate">
                                                     <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList">
-                                                    
+                                                    <li class="ctList">                                                    
                                                     <div class="p_0">
                                                     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
                                                     <span m:id="span_subCate_arrow" id="arrow_1">
@@ -366,10 +315,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
                         </span>
                     </span>
                     <!--▲▲▲カテゴリー▲▲▲-->    									
-					<!-- TemplateEndEditable -->    
-             
-    </div>
-     
+					<!-- TemplateEndEditable -->                
+    </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- TemplateBeginEditable name="pankuzu_contents_waku" -->
 <!-- パンくず・検索 -->
@@ -379,17 +326,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div id="contents_waku">
   <!-- メインコンテンツ -->
   <div id="contents">
-   
-   
   <br>
-  ★★★ここにcontentsをf記載★★★<br>
-   
+  ★★★ここにcontentsをf記載★★★<br>   
     <div class="pagetop"><a href="#" onclick="return goPageTop();">このページのトップへ</a></div>
     <!--/ ページトップ -->
   </div>
   <!--/ メインコンテンツ -->
-  <!-- サイドメニュー -->
-  
+  <!-- サイドメニュー -->  
   <!--/ サイドメニュー -->
 </div>
 <!--/ メインコンテンツ_外枠 -->
@@ -397,7 +340,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 <!--container-->
 <!-- ガイド -->
-
 <div id="guideWrapper" class="pc_only">
   <div class="guideTop">
     <div class="guideTopInner clearfix">
@@ -441,7 +383,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
             <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
             <p><span>代金引換<br>代引手数料300円</span></p>
-            <p><span>コンビニ・郵便局・ゆうちょ銀行<br>払込手数料0円</span></p>
+           
             <div class="secure clearfix">
 			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
@@ -451,34 +393,60 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </div>
   </div>
 </div>
-
-<!-- ガイド -->
-    
+<!-- ガイド -->    
 <!-- footer追加 -->
 <div id="footer02">
-  <div id="footer_wrap02">
-
-  
-    <div class="inner">
+  <div id="footer_wrap02">  
+<div class="add_ft_wp">　
+    <div class="add_inner">
+    <div class="inn_tit">メインメニュー</div>
       <ul>
-        <!-- 
-        <li class="norton"><script type="text/javascript" src="https://seal.websecurity.norton.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script></li>
- -->
-        <!--<li>｜</li>-->
-        <!--<li><a href="/shop/lifestyle/static/faq/">よくあるご質問</a></li>-->
-        <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
-        <li>｜</li>
-        <li><a href="/shop/lifestyle/static/protection/">個人情報保護方針</a></li>
-        <li>｜</li>
-        <li><a href="/shop/lifestyle/static/notation/">特定商取引に基づく表示</a></li>
-        <li>｜</li>
-        <li><a href="/shop/lifestyle/static/company/">会社情報</a></li>
-        <li>｜</li>
-      </ul>
-    </div>
-
-
-
+        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
+        <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
+        <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
+        <li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>
+        <li><a href="/shop/lifestyle/static/protection/" style="opacity: 1;">個人情報保護方針</a></li>
+        <li><a href="/shop/lifestyle/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
+ 		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
+      </ul>      
+      </div>      
+<!--▼▼▼カテゴリー(フッター)▼▼▼-->
+<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
+<div class="add_inner footer_cate">
+<div class="inn_tit2">カテゴリーから探す</div>
+ <span m:id="l_ite_standardCategory">
+  <span m:id="l_equ_cate_checkPeriod">
+   <span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+   <object class="xsp_obj" m:id="count_sub1"></object>
+   <ul>
+    <span  m:id="l_ite_cate">
+     <span m:id="l_equ_subCate_checkPeriod"><span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+     <li>
+     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+      <span m:id="disp_subCate_category_name">ファッション</span>
+     </a>
+     </li>
+     </span>
+    </span>
+   </ul>
+  </span>
+ </span>
+</div>
+</span></span>
+    <div class="add_inner">
+    <div class="inn_tit3">注目カテゴリー</div>
+      <ul>
+        <li><a href="/shop/lifestyle/static/contents/kitchen/">キッチン 通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>                
+      </ul>       
+      </div>
+</div>
+<!--▲▲▲カテゴリー(フッター)▲▲▲-->    
+<br clear="all" />
     <div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
       <ul>
@@ -496,9 +464,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li></li>
       </ul>
     </div>
-
-
-
     <div id="footer03" class="pc_display">
       <div class="clearfix" id="footer_wrap03">
         
@@ -510,14 +475,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
           <li><a href="/shop/lifestyle/static/notation/">特定商取引に基づく表示</a></li>
           <li><a href="/shop/lifestyle/static/company/">会社情報</a></li>
           <!--<li class="end"><a href="#">利用規約</a></li>-->
-        </ul>
-        
+        </ul>        
         <p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
       </div><!--footer_wrap03-->
     </div>
-
-    <div id="footer05" class="sp_only">
-      
+    <div id="footer05" class="sp_only">      
       <div class="mt10 sp_secure clearfix">
         <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
         <p>
@@ -525,9 +487,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </p>
       </div>
     </div>
-
-    <p>Copyright U-CAN, Inc. All Rights Reserved</p>
-
+    <p>Copyright U-CAN, Inc. All Rights Reserved.</p>
   </div>
 </div><!-- /#footer02 -->
 	<!-- TemplateBeginEditable name="footer_script" -->
@@ -554,8 +514,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <meta m:id="criteo_view_home" content=""></meta>
     <meta m:id="criteo_q_push" content=""></meta>
     -->
-    <!-- ▲▲▲ Criteo ▲▲▲ -->
-    
+    <!-- ▲▲▲ Criteo ▲▲▲ -->    
     <script type="text/javascript" language="javascript">
     var yahoo_retargeting_id = 'JAG00YJOZ2';
     var yahoo_retargeting_label = '';
@@ -584,7 +543,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
         tagjs.async = true;
         tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
         s.parentNode.insertBefore(tagjs, s);
-
       }());
     </script>
     <noscript>
@@ -594,11 +552,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
     if(typeof dmids == "undefined"){var dmids = {}};
     dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
     </script>  
-    <!-- TemplateEndEditable -->
-
-  
-<!-- footer追加 -->
-
+    <!-- TemplateEndEditable -->  
 </body>
-
 </html>

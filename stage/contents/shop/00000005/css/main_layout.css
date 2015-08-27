@@ -1028,7 +1028,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 .add-clearfix { display: block; }  
 /* End hide from IE-mac */
 
-
+.nor_ban{
+	clear:both;
+	padding-top:30px !important
+}
 @media (max-width: 768px) {
 	body {
 			min-width: 100%;
@@ -2796,7 +2799,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', end
 	top:140px !important;
 	left:3px !important;	
 	}
-	
+
+.nor_ban{
+	padding-top:0 !important
+}	
 	}
 	
 	
