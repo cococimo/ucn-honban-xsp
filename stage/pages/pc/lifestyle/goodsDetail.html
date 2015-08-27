@@ -40,18 +40,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
 
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/yuga.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/drop.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.ad-gallery.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.flexslider.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
@@ -89,15 +82,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 .add_p {
   top:140px !important;
 }
-}
-
 /*sp_land*/
 @media (max-width: 480px) {
 #pan-navi{
 	margin:10px 0 0 0 !important;
 }
+.l_con_box_01_relate .sub{
+	height:100px;
 }
-
+.l_con_box_01{clear:both !important}
+}
 /*sp_port*/
 @media (max-width:320px) {
 #pan-navi{
@@ -476,48 +470,48 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->
 					<!--¥¥¥ƒJƒeƒSƒŠ[¥¥¥-->
-<script>
-$(window).on('load resize', function(){
-    var w = $(window).width();
-    var x = 500;
-    if (w <= x) {
-  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
-		
-  $(function(){	  
-	$(".child_cat").hide();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"absolute",
-		 "top":"0",
-		 "left":"140px",
-		 "width":"170px",
-		 "z-index":"999",
-		 "list-style":"none",
-		 "background-color":"#ffffff"}
-		).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").hide();
+	<script>
+	$(window).on('load resize', function(){
+	    var w = $(window).width();
+	    var x = 500;
+	    if (w <= x) {
+	  $(".con_box img").eq(0).css({"max-width":"100%"});  
+			
+	  $(function(){
+		  
+		$(".l_con_list_01").eq(0).find(".child_cat").hide();
+		$('li').removeClass('ctArrow');
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"absolute",
+			 "top":"0",
+			 "left":"140px",
+			 "width":"170px",
+			 "z-index":"999",
+			 "list-style":"none",
+			 "background-color":"#ffffff"}
+			).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").hide();
+		})
 	})
-})
-} else {
+	} else {
 
-  $(function(){	  
-	$(".child_cat").show();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"relative",	"left":"0"}).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").show();
+	  $(function(){	  
+		$(".l_con_list_01").eq(0).find(".child_cat").show();
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"relative",	"left":"0"}).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").show();
+		})
 	})
-})
 
-    }
-});
-</script>
+	    }
+	});
+	</script>
                    
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
