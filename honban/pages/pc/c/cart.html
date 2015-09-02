@@ -134,8 +134,12 @@ if ( window.addEventListener ) {
 } else if (window.attachEvent) {
 	window.attachEvent("onload", displayChargedOptionInput);
 }
-
-
+	window.onunload = function() {
+		jQuery(function(){
+    // 全ての選択を外す
+    $("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+	});
+}
 //-->
 
 </script>
@@ -257,7 +261,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<object class="xsp_obj" m:id="e_var_wrappingItemMap"></object>
 	<object class="xsp_obj" m:id="b_var_postage_classify_special"></object>
 	<object class="xsp_obj" m:id="e_var_settlementMap"></object>
-
+	<object class="xsp_obj" m:id="e_var_saleStatus"></object>
 <div class="r_con_box_04">
 <div class="r_con_box_04_in">
 
@@ -894,6 +898,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <span m:id="l_equ_valid_flg">
         <object class="xsp_obj" m:id="b_var_shopPostage_postage_free_upd"></object>
 </span> </span> </span> </span>
+
+<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+	<input type="hidden" name="display_code" />
+	<input type="hidden" name="goods_sku_code" />
+	<input type="hidden" name="ext_goods_sku_code" />
+	<input type="hidden" name="order_num_string" />
+	<input type="hidden" name="_S" />
+</form>
 <span m:id="l_notEqu_shopPostage_postage_free">
   <object class="xsp_obj" m:id="b_var_free"></object>
   	<!-- 送料無料プロモーション有無判定 (2014/08/22)-->
@@ -930,6 +942,38 @@ s.tl(this,'o','cartview',null,'navigate');return false
 										<span m:id="b_wr_priceGoods_pretaxPrice">200</span>&nbsp;円
 										</span>&nbsp;</span>
 									<span m:id="b_wr_priceGoods_actualSalePrice">100</span>円(税込)&nbsp;</p>
+									
+										<!-- お買い物かご一覧からカートに入れる -->
+										<span m:id="l_can_addCartDirect_priceGoods">
+											<span m:id="l_equ_priceGoodsList_valiationSize">
+												<a m:id="h_link_cartAddDirect_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
+													<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_08.gif" alt="カートに入れる" />
+													<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+												</a>
+											</span>
+											<span m:id="l_not_equ_priceGoodsList_valiationSize">
+												<select class="goods_sku_code" m:id="h_sel_goods_sku_code1_priceGoods">
+													<option value="">選択してください</option>
+													<option m:id="h_opt_variations_priceGoods" value="">白</option>
+													<option m:id="dummy" value="">黒</option>
+													<option m:id="dummy" value="">赤</option>
+													<option m:id="dummy" value="">青</option>
+													<option m:id="dummy" value="">緑</option>
+												</select>
+												<div m:id="disp_not_cartAddBtn_priceGoods"></div>
+												<!--<img m:id="disp_not_cartAddBtn_priceGoods" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+												<a m:id="h_link_cartAddDirectSku_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
+													<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_08.gif" alt="カートに入れる" />
+													<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+												</a>
+											</span>
+										</span>
+										<span m:id="l_not_addCartDirect_priceGoods">
+											<span m:id="disp_saleStatus_priceGoods">
+											<p class="soldout"><strong>[販売終了]</strong></p>
+											</span>
+										</span>
+										<!--/ お買い物かご一覧からカートに入れる -->
 				                </div>
 				              </div>
 				            </li>
@@ -1073,6 +1117,38 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
               <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
               <p> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+             <!-- 閲覧履歴一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_autoReco">
+				<span m:id="l_equ_autoReco_valiationSize">
+					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_08.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+				<span m:id="l_not_equ_autoReco_valiationSize">
+					<select class="goods_sku_code" m:id="h_sel_goods_sku_code1_autoReco">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_autoReco" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_autoReco"></div>
+					<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_08.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_autoReco">
+				<span m:id="disp_saleStatus_autoReco">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 閲覧履歴一覧からカートに入れる -->
+            
             </div>
           </div>
         </li>

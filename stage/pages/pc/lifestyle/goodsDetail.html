@@ -580,6 +580,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <object class="xsp_obj" m:id="b_var_regularly"></object>
 <object class="xsp_obj" m:id="b_var_canAddCart"></object>
 <object class="xsp_obj" m:id="e_var_groupGoods"></object>
+<object class="xsp_obj" m:id="e_var_saleStatus"></object>
 <!-- 2015/01/31 -->
 <object class="xsp_obj" m:id="b_var_omakeImages"></object>
 
@@ -2112,6 +2113,37 @@ eltexcomment-->
 			    </span>
 			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 </p>
+							<!-- 関連商品一覧からカートに入れる
+							<span m:id="l_can_addCartDirect_concerned">
+								<span m:id="l_equ_concerned_valiationSize">
+									<a m:id="h_link_cartAddDirect_concerned" href="" class="productDetail_cart_bt_normal" onclick=""
+										<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
+										<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+									</a>
+								</span>
+								<span m:id="l_not_equ_concerned_valiationSize">
+									<select m:id="h_sel_goods_sku_code1_concerned" class="goods_sku_code">
+										<option value="">選択してください</option>
+										<option m:id="h_opt_variations_concerned" value="">白</option>
+										<option m:id="dummy" value="">黒</option>
+										<option m:id="dummy" value="">赤</option>
+										<option m:id="dummy" value="">青</option>
+										<option m:id="dummy" value="">緑</option>
+									</select>
+									<div m:id="disp_not_cartAddBtn_concerned"></div>
+									<!--<img m:id="disp_not_cartAddBtn_concerned" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />
+									<a m:id="h_link_cartAddDirectSku_concerned" href="" class="productDetail_cart_bt_normal" onclick="">
+										<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
+										<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+									</a>
+								</span>
+							</span>
+							<span m:id="l_not_addCartDirect_concerned">
+								<span m:id="disp_saleStatus_concerned">
+								<p class="soldout"><strong>[販売終了]</strong></p>
+								</span>
+							</span>
+							<!--/ 関連商品一覧からカートに入れる 
               </div>
             </div>
           </li>
@@ -2246,7 +2278,14 @@ eltexcomment-->
 </span>   -->
    <!--▲▲▲こんな商品も見ています▲▲▲-->
   
-  
+<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+	<input type="hidden" name="display_code" />
+	<input type="hidden" name="goods_sku_code" />
+	<input type="hidden" name="ext_goods_sku_code" />
+	<input type="hidden" name="order_num_string" />
+	<input type="hidden" name="_S" />
+</form>
+
    <!--▼▼▼最近ﾁｪｯｸした商品▼▼▼-->
  
 <div class="con_box clearfix">
@@ -2273,6 +2312,38 @@ eltexcomment-->
 			    </span>
 			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 			  </p>
+			   <!-- 最近チェックした商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_recent">
+					<span m:id="l_equ_browsingList_valiationSize">
+						<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+							<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+							<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+						</a>
+					</span>
+					<span m:id="l_not_equ_browsingList_valiationSize">
+						<select m:id="h_sel_goods_sku_code1_recent" class="goods_sku_code">
+							<option value="">選択してください</option>
+							<option m:id="h_opt_variations_browsing" value="">白</option>
+							<option m:id="dummy" value="">黒</option>
+							<option m:id="dummy" value="">赤</option>
+							<option m:id="dummy" value="">青</option>
+							<option m:id="dummy" value="">緑</option>
+						</select>
+						<div m:id="disp_not_cartAddBtn_recent"></div>
+						<!--<img m:id="disp_not_cartAddBtn_recent" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+						<a m:id="h_link_cartAddDirectSku_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+							<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+							<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+						</a>
+					</span>
+				</span>
+				<span m:id="l_not_addCartDirect_recent">
+					<span m:id="disp_saleStatus_recent">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 最近チェックした商品一覧からカートに入れる -->
+			  
               </div>
             </div>
           </li>

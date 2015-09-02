@@ -75,6 +75,7 @@
 <object class="xsp_obj" m:id="parentShop"></object>
 <object class="xsp_obj" m:id="ancestralCategory"></object>
 <object class="xsp_obj" m:id="breadcrumbCategory"></object>
+<object class="xsp_obj" m:id="e_var_saleStatus"></object>
 
 <span m:id="l_pre_shopPostage">
     <span m:id="l_ite_postage">
@@ -135,6 +136,12 @@ function siteCatalistAddCart1(s_products){
   s.tl(this,'o','cartadd');
   setTimeout("AddCart_trans1()",1000);
 }
+	window.onunload = function() {
+		jQuery(function(){
+    // 全ての選択を外す
+    $("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+});
+    }
 //-->
 </script>
 <!-- InstanceEndEditable -->
@@ -1524,7 +1531,39 @@ eltexcomment-->
 									</span>&nbsp;
 								</span>
 								<span m:id="b_wr_autoRecommendGoods_actualSalePrice">100</span>&nbsp;円&nbsp;(税込)</p>
-</div></div>
+								 <!-- 閲覧履歴一覧からカートに入れる -->
+								<span m:id="l_can_addCartDirect_autoReco">
+									<span m:id="l_equ_autoReco_valiationSize">
+										<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+											<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
+											<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+										</a>
+									</span>
+									<span m:id="l_not_equ_autoReco_valiationSize">
+										<select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
+											<option value="">選択してください</option>
+											<option m:id="h_opt_variations_autoReco" value="">白</option>
+											<option m:id="dummy" value="">黒</option>
+											<option m:id="dummy" value="">赤</option>
+											<option m:id="dummy" value="">青</option>
+											<option m:id="dummy" value="">緑</option>
+										</select>
+										<div m:id="disp_not_cartAddBtn_autoReco"></div>
+										<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+										<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+											<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
+											<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+										</a>
+									</span>
+								</span>
+								<span m:id="l_not_addCartDirect_autoReco">
+									<span m:id="disp_saleStatus_autoReco">
+									<p class="soldout"><strong>[販売終了]</strong></p>
+									</span>
+								</span>
+								<!--/ 閲覧履歴一覧からカートに入れる -->
+</div>
+</div>
 </li>
 </span>
 <li m:id="dummy" class="heightLine-osusuem01"><div>
@@ -1597,7 +1636,40 @@ eltexcomment-->
 <h3><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></h3>
 <!--<p class="fw_n">商品説明ダミーテキストダミーテキストダミーテキスト</p>-->
 <p><span m:id="m_num_sale_price">50</span>円（税込）</p>
-</div></div>
+
+<!-- 関連商品一覧からカートに入れる -->
+<span m:id="l_can_addCartDirect_concerned">
+	<span m:id="l_equ_concerned_valiationSize">
+		<a m:id="h_link_cartAddDirect_concerned" href="" class="productDetail_cart_bt_normal" onclick="">
+			<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
+			<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+		</a>
+	</span>
+	<span m:id="l_not_equ_concerned_valiationSize">
+		<select m:id="h_sel_goods_sku_code1_concerned" class="goods_sku_code">
+			<option value="">選択してください</option>
+			<option m:id="h_opt_variations_concerned" value="">白</option>
+			<option m:id="dummy" value="">黒</option>
+			<option m:id="dummy" value="">赤</option>
+			<option m:id="dummy" value="">青</option>
+			<option m:id="dummy" value="">緑</option>
+		</select>
+		<div m:id="disp_not_cartAddBtn_concerned"></div>
+		<!--<img m:id="disp_not_cartAddBtn_concerned" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+		<a m:id="h_link_cartAddDirectSku_concerned" href="" class="productDetail_cart_bt_normal" onclick="">
+			<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
+			<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+		</a>
+	</span>
+</span>
+<span m:id="l_not_addCartDirect_concerned">
+	<span m:id="disp_saleStatus_concerned">
+	<p class="soldout"><strong>[販売終了]</strong></p>
+	</span>
+</span>
+<!--/ 関連商品一覧からカートに入れる -->
+</div>
+</div>
 </li>
 </span>
 <li m:id="dummy" class="heightLine-osusuem03">
@@ -1673,7 +1745,6 @@ eltexcomment-->
 		<p class="txt12">その他、各種クレジットカードがご利用いただけます。<br>
 		<span class="kome">※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</span></p>
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円">
-		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic05.gif" class="konbini sgttl" alt="コンビニ・郵便局・ゆうちょ銀行　払込手数料0円">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl04.gif" class="sgttl" alt="商品のお届けについて">
 		<p class="txt_shouhin">お申込みから<b>通常３&#65374;６日</b>ほどでお届けいたします。期日・時間帯をご指定いただける商品もございます。<br>
 ※年末年始のご注文はお届けに時間をいただく場合がございます。</p>
@@ -1896,6 +1967,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </div>-->
   <!--▲▲▲左カラムバナー▲▲▲-->
   <!--▼▼▼最近チェックした商品▼▼▼-->
+<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+	<input type="hidden" name="display_code" />
+	<input type="hidden" name="goods_sku_code" />
+	<input type="hidden" name="ext_goods_sku_code" />
+	<input type="hidden" name="order_num_string" />
+	<input type="hidden" name="_S" />
+</form>
   <object class="xsp_obj" m:id="e_var_browsingGoodsList">
   </object>
   <span m:id="l_notEmp_browsingGoodsList">
@@ -1919,6 +1997,38 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 			 </p>
             </div>
+            <!-- 最近チェックした商品一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_recent">
+				<span m:id="l_equ_browsingList_valiationSize">
+					<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+				<span m:id="l_not_equ_browsingList_valiationSize">
+					<select m:id="h_sel_goods_sku_code1_recent" class="goods_sku_code">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_browsing" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_recent"></div>
+					<!--<img m:id="disp_not_cartAddBtn_recent" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+					<a m:id="h_link_cartAddDirectSku_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_recent">
+				<span m:id="disp_saleStatus_recent">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 最近チェックした商品一覧からカートに入れる -->
+            
           </div>
         </li>
        </span>
