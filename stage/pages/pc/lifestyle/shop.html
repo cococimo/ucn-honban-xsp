@@ -48,16 +48,13 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
-<script m:id="static_img" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
 <script>
-$(function(){
-    $('div.drop-down').each(function(i){
-        $(this).addClass('add_no' + (i+1));
-    });
-});	
+$(function() {
+  $('.main-nav li').eq(3).css('height', '65px');
+});
 </script>
 <style>
 /*sp_land_wide*/
@@ -95,7 +92,6 @@ $(function(){
 <![endif]-->
 <script>
 	jQuery(function($){
-	//	$('ul.example').exDropDown();
 		$('.searchShop').on('click',function(){
 		$('.gsearchShop').submit();
 			return false;
@@ -124,6 +120,7 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
 $(function () {
@@ -146,6 +143,7 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
 $(function () {
@@ -168,19 +166,26 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <!-- InstanceBeginEditable name="head" -->
+
 <!-- InstanceEndEditable -->
+
 </head>
-<body id="top">
+
+<body>
 <div id="container">
-<div id="header">
+
+	<div id="header">
 <div id="header_wrap" class="clearfix">
 <!-- InstanceBeginEditable name="head_h1" -->
 <h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
 <!-- InstanceEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
+
 <!-- header追加 -->
 <!-- name="header_logo" -->
+
 <div id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
@@ -191,9 +196,14 @@ $(function () {
 <!-- <div class="logoText">
 <img m:id="static_img" src="../contents/shop/00000005/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
 </div> -->
-	<div id="header_r" class="clearfix">
+
+    
+        <div id="header_r" class="clearfix">
             <div id="header_r_01" class="clearfix header_r_color">
-<!-- ▼▼▼検索▼▼▼ -->
+            
+  
+            
+    <!-- ▼▼▼検索▼▼▼ -->
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -222,8 +232,11 @@ $(function () {
       </form>
 </div>
 </div>
-<!-- ▲▲▲検索▲▲▲ -->  
-          <div class="header_lists clearfix pc_not">
+            
+            <!-- ▲▲▲検索▲▲▲ -->  
+            
+            
+            <div class="header_lists clearfix pc_not">
               <!-- ▼▼▼新規会員登録▼▼▼ -->
               <div m:id="l_notPre_member_login_shop">
                 <ul class="header_list_01">
@@ -235,6 +248,7 @@ $(function () {
               
 			<ul class="header_list_02">
                           <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
+
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
 			  <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
 			  <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
@@ -244,8 +258,12 @@ $(function () {
                 </li>-->
 				<!-- InstanceEndEditable -->
 			</ul>
-          </div>
-		     <div class="clearfix pc_not">
+            </div>
+            
+    
+            
+            
+            <div class="clearfix pc_not">
             	<span m:id="l_equ_hierarchy_3_shop">
                 <div class="clearfix pc_only">
                     <ul class="header_list_03">
@@ -254,7 +272,9 @@ $(function () {
 /shop/inquiryInputCheck.do">お問い合わせ</a></li>
                     </ul>
                 </div>
-                    <div class="header_cart">
+                
+                
+                <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
 s.linkTrackEvents='scView';
@@ -264,41 +284,55 @@ s.tl(this,'o','cartview',null,'navigate');return false
                     お買い物かごを見る
                     </a>
                 </div>
+                
                 <div class="header_cate">
                     <a href="#catLink">カテゴリ一覧</a>
                 </div>
-               </span>
-               </div>
-               </div><!-- header_r_01 -->
-               </div>
+                
+                </span>
+                
+             </div>
+            
+            </div><!-- header_r_01 -->
+        
+        </div>
+    
+    
     <!--<div class="comm_box"><p>現在、検証中の為、会員登録、お買い物など全てのサービスはご利用できません。</p>
     </div>-->
     </div><!--header_wrap-->
-    <!--▼▼▼sp_menu▼▼▼-->
+    
+  <!--▼▼▼sp_menu▼▼▼-->
  <div m:id="l_notPre_member_login_shop">
         <ul class="sp_menu_only sp_member">
         	<li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
         </ul>
     </div>
+    
     <div m:id="l_pre_member_logout_button_shop">
         <ul class="sp_menu_only sp_member">
     <li><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></li>
-     </ul>
+         </ul>
     </div>             
     
     <ul class="sp_menu_only sp_login_menu">
-    <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
+            
+<li id="header_login"><div m:id="l_notPre_member_login_button_shop">
 <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div>
 </li>
               <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
                 <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
     </ul>
-    <div class="sp_top_menu sp_menu_only">
+
+    
+    <div class="sp_top_menu sp_menu_only" id="top">
     	<a href="/">m</a>
     </div>
+    
     <div class="sp_top_home sp_menu_only">
     	<a href="/lifestyle/">m</a>
     </div>
+    
     <div class="sp_header_cart sp_menu_only">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
@@ -307,8 +341,12 @@ s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
      </div>
+
+    
     <div class="sp_nav">
+
 		<!-- カテゴリナビ -->
+		
 		 <script type="text/javascript">
 		//<![CDATA[
 		function switchHidden(categoryCode){
@@ -375,19 +413,29 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->
 		</div>
+		    
 		<!--▲▲▲sp_menu▲▲▲-->
 	</div><!--/header-->
+
+
 <!--▲▲▲ヘッダーここまで▲▲▲-->
+
+
+
 	<div id="contents">
+	
 		<div id="pan-navi" >
 		<ul class="clearfix">
 		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
 		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
 		</ul>
 		</div>
+
 <br clear="all">
-<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.min.css">
+
+<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
+
 <!--[if lt IE 9]>
 <script>
 curvyCorners.addEvent(window, 'load', initCorners);
@@ -409,69 +457,118 @@ function initCorners() {
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
 		<div class="mainimages">
-			
+			<!-- 本番用
 			<div>
-			<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>
+			<a href="/shop/lifestyle/static/kigokochi/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_05.jpg" alt="着心地のいい服をさがして。" ></a>
 			</div>
 			
 			<div>
-			<a href="/shop/lifestyle/category/001001012035/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_08.jpg" alt="ダンスク" ></a>
+			<a href="/shop/lifestyle/category/001001012021/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_02.jpg" alt="AVOCA" ></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012032/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_04.jpg" alt="クニルプス" ></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012025/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_01.jpg" alt="MOZ" ></a>
+			</div>
+			-->
+			<div>
+			<a href="/shop/lifestyle/category/001001012032/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012042/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_08.jpg" alt="ダンスク" ></a>
 			</div>
 
 			<div>
-			<a href="/shop/lifestyle/category/001001012025/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_10.jpg" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)" ></a>
+			<a href="/shop/lifestyle/category/001001012033/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_10.jpg" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)" ></a>
 			</div>
                         
             <div>
-			<a href="/shop/lifestyle/category/001001012052/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_09.jpg" alt="ムーミングッズ" ></a>
+			<a href="/shop/lifestyle/category/001001012055/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_09.jpg" alt="ムーミングッズ" ></a>
 			</div>
-            
+
 			<div>
 			<a href="/shop/lifestyle/static/kigokochi/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_05.jpg" alt="着心地のいい服をさがして。" ></a>
-			</div>            
-            
+			</div>			
+		<!-- mozモズ	<div>
+			<a href="http://www.cococimo.jp/shop/lifestyle/category/001001012025/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_01.jpg" alt="MOZ" ></a>
+			</div>-->
 		</div>
 	</div>
 </div>
 <div class="wrap_main wrap_sp">
 	<div class="main" id="wmainimages">
 		<div class="mainimagessp">
-
+			<!-- 本番用
+			<div>
+			<a href="/shop/lifestyle/static/kigokochi/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_05.jpg" alt="着心地のいい服をさがして。"></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012021/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_02.jpg" alt="AVOCA"></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012032/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_03.jpg" alt="ラプアンカンクリ"></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012022/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_04.jpg" alt="クニルプス"></a>
+			</div>
+			
+			<div>
+			<a href="/shop/lifestyle/category/001001012025/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_01.jpg" alt="MOZ"></a>
+			</div>
+			-->
 			<div>
 			<a href="/shop/lifestyle/category/001001012022/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_03.jpg" alt="ラプアンカンクリ"></a>
 			</div>
 			
 			<div>
-			<a href="http://www.cococimo.jp/shop/lifestyle/category/001001012035/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_08.jpg" alt="ダンスク"></a>
+			<a href="/shop/lifestyle/category/001001012042/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_08.jpg" alt="ダンスク"></a>
 			</div>
-
 			<div>
-			<a href="/shop/lifestyle/category/001001012025/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_10.jpg" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)"></a>
-			</div>
-                        
+			<a href="/shop/lifestyle/category/001001012033/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_10.jpg" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)"></a>
+			</div>            
             <div>
-			<a href="/shop/lifestyle/category/001001012052/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_09.jpg" alt="ムーミングッズ"></a>
+			<a href="/shop/lifestyle/category/001001012055/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_09.jpg" alt="ムーミングッズ"></a>
 			</div>
-            
 			<div>
 			<a href="/shop/lifestyle/static/kigokochi/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_05.jpg" alt="着心地のいい服をさがして。"></a>
-			</div>            
-            
+			</div>			
+		<!-- mozモズ	<div>
+			<a href="http://www.cococimo.jp/shop/lifestyle/category/001001012025/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_01.jpg" alt="MOZ"></a>
+			</div>-->
 		</div>
 	</div>
 </div>
+
+
+
+
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/functionality.css">
 		<span m:id="l_pre_standardCategory">
 		<span m:id="l_notEmp_standardCategory_childCategories">
 		<div class="wrap_pc">
 		<!--▼▼▼メニュー▼▼▼-->
+
+
 <div class="pcmenu">
 <ul class="menu">
 <span m:id="l_ite_standardCategory">
     <span m:id="l_equ_cate_checkPeriod">
+    
         <span m:id="icnt_increment"></span>
         <span m:id="i_ins_cate"></span>
         <object class="xsp_obj" m:id="count_sub1"></object>               
+
 <span  m:id="l_ite_cate">
     <span m:id="l_equ_subCate_checkPeriod"><span m:id="icnt_increment"></span><span m:id="i_ins_subCate"></span>
 <li class="drop-down-menu">
@@ -495,6 +592,8 @@ function initCorners() {
 		</div>
 </span>
 		</span>		
+		
+		
 		<!--▼▼▼メニュースマホ▼▼▼-->
 		<script type="text/javascript" language="javascript">
 		$(function(){
@@ -502,6 +601,7 @@ function initCorners() {
 		    $(this).next("ul").slideToggle();
 		    $(this).children("span").toggleClass("open");
 		}); 
+		 
 		$(".accordion dt").click(function(){
 		    $(this).next("dd").slideToggle();
 		    $(this).next("dd").siblings("dd").slideUp();
@@ -510,8 +610,13 @@ function initCorners() {
 		});
 		});
 		</script>
+
+
+
+
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
+
 <!--▼▼▼メニュー▼▼▼-->
 <div class="menu wrap_sp">
 	<ul class="accordion">
@@ -544,6 +649,14 @@ function initCorners() {
 </div>
 </span>
 </span>
+
+
+
+
+		
+		<!--▲▲▲メニュー▲▲▲-->
+		
+		
 <object class="xsp_obj" m:id="e_var_autoRankGoodsList">
 </object>
 <object class="xsp_obj" m:id="e_var_popularGoodsList">
@@ -563,12 +676,17 @@ function initCorners() {
 <object class="xsp_obj" m:id="e_var_dmHistory">
 </object>
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
-<br clear="all">
-<!--▼▼▼おすすめ▼▼▼-->
+
+		<br clear="all">
+		
+		
+		<!--▼▼▼おすすめ▼▼▼-->
+
+
 		<div class="wrap_osusume">
 			<ul>
-			<li class="each_height_adjust03"><a href="/shop/lifestyle/e/SDVI61/c/001001012021/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_avc.jpg" alt="">
+			<li class="each_height_adjust03" style="height: 351px;"><a href="/shop/lifestyle/e/SDVI61/c/001001012021/" style="opacity: 1;">
+			<img src="contents/lifestyle/common_sp/common_kigokochi02/images/osusume/pic_avc.jpg" alt="">
 				<div class="text_osusume">
 				<p class="o_ttl">明るく美しい<br>
 				AVOCAのリネンスカーフ</p>
@@ -589,16 +707,8 @@ function initCorners() {
 				時計の読めない子が、読みたいと思うアナログ時計です。
 				</p>
 				</div></a>
-			</li>
-		<!--	<li class="each_height_adjust03"><a href="/shop/lifestyle/e/DVCF/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic02.jpg" alt="">
-				<div class="text_osusume">
-				<p class="o_ttl">万人受けのかわいさで時を刻む</p>
-				<p class="o_txt">針のカーブ、ブナの木枠の風合い
-				このかわいいは、女性だけでなく男性陣からもアツい支持が！その名もカンパーニュ</p>
-				</div></a>
-			</li>-->
-			<li class="each_height_adjust03"><a href="/shop/lifestyle/category/001001012030/list/">
+			</li>		
+			<li class="each_height_adjust03"><a href="/shop/lifestyle/category/001001012036/list/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_umb.jpg" alt="">
 				<div class="text_osusume">
 				<p class="o_ttl">
@@ -613,13 +723,17 @@ function initCorners() {
 			<li class="each_height_adjust03"><a href="/shop/lifestyle/e/DVD2/c/001001003003/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic04.jpg" alt="">
 				<div class="text_osusume">
-				<p class="o_ttl">アイスクリーム好きのあなたに｡</p>
+				<p class="o_ttl">アイスクリーム好きの<br />
+				あなたに｡</p>
 				<p class="o_txt">固いアイスでも無垢のアルミニウムが溶かしてくれるのでスグに食べられます。バニラ、チョコレート、ストロベリーの３つのタイプからお選びください。</p>
 				</div></a>
 			</li>
 			</ul>
 		</div>
 		<!--▲▲▲おすすめ▲▲▲-->
+		
+
+		
 		<!--▼▼▼SPECIAL CONTENTS▼▼▼-->
 		<div class="wrap_specialcontents">
 			<div class="wrap_left w100"><h2>SPECIAL CONTENTS <span>特集</span></h2></div>
@@ -633,16 +747,21 @@ function initCorners() {
 			<a href="/shop/lifestyle/static/derongi-oven/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/special/pic02.jpg" alt=""></a>
 			<p class="txt13 mt10">キッチンに映えるスタイリッシュなデザイン</p>
 			</div>
-		
-       <div class="nor_ban">
-       <a href="/shop/lifestyle/category/002005001/list/">
-       	<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/special/pic03.jpg" alt="">
-       </a>
-       <p class="txt13 mt10">見ているだけで楽しい！スウェーデン、フィンランド、デンマークを中心とした
+	       <div class="nor_ban">
+    	   <a href="/shop/lifestyle/category/002006001/list/">
+       		<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/special/pic03.jpg" alt="">
+	       </a>
+    	   <p class="txt13 mt10">見ているだけで楽しい！スウェーデン、フィンランド、デンマークを中心とした
 北欧雑貨をピックアップしました</p>
-       </div><br clear="all">
+       </div>            
+		<br clear="all">
+		<!--<a href="" class="wrap_sp alist">特集一覧へ</a>-->
 		</div>
+		
+		
 		<!--▲▲▲SPECIAL CONTENTS▲▲▲-->
+		
+		
 		<!--▼▼▼RANKING▼▼▼-->
 <span m:id="l_notEmp_autoRankGoodsList">
 	<div class="wrap_specialcontents">
@@ -654,7 +773,7 @@ function initCorners() {
 			<span m:id="l_pre_autoRankGoods_representSku">
 			<object class="xsp_obj" m:id="b_var_autoRankGoods_listImage"></object>
 				<div class="rankimg">
-				<a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000005/shop/image/item_sample_01.jpg" /></a>
+				<a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
 				</div>
 			</span>
 			<p class="txt13"><b><a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a></b></p>
@@ -702,6 +821,10 @@ function initCorners() {
 	</div>
 </span>
 		<!--▲▲▲RANKING▲▲▲-->
+		
+		
+		
+		
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
 		<h2>RANKING <span>軽い、かわいい、高性能！快適雨傘ランキング！</span></h2>
@@ -745,40 +868,54 @@ function initCorners() {
 		<br clear="all">
 		</div>
 		<!--▲▲▲RANKING▲▲▲-->
+		
+			
+		
+		
 		<!--▼▼▼STAFF RECOMMEND▼▼▼-->
 		<div class="wrap_specialcontents">
 		<h2>STAFF RECOMMEND <span>スタッフのおすすめ商品</span></h2>
+
 		<ul class="stafflist">
+
 		<li><!-- ステージングカテゴリ番号 --><a href="/shop/lifestyle/e/SDVU01/c/001001007009/">
                <!-- 本番カテゴリ番号 <a href="/shop/lifestyle/category/001001009008/list/">-->
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_nec.jpg" alt="">
 			<p class="txt13 mt10">[復刻]アルネ・ヤコブセン<br>
 			の北欧置時計</p></a>
 		</li>
+		
 		<li><a href="/shop/lifestyle/static/kigokochi/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pic02.jpg" alt="着心地">
 			<p class="txt13 mt10">天然素材とメイドインジャパンに<br>
 			こだわった着心地のいい服</p></a>
 		</li>
+		
 		<li><a href="/shop/lifestyle/e/DVA05/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pic03.jpg" alt="HARIO　ドリップポット">
 			<p class="txt13 mt10">雨の日も、これでコーヒーを<br>
 			入れれば、心は晴れる</p></a>
 		</li>
+		
 		<li><a href="/shop/lifestyle/e/DVD15/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pic04.jpg" alt="グローバル包丁">
 			<p class="txt13 mt10">朝寝坊の家族はこの包丁の音で目を<br>
 			覚まします</p></a>
 		</li>
-	</ul>
+
+		</ul>
+		
+
 		<br clear="all">
 		</div>
 		<!--▲▲▲STAFF RECOMMEND▲▲▲-->
+		
+		
+		
 		<!--▼▼▼NEW ITEM▼▼▼-->
 		<span m:id="l_pre_newGoodsList">
 		<div class="wrap_specialcontents wrapnew">
 		<h2>NEW ITEM <span>新着商品</span></h2>
-
 <div class="wrap_pc">
 			<div class="main" id="lineupItem">
 				<div class="newitemlist">
@@ -831,8 +968,7 @@ function initCorners() {
 					
 				</div>
 			</div>
-</div>
-
+			</div>
 <div class="wrap_sp">
 			<div class="main" id="lineupItem">
 				<div class="newitemlistsp">
@@ -879,8 +1015,7 @@ function initCorners() {
 							</span>
 							<!--/ 新着商品一覧からカートに入れる -->
 						</div>
-						</span>
-					
+						</span>					
 				</div>
 			</div>
 </div>
@@ -898,13 +1033,14 @@ function initCorners() {
 		<!--▼▼▼BRAND▼▼▼-->
 		<div class="wrap_specialcontents wrapbrand">
 		<h2>BRAND <span>取扱ブランド一覧</span></h2>
+
 <div class="wrap_pc">
 			<div class="main" id="lineupItem02">
 				<div class="brandlist">
 					<!-- ITEM -->
 						<div><a href="/shop/lifestyle/category/001001012007/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic01.gif" alt="グローバル"></a>
-							<a href="/shop/lifestyle/category/001001012022/list/">
+							<a href="/shop/lifestyle/category/001001012032/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic15.gif" alt="ラプアンカンクリ"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012004/list/">
@@ -932,20 +1068,21 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012019/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic10.gif" alt="MQ・Duotex エムキューデュオテックス"></a>
 						</div>
-                        <!-- 7/6追加 -->
-						<div><a href="/shop/lifestyle/category/001001012028/list/">
+                        
+<!-- 7/6追加 -->
+						<div><a href="/shop/lifestyle/category/001001012037/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic13.gif" alt="東屋"></a>
-							<a href="/shop/lifestyle/category/001001012033/list/">
+							<a href="/shop/lifestyle/category/001001012043/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic14.gif" alt="　Finlayson_フィンレイソン"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012015/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic06.gif" alt="KLIPPAN_クリッパン"></a>
-							<a href="/shop/lifestyle/category/001001012034/list/">
+							<a href="/shop/lifestyle/category/001001012022/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic16.gif" alt="Knirps_クニルプス"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012035/list/">
+						<div><a href="/shop/lifestyle/category/001001012042/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic17.gif" alt="DANSK（ダンスク）"></a>
-							<a href="/shop/lifestyle/category/001001012036/list/">
+							<a href="/shop/lifestyle/category/001001012029/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic18.gif" alt="eva solo（エバソロ）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012010/list/">
@@ -953,27 +1090,27 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012024/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic20.gif" alt="Joseph Joseph（ジョゼフジョゼフ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012037/list/">
+						<div><a href="/shop/lifestyle/category/001001012025/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic21.gif" alt="moz（モズ）"></a>
-							<a href="/shop/lifestyle/category/001001012032/list/">
+							<a href="/shop/lifestyle/category/001001012040/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic22.gif" alt="MUOVO（ムオヴォ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012038/list/">
+						<div><a href="/shop/lifestyle/category/001001012026/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic23.gif" alt="Philippi（フィリッピ）"></a>
-							<a href="/shop/lifestyle/category/001001012039/list/">
+							<a href="/shop/lifestyle/category/001001012028/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic24.gif" alt="RIG-TIG（リグティグ）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012013/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic25.gif" alt="soil（ソイル）"></a>
-							<a href="/shop/lifestyle/category/001001012040/list/">
+							<a href="/shop/lifestyle/category/001001012027/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic26.gif" alt="STELTON（ステルトン）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012009/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic27.gif" alt="tidy（タイディ）"></a>
-							<a href="/shop/lifestyle/category/001001012030/list/">
+							<a href="/shop/lifestyle/category/001001012036/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic28.gif" alt="umbra（アンブラ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012029/list/">
+						<div><a href="/shop/lifestyle/category/001001012038/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic29.gif" alt="ullakko（ウラッコ）"></a>
 							<a href="/shop/lifestyle/category/001001012005/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic30.gif" alt="工房アイザワ"></a>
@@ -983,46 +1120,45 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012012/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic32.gif" alt="レムノス"></a>
 						</div>
- 						<div><a href="/shop/lifestyle/category/001001012041/list/">
+ 						<div><a href="/shop/lifestyle/category/001001012045/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic33.gif" alt="normann COPENHAGE（ノーマンコペンハーゲン）"></a>
-							<a href="/shop/lifestyle/category/001001012031/list/">
+							<a href="/shop/lifestyle/category/001001012039/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic34.gif" alt="MAWA（マワ）"></a>
-						</div>                           
- 						<div><a href="/shop/lifestyle/category/001001012014/list/">
+						</div>   
+  						<div><a href="/shop/lifestyle/category/001001012014/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic35.gif" alt="アルティザン＆アーティスト"></a>
-							<a href="/shop/lifestyle/category/001001012042/list/">
+							<a href="/shop/lifestyle/category/001001012041/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic36.gif" alt="柳宗理"></a>
-					</div>
-
-                    		<div><a href="/shop/lifestyle/category/001001012043/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic37.gif" alt=" >PLUTO（プルート）"></a>
-							<a href="/shop/lifestyle/category/001001012044/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic38.gif" alt=">pomme-pidou（ポム・ピドウ）"></a>
+						</div>
+                        
+                    		<div><a href="/shop/lifestyle/category/001001012031/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic37.gif" alt=" PLUTO（プルート）"></a>
+							<a href="/shop/lifestyle/category/001001012047/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic38.gif" alt="pomme-pidou（ポム・ピドウ）"></a>
 					</div>  
-                    
-                    		<div><a href="/shop/lifestyle/category/001001012045/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic39.gif" alt=" >ARNE JACOBSEN（アルネ・ヤコブセン）"></a>
-							<a href="/shop/lifestyle/category/001001012046/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic40.gif" alt=">BRAUN（ブラウン）"></a>
-					</div>
-                     
-                    		<div><a href="/shop/lifestyle/category/001001012047/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic41.gif" alt=" >Kaija Aarikka（カイヤ・アーリッカ）"></a>
+                                         
+                    		<div><a href="/shop/lifestyle/category/001001012048/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic39.gif" alt=" ARNE JACOBSEN（アルネ・ヤコブセン）"></a>
 							<a href="/shop/lifestyle/category/001001012049/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic42.gif" alt=">Fulton（フルトン）"></a>
-					</div>                   
-
-                    		<div><a href="/shop/lifestyle/category/001001012050/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic43.gif" alt=" >DI CLASSE（ディクラッセ）"></a>
-							<a href="/shop/lifestyle/category/001001012051/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic44.gif" alt=">月兎印"></a>
-					</div>  
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic40.gif" alt="BRAUN（ブラウン）"></a>
+					</div>   
                     
-                       		<div><a href="/shop/lifestyle/category/001001012053/list/">
+                    		<div><a href="/shop/lifestyle/category/001001012050/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic41.gif" alt=" Kaija Aarikka（カイヤ・アーリッカ）"></a>
+							<a href="/shop/lifestyle/category/001001012052/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic42.gif" alt="Fulton（フルトン）"></a>
+					</div> 
+                     		<div><a href="/shop/lifestyle/category/001001012053/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic43.gif" alt=" DI CLASSE（ディクラッセ）"></a>
+							<a href="/shop/lifestyle/category/001001012054/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic44.gif" alt="月兎印"></a>
+					</div>    
+                                                              
+                      		<div><a href="/shop/lifestyle/category/001001012056/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic45.gif" alt=" SOMALI（そまり）"></a>
-							<a href="/shop/lifestyle/category/001001012025/list/">
+							<a href="/shop/lifestyle/category/001001012033/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic46.gif" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)"></a>
-					</div>                   
+					</div>                                                                                                              
 				</div>
 			</div>
 </div>
@@ -1032,7 +1168,7 @@ function initCorners() {
 					<!-- ITEM -->
 						<div><a href="/shop/lifestyle/category/001001012007/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic01.gif" alt="グローバル"></a>
-							<a href="/shop/lifestyle/category/001001012022/list/">
+							<a href="/shop/lifestyle/category/001001012032/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic15.gif" alt="ラプアンカンクリ"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012004/list/">
@@ -1060,20 +1196,21 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012019/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic10.gif" alt="MQ・Duotex エムキューデュオテックス"></a>
 						</div>
+                        
 <!-- 7/6追加 -->
-						<div><a href="/shop/lifestyle/category/001001012028/list/">
+						<div><a href="/shop/lifestyle/category/001001012037/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic13.gif" alt="東屋"></a>
-							<a href="/shop/lifestyle/category/001001012033/list/">
+							<a href="/shop/lifestyle/category/001001012043/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic14.gif" alt="　Finlayson_フィンレイソン"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012015/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic06.gif" alt="KLIPPAN_クリッパン"></a>
-							<a href="/shop/lifestyle/category/001001012034/list/">
+							<a href="/shop/lifestyle/category/001001012022/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic16.gif" alt="Knirps_クニルプス"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012035/list/">
+						<div><a href="/shop/lifestyle/category/001001012042/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic17.gif" alt="DANSK（ダンスク）"></a>
-							<a href="/shop/lifestyle/category/001001012036/list/">
+							<a href="/shop/lifestyle/category/001001012029/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic18.gif" alt="eva solo（エバソロ）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012010/list/">
@@ -1081,27 +1218,27 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012024/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic20.gif" alt="Joseph Joseph（ジョゼフジョゼフ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012037/list/">
+						<div><a href="/shop/lifestyle/category/001001012025/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic21.gif" alt="moz（モズ）"></a>
-							<a href="/shop/lifestyle/category/001001012032/list/">
+							<a href="/shop/lifestyle/category/001001012040/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic22.gif" alt="MUOVO（ムオヴォ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012038/list/">
+						<div><a href="/shop/lifestyle/category/001001012026/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic23.gif" alt="Philippi（フィリッピ）"></a>
-							<a href="/shop/lifestyle/category/001001012039/list/">
+							<a href="/shop/lifestyle/category/001001012028/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic24.gif" alt="RIG-TIG（リグティグ）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012013/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic25.gif" alt="soil（ソイル）"></a>
-							<a href="/shop/lifestyle/category/001001012040/list/">
+							<a href="/shop/lifestyle/category/001001012027/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic26.gif" alt="STELTON（ステルトン）"></a>
 						</div>
 						<div><a href="/shop/lifestyle/category/001001012009/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic27.gif" alt="tidy（タイディ）"></a>
-							<a href="/shop/lifestyle/category/001001012030/list/">
+							<a href="/shop/lifestyle/category/001001012036/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic28.gif" alt="umbra（アンブラ）"></a>
 						</div>
-						<div><a href="/shop/lifestyle/category/001001012029/list/">
+						<div><a href="/shop/lifestyle/category/001001012038/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic29.gif" alt="ullakko（ウラッコ）"></a>
 							<a href="/shop/lifestyle/category/001001012005/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic30.gif" alt="工房アイザワ"></a>
@@ -1111,100 +1248,115 @@ function initCorners() {
 							<a href="/shop/lifestyle/category/001001012012/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic32.gif" alt="レムノス"></a>
 						</div>
- 						<div><a href="/shop/lifestyle/category/001001012041/list/">
+ 						<div><a href="/shop/lifestyle/category/001001012045/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic33.gif" alt="normann COPENHAGE（ノーマンコペンハーゲン）"></a>
-							<a href="/shop/lifestyle/category/001001012031/list/">
+							<a href="/shop/lifestyle/category/001001012039/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic34.gif" alt="MAWA（マワ）"></a>
 						</div>                           
  						<div><a href="/shop/lifestyle/category/001001012014/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic35.gif" alt="アルティザン＆アーティスト"></a>
-							<a href="/shop/lifestyle/category/001001012042/list/">
+							<a href="/shop/lifestyle/category/001001012041/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic36.gif" alt="柳宗理"></a>
-					</div>
-                    		<div><a href="/shop/lifestyle/category/001001012043/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic37.gif" alt=" >PLUTO（プルート）"></a>
-							<a href="/shop/lifestyle/category/001001012044/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic38.gif" alt=">pomme-pidou（ポム・ピドウ）"></a>
-					</div>  
-                    
-                    		<div><a href="/shop/lifestyle/category/001001012045/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic39.gif" alt=" >ARNE JACOBSEN（アルネ・ヤコブセン）"></a>
-							<a href="/shop/lifestyle/category/001001012046/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic40.gif" alt=">BRAUN（ブラウン）"></a>
-					</div>
-                    
-                    		<div><a href="/shop/lifestyle/category/001001012047/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic41.gif" alt=" >Kaija Aarikka（カイヤ・アーリッカ）"></a>
-							<a href="/shop/lifestyle/category/001001012049/list/">
-							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic42.gif" alt=">Fulton（フルトン）"></a>
-					</div>  
+						</div>
 
-                    		<div><a href="/shop/lifestyle/category/001001012050/list/">
+                    		<div><a href="/shop/lifestyle/category/001001012031/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic37.gif" alt=" >PLUTO（プルート）"></a>
+							<a href="/shop/lifestyle/category/001001012047/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic38.gif" alt=">pomme-pidou（ポム・ピドウ）"></a>
+					</div>
+                     		<div><a href="/shop/lifestyle/category/001001012053/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic43.gif" alt=" >DI CLASSE（ディクラッセ）"></a>
-							<a href="/shop/lifestyle/category/001001012051/list/">
+							<a href="/shop/lifestyle/category/001001012054/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic44.gif" alt=">月兎印"></a>
-					</div> 
-                    
-                       		<div><a href="/shop/lifestyle/category/001001012053/list/">
+					</div>                        
+                       		<div><a href="/shop/lifestyle/category/001001012056/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic45.gif" alt=" SOMALI（そまり）"></a>
-							<a href="/shop/lifestyle/category/001001012025/list/">
+							<a href="/shop/lifestyle/category/001001012033/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic46.gif" alt="Lotta Jansdotter(ロッタ・ヤンスドッター)"></a>
 					</div>    
-                                                                                 
+                                                                                         
 				</div>
 			</div>
 </div>
 		<br clear="all">
 		</div>
 		<!--▲▲▲BRAND▲▲▲-->
+		
+		
+		
 		<!--▼▼▼COCOCIMO BLOG▼▼▼-->
 		<div class="wrap_specialcontents">
 			<div class="wrap_left w100"><h2>COCOCIMO BLOG <span>ココチモブログ</span></h2></div>
 			<div class="wrap_right wrap_pc"><a href="/shop/lifestyle/static/cocoblog/" class="a_line">&gt; ココチモブログ</a></div>
 			<div class="blogclear"><br clear="all"></div>
 			<ul class="bloglist">
+
 			<li><a href="/shop/lifestyle/static/cocoblog/150904/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150904-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">心豊かに暮らせる国・フィンランドの家庭料理風に、魚を味わってみよう。</p></a>
 			</li>
+            
 			<li><a href="/shop/lifestyle/static/cocoblog/150902/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150902-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">心もふわっと春巻きの皮でベリータル</p></a>
 			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/150827/">
+ 			<li><a href="/shop/lifestyle/static/cocoblog/150827/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150827-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">使う人を想う気持ちから生まれた、
 使い心地のよさ。見た目の心地よさ。</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/150824/">
+			</li>           
+             
+               <li><a href="/shop/lifestyle/static/cocoblog/150824/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150824-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">今までのクリームと変わらないおいしさ。
 豆腐クリームで、いろんなレシピをヘルシーに。</p></a>
+			</li>           
+   	  <!--         			<li><a href="/shop/lifestyle/static/cocoblog/150821/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150821-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">金魚がたくさん育つ街は、たくさんの水と緑に恵まれた街。</p></a>
 			</li>
+		<li><a href="/shop/lifestyle/static/cocoblog/150818/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150818-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">ホットのような香り＆味わいのアイスコーヒーをつくるコツ。</p></a>
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/150812/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150812-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">ヘルシー！紫キャベツのコールスロー風</p></a>
+			</li> -->
+
 			</ul>
 		<br clear="all">
 		<a href="/shop/lifestyle/static/cocoblog/" class="wrap_sp alist">ココチモブログへ</a>
 		</div>
 		<!--▲▲▲COCOCIMO BLOG▲▲▲-->
+		
+		
+		
 		<!--▼▼▼PICK UP CATEGORY▼▼▼-->
 		<div class="wrap_specialcontents">
 			<h2>PICK UP CATEGORY <span>ピックアップカテゴリー</span></h2>
 			<ul class="pickuplist">
+			
 			<li class="pickup_mrb"><a href="/shop/lifestyle/category/001001002/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic01.jpg" alt=""></a>
 			</li>
+			
 			<li class="pickup_mrb"><a href="/shop/lifestyle/category/001001004003/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic02.jpg" alt=""></a>
 			</li>
-			<li class="pickup_mb"><a href="/shop/lifestyle/category/001001006001/list/">
+			
+			<li class="pickup_mb"><a href="/shop/lifestyle/category/001001007008/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic03.jpg" alt=""></a>
 			</li>
+			
 			<li class="pickup_mr"><a href="/shop/lifestyle/category/001001012018/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic04.jpg" alt=""></a>
 			</li>
+			
 			<li class="pickup_mr"><a href="/shop/lifestyle/category/001001009/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic05.jpg" alt=""></a>
 			</li>
+			
 			<li><a href="/shop/lifestyle/category/001001009006/list/">
 				<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/pickup/pic06.jpg" alt=""></a>
 			</li>
@@ -1212,11 +1364,19 @@ function initCorners() {
 		<br clear="all">
 		</div>
 		<!--▲▲▲PICK UP CATEGORY▲▲▲-->
+
+		
 		<!--▼▼▼CHECK ITEM▼▼▼-->
 		<object class="xsp_obj" m:id="e_var_browsingGoodsList"></object>
+		
 		<div class="wrap_specialcontents wrapnew">
 		<h2>CHECK ITEM <span>最近チェックした商品</span></h2>
 		<span m:id="l_notEmp_browsingGoodsList">
+		
+
+
+
+
 <div class="wrap_pc">
 			<div class="main" id="lineupItem">
 				<div class="newitemlist newitemlistb">
@@ -1227,6 +1387,7 @@ function initCorners() {
 							<div class="newitem">
 								<a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a>
 							</div>
+							
 							<p class="txt13"><b><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></p>
 							<p class="txt13">
 							<span m:id="l_notEqu_browsingGoods_pretaxPrice">
@@ -1277,6 +1438,7 @@ function initCorners() {
 							<div class="newitem">
 								<a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a>
 							</div>
+							
 							<p class="txt13"><b><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></p>
 							<p class="txt13">
 							<span m:id="l_notEqu_browsingGoods_pretaxPrice">
@@ -1317,10 +1479,17 @@ function initCorners() {
 				</div>
 			</div>
 </div>
+
+		
 		</span>
 		<br clear="all">
 		</div>
+		
 		<!--▲▲▲CHECK ITEM▲▲▲-->
+		
+
+
+
 		<!--▼▼▼pagetop▼▼▼-->
 		<div class="con_box clearfix">
 			<!-- シェアボタンに変換される -->
@@ -1334,9 +1503,16 @@ function initCorners() {
 			</div>
 		</div>    
 		<!--▲▲▲pagetop▲▲▲--> 
+
 	</div>
 	<!--contents-->
+
 </div><!--container-->
+
+
+
+
+
 <!-- ガイド -->
 <div id="guideWrapper" class="pc_only">
 	<div class="guideTop">
@@ -1381,6 +1557,7 @@ function initCorners() {
 				<div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
 				<p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
 				<p><span>代金引換<br>代引手数料300円</span></p>
+				
 				<div class="secure clearfix">
 				<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 				<p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
@@ -1392,6 +1569,8 @@ function initCorners() {
 	</div>
 </div>
 <!-- ガイド -->
+
+
 <!-- footer追加 -->
 <div id="footer02">
 	<div id="footer_wrap02">
@@ -1399,7 +1578,7 @@ function initCorners() {
 			<div class="add_inner">
 				<div class="inn_tit">メインメニュー</div>
 					<ul>
-					<li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
+					<li><a m:id="e_link_logo_shop_shop" href="/">トップページ</a></li>
 					<li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
 					<li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
 					<li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>
@@ -1448,7 +1627,11 @@ function initCorners() {
       </div>            
 		</div>
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->
+
+
 <br clear="all" />
+
+
 		<div class="pc_display member_signup">
 		<h3 id="icon_03">初めての方へ</h3>
 			<ul>
@@ -1457,6 +1640,7 @@ function initCorners() {
 			<li><a href="/shop/lifestyle/static/first/">ココチモとは</a></li>
 			</ul>
 		</div>
+
 		<div class="pc_display">
 			<h3 id="icon_04">会員の方</h3>
 			<ul>
@@ -1464,6 +1648,7 @@ function initCorners() {
 			<li></li>
 			</ul>
 		</div>
+
 		<div id="footer03" class="pc_display">
 			<div class="clearfix" id="footer_wrap03">
 				<ul class="clearfix">
@@ -1476,6 +1661,7 @@ function initCorners() {
 			<p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
 			</div><!--footer_wrap03-->
 		</div><!--footer03-->
+
 		<div id="footer05" class="sp_only">
 			<div class="mt10 sp_secure clearfix">
 			<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
@@ -1484,15 +1670,21 @@ function initCorners() {
 			</p>
 			</div>
 		</div>
+
 		<p>Copyright U-CAN, Inc. All Rights Reserved.</p>
+
 	</div>
 </div><!-- /#footer02 -->
-<!-- InstanceBeginEditable name="footer_script" -->
+
+
+	<!-- InstanceBeginEditable name="footer_script" -->
 <!-- ▼▼▼▼▼tracking ga▼▼▼▼▼ -->
+
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
 <!-- name="sitecatalyst" -->
+
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -1533,7 +1725,6 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!--EndEditable -->
-
 </div>
 <!-- InstanceEndEditable -->
 <!-- [head]内や、[body]の終了直前などに配置 -->
