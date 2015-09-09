@@ -92,7 +92,13 @@ nextText: "",
 
 	});
   });
-</script> 
+  window.onunload = function() {
+		jQuery(function(){
+		// 全ての選択を外す
+			$("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+		});
+	}
+</script>
 
 <!-- InstanceEndEditable -->
 
@@ -356,6 +362,34 @@ s.tl(this,'o','cartview',null,'navigate');return false
 								</span>
 								<span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)
 </p>
+				<!-- 今売れている商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_autoRank">
+					<span m:id="l_equ_autoRankList_valiationSize">
+						<a m:id="h_link_cartAddDirect_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_autoRank_cartAdd_img"></div>
+						</a>
+					</span>
+					<span m:id="l_not_equ_autoRankList_valiationSize">
+						<select m:id="h_sel_goods_sku_code1_autoRank" class="goods_sku_code">
+							<option value="">選択してください</option>
+							<option m:id="h_opt_variations_autoRank" value="">白</option>
+							<option m:id="dummy" value="">黒</option>
+							<option m:id="dummy" value="">赤</option>
+							<option m:id="dummy" value="">青</option>
+							<option m:id="dummy" value="">緑</option>
+						</select>
+						<div m:id="disp_not_cartAddBtn_autoRank">&nbsp;</div>
+						<a m:id="h_link_cartAddDirectSku_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_autoRank_cartAdd_img"></div>
+						</a>
+					</span>
+				</span>
+				<span m:id="l_not_addCartDirect_autoRank">
+					<span m:id="disp_saleStatus_autoRank">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 今売れている商品一覧からカートに入れる -->
               </div>
             </div>
           </li>
@@ -441,6 +475,36 @@ s.tl(this,'o','cartview',null,'navigate');return false
 										</span>&nbsp;
 									</span>
 									<span m:id="b_wr_recommendGoods_actualSalePrice">100</span>円(税込) </p>
+                
+                <!-- 話題の商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_recommend">
+					<span m:id="l_equ_recommendList_valiationSize">
+						<a m:id="h_link_cartAddDirect_recommend" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_reco_cartAdd_img">&nbsp;</div>
+						</a>
+					</span>
+					<span m:id="l_not_equ_recommendList_valiationSize">
+						<select m:id="h_sel_goods_sku_code1_recommend" class="goods_sku_code">
+							<option value="">選択してください</option>
+							<option m:id="h_opt_variations_recommend" value="">白</option>
+							<option m:id="dummy" value="">黒</option>
+							<option m:id="dummy" value="">赤</option>
+							<option m:id="dummy" value="">青</option>
+							<option m:id="dummy" value="">緑</option>
+						</select>
+						
+						<div m:id="disp_not_cartAddBtn_recommend">&nbsp;</div>
+						<a m:id="h_link_cartAddDirectSku_recommend" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_reco_cartAdd_img">&nbsp;</div>
+						</a>
+					</span>
+				</span>
+				<span m:id="l_not_addCartDirect_recommend">
+					<span m:id="disp_saleStatus_recommend">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 話題の商品一覧からカートに入れる -->
                 </div>
               </div>
             </li>
@@ -518,6 +582,37 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
               <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
               <p> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+            <!-- 閲覧履歴一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_autoReco">
+				<span m:id="l_equ_autoReco_valiationSize">
+					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img m:id="static_img" class="pc_only" src="../../../contents/shop/00000003/shop/image/cart_banner_03.gif" alt="カートに入れる" />
+						<img m:id="static_img" class="sp_only" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_02.gif" alt="カートに入れる" />
+					</a>
+				</span>
+				<span m:id="l_not_equ_autoReco_valiationSize">
+					<select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_autoReco" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_autoReco">&nbsp;</div>
+					<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい"/>-->
+					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img m:id="static_img" class="pc_only" src="../../../contents/shop/00000003/shop/image/cart_banner_03.gif" alt="カートに入れる" />
+						<img m:id="static_img" class="sp_only" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_02.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_autoReco">
+				<span m:id="disp_saleStatus_autoReco">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 閲覧履歴一覧からカートに入れる -->
             </div>
           </div>
         </li>
@@ -578,6 +673,36 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 <p class="text"><span m:id="disp_newGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
                 <p class="cash"><span m:id="l_notEqu_newGoods_pretaxPrice"> <span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円
                   &nbsp; </span> <span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
+              
+              	<!-- 新着商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_newGoods">
+					<span m:id="l_equ_newGoodsList_valiationSize">
+						<a m:id="h_link_cartAddDirect_newGoods" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_new_cartAdd_img">&nbsp;</div>
+						</a>
+					</span>
+					<span m:id="l_not_equ_newGoodsList_valiationSize">
+						<select m:id="h_sel_goods_sku_code1_newGoods" class="goods_sku_code">
+							<option value="">選択してください</option>
+							<option m:id="h_opt_variations_newGoods" value="">白</option>
+							<option m:id="dummy" value="">黒</option>
+							<option m:id="dummy" value="">赤</option>
+							<option m:id="dummy" value="">青</option>
+							<option m:id="dummy" value="">緑</option>
+						</select>
+						
+						<div m:id="disp_not_cartAddBtn_newGoods">&nbsp;</div>
+						<a m:id="h_link_cartAddDirectSku_newGoods" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_new_cartAdd_img">&nbsp;</div>
+						</a>
+					</span>
+				</span>
+				<span m:id="l_not_addCartDirect_newGoods">
+					<span m:id="disp_saleStatus_newGoods">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 新着商品一覧からカートに入れる -->
               </div>
             </div>
           </li>
@@ -837,6 +962,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </div>-->
   <!--▲▲▲左カラムバナー▲▲▲-->
   <!--▼▼▼最近チェックした商品▼▼▼-->
+	<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+		<input type="hidden" name="display_code" />
+		<input type="hidden" name="goods_sku_code" />
+		<input type="hidden" name="ext_goods_sku_code" />
+		<input type="hidden" name="order_num_string" />
+		<input type="hidden" name="_S" />
+	</form>
+  
   <object class="xsp_obj" m:id="e_var_browsingGoodsList">
   </object>
   <span m:id="l_notEmp_browsingGoodsList">
@@ -859,6 +992,37 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			    </span>
 			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 </p>
+			<!-- 最近チェックした商品一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_recent">
+				<span m:id="l_equ_browsingList_valiationSize">
+					<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+				<span m:id="l_not_equ_browsingList_valiationSize">
+					<select m:id="h_sel_goods_sku_code1_recent"  class="goods_sku_code">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_browsing" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_recent">&nbsp;</div>
+					<!--<img m:id="disp_not_cartAddBtn_recent" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+					<a m:id="h_link_cartAddDirectSku_recent" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
+						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_recent">
+				<span m:id="disp_saleStatus_recent">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 最近チェックした商品一覧からカートに入れる -->
             </div>
           </div>
         </li>
@@ -1061,7 +1225,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <div id="footer04" class="sp_only">
 <h2><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_tit.png" alt="お電話でもご購入いただけます" /></h2>
-<div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.png" alt="お電話でのご注文　0120-552-476 7時から22時（年中無休）" /></div>
+<div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.jpg" alt="お電話でのご注文　0120-552-476 7時から22時（年中無休）" /></div>
 <div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_02.png" alt="FAXでのご注文　0120-552-607"  /><p><a href="/shop/c/static/fax/">FAXでのご注文方法について</a></div>
 </div><!--footer04-->
 

@@ -81,6 +81,7 @@ $(function() {
 }
 </style>	
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/side_menu.css" type="text/css" media="all" />
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -167,6 +168,7 @@ $(function () {
 </script>
 
 <!-- InstanceBeginEditable name="head" -->
+
 <!-- InstanceEndEditable -->
 
 </head>
@@ -782,6 +784,35 @@ function initCorners() {
 				</span>&nbsp;
 			</span>
 			<span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)</p>
+			<!-- 今売れている商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_autoRank">
+					<span m:id="l_equ_autoRankList_valiationSize">
+						<a m:id="h_link_cartAddDirect_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_autoRank_cartAdd_img"></div>
+						</a>
+					</span>
+					<span m:id="l_not_equ_autoRankList_valiationSize">
+						<select m:id="h_sel_goods_sku_code1_autoRank" class="goods_sku_code">
+							<option value="">選択してください</option>
+							<option m:id="h_opt_variations_autoRank" value="">白</option>
+							<option m:id="dummy" value="">黒</option>
+							<option m:id="dummy" value="">赤</option>
+							<option m:id="dummy" value="">青</option>
+							<option m:id="dummy" value="">緑</option>
+						</select>
+						<div m:id="disp_not_cartAddBtn_autoRank"></div>
+						<!--<img m:id="disp_not_cartAddBtn_autoRank" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+						<a m:id="h_link_cartAddDirectSku_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+							<div m:id="l_autoRank_cartAdd_img"></div>
+						</a>
+					</span>
+				</span>
+				<span m:id="l_not_addCartDirect_autoRank">
+					<span m:id="disp_saleStatus_autoRank">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 今売れている商品一覧からカートに入れる -->
 			</li>
 		</span>
 		</span>
@@ -904,6 +935,34 @@ function initCorners() {
 							<span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円
 							&nbsp; </span>
 							<span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
+							
+							<!-- 新着商品一覧からカートに入れる -->
+							<span m:id="l_can_addCartDirect_newGoods">
+								<span m:id="l_equ_newGoodsList_valiationSize">
+									<a m:id="h_link_cartAddDirect_newGoods" href="" class="productDetail_cart_bt_normal" onclick="">
+										<img class="cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+									</a>
+								</span>
+								<span m:id="l_not_equ_newGoodsList_valiationSize">
+									<select m:id="h_sel_goods_sku_code1_newGoods_sku" class="goods_sku_code">
+										<option value="">選択してください</option>
+										<option m:id="h_opt_variations_newGoods_sku" value="">白</option>
+										<option m:id="dummy" value="">黒</option>
+										<option m:id="dummy" value="">赤</option>
+										<option m:id="dummy" value="">青</option>
+										<option m:id="dummy" value="">緑</option>
+									</select>
+									<div m:id="disp_not_cartAddBtn_newGoods_sku"></div>
+									<!--<img m:id="disp_not_cartAddBtn_newGoods_sku" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+									<a m:id="h_link_cartAddDirectSku_newGoods_sku" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+							</span>
+							<span m:id="l_not_addCartDirect_newGoods">
+								<span m:id="disp_saleStatus_newGoods">
+								<p class="soldout"><strong>[販売終了]</strong></p>
+								</span>
+							</span>
+							<!--/ 新着商品一覧からカートに入れる -->
 						</div>
 						</span>
 					
@@ -929,6 +988,32 @@ function initCorners() {
 							<span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円
 							&nbsp; </span>
 							<span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
+							
+							<!-- 新着商品一覧からカートに入れる -->
+							<span m:id="l_can_addCartDirect_newGoods">
+								<span m:id="l_equ_newGoodsList_valiationSize">
+									<a m:id="h_link_cartAddDirect_newGoods" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn newCartAddbtn_sp" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+								<span m:id="l_not_equ_newGoodsList_valiationSize">
+									<select m:id="h_sel_goods_sku_code1_newGoods_sku" class="goods_sku_code">
+										<option value="">選択してください</option>
+										<option m:id="h_opt_variations_newGoods_sku" value="">白</option>
+										<option m:id="dummy" value="">黒</option>
+										<option m:id="dummy" value="">赤</option>
+										<option m:id="dummy" value="">青</option>
+										<option m:id="dummy" value="">緑</option>
+									</select>
+									<div m:id="disp_not_cartAddBtn_newGoods_sku"></div>
+									<!--<img m:id="disp_not_cartAddBtn_newGoods_sku" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+									<a m:id="h_link_cartAddDirectSku_newGoods_sku" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn newCartAddbtn_sp" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+							</span>
+							<span m:id="l_not_addCartDirect_newGoods">
+								<span m:id="disp_saleStatus_newGoods">
+								<p class="soldout"><strong>[販売終了]</strong></p>
+								</span>
+							</span>
+							<!--/ 新着商品一覧からカートに入れる -->
 						</div>
 						</span>					
 				</div>
@@ -938,6 +1023,13 @@ function initCorners() {
 		</div>
 		</span>
 		<!--▲▲▲NEW ITEM▲▲▲-->
+<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+	<input type="hidden" name="display_code" />
+	<input type="hidden" name="goods_sku_code" />
+	<input type="hidden" name="ext_goods_sku_code" />
+	<input type="hidden" name="order_num_string" />
+	<input type="hidden" name="_S" />
+</form>
 		<!--▼▼▼BRAND▼▼▼-->
 		<div class="wrap_specialcontents wrapbrand">
 		<h2>BRAND <span>取扱ブランド一覧</span></h2>
@@ -1199,6 +1291,10 @@ function initCorners() {
 			<div class="blogclear"><br clear="all"></div>
 			<ul class="bloglist">
 
+			<li><a href="/shop/lifestyle/static/cocoblog/150908/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150908-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">育った環境、日々の観察力が生み出す、世界でたったひとつのデザイン。</p></a>
+			</li>
 			<li><a href="/shop/lifestyle/static/cocoblog/150904/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150904-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">心豊かに暮らせる国・フィンランドの家庭料理風に、魚を味わってみよう。</p></a>
@@ -1214,12 +1310,12 @@ function initCorners() {
 使い心地のよさ。見た目の心地よさ。</p></a>
 			</li>           
              
-               <li><a href="/shop/lifestyle/static/cocoblog/150824/">
+    	  <!--               <li><a href="/shop/lifestyle/static/cocoblog/150824/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150824-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">今までのクリームと変わらないおいしさ。
 豆腐クリームで、いろんなレシピをヘルシーに。</p></a>
 			</li>           
-   	  <!--         			<li><a href="/shop/lifestyle/static/cocoblog/150821/">
+        			<li><a href="/shop/lifestyle/static/cocoblog/150821/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150821-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">金魚がたくさん育つ街は、たくさんの水と緑に恵まれた街。</p></a>
 			</li>
@@ -1305,6 +1401,31 @@ function initCorners() {
 							</span>
 							<span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 							</p>
+							<!-- 最近チェックした商品一覧からカートに入れる -->
+							<span m:id="l_can_addCartDirect_recent">
+								<span m:id="l_equ_browsingList_valiationSize">
+									<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+								<span m:id="l_not_equ_browsingList_valiationSize">
+									<select m:id="h_sel_goods_sku_code1_recent_sku" class="goods_sku_code">
+										<option value="">選択してください</option>
+										<option m:id="h_opt_variations_browsing_sku" value="">白</option>
+										<option m:id="dummy" value="">黒</option>
+										<option m:id="dummy" value="">赤</option>
+										<option m:id="dummy" value="">青</option>
+										<option m:id="dummy" value="">緑</option>
+									</select>
+									<div m:id="disp_not_cartAddBtn_recent_sku"></div>
+									<!--<img m:id="disp_not_cartAddBtn_recent_sku" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+									<a m:id="h_link_cartAddDirectSku_recent_sku" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+							</span>
+							<span m:id="l_not_addCartDirect_recent">
+								<span m:id="disp_saleStatus_recent">
+								<p class="soldout"><strong>[販売終了]</strong></p>
+								</span>
+							</span>
+							<!--/ 最近チェックした商品一覧からカートに入れる -->
 						</div>
 						</span>
 						</span>
@@ -1331,6 +1452,31 @@ function initCorners() {
 							</span>
 							<span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 							</p>
+							<!-- 最近チェックした商品一覧からカートに入れる -->
+							<span m:id="l_can_addCartDirect_recent">
+								<span m:id="l_equ_browsingList_valiationSize">
+									<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn browsCartAddbtn_sp" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+								<span m:id="l_not_equ_browsingList_valiationSize">
+									<select m:id="h_sel_goods_sku_code1_recent_sku" class="goods_sku_code">
+										<option value="">選択してください</option>
+										<option m:id="h_opt_variations_browsing_sku" value="">白</option>
+										<option m:id="dummy" value="">黒</option>
+										<option m:id="dummy" value="">赤</option>
+										<option m:id="dummy" value="">青</option>
+										<option m:id="dummy" value="">緑</option>
+									</select>
+									<div m:id="disp_not_cartAddBtn_recent_sku"></div>
+									<!--<img m:id="disp_not_cartAddBtn_recent_sku" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
+									<a m:id="h_link_cartAddDirectSku_recent_sku" href="" class="productDetail_cart_bt_normal" onclick=""><img class="cartAddbtn browsCartAddbtn_sp" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" /></a>
+								</span>
+							</span>
+							<span m:id="l_not_addCartDirect_recent">
+								<span m:id="disp_saleStatus_recent">
+								<p class="soldout"><strong>[販売終了]</strong></p>
+								</span>
+							</span>
+							<!--/ 最近チェックした商品一覧からカートに入れる -->
 						</div>
 						</span>
 						</span>
