@@ -15,7 +15,7 @@
 <meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
 <title m:id="title" arg1="" arg2=" ココチモ（cococimo）のECサイト">データベースから値を取得し表示します</title>
 <!--<link m:id="favicon" rel="shortcut icon" href="../../../contents/favicon/favicon.ico">-->
-<!--<link rel="canonical" href="http://www.cococimo.jp/shop/c/e/DFF1E/"/>-->
+<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
@@ -270,25 +270,32 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 	  		<!-- インクルード領域 -->
-			<span m:id="html_include1">外部HTML1 表示領域</span>
+	  		<span m:id="l_include_in_period">
+				<span m:id="html_include1">外部HTML1 表示領域</span>
+			</span>
+	  		<span m:id="l_include2_in_period">
+				<span m:id="html2_include1">外部HTML1 表示領域</span>
+			</span>
+			<span m:id="l_include3_in_period">
+				<span m:id="html3_include1">外部HTML1 表示領域</span>
+			</span>
 			<!--/ インクルード領域  -->
 <span m:id="l_equ_canAddCart">
-<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
-<input m:id="h_hid__S" type="hidden" name="_S" value="" />
-<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="order_num_string" value="1" />
-<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn.jpg" alt="カートに入れる" class="hover mt30"/></a></p>
-<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn02.jpg" alt="お買い物かごに入れる" class="hover spbtn" ></a></p>
-</form>
+	<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+	<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+	<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+	<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+	<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+	<input type="hidden" name="order_num_string" value="1" />
+	<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn.jpg" alt="カートに入れる" class="hover mt30"/></a></p>
+	<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn02.jpg" alt="お買い物かごに入れる" class="hover spbtn" ></a></p>
+	</form>
 </span>
-
-<span m:id="l_equ_soldOutSalesStatus">
-	<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-</span>
-<span m:id="l_equ_noStockSalesStatus">
-	<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
+<span m:id="l_notEqu_canAddCart">
+	<span m:id="l_equ_soldOutSalesStatus">
+		<p class="shopping"><img src="contents/shop/00000003/image/kanbai2.jpg" alt="完売しました" /></p>
+		<p class="shopping_sp"><img src="contents/shop/00000003/image/kanbai2.png" alt="完売しました" /></p>
+	</span>
 </span>
 
 <!-- 商品レビュー start-->
@@ -360,27 +367,32 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--r_con_box_03-->
 
 <!-- /商品レビュー end-->
-
+<span m:id="l_include_in_period">
 <span m:id="html_include3">外部HTML3 表示領域<br></span>
+</span>
+<span m:id="l_include2_in_period">
+<span m:id="html2_include3">外部HTML3 表示領域</span>
+</span>
+<span m:id="l_include3_in_period">
+<span m:id="html3_include3">外部HTML3 表示領域</span>
+</span>
 <span m:id="l_equ_canAddCart">
-<form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
-<input m:id="h_hid__S" type="hidden" name="_S" value="" />
-<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="order_num_string" value="1" />
-<p class="shopping"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn.jpg" alt="カートに入れる" class="hover mt30"/></a></p>
-<p class="shopping_sp"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn02.jpg" alt="お買い物かごに入れる" class="hover spbtn" ></a></p>
-</form>
+	<form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
+	<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+	<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+	<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+	<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+	<input type="hidden" name="order_num_string" value="1" />
+	<p class="shopping"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn.jpg" alt="カートに入れる" class="hover mt30"/></a></p>
+	<p class="shopping_sp"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn02.jpg" alt="お買い物かごに入れる" class="hover spbtn" ></a></p>
+	</form>
 </span>
-
-<span m:id="l_equ_soldOutSalesStatus">
-	<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-</span>
-<span m:id="l_equ_noStockSalesStatus">
-	<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
-</span>
-
+	<span m:id="l_notEqu_canAddCart">
+		<span m:id="l_equ_soldOutSalesStatus">
+			<p class="shopping"><img src="contents/shop/00000003/image/kanbai2.jpg" alt="完売しました" /></p>
+			<p class="shopping_sp"><img src="contents/shop/00000003/image/kanbai2.png" alt="完売しました" /></p>
+		</span>
+	</span>
     </div>
 </div>
 
@@ -602,5 +614,22 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ Criteo ▼▼▼ -->
+<!-- Criteo loader
+
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
+var protocol;
+if (location.protocol == "https:") { protocol = "https:";} else { protocol = "http:"; }
+document.write('<script language="JavaScript" type="text/javascript" src="' + protocol + '\/\/static.criteo.net/js/ld/ld.js"><\/script>');
+//]]>
+</script>
+<meta m:id="criteo_common_q" content=""></meta>
+<meta m:id="criteo_common_account" content=""></meta>
+<meta m:id="criteo_member" content=""></meta>
+<meta m:id="criteo_common_site_type" content=""></meta>
+<meta m:id="criteo_view_item" content=""></meta>
+
+<!-- ▲▲▲ Criteo ▲▲▲ -->
 </body>
 <!-- InstanceEnd --></html>
