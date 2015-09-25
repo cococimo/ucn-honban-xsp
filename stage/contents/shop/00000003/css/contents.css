@@ -2159,7 +2159,7 @@ margin:0 3.125% 5% 3.125%;
 }
 
 .r_con_list_01{
-	max-height:500px;
+	max-height:590px;
 	overflow:hidden;
 }
 
@@ -7634,5 +7634,8 @@ img[id*="not_priceGoodsBtnID_"],img[id*="not_recentBtnID_"],img[id*="not_newGood
   }
   div[id*="not_priceGoodsBtnID_"],div[id*="not_recentBtnID_"],div[id*="not_newGoodsBtnID_"],div[id*="not_goodsListBtnID_"],div[id*="not_autoRecoBtnID_"],div[id*="not_autoRankBtnID_"]{
 	height:3.5em;
-}
+  }
+  li div div.cart_box{
+    clear:both;
+  }
 }
