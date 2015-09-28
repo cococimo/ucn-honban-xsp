@@ -33,6 +33,12 @@
 })();
 window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
+window.onunload = function() {
+	jQuery(function(){
+	// 全ての選択を外す
+		$("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+	});
+}
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <!-- InstanceEndEditable -->
@@ -2890,6 +2896,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>        
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>  
+        <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>          
       </ul>      
       </div>
 </div>

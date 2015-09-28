@@ -8,26 +8,18 @@
 	width: 70%;
 	margin:0 auto;
 }
-.sidebar{
-}
 p{
 	color: #838485;
 	line-height:1.5em;
-	font-size:90%;
-}
+	font-size:90%; }
 h2{
-	margin-bottom:5px;
-}
+	margin-bottom:5px; }
 h3{
-	margin-bottom:12px;
-}
+	margin-bottom:12px; }
 .text_left {
-	text-align:left;
-}
+	text-align:left; }
 .text_right {
-	text-align:right;
-}
-
+	text-align:right; }
 /*************
 
 	top
@@ -35,6 +27,13 @@ h3{
 	**********/
 .topImg{
 	padding-top: 10px;
+}
+
+.topbottom_text
+{
+	margin:0;
+	padding:10px 0;
+	text-align:left;
 }
 /***********
 
@@ -61,6 +60,7 @@ h3{
 	text-align:left;
 }
 
+
 .categorysec a.button {
 	display: inline-block;
 	width: 240px;
@@ -68,15 +68,16 @@ h3{
 	text-decoration: none;
 	outline: none;
 	background-color: #ffffff;
-	border: 2px solid #436bac;
+	border: 2px solid #5554B1;
 	border-radius: 2px;
 	color: #436bac;
-	line-height: 44px;
 	margin-left: 20%;
-}
+	padding:10px 5px;
+	}
+
 .categorysec a.button {
-	color:#436bac;
-}
+	color:#436bac; }
+
 .categorysec .button:hover {
 	background-color: #436bac;
 	border-color: #436bac;
@@ -87,8 +88,8 @@ h3{
 	position: absolute;
 	z-index: -1;
 	display: block;
-	content: '';
-}
+	content: ''; }
+
 .categorysec .button,
 .categorysec .button::before,
 .categorysec .button::after {
@@ -96,8 +97,8 @@ h3{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-transition: all .3s;
-	transition: all .3s;
-}
+	transition: all .3s; }
+
 /**************
 
 		categorylist
@@ -107,27 +108,27 @@ h3{
 	border: 1px dotted #656565;
 	border-radius: 6px;
 	margin: 50px 0 0;
-	padding-bottom:25px;
-}
+	padding-bottom:25px; }
+
 .categorylist ul.list_left {
 	float:left;
 	width:300px;
 	line-height: 2em;
 	padding-left:45px;
-	text-align:left;
-}
+	text-align:left; }
+
 .categorylist ul.list_right {
 	float:left;
 	width:300px;
 	line-height: 2em;
-	text-align:left;
-}
+	text-align:left; }
+
 .categorylist a{
-	color: #96c3e3;
-}
+	color: #96c3e3; }
+
 .categorylist img{
-	padding: 0 4.5%;
-}
+	padding: 0 4.5%; }
+
 /****************
 
 		recommend
@@ -137,56 +138,52 @@ h3{
 .recommendsec {
 	margin: 35px 0 0;
 	padding-bottom:25px;
-	font-size:85%;
-}
+	font-size:85%; }
+
 .recommendsec .recommend_header {
 	border-bottom: 2px dotted #a4a4a4;
 }
+
 .recommendsec .recommend_header dl{
 	width: 30%;
 	padding:0 8px 20px;
-	float: left;
-}
+	float: left; }
+
 .recommendsec dl.reco_center {
 	border-left: 2px dotted #a4a4a4;
-	border-right: 2px dotted #a4a4a4;
-}
+	border-right: 2px dotted #a4a4a4; }
+
 .recommendsec .recommend_header dt {
-	margin-bottom:5px;
-}
+	margin-bottom:5px; }
 
 .recommendsec .recommend_header dt img:hover {
-	opacity:0.85;
-}
+	opacity:0.85; }
 
 .recommendsec .recommend_header dd  p {
 	padding:5px 0 0 15px;
-	text-align:left;
-}
+	text-align:left; }
+
 .recommendsec .recommendsec .recommend_bottom {
-	margin:0 auto;
-}
+	margin:0 auto; }
+
 .recommendsec .recommend_bottom dl{
 	width: 30%;
 	padding:20px 8px 20px;
-	float: left;
-}
+	float: left; }
+
 .recommendsec dl.reco_center {
 	border-left: 2px dotted #a4a4a4;
-	border-right: 2px dotted #a4a4a4;
-}
-.recommendsec .recommend_bottom dt {
-	margin-bottom:5px;
-}
+	border-right: 2px dotted #a4a4a4; }
 
-..recommendsec recommend_bottom dt img:hover {
-	opacity:0.85;
-}
+.recommendsec .recommend_bottom dt {
+	margin-bottom:5px; }
+
+.recommendsec recommend_bottom dt img:hover {
+	opacity:0.85; }
 
 .recommendsec .recommend_bottom dd  p {
 	padding:5px 0 0 15px;
-	text-align:left;
-}
+	text-align:left; }
 
 /*************
 
@@ -195,7 +192,7 @@ h3{
 		***************/
 .contents_introduction {
 	margin: 30px 0 20px;
-	padding:20px 0;
+	padding:20px 0px;
 	border: 1px dotted #656565;
 	border-radius: 8px;
 	text-align:center;
@@ -203,14 +200,13 @@ h3{
 
 .contents_introduction h2 {
 	font-size:100%;
-	padding-top:12px;
-}
+	padding-top:12px; }
 
 .contents_introduction p {
 	padding-top:8px;
 	font-size:80%;
 	line-height: 2em;
-}
+ }
 
 /***************
 
@@ -220,10 +216,26 @@ h3{
 .recommend_up:after {
   display: block;
   clear: both;
-  content: "";
-}
+  content: ""; }
+
 .recommend_down:after {
   display: block;
   clear: both;
-  content: "";
+  content: ""; }
+
+/**tokumoto addition**/
+.laundry-main-img{
+	width: 100%;
+	background: #FAFAFA;
+}
+
+.categorylist li{
+	background: url('../contents/images/categorylist_icon.png') no-repeat left ;
+	padding-left: 20px;
+	background-position: 0px 6px;
+}
+
+.w100
+{
+	width:100%;
 }
