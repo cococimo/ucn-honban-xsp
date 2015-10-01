@@ -8558,7 +8558,7 @@ display: block;
  text-decoration: none;
 }
 
-.btn_nex_01 a{
+.btn_nex_01 a,.btn_nex_01 a:link{
 display: block;
   background: none repeat scroll 0 0 #ff5d3b;
     border-radius: 4px;
@@ -12679,4 +12679,39 @@ div.autorankgoodsgoods_cart_img_rank4over:hover {
 	.sp_only_2{
 		display:none;
 	}
+}
+div.top-head{
+	float:left;
+	background-color: #BBDED0;
+	width:15%;
+	border:solid;
+	text-align:center;
+}
+div.top{
+	float:left;
+	width:15%;
+	background-color: #BBDED0;
+	border: solid;
+	text-align:center;
+}
+div.child-head-top{
+	clear:both;
+	float:left;
+	width: 15%;
+	text-align:center;
+	border: solid;
+	background-color: #BBDED0;
+}
+div.child-head{
+	float:left;
+	width: 15%;
+	text-align:center;
+	border: solid;
+	background-color: #BBDED0;
+}
+div.child{
+	float:left;
+	width:15%;
+	text-align:centet;
+	border: solid;
 }

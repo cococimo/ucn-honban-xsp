@@ -89,7 +89,13 @@ function selectAddress( disp,postCode, adr1, adr2, adr3 ) {
 function selectOption(selectObject, areaName) {
 	for (var i = 0; i < selectObject.length; i++) {
 		if (selectObject.options[i].text.indexOf(areaName) == 0) {
-			selectObject.options[i].selected = true;
+/* ¥¥ ŒÂ•Ê‘——¿‘Î‰ž 2015.08.24 ¥¥ */
+//			selectObject.options[i].selected = true;
+			if(selectObject.options[i].selectedIndex != i){
+				selectObject.options[i].selected = true;
+				$(selectObject).trigger('change');
+			}
+/* ££ ŒÂ•Ê‘——¿‘Î‰ž 2015.08.24 ££ */
 			break;
 		}
 	}
