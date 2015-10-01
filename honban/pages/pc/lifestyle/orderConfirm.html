@@ -64,9 +64,195 @@
 var clicked = false;
 //--></script>
 
+<!-- ▼▼ 個別送料対応 2015.08.28 ▼▼ -->
+<script type="text/javascript">
+	// 初期表示
+	function ordInputDefault() {
+		var form = document.orderPointPostForm;
+//		if (typeof document.orderPointPostForm != 'undefined') {
+		if (typeof form != 'undefined') {
+			displayOrdPointDisp();
+//			initPointDisp();
+		}else{
+			document.getElementById("confirm_submit").style.display = 'inline';
+			document.getElementById("confirm_non_submit").style.display = 'none';
+		}
+	}
+	// ポイント入力フォーム表示設定
+	function displayOrdPointDisp() {
+		var targetObject = document.orderPointPostForm.use_point;
+		var isDisplay = false;
+
+		// ポイント使用チェック判定
+		if (targetObject.checked) {
+			isDisplay = true;
+		}
+		// ポイント使用にチェックがされていた場合にのみ表示
+		if (document.getElementById("point_info") != null) {
+			if (isDisplay) {
+	    		var isPointSubmitDisplay = false;
+	    		var selectObject = document.orderPointPostForm.use_point_method;
+
+	    		document.orderPointPostForm.used_point_string.disabled = true;
+
+	    		// 入力したポイントを使用するチェック状態の確認
+	    		for (var i = 0; i < selectObject.length; i++) {
+	    			if (selectObject[i].checked) {
+	    				isPointSubmitDisplay = true;
+	    				if(i==0){
+	    					document.orderPointPostForm.used_point_string.disabled = false;
+	    				}
+	    				break;
+	    			}
+	    		}
+	    		if(isPointSubmitDisplay){
+					if(document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
+						document.getElementById("confirm_submit").style.display = 'inline';
+						document.getElementById("confirm_non_submit").style.display = 'none';
+		    			document.getElementById("submit_point").style.display = 'none';
+					} else {
+						document.getElementById("confirm_submit").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+		    			document.getElementById("submit_point").style.display = 'inline';
+					}
+	    		}else{
+	    			document.getElementById("confirm_submit").style.display = 'none';
+	    			document.getElementById("submit_point").style.display = 'none';
+	    			document.getElementById("confirm_non_submit").style.display = 'inline';
+	    		}
+	    		document.getElementById("point_info").style.display = 'inline';
+			}
+			else {
+				document.getElementById("confirm_submit").style.display = 'inline';
+				document.getElementById("confirm_non_submit").style.display = 'none';
+	    		document.getElementById("point_info").style.display = 'none';
+			}
+		}else{
+			document.getElementById("confirm_submit").style.display = 'inline';
+			document.getElementById("confirm_non_submit").style.display = 'none';
+    		document.getElementById("point_info").style.display = 'none';
+		}
+	}
+	
+	// 注文確定チェック
+	function checkSubmitForm() {
+		clicked = true;
+		if (typeof document.orderPointPostForm != 'undefined' &&
+				document.orderPointPostForm.use_point.checked &&
+				document.orderPointPostForm.used_point.value != document.orderPointPostForm.used_point_string.value){
+			clicked = false;
+			alert('ポイントの利用状況を確認ください。');
+			return false;
+		} 
+		document.forms['orderReceiptForm'].submit();
+	}
+
+	// ご利用ﾎﾟｲﾝﾄ変更チェック
+	function checkInputPointValue() {
+		if (document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
+			document.getElementById("submit_point").style.display = 'none';
+			document.getElementById("confirm_submit").style.display = 'inline';
+			document.getElementById("confirm_non_submit").style.display = 'none';
+		}else{
+			document.getElementById("submit_point").style.display = 'inline';
+			document.getElementById("confirm_submit").style.display = 'none';
+			document.getElementById("confirm_non_submit").style.display = 'inline';
+		}
+	}
 
 
-
+	if ( window.addEventListener ) {
+		window.addEventListener("load", ordInputDefault, false);
+	} else if (window.attachEvent) {
+		window.attachEvent("onload", ordInputDefault);
+	}
+</script>	
+<object class="xsp_obj" m:id="e_var_point"></object>
+<span m:id="l_pre_member">
+	<span m:id="l_pre_point">
+		<span m:id="l_greThan_effectiveCurrentPoint">
+		<script type="text/javascript">
+				function changeUsePoint(obj) {
+					var bSelected = false;
+					var form = document.orderPointPostForm;
+					displayOrdPointDisp();
+					// 使用する→使用しない 且つ 変更前の利用ポイントが0でない場合は、一旦ポイント利用額 更新のためコミット
+					if(!obj.checked){
+						// 未チェック
+						for(var i = 0; i < form.use_point_method.length; i++) {
+							form.use_point_method[i].checked = false;
+						}
+						form.used_point_string.value = '0';
+						if(form.used_point.value != '0') {
+							form.submit();
+						}
+					}
+				}
+				function initPointDisp() {
+					var form = document.orderPointPostForm;
+					var selectObject = form.use_point;
+					if (selectObject.checked) {
+						if(form.use_point_method[1].checked){
+							form.used_point_string.readOnly = true;
+						}else{
+							form.used_point_string.disabled = false;
+						}
+					} else {
+ 						form.used_point_string.disabled = true;
+						form.used_point_string.value = '0';
+					}
+				}
+				function setAllUsePoint(){
+					var form = document.orderPointPostForm;
+					var selectObject = form.use_point;
+					var ableSetPoint = document.getElementById("available_point").innerHTML.replace(/,/g,"");;
+					var shoppingSetSubtotal = document.getElementById("shopping_subtotal").innerHTML;
+					form.used_point_string.value = ableSetPoint;
+					form.used_point_string.readOnly = true;
+					form.used_point_string.disabled = false;
+					if(ableSetPoint != shoppingSetSubtotal){
+						form.use_point_method[1].value = '010';
+					}else{
+						form.use_point_method[1].value = '020';
+					}
+					if(document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
+						document.getElementById("submit_point").style.display = 'none';
+						document.getElementById("confirm_submit").style.display = 'inline';
+						document.getElementById("confirm_non_submit").style.display = 'none';
+					} else {
+						document.getElementById("submit_point").style.display = 'inline';
+						document.getElementById("confirm_submit").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+					}
+				
+				
+				}
+				function setPartUsePoint(){
+					var form = document.orderPointPostForm;
+					var selectObject = form.use_point;
+					if(document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
+						if(document.orderPointPostForm.used_point.value == '0'){
+							document.getElementById("submit_point").style.display = 'none';
+							document.getElementById("confirm_submit").style.display = 'inline';
+							document.getElementById("confirm_non_submit").style.display = 'none';
+						} else {
+							document.getElementById("submit_point").style.display = 'inline';
+							document.getElementById("confirm_submit").style.display = 'none';
+							document.getElementById("confirm_non_submit").style.display = 'inline';
+						}
+					} else {
+						document.getElementById("submit_point").style.display = 'inline';
+						document.getElementById("confirm_submit").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+					}
+					form.used_point_string.disabled = false;
+					form.used_point_string.readOnly = false;
+				}
+			</script>
+ 		</span>
+	</span>
+</span>
+<!-- ▲▲ 個別送料対応 2015.08.28 ▲▲ -->
 
 <!-- EndEditable -->
 <!-- InstanceEndEditable -->
@@ -382,6 +568,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <tr><th>商品名</th>
 <th class="memadd_table_02_w_02">商品単価</th>
 <th class="memadd_table_02_w_03">数量</th>
+<th class="memadd_table_02_w_03">個別送料</th>
 <th class="memadd_table_02_w_02">小計</th>
 </tr>
 <span m:id="l_ite_detail">
@@ -399,6 +586,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	</span>
 </td>
 <td class="right color_w_b"><span m:id="disp_detail_order_num">3</span></td>
+<td class="right color_w_b"><span m:id="l_pre_disp_detail_postage"><span m:id="disp_detail_postage"></span>円</span><span m:id="l_pre_not_disp_detail_postage">0円</span></td>
 <td class="right color_w_b">
 	<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
 	<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
@@ -566,6 +754,77 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </span>
 <!--/ ********** include:orderDetail.jsp ********** -->
 </span>
+
+<!-- ▼▼ 個別送料対応 2015.08.28 ▼▼ -->
+<div class="clearfix">&nbsp;</div>
+
+<!-- ポイント運用ショップ -->
+<span m:id="l_pre_point">
+<span m:id="l_pre_member">
+<span m:id="l_greThan_effectiveCurrentPoint">
+
+<!-- 表示切替部 start -->
+<form name="orderPointPostForm" method="post" action="orderPointPost.do">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th class="last_02">ポイントのご利用</th></tr>
+<tr>
+	<td>
+		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する	
+	</td>
+</tr>
+</table>
+<div id="point_info">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+ <tr>
+	<td width="" style="border-top:none;" class="cart_table_02_color_01"><input type="hidden" id="existPointArea"/></td>
+	<td class="bor_bottom">
+		<input m:id="h_radio_use_point_method_010" type="radio" name="use_point_method" value="010" class="radio" onclick="setPartUsePoint(this)"/>一部のポイントを使用（使用するポイント数を以下にご入力ください）
+		<br />
+		<input m:id="h_radio_use_point_method_020" type="radio" name="use_point_method" value="020" class="radio" onclick="setAllUsePoint(this)"/>全額ポイント利用
+		<span m:id="l_msgPre_use_point">
+			<span class="error">
+				<span m:id="h_err_use_point">ポイント利用エラーメッセージ</span>
+			</span>
+		</span>
+	</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">現在ポイント</td>
+	<td class="bor_bottom">
+		<span m:id="b_wr_effectiveCurrentPoint">100</span> pt
+		<span id="shopping_subtotal" style="visibility:hidden;"><span m:id="h_hid_order_price_total">123</span></span>
+	</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">利用可能ポイント</td>
+	<td class="bor_bottom">
+		<span m:id="b_wr_order_available_point">100</span> pt
+		<span id="available_point" style="visibility:hidden;"><span m:id="h_hid_order_available_point">123</span></span>
+	</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">ご利用ポイント</td>
+<td>
+	<input m:id="h_txt_used_point_string" type="text" name="used_point_string" value="" maxlength="7" class="in_w_04" onBlur=""> pt
+	<span m:id="l_msgPre_used_point_string">
+		<span class="exp" m:id="l_usable_point">例：0 -  <span m:id="disp_sample_available_point">1,000</span>(半角数字)</span>
+		<br/>
+		<span class="error"><span m:id="h_err_used_point_string">ご利用ポイントエラーメッセージ</span></span>
+	</span>
+</td>
+</tr>
+</table>
+	<input m:id="h_hid__S" type="hidden" name="_S"  value="00000002" />
+  	<input m:id="h_hid_key" type="hidden" name="key" value="123" />
+	<input m:id="h_hid_used_point" type="hidden" name="used_point" value="0" />
+ <div id="submit_point" class="inq_input_bt_03 btn_nex_01 clearfix"> 	
+<!-- 	<div id="submit_point"> -->
+		<a m:id="a_bt_point_settle" name="point_link" href="orderReceipt.html" onclick="">入力したポイントを使用する</a><br />
+	</div>
+</div>
+</form>
+<!-- 表示切替部 end   -->
+</span>
+</span>
+</span>
+<!-- ▲▲ 個別送料対応 2015.08.28 ▲▲ -->
 
 <div class="clearfix"></div>
 <div class="clearfix confirm2block"> 
@@ -749,8 +1008,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <object class="xsp_obj" m:id="b_var_prevPageDo"></object>
 
 <span m:id="l_msgNotPre_1">
-<div class="btn_nex_01">
-<a m:id="a_bt_settle" href="orderReceipt.html" onclick=""><span style="color:#ffffff">この内容で申込む</span></a>
+<div id="confirm_submit" class="btn_nex_01">
+<a m:id="a_bt_settle"  name="order_submit_link" href="orderReceipt.html" onclick=""><span style="color:#ffffff">この内容で申込む</span></a>
+</div>
+<div id="confirm_non_submit" class="btn_nex_01">
+<a style="opacity: 1;" name="none"><span style="color:#ffffff">ポイントを入力してください</span></a>
 </div>
 </span>
 

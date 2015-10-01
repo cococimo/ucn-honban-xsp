@@ -34,14 +34,14 @@
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.flexslider.js"></script>
-<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js?v1" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
-		<script>
+		<script >
 		/*
 			jQuery(function($){
 				$('ul.example').exDropDown();
@@ -53,7 +53,7 @@
 				$('.gsearchShop').submit();
 					return false;
 				});
-});
+							});
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
 
@@ -236,11 +236,13 @@
 			}
 		}
 	}
-	function changeOrdDstInfoDisp() {
+	function changeOrdDstInfoDisp(callChange) {
 		var selectObject = document.orderForm.destined;
+		var iDstSelected = 0;
 		for (var i = 0; i < selectObject.length; i++) {
 			switchDaibiki(false);
 			if (selectObject[i].checked && selectObject[i].value == '1') {
+				iDstSelected = 1;
 				document.getElementById("dst_message").style.display = 'inline';
 				if(document.getElementById("wrapping_info") != null){
 					document.getElementById("wrapping_info").style.display = 'inline';
@@ -249,6 +251,7 @@
 				document.getElementById("dst_info").style.display = 'inline';
 				break;
 			} else if (selectObject[i].checked && selectObject[i].value == '2') {
+				iDstSelected = 2;
 				document.getElementById("dst_message").style.display = 'none';
 				document.getElementById("multi_message").style.display = 'inline';
 				document.getElementById("appointed_delivery").style.display = 'none';
@@ -282,6 +285,11 @@
 			}
 			document.getElementById("dst_message").style.display = 'none';
 			document.getElementById("appointed_delivery").style.display = 'inline';
+		}
+		if(iCurDstSelected!=iDstSelected && callChange!=0){
+			iCurDstSelected=iDstSelected;
+			form=document.orderForm;
+			$(form.area_code).val(form.area_code.options[form.area_code.selectedIndex].value).trigger('change');
 		}
 	}
 
@@ -768,7 +776,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html">
 <input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
 <input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
-<input m:id="h_hid_order_hash_code" type="hidden" value="123" />
+<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
 <h4 class="temp_tit_06 clear"><div>お客様情報</div></h4>
 <!-- ログイン時 -->
 <span m:id="l_pre_member">
@@ -951,7 +959,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（都道府県）<span class="imp">必須</span></div>
-	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" style="margin-top:4px;">
+	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" style="margin-top:40px;" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_prefecture" value="001">青森県</option>
 		<option m:id="dummy" value="002">秋田県</option>
@@ -1517,13 +1525,17 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- ポイントのご利用 -->
 			<!-- ********** include:point.jsp ********** -->
+<!-- 
 			<object class="xsp_obj" m:id="e_var_shop_point"></object>
-			<!-- ポイント運用ショップ -->
+ -->			<!-- ポイント運用ショップ -->
+<!-- 
 <object class="xsp_obj" m:id="e_var_point"></object>
 <span m:id="l_pre_point">
 <h4 class="temp_tit_06 clear"><div>ポイントのご利用</div></h4>
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+ -->
 <!--ポイント利用一式を上部から移動-->
+<!-- 
 <span m:id="l_pre_member">
 	<tr>
 		<span m:id="l_pre_point">
@@ -1546,7 +1558,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</span>
 	</tr>
 </span>
+ -->
 <!--ポイント利用一式を上部から移動-->
+<!-- 
 <tr><th>現在ポイント</th>
 <td class="bor_bottom">
 <span m:id="b_wr_effectiveCurrentPoint">100</span> pt
@@ -1572,7 +1586,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </tr>
 </table>
 </span>
-
+ -->
 
 
 <h4 class="temp_tit_06 clear"><div>配送先指定</div></h4>
@@ -1584,10 +1598,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<div class="box_form_td">
 			<div class="memadd_t_box_02 clearfix" style="margin-top:10px;">
 			<div class="box_01">
-			<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp();" class="radio" >　上記のご住所</label>
+			<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp(1);" class="radio" >　上記のご住所</label>
 			</div>
 			<div class="box_01">
-			<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp();" class="radio" >　別の配送先を指定する</label>
+			<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp(1);" class="radio" >　別の配送先を指定する</label>
 			</div>
 		</div>
 		<span m:id="l_msgPre_destined">
@@ -1914,7 +1928,7 @@ TEL：090-1234-1234
 <div class="box_form_table">
 	<div class="box_form_th">住所（都道府県）<span class="imp">必須</span></div>
 	<div class="box_form_td">
-		<select m:id="h_sel_dst_area_code" class="memadd_input_01">
+		<select m:id="h_sel_dst_area_code" class="memadd_input_01" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_prefecture" value="001">青森県</option>
 		<option m:id="dummy" value="002">秋田県</option>
@@ -2134,7 +2148,7 @@ TEL：090-1234-1234
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
 <tr m:id="div_shopping_total">
 <td class="right cart_table_02_color_01 w180">送料</td>
-<td class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
+<td class="last_02 right" id="ord_postage"><span m:id="b_wr_postage">800</span> 円</td>
 </tr>
 
 <span m:id="l_notEqu_charged_option">
@@ -2177,7 +2191,7 @@ TEL：090-1234-1234
 <span m:id="div_shopping_total">
 <tr>
 <td class="right cart_table_02_color_01">請求金額</td>
-<td class="last_02 right"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+<td class="last_02 right" id="total_amt"><span m:id="b_wr_order_price_total">10000</span> 円</td>
 </tr>
 </span>
 <!--<tr>
@@ -2193,7 +2207,7 @@ TEL：090-1234-1234
 <span m:id="l_notEqu_totalPointAmt">
 <tr m:id="div_shopping_total">
 <td class="right cart_table_02_color_01">獲得予定ポイント</td>
-<td class="last_02 right"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
+<td class="last_02 right" id="total_point_amt"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
 </tr>
 </span>
 </table>

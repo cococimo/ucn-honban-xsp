@@ -98,7 +98,7 @@ jQuery(document).ready(function($){ //ここから
 	            	if(null != $(this).html()){
 	                	breaked += "<h4 class='box_02_sp'>"+$(this).html()+"</h1>";
 	                }
-	            })
+	            });
 	            $("td", this).each(function(){
 	            	if(null != $("div", this).html()){
 	                	breaked += "<div class='box_02_sp'>"+$("div", this).html()+"</div>";
@@ -591,10 +591,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--<td class="last memadd_table_02_w_05"></td>-->
 </tr>
 
+
 <object class="xsp_obj" m:id="b_var_dm_member"></object>
 <object class="xsp_obj" m:id="b_var_order_log"></object>
 
-
+<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
+<span m:id="init_individual"></span>
+<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
 <span m:id="l_ite_detail">
 <object class="xsp_obj" m:id="b_param_special"></object>
 <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
@@ -604,7 +607,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 <td class="itemname_td">
-<div class="delete_link_left">
+<div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
 <span m:id="l_notEqu_removeMe"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
 </a>
 <!-- チャネル別決済種別制限取得 -->
@@ -807,7 +810,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <tr m:id="div_shopping_total">
 <td class="right cart_table_02_color_01"><b>合計金額</b></td>
 <td class="right"><span class="bold">
-							<span m:id="b_wr_order_price_subtotal">5,400</span> 円
+							<!--  ▼▼ 個別送料対応 2015.08.27 ▼▼ -->
+							<span m:id="l_notEqu_postage"><span m:id="b_wr_order_price_subtotal">5,400</span> 円</span>
+							<span m:id="l_Equ_postage"><span m:id="b_wr_order_article_total">5,400</span> 円</span>
+							<!--  ▲▲ 個別送料対応 2015.08.27 ▲▲ -->
 						</span></td>
 
 </tr>
@@ -816,6 +822,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 </div>
 <br clear="all">
+<!-- ▼▼ 個別送料商品メッセージ 2015.08.27 koba ▼▼ -->
+<span m:id="l_Equ_postage">
+  <div class="right"><span m:id="b_msg_info_cart_individual_postage">送料は、お客様情報入力画面にて計算します。</span></div>
+</span>
+<!-- ▲▲ 個別送料商品メッセージ 2015.08.27 koba ▲▲ -->
 <span m:id="l_pre_disp_goodsPremium">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
 <tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>

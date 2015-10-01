@@ -26,6 +26,7 @@
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/contents_02.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
 
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
@@ -251,9 +252,40 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>-->
 </div><!--header_wrap-->
 </div><!--header-->
-
+<span m:id="l_pre_individual_postage">
+	<span m:id="l_not_pre_evenness_postage">
+		<object class="xsp_obj" m:id="e_var_postageGroupList"></object>
+		<span m:id="l_pre_postageGroupList">
+			<object class="xsp_obj" m:id="b_size_postageGroupListSize"></object>
+		</span>
+	</span>
+</span>
 <div id="contents">
-
+<span m:id="l_pre_individual_postage">
+	<span m:id="l_not_pre_evenness_postage">
+		<div id="modalBaseLayer" class="modalBaseLayer">
+			<div id="modal" class="modal">
+				<span m:id="l_equ_postageGroupListSize">
+					<div class="error">該当するデータがありません。<br /></div>
+				</span>
+				<span m:id="l_greThan_postageGroupListSize">
+				<a href="javascript:void(0)" class="closeModal">閉じる</a>
+					<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+						<tr>
+							<th>都道府県名</th>
+							<th>送料</th>
+						</tr>
+						<tr m:id="l_ite_postageGroupList">
+							<td><span m:id="disp_area_name"></span></td>
+							<td><span m:id="disp_postage"></span>&nbsp;円</td>
+						</tr>
+					</table>
+				</span>
+				<a href="javascript:void(0)" class="closeModal">閉じる</a>
+			</div>
+		</div>
+	</span>
+</span>
 <object class="xsp_obj" m:id="parentShop"></object>
 <object class="xsp_obj" m:id="ancestralCategory"></object>
 <object class="xsp_obj" m:id="breadcrumbCategory"></object>
@@ -343,8 +375,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <object class="xsp_obj" m:id="b_size_valiationSize"></object>
 <div class="i_res_box_02">
 <h4 class="temp_tit_05"><div>お支払いは</div></h4>
-
-
 <span m:id="l_notPre_settle_040">
 	<span m:id="l_pre_disp_installment">
 		<span m:id="l_pre_disp_goods_pay_times">
@@ -515,6 +545,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <br/><br/>※以下の決済方法はご利用いただけません<br/>
 <span m:id="l_ite_item_limit">
 <span m:id="l_equ_item_040">
+
 <div class="error">
   <table>
     <tr>
@@ -526,8 +557,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </td>
     </tr>
   </table>
-</div>
-</span>
+</div></span>
 <!--
 <div class="error">
 &nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
@@ -577,7 +607,21 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </td></tr>
 <tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th><td>△</td></tr>
 <tr m:id="l_pre_min_order_num2"><th>最低購入数<span class="conma">：</span></th><td><span m:id="disp_min_order_num">2</span></td></tr>
-
+<!-- 商品個別送料案内 -->
+<span m:id="l_pre_individual_postage">
+	<span m:id="l_pre_evenness_postage">
+		<!-- 一律送料 -->
+			<span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
+	</span>
+	<span m:id="l_not_pre_evenness_postage">
+		<!-- 地域別送料 -->
+		<a m:id="h_link_goodsPostage" class="pc_only" href="#">
+			<span m:id="b_write_postageGropName"></span>はコチラ
+		</a>
+		<script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
+		<a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
+	</span>
+</span>
 <!-- のし・ラッピング可否 -->
 <span m:id="l_pre_no_wrapping">
 <tr><td valign="top">
@@ -663,12 +707,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
 </span>
 </div>
-
 </span>
-
-
-
-
 </div>
 <span  m:id="l_pre_disp_colname1">
 <h2 class="temp_tit_n02"><span m:id="dummy">ココチモがおススメする理由</span><span m:id="disp_colname1"></span></h2>
@@ -1785,7 +1824,6 @@ eltexcomment-->
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
-  
 <!-- ▼▼ 関連カテゴリ表示欄 ▼▼ -->
 <span m:id="relate_cate_bean_def" flg="0"></span>
 <object class="xsp_obj" m:id="e_var_relateCategoryList"></object>
@@ -1897,7 +1935,7 @@ eltexcomment-->
 							</li>
 							</span>
 							</span>
-							</ul>							
+							</ul>
 							</li>
 							</span>
 						</span>
