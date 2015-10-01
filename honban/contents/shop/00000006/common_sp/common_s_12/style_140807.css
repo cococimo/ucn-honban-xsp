@@ -1,0 +1,761 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+
+.wrap_con {
+    width:946px;
+	text-align:center;
+	margin:20px auto 20px;
+	padding-top:20px;
+	padding-bottom:30px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 5px 0 #333; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 5px 0 #333; /* Firefox用 */
+	box-shadow: 0 0 5px 0 #333; /* CSS3 */
+}
+
+.mtm5{margin-top:-5px;}
+.mtm20{margin-top:-20px;}
+.mt10{margin-top:10px;}
+.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}
+.mt35{margin-top:35px;}
+.mt40{margin-top:40px;}
+.mt50{margin-top:50px;}
+.mt60{margin-top:60px;}
+.mt70{margin-top:70px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+.mb50{margin-bottom:50px;}
+.mtb30{margin:30px 0;}
+
+
+/*---背景可変---*/
+
+.whats_special {
+	width: 870px;
+	margin: 0 auto 20px auto ;
+	border: 2px solid #FC0;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 55px 10px 60px 10px;
+	background-image: url(../../image/static/img/bg_whats_special.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	
+.img_main01 {
+	width: 900px;
+	height:927px;
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_main01.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+
+.img_main02 {
+	width: 900px;
+	height:219px;
+	margin: 0 auto 20px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_main02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+
+.img_intro_bo {
+	width: 900px;
+	height:723px;
+	margin: 40px auto 20px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_intro_bo.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	
+.img_intro_cl {
+	width: 900px;
+	height:721px;
+	margin: 0 auto 40px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_intro_cl.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}		
+	
+.img_history {
+	width: 854px;
+	height:780px;
+	margin: 0 auto 20px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_history.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+
+.img_process {
+	width: 854px;
+	height:847px;
+	margin: 40px auto 20px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_process.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	
+.img_model01 {
+	width: 854px;
+	height:972px;
+	margin: 0 auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_model01.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}	
+	
+.img_model02 {
+	width: 854px;
+	height:945px;
+	margin: 0 auto 40px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_model02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	
+.img_interview02 {
+	width: 854px;
+	height:352px;
+	margin: 0 auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_interview02.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}	
+	
+.img_interview03 {
+	width: 854px;
+	height:352px;
+	margin: 0 auto 40px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_interview03.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	
+.img_size {
+	width: 720px;
+	height:403px;
+	margin: 220px auto 30px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_size.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	}							
+	
+	
+	
+
+/*/---背景可変---*/
+
+
+
+/* 注文フォーム*/
+
+.wrap_price {
+	width: 750px;
+	text-align: left;
+	margin: 20px auto 70px auto;
+	border: #ccc solid 1px;
+	border-radius: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 30px;
+	}
+
+
+.box_item{
+	margin: 10px 0 60px 0;
+	clear:both;
+	overflow:hidden;
+	}
+
+.item_img{
+	width:294px;
+	float:left;
+	overflow:hidden;
+}
+
+.item_txt{
+	width:400px;
+	float: right;
+	color: #392C19;
+	line-height: 150%;
+	font-size: 13px;
+	text-align:left;
+	margin: 0;
+	padding-top: 110px;
+	background-image: url(../../image/static/img/panama/img_price01.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.item2_txt{
+	width:400px;
+	float: right;
+	color: #392C19;
+	line-height: 150%;
+	font-size: 13px;
+	margin: 0;
+	padding-top: 110px;
+	background-image: url(../../image/static/img/panama/img_price02.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.pull_menu{
+	margin:-40px 0 0 30px;
+	
+}
+
+
+/* /注文フォーム*/
+
+
+.txt_info{
+	font-size:11px;
+	color:#F00;
+}
+
+.txt_info2{
+	font-size:12px;
+	color:#F00;
+}
+
+
+.image_btn{
+	margin-top:10px;
+}
+
+.img_message{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+
+/*** インタビュー ***/
+
+.panamaimg_center{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.intv_box {
+	width:90%;
+	margin:0 auto;
+	padding:0;
+	text-align:left;
+}
+
+
+.intv_box p {
+	font-size:14px;
+	line-height: 24px;
+	margin-bottom:25px;
+}
+
+.box_panama{
+	margin:30px auto 20px;
+	overflow:hidden;
+	clear:both;
+}
+
+.box_panama2{
+	margin:0px auto 40px;
+	overflow:hidden;
+	clear:both;
+}
+
+.intv_hr{
+	font-size: 20px;
+	color:#C30;
+	font-weight: bolder;
+}
+
+.intv_hr2{
+	font-size:16px;
+	font-weight: bolder;
+}
+
+
+.panama_pic01{
+	float:right;
+	margin:5px 0 40px 20px;
+	clear:both;
+}
+
+/*** /インタビュー ***/
+
+
+
+.temp_tit_05{
+	margin-bottom:10px;
+}
+
+
+.btinfo{
+	float:left;
+	text-align:left;
+	font-size:14px;
+	margin:-40px auto 70px 10px;
+	}
+
+
+
+@media screen and (max-width: 640px) {
+
+.wrap_con {
+    width:100%;
+}
+
+.mtm5{margin-top:0px;}
+
+.image45{
+	width:45%;
+	margin: 10px auto 0 auto;
+}
+
+.image90{
+	width:90%;
+	margin: 0 auto;
+}
+
+.image96{
+	width:96%;
+	margin: 0 auto;
+}
+
+.image97{
+	width:97%;
+	margin: 0 auto;
+}
+
+.image_mobimb{
+	margin-bottom:20px;
+}
+
+.image_mobimt{
+	margin-top:-10px;
+}
+
+
+/*---背景可変---*/
+
+.whats_special {
+	width: 90%;
+	background-image: url(../../image/static/img/bg_whats_special_s.png);
+	background-position: center;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+    padding: 40px 10px;
+	margin:0 auto 10px auto;
+	-moz-background-size:auto 50%;
+	background-size:95% auto;
+}
+
+.img_main01 {
+	width: 97%;
+	height:550px;
+	margin: 5px auto 0 auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_main01_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+
+.img_main02 {
+	width: 98%;
+	height:200px;
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_main02_s.gif);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+
+.img_intro_bo {
+	width: 98%;
+	height:510px;
+	margin: 0px auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_intro_bo_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+	
+.img_intro_cl {
+	width: 98%;
+	height:480px;
+	margin: 0 auto 30px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_intro_cl_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+	
+.img_history {
+	width: 98%;
+	height:560px;
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_history_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+
+.img_process {
+	width: 100%;
+	height:678px;
+	margin: 40px auto 0 auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_process_s.gif);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+	
+.img_model01 {
+	width: 98%;
+	height:340px;
+	margin: 10px auto 20px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_model01_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}	
+	
+.img_model02 {
+	width: 98%;
+	height:340px;
+	margin: 10px auto 40px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_model02_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	
+	}
+	
+.img_interview02 {
+	width: 98%;
+	height:190px;
+	margin: 0 auto 0 auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_interview02_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}	
+	
+.img_interview03 {
+	width: 98%;
+	height:200px;
+	margin: 0 auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_interview03_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}
+	
+.img_size {
+	width: 95%;
+	height:330px;
+	margin: 0 auto 10px auto;
+	padding: 0px;
+	background-image: url(../../image/static/img/panama/img_size_s.jpg);
+	background-position: top;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	clear:both
+	}							
+
+
+/*---/背景可変---*/
+
+
+
+.wrap_price {
+    width:85%;
+	background-repeat: no-repeat;
+	background-position: center 170px;
+    padding:10px 15px 10px 15px;
+	margin:-20px auto 30px;
+}
+
+.box_item{
+	margin: 10px 0 40px 0;
+	clear:both;
+	overflow:hidden;
+	}
+
+
+.item_img{
+	width:98%;
+	float:right;
+	margin:0 -15px 0 0;
+	padding:0;
+	overflow:hidden;
+	display:block;
+}
+
+
+.item_txt{
+	width:100%;
+	font-size: 11px;
+	float:left;
+	padding-top:90px;
+	background-position: center top;
+	-moz-background-size:auto 50%;
+	background-size:100% auto;
+}
+
+.item2_txt{
+	width:100%;
+	font-size: 11px;
+	margin: 0;
+	padding-top:90px;
+	background-position: center top;
+	-moz-background-size:auto 50%;
+	background-size:100% auto;
+}
+
+
+.pull_menu{
+	margin:-20px 0 0 0;	
+}
+
+
+
+
+/*** インタビュー ***/
+
+.concept{margin-bottom:0px}
+
+.intv_box {
+	width:95%;
+	}
+
+
+.intv_box p {
+	font-size:12px;
+}
+
+.box_panama{
+	margin:20px auto 20px;
+}
+
+.intv_hr{
+	font-size: 16px;
+}
+
+.intv_hr2{
+	font-size:14px;
+	font-weight: bolder;
+}
+
+.intv_gr{
+	font-size: 10px;
+	color: #777777;
+	font-weight: bolder;
+}
+
+
+.panama_pic01{
+	width:95%;
+	float:none;
+	margin:0 auto 0 8px;
+	clear:both;
+	background-color:#06C;
+}
+
+/*** インタビュー ***/
+
+.btinfo{
+	font-size:11px;
+	margin:-10px auto 30px -30px;
+	}
+
+}
+
+
+
+@media screen and (max-device-width: 480px) {
+	
+.image_mobimb{
+	margin-bottom:0px;
+}	
+	
+.img_main01 {
+	height:445px;
+	margin: 5px auto 5px auto;
+	}
+
+.img_main02 {
+	height:160px;
+	margin: 0px auto 20px auto;
+	}
+
+.img_intro_bo {
+	height:440px;
+	margin: 0px auto 10px auto;
+	}
+	
+.img_intro_cl {
+	height:440px;
+	margin: 0px auto 20px auto;
+	}
+	
+.img_history {
+	height:545px;
+	margin: 0px auto 0 auto;
+	}
+
+.img_process {
+	height:680px;
+	margin: 30px auto 30px auto;
+	}
+	
+.img_model01 {
+	height:330px;
+	margin: 10px auto 10px auto;
+	}	
+	
+.img_model02 {
+	height:350px;
+	margin: 10px auto 10px auto;
+	}
+
+.img_interview01 {
+	margin: -30px auto 0 auto;
+	}	
+		
+.img_interview02 {
+	height:160px;
+	margin: 0 auto 10px auto;
+	}	
+	
+.img_interview03 {
+	height:180px;
+	margin: 10px auto 20px auto;
+	}
+	
+.img_size {
+	height:300px;
+	margin: 0px auto 0px auto;
+	}
+	
+.btinfo{
+	font-size:10px;
+	margin:-10px auto 30px -35px;
+	}
+			
+}
+
+
+@media screen and (max-device-width: 320px) {
+	
+.img_main01 {
+	height:405px;
+	margin: 5px auto 5px auto;
+	}
+
+.img_main02 {
+	height:160px;
+	margin: 0px auto 25px auto;
+	}
+
+.img_intro_bo {
+	height:400px;
+	margin: 0px auto 10px auto;
+	}
+	
+.img_intro_cl {
+	height:400px;
+	margin: 0px auto 20px auto;
+	}
+	
+.img_history {
+	height:505px;
+	margin: 0px auto 0 auto;
+	}
+
+.img_process {
+	height:650px;
+	margin: 30px auto 10px auto;
+	}
+	
+.img_model01 {
+	height:330px;
+	margin: 10px auto 0px auto;
+	}	
+	
+.img_model02 {
+	height:350px;
+	margin: 10px auto -20px auto;
+	}
+
+.img_interview01 {
+	margin: -30px auto 0 auto;
+	}	
+		
+.img_interview02 {
+	height:160px;
+	margin: 0 auto 10px auto;
+	}	
+	
+.img_interview03 {
+	height:180px;
+	margin: 10px auto 20px auto;
+	}
+	
+.img_size {
+	height:270px;
+	margin: 0px auto 0px auto;
+	}
+	
+.btinfo{
+	font-size:10px;
+	margin:-10px auto 30px -35px;
+	}
+			
+}
+
+

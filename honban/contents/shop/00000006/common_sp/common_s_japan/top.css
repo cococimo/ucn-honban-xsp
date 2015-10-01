@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+/* ========================================
+* File Name: common.css
+* Created Date: 2013.05.12
+* Author: TAM
+======================================== */
+
+
+/* ========================================
+	style
+======================================== */
+@media (max-width: 640px) {
+img{
+	height: auto;
+}
+}
+
+#mainWrap{
+	box-shadow: 0px 0px 12px #dbd8cb;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #ffffff;
+	margin: 0 auto 50px;
+	padding: 0 0 76px;
+	color: #666;
+	width: 946px;
+}
+@media (max-width: 640px) {
+#mainWrap{
+	margin-bottom: 0;
+	padding: 0 0 40px; 
+	width: 100%;
+}
+}
+
+#mainWrap .mainContent{
+	padding: 0 0 49px;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent{
+	padding: 0 0 30px;
+}
+}
+
+#mainWrap .mainContent h1{
+	margin-bottom: 25px;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent h1 img{
+	width: 100%;
+}
+} 
+
+#mainWrap .mainContent .btnBox{
+	overflow: hidden;
+	margin-bottom: 38px;
+	padding: 0 18px;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent .btnBox{
+	margin-bottom: 25px;
+	padding: 0 6px;
+	box-sizing: border-box;
+}
+}
+
+#mainWrap .mainContent .btnBox li{
+	float: left;
+	margin-right: 14px;
+	width: 140px;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent .btnBox li{
+	margin: 0 2% 2% 0;
+	width: 32%;
+}
+#mainWrap .mainContent .btnBox li:nth-child(3n){
+	float: right;
+	margin-right: 0;
+}
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent .btnBox li img{
+	width: 100%;
+}
+}
+
+@media (max-width: 640px) {
+#mainWrap .mainContent .read{
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+}
+
+#mainWrap .mainContent .read h2{
+	margin-bottom: 29px;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent .read h2{
+	margin-bottom: 10px;
+	color: #ce2727;
+	font-size: 16px;
+	font-weight: bold;
+}
+}
+
+#mainWrap .mainContent .read p{
+	color: #000;
+	font-size: 14px;
+	line-height: 1.6;
+	text-align: center;
+}
+@media (max-width: 640px) {
+#mainWrap .mainContent .read p{
+	font-size: 12px;
+	text-align: left;
+}
+}
+
+/* -------------------------------------------------------------------- contentArea */
+#contentArea{
+	color: #000;
+}
+#contentArea h3.areaTtl{
+	margin-bottom: 30px;
+}
+@media (max-width: 640px){
+#contentArea h3.areaTtl{
+	position: relative;
+	margin-bottom: 25px;
+}
+#contentArea h3.areaTtl img{ 
+	width: 100%;
+}
+#contentArea h3.areaTtl span{
+	position: absolute;
+	top: 25%;
+	right: 2%;
+	color: #fff !important;
+	width: 31px;
+	height: 31px;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 26px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	background-color: #000;
+	-webkit-box-shadow: inset 0 0 4px #fffffc;
+	-moz-box-shadow: inset 0 0 4px #fffffc;
+	box-shadow: inset 0 0 4px #fffffc;
+	border: solid 2px #000;
+	background-image: -webkit-linear-gradient(bottom, #777, #000);
+	background-image: -moz-linear-gradient(bottom, #777, #000);
+	background-image: -o-linear-gradient(bottom, #777, #000);
+	background-image: linear-gradient(to top, #777, #000);
+}
+}
+
+#contentArea .contentBox{
+	overflow: hidden;
+	margin: 0 auto 60px;
+	width: 913px;
+}
+@media (max-width: 640px){
+#contentArea .contentBox{
+	margin-bottom: 60px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+}
+
+#contentArea .contentBox dl{
+	float: left;
+	margin: 0 11px 40px 0;
+	width: 297px;
+	text-align: left;
+}
+@media (max-width: 640px){
+#contentArea .contentBox dl{
+	float: none;
+	margin: 0 0 40px 0;
+	width: 100%;
+}
+#contentArea .contentBox dl:last-child{
+	margin-bottom: 0;
+}
+}
+
+#contentArea .contentBox dt{
+	margin-bottom: 10px;
+}
+@media (max-width: 640px){
+#contentArea .contentBox dt{
+	padding-right: 6px;
+}
+#contentArea .contentBox dt img{
+	width: 100%;
+}
+}
+
+#contentArea .contentBox dd .item a{
+	color: #000;
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: bold;
+}
+#contentArea .contentBox dd .item a:hover{
+	color: #ce2727;
+	text-decoration: none;
+	font-weight: bold;
+}
+#contentArea .contentBox dd .price{
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#contentArea .contentBox dd .read{
+	margin-bottom: 15px;
+	color: #666;
+	word-wrap: break-word;
+	font-size: 13px;
+}
+
+@media (max-width: 640px){
+#contentArea .contentBox dd .btn{
+	margin: 0 auto;
+	width: 70%;
+}
+#contentArea .contentBox dd .btn img{
+	width: 100%;
+}
+}
+
+@media (max-width: 640px){
+.btnMore{
+	padding: 15px 10px 0;
+	box-sizing: border-box;
+}
+.btnMore img{
+	width: 100%;
+}
+}
+
+
+
+.f17{ font-size: 17px;}
+.f45{ font-size: 45px;}
+
+
+
+
+
+
+
+
+.mb00{ margin-bottom: 0px !important;}
+.mb12{ margin-bottom: 12px !important;}
+.mb16{ margin-bottom: 16px !important;}
+.mb18{ margin-bottom: 18px !important;}
+.mb20{ margin-bottom: 20px !important;}
+.mb25{ margin-bottom: 25px !important;}
+.mb30{ margin-bottom: 30px !important;}
+.mb50{ margin-bottom: 50px !important;}
+.mb52{ margin-bottom: 52px !important;}
+
+
+.mr00{ margin-right: 0px !important;}
+.mr30{ margin-right: 30px !important;}
+.mr38{ margin-right: 38px !important;}
+.mr232{ margin-right: 232px !important;}
+.mr310{ margin-right: 310px !important;}
+.mr375{ margin-right: 375px !important;}
+
+
+.ml00{ margin-left: 0px !important;}
+.ml232{ margin-left: 232px !important;}
+.ml310{ margin-left: 310px !important;}
+.ml371{ margin-left: 371px !important;}
+
+
+.pt10{ padding-top: 10px !important;}
+
+.pl05{ padding-left: 5px !important;}
+
+
+
+.flL{
+	float: left;
+}
+
+.flR{
+	float: right;
+}
