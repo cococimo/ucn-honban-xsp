@@ -846,11 +846,56 @@ width:227px;
 .fl_r_pic{	
 	margin:0 auto !important;
 }
+#add_bann{
+	margin:0 !important;
+	padding:0 !important;
+	width:94%;
+	margin:-20px auto 40px auto !important;
+}
+#add_bann li{
+	display:block;
+	list-style:none;
+	width:48%;
+	height: auto;
+	margin-right:3%;
+	float:left;
+}
+#add_bann a{
+	border-style:none;
+	outline:none;
+	width:100%;	
+}
+#add_bann a:hover img {
+	display:block;
+	margin-right:0!important;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity:1;
+	margin-right:3px;
+
+}
+#add_bann li img{
+	width:100%;
+	height:auto;
+	backface-visibility: hidden;/*chromeピクセルずれ防止*/
+}
+.bil{margin-left:1% !important}
+.kil{margin-right:0!important}
 
 /* ======SP====== */
 @media (max-width: 640px) {
 /* body base
 ===============================================================*/
+#add_bann{
+	width:94%;
+	margin:0 auto 5% auto !important;
+}
+#add_bann li{
+	width:100%;
+	height: auto;
+	margin:2% 0 !important;
+	float: none;
+}
 
 body{
 	min-width:100%;
