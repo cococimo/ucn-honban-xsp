@@ -557,6 +557,7 @@ $(window).on('load resize', function(){
 	<object class="xsp_obj" m:id="b_var_postage_classify_special"></object>
 	<object class="xsp_obj" m:id="e_var_settlementMap"></object>
 	<object class="xsp_obj" m:id="e_var_saleStatus"></object>
+	<object class="xsp_obj" m:id="b_var_alc_goods_flg"></object>
 <div class="r_con_box_04">
 <div class="r_con_box_04_in">
 
@@ -677,6 +678,8 @@ $(window).on('load resize', function(){
 <!--<td class="last memadd_table_02_w_05"></td>-->
 </tr>
 
+<object class="xsp_obj" m:id="b_var_dm_member"></object>
+<object class="xsp_obj" m:id="b_var_order_log"></object>
 
 
 <!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
@@ -687,6 +690,8 @@ $(window).on('load resize', function(){
 <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
 <input m:id="h_hid__S" type="hidden" name="" />
 <input m:id="h_hid_cart_detail_no" type="hidden" name="" />
+<span m:id="l_equ_set_alc_flg"></span>
+
 <tr>
 
 
@@ -1231,6 +1236,10 @@ $(window).on('load resize', function(){
 	※同じ商品の数量を変更する場合は、数値を入力後「再計算」を押してください。<br />
 	※カートから商品を削除する場合は、その商品の「削除」を押してください。<br />
 	※当サイトでは満18歳未満のお客様からのご注文は承れません。
+	<span m:id="l_notEmp_alcGoods_inCart">
+	<br />※未成年者の飲酒は法律で禁じられております。<br />
+　　&nbsp;&nbsp;&nbsp;当店では、未成年者への酒類の販売は固くお断りしています。
+	</span>
 	</td>
 	</tr>
 	</table>
