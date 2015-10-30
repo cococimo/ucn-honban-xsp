@@ -214,14 +214,17 @@
 <object class="xsp_obj" m:id="e_var_trigger_media"></object>
 
 <script type="text/javascript">
+var iCurDstSelected = 0;
 	function ordInputDefault() {
 		var form = document.orderForm;
-		changeOrdDstInfoDisp();
+		changeOrdDstInfoDisp(0);
 		displayOrdCreditDisp();
 		changeSepDeliInfoDisp();
 		if (!!form.existPointArea) {
 			initPointDisp();
 		}
+		/* 再描画処理のために、変更イベントを強制実行 */
+		$(form.area_code).val(form.area_code.options[form.area_code.selectedIndex].value).trigger('change');
 	}
 	function switchDaibiki(swt) {
 		var daibiki = document.getElementById('payment_020');
