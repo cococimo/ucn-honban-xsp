@@ -39,6 +39,15 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.flexslider.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000006/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+	$(".site_logo, .btn_special span, #footer01 .add_p").css({backgroundSize: "contain"});
+	$(".res_cart>form>a, .contactBtn a").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/resize.js" type="text/javascript"></script>
@@ -514,13 +523,24 @@ var iCurDstSelected = 0;
        
        			<ul id="header_gnav" class="clearfix">
             	<li id="header_home"><a m:id="e_link_logo_shop_shop" href="/">ホーム</a></li>
-            	<!--<li id="header_concept"><a m:id="e_link_logo_shop_shop" href="/">コンセプト</a></li>-->
+            	<li id="header_concept"><a href="/shop/static/concept/">コンセプト</a></li>
              	<li id="header_itemlist">
-              	<a href="#">全商品一覧</a>
+              	<a href="#">商品カテゴリー</a>
                 <div id="header_itemlist_pullDown">
                 	<div class="inner">
-                		<p class="btn_allItem_pullDown"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></p>
-                    <div><img src="../../../contents/shop/00000006/shop/image/kigokochi/btn_pulldown_disable.jpg" width="1020" height="256" alt=""/></div>
+                		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
+                    <ul class="btn_category_pullDown">
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                    </ul>
+                    <ul class="btn_category_sub_pullDown">
+                      <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+                      <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -623,9 +643,25 @@ s.tl(this,'o','cartview',null,'navigate');return false
         	<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
-        <li class="sp_gnav_link"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
+        <li class="sp_gnav_link accordion">
+        	<a href="#">商品カテゴリー</a>
+          <ul>
+            <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+            <li><a href="/shop/category/001001002/list/">トップス</a></li>
+            <li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+            <li><a href="/shop/category/001001004/list/">パンツ</a></li>
+            <li><a href="/shop/category/001001005/list/">スカート</a></li>
+            <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+            <li><a href="/shop/category/001001001/list/">バック</a></li>
+            <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+            <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+            <li><span></span></li>
+          </ul>
+        </li>
         <li class="sp_gnav_link_sub">
-        	<!--<p><a href="#">サイズガイド</a></p>-->
+        	<p><a href="/shop/static/size/">サイズガイド</a></p>
          	<p><a href="/shop/static/guide/">ショッピングガイド</a></p>
         	<p><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></p>
         </li>
@@ -637,7 +673,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       	</li>
     </ul>
     <div class="sp_top_menu sp_menu_only">
-    	<a href="/">m</a>
+    	<a href="#">m</a>
     </div>    
     <div class="sp_top_home sp_menu_only">
     	<a href="/">m</a>
@@ -1058,13 +1094,7 @@ $(window).on('load resize', function(){
 			<span m:id="h_err_area_code">都道府県選択エラーメッセージ</span>
 		</span>
 	</span></div>
-</div>
-
-
-
-
-
-<br clear="all">
+</div><br clear="all">
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（市区郡）<span class="imp">必須</span></div>
@@ -1078,13 +1108,7 @@ $(window).on('load resize', function(){
 	<span class="exp">
 		<span m:id="sample_city">例：田代町字岩谷</span>
 	</span></div>
-</div>
-
-
-
-
-
-<br clear="all">
+</div><br clear="all">
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（町村字）（全角）<span class="imp">必須</span></div>
@@ -1169,13 +1193,7 @@ $(window).on('load resize', function(){
 		<span m:id="sample_address_co_1">例：鈴木　一郎</span>
 	</span>
 	</div>
-</div>
-
-
-
-
-
-<br clear="all">
+</div><br clear="all">
 
 <div class="box_form_table">
 	<div class="box_form_th">電話番号<span class="imp">必須</span></div>
@@ -1189,13 +1207,7 @@ $(window).on('load resize', function(){
 	<span class="exp">
 		<span m:id="sample_tel_1">例：03-0000-0000</span>
 	</span></div>
-</div>
-
-
-
-
-
-<br clear="all">
+</div><br clear="all">
 
 <div class="box_form_table">
 	<div class="box_form_th">性別<span class="nini">任意</span></div>
@@ -1214,12 +1226,6 @@ $(window).on('load resize', function(){
 	</div>
 	</div>
 </div>
-
-
-
-
-
-
 <br clear="all">
 
 <div class="box_form_table">
@@ -1360,12 +1366,6 @@ $(window).on('load resize', function(){
 	</div>
 </div>
 
-
-
-
-
-
-
 <br clear="all">
 
 <div class="box_form_table02">
@@ -1439,12 +1439,6 @@ $(window).on('load resize', function(){
 </span>
 
 <!-- /クレジットカード情報入力 -->
-
-
-
-
-
-
 <div id="credit_info">
 <input m:id="h_hid_key" type="hidden" name="key" value="" />
 
@@ -1595,18 +1589,6 @@ $(window).on('load resize', function(){
 
 </div>
 <!-- /クレジットカード情報入力 -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- ポイントのご利用 -->
 			<!-- ********** include:point.jsp ********** -->
@@ -1826,12 +1808,6 @@ $(window).on('load resize', function(){
 <br clear="all">
 
 
-
-
-
-
-
-
 <div id="dst_message">
 				<span class="required">別の「配送先を指定する」をチェックした場合は、配送先情報を入力してください。</span>
 </div>
@@ -1858,12 +1834,6 @@ $(window).on('load resize', function(){
 </ul>
 
 </div>
-
-
-
-
-
-
 
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
 <span m:id="l_ite_book">
@@ -1918,19 +1888,7 @@ TEL：090-1234-1234
 <!--  配送先情報 -->
 		
 <h4 id="dst" class="temp_tit_06 clear"><div>配送先情報</div></h4>
-<input m:id="h_hid_address_book_id" type="hidden" name="address_book_id" value="1"/>
-
-
-
-
-
-<div class="wrap_form_table">
-
-
-
-
-
-
+<input m:id="h_hid_address_book_id" type="hidden" name="address_book_id" value="1"/><div class="wrap_form_table">
 <div class="box_form_table">
 	<div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
@@ -2463,13 +2421,48 @@ TEL：090-1234-1234
 	<div class="inner">
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
+      <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature/">アイテム特集</a></li>
+      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
       <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
     </ul>
-    <ul>
-      <li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+    <ul class="footer_category only_pc">
+      <li>
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+        </ul>
+        <ul>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="footer_category only_sp">
+      <li class="accordion">
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+       	<li><span></span></li>
+        </ul>
+      </li>
     </ul>
     <ul>
-      <!--<li><a href="#">サイズガイド</a></li>-->
+      <li><a href="/shop/static/size/">サイズガイド</a></li>
       <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
       <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
     </ul>
@@ -2622,48 +2615,12 @@ s.eVar36=""
 var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 <script language="JavaScript" type="text/javascript"><!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
+//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopiikigokochijp/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
 <!--EndEditable -->
 
-<script type="text/javascript" language="javascript">
-var yahoo_retargeting_id = 'JAG00YJOZ2';
-var yahoo_retargeting_label = '';
-</script>
-<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 980914824;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-
-
-<script type="text/javascript"  
-src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt=""  
-src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-<script type="text/javascript">
-  (function () {
-    var tagjs = document.createElement("script");
-    var s = document.getElementsByTagName("script")[0];
-    tagjs.async = true;
-    tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
-    s.parentNode.insertBefore(tagjs, s);
-  }());
-</script>
-<noscript>
-  <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-</noscript>
 
 <script type='text/javascript'>
 if(typeof dmids == "undefined"){var dmids = {}};

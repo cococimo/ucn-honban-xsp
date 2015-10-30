@@ -459,9 +459,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <p class="left memadd_mb_02">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。
 </p>
 </span>
+
 <span m:id="l_pre_free_guide">
 <p class="left memadd_mb_02">お客様情報、連絡先電話番号、配送先をそれぞれ入力、選択してください。</p>
 </span>
+<div class="order_login">
+	<div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">会員の方はこちら</a></div>
+</div>
+
 <span m:id="l_msgPre">
 <div class="error reswfon_m"><span m:id="h_err_1">入力内容にエラーがあります。</span></div>
 </span>
@@ -871,6 +876,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 				</span>
 </div>-->
 
+<span m:id="l_alc_include"></span><br/>
+
 <span m:id="l_notPre_free_guide">
 				<!-- 決済方法 -->
 <h4 class="temp_tit_06"><div>決済方法</div></h4>
@@ -963,7 +970,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 	<div class="box_form_table">
 		<div class="box_form_th">ご利用いただけるカード</div>
-		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000003/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" /></div>
+		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000003/shop/image/ma_img_01.jpg" alt="ご利・pいただけるカード" /></div>
 	</div>
 
 	
@@ -1164,17 +1171,22 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 	<div class="box_form_table02">
 		<div class="box_form_th">配送日時指定<span class="nini">任意</span></div>
-		<!-- 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
-		<div class="box_form_td">
-			<div class="memadd_t_box_02 clearfix" style="margin-top:10px;">
-			<div class="box_01">
-			<label><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　配送希望日を一括で指定</label>
+		<!-- カートに商品が一つの場合の切り分け -->
+		<span m:id="l_pre_disp_separate_delivery">
+			<div class="box_form_td">
+				<div class="memadd_t_box_02 clearfix" style="margin-top:10px;">
+				<div class="box_01">
+				<label><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　配送希望日を一括で指定</label>
+				</div>
+				<div class="box_01">
+				<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
+				</div>
 			</div>
-			<div class="box_01">
-			<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
-			</div>
-		</div>
-		<span m:id="l_equ_gift_select" class="">&nbsp;&nbsp;&nbsp;※ラッピング指定時は、商品毎に配送希望日を指定できません。</span>
+			<span m:id="l_equ_gift_select" class="">&nbsp;&nbsp;&nbsp;※ラッピング指定時は、商品毎に配送希望日を指定できません。</span>
+		</span>
+		<span m:id="l_notPre_disp_separate_delivery">
+			<input m:id="h_hid_separate_delivery_0"  type="hidden" name="separate_delivery_date_flg" value="0" />
+		</span>
 		<span m:id="l_msgPre_appointed_delivery_date">
 			<div class="box_form_td">
 				<span class="error">
@@ -1192,6 +1204,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
 		<!-- 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
 		<!-- 明細行分のループ  -->
+		<span m:id="l_pre_disp_separate_delivery">
 		<div class="box_form_td" id="sepDeliv1">
 			<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
 				<tr>
@@ -1209,7 +1222,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							<option value=""><span m:id="opt_delivery_date_default_detail">指定なし</span></option>
 							<option m:id="h_opt_deliveryDateMap_detail" value="1">2010年07月01日</option>
 							<option m:id="dummy" value="">2010年07月02日</option>
-							<option m:id="dummy" value="">2010年07・・3日</option>
+							<option m:id="dummy" value="">2010年07月03日</option>
 							<option m:id="dummy" value="">2010年07月04日</option>
 							<option m:id="dummy" value="">2010年07月05日</option></select>
 						</td>
@@ -1228,6 +1241,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 				</span>
 			</table>
 		</div>
+		</span>
 		<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
 		<div class="box_form_td" id="sepDeliv0">
 			<div class="box_con clearfix">
@@ -1764,7 +1778,7 @@ TEL：090-1234-1234
 </tr>
 </table>
 </span>
-
+<object m:id="var_display_order_option" class="xsp_obj"></object>
 <span m:id="l_equ_gift_select">
 	<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
 	<tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
