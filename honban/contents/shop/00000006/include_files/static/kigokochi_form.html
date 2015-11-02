@@ -151,6 +151,18 @@
 </tr>
 
 <tr>
+<th>メールマガジン </th>
+<td><div class="input_area">
+<select name="c_mailmagazine">
+<option value="">-Select-</option>
+<option value="購読する" selected="">購読する</option>
+<option value="購読しない">購読しない</option>
+</select>
+</div>
+<div id="mailmagazine_confirm"></div></td>
+</tr>
+
+<tr>
 <th>電話番号<br>
 <span>（半角数字）<br>
 ※ご自宅・携帯どちらの番号でも構いません</span></th>
@@ -171,16 +183,15 @@
 <tr>
 <th>何をご覧になって<br>『着心地のいい服」を<br>知りましたか？<span class="imp">必須</span></th>
 <td><div class="input_area">
-<label for="id_1_1"><input type="checkbox" name="c_media[]" id="id_1_1" value="A0">新聞広告</label><br>
-<label for="id_1_2"><input type="checkbox" name="c_media[]" id="id_1_2" value="A9">ポスト投函チラシ</label><br>
-<label for="id_1_3"><input type="checkbox" name="c_media[]" id="id_1_3" value="Aa">ぱど折込チラシ</label><br>
-<label for="id_1_4"><input type="checkbox" name="c_media[]" id="id_1_4" value="Ab">書籍購入時のチラシ</label><br>
-<label for="id_1_5"><input type="checkbox" name="c_media[]" id="id_1_5" value="A4">インターネット広告（検索）</label><br>
-<label for="id_1_6"><input type="checkbox" name="c_media[]" id="id_1_6" value="A5">インターネット広告（バナー）</label><br>
-<label for="id_1_7"><input type="checkbox" name="c_media[]" id="id_1_7" value="A6">ダイレクトメール</label><br>
-<label for="id_1_8"><input type="checkbox" name="c_media[]" id="id_1_8" value="Ac">オイシックス同梱チラシ</label><br>
-<label for="id_1_9"><input type="checkbox" name="c_media[]" id="id_1_9" value="Ad">アスカ同梱チラシ</label><br>
-<label for="id_1_10"><input type="checkbox" name="c_media[]" id="id_1_10" value="A7">その他</label>
+          <label for="id_1_1"><input type="checkbox" name="c_media[]" id="id_1_1" value="Ae">朝日新聞</label><br>
+          <label for="id_1_2"><input type="checkbox" name="c_media[]" id="id_1_2" value="Af">読売新聞</label><br>
+          <label for="id_1_3"><input type="checkbox" name="c_media[]" id="id_1_3" value="Ag">その他新聞</label><br>
+          <label for="id_1_4"><input type="checkbox" name="c_media[]" id="id_1_4" value="Ah">新聞折込チラシ</label><br>
+          <label for="id_1_5"><input type="checkbox" name="c_media[]" id="id_1_5" value="Ak">テレビＣＭ</label><br>
+          <label for="id_1_6"><input type="checkbox" name="c_media[]" id="id_1_6" value="A4">インターネット広告（検索）</label><br>
+          <label for="id_1_7"><input type="checkbox" name="c_media[]" id="id_1_7" value="A5">インターネット広告（バナー）</label><br>
+          <label for="id_1_8"><input type="checkbox" name="c_media[]" id="id_1_8" value="A6">ダイレクトメール</label><br>
+          <label for="id_1_9"><input type="checkbox" name="c_media[]" id="id_1_9" value="A7">その他</label>
 </div><!-- /.input_area -->
 <div id="media_confirm"></div>
 </td>
@@ -193,8 +204,8 @@
 </div>
 
 <div id="confirm_button" style="display:none;">
-<img src="/shop/c/static/shiba/contents/shop/00000003/shop/image/inq_sousin_bt_02.png" width="157" height="75" alt="戻る" id="back" />
-<input type="image" src="/shop/c/static/shiba/contents/shop/00000003/shop/image/inq_sousin_bt_15.png" value="送信" name="act_check" id="submit_button" disable="disable" />
+<img src="/contents/shop/00000003/shop/image/inq_sousin_bt_02.png" width="157" height="75" alt="戻る" id="back" />
+<input type="image" src="/contents/shop/00000003/shop/image/inq_sousin_bt_15.png" value="送信" name="act_check" id="submit_button" disable="disable" />
 </div>
 
 
@@ -319,6 +330,7 @@ $(document).ready(function(){
 
 		var area5 = $('input[name=c_area5]').val();
 		var area6 = $('input[name=c_area6]').val();
+		var mailmagazine = $('select[name=c_mailmagazine]').val();
 		var age = $('input[name=c_age]').val();
 
 
@@ -358,16 +370,15 @@ $(document).ready(function(){
 		}
 
 		var tmpMedia = {
-			A0: '新聞広告',
-			A9: 'ポスト投函チラシ',
-			Aa: 'ぱど折込チラシ',
-			Ab: '書籍購入時のチラシ',
+			Ae: '朝日新聞',
+			Af: '読売新聞',
+			Ag: 'その他新聞',
+			Ah: '新聞折込チラシ',
+			Ak: 'テレビＣＭ',
 			A4: 'インターネット広告（検索）',
 			A5: 'インターネット広告（バナー）',
 			A6: 'ダイレクトメール',
-			Ac: 'オイシックス同梱チラシ',
-			Ad: 'アスカ同梱チラシ',
-			A7: 'その他'
+			A7: 'その他',
 		};
 		var media = $('input[name=c_media[]]:checked').map(function(){
 			return tmpMedia[$(this).val()];
@@ -394,7 +405,7 @@ $(document).ready(function(){
 			
 			$('#area6_confirm').text(area6).show();
 			$('#age_confirm').text(age).show();
-
+			$('#mailmagazine_confirm').text(mailmagazine).show();
 			$('#input_button').hide();
 			$('#confirm_button').show();
 			return false;
@@ -412,7 +423,7 @@ $(document).ready(function(){
 	});
 
 	$('#back').click(function(){
-		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm, #media_confirm, #confirm_button').hide();
+		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm, #media_confirm, #confirm_button, #mailmagazine_confirm').hide();
 		$('.input_area, #input_button').show();
 		$('#step_input').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
 		$('#step_confirm').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');
