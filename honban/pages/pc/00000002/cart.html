@@ -176,6 +176,13 @@ if ( window.addEventListener ) {
 </div><!--header_wrap-->
 </div><!--header-->
 
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 
@@ -316,8 +323,15 @@ if ( window.addEventListener ) {
 
 <td class="itemname_td">
 <div class="delete_link_left">
-<span m:id="l_notEqu_removeMe"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
-</a>
+<span m:id="l_notEqu_removeMe">
+<span m:id="h_link_cart_default_url">
+ <a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
+<span m:id="h_link_cart_static_url">
+ <a m:id="h_link_cart_static_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
 <!-- チャネル別決済種別制限取得 -->
 <span m:id="l_pre_item_limit">
 <span m:id="l_ite_valid_settle">

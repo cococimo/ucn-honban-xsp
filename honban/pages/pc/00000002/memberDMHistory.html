@@ -89,6 +89,12 @@
 </div><!--header_wrap-->
 </div><!--header-->
 
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
 <div id="contents">
 
 <div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
@@ -144,7 +150,12 @@
 					<div class="box_in_01 wmo_01" style="height:145px ;">
 						<p><strong>ご案内商品&nbsp;：&nbsp;</strong>
 								<span m:id="l_lnk_goods" class="dm_title" >
-									<a m:id="h_link_dm_title1" href="" class="dm_Histroy_category_link"><span m:id="disp_dmHistory_name">暖話室</span></a>
+									<span m:id="h_link_default_url">
+								<a m:id="h_link_dm_title1" href="" class="dm_Histroy_category_link"><span m:id="disp_dmHistory_name">暖話室</span></a>
+							</span>
+							<span m:id="h_link_static_url">
+								<a m:id="h_link_dm_title1_goods_url" href="" class="dm_Histroy_category_link"><span m:id="disp_dmHistory_name">暖話室</span></a>
+							</span>
 								</span>
 								<span m:id="l_lnk_category" class="dm_title" >
 									<a m:id="h_link_dm_title2" href="" class="dm_Histroy_category_link"><span m:id="disp_dmHistory_name">暖話室</span></a>
@@ -157,9 +168,18 @@
 					<div class="box_in_01 wmo_07" style="width:450px ;height:145px ;">
 						<p><strong>商品画像&nbsp;：&nbsp;</strong>
 								<span m:id="l_ite_category_img" >
-									<a m:id="i_img_goodsList" href="">
-										<img m:id="h_link_dm_img" alt="ダミー" class="img_dm_list" src="../../../contents/shop/00000003/goods/image/item_sum_dbe00.jpg" width="135px" >
-									</a>
+									<span m:id="h_link_default_url_idx">
+							          <a m:id="i_img_goodsList" href="">
+							           <img m:id="h_link_dm_img" alt="ダミー" class="img_dm_list" src="../../../contents/shop/00000003/goods/image/item_sum_dbe00.jpg" width="135px" >
+							          </a>
+							         </span>
+							         <span m:id="h_link_static_url_idx">
+							          <span m:id="h_link_static_goods_name_if">
+							           <a m:id="h_link_static_goods_name_img" href="">
+							            <img m:id="h_link_dm_img" alt="ダミー" class="img_dm_list" src="../../../contents/shop/00000003/goods/image/item_sum_dbe00.jpg" width="135px" >
+							           </a>
+							          </span>
+							         </span>
 									<img m:id="dummy" class="img_dm_list" src="../../../contents/shop/00000003/goods/image/item_det_dha00.jpg" width="90">
 									<img m:id="dummy" class="img_dm_list" src="../../../contents/shop/00000003/goods/image/item_det_dbg00.jpg" width="90">
 								</span>&nbsp;
