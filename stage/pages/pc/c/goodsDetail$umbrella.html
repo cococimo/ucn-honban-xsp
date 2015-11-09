@@ -13,9 +13,11 @@
 <meta m:id="e_var_member" content="">
 <meta m:id="description" name="description" content="データベースから値を取得し表示します">
 <meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2=" ココチモ（cococimo）のECサイト">データベースから値を取得し表示します</title>
 <!--<link m:id="favicon" rel="shortcut icon" href="../../../contents/favicon/favicon.ico">-->
-<!--<link rel="canonical" href="http://www.cococimo.jp/shop/c/e/DFF1E/"/>-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
@@ -29,7 +31,6 @@
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
     <span m:id="l_notPre_goods">
@@ -216,6 +217,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 <!-- メインコンテンツ_外枠 -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="content">
   <!-- メインコンテンツ -->
   <div id="content_wrap">
@@ -302,6 +309,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>
@@ -392,6 +400,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>

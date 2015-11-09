@@ -168,6 +168,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div><!--header_wrap-->
 </div><!--header-->
 
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
 <div id="contents">
 
 <!--<div id="pan-navi" >
@@ -233,7 +239,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					<object class="xsp_obj" m:id="e_var_review_evaluation"></object>
 
 
-<h1 class="temp_tit_n02 temp_tit_n02_cor"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a></h1>
+<h1 class="temp_tit_n02 temp_tit_n02_cor">
+	<span m:id="h_link_goodsReview_default_url">
+		<a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a>
+	</span>
+	<span m:id="h_link_goodsReview_static_url">
+		<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a>
+	</span>
+</h1>
 <div class="sec_02 clearfix">
 <span m:id="l_notPre_goodsReviewDetailList">
 <p class="left memadd_mb_02">指定の商品のレビューは見つかりませんでした。 

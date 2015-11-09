@@ -14,8 +14,10 @@
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ（cococimo）の通販ショップ">データベースから値を取得し表示します</title>
-<!--<link rel="canonical" href="http://www.cococimo.jp/shop/c/e/DFF1E/"/>-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 
@@ -57,7 +59,6 @@
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
     <span m:id="l_notPre_goods">
@@ -148,7 +149,6 @@ $(function(){
 </head>
  
 <body id="top">
-<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
 <!-- InstanceBeginEditable name="body" -->
 <!-- InstanceEndEditable -->
 
@@ -253,6 +253,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div><!--header_wrap-->
 </div><!--header-->
 
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 <object class="xsp_obj" m:id="parentShop"></object>
 <object class="xsp_obj" m:id="ancestralCategory"></object>
@@ -341,6 +347,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</span>
@@ -533,8 +540,21 @@ $(window).load(function(){
 <object class="xsp_obj" m:id="b_var_isReturn"></object>
 <div class="box_01"><div class="box_02"><div class="img_box"><span m:id="l_pre_representSku_10">
 <object class="xsp_obj" m:id="b_var_listImage_10"></object><span m:id="l_notEmp_listImage_10">
-<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></span></div>
-<h3><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></h3>
+<span m:id="h_link_goodsDetail_default_url">
+	<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+</span>
+<span m:id="h_link_goodsDetail_static_url">
+	<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+</span>
+</span></span></div>
+<h3>
+<span m:id="h_link_goodsDetail_default_url">
+		<a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
+	</span>
+	<span m:id="h_link_goodsDetail_static_url">
+		<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
+	</span>
+</h3>
 <!--<p class="fw_n">商品説明ダミーテキストダミーテキストダミーテキスト</p>-->
 <p><span m:id="m_num_sale_price">50</span>円（税込）</p>
 </div></div>

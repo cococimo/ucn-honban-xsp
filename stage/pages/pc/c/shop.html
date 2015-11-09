@@ -209,6 +209,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div><!--header_wrap-->
 </div><!--header-->
 
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
 <div id="contents">
 
 <div id="pan-navi" >
@@ -353,9 +359,22 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 <div class="img_box"> <span m:id="l_pre_autoRankGoods_representSku">
                   <object class="xsp_obj" m:id="b_var_autoRankGoods_listImage">
                   </object>
-                  <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
+                  <span m:id="h_link_autoRankGoods_default_url_img">
+                   <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
+                  <span m:id="h_link_autoRankGoods_static_url_img">
+                   <a m:id="h_link_autoRankGoods_list_image_goods_url" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
+                  </span></div>
                 <div class="rank_01">1位</div>
-                <h3><a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a></h3>
+                <h3>
+                <span m:id="h_link_autoRankGoods_default_url">
+                 <a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                </span>
+                <span m:id="h_link_autoRankGoods_static_url">
+                 <a m:id="h_link_autoRankGoods_static_goods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                </span>
+                </h3>
                 <p><span m:id="l_notEqu_autoRankGoods_pretaxPrice">
 									<span class="original_price">
 										<span m:id="b_wr_autoRankGoods_pretaxPrice">200</span>&nbsp;円
@@ -466,9 +485,25 @@ s.tl(this,'o','cartview',null,'navigate');return false
                   <div class="img_box"> 
                   <span m:id="l_pre_recommendGoods_representSku">
 									<object class="xsp_obj" m:id="b_var_recommendGoods_listImage"></object>
-<a m:id="h_link_recommendGoods_list_image" href="goodsDetail.html">
-<img m:id="h_img_recommendGoods_goods_Image"  src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
-                  <h3><a m:id="h_link_recommendGoods_name" href="goodsDetail.html"><span m:id="disp_recommendGoods_goods_name">商品名商品名</span></a></h3>
+					<span m:id="h_link_recommendGoods_default_url_img">
+				      <a m:id="h_link_recommendGoods_list_image" href="goodsDetail.html">
+				       <img m:id="h_img_recommendGoods_goods_Image"  src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+				      </a>
+				     </span>
+				     <span m:id="h_link_recommendGoods_static_url_img">
+				      <a m:id="h_link_recommendGoods_list_image_goods_url" href="goodsDetail.html">
+				       <img m:id="h_img_recommendGoods_goods_Image"  src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+				      </a>
+				     </span>
+				</span></div>
+                  <h3>
+                  <span m:id="h_link_recommendGoods_default_url">
+                   <a m:id="h_link_recommendGoods_name" href="goodsDetail.html"><span m:id="disp_recommendGoods_goods_name">商品名商品名</span></a>
+                  </span>
+                  <span m:id="h_link_recommendGoods_static_url">
+                   <a m:id="h_link_recommendGoods_name_goods_url" href="goodsDetail.html"><span m:id="disp_recommendGoods_goods_name">商品名商品名</span></a>
+                  </span>
+                  </h3>
                   <p class="text"><span m:id="disp_recommendGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
                   <p class="cash"> <span m:id="l_notEqu_recommendGoods_pretaxPrice">
 										<span class="original_price">
@@ -669,8 +704,21 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 <div class="img_box"> <span m:id="l_pre_newGoods_representSku">
                   <object class="xsp_obj" m:id="b_var_newGoods_listImage">
                   </object>
-                  <a m:id="h_link_newGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
-                <h3><a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a></h3>
+                   <span m:id="h_link_newGoods_default_url_img">
+                   <a m:id="h_link_newGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
+                  <span m:id="h_link_newGoods_static_url_img">
+                   <a m:id="h_link_newGoods_list_image_goods_url" href="goodsDetail.html"> <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
+                  </span></div>
+                <h3>
+                <span m:id="h_link_newGoods_default_url">
+                 <a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+                </span>
+                <span m:id="h_link_newGoods_static_url">
+                 <a m:id="h_link_newGoods_name_goods_url" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+                </span>
+                </h3>
                 <p class="text"><span m:id="disp_newGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
                 <p class="cash"><span m:id="l_notEqu_newGoods_pretaxPrice"> <span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円
                   &nbsp; </span> <span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
