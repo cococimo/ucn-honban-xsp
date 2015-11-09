@@ -17,7 +17,9 @@
 <meta m:id="description" name="Description" content="$1の通販・通信販売なら「ココチモナチュラル・ライフスタイル」。$1の商品紹介ページです。ココチモは、「今よりもっと“心地いい”をお届けする」をコンセプトに上品でこだわり抜いた商品をご案内する通信販売サイトです。" />
 <meta m:id="keywords" name="Keywords" content="$1,生活雑貨,北欧雑貨,通販,販売,ココチモ" />
 
-<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2="の通販・通信販売｜生活・北欧雑貨の通販「ココチモ」">データベースから値を取得し表示します</title>
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
@@ -80,9 +82,34 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 			});
 		</script>
-<!-- InstanceBeginEditable name="head_css_js" -->		
+<!-- InstanceBeginEditable name="head_css_js" -->
+<style>
+/*sp_land_wide*/
+@media (max-width: 510px)
+{
+.add_p {
+  top:140px !important;
+}
+}
+
+/*sp_land*/
+@media (max-width: 480px) {
+#pan-navi{
+	margin:10px 0 0 0 !important;
+}
+}
+
+/*sp_port*/
+@media (max-width:320px) {
+#pan-navi{
+	margin:20px 0 0 0 !important;
+}
+.add_p {
+  top:110px !important;
+}
+}
+</style>		
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
-<link href="contents/lifestyle/css/side_menu.css" rel="stylesheet" type="text/css" media="all" />
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
@@ -90,17 +117,12 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 		<script>
 		/*
 			jQuery(function($){
-				$('ul.example').exDropDown();
-			});
+		//		$('ul.example').exDropDown();
+		//	});
 			*/
 
 			jQuery(function($){
-			//	$('ul.example').exDropDown();
-				$('.searchShop').on('click',function(){
-				$('.gsearchShop').submit();
-					return false;
-				});
-				
+					
 				var nav_lists = $('.sub').html();
 				
 				
@@ -128,7 +150,6 @@ $(".faceBooks").append(ifremstr);
 <!-- InstanceBeginEditable name="head" -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -467,6 +488,49 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->
 					<!--▼▼▼カテゴリー▼▼▼-->
+<script>
+$(window).on('load resize', function(){
+    var w = $(window).width();
+    var x = 500;
+    if (w <= x) {
+  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
+		
+  $(function(){	  
+	$(".child_cat").hide();
+	$('li').removeClass('ctArrow');
+	$(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"absolute",
+		 "top":"0",
+		 "left":"140px",
+		 "width":"170px",
+		 "z-index":"999",
+		 "list-style":"none",
+		 "background-color":"#ffffff"}
+		).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").hide();
+	})
+})
+} else {
+
+  $(function(){	  
+	$(".child_cat").show();
+	$('li').removeClass('ctArrow');
+	$(".ctList").hover(function(){
+		$("ul:not(:animated)",this).css(
+		{"position":"relative",	"left":"0"}).show();
+	},
+	function(){
+		$("ul",this).css("left","0px").show();
+	})
+})
+
+    }
+});
+</script>
+                   
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
                             <div class="l_con_box_01">
@@ -480,7 +544,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
                                             <ul class="l_con_list_01 clearfix example">
                                                 <span  m:id="l_ite_cate">
                                                     <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList">
+                                                    <li class="ctList" style="position:relative"><!--基準点追加-->
                                                     
                                                     <div class="p_0">
                                                     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
@@ -495,7 +559,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
                                                         <span m:id="disp_subCate_category_name">ファッション</span>
                                                     </span>
                                                     </a>
-                                                    </div>						<ul m:id="tag_dd_subCate" class="clearfix">
+                                                    </div>
+                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
                                                         <span m:id="l_ite_subCate"> 
                                                             <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
                                                             <li class="ctArrow">
@@ -522,6 +587,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
      
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 <div id="pan-navi" >
@@ -803,6 +874,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1611,6 +1683,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1828,6 +1901,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1911,6 +1985,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -2764,7 +2839,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
-        <li><a m:id="e_link_logo_shop_shop" href="/">トップページ</a></li>
+        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
         <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
         <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
         <li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>
@@ -2803,7 +2878,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <ul>
         <li><a href="/shop/lifestyle/static/contents/kitchen/" style="opacity: 1;">キッチン 通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/life/" style="opacity: 1;">生活雑貨・北欧雑貨の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableware/" style="opacity: 1;">テーブルウェアの通販特集</a></li> 
+        <li><a href="/shop/lifestyle/static/contents/tableware/" style="opacity: 1;">テーブルウェアの通販特集</a></li>        
       </ul>      
       </div>
 </div>

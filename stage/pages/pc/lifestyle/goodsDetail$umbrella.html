@@ -124,7 +124,6 @@ $(".faceBooks").append(ifremstr);
 <!--/ tracking urchin -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -514,6 +513,12 @@ $(window).on('load resize', function(){
 
 
 <!-- メインコンテンツ_外枠 -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="content">
   <!-- メインコンテンツ -->
   <div id="content_wrap">
@@ -585,7 +590,7 @@ $(window).on('load resize', function(){
 
 
 <!-- ▼フォーム▼ -->
-<form action="/shop/c/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm2">
+<form action="/shop/lifestyle/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm2">
 <h4 class="temp_tit_05"><div>色・サイズ・数量等の選択<!--、ご購入--></div></h4>
 	<table cellpadding="0" cellspacing="0" border="0" class="wrap_un">
 	<tr>
@@ -601,6 +606,7 @@ $(window).on('load resize', function(){
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>
@@ -675,7 +681,7 @@ $(window).on('load resize', function(){
 <div class="box_priceright">
 
 <!-- ▼フォーム▼ -->
-<form action="/shop/c/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm3">
+<form action="/shop/lifestyle/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm3">
 <h4 class="temp_tit_05"><div>色・サイズ・数量等の選択<!--、ご購入--></div></h4>
 	<table cellpadding="0" cellspacing="0" border="0" class="wrap_un">
 	<tr>
@@ -691,6 +697,7 @@ $(window).on('load resize', function(){
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>
@@ -1352,13 +1359,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>        
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>         
         <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/handyitem/">北洋雑貨・日用品</a></li>
-        <li><a href="/shop/lifestyle/static/contents/kitchenitem/">生活雑貨</a></li>                               
-      </ul>      
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>          
+      </ul>       
       </div>
 </div>
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->    

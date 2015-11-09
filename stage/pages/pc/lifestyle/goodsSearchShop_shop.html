@@ -393,6 +393,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
 <div id="contents">
 
 <div id="pan-navi" style="margin-bottom:20px" >
@@ -498,15 +504,25 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <div class="box_01 heightLine-new02">
               <div class="box_02">
                 <div class="img_box"> 
-                  
-                 <a m:id="h_link_goods_name_img" href="goodsDetail.html">
-<img m:id="h_img_goods_name_img" src="../../../contents/shop/00000005/shop/image/item_sample_01.jpg" alt="" />
-</a></div>
+                  <span m:id="h_link_default_url">
+				<a m:id="h_link_goods_name_img" href="goodsDetail.html">
+				<img m:id="h_img_goods_name_img" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" alt="" />
+				</a>
+				</span>
+				<span m:id="h_link_static_url">
+				<a m:id="h_link_static_goods_name_img" href="goodsDetail.html">
+				<img m:id="h_img_goods_name_img" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" alt="" />
+				</a>
+				</span>
+				</div>
 <dl>
 		<dt class="add_dt2">
-        <a m:id="h_link_goods_name" href="goodsDetail.html" style="color:#009489">
-			<span m:id="disp_goods_name">商品名商品名商品名</span>
-        </a>
+		<span m:id="h_link_default_url">
+		<a m:id="h_link_goods_name" href="goodsDetail.html"><span m:id="disp_goods_name">商品名商品名商品名</span></a>
+		</span>
+		<span m:id="h_link_static_url">
+		<a m:id="h_link_static_goods_url"><span m:id="disp_goods_name">商品名商品名商品名</span></a>
+		</span>
         </dt>
 		<dd><p class="txt">
 			<span m:id="disp_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span>
@@ -1192,13 +1208,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>        
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>                 
         <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/handyitem/">北洋雑貨・日用品</a></li>
-        <li><a href="/shop/lifestyle/static/contents/kitchenitem/">生活雑貨</a></li>                               
-      </ul>   
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>          
+      </ul>
       </div>
 </div>
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->    

@@ -16,7 +16,9 @@
 <!-- InstanceBeginEditable name="head_1" -->
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
-<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head_css_js" -->
@@ -95,7 +97,6 @@ $(".faceBooks").append(ifremstr);
 
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -520,6 +521,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
      
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 <object class="xsp_obj" m:id="parentShop"></object>
@@ -614,6 +621,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td></tr></span>

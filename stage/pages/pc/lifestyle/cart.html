@@ -477,6 +477,13 @@ $(window).on('load resize', function(){
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- ▼▼▼▼カート▼▼▼▼ -->
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 
@@ -588,6 +595,10 @@ $(window).on('load resize', function(){
   </span></div>
 </span>
 
+<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
+<span m:id="init_individual"></span>
+<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
+
 <span m:id="l_ite_shopCart">
 <span m:id="l_notPre_other_shop_cart">
 <object class="xsp_obj" m:id="e_var_free_guide_list"></object>
@@ -615,9 +626,6 @@ $(window).on('load resize', function(){
 <object class="xsp_obj" m:id="b_var_dm_member"></object>
 <object class="xsp_obj" m:id="b_var_order_log"></object>
 
-<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
-<span m:id="init_individual"></span>
-<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
 <span m:id="l_ite_detail">
 <object class="xsp_obj" m:id="b_param_special"></object>
 <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
@@ -630,8 +638,15 @@ $(window).on('load resize', function(){
 
 <td class="itemname_td">
 <div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
-<span m:id="l_notEqu_removeMe"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
-</a>
+<span m:id="l_notEqu_removeMe">
+<span m:id="h_link_cart_default_url">
+ <a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
+<span m:id="h_link_cart_static_url">
+ <a m:id="h_link_cart_static_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
 <!-- チャネル別決済種別制限取得 -->
 <span m:id="l_pre_item_limit">
 <span m:id="l_ite_valid_settle">
@@ -1678,13 +1693,12 @@ $(window).on('load resize', function(){
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>        
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>         
         <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/handyitem/">北洋雑貨・日用品</a></li>
-        <li><a href="/shop/lifestyle/static/contents/kitchenitem/">生活雑貨</a></li>                               
-      </ul>      
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>          
+      </ul>       
       </div>
 </div>
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->    
