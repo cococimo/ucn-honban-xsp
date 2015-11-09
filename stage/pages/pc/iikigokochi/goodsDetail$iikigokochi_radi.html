@@ -17,7 +17,9 @@
 <meta m:id="description" name="Description" content="$1の通販・通信販売なら「ココチモナチュラル・ライフスタイル」。$1の商品紹介ページです。ココチモは、「今よりもっと“心地いい”をお届けする」をコンセプトに上品でこだわり抜いた商品をご案内する通信販売サイトです。" />
 <meta m:id="keywords" name="Keywords" content="$1,生活雑貨,北欧雑貨,通販,販売,ココチモ" />
 
-<link m:id="canonical" rel="canonical" href="/shop/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.iikigokochi.jp/shop/e/goods/"/>
 <title m:id="title" arg1="" arg2="の通販・通信販売｜生活・北欧雑貨の通販「ココチモ」">データベースから値を取得し表示します</title>
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
@@ -541,7 +543,6 @@ $(".faceBooks").append(ifremstr);
 <!-- InstanceBeginEditable name="head" -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -955,6 +956,12 @@ $(window).on('load resize', function(){
     </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 <div id="pan-navi" >

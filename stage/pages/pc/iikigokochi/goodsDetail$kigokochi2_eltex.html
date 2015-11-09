@@ -16,7 +16,9 @@
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 
-<link m:id="canonical" rel="canonical" href="/shop/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.iikigokochi.jp/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
 
 <link rel="shortcut icon" href="/contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
@@ -90,7 +92,6 @@ $(".faceBooks").append(ifremstr);
 <!--/ tracking urchin -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -173,7 +174,6 @@ function siteCatalistAddCart1(s_products){
 </head>
  
 <body id="top">
-<link m:id="canonical" rel="canonical" href="http://www.iikigokochi.jp/shop/c/e/goods/"/>
 <!-- EndEditable -->
 <div id="container">
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
@@ -450,6 +450,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--header-->
 
 
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 <!-- パンくずのブロックのテスト -->
 	<div id="pan-navi" class="clearfix">
@@ -817,11 +823,24 @@ s.tl(this,'o','cartview',null,'navigate');return false
 								<span m:id="l_pre_representSku_10">
 									<object class="xsp_obj" m:id="b_var_listImage_10"></object>
 									<span m:id="l_notEmp_listImage_10">
-										<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/lifestyle/shop/image/item_sample_01.jpg" /></a>
+										<span m:id="h_link_goodsDetail_default_url">
+	<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+</span>
+<span m:id="h_link_goodsDetail_static_url">
+	<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+</span>
+
 									</span>
 								</span>
 							</div>
-							<h3><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></h3>
+							<h3>
+<span m:id="h_link_goodsDetail_default_url">
+		<a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
+	</span>
+	<span m:id="h_link_goodsDetail_static_url">
+		<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
+	</span>
+</h3>
 							<p><span m:id="m_num_sale_price">50</span>円（税込）</p>
 						</div>
 					</div>
@@ -1283,7 +1302,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <div class="pc_display">
         <h3 id="icon_04">会員の方</h3>
         <ul>
-        <li><a href="/shop/loginControl.do?p=%2FstaticContentsShop.do%3F__SHOP_NO%3D00000005%26f%3D%2Fcompany%26" title="ログイン">ログイン</a></li>
+        <li><a href="/shop/loginControl.do?p=%2FstaticContentsShop.do%3F%26f%3D%2Fcompany%26" title="ログイン">ログイン</a></li>
         <li></li>
         </ul>
         </div>
@@ -1401,29 +1420,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
 
-<script type="text/javascript" language="javascript">
-var yahoo_retargeting_id = 'JAG00YJOZ2';
-var yahoo_retargeting_label = '';
-</script>
-<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 980914824;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-
-
-<script type="text/javascript"  
-src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt=""  
-src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
 
 
 </body>

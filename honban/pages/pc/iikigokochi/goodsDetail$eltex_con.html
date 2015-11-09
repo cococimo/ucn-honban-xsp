@@ -19,10 +19,12 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <!-- InstanceBeginEditable name="head_1" -->
-<meta m:id="description" name="Description" content="$1の通販・通信販売なら「ココチモナチュラル・ライフスタイル」。$1の商品紹介ページです。ココチモは、「今よりもっと“心地いい”をお届けする」をコンセプトに上品でこだわり抜いた商品をご案内する通信販売サイトです。" />
-<meta m:id="keywords" name="Keywords" content="$1,生活雑貨,北欧雑貨,通販,販売,ココチモ" />
+<meta m:id="description" name="Description" content="$1,着心地のいい服では、まいにち着る服をちょっと豊かにする、天然素材・日本製の大人の女性向けファッションをご紹介しています。"/>
+<meta m:id="keywords" name="Keywords" content="$1, 天然素材,日本製,日本,メイドインジャパン,made in japan,ファッション,着心地のいい服,着心地,通信販売,www.iikigokochi.jp,カタログ,通販カタログ,オンラインショッピング"/>
 
-<link m:id="canonical" rel="canonical" href="/shop/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.iikigokochi.jp/shop/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - 天然素材、日本製こだわった大人の女性向けアパレル通販サイト| 着心地のいい服">データベースから値を取得し表示します</title>
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
@@ -57,6 +59,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.flexslider.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000006/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+	$(".site_logo, .btn_special span, #footer01 .add_p").css({backgroundSize: "contain"});
+	$(".res_cart>form>a, .contactBtn a").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/resize.js" type="text/javascript"></script>
@@ -80,7 +91,23 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <!-- InstanceBeginEditable name="head_css_js" -->
 <style>
 #contents{
-	padding:147px 0 0;
+	padding:75px 0 0;
+}
+.colorType dl dd .btn-cart {
+  background: black url(/contents/shop/00000005/shop/image/kigokochi/cart_icon.png) no-repeat 7% center;
+  border: none;
+  color: #fff;
+  padding: 15px 20px 15px 45px;
+  display: block;
+  float: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+.colorType dl dd{
+	float: left;
+	width: 290px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 }
 #contents_r{
 	width:100% !important;
@@ -111,14 +138,14 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 }
 }
 .contents_left {
-    width: 650px;
+    width: 540px;
     margin-right: 0;
     float: left;
 		margin-top:35px;
 }
 @media (max-width:640px) {
 .contents_left {
-    width: 650px;
+    width: 540px;
     float: none;
 		margin-top:25px;
 }
@@ -205,16 +232,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 .devicePC .sliderCarousel .slides .flex-active-slide img{
 	border:none;
 	border-bottom:2px solid #464646;
+	padding-bottom:5px;
 }
 
 .contents_right{
 	padding-left:0;
-	width:330px;
+	width:380px;
 	margin-top:35px;
 }
 .contents_right div:first-child{
 	padding-bottom:20px;
-	border-bottom:1px solid #DCDCDC;
 	font-size:18px;
 }
 .contents_right p{
@@ -228,39 +255,38 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 .res_cart img{
 	width:58px !important;
 }
-@media (max-width:640px) {
-.res_cart table{
-	border-top:1px solid #DCDCDC;
-}
-}
+
 .res_cart table tr{
 	position:relative;
 	display:block;
 }
-.res_cart table tr:nth-child(even){
+.res_cart table tr{
+	/*border-bottom:1px solid #DCDCDC;*/
+}
+.res_cart table tr:first-child{
+	border-top:1px solid #DCDCDC;
+}
+.res_cart table tr:last-child{
 	border-bottom:1px solid #DCDCDC;
-
 }
 .left_sku_img{
 	position:relative;
-	width:78px;
-	height:58px;
-	top:25px;
+	width:108px;
+	left:17px;
 }
-.res_cart table tr:nth-child(even) .left_sku_img{
-
+@media (max-width:640px) {
+.left_sku_img{
+	left:7px;
+}
 }
 .left_sku_img + td{
-	padding:17px 10px 17px 3px;
+	padding:4px 10px 0 3px;
 	width:229px;
 }
 @media (max-width:640px) {
 .left_sku_img + td{
 	width:79%;
 }
-}
-.res_cart table tr:nth-child(odd) .left_sku_img + td{
-	border-bottom:1px solid #DCDCDC;
 }
 .left_sku_img + td label{
 	float:right;
@@ -277,14 +303,18 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 	margin-bottom:30px;
 }
 }
+div.res_cart a,
 .res_cart>form>a{
 	width:100%;
 	height:60px;
 }
 .res_cart>form>a,
-.res_cart>form>a:hover{
+div.res_cart a,
+.res_cart>form>a:hover,
+div.res_cart a:hover{
 	background-color:#464646 !important;
-	background-image:url(../../../contents/shop/00000006/goods/image/menu_i2.png);
+	background-image:url(/contents/shop/00000006/goods/image/menu_i2.png);
+	background-image:url(/contents/shop/00000006/goods/image/menu_i2_ie.png)\9;
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:173px auto;
@@ -334,7 +364,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 	border:1px solid #C8C8C8;
 	height:50px;
 	background-color:#fff !important;
-	background-image: url(../../../contents/shop/00000006/goods/image/kigokochi/img_inquiry_btn.png);
+	background-image: url(/contents/shop/00000006/goods/image/kigokochi/img_inquiry_btn.png);
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size:238px auto;
@@ -396,11 +426,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 .sec_goods{
 	margin:0;
 	clear:both;
-	padding:90px 50px 50px;
+	padding:90px 50px 30px;
 }
 @media (max-width:640px) {
 .sec_goods{
-	padding:50px 15px 50px;
+	padding:50px 15px 20px;
 }
 }
 .sec_goods h2 + div{
@@ -462,22 +492,40 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 .goodsDetail_box_03 > :last-child{
 	clear:both;
 }
+
+.sec_goods .introTxt{
+	text-align:center;
+	color:#777;
+	font-size:14px;
+}
+.sec_goods .introTxt h2{
+	line-height:1.5;
+	margin-bottom:20px;
+	font-size:20px;
+	font-weight:normal;
+	color:#333;
+}
+
 .i_main{
 	width:50%;
 	float:left;
 	margin-bottom:25px;
 	box-sizing:border-box;
 }
-.i_main:nth-child(odd){
+.i_main.odd{
 	padding-right:15px;
 	clear:both;
 }
-.i_main:nth-child(even){
+.i_main.even{
 	padding-left:15px;
 }
-.i_main:nth-child(odd):last-child{
-	margin:0 auto;
+
+.i_main:first-child h2{
+	margin-bottom:15px;
+}
+.i_main.odd:last-child{
 	float:none;
+	margin:0 auto;
 }
 .i_main img{
 	width:100%;
@@ -530,6 +578,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 }
 .contents_left .detailTop .topItemL .slider .sliderCarousel .slides li.flex-active-slide img{
 	border-bottom:1px solid #464646;
+	padding-bottom:5px;
 }
 }
 
@@ -620,6 +669,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 }
 </style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/cartAddSkuGoods.js" type="text/javascript"></script>
+
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
 <![endif]-->
@@ -776,13 +827,24 @@ function siteCatalistAddCart1(s_products){
        
        			<ul id="header_gnav" class="clearfix">
             	<li id="header_home"><a m:id="e_link_logo_shop_shop" href="/">ホーム</a></li>
-            	<!--<li id="header_concept"><a m:id="e_link_logo_shop_shop" href="/">コンセプト</a></li>-->
+            	<li id="header_concept"><a href="/shop/static/concept/">コンセプト</a></li>
              	<li id="header_itemlist">
-              	<a href="#">全商品一覧</a>
+              	<a href="#">商品カテゴリー</a>
                 <div id="header_itemlist_pullDown">
                 	<div class="inner">
-                		<p class="btn_allItem_pullDown"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></p>
-                    <div><img src="../../../contents/shop/00000006/shop/image/kigokochi/btn_pulldown_disable.jpg" width="1020" height="256" alt=""/></div>
+                		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
+                    <ul class="btn_category_pullDown">
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                    </ul>
+                    <ul class="btn_category_sub_pullDown">
+                      <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+                      <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -862,7 +924,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 				</div>            
             </div><!-- header_r_01 -->
            </div>
-    </div><!--header_wrap-->   
+    </div><!--header_wrap-->
   <!--▼▼▼sp_menu▼▼▼-->
  <div m:id="l_notPre_member_login_shop">
         <ul class="sp_menu_only sp_member">
@@ -883,9 +945,25 @@ s.tl(this,'o','cartview',null,'navigate');return false
         	<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
-        <li class="sp_gnav_link"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
+        <li class="sp_gnav_link accordion">
+        	<a href="#">商品カテゴリー</a>
+          <ul>
+            <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+            <li><a href="/shop/category/001001002/list/">トップス</a></li>
+            <li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+            <li><a href="/shop/category/001001004/list/">パンツ</a></li>
+            <li><a href="/shop/category/001001005/list/">スカート</a></li>
+            <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+            <li><a href="/shop/category/001001001/list/">バック</a></li>
+            <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+            <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+            <li><span></span></li>
+          </ul>
+        </li>
         <li class="sp_gnav_link_sub">
-        	<!--<p><a href="#">サイズガイド</a></p>-->
+        	<p><a href="/shop/static/size/">サイズガイド</a></p>
          	<p><a href="/shop/static/guide/">ショッピングガイド</a></p>
         	<p><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></p>
         </li>
@@ -897,7 +975,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       	</li>
     </ul>
     <div class="sp_top_menu sp_menu_only">
-    	<a href="/">m</a>
+    	<a href="#">m</a>
     </div>    
     <div class="sp_top_home sp_menu_only">
     	<a href="/">m</a>
@@ -1076,25 +1154,31 @@ $(window).on('load resize', function(){
     </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
-<div id="pan-navi" >
-  <ul class="clearfix">
-    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></li>
-    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
-	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</li>
-  </ul>
-</div>
 
+<div id="contents" style="max-width: 980px;">
+<!-- パンくずのブロックのテスト -->
+	<div id="pan-navi" class="clearfix">
+	  <ul class="clearfix">
+	    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+	    <li><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></li>
+	    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+	    <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
+	  </ul>
+
+        </div>
 <!-- deatail -->
 
-<!-- ▼▼▼商品詳細▼▼▼ -->
-<div id="contents_r">
+  <!-- ▼▼▼商品詳細▼▼▼ --><div class="r_con_box_03 clearfix">
 
-<div id="goodsDetail">
-
-<!-- インクルード領域 -->
+		<!-- インクルード領域 -->
 		<span m:id="timed_include" filename="goodsDetail_head"></span>
 		<!--/ インクルード領域  -->
 	  	<!-- PAGE:商品詳細 -->
@@ -1106,152 +1190,51 @@ $(window).on('load resize', function(){
 		</div>
 		</span>
 
-<span m:id="l_pre_goods">
-<object class="xsp_obj" m:id="b_var_sku"></object>
-<object class="xsp_obj" m:id="b_var_goodsImages"></object>
-<object class="xsp_obj" m:id="b_var_relatedImages"></object>
-<object class="xsp_obj" m:id="b_var_showStockDisplay"></object>
-<object class="xsp_obj" m:id="b_var_multiple" ></object>
-<object class="xsp_obj" m:id="b_var_catalogue"></object>
-<object class="xsp_obj" m:id="b_var_regularly"></object>
-<object class="xsp_obj" m:id="b_var_canAddCart"></object>
-<object class="xsp_obj" m:id="e_var_groupGoods"></object>
-<!-- 2015/01/31 -->
-<object class="xsp_obj" m:id="b_var_omakeImages"></object>
+		<span m:id="l_pre_goods">
+		<object class="xsp_obj" m:id="b_var_sku"></object>
+		<object class="xsp_obj" m:id="b_var_goodsImages"></object>
+		<object class="xsp_obj" m:id="b_var_relatedImages"></object>
+		<object class="xsp_obj" m:id="b_var_showStockDisplay"></object>
+		<object class="xsp_obj" m:id="b_var_multiple" ></object>
+		<object class="xsp_obj" m:id="b_var_catalogue"></object>
+		<object class="xsp_obj" m:id="b_var_regularly"></object>
+		<object class="xsp_obj" m:id="b_var_canAddCart"></object>
+		<object class="xsp_obj" m:id="e_var_groupGoods"></object>
 
-<span m:id="l_pre_order_num">
-<object class="xsp_obj" m:id="b_var_order_num"></object>
-</span>
-
-<span m:id="l_notPre_order_num">
-<span m:id="l_notEmp_goods_min_order_num">
-<object class="xsp_obj" m:id="b_var_order_num2"></object>
-</span>
-<span m:id="l_emp_goods_min_order_num">
-<object class="xsp_obj" m:id="b_var_order_num3"></object>
-</span>
-</span>
-
-<!-- include:00000006/goods/default.jsp -->
-
-<div class="goodsDetail_box_03"> <!-- 追加 -->
-
-<!--<h1 class="temp_tit_01"><span m:id="disp_goods_name">カナナリュック</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h1>-->
-<div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
-<!-- ********** eastEC Mode START ********** -->
-
-<div class="contents_left clearfix">
-<!--<div class="temp_tit_01">-->
-<object class="xsp_obj" m:id="b_var_image_file"></object>
-						<object class="xsp_obj" m:id="b_var_image_file2"></object>
-<!--<img m:id="h_img_goods" src="../../../contents/shop/00000006/shop/image/pc_item_img_01.jpg" alt="" />-->
-<!-- この２行は仮 -->
-<div class="detailTop">
-<div class="topItemL">
-	<!-- 詳細のカルーセル部分 -->
-	<div class="slider">
-		<span m:id="l_notEqu_valiationSize_sku">
-		<div  class="slideSection">
-			<div class="sliderInner">
-				<ul class="slides clearfix">
-					<span m:id="l_ite_sku_variation">
-					<span m:id="def_goods_img_sku_main"></span>
-						<span m:id="l_ite_sku_gods_img_main">
-							<li><img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
-						</span>
-					</span>
-				</ul>
-			</div>
-			
-			 <div class="sliderCarousel">
-				<ul class="slides clearfix">
-				<span m:id="l_ite_sku_variation">
-				<span m:id="def_goods_img_sku"></span>
-					<span m:id="l_ite_sku_gods_img">
-						<li><img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
-					</span>
-				</span>
-				</ul>
-			</div>
-		</div>
+		<span m:id="l_pre_order_num">
+		<object class="xsp_obj" m:id="b_var_order_num"></object>
 		</span>
-	</div>
-</div>
-</div>
-<!--</div>-->
 
-<div class="hr"></div>
+		<span m:id="l_notPre_order_num">
+		<span m:id="l_notEmp_goods_min_order_num">
+		<object class="xsp_obj" m:id="b_var_order_num2"></object>
+		</span>
+		<span m:id="l_emp_goods_min_order_num">
+		<object class="xsp_obj" m:id="b_var_order_num3"></object>
+		</span>
+		</span>
 
-<div class="social-btn">
-  <ul class="clearfix">
-    <li class="faceBooks"></li>
-    <li class="btn-tw">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    </li>
-    <li class="btn-gplus">
-      <div class="g-plusone" data-size="medium" data-annotation="none"></div>
-      <script type="text/javascript">
-       window.___gcfg = {lang: 'ja'};
-       (function() {
-         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-         po.src = 'https://apis.google.com/js/platform.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-       })();</script>
-    </li>
-    <li>
-      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-    </li>
-  </ul>
-</div>
-
-<div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
-
-<!--spカート -->
-<div class="sp_only">
-	<!-- インクルード領域 -->
-	<span m:id="html_include1">外部HTML1 表示領域</span>
-	<!--/ インクルード領域  -->
-
-	<p>
-    	<span m:id="disp_goods_name">カナナリュック</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
-    </p>&yen;
-    <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-		<span m:id="l_notEqu_pretaxPrice">
-			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;(税込)</span>&nbsp;
-			</span>
-		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円&nbsp;(税込)
-	</span>
-	
-
-</div>
-<!--/ spカート -->
+		<!-- include:00000003/goods/default.jsp -->
 
 
-<!-- 商品情報 -->
+<!-- ここから -->
 
-</div>
-<!-- 商品情報 -->
+		<!-- メインコンテンツ left ★★★デザイナー様へ style="float:left;"は削除してcssでの制御にしてください。-->
+		<div class="contents_left clearfix">
+			<!-- インクルード領域 -->
+			<span m:id="html_include1">外部HTML1 表示領域</span>
+			<!--/ インクルード領域  -->
+		</div>
+		<!-- /メインコンテンツ left -->
+		<!-- メインコンテンツ right ★★★デザイナー様へ style="float:left;"は削除してcssでの制御にしてください。-->
+		<div class="contents_right">
+			<!-- インクルード領域 -->
+			<span m:id="html_include2">外部HTML2 表示領域</span>
+			<!--/ インクルード領域  -->
 
-<div class="contents_right">
-	<div class="pc_only">
-	<p>
-    	<span m:id="disp_goods_name">カナナリュック</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
-    </p>
-    <span m:id="l_notEmp_memberSpecialDiscountOpacity">&yen;
-		<span m:id="l_notEqu_pretaxPrice">
-			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;(税込)</span>&nbsp;
-			</span>
-		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円&nbsp;(税込)
-	</span>
-	
-	<!-- インクルード領域 -->
-	<span m:id="html_include1">外部HTML1 表示領域</span>
-	<!--/ インクルード領域  -->
-	</div>
-	
-	<!-- カート -->
-		<!-- 
+
+			<!-- カート -->
+			<!-- 
 			<div class="res_cart">
 			<span m:id="l_equ_canAddCart">
 				<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
@@ -1264,458 +1247,219 @@ $(window).on('load resize', function(){
 				</form>
 			</span>
 			<span m:id="l_notEqu_select">
-			<img src="contents/shop/00000006/shop/image/pc_item_bt_02off.jpg" alt="色・サイズ、数量をご指定下さい" class="image96" />
+			<img src="contents/shop/00000003/shop/image/pc_item_bt_02off.jpg" alt="色・サイズ、数量をご指定下さい" class="image96" />
 			</span>
 			</span>
 			</div>
 		 -->
 			<object class="xsp_obj" m:id="b_size_skuValiationSize"></object>
-		 	<!-- 通常商品用カート -->
-			<span m:id="l_disp_button_forRadioTemp">
-			<div class="res_cart">
-			<span m:id="l_equ_can_addCartSku_radioTemp">
-				<a m:id="h_link_skuGoods_one" class="productDetail_cart_bt_normal" onclick="" style="width:100%;"></a>
-			</span>
-			<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuFormRadio">
-				<input m:id="h_hid__S" type="hidden" name="_S" value="" />
-				<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-				<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-				<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-				<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			</form>
-			</div>
-			</span>
-			<!-- / 通常商品用カート -->
-
-			<div class="res_cart">
-				<span m:id="l_notEqu_valiationSize_sku">
-				<span m:id="l_disp_radio_forRadioTemp">
-				<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuForm">
-					<table>
-						<span m:id="l_ite_sku_variation">
-						<span m:id="l_equ_disp_skuGoods">
-					  	<tr>
-						  	<td class="left_sku_img">
-						  		<object class="xsp_obj" m:id="b_var_image_file_sku"></object>
-									 <span m:id="def_goods_img_sku"></span>
-									 <span m:id="l_ite_sku_gods_img">
-										<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
-										<br />
-									 </span> 
-									
-								</td>
-                <td>
-                	<span m:id="h_opt_sku_variations" value="">
-										<p class="goods_name_sku">白</p>
-									</span>
-                  <span m:id="disp_disabled_radio">
-                    <label><input m:id="l_no_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" disabled="disaabled"/></label>
-                  </span>
-                  <span m:id="disp_radio">
-                    <label><input m:id="l_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" /></label>
-                  </span>
-                </td>
-							</tr>
-						</span>
-						</span>
-					</table>
-          <script m:id="js_file" language="JavaScript" src="../../../contents/js/cartAddSkuGoods.js" type="text/javascript"></script>
-					<span m:id="l_equ_canNot_addCartSku">
-						お買い物かごに入れられません
-						<img m:id="l_btn_canNot_addCart" src="contents/iikigokochi/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れられません"/>
-					</span>
-					<span m:id="l_equ_can_addCartSku">
-						<a m:id="h_link_radio_canAddCartSku" class="productDetail_cart_bt_normal" onclick="">
-							お買い物かごに入れる
-							<img m:id="l_radio_can_addCart" src="contents/iikigokochi/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れる"/>
-						</a>
-					</span>
-						<input m:id="h_hid__S_forSku" type="hidden" name="_S" value="" />
-						<input m:id="h_hid_display_code_forSku" type="hidden" name="display_code" value="" />
-						<input m:id="h_hid_goods_sku_code_forSku" type="hidden" name="goods_sku_code" value="" />
-						<input m:id="h_hid_ext_goods_sku_code_forSku" type="hidden" name="ext_goods_sku_code" value="" />
-						<input m:id="h_hid_order_num_string_forSku" type="hidden" name="order_num_string" value="" />
-					</form>
-				</span>
-				</span>
-			</div>
-			<!-- /カート -->
-        
-
-      <p class="contactBtn"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html">この商品について問い合わせる</a></p>
-
-      <!-- チャネル別決済種別制限取得 -->
-      <div class="l_con_list_03 mt15 clearfix">
-        <h4>ご利用可能な決済方法</h4>
-        <ul>
-          <li>カード決済</li>
-          <li>代金引換</li>
-        </ul>
-      </div>
-      <!-- /チャネル別決済種別制限取得 -->
-</div>
-
-<!-- レビュー -->
-<object class="xsp_obj" m:id="e_var_goodsReview"></object>
-<object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
-<object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
-<object class="xsp_obj" m:id="e_var_review_evaluation"></object>
-<span m:id="l_equ_show_status_public">
-  
-  <div class="goods_review">
-  <div class="i_main">
-  <p class="ttl_goods_icon">レビュー</p>
-
-<span m:id="l_pre_goods_review_detail">
-				<!-- <span m:id="l_equ_show_status_public"> -->
-
-<span m:id="l_ite_goodsReviewDetailList">
-
-	<div class="goods_review_block clearfix">
-			<div class="goods_review_ttl">
-      <h4><span m:id="disp_review_title">これ超いい！</span></h4>
-         <p class="hoshi">
-          評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span>
-        </p>
-			</div>
-    
-    	<p class="mb20">投稿日：<span m:id="b_wr_add_date">2011/05/01</span> ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん</p>
-    	<p><span m:id="disp_review_content">
-この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。</span></p>
-	</div>
-</span>
-  
-    <div m:id="dummy" class="goods_review_block clearfix">
-            <div class="goods_review_ttl">
-              <h4>投稿タイトル</h4>
-               <p class="hoshi">
-                  評価：<span class="rev_mark_size_01">★★★★☆</span>
-              </p>
-            </div>
-        
-            <p class="mb20"><span class="date">投稿日：2014/09/01　　ニックネーム：投稿テスおさん</span></p>
-            <p>ELTEXテスト投稿。<br />評価よし。</p>
-        </div>    
-    
-	</span>
-      
-<div m:id="l_equ_show_status_private">
-						
+			<span m:id="l_notEqu_valiationSize_sku">
+				<div class="acoBox">
+					<p class="acoBtn sp_only">カラー・サイズを選択する<span><img src="/contents/shop/00000005/shop/image/kigokochi/detail_selection_icon.png" alt="" /></span></p>
+					<div class="acoInner colorType">
+							<dl class="clearfix">
+								<span m:id="l_ite_sku_variation">
+									<span m:id="l_equ_disp_skuGoods">
+						  			<object class="xsp_obj" m:id="b_var_image_file_sku"></object>
+									<span m:id="def_goods_img_sku"></span>
+										<dt class="pc_only">
+											 <span m:id="l_ite_sku_gods_img">
+												<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" alt="" />
+											 </span>
+										</dt>
+										<dd class="clearfix">
+											<p>
+												<span m:id="h_opt_sku_variations" value="">
+													<p class="goods_name_sku">白</p>
+												</span>
+											</p>
+											<object class="xsp_obj" m:id="b_var_sku_url"></object>
+											<span m:id="l_equ_canNot_addCartSku">
+												<div class="noStock">
+													お買い物かごに入れられません
+												</div>
+												<!-- <img m:id="l_btn_canNot_addCart" src="contents/lifestyle/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れられません"/>-->
+											</span>
+											<span m:id="l_equ_can_addCartSku">
+												<a class="btn-cart" m:id="h_link_canAddCartSku" class="productDetail_cart_bt_normal" onclick="">
+													お買い物かごへ
+													<!--<img m:id="l_btn_can_addCart" src="contents/lifestyle/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れる"/>-->
+												</a>
+											</span>
+										</dd>
+								</span>
+							</span>
+							</dl>
 					</div>
-				<!-- </span> -->
-			<span m:id="l_notPre_goods_review_detail">
-				
+				</div>
+			</span>
+			<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuForm">
+				<input m:id="h_hid__S_forSku" type="hidden" name="_S" value="" />
+				<input m:id="h_hid_display_code_forSku" type="hidden" name="display_code" value="" />
+				<input m:id="h_hid_goods_sku_code_forSku" type="hidden" name="goods_sku_code" value="" />
+				<input m:id="h_hid_ext_goods_sku_code_forSku" type="hidden" name="ext_goods_sku_code" value="" />
+				<input m:id="h_hid_order_num_string_forSku" type="hidden" name="order_num_string" value="" />
+			</form>
+			<!-- /カート -->
+
+	<!-- チャネル別決済種別制限取得 -->
+ 			<object class="xsp_obj" m:id="e_var_settlementMap"></object>
+			<div class="l_con_list_03 mt15 clearfix">
+			<h4>ご利用可能な決済方法</h4>
+			
+			<span m:id="l_pre_item_limit">
+			<span m:id="l_ite_valid_settle" >
+			  <img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
 			</span>
 
-<p class="i_link_icon_02 clearfix"><a m:id="a_link_goodsReviewList" href="goodsReviewList.html">全てのレビューを見る</a></p>
-</div>
-</div>
-</span>
-  <!-- レビュー -->
+			<span m:id="l_notEmp_item_limit">
+			<br/>
+			<h4>※以下の決済方法はご利用いただけません</h4>
+			<span m:id="l_ite_item_limit">
+			<div class="error">
+			  <table>
+			    <tr>
+			      <td valign="top">
+			        <img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+			      </td>
+			      <td>
+			        <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+			      </td>
+			    </tr>
+			  </table>
+			  <br />
+			</div>
+			</span>
+			</span>
+			</span>
+			</div>
+	<!-- /チャネル別決済種別制限取得 -->
+		    <p class="contactBtn"><a m:id="e_link_inquiryInputCheck" href="#">この商品について問い合わせる</a></p>
 
 
-<!-- おまけ画像３ -->
-<span m:id="l_pre_omake_image3">
-	<div class="present3">
-		<img m:id="h_img_omake_image3" src="../../../contents/shop/00000006/shop/image/pc_item_img_01.jpg" alt="おまけ画像3" />
-	</div>
-</span>
+            <div class="social-btn">
+              <ul class="clearfix">
+                <li class="faceBooks"></li>
+                <li class="btn-tw">
+                  <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li>
+                <li class="btn-gplus">
+                  <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+                  <script type="text/javascript">
+                   window.___gcfg = {lang: 'ja'};
+                   (function() {
+                     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                     po.src = 'https://apis.google.com/js/platform.js';
+                     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                   })();</script>
+                </li>
+                <li>
+                  <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+                </li>
+              </ul>
+            </div>
+		</div>
+		<!-- /メインコンテンツ right -->
+		
+		<!-- コンテンツ sp用 ★★★デザイナー様へ style="float:left;"は削除してcssでの制御にしてください。-->
+
+		<!-- コンテンツ -->
 
 
+		<!-- インクルード領域 -->
+		<span m:id="html_include3">外部HTML3 表示領域</span>
+		<!--/ インクルード領域  -->
 
 
-<!-- ココ -->
-
-<!--降雪対応文言
-<ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
-降雪対応文言-->
-<!-- アイコン -->
-
-		<span m:id="l_ite_icon">
-			<img m:id="h_img_icon_file" src="../../../contents/shop/00000006/icon/icon_01.gif" alt="注目" />
-		</span>
-		<p>&nbsp;</p>
-    </div>
-<!--/ アイコン -->
-
-</div>
-
-<div class="sec_goods base_color">
-<h2 class="ttl_section">
-  <span class="ttl_section_inner">
-    <span class="ttl_section_en"><img src="/contents/iikigokochi/shop/image/kigokochi/ttl_styling.png" alt="STYLING"></span>
-    <span class="ttl_section_jp base_color"><img src="/contents/iikigokochi/shop/image/kigokochi/ttl_styling_sub.png" alt="詳細"></span>
-  </span>
-</h2>
-<div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname1">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname1"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content1">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content1"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname2">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname2"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content2">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content2"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname3">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname3"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content3">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content3"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname4">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname4"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content4">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content4"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname5">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname5"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content5">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content5"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname6">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname6"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content6">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content6"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname7">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname7"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content7">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content7"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname8">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname8"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content8">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content8"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname9">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname9"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content9">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content9"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname10">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname10"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content10">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content10"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname11">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colnam11"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content11">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content11"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname12">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname12"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content12">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content12"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname13">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname13"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content13">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content13"></span>
-			</p>
-		</span>
-	</div>
-</div>
-
-<div style="display:none !important;">
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname14">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname14"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content14">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content14"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname15">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname15"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content15">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content15"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname16">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname16"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content16">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content16"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname17">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname17"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content17">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content17"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname18">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname18"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content18">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content18"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname19">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname19"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content19">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content19"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname20">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname20"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content20">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content20"></span>
-			</p>
-		</span>
-	</div>
-</div>
-</div>
+	<!-- 商品レビュー start-->
+	<object class="xsp_obj" m:id="e_var_goodsReview"></object>
+	<object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
+	<object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
+	<object class="xsp_obj" m:id="e_var_review_evaluation"></object>
+	<span m:id="l_equ_show_status_public">
+	<div class="r_con_box_03">
+	<h2 class="temp_tit_n0z temp_tit_n0z_cor">この商品をご購入のお客様から寄せられたお声</h2>
+	<div class="sec_0z clearfix">
+	<!-- <object class="xsp_obj" m:id="e_var_goodsReview"></object>
+	<object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
+	<object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
+	<object class="xsp_obj" m:id="e_var_review_evaluation"></object> -->
 
 
-</div>
+	<span m:id="l_pre_goods_review_detail">
+					<!-- <span m:id="l_equ_show_status_public"> -->
+
+	<span m:id="l_ite_goodsReviewDetailList">
+	<div class="i_comment_box_0z">
+	<div class="title_01 clearfix">
+
+	<h3><span m:id="disp_review_title">これ超いい！</span></h3><p>評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span></p>
+	</div>
+	<div class="txt_box_01"><span m:id="disp_review_content">
+	この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。</span>
+	<p>ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん　投稿日：<span m:id="b_wr_add_date">2011/05/01</span></p>
+
+	</div>
+
+	</div>
+	</span>
+
+	<div m:id="dummy" class="i_comment_box_0z com_right pc_only">
+	<div class="title_01 clearfix">
+	<h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
+	</div>
+	<div class="txt_box_01">
+	この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
+	<p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
+
+	</div>
+
+	</div>
+
+	<div m:id="dummy" class="i_comment_box_0z pc_only">
+	<div class="title_01 clearfix">
+	<h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
+	</div>
+	<div class="txt_box_01">
+	この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
+	<p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
+
+	</div>
+
+	</div>
+
+	<div m:id="l_equ_show_status_private">
+							
+						</div>
+					<!-- </span> -->
+				</span>
+				<span m:id="l_notPre_goods_review_detail">
+					
+				</span>
+
+	<p class="i_link_icon_0z clearfix"><a m:id="a_link_goodsReviewList" href="goodsReviewList.html">全てのレビューを見る</a></p>
+	</div>
+	</div>
+	</span>
+	<!-- /.r_con_box_03--></div>
+	<script type="text/javascript">
+	$(function(){
+	});
+	$(window).load(function(){
+	    $('.flexslider').flexslider({
+	    animation: "slide",
+	    controlNav: "thumbnails",
+	    start: function(slider){
+	        $('body').removeClass('loading');
+	    }
+	    });
+	});
+	</script>
+
+
+<!-- 内容ここまで -->
+<!--r_con_box_03-->
 
 
      <!--▼▼▼関連商品▼▼▼-->
@@ -1951,33 +1695,34 @@ s.tl(this,'o','cartview',null,'navigate');return false
   
  </div>
  
- <!--▼▼▼下部バナー▼▼▼-->
+<!--▼▼▼下部バナー▼▼▼-->
 <div class="bannerbox">
   <ul>
-    <li>
-    	<span m:id="l_notPre_member_login">
+    <li class="banner01">
+      <span m:id="l_notPre_member_login">
       <a m:id="e_link_memberAdd_shop" href="memberAddInput.html">
         <div class="banner_inner">
           <div class="banner_inner_inner">
-            <h3><img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_information_01.png" alt="新規会員登録はこちら"></h3>
+            <h3><img src="/contents/shop/00000006/shop/image/kigokochi/icon_information_01.png" alt="新規会員登録はこちら"></h3>
             <p>
-              <img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_tokuten.png" width="61" height="61" alt="特典">
+              <img src="/contents/shop/00000006/shop/image/kigokochi/icon_tokuten.png" width="61" height="61" alt="特典">
               <span>初回購入時に新規会員登録で<br />500ポイントプレゼント！</span>
             </p>
-          </div>
+          <img src="/contents/shop/00000006/shop/image/kigokochi/photo_information_01.png" alt="" class="banner_photo" /> </div>
         </div>
       </a>
       </span>
     </li>
-    <li>
-      <a href="https://www-st2.iikigokochi.jp/shop/static/kigokochi_form/">
+    <li class="banner02">
+      <a href="https://www.iikigokochi.jp/shop/static/kigokochi_form/">
         <div class="banner_inner">
           <div class="banner_inner_inner">
-            <h3><img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_information_02.png" alt="カタログのお申込み"></h3>
+            <h3><img src="/contents/shop/00000006/shop/image/kigokochi/icon_information_02.png" alt="カタログのお申込み"></h3>
             <p>
               <span>カタログお申込みフォームはこちらから</span>
             </p>
           </div>
+          <img src="/contents/shop/00000006/shop/image/kigokochi/photo_information_02.png" alt="" class="banner_photo" /> </div>
         </div>
       </a>
     </li>
@@ -2077,13 +1822,48 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<div class="inner">
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
+      <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature/">アイテム特集</a></li>
+      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
       <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
     </ul>
-    <ul>
-      <li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+    <ul class="footer_category only_pc">
+      <li>
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+        </ul>
+        <ul>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="footer_category only_sp">
+      <li class="accordion">
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+       	<li><span></span></li>
+        </ul>
+      </li>
     </ul>
     <ul>
-      <!--<li><a href="#">サイズガイド</a></li>-->
+      <li><a href="/shop/static/size/">サイズガイド</a></li>
       <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
       <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
     </ul>
@@ -2200,7 +1980,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
 More info available at http://www.omniture.com -->
-<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
+<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code_iikigokochi.js"></script>
 <script language="JavaScript" type="text/javascript"><!--
 /* You may give each page an identifying name, server, and channel on
 the next lines. */
@@ -2234,7 +2014,7 @@ s.eVar37=s_eVar37
 var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 <script language="JavaScript" type="text/javascript"><!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
+//--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopiikigokochijp/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
@@ -2260,30 +2040,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 -->
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
-
-<script type="text/javascript" language="javascript">
-var yahoo_retargeting_id = 'JAG00YJOZ2';
-var yahoo_retargeting_label = '';
-</script>
-<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 980914824;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-
-
-<script type="text/javascript"  
-src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt=""  
-src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
 </div>
 <!-- footer追加 -->
 <!-- InstanceEndEditable -->  
