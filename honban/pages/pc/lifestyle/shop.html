@@ -449,7 +449,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 
-	<div id="contents">
+	<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
+<div id="contents">
 	
 		<div id="pan-navi" >
 		<ul class="clearfix">
@@ -803,10 +809,22 @@ function initCorners() {
 			<span m:id="l_pre_autoRankGoods_representSku">
 			<object class="xsp_obj" m:id="b_var_autoRankGoods_listImage"></object>
 				<div class="rankimg">
-				<a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				<span m:id="h_link_autoRankGoods_default_url_img">
+                   <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
+                  <span m:id="h_link_autoRankGoods_static_url_img">
+                   <a m:id="h_link_autoRankGoods_list_image_goods_url" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+                  </span>
 				</div>
 			</span>
-			<p class="txt13"><b><a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a></b></p>
+			<p class="txt13"><b>
+			<span m:id="h_link_autoRankGoods_default_url">
+                 <a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                </span>
+                <span m:id="h_link_autoRankGoods_static_url">
+                 <a m:id="h_link_autoRankGoods_static_goods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                </span>
+			</b></p>
 			<p class="txt13">
 			<span m:id="l_notEqu_autoRankGoods_pretaxPrice">
 				<span class="original_price">
@@ -996,10 +1014,23 @@ function initCorners() {
 							<span m:id="l_pre_newGoods_representSku">
 								<object class="xsp_obj" m:id="b_var_newGoods_listImage">
 								</object>
-								<a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000005/shop/image/item_sample_01.jpg" /></a></span>
+								 <span m:id="h_link_newGoods_default_url_img">
+				                   <a m:id="h_link_newGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				                  </span>
+				                  <span m:id="h_link_newGoods_static_url_img">
+				                   <a m:id="h_link_newGoods_list_image_goods_url" href="goodsDetail.html"> <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				                  </span>
+							</span>
 							</div>
 							
-							<p class="txt13"><span m:id="disp_newGoods_goods_exp_sum"></span><b><a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name"></span></a></b></p>
+							<p class="txt13"><span m:id="disp_newGoods_goods_exp_sum"></span><b>
+							<span m:id="h_link_newGoods_default_url">
+			                 <a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+			                </span>
+			                <span m:id="h_link_newGoods_static_url">
+			                 <a m:id="h_link_newGoods_name_goods_url" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+			                </span>
+							</b></p>
 							<p class="txt13">
 							<span m:id="l_notEqu_newGoods_pretaxPrice">
 							<span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円

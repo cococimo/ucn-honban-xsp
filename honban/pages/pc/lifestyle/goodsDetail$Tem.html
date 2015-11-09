@@ -17,7 +17,9 @@
 <meta m:id="description" name="Description" content="$1の通販・通信販売なら「ココチモナチュラル・ライフスタイル」。$1の商品紹介ページです。ココチモは、「今よりもっと“心地いい”をお届けする」をコンセプトに上品でこだわり抜いた商品をご案内する通信販売サイトです。" />
 <meta m:id="keywords" name="Keywords" content="$1,生活雑貨,北欧雑貨,通販,販売,ココチモ" />
 
-<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2="の通販・通信販売｜生活・北欧雑貨の通販「ココチモ」">データベースから値を取得し表示します</title>
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
@@ -129,7 +131,6 @@ $(".faceBooks").append(ifremstr);
 <!-- InstanceBeginEditable name="head" -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -187,24 +188,36 @@ function AddCart_trans(){
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans()",1000);
+  var goods_stock_num = document.cartGoodsAddForm.goods_stock_num.value;
+  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
+　if( Number(order_num_string) > Number(goods_stock_num)){
+　	 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+　}else{
+	  s.linkTrackVars='events,products';
+	  s.linkTrackEvents='scAdd,event27';
+	  s.products=";"+s_products;
+	  s.events='scAdd,event27';
+	  s.tl(this,'o','cartadd');
+	  setTimeout("AddCart_trans()",1000);
+  }
 }
 function AddCart_trans1(){
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function siteCatalistAddCart1(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans1()",1000);
+  var goods_stock_num = document.cartGoodsAddForm1.goods_stock_num.value;
+  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
+　if( Number(order_num_string) > Number(goods_stock_num)){
+　	alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+　}else{
+	  s.linkTrackVars='events,products';
+	  s.linkTrackEvents='scAdd,event27';
+	  s.products=";"+s_products;
+	  s.events='scAdd,event27';
+	  s.tl(this,'o','cartadd');
+	  setTimeout("AddCart_trans1()",1000);
+  }
 }
 
 
@@ -511,6 +524,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
      
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 <div id="pan-navi" >
@@ -792,6 +811,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -803,7 +823,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<option m:id="dummy">2</option>
   </select>
 </td></tr>
-<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th><td>△</td></tr>
+<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
+									<span m:id="l_equ_canAddCart"><td>△</td></span>
+									<span m:id="l_notEqu_canAddCart"><td>×</td></span>
+</tr>
 <tr m:id="l_pre_min_order_num2"><th>最低購入数<span class="conma">：</span></th><td><span m:id="disp_min_order_num">2</span></td></tr>
 
 <!-- のし・ラッピング可否 -->
@@ -904,6 +927,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 								<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 								<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
 								<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+								<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
 <a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れる" /></a>
 </form>
 </span>
@@ -1596,6 +1620,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1607,7 +1632,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<option m:id="dummy">2</option>
   </select>
 </td></tr>
-<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th><td>△</td></tr>
+<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
+									<span m:id="l_equ_canAddCart"><td>△</td></span>
+									<span m:id="l_notEqu_canAddCart"><td>×</td></span></tr>
 <tr m:id="l_pre_min_order_num2"><th>最低購入数<span class="conma">：</span></th><td><span m:id="disp_min_order_num">2</span></td></tr>
 <span m:id="l_pre_no_wrapping">
 <tr><td valign="top">
@@ -1694,6 +1721,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 								<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 								<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
 								<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+								<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
 								<a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_item_bt_02_sp.jpg" alt="カートに入れる"/></a>
 							</form>
 
@@ -1810,6 +1838,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1893,6 +1922,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>

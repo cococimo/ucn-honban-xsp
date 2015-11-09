@@ -17,7 +17,9 @@
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 
-<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
 <!-- InstanceEndEditable -->
 <!-- common css -->
@@ -100,7 +102,6 @@ $(".faceBooks").append(ifremstr);
 <!--/ tracking urchin -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_goods"></object>
 
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -440,6 +441,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- メインコンテンツ_外枠 -->
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="content">
   <!-- メインコンテンツ -->
   <div id="content_wrap">
@@ -582,7 +589,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 <!-- ▼フォーム▼ -->
-<form action="/shop/c/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm">
+<form action="/shop/lifestyle/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm">
 <h4 class="temp_tit_05"><div>色・サイズ・数量等の選択<!--、ご購入--></div></h4>
 	<table cellpadding="0" cellspacing="0" border="0">
 	<tr>
@@ -598,6 +605,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>
@@ -715,7 +723,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </div>
 <div class="box_priceright">
 <!-- ▼フォーム▼ -->
-<form action="/shop/c/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm1">
+<form action="/shop/lifestyle/e/DHD/c/001001004/" method="post" name="goodsDetailCartForm1">
 <h4 class="temp_tit_05"><div>色・サイズ・数量等の選択<!--、ご購入--></div></h4>
 	<table cellpadding="0" cellspacing="0" border="0">
 	<tr>
@@ -731,6 +739,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</select>
 		<span m:id="l_ite_variation">
 		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 		</span>
 		</td>

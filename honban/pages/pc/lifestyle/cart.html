@@ -458,6 +458,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- ▼▼▼▼カート▼▼▼▼ -->
 <br />
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+	<input type="hidden" name="ext_goods_sku_code" />
+</form>
 <div id="contents">
 
 
@@ -568,7 +575,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<span m:id="disp_msg">エラーメッセージその２</span>
   </span></div>
 </span>
-
+<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
+<span m:id="init_individual"></span>
+<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
 <span m:id="l_ite_shopCart">
 <span m:id="l_notPre_other_shop_cart">
 <object class="xsp_obj" m:id="e_var_free_guide_list"></object>
@@ -596,9 +605,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <object class="xsp_obj" m:id="b_var_dm_member"></object>
 <object class="xsp_obj" m:id="b_var_order_log"></object>
 
-<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
-<span m:id="init_individual"></span>
-<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
 <span m:id="l_ite_detail">
 <object class="xsp_obj" m:id="b_param_special"></object>
 <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
@@ -611,8 +617,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <td class="itemname_td">
 <div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
-<span m:id="l_notEqu_removeMe"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
-</a>
+<span m:id="l_notEqu_removeMe">
+<span m:id="h_link_cart_default_url">
+ <a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
+<span m:id="h_link_cart_static_url">
+ <a m:id="h_link_cart_static_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+ </a>
+</span>
 <!-- チャネル別決済種別制限取得 -->
 <span m:id="l_pre_item_limit">
 <span m:id="l_ite_valid_settle">

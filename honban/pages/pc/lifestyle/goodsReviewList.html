@@ -386,6 +386,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 
+<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+	<input type="hidden" name="_S" />
+	<input type="hidden" name="category_code" />
+	<input type="hidden" name="goods_url" />
+</form>
 <div id="contents">
 
      
@@ -495,7 +501,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 
-    <h2><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a></h2>
+    <h2>
+	<span m:id="h_link_goodsReview_default_url">
+		<a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a>
+	</span>
+	<span m:id="h_link_goodsReview_static_url">
+		<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">レビュー一覧<span m:id="dummy">商品名商品名</span></span></a>
+	</span>
+</h2>
 
 <div class="reviewBlock clearfix">
 
