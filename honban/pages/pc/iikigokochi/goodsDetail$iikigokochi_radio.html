@@ -696,6 +696,7 @@ $(".faceBooks").append(ifremstr);
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
 
+
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
     <span m:id="l_notPre_goods">
@@ -1285,9 +1286,9 @@ $(window).on('load resize', function(){
     </p>&yen;
     <span m:id="l_notEmp_memberSpecialDiscountOpacity">
 		<span m:id="l_notEqu_pretaxPrice">
-			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;(税込)</span>&nbsp;
+			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;(税込)</span>&nbsp;
 			</span>
-		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円&nbsp;(税込)
+		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;(税込)
 	</span>
 	
 
@@ -1307,9 +1308,9 @@ $(window).on('load resize', function(){
     </p>
     <span m:id="l_notEmp_memberSpecialDiscountOpacity">&yen;
 		<span m:id="l_notEqu_pretaxPrice">
-			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;(税込)</span>&nbsp;
+			<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;(税込)</span>&nbsp;
 			</span>
-		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円&nbsp;(税込)
+		<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;(税込)
 	</span>
 	
 	<!-- インクルード領域 -->
@@ -1364,31 +1365,30 @@ $(window).on('load resize', function(){
 					  	<tr>
 						  	<td class="left_sku_img">
 						  		<object class="xsp_obj" m:id="b_var_image_file_sku"></object>
-									 <span m:id="def_goods_img_sku"></span>
-									 <span m:id="l_ite_sku_gods_img">
-										<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
-										<br />
-									 </span> 
-									
-								</td>
-                <td>
-                	<span m:id="h_opt_sku_variations" value="">
-										<p class="goods_name_sku">白</p>
-									</span>
-                  <span m:id="disp_disabled_radio">
-                    <label><input m:id="l_no_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" disabled="disaabled"/></label>
-                  </span>
-                  <span m:id="disp_radio">
-                    <label><input m:id="l_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" /></label>
-                  </span>
-                </td>
-							</tr>
+								 <span m:id="def_goods_img_sku"></span>
+								 <span m:id="l_ite_sku_gods_img">
+									<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
+									<br />
+								 </span> 
+							</td>
+			                <td>
+								<span m:id="h_opt_sku_variations" value="">
+									<p class="goods_name_sku">白</p>
+								</span>
+								<span m:id="disp_disabled_radio">
+    			                	<label><input m:id="l_no_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" disabled="disaabled"/></label>
+                  				</span>
+								<span m:id="disp_radio">
+									<label><input m:id="l_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" /></label>
+								</span>
+    			            </td>
+						</tr>
 						</span>
 						</span>
 					</table>
           <p class="cartbtn_notes">ご希望のサイズ・カラーをお選びいただき、「カートに入れる」ボタンをクリックしてください。<br />
 ご希望の枚数は次の画面でご変更いただけます。</p>
-					<span m:id="l_equ_canNot_addCartSku">
+					<span m:id="l_equ_canNot_addCartSku_radio">
 						お買い物かごに入れられません
 						<img m:id="l_btn_canNot_addCart" src="contents/iikigokochi/shop/image/pc_item_bt_02_sp.jpg" alt="お買い物かごに入れられません"/>
 					</span>
@@ -2203,7 +2203,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <li><a href="/shop/static/notation/">特定商法</a></li>
     </ul>
     <p>Copyright U-CAN, Inc. All Rights Reserved.</p>
-<div class="add_ft_wp">　
+<!--<div class="add_ft_wp">　
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
@@ -2215,9 +2215,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
  		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
       </ul>      
-      </div>      
+      </div>  -->    
 <!--▼▼▼カテゴリー(フッター)▼▼▼-->
-<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
+<!--<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="add_inner footer_cate">
 <div class="inn_tit2">カテゴリーから探す</div>
  <span m:id="l_ite_standardCategory">
@@ -2250,18 +2250,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/static/contents/tableitem/">調理器具の通販特集</a></li>                
       </ul>       
       </div>
-</div>
+</div>-->
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->    
 <br clear="all" />
-    <div class="pc_display member_signup">
+    <!--<div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
       <ul>
-        <!--<li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>-->
+        <li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>
         <li class="wrap_l oneb"><a href="https://www.iikigokochi.jp/shop/memberAdd.do">新規会員登録</a></li>
         <li><a href="/shop/static/guide/">ご利用ガイド</a></li>
         <li><a href="/shop/static/first/">ココチモとは</a></li>
       </ul>
-    </div>
+    </div>-->
     
     <div class="pc_display">
       <h3 id="icon_04">会員の方</h3>
@@ -2364,6 +2364,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 -->
 <!-- ▲▲▲ Criteo ▲▲▲ -->
+
 
 </div>
 <!-- footer追加 -->

@@ -39,6 +39,15 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.flexslider.js"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000006/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+	$(".site_logo, .btn_special span, #footer01 .add_p").css({backgroundSize: "contain"});
+	$(".res_cart>form>a, .contactBtn a").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/resize.js" type="text/javascript"></script>
@@ -158,13 +167,24 @@ nextText: "",
        
        			<ul id="header_gnav" class="clearfix">
             	<li id="header_home"><a m:id="e_link_logo_shop_shop" href="/">ホーム</a></li>
-            	<!--<li id="header_concept"><a m:id="e_link_logo_shop_shop" href="/">コンセプト</a></li>-->
+            	<li id="header_concept"><a href="/shop/static/concept/">コンセプト</a></li>
              	<li id="header_itemlist">
-              	<a href="#">全商品一覧</a>
+              	<a href="#">商品カテゴリー</a>
                 <div id="header_itemlist_pullDown">
                 	<div class="inner">
-                		<p class="btn_allItem_pullDown"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></p>
-                    <div><img src="../../../contents/shop/00000006/shop/image/kigokochi/btn_pulldown_disable.jpg" width="1020" height="256" alt=""/></div>
+                		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
+                    <ul class="btn_category_pullDown">
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                    </ul>
+                    <ul class="btn_category_sub_pullDown">
+                      <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+                      <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+                    </ul>
                   </div>
                 </div>
               </li>
@@ -267,9 +287,25 @@ s.tl(this,'o','cartview',null,'navigate');return false
         	<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
-        <li class="sp_gnav_link"><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
+        <li class="sp_gnav_link accordion">
+        	<a href="#">商品カテゴリー</a>
+          <ul>
+            <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+            <li><a href="/shop/category/001001002/list/">トップス</a></li>
+            <li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+            <li><a href="/shop/category/001001004/list/">パンツ</a></li>
+            <li><a href="/shop/category/001001005/list/">スカート</a></li>
+            <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+            <li><a href="/shop/category/001001001/list/">バック</a></li>
+            <li><a href="/shop/category/001001008/list/">新着商品</a></li>
+            <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+            <li><span></span></li>
+          </ul>
+        </li>
         <li class="sp_gnav_link_sub">
-        	<!--<p><a href="#">サイズガイド</a></p>-->
+        	<p><a href="/shop/static/size/">サイズガイド</a></p>
          	<p><a href="/shop/static/guide/">ショッピングガイド</a></p>
         	<p><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></p>
         </li>
@@ -281,7 +317,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       	</li>
     </ul>
     <div class="sp_top_menu sp_menu_only">
-    	<a href="/">m</a>
+    	<a href="#">m</a>
     </div>    
     <div class="sp_top_home sp_menu_only">
     	<a href="/">m</a>
@@ -1014,13 +1050,48 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<div class="inner">
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
+      <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature/">アイテム特集</a></li>
+      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
       <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
     </ul>
-    <ul>
-      <li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=">全商品一覧</a></li>
+    <ul class="footer_category only_pc">
+      <li>
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+        </ul>
+        <ul>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="footer_category only_sp">
+      <li class="accordion">
+      	<a href="#">商品カテゴリー</a>
+      	<ul>
+        	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
+        	<li><a href="/shop/category/001001002/list/">トップス</a></li>
+        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
+        	<li><a href="/shop/category/001001005/list/">スカート</a></li>
+        	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
+        	<li><a href="/shop/category/001001001/list/">バック</a></li>
+         	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
+        	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+       	<li><span></span></li>
+        </ul>
+      </li>
     </ul>
     <ul>
-      <!--<li><a href="#">サイズガイド</a></li>-->
+      <li><a href="/shop/static/size/">サイズガイド</a></li>
       <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
       <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
     </ul>
@@ -1035,7 +1106,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <li><a href="/shop/static/notation/">特定商法</a></li>
     </ul>
     <p>Copyright U-CAN, Inc. All Rights Reserved.</p>
-<div class="add_ft_wp">　
+<!--<div class="add_ft_wp">　
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
@@ -1047,9 +1118,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
  		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
       </ul>      
-      </div>      
+      </div>  -->    
 <!--▼▼▼カテゴリー(フッター)▼▼▼-->
-<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
+<!--<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="add_inner footer_cate">
 <div class="inn_tit2">カテゴリーから探す</div>
  <span m:id="l_ite_standardCategory">
@@ -1082,18 +1153,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/static/contents/tableitem/">調理器具の通販特集</a></li>                
       </ul>       
       </div>
-</div>
+</div>-->
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->    
 <br clear="all" />
-    <div class="pc_display member_signup">
+    <!--<div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
       <ul>
-        <!--<li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>-->
+        <li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>
         <li class="wrap_l oneb"><a href="https://www.iikigokochi.jp/shop/memberAdd.do">新規会員登録</a></li>
         <li><a href="/shop/static/guide/">ご利用ガイド</a></li>
         <li><a href="/shop/static/first/">ココチモとは</a></li>
       </ul>
-    </div>
+    </div>-->
     
     <div class="pc_display">
       <h3 id="icon_04">会員の方</h3>
@@ -1171,7 +1242,7 @@ s.eVar36=""
 var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 <script language="JavaScript" type="text/javascript"><!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="http(s)://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
+//--></script><noscript><img src="http(s)://ucanshop.122.2o7.net/b/ss/ucanshopiikigokochijp/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
