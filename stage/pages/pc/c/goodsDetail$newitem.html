@@ -58,6 +58,56 @@
 <!-- InstanceBeginEditable name="head" -->
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
+
+<style>
+.np_bx{
+width:90px;
+margin-right:0.5%;
+padding:5px 0;
+color:#FFFFFF;
+background-color:#F39801;
+float:left			
+}
+.item_bt_01 select{
+float:left !important;
+vertical-align:middle;
+margin:0 3% 0 0;
+padding:0.7% 0;		
+}
+.item_bt_02 select{
+float:left !important;
+vertical-align:middle;
+margin:0 3% 0 0;
+padding:0.7% 0;		
+}		
+.add_np{
+display: block;
+width: 0;
+height: 0 !important;
+margin: 0 auto;
+background: none !important;
+text-indent: -9999px;
+}
+.np_cen{ margin:0 auto}
+.item_bt_02 a {
+    display: block !important;
+    width: 701px !important;
+    height: 61px !important;
+    margin: 0 auto !important;
+    background: url(../../contents/c/shop/image/pc_item_bt_01.jpg) no-repeat !important;
+    text-indent: -9999px !important;
+	margin-left:-10px !important
+}
+@media (max-width: 510px){
+.np_bx{
+clear:both;
+margin-bottom:20px
+}
+.add_mg{margin-left:0}
+}
+</style>
+
+        
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
@@ -129,6 +179,7 @@ function siteCatalistAddCart1(s_products){
   s.tl(this,'o','cartadd');
   setTimeout("AddCart_trans1()",1000);
 }
+
 //-->
 </script>
 <script type="text/javascript">
@@ -314,9 +365,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- include:00000003/goods/default.jsp -->
 
-<!-- インクルード領域 -->
-<span m:id="html_include1">外部HTML1 表示領域</span>
-<!--/ インクルード領域  -->
+	  		<!-- インクルード領域 -->
+			<span m:id="html_include1">外部HTML1 表示領域</span>
+			<!--/ インクルード領域  -->
 
 	<div class="sec_01">
     	    <div class="item_bt_01">
@@ -324,37 +375,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<object class="xsp_obj" m:id="b_var_varUrl"></object>
 		<form method="get" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
 		<object class="xsp_obj" m:id="b_size_valiationSize"></object>
-		<span m:id="l_notEqu_valiationSize">
-		<style>
-		.np_bx{
-			width:90px;
-			margin-right:0.5%;
-			padding:5px 0;
-			color:#FFFFFF;
-			background-color:#F39801;
-			float:left			
-		}
-		.item_bt_01 select{
-			float:left !important;
-			vertical-align:middle;
-			margin:0 3% 0 0;
-			padding:0.7% 0;		
-		}
-		.add_mg{margin-left:130px}
-		
-		@media (max-width: 510px){
-		.np_bx{
-			clear:both;
-			margin-bottom:20px
-		}
-		.add_mg{margin-left:0}
-		}
-		</style>
-        
-        <div class="np_bx add_mg">
+		<span m:id="l_notEqu_valiationSize">      
+        <div class="np_bx">
         サイズ
         </div>
-
+		<a class="add_np" name="h_sel_goods_sku_code"></a>        
 		<select m:id="h_sel_goods_sku_code">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_variations" value="">白</option>
@@ -371,13 +396,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
         
 		<div class="np_bx">
         数量
-        </div><div m:id="l_visible_order_num"></div>
+        </div>
+        <div m:id="l_visible_order_num">
 	 <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
 		<option m:id="h_pull_order_num" value="3">3</option>
 		<option m:id="dummy">1</option>
 		<option m:id="dummy">2</option>
 	  </select>
-
+		</div>
 		</form>
 <br clear="all" />
 
@@ -396,14 +422,71 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<span m:id="l_notEqu_select">
 <img src="contents/shop/00000003/shop/image/pc_item_bt_06off.jpg" alt="色・サイズ、数量をご指定下さい" class="image96" />
 </span>
-
-
-
 </div>
-		<!-- /カート -->
+	  		<!-- インクルード領域 -->
+			<span m:id="html_include2">外部HTML2 表示領域</span>
+			<!--/ インクルード領域  -->
+		<!-- カート -->
+        
+		<object class="xsp_obj" m:id="b_var_varUrl"></object>
+		<form method="get" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm1" action="goodsDetail.html">
+		<object class="xsp_obj" m:id="b_size_valiationSize"></object>
+		<span m:id="l_notEqu_valiationSize">
+        
+        <div class="np_bx">
+        サイズ
+        </div>
+		<a class="add_np" name="h_sel_goods_sku_code1"></a>        
+		<select m:id="h_sel_goods_sku_code1">
+		<option value="">--選択してください--</option>
+		<option m:id="h_opt_variations" value="">白</option>
+		<option m:id="dummy" value="">赤</option>
+		<option m:id="dummy" value="">青</option>
+		</select>
+		<span m:id="l_ite_variation">
+		<object class="xsp_obj" m:id="b_var_url"></object>
+		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
+		<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
+		</span>
+		</span>
+        
+        
+		<div class="np_bx">
+        数量
+        </div>
+        <div m:id="l_visible_order_num">
+	 <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+		<option m:id="h_pull_order_num" value="3">3</option>
+		<option m:id="dummy">1</option>
+		<option m:id="dummy">2</option>
+	  </select>
+		</div>
+		</form>
+<br clear="all" />
+
+			<div class="item_bt_02" style="margin-top:20px">
+			<span m:id="l_equ_canAddCart">
+			<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+			<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+			<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+			<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+			<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+			<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+			<a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal" onclick=""></a>
+			</form>
+			</span>
+			
+			<span m:id="l_notEqu_select">
+<img src="contents/shop/00000003/shop/image/pc_item_bt_06off.jpg" alt="色・サイズ、数量をご指定下さい" class="image96" />
+</span>
+</div>
+
+		<!-- /カート --> 
+        
 	    </div>
 	</div>
 	<!-- /left -->
+
 
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -1108,7 +1191,6 @@ var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
 /* ]]> */
 </script>
-
 
 <script type="text/javascript"  
 src="//www.googleadservices.com/pagead/conversion.js">
