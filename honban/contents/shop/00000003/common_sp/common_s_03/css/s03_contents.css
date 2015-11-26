@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*************************/
+
+
+.sp_wp {
+	width:956px;
+	box-shadow:0px 0px 7px #999999;
+	margin:20px auto 30px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	padding-top:18px;
+	padding-bottom:8px;
+	text-align:center;
+}
+
+
+.wrap_btn01{ 
+	margin:0 auto;
+	width:900px;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_bottom.jpg) ;
+	
+}
+
+.wrap_shuroku{ 
+	margin:0 auto;
+	width:894px;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/shuroku_bg.gif) ;
+	padding-left:6px;
+}
+
+.vat{ 
+	vertical-align:top;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+
+.mt68{ 
+	margin-top:38px;
+}
+
+.mb30{ 
+	margin-bottom:30px;
+}
+
+.wrap_btn02{ 
+	margin-bottom:16px;
+}
+
+.wrap_shuroku ul{ 
+	margin:0 auto;
+	width:900px;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/shuroku_bg.jpg);
+	text-align:left;
+	list-style-type: none;
+}
+
+
+.wrap_shuroku ul:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+/*\*/
+* html .wrap_shuroku ul {
+    height: 1em;
+}
+
+.wrap_shuroku ul {
+    display: block;
+}
+/**/
+
+
+.wrap_shuroku ul li{ 
+	margin:0 auto 18px 28px;
+	width:402px;
+	float:left;
+	
+}
+
+
+
+#contents_l{
+	display:none !important;
+}
+
+
+#contents_r {
+	width:960px;
+	display:inline;
+	float:none;
+}
+
+
+
+
+@media (max-width: 640px) {
+
+.sp_wp {
+	width:94%;
+	box-shadow:0px 0px 7px #999999;
+	margin:0px auto 30px;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	padding-top:18px;
+	padding-bottom:0;
+	text-align:center;
+}
+
+.sp_wp img{
+	width:94%;
+}
+
+.wrap_btn01{ 
+	margin:0 auto 10px;
+	width:94%;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_bottom02.jpg) no-repeat left top;
+}
+
+.wrap_btn01 img{ 
+	width:92%;
+}
+
+.wrap_shuroku{ 
+	margin:0 auto;
+	width:94%;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/shuroku_bg.gif) ;
+	padding-left:0;
+}
+
+
+
+.wrap_shuroku ul{ 
+	margin:0 auto;
+	width:94%;
+	text-align:center;
+}
+.wrap_shuroku ul li{ 
+	margin:0 auto 8px auto;
+	width:94%;
+	float:none;
+}
+
+.mt68{ 
+	margin-top:0;
+}
+
+}
+
+.wrap_youtube {
+	width:100%;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_b.jpg) no-repeat center top;
+	text-align:center;
+}
+
+
+.wrap_hanasaka {
+	width:100%;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_c.jpg) no-repeat center top;
+	text-align:center;
+	padding-top:295px;
+}
+
+.ttl_youtube {
+	margin-top:303px;
+	margin-bottom:5px;
+}
+
+.inner_youtube {
+	width:700px;
+	height:394px;
+	margin-bottom:20px;
+	border:5px solid #fff;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+
+
+@media (max-width: 640px) {
+
+.wrap_youtube {
+	width:100%;
+	height:auto;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_b.jpg) no-repeat center top;
+	background-size:contain;
+}
+
+
+.wrap_hanasaka {
+	width:100%;
+	height:auto;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_c.jpg) no-repeat center top;
+	background-size:contain;
+}
+
+
+.ttl_youtube {
+	margin-top:200px;
+	margin-bottom:5px;
+}
+
+.inner_youtube {
+	width:90%;
+	height:auto;
+	min-height:260px;
+}
+
+}
+
+
+@media (max-width: 400px) {
+
+
+.inner_youtube {
+	width:90%;
+	height:auto;
+	min-height:200px;
+}
+
+.ttl_youtube {
+	margin-top:150px;
+	margin-bottom:5px;
+}
+
+}
+
+
+
+
+.wrap_tokuten {
+	width:100%;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_b.jpg) no-repeat center top;
+	text-align:center;
+
+}
+
+
+.img_tokuten {
+	margin-top:300px;
+}
+
+
+@media (max-width: 640px) {
+
+.wrap_tokuten {
+	width:100%;
+	height:auto;
+	background:url(/contents/shop/00000003/image/static/img/manganihon/main_b.jpg) no-repeat center top;
+	background-size:contain;
+}
+
+.img_tokuten {
+	margin-top:160px;
+}
+
+
+
+}
+
+
+@media (max-width: 400px) {
+
+
+
+.img_tokuten {
+	margin-top:120px;
+}
+
+}
