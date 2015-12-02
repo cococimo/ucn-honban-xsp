@@ -179,7 +179,12 @@ function siteCatalistAddCart1(s_products){
   s.tl(this,'o','cartadd');
   setTimeout("AddCart_trans1()",1000);
 }
-
+	window.onunload = function() {
+		jQuery(function(){
+    // ‘S‚Ä‚Ì‘I‘ğ‚ğŠO‚·
+    $("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+});
+    }
 //-->
 </script>
 <script type="text/javascript">
@@ -410,11 +415,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<div class="item_bt_02" style="margin-top:20px">
 			<span m:id="l_equ_canAddCart">
 			<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
-			<input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-			<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-			<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+								<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+								<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+								<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+								<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 			<a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal" onclick=""></a>
 			</form>
 			</span>
@@ -467,12 +472,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<div class="item_bt_02" style="margin-top:20px">
 			<span m:id="l_equ_canAddCart">
 			<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
-			<input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-			<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-			<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			<a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal" onclick=""></a>
+<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+								<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+								<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+								<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+								<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+			<a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""></a>
 			</form>
 			</span>
 			
