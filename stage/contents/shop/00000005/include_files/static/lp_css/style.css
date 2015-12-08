@@ -5,7 +5,7 @@
 	padding-top:12px;
 }
 .main{
-	width: 700px;
+	width: 70%;
 	margin:0 auto;
 }
 p{
@@ -20,34 +20,21 @@ h3{
 	text-align:left; }
 .text_right {
 	text-align:right; }
-
-
-/*.add_p_st2 {
-	top:62px;
-	left:35%; }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- .add_p_st2  { left:38%;  }
-}
-*/
 /*************
 
 	top
 
 	**********/
 .topImg{
-	padding-top: 10px; }
-
-.topbottom_text {
-	font-size:12px;
-	text-align:left;
-	padding-top:10px; }
-
-.top h2,.categorysec h3 {
-    margin-bottom: 10px;
-    text-align: left !important;
+	padding-top: 10px;
 }
 
+.topbottom_text
+{
+	margin:0;
+	padding:10px 0;
+	text-align:left;
+}
 /***********
 
 	category
@@ -56,45 +43,46 @@ h3{
 .categorysec {
 	display: block;
 	overflow: hidden;
-	padding-top: 30px; }
+	padding-top: 30px;
+}
 
 .categorysec .category_left {
 	width:324px;
-	float: left; }
-
+	float: left;
+}
 .categorysec .category_right {
 	width:50%;
-	float: right; }
+	float: right;
+}
 
 .categorysec .category_right p.img_textarea {
-	height:150px;
+	height:170px;
 	text-align:left;
 }
 
-.categorysec .button {
+
+.categorysec a.button {
 	display: inline-block;
 	width: 240px;
-	height: 46px;
 	text-align: center;
 	text-decoration: none;
-	line-height: 46px;
 	outline: none;
 	background-color: #ffffff;
 	border: 2px solid #5554B1;
 	border-radius: 2px;
 	color: #436bac;
-	line-height: 44px;
-	margin-left: 20%; }
+	margin-left: 20%;
+	padding:10px 5px;
+	}
 
 .categorysec a.button {
-	color:#5554B1; }
+	color:#436bac; }
 
 .categorysec .button:hover {
-	background-color: #5554B1;
-	border-color: #5554B1;
+	background-color: #436bac;
+	border-color: #436bac;
 	color: #ffffff;
-	opacity:1 !important;}
-
+}
 .categorysec .button::before,
 .categorysec .button::after {
 	position: absolute;
@@ -136,7 +124,7 @@ h3{
 	text-align:left; }
 
 .categorylist a{
-	color: #5554b1; }
+	color: #96c3e3; }
 
 .categorylist img{
 	padding: 0 4.5%; }
@@ -149,11 +137,12 @@ h3{
 
 .recommendsec {
 	margin: 35px 0 0;
-	padding-bottom:15px;
+	padding-bottom:25px;
 	font-size:85%; }
 
 .recommendsec .recommend_header {
-	border-bottom: 2px dotted #a4a4a4; }
+	border-bottom: 2px dotted #a4a4a4;
+}
 
 .recommendsec .recommend_header dl{
 	width: 30%;
@@ -202,10 +191,12 @@ h3{
 
 		***************/
 .contents_introduction {
-	margin: 30px 0 50px;
-	padding:20px 15px;
+	margin: 30px 0 20px;
+	padding:20px 0px;
 	border: 1px dotted #656565;
-	border-radius: 8px; }
+	border-radius: 8px;
+	text-align:center;
+}
 
 .contents_introduction h2 {
 	font-size:100%;
@@ -215,7 +206,7 @@ h3{
 	padding-top:8px;
 	font-size:80%;
 	line-height: 2em;
-	text-align: center; }
+ }
 
 /***************
 
@@ -231,3 +222,86 @@ h3{
   display: block;
   clear: both;
   content: ""; }
+
+/**tokumoto addition**/
+.laundry-main-img{
+	width: 100%;
+	background: #FAFAFA;
+}
+
+.categorylist li{
+	background: url('../contents/images/categorylist_icon.png') no-repeat left ;
+	padding-left: 20px;
+	background-position: 0px 6px;
+}
+
+.w100
+{
+	width:100%;
+}
+
+/*sp_land_wide*/
+@media (max-width: 510px)
+{
+.main {
+    width: 90%;
+    margin: 0 auto;
+}	
+.categorysec .category_right {
+	width:100%;
+	float: none;
+}
+
+.categorysec .category_right p.img_textarea {
+	height: auto;
+	text-align:left;
+	padding-top:6px
+}
+.categorysec a.button {
+	width: 100%;
+	margin-left: 0;
+	margin-top:10px;
+	padding:10px 5px;
+	}	
+.categorysec .category_left {
+    width: 100%;
+    float: none;
+}
+
+.categorysec .category_left img{width: 98%;}
+
+.recommendsec .recommend_header dl{
+	width: 100%;
+	padding:0;
+	float: none; }
+	
+.recommendsec .recommend_bottom dl{
+	width: 100%;
+	padding:0;
+	float: none; }	
+	
+.recommendsec dl.reco_center {
+	border-left: none;
+	border-right: none;
+	border-top: 2px dotted #a4a4a4;
+	border-bottom: 2px dotted #a4a4a4; }
+
+dl img{margin-top:10px;}
+dd p {padding-bottom:10px !important}
+
+.contents_introduction p {
+    padding:6px;
+    font-size: 80%;
+    line-height: 2em;
+	text-align:left !important
+}
+.topImg{width:100%}	
+h3 img {width:100%}
+.top img {width:100%}
+.categorylist img{padding: 0;}
+
+.categorylist ul.list_left{padding-left:25px}
+.categorylist ul.list_right{padding-left:25px}
+
+}
+
