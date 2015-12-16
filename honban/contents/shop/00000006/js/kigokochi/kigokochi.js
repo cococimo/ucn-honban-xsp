@@ -559,6 +559,49 @@
 })(window, document, jQuery);
 
 
+
+
+
+/**
+ *  ブラウザ名を取得
+ *  
+ *  @return     ブラウザ名(ie6、ie7、ie8、ie9、ie10、ie11、chrome、safari、opera、firefox、unknown)
+ *
+ */
+var getBrowser = function(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    var ver = window.navigator.appVersion.toLowerCase();
+    var name = 'unknown';
+
+    if (ua.indexOf("msie") != -1){
+        if (ver.indexOf("msie 6.") != -1){
+            name = 'ie6';
+        }else if (ver.indexOf("msie 7.") != -1){
+            name = 'ie7';
+        }else if (ver.indexOf("msie 8.") != -1){
+            name = 'ie8';
+        }else if (ver.indexOf("msie 9.") != -1){
+            name = 'ie9';
+        }else if (ver.indexOf("msie 10.") != -1){
+            name = 'ie10';
+        }else{
+            name = 'ie';
+        }
+    }else if(ua.indexOf('trident/7') != -1){
+        name = 'ie11';
+    }else if (ua.indexOf('chrome') != -1){
+        name = 'chrome';
+    }else if (ua.indexOf('safari') != -1){
+        name = 'safari';
+    }else if (ua.indexOf('opera') != -1){
+        name = 'opera';
+    }else if (ua.indexOf('firefox') != -1){
+        name = 'firefox';
+    }
+    return name;
+};
+
+
 $(function(){
 	$('.sp_nav #header_member').clone().insertAfter('.sp_nav #header_login');	
 	$('.sp_nav #header_mypage').clone().insertAfter('.sp_member li');
@@ -648,30 +691,58 @@ $(function(){
 			});
 		}
   });
+	
+	$('.sp_gnav_link.accordion>a').click(function(){
+		$(this).toggleClass('active').next().slideToggle();
+		return false;
+	});
+	
+	if($(window).width() <= 640){
+		$('#footer01 .inner ul li.accordion>a').click(function(){
+			$(this).toggleClass('active').next().slideToggle();
+			return false;
+		});
+		
+		$('.cate_link.only_sp>div>a').click(function(){
+			$(this).parents('.cate_link').toggleClass('active').children('div').children('div').slideToggle();
+			return false;
+		});
+		
+		$('.cate_link.only_sp .btn_close_sp a').click(function(){
+			$(this).parent().parent().slideUp();
+			$(this).parents('.cate_link').removeClass('active');
+			return false;
+		});
+	}
 });
 
 $(window).on('load scroll', function(){
-	if($(this).scrollTop() > 0){
-		$('#header').addClass('small');
-	}else{
-		$('#header').removeClass('small');
-	}
-	
-	if($(this).scrollTop() > 500 && $(this).width() > 640){
-		$('.pagetop').fadeIn();
-	}else{
-		$('.pagetop').fadeOut();
+	if(getBrowser() != 'ie8'){
+		if($(this).scrollTop() > 0){
+			$('#header').addClass('small');
+		}else{
+			$('#header').removeClass('small');
+		}
+		
+		if($(this).scrollTop() > 500 && $(this).width() > 640){
+			$('.pagetop').fadeIn();
+		}else{
+			$('.pagetop').fadeOut();
+		}
 	}
 });
 
 $(window).on('load resize', function(){
-	if($(this).width() <= 640){
-		$('.pagetop').hide();
-	}else{
-		if($(this).scrollTop() > 500){
-			$('.pagetop').show();
+	if(getBrowser() != 'ie8'){
+		if($(this).width() <= 640){
+			$('.pagetop').hide();
+		}else{
+			if($(this).scrollTop() > 500){
+				$('.pagetop').show();
+			}
 		}
 	}
 	
 	$('#header_itemlist_pullDown').width($(this).width()).css('left', -($('#header #header_gnav').offset().left) + 'px');
 });
+
