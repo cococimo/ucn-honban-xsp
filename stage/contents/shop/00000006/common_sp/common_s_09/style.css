@@ -1,0 +1,262 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+
+.wrap_con {
+    width:946px;
+	text-align:center;
+	margin:20px auto 20px;
+	padding-top:20px;
+	padding-bottom:10px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 5px 0 #333; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 5px 0 #333; /* Firefox用 */
+	box-shadow: 0 0 5px 0 #333; /* CSS3 */
+}
+
+.mtm5{margin-top:-5px;}
+.mtm20{margin-top:-20px;}
+.mt25{margin-top:25px;}
+.mt35{margin-top:35px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+.mb50{margin-bottom:50px;}
+
+.concept{margin-bottom:30px}
+
+.wrap_kawa{
+	margin:60px auto 0px;
+	overflow: hidden;
+    height: auto;
+}
+
+.wrap_price {
+	width: 720px;
+	background-image: url(/contents/shop/00000003/image/static/img/kawashiki/price_bagimg.png);
+	text-align: left;
+	margin: 20px auto 70px auto;
+	border: #ccc solid 1px;
+	border-radius: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.wrap_price p.txt{
+	color:#392C19;
+	line-height:150%;
+	font-size:13px;
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:5px;
+}
+
+
+.box_pricetit{
+	float:left;
+	display:inline-block;
+}
+
+
+.image_btn{
+	margin-top:10px;
+}
+
+.img_message{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+
+/*** インタビュー ***/
+
+.kawaimg_center{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.intv_box {
+	width:90%;
+	margin:0 auto;
+	padding:0;
+	text-align:left;
+}
+
+
+.intv_box p {
+	font-size:14px;
+	line-height: 24px;
+	margin-bottom:25px;
+}
+
+.box_kawa{
+	margin:30px auto 20px;
+	overflow:hidden;
+	clear:both;
+}
+
+.box_kawa2{
+	margin:0px auto 40px;
+	overflow:hidden;
+	clear:both;
+}
+
+.box_kawa3{
+	margin:45px auto 40px;
+	overflow:hidden;
+	clear:both;
+}
+
+.intv_hr{
+	font-size: 18px;
+	color: #0174c4;
+	font-weight: bolder;
+}
+
+
+.intv_gr{
+	font-size: 12px;
+	color: #777777;
+	font-weight: bolder;
+}
+
+.intv_con{
+	line-height:3em;
+	font-weight: bolder;
+}
+
+.kawa_pic01{
+	float:right;
+	margin-left:20px;
+	margin-top:5px;
+	margin-bottom:20px;
+	clear:both;
+}
+
+.kawa_pic02{
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	clear:both;
+}
+
+	
+/*** /インタビュー ***/
+
+
+
+
+@media screen and (max-width: 640px) {
+
+.wrap_con {
+    width:100%;
+}
+
+.mtm5{margin-top:0px;}
+
+.image96{
+	width:96%;
+}
+
+.image_btn{
+	margin-top:15px;
+	width:100%;
+}
+
+
+.wrap_price {
+    width:85%;
+	background-image: url(/contents/shop/00000003/image/static/img/kawashiki/price_bagimg2.png);
+	background-repeat: no-repeat;
+	background-position: center 170px;
+    padding:20px 15px 10px 15px;
+	margin:-20px auto 30px;
+}
+
+
+.wrap_price p.txt{
+	font-size:11px;
+	margin:0px auto;
+}
+
+
+.box_pricetit{
+	width:100%;
+	float:none;
+	text-align:center;
+	margin-bottom:200px;
+}
+
+
+.wrap_kawa{
+	margin:15px auto;
+	padding:0 10px;
+}
+
+
+/*** インタビュー ***/
+
+.concept{margin-bottom:0px}
+
+.intv_box {
+	width:95%;
+	}
+
+
+.intv_box p {
+	font-size:12px;
+}
+
+.box_kawa{
+	margin:20px auto 20px;
+}
+
+.intv_hr{
+	font-size: 14px;
+}
+
+.intv_hr2{
+	font-size:12px;
+	font-weight: bolder;
+}
+
+.intv_gr{
+	font-size: 10px;
+	color: #777777;
+	font-weight: bolder;
+}
+
+
+.kawa_pic01{
+	width:70%;
+	float:none;
+	margin-left:15%;
+	margin-top:5px;
+	margin-bottom:20px;
+	text-align:center;
+	clear:both;
+}
+
+.kawa_pic02{
+	width:100%;
+	float:none;
+	text-align:center;
+	clear:both;
+}
+
+/*** インタビュー ***/
+
+
+}
+
+

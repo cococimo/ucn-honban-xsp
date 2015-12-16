@@ -1,0 +1,1581 @@
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+body,html{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 0 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	left: -5px;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 350px;
+	background: url(images/prev.gif) no-repeat 0 0;
+}
+
+
+.bx-wrapper .bx-next {
+	right: 350px;
+	background: url(images/next.gif) no-repeat 0 0;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+.bx-wrapper .bx-prev {
+	display:none;
+}
+
+.bx-wrapper .bx-next {
+	display:none;
+}
+
+}
+
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 410px;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 20;
+}
+
+
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+
+
+/* main */
+
+
+
+
+#wmainimages{
+	width:960px;
+	margin-bottom:53px;
+}
+
+
+.mainimages{
+	width:960px;
+	
+}
+
+
+.mainimages div img{
+	width:960px !important;
+}
+
+
+.mainimages .slick-list{
+	overflow:visible !important;
+}
+
+
+.mainimages .slick-list .slick-slide{
+	width:960px !important;
+	margin:0 !important;
+}
+
+.wrap_main .slick-slider{
+	margin-bottom:0px !important;
+}
+
+
+.wrap_main .slick-dots{
+	display:block !important;
+}
+
+
+.wrap_main .slick-next{
+	width:20px !important;
+	height:25px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/next.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:right top !important;
+	text-indent:-9999px !important;
+	top:400px !important;
+	left:580px !important;
+	z-index:100;
+}
+
+.wrap_main .slick-prev{
+	width:20px !important;
+	height:25px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/prev.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	text-indent:-9999px !important;
+	top:400px !important;
+	left:350px !important;
+	z-index:100;
+}
+
+
+
+.wrap_main .slick-dots li button::before{
+text-align:left !important;
+text-indent:-9999px !important;
+font-size:0 !important;
+line-height:0 !important;
+border:#333 solid 1px !important;
+border-radius: 10px !important;		/* CSS3ëêàƒ */
+-webkit-border-radius: 10px !important;	/* Safari,Google Chromeóp */
+-moz-border-radius: 10px !important;	/* Firefoxóp */
+padding:0 !important;
+width:5px !important;
+height:5px !important;
+margin:0px !important;
+color:#fff !important;
+}
+
+
+.wrap_main .slick-dots li.slick-active button::before{
+background:#333 !important;
+}
+
+.wrap_main .slick-dots{
+bottom:-40px !important;
+bottom:-30px\9 !important;
+}
+
+
+
+.wrap_main .slick-dots li {
+text-indent:-9999px\9 !important;
+width:5px\9;
+height:5px\9;
+background:#ddd\9 !important;
+}
+
+.wrap_main .slick-dots li.slick-active{
+background:#333\9 !important;
+}
+
+@media only screen and (max-width: 640px) {
+
+
+.wrap_main{
+margin:0;
+padding-top:20px;
+}
+
+#wmainimages{
+	width:100%;
+	margin-bottom:53px;
+
+}
+
+
+.mainimagessp{
+	width:100%;
+}
+
+
+.mainimagessp div img{
+	width:100% !important;
+}
+
+.mainimagessp div img{
+	width:100% !important;
+}
+
+
+.mainimagessp .slick-list{
+	overflow:hidden !important;
+	width:100% !important;
+	margin:0 !important;
+}
+
+
+.mainimagessp .slick-slide{
+	margin-left:0 !important;
+}
+
+
+
+.mainimagessp .slick-slider{
+	margin-bottom:0px !important;
+}
+
+
+.mainimagessp .slick-dots{
+	display:block !important;
+}
+
+.mainimagessp .slick-dots li{
+	display:inline-block !important;
+text-indent:-9999px !important;
+font-size:0 !important;
+}
+
+.mainimagessp .slick-next{
+	display:none !important;
+}
+
+.mainimagessp .slick-prev{
+	display:none !important;
+}
+
+
+
+
+.mainimagessp .slick-dots li button::before{
+text-align:left !important;
+text-indent:-9999px !important;
+font-size:0 !important;
+border:#333 solid 1px !important;
+border-radius: 10px !important;		/* CSS3ëêàƒ */
+-webkit-border-radius: 10px !important;	/* Safari,Google Chromeóp */
+-moz-border-radius: 10px !important;	/* Firefoxóp */
+padding:0 !important;
+width:5px !important;
+height:5px !important;
+margin:0px !important;
+}
+
+.mainimagessp .slick-dots li.slick-active button::before{
+background:#333 !important;
+}
+
+.mainimagessp .slick-dots{
+bottom:-40px !important;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ç®Ç∑Ç∑Çﬂ */
+
+.wrap_osusume {
+	clear:both;
+	margin:40px auto 70px;
+}
+
+.wrap_osusume ul{
+	display:table;
+	border-spacing:12px 0;
+	margin-left:-12px;
+}
+
+.wrap_osusume ul li{
+	display:table-cell;
+	width:229px;
+	border:#DBDBDB solid 1px;
+	
+}
+
+.text_osusume{
+	width:199px;
+	padding:15px;
+}
+
+.o_ttl{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:5px;
+	color:#414141;
+}
+
+.o_txt{
+	font-size:13px;
+	color:#414141;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+.wrap_osusume {
+	clear:both;
+	margin:40px 0;
+	width:100%;
+	text-align:center;
+	padding:0;
+	font-size:0;
+}
+
+.wrap_osusume ul{
+	width:100%;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+.wrap_osusume ul li{
+	display:inline-block;
+	width:47.5%;
+	vertical-align:top;
+	margin:0 0 10px 0;
+	padding:0;
+	
+}
+
+.wrap_osusume ul li img{
+	width:100%;
+}
+
+.wrap_osusume ul li:nth-child(2){
+	margin-left:3%;
+}
+.wrap_osusume ul li:nth-child(4){
+	margin-left:3%;
+}
+
+
+
+.text_osusume{
+	width:94%;
+	padding:3%;
+	text-align:left;
+}
+
+
+}
+
+
+
+
+/* SPECIAL CONTENTS */
+
+
+.wrap_specialcontents {
+	margin-bottom:60px;
+
+}
+
+.wrap_specialcontents h2{
+	font-family: "Hiragino Mincho ProN","HGñæí©E","ÇlÇr Çoñæí©", serif;
+	font-size:32px;
+	color:#000;
+	margin-bottom:20px;
+}
+
+.wrap_specialcontents p{
+	color:#414141;
+}
+
+.wrap_specialcontents h2 span{
+	font-family:Meiryo, 'Hiragino Kaku Gothic ProN', sans-serif;
+	font-size:16px;
+	color:#717171;
+	font-weight:normal;
+}
+
+.w100{
+	width:70%;
+}
+
+@media only screen and (max-width: 640px) {
+
+.wrap_specialcontents {
+	margin-bottom:30px;
+	width:96%;
+	padding:2%;
+}
+
+.wrap_specialcontents h2{
+	font-family:Meiryo, 'Hiragino Kaku Gothic ProN', sans-serif;
+	font-size:24px;
+	color:#000;
+	margin-bottom:10px;
+	text-align:center;
+	line-height:110%;
+	font-weight:normal;
+}
+
+.wrap_specialcontents p{
+	color:#414141;
+	text-align:left;
+	margin-bottom:20px;
+}
+
+.wrap_specialcontents h2 span{
+	font-family:Meiryo, 'Hiragino Kaku Gothic ProN', sans-serif;
+	font-size:14px;
+	color:#717171;
+	font-weight:normal;
+	display:block;
+}
+
+.w100{
+	width:100%;
+}
+
+.wrap_specialcontents img{
+	max-width:100%;
+}
+
+
+}
+
+
+/* RANKING */
+
+.rankimg{
+	width:180px;
+	height:180px;
+	border:#c4c4c4 solid 1px;
+	padding:1px;
+	margin:5px 0 10px;
+}
+
+.rankimg img{
+	max-width:180px;
+	max-height:180px;
+}
+
+
+
+.rankinglist li{
+	float:left;
+	margin-right:10px;
+	width:184px;
+	width:182px\9;
+	padding-top:32px;
+}
+
+.rankinglist li:nth-child(1){
+	background: #fff url(images/ranking/rank01.gif) no-repeat left top;
+}
+
+.rankinglist li:nth-child(2){
+	background: #fff url(images/ranking/rank02.gif) no-repeat left top;
+}
+
+.rankinglist li:nth-child(3){
+	background: #fff url(images/ranking/rank03.gif) no-repeat left top;
+}
+
+.rankinglist li:nth-child(4){
+	background: #fff url(images/ranking/rank04.gif) no-repeat left top;
+}
+
+
+.rankinglist li:nth-child(5){
+	margin-right:0px;
+	background: #fff url(images/ranking/rank05.gif) no-repeat left top;
+}
+
+.rankinglist li:nth-child(5){
+	margin-right:0px;
+}
+
+.rankinglist li:nth-child(6){
+	display:none;
+}
+.rankinglist li:nth-child(7){
+	display:none;
+}
+.rankinglist li:nth-child(8) {
+	display:none;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+.rankinglist{
+	width:96%;
+	padding-left:2%;
+}
+
+.rankimg{
+	width:90%;
+	height:auto;
+	border:none;
+	padding:1px;
+	margin:5px auto 10px;
+}
+
+.rankimg img{
+	border:#c4c4c4 solid 1px;
+	width:100%;
+}
+
+.rankinglist li{
+	float:left;
+	margin-right:0px;
+	width:50%;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+.rankinglist li:nth-child(3){
+	clear:both !important;
+	width:33%
+}
+
+.rankinglist li:nth-child(4){
+	width:33%
+}
+
+.rankinglist li:nth-child(5){
+	width:33%
+}
+
+.rankinglist li:nth-child(6){
+	width:33%
+}
+
+.rankinglist li p{
+	margin-bottom:0px;
+}
+
+.rankinglist li:last-child{
+	margin-right:0px;
+}
+
+.rankspimg{
+	width:35px;
+}
+
+
+
+}
+
+
+/* STAFF RECOMMEND */
+
+.stafflist li{
+	float:left;
+	margin-right:12px;
+	width:231px;
+	width:228px\9;
+}
+
+.stafflist li:last-child{
+	margin-right:0px;
+}
+
+@media only screen and (max-width: 640px) {
+
+.stafflist{
+	width:96%;
+	padding-left:2%;
+}
+
+.stafflist li{
+	float:left;
+	margin-right:2%;
+	width:32%;
+}
+
+.stafflist li img{
+	width:100%;
+}
+
+.stafflist li:nth-child(3){
+	margin:0;
+}
+
+.stafflist li:nth-child(4){
+	display:none;
+}
+
+
+}
+
+
+
+/* NEW ITEM */
+
+#sliderPrev{
+	float:left;
+	width:61px;
+	text-align:right;
+	padding-top:60px;
+}
+
+
+#sliderNext{
+	float:right;
+	width:61px;
+	text-align:left;
+	padding-top:60px;
+}
+
+
+
+
+#lineupItem{
+	width:772px;
+	float:left;
+	margin:0 33px;
+}
+
+
+.newitemlist{
+	width:900px;
+
+}
+
+
+
+.newitem{
+	width:180px;
+	border:#c4c4c4 solid 1px;
+	padding:1px;
+	margin:0 0 10px;
+}
+
+.newitem img{
+	max-width:180px;
+	max-height:180px;
+}
+
+.slick-slide{
+	margin-left:20px !important;
+
+}
+
+.slick-slider{
+	margin-bottom:0px !important;
+}
+
+.newitemlist li{
+	float:left;
+	margin-right:10px;
+	width:184px;
+	width:182px\9;
+}
+
+
+.newitemlist li:last-child{
+	margin-right:0px;
+}
+
+
+.slick-dots{
+	display:none !important;
+}
+
+
+.slick-next{
+	width:61px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/next02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:right top !important;
+	text-indent:-9999px !important;
+	top:80px !important;
+}
+
+.slick-prev{
+	width:61px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/prev02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	text-indent:-9999px !important;
+	top:80px !important;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+.img{
+
+}
+
+#sliderPrev{
+	float:left;
+	width:5%;
+	text-align:right;
+	padding-top:40px;
+}
+
+
+#sliderNext{
+	float:right;
+	width:5%;
+	text-align:left;
+	padding-top:40px;
+}
+
+
+
+#lineupItem{
+	width:100%;
+	float:left;
+	margin:0 0 0 5px;
+	overflow:hidden;
+	
+}
+
+
+.newitem{
+	width:100%;
+	max-height:100% !important;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+.newitem img{
+	width:100%;
+	max-height:100%;
+	border:#c4c4c4 solid 1px;
+}
+
+
+
+
+.newitemlistsp{
+	width:100%;
+	background:#fff;
+}
+
+
+.newitemlist li{
+	margin-right:2%;
+	width:29%;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+
+
+.newitemlist li p{
+	margin-bottom:5px;
+	line-height:140%;
+}
+
+
+
+.newitemlist li:last-child{
+	margin-right:0px;
+}
+
+
+#productList{
+	width:80% !important;
+}
+
+.wrapnew .caroufredsel_wrapper{
+	width:100% !important;
+}
+
+
+#productList03 {
+	width:96% !important;
+	margin-left:4%;
+	
+}
+
+
+.wrapnew .slick-slide{
+	margin-left:0px !important;
+	padding:10px !important;
+}
+
+.wrapnew .slick-slide .txt13{
+	font-size:11px !important;
+	margin-bottom:5px !important;
+	line-height:175% !important;
+}
+
+.wrapnew .slick-list{
+	width:80% !important;
+	margin: 0 8.5% 0 9% !important;
+	
+}
+
+
+.wrapnew .slick-next{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/next02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:right top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:70px !important;
+	right:7px !important;
+}
+
+.wrapnew .slick-prev{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/prev02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:70px !important;
+	left:0 !important;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+.img{
+
+}
+
+#sliderPrev{
+	float:left;
+	width:5%;
+	text-align:right;
+	padding-top:25px;
+}
+
+
+#sliderNext{
+	float:right;
+	width:5%;
+	text-align:left;
+	padding-top:25px;
+}
+
+#productList{
+	width:96% !important;
+	margin-left:2%;
+}
+
+.wrapnew .caroufredsel_wrapper{
+	width:100% !important;
+}
+
+
+.newitemlist li{
+	min-height:auto;
+}
+
+
+.newitem{
+	width:100%;
+	max-height:80px;
+	border:none;
+	padding:0;
+	margin:0 ;
+}
+
+#productList03 {
+	width:96% !important;
+	margin-left:2%;
+}
+
+.wrapnew .slick-next{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/next02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:right top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:30px !important;
+	right:7px !important;
+}
+
+.wrapnew .slick-prev{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/prev02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:30px !important;
+	left:0 !important;
+}
+
+.wrapnew .slick-slide{
+	margin-left:0px !important;
+	padding:5px !important;
+}
+
+}
+
+
+
+/* BRAND */
+
+#sliderPrev02{
+	float:left;
+	width:61px;
+	text-align:right;
+	padding-top:67px;
+}
+
+
+#sliderNext02{
+	float:right;
+	width:61px;
+	text-align:left;
+	padding-top:67px;
+}
+
+@media only screen and (min-width: 641px) {
+
+
+
+.brandlist li{
+	width:148px;
+	height:200px;
+	float:left;
+	margin-right:8px;
+}
+
+.brandlist img{
+	margin-bottom:10px;
+	width:148px;
+}
+
+.brandlist li:last-child{
+	margin-right:0px;
+}
+
+
+#lineupItem02{
+	width:672px;
+	float:left;
+	margin:0 33px;
+}
+
+
+.brandlist{
+	width:900px;
+	margin-left:0px;
+}
+
+.brandlist .slick-slide{
+	margin-left:10px !important;
+
+}
+
+.brandlist .slick-list{
+	width:800px;
+	margin-left:40px !important;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+
+.brandlist{
+	width:94%;
+	padding-left:3%;
+}
+
+.blogclear{
+	height:0;
+}
+
+
+.brandlist li{
+	float:left;
+	margin-right:2%;
+	width:31%;
+	text-align:left;
+	margin-bottom:10px;
+	min-height:190px;
+}
+
+
+.brandlist li:last-child{
+	margin-right:0px;
+}
+
+.brandlistsp img{
+	margin-bottom:10px;
+	width:100%;
+}
+
+
+#productList02 {
+	width:96% !important;
+	margin-left:2%;
+}
+
+.wrapbrand .caroufredsel_wrapper{
+	width:100% !important;
+}
+
+
+
+#lineupItem02{
+	width:100%;
+	float:left;
+	margin:0 ;
+	overflow:hidden;
+}
+
+
+
+.brandlist{
+	width:100%;
+	margin-left:0px;
+}
+
+.wrapbrand .slick-slide{
+	margin-left:10px !important;
+
+}
+
+.wrapbrand .slick-slide img{
+	width:99%;
+}
+
+.wrapbrand .slick-list{
+	width:80% !important;
+	margin: 0 8.5% 0 9% !important;
+}
+
+
+.wrapbrand .slick-next{
+	top:75px !important;
+	right:0px !important;
+}
+
+.wrapbrand .slick-prev{
+	top:75px !important;
+	left:0 !important;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+
+.brandlist{
+	width:96%;
+	padding-left:3%;
+	
+}
+
+
+.brandlist li{
+	float:left;
+	margin-right:2%;
+	width:30%;
+	text-align:left;
+	margin-bottom:10px;
+	min-height:104px;
+}
+
+
+#productList02 {
+	width:96% !important;
+	margin-left:4%;
+}
+
+.wrapbrand .slick-slide img{
+	width:98%;
+}
+
+.wrapbrand .slick-list{
+	width:80% !important;
+	margin: 0 8.5% 0 9% !important;
+}
+
+.wrapbrand .slick-next{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/next02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:right top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:35px !important;
+	right:0 !important;
+}
+
+.wrapbrand .slick-prev{
+	width:20px !important;
+	height:57px !important;
+	background-image:url(/contents/lifestyle/common_sp/common_kigokochi02/images/prev02.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position:left top !important;
+	background-size:20px !important;
+	text-indent:-9999px !important;
+	top:35px !important;
+	left:0 !important;
+}
+
+}
+
+
+
+
+
+
+
+/* COCOCIMO BLOG */
+
+
+
+
+.bloglist li{
+	float:left;
+	margin-right:12px;
+	width:231px;
+	width:228px\9;
+}
+
+.bloglist li:last-child{
+	margin-right:0px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+.bloglist ul{
+	margin-top:0;
+}
+
+.bloglist li{
+	float:left;
+	margin-right:2%;
+	width:31%;
+}
+
+.bloglist li{
+	float:left;
+	margin-left:1%;
+	margin-right:1%;
+	width:31%;
+}
+
+.bloglist li:last-child{
+	display:none;
+	margin-right:0%;
+}
+
+
+.bloglist li img{
+		width:100%;
+}
+
+
+}
+
+
+/* COCOCIMO BLOG */
+
+.pickuplist li{
+	float:left;
+	width:312px;
+}
+
+.pickup_mrb{
+	margin-right:12px;
+	margin-bottom:12px;
+}
+
+.pickup_mb{
+	margin-bottom:12px;
+}
+
+.pickup_mr{
+	margin-right:12px;
+}
+
+
+@media only screen and (max-width: 640px) {
+
+.pickuplist li{
+	float:left;
+}
+
+.pickup_mrb{
+	margin-right:0;
+	margin-bottom:0;
+}
+
+.pickup_mb{
+	margin-bottom:0;
+}
+
+.pickup_mr{
+	margin-right:0;
+}
+
+.pickuplist li:nth-child(1){
+		width:49%;
+		margin-right:2%;
+		margin-bottom:10px;
+}
+
+
+.pickuplist li:nth-child(2){
+		width:49%;
+		margin-bottom:10px;
+}
+
+.pickuplist li:nth-child(3){
+		width:49%;
+		margin-right:2%;
+		margin-bottom:10px;
+}
+
+.pickuplist li:nth-child(4){
+		width:49%;
+		margin-bottom:10px;
+}
+
+
+.pickuplist li:nth-child(5){
+		width:49%;
+		margin-right:2%;
+		margin-bottom:10px;
+}
+
+.pickuplist li:nth-child(6){
+		width:49%;
+		margin-bottom:10px;
+}
+
+.pickuplist li img{
+		width:100%;
+}
+
+
+}
+
+@media only screen and (min-width: 641px) {
+
+.pagetop02{
+	display:none;
+}
+
+
+}
+
+/* pagetop */
+
+.pagetop{
+	width:960px;
+	text-align:center;
+}
+
+.pagetop a{
+	font-size:13px;
+	display:inline-block;
+	background: url(images/pagetop.gif) 0 5px no-repeat;
+	text-indent:15px;
+	float:right;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+.pagetop{
+	display:none;
+}
+
+
+.pagetop02{
+	width:100%;
+	text-align:center;
+}
+
+.pagetop02 a{
+	float:none;
+	margin:10px auto;
+	background-image:url(images/menus_point01c.gif);
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-color:#eee;
+	padding:10px 0;
+	font-size:16px;
+	display:block;
+	text-indent:-9999px;
+}
+
+
+}
+
+
+.wrap_left{
+	float:left;
+}
+
+.wrap_right{
+	float:right;
+}
+
+@media only screen and (max-width: 640px) {
+.wrap_left{
+	float:none;
+}
+
+.wrap_right{
+	float:none;
+}
+
+.deviceSP #contents{
+	padding-top:30%;
+}
+
+
+
+}
+
+@media only screen and (max-width: 400px) {
+
+.deviceSP #contents{
+	padding-top:60%;
+}
+
+
+
+}
+
+a.a_line{
+	text-decoration:underline;
+}
+
+.txt13{
+	font-size:13px;
+}
+
+.mt10{
+	margin-top:10px;
+}
+
+
+.bx-viewport{
+	overflow:visible !important;
+}
+
+#slider1{
+	height:380px;
+	overflow:hidden;
+	margin-top:35px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+.menu{
+	position:relative;
+	z-index:10;
+}
+
+.add_p{
+	margin-top:10px;
+}
+
+
+}
+

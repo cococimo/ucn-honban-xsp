@@ -1,0 +1,281 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+.clear{
+	clear:both;
+}
+
+.wrap_con {
+    width:730px;
+	text-align:center;
+	margin:0px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 3px 0 #666; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 3px 0 #666; /* Firefox用 */
+	box-shadow: 0 0 3px 0 #666; /* CSS3 */
+	color:#000;
+}
+.mainimage{
+	display:block;
+	width:700px;
+	margin:10px auto 0;
+}
+.top_comment{
+	display:block;
+	width:686px;
+	text-align:left;
+	margin:25px auto;
+	font-size:17px;
+	line-height:140%;
+}
+.hahanohi_goods_left{
+	width:326px;
+	float:left;
+	margin-left:24px;
+	margin-bottom:30px;
+	text-align:left;
+}
+.hahanohi_goods_right{
+	width:326px;
+	float:right;
+	margin-right:24px;
+	margin-bottom:30px;
+		text-align:left;
+}
+.comment{
+	width:326px;
+	height:300px;
+	background-image:url('/contents/shop/00000003/image/static/img/hahanohi/comment_bg.jpg');
+	background-repeat:no-repeat;
+	padding:0 0 0 20px;
+}
+.commentA{
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#0033CC;
+}
+.commentA a{
+	color:#0033CC;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.commentB{
+	margin-top:8px;
+	width:295px;
+	height:100px;
+	font-size:14px;
+	line-height:140%;
+	color:#000;
+}
+.commentC{
+	width:240px;
+	padding:49px 0 0 28px;
+	font-size:13px;
+	line-height:130%;
+	color:#000;
+}
+.hahanohi_goods_bangai{
+	width:700px;
+	margin:0 auto;
+}
+.hahanohi_goods_bangai .comment_wrap{
+	width:700px;
+	height:251px;
+	background-image:url('/contents/shop/00000003/image/static/img/hahanohi/goods11_bg.jpg');
+	background-repeat:no-repeat;
+}
+.hahanohi_goods_bangai .comment_wrap img{
+	float:left;
+	padding-left:9px;
+}
+.hahanohi_goods_bangai  .comment_bangai{
+	width:370px;
+	float:right;
+	margin-top:10px;
+	margin-right:10px;
+}
+.commentD{
+	width:360px;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#0033CC;
+}
+.commentD a{
+	color:#0033CC;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.commentE{
+	margin-top:8px;
+	width:360px;
+	height:100px;
+	font-size:14px;
+	line-height:140%;
+	color:#000;
+}
+.commentF{
+	width:194px;
+	padding:16px 0 0 68px;
+	font-size:13px;
+	line-height:130%;
+	color:#000;
+}
+
+.wrapping{
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	color:#F00;
+	font-size:16px;
+	font-weight:bold;
+	line-height:140%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+ 
+
+.wrap_con {
+    width:100%;
+	text-align:center;
+	margin:20px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 5px 0 #333; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 5px 0 #333; /* Firefox用 */
+	box-shadow: 0 0 5px 0 #333; /* CSS3 */
+}
+
+.image96 {
+	display:block;
+    width:90%;
+	margin:0 auto;
+}
+.top_comment{
+	display:block;
+	width:90%;
+	text-align:left;
+	margin:25px auto;
+	font-size:17px;
+	line-height:140%;
+}
+.hahanohi_goods_left{
+	width:326px;
+	display:block;
+	margin:0 auto 30px;
+	float:none;
+}
+.hahanohi_goods_right{
+	width:326px;
+	display:block;
+	margin:0 auto 30px;
+	float:none;
+}
+.comment{
+	width:326px;
+	height:300px;
+	background-image:url('/contents/shop/00000003/image/static/img/hahanohi/comment_bg.jpg');
+	background-repeat:no-repeat;
+	padding:0 0 0 20px;
+}
+.commentA{
+	font-size:16px;
+	color:#0033CC;
+}
+.commentA a{
+	color:#0033CC;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.commentB{
+	margin-top:8px;
+	width:295px;
+	height:100px;
+	font-size:14px;
+	line-height:140%;
+	color:#000;
+}
+.commentC{
+	width:240px;
+	padding:49px 0 0 28px;
+	font-size:13px;
+	line-height:130%;
+	color:#000;
+}
+
+.hahanohi_goods_bangai{
+	width:326px;
+	margin:0 auto;
+}
+.hahanohi_goods_bangai .comment_wrap{
+	width:326px;
+	height:507px;
+	background-image:url('/contents/shop/00000003/image/static/img/hahanohi/comment_bg02.jpg');
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+.hahanohi_goods_bangai .comment_wrap img{
+	width:298px;
+	display:block;
+	margin:0 auto;
+}
+.hahanohi_goods_bangai  .comment_bangai{
+	width:326px;
+	margin:10px auto 0;
+}
+.commentD{
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#0033CC;
+	margin-left:15px;
+}
+.commentD a{
+	color:#0033CC;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.commentE{
+	margin-top:8px;
+	margin-left:15px;
+	width:295px;
+	height:100px;
+	font-size:13px;
+	line-height:140%;
+	color:#000;
+}
+.commentF{
+	width:240px;
+	padding:25px 0 0 48px;
+	font-size:13px;
+	line-height:130%;
+	color:#000;
+}
+
+.wrapping{
+	display:block;
+	width:90%;
+	margin:20px auto;
+	text-align:center;
+	color:#F00;
+	font-size:16px;
+	font-weight:bold;
+	line-height:140%;
+}
+
+
+
+}
