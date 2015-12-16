@@ -12,16 +12,14 @@ autoplaySpeed:10000
 });});
 
 $("document")
-.ready(function(){$('.newitemlist')
+.ready(function(){$('.specialcontents_photowrap > ul')
 .slick({
 infinite:true,
 dots:false,
-slidesToShow:6,
+slidesToShow:3,
 slidesToScroll:1,
-autoplay:false,
-autoplaySpeed:4000,
-//centerMode: true,
-//centerPadding: '60px',
+autoplay:true,
+autoplaySpeed:10000,
 responsive: [
 	{
 		breakpoint: 640,
@@ -33,16 +31,40 @@ responsive: [
 ]
 });});
 
-/*$("document")
-.ready(function(){$('.newitemlistsp')
+$("document")
+.ready(function(){$('.specialcontents_photowrap_sp > ul')
 .slick({
 infinite:true,
-dots:true,
-slidesToShow:3,
+dots:false,
+autoplay:true,
+autoplaySpeed:10000,
+slidesToShow: 1,
+slidesToScroll: 1,
+centerMode: true,
+centerPadding: '16%'
+});});
+
+$("document")
+.ready(function(){$('.newitemlist')
+.slick({
+infinite:true,
+dots:false,
+slidesToShow:6,
 slidesToScroll:1,
 autoplay:false,
-autoplaySpeed:4000
-});});*/
+autoplaySpeed:4000,
+responsive: [
+	{
+		breakpoint: 640,
+		settings: {
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: true,
+			centerPadding: '16%'
+		}
+	}
+]
+});});
 
 $("document")
 .ready(function(){$('.brandlist')
@@ -76,4 +98,3 @@ slidesToScroll:1,
 autoplay:false,
 autoplaySpeed:4000
 });});
-
