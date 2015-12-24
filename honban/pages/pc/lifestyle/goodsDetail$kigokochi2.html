@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
-<head>
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css">
@@ -12,18 +11,15 @@
 <meta m:id="e_var_testSite" content="">
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
-
 <object class="xsp_obj" m:id="e_var_goods"></object>
 <object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+
 <link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
-
 <link rel="shortcut icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="./contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
@@ -34,20 +30,19 @@
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.flexslider.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/common.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/cartAddSkuGoods.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
-<!-- ★★★ デザイナー様 必要なスクリプトを記載してください ※ただし、このhtmlのみに使用-->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
-<!-- /★★★ デザイナー様 必要なスクリプトを記載してください -->
-<script>
+		<script>
 			jQuery(function($){
 				$('.searchShop').on('click',function(){
 				$('.gsearchShop').submit();
 					return false;
 				});
-				var nav_lists = $('.sub').html();
+				var nav_lists = $('.sub').html();	
 				glheight =$(".detailGuideBlock").eq(0).height();
 				$(".detailGuideBlock").eq(1).css({height:glheight+"px"});
 				var url = location.href;
@@ -55,21 +50,20 @@
 var result = url.replace(/[?+](.*)/, "");	//置き換え後の文字列
 var ifremstr = '<iframe src="//www.facebook.com/plugins/like.php?href='+result+'&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=80&amp;appId=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>';
 $(".faceBooks").append(ifremstr);
-			});			
+			});
 $(document).ready(function() {
 var pagetop = $('.returnTop, .returnTopSp');
 pagetop.click(function () {
 $('body, html').animate({ scrollTop: 0 }, 500);
 return false;
 });
-});
+});		
 </script>
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
     <span m:id="l_notPre_goods">
@@ -721,7 +715,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	</div>
 	</div>
 	</span>
+	<!--r_con_box_03-->
+                
+
+
 	<!-- /.r_con_box_03--></div>
+
 	<script type="text/javascript">
 	$(function(){
 	});
@@ -908,16 +907,16 @@ s.tl(this,'o','cartview',null,'navigate');return false
   		<div class="contents_bottom">
                   <div class="bannerList">
 	            <ul class="clearfix">
-		      <li><a href="/shop/lifestyle/static/kigokochi_start/">
+		      <!--<li><a href="/shop/lifestyle/static/kigokochi_start/">
                         <img src="/contents/shop/00000005/shop/image/kigokochi/banner01.jpg" alt="着心地のいい服へ導くこだわりの天然素材" class="pc_only">
                         <img src="/contents/shop/00000005/shop/image/kigokochi/sp_banner01.jpg" alt="" class="sp_only">
-                      </a></li>
+                      </a></li>-->
 		      <li><a href="https://www.cococimo.jp/shop/memberAdd.do">
                         <img src="/contents/shop/00000005/shop/image/kigokochi/banner02.jpg" class="pc_only" alt="会員登録はこちら 特典 新規会員登録時に500ポイントプレゼント"><img src="/contents/shop/00000005/shop/image/kigokochi/sp_banner02.jpg" class="sp_only" alt="">
                       </a></li>
-		      <li><a href="https://www.cococimo.jp/shop/lifestyle/static/kigokochi_form/">
+		     <!-- <li><a href="https://www-st.cococimo.jp/shop/lifestyle/static/kigokochi_form/">
                         <img src="/contents/shop/00000005/shop/image/kigokochi/banner03.jpg" class="pc_only" alt="カタログのお申込み カタログお申込みフォームはこちらから">
-                        <img src="/contents/shop/00000005/shop/image/kigokochi/sp_banner03.jpg" class="sp_only" alt=""></a></li>
+                        <img src="/contents/shop/00000005/shop/image/kigokochi/sp_banner03.jpg" class="sp_only" alt=""></a></li>-->
 	            </ul>
 	            <p class="returnTop pc_only"><a href="#container"><img src="/contents/shop/00000005/shop/image/kigokochi/top_return_icon.gif" alt=""><span>ページトップへ</span></a>
 	            </p>
@@ -1185,7 +1184,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
-        <li><a href="/" style="opacity: 1;">トップページ</a></li>
+        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
         <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
         <li><a href="/shop/lifestyle/static/kanren/" style="opacity: 1;">関連サイト</a></li>
         <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
@@ -1227,12 +1226,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>               
         <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/handyitem/">北洋雑貨・日用品</a></li>
-        <li><a href="/shop/lifestyle/static/contents/kitchenitem/">生活雑貨</a></li>                               
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>          
       </ul>      
       </div>
 </div>
@@ -1356,22 +1354,7 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
-<!-- ▼▼▼ Criteo ▼▼▼ -->
-<!-- Criteo loader -->
-<script language="Javascript" type="text/javascript">
-//<![CDATA[
-var protocol;
-if (location.protocol == "https:") { protocol = "https:";} else { protocol = "http:"; }
-document.write('<script language="JavaScript" type="text/javascript" src="' + protocol + '\/\/static.criteo.net/js/ld/ld.js"><\/script>');
-//]]>
-</script>
-<meta m:id="criteo_common_q" content=""></meta>
-<meta m:id="criteo_common_account" content=""></meta>
-<meta m:id="criteo_member" content=""></meta>
-<meta m:id="criteo_common_site_type" content=""></meta>
-<meta m:id="criteo_view_item" content=""></meta>
-<meta m:id="criteo_q_push" content=""></meta>
-<!-- ▲▲▲ Criteo ▲▲▲ -->
+
 </body>
 <!-- End --></html>
 
