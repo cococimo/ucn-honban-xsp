@@ -1,0 +1,1564 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_shop_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="content-language" content="ja">
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<!--<meta name="viewport" content="width=768">-->
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<meta m:id="e_var_shop" content="">
+<meta m:id="e_var_headerComponent" content="">
+<meta m:id="e_var_testSite" content="">
+<meta m:id="e_var_member" content="">
+<meta m:id="description" name="description" content="データベースから値を取得し表示します">
+<meta m:id="keywords" name="keywords" content="データベースから値を取得し表示します">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+
+<link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
+
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000003/js/selectivizr.js"></script>
+<![endif]-->
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/yuga.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/iepngfix_tilebg.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.ad-gallery.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/heightLine.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+<script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="head" -->
+<title m:id="title" arg1="" arg2="ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
+
+<object class="xsp_obj" m:id="e_var_prefecture"></object>
+<object class="xsp_obj" m:id="e_var_opportunityMap"></object>
+<object class="xsp_obj" m:id="e_var_jobMap"></object>
+<object class="xsp_obj" m:id="e_var_deliveryTimeMap"></object>
+<object class="xsp_obj" m:id="e_var_goods_wrapping_type"></object>
+<object class="xsp_obj" m:id="e_var_goods_jpn_wrapping_type"></object>
+<object class="xsp_obj" m:id="e_var_order"></object>
+<object class="xsp_obj" m:id="e_var_shopSettle"></object>
+<object class="xsp_obj" m:id="e_var_sexMap" ></object>
+<span m:id="l_notEmp_member">
+	<object class="xsp_obj" m:id="e_var_addressBookList"></object>
+	<object class="xsp_obj" m:id="e_var_point"></object>
+</span>
+<span m:id="l_notEmp_paymentList">
+	<object class="xsp_obj" m:id="b_var_payment"></object>
+</span>
+<object class="xsp_obj" m:id="var_destination"></object>
+<object class="xsp_obj" m:id="init_destination"></object>
+<object class="xsp_obj" m:id="b_var_gift_disp"></object>
+<span m:id="l_equ_enableGift"><object class="xsp_obj" m:id="b_var_gift_disp_true"></object></span>
+<span m:id="l_equ_enableWrapping"><object class="xsp_obj" m:id="b_var_gift_disp_true"></object></span>
+<span m:id="l_equ_enableJpnWrapping"><object class="xsp_obj" m:id="b_var_gift_disp_true"></object></span>
+<!-- ********** Xspeecs Mode START ********** -->
+<span m:id="l_match_speecsEnable_true"><object class="xsp_obj" m:id="b_var_gift_disp_false"></object></span>
+<!-- ********** Xspeecs Mode END ********** -->
+<object class="xsp_obj" m:id="var_destination_info"></object>
+<object class="xsp_obj" m:id="init_destination_info"></object>
+<object class="xsp_obj" m:id="b_var_affiliate_key"></object>
+<object class="xsp_obj" m:id="e_var_trigger_media"></object>
+
+<script type="text/javascript">
+	function ordInputDefault() {
+		var form = document.orderForm;
+		changeOrdDstInfoDisp();
+		displayOrdCreditDisp();
+		if (!!form.existPointArea) {
+			initPointDisp();
+		}
+	}
+	function switchDaibiki(swt) {
+		var daibiki = document.getElementById('payment_020');
+		var daibikiRadio = document.getElementById('payment_method_020');
+		var displayNone = document.getElementById('payment_hidden_020');
+		if (displayNone != null && daibiki != null && daibikiRadio != null) {
+			if (swt || displayNone.value=="false") {
+				daibikiRadio.checked = false;
+				daibiki.style.display="none";
+			} else {
+				daibiki.style.display="";
+			}
+		}
+	}
+	function changeOrdDstInfoDisp() {
+		var selectObject = document.orderForm.destined;
+		for (var i = 0; i < selectObject.length; i++) {
+			switchDaibiki(false);
+			if (selectObject[i].checked && selectObject[i].value == '1') {
+				document.getElementById("dst_message").style.display = 'inline';
+				if(document.getElementById("wrapping_info") != null){
+					document.getElementById("wrapping_info").style.display = 'inline';
+				}
+				document.getElementById("appointed_delivery").style.display = 'inline';
+				document.getElementById("dst_info").style.display = 'inline';
+				break;
+			} else if (selectObject[i].checked && selectObject[i].value == '2') {
+				document.getElementById("dst_message").style.display = 'none';
+				document.getElementById("multi_message").style.display = 'inline';
+				document.getElementById("appointed_delivery").style.display = 'none';
+				document.getElementById("dst_info").style.display = 'none';
+				if(document.getElementById("wrapping_info") != null){
+					document.getElementById("wrapping_info").style.display = 'none';
+					if(document.orderForm.gift_div != undefined){
+						document.orderForm.gift_div.checked=false;
+					}
+					if(document.orderForm.goods_wrapping_type != undefined){
+						for (i=0; i<document.orderForm.goods_wrapping_type.length; i++){
+							document.orderForm.goods_wrapping_type[i].selected=false;
+						}
+					}
+					if(document.orderForm.goods_jpn_wrapping_type != undefined){
+						for (i=0; i<document.orderForm.goods_jpn_wrapping_type.length; i++){
+							document.orderForm.goods_jpn_wrapping_type[i].selected=false;
+						}
+					}
+				}
+				switchDaibiki(true);
+				break;
+			}
+			document.getElementById("dst_message").style.display = 'none';
+			document.getElementById("dst_info").style.display = 'none';
+			if(document.getElementById("wrapping_info") != null){
+				document.getElementById("wrapping_info").style.display = 'inline';
+			}
+			if(document.getElementById("multi_message") != null){
+				document.getElementById("multi_message").style.display = 'none';
+			}
+			document.getElementById("dst_message").style.display = 'none';
+			document.getElementById("appointed_delivery").style.display = 'inline';
+		}
+	}
+
+	if ( window.addEventListener ) {
+		window.addEventListener("load", ordInputDefault, false);
+	} else if (window.attachEvent) {
+		window.attachEvent("onload", ordInputDefault);
+	}
+
+	function displayOrdCreditDisp() {
+		var selectObject = document.orderForm.payment_method;
+		var isDisplay = false;
+		for (var i = 0; i < selectObject.length; i++) {
+			if (selectObject[i].checked && selectObject[i].value == '130') {
+				isDisplay = true;
+				break;
+			}
+		}
+		if (document.getElementById("credit_info") != null) {
+			if (isDisplay) {
+	    		document.getElementById("credit_info").style.display = 'inline';
+			}
+			else {
+	    		document.getElementById("credit_info").style.display = 'none';
+			}
+		}
+	}
+
+	function isOrderCredit() {
+		var selectObject = document.orderForm.payment_method;
+		var isCredit = 0;
+		for (var i = 0; i < selectObject.length; i++) {
+			if (selectObject[i].checked && selectObject[i].value == '130') {
+				isCredit = 1;
+				break;
+			}
+		}
+		return isCredit;
+	}
+	
+
+  </script>
+<span m:id="l_pre_member">
+	<span m:id="l_notEmp_addressBookList">
+		<script type="text/javascript">
+			function doPagingAddrList() {
+				formOrder = document.orderForm;
+				formOrder.action = "orderInputAddressBook.do#ab";
+				formOrder.submit();
+			}
+		</script>
+	</span>
+	<span m:id="l_pre_point">
+		<span m:id="l_greThan_effectiveCurrentPoint">
+			<script type="text/javascript">
+				function changeUsePoint(obj) {
+					var form = document.orderForm;
+					if(obj.checked) {
+						for(var i = 0; i < form.use_point_method.length; i++) {
+							form.use_point_method[i].disabled = false;
+						}
+					} else {
+						for(var i = 0; i < form.use_point_method.length; i++) {
+							form.use_point_method[i].disabled = true;
+							form.use_point_method[i].checked = false;
+						}
+					}
+				}
+				function initPointDisp() {
+					var form = document.orderForm;
+					var selectObject = form.use_point;
+					if (selectObject.checked) {
+						for (var i = 0; i < form.use_point_method.length; i++) {
+							form.use_point_method[i].disabled = false;
+						}
+					} else {
+						for (var i = 0; i < form.use_point_method.length; i++) {
+							form.use_point_method[i].disabled = true;
+							form.use_point_method[i].checked = false;
+						}
+					}
+				}
+			</script>
+		</span>
+	</span>
+	
+	<script type="text/javascript">
+		function clickedRegisterCredit(){
+			var targetId = document.getElementById("use_register_card_1").checked;
+			if(targetId == true){
+				document.getElementById("registeredCard").style.display = 'none';
+				
+			} else {
+				document.getElementById("registeredCard").style.display = 'inline';
+			}
+		}
+	</script>
+</span>
+
+
+<!-- InstanceEndEditable -->
+</head>
+ 
+<body id="top">
+<!-- InstanceBeginEditable name="body" -->
+<!-- InstanceEndEditable -->
+
+<div id="container">
+
+<div id="header">
+<div id="header_wrap" class="clearfix">
+<span m:id="l_equ_hierarchy_3_shop">
+<a m:id="e_link_logo_shop_shop" href="shop.html"><h1 id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
+<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+</span>
+</h1></a>
+
+<div id="header_r" class="clearfix">
+<div id="header_r_01" class="clearfix">
+
+<ul class="header_list_02">
+<li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="shop.html" class="logout_bt" title="ログアウト"><div><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_header_bt_03.png" alt="ログアウト" /></div></a></div></li>
+<li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン"><div><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_header_bt_02.png" alt="ログイン" /></div></a></div></li>
+<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
+<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><div><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_header_bt_01.png" alt="マイページ" /></div></a></div></li>
+
+</ul>
+
+<div id="header_tell" class="pc_only">
+<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-000-000 平日9時～19時、土曜日9時～18時、日・祝日休み" />
+</div>
+
+</div>
+
+
+<div class="clearfix pc_only">
+
+<div m:id="l_notPre_member_login_shop">
+<ul class="header_list_01">
+<li><a m:id="e_link_reminder_shop" href="memberReminderPwdInput.html">パスワードを忘れた方</a></li>
+<li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
+</ul>
+</div>
+
+</div>
+</div><!--header_r-->
+
+<span m:id="l_equ_hierarchy_3_shop">
+<div id="menu" class="clearfix">
+<div id="menu_wrap">
+<ul>
+<li id="menu_01"><a m:id="e_link_home" href="shop.html"><div class="box_01"><div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_01.png" alt="ホーム" class="btn" /></div></div></a></li>
+<li id="menu_02"><a href="/shop/c/static/category/"><div class="box_01"><div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_02.png" alt="カテゴリー一覧" class="btn" /></div></div></a></li>
+<li id="menu_03"><a href="/shop/c/static/features/special_index/"><div class="box_01"><div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_03.png" alt="特集" class="btn" /></div></div></a></li>
+<li id="menu_04"><a href="/shop/c/static/first/"><div class="box_01"><div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_04.png" alt="ココチモとは" class="btn" /></div></div></a></li>
+<li id="menu_05"><a href="/shop/c/static/guide/"><div class="box_01"><div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_05.png" alt="ご利用ガイド" class="btn" /></div></div></a></li>
+<li id="menu_06"><a href="/shop/cart.do" onClick="
+s.linkTrackVars='events'; 
+s.linkTrackEvents='scView';
+s.events='scView';
+s.tl(this,'o','cartview',null,'navigate');return false
+"><div class="box_01"><div class="box_03"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/menu_i_06.png" alt="お買い物かごを見る" /></div></div></a></li>
+</ul>
+</div>
+</div><!--menu-->
+</span>
+
+</span>
+
+
+<div id="header_search" >
+<div class="clearfix header_search_in">
+      <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+        <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+        <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+        <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+        <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+        <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+        <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+        <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+        <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+        <input m:id="searchForm_page" type="hidden" name="page" value="1">
+        <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+      </form>
+      <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
+        <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_02"><input type="submit" value="検索"></div>
+</form>
+<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
+        <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+        <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+        <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+      </form>
+</div>
+</div>
+
+<!--<div class="comm_box"><p>現在、検証中の為、会員登録、お買い物など全てのサービスはご利用できません。</p>
+</div>-->
+</div><!--header_wrap-->
+</div><!--header-->
+
+<div id="contents">
+
+
+<div id="contents_r_02">
+<!-- InstanceBeginEditable name="contents_wide" -->
+<div class="r_con_box_04">
+<div class="r_con_box_04_in">
+
+<h3 class="temp_tit_n02 temp_tit_n02_cor">お客様情報、配送先情報の入力</h3>
+<div class="sec_02 clearfix">
+<div class="ad_navi">
+<ul class="clearfix">
+<span m:id="l_notPre_free_guide">
+<li><div class="ad_navi_in2 ad_navi_t"><div class="ad_in_in"><div class="ad_in_in2">お客様情報の入力</div></div></div></li>
+<li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お申込み内容の確認</div></div></div></li>
+<li class="last"><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お申込み完了</div></div></div></li>
+</span>
+</ul>
+</div>
+<span m:id="l_notPre_free_guide">
+<p class="left memadd_mb_02">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。
+</p>
+</span>
+<span m:id="l_pre_free_guide">
+<p class="left memadd_mb_02">お客様情報、連絡先電話番号、配送先をそれぞれ入力、選択してください。</p>
+</span>
+<span m:id="l_msgPre">
+<div class="error reswfon_m"><span m:id="h_err_1">入力内容にエラーがあります。</span></div>
+</span>
+<span m:id="l_msgPre_2">
+			<div class="error">
+				<span m:id="h_msg_msg">
+					<span m:id="b_wr_msg"></span>
+				</span>
+			</div>
+</span>
+<form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html">
+<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
+<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
+<input m:id="h_hid_order_hash_code" type="hidden" value="123" />
+<h4 class="temp_tit_06 clear"><div>お客様情報</div></h4>
+<!-- ログイン時 -->
+<span m:id="l_pre_member">
+<object class="xsp_obj" m:id="b_var_member_tel_no"></object>
+<span m:id="l_emp_member_tel_no">
+<object class="xsp_obj" m:id="b_var_member_tel_no2"></object>
+</span>
+<input m:id="h_hid_name_sei" type="hidden" name="name_sei" value=""/>
+				<input m:id="h_hid_name_mei" type="hidden" name="name_mei" value=""/>
+				<input m:id="h_hid_name_sei_kana" type="hidden" name="name_sei_kana" value=""/>
+				<input m:id="h_hid_name_mei_kana" type="hidden" name="name_mei_kana" value=""/>
+				<input m:id="h_hid_email" type="hidden" name="email" value=""/>
+				<input m:id="h_hid_email_confirm" type="hidden" name="email_confirm" value=""/>
+				<input m:id="h_hid_post_code" type="hidden" name="post_code" value=""/>
+				<input m:id="h_hid_area_code" type="hidden" name="area_code" value=""/>
+				<input m:id="h_hid_address1" type="hidden" name="address1" value=""/>
+				<input m:id="h_hid_address2" type="hidden" name="address2" value=""/>
+				<input m:id="h_hid_address3" type="hidden" name="address3" value=""/>
+				<input m:id="h_hid_address4" type="hidden" name="address4" value=""/>
+				<input m:id="h_hid_address_co_sei" type="hidden" name="address_co_sei" value=""/>
+				<input m:id="h_hid_address_co_mei" type="hidden" name="address_co_mei" value=""/>
+				<input m:id="h_hid_tel_no" type="hidden" name="tel_no" value=""/>
+				<input m:id="h_hid_job" type="hidden" name="job" value=""/>
+				<!-- <input m:id="h_hid_birthday" type="hidden" name="birthday" value=""/> -->
+				<input m:id="h_hid_birthday_year" type="hidden" name="year" value=""/>
+				<input m:id="h_hid_birthday_month" type="hidden" name="month" value=""/>
+				<input m:id="h_hid_birthday_day" type="hidden" name="day" value=""/>
+				<input m:id="h_hid_mail_magazine_pres" type="hidden" name="mail_magazine_pres" value=""/>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>お名前</th><td class="bor_bottom"><span m:id="disp_name_sei"></span><span m:id="disp_name_mei">山田　太郎</span></td></tr>
+<tr><th>フリガナ</th><td class="bor_bottom"><span m:id="disp_name_sei_kana">ヤマダ</span>　<span m:id="disp_name_mei_kana">タロウ</span></td></tr>
+<tr><th>メールアドレス</th><td class="bor_bottom"><span m:id="disp_email_pc">yamada@u-canshop.ne.jp</span>
+<span m:id="l_msgPre_email">
+								<br />
+								<span class="error">
+									<span m:id="h_err_email">PCメールアドレスエラーメッセージ</span>
+								</span>
+							</span>
+</td></tr>
+<tr><th>郵便番号・住所</th><td class="bor_bottom">〒<span m:id="disp_post_code">404-0053</span><br />
+<span m:id="disp_address1">名古屋市千種区</span><br />
+<span m:id="disp_address2">田代町字岩谷</span><br />
+<span m:id="disp_address3">４－２－３８</span><span m:id="disp_address4">ユーキャンビル １０３号室</span><br />
+<span m:id="disp_address_co_sei">鈴木</span>　<span m:id="disp_address_co_mei">一郎様方</span>
+</td></tr>
+<tr><th>電話番号</th><td class="bor_bottom"><span m:id="disp_tel_no">012-345-6789</span></td></tr>
+<tr><th>生年月日</th><td class="bor_bottom"><span m:id="disp_birthday">1954年6月15日</span></td></tr>
+<span m:id="l_pre_disp_order_sex">
+<tr><th>性別</th><td class="bor_bottom"><span m:id="disp_order_sex">男性</span></td></tr>
+</span>
+<!--保留<tr><th>職業</th><td class="bor_bottom"><span m:id="disp_job_name">会社員</span></td></tr>-->
+<tr><th class="none_bor">メールマガジン</th><td><span m:id="disp_mail_magazine_pres_on">希望する</span><span m:id="disp_mail_magazine_pres_off">希望しない</span></td></tr>
+</table>
+</span>
+<!-- 非ログイン時 -->
+<span m:id="l_notPre_member">
+<h4 m:id="dummy" class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>お名前（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_01"/>&nbsp;名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_01" /> <span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
+<span m:id="l_msgPre_name_sei">
+					        	<br />
+					        	<span class="error">
+					        		<span m:id="h_err_name_sei" >お名前(姓)入力エラーメッセージ</span>
+					        	</span>
+</span>
+							<span m:id="l_msgPre_name_mei">
+								<br />
+								<span class="error">
+									<span m:id="h_err_name_mei" >お名前(名)入力エラーメッセージ</span>
+								</span>
+					        </span>
+
+
+</td></tr>
+<tr><th>フリガナ（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_01"/>&nbsp;名&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_01" /> <span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
+
+<span m:id="l_msgPre_name_sei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
+								</span>
+					        </span>
+							<span m:id="l_msgPre_name_mei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span>
+								</span>
+					        </span>
+
+</td></tr>
+<tr><th class="none_bor">メールアドレス（半角英数字）<span class="imp">必須</span></th>
+<td><input type="text" m:id="h_txt_email"  name="email" class="in_w_02"/><span class="exp"><span m:id="sample_mail">例：tuuhan@u-can.co.jp</span></span>
+<span m:id="l_msgPre_email">
+								<br />
+								<span class="error">
+									<span m:id="h_err_email">PCメールアドレス入力エラーメッセージ</span>
+								</span>
+					        </span>
+</td>
+</tr>
+<tr><th>メールアドレス（確認用）<span class="imp">必須</span><p class="caution">コピー貼り付けはしないでください</p></th><td class="bor_bottom"><input type="text" m:id="input_email_confirm" name="email_confirm" class="in_w_02" oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);" /><span class="exp">確認のためもう一度お願いします</span>
+<p class="clear"><!--<span class="error clear">メールアドレスをお間違えになると、ユーキャンからの<br />
+ｅメールが他の方に届くことがあります。ご注意ください。</span> --></p>
+<span m:id="l_msgPre_email_confirm">
+								<br />
+								<span class="error">
+									<span m:id="h_err_email_confirm">PCメールアドレス(確認用)入力エラーメッセージ</span>
+								</span>
+					        </span>
+
+</td></tr>
+<tr><th>郵便番号（半角英数字）<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_t_box_03 clearfix">
+<div class="box_01">
+<input type="text" class="in_w_01" m:id="h_txt_post_code" name="post_code" maxlength="7" onblur="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
+<div class="box_02">
+<a m:id="a_bt_searchZip" href="postCode.html" OnClick="return postCodeList( document.orderForm.post_code.value, 2 );"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ma_bt_01.jpg"  alt="郵便番号検索" /></a><br /><span id="postcode_asyncstat"/><span class="error_message error"><span m:id="h_err_post_code">郵便番号エラーメッセージ</span></span></div><span class="exp"><span m:id="sample_postcode">例：0123456</span></span></div></td></tr>
+<tr><th class="none_bor">住所（都道府県）<span class="imp">必須</span></th><td>
+<select  m:id="h_sel_area_code" class="memadd_input_04" id="area_cd">
+<option value="">--選択してください--</option>
+<option m:id="h_opt_prefecture" value="001">青森県</option>
+<option m:id="dummy" value="002">秋田県</option>
+<option m:id="dummy" value="003">埼玉県</option>
+<option m:id="dummy" value="004">神奈川県</option>
+<option m:id="dummy" value="005">沖縄県</option>
+</select>
+<span m:id="l_msgPre_area_code">
+								<br />
+								<span class="error">
+									<span m:id="h_err_area_code">都道府県選択エラーメッセージ</span>
+								</span>
+					        </span>
+</td></tr>
+<tr><th class="none_bor">住所（市区郡）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02" m:id="h_txt_address1" name="address1" id="address1"/>
+<span m:id="l_msgPre_address1">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address1">住所(市区郡)入力エラーメッセージ</span>
+								</span>
+					        </span>
+<span class="exp"><span m:id="sample_city">例：田代町字岩谷</span></span></td></tr>
+<tr><th class="none_bor">住所（町村字）（全角）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02" m:id="h_txt_address2" name="address2" id="address2"/>
+<span m:id="l_msgPre_address2">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address2">住所(町村字)入力エラーメッセージ</span>
+								</span>
+					        </span>
+<span class="exp"><span m:id="sample_town">例：田代町字岩谷</span></span></td></tr>
+<tr><th class="none_bor">住所（番地）（全角）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02" m:id="h_txt_address3" name="address3"/>
+<span m:id="l_msgPre_address3">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span>
+								</span>
+					        </span>
+<span class="exp"><span m:id="sample_house_no">例：４－２－３８</span></span></td></tr>
+<tr><th class="none_bor">住所（建物名・部屋番号）</th><td>
+<input type="text" class="in_w_02" m:id="h_txt_address4" name="address4"/>
+<span m:id="l_msgPre_address4">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
+								</span>
+					        </span>
+<span class="exp"><span m:id="sample_bldg">例：ユーキャンビル １０３号室</span></span></td></tr>
+<tr><th>様方（全角）</th><td class="bor_bottom">
+姓&nbsp;<input type="text" class="in_w_01" m:id="h_txt_address_co_sei" name="address_co_sei"/>&nbsp;名&nbsp;<input type="text" class="in_w_01" m:id="h_txt_address_co_mei" name="address_co_mei" />
+<span m:id="l_msgPre_address_co_sei">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span>
+								</span>
+							</span>
+							<span m:id="l_msgPre_address_co_mei">
+								<br />
+								<span class="error">
+									<span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span>
+								</span>
+							</span>
+
+
+ <span class="exp"><span m:id="sample_address_co_1">例：鈴木　一郎</span></span></td></tr>
+<!--<tr><th class="none_bor"><p><span class="imp">必須</span><span class="error">電話番号は自宅、または携帯の<br />
+いずれかを入力してください。</span></p></th><td>
+</td></tr>-->
+<tr><th>電話番号<span class="imp">必須</span></th><td class="bor_bottom">
+<input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
+<span m:id="l_msgPre_tel_no">
+								<br />
+								<span class="error">
+									<span m:id="h_err_tel_no">連絡先電話番号入力エラーメッセージ</span>
+								</span>
+					        </span>
+<span class="exp"><span m:id="sample_tel_1">例：03-0000-0000</span></span>
+</td></tr>
+<!--<tr><th>電話番号（携帯）</th><td class="bor_bottom">
+<input type="text" class="in_w_04" />&nbsp;-&nbsp;<input type="text" class="in_w_04" />&nbsp;-&nbsp;<input type="text" class="in_w_04" />
+<span class="exp">例：012-345-6789</span>
+</td></tr>-->
+
+<tr><th>性別</th><td class="bor_bottom">
+
+<div class="memadd_t_box_01 clearfix">
+<span m:id="l_ite_sex">
+<object class="xsp_obj" m:id="b_var_code" ></object>
+<div class="box_01">
+<label>
+<input m:id="l_pre_disp_sex_code_name" type="radio" name="order_sex" class="radio" value="key"><span  m:id="b_wr_code_name">女性</span></label></div>
+</span>
+<div class="box_01"  m:id="dummy">
+<input m:id="dummy" type="radio" name="sex" class="radio" value="key"><span m:id="dummy">男性</span>
+</div>
+</div>
+
+</td></tr>
+<tr><th>生年月日<!--<span class="imp">必須</span>--></th><td class="bor_bottom">
+
+<select m:id="h_sel_birthday_year" class="memadd_input_05">
+					          <option value=""></option>
+								<option m:id="h_opt_birthday_year" value="1995">1995(平成7)</option>
+								<option m:id="dummy" value="">1994(平成6)</option>
+								<option m:id="dummy" value="">1993(平成5)</option>
+								<option m:id="dummy" value="">1992(平成4)</option>
+					    </select>&nbsp;年&nbsp;
+						<select m:id="h_sel_birthday_month" class="memadd_input_03">
+							<option value=""></option>
+							<option m:id="h_opt_birthday_month" value="">1</option>
+							<option m:id="dummy" value="">2</option>
+							<option m:id="dummy" value="">3</option>
+						</select>&nbsp;月&nbsp;
+						<select m:id="h_sel_birthday_day" class="memadd_input_03">
+							<option value=""></option>
+							<option m:id="h_opt_birthday_day" value="">1</option>
+							<option m:id="dummy" value="">2</option>
+							<option m:id="dummy" value="">3</option>
+						</select>&nbsp;日&nbsp;
+<div><span class="error"><span m:id="h_err_birthday">生年月日エラーメッセージ</span></span></div>
+</td></tr>
+<!--保留<tr><th>職業</th><td class="bor_bottom">
+<select m:id="h_sel_job" class="memadd_input_01">
+<option value="">--選択してください--</option>
+<option m:id="dummy" value="">会社員</option>
+<option m:id="dummy" value="">会社役員</option>
+<option m:id="dummy" value="">公務員</option>
+<option m:id="dummy" value="">自営業</option>
+<option m:id="dummy" value="">学生</option>
+</select>
+</td></tr>-->
+<tr><th class="none_bor">メールマガジン<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_t_box_01 clearfix">
+<div class="box_01">
+<label><input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label></div>
+<div class="box_01">
+<label><input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label></div>
+<span m:id="l_msgPre_mail_magazine_pres">
+								<br />
+							<span class="error">
+								<span m:id="h_err_mail_magazine_pres">メールマガジンエラーメッセージ</span>
+							</span>
+						  </span>
+</div>
+</td></tr>
+<!--保留<tr><th class="none_bor" rowspan="2">きっかけ</th><td class="memadd_input ">
+分類　　　　
+<select m:id="h_sel_job" class="memadd_input_01">
+<option value="">--選択してください--</option>
+<option m:id="dummy" value="">会社員</option>
+<option m:id="dummy" value="">会社役員</option>
+<option m:id="dummy" value="">公務員</option>
+<option m:id="dummy" value="">自営業</option>
+<option m:id="dummy" value="">学生</option>
+</select></td></tr>
+<tr><td class="memadd_input ">
+媒体　　　　
+<select m:id="h_sel_job" class="memadd_input_01">
+<option value="">--選択してください--</option>
+<option m:id="dummy" value="">会社員</option>
+<option m:id="dummy" value="">会社役員</option>
+<option m:id="dummy" value="">公務員</option>
+<option m:id="dummy" value="">自営業</option>
+<option m:id="dummy" value="">学生</option>
+</select>
+<p>※媒体は、分類選択後のみ選択が可能となります。</p>
+</td></tr>-->
+</table>
+</span>
+
+
+<!--<h4 class="temp_tit_06 clear"><div>メッセージ、連絡事項</div></h4>
+<div class="memadd_box_01">
+<p>※200文字文字以内で入力してください。 <!--<span class="memadd_red">●200文字を超えています。</span>--><!--</p>
+
+<textarea m:id="h_txt_order_message" name="order_message"></textarea>
+<span m:id="l_msgPre_order_message">
+					<br />
+					<span class="error">
+						<span m:id="h_err_order_message">●200文字を超えています。</span>
+					</span>
+				</span>
+</div>-->
+
+<span m:id="l_notPre_free_guide">
+				<!-- 決済方法 -->
+<h4 class="temp_tit_06 clear"><div>決済方法</div></h4>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<span m:id="l_pre_member">
+<tr>
+<span m:id="l_pre_point">
+<span m:id="l_greThan_effectiveCurrentPoint">
+<input type="hidden" id="existPointArea"/>
+<th>
+<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する
+</th>
+<td class="bor_bottom">
+<input m:id="h_radio_use_point_method_010" type="radio" name="use_point_method" value="010" class="radio" />　一部ポイント利用
+<br/><input m:id="h_radio_use_point_method_020" type="radio" name="use_point_method" value="020" class="radio" />　全額ポイント利用
+<span m:id="l_msgPre_use_point">
+<span class="error">
+<span m:id="h_err_use_point">ポイント利用エラーメッセージ</span>
+</span>
+</span>
+</td>
+</span></span>
+</tr>
+</span>
+<tr><th>決済方法<span class="imp">必須</span></th><td class="bor_bottom">
+<object class="xsp_obj" m:id="b_var_isExistShopSettle"></object>
+<!--<p class="memadd_mb_01"><span class="memadd_red error">ご利用可能な決済方法がありませんでした。管理者まで、ご連絡をお願いいたします。<br /> 
+決済方法選択エラーメッセージ</span></p>-->
+
+							<span m:id="l_ite_shopSettle">
+<div class="memadd_mb_01" m:id="l_match_isSettlement"><label m:id="label_settlement_name"><input m:id="h_radio_payment_method" type="radio" class="radio" value="0" name="payment_method" onclick="displayOrdCreditDisp();">　<span m:id="b_wr_settlement_name">クレジット</span><!--<span m:id="b_wr_settlement_exp">カード決済</span>--></label><input type="hidden" m:id="h_perm_display_none" /></div>
+<div class="memadd_mb_01" m:id="dummy"><label><input type="radio" name="payment_method" onclick="displayOrdCreditDisp();" class="radio" value="0">　代引きでの決済です</label></div>
+<div m:id="dummy"><label><input type="radio" class="radio" value="0" name="payment_method" onclick="displayOrdCreditDisp();">　後払い [ゆうちょ銀行／コンビエンス](一括／分割)  :  後払いでの決済です</label></div></span>
+<span m:id="l_msgPre_payment_method">
+								<span class="error">
+									<span m:id="h_err_payment_method">決済方法選択エラーメッセージ</span>
+								</span>
+							</span>
+
+</td></tr>
+</table>
+</span>
+<!--不明<span m:id="l_pre_free_guide">
+<input m:id="h_hid_payment_method" type="hidden" name="payment_method" value="050" />
+</span>
+-->
+
+<!-- /クレジットカード情報入力 -->
+			<div id="credit_info">
+<input m:id="h_hid_key" type="hidden" name="key" value="" />
+
+<span m:id="l_pre_credit">
+<h4 class="temp_tit_06 clear"><div>クレジットカード情報入力済方法</div></h4>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<span m:id="l_pre_had_credit">
+<tr><td colspan="2" class="bor_bottom">
+
+<div class="memadd_mb_01"><input onclick="clickedRegisterCredit();" type="radio" value="1" name="use_save_card" class="radio" id="use_register_card_1">　登録済みのカードを利用する　　　　<span m:id="disp_register_card">************1234</span></div>
+<div><label><input onclick="clickedRegisterCredit();" type="radio"
+name="use_save_card" class="radio" value="0">　別のカードで決済する</label></div>
+
+</td></tr></span>
+</table>
+<object class="xsp_obj" m:id="e_var_card_brand_map" ></object>
+<span id="registeredCard">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>カード会社<span class="imp">必須</span></th><td class="memadd_input  bor_bottom">
+
+<select m:id="h_sel_card_brand" class="memadd_input_01">
+<option m:id="dummy" value="">--選択してください--</option>
+<option m:id="dummy" value="">VISA</option>
+<option m:id="dummy" value="">MASTER</option>
+<option m:id="dummy" value="">JCB</option>
+<option m:id="dummy" value="">AMEX</option>
+<option m:id="dummy" value="">DINERS</option>
+</select>
+<div><span class="error"><span m:id="h_err_card_brand">カード会社は必須です。</span></span></div>
+
+</td></tr>
+
+<tr><th>ご利用いただけるカード</th><td class="bor_bottom">
+<img m:id="icon_image" src="../../../contents/shop/00000003/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" />
+</td></tr>
+<tr><th>
+カード番号（半角英数字）<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_mb_01">
+<input m:id="h_txt_card_number" type="text" name="card_number" class="in_w_02"/>
+<span m:id="l_msgPre_card_number">
+					          <br /><span class="error"><span m:id="h_err_card_number">カード番号入力エラーメッセージ</span></span>
+					        </span>
+<span class="exp">例：<span m:id="sample_card_number">0123456789000000</span>
+</span></div>
+<span m:id="l_equ_regist_card">
+<div><label><input m:id="h_check_regist_card" type="checkbox" value="1" name="save_card_flg" />　カード番号を登録し、次回の決済に利用する</label></div>
+</span>
+</td></tr>
+<tr><th>
+セキュリティコード<br />
+（半角英数字）<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_mb_01">
+<input type="text" class="in_w_02" m:id="h_txt_security_code" name="security_code" maxlength="4"/><span m:id="l_msgPre_security_code">
+					          <br /><span class="error"><span m:id="h_err_security_code">セキュリィティコード入力エラーメッセージ</span></span>
+					        </span>
+                            <span class="exp">例：<span  m:id="sample_security_code">0123</span></span></div>
+<div><label><input  m:id="h_check_security_code" type="checkbox"  value="1" name="check_security_code" />　セキュリティコードを入力しない</label></div>
+</td></tr>
+
+<tr><th>
+カード有効期限<span class="imp">必須</span></th><td class="bor_bottom">
+<input type="text" m:id="h_txt_card_exp_month" name="card_exp_month" class="in_w_04" />&nbsp;月&nbsp;/&nbsp;<input type="text" m:id="h_txt_card_exp_year" name="card_exp_year" class="in_w_04" />&nbsp;年
+<span m:id="l_msgPre_card_exp_month">
+					          <br /><span class="error"><span m:id="h_err_card_exp_month">有効期限（月）エラーメッセージ</span></span>
+					        </span>
+							<span m:id="l_msgPre_card_exp_year">
+					          <br /><span class="error"><span m:id="h_err_card_exp_year">有効期限（年）エラーメッセージ</span></span>
+					        </span>
+
+<span class="exp">例：<span m:id="sample_card_expiration">2013年4月の場合<br />
+04/13 (半角数字)</span>
+</span>
+</td></tr>
+</span>
+<object class="xsp_obj" m:id="e_var_pay_times" ></object>
+<tr><th class="none_bor">支払回数<span class="imp">必須</span></th><td class="memadd_input">
+<select m:id="h_sel_pay_times" class="memadd_input_01">
+<option m:id="dummy" value="">--選択してください--</option>
+<option m:id="dummy" value="">１回</option>
+<option m:id="dummy" value="">２回</option>
+<option m:id="dummy" value="">３回</option>
+<option m:id="dummy" value="">４回</option>
+<option m:id="dummy" value="">５回</option>
+</select>
+<span m:id="h_err_pay_times">支払回数エラーメッセージ</span>
+<p>※ご利用いただくカード会社によって、ご利用いただける分割お支払い回数が異なります</p></td></tr>
+
+
+</table>
+<span m:id="l_if_regular">
+<input m:id="h_hid_save_card" type="hidden" name="save_card" value="1" />
+<input m:id="h_hid_credit_flg" type="hidden" name="credit_flg" value="1"/>
+</span>
+</span>
+
+ </div>
+			<!-- /クレジットカード情報入力 -->
+<!-- ポイントのご利用 -->
+			<!-- ********** include:point.jsp ********** -->
+			<object class="xsp_obj" m:id="e_var_shop_point"></object>
+			<!-- ポイント運用ショップ -->
+<object class="xsp_obj" m:id="e_var_point"></object>
+<span m:id="l_pre_point">
+<h4 class="temp_tit_06 clear"><div>ポイントのご利用</div></h4>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>現在ポイント</th>
+<td class="bor_bottom">
+<span m:id="b_wr_effectiveCurrentPoint">100</span> pt
+</td>
+</tr>
+<tr><th>利用可能ポイント</th>
+<td class="bor_bottom">
+<span m:id="b_wr_order_available_point">100</span> pt
+</td>
+</tr>
+<tr><th class="none_bor">ご利用ポイント</th>
+<td>
+<input m:id="h_txt_used_point_string" type="text" name="used_point_string" value="" maxlength="7" class="in_w_04"> pt
+<span m:id="l_msgPre_used_point_string">
+<span class="exp" m:id="l_usable_point">例：0 ～  <span m:id="disp_sample_available_point">1,000</span>(半角数字)
+					</span>
+<br /><span class="error"><span m:id="h_err_used_point_string">ご利用ポイントエラーメッセージ</span></span>
+</span>
+
+</td>
+</tr>
+</table>
+</span>
+
+
+
+<h4 class="temp_tit_06 clear"><div>配送先指定</div></h4>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>配送先<span class="imp">必須</span></th>
+<td class="bor_bottom">
+<div class="memadd_t_box_02 clearfix">
+<div class="box_01">
+<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp();" class="radio" >　お客様情報のご住所</label></div>
+<div class="box_01">
+<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp();" class="radio" >　別の配送先を指定する</label></div>
+</div>
+<span m:id="l_msgPre_destined">
+							<br />
+							<span class="error">
+								<span m:id="h_err_destined">配送先エラーメッセージ</span>
+							</span>
+						</span>
+</td>
+</tr>
+<span id="appointed_delivery">
+<tr><td colspan="2" class="memadd_inp_irg_01">
+<div class="box_con clearfix">
+<div class="box_01">
+配送希望日
+</div>
+<div class="box_02">
+<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
+<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01">
+<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
+<option m:id="h_opt_deliveryDateMap" value="1">2010年07月01日</option>
+<option m:id="dummy" value="">2010年07月02日</option>
+<option m:id="dummy" value="">2010年07月03日</option>
+<option m:id="dummy" value="">2010年07月04日</option>
+<option m:id="dummy" value="">2010年07月05日</option></select>
+<span m:id="l_msgPre_appointed_delivery_date">
+								<br />
+								<span class="error">
+									<span m:id="h_err_appointed_delivery_date">配送希望日エラーメッセージ</span>
+								</span>
+					        </span>
+</div>
+</div>
+<div class="box_con">
+<div class="box_01">
+配送時間帯
+</div>
+<div class="box_02">
+<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
+<select m:id="h_sel_delivery_time" class="memadd_input_01">
+<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
+								<option m:id="dummy" value="">午前中</option>
+								<option m:id="dummy" value="">午後中</option>
+								<option m:id="dummy" value="">１６～１８時</option>
+								<option m:id="dummy" value="">１８～２１時</option>
+</select>
+<span m:id="l_msgPre_delivery_time">
+								<br />
+								<span class="error">
+									<span m:id="h_err_delivery_time">配送希望時間帯エラーメッセージ</span>
+								</span>
+					        </span>
+
+</div>
+</div>
+
+</td>
+</tr>
+</span>
+</table>
+
+
+<div id="dst_message">
+				<span class="required">別の「配送先を指定する」をチェックした場合は、配送先情報を入力してください。</span>
+</div>
+
+<div id="dst_info">
+<span m:id="l_pre_member">
+					<span m:id="l_notEmp_addressBookList">
+					<input type="hidden" name="page"/>
+
+<h4 class="temp_tit_05 clear"><div>住所録</div></h4>
+
+<div class="memadd_inp_irg_02 clearfix">
+<ul>
+<li><span m:id="paging_start"><a m:id="paging_href" href="orderInput.html"><img src="../../../contents/shop/00000003/shop/image/good_list_icon_01.gif" alt="" /></a></span></li>
+<li class="case_01" m:id="paging_label"><span m:id="paging_link"><a m:id="paging_href" href="orderInput.html">1</a></span></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">2</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">3</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">4</a></li>
+<li m:id="dummy">…</li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">9</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">10</a></li>
+<li class="last" m:id="paging_next"><span m:id="paging_end"><a m:id="paging_href" href="orderInput.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/good_list_icon_02.gif" alt="" /></a></span></li>
+
+</ul>
+
+</div>
+
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<span m:id="l_ite_book">
+<tr>
+<td>
+  <a m:id="a_dst" href="#dst" onclick="selectDstAddrBook(document.orderForm);">
+    <span m:id="l_notEmp_group_name">
+      <span m:id="disp_group_name">エルテックス</span><br />
+	</span>
+	<span m:id="disp_book_name_sei">横浜</span>&nbsp;<span m:id="disp_book_name_mei">太郎</span>
+	<span m:id="disp_book_name_sei_kana">ヨコハマ</span>&nbsp;<span m:id="disp_book_name_mei_kana">タロウ</span> </a>
+〒<span m:id="disp_book_post_code">2400005</span><br />
+<span m:id="disp_book_area_name">神奈川県</span>&nbsp;<span m:id="disp_book_address1">横浜市保土ヶ谷区</span>&nbsp;<span m:id="disp_book_address2">神戸町</span>&nbsp;<span m:id="disp_book_address3">１３４番地</span>&nbsp;<span m:id="disp_book_address4">横浜ビジネスパーク イーストタワー １４階</span>&nbsp;<span m:id="disp_book_address_co_sei">様方(姓)</span>&nbsp;<span m:id="disp_book_address_co_mei">様方(名)</span><br />
+TEL：<span m:id="disp_book_tel_no">090-1234-1234</span>
+</td>
+</tr>
+
+</span>
+<tr m:id="dummy">
+<td class="bor_bottom">
+グループ名　　　　　　<a href="#">横浜 太郎</a>　　　　　　エルテックス<br />
+〒2400005 <br />
+神奈川県?横浜市保土ヶ谷区?神戸町?１３４番地?横浜ビジネスパーク イーストタワー １４階?<br />
+TEL：090-1234-1234
+</td>
+</tr>
+
+
+</table>
+
+
+
+<div class="memadd_inp_irg_03 clearfix">
+<ul>
+<li><span m:id="paging_start"><a m:id="paging_href" href="orderInput.html"><img src="../../../contents/shop/00000003/shop/image/good_list_icon_01.gif" alt="" /></a></span></li>
+<li class="case_01" m:id="paging_label"><span m:id="paging_link"><a m:id="paging_href" href="orderInput.html">1</a></span></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">2</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">3</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">4</a></li>
+<li m:id="dummy">…</li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">9</a></li>
+<li class="case_02" m:id="dummy"><a href="orderInput.html">10</a></li>
+<li class="last" m:id="paging_next"><span m:id="paging_end"><a m:id="paging_href" href="orderInput.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/good_list_icon_02.gif" alt="" /></a></span></li>
+
+</ul>
+
+</div>
+</span>
+</span>
+
+
+<!--  配送先情報 -->
+		
+<h4 id="dst" class="temp_tit_06 clear"><div>配送先情報</div></h4>
+<input m:id="h_hid_address_book_id" type="hidden" name="address_book_id" value="1"/>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>お名前（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" name="dst_name_sei" class="in_w_01"  m:id="h_txt_dst_name_sei"/>&nbsp;名&nbsp;<input type="text" name="dst_name_mei" class="in_w_01" m:id="h_txt_dst_name_mei"/><span m:id="l_msgPre_dst_name_sei">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_name_sei">お名前入(姓)力エラーメッセージ</span>
+								</span>
+					        </span>
+							<span m:id="l_msgPre_dst_name_mei">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_name_mei">お名前入(名)力エラーメッセージ</span>
+								</span>
+					        </span> <span class="exp"><span m:id="sample_name_2">例：山田　太郎</span></span></td></tr>
+<tr><th>フリガナ（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" name="dst_name_sei_kana" class="in_w_01"  m:id="h_txt_dst_name_sei_kana"/>&nbsp;名&nbsp;<input type="text" class="in_w_01" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /><span m:id="l_msgPre_dst_name_sei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
+								</span>
+					        </span>
+							<span m:id="l_msgPre_dst_name_mei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_name_mei_kana">フリガナ(名)入力エラーメッセージ</span>
+								</span>
+					        </span> <span class="exp"><span m:id="sample_kana_2">例：ヤマダ　タロウ</span></span></td></tr>
+<!--<tr><th>グループ名<span class="imp">必須</span></th><td class="bor_bottom"><input type="text" class="in_w_02"/> <span class="exp">例：サークル</span></td></tr>
+<tr><th>会社名<span class="imp">必須</span></th><td class="bor_bottom"><input type="text" class="in_w_02" m:id="h_txt_dst_office"/><span m:id="l_msgPre_dst_office">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_office">会社名入力エラーメッセージ</span>
+								</span>
+					    	</span> <span class="exp"><span m:id="sample_company">例：ユーキャン</span></span></td></tr>-->
+<!--<tr><th class="none_bor">メールアドレス（半角英数字）<span class="imp">必須</span></th>
+<td><input type="text" class="in_w_02"/><span class="exp">例：tuuhan@u-can.co.jp</span></td>
+</tr>
+<tr><th>メールアドレス（確認用）<span class="imp">必須</span><p>コピー貼り付けはしなでください</p></th><td class="bor_bottom"><input type="text" class="in_w_02"/><span class="exp">確認のためもう一度お願いします</span>
+<p class="clear memadd_red"><!--メールアドレスをお間違えになると、ユーキャンからの<br />
+ｅメールが他の方に届くことがあります。ご注意ください。</p> </td></tr>-->
+<tr><th>郵便番号（半角英数字）<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_t_box_03 clearfix">
+<div class="box_01">
+<input type="text" class="in_w_01" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></div>
+<div class="box_02">
+<a m:id="a_bt_searchZip_dst" href="postCode.html" OnClick="return postCodeList( document.orderForm.dst_post_code.value, 3 );"><img src="../../../contents/shop/00000003/shop/image/ma_bt_01.jpg"  alt="郵便番号検索" /></a><div><span id="postcode_asyncstat"/>
+								<span class="error"><span m:id="h_err_dst_post_code">郵便番号エラーメッセージ</span></span>
+							</span></div></div>
+
+<span class="exp"><span m:id="sample_postcode">例：0123456</span></span></div>
+</td></tr>
+<tr><th class="none_bor">住所（都道府県）<span class="imp">必須</span></th><td>
+<select m:id="h_sel_dst_area_code" class="memadd_input_01">
+<option value="">--選択してください--</option>
+<option m:id="h_opt_prefecture" value="001">青森県</option>
+								<option m:id="dummy" value="002">秋田県</option>
+								<option m:id="dummy" value="003">埼玉県</option>
+								<option m:id="dummy" value="004">神奈川県</option>
+								<option m:id="dummy" value="004">沖縄県</option>
+</select>
+<span m:id="l_msgPre_dst_area_code">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_area_code">都道府県選択エラーメッセージ</span>
+								</span>
+					    	</span>
+</td></tr>
+<tr><th class="none_bor">住所（市区郡）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02" m:id="h_txt_dst_address1" name="dst_address1"/><span m:id="l_msgPre_dst_address1">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_address1">住所(市区郡)入力エラーメッセージ</span>
+								</span>
+					    	</span><span class="exp"><span m:id="sample_city">例：田代町字岩谷</span></span>
+
+</td></tr>
+<tr><th class="none_bor">住所（町村字）（全角）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02"  m:id="h_txt_dst_address2"/>
+<span m:id="l_msgPre_dst_address2">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_address2">住所(町村字)入力エラーメッセージ</span>
+								</span>
+					    	</span>
+                            <span class="exp"><span m:id="sample_town">例：田代町字岩谷</span></span></td></tr>
+<tr><th class="none_bor">住所（番地）（全角）<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3"/>
+<span m:id="l_msgPre_dst_address3">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_address3">住所(番地)入力エラーメッセージ</span>
+								</span>
+					    	</span>
+<span class="exp"><span m:id="sample_house_no">例：４－２－３８</span></span></td></tr>
+<tr><th class="none_bor">住所（建物名・部屋番号）</th><td>
+<input type="text" class="in_w_02" m:id="h_txt_dst_address4" name="dst_address4"/>
+<span m:id="l_msgPre_dst_address4">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_address4">住所(建物名・部屋番号など)入力エラーメッセージ</span>
+								</span>
+					    	</span>
+<span class="exp"><span m:id="sample_bldg">例：ユーキャンビル １０３号室</span></span></td></tr>
+<tr><th>様方（全角）</th><td class="bor_bottom">
+姓&nbsp;<input type="text" class="in_w_01" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/>&nbsp;名&nbsp;<input type="text" class="in_w_01" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" />
+<span m:id="l_msgPre_dst_address_co_sei">
+							    <br/>
+								<span class="error">
+									<span m:id="h_err_dst_address_co_sei">様方(姓)入力エラーメッセージ</span>
+							    </span>
+							</span>
+							<span m:id="l_msgPre_dst_address_co_sei">
+							    <br/>
+								<span class="error">
+									<span m:id="h_err_dst_address_co_mei">様方(名)入力エラーメッセージ</span>
+								</span>
+							</span>
+<span class="exp"><span m:id="sample_address_co_1">例：鈴木　一郎</span></span></td></tr>
+<tr><th class="none_bor">電話番号<span class="imp">必須</span></th><td>
+<input type="text" class="in_w_04" m:id="h_txt_dst_tel_no1" name="dst_tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_dst_tel_no2" name="dst_tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_dst_tel_no3" name="dst_tel_no3" />
+<span m:id="l_msgPre_dst_tel_no">
+								<br />
+								<span class="error">
+									<span m:id="h_err_dst_tel_no">連絡先電話番号入力エラーメッセージ</span>
+								</span>
+					    	</span>
+<span class="exp"><span m:id="sample_tel_1">例：012-345-6789</span></span>
+</td></tr>
+
+</table>
+</div>
+
+	<object class="xsp_obj" m:id="e_var_ordShop"></object>
+			<span m:id="l_notPre_free_guide">
+<!-- ********** eastEC Mode START ********** -->
+				<span m:id="l_match_speecsEnable_false">
+					<object class="xsp_obj" m:id="b_param_notPostage"></object>
+					<object class="xsp_obj" m:id="b_param_postageFlat"></object>
+				</span>
+<!-- ********** eastEC Mode END ********** -->
+
+
+<h4 class="temp_tit_06 clear"><div>お申込み内容</div></h4>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th>商品名</th>
+<th class="memadd_table_02_w_02">商品単価</th>
+<th class="memadd_table_02_w_03">数量</th>
+<th class="memadd_table_02_w_02">小計</th>
+</tr>
+<span m:id="l_ite_detail">
+<tr>
+<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span></td>
+<td class="right color_w_b"><span m:id="b_wr_goods_price_tax">5000</span> 円</td>
+<td class="right color_w_b"><span m:id="disp_detail_order_num">3</span></td>
+<td class="right color_w_b"><span m:id="b_wr_total_goods_price">15000</span> 円</td>
+</tr>
+</span>
+<tr ><!--m:id="div_shopping_total"-->
+<td colspan="2" class="right">商品合計</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_total_price">9500</span> 円</td>
+</tr> 
+<object class="xsp_obj" m:id="i_shopping_total_count"></object>
+<!--保留<tr>
+<td colspan="2" class="right">手数料</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right">55円</td>
+</tr>-->
+<span m:id="l_notEqu_postageFlat">
+<span m:id="l_notEqu_total_postage">
+<span m:id="div_shopping_total">
+<tr>
+<td colspan="2" class="right">(うち商品個別送料)</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_total_postage">100</span> 円</td>
+</tr>
+</span>
+</span>
+<tr m:id="div_shopping_total">
+<td colspan="2" class="right">送料</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
+</tr>
+</span>
+
+
+<span m:id="l_notEqu_total_discount">
+<tr>
+<td colspan="2" class="right" m:id="div_shopping_total">会員割引額</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_total_discount">500</span> 円</td>
+</tr>
+</span>
+
+<span m:id="l_notEqu_premium_discount_amount">
+<tr m:id="div_shopping_total">
+<td colspan="2" class="right">特典割引額</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+</tr>
+</span>
+<!--<tr>
+<td colspan="2" class="right">ご使用ポイント</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right">500pt</td>
+</tr>-->
+<span m:id="div_shopping_total">
+<tr>
+<td colspan="2" class="right">請求金額</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+</tr>
+</span>
+<!--<tr>
+<!--保留<td colspan="2" class="right">決済手数料</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right">700円</td>
+</tr>-->
+<tr>
+<!--<td colspan="2" class="right">請求金額</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right">9000円</td>
+</tr>-->
+<span m:id="l_notEqu_totalPointAmt">
+<tr m:id="div_shopping_total">
+<td colspan="2" class="right">獲得予定ポイント</td>
+<td class="bor_l_none"></td>
+<td class="last_02 right"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
+</tr>
+</span>
+</table>
+
+
+<span m:id="l_pre_disp_goodsPremium">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
+</tr>
+<tr m:id="l_ite_goodsPremium">
+<td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
+<td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
+</tr>
+</table>
+</span>
+<span m:id="l_pre_disp_promotionConnectName">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th class="last_02">以下の特典が適用されています</th>
+</tr>
+<tr>
+<td class="last_02"><span m:id="b_wr_promotionConnectName">ダミー特典内容</span></td>
+</tr>
+</table>
+</span>
+<!--<object m:id="var_display_order_option" class="xsp_obj"></object>
+<span m:id="l_equ_gift_select">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th class="last_02">ギフト包装の指定（有料オプション）</th>
+</tr>
+<tr>
+<td class="last_02"><span m:id="l_notEmp_wrapping_type">ラッピング（<span m:id="disp_wrapping_name">新聞紙</span>）<br /></span><br />
+<span m:id="l_notEmp_jpn_wrapping_type">熨斗（<span m:id="disp_jpn_wrapping_type">御祝</span>）</span>
+<input m:id="h_gift_div" type="hidden" name="gift_div" />
+<input m:id="h_wrapping_type" type="hidden" name="wrapping_type" />
+<input m:id="h_jpn_wrapping_type" type="hidden" name="jpn_wrapping_type" />
+</td>
+</tr>
+</table>
+</span>-->
+<!--/ ********** include:orderDetail.jsp ********** -->
+</span>
+
+</form>
+</div>
+
+
+
+</div>
+<span m:id="l_notPre_free_guide">
+<div class="r_con_box_04_in">
+<div class="memadd_cau_box_01">
+<!--<h3>注意事項</h3>-->
+<p>
+<span class="fs16">
+ご入力の内容をお確かめの上、間違いがなければ「お申込み内容確認へ」ボタンを押してください。
+</span>
+</p>
+
+</div>
+
+</div>
+</span>
+
+<!--<div class="memadd_cau_box_02">
+ご入力の内容をお確かめの上、間違いがなければ「お申し込み内容確認へ」ボタンを押してください。
+</div>-->
+
+<div class="inq_input_bt_03 clearfix">
+<div class="box_01 n_bt_re_01">
+<a m:id="h_link_cart" href="cart.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_01.png" alt="戻る" /></a>
+</div>
+<div class="box_02">
+<a m:id="a_link_submit" href="orderConfirm.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_09.png" alt="次へ" /></a>
+</div>
+
+</div>
+
+
+
+</div><!--r_con_box_03-->
+
+
+<!-- InstanceEndEditable -->
+</div><!--contents_r_02-->
+
+
+</div><!--contents-->
+
+</div><!--container-->
+
+
+
+
+
+<div id="footer02">
+<div id="footer_wrap02">
+<div class="clearfix">
+<div class="con_01 clearfix">
+<h3 id="icon_01">カテゴリから探す</h3>
+<!--<ul>
+<li><a m:id="static_link" href="#">寝具</a></li>
+<li><a m:id="static_link" href="#">健康器具</a></li>
+<li><a m:id="static_link" href="#">食品</a></li>
+<li><a m:id="static_link" href="#">旅行用品</a></li>
+</ul>
+<ul>
+<li><a m:id="static_link" href="#">インテリア</a></li>
+<li><a m:id="static_link" href="#">ファッション</a></li>
+<li><a m:id="static_link" href="#">美容用品</a></li>
+</ul>-->
+
+<span m:id="l_pre_standardCategory">
+<span m:id="l_notEmp_standardCategory_childCategories">
+<span m:id="l_ite_standardCategory">
+<span m:id="l_equ_cate_checkPeriod">
+<span m:id="icnt_increment"></span>
+<span m:id="i_ins_cate"></span>
+<object class="xsp_obj" m:id="count_sub1"></object>
+<ul class="clearfix">
+<span  m:id="l_ite_cate">
+<span m:id="l_equ_subCate_checkPeriod">
+<span m:id="icnt_increment"></span>
+<span m:id="i_ins_subCate"></span>
+<li class="fleft">
+<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html"><span m:id="span_subCate_arrow" id="arrow_1">
+<span m:id="disp_subCate_category_name">ファッション</span></span>
+</a></li>
+</span>
+ <li  m:id="dummy"><a href="goodsSearchShop_shop.html">
+          家具
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          家電
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          玩具・趣味
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          防災用品
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          本DVD
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          美容・健康
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          日用雑貨
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+          食品・飲料
+        </a></li>
+        <li m:id="dummy"><a href="goodsSearchShop_shop.html">
+         キッチン
+        </a></li>        
+</span>           
+ </ul>
+ </span></span>
+  </span></span>
+
+
+
+</div>
+
+<div class="con_02">
+<h3 id="icon_02">ココチモ一押しの商品</h3>
+<ul>
+<li><a href="/shop/c/static/features/special_index/">特集</a></li>
+</ul>
+</div>
+
+<div class="con_03">
+<h3 id="icon_03">初めての方へ</h3>
+<ul>
+<!--<li class="sp_only first "><a m:id="static_link" href="#">お知らせ一覧</a></li>-->
+<li class="wrap_l oneb"><span m:id="l_notPre_member_login_shop"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></span></li>
+<li><a href="/shop/c/static/guide/">ご利用ガイド</a></li>
+<li><a href="/shop/c/static/first/">ココチモとは</a></li>
+</ul>
+</div>
+
+<div class="con_04">
+<h3 id="icon_04">会員の方</h3>
+<ul>
+<li><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" title="ログイン">ログイン</a></div></li>
+<li><div m:id="l_pre_member_mypage_button_shop">
+<a m:id="e_link_mypage_shop" href="memberMypage.html" title="マイページ">マイページ</a></div></li>
+</ul>
+</div>
+<div class=" pc_only pc_secure">
+<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+<p>
+このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
+</p>
+</div>
+</div>
+</div><!--footer_wrap02-->
+</div><!--footer02-->
+
+
+<div id="footer03">
+<div id="footer_wrap03" class="clearfix">
+<ul class="clearfix">
+<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
+<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+<li><a href="/shop/c/static/notation/">特定商取引に関するご案内</a></li>
+<li><a href="/shop/c/static/company/">会社情報</a></li>
+<!--<li class="end"><a href="#">利用規約</a></li>-->
+</ul>
+<p class="copyright">Copyright 2013 U-CAN, Inc. All Rights Reserved</p>
+</div><!--footer_wrap03-->
+</div><!--footer03-->
+
+
+<div id="footer04" class="sp_only">
+<h2><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_tit.png" alt="" /></h2>
+<div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.png" /></div>
+<div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_02.png"  /><p><a href="/shop/c/static/fax/">FAXでのご注文方法について</a></div>
+</div><!--footer04-->
+
+<div id="footer05" class="sp_only">
+
+<div class="mt10 sp_secure clearfix">
+<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+<p>
+このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
+</p>
+</div>
+
+<p>Copyright 2013 U-CAN, Inc. All Rights Reserved</p>
+
+</div><!--footer05-->
+<!-- tracking ga -->
+<span m:id="fs_tracking_ga"></span>
+<!--/ tracking ga -->
+<!-- InstanceBeginEditable name="sitecatalyst" -->
+<span m:id="site_prop13"></span>
+<span m:id="site_products"></span>
+<!-- SiteCatalyst code version: H.26.1.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName="お客様情報入力フォーム"
+s.server=""
+s.channel="お客様情報入力フォーム"
+s.pageType=""
+s.prop1="お客様情報入力フォーム"
+s.prop2=""
+s.prop3=""
+s.prop4=""
+s.prop5=""
+s.prop13=s_prop13
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="scCheckout"
+s.products=site_products
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.eVar34=""
+s.eVar35=""
+s.eVar36=""
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+
+
+<!-- InstanceEndEditable -->
+
+<script type="text/javascript" language="javascript">
+var yahoo_retargeting_id = 'JAG00YJOZ2';
+var yahoo_retargeting_label = '';
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980914824;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+
+
+<script type="text/javascript"  
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""  
+src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+</body>
+<!-- InstanceEnd --></html>
+
