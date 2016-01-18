@@ -61,46 +61,26 @@ $(function(){
 });	
 </script>
 <style>
-.sp_on{ display:none}
-@media (max-width: 1280px)
+
 {
-.deviceSP #contents {
-    padding-top: 50%;
-}	
-.add_p {display:none !important}
-#pan-navi{display:none !important}	
-.header_cate{display:none}
 .add_p {
   top:140px !important;
 }
+}
+/*sp_land*/
+@media (max-width: 480px) {
 #pan-navi{
 	margin:10px 0 0 0 !important;
 }
-.sp_on{
-	clear:both;
-    display: block;
-    text-align: left;
-	font-size:12px;
-	float: none !important;
-	}
-.sp_on h1{
-	font-size:12px !important;
-	color:#121F8B;
-	}		
-.wrap_main {
-    margin: 0;
-    padding-top:0!important;
 }
-/*#contents {padding-top:5% !important}*/
+/*sp_port*/
+@media (max-width:320px) {
+#pan-navi{
+	margin:20px 0 0 0 !important;
 }
-@media (max-width:640px)
-{
-.wrap_main{margin-top:0!important}
-.sp_on{margin-top:16%;}
+.add_p {
+  top:110px !important;
 }
-@media (max-width:320px)
-{
-#header_search{padding:2% 0;}	
 }
 .mainimages img{display:none;}
 .slick-slide, .slick-cloned{
@@ -431,7 +411,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="category_code" />
 	<input type="hidden" name="goods_url" />
 </form>
-
 <div id="contents">
 		<div id="pan-navi" >
 		<ul class="clearfix">
@@ -439,15 +418,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
 		</ul>
 		</div>
-<div class="sp_on">
-<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
-	<div>
-	<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-	</ul>
-	</div>
-</div>
+<br clear="all">
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.min.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
 <!--[if lt IE 9]>
@@ -468,7 +439,7 @@ function initCorners() {
 <link rel="stylesheet" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.css" type="text/css"/></link>
 
 <script type="text/javascript" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.js"></script>
-<br clear="all" />
+
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
     	<p>
@@ -486,7 +457,7 @@ function initCorners() {
 			</div>
                         
 			<div>
-			<a href="/shop/lifestyle/category/001001012070/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
+			<a href="/shop/lifestyle/static/blanket/#sec04" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_15.jpg" alt="シルケボー" ></a>
 			</div>
 			<div>
 			<a href="/shop/lifestyle/static/blanket/#sec06" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_17.jpg" alt="AVOCAウール" ></a>
@@ -499,7 +470,6 @@ function initCorners() {
 		</div>
 	</div>
 </div>
-
 <div class="wrap_main wrap_sp">
 	<div class="main" id="wmainimages">
 		<div class="mainimagessp">
@@ -664,15 +634,18 @@ function initCorners() {
 			</a>
 			</li>
 			<li class="each_height_adjust03">
-			<a href="/shop/lifestyle/static/cocoblog/160108/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_turuya.jpg" alt="スローとブランケットの心地よい関係">
+			<a href="/shop/lifestyle/e/SDVU33/c/001001009014/">
+			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_check.jpg" alt="AVOCA チェックスロー・ラージ">
 				<div class="text_osusume">
-<p class="o_ttl">スローとブランケットの<br />
-心地いい関係♪</p>
-<p class="o_txt">暮らしと人、旅などをテーマとした執筆を行っている、
-  つるやももこさんのブランケットエッセイ！
-  ブランケットとスローの心地いい関係を知れば
-  寒さも愛おしくなってしまうかも(^-^)</p>
+				<p class="o_ttl">色鮮やかな発色が美しい<br />
+				タータンチェックの<br />
+				ブランケット</p>
+				<p class="o_txt">
+				上質なラムウールを使用した<br />
+				AVOCAのチェックスロー・<br />
+				ラージは長く使っていただける<br />
+				一枚です。
+				</p>
 				</div>
 			</a>
 			</li>
@@ -866,29 +839,43 @@ function initCorners() {
 		<!--▲▲▲RANKING▲▲▲-->        
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2 class="webf">アンブラ特集</h2>
+		<h2 class="webf">北欧湯たんぽ特集</h2>
 		<ul class="rankinglist">
-		<li><a href="/shop/lifestyle/e/DVG65/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um1.jpg" alt="">
-		</div>
-		<p class="txt13"><b>ロゼッタ<br>クリップリング</b></p>
-		<p class="txt13">\1,296(税込)</p></a>
+		<li><a href="/shop/lifestyle/e/SDVX17/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/yuu1.jpg" alt="">
+			</div>
+			<p class="txt13"><b>ロロスツィード<br>湯たんぽ</b></p>
+			<p class="txt13">\10,800(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/DVG9/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um2.jpg" alt="">
-		</div>
-		<p class="txt13"><b>オット<br>センサーポンプ</b></p>
-		<p class="txt13">\4,536(税込)</p></a>
-		</li> 
-		<li><a href="/shop/lifestyle/e/DVG13/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um3.jpg" alt="">
-		</div>
-		<p class="txt13"><b>ハブ<br>ラダー</b></p>
-		<p class="txt13">\16,200(税込)</p></a>
-		</li>                                   		                                     
+		<li><a href="/shop/lifestyle/e/SDVS37/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/yuu2.jpg" alt="">
+			</div>
+			<p class="txt13"><b>LAPUANKANKURIT<br>（ラプアンカンクリ）<br>ＭＩＳＴＥＬＩ湯たんぽ</b></p>
+			<p class="txt13">\6,804(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVX79/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/yuu3.jpg" alt="">
+			</div>
+			<p class="txt13"><b>ＦＡＳＨＹラビット<br>湯たんぽ</b></p>
+			<p class="txt13">\3,456(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVX77/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/yuu4.jpg" alt="">
+			</div>
+			<p class="txt13"><b>ＨＵＧＯ<br>ＦＲＯＳＣＨエコ湯たんぽ<br>ノルウェー</b></p>
+			<p class="txt13">\5,184(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/SDVS31/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/yuu5.jpg" alt="">
+			</div>
+			<p class="txt13"><b>LAPUANKANKURIT<br>（ラプアンカンクリ）<br>ＤＵＯ湯たんぽ</b></p>
+			<p class="txt13">\6,804(税込)</p></a>
+		</li>                                		                                     
 		</ul>
 		<br clear="all">
 		</div>
@@ -1411,95 +1398,20 @@ function initCorners() {
 			<li><a href="/shop/lifestyle/static/cocoblog/160113/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160113-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">お正月明けのお腹も休まる白菜スープをつくってみよう。</p></a>
-			</li> 
- 		<li><a href="/shop/lifestyle/static/cocoblog/160112/">
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/160112/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160112-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">心地いいぬくもり。しかもエコ！湯たんぽを上手に活用しよう。</p></a>
 			</li>
 			
-            
- 			<li><a href="/shop/lifestyle/static/cocoblog/160108/">
+			<li><a href="/shop/lifestyle/static/cocoblog/160108/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160108-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">スローとブランケットの心地よい関係♪</p></a>
 			</li>
-                       
 			<li><a href="/shop/lifestyle/static/cocoblog/151228/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151228-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">年末年始のお料理に大活躍！ダシとりはコーヒードリッパーで♪</p></a>
 			</li>
-<!--			<li><a href="/shop/lifestyle/static/cocoblog/151223/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151223-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">毎日の朝食前に飲む習慣を！鉄瓶で沸かした“お白湯”。</p></a>
-			</li>
- 			<li><a href="/shop/lifestyle/static/cocoblog/151209/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151209-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">家族の幸せを願いながら…クリスマスには北欧風ジンジャークッキーをつくってみよう。</p></a>
-			</li>            
-			<li><a href="/shop/lifestyle/static/cocoblog/151126/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151126-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">北欧でも日本でも大人気！シナモンロールをつくってみよう。</p></a>
-			</li>
-                       
-			<li><a href="/shop/lifestyle/static/cocoblog/151117/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151117-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">いつものお茶を、まろやかにアレンジ♪いろんな“お茶ラテ”にトライしてみよう。</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/151111/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151111-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">朝食の新レパートリーに！お好みの野菜をふんだんに入れた“シャクシュカ”を！</p></a>
-			</li>
-
-			<li><a href="/shop/lifestyle/static/cocoblog/151013/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151013-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">お好みのスパイスを効かせて・・・寒い夜は、ホットドリンク“グロッギ”を。</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/151006/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151006-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">便利なミニフライパンを、フル活用！北欧風レシピにもトライしてみよう。</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/150929/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150929-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">“私の理想”を見事にクリアした逸品！
-DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/150908/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150908-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">育った環境、日々の観察力が生み出す、世界でたったひとつのデザイン。</p></a>
-			</li>
-
-		<li><a href="/shop/lifestyle/static/cocoblog/150904/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150904-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">心豊かに暮らせる国・フィンランドの家庭料理風に、魚を味わってみよう。</p></a>
-			</li>
-            
-    	   			<li><a href="/shop/lifestyle/static/cocoblog/150902/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150902-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">心もふわっと春巻きの皮でベリータル</p></a>
-			</li>
- 			<li><a href="/shop/lifestyle/static/cocoblog/150827/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150827-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">使う人を想う気持ちから生まれた、
-使い心地のよさ。見た目の心地よさ。</p></a>
-			</li>           
-             
-              <li><a href="/shop/lifestyle/static/cocoblog/150824/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150824-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">今までのクリームと変わらないおいしさ。
-豆腐クリームで、いろんなレシピをヘルシーに。</p></a>
-			</li>           
-        			<li><a href="/shop/lifestyle/static/cocoblog/150821/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150821-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">金魚がたくさん育つ街は、たくさんの水と緑に恵まれた街。</p></a>
-			</li>
-		<li><a href="/shop/lifestyle/static/cocoblog/150818/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150818-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">ホットのような香り＆味わいのアイスコーヒーをつくるコツ。</p></a>
-			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/150812/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150812-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">ヘルシー！紫キャベツのコールスロー風</p></a>
-			</li> -->
-
 			</ul>
 		<br clear="all">
 		<a href="/shop/lifestyle/static/cocoblog/" class="wrap_sp alist">ココチモブログへ</a>
