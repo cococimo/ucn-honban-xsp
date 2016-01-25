@@ -66,35 +66,35 @@ return false;
 <div id="header_wrap" class="clearfix">
 <!-- InstanceBeginEditable name="head_h1" -->
 <style>
-/*sp_land_wide*/
-@media (max-width: 510px)
+@media (max-width: 1280px)
 {
-.add_p_st2 {
-  top:0px !important;
-  left:0px !important;
-  position:absolute !important
-}
-}
-/*sp_land*/
-@media (max-width: 480px) {
-#pan-navi{
-	margin:0 !important;
+.deviceSP #contents {
+    padding-top:40%;
 }	
 .add_p_st2 {
-  top:190px !important;
-  left:0px !important; 
-  position:absolute !important 
+	clear:both !important;
+    position: relative;
+    left: auto;
+    top: 0;
+    margin:0;
+    padding: 0;
+    font-size: 12px;
+    color: #121F8B;
+    text-align: left;
+    line-height: 16px;
+    z-index: 9999 !important;
 }
+.add_paa{margin-top:0 !important}
+#pan-navi { display:block !important}
+.header_cate{display:none}
 }
-/*sp_port*/
-@media (max-width:320px) {
-#pan-navi{
-	margin:0 !important;
+@media (max-width: 768px){
+#pan-navi {margin:0 0 5% 0 !important}
 }
-.add_p_st2 {
-  top:120px !important;
-}
-}
+@media (max-width: 480px){
+.deviceSP #contents {
+    padding-top:50%;
+}}
 </style>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -319,6 +319,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </ul>
  </div>
 </span>
+<br />
 <div id="contents_r" class="add_paa">
 <span m:id="str_file">静的ファイル表示領域</span>
 </div>

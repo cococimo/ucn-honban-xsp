@@ -61,27 +61,46 @@ $(function(){
 });	
 </script>
 <style>
-/*sp_land_wide*/
-@media (max-width: 510px)
+.sp_on{ display:none}
+@media (max-width: 1280px)
 {
+.deviceSP #contents {
+    padding-top: 50%;
+}	
+.add_p {display:none !important}
+#pan-navi{display:none !important}	
+.header_cate{display:none}
 .add_p {
   top:140px !important;
 }
-}
-/*sp_land*/
-@media (max-width: 480px) {
 #pan-navi{
 	margin:10px 0 0 0 !important;
 }
+.sp_on{
+	clear:both;
+    display: block;
+    text-align: left;
+	font-size:12px;
+	float: none !important;
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}		
+.wrap_main {
+    margin: 0;
+    padding-top:0!important;
 }
-/*sp_port*/
-@media (max-width:320px) {
-#pan-navi{
-	margin:20px 0 0 0 !important;
+/*#contents {padding-top:5% !important}*/
 }
-.add_p {
-  top:110px !important;
+@media (max-width:640px)
+{
+.wrap_main{margin-top:0!important}
+.sp_on{margin-top:16%;}
 }
+@media (max-width:320px)
+{
+#header_search{padding:2% 0;}	
 }
 .mainimages img{display:none;}
 .slick-slide, .slick-cloned{
@@ -412,6 +431,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="category_code" />
 	<input type="hidden" name="goods_url" />
 </form>
+
 <div id="contents">
 		<div id="pan-navi" >
 		<ul class="clearfix">
@@ -419,7 +439,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
 		</ul>
 		</div>
-<br clear="all">
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+	<div>
+	<ul class="clearfix">
+		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+	</ul>
+	</div>
+</div>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.min.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
 <!--[if lt IE 9]>
@@ -440,7 +468,7 @@ function initCorners() {
 <link rel="stylesheet" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.css" type="text/css"/></link>
 
 <script type="text/javascript" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.js"></script>
-
+<br clear="all" />
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
     	<p>
@@ -452,49 +480,48 @@ function initCorners() {
 			<!--<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>-->
 			<a href="/shop/lifestyle/static/blanket/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_13.jpg" alt="ブランケット特集" ></a>            
 			</div>
-			
+            
 			<div>
-			<a href="/shop/lifestyle/category/001001012035/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_08.jpg" alt="ダンスク" ></a>
-			</div>
-
-			<div>
-			<a href="/shop/lifestyle/category/001001012021/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_02.jpg" alt="ムーミン童話限定カバー版ボックス" ></a>
+			<a href="/shop/lifestyle/static/blanket/#sec03" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
 			</div>
                         
-            <div>
-			<a href="/shop/lifestyle/category/001001012052/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_09.jpg" alt="ムーミングッズ" ></a>
-			</div>
-            
 			<div>
-			<a href="/shop/lifestyle/category/001001012054/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_12.jpg" alt="Lisa Larson（リサ・ラーソン）" ></a>
+			<a href="/shop/lifestyle/category/001001012070/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
+			</div>
+			<div>
+			<a href="/shop/lifestyle/category/001001012030/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_21.jpg" alt="アンブラ" ></a>
 			</div>            
-            
+
+            <div>
+			<a href="/shop/lifestyle/category/001001012068/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_19.jpg" alt="Lahtiset（ラハティセット）" ></a>
+			</div>
+                        
 		</div>
 	</div>
 </div>
+
 <div class="wrap_main wrap_sp">
 	<div class="main" id="wmainimages">
 		<div class="mainimagessp">
 
 			<div>
-			<a href="/shop/lifestyle/static/blanket/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_13.jpg" alt="ブランケット特集"></a>
+			<!--<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>-->
+			<a href="/shop/lifestyle/static/blanket/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_13.jpg" alt="ブランケット特集" ></a>            
 			</div>
 			
 			<div>
-			<a href="http://www.cococimo.jp/shop/lifestyle/category/001001012035/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_08.jpg" alt="ダンスク"></a>
+			<a href="/shop/lifestyle/static/blanket/#sec03"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
 			</div>
-
+ 			<div>
+			<a href="/shop/lifestyle/category/001001012030/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
+			</div>
 			<div>
-			<a href="/shop/lifestyle/category/001001012021/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_02.jpg" alt="ムーミン童話限定カバー版ボックス"></a>
-			</div>
-                        
+			<a href="/shop/lifestyle/category/001001012030/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_21.jpg" alt="アンブラ" ></a>
+			</div>                                   
             <div>
-			<a href="/shop/lifestyle/category/001001012052/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_09.jpg" alt="ムーミングッズ"></a>
+			<a href="/shop/lifestyle/category/001001012068/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_19.jpg" alt="Lahtiset（ラハティセット）" ></a>
 			</div>
-            
-			<div>
-			<a href="/shop/lifestyle/category/001001012054/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/SP_12.jpg" alt="Lisa Larson（リサ・ラーソン）"></a>
-			</div>            
+             
             
 		</div>
 	</div>
@@ -607,31 +634,21 @@ function initCorners() {
 		<div class="wrap_osusume">
 			<ul>
 			<li class="each_height_adjust03">
-			<a href="/shop/lifestyle/e/SDVR78/c/001001012057/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_colona.jpg" alt="CORONA ブランケット">
+			<a href="/shop/lifestyle/e/SDVX17/c/001001009015/">
+			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_lolo.jpg" alt="湯たんぽ・アイスビヨン">
 				<div class="text_osusume">
-				<p class="o_ttl">身も心も温めてくれる<br>
-				羊毛のブランケット。</p>
-				<p class="o_txt">
-				ラプアン カンクリの<br />
-				CORONAブランケットは<br />
-				北欧で丁寧に作られた<br />
-				上質なアイテムです。
+				<p class="o_ttl">格別の暖かさが<br />
+人気のロロスツイードの湯たんぽ</p>
+				<p class="o_txt">目の詰まったあたたかなウール使用の、思わず抱きしめたくなる可愛らしいシロクマ柄の湯たんぽです。
 				</p>
 				</div>
 			</a>
 			<li class="each_height_adjust03">
-			<a href="/shop/lifestyle/e/SDVX34/c/001001009014/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_forest.jpg" alt="ロロスツィード フォレスト">
+			<a href="/shop/lifestyle/e/SDHA1A/c/001001012057/">
+			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/xss1.jpg" alt="UNIポケットショール">
 				<div class="text_osusume">
-				<p class="o_ttl">イイノナホが見た<br>
-				北欧の大自然。</p>
-				<p class="o_txt">
-				ピュアニューウールの<br />
-				ブランケットに北欧の木々が<br />
-				描かれたロロスツィードの<br />
-				“フォレスト”。イイノナホ渾身のデザイン。
-				</p>
+				<p class="o_ttl">選べる10色！100％天然ウールのUNIポケットショール</p>
+				<p class="o_txt">豊富なカラーとシンプルデザインで人気のラプアン カンクリ　ポケット付きショール。<br />あなたはどの色にしますか？</p>
 				</div>
 			</a>
 			</li>
@@ -639,30 +656,23 @@ function initCorners() {
 			<a href="/shop/lifestyle/e/SDVZ30/c/001001012058/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_danaja.jpg" alt="シルケボー ダナーラ">
 				<div class="text_osusume">
-				<p class="o_ttl">スカンジナビアウールで<br>
-				織られた北欧ブランケット</p>
+				<p class="o_ttl">ゴットランドウールであったか！お手頃価格の北欧ブランケット</p>
 				<p class="o_txt">
-				シルケボーのダナーラは<br />
-				毛足が長くモヘアのような<br />
-				やわらかな風合い。<br />
-				やさしい印象のアイテムです。
+				初めての北欧ブランケットにおススメ！シルケボーのダナーラは毛足が長くやわらかな風合い。12の柄からお好きなものをお選びください！
 				</p>
 				</div>
 			</a>
 			</li>
 			<li class="each_height_adjust03">
-			<a href="/shop/lifestyle/e/SDVU33/c/001001009014/">
-			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_check.jpg" alt="AVOCA チェックスロー・ラージ">
+			<a href="/shop/lifestyle/static/cocoblog/160108/">
+			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/osusume/pic_turuya.jpg" alt="スローとブランケットの心地よい関係">
 				<div class="text_osusume">
-				<p class="o_ttl">色鮮やかな発色が美しい<br />
-				タータンチェックの<br />
-				ブランケット</p>
-				<p class="o_txt">
-				上質なラムウールを使用した<br />
-				AVOCAのチェックスロー・<br />
-				ラージは長く使っていただける<br />
-				一枚です。
-				</p>
+<p class="o_ttl">スローとブランケットの<br />
+心地いい関係♪</p>
+<p class="o_txt">暮らしと人、旅などをテーマとした執筆を行っている、
+  つるやももこさんのブランケットエッセイ！
+  ブランケットとスローの心地いい関係を知れば
+  寒さも愛おしくなってしまうかも(^-^)</p>
 				</div>
 			</a>
 			</li>
@@ -768,18 +778,18 @@ function initCorners() {
 		<div class="wrap_specialcontents">
 		<h2 class="webf">ラプアン・カンクリ特集</h2>
 		<ul class="rankinglist heightLineParent">
-		<li><a href="/shop/lifestyle/e/SDVR84/c/001001009014/">
+		<li><a href="/shop/lifestyle/e/SDVS04/c/001001009014/">
 			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/lu1.jpg" alt="">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/luu1.jpg" alt="">
 			</div>
-			<p class="txt13"><b>ＩＩＤＡブランケット</b></p>
-			<p class="txt13">\17,280(税込)</p></a>
+			<p class="txt13"><b>KOIRA ブランケット（130x180）</b></p>
+			<p class="txt13">\20,520 (税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVS23/c/001001004005/">
+		<li><a href="/shop/lifestyle/e/SDVS27/c/001001004005/">
 			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/lu2.jpg" alt="">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/luu2.jpg" alt="">
 			</div>
-			<p class="txt13"><b>ＰＡＬＡＰＥＬＩポケットショール</b></p>
+			<p class="txt13"><b>ＩＩＤＡポケットショール</b></p>
 			<p class="txt13">\12,960 (税込)</p></a>
 		</li>
 		<li><a href="/shop/lifestyle/e/SDVR94/c/001001012057/">
@@ -806,68 +816,111 @@ function initCorners() {
 		</ul>
 		<br clear="all">
 		</div>
+		<!--▲▲▲RANKING▲▲▲-->         
+		<!--▼▼▼RANKING▼▼▼-->
+		<div class="wrap_specialcontents">
+		<h2 class="webf">フレディ・レック特集</h2>
+		<ul class="rankinglist heightLineParent">
+<li><a href="/shop/lifestyle/e/DVY42/c/001001012065/">
+	<div class="rankimg">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs1.jpg" alt="フレディ・アイロン台（スタンドタイプ）">
+	</div>
+	<p class="txt13"><b>フレディ<br />
+アイロン台（スタンドタイプ）</b></p>
+	<p class="txt13">\16,200(税込)</p></a>
+</li>
+<li><a href="/shop/lifestyle/e/DVY36/c/001001012065/">
+	<div class="rankimg">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs2.jpg" alt="フレディ・レック　トートバッグ">
+	</div>
+	<p class="txt13"><b>フレディ・レック　トートバッグ</b></p>
+	<p class="txt13">\2,592(税込)</p></a>
+</li>
+<li><a href="/shop/lifestyle/e/DVY35/c/001001012065/">
+	<div class="rankimg">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs3.jpg" alt="フレディ・レック　バルコニーサンダル">
+	</div>
+	<p class="txt13"><b>フレディ・レック<br />
+バルコニーサンダル</b></p>
+	<p class="txt13">\2,376(税込)</p></a>
+</li>
+		<li><a href="/shop/lifestyle/e/DVY37/c/001001012065/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs4.jpg" alt="フレディ・レック　マグカップ">
+			</div>
+			<p class="txt13"><b>フレディ・レック<br />
+マグカップ</b></p>
+			<p class="txt13">\1,296 (税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVY43/c/001001012065/">
+			<div class="rankimg">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs5.jpg" alt="フレディ・ランドリーバッグ">
+			</div>
+			<p class="txt13"><b>フレディ・ランドリーバッグ</b></p>
+			<p class="txt13">\2,916 (税込)</p></a>
+		</li>
+		                                                                                             		                               
+		</ul>
+		<br clear="all">
+		</div>
 		<!--▲▲▲RANKING▲▲▲-->        
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2 class="webf">トートバッグ特集</h2>
+		<h2 class="webf">アンブラ特集</h2>
 		<ul class="rankinglist">
-
-		<li><a href="/shop/lifestyle/e/SDVI65/c/001001004001/">
-			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/dvi65.jpg" alt="">
-			</div>
-			<p class="txt13"><b>AVOCAコットントートバッグ</b></p>
-			<p class="txt13">\6,480 (税込)</p></a>
+		<li><a href="/shop/lifestyle/e/DVG65/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um1.jpg" alt="">
+		</div>
+		<p class="txt13"><b>ロゼッタ クリップリング</b></p>
+		<p class="txt13">\1,296(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVV29/c/001001004001/">
-			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/dvv29.jpg" alt="">
-			</div>
-			<p class="txt13"><b>ＬＯＴＴＡトートバッグ（Ｍ）</b></p>
-			<p class="txt13">\2,592(税込)</p></a>
+		<li><a href="/shop/lifestyle/e/DVG9/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um2.jpg" alt="">
+		</div>
+		<p class="txt13"><b>オット センサーポンプ</b></p>
+		<p class="txt13">\4,536(税込)</p></a>
+		</li> 
+		<li><a href="/shop/lifestyle/e/DVG13/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um3.jpg" alt="">
+		</div>
+		<p class="txt13"><b>ハブ ラダー</b></p>
+		<p class="txt13">\16,200(税込)</p></a>
 		</li>
-        
-		<li><a href="/shop/lifestyle/e/SDVI74/c/001001012021/">
-			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/dvi74.jpg" alt="">
-			</div>
-			<p class="txt13"><b>AVOCAキャンバスミニトートバッグ</b></p>
-			<p class="txt13">\9,720 (税込)</p></a>
-		</li>        
-
-		<li><a href="/shop/lifestyle/e/SDVW64/c/001001004001/">
-			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/dvw64.jpg" alt="">
-			</div>
-			<p class="txt13"><b>鈴木マサル MOOMIN TORIBUTE WORKS トートバッグ</b></p>
-			<p class="txt13">\4,752 (税込)</p></a>
+		<li><a href="/shop/lifestyle/e/DVGA/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um4.jpg" alt="">
+		</div>
+		<p class="txt13"><b>ウッドロウカン</b></p>
+		<p class="txt13">\3,240(税込)</p></a>
 		</li>
-        
-        		<li><a href="/shop/lifestyle/e/SDVW21/c/001001012015/">
-			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/dvw21.jpg" alt="">
-			</div>
-			<p class="txt13"><b>KLIPPAN（クリッパン）フェルトバッグ　ムーミン</b></p>
-			<p class="txt13">\6,480 (税込)</p></a>
-		</li>                                                  
+		<li><a href="/shop/lifestyle/e/DVG57/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/um5.jpg" alt="">
+		</div>
+		<p class="txt13"><b>アクアラ バスタブキャディ</b></p>
+		<p class="txt13">\7,020(税込)</p></a>
+		</li>                                                     		                                     
 		</ul>
 		<br clear="all">
 		</div>
 		<!--▲▲▲RANKING▲▲▲-->        
 		<!--▼▼▼STAFF RECOMMEND▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2>STAFF RECOMMEND <span>スタッフのおすすめブランケット</span></h2>
+		<h2>STAFF RECOMMEND <span>スタッフのおすすめウールアイテム</span></h2>
 		<ul class="stafflist">
-		<li><a href="/shop/lifestyle/e/SDVX15/c/001001009014/">
+		<li><a href="/shop/lifestyle/e/SDVU81/c/001001004001/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pics01.jpg" alt="エルク９０×１３０">
-			<p class="txt13 mt10">世界遺産の村で作られる、<br>
-			高品質のブランケット。<br />
-			[エルク９０×１３０]</p></a>
+			<p class="txt13 mt10">秋冬シーズンにオススメの<br />
+			  ウール100%トートバッグ<br />
+			ラハティセット ＡＫＩ　ＣＨＯＫＬＡＴ フェルトトートバッグ</p></a>
 		</li>
 		<li><a href="/shop/lifestyle/e/SDVR84/c/001001012057/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pics02.jpg" alt="ＩＩＤＡブランケット">
 			<p class="txt13 mt10">ＩＩＤＡブランケットは<br>
-			印象的なパターンデザインとジャガード織が印象的なウールブランケット</p></a>
+			特徴のあるパターンデザインとジャガード織が印象的なウールブランケット</p></a>
 		</li>
 		<li><a href="/shop/lifestyle/e/SDVZ46/c/001001012058/">
 			<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/staff/pics03.jpg" alt="イダ　１３０×１９０">
@@ -1177,7 +1230,18 @@ function initCorners() {
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic54.gif" alt="VegieBAG（ベジバッグ）"></a>
                             <a href="/shop/lifestyle/category/001001012065/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic55.gif" alt=" Freddy Leck（フレディ・レック）"></a>                            
-					</div>               
+		</div>       
+                        		<div><a href="/shop/lifestyle/category/001001012066/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic56.gif" alt="fashy（ファシー）"></a>
+                            <a href="/shop/lifestyle/category/001001012068/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic57.gif" alt=" Lahtiset（ラハティセット）"></a></div>                                   
+                         		<div><a href="/shop/lifestyle/category/001001012067/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic58.gif" alt="HUGO FROSCH（フーゴフロッシュ）"></a>
+                            <a href="/shop/lifestyle/category/001001012069/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic59.gif" alt=" Biella Fabrics（ピエラ・ファブリック）"></a></div>  
+                          		<div><a href="/shop/lifestyle/category/001001012070/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic60.gif" alt=" iittala（イッタラ）"></a></div>  
+ 
                                      
 				</div>
 			</div>
@@ -1332,7 +1396,19 @@ function initCorners() {
 					</div>
                         		<div><a href="/shop/lifestyle/category/001001012064/list/">
 							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic54.gif" alt="VegieBAG（ベジバッグ）"></a>
-					</div>     
+                            <a href="/shop/lifestyle/category/001001012065/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic55.gif" alt=" Freddy Leck（フレディ・レック）"></a>
+		</div>
+                        		<div><a href="/shop/lifestyle/category/001001012066/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic56.gif" alt="fashy（ファシー）"></a>
+                            <a href="/shop/lifestyle/category/001001012068/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic57.gif" alt=" Lahtiset（ラハティセット）"></a></div>     
+                         		<div><a href="/shop/lifestyle/category/001001012067/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic58.gif" alt="HUGO FROSCH（フーゴフロッシュ）"></a>
+                            <a href="/shop/lifestyle/category/001001012069/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic59.gif" alt=" Biella Fabrics（ピエラ・ファブリック）"></a></div>                              
+                          		<div><a href="/shop/lifestyle/category/001001012070/list/">
+							<img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/brand/pic60.gif" alt=" iittala（イッタラ）"></a></div> 
                                                                                  
 				</div>
 			</div>
@@ -1346,14 +1422,47 @@ function initCorners() {
 			<div class="wrap_right wrap_pc"><a href="/shop/lifestyle/static/cocoblog/" class="a_line">&gt; ココチモブログ</a></div>
 			<div class="blogclear"><br clear="all"></div>
 			<ul class="bloglist">
+			<li><a href="/shop/lifestyle/static/cocoblog/160113/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160113-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">お正月明けのお腹も休まる白菜スープをつくってみよう。</p></a>
+			</li> 
+ 		<li><a href="/shop/lifestyle/static/cocoblog/160112/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160112-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">心地いいぬくもり。しかもエコ！湯たんぽを上手に活用しよう。</p></a>
+			</li>
+			
+            
+ 			<li><a href="/shop/lifestyle/static/cocoblog/160108/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160108-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">スローとブランケットの心地よい関係♪</p></a>
+			</li>
+                       
+			<li><a href="/shop/lifestyle/static/cocoblog/151228/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151228-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">年末年始のお料理に大活躍！ダシとりはコーヒードリッパーで♪</p></a>
+			</li>
+<!--			<li><a href="/shop/lifestyle/static/cocoblog/151223/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151223-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">毎日の朝食前に飲む習慣を！鉄瓶で沸かした“お白湯”。</p></a>
+			</li>
+ 			<li><a href="/shop/lifestyle/static/cocoblog/151209/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151209-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">家族の幸せを願いながら…クリスマスには北欧風ジンジャークッキーをつくってみよう。</p></a>
+			</li>            
+			<li><a href="/shop/lifestyle/static/cocoblog/151126/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151126-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">北欧でも日本でも大人気！シナモンロールをつくってみよう。</p></a>
+			</li>
+                       
+			<li><a href="/shop/lifestyle/static/cocoblog/151117/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151117-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">いつものお茶を、まろやかにアレンジ♪いろんな“お茶ラテ”にトライしてみよう。</p></a>
+			</li>
 			<li><a href="/shop/lifestyle/static/cocoblog/151111/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151111-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">朝食の新レパートリーに！お好みの野菜をふんだんに入れた“シャクシュカ”を！</p></a>
 			</li>
-			<li><a href="/shop/lifestyle/static/cocoblog/151106/">
-				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151106-01ss.jpg" alt="ココチモブログ" >
-				<p class="txt13 mt10">ミートボールを、スウェーデンの家庭料理のように味わってみよう。</p></a>
-			</li>
+
 			<li><a href="/shop/lifestyle/static/cocoblog/151013/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151013-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">お好みのスパイスを効かせて・・・寒い夜は、ホットドリンク“グロッギ”を。</p></a>
@@ -1362,6 +1471,49 @@ function initCorners() {
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20151006-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">便利なミニフライパンを、フル活用！北欧風レシピにもトライしてみよう。</p></a>
 			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/150929/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150929-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">“私の理想”を見事にクリアした逸品！
+DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/150908/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150908-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">育った環境、日々の観察力が生み出す、世界でたったひとつのデザイン。</p></a>
+			</li>
+
+		<li><a href="/shop/lifestyle/static/cocoblog/150904/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150904-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">心豊かに暮らせる国・フィンランドの家庭料理風に、魚を味わってみよう。</p></a>
+			</li>
+            
+    	   			<li><a href="/shop/lifestyle/static/cocoblog/150902/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150902-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">心もふわっと春巻きの皮でベリータル</p></a>
+			</li>
+ 			<li><a href="/shop/lifestyle/static/cocoblog/150827/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150827-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">使う人を想う気持ちから生まれた、
+使い心地のよさ。見た目の心地よさ。</p></a>
+			</li>           
+             
+              <li><a href="/shop/lifestyle/static/cocoblog/150824/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150824-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">今までのクリームと変わらないおいしさ。
+豆腐クリームで、いろんなレシピをヘルシーに。</p></a>
+			</li>           
+        			<li><a href="/shop/lifestyle/static/cocoblog/150821/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150821-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">金魚がたくさん育つ街は、たくさんの水と緑に恵まれた街。</p></a>
+			</li>
+		<li><a href="/shop/lifestyle/static/cocoblog/150818/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150818-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">ホットのような香り＆味わいのアイスコーヒーをつくるコツ。</p></a>
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/150812/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20150812-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">ヘルシー！紫キャベツのコールスロー風</p></a>
+			</li> -->
+
 			</ul>
 		<br clear="all">
 		<a href="/shop/lifestyle/static/cocoblog/" class="wrap_sp alist">ココチモブログへ</a>
@@ -1582,6 +1734,7 @@ function initCorners() {
 					<ul>
 					<li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
 					<li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
+					<li><a href="/shop/lifestyle/static/kanren/" style="opacity: 1;">関連サイト</a></li>					
 					<li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
 					<li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>
 					<li><a href="/shop/lifestyle/static/protection/" style="opacity: 1;">個人情報保護方針</a></li>

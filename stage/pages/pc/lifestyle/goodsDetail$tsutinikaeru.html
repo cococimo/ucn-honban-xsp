@@ -69,39 +69,29 @@
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
 <style>
-@media (max-width: 510px)
+.sp_on{ display:none}
+@media (max-width: 1280px)
 {
-	
-.add_p {
-
-  top:140px !important;
-
+.deviceSP #content {
+    padding-top: 50% !important;
 }
-
+.add_p{display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;
+	text-align:left
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left;
+	}	
+.header_cate{display:none}
+.pank li{float:left}
 }
-
-@media (max-width: 480px) {
-
-#pan-navi{
-	margin:150px 0 0 0 !important;
-}
-
-}
-/*sp_port*/
-@media (max-width:320px) {
-
-#pan-navi{
-	margin:70px 0 0 0 !important;
-}
-
-.add_p {
-
-  top:110px !important;
-
-}
-
-}
-</style>	
+@media (max-width: 640px){.wrap_pan{display:none !important}}
+</style>		
     <script >
     /*
       jQuery(function($){
@@ -575,7 +565,7 @@ $(window).on('load resize', function(){
 	<input type="hidden" name="goods_url" />
 	<input type="hidden" name="ext_goods_sku_code" />
 </form>
-<div id="content">
+
   <!-- メインコンテンツ -->
   <div id="content_wrap">
 
@@ -611,13 +601,10 @@ $(window).on('load resize', function(){
 					<object class="xsp_obj" m:id="b_var_order_num3"></object>
 				</span>
 			</span>
-			
-
 
 			<link href="contents/shop/00000003/common_sp/common_s_11/style.css" rel="stylesheet" type="text/css" media="all">
 			<div class="wrap_pan" style="padding-top:110px!important; clear:both">
 <div id="pan-navi">
-
   <ul class="clearfix">
     <li><a m:id="pankuzu_top_link" href="http://www.cococimo.jp/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
     <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
@@ -625,6 +612,16 @@ $(window).on('load resize', function(){
 </div>
 
 </div>
+
+<div id="content">
+
+  	<div class="sp_on">
+		<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+		<ul class="clearfix pank">
+		<li><a m:id="pankuzu_top_link" href="http://www.cococimo.jp/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+		<li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+		</ul>
+	</div>
 
 	  		<!-- インクルード領域 -->
 			<span m:id="html_include1">外部HTML1 表示領域</span>

@@ -24,7 +24,27 @@
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
+<style>
+.sp_on{ display:none}
+@media (max-width: 1280px)
+{
+.add_p{display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;
+	text-align:left
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left;
+	}	
+.header_cate{display:none}
+.pank li{float:left}
 
+}
+</style>
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/yuga.js"></script>
@@ -54,77 +74,10 @@
 				$('.gsearchShop').submit();
 					return false;
 				});
-				
-				
-				
-				
-
 			});
 		</script>
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/side_menu.css" type="text/css" media="all" />
 
-
-		
-<script type="text/javascript">
-  $(function() {
- 
-    var galleries = $('.ad-gallery').adGallery();
- 
-    galleries[0].addAnimation('wild',
-      function(img_container, direction, desc) {
-        var current_left = parseInt(img_container.css('left'), 10);
-        var current_top = parseInt(img_container.css('top'), 10);
-        if(direction == 'left') {
-          var old_image_left = '-'+ this.image_wrapper_width +'px';
-          img_container.css('left',this.image_wrapper_width +'px');
-          var old_image_top = '-'+ this.image_wrapper_height +'px';
-          img_container.css('top', this.image_wrapper_height +'px');
-        } else {
-          var old_image_left = this.image_wrapper_width +'px';
-          img_container.css('left','-'+ this.image_wrapper_width +'px');
-          var old_image_top = this.image_wrapper_height +'px';
-          img_container.css('top', '-'+ this.image_wrapper_height +'px');
-        };
-        if(desc) {
-          desc.css('bottom', '-'+ desc[0].offsetHeight +'px');
-          desc.animate({bottom: 0}, this.settings.animation_speed * 2);
-        };
-        img_container.css('opacity', 0);
-        return {old_image: {left: old_image_left, top: old_image_top, opacity: 0},
-                new_image: {left: current_left, top: current_top, opacity: 1},
-                easing: 'easeInBounce',
-                speed: 2500};
-      }
-    );
-  });
-  function debug(str) {
-    if(window.console && window.console.log && jQuery.browser.mozilla) {
-      console.log(str);
-    } else {
-      $('#debug').show().val($('#debug').val() + str +'\n');
-    }
-  }
-  </script>
-
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-		animation: "slide", 
-		controlNav: true,
-		directionNav: false,
-		randomize: true,
-		reverse: true,
-		slideshowSpeed: 5000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-animationSpeed: 500,
-pausePlay: false, 
-nextText: "",
-
-	});
-  });
-</script>
-
-
-		
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin --><!--/ head -->
@@ -370,6 +323,46 @@ s.tl(this,'o','cartview',null,'navigate');return false
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
 <!--▼▼▼カテゴリー▼▼▼-->
+  	<script>
+	$(window).on('load resize', function(){
+	    var w = $(window).width();
+	    var x = 500;
+	    if (w <= x) {		
+	  $(function(){
+		  
+		$(".l_con_list_01").eq(0).find(".child_cat").hide();
+		$('li').removeClass('ctArrow');
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"absolute",
+			 "top":"0",
+			 "left":"140px",
+			 "width":"170px",
+			 "z-index":"999",
+			 "list-style":"none",
+			 "background-color":"#ffffff"}
+			).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").hide();
+		})
+	})
+	} else {
+
+	  $(function(){	  
+		$(".l_con_list_01").eq(0).find(".child_cat").show();
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"relative",	"left":"0"}).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").show();
+		})
+	})
+
+	    }
+	});
+	</script>
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
 
@@ -383,7 +376,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <ul class="l_con_list_01 clearfix example">
         <span  m:id="l_ite_cate">
           <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-          <li class="ctList">
+				<li class="ctList" style="position:relative"><!--基準点追加-->
               
             <div class="p_0">
               <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
@@ -398,7 +391,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
                   <span m:id="disp_subCate_category_name">ファッション</span>
               </span>
               </a>
-            </div>						<ul m:id="tag_dd_subCate" class="clearfix">
+            </div>
+				<ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
                 <span m:id="l_ite_subCate"> 
                     <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
                     <li class="ctArrow">
@@ -420,6 +414,16 @@ s.tl(this,'o','cartview',null,'navigate');return false
      
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <div id="contents">
+
+	<div class="sp_on">
+		<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+		<ul class="clearfix pank">
+			<li><a m:id="pankuzu_top_link" href="shop.html"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+			<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+			<li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+			<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
+		</ul>
+    </div>
   
   <!--<div id="pan-navi" >
   <ul class="clearfix">

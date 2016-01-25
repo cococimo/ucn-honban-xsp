@@ -68,6 +68,33 @@
 			});
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
+<style>
+.sp_on{display:none; text-align:left}
+.deviceSP #content {
+    padding-top: 25% !important;
+}
+@media (max-width: 1280px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left;
+	}	
+.header_cate{display:none}
+.pank li{float:left}	
+}
+@media (max-width: 640px)
+{
+#mainWrap .mainContent .mainTtl {
+    line-height: 20px !important;
+}
+}
+</style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
@@ -585,6 +612,13 @@ $(window).on('load resize', function(){
 
 <div id="pan-navi" style="margin-left: auto; margin-right: auto; width: 960px;">
   <ul class="clearfix">
+    <li><a m:id="pankuzu_top_link" href="http://www.cococimo.jp/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+  </ul>
+</div>
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+  <ul class="clearfix pank">
     <li><a m:id="pankuzu_top_link" href="http://www.cococimo.jp/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
     <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
   </ul>

@@ -55,6 +55,35 @@
 							});
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
+<style>
+/*sp_land_wide*/
+.sp_on{ display:none}
+@media (max-width: 1280px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;
+	text-align:left
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}	
+.header_cate{display:none}
+.pank li{float:left}	
+}
+@media (max-width:650px)
+{
+.cart_table_02{ width:75% !important}
+.cart_table_02 th {width:30% !important}
+}
+@media (max-width:320px)
+{
+.cart_table_02{ width:50% !important}	
+}
+</style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
@@ -484,8 +513,17 @@ $(window).on('load resize', function(){
 	<input type="hidden" name="goods_url" />
 	<input type="hidden" name="ext_goods_sku_code" />
 </form>
-<div id="contents">
 
+<div id="contents">
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+  <ul class="clearfix pank">
+    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
+  </ul>
+</div>
 
 <div id="contents_r_02">
 
