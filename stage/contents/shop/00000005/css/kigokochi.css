@@ -838,6 +838,7 @@ html {
   margin: 0 0 1em;
   padding: 0 0 5px;
 }
+
 #arrow_12 {
 	background: url("../icon/a_12.jpg") no-repeat 0 2px;
 	padding: 15px 0 15px 45px;
@@ -1535,7 +1536,7 @@ div.i_sec span img {
 
 .deviceSP #header .sp_nav .sp_member a {
   padding-left: 0;
-  width: 170px !important;
+  width: 100% !important;
   /*line-height: 46px !important;*/
   margin: 0 !important;
   display: block !important;
@@ -1565,7 +1566,7 @@ div.i_sec span img {
   margin: 0 !important;
   display: block !important;
   text-indent: -9999px;
-  background: url(../shop/image/kigokochi/sp_hd_login.gif) no-repeat center center;
+  background: url(../shop/image/kigokochi/sp_hd_login.gif) no-repeat left bottom;
   background-size: 170px 46px;
   border-radius: 0;
 }

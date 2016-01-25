@@ -71,27 +71,43 @@ window.onunload = function() {
 		</script>
 <style>
 /*sp_land_wide*/
-@media (max-width: 510px)
+.sp_on{ display:none}
+@media (max-width: 1280px)
 {
-.add_p {
-  top:100px !important;
-  width: 100% !important;
+.i_main .h3s img {width:95%}
+.i_main span img {width:95%}
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}	
+.header_cate{display:none}	
+.pank li{float:left}
+#goodsDetail .goodsDetail_box_03 {
+    margin: 0 0 !important;
+    padding: 10px 0 10px 0 !important;
 }
 }
 /*sp_land*/
-@media (max-width: 480px) {
-#pan-navi{
+@media (max-width: 640px) {
+/*#pan-navi{
 	margin:10px 0 0 0 !important;
+}*/
+.l_con_box_01{clear:both !important; margin-bottom:3% !important;}
+.l_con_list_04 li:nth-child(1), .l_con_list_04 li:nth-child(2), .l_con_list_04 li:nth-child(3) {
+    display: block !important;
+	float:none !important;
 }
+.l_con_list_04 li{
+	width:100% !important;
+	padding-left:2%;
 }
-/*sp_port*/
-@media (max-width:320px) {
-#pan-navi{
-	margin:20px 0 0 0 !important;
-}
-.add_p {
-  top:110px !important;
-}
+.l_con_list_04 li.sub_cate{
+	border-bottom:none !important
 }
 </style>		
 <link href="contents/lifestyle/css/side_menu.css" rel="stylesheet" type="text/css" media="all" />
@@ -411,8 +427,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	    var x = 500;
 	    if (w <= x) {
 	  $(".con_box img").eq(0).css({"max-width":"100%"});
-	  $(".sub_cate").hide();
-	  $(".i_tit_relate").hide();	  	  
 			
 	  $(function(){
 		  
@@ -602,7 +616,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </span>
 
 <!-- include:00000003/goods/default.jsp -->
-
+<div class="sp_on">
+<h1><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
+  <ul class="clearfix pank">
+    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</li>
+  </ul>
+</div>
 <div class="goodsDetail_box_03"> <!-- 追加 -->
 
 <!--<h1 class="temp_tit_01"><span m:id="disp_goods_name">カナナリュック</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h1>-->
@@ -2662,7 +2684,8 @@ eltexcomment-->
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
-  
+ <br clear="all" />
+ 
 <!-- ▼▼ 関連カテゴリ表示欄 ▼▼ -->
 <span m:id="relate_cate_bean_def" flg="0"></span>
 <object class="xsp_obj" m:id="e_var_relateCategoryList"></object>

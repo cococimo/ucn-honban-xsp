@@ -43,28 +43,24 @@
 <!-- InstanceBeginEditable name="head_css_js" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/side_menu.css" type="text/css" media="all" />
 <style>
-/*sp_land_wide*/
-@media (max-width: 510px)
+.sp_on{ display:none}
+@media (max-width: 1280px)
 {
-.add_p {
-  top:100px !important;
-  width: 100% !important;
-}
-}
-/*sp_land*/
-@media (max-width: 480px) {
-#pan-navi{
-	margin:10px 0 0 0 !important;
-}
-}
-/*sp_port*/
-@media (max-width:320px) {
-#pan-navi{
-	margin:20px 0 0 0 !important;
-}
-.add_p {
-  top:110px !important;
-}
+.l_con_box_01{ clear:both !important}	
+.add_p{display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;
+	text-align:left
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}	
+.header_cate{display:none}
+.pank li{float:left}
+.l_tit_01{clear:both !important}
 }
 </style>
 <!-- InstanceEndEditable -->
@@ -392,6 +388,17 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</li>
   </ul>
 </div>
+
+<div class="sp_on">
+<h1><span m:id="pankuzu_page_name">画面名</span>の通販・通信販売</h1>
+  <ul class="clearfix pank">
+    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</li>
+  </ul>
+</div>
+
 <div id="contents_r">
 <!--▼▼▼カテゴリー▼▼▼-->
  <div class="con_box">
@@ -969,6 +976,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--contents_l-->
 </div><!--contents-->
 </div><!--container-->
+ <script type="text/javascript" charset="utf-8">
+  if (window.matchMedia('screen and (max-width:640px)').matches) { $("select[name='goods_sku_code'][class='goods_sku_code'] option:first-child").text("選択");
+}
+</script>
 <!-- footer追加 -->
 <!--<div id="footer02">
 <div id="footer_wrap02">

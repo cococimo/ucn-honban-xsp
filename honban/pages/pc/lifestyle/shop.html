@@ -58,28 +58,50 @@ $(function() {
 });
 </script>
 <style>
-/*sp_land_wide*/
-@media (max-width: 510px)
+.sp_on{ display:none}
+@media (max-width: 1280px)
 {
+.deviceSP #contents {
+    padding-top: 50%;
+}	
+.add_p {display:none !important}
+#pan-navi{display:none !important}	
+.header_cate{display:none}
 .add_p {
-  top:100px !important;
-  width: 100% !important;
+  top:140px !important;
 }
-}
-/*sp_land*/
-@media (max-width: 480px) {
 #pan-navi{
 	margin:10px 0 0 0 !important;
 }
+.sp_on{
+	clear:both;
+    display: block;
+    text-align: left;
+	font-size:12px;
+	float: none !important;
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}		
+.wrap_main {
+    margin: 0;
+    padding-top:0!important;
 }
-/*sp_port*/
-@media (max-width:320px) {
-#pan-navi{
-	margin:20px 0 0 0 !important;
+/*#contents {padding-top:5% !important}*/
 }
-.add_p {
-  top:110px !important;
+@media (max-width:640px)
+{
+.wrap_main{margin-top:0!important}
+.sp_on{margin-top:10%;}
 }
+@media (max-width:480px)
+{
+.sp_on{margin-top:16%;}
+}
+@media (max-width:320px)
+{
+#header_search{padding:2% 0;}	
 }
 .mainimages img{display:none;}
 .slick-slide, .slick-cloned{
@@ -97,6 +119,7 @@ $(function() {
 	position:absolute;
 	left:40%
 }
+
 </style>
 <script type="text/javascript">
 jQuery(function ($) {
@@ -457,15 +480,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="goods_url" />
 </form>
 <div id="contents">
-	
-		<div id="pan-navi" >
-		<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-		</ul>
-		</div>
 
-<br clear="all">
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+</div>
 
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
@@ -759,7 +777,7 @@ function initCorners() {
 		<ul class="rankinglist">
 		<span m:id="l_ite_autoRankGoodsList">
 		<span m:id="l_notEqu_autoRankGoodsList_idx">
-			<li>
+			<li class="heightLine">
 			<span m:id="l_pre_autoRankGoods_representSku">
 			<object class="xsp_obj" m:id="b_var_autoRankGoods_listImage"></object>
 				<div class="rankimg">
@@ -1721,6 +1739,10 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 	</div>
 	<!--contents-->
 </div><!--container-->
+ <script type="text/javascript" charset="utf-8">
+  if (window.matchMedia('screen and (max-width:640px)').matches) { $("select[name='goods_sku_code'][class='goods_sku_code'] option:first-child").text("選択");
+}
+</script>
 <!-- ガイド -->
 <div id="guideWrapper" class="pc_only">
 	<div class="guideTop">
