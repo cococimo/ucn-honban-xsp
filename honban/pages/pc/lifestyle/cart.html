@@ -83,10 +83,34 @@
 .con_list_five li img{ width:30%; max-height:100px; max-width:100px; !important; float:left !important;}
 .con_box_check h2{background: none;}
 .con_block {background: none !important;}
+.cartLeft .cart_table_02{ width:100% !important}
 }
 @media (max-width:320px)
 {
 .cart_table_02{ width:50% !important}	
+}
+@media (min-width: 380px) and (max-width:640px){
+	.cart_table_02_w_03{
+		min-width:50px;
+	}
+	.cart_table_02_w_03 td,.cart_table_02 td {
+		line-height:inherit;
+	}
+	.cartLeft .cart_table_02 table{
+		background:none repeat scroll 0 0 #ffffff;
+	}
+}
+@media (max-width: 380px){
+	.cart_table_02_w_03{
+		min-width:20px;
+	}
+	.cart_table_02_w_03 td,.cart_table_02 td {
+		padding:3% 1%;
+		line-height:inherit;
+	}
+	.cartLeft .cart_table_02 table{
+		background:none repeat scroll 0 0 #ffffff;
+	}
 }
 </style>
 <!--[if (gte IE 6)&(lte IE 8)]>
@@ -606,7 +630,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- <th class="cart_table_02_w_02">商品単価</th> -->
 <th class="cart_table_02_w_02" colspan="2">商品単価</th>
-<th class="cart_table_02_w_03" style="min-width:50px;">数量</th>
+<th class="cart_table_02_w_03">数量</th>
 <th class="cart_table_02_w_04">小計</th>
 <!--<td class="last memadd_table_02_w_05"></td>-->
 </tr>
