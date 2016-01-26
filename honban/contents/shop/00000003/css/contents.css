@@ -7676,3 +7676,17 @@ img[id*="not_priceGoodsBtnID_"],img[id*="not_recentBtnID_"],img[id*="not_newGood
     clear:both;
   }
 }
+.item_bt_01 .add_posta a {
+    display: inline;
+    background: none;
+}
+@media (min-width: 640px) {
+	.item_bt_01 .add_posta a.sp_only{
+		display:none;
+	}
+}
+@media (max-width: 640px) {
+	.item_bt_01 .add_posta a.pc_only{
+		display:none;
+	}
+}
