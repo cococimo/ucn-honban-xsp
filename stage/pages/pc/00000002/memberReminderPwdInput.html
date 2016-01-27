@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_3.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css">
@@ -22,7 +21,12 @@
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/contents_20131021.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/contents_02.css" type="text/css" media="all" />
-
+<style>
+@media (max-width: 640px) {
+.wrapnavi4 li {
+    width:20%;
+}
+</style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/yuga.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/iepngfix_tilebg.js"></script>
@@ -33,6 +37,7 @@
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.exdropdown.0.1.3.js"></script>
+
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/exdropdown.css" type="text/css" media="all" />
 
 		<script>
@@ -104,18 +109,12 @@ nextText: "",
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-
-<!-- InstanceEndEditable -->
 </head>
  
 <body id="top">
-<!-- InstanceBeginEditable name="body" -->
-<!-- InstanceEndEditable -->
-
 <div id="container">
-<!-- ********** include:mall/header.jsp ********** -->
-<object class="xsp_obj" m:id="e_var_mall_link"></object>
+  <!-- ********** include:mall/header.jsp ********** -->
+  <object class="xsp_obj" m:id="e_var_mall_link"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <div id="header">
 <div id="header_wrap" class="clearfix">
@@ -153,99 +152,92 @@ nextText: "",
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
 </div>-->
-<div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
-
-
-
-<!--　ここから　-->
+<div id="contents_r"> <!--　ここから　-->
 <script><!--
 var clicked = false;
 //--></script>
      
 <div class="r_con_box_04">
-	<div class="r_con_box_04_in">
-	<h3 class="temp_tit_n02 temp_tit_n02_cor">パスワード再設定</h3>
-		<div class="sec_02 clearfix">
-			<div class="ad_navi wrapnavi4">
-				<ul class="clearfix">
-				<li><div class="ad_navi_in4 ad_navi_t">入力</div></li>
-				<li><div class="ad_navi_in4">メール送信</div></li>
-				<li><div class="ad_navi_in4">パスワード再設定</div></li>
-				<li class="last"><div class="ad_navi_in4">再設定完了</div></li>
-				</ul>
-			</div><!-- /ad_navi -->
-
-		<!-- エラーメッセージ -->
-		<span m:id="l_msgPre_errors_reminder_nodata">
-		<span class="headerror">
-			<div class="error">
-			<span m:id="h_err_login_id" >ログインIDエラーメッセージ</span>
-			<span m:id="h_err_email_pc" >メールアドレスエラーメッセージ</span>
-			<span m:id="h_err_birthday" >生年月日エラーメッセージ</span>
-			</div>
-		</span>
-		</span>
-		<!--/ エラーメッセージ -->
-
-		<h4 class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
-		<form m:id="h_form_reminderPwdComplete" method="POST" action="reminderPwdComplete.html">
-			<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-			<tr>
-			<th>ログインID<span class="imp">必須</span></th>
-			<td class="bor_bottom">
-			<div class="memadd_t_box_03 clearfix">
-			<div class="box_01"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_06" maxlength="20" /></div>
-			<span class="exp">例：<span m:id="sample_loginid" >yamada2009</span></span></div>
-			<div>
-			<span m:id="l_msgPre_login_id">
-			<span class="error"><span m:id="h_err_login_id" >ログインIDエラーメッセージ</span></span>
-			</span>
-			</div>
-			</td>
-			</tr>
+  <div class="r_con_box_04_in">
+    <h3 class="temp_tit_n02 temp_tit_n02_cor">パスワード再設定</h3>
+    <div class="sec_02 clearfix">
+      <div class="ad_navi wrapnavi4">
+        <ul class="clearfix">
+          <li><div class="ad_navi_in4 ad_navi_t">入力</div></li>
+          <li><div class="ad_navi_in4">メール送信</div></li>
+          <li><div class="ad_navi_in4">パスワード再設定</div></li>
+          <li class="last"><div class="ad_navi_in4">再設定完了</div></li>
+          </ul>
+        </div><!-- /ad_navi -->
+      
+      <!-- エラーメッセージ -->
+      <span m:id="l_msgPre_errors_reminder_nodata">
+        <span class="headerror">
+          <div class="error">
+            <span m:id="h_err_login_id" >ログインIDエラーメッセージ</span>
+            <span m:id="h_err_email_pc" >メールアドレスエラーメッセージ</span>
+            <span m:id="h_err_birthday" >生年月日エラーメッセージ</span>
+            </div>
+          </span>
+        </span>
+      <!--/ エラーメッセージ -->
+      
+      <h4 class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
+      <form m:id="h_form_reminderPwdComplete" method="POST" action="reminderPwdComplete.html">
+        <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+          <tr>
+            <th>ログインID<span class="imp">必須</span></th>
+            <td class="bor_bottom">
+              <div class="memadd_t_box_03 clearfix">
+                <div class="box_01"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_06" maxlength="20" /></div>
+                <span class="exp">例：<span m:id="sample_loginid" >yamada2009</span></span></div>
+              <div>
+                <span m:id="l_msgPre_login_id">
+                  <span class="error"><span m:id="h_err_login_id" >ログインIDエラーメッセージ</span></span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          
+          <tr>
+            <th>メールアドレス<span class="imp">必須</span></th>
+            <td class="bor_bottom">
+              <input m:id="h_txt_email_pc" type="text" name="email_pc" class="in_w_06" maxlength="150" />
+              <span class="exp">例：<span m:id="sample_mail" >yamada@xxxx.co.jp</span></span>
+              <div>
+                <span m:id="l_msgPre_email_pc">
+                  <span class="error"><span m:id="h_err_email_pc" >メールアドレスエラーメッセージ</span></span>
+                  </span>
+                </div>
+              </td>
+            </tr>
+          
+          <tr>
+            <th class="none_bor">生年月日<span class="imp">必須</span></th>
+            <td>
+              <input m:id="h_txt_birthday" type="text" name="birthday" class="in_w_06" maxlength="8" />
+              <span class="exp">例：<span m:id="sample_birthday" >19800101</span></span>
+              <div>
+                <span m:id="l_msgPre_birthday">
+                  <span class="error"><span m:id="h_err_birthday" >生年月日エラーメッセージ</span></span>
+                  </span>
+                </div>
+              </td>
             
-			<tr>
-			<th>メールアドレス<span class="imp">必須</span></th>
-			<td class="bor_bottom">
-			<input m:id="h_txt_email_pc" type="text" name="email_pc" class="in_w_06" maxlength="150" />
-			<span class="exp">例：<span m:id="sample_mail" >yamada@xxxx.co.jp</span></span>
-			<div>
-			<span m:id="l_msgPre_email_pc">
-			<span class="error"><span m:id="h_err_email_pc" >メールアドレスエラーメッセージ</span></span>
-			</span>
-			</div>
-			</td>
-			</tr>
-
-			<tr>
-			<th class="none_bor">生年月日<span class="imp">必須</span></th>
-			<td>
-			<input m:id="h_txt_birthday" type="text" name="birthday" class="in_w_06" maxlength="8" />
-			<span class="exp">例：<span m:id="sample_birthday" >19800101</span></span>
-			<div>
-			<span m:id="l_msgPre_birthday">
-			<span class="error"><span m:id="h_err_birthday" >生年月日エラーメッセージ</span></span>
-			</span>
-			</div>
-			</td>
-
-			</tr>
-			</table>
-		</form>
-		
-		<div class="memadd_bt_box_01 clearfix">
-	<a m:id="a_bt_submit" href="memberReminderPwdComplete.html" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/inq_sousin_bt_08.png" alt="パスワード再設定メールを受取る" /></a>
-	</div>
-	
-		</div><!--sec_02-->
-	</div><!--r_con_box_04_in-->
-	
+            </tr>
+          </table>
+        </form>
+      
+      <div class="memadd_bt_box_01 clearfix">
+        <a m:id="a_bt_submit" href="memberReminderPwdComplete.html" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/inq_sousin_bt_08.png" alt="パスワード再設定メールを受取る" /></a>
+        </div>
+      
+      </div><!--sec_02-->
+    </div><!--r_con_box_04_in-->
+  
 </div><!--r_con_box_04-->
 
-<!--　ここまで　-->
-
-
-<!-- InstanceEndEditable --></div>
+<!--　ここまで　--></div>
 <!--contents_r-->
 <div id="contents_l">
   <object class="xsp_obj" m:id="e_var_standardCategory">
@@ -479,7 +471,6 @@ var clicked = false;
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -522,8 +513,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 
-<!-- InstanceEndEditable -->
-
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -546,4 +535,4 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 
 
 </body>
-<!-- InstanceEnd --></html>
+</html>
