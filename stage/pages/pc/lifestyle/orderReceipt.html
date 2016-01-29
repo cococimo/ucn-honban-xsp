@@ -54,7 +54,26 @@
 				});
 							});
 		</script>
-<!-- InstanceBeginEditable name="head_css_js" -->		
+<!-- InstanceBeginEditable name="head_css_js" -->
+<style>
+/*sp_land_wide*/
+.sp_on{ display:none}
+@media (max-width: 1280px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left;
+	}	
+.header_cate{display:none}	
+.pank li{float:left}
+}
+</style>		
 		<!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
@@ -393,6 +412,9 @@ $(window).on('load resize', function(){
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <div id="contents">
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+</div>
   <!-- ここから -->
   
   <div id="contents_r_02">
@@ -717,8 +739,8 @@ $(window).on('load resize', function(){
     <input type="hidden" name="do_next" value=""/>
     </form>
   <div class="modoru mb30">
+        <span m:id="l_notEmp_order_next_mode">
     <div class="inq_input_bt_03 clearfix">
-      <span m:id="l_notEmp_order_next_mode">
         <div class="box_02">
           <a m:id="a_bt_next" href="memberAddressBook.html" onclick="" >
             <span m:id="l_equ_order_next_mode_memberAdd">
@@ -732,11 +754,9 @@ $(window).on('load resize', function(){
         
         <div class="box_01 n_bt_re_01 go_top_bt">
           <a m:id="e_link_top" href="/"><span style="color:#FFFFFF">買い物を続ける</span></a></div>
-        </span>
-      
-      
-      
       </div>
+        </span>
+              
     <span m:id="l_emp_order_next_mode">
       <div class="box_02 go_top_bt">
         <a m:id="e_link_top" href="http://www.cococimo.jp/"><span style="color:#FFFFFF">買い物を続ける</span></a></div>

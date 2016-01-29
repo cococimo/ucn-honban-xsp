@@ -29,6 +29,7 @@
 @media (max-width: 1280px)
 {
 .add_p {display:none !important}
+#pan-navi{display:none !important}
 .sp_on{
 	display: block;
 	font-size:12px;}
@@ -36,8 +37,12 @@
 	font-size:12px !important;
 	color:#121F8B;
 	text-align:left !important;
-	}	
+	}
+.sp_on div{
+	text-align:left !important;
+	}		
 .header_cate{display:none}	
+.detailBox{text-align:left !important}
 }
 </style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -168,9 +173,8 @@ function siteCatalistAddCart1(s_products){
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <div id="header">
 <div id="header_wrap" class="clearfix">
-<h1 class="add_p"><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
 <a m:id="e_link_logo_shop_shop" href="/">
-
+<h1 class="add_p"><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
 <!-- header追加 -->
 <!-- name="header_logo" -->
 <div id="header_logo">
@@ -294,9 +298,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
    </div></li>
    <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
      <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
-   <!--<li id="header_kigokochi">
+   <li id="header_kigokochi">
      <a  href="/shop/lifestyle/static/kigokochi/" class="kigokochi_bt" title="">着心地のいい服</a>
-   </li>-->
+   </li>
  </ul>
 
     <div class="sp_top_menu sp_menu_only">
@@ -449,10 +453,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="ext_goods_sku_code" />
 </form>
 <div id="contents">
-<div class="sp_on">
+<div class="sp_on clearfix">
 <h1><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
-</div>
-	<div id="pan-navi" class="clearfix">
+  <div>
+    <div><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></div>
+    <div><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></div>
+    <div m:id="if_exists_goods">&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></div>
+	<div m:id="if_not_exists_breadcrumb_category_and_goods">&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</div>
+  </div>
+
+</div>	
+
+<div id="pan-navi" class="clearfix">
 	  <ul class="clearfix">
 	    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
 	    <li><span m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></li>
@@ -927,6 +939,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
   		<div class="contents_bottom">
                   <div class="bannerList">
 	            <ul class="clearfix">
+	
 		      <li><a href="https://www.cococimo.jp/shop/memberAdd.do">
                         <img src="/contents/shop/00000005/shop/image/kigokochi/banner02.jpg" class="pc_only" alt="会員登録はこちら 特典 新規会員登録時に500ポイントプレゼント"><img src="/contents/shop/00000005/shop/image/kigokochi/sp_banner02.jpg" class="sp_only" alt="">
                       </a></li>
@@ -1139,7 +1152,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </span>
   -->
   </div><!--contents-->
-
 <!-- ガイド -->
 
 <div id="guideWrapper" class="pc_only">

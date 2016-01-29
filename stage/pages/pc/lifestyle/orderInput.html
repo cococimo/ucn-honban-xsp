@@ -60,6 +60,34 @@
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
+<style>
+/*sp_land_wide*/
+.sp_on{ display:none}
+@media (max-width: 1280px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left;
+	}	
+.header_cate{display:none}	
+.pank li{float:left}
+}
+/*sp_land*/
+@media (max-width: 640px) {
+.btn_nex_01 a, .btn_nex_01 a:link {
+	width:80% !important
+}
+.add_mb0{margin-top:6% !important}
+.add_mb1{margin-top:2% !important}
+
+}
+</style>
 		<script>
 		/*
 			jQuery(function($){
@@ -782,7 +810,9 @@ $(window).on('load resize', function(){
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <div id="contents">
-
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+</div>
 
 <div id="contents_r_02">
 
@@ -1417,7 +1447,7 @@ $(window).on('load resize', function(){
 <input m:id="h_hid_key" type="hidden" name="key" value="" />
 
 <span m:id="l_pre_credit">
-	<h4 class="temp_tit_06 clear"><div>クレジットカード情報入力済方法</div></h4>
+	<h4 class="temp_tit_06 clear"><div>クレジットカード情報入力</div></h4>
 	
 	
 	
@@ -1444,7 +1474,15 @@ $(window).on('load resize', function(){
 
 <object class="xsp_obj" m:id="e_var_card_brand_map" ></object>
 <span id="registeredCard">
+
+	<div class="box_form_table">
+		<div class="box_form_th">ご利用いただけるカード</div>
+		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000005/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" /></div>
+	</div>
+
 	
+	<br clear="all">
+    	
 	<div class="wrap_form_table">
 	<div class="box_form_table">
 		<div class="box_form_th">カード会社<span class="imp">必須</span></div>
@@ -1463,16 +1501,6 @@ $(window).on('load resize', function(){
 	
 	
 	<br clear="all">
-	
-
-	<div class="box_form_table">
-		<div class="box_form_th">ご利用いただけるカード</div>
-		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000005/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" /></div>
-	</div>
-
-	
-	<br clear="all">
-	
 	
 
 	<div class="box_form_table">
@@ -1751,10 +1779,10 @@ $(window).on('load resize', function(){
 		<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
 		<div class="box_form_td" id="sepDeliv0">
 			<div class="box_con clearfix">
-				<div class="box_01">
+				<div class="box_01 add_mb0">
 				配送希望日
 				</div>
-				<div class="box_02">
+				<div class="box_02 add_mb1">
 				<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
 				<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01 w200">
 				<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
@@ -1767,11 +1795,11 @@ $(window).on('load resize', function(){
 			</div>
 			
 			<div class="box_con">
-				<div class="box_01">
+				<div class="box_01 add_mb0">
 				配送時間帯
 				</div>
 				
-				<div class="box_02">
+				<div class="box_02 add_mb1">
 					<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
 					<select m:id="h_sel_delivery_time" class="memadd_input_01 w200">
 					<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
