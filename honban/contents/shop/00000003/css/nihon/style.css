@@ -56,6 +56,7 @@ img.hover:hover{
 	text-align: center;
 	border-bottom: 1px solid #cecdc9;
 	padding-bottom: 5px;
+	*height:100px !important;	
 }
 #header_wrap{
 	width: 960px;
@@ -78,6 +79,13 @@ img.hover:hover{
 }
 #header_tel a{
 	cursor: default;
+}
+/*20160201*/
+.header_list_01{
+	*margin-top:-45px !important
+}
+.header_list_02{
+	*margin-top:-75px !important
 }
 #login_wrap{
 	float: right;
