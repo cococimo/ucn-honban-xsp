@@ -85,7 +85,39 @@
 }
 .add_mb0{margin-top:6% !important}
 .add_mb1{margin-top:2% !important}
+/*res-table*/
+#sepDeliv1 table{ width:100% !important; margin:0 auto !important; background:none !important;}
+#sepDeliv1 table tr, #sepDeliv1 table th, #sepDeliv1 table td{display: block; text-align:left}
+#sepDeliv1 table th{ display:none;}
+#sepDeliv1 .sp_tr{width:100% !important; padding-top:20px; /*border-top:1px dotted rgba(30,30,30,1.00)*/} 
 
+#sepDeliv1 table td:nth-child(1):before {
+content: "¤•i–¼";
+    background: #00ada0;
+    color: #FFF;
+	width:98% !important;
+	padding:5px;
+	display:block !important;
+	margin:10px 0 !important;
+}
+#sepDeliv1 table td:nth-child(2):before {
+content: "”z‘—Šó–]“ú";
+    background: #00ada0;
+    color: #FFF;
+	width:98% !important;
+	padding:5px;
+	display:block !important;
+	margin:10px 0 !important;
+}
+#sepDeliv1 table td:nth-child(3):before {
+content: "”z‘—Šó–]ŠÔ‘Ñ";
+    background: #00ada0;
+    color: #FFF;
+	width:98% !important;
+	padding:5px;
+	display:block !important;
+	margin:10px 0 !important;
+}
 }
 </style>
 		<script>
@@ -1747,7 +1779,7 @@ $(window).on('load resize', function(){
 					<th class="memadd_table_02_w_07" align="center">”z‘—Šó–]ŠÔ‘Ñ</th>
 				</tr>
 				<span m:id="l_ite_detail">
-					<tr>
+					<tr class="sp_tr">
 						<td class="center color_w_b"><span m:id="disp_detail_goods_name"></span></td>
 						<td class="center color_w_b">
 							<!-- ”z‘—Šó–]“ú -->
