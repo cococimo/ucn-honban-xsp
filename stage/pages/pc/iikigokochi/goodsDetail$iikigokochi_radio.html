@@ -1223,7 +1223,7 @@ $(window).on('load resize', function(){
 			<div class="sliderInner">
 				<ul class="slides clearfix">
 					<span m:id="l_ite_sku_variation">
-					<span m:id="def_goods_img_sku_main"></span>
+						<span m:id="def_goods_img_sku_main"></span>
 						<span m:id="l_ite_sku_gods_img_main">
 							<li><img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
 						</span>
@@ -1234,9 +1234,11 @@ $(window).on('load resize', function(){
 			 <div class="sliderCarousel">
 				<ul class="slides clearfix">
 				<span m:id="l_ite_sku_variation">
-				<span m:id="def_goods_img_sku"></span>
+					<span m:id="def_goods_img_sku"></span>
 					<span m:id="l_ite_sku_gods_img">
-						<li><img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
+						<li m:id="b_wr_sku_goods_img">  
+							<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+						</li>
 					</span>
 				</span>
 				</ul>
@@ -1367,8 +1369,10 @@ $(window).on('load resize', function(){
 						  		<object class="xsp_obj" m:id="b_var_image_file_sku"></object>
 								 <span m:id="def_goods_img_sku"></span>
 								 <span m:id="l_ite_sku_gods_img">
-									<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
+									<span m:id="disp_sku_goods_img">
+										<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
 									<br />
+									</span>
 								 </span> 
 							</td>
 			                <td>
@@ -1497,12 +1501,12 @@ $(window).on('load resize', function(){
 <!--降雪対応文言
 <ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
 降雪対応文言-->
-<!-- アイコン -->
+<!-- アイコン 
 
 		<span m:id="l_ite_icon">
 			<img m:id="h_img_icon_file" src="../../../contents/shop/00000006/icon/icon_01.gif" alt="注目" />
 		</span>
-		<p>&nbsp;</p>
+		<p>&nbsp;</p>-->
     </div>
 <!--/ アイコン -->
 

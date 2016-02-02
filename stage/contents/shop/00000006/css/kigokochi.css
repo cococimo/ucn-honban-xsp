@@ -5691,3 +5691,33 @@ script[src="//www.googleadservices.com/pagead/conversion.js"] + img{
 .cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
 #cboxOverlay{background:#666; opacity: 0.2; filter: alpha(opacity = 90);}
+
+/*
+商品検索 アイコン
+*/
+.box_02 div.img_icon{
+	width:15%;
+	float:left;
+}
+.box_02 div.img_icon img{
+	width:100%;
+}
+/*
+商品詳細 改行
+*/
+/*
+li[id^=img_first_]{
+	clear: both;
+}*/
+#js-slider0-ctrl > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1){
+	display: none;
+}
+@media (max-width: 640px){
+	.contents_left .detailTop .topItemL .slider .sliderCarousel .slides li img{
+		padding-bottom:6px !important;
+	}
+}
+ul.con_list_four .box_02 dl{
+	clear:both;
+	padding-top:5px;
+}
