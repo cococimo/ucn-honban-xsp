@@ -157,13 +157,37 @@ content: "小計";
     color: #000 !important;
 }
 .con_box_check h2 { background:none}
-.con_list_five li{clear:both !important; float:none !important; width:100% !important; text-align:left !important; height:160px !important}
-.con_list_five li img{ clear:both !important; width:25%; max-height:100px; max-width:100px; !important; float:left !important;}
+.con_list_five li{
+	clear:both !important;
+	float:none !important;
+	width:100% !important;
+	margin-top:40px !important;
+	display:block !important;
+	text-align:left !important;
+	height:150px !important
+	}
+.con_list_five li img{ clear:both !important; width:25%; max-height:120px; max-width:120px; !important; float:left !important;}
 .con_list_five li div.img_box {
 	float:left;
 	width:50%;
+	height:130px
 }
 .cartAddbtn {width:30% !important; margin:0 auto!important}	
+.con_list_five h3 a {
+	display:block;
+	width:50%;
+	float:right !important
+}
+.con_list_five p.cash {
+	display:block;
+	width:50%;
+	float: right !important
+	}
+select.goods_sku_code {
+	clear:both !important;
+	display:block !important;
+	margin-bottom:20px !important;
+}	
 .con_block {background:none !important}
 .go_input{clear:both !important}
 }
@@ -174,9 +198,13 @@ $(function(){
 $(".cart_table_sp tr:eq(1)").css("border-top", "none")
 if (window.matchMedia('screen and (max-width:640px)').matches) {
 	$(".lump1").text("一括払：");
+$('.box_02').each(function(){
+  $(this).children('div').eq(1).css({"width":"50%","float":"right"});
+});
 } 
 });
 </script>
+
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
@@ -1039,9 +1067,11 @@ $(window).on('load resize', function(){
   </tr>
   </table>
  
-      <div class="box_02 center mb15">
-	  <input m:id="h_radio_wrapping_set0" type="radio" name="wrapping_type" value="">
+      <div class="box_02 mb15 clearfix">
+      <div class="radioFloat">
+      <input m:id="h_radio_wrapping_set0" type="radio" name="wrapping_type" value="">
 	  <span style="font-size:20px">-なし-</span>
+      </div>
 	  </div>
  <span m:id="l_ite_wrapping_set">
 <object class="xsp_obj" m:id="b_var_wrapping_set" ></object>
@@ -1393,6 +1423,7 @@ $(window).on('load resize', function(){
                  </span>
                 </div>
               <h3><a m:id="h_link_priceGoods_name" href="goodsDetail.html"><span m:id="disp_priceGoods_goods_name">商品名商品名</span></a></h3>
+
               <p class="text"><span m:id="disp_priceGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
 				                  <p class="cash">
                           <span m:id="l_notEqu_priceGoods_pretaxPrice">
