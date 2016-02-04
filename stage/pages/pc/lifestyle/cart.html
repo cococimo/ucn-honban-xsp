@@ -155,15 +155,65 @@ content: "小計";
     color: #000 !important;
 }
 .con_box_check h2 { background:none}
-.con_list_five li{clear:both !important; float:none !important; width:100% !important; text-align:left !important; height:160px !important}
-.con_list_five li img{ clear:both !important; width:25%; max-height:100px; max-width:100px; !important; float:left !important;}
+.con_block {background:none !important; margin-bottom:0 !important; padding-bottom:0 !important}
+.go_input{clear:both !important}
+.con_box .con_list_five {width:100% !important; margin:0 !important; padding:0 !important}
+.con_list_five li{
+	clear:both !important;
+	float:none !important;
+	width:100% !important;
+	display:block !important;
+	text-align:left !important;
+	padding-top:5%;
+	}
+.con_list_five li:first-child{padding-top:0; border-top:none}	
+.con_list_five li .img_box{
+	clear:both !important;
+	width:45% !important;
+	float:left !important;
+	}
+.con_list_five li .img_box img{
+	width:100% !important;
+		}
 .con_list_five li div.img_box {
 	float:left;
-	width:50%;
+	margin-right:2% !important
 }
-.cartAddbtn {width:30% !important; margin:0 auto!important}	
-.con_block {background:none !important}
-.go_input{clear:both !important}
+.sptx_r{
+	float:right;
+	width:48%;
+	padding-right:0.5%
+	}
+.con_box .con_list_five .heightLine-new01 {
+    width: 100% !important;
+	margin:0 auto;
+	margin-left: 0 !important
+}
+.con_list_five h3 a {
+    color: #009489;
+	font-weight:normal;
+    font-size: 12px;
+}
+select.goods_sku_code {
+    width: 90% !important;
+	padding:1.5%;
+	float:left;
+	margin-top:0.5%;
+	display:block;
+}
+.con_list_five p.cash {
+    font-size: 12px;
+    font-weight: bold;
+}
+.con_list_five .productDetail_cart_bt_normal{
+	float:left;
+	width:90%;
+	margin-bottom:5% !important
+}
+.productDetail_cart_bt_normal img {
+	min-width:130px;
+}
+
 }
 </style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -1394,6 +1444,7 @@ $(window).on('load resize', function(){
 										<img m:id="h_img_priceGoods_goods_Image"  src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
                  </span>
                 </div>
+        <div class="sptx_r">
               <h3><a m:id="h_link_priceGoods_name" href="goodsDetail.html"><span m:id="disp_priceGoods_goods_name">商品名商品名</span></a></h3>
               <p class="text"><span m:id="disp_priceGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
 				                  <p class="cash">
@@ -1408,7 +1459,7 @@ $(window).on('load resize', function(){
 											<span m:id="l_equ_priceGoodsList_valiationSize">
 												<a m:id="h_link_cartAddDirect_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
 													<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 												</a>
 											</span>
 											<span m:id="l_not_equ_priceGoodsList_valiationSize">
@@ -1424,7 +1475,7 @@ $(window).on('load resize', function(){
 												<!--<img m:id="disp_not_cartAddBtn_priceGoods" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
 												<a m:id="h_link_cartAddDirectSku_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
 													<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 												</a>
 											</span>
 										</span>
@@ -1433,7 +1484,7 @@ $(window).on('load resize', function(){
 											<p class="soldout"><strong>[販売終了]</strong></p>
 											</span>
 										</span>
-										<!--/ お買い物かご一覧からカートに入れる -->
+					</div>					<!--/ お買い物かご一覧からカートに入れる -->
               </div>
             </div>
           </li>
@@ -1576,6 +1627,7 @@ $(window).on('load resize', function(){
                 </object>
                 <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span>
                 </div>
+        <div class="sptx_r">                
               <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
               <p class="cash">
                  <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
@@ -1584,7 +1636,7 @@ $(window).on('load resize', function(){
 				<span m:id="l_equ_autoReco_valiationSize">
 					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
 						<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 					</a>
 				</span>
 				<span m:id="l_not_equ_autoReco_valiationSize">
@@ -1600,7 +1652,7 @@ $(window).on('load resize', function(){
 					<!--<img m:id="disp_not_cartAddBtn_autoReco" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
 					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
 						<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 					</a>
 				</span>
 			</span>
@@ -1610,7 +1662,7 @@ $(window).on('load resize', function(){
 				</span>
 			</span>
 			<!--/ 閲覧履歴一覧からカートに入れる -->
-              
+              </div>
               </div>
             </div>
           </li>
