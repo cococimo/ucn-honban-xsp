@@ -73,6 +73,67 @@
 .header_cate{display:none}	
 .pank li{float:left}
 }
+@media (max-width:640px)
+{
+.con_block {background:none !important; margin-bottom:0 !important; padding-bottom:0 !important}
+.go_input{clear:both !important}
+.con_box .con_list_five {width:100% !important; margin:0 !important; padding:0 !important}
+.con_list_five li{
+	clear:both !important;
+	float:none !important;
+	width:100% !important;
+	display:block !important;
+	text-align:left !important;
+	padding-top:5%;
+	}
+.con_list_five li:first-child{padding-top:0; border-top:none}	
+.con_list_five li .img_box{
+	clear:both !important;
+	width:45% !important;
+	float:left !important;
+	}
+.con_list_five li .img_box img{
+	width:100% !important;
+		}
+.con_list_five li div.img_box {
+	float:left;
+	margin-right:2% !important
+}
+.sptx_r{
+	float:right;
+	width:48%;
+	padding-right:0.5%
+	}
+.con_box .con_list_five .heightLine-new01 {
+    width: 100% !important;
+	margin:0 auto;
+	margin-left: 0 !important
+}
+.con_list_five h3 a {
+    color: #009489;
+	font-weight:normal;
+    font-size: 12px;
+}
+select.goods_sku_code {
+    width: 90% !important;
+	padding:1.5%;
+	float:left;
+	margin-top:0.5%;
+	display:block;
+}
+.con_list_five p.cash {
+    font-size: 12px;
+    font-weight: bold;
+}
+.con_list_five .productDetail_cart_bt_normal{
+	float:left;
+	width:90%;
+	margin-bottom:5% !important
+}
+.productDetail_cart_bt_normal img {
+	min-width:130px;
+}	
+}
 </style>		
 		<!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
@@ -678,6 +739,7 @@ $(window).on('load resize', function(){
                   </object>
                 <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000005/shop/image/item_sample_01.jpg" /></a></span>
               </div>
+          <div class="sptx_r">  
             <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">è§ïiñºè§ïiñº</span></a></h3>
             <p><span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;â~</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>â~Åiê≈çûÅj</p>
             </div>
@@ -725,7 +787,8 @@ $(window).on('load resize', function(){
         </div>
       </li>
     
-    </ul>     
+    </ul>
+    </div>   
     </span>  
   </div>   
   </span>  
