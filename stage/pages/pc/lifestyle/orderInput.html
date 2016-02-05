@@ -121,7 +121,46 @@ content: "配送希望時間帯";
 #sepDeliv1 table td:nth-child(3){
 	margin-bottom:5% !important
 }
+/*radio*/
+input[type="radio"] {
+    position: relative;
+    -webkit-appearance: button;
+    appearance: button;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    cursor: pointer;
 }
+
+input[type="radio"]:checked:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #004d9a;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+.wrap_form_table input[type="radio"]{margin:0 3% 0 0 !important;}
+.memadd_t_box_01 .box_01, .memadd_t_box_02 .box_01 {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+	margin-bottom:4% !important;
+	}
+	
 </style>
 		<script>
 		/*
@@ -1714,10 +1753,10 @@ $(window).on('load resize', function(){
 		<div class="box_form_td">
 			<div class="memadd_t_box_02 clearfix" style="margin-top:10px;">
 			<div class="box_01">
-			<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp(1);" class="radio" >　上記のご住所</label>
+			<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp(1);" class="radio" >上記のご住所</label>
 			</div>
 			<div class="box_01">
-			<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp(1);" class="radio" >　別の配送先を指定する</label>
+			<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp(1);" class="radio" >別の配送先を指定する</label>
 			</div>
 		</div>
 		<span m:id="l_msgPre_destined">
