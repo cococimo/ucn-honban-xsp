@@ -47,7 +47,65 @@
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
-
+<style>
+@media (max-width: 640px) {
+#header {
+    margin-bottom:5%!important;
+}	
+.ad_navi li {
+	width:24% !important;
+	}
+.ad_navi .ad_navi_in2 {
+    width:75%;
+}
+.ad_navi li {
+	background-position:right 45%!important;
+	margin-right:1% !important
+}
+.inp_bs{
+	display:block;	
+	width:20%;
+	padding:7% 0;
+	margin-right:1%;
+	float:left;
+	margin-left:0;
+	color:rgba(255,255,255,1.00);
+	background-color: rgba(150,150,150,1.00);
+	text-align:center
+}
+.wrap_form_table .in_w_06, .wrap_form_table .in_w_06b {
+    width: 70% !important;
+}
+.wrap_form_table .box_con {
+    float: none !important;
+    margin-right:0 !important;
+}
+.add_mt1{
+	margin:2% 0 1% 0 !important;
+}
+.add_mt2{
+	margin:4% 0 1% 0 !important
+}
+.inq_input_bt_03 .box_01, .inq_input_bt_03 .box_02 {
+    display: block !important;
+	float:none !important
+}
+.inq_input_bt_03 .box_02{
+	width:100% !important;
+	}
+.inq_input_bt_03 img{
+	width:98% !important;
+	margin:0 auto !important
+}
+.inq_input_bt_03 .box_01{
+	width:30% !important
+}
+.inq_input_bt_03 .n_bt_re_01 img {
+    width: 98% !important;
+    margin:0 auto;
+}
+}
+</style>
 <object class="xsp_obj" m:id="e_var_prefecture"></object>
 <object class="xsp_obj" m:id="e_var_opportunityMap"></object>
 <object class="xsp_obj" m:id="e_var_jobMap"></object>
@@ -483,8 +541,8 @@ var iCurDstSelected = 0;
 	<div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
-	<li>名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
+	<li><span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
+	<li><span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
 	</ul>
 	
 	<span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
@@ -511,8 +569,8 @@ var iCurDstSelected = 0;
 	<div class="box_form_th">フリガナ（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>セイ&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
-	<li>メイ&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
+	<li><span class="inp_bs">セイ</span><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
+	<li><span class="inp_bs">メイ</span><input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
 	</ul>
 	<span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
 		<div class="boxclear"></div>
@@ -707,8 +765,8 @@ var iCurDstSelected = 0;
 	<div class="box_form_td">
 	
 	<ul>
-	<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
-	<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
+	<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
+	<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
 	</ul>
 	
 
@@ -1342,7 +1400,7 @@ var iCurDstSelected = 0;
 		<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
 		<div class="box_form_td" id="sepDeliv0">
 			<div class="box_con clearfix">
-				<div class="box_01">
+				<div class="box_01 add_mt1">
 				配送希望日
 				</div>
 				<div class="box_02">
@@ -1358,7 +1416,7 @@ var iCurDstSelected = 0;
 			</div>
 			
 			<div class="box_con">
-				<div class="box_01">
+				<div class="box_01 add_mt2">
 				配送時間帯
 				</div>
 				

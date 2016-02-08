@@ -160,7 +160,20 @@ input[type="radio"]:checked:after {
     width: 100% !important;
 	margin-bottom:4% !important;
 	}
-	
+.inp_bs{
+	display:block;	
+	width:20%;
+	padding:2.4% 0;
+	margin-right:1%;
+	float:left;
+	margin-left:0;
+	color:rgba(255,255,255,1.00);
+	background-color: rgba(150,150,150,1.00);
+	text-align:center
+}
+.wrap_form_table .in_w_06, .wrap_form_table .in_w_06b {
+    width: 60% !important;
+}
 </style>
 		<script>
 		/*
@@ -993,8 +1006,8 @@ $(window).on('load resize', function(){
 	<div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
-	<li>名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
+	<li><span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
+	<li><span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
 	</ul>
 	
 	<span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
@@ -1021,8 +1034,8 @@ $(window).on('load resize', function(){
 	<div class="box_form_th">フリガナ（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>セイ&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
-	<li>メイ&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
+	<li><span class="inp_bs">セイ</span><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
+	<li><span class="inp_bs">メイ</span><input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
 	</ul>
 	<span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
 		<div class="boxclear"></div>
@@ -1217,8 +1230,8 @@ $(window).on('load resize', function(){
 	<div class="box_form_td">
 	
 	<ul>
-	<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
-	<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
+	<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
+	<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
 	</ul>
 	
 
