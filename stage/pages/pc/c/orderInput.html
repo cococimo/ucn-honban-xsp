@@ -65,16 +65,43 @@
 .inp_bs{
 	display:block;	
 	width:20%;
-	padding:7% 0;
-	margin-right:1%;
+	padding:5.1% 0;
+	margin-right:0.5%;
 	float:left;
 	margin-left:0;
 	color:rgba(255,255,255,1.00);
 	background-color: rgba(150,150,150,1.00);
-	text-align:center
+	text-align:center;
+/* border-radius */
+border-radius:5px 0px 0px 5px;
+-webkit-border-radius:5px 0px 0px 5px;
+-moz-border-radius:5px 0px 0px 5px;	
+}
+.box_form_td li{width:99% !important; margin-left:-1% !important}
+input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
 }
 .wrap_form_table .in_w_06, .wrap_form_table .in_w_06b {
-    width: 70% !important;
+    width: 75% !important;
+/* border-radius */
+border-radius:0px 5px 5px 0px;
+-webkit-border-radius:0px 5px 5px 0px;
+-moz-border-radius:0px 5px 5px 0px;	
+}
+.wrap_form_table .in_w_02, .wrap_form_table .in_w_08, .wrap_form_table .in_w_09, .wrap_form_table .in_w_10{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+width:88% !important
+}
+.wrap_form_table .in_w_04, .wrap_form_table .in_w_07 {
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+padding:2% !important;
+float:none !important
 }
 .wrap_form_table .box_con {
     float: none !important;
@@ -110,6 +137,65 @@
     text-align: left !important;
     width: 60% !important;
 }
+.vis_add{
+	width:98%;
+	margin:0 auto 3% auto;
+	padding:1%;
+	color:red;
+	text-align:left
+	}
+.vis_tit{
+	font-size:18px;
+	font-weight:bold;
+	display:block;
+}
+.box_form_td03 div:nth-child(2){
+	margin:4% 0!important
+}
+/*radio*/
+input[type="radio"] {
+    position: relative;
+    -webkit-appearance: button;
+    appearance: button;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #ff674d;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+.wrap_form_table input[type="radio"]{margin:0 3% 0 0 !important;}
+.memadd_t_box_01 .box_01, .memadd_t_box_02 .box_01 {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+	margin-bottom:4% !important;
+	}
+.add_exp{
+	display:block;
+	float:right;
+	color: rgba(158,158,158,1.00)
+	}
 }
 </style>
 <object class="xsp_obj" m:id="e_var_prefecture"></object>
@@ -536,6 +622,12 @@ var iCurDstSelected = 0;
 		<div>
 	        <a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /></a>
 		</div>
+        <p class="vis_add">
+        <span class="vis_tit">はじめての方・会員登録されていない方</span>
+        会員登録されていなくてもお買い物ができます。以下に必要情報を入力して
+        「お申込み内容確認へ」ボタンを押してください。購入完了後、
+        そのまま会員登録（無料）もできます。
+        </p>
 		<!--/ ボタン -->
 	</div>
 </span>
@@ -847,7 +939,7 @@ var iCurDstSelected = 0;
 
 <div class="box_form_table">
 	<div class="box_form_th">生年月日<span class="imp">必須</span></div>
-	<div class="box_form_td"><select m:id="h_sel_birthday_year" class="in_w_07" style="margin-top:3px;">
+	<div class="box_form_td"><select m:id="h_sel_birthday_year" style="margin-top:3px; padding:2%">
 		<option value=""></option>
         <option m:id="sel_opt_birthday_year"value="2016">2015(平成28)</option>
 		<option m:id="sel_opt_birthday_year"value="2015">2015(平成27)</option>
@@ -962,14 +1054,14 @@ var iCurDstSelected = 0;
 		<option m:id="sel_opt_birthday_year"value="1906">1906(明治39)</option>
 	</select>&nbsp;年&nbsp;
 
-	<select m:id="h_sel_birthday_month" class="in_w_04">
+	<select m:id="h_sel_birthday_month" style="padding:2%">
 		<option value=""></option>
 		<option m:id="h_opt_birthday_month" value="">1</option>
 		<option m:id="dummy" value="">2</option>
 		<option m:id="dummy" value="">3</option>
 	</select>&nbsp;月&nbsp;
 
-	<select m:id="h_sel_birthday_day" class="in_w_04">
+	<select m:id="h_sel_birthday_day" style=" padding:2%">
 		<option value=""></option>
 		<option m:id="h_opt_birthday_day" value="">1</option>
 		<option m:id="dummy" value="">2</option>
@@ -1557,8 +1649,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
-		<li>名&nbsp;<input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
+		<li><span class="inp_bs">姓</span><input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
 		</ul>
 		<span class="exp"><span m:id="sample_name_2">例：山田　太郎</span></span>
 		<div class="boxclear"></div>
@@ -1584,8 +1676,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">フリガナ（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>セイ&nbsp;<input type="text" name="dst_name_sei_kana" class="in_w_07"  m:id="h_txt_dst_name_sei_kana"/></li>
-		<li>メイ&nbsp;<input type="text" class="in_w_07" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
+		<li><span class="inp_bs">セイ</span><input type="text" name="dst_name_sei_kana" class="in_w_06b"  m:id="h_txt_dst_name_sei_kana"/></li>
+		<li><span class="inp_bs">メイ</span><input type="text" class="in_w_06b" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
 		</ul>
 		<span class="exp"><span m:id="sample_kana_2">例：ヤマダ　タロウ</span></span>
 		<div class="boxclear"></div>
@@ -1612,7 +1704,7 @@ TEL：090-1234-1234
 	<div class="box_form_td">
 		
 		<ul>
-		<li><input type="text" class="in_w_06" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
+		<li><input type="text" class="in_w_09" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
 		<li><a m:id="a_bt_searchZip_dst" href="postCode.html" OnClick="return postCodeList( document.orderForm.dst_post_code.value, 3 );">
 			<img src="../../../contents/shop/00000003/shop/image/ma_bt_01.jpg"  alt="郵便番号検索" /></a>
 				<div>
@@ -1725,8 +1817,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">様方（全角）</div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
-		<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
+		<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
 		</ul>
 		
 		<span m:id="l_msgPre_dst_address_co_sei">
@@ -1760,7 +1852,7 @@ TEL：090-1234-1234
 		<span m:id="h_err_dst_tel_no">連絡先電話番号入力エラーメッセージ</span>
 		</span>
 		</span>
-		<span class="exp"><span m:id="sample_tel_1">例：012-345-6789</span></span>
+		<span class="exp add_exp"><span m:id="sample_tel_1">例：012-345-6789</span></span>
 	</div>
 </div>
 

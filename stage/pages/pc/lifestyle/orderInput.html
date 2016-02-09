@@ -166,16 +166,62 @@ input[type="radio"]:checked:after {
 .inp_bs{
 	display:block;	
 	width:20%;
-	padding:2.4% 0;
-	margin-right:1%;
+	padding:3% 0;
+	margin-right:0.5%;
 	float:left;
 	margin-left:0;
 	color:rgba(255,255,255,1.00);
 	background-color: rgba(150,150,150,1.00);
-	text-align:center
+	text-align:center;
+/* border-radius */
+border-radius:5px 0px 0px 5px;
+-webkit-border-radius:5px 0px 0px 5px;
+-moz-border-radius:5px 0px 0px 5px;	
+}
+.box_form_td li{width:99% !important; margin-left:-1% !important}
+input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
+	padding:1.2% 0 !important;
 }
 .wrap_form_table .in_w_06, .wrap_form_table .in_w_06b {
-    width: 60% !important;
+    width: 75% !important;
+/* border-radius */
+border-radius:0px 5px 5px 0px;
+-webkit-border-radius:0px 5px 5px 0px;
+-moz-border-radius:0px 5px 5px 0px;	
+}
+.wrap_form_table .in_w_02, .wrap_form_table .in_w_08, .wrap_form_table .in_w_09, .wrap_form_table .in_w_10{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+width:88% !important
+}
+.wrap_form_table .in_w_04, .wrap_form_table .in_w_07 {
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+padding:2% !important;
+float:none !important
+}
+.vis_add{
+	width:98%;
+	margin:0 auto 3% auto;
+	padding:1%;
+	color:red;
+	text-align:left
+	}
+.vis_tit{
+	font-size:18px;
+	font-weight:bold;
+	display:block;
+}
+.add_exp{
+	display:block;
+	float:right;
+	color: rgba(158,158,158,1.00)
+	}
 }
 </style>
 		<script>
@@ -999,6 +1045,12 @@ $(window).on('load resize', function(){
 	        <a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt">ログイン</a>
 		</div>
 		<!--/ ボタン -->
+        <p class="vis_add">
+        <span class="vis_tit">はじめての方・会員登録されていない方</span>
+        会員登録されていなくてもお買い物ができます。以下に必要情報を入力して
+        「お申込み内容確認へ」ボタンを押してください。購入完了後、
+        そのまま会員登録（無料）もできます。
+        </p>        
 	</div>
 </span>
 <h4 m:id="dummy" class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
@@ -1309,7 +1361,7 @@ $(window).on('load resize', function(){
 
 <div class="box_form_table">
 	<div class="box_form_th">生年月日<span class="imp">必須</span></div>
-	<div class="box_form_td"><select m:id="h_sel_birthday_year" class="in_w_07" style="margin-top:3px;">
+	<div class="box_form_td"><select m:id="h_sel_birthday_year" style="margin-top:3px; padding:2%">
 		<option value=""></option>
 		<option m:id="sel_opt_birthday_year"value="2016">2015(平成28)</option>
     	<option m:id="sel_opt_birthday_year"value="2015">2015(平成27)</option>
@@ -1424,14 +1476,14 @@ $(window).on('load resize', function(){
 		<option m:id="sel_opt_birthday_year"value="1906">1906(明治39)</option>
 	</select>&nbsp;年&nbsp;
 
-	<select m:id="h_sel_birthday_month" class="in_w_04">
+	<select m:id="h_sel_birthday_month" style="padding:2%">
 		<option value=""></option>
 		<option m:id="h_opt_birthday_month" value="">1</option>
 		<option m:id="dummy" value="">2</option>
 		<option m:id="dummy" value="">3</option>
 	</select>&nbsp;月&nbsp;
 
-	<select m:id="h_sel_birthday_day" class="in_w_04">
+	<select m:id="h_sel_birthday_day" style="padding:2%">
 		<option value=""></option>
 		<option m:id="h_opt_birthday_day" value="">1</option>
 		<option m:id="dummy" value="">2</option>
@@ -2017,8 +2069,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
-		<li>名&nbsp;<input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
+		<li><span class="inp_bs">姓</span><input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
 		</ul>
 		<span class="exp"><span m:id="sample_name_2">例：山田　太郎</span></span>
 		<div class="boxclear"></div>
@@ -2046,8 +2098,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">フリガナ（全角）<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>セイ&nbsp;<input type="text" name="dst_name_sei_kana" class="in_w_07"  m:id="h_txt_dst_name_sei_kana"/></li>
-		<li>メイ&nbsp;<input type="text" class="in_w_07" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
+		<li><span class="inp_bs">セイ</span><input type="text" name="dst_name_sei_kana" class="in_w_06"  m:id="h_txt_dst_name_sei_kana"/></li>
+		<li><span class="inp_bs">メイ</span><input type="text" class="in_w_06" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
 		</ul>
 		<span class="exp"><span m:id="sample_kana_2">例：ヤマダ　タロウ</span></span>
 		<div class="boxclear"></div>
@@ -2074,7 +2126,7 @@ TEL：090-1234-1234
 	<div class="box_form_td">
 		
 		<ul>
-		<li><input type="text" class="in_w_06" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
+		<li><input type="text" class="in_w_09" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
 		<li><a m:id="a_bt_searchZip_dst" href="postCode.html" OnClick="return postCodeList( document.orderForm.dst_post_code.value, 3 );">
 			<img src="../../../contents/shop/00000005/shop/image/ma_bt_01.jpg"  alt="郵便番号検索" /></a>
 				<div>
@@ -2187,8 +2239,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">様方（全角）</div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
-		<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
+		<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
 		</ul>
 		
 		<span m:id="l_msgPre_dst_address_co_sei">
@@ -2222,7 +2274,7 @@ TEL：090-1234-1234
 		<span m:id="h_err_dst_tel_no">連絡先電話番号入力エラーメッセージ</span>
 		</span>
 		</span>
-		<span class="exp"><span m:id="sample_tel_1">例：012-345-6789</span></span>
+		<span class="exp add_exp"><span m:id="sample_tel_1">例：012-345-6789</span></span>
 	</div>
 </div>
 
