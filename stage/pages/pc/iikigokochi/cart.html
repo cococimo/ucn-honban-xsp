@@ -544,13 +544,6 @@ $(window).on('load resize', function(){
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- ▼▼▼▼カート▼▼▼▼ -->
-<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
-<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
-	<input type="hidden" name="_S" />
-	<input type="hidden" name="category_code" />
-	<input type="hidden" name="goods_url" />
-	<input type="hidden" name="ext_goods_sku_code" />
-</form>
 <div id="contents">
 
 
@@ -564,7 +557,6 @@ $(window).on('load resize', function(){
 	<object class="xsp_obj" m:id="b_var_postage_classify_special"></object>
 	<object class="xsp_obj" m:id="e_var_settlementMap"></object>
 	<object class="xsp_obj" m:id="e_var_saleStatus"></object>
-	<object class="xsp_obj" m:id="b_var_alc_goods_flg"></object>
 <div class="r_con_box_04">
 <div class="r_con_box_04_in">
 
@@ -662,10 +654,6 @@ $(window).on('load resize', function(){
   </span></div>
 </span>
 
-<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
-<span m:id="init_individual"></span>
-<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
-
 <span m:id="l_ite_shopCart">
 <span m:id="l_notPre_other_shop_cart">
 <object class="xsp_obj" m:id="e_var_free_guide_list"></object>
@@ -690,29 +678,22 @@ $(window).on('load resize', function(){
 </tr>
 
 
-<object class="xsp_obj" m:id="b_var_dm_member"></object>
-<object class="xsp_obj" m:id="b_var_order_log"></object>
 
+<!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
+<span m:id="init_individual"></span>
+<!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
 <span m:id="l_ite_detail">
 <object class="xsp_obj" m:id="b_param_special"></object>
 <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
 <input m:id="h_hid__S" type="hidden" name="" />
 <input m:id="h_hid_cart_detail_no" type="hidden" name="" />
-<span m:id="l_equ_set_alc_flg"></span>
 <tr>
 
 
 <td class="itemname_td">
 <div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
-<span m:id="l_notEqu_removeMe">
-<span m:id="h_link_cart_default_url">
- <a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
- </a>
-</span>
-<span m:id="h_link_cart_static_url">
- <a m:id="h_link_cart_static_goods_url" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
- </a>
-</span>
+<span m:id="l_notEqu_removeMe"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span>
+</a>
 <!-- チャネル別決済種別制限取得 -->
 <span m:id="l_pre_item_limit">
 <span m:id="l_ite_valid_settle">
@@ -1256,10 +1237,6 @@ $(window).on('load resize', function(){
 	※同じ商品の数量を変更する場合は、数値を入力後「再計算」を押してください。<br />
 	※カートから商品を削除する場合は、その商品の「削除」を押してください。<br />
 	※当サイトでは満18歳未満のお客様からのご注文は承れません。
-	<span m:id="l_notEmp_alcGoods_inCart">
-	<br />※未成年者の飲酒は法律で禁じられております。<br />
-　　&nbsp;&nbsp;&nbsp;当店では、未成年者への酒類の販売は固くお断りしています。
-	</span>
 	</td>
 	</tr>
 	</table>
@@ -1849,9 +1826,42 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
 <!--EndEditable -->
+<script defer="defer" type="text/javascript" language="javascript">
+var yahoo_retargeting_id = 'JAG00YJOZ2';
+var yahoo_retargeting_label = '';
+</script>
+<script defer="defer" type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script defer="defer" type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980914824;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
 
 
+<script type="text/javascript"  
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""  
+src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
 
+<script defer="defer" type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
 
 <script defer="defer" type='text/javascript'>
 if(typeof dmids == "undefined"){var dmids = {}};
