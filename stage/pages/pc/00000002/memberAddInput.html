@@ -54,10 +54,221 @@
 <!-- InstanceBeginEditable name="head" -->
 <!--<meta m:id="str_file_meta" content="">-->
 <style>
+@media (max-width: 640px) {
+#header {
+    margin-bottom: 5% !important;
+}
+.temp_tit_06 {margin-bottom: 6px !important}
+.memadd_table_01 {border: none !important; margin-bottom:0 !important}
+.memadd_table_01 tr, .memadd_table_01 th, .memadd_table_01 td{display: block}
+.memadd_table_01 td {background:none !important}
+.memadd_table_01 td.bor_bottom {border-bottom: none !important}
+.memadd_table_01 th{ display:none; padding:5px !important;}
+.sp_tbl1 tr:nth-child(1):before {
+content: "希望ログインID(半角英数字、8から20文字) ※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl1 tr:nth-child(2):before {
+content: "パスワード(半角英数字、8から20文字)※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl1 tr:nth-child(3):before {
+content: "パスワード（確認用）コピー貼り付けはしないでください※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(1):before {
+content: "お名前（全角）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(2):before {
+content: "フリガナ（全角）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(3):before {
+content: "メールアドレス（半角英数字）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(4):before {
+content: "メールアドレス（確認用）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(5):before {
+content: "郵便番号（半角英数字）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(6):before {
+content: "住所（都道府県）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(7):before {
+content: "住所（市区郡）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(8):before {
+content: "住所（町村字）（全角）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(9):before {
+content: "住所（番地）（全角）※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(10):before {
+content: "住所（建物名・部屋番号）※任意";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(11):before {
+content: "様方（全角）※任意";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(12):before {
+content: "電話番号は自宅、または携帯のいずれかまたは両方を入力してください。※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(12) td{display:none !important}
+.sp_tbl2 tr:nth-child(13):before {
+content: "電話番号（ご自宅）※任意";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(14):before {
+content: "電話番号（携帯）※任意";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(15):before {
+content: "性別※任意";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(16):before {
+content: "生年月日※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
+.sp_tbl2 tr:nth-child(17):before {
+content: "メールマガジン※必須";
+    background: #73bdac;
+    font-size: 12px;
+    color: #ffffff;
+	width:94% !important;
+	padding:4px;
+	display:block !important;
+	margin:10px auto!important;
+}
 .inp_bs{
 	display:block;	
 	width:20%;
-	padding:5.1% 0;
+	padding:2.4% 0;
 	margin-right:0.5%;
 	float:left;
 	margin-left:0;
@@ -188,6 +399,7 @@ input[type="radio"]:checked:after {
 	float:right;
 	color: rgba(158,158,158,1.00)
 	}
+.add_mb1{margin-bottom:10px !important}	
 	}
 </style>
 <script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -295,7 +507,7 @@ input[type="radio"]:checked:after {
 
 <h4 class="temp_tit_06 clear"><div>ログインID・パスワードの入力（ログイン時に必要な情報になります）</div></h4>
 
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01 sp_tbl1">
 <tr><th>希望ログインID<span class="imp">必須</span><p>(半角英数字、8から20文字)</p></th><td class="bor_bottom">
 <div class="memadd_t_box_04 clearfix">
 <div class="box_01">
@@ -306,7 +518,8 @@ input[type="radio"]:checked:after {
 <div><span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span></div>
 						<div><span class="error"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></span></div>
                         </td></tr>
-<tr><th class="none_bor">パスワード<span class="imp pc_b_t_02">必須</span><p>(半角英数字、8から20文字)</p></th><td>
+<tr><th class="none_bor">パスワード<span class="imp pc_b_t_02">必須</span><p>(半角英数字、8から20文字)</p></th>
+<td>
 <div class="memadd_t_box_04 clearfix">
 <div class="box_01">
 <input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
@@ -327,8 +540,12 @@ input[type="radio"]:checked:after {
 <span m:id="l_notPre_member">
 <h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
 
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><th>お名前（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_01"/>&nbsp;名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_01" /> <span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01 sp_tbl2">
+<tr><th>お名前（全角）<span class="imp">必須</span></th>
+<td class="bor_bottom">
+<span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06 add_mb1"/>
+<span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" />
+<span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
 <div>
 					        	<span class="error">
 					        		<span m:id="h_err_name_sei" >お名前(姓)入力エラーメッセージ</span>
@@ -342,7 +559,11 @@ input[type="radio"]:checked:after {
 
 
 </td></tr>
-<tr><th>フリガナ（全角）<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_01"/>&nbsp;名&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_01" /> <span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
+<tr><th>フリガナ（全角）<span class="imp">必須</span></th>
+<td class="bor_bottom">
+<span class="inp_bs">姓</span><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06 add_mb1"/>
+<span class="inp_bs">名</span><input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06" />
+<span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
 
 <div>
 <span class="error">
@@ -453,7 +674,8 @@ input[type="radio"]:checked:after {
 </div>
 </td></tr>
 <tr><th>様方（全角）<span class="nini">任意</span></th><td class="bor_bottom">
-姓&nbsp;<input type="text" class="in_w_01" m:id="h_txt_address_co_sei" name="address_co_sei"/>&nbsp;名&nbsp;<input type="text" class="in_w_01" m:id="h_txt_address_co_mei" name="address_co_mei" />
+<span class="inp_bs">姓</span><input type="text" class="in_w_06 add_mb1" m:id="h_txt_address_co_sei" name="address_co_sei"/>
+<span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" />
  <span class="exp"><span m:id="sample_address_co_1">例：鈴木　一郎</span></span>
  <div>
 <span class="error">

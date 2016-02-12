@@ -74,68 +74,12 @@
 .header_cate{display:none}	
 .pank li{float:left}
 }
-@media (max-width:640px)
-{
-.con_block {background:none !important; margin-bottom:0 !important; padding-bottom:0 !important}
-.go_input{clear:both !important}
-.con_box .con_list_five {width:100% !important; margin:0 !important; padding:0 !important}
-.con_list_five li{
-	clear:both !important;
-	float:none !important;
-	width:100% !important;
-	display:block !important;
-	text-align:left !important;
-	padding-top:5%;
-	}
-.con_list_five li:first-child{padding-top:0; border-top:none}	
-.con_list_five li .img_box{
-	clear:both !important;
-	width:45% !important;
-	float:left !important;
-	}
-.con_list_five li .img_box img{
-	width:100% !important;
-		}
-.con_list_five li div.img_box {
-	float:left;
-	margin-right:2% !important
+/*sp_land*/
+@media (max-width: 640px) {
+.btn_nex_01 a, .btn_nex_01 a:link {
+	width:80% !important
 }
-.sptx_r{
-	float:right;
-	width:48%;
-	padding-right:0.5%
-	}
-.con_box .con_list_five .heightLine-new01 {
-    width: 100% !important;
-	margin:0 auto;
-	margin-left: 0 !important
-}
-.con_list_five h3 a {
-    color: #009489;
-	font-weight:normal;
-    font-size: 12px;
-}
-select.goods_sku_code {
-    width: 90% !important;
-	padding:1.5%;
-	float:left;
-	margin-top:0.5%;
-	display:block;
-}
-.con_list_five p.cash {
-    font-size: 12px;
-    font-weight: bold;
-}
-.con_list_five .productDetail_cart_bt_normal{
-	float:left;
-	width:90%;
-	margin-bottom:5% !important
-}
-.productDetail_cart_bt_normal img {
-	min-width:130px;
-}	
-}
-</style>		
+</style>
 <!-- name="head" -->
 <script><!--
 var clicked = false;
@@ -381,49 +325,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>    
   <!-- InstanceBeginEditable name="header_category" -->  
 <!--▼▼▼カテゴリー▼▼▼-->
-<script>
-$(window).on('load resize', function(){
-    var w = $(window).width();
-    var x = 500;
-    if (w <= x) {
-  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
-		
-  $(function(){	  
-	$(".child_cat").hide();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"absolute",
-		 "top":"0",
-		 "left":"140px",
-		 "width":"170px",
-		 "z-index":"999",
-		 "list-style":"none",
-		 "background-color":"#ffffff"}
-		).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").hide();
-	})
-})
-} else {
-
-  $(function(){	  
-	$(".child_cat").show();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"relative",	"left":"0"}).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").show();
-	})
-})
-
-    }
-});
-</script>
-                   
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
                             <div class="l_con_box_01">
@@ -437,7 +338,7 @@ $(window).on('load resize', function(){
                                             <ul class="l_con_list_01 clearfix example">
                                                 <span  m:id="l_ite_cate">
                                                     <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList" style="position:relative"><!--基準点追加-->
+                                                    <li class="ctList">
                                                     
                                                     <div class="p_0">
                                                     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
@@ -452,8 +353,7 @@ $(window).on('load resize', function(){
                                                         <span m:id="disp_subCate_category_name">ファッション</span>
                                                     </span>
                                                     </a>
-                                                    </div>
-                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
+                                                    </div>						<ul m:id="tag_dd_subCate" class="clearfix">
                                                         <span m:id="l_ite_subCate"> 
                                                             <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
                                                             <li class="ctArrow">
