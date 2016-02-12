@@ -213,6 +213,38 @@ select.goods_sku_code {
 .cartAddbtn {
 	width:100% !important;
 }
+/*radio*/
+input[type="radio"] {
+    position: relative;
+    -webkit-appearance: button;
+    appearance: button;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #004d9a;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
 
 }
 </style>
@@ -1093,9 +1125,11 @@ $(window).on('load resize', function(){
   </tr>
   </table>
  
-      <div class="box_02 center mb15">
+      <div class="box_02 center mb15 clearfix">
+      <div class="radioFloat">
 	  <input m:id="h_radio_wrapping_set0" type="radio" name="wrapping_type" value="">
 	  <span style="font-size:20px">-なし-</span>
+      </div>
 	  </div>
  <span m:id="l_ite_wrapping_set">
 <object class="xsp_obj" m:id="b_var_wrapping_set" ></object>
@@ -1432,7 +1466,7 @@ $(window).on('load resize', function(){
  <div class="con_block">
   <span m:id="l_notEmp_priceGoodsList">
 <div class="con_box_check clearfix">
-    <h2>送料無料に近い単価商品</h2>   
+    <h2>いっしょに買うと送料無料になる単価の商品</h2>   
 
 <ul class="con_list_five">
         <span m:id="l_ite_priceGoodsList">

@@ -124,6 +124,40 @@ content: "配送希望時間帯";
 .box_form_td03 div:nth-child(2){
 	margin:4% 0!important
 }
+/*res-table2*/
+.orderInputLogin table{ width:100% !important; margin:0 auto !important; background:none !important; border:none !important}
+.orderInputLogin table tr, .orderInputLogin table th, .orderInputLogin table td{display: block; text-align:left}
+.orderInputLogin table th{ display:none;}
+.orderInputLogin table tr:nth-child(1):before {
+content: "ログインID";
+    background: #00ada0;
+    color: #FFF;
+	width:97% !important;
+	padding:5px;
+	display:block !important;
+	margin:10px 0 !important;
+}
+.orderInputLogin table tr:nth-child(2):before {
+content: "パスワード";
+    background: #00ada0;
+    color: #FFF;
+	width:97% !important;
+	padding:5px;
+	display:block !important;
+	margin:10px 0 !important;
+}
+.memadd_table_01 td{background:none !important}
+input[type="checkbox"] {
+	width:25px !important;
+	height:25px !important;
+	margin:0 !important;
+	padding:0 !important
+}
+.add_ck_in{
+	display:block;
+	margin:-7% 0 0 12%;
+}
+
 /*radio*/
 input[type="radio"] {
     position: relative;
@@ -205,11 +239,16 @@ border-radius:5px;
 padding:2% !important;
 float:none !important
 }
+.add_radz {
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
 .vis_add{
 	width:98%;
 	margin:0 auto 3% auto;
 	padding:1%;
-	color:red;
+	color:#595857;
 	text-align:left
 	}
 .vis_tit{
@@ -222,6 +261,11 @@ float:none !important
 	float:right;
 	color: rgba(158,158,158,1.00)
 	}
+.add_h5{
+	font-size:14px !important;
+	color:#595857 !important;
+}
+a.loginBt{width:90% !important}
 }
 </style>
 		<script>
@@ -1006,6 +1050,7 @@ $(window).on('load resize', function(){
 </div>
 <!-- 非ログイン時 -->
 <span m:id="l_notPre_member_login_button_shop">
+	<h5 class="add_h5">●ココチモ会員の方</h5>
 	<div class="login_msg">
 		<p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p>
 	</div>
@@ -1018,7 +1063,7 @@ $(window).on('load resize', function(){
 		<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
 			<tr>
 				<th>ログインID</th>
-				<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
+				<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02 add_radz"/>
 					<span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
 					<span m:id="l_msgPre_login_id">
 						<div>
@@ -1029,7 +1074,7 @@ $(window).on('load resize', function(){
 			</tr>
 			<tr>
 				<th>パスワード</th>
-				<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
+				<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02 add_radz" />
 					<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
 					<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
 					<span m:id="l_msgPre_password">
@@ -1181,7 +1226,7 @@ $(window).on('load resize', function(){
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（都道府県）<span class="imp">必須</span></div>
-	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" style="margin-top:40px;" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
+	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_prefecture" value="001">青森県</option>
 		<option m:id="dummy" value="002">秋田県</option>
@@ -1663,15 +1708,14 @@ $(window).on('load resize', function(){
 	
 
 	<div class="box_form_table">
-		<div class="box_form_th">セキュリティコード<br />
-		（半角英数字）<span class="imp">必須</span></div>
+		<div class="box_form_th">セキュリティコード（半角英数字）<span class="imp">必須</span></div>
 		<div class="box_form_td">
 			<div class="memadd_mb_01">
 			<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" maxlength="4"/><span m:id="l_msgPre_security_code">
 			<br /><span class="error"><span m:id="h_err_security_code">セキュリィティコード入力エラーメッセージ</span></span>
 			</span>
 			<span class="exp">例：<span  m:id="sample_security_code">0123</span></span></div>
-			<div><label><input  m:id="h_check_security_code" type="checkbox"  value="1" name="check_security_code" />　セキュリティコードを入力しない</label></div>
+			<div class="cd_ck"><label><input  m:id="h_check_security_code" type="checkbox"  value="1" name="check_security_code" /><span class="add_ck_in">セキュリティコードを入力しない</span></label></div>
 		</div>
 	</div>
 
