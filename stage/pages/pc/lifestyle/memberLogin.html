@@ -58,6 +58,17 @@
 <!-- InstanceBeginEditable name="head_css_js" -->
 <style>
 .sp_on{ display:none}
+.memadd_table_01 tr:nth-child(1){ display:none;}
+.memadd_table_01 tr:nth-child(3){ display:none;}
+.add_h5 {
+    border-bottom: 1px dotted #9f9590!important;
+    font-size: 16px!important;
+	font-weight:normal !important;
+    margin-bottom: 5px!important;
+    text-align: left!important;
+    color: #595857 !important;
+}
+.memadd_mb_02{margin-bottom:5px !important}
 @media (max-width: 1280px)
 {
 .add_p {display:none !important}
@@ -73,7 +84,48 @@
 	text-align:left
 	}	
 .header_cate{display:none}
-.pank li{float:left}	
+.pank li{float:left}
+.sp_td{display:none !important}
+}
+@media (max-width: 640px) {
+.memadd_table_01 th{ display:none;}
+.memadd_table_01 tr:nth-child(1){ display: block}
+.memadd_table_01 tr:nth-child(3){ display: block}
+
+.sp_tcel{
+    background: #00ada0 !important;
+    border-bottom: 1px solid #ececec;
+    color: #fff;
+    font-size: 12px;
+    padding: 2% 1.5% 3% 2% !important;
+    width: 97% !important;
+	display:block !important;
+}
+.memadd_table_01 td span.imp {
+    background: none repeat scroll 0 0 #f35b71;
+    color: #ffffff;
+    float: right;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 2px;
+}
+.notationBlock input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
+	padding:1.2% 0 !important;
+}
+.memadd_table_01 .in_w_02{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+.notationBlock {
+    padding:0 30px !important;
+}
+.add_h5 {font-size: 13px !important}
+.memadd_mb_02{margin-bottom:0 !important}
+.mb20{text-align:left !important; margin-bottom:10px !important}
+a.loginBt {width:94% !important}
 }
 </style>        
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -525,7 +577,7 @@ $(window).on('load resize', function(){
 <div>
 
 <div class="sec_02 clearfix notationBlock">
-
+<h5 class="add_h5">●ココチモ会員の方</h5>
 <p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
 </p>
 <span m:id="l_msgPre_errors_member_login">
@@ -543,18 +595,21 @@ $(window).on('load resize', function(){
 <h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
 
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-
+<tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
 <tr><th>ログインID<span class="imp">必須</span></th>
 <td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
 <span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
 <span m:id="l_msgPre_login_id">
-<div>							<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
+<div>
+<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
 </span>
-</div>						</span>
+</div>
+</span>
 
 
 </td>
 </tr>
+<tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
 <tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
 
 <span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
