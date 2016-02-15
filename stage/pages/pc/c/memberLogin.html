@@ -168,6 +168,80 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </ul>
 </div>-->
 <div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
+<style>
+.sp_on{ display:none}
+.memadd_table_01 tr:nth-child(1){ display:none;}
+.memadd_table_01 tr:nth-child(3){ display:none;}
+.add_h5 {
+    border-bottom: 1px dotted #9f9590!important;
+    font-size: 16px!important;
+	font-weight:normal !important;
+    margin-bottom: 5px!important;
+    text-align: left!important;
+    color: #595857 !important;
+}
+.memadd_mb_02{margin-bottom:5px !important}
+@media (max-width: 1280px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;
+	padding-left:4%;
+	}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	text-align:left
+	}	
+.header_cate{display:none}
+.pank li{float:left}
+.sp_td{display:none !important}
+}
+@media (max-width: 640px) {
+.memadd_table_01 th{ display:none;}
+.memadd_table_01 tr:nth-child(1){ display: block}
+.memadd_table_01 tr:nth-child(3){ display: block}
+
+.sp_tcel{
+    background: #00ada0 !important;
+    border-bottom: 1px solid #ececec;
+    color: #fff;
+    font-size: 12px;
+    padding: 2% 1.5% 3% 2% !important;
+    width: 97% !important;
+	display:block !important;
+}
+.memadd_table_01 td span.imp {
+    background: none repeat scroll 0 0 #f35b71;
+    color: #ffffff;
+    float: right;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 2px;
+}
+.sec_02 input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
+	padding:1.2% 0 !important;
+}
+.sec_02 .in_w_02{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+.add_h5 {font-size: 13px !important}
+.memadd_mb_02{margin-bottom:0 !important}
+.mb20{text-align:left !important; margin-bottom:10px !important; font-size:14px !important;}
+.inq_input_bt_01 input {
+	width:94% !important;
+	outline:none !important;
+	border:none !important
+	}
+.memadd_table_01 {margin-bottom:20px!important}	
+}
+</style>   
 <span m:id="l_pre_display_code">
 			<object class="xsp_obj" m:id="e_var_goods1"></object>
 		</span>
@@ -181,8 +255,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div class="r_con_box_04_in">
 <h1 class="temp_tit_n02 temp_tit_n02_cor">ログイン</h1>
 <div class="sec_02 clearfix">
-
-<p class="left memadd_mb_02"><p>会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
+<h5 class="add_h5">●ココチモ会員の方</h5>
+<p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
 </p>
 <span m:id="l_msgPre_errors_member_login">
 		<div class="error">
@@ -199,7 +273,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
 
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-
+<tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
 <tr><th>ログインID<span class="imp">必須</span></th>
 <td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
 <span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
@@ -211,6 +285,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 </td>
 </tr>
+<tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
 <tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
 
 <span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
