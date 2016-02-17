@@ -1,0 +1,147 @@
+
+.clear{
+	clear:both;
+}
+
+.wrap_con {
+    width:730px;
+	text-align:center;
+	margin:0px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 3px 0 #666; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 3px 0 #666; /* Firefox用 */
+	box-shadow: 0 0 3px 0 #666; /* CSS3 */
+	color:#000;
+}
+
+.inner{
+    width:686px;
+    margin:auto;
+    text-align:left;
+    padding-top:20px;
+}
+
+.mt20{
+	margin-top:20px;
+}
+
+.inner .day{
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+
+.inner h1{
+	font-size:34px;
+	margin-bottom:10px;
+	background-color:#FFEA53;
+	line-height:120%;
+	color:#151515;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding:15px 10px 17px 15px;
+		font-weight:normal;
+
+}
+
+
+.inner h2{
+	font-size:22px;
+	line-height:130%;
+	color:#151515;
+	border-top:#111 solid 1px;
+	border-bottom:#111 solid 1px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	margin-top:40px;
+}
+
+.inner p{
+    font-size:16px;
+    text-align:left;
+    color:#333;
+    line-height:190%;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+ 
+
+.wrap_con {
+    width:96%;
+	text-align:center;
+	margin:0px auto 20px;
+	padding-top:7px;
+	padding-bottom:20px;
+	background:#FFF;
+	-webkit-box-shadow: 0 0 3px 0 #666; /* Safari, Chrome用 */
+	-moz-box-shadow: 0 0 3px 0 #666; /* Firefox用 */
+	box-shadow: 0 0 3px 0 #666; /* CSS3 */
+	color:#000;
+}
+
+.inner{
+    width:96%;
+    margin:auto;
+    text-align:left;
+    padding-top:20px;
+}
+
+.wrap_con  img{
+    max-width:96%;
+}
+
+.mt20{
+	margin-top:20px;
+}
+
+.inner .day{
+	font-size:12px;
+	font-weight:bold;
+	display:block;
+}
+
+.inner h1{
+	font-size:27px;
+	margin-bottom:10px;
+	background-color:#F5F4E9;
+	line-height:120%;
+	color:#151515;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	padding:15px 10px 17px 15px;
+	font-weight:normal;
+}
+
+
+.inner h2{
+	font-size:22px;
+	line-height:130%;
+	color:#151515;
+	border-top:#111 solid 1px;
+	border-bottom:#111 solid 1px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	margin-top:40px;
+}
+
+.inner p{
+    font-size:16px;
+    text-align:left;
+    color:#333;
+    line-height:190%;
+    margin-bottom:20px;
+}
+
+}
