@@ -61,6 +61,10 @@
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
 <style>
+#born .selcv{
+	display:block;
+	margin-bottom:3%
+}
 /*sp_land_wide*/
 .sp_on{ display:none}
 .sp_tel{display:none}
@@ -82,6 +86,7 @@
 }
 /*sp_land*/
 @media (max-width: 640px) {
+.exp br{display:none}	
 .btn_nex_01 a, .btn_nex_01 a:link {
 	width:80% !important
 }
@@ -1346,7 +1351,7 @@ $(window).on('load resize', function(){
 <br clear="all">
 
 <div class="box_form_table">
-	<div class="box_form_th">住所（町村字）（全角）<span class="imp">必須</span></div>
+	<div class="box_form_th">住所（町村字）<span class="imp">必須</span></div>
 	<div class="box_form_td"><input type="text" class="in_w_10" m:id="h_txt_address2" name="address2" id="address2"/>
 	<span m:id="l_msgPre_address2">
 	<br />
@@ -1365,7 +1370,7 @@ $(window).on('load resize', function(){
 <br clear="all">
 
 <div class="box_form_table">
-	<div class="box_form_th">住所（番地）（全角）<span class="imp">必須</span></div>
+	<div class="box_form_th">住所（番地）<span class="imp">必須</span></div>
 	<div class="box_form_td"><input type="text" class="in_w_10" m:id="h_txt_address3" name="address3"/>
 	<span m:id="l_msgPre_address3">
 	<br />
