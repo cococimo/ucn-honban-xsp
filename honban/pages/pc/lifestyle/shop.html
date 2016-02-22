@@ -42,8 +42,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
 <!-- common js -->
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -854,6 +854,94 @@ function initCorners() {
 	</div>
 </span>
 		<!--▲▲▲RANKING▲▲▲-->
+
+  <!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
+  <div class="wrap_specialcontents">
+  <span m:id="l_notEmp_autoRecommendGoodsList">
+    <!--<h2 class="sp_only sp_r_tit_01"><img src="../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
+    <h2 class="webf">あなたの閲覧履歴からのおススメ</h2>
+      <ul class="stafflist">
+      <span m:id="l_ite_autoRecommendGoodsList">
+      <span m:id="l_notEqu_autoRecommendGoodsList_idx">
+        <li class="autoreco">
+              <span m:id="l_pre_autoRecommendGoods_representSku">
+                <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
+                </object>
+                	<a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+               </span>
+               <p class="txt13 mt10"><b>
+                <a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a>
+               </b></p>
+              <p class="txt13 mt10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+            <!-- 閲覧履歴一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_autoReco">
+				<span m:id="l_equ_autoReco_valiationSize">
+					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="cartAddbtn pc_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+						<img class="cartAddbtn newCartAddbtn_sp sp_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+
+					</a>
+				</span>
+				<span m:id="l_not_equ_autoReco_valiationSize">
+					<select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_autoReco" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_autoReco">&nbsp;</div>
+					<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい"/>-->
+					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="cartAddbtn pc_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+						<img class="cartAddbtn newCartAddbtn_sp sp_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_autoReco">
+				<span m:id="disp_saleStatus_autoReco">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 閲覧履歴一覧からカートに入れる -->
+        </li>
+        <li class="" m:id="dummy">
+          <div class="box_01 heightLine-osusuem01">
+            <div class="box_02">
+              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="#">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li class=" " m:id="dummy">
+          <div class="box_01 heightLine-osusuem01">
+            <div class="box_02">
+              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li class="heightLine-osusuem01 " m:id="dummy">
+          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+        </li>
+        <li class="heightLine-osusuem01 " m:id="dummy">
+          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+        </li>
+         </span>
+         </span>
+      </ul>
+  <br clear="all">
+  </span>
+  </div>
+  <!--▲▲▲あなたの閲覧履歴からのおススメです▲▲▲-->
+
 	<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
 		<h2 class="webf">ラプアン カンクリ特集</h2>

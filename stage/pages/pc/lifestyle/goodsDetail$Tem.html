@@ -41,10 +41,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
 
 <!-- common js -->
@@ -1517,7 +1517,6 @@ $(window).on('load resize', function(){
 <span m:id="l_pre_disp_colname15"><span m:id="disp_colname15">ここにBOの登録タイトル15が表示されます。</span></span>
 <span m:id="l_pre_disp_content15"><span m:id="disp_content15">ここにBOの登録内容15が表示されます。</span></span>
 
-
   <!-- 商品詳細 -->
   
   <div class="goods_review">
@@ -1722,7 +1721,7 @@ $(window).on('load resize', function(){
 							</td>
 						</tr>
 						<tr>
-							<th>支払・匇ﾔ</th>
+							<th>支払・ﾔ</th>
 							<td>
 								：
 								<span m:id="l_pre_disp_goods_pay_term">
@@ -2240,6 +2239,80 @@ eltexcomment-->
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
   <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
+  <!--Eltex 修正 START(この商品を見た人はこの商品も見ています。)-->
+<!--▼▼▼この商品を見た人はこの商品も見ています。▼▼▼-->
+<object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
+<span m:id="l_notEmp_autoRecommendGoodsList">
+ <div class="con_box clearfix">
+  <h2>この商品を見た人はこの商品も見ています</h2>   
+   <ul class="con_list_five">
+    <span m:id="l_ite_autoRecommendGoodsList">
+    <span m:id="l_notEqu_autoRecommendGoodsList_idx">
+     <li class="heightLine-new01">
+      <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
+	   <input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
+	   <input m:id="h_hid_displayMode" type="hidden" name="display_mode" value="123"/>
+	  </form>
+      <div class="box_01 heightLine-new02">
+       <div class="box_02">
+        <div class="img_box">
+         <span m:id="l_pre_autoRecommendGoods_representSku">
+          <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage"></object>
+          <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a>
+         </span>
+        </div>
+        <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
+         <p class="cash">
+          <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice">
+		   <span class="original_price">
+		    <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円
+		   </span>&nbsp;
+		  </span>
+		  <span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円(税込)
+         </p>
+		<!-- 関連商品一覧からカートに入れる -->
+<!--
+		<span m:id="l_can_addCartDirect_autoReco">
+		 <span m:id="l_equ_autoReco_valiationSize">
+		  <a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+		   <img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
+		   <img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+		  </a>
+		 </span>
+		 <span m:id="l_not_equ_autoReco_valiationSize">
+	      <select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
+		   <option value="">選択してください</option>
+		   <option m:id="h_opt_variations_autoReco" value="">白</option>
+		   <option m:id="dummy" value="">黒</option>
+		   <option m:id="dummy" value="">赤</option>
+		   <option m:id="dummy" value="">青</option>
+		   <option m:id="dummy" value="">緑</option>
+		  </select>
+		  <div m:id="disp_not_cartAddBtn_autoReco"></div>
+		  <a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+		   <img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
+		   <img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+		  </a>
+		 </span>
+		</span>
+		<span m:id="l_not_addCartDirect_autoReco">
+		 <span m:id="disp_saleStatus_autoReco">
+		  <p class="soldout"><strong>[販売終了]</strong></p>
+		 </span>
+		</span>
+--> 
+      <!--/ 関連商品一覧からカートに入れる -->
+       </div>
+      </div>
+     </li>
+    </span>
+    </span>
+    </ul>     
+  </div>   
+ </span>
+<!--▲▲▲この商品を見た人はこの商品も見ています。▲▲▲-->
+<!--Eltex 修正 END(この商品を見た人はこの商品も見ています。)-->
+
  <!--
   <span m:id="l_notEmp_autoRecommendGoodsList">
 <div class="con_box clearfix">
@@ -2708,11 +2781,9 @@ eltexcomment-->
 </div>
 </span>
 <!-- ▲▲ 関連カテゴリ表示欄  ▲▲ -->
-
 <!--20151022-->
 <span m:id="l_pre_disp_colname16"><span m:id="disp_colname16">ここにBOの登録タイトル16が表示されます。</span></span>
 <span m:id="l_pre_disp_content16"><span m:id="disp_content16">ここにBOの登録内容16が表示されます。</span></span>
-
 <!--▼▼▼カテゴリー▼▼▼-->
 <span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="l_con_box_01">
@@ -2859,8 +2930,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div><!--contents_l-->
 
 </div><!-- contents -->
-
-
 </div><!--container-->
 <!-- InstanceEndEditable -->
 </div>

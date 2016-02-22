@@ -31,7 +31,12 @@
 
 .ad-prev-image {display:block !important;}
 .ad-next-image {display:block !important;}
-
+div.r_con_box_03 li.heightLine-rank01:nth-child(4){
+  display:none;
+}
+div.r_con_box_03  li.heightLine-rank01:nth-child(5){
+  display:none;
+}
 .pc_social {
 	position:fixed;
 	right:50%;
@@ -1335,11 +1340,11 @@ p.link {
 }
 .r_con_list_04 li {
 	/*width:113px;*/
-	width:15.4%;
+	width:18%;
 	display:inline;
 	float:left;
 	border-right:#9f9590 1px dotted;
-	padding:15px 17px 15px 16px;
+	padding:15px 6px;
 	text-align:left;
 }
 .r_con_list_04 li:nth-child(5) {
@@ -4200,7 +4205,7 @@ margin:0 3.125% 5% 3.125%;
 }
 
 
-/* ===========お客様情報の入劁E============= */
+/* ===========お客様情報の入力============== */
 
 
 #ad_tit_01 {
@@ -5276,6 +5281,7 @@ span.error {
 #contents_r select, #contents_r_02 select {
 	font-size:16px;
 	line-height:24px;
+	max-width: 100%;
 }
 .comm_box {
 	position:relative;
@@ -5297,7 +5303,7 @@ span.error {
 
 @media (max-width: 640px) {
 
-/* ===========お客様情報の入劁E============= */
+/* ===========お客様情報の入力============== */
 .n_i_shop_mb_20 {
 	padding-bottom:3%;
 }
@@ -7675,4 +7681,18 @@ img[id*="not_priceGoodsBtnID_"],img[id*="not_recentBtnID_"],img[id*="not_newGood
   li div div.cart_box{
     clear:both;
   }
+}
+.item_bt_01 .add_posta a {
+    display: inline;
+    background: none;
+}
+@media (min-width: 640px) {
+	.item_bt_01 .add_posta a.sp_only{
+		display:none;
+	}
+}
+@media (max-width: 640px) {
+	.item_bt_01 .add_posta a.pc_only{
+		display:none;
+	}
 }

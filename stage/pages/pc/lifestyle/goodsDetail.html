@@ -21,6 +21,7 @@
 <object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
 <link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2="の通販・通信販売｜生活・北欧雑貨の通販「ココチモ」">データベースから値を取得し表示します</title>
+
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
@@ -47,8 +48,8 @@ window.onunload = function() {
 <!-- common css -->
 <link rel="shortcut icon"m:id="css_file"  href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon"m:id="css_file"  href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 
 
 <!-- common js -->
@@ -197,7 +198,6 @@ $(".faceBooks").append(ifremstr);
 <!-- InstanceBeginEditable name="head" -->
 <!-- detail -->
 <object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-
 <span m:id="l_notPre_goods">
     <object class="xsp_obj" m:id="e_var_goods2"></object>
     <span m:id="l_notPre_goods">
@@ -286,19 +286,15 @@ function siteCatalistAddCart1(s_products){
 <body id="top">
 <!-- name="body" -->
 <!-- EndEditable -->
-
 <div id="container">
-
 <div id="header">
 <div id="header_wrap" class="clearfix">
 <!-- InstanceBeginEditable name="head_h1" -->
 <h1 class="add_p"><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
 <!-- InstanceEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
-
 <!-- header追加 -->
 <!-- name="header_logo" -->
-
 <div id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
@@ -2262,6 +2258,7 @@ eltexcomment-->
   <h2>この商品を見た人はこの商品も見ています</h2>   
    <ul class="con_list_five">
     <span m:id="l_ite_autoRecommendGoodsList">
+    <span m:id="l_notEqu_autoRecommendGoodsList_idx">
      <li class="heightLine-new01">
       <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
 	   <input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
@@ -2275,7 +2272,6 @@ eltexcomment-->
           <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a>
          </span>
         </div>
-        <div class="sptx_r">
         <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
          <p class="cash">
           <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice">
@@ -2319,6 +2315,7 @@ eltexcomment-->
        </div>
       </div>
      </li>
+    </span>
     </span>
     </ul>     
   </div>   
@@ -2692,7 +2689,8 @@ eltexcomment-->
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
-  
+ <br clear="all" />
+ 
 <!-- ▼▼ 関連カテゴリ表示欄 ▼▼ -->
 <span m:id="relate_cate_bean_def" flg="0"></span>
 <object class="xsp_obj" m:id="e_var_relateCategoryList"></object>
@@ -2915,7 +2913,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 <!--container-->
 <!-- ガイド -->
-
 <div id="guideWrapper" class="pc_only">
   <div class="guideTop">
     <div class="guideTopInner clearfix">
@@ -2969,7 +2966,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </div>
   </div>
 </div>
-
 <!-- ガイド -->
     
 <!-- footer追加 -->
@@ -3015,7 +3011,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
  </span>
 </div>
 </span></span>
-
     <div class="add_inner">
     <div class="inn_tit3">注目カテゴリー</div>
       <ul>
@@ -3036,9 +3031,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
       
 <br clear="all" />
-
-
-
     <div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
       <ul>
@@ -3056,9 +3048,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li></li>
       </ul>
     </div>
-
-
-
     <div id="footer03" class="pc_display">
       <div class="clearfix" id="footer_wrap03">
         
@@ -3075,7 +3064,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
       </div><!--footer_wrap03-->
     </div>
-
     <div id="footer05" class="sp_only">
       
       <div class="mt10 sp_secure clearfix">
@@ -3085,9 +3073,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </p>
       </div>
     </div>
-
     <p>Copyright U-CAN, Inc. All Rights Reserved.</p>
-
   </div>
 </div><!-- /#footer02 -->
 	<!-- InstanceBeginEditable name="footer_script" -->
@@ -3192,5 +3178,4 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
 <!-- footer追加 -->
 
 </body>
-
 <!-- InstanceEnd --></html>

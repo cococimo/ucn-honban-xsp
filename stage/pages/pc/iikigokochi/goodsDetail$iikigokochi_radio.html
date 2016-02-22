@@ -44,12 +44,12 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <!-- InstanceEndEditable -->
 <!-- common css -->
-<link rel="shortcut icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css" type="text/css" media="all" />
+<link rel="shortcut icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
@@ -930,7 +930,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -1787,7 +1787,46 @@ $(window).on('load resize', function(){
 <p class="styling_notes">※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</p>
 </div>
 
-
+ <!--▼▼▼この商品を見た人はこの商品も見ています▼▼▼-->
+<object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
+<span m:id="l_notEmp_autoRecommendGoodsList">
+<div class="con_box clearfix">
+<!--<h2 class="sp_only sp_r_tit_01"><img src="../../../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
+<h2>この商品を見た人はこの商品も見ています</h2>
+   <ul class="con_list_six">
+    <span m:id="l_ite_autoRecommendGoodsList">
+    <span m:id="l_notEqu_autoRecommendGoodsList_idx_six">
+     <li class="heightLine-new01">
+      <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
+	   <input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
+	   <input m:id="h_hid_displayMode" type="hidden" name="display_mode" value="123"/>
+	  </form>
+      <div class="box_01 heightLine-new02">
+       <div class="box_02">
+        <div class="img_box">
+         <span m:id="l_pre_autoRecommendGoods_representSku">
+          <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage"></object>
+          <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a>
+         </span>
+        </div>
+        <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
+         <p class="cash">
+          <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice">
+		   <span class="original_price">
+		    <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円
+		   </span>&nbsp;
+		  </span>
+		  <span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円(税込)
+         </p>
+       </div>
+      </div>
+     </li>
+    </span>
+    </span>
+    </ul>     
+</div>
+</span>
+ <!--▲▲▲この商品を見た人はこの商品も見ています▲▲▲-->
 </div>
 
 
@@ -1810,7 +1849,6 @@ $(window).on('load resize', function(){
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
-  <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
 
 
 <!--</div><!-- contents_r -->
@@ -2152,8 +2190,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature/">アイテム特集</a></li>
-      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
+      <li><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
       <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
     </ul>
     <ul class="footer_category only_pc">

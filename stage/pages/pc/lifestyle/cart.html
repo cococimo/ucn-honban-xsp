@@ -21,10 +21,10 @@
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -213,6 +213,38 @@ select.goods_sku_code {
 .cartAddbtn {
 	width:100% !important;
 }
+/*radio*/
+input[type="radio"] {
+    position: relative;
+    -webkit-appearance: button;
+    appearance: button;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #004d9a;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
 
 }
 </style>
@@ -227,6 +259,7 @@ if (window.matchMedia('screen and (max-width:640px)').matches) {
 } 
 });
 </script>
+
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/selectivizr.js"></script>
 <![endif]-->
@@ -655,7 +688,6 @@ $(window).on('load resize', function(){
 	<input type="hidden" name="goods_url" />
 	<input type="hidden" name="ext_goods_sku_code" />
 </form>
-
 <div id="contents">
 <div class="sp_on">
 <h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
@@ -774,11 +806,9 @@ $(window).on('load resize', function(){
 	<span m:id="disp_msg">エラーメッセージその２</span>
   </span></div>
 </span>
-
 <!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
 <span m:id="init_individual"></span>
 <!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
-
 <span m:id="l_ite_shopCart">
 <span m:id="l_notPre_other_shop_cart">
 <object class="xsp_obj" m:id="e_var_free_guide_list"></object>
@@ -856,6 +886,11 @@ $(window).on('load resize', function(){
 
 
 </td>
+
+
+
+
+
 
 <!-- <td class="right"><span m:id="b_wr_goods_price_tax">2000</span> 円</td> -->
 <span m:id="l_notEqu_installment">
@@ -1093,9 +1128,11 @@ $(window).on('load resize', function(){
   </tr>
   </table>
  
-      <div class="box_02 center mb15">
+      <div class="box_02 center mb15 clearfix">
+      <div class="radioFloat">
 	  <input m:id="h_radio_wrapping_set0" type="radio" name="wrapping_type" value="">
 	  <span style="font-size:20px">-なし-</span>
+      </div>
 	  </div>
  <span m:id="l_ite_wrapping_set">
 <object class="xsp_obj" m:id="b_var_wrapping_set" ></object>
@@ -1334,6 +1371,7 @@ $(window).on('load resize', function(){
 </form>
 </div><!-- /cartLeft -->
 <!-- cartLeft -->
+
 	<div class="cartright">
 	<div class="box_02 go_input mb20">
 	<span m:id="l_msgNotPre_1">
@@ -1432,7 +1470,7 @@ $(window).on('load resize', function(){
  <div class="con_block">
   <span m:id="l_notEmp_priceGoodsList">
 <div class="con_box_check clearfix">
-    <h2>送料無料に近い単価商品</h2>   
+    <h2>いっしょに買うと送料無料になる単価の商品</h2>   
 
 <ul class="con_list_five">
         <span m:id="l_ite_priceGoodsList">
@@ -1448,6 +1486,7 @@ $(window).on('load resize', function(){
                 </div>
         <div class="sptx_r">
               <h3><a m:id="h_link_priceGoods_name" href="goodsDetail.html"><span m:id="disp_priceGoods_goods_name">商品名商品名</span></a></h3>
+
               <p class="text"><span m:id="disp_priceGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
 				                  <p class="cash">
                           <span m:id="l_notEqu_priceGoods_pretaxPrice">
@@ -1620,6 +1659,7 @@ $(window).on('load resize', function(){
 
 <ul class="con_list_five">
         <span m:id="l_ite_autoRecommendGoodsList">
+        <span m:id="l_notEqu_autoRecommendGoodsList_idx">
           <li class="heightLine-new01">
             <div class="box_01 heightLine-new02">
               <div class="box_02">
@@ -1712,6 +1752,8 @@ $(window).on('load resize', function(){
               </div>
             </div>
           </li>
+          </span>
+          </span>
     </ul>     
       
 </div>  

@@ -21,7 +21,7 @@
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/contents_02.css" type="text/css" media="all" />
@@ -70,7 +70,43 @@ jQuery(document).ready(function($){ //ここから
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
-
+<style>
+@media (max-width: 640px) {
+.ad_navi li {
+	width:25% !important;
+	margin:0 !important;
+	padding:0 !important;
+	list-style:none !important
+	}
+.ad_navi li.last{width:20.5% !important;}	
+.ad_navi .ad_navi_in2 {
+    width:75%;
+}
+.ad_navi li {
+	background-position:right 45%!important;
+	background-size: 10px 10px;
+	margin-right:1% !important
+}
+.inq_input_bt_03 .box_01, .inq_input_bt_03 .box_02 {
+    display: block !important;
+	float:none !important
+}
+.inq_input_bt_03 .box_02{
+	width:100% !important;
+	}
+.inq_input_bt_03 img{
+	width:98% !important;
+	margin:0 auto !important
+}
+.inq_input_bt_03 .box_01{
+	width:50% !important
+}
+.inq_input_bt_03 .n_bt_re_01 img {
+    width: 98% !important;
+    margin:0 auto;
+}
+}
+</style>
 <span m:id="site_products"></span>
 <script language="JavaScript" type="text/javascript"><!--
 function siteCatalistRemoveCart(s_products,url){
@@ -1137,6 +1173,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="clearfix r_con_box_02_in"> 
       <ul class="r_con_list_04">
       <span m:id="l_ite_autoRecommendGoodsList">
+      <span m:id="l_notEqu_autoRecommendGoodsList_idx">
         <li class="">
           <div class="box_01 heightLine-osusuem01">
             <div class="box_02">
@@ -1181,7 +1218,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
             </div>
           </div>
         </li>
-         </span>
         <li class="" m:id="dummy">
           <div class="box_01 heightLine-osusuem01">
             <div class="box_02">
@@ -1210,6 +1246,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
           <h3><a href="goodsDetail.html">商品名商品名</a></h3>
           <p>50円（税込）</p>
         </li>
+         </span>
+         </span>
       </ul>
    </div>
   </div>
@@ -1223,7 +1261,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<div class="guidebox_left">
 		<img  m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
 		<img src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px">（産地直送品を除く）</div>
+        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px">（産地直送品、メーカー直送家具を除く）</div>
 			<div class="box_souryou">
 			<p>お買い物総額5,000円（税込）未満の場合<br>
 			<span class="souryoutxt">＝送料500円</span><br>

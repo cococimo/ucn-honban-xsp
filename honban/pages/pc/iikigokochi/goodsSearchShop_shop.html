@@ -26,10 +26,10 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css?ver=20160222_1" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css?ver=20160222_1" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
@@ -826,6 +826,7 @@ $(window).on('load resize', function(){
 <object class="xsp_obj" m:id="e_var_consumptionTax"></object>
 <object class="xsp_obj" m:id="e_var_category"></object>
 
+
 <!-- 検索結果 -->
 <h2 m:id="if_not_exists_breadcrumb_category_and_goods" class="add_h2b"><span m:id="pankuzu_page_name">画面名</span></h2>
 
@@ -887,7 +888,6 @@ $(window).on('load resize', function(){
       </ul>
   </span>
 </div>
-
 <!-- 検索結果 -->
 
 
@@ -1150,6 +1150,94 @@ $(window).on('load resize', function(){
 </div>
 
 <!-- 検索結果 -->
+
+<!-- ランキング -->
+<!--
+<object class="xsp_obj" m:id="e_var_autoRankGoodsList"></object>
+  <span m:id="l_notEmp_autoRankGoodsList">
+  <div class="r_con_box_n_01_cat">
+    <div class="wrap_specialcontents rank3">
+      <h2 class="webf">人気のアイテム</h2>
+      <div class="r_con_box_n_01_in_cat clearfix">
+        <ul class="r_con_list_01cat heightLine-rank01 clearfix">
+       <span m:id="l_ite_autoRankGoodsList">
+ 
+          <li class="heightLine-rank01 sp_first">
+            <div class="box_01 heightLine-rank02">
+              <div class="box_02">
+                <div class="img_box"> <span m:id="l_pre_autoRankGoods_representSku">
+                  <object class="xsp_obj" m:id="b_var_autoRankGoods_listImage">
+                  </object>
+                  <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
+                <h3><a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a></h3>
+                <p><span m:id="l_notEqu_autoRankGoods_pretaxPrice">
+									<span class="original_price">
+										<span m:id="b_wr_autoRankGoods_pretaxPrice">200</span>&nbsp;円
+									</span>&nbsp;
+								</span>
+								<span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)
+</p>
+
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                  <div class="rank_02">2位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01 sp_end" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                  <div class="rank_03">3位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                  <div class="rank_04">4位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01 sp_end" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                  <div class="rank_05">5位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </span>
+-->
+<!--/ ランキング -->
+
 
 
 <!--▼▼▼最近ﾁｪｯｸした商品▼▼▼-->

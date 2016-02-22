@@ -21,10 +21,10 @@
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -157,50 +157,106 @@ content: "小計";
     color: #000 !important;
 }
 .con_box_check h2 { background:none}
+.con_block {background:none !important; margin-bottom:0 !important; padding-bottom:0 !important}
+.go_input{clear:both !important}
+.con_box .con_list_five {width:100% !important; margin:0 !important; padding:0 !important}
 .con_list_five li{
 	clear:both !important;
 	float:none !important;
 	width:100% !important;
-	margin-top:40px !important;
 	display:block !important;
 	text-align:left !important;
-	height:170px !important
+	padding-top:5%;
 	}
-.con_list_five li img{ clear:both !important; width:25%; max-height:120px; max-width:120px; !important; float:left !important;}
+.con_list_five li:first-child{padding-top:0; border-top:none}	
+.con_list_five li .img_box{
+	clear:both !important;
+	width:45% !important;
+	float:left !important;
+	}
+.con_list_five li .img_box img{
+	width:100% !important;
+		}
 .con_list_five li div.img_box {
 	float:left;
-	width:50%;
-	height:130px
+	margin-right:2% !important
 }
-.cartAddbtn {width:30% !important; margin:0 auto!important}	
+.sptx_r{
+	float:right;
+	width:48%;
+	padding-right:0.5%
+	}
+.con_box .con_list_five .heightLine-new01 {
+    width: 100% !important;
+	margin:0 auto;
+	margin-left: 0 !important
+}
 .con_list_five h3 a {
+    color: #009489;
+	font-weight:normal;
+    font-size: 12px;
+}
+select.goods_sku_code {
+    width: 90% !important;
+	padding:1.5%;
+	float:left;
+	margin-top:0.5%;
 	display:block;
-	width:49%;
-	float:right !important;
-	padding-right:0.5% !important
 }
 .con_list_five p.cash {
-	display:block;
-	width:50%;
-	float: right !important
-	}
-select.goods_sku_code {
-	clear:both !important;
-	display:block !important;
-	margin-bottom:20px !important;
-}	
-.con_block {background:none !important}
-.go_input{clear:both !important}
+    font-size: 12px;
+    font-weight: bold;
+}
+.con_list_five .productDetail_cart_bt_normal{
+	float:left;
+	width:90%;
+	margin-bottom:5% !important
+}
+.cartAddbtn {
+	width:100% !important;
+}
+/*radio*/
+input[type="radio"] {
+    position: relative;
+    -webkit-appearance: button;
+    appearance: button;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked:after {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #004d9a;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
 }
 </style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script type="text/javascript">
 $(function(){
-$(".cart_table_sp tr:eq(1)").css("border-top", "none")
 if (window.matchMedia('screen and (max-width:640px)').matches) {
 	$(".lump1").text("一括払：");
-$('.box_02').each(function(){
-  $(this).children('div').eq(1).css({"width":"50%","float":"right"});
+	$('.sptx_r').each(function(){
+  $(this).children('div').eq(0).css({"margin-top":"-9%","line-height":"16px","font-size":"12px"});
 });
 } 
 });
@@ -767,7 +823,7 @@ $(window).on('load resize', function(){
 
 <!-- <th class="cart_table_02_w_02">商品単価</th> -->
 <th class="cart_table_02_w_02" colspan="2">商品単価</th>
-<th class="cart_table_02_w_03">数量</th>
+<th class="cart_table_02_w_03" style="min-width:50px;">数量</th>
 <th class="cart_table_02_w_04">小計</th>
 <!--<td class="last memadd_table_02_w_05"></td>-->
 </tr>
@@ -1068,7 +1124,7 @@ $(window).on('load resize', function(){
   </tr>
   </table>
  
-      <div class="box_02 mb15 clearfix">
+      <div class="box_02 center mb15 clearfix">
       <div class="radioFloat">
       <input m:id="h_radio_wrapping_set0" type="radio" name="wrapping_type" value="">
 	  <span style="font-size:20px">-なし-</span>
@@ -1410,7 +1466,8 @@ $(window).on('load resize', function(){
  <div class="con_block">
   <span m:id="l_notEmp_priceGoodsList">
 <div class="con_box_check clearfix">
-    <h2>送料無料に近い単価商品</h2>   
+    <h2>いっしょに買うと送料無料になる単価の商品</h2>   
+
 <ul class="con_list_five">
         <span m:id="l_ite_priceGoodsList">
           <li class="heightLine-new01">
@@ -1423,6 +1480,7 @@ $(window).on('load resize', function(){
 										<img m:id="h_img_priceGoods_goods_Image"  src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
                  </span>
                 </div>
+        <div class="sptx_r">
               <h3><a m:id="h_link_priceGoods_name" href="goodsDetail.html"><span m:id="disp_priceGoods_goods_name">商品名商品名</span></a></h3>
 
               <p class="text"><span m:id="disp_priceGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
@@ -1438,7 +1496,7 @@ $(window).on('load resize', function(){
 											<span m:id="l_equ_priceGoodsList_valiationSize">
 												<a m:id="h_link_cartAddDirect_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
 													<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 												</a>
 											</span>
 											<span m:id="l_not_equ_priceGoodsList_valiationSize">
@@ -1454,7 +1512,7 @@ $(window).on('load resize', function(){
 												<!--<img m:id="disp_not_cartAddBtn_priceGoods" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
 												<a m:id="h_link_cartAddDirectSku_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
 													<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+													<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 												</a>
 											</span>
 										</span>
@@ -1597,6 +1655,7 @@ $(window).on('load resize', function(){
 
 <ul class="con_list_five">
         <span m:id="l_ite_autoRecommendGoodsList">
+        <span m:id="l_notEqu_autoRecommendGoodsList_idx">
           <li class="heightLine-new01">
             <div class="box_01 heightLine-new02">
               <div class="box_02">
@@ -1606,6 +1665,7 @@ $(window).on('load resize', function(){
                 </object>
                 <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span>
                 </div>
+        <div class="sptx_r">                
               <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
               <p class="cash">
                  <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
@@ -1614,7 +1674,7 @@ $(window).on('load resize', function(){
 				<span m:id="l_equ_autoReco_valiationSize">
 					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
 						<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 					</a>
 				</span>
 				<span m:id="l_not_equ_autoReco_valiationSize">
@@ -1630,7 +1690,7 @@ $(window).on('load resize', function(){
 					<!--<img m:id="disp_not_cartAddBtn_autoReco" class="goods_list_addCart" src="contents/shop/00000005/shop/image/pc_item_bt_06off.jpg" alt="色・サイズをご指定下さい" />-->
 					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
 						<img class="pc_only img_cart cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_03.gif" alt="カートに入れる" />
-						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+						<img class="sp_only cartAddbtn" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_z.gif" alt="カートに入れる" />
 					</a>
 				</span>
 			</span>
@@ -1688,6 +1748,8 @@ $(window).on('load resize', function(){
               </div>
             </div>
           </li>
+          </span>
+          </span>
     </ul>     
       
 </div>  
@@ -1789,8 +1851,9 @@ $(window).on('load resize', function(){
             <p><span>クレジットカード<br>手数料0円</span></p>
             <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
             <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
-             <p><span>代金引換<br>代引手数料300円</span></p>
-                  <div class="secure clearfix">
+            <p><span>代金引換<br>代引手数料300円</span></p>
+           
+            <div class="secure clearfix">
 			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
 		    </div>          </dd>

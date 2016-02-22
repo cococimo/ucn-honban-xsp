@@ -21,6 +21,7 @@
 <object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
 <link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2="の通販・通信販売｜生活・北欧雑貨の通販「ココチモ」">データベースから値を取得し表示します</title>
+
 <script>(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
@@ -48,8 +49,8 @@ window.onunload = function() {
 <!-- common css -->
 <link rel="shortcut icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
 
 <!-- common js -->
@@ -97,7 +98,7 @@ window.onunload = function() {
 /*#pan-navi{
 	margin:10px 0 0 0 !important;
 }*/
-.l_con_box_01{clear:both !important; margin-bottom:3% !important;}
+.l_con_box_01{clear:both !important; margin-bottom:0 !important;}
 .l_con_list_04 li:nth-child(1), .l_con_list_04 li:nth-child(2), .l_con_list_04 li:nth-child(3) {
     display: block !important;
 	float:none !important;
@@ -2152,6 +2153,7 @@ eltexcomment-->
   <h2>この商品を見た人はこの商品も見ています</h2>   
    <ul class="con_list_five">
     <span m:id="l_ite_autoRecommendGoodsList">
+    <span m:id="l_notEqu_autoRecommendGoodsList_idx">
      <li class="heightLine-new01">
       <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
 	   <input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
@@ -2207,6 +2209,7 @@ eltexcomment-->
        </div>
       </div>
      </li>
+    </span>
     </span>
     </ul>     
   </div>   
@@ -2969,7 +2972,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="inn_tit">メインメニュー</div>
       <ul>
         <li><a m:id="e_link_logo_shop_shop" href="/">トップページ</a></li>
-        <li><a href="/shop/lifestyle/sttic/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
+        <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
         <li><a href="/shop/lifestyle/static/kanren/" style="opacity: 1;">関連サイト</a></li>
         <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
         <li><a href="/shop/lifestyle/static/company/" style="opacity: 1;">会社情報</a></li>

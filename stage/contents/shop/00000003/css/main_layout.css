@@ -34,6 +34,7 @@ a:active{ color:#0e1bbb;text-decoration:none;}
 img {
 border:none;
 vertical-align:top;
+max-width: 100%;
 }
 
 
@@ -885,6 +886,13 @@ width:227px;
 @media (max-width: 640px) {
 /* body base
 ===============================================================*/
+.l_con_list_01 {
+    width: 97% !important;
+}
+
+.l_con_list_01 li {
+	width:48% !important;
+}
 #add_bann{
 	width:94%;
 	margin:0 auto 5% auto !important;

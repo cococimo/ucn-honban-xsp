@@ -21,8 +21,8 @@
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
@@ -447,6 +447,131 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 </span>
 <!-- 商品並び替え枠 -->
+
+<!-- ランキング -->
+<object class="xsp_obj" m:id="e_var_autoRankGoodsList"></object>
+  <span m:id="l_notEmp_autoRankGoodsList">
+  <div class="r_con_box_n_01_cat">
+    <div class="wrap_specialcontents">
+      <!--<h2 class="sp_only sp_r_tit_01"><img src="../contents/shop/00000003/shop/image/sp/sp_sec_02_img_01.png" alt="売れている商品" /></h2>-->
+      <h2 class="webf">売れている商品</h2>
+      <div class="r_con_box_n_01_in_cat clearfix">
+        <ul class="r_con_list_01cat heightLine-rank01 clearfix">
+       <span m:id="l_ite_autoRankGoodsList">
+ 
+          <li class="heightLine-rank01 sp_first">
+            <div class="box_01 heightLine-rank02">
+              <div class="box_02">
+                <div class="img_box"> <span m:id="l_pre_autoRankGoods_representSku">
+                  <object class="xsp_obj" m:id="b_var_autoRankGoods_listImage">
+                  </object>
+                  <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html"> <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
+                <div class="rank_01">1位</div>
+                <h3><a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a></h3>
+                <p><span m:id="l_notEqu_autoRankGoods_pretaxPrice">
+									<span class="original_price">
+										<span m:id="b_wr_autoRankGoods_pretaxPrice">200</span>&nbsp;円
+									</span>&nbsp;
+								</span>
+								<span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)
+</p>
+
+				<!-- 今売れている商品一覧からカートに入れる -->
+				<span m:id="l_can_addCartDirect_autoRank">
+					<div class="cart_box">
+						<span m:id="l_equ_autoRankList_valiationSize">
+							<a m:id="h_link_cartAddDirect_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+								<!--<div m:id="l_autoRank_cartAdd_img"></div>-->
+								<img m:id="static_img" class="cartAddbtn pc_only" src="../../../contents/shop/00000005/goods/image/cart_br_banner_02.gif" alt="カートに入れる" />
+								<img m:id="static_img" class="cartAddbtn sp_only_1" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_05.gif" alt="カートに入れる" />
+								<img m:id="static_img" class="cartAddbtn sp_only_2" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+							</a>
+						</span>
+						<span m:id="l_not_equ_autoRankList_valiationSize">
+							<select m:id="h_sel_goods_sku_code1_autoRank" class="goods_sku_code" >
+								<option value="">選択してください</option>
+								<option m:id="h_opt_variations_autoRanks" value="">白</option>
+								<option m:id="dummy" value="">黒</option>
+								<option m:id="dummy" value="">赤</option>
+								<option m:id="dummy" value="">青</option>
+								<option m:id="dummy" value="">緑</option>
+							</select>
+							<div m:id="disp_not_cartAddBtn_autoRank"></div>
+							<!--<img m:id="disp_not_cartAddBtn_autoRank" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
+							<a m:id="h_link_cartAddDirectSku_autoRank" href="" class="productDetail_cart_bt_normal" onclick="">
+								<!--<div m:id="l_autoRank_cartAdd_img"></div>-->
+								<img m:id="static_img" class="cartAddbtn pc_only" src="../../../contents/shop/00000005/goods/image/cart_br_banner_02.gif" alt="カートに入れる" />
+								<img m:id="static_img" class="cartAddbtn sp_only_1" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_05.gif" alt="カートに入れる" />
+								<img m:id="static_img" class="cartAddbtn sp_only_2" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_02.gif" alt="カートに入れる" />
+							</a>
+						</span>
+					</div>
+				</span>
+				<span m:id="l_not_addCartDirect_autoRank">
+					<span m:id="disp_saleStatus_autoRank">
+					<p class="soldout"><strong>[販売終了]</strong></p>
+					</span>
+				</span>
+				<!--/ 今売れている商品一覧からカートに入れる -->
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                  <div class="rank_02">2位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01 sp_end" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                  <div class="rank_03">3位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                  <div class="rank_04">4位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="heightLine-rank01 sp_end" m:id="dummy">
+            <div>
+              <div class="box_01">
+                <div class="box_02">
+                  <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                  <div class="rank_05">5位</div>
+                  <h3><a href="#">商品名商品名</a></h3>
+                  <p>50円（税込）</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </span>
+<!--/ ランキング -->
+
 <!-- 商品一覧 -->
 <form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
 	<input type="hidden" name="display_code" />

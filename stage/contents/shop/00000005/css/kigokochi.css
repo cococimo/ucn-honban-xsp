@@ -16,10 +16,12 @@ body {
   text-align: center;
 }
 
+
 img {
   border: medium none;
   vertical-align: top;
 }
+
 
 input, select, textarea {
   font-size: 12px;
@@ -1612,7 +1614,6 @@ div.i_sec span img {
   display: none;
 }
 
-
 @media screen and (min-width: 641px) and (max-width: 768px) {
   body {
     width: 100%;
@@ -1723,4 +1724,16 @@ div.i_sec span img {
 .rankinglist li:nth-child(3) {
     clear: both !important;
 }
+
+.stafflist img {
+  vertical-align: top;
+  width: 100%;
+  border:#c4c4c4 solid 1px;
+}
+.stafflist img.cartAddbtn {
+  border: medium none;
+}
+
+.stafflist li {
+	width: 182px!important;
 }

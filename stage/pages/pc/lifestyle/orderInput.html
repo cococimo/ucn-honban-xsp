@@ -34,7 +34,7 @@
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.flexslider.js"></script>
-<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js?v1" type="text/javascript"></script>
+<script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js?v1.1" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
@@ -1308,7 +1308,7 @@ $(window).on('load resize', function(){
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（都道府県）<span class="imp">必須</span></div>
-	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
+	<div class="box_form_td"><select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_prefecture" value="001">青森県</option>
 		<option m:id="dummy" value="002">秋田県</option>
@@ -2278,7 +2278,7 @@ TEL：090-1234-1234
 <div class="box_form_table">
 	<div class="box_form_th">住所（都道府県）<span class="imp">必須</span></div>
 	<div class="box_form_td">
-		<select m:id="h_sel_dst_area_code" class="memadd_input_01" onchange="javascript:orderCalculate(this.form.destined, this.form.area_code, this.form.dst_area_code);">
+		<select m:id="h_sel_dst_area_code" class="memadd_input_01" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
 		<option value="">--選択してください--</option>
 		<option m:id="h_opt_prefecture" value="001">青森県</option>
 		<option m:id="dummy" value="002">秋田県</option>
