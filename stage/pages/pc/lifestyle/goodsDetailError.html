@@ -148,45 +148,8 @@ select.goods_sku_code {
 .errtext { text-align:left !important}
 }
 </style>
+		
 <script type="text/javascript">
-$(function(){
-if (window.matchMedia('screen and (max-width:640px)').matches) {
-  $('.heightLine-new01').children('div').removeClass("heightLine-new02")
-} 
-});
-</script>		
-<script type="text/javascript">
-  $(function() {
- 
-    var galleries = $('.ad-gallery').adGallery();
- 
-    galleries[0].addAnimation('wild',
-      function(img_container, direction, desc) {
-        var current_left = parseInt(img_container.css('left'), 10);
-        var current_top = parseInt(img_container.css('top'), 10);
-        if(direction == 'left') {
-          var old_image_left = '-'+ this.image_wrapper_width +'px';
-          img_container.css('left',this.image_wrapper_width +'px');
-          var old_image_top = '-'+ this.image_wrapper_height +'px';
-          img_container.css('top', this.image_wrapper_height +'px');
-        } else {
-          var old_image_left = this.image_wrapper_width +'px';
-          img_container.css('left','-'+ this.image_wrapper_width +'px');
-          var old_image_top = this.image_wrapper_height +'px';
-          img_container.css('top', '-'+ this.image_wrapper_height +'px');
-        };
-        if(desc) {
-          desc.css('bottom', '-'+ desc[0].offsetHeight +'px');
-          desc.animate({bottom: 0}, this.settings.animation_speed * 2);
-        };
-        img_container.css('opacity', 0);
-        return {old_image: {left: old_image_left, top: old_image_top, opacity: 0},
-                new_image: {left: current_left, top: current_top, opacity: 1},
-                easing: 'easeInBounce',
-                speed: 2500};
-      }
-    );
-  });
   function debug(str) {
     if(window.console && window.console.log && jQuery.browser.mozilla) {
       console.log(str);
@@ -195,24 +158,6 @@ if (window.matchMedia('screen and (max-width:640px)').matches) {
     }
   }
   </script>
-
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-		animation: "slide", 
-		controlNav: true,
-		directionNav: false,
-		randomize: true,
-		reverse: true,
-		slideshowSpeed: 5000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
-animationSpeed: 500,
-pausePlay: false, 
-nextText: "",
-
-	});
-  });
-</script>
-
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -251,12 +196,8 @@ nextText: "",
 </div> -->
 
     
-        <div id="header_r" class="clearfix">
-            <div id="header_r_01" class="clearfix header_r_color">
-            
-  
-            
-    <!-- ▼▼▼検索▼▼▼ -->
+<div id="header_r" class="clearfix">
+            <div id="header_r_01" class="clearfix header_r_color">    <!-- ▼▼▼検索▼▼▼ -->
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -284,12 +225,9 @@ nextText: "",
         <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
       </form>
 </div>
-</div>
-            
+</div>           
             <!-- ▲▲▲検索▲▲▲ -->  
-            
-            
-            <div class="header_lists clearfix pc_not">
+                        <div class="header_lists clearfix pc_not">
               <!-- ▼▼▼新規会員登録▼▼▼ -->
               <div m:id="l_notPre_member_login_shop">
                 <ul class="header_list_01">
@@ -297,9 +235,7 @@ nextText: "",
                 </ul>
               </div>
               <!-- ▲▲▲新規会員登録▲▲▲ -->
-              
-              
-			<ul class="header_list_02">
+              			<ul class="header_list_02">
                           <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
 
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
@@ -312,11 +248,7 @@ nextText: "",
 				<!-- InstanceEndEditable -->
 			</ul>
             </div>
-            
-    
-            
-            
-            <div class="clearfix pc_not">
+                        <div class="clearfix pc_not">
             	<span m:id="l_equ_hierarchy_3_shop">
                 <div class="clearfix pc_only">
                     <ul class="header_list_03">
@@ -325,9 +257,7 @@ nextText: "",
 /shop/inquiryInputCheck.do">お問い合わせ</a></li>
                     </ul>
                 </div>
-                
-                
-                <div class="header_cart">
+                                <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
 s.linkTrackEvents='scView';
@@ -340,21 +270,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
                 
                 <div class="header_cate">
                     <a href="#catLink">カテゴリ一覧</a>
-                </div>
-                
+                </div>                
                 </span>
-                
-             </div>
-            
+				</div>            
             </div><!-- header_r_01 -->
-        
-        </div>
-    
-    
-    <!--<div class="comm_box"><p>現在、検証中の為、会員登録、お買い物など全てのサービスはご利用できません。</p>
-    </div>-->
-    </div><!--header_wrap-->
-    
+           </div>
+    </div><!--header_wrap-->   
   <!--▼▼▼sp_menu▼▼▼-->
  <div m:id="l_notPre_member_login_shop">
         <ul class="sp_menu_only sp_member">
@@ -367,25 +288,19 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <li><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></li>
          </ul>
     </div>             
-    
-    <ul class="sp_menu_only sp_login_menu">
-            
+        <ul class="sp_menu_only sp_login_menu">  
 <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
 <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div>
 </li>
               <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
                 <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
-    </ul>
-
-    
+    </ul>    
     <div class="sp_top_menu sp_menu_only">
     	<a href="/">m</a>
-    </div>
-    
+    </div>    
     <div class="sp_top_home sp_menu_only">
     	<a href="/lifestyle/">m</a>
-    </div>
-    
+    </div>    
     <div class="sp_header_cart sp_menu_only">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
@@ -394,11 +309,8 @@ s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
      </div>
-
-    
     <div class="sp_nav">
-    
-  <!-- カテゴリナビ -->
+      <!-- カテゴリナビ -->
     <script type="text/javascript">
 		//<![CDATA[
 		function switchHidden(categoryCode){
@@ -463,51 +375,50 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>    
-  <!-- InstanceBeginEditable name="header_category" -->     
+  <!-- InstanceBeginEditable name="header_category" -->
 					<!--▼▼▼カテゴリー▼▼▼-->
-<script>
-$(window).on('load resize', function(){
-    var w = $(window).width();
-    var x = 500;
-    if (w <= x) {
-  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
-		
-  $(function(){	  
-	$(".child_cat").hide();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"absolute",
-		 "top":"0",
-		 "left":"140px",
-		 "width":"170px",
-		 "z-index":"999",
-		 "list-style":"none",
-		 "background-color":"#ffffff"}
-		).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").hide();
+	<script>
+	$(window).on('load resize', function(){
+	    var w = $(window).width();
+	    var x = 500;
+	    if (w <= x) {
+	  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
+			
+	  $(function(){
+		  
+		$(".l_con_list_01").eq(0).find(".child_cat").hide();
+		$('li').removeClass('ctArrow');
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"absolute",
+			 "top":"0",
+			 "left":"140px",
+			 "width":"170px",
+			 "z-index":"999",
+			 "list-style":"none",
+			 "background-color":"#ffffff"}
+			).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").hide();
+		})
 	})
-})
-} else {
+	} else {
 
-  $(function(){	  
-	$(".child_cat").show();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
-		$("ul:not(:animated)",this).css(
-		{"position":"relative",	"left":"0"}).show();
-	},
-	function(){
-		$("ul",this).css("left","0px").show();
+	  $(function(){	  
+		$(".l_con_list_01").eq(0).find(".child_cat").show();
+		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
+			$("ul:not(:animated)",this).css(
+			{"position":"relative",	"left":"0"}).show();
+		},
+		function(){
+			$("ul",this).css("left","0px").show();
+		})
 	})
-})
 
-    }
-});
-</script>
-                   
+	    }
+	});
+	</script>                   
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
                             <div class="l_con_box_01">
@@ -558,11 +469,10 @@ $(window).on('load resize', function(){
                         </span>
                     </span>
                                        
-                    <!--▲▲▲カテゴリー▲▲▲-->    				
-<!-- InstanceEndEditable -->    
-             
-    </div>
-     
+                    <!--▲▲▲カテゴリー▲▲▲-->
+                      									
+					<!-- InstanceEndEditable -->                
+    </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <div id="contents">
@@ -608,217 +518,22 @@ $(window).on('load resize', function(){
 <!--▼▼▼オススメ▼▼▼-->
    
 <div class="con_box clearfix">
-		<div class="blogArea">
-    <h2>ブログ</h2>   
-
-        <ul class="con_list_three">
-        
-<li class="heightLine-new01">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box">
-                  
-                  <a href="/shop/lifestyle/static/cocoblog/141022/"><img m:id="static_img" src="../../../contents/shop/00000005/image/static/img/cocoblog/20141022-01.jpg" alt="家庭用の包丁って、どんなものがあるの？" /></a></div>
-                <h3><a href="/shop/lifestyle/static/cocoblog/141022/">家庭用の包丁って、どんなものがあるの？</a></h3>
-                <p class="text">家でのお料理で最もよく活躍する道具といったら、包丁ではないでしょうか。切れ味の良い包丁で気持ちよく食材が切れた瞬間は、やっぱり心地いいものですよね。</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"> 
-                  
-                  <a href="/shop/lifestyle/static/cocoblog/141014/"><img m:id="static_img" src="../../../contents/shop/00000005/image/static/img/cocoblog/20141014-02.jpg" alt="ほっと一息カフェタイム♪" /></a></div>
-                <h3><a href="/shop/lifestyle/static/cocoblog/141014/">ほっと一息カフェタイム♪美味しいコーヒーを自宅で淹れるコツは</a></h3>
-                <p class="text">仕事や家事の合間に、ほっと一息つくブレイクタイム。そんなときの飲み物といえば、やはりコーヒー。
-家で淹れるなら、手軽なドリップコーヒーがおすすめです。コーヒーの味はもちろん、あまくて香ばしい香りが部屋いっぱいに広がって、心身の疲れがほぐれていくようですね。</p>
-              </div>
-            </div>
-          </li>
-        </ul>    
+		
     
-    
-   	</div>
-    
-		<div class="tokuArea">
-    <h2>特集</h2>  
-        <ul class="con_list_three">
-        
-<li class="heightLine-new01 mr0">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"> 
-                  
-                  <a href="/shop/lifestyle/static/aizawa/"><img m:id="static_img" src="../../../contents/shop/00000005/image/static/aizawa_image/aizawa_img_01-2x.png" alt="工房アイザワのお弁当箱" /></a></div>
-                <h3><a href="/shop/lifestyle/static/aizawa/">工房アイザワのお弁当箱</a></h3>
-                <p class="text">匂いが移らず、しっかり密閉できて、衛生的。軽くて丈夫でお手入れも簡単と、いいこと尽くめのステンレス製お弁当箱。こんなスグレモノを作っているメーカーは、何と国内に１社しかないのです。国内唯一ということは、世界にも１つということ。日本特有のお弁当文化に革新をもたらした、工房アイザワのお弁当箱をご紹介します！</p>
-              </div>
-            </div>
-          </li>
-        </ul>      
-   	</div>    
+		    
     
 </div>   
    
    <!--▲▲▲ブログ特集▲▲▲-->  
 
    <!--▼▼▼おすすめの商品▼▼▼-->
-<span m:id="l_notEmp_recommendGoodsList">
-<div class="con_box clearfix">
-    <h2>おすすめの商品</h2>   
-
-<span m:id="l_pre_recommendGoods_representSku">
-									<object class="xsp_obj" m:id="b_var_recommendGoods_listImage"></object>
-<ul class="con_list_four">
-        <span m:id="l_ite_recommendGoodsList">
-          <li class="heightLine-new01">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"> 
-                  <span m:id="l_pre_recommendGoods_representSku">
-									<object class="xsp_obj" m:id="b_var_recommendGoods_listImage"></object>
-<a m:id="h_link_recommendGoods_list_image" href="goodsDetail.html">
-<img m:id="h_img_recommendGoods_goods_Image"  src="../../../contents/shop/00000005/shop/image/item_sample_01.jpg" /></a></span></div>
-                  <h3><a m:id="h_link_recommendGoods_name" href="goodsDetail.html"><span m:id="disp_recommendGoods_goods_name">商品名商品名</span></a></h3>
-                  <p class="text"><span m:id="disp_recommendGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
-                  <p class="cash"> <span m:id="l_notEqu_recommendGoods_pretaxPrice">
-										<span class="original_price">
-											<span m:id="b_wr_recommendGoods_pretaxPrice">200</span>&nbsp;円
-										</span>&nbsp;
-									</span>
-									<span m:id="b_wr_recommendGoods_actualSalePrice">100</span>円(税込)
-</p>
-              </div>
-            </div>
-          </li>
-          </span>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_02.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p class="text">商品説明ダミーテキストダミーテキストダミーテキスト</p>
-              <p class="cash">50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_03.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p class="text">商品説明ダミーテキストダミーテキストダミーテキスト</p>
-              <p class="cash">50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_04.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p class="text">商品説明ダミーテキストダミーテキストダミーテキスト</p>
-              <p class="cash">50円（税込）</p>
-              </div>
-            </div>
-          </li>
-      
-          
-          
-    </ul>     
-    </span>
-    
-    
-</div>   
-</span>   
+   
    <!--▲▲▲おすすめの商品▲▲▲--> 
 
 
  <!--▼▼▼最近ﾁｪｯｸした商品▼▼▼-->
  
-  <span m:id="l_notEmp_autoRecommendGoodsList">
-<div class="con_box clearfix">
-    <h2>最近チェックした商品</h2>   
-
-
-
-  <object class="xsp_obj" m:id="e_var_browsingGoodsList">
-  </object>
-  <span m:id="l_notEmp_browsingGoodsList">
-<ul class="con_list_five">
-        <span m:id="l_ite_browsingGoodsList"> 
-        <span m:id="l_notDisp_other_site"> 
-          <li class="heightLine-new01">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"> 
-                  <a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000005/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
-              <p> <span m:id="l_notEqu_browsingGoods_pretaxPrice">
-			        <span class="original_price">
-			            <span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
-			        </span>&nbsp;
-			    </span>
-			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
-</p>
-              </div>
-            </div>
-          </li>
-        </span>
-        </span>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_02.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_03.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_04.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          <li class="heightLine-new01" m:id="dummy">
-            <div class="box_01 heightLine-new02">
-              <div class="box_02">
-                <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000005/goods/image/item_sample_05.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-              </div>
-            </div>
-          </li>
-          
-          
-    </ul>     
-    </span>
-    
-    
-</div>   
-</span>   
+     
    <!--▲▲▲最近ﾁｪｯｸした商品▲▲▲--> 
 
 
