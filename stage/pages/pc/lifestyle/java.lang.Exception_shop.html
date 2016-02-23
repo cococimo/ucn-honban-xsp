@@ -100,7 +100,7 @@ body{
 	left: -240px;
 	width: 240px;
 	height: 100%;
-    background: #E87272;
+    background: #f2f2f2;
 	display:block
 }
 #cont{
@@ -116,28 +116,31 @@ body{
     padding: 0;
 }
 #slide_menu li + li{
-    border-top: solid 1px #f39191; 
+    /*border-top: solid 1px #c0c0c0; */
 }
 #slide_menu li{
-   border-bottom: solid 1px #d56767; 
-    list-style: none;
+	border-bottom: solid 1px #d9d9d9; 
+	list-style: none;
+	background: #f2f2f2;
+    padding:10% 0;		
 }
-#slide_menu li a{
+/*#slide_menu li a{
     display: block;
-    padding: 20px 0;
     color: #fff;
     text-align: center;
     text-decoration: none;
-}
+}*/
 #button{
     position: absolute;
     top: 0;
-    width: 80px;
-    height: 80px;
-    outline: none;
+    width: 33%;
+	height:0;
+	padding-bottom: 13.8% !important;  
+	margin-bottom: -13.8% !important;
+	outline: none;
     border: none;
-    background: #E87272;
-    color: #fff;
+    background: #f2f2f2;
+    color: #353535;
     font-size: 20px;
     cursor: pointer;
 	display:block !important;
@@ -152,7 +155,7 @@ body{
     max-width: 750px;
 }
 ul.accordion ul { display:none;}
-ul.accordion > li > p span {
+ul.accordion > li > div .p_0{
 	list-style:none;
 	display:block;
     padding: 20px 0;
@@ -160,6 +163,139 @@ ul.accordion > li > p span {
     text-align: center;
     text-decoration: none;
     }
+.sp_nav {
+    position: absolute;
+	display:block;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    border-left: none !important
+}
+.sp_nav div.sub {
+    padding:0;
+}
+.sp_nav .l_con_box_01 {
+    margin: 0;
+    border-left: none !important
+}
+.sp_login_menu, .sp_member {
+    position: relative;
+    top: 0;
+    right:0;
+}
+.sp_nav ul.l_con_list_01 li {padding:3% 0 !important}
+.ctList{background: #f2f2f2;}
+.ctList .p_0{padding-left:5% !important}
+.sp_nav .l_con_box_01 {
+    background: none;
+    padding-bottom:0;
+    border-left: none;
+    text-align: left;	
+}
+.l_con_list_01 li:nth-child(2n) div, .l_con_list_01 li div {
+    border-right: none;
+    padding-left: 0;
+}
+.child_cat {
+    width: 100% !important;
+    border-radius:0px!important;
+    -webkit-border-radius:0px!important;
+    -moz-border-radius:0px!important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}
+.sp_nav .l_con_list_01 li ul li {
+	text-align:left !important;
+    padding:5% 0 !important;
+    border-bottom: none;
+	background: #ECECEC !important		
+}
+.ctList ul {
+    padding:0 !important;
+    border-bottom: none !important;
+	background: #ECECEC !important
+}
+.sp_nav .l_con_list_01 li div {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 38px;
+	padding-top:0 !important;
+    text-align: left;
+}
+/**/
+#panel-btn{
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 5%;
+  /*border-radius: 50%;
+  background: #fff;*/
+}
+#panel-btn-icon{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 2px;
+  margin: -1px 0 0 -7px;
+  background: #525252;
+  transition: .2s;
+}
+#panel-btn-icon:before, #panel-btn-icon:after{
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 18px;
+  height: 2px;
+  background: #525252;
+  transition: .3s;
+}
+#panel-btn-icon:before{
+  margin-top: -6px;
+}
+#panel-btn-icon:after{
+  margin-top: 4px;
+}
+#panel-btn .close{
+  background: transparent;
+}
+#panel-btn .close:before, #panel-btn .close:after{
+  margin-top: 0;
+}
+#panel-btn .close:before{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+#panel-btn .close:after{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+#panel-btn .close{
+  background: transparent;
+}
+#panel-btn .close:before, #panel-btn .close:after{
+  margin-top: 0;
+}
+#panel-btn .close:before{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+#panel-btn .close:after{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.chil_all{
+	display:block;
+	text-align:right;
+	padding: 3% 3% 0 0 !important;
+	height:10px !important;
+	}
 }
 </style>
 <script>
@@ -178,17 +314,17 @@ var $menu = $('#slide_menu'), // スライドインするメニューを指定
         } else {
             $wrap.animate({'left' : 0 }, 300);      
             $menu.animate({'left' : -menuWidth }, 300);      
-        }             
+        } 
+        $("#panel-btn-icon").toggleClass("close");            
     });
 });
 //SP_メニュー内アコーディオン
-$(function(){    
-$(".accordion p").click(function(){
-    $(this).next("ul").slideToggle();
-    $(this).children("span").toggleClass("open");
-});  
+$(function(){
+$(".ctList .p_0").on("click", function() {
+$(this).parent(".ctList").find(".child_cat").slideToggle("fast");//”slow””normal””fast”
 });
-  
+});
+
 </script>		
 <script type="text/javascript">
   function debug(str) {
@@ -215,37 +351,141 @@ $(".accordion p").click(function(){
 <div id="layer"></div>
 <!-- スライドメニュー部分-->
 <nav id="slide_menu">
-    <ul class="accordion">
- 	<li>
-        <p><span>リスト 1</span></p>
-        <ul>
-            <li><a href=" #">リスト 1-1</a></li>
-            <li><a href=" #">リスト 1-2</a></li>
-            <li><a href=" #">リスト 1-3</a></li>
-        </ul>
-    </li>
- 	<li>
-        <p><span>リスト 2</span></p>
-        <ul>
-            <li><a href=" #">リスト 1-1</a></li>
-            <li><a href=" #">リスト 1-2</a></li>
-            <li><a href=" #">リスト 1-3</a></li>
-        </ul>
-    </li>
-     	<li>
-        <p><span>リスト 3</span></p>
-        <ul>
-            <li><a href=" #">リスト 1-1</a></li>
-            <li><a href=" #">リスト 1-2</a></li>
-            <li><a href=" #">リスト 1-3</a></li>
-        </ul>
-    </li>
-    </ul>
+    <div class="sp_nav">
+      <!-- カテゴリナビ -->
+    <script type="text/javascript">
+		//<![CDATA[
+		function switchHidden(categoryCode){
+		    var cat=document.getElementById("dd_"+categoryCode);
+		    var plus=document.getElementById("plus_"+categoryCode);
+		    var minus=document.getElementById("minus_"+categoryCode);
+		    if(cat.style.display=="none"){
+		        cat.style.display="block";
+		        plus.style.display="none";
+		        minus.style.display="inline";
+		    }else{
+		        cat.style.display="none";
+		        plus.style.display="inline";
+		        minus.style.display="none";
+		    }
+		    return false;
+		}
+		function HideandUNhideObj(ThisObj){
+		    nav=document.getElementById(ThisObj).style
+		    navp=document.getElementById(ThisObj+"_plus").style
+		    navm=document.getElementById(ThisObj+"_minus").style
+		    
+		    if(nav.display=="none"){
+		        nav.display='block';
+		        navm.display='inline';
+		        navp.display='none';
+		    }else{
+		        nav.display='none';
+		        var childN1 = document.getElementById(ThisObj).childNodes[0];
+		        if (childN1 != null) {
+		            var childN2 = childN1.childNodes[1];
+		            if (childN2 != null && childN2.tagName == "DT") {
+		                navp.display='inline';
+		                navm.display='none';
+		            }
+		        }
+		    }
+		}
+		function openParent(parent){
+			if(parent){
+				if(parent!=defaultCategoryCode&&defaultCategoryCode.indexOf(parent)>-1){
+					var idx=document.getElementById("index_"+parent).value;
+					document.getElementById("plus_"+idx).style.display="none";
+					document.getElementById("minus_"+idx).style.display="inline";
+					document.getElementById("dd_"+idx).style.display="block";
+				}
+			}
+		}
+		//]]>
+		</script>
+  <object class="xsp_obj" m:id="e_var_standardCategory">
+  </object>
+  <object class="xsp_obj" m:id="e_var_campaignCategory">
+  </object>
+  <object class="xsp_obj" m:id="count">
+  </object>
+  <object class="xsp_obj" m:id="cate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate2_count">
+  </object>
+  <object class="xsp_obj" m:id="e_var_dmHistory">
+  </object>    
+  <!-- InstanceBeginEditable name="header_category" -->
+				<!--▼▼▼カテゴリー▼▼▼-->
+                 
+                    <span m:id="l_pre_standardCategory">
+                        <span m:id="l_notEmp_standardCategory_childCategories">
+                            <div class="l_con_box_01">
+                                <div class="sub">
+                                    <span m:id="l_ite_standardCategory">
+                                        <span m:id="l_equ_cate_checkPeriod">
+                                            <span m:id="icnt_increment"></span>
+                                            <span m:id="i_ins_cate"></span>
+                                            <object class="xsp_obj" m:id="count_sub1"></object>
+                                            <ul class="l_con_list_01 clearfix example accordion">
+                                                <span  m:id="l_ite_cate">
+                                                    <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+                                                    <li class="ctList"><!--親カテ-->
+                                                    
+                                                    <div class="p_0">
+                                                    <!--<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+                                                    <span m:id="span_subCate_arrow" id="arrow_1">-->
+                                                        <span m:id="disp_subCate_category_name">ファッション</span>
+                                                    <!--</span>
+                                                    </a>-->
+                                                    </div>
+                                                    <div id="p_1">
+                                                    <!--<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+                                                    <span m:id="span_subCate_arrow" id="arrow_1">-->
+                                                        <span m:id="disp_subCate_category_name">ファッション</span>
+                                                    <!--</span>
+                                                    </a>-->
+                                                    </div>
+                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
+                                                    <a m:id="h_link_subCate_category" class="chil_all" href="goodsSearchShop_shop.html">
+                                                    <!--<span m:id="span_subCate_arrow" id="arrow_1">-->
+                                                        <span m:id="disp_subCate_category_name">ファッション</span>一覧
+                                                    <!--</span>-->
+                                                    </a>
+                                                        <span m:id="l_ite_subCate"> 
+                                                            <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
+                                                            <li>
+                                                            <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+                                                            </li>
+                                                            </span>
+                                                        </span>
+                                                        </ul>
+                                                    </li>
+                                                    </span>
+                                                </span>
+                                            </ul>
+                                            <ul class="l_con_list_01 clearfix example"></ul>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                                       
+                    <!--▲▲▲カテゴリー▲▲▲-->
+                      									
+					<!-- InstanceEndEditable -->                
+    </div>     
+
 </nav>
 <div id="cont">
 
     <!--メニューを出すボタン-->
-    <button id="button"><i class="fa fa-bars"></i> Menu</button>
+    <button id="button">
+    <a href="#" id="panel-btn"><span id="panel-btn-icon"></span></a>
+    </button>
 
 
 <!-- name="body" -->
@@ -388,170 +628,6 @@ s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
      </div>
-    <div class="sp_nav">
-      <!-- カテゴリナビ -->
-    <script type="text/javascript">
-		//<![CDATA[
-		function switchHidden(categoryCode){
-		    var cat=document.getElementById("dd_"+categoryCode);
-		    var plus=document.getElementById("plus_"+categoryCode);
-		    var minus=document.getElementById("minus_"+categoryCode);
-		    if(cat.style.display=="none"){
-		        cat.style.display="block";
-		        plus.style.display="none";
-		        minus.style.display="inline";
-		    }else{
-		        cat.style.display="none";
-		        plus.style.display="inline";
-		        minus.style.display="none";
-		    }
-		    return false;
-		}
-		function HideandUNhideObj(ThisObj){
-		    nav=document.getElementById(ThisObj).style
-		    navp=document.getElementById(ThisObj+"_plus").style
-		    navm=document.getElementById(ThisObj+"_minus").style
-		    
-		    if(nav.display=="none"){
-		        nav.display='block';
-		        navm.display='inline';
-		        navp.display='none';
-		    }else{
-		        nav.display='none';
-		        var childN1 = document.getElementById(ThisObj).childNodes[0];
-		        if (childN1 != null) {
-		            var childN2 = childN1.childNodes[1];
-		            if (childN2 != null && childN2.tagName == "DT") {
-		                navp.display='inline';
-		                navm.display='none';
-		            }
-		        }
-		    }
-		}
-		function openParent(parent){
-			if(parent){
-				if(parent!=defaultCategoryCode&&defaultCategoryCode.indexOf(parent)>-1){
-					var idx=document.getElementById("index_"+parent).value;
-					document.getElementById("plus_"+idx).style.display="none";
-					document.getElementById("minus_"+idx).style.display="inline";
-					document.getElementById("dd_"+idx).style.display="block";
-				}
-			}
-		}
-		//]]>
-		</script>
-  <object class="xsp_obj" m:id="e_var_standardCategory">
-  </object>
-  <object class="xsp_obj" m:id="e_var_campaignCategory">
-  </object>
-  <object class="xsp_obj" m:id="count">
-  </object>
-  <object class="xsp_obj" m:id="cate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate2_count">
-  </object>
-  <object class="xsp_obj" m:id="e_var_dmHistory">
-  </object>    
-  <!-- InstanceBeginEditable name="header_category" -->
-				<!--▼▼▼カテゴリー▼▼▼-->
-	<script>
-	$(window).on('load resize', function(){
-	    var w = $(window).width();
-	    var x = 500;
-	    if (w <= x) {
-	  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
-			
-	  $(function(){
-		  
-		$(".l_con_list_01").eq(0).find(".child_cat").hide();
-		$('li').removeClass('ctArrow');
-		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
-			$("ul:not(:animated)",this).css(
-			{"position":"absolute",
-			 "top":"0",
-			 "left":"140px",
-			 "width":"170px",
-			 "z-index":"999",
-			 "list-style":"none",
-			 "background-color":"#ffffff"}
-			).show();
-		},
-		function(){
-			$("ul",this).css("left","0px").hide();
-		})
-	})
-	} else {
-
-	  $(function(){	  
-		$(".l_con_list_01").eq(0).find(".child_cat").show();
-		$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
-			$("ul:not(:animated)",this).css(
-			{"position":"relative",	"left":"0"}).show();
-		},
-		function(){
-			$("ul",this).css("left","0px").show();
-		})
-	})
-
-	    }
-	});
-	</script>                   
-                    <span m:id="l_pre_standardCategory">
-                        <span m:id="l_notEmp_standardCategory_childCategories">
-                            <div class="l_con_box_01">
-                                <div class="sp_nav_close"><a href="/">メニューを閉じる</a></div>
-                                <div class="sub">
-                                    <span m:id="l_ite_standardCategory">
-                                        <span m:id="l_equ_cate_checkPeriod">
-                                            <span m:id="icnt_increment"></span>
-                                            <span m:id="i_ins_cate"></span>
-                                            <object class="xsp_obj" m:id="count_sub1"></object>
-                                            <ul class="l_con_list_01 clearfix example">
-                                                <span  m:id="l_ite_cate">
-                                                    <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList" style="position:relative"><!--基準点追加-->
-                                                    
-                                                    <div class="p_0">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <div id="p_1">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
-                                                        <span m:id="l_ite_subCate"> 
-                                                            <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-                                                            <li class="ctArrow">
-                                                            <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-                                                            </li>
-                                                            </span>
-                                                        </span>
-                                                        </ul>
-                                                    </li>
-                                                    </span>
-                                                </span>
-                                            </ul>
-                                            <ul class="l_con_list_01 clearfix example"></ul>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </span>
-                    </span>
-                                       
-                    <!--▲▲▲カテゴリー▲▲▲-->
-                      									
-					<!-- InstanceEndEditable -->                
-    </div>     
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <div id="contents">
 
@@ -626,7 +702,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--▼▼▼カテゴリー▼▼▼-->
 <span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="l_con_box_01">
-<div id="l_tit_01">カテゴリーから探す"></div>
+<div id="l_tit_01">カテゴリーから探す</div>
 
 <div class="sub">
 	<span m:id="l_ite_standardCategory">
@@ -651,7 +727,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 						<ul m:id="tag_dd_subCate">
 						<span m:id="l_ite_subCate"> 
 							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-							<li>
+							<li class="ctArrow">
 							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
 							</li>
 							</span>
