@@ -1,4 +1,3 @@
-
 <link href="contents/shop/00000003/common_sp/common_yoyakuform/yuyukaiteki/style.css" rel="stylesheet" type="text/css" media="all" />
 <style>
 hr {
@@ -6,6 +5,12 @@ hr {
     margin: 0;
     padding: 0;
     border: 0;
+}
+input[type=radio]{
+	margin-right:6px;
+}
+#id_1_2{
+	margin-left:20px;
 }
 </style>
 <div class="container">
@@ -192,6 +197,15 @@ hr {
 <input type="text" name="email" size="30" maxlength="128" value="" class="box05" />
 </div><!-- /.input_area -->
 <div id="email_confirm"></div></td>
+</tr>
+
+<tr>
+<th>性別<span class="imp">必須</span></th>
+<td><div class="input_area">
+          <label for="id_1_1"><input type="radio" group="group1" name="c_gendr" id="id_1_1" value="男性">男性</label>
+          <label for="id_1_2"><input type="radio" group="group1" name="c_gendr" id="id_1_2" value="女性">女性</label>
+</div><!-- /.input_area -->
+<div id="c_gendr_confirm"></div></td>
 </tr>
 
 <tr>
@@ -391,6 +405,12 @@ $(document).ready(function(){
 			}
 		}
 
+		var c_gendr = $("input[group='group1']:checked").val();
+		var gendr_ct = $("input[group='group1']:checked")
+		if (gendr_ct.length == 0) {
+			err['gendr'] = '性別は必須です。';
+			errCount++;
+		} 
 		//var tmpMedia = {
 		//	A0: '新聞広告',
 		//	A9: 'ポスト投函チラシ',
@@ -423,6 +443,7 @@ $(document).ready(function(){
 			$('#area4_confirm').text(area4).show();
 			$('#area5_confirm').text(area5).show();
 			$('#email_confirm').text(email).show();
+			$('#c_gendr_confirm').text(c_gendr).show();			
 			$('#tel_confirm').text(tel1 + '-' + tel2 + '-' + tel3).show();
 			//$('#media_confirm').html(media).show();
 			
@@ -446,7 +467,7 @@ $(document).ready(function(){
 	});
 
 	$('#back').click(function(){
-		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm,#confirm_button').hide();
+		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm,#confirm_button,#c_gendr_confirm').hide();
 		$('.input_area, #input_button').show();
 		$('#step_input').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
 		$('#step_confirm').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');
