@@ -1,4 +1,3 @@
-
 <link href="contents/shop/00000003/common_sp/common_yoyakuform/yuyukaiteki/style.css" rel="stylesheet" type="text/css" media="all" />
 <style>
 hr {
@@ -7,37 +6,15 @@ hr {
     padding: 0;
     border: 0;
 }
+input[type=radio]{
+	margin-right:6px;
+}
+#id_1_2{
+	margin-left:20px;
+}
 </style>
 <div class="container">
 <img src="contents/shop/00000003/common_sp/common_yoyakuform/yuyukaiteki/images/demo.gif" alt="" class="imgsp100">
-
-<div class="chuui">
-<p style="color:red; font-size:20px; font-weight:bold; line-height:26px">
-通販カタログ「悠々快適-秋冬号-」<br>
-無料送付企画の受付終了のお詫び
-</p>
-<p style="margin-top:16px; line-height:26px">
-通販カタログ『悠々快適-秋冬号-』の無料送付企画ですが<br>
-ご用意した数を上回るお申し込みをいただいたため、<br>
-<p style="color:red">秋冬号カタログのご請求の受付を終了させていただくこととなりました。</p>
-せっかくご興味をいただいたにもかかわらず<br>
-誠に申し訳ございません。<br>
-何卒、ご理解のほどよろしくお願い申し上げます。<br><br>
-
-なお、通販カタログ「悠々快適-秋冬号-」に掲載の商品は<br>
-<a href="/shop/c/category/001003155/list/">こちらのウェブページ</a>でもご紹介しておりますので<br>
-ご覧いただければ幸いです。<br><br>
-
-次回、2016年春号のカタログの無料送付企画は4月を予定しております。<br>
-ご希望の方は予約申し込みを承ります。下記にご入力をお願い致します。<br><br>
-
-
-今後ともご愛顧のほどを、心よりお願い申し上げます。
-</p>
-</div>
-<br>
-
-<hr style="border-top: 1px solid #bbb;">
 <div class="chuui">
 以下の項目を入力いただき、最後に「登録」ボタンをクリックしてください。<br>
 <span>※<img src="contents/shop/00000003/common_sp/common_yoyakuform/yuyukaiteki/images/must.gif" alt="必須" class="imgsp10" >マークの項目は入力必須項目です。必ず入力してください。<br>
@@ -192,6 +169,15 @@ hr {
 <input type="text" name="email" size="30" maxlength="128" value="" class="box05" />
 </div><!-- /.input_area -->
 <div id="email_confirm"></div></td>
+</tr>
+
+<tr>
+<th>性別<span class="imp">必須</span></th>
+<td><div class="input_area">
+          <label for="id_1_1"><input type="radio" group="group1" name="c_gendr" id="id_1_1" value="男性">男性</label>
+          <label for="id_1_2"><input type="radio" group="group1" name="c_gendr" id="id_1_2" value="女性">女性</label>
+</div><!-- /.input_area -->
+<div id="c_gendr_confirm"></div></td>
 </tr>
 
 <tr>
@@ -391,6 +377,12 @@ $(document).ready(function(){
 			}
 		}
 
+		var c_gendr = $("input[group='group1']:checked").val();
+		var gendr_ct = $("input[group='group1']:checked")
+		if (gendr_ct.length == 0) {
+			err['gendr'] = '性別は必須です。';
+			errCount++;
+		} 
 		//var tmpMedia = {
 		//	A0: '新聞広告',
 		//	A9: 'ポスト投函チラシ',
@@ -423,6 +415,7 @@ $(document).ready(function(){
 			$('#area4_confirm').text(area4).show();
 			$('#area5_confirm').text(area5).show();
 			$('#email_confirm').text(email).show();
+			$('#c_gendr_confirm').text(c_gendr).show();			
 			$('#tel_confirm').text(tel1 + '-' + tel2 + '-' + tel3).show();
 			//$('#media_confirm').html(media).show();
 			
@@ -446,7 +439,7 @@ $(document).ready(function(){
 	});
 
 	$('#back').click(function(){
-		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm,#confirm_button').hide();
+		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm,#confirm_button,#c_gendr_confirm').hide();
 		$('.input_area, #input_button').show();
 		$('#step_input').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
 		$('#step_confirm').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');

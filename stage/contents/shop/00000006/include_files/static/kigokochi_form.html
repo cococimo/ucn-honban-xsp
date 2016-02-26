@@ -1,5 +1,12 @@
-
 <link href="contents/shop/00000006/common_sp/common_kigokochiform/style.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+input[type=radio]{
+	margin-right:6px;
+}
+#id_3_2{
+	margin-left:20px;
+}
+</style>
 <div class="container">
 
 <img src="contents/shop/00000006/common_sp/common_kigokochiform/images/main.jpg" alt="" class="imgsp100">
@@ -170,6 +177,14 @@
 <input type="text" name="c_tel[0]" size="10" maxlength="5" value="" class="box06">&nbsp;-&nbsp;<input type="text" name="c_tel[1]" size="10" maxlength="4" value="" class="box06">&nbsp;-&nbsp;<input type="text" name="c_tel[2]" size="10" maxlength="4" value="" class="box06">
 </div><!-- /.input_area -->
 <div id="tel_confirm"></div></td>
+</tr>
+
+<tr>
+<th>性別<span class="imp">必須</span></th>
+<td><div class="input_area">
+          <label for="id_3_1"><input type="radio" name="c_gender" group="group1" id="id_3_1" value="女性" checked>女性</label>
+          <label for="id_3_2"><input type="radio" name="c_gender" group="group1" id="id_3_2" value="男性">男性</label></div><!-- /.input_area -->
+<div id="c_gender_confirm"></div></td>
 </tr>
 
 <tr>
@@ -368,6 +383,13 @@ $(document).ready(function(){
 				errCount++;
 			}
 		}
+		
+		var c_gender = $("input[group='group1']:checked").val();
+		var gender_ct = $("input[group='group1']:checked")
+		if (gender_ct.length == 0) {
+			err['gender'] = '性別は必須です。';
+			errCount++;
+		} 		
 
 		var tmpMedia = {
 			Ae: '朝日新聞',
@@ -401,6 +423,7 @@ $(document).ready(function(){
 			$('#area5_confirm').text(area5).show();
 			$('#email_confirm').text(email).show();
 			$('#tel_confirm').text(tel1 + '-' + tel2 + '-' + tel3).show();
+			$('#c_gender_confirm').text(c_gender).show();			
 			$('#media_confirm').html(media).show();
 			
 			$('#area6_confirm').text(area6).show();
@@ -423,7 +446,7 @@ $(document).ready(function(){
 	});
 
 	$('#back').click(function(){
-		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm, #media_confirm, #confirm_button, #mailmagazine_confirm').hide();
+		$('#name_confirm, #name2_confirm, #post_confirm, #area1_confirm, #area2_confirm, #area3_confirm, #area4_confirm, #area5_confirm, #email_confirm, #tel_confirm, #media_confirm, #confirm_button, #mailmagazine_confirm #c_gender_confirm').hide();
 		$('.input_area, #input_button').show();
 		$('#step_input').removeClass('ad_navi_t_off').addClass('ad_navi_t_on');
 		$('#step_confirm').removeClass('ad_navi_t_on').addClass('ad_navi_t_off');
