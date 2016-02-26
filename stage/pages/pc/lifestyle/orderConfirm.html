@@ -83,6 +83,17 @@
 .btn_nex_01 a, .btn_nex_01 a:link {
 	width:80% !important
 }
+input[type="checkbox"] {
+	width:25px !important;
+	height:25px !important;
+	margin:0 !important;
+	padding:0 !important
+}
+
+.add_ck_in {
+    display: block;
+    margin: -7% 0 0 12%;
+}
 </style>
 <script><!--
 var clicked = false;
@@ -846,7 +857,8 @@ $(window).on('load resize', function(){
 <tr><th class="last_02">ポイントのご利用</th></tr>
 <tr>
 	<td>
-		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する	
+		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>
+        <span class="add_ck_in">ポイントを使用する	</span>
 	</td>
 </tr>
 </table>

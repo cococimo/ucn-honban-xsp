@@ -80,6 +80,17 @@
     text-align: left !important;
     width: 60% !important;
 }
+input[type="checkbox"] {
+	width:25px !important;
+	height:25px !important;
+	margin:0 !important;
+	padding:0 !important
+}
+
+.add_ck_in {
+    display: block;
+    margin: -7% 0 0 12%;
+}
 </style>
 <script><!--
 var clicked = false;
@@ -564,7 +575,8 @@ var clicked = false;
 <tr><th class="last_02">ポイントのご利用</th></tr>
 <tr>
 	<td>
-		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する	
+		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>
+        <span class="add_ck_in">ポイントを使用する	</span>
 	</td>
 </tr>
 </table>
@@ -984,6 +996,7 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
   <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
+<script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=102'></script>
 
 </body>
 <!-- InstanceEnd --></html>

@@ -1715,15 +1715,9 @@ $(window).on('load resize', function(){
 <input m:id="h_hid_key" type="hidden" name="key" value="" />
 
 <span m:id="l_pre_credit">
-	<h4 class="temp_tit_06 clear"><div>クレジットカード情報</div></h4>
+	<h4 class="temp_tit_06 clear"><div>クレジットカード情報入力</div></h4>
 	
-	<div class="box_form_table">
-		<div class="box_form_th">ご利用いただけるカード</div>
-		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000005/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" /></div>
-	</div>
-
 	
-	<br clear="all">	
 	
 	
 	<span m:id="l_pre_had_credit">
@@ -1749,6 +1743,13 @@ $(window).on('load resize', function(){
 <object class="xsp_obj" m:id="e_var_card_brand_map" ></object>
 <span id="registeredCard">
 
+	<div class="box_form_table">
+		<div class="box_form_th">ご利用いただけるカード</div>
+		<div class="box_form_td"><img m:id="icon_image" src="../../../contents/shop/00000005/shop/image/ma_img_01.jpg" alt="ご利用いただけるカード" /></div>
+	</div>
+
+	
+	<br clear="all">
     	
 	<div class="wrap_form_table">
 	<div class="box_form_table">
@@ -1764,8 +1765,11 @@ $(window).on('load resize', function(){
 			<div><span class="error"><span m:id="h_err_card_brand">カード会社は必須です。</span></span></div>
 		</div>
 	</div>
+
+	
 	
 	<br clear="all">
+	
 
 	<div class="box_form_table">
 		<div class="box_form_th02">カード番号（半角英数字）<span class="imp">必須</span></div>
@@ -2727,7 +2731,7 @@ TEL：090-1234-1234
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
-        <li><a m:id="e_link_logo_shop_shop" href="/">トップページ</a></li>
+        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
         <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
         <li><a href="/shop/lifestyle/static/kanren/" style="opacity: 1;">関連サイト</a></li>
         <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
