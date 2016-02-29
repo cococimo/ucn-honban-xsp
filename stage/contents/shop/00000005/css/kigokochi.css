@@ -1707,15 +1707,15 @@ div.i_sec span img {
 }
 
 .deviceSP #header .sp_nav #header_cumulus a {
-    padding-left: 0;
-    width: 100%;
-    line-height: 0px !important;
-    margin: 0 !important;
-    display: block !important;
-    text-indent: -9999px;
-    background: url(../shop/image/kigokochi/sp_hd_cumulus.gif) no-repeat center center;
-    background-size: 100%;
-    border-radius: 0;
+  padding-left: 0;
+  width: 100%;
+  line-height: 0px !important;
+  margin: 0 !important;
+  display: block !important;
+  text-indent: -9999px;
+  background: url(../shop/image/kigokochi/sp_hd_cumulus.gif) no-repeat center center;
+  background-size: 100%;
+  border-radius: 0;
 }
 
 /* aタグ*/
@@ -1747,4 +1747,48 @@ ul.rankinglist li{
 }
 ul.stafflist li,ul.bloglist li{
 	margin-right:7px\9;
+}
+
+
+@media (max-width: 640px) {
+  .wrap_specialcontents .stafflist li.autoreco{
+    float:left;
+    margin-right:0;
+    width:50%;
+    text-align:left;
+    margin-bottom:10px;
+ }
+ .wrap_specialcontents .stafflist li.autoreco:nth-child(3){
+   clear:both!important;
+   width:33%;
+ }
+ .wrap_specialcontents .stafflist li.autoreco:nth-child(4),.wrap_specialcontents .stafflist li.autoreco:nth-child(5){
+   width:33%;
+   display:block;
+ }
+ .pc_only{
+   display:none;
+ }
+ .wrap_specialcontents .stafflist .autoreco .cartAddbtn.newCartAddbtn_sp.sp_only{
+   width:84px;
+   height:36px;
+   margin-top: 5px;
+   margin-left: 0;
+ }
+}
+
+.wrap_specialcontents .stafflist .autoreco img{
+  max-width:100%;
+}
+
+.wrap_specialcontents .rankinglist select, .wrap_specialcontents .stafflist .autoreco select, .wrap_specialcontents.wrapnew .wrap_sp #lineupItem select{
+  width:90%;
+}
+
+
+
+@media screen and (min-width: 641px){
+ .sp_only {
+   display:none;
+ }
 }
