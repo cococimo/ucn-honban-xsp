@@ -59,6 +59,8 @@ $(function() {
 </script>
 <style>
 .sp_on{ display:none}
+.spbr br{ display:none}
+
 @media (max-width: 1280px)
 {
 .deviceSP #contents {
@@ -106,6 +108,31 @@ div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2 {
 }
 .rankinglist li p , .wrap_specialcontents p{
 word-wrap: break-word !important;
+}
+.spbr br{ display: block}
+.wrap_specialcontents .stafflist li.autoreco {
+    margin-right:3% !important;
+    width: 47% !important;
+}
+.wrap_specialcontents .stafflist li.autoreco img {
+border:1px #c4c4c4 solid;
+}
+.wrap_specialcontents .stafflist li.autoreco:nth-child(2) {
+    margin-right:0 !important
+}
+.wrap_specialcontents .stafflist li.autoreco:nth-child(3) {
+	clear:both !important
+}
+.wrap_specialcontents .stafflist li.autoreco:nth-child(3), .wrap_specialcontents .stafflist li.autoreco:nth-child(4), .wrap_specialcontents .stafflist li.autoreco:nth-child(5)
+ {
+    width: 30% !important;
+	margin-top:3%;	
+}
+.wrap_specialcontents .stafflist .autoreco .cartAddbtn.newCartAddbtn_sp.sp_only{
+	border:none !important
+}
+.wrap_specialcontents:nth-child(16) {
+	display:block !important
 }
 }
 @media (max-width:480px)
@@ -859,7 +886,7 @@ function initCorners() {
   <div class="wrap_specialcontents">
   <span m:id="l_notEmp_autoRecommendGoodsList">
     <!--<h2 class="sp_only sp_r_tit_01"><img src="../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
-    <h2 class="webf">あなたの閲覧履歴からのおススメ</h2>
+    <h2 class="webf spbr">あなたの閲覧履歴からの<br />おススメ</h2>
       <ul class="stafflist">
       <span m:id="l_ite_autoRecommendGoodsList">
       <span m:id="l_notEqu_autoRecommendGoodsList_idx">
@@ -1893,10 +1920,15 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 	</div>
 	<!--contents-->
 </div><!--container-->
- <script type="text/javascript" charset="utf-8">
+
+
+<!--[if !lte IE 8]><![IGNORE[--><![IGNORE[]]>
+<script type="text/javascript" charset="utf-8">
   if (window.matchMedia('screen and (max-width:640px)').matches) { $("select[name='goods_sku_code'][class='goods_sku_code'] option:first-child").text("選択");
 }
 </script>
+<!--<![endif]-->
+
 <!-- ガイド -->
 <div id="guideWrapper" class="pc_only">
 	<div class="guideTop">
