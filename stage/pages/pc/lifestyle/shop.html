@@ -60,7 +60,13 @@ $(function() {
 <style>
 .sp_on{ display:none}
 .spbr br{ display:none}
-
+div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorankgoods_cart_img_rank3, div.autorankgoods_cart_img_rank4over {
+    background: url(../contents/lifestyle/goods/image/cart_br_banner_01.gif) no-repeat right center;
+    width: 101% !important;
+    height: 24px !important;
+	background-size: cover;
+	width: 200px\9 !important; /* IE8 and below */	
+}
 @media (max-width: 1280px)
 {
 .deviceSP #contents {
@@ -99,7 +105,7 @@ $(function() {
 .rankinglist li:nth-child(3) {
 	clear:both !important
 }
-div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2 {
+div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorankgoods_cart_img_rank3, div.autorankgoods_cart_img_rank4over {
     background: url(../contents/lifestyle/goods/image/sp_cart_br_banner_02.gif)no-repeat right center;
     width: 84px !important;
     height: 36px !important;
@@ -120,6 +126,9 @@ border:1px #c4c4c4 solid;
 .wrap_specialcontents .stafflist li.autoreco:nth-child(2) {
     margin-right:0 !important
 }
+.wrap_specialcontents .stafflist li.autoreco:nth-child(3) {
+	clear:both !important
+}
 .wrap_specialcontents .stafflist li.autoreco:nth-child(3), .wrap_specialcontents .stafflist li.autoreco:nth-child(4), .wrap_specialcontents .stafflist li.autoreco:nth-child(5)
  {
     width: 30% !important;
@@ -128,6 +137,13 @@ border:1px #c4c4c4 solid;
 .wrap_specialcontents .stafflist .autoreco .cartAddbtn.newCartAddbtn_sp.sp_only{
 	border:none !important
 }
+.wrap_specialcontents:nth-child(16) {
+	display:block !important
+}
+.wrap_specialcontents p {
+    margin-bottom: 0 !important;
+}
+.sp10{ margin-top:0 !important}
 }
 @media (max-width:480px)
 {
@@ -481,20 +497,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="goods_url" />
 </form>
 <div id="contents">
-		<div id="pan-navi" >
-		<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-		</ul>
-		</div>
+
 <div class="sp_on">
 <h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
-	<div>
-	<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-	</ul>
-	</div>
 </div>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.min.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
@@ -846,7 +851,7 @@ function initCorners() {
                <p class="txt13 mt10"><b>
                 <a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a>
                </b></p>
-              <p class="txt13 mt10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+              <p class="txt13 mt10 sp10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
             <!-- 閲覧履歴一覧からカートに入れる -->
 			<span m:id="l_can_addCartDirect_autoReco">
 				<span m:id="l_equ_autoReco_valiationSize">
@@ -1855,6 +1860,12 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 	<!--contents-->
 </div><!--container-->
 
+<!--[if !lte IE 8]><![IGNORE[-->
+<script type="text/javascript" charset="utf-8">
+  if (window.matchMedia('screen and (max-width:640px)').matches) { $("select[name='goods_sku_code'][class='goods_sku_code'] option:first-child").text("選択");
+}
+</script>
+<!--<![endif]-->
 
 <!-- ガイド -->
 <div id="guideWrapper" class="pc_only">
