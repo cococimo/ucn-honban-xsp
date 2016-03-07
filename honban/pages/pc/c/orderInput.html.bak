@@ -597,12 +597,12 @@ var iCurDstSelected = 0;
 </a>
 
 <div id="header_tell" class="pc_only">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
+<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-186 7時から22時（年中無休）" />
 </div>
 
 <div class="sp_on">
-<a href="tel:0120552476">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
+<a href="tel:0120552186">
+<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-186 7時から22時（年中無休）" />
 </a>
 </div>
 
@@ -2081,123 +2081,131 @@ var iCurDstSelected = 0;
 <td class="bor_l_none"></td>
 <td class="last_02 right">500pt</td>
 </tr>-->
-<span m:id="div_shopping_total">
-<tr>
-<td class="right cart_table_02_color_01">請求金額</td>
-<td class="last_02 right" id="total_amt"><span m:id="b_wr_order_price_total">10000</span> 円</td>
-</tr>
-</span>
-<!--<tr>
+  <span m:id="div_shopping_total">
+  <tr>
+  <td class="right cart_table_02_color_01">請求金額</td>
+  <td class="last_02 right" id="total_amt"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+  </tr>
+  </span>
+  <!--<tr>
 <!--保留<td colspan="2" class="right">決済手数料</td>
 <td class="bor_l_none"></td>
 <td class="last_02 right">700円</td>
 </tr>-->
-<tr>
-<!--<td colspan="2" class="right">請求金額</td>
+  <tr>
+  <!--<td colspan="2" class="right">請求金額</td>
 <td class="bor_l_none"></td>
 <td class="last_02 right">9000円</td>
 </tr>-->
-<span m:id="l_notEqu_totalPointAmt">
-<tr m:id="div_shopping_total">
-<td class="right cart_table_02_color_01">獲得予定ポイント</td>
-<td class="last_02 right" id="total_point_amt"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
-</tr>
-</span>
-</table>
-
-</div>
-
-
-<span m:id="l_pre_disp_goodsPremium">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
-</tr>
-<tr m:id="l_ite_goodsPremium">
-<td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
-<td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
-</tr>
-</table>
-</span>
-<span m:id="l_pre_disp_promotionConnectName">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th class="last_02">以下の特典が適用されています</th>
-</tr>
-<tr>
-<td class="last_02"><span m:id="b_wr_promotionConnectName">ダミー特典内容</span></td>
-</tr>
-</table>
-</span>
-
-<span m:id="l_equ_gift_select">
-	<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-	<tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
-	</tr>
-	<tr>
-	<td class="last_02">
-	<span m:id="l_notEmp_wrapping_type">ラッピング種別（<span m:id="disp_wrapping_name">フォーマルラッピング</span>）<br /></span>
-	<!-- <span m:id="l_notEmp_jpn_wrapping_type">表書き（<span m:id="disp_jpn_wrapping_type">御祝</span>）<br /></span> -->
-	<span m:id="l_notEmp_inscription">表書き（<span m:id="disp_inscription">御祝</span>）<br /></span>
-	<span m:id="l_notEmp_gift_order_name">記名（<span m:id="disp_gift_order_name">山田　太郎</span>）</span>
-	<input m:id="h_gift_div" type="hidden" name="gift_div" />
-	<input m:id="h_wrapping_type" type="hidden" name="wrapping_type" />
-	<input m:id="h_jpn_wrapping_type" type="hidden" name="jpn_wrapping_type" />
-	<input m:id="h_inscription" type="hidden" name="inscription" />
-	<input m:id="h_gift_sender" type="hidden" name="gift_sender" />
-	</td>
-	</tr>
-	</table>
-</span>
-<!--/ ********** include:orderDetail.jsp ********** -->
-</span>
-	<!-- 注文入力ログイン -->
-	<input type="hidden" name="orderLoginChk"/>
-</form>
-</div>
-
-
-
-</div>
-<span m:id="l_notPre_free_guide">
-<div class="r_con_box_04_in">
-<div class="memadd_cau_box_01">
-<!--<h3>注意事項</h3>-->
-<p>
-<span class="fs16">
-ご入力の内容をお確かめの上、間違いがなければ「お申込み内容確認へ」ボタンを押してください。
-</span>
-</p>
-
-</div>
-
-</div>
-</span>
-
-<!--<div class="memadd_cau_box_02">
+  <span m:id="l_notEqu_totalPointAmt">
+  <tr m:id="div_shopping_total">
+  <td class="right cart_table_02_color_01">獲得予定ポイント</td>
+  <td class="last_02 right" id="total_point_amt"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
+  </tr>
+  </span>
+  </table>
+    
+  </div>
+      
+      
+  <span m:id="l_pre_disp_goodsPremium">
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+  <tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
+  </tr>
+  <tr m:id="l_ite_goodsPremium">
+  <td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
+  <td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
+  </tr>
+  </table>
+  </span>
+  <span m:id="l_pre_disp_promotionConnectName">
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+  <tr><th class="last_02">以下の特典が適用されています</th>
+  </tr>
+  <tr>
+  <td class="last_02"><span m:id="b_wr_promotionConnectName">ダミー特典内容</span></td>
+  </tr>
+  </table>
+  </span>
+      
+  <span m:id="l_equ_gift_select">
+    <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+      <tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
+        </tr>
+      <tr>
+        <td class="last_02">
+          <span m:id="l_notEmp_wrapping_type">ラッピング種別（<span m:id="disp_wrapping_name">フォーマルラッピング</span>）<br /></span>
+          <!-- <span m:id="l_notEmp_jpn_wrapping_type">表書き（<span m:id="disp_jpn_wrapping_type">御祝</span>）<br /></span> -->
+          <span m:id="l_notEmp_inscription">表書き（<span m:id="disp_inscription">御祝</span>）<br /></span>
+          <span m:id="l_notEmp_gift_order_name">記名（<span m:id="disp_gift_order_name">山田　太郎</span>）</span>
+          <input m:id="h_gift_div" type="hidden" name="gift_div" />
+          <input m:id="h_wrapping_type" type="hidden" name="wrapping_type" />
+          <input m:id="h_jpn_wrapping_type" type="hidden" name="jpn_wrapping_type" />
+          <input m:id="h_inscription" type="hidden" name="inscription" />
+          <input m:id="h_gift_sender" type="hidden" name="gift_sender" />
+          </td>
+        </tr>
+      </table>
+  </span>
+  <!--/ ********** include:orderDetail.jsp ********** -->
+  </span>
+    <!-- 注文入力ログイン -->
+    <input type="hidden" name="orderLoginChk"/>
+  </form>
+  </div>
+    
+    
+    
+  </div>
+  <span m:id="l_notPre_free_guide">
+  <div class="r_con_box_04_in">
+  <div class="memadd_cau_box_01">
+  <!--<h3>注意事項</h3>-->
+  <p>
+  <span class="fs16">
+    ご入力の内容をお確かめの上、間違いがなければ「お申込み内容確認へ」ボタンを押してください。
+  </span>
+  </p>
+    
+  </div>
+    
+  </div>
+  </span>
+  
+  <!--<div class="memadd_cau_box_02">
 ご入力の内容をお確かめの上、間違いがなければ「お申し込み内容確認へ」ボタンを押してください。
 </div>-->
-
-<div class="modoru">
-
-<div class="inq_input_bt_03 clearfix">
-
-
-
-<div class="box_02">
-<a m:id="a_link_submit" href="orderConfirm.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_09.png" alt="次へ" /></a>
+  
+  <div class="modoru">
+    
+  <div class="inq_input_bt_03 clearfix">
+    
+    
+    
+  <div class="box_02">
+  <a m:id="a_link_submit" href="orderConfirm.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_09.png" alt="次へ" /></a>
+  </div>
+    
+    
+  <div class="box_01 n_bt_re_01">
+  <a m:id="h_link_cart" href="cart.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_01.png" class="modoru" alt="戻る" /></a>
+    
+  </div>
+    
+  </div>
+    
+    
+  </div><!--r_con_box_03-->
+  
 </div>
 
-
-<div class="box_01 n_bt_re_01">
-<a m:id="h_link_cart" href="cart.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_01.png" class="modoru" alt="戻る" /></a>
-
+<div class="sp_tel">
+  <a href="tel:0120552186">
+  <i class="fa fa-mobile"></i>
+  <span class="tell">0120-552-186</span>
+  </a>
 </div>
 
-</div>
-
-
-</div><!--r_con_box_03-->
-
-</div>
 
 <!-- InstanceEndEditable -->
 </div><!--contents_r_02-->
@@ -2334,7 +2342,6 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
 <noscript>
   <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
-
 
 </body>
 <!-- InstanceEnd --></html>
