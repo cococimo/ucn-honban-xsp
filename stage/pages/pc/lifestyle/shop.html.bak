@@ -42,26 +42,25 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <!-- common css -->
 <link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
 <!-- common js -->
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/iepngfix_tilebg.js"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/heightLine.js"></script>
-<script m:id="static_img" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script m:id="static_img" type="text/javascript" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
 <script>
-$(function(){
-    $('div.drop-down').each(function(i){
-        $(this).addClass('add_no' + (i+1));
-    });
-});	
+$(function() {
+  $('.main-nav li').eq(3).css('height', '65px');
+});
 </script>
 <style>
 .sp_on{ display:none}
+.spbr br{ display:none}
+
 @media (max-width: 1280px)
 {
 .deviceSP #contents {
@@ -95,11 +94,11 @@ $(function(){
 }
 @media (max-width:640px)
 {
-.deviceSP #contents {
-    padding-top:40%;
-}
 .wrap_main{margin-top:0!important}
 .sp_on{margin-top:10%;}
+.rankinglist li:nth-child(3) {
+	clear:both !important
+}
 div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2 {
     background: url(../contents/lifestyle/goods/image/sp_cart_br_banner_02.gif)no-repeat right center;
     width: 84px !important;
@@ -107,8 +106,31 @@ div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2 {
     margin-top: 5px;
 	margin-left:0 !important
 }
-.wrap_specialcontents p{
+.rankinglist li p , .wrap_specialcontents p{
 word-wrap: break-word !important;
+}
+.spbr br{ display: block}
+.wrap_specialcontents .stafflist li.autoreco {
+    margin-right:3% !important;
+    width: 47% !important;
+}
+.wrap_specialcontents .stafflist li.autoreco img {
+border:1px #c4c4c4 solid;
+}
+.wrap_specialcontents .stafflist li.autoreco:nth-child(2) {
+    margin-right:0 !important
+}
+.wrap_specialcontents .stafflist li.autoreco:nth-child(3), .wrap_specialcontents .stafflist li.autoreco:nth-child(4), .wrap_specialcontents .stafflist li.autoreco:nth-child(5)
+ {
+    width: 30% !important;
+	margin-top:3%;	
+}
+.wrap_specialcontents .stafflist .autoreco .cartAddbtn.newCartAddbtn_sp.sp_only{
+	border:none !important
+}
+.div.wrap_specialcontents:nth-child(16) {
+    display: none;
+}
 }
 @media (max-width:480px)
 {
@@ -187,6 +209,7 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
 $(function () {
@@ -209,6 +232,7 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <script type='text/javascript'>//<![CDATA[ 
 $(window).load(function(){
 $(function () {
@@ -231,8 +255,11 @@ $(function () {
 });
 });//]]>  
 </script>
+
 <!-- InstanceBeginEditable name="head" -->
+
 <!-- InstanceEndEditable -->
+
 </head>
 <body id="top">
 <div id="container">
@@ -242,8 +269,10 @@ $(function () {
 <h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
 <!-- InstanceEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
+
 <!-- header追加 -->
 <!-- name="header_logo" -->
+
 <div id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
@@ -298,6 +327,7 @@ $(function () {
               
 			<ul class="header_list_02">
                           <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
+
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
 			  <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
 			  <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
@@ -371,6 +401,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
      </div>
     <div class="sp_nav">
+
 		<!-- カテゴリナビ -->
 		 <script type="text/javascript">
 		//<![CDATA[
@@ -440,32 +471,26 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</div>
 		<!--▲▲▲sp_menu▲▲▲-->
 	</div><!--/header-->
+
+
 <!--▲▲▲ヘッダーここまで▲▲▲-->
+
+
+
 	<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
 <form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
 	<input type="hidden" name="_S" />
 	<input type="hidden" name="category_code" />
 	<input type="hidden" name="goods_url" />
 </form>
-
 <div id="contents">
-		<div id="pan-navi" >
-		<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-		</ul>
-		</div>
+
 <div class="sp_on">
 <h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
-	<div>
-	<ul class="clearfix">
-		<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-		<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-	</ul>
-	</div>
 </div>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/style.min.css">
 <script m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/curvycorners.src.js"></script>
+
 <!--[if lt IE 9]>
 <script>
 curvyCorners.addEvent(window, 'load', initCorners);
@@ -497,7 +522,7 @@ function initCorners() {
 			<a href="/shop/lifestyle/static/blanket/#sec03" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
 			</div>
             <div>
-			<a href="/shop/lifestyle/category/001001012011/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_23.jpg" alt="+d（プラスディー）" ></a>
+			<a href="/shop/lifestyle/e/SDVT58/c/001001012011/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_24.jpg" alt="プラスディー テトラ" ></a>
 			</div>                        
 			<div>
 			<a href="/shop/lifestyle/category/001001012070/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
@@ -514,7 +539,6 @@ function initCorners() {
 		</div>
 	</div>
 </div>
-
 <div class="wrap_main wrap_sp">
 	<div class="main" id="wmainimages">
 		<div class="mainimagessp">
@@ -524,7 +548,7 @@ function initCorners() {
 			<a href="/shop/lifestyle/static/blanket/#sec03"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
 			</div>
             <div>
-			<a href="/shop/lifestyle/category/001001012011/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_23.jpg" alt="+d（プラスディー）" ></a>
+			<a href="/shop/lifestyle/e/SDVT58/c/001001012011/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_24.jpg" alt="プラスディー　テトラ" ></a>
 			</div>            
  			<div>
 			<a href="/shop/lifestyle/category/001001012030/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
@@ -540,11 +564,14 @@ function initCorners() {
 		</div>
 	</div>
 </div>
+
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/functionality.css">
 		<span m:id="l_pre_standardCategory">
 		<span m:id="l_notEmp_standardCategory_childCategories">
 		<div class="wrap_pc">
 		<!--▼▼▼メニュー▼▼▼-->
+
+
 <div class="pcmenu">
 <ul class="menu">
 <span m:id="l_ite_standardCategory">
@@ -552,6 +579,7 @@ function initCorners() {
         <span m:id="icnt_increment"></span>
         <span m:id="i_ins_cate"></span>
         <object class="xsp_obj" m:id="count_sub1"></object>               
+
 <span  m:id="l_ite_cate">
     <span m:id="l_equ_subCate_checkPeriod"><span m:id="icnt_increment"></span><span m:id="i_ins_subCate"></span>
 <li class="drop-down-menu">
@@ -590,8 +618,13 @@ function initCorners() {
 		});
 		});
 		</script>
+
+
+
+
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
+
 <!--▼▼▼メニュー▼▼▼-->
 <div class="menu wrap_sp">
 	<ul class="accordion">
@@ -787,7 +820,95 @@ function initCorners() {
 	</div>
 </span>
 		<!--▲▲▲RANKING▲▲▲-->
-		<!--▼▼▼RANKING▼▼▼-->
+
+  <!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
+  <div class="wrap_specialcontents">
+  <span m:id="l_notEmp_autoRecommendGoodsList">
+    <!--<h2 class="sp_only sp_r_tit_01"><img src="../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
+    <h2 class="webf spbr">あなたの閲覧履歴からの<br />おススメ</h2>
+      <ul class="stafflist">
+      <span m:id="l_ite_autoRecommendGoodsList">
+      <span m:id="l_notEqu_autoRecommendGoodsList_idx">
+        <li class="autoreco">
+              <span m:id="l_pre_autoRecommendGoods_representSku">
+                <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
+                </object>
+                	<a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+               </span>
+               <p class="txt13 mt10"><b>
+                <a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a>
+               </b></p>
+              <p class="txt13 mt10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+            <!-- 閲覧履歴一覧からカートに入れる -->
+			<span m:id="l_can_addCartDirect_autoReco">
+				<span m:id="l_equ_autoReco_valiationSize">
+					<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="cartAddbtn pc_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+						<img class="cartAddbtn newCartAddbtn_sp sp_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+
+					</a>
+				</span>
+				<span m:id="l_not_equ_autoReco_valiationSize">
+					<select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
+						<option value="">選択してください</option>
+						<option m:id="h_opt_variations_autoReco" value="">白</option>
+						<option m:id="dummy" value="">黒</option>
+						<option m:id="dummy" value="">赤</option>
+						<option m:id="dummy" value="">青</option>
+						<option m:id="dummy" value="">緑</option>
+					</select>
+					<div m:id="disp_not_cartAddBtn_autoReco">&nbsp;</div>
+					<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい"/>-->
+					<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
+						<img class="cartAddbtn pc_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/cart_br_banner_01.gif" alt="カートに入れる" />
+						<img class="cartAddbtn newCartAddbtn_sp sp_only" m:id="static_img" src="../../../contents/shop/00000005/goods/image/sp_cart_br_banner_01.gif" alt="カートに入れる" />
+					</a>
+				</span>
+			</span>
+			<span m:id="l_not_addCartDirect_autoReco">
+				<span m:id="disp_saleStatus_autoReco">
+				<p class="soldout"><strong>[販売終了]</strong></p>
+				</span>
+			</span>
+			<!--/ 閲覧履歴一覧からカートに入れる -->
+        </li>
+        <li class="" m:id="dummy">
+          <div class="box_01 heightLine-osusuem01">
+            <div class="box_02">
+              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="#">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li class=" " m:id="dummy">
+          <div class="box_01 heightLine-osusuem01">
+            <div class="box_02">
+              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+              <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+              <p>50円（税込）</p>
+            </div>
+          </div>
+        </li>
+        <li class="heightLine-osusuem01 " m:id="dummy">
+          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+        </li>
+        <li class="heightLine-osusuem01 " m:id="dummy">
+          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+        </li>
+         </span>
+         </span>
+      </ul>
+  <br clear="all">
+  </span>
+  </div>
+  <!--▲▲▲あなたの閲覧履歴からのおススメです▲▲▲-->
+
+	<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
 		<h2 class="webf">ラプアン・カンクリ特集</h2>
 		<ul class="rankinglist heightLineParent">
@@ -837,46 +958,46 @@ function initCorners() {
 		<!--▲▲▲RANKING▲▲▲-->         
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2 class="webf">フレディ・レック特集</h2>
+		<h2 class="webf">アヴォカ（AVOCA）特集</h2>
 		<ul class="rankinglist heightLineParent">
-<li><a href="/shop/lifestyle/e/DVY42/c/001001012065/">
+<li><a href="/shop/lifestyle/e/SDVI65/">
 	<div class="rankimg">
-	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs1.jpg" alt="フレディ・アイロン台（スタンドタイプ）">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs1.jpg" alt="フAVOCA リバーシブルコットンバッグ">
 	</div>
-	<p class="txt13"><b>フレディ<br />
-アイロン台（スタンドタイプ）</b></p>
-	<p class="txt13">\16,200(税込)</p></a>
+	<p class="txt13"><b>AVOCA<br />
+リバーシブルコットンバッグ</b></p>
+	<p class="txt13">\6,480(税込)</p></a>
 </li>
-<li><a href="/shop/lifestyle/e/DVY36/c/001001012065/">
+<li><a href="/shop/lifestyle/e/DVI60/">
 	<div class="rankimg">
-	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs2.jpg" alt="フレディ・レック　トートバッグ">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs2.jpg" alt="AVOCA ボタン柄ティータオル">
 	</div>
-	<p class="txt13"><b>フレディ・レック　トートバッグ</b></p>
-	<p class="txt13">\2,592(税込)</p></a>
+	<p class="txt13"><b>AVOCA<br />
+ボタン柄ティータオル</b></p>
+	<p class="txt13">\3,240(税込)</p></a>
 </li>
-<li><a href="/shop/lifestyle/e/DVY35/c/001001012065/">
+<li><a href="/shop/lifestyle/e/SDVI51/">
 	<div class="rankimg">
-	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs3.jpg" alt="フレディ・レック　バルコニーサンダル">
+	<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs3.jpg" alt="AVOCAクリームシュガーストッカー">
 	</div>
-	<p class="txt13"><b>フレディ・レック<br />
-バルコニーサンダル</b></p>
-	<p class="txt13">\2,376(税込)</p></a>
+	<p class="txt13"><b>AVOCA<br />
+クリームシュガーストッカー</b></p>
+	<p class="txt13">\3,024(税込)</p></a>
 </li>
-		<li><a href="/shop/lifestyle/e/DVY37/c/001001012065/">
+		<li><a href="/shop/lifestyle/e/SDVU39/">
 			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs4.jpg" alt="フレディ・レック　マグカップ">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs4.jpg" alt="AVOCA マフラー">
 			</div>
-			<p class="txt13"><b>フレディ・レック<br />
-マグカップ</b></p>
-			<p class="txt13">\1,296 (税込)</p></a>
+			<p class="txt13"><b>AVOCA マフラー</b></p>
+			<p class="txt13">\10,800 (税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/DVY38/c/001001012066/">
+		<li><a href="/shop/lifestyle/e/SDVI74/">
 			<div class="rankimg">
-			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs5.jpg" alt="フレディ・ランドリーバッグ">
+			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/xs5.jpg" alt="AVOCAキャンバストートバッグ・ミニ">
 			</div>
-			<p class="txt13"><b>フレディ・レック<br />
-ガルザイフェ石鹸</b></p>
-			<p class="txt13">\486 (税込)</p></a>
+			<p class="txt13"><b>AVOCA<br />
+キャンバストートバッグ・ミニ</b></p>
+			<p class="txt13">\9,720 (税込)</p></a>
 		</li>
 		                                                                                             		                               
 		</ul>
@@ -885,46 +1006,46 @@ function initCorners() {
 		<!--▲▲▲RANKING▲▲▲-->        
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2 class="webf">かわいい動物柄特集</h2>
+		<h2 class="webf">ネコ雑貨特集</h2>
 		<ul class="rankinglist">
-		<li><a href="/shop/lifestyle/e/SDVV86/">
+		<li><a href="/shop/lifestyle/e/DVV91/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/animl1.jpg" alt="">
-		</div>
-		<p class="txt13"><b>リサ・ラーソン　マグカップ</b></p>
-		<p class="txt13">\3,024 (税込)</p></a>
-		</li>
-		<li><a href="/shop/lifestyle/e/DVD38/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/animl2.jpg" alt="">
-		</div>
-		<p class="txt13"><b>さふぁり子供食器セット<br />
-（オリジナル）</b></p>
-		<p class="txt13">\10,800(税込)</p></a>
-		</li>
-		<li><a href="/shop/lifestyle/e/SDVW94/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/animl3.jpg" alt="">
-		</div>
-		<p class="txt13"><b>ロロスツイード<br />
-アイス・ビヨン　ブランケット</b></p>
-		<p class="txt13">\25,920(税込)</p></a>
-		</li>
-		<li><a href="/shop/lifestyle/e/DVS08/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/animl4.jpg" alt="">
-		</div>
-		<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-KOIRAPUISTOブランケット</b></p>
-		<p class="txt13">\20,520(税込)</p></a>
-		</li>
-		<li><a href="/shop/lifestyle/e/DVV82/">
-		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/animl5.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat1.jpg" alt="">
 		</div>
 		<p class="txt13"><b>リサ・ラーソン<br />
-ごのねこ箸置き</b></p>
-		<p class="txt13">\5,400(税込)</p></a>
+ぬいぐるみシリーズ（ネコ）</b></p>
+		<p class="txt13">\4,860 (税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVV91/c/001001012057/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat2.jpg" alt="">
+		</div>
+		<p class="txt13"><b>リサ・ラーソン　猫箸置き</b></p>
+		<p class="txt13">\2,160(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVE16/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat3.jpg" alt="">
+		</div>
+		<p class="txt13"><b>e.スポンジワイプ<br />
+おひさま5枚セット</b></p>
+		<p class="txt13">\2,970(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/DVX26/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat4.jpg" alt="">
+		</div>
+		<p class="txt13"><b>ロロスツィード<br />
+プッテ・ザ・キャット　ブランケット</b></p>
+		<p class="txt13">\28,080(税込)</p></a>
+		</li>
+		<li><a href="/shop/lifestyle/e/SDVH82/">
+		<div class="rankimg">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat5.jpg" alt="">
+		</div>
+		<p class="txt13"><b>ラプアンカンクリ<br />
+キッチンタオル</b></p>
+		<p class="txt13">\2,808(税込)</p></a>
 		</li>                                
 		</ul>
 		<br clear="all">
@@ -969,7 +1090,6 @@ KOIRAPUISTOブランケット</b></p>
 		<span m:id="l_pre_newGoodsList">
 		<div class="wrap_specialcontents wrapnew">
 		<h2>NEW ITEM <span>新着商品</span></h2>
-
 <div class="wrap_pc">
 			<div class="main" id="lineupItem">
 				<div class="newitemlist">
@@ -1102,6 +1222,7 @@ KOIRAPUISTOブランケット</b></p>
 		<!--▼▼▼BRAND▼▼▼-->
 		<div class="wrap_specialcontents wrapbrand">
 		<h2>BRAND <span>取扱ブランド一覧</span></h2>
+
 <div class="wrap_pc">
 			<div class="main" id="lineupItem02">
 				<div class="brandlist">
@@ -1448,11 +1569,23 @@ KOIRAPUISTOブランケット</b></p>
 			<div class="wrap_right wrap_pc"><a href="/shop/lifestyle/static/cocoblog/" class="a_line">&gt; ココチモブログ</a></div>
 			<div class="blogclear"><br clear="all"></div>
 			<ul class="bloglist">
+			<li><a href="/shop/lifestyle/static/cocoblog/160226/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160226-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">スタイリスト渥美友理さんに“リサ・ラーソン・ベースドレス”を使ったお花の飾り方を教えていただきました♪</p></a>
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/160223/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160223-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">自分へのご褒美にもいい♪春を呼ぶお菓子“セムラ”をつくって味わってみよう。</p></a>
+			</li>
+			<li><a href="/shop/lifestyle/static/cocoblog/160219/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160219-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">おでんに欠かせない大根(^-^)　すりおろして「みぞれおでん」を美味しくつくってみよう。</p></a>
+			</li> 
 			<li><a href="/shop/lifestyle/static/cocoblog/160216/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160216-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">Silkeborg（シルケボー）ブランケットのサプライヤーさんをお訪ねしました。</p></a>
 			</li> 
-			<li><a href="/shop/lifestyle/static/cocoblog/160209/">
+<!--			<li><a href="/shop/lifestyle/static/cocoblog/160209/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160209-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">アイデアがあふれる楽しいアイテムいっぱい♪</p></a>
 			</li> 
@@ -1464,7 +1597,7 @@ KOIRAPUISTOブランケット</b></p>
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160120-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">ブランケットのある生活。</p></a>
 			</li> 
-<!--			<li><a href="/shop/lifestyle/static/cocoblog/160113/">
+			<li><a href="/shop/lifestyle/static/cocoblog/160113/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160113-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">お正月明けのお腹も休まる白菜スープをつくってみよう。</p></a>
 			</li> 
@@ -1709,13 +1842,18 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 			</div>
 		</div>    
 		<!--▲▲▲pagetop▲▲▲--> 
+
 	</div>
 	<!--contents-->
 </div><!--container-->
- <script type="text/javascript" charset="utf-8">
+
+<!--[if !lte IE 8]><![IGNORE[-->
+<script type="text/javascript" charset="utf-8">
   if (window.matchMedia('screen and (max-width:640px)').matches) { $("select[name='goods_sku_code'][class='goods_sku_code'] option:first-child").text("選択");
 }
 </script>
+<!--<![endif]-->
+
 <!-- ガイド -->
 <div id="guideWrapper" class="pc_only">
 	<div class="guideTop">
@@ -1771,6 +1909,8 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 	</div>
 </div>
 <!-- ガイド -->
+
+
 <!-- footer追加 -->
 <div id="footer02">
 	<div id="footer_wrap02">
@@ -1831,7 +1971,11 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
       </div>            
 		</div>
 <!--▲▲▲カテゴリー(フッター)▲▲▲-->
+
+
 <br clear="all" />
+
+
 		<div class="pc_display member_signup">
 		<h3 id="icon_03">初めての方へ</h3>
 			<ul>
@@ -1840,6 +1984,7 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 			<li><a href="/shop/lifestyle/static/first/">ココチモとは</a></li>
 			</ul>
 		</div>
+
 		<div class="pc_display">
 			<h3 id="icon_04">会員の方</h3>
 			<ul>
@@ -1847,6 +1992,7 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 			<li></li>
 			</ul>
 		</div>
+
 		<div id="footer03" class="pc_display">
 			<div class="clearfix" id="footer_wrap03">
 				<ul class="clearfix">
@@ -1859,6 +2005,7 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 			<p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
 			</div><!--footer_wrap03-->
 		</div><!--footer03-->
+
 		<div id="footer05" class="sp_only">
 			<div class="mt10 sp_secure clearfix">
 			<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
@@ -1867,15 +2014,19 @@ DANSK（ダンスク）の「コベンスタイル マグ」</p></a>
 			</p>
 			</div>
 		</div>
+
 		<p>Copyright U-CAN, Inc. All Rights Reserved.</p>
+
 	</div>
 </div><!-- /#footer02 -->
 <!-- InstanceBeginEditable name="footer_script" -->
 <!-- ▼▼▼▼▼tracking ga▼▼▼▼▼ -->
+
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
 <!-- name="sitecatalyst" -->
+
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -1916,7 +2067,6 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!--EndEditable -->
-
 </div>
 <!-- InstanceEndEditable -->
 <!-- [head]内や、[body]の終了直前などに配置 -->
