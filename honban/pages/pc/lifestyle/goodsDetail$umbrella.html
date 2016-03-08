@@ -15,8 +15,8 @@
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 
-<object class="xsp_obj" m:id="e_var_goods"></object>
-<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
+<meta m:id="e_var_goods">
+<meta m:id="e_var_goodsUrlPrefix">
 <link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/lifestyle/e/goods/"/>
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title><!-- common css -->
 <link rel="shortcut icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
@@ -26,7 +26,25 @@
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/kigokochi.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
-
+<style>
+/*sp_land_wide*/
+.sp_on{ display:none; text-align:left !important; margin-top:10% !important}
+@media (max-width: 640px)
+{
+.add_p {display:none !important}
+#pan-navi{display:none !important}
+.sp_on{
+	display: block;
+	font-size:12px;}
+.sp_on h1{
+	font-size:12px !important;
+	color:#121F8B;
+	}	
+.header_cate{display:none}	
+.pank li{float:left}
+.wrap_pan{margin-top:45% !important}
+}
+</style>
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/yuga.js"></script>
@@ -100,31 +118,8 @@ $(".faceBooks").append(ifremstr);
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- detail -->
-<object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
-
-<span m:id="l_notPre_goods">
-    <object class="xsp_obj" m:id="e_var_goods2"></object>
-    <span m:id="l_notPre_goods">
-      <object class="xsp_obj" m:id="b_define_url"></object>
-       <span m:id="redirect_err" />
-    </span>
-</span>
-<object class="xsp_obj" m:id="e_var_shop_goodsDetail"></object>
-<object class="xsp_obj" m:id="e_var_concernedGoods"></object>
-<object class="xsp_obj" m:id="e_var_shopPostage"></object>
-<object class="xsp_obj" m:id="b_var_shopPostageFlat"></object>
-<span m:id="l_pre_shopPostage">
-    <span m:id="l_ite_postage">
-      <span m:id="l_equ_area_code">
-        <span m:id="l_equ_valid_flg">
-            <object class="xsp_obj" m:id="b_var_shopPostageFlat2"></object>
-        </span>
-      </span>
-    </span>
-</span>
-<object class="xsp_obj" m:id="e_var_cart"></object>
-
-<span m:id="site_products"></span>
+<meta m:id="e_var_member_goodsDetail">
+<meta m:id="site_products">
 <script language="JavaScript" type="text/javascript"><!--
 function reportParamFavorite_trans(){
   document.memberFavoriteAddForm.submit();
@@ -214,7 +209,27 @@ function siteCatalistAddCart1(s_products){
 }
 }
 </style>
-
+<span m:id="l_notPre_goods">
+    <meta m:id="e_var_goods2">
+    <span m:id="l_notPre_goods">
+      <meta m:id="b_define_url">
+       <span m:id="redirect_err" />
+    </span>
+</span>
+<meta m:id="e_var_shop_goodsDetail">
+<meta m:id="e_var_concernedGoods">
+<meta m:id="e_var_shopPostage">
+<meta m:id="b_var_shopPostageFlat">
+<span m:id="l_pre_shopPostage">
+    <span m:id="l_ite_postage">
+      <span m:id="l_equ_area_code">
+        <span m:id="l_equ_valid_flg">
+            <meta m:id="b_var_shopPostageFlat2">
+        </span>
+      </span>
+    </span>
+</span>
+<meta m:id="e_var_cart">
 <!-- detail -->
 
 </head>
@@ -612,7 +627,14 @@ $(window).on('load resize', function(){
 
 
 			<link href="contents/shop/00000003/common_sp/common_s_11/style.css" rel="stylesheet" type="text/css" media="all">
-			<div class="wrap_pan" style="padding-top:110px!important; clear:both">
+			<div class="wrap_pan">
+<div class="sp_on">
+<h1>生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
+  <ul class="clearfix">
+    <li><a m:id="pankuzu_top_link" href="http://www.cococimo.jp/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
+    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
+  </ul>
+</div>
 <div id="pan-navi">
 
   <ul class="clearfix">
