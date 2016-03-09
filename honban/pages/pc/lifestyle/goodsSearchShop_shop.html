@@ -7,6 +7,9 @@
 <meta http-equiv="content-style-type" content="text/css">
 <meta http-equiv="content-script-type" content="text/javascript">
 <!--<meta name="viewport" content="width=768">-->
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 <meta m:id="e_var_shop" content="">
 <meta m:id="e_var_headerComponent" content="">
@@ -63,6 +66,16 @@
 .l_tit_01{clear:both !important}
 }
 </style>
+<!--[if lt IE 9]>
+<style>
+	.sp_only_1,.sp_only_2{
+		display:none!important;
+	}
+	div.r_con_box_n_01_in_cat ul > *:first-child + * + * + *{
+    display:none!important;
+	}
+</style>
+<![endif]-->
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
