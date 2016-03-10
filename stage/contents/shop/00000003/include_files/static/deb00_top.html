@@ -13,47 +13,46 @@ li.gray:before {
     display: inline-block;
     width: 22px;
 }
-.fs_ifr{
-	padding:14px;
-	margin:10px auto 30px ;
-	display:block;
-/* border-radius */
-border-radius:3px;
--webkit-border-radius:3px;
--moz-border-radius:3px;
-/* box-shadow */
-box-shadow:rgba(112, 112, 112, 0.470588) 0px 0px 5px 3px;
--webkit-box-shadow:rgba(112, 112, 112, 0.470588) 0px 0px 5px 3px;
--moz-box-shadow:rgba(112, 112, 112, 0.470588) 0px 0px 5px 3px;
-}
-.pc_on{ text-align:center}
-.sp_on{ display:none}
+.ip4sp{margin-left: 85px}
 @media screen and (max-width:640px){
 li.gray:before {
     content: "";
     display: inline-block;
     width: 14px;
 }
-.sp_on{ display: block; text-align:center}
-.pc_on{ display: none}
-.fs_ifr{
-	padding:7px;
-	margin:10px auto 30px ;
-	display:block;
-/* border-radius */
-border-radius:3px;
--webkit-border-radius:3px;
--moz-border-radius:3px;
-/* box-shadow */
-box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
--webkit-box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
--moz-box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
+.ip4{display:none}
 }
-#header {margin-bottom:5% !important}
+@media screen and (max-width:320px){
+.wrap_tokucho li p {
+    line-height: 100% !important;
+}	
+.text-wrapper-third p {
+    width: 70% !important;
+}
+.ip4{display: block}
+#ip4p{ line-height:120% !important}
+.text-list-first .l-size{font-size:120% !important}
+.wrap_q_inner ul li .text-list li {
+	line-height:120% !important
+}
+.wrap_q_inner ul li .text-list li {
+    margin-bottom: 1px !important;
+    font-size: 12px !important;
+}
+.ip4sp{margin-left:0}
+p.star-hosoku {
+	margin:0 !important;
+	padding:0 !important;
+    position: absolute;
+    bottom: 0;
+    left:0 !important;
+}
+.wrap_goods_inner_fixed p{
+	line-height:120% !important
 }
   </style>
 
-<link rel="stylesheet" href="contents/shop/00000003/image/static/img/bousai/fixed02/textka.css" type="text/css" media="all">
+<link href="contents/shop/00000003/css/textka.css" rel="stylesheet" type="text/css" media="all">
 
 
 <div class="wrap_con wrap_con_fixed">
@@ -63,32 +62,25 @@ box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
 <p>震災経験者1000人のアンケートを元に、ココチモが独自の研究・調査を行い、役立つ品を厳選しました。
 専門家からのアドバイスもわかりやすく読める「あんしん手帳」も付いて、防災グッズの活用法や非常時の心構えも自然に理解できます。</p>
 </div>
-
-<p class="pc_on">
-<img style="margin-top:20px; max-width:100%" src="contents/shop/00000003/image/static/img/bousai/fixed/tvcm.jpg" alt="ただいまTVCM放映中">
-<iframe width="560" height="315" class="fs_ifr" src="https://www.youtube.com/embed/aVJ2rNmitp4" frameborder="0" allowfullscreen></iframe>
-</p>
-
-<p class="sp_on">
-<img style="margin-top:20px; max-width:100%" src="contents/shop/00000003/image/static/img/bousai/fixed/tvcm.jpg" alt="ただいまTVCM放映中">
-<iframe width="300" height="150" class="fs_ifr" src="https://www.youtube.com/embed/aVJ2rNmitp4" frameborder="0" allowfullscreen></iframe>
-</p>
+<h2 class="first-h202 mincho">ただいま、CM放送中！</h2>
+<div class="first-movie">
+	<div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aVJ2rNmitp4?rel=0" frameborder="0" allowfullscreen></iframe></div>
+</div>
 
 <!-- プレゼント -->
 <!--<img src="contents/shop/00000003/image/static/img/bousai/fixed02/bousaiset_04.jpg" alt="ビスコ保存缶プレゼントキャンペーン" class="image96">-->
 <img src="contents/shop/00000003/image/static/img/bousai/img_pre1.jpg" alt="いまだけ！2大プレゼントを贈呈！2014年10月27日（月）まで。プレゼント1万能ナイフ、プレゼント2グリコ「ビスコ保存缶」" class="image96">
 
-<a href="http://www.cococimo.jp/shop/c/e/DEB90/c/001003017/#shop_smooth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/btn01.jpg" alt="いますぐご注文" class="image96"></a>
+<a href="/shop/c/e/DEB91/#shop_smooth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/btn01.jpg" alt="いますぐご注文" class="image96"></a>
     <div class="wrap_tokucho">
     <img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_ttl.png" alt="ココチモの防災セット6大特徴">
         <ul>
         <li><div class="text-wrapper text-wrapper-second"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_01.png" alt="特長1：アンケートに基づいて必要と思われる品をピックアップ"><p>震災経験者（阪神淡路大震災、新潟県中越地震もしくは東日本大震災）<span class="red">1000人にアンケートを行い、「あってよかった・なくて困った」＝“必需品”を主に集めました。</span></p></div></li>
-        <li class="rig"><div class="text-wrapper text-wrapper-third"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_02.png" alt="特長2：美味しさと経済性が魅力の長期保存食"><p>非常時にこそ、少しでも美味しいものを食べて元気を出したいもの。<span class="red">ココチモスタッフが試食を行い、<br class="lpr">保存食でありながら、味が自慢の品を<br class="lpr">選びました。</span>常温で長期<br class="lpr">保存（製造後5年）が可能<br class="lpr">ですので、買い替えの<br class="lpr">コストも抑えられます。</p></div></li>
+        <li class="rig"><div class="text-wrapper text-wrapper-third"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_02.png" alt="特長2：美味しさと経済性が魅力の長期保存食"><p>非常時にこそ、少しでも美味しいものを食べて元気を出したいもの。<span class="red">ココチモスタッフが試食を行い、<br class="lpr">保存食でありながら、<br class="ip4">味が自慢の品を<br class="lpr">選びました。</span>常温で長期<br class="lpr">保存（製造後5年）が可能<br class="lpr">ですので、買い替えの<br class="lpr">コストも抑えられます。</p></div></li>
         <li><div class="text-wrapper text-wrapper-forth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_03.png" alt="特長3：災害時３日間を想定した充実のセット内容"><p>大きい災害の場合、災害発生から3日間は被災地外からの支援が行き届かないことが想定されます。消防庁の防災マ二ュアルでも最低限3日分の備蓄を推奨しています。<span class="red">本セットには、災害後特に困る食料とトイレをおー人約3日分ご用意。</span>食料は成人が1日に必要な力口リー数（約1600kcal）を基準に3日分を、トイレは15回セット（1日5回×3日分）をご用意しています。</p></div></li>
         <li class="rig"><div class="text-wrapper text-wrapper-fifth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_04.png" alt="特長4：持ち運びに便利！両手が開く！ 重くても安心！"><p>防災グッズはサッと持ち出せるよう、ひとまとめにしておくことが肝心です。そこで、本セットを収納しておくリュックサックをオリジナルで制作いたしました。<span class="red">取り外し可能な力ート付きなので、いざという時、重さが不安という方も、引いて運ぶことができて安心です。</span></p></div></li>
-        <li><div class="text-wrapper text-wrapper-sixth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_05.png" alt="特長5：非常時の心得も理解できる「あんしん手帳」付き"><p>いざという時に本品を最大限に活用していたたくため、防災グッズの有効な活用方法をまとめた冊子を制作しました。本品の使い方はもちろん、知っているようで知らない家庭の防災対策、さらには被災後の生活のためのアドバイス等も掲載しています。</p></li>
-        <li class="rig"><div class="text-wrapper text-wrapper-seventh"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_06.png" alt="特長6：ご自身では入手しにくいものを揃えました。">
-        <p>本品はテレビで話題となった食品加熱キット「エディック・スチームシェフ」、携帯電話の充電器やラジオとしても使える「多機能ラジオライト」など、<span class="red">ご自身では手に入れにくい、便利なグッズを取り入れました。</span>さらに、状況に応じて追加するとよいものは「あんしん手帳」に記載されています。</p></div></li>
+        <li><div class="text-wrapper text-wrapper-sixth"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_05.png" alt="特長5：非常時の心得も理解できる「あんしん手帳」付き"><p id="ip4p">いざという時に本品を最大限に活用していたたくため、防災グッズの有効な活用方法をまとめた冊子を制作しました。本品の使い方はもちろん、知っているようで知らない家庭の防災対策、さらには被災後の生活のためのアドバイス等も掲載しています。</p></li>
+        <li class="rig"><div class="text-wrapper text-wrapper-seventh"><img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_06.png" alt="特長6：ご自身では入手しにくいものを揃えました。"><p>本品はテレビで話題となった安全な食品加熱キット「エディック・スチームシェフ」、携帯電話の充電やラジオとしても使える「多機能ラジオライト」など、<span class="red">ご自身では手に入れにくい、便利なグッズを取り入れました。</span>さらに、状況に応じて追加するとよいものは「あんしん手帳」に記載されています。</p></div></li>
         </ul>
     <img src="contents/shop/00000003/image/static/img/bousai/fixed02/tokucho_bottom.gif" alt="">
     </div>
@@ -122,7 +114,7 @@ box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
             <ul class="text-list text-list-second">
             <li class="star">第<span class="orange">1</span>位　懐中電灯</li>
             <li class="star">第<span class="orange">2</span>位　ラジオ</li>
-            <li class="star">第<span class="orange">3</span>位　飲み水</li>
+            <li class="star">第<span class="orange">3</span>位　飲弘水</li>
             <li class="star">第<span class="orange">4</span>位　<span style="font-size: 70%;" class="bold">レトルト食品</span><br><span style="font-size:70%; margin-left:53px;" class="bold">・インスタント食品</span></li>
             <li class="gray">第5位　缶詰</li>
             <li class="gray">第6位　力セットコンロ</li>
@@ -140,10 +132,10 @@ box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
             <li class="star" style="font-size: 100%;">第<span class="orange">18</span>位　マスク</li>
             </ul>
              <ul class="text-list text-list-third">
-            <li class="star">第<span class="orange">19</span>位　<span style="font-size:85%; margin-left:-5px;" class="bold">給水袋ポリタンク</span></li>
+            <li class="star">第<span class="orange">19</span>位　<span style="font-size:85%; margin-left:-5px;">給水袋ポリタンク</span></li>
             <li class="star">第<span class="orange">20</span>位　救急箱</li>
             <li class="star">第<span class="orange">21</span>位　携帯充電器</li>
-            <li class="star">第<span class="orange">22</span>位　<span style="font-size:90%; margin-left:-5px;" class="bold">はさみ</span><span style="font-size:90%; margin-left:-5px;">・ナイフ</span></li>
+            <li class="star">第<span class="orange">22</span>位　<span style="font-size:90%; margin-left:-5px;">はさみ・ナイフ</span></li>
             <li class="gray">第23位　家電固定マット</li>
             <li class="gray">第24位　スリッパ</li>
             <li class="star">第<span class="orange">25</span>位　非常灯</li>
@@ -156,7 +148,7 @@ box-shadow:rgba(112, 112, 112, 0.2) 0px 0px 5px 3px;
             <li class="gray">第32位　戸棚の飛出し<br><span style="margin-left: 80px;">防止フック</span></li>
             <li class="gray">第33位　レインコート</li>
             <li class="gray">第34位　ガラス飛散防止<br><span style="margin-left: 80px;">フィルム</span></li>
-            <li class="star">第<span class="orange">35</span>位　災害用トイレ<br><span style="margin-left: 85px;">携帯トイレ</span></li>
+            <li class="star">第<span class="orange">35</span>位　災害用トイレ<br><span class="ip4sp">携帯トイレ</span></li>
             <li class="star">第<span class="orange">36</span>位　助けを呼ぶ笛</li>
             </ul>
             </div></li>
