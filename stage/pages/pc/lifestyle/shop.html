@@ -85,6 +85,7 @@ div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorank
     line-height: 1.29 !important;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
     text-indent: 1px;
 	overflow:hidden !important;	
     min-height: 34px!important;
@@ -112,10 +113,19 @@ div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorank
     letter-spacing: 3px!important;
     text-indent: 10px!important;	
 }
+
+	font-weight:normal !important
+}
+.devicePC #header {
+    height: 126px;
+}
 @media (max-width: 1280px)
 {
 .deviceSP #contents {
     padding-top: 50%;
+}
+#header #header_wrap #header_logo {
+    top: 80%;
 }	
 .add_p {display:none !important}
 #pan-navi{display:none !important}	
@@ -132,6 +142,7 @@ div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorank
     text-align: left;
 	font-size:12px;
 	float: none !important;
+	margin-top:5%;
 	}
 .sp_on h1{
 	font-size:12px !important;
@@ -390,6 +401,7 @@ $(function () {
 	<div id="header_r" class="clearfix">
             <div id="header_r_01" class="clearfix header_r_color">
 <!-- ▼▼▼検索▼▼▼ -->
+
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -406,7 +418,7 @@ $(function () {
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>
