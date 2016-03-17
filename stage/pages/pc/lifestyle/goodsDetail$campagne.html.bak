@@ -390,7 +390,7 @@ function siteCatalistAddCart1(s_products){
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" placeholder="商品名、商品番号を入力してください" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>

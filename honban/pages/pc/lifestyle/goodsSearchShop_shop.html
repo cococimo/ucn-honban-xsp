@@ -46,11 +46,76 @@
 <!-- InstanceBeginEditable name="head_css_js" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/side_menu.css" type="text/css" media="all" />
 <style>
+.add_top{
+	font-size: 12px;
+    color: #121F8B;
+    text-align: left;
+    line-height: 16px;
+}
 .sp_on{ display:none}
+#header #header_wrap #header_r #header_search {
+	clear:both !important;
+	left:262px !important;
+	right:0 !important;
+	top: 66px !important;
+    width: 698px !important;
+}
+#header #header_wrap #header_r #header_search input{
+    width: 481px !important;
+	height:29px;
+    padding: 3px!important;
+	padding:8px\9 !important;
+	height:19px\9 !important;
+    padding-right: 4px !important;
+    border: 1px solid #999 !important;
+    background-color: #fff !important;
+    font-size: 96% !important;
+    text-indent: 1px;
+	overflow:hidden !important;
+
+}
+.header_search_in .box_02{
+	width:200px !important;
+	overflow:hidden !important;
+	height:auto;
+	}
+#header #header_wrap #header_r #header_search .box_02 a {
+    width: 100%!important;
+    padding: 8px 0!important;
+	margin-left:10px;
+    border: 0!important;
+    background-color: #203d7d!important;
+    background-position: 38px 10px!important;
+    background-repeat: no-repeat!important;
+    color: #fff!important;
+    font-size: 90%!important;
+	cursor:pointer !important;
+}
+#header #header_wrap #header_logo {
+    top: 73px;
+}
+.add_p {
+    top: 90px !important;
+    left:0 !important;
+	font-weight:normal !important
+}
+.devicePC #header {
+    height: 126px;
+}
+#contents {
+    padding: 140px 0 0;
+}
 @media (max-width: 1280px)
 {
+.header_cate{display:none}
+.l_tit_01{clear:both !important}
 .l_con_box_01{ clear:both !important}	
-.add_p{display:none !important}
+
+}
+@media (max-width: 640px)
+{
+.add_top{display:none}	
+.add_p {display:none !important}
 #pan-navi{display:none !important}
 .sp_on{
 	display: block;
@@ -61,9 +126,64 @@
 	font-size:12px !important;
 	color:#121F8B;
 	}	
-.header_cate{display:none}
 .pank li{float:left}
-.l_tit_01{clear:both !important}
+
+#header #header_wrap #header_logo {
+    top:1%;
+}	
+.deviceSP #contents {
+    padding-top:46% !important;
+}	
+#header #header_wrap #header_r #header_search {
+	left:0 !important;
+	right:0 !important;
+	margin:auto !important;	
+	top: 60% !important;
+    width: 100% !important;
+}
+#header #header_wrap #header_r #header_search input{
+    width: 84% !important;
+    height: 30px;	
+	border: 1px solid #000 !important;
+    padding: 3px !important;
+    padding-right: 0 !important;
+    background-color: #fff !important;
+    font-size: 113% !important;
+    line-height: 1.29 !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-indent: 1px;
+	overflow:hidden !important;	
+    min-height: inherit!important;
+}
+.header_search_in .box_02{
+	width:11% !important;
+	overflow:hidden !important;
+	height:auto;
+	min-height: inherit!important;	
+	}
+#header #header_wrap #header_r #header_search .box_02 a {
+    width: 100%!important;
+    margin-left: 0!important;
+	padding:0 !important;
+    height: 30px;
+	border: 0!important;
+    background-color: #000!important;
+    background-position: center!important;
+	background-size:50% !important;	
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 14px!important;
+    line-height: 14px!important;
+    letter-spacing: 3px!important;
+    text-indent: 0!important;
+	}
+.add_p {display:none !important}
+#pan-navi{display:none !important}	
+.header_cate{display:none}
+.add_p {
+  top:140px !important;
+}
 }
 </style>
 <!--[if lt IE 9]>
@@ -72,7 +192,7 @@
 		display:none!important;
 	}
 	div.r_con_box_n_01_in_cat ul > *:first-child + * + * + *,div.r_con_box_n_01_in_cat ul > *:first-child + * + * + * + *{
-    		display:none!important;
+    display:none!important;
 	}
 </style>
 <![endif]-->
@@ -102,7 +222,7 @@ window.onunload = function() {
 <span m:id="l_equ_canonical">
  <link m:id="canonical" rel="canonical" href="/shop/c/category/category/list/"/>
 </span>
-<h1 class="add_p"><span m:id="pankuzu_page_name">画面名</span>の通販・通信販売</h1>
+
 <!-- InstanceEndEditable -->
 <a m:id="e_link_logo_shop_shop" href="/">
 <!-- header追加 -->
@@ -136,7 +256,7 @@ window.onunload = function() {
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>
@@ -393,6 +513,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="goods_url" />
 </form>
 <div id="contents">
+
+<h1 class="add_top"><span m:id="pankuzu_page_name">画面名</span>の通販・通信販売</h1>
+
 <div id="pan-navi" style="margin-bottom:20px" >
   <ul class="clearfix">
     <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
@@ -404,12 +527,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <div class="sp_on">
 <h1><span m:id="pankuzu_page_name">画面名</span>の通販・通信販売</h1>
-  <ul class="clearfix pank">
-    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
-	<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</li>
-  </ul>
+  <div class="clearfix pank">
+    <div><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></div>
+    <div><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></div>
+    <div m:id="if_exists_goods">&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></div>
+    <div m:id="if_not_exists_breadcrumb_category_and_goods">&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</div>
+  </div>
 </div>
 
 <div id="contents_r">

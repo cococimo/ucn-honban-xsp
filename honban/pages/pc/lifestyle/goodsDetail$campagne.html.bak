@@ -23,8 +23,8 @@
 <title m:id="title" arg1="" arg2=" - ココチモ ナチュラル・ライフスタイル">データベースから値を取得し表示します</title>
 <!-- InstanceEndEditable -->
 <!-- common css -->
-<link rel="shortcut icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="icon" href="../../../contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/contents/shop/00000005/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/flexslider.css" type="text/css" media="all" />
@@ -43,8 +43,9 @@
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/resize.js" type="text/javascript"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/kigokochi/kigokochi.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.exdropdown.0.1.3.js"></script>
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000005/css/exdropdown.css" type="text/css" media="all" />
-		<script >
+		<script>
 		/*
 			jQuery(function($){
 				$('ul.example').exDropDown();
@@ -56,9 +57,9 @@
 				$('.gsearchShop').submit();
 					return false;
 				});
-							});
+});
 		</script>
-<!-- InstanceBeginEditable name="head_css_js" -->		
+<!-- InstanceBeginEditable name="head_css_js" -->
 <style>
 .sp_on{ display:none}
 #header #header_wrap #header_r #header_search {
@@ -271,6 +272,7 @@ $(".faceBooks").append(ifremstr);
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
+
 <!-- InstanceBeginEditable name="head" -->
 <!-- detail -->
 <meta m:id="e_var_member_goodsDetail">
@@ -349,7 +351,7 @@ function siteCatalistAddCart1(s_products){
 <meta m:id="e_var_cart">
 <!-- detail -->
 <!-- InstanceEndEditable -->
-</head> 
+</head>
 <body id="top">
 <!-- name="body" -->
 <!-- EndEditable -->
@@ -372,8 +374,9 @@ function siteCatalistAddCart1(s_products){
 <!-- <div class="logoText">
 <img m:id="static_img" src="../contents/shop/00000005/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
 </div> -->
-<div id="header_r" class="clearfix">
-            <div id="header_r_01" class="clearfix header_r_color">    <!-- ▼▼▼検索▼▼▼ -->
+        <div id="header_r" class="clearfix">
+            <div id="header_r_01" class="clearfix header_r_color">
+    <!-- ▼▼▼検索▼▼▼ -->
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -390,7 +393,7 @@ function siteCatalistAddCart1(s_products){
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" placeholder="商品名、商品番号を入力してください" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>
@@ -403,7 +406,7 @@ function siteCatalistAddCart1(s_products){
 </div>
 </div>           
             <!-- ▲▲▲検索▲▲▲ -->  
-                        <div class="header_lists clearfix pc_not">
+         <div class="header_lists clearfix pc_not">
               <!-- ▼▼▼新規会員登録▼▼▼ -->
               <div m:id="l_notPre_member_login_shop">
                 <ul class="header_list_01">
@@ -411,7 +414,7 @@ function siteCatalistAddCart1(s_products){
                 </ul>
               </div>
               <!-- ▲▲▲新規会員登録▲▲▲ -->
-              			<ul class="header_list_02">
+	<ul class="header_list_02">
                           <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/lifestyle/">ホーム</a></li>
 
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
@@ -424,7 +427,7 @@ function siteCatalistAddCart1(s_products){
 				<!-- InstanceEndEditable -->
 			</ul>
             </div>
-                        <div class="clearfix pc_not">
+<div class="clearfix pc_not">
             	<span m:id="l_equ_hierarchy_3_shop">
                 <div class="clearfix pc_only">
                     <ul class="header_list_03">
@@ -433,7 +436,7 @@ function siteCatalistAddCart1(s_products){
 /shop/inquiryInputCheck.do">お問い合わせ</a></li>
                     </ul>
                 </div>
-                                <div class="header_cart">
+                <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
 s.linkTrackEvents='scView';
@@ -442,41 +445,39 @@ s.tl(this,'o','cartview',null,'navigate');return false
 ">
                     お買い物かごを見る
                     </a>
-                </div>
-                
+                </div>                
                 <div class="header_cate">
                     <a href="#catLink">カテゴリ一覧</a>
-                </div>                
+                </div>
                 </span>
-				</div>            
-            </div><!-- header_r_01 -->
-           </div>
-    </div><!--header_wrap-->   
+                </div>
+               </div><!-- header_r_01 -->
+              </div>
+    </div><!--header_wrap-->  
   <!--▼▼▼sp_menu▼▼▼-->
  <div m:id="l_notPre_member_login_shop">
         <ul class="sp_menu_only sp_member">
         	<li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
         </ul>
     </div>
-    
     <div m:id="l_pre_member_logout_button_shop">
         <ul class="sp_menu_only sp_member">
     <li><a m:id="e_link_logout_shop" href="/lifestyle/" class="logout_bt" title="ログアウト">ログアウト</a></li>
          </ul>
     </div>             
-        <ul class="sp_menu_only sp_login_menu">  
+    <ul class="sp_menu_only sp_login_menu">
 <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
 <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div>
 </li>
               <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
                 <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
-    </ul>    
+    </ul>  
     <div class="sp_top_menu sp_menu_only">
     	<a href="/">m</a>
-    </div>    
+    </div>
     <div class="sp_top_home sp_menu_only">
     	<a href="/lifestyle/">m</a>
-    </div>    
+    </div>
     <div class="sp_header_cart sp_menu_only">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
@@ -484,9 +485,9 @@ s.linkTrackEvents='scView';
 s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
 ">お買い物かごを見る</a>
-     </div>
+     </div>    
     <div class="sp_nav">
-      <!-- カテゴリナビ -->
+     <!-- カテゴリナビ -->
     <script type="text/javascript">
 		//<![CDATA[
 		function switchHidden(categoryCode){
@@ -507,8 +508,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		function HideandUNhideObj(ThisObj){
 		    nav=document.getElementById(ThisObj).style
 		    navp=document.getElementById(ThisObj+"_plus").style
-		    navm=document.getElementById(ThisObj+"_minus").style
-		    
+		    navm=document.getElementById(ThisObj+"_minus").style	    
 		    if(nav.display=="none"){
 		        nav.display='block';
 		        navm.display='inline';
@@ -560,10 +560,11 @@ $(window).on('load resize', function(){
     if (w <= x) {
   $(".con_box img")	.eq(0).css({"max-width":"100%"});	
 		
-  $(function(){	  
-	$(".child_cat").hide();
+  $(function(){
+	  
+	$(".l_con_list_01").eq(0).find(".child_cat").hide();
 	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
 		$("ul:not(:animated)",this).css(
 		{"position":"absolute",
 		 "top":"0",
@@ -581,9 +582,8 @@ $(window).on('load resize', function(){
 } else {
 
   $(function(){	  
-	$(".child_cat").show();
-	$('li').removeClass('ctArrow');
-	$(".ctList").hover(function(){
+	$(".l_con_list_01").eq(0).find(".child_cat").show();
+	$(".l_con_list_01").eq(0).find(".ctList").hover(function(){
 		$("ul:not(:animated)",this).css(
 		{"position":"relative",	"left":"0"}).show();
 	},
@@ -595,61 +595,56 @@ $(window).on('load resize', function(){
     }
 });
 </script>
-                   
-                    <span m:id="l_pre_standardCategory">
-                        <span m:id="l_notEmp_standardCategory_childCategories">
-                            <div class="l_con_box_01">
-                                <div class="sp_nav_close"><a href="/">メニューを閉じる</a></div>
-                                <div class="sub">
-                                    <span m:id="l_ite_standardCategory">
-                                        <span m:id="l_equ_cate_checkPeriod">
-                                            <span m:id="icnt_increment"></span>
-                                            <span m:id="i_ins_cate"></span>
-                                            <object class="xsp_obj" m:id="count_sub1"></object>
-                                            <ul class="l_con_list_01 clearfix example">
-                                                <span  m:id="l_ite_cate">
-                                                    <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList" style="position:relative"><!--基準点追加-->
-                                                    
-                                                    <div class="p_0">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <div id="p_1">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
-                                                        <span m:id="l_ite_subCate"> 
-                                                            <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-                                                            <li class="ctArrow">
-                                                            <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-                                                            </li>
-                                                            </span>
 
-                                                        </span>
-                                                        </ul>
-                                                    </li>
-                                                    </span>
-                                                </span>
-                                            </ul>
-                                            <ul class="l_con_list_01 clearfix example"></ul>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </span>
-                    </span>
-                                       
-                    <!--▲▲▲カテゴリー▲▲▲-->    				
- <!-- InstanceEndEditable -->                
-    </div>     
+<span m:id="l_pre_standardCategory">
+<span m:id="l_notEmp_standardCategory_childCategories">
+
+<div class="l_con_box_01">
+<div class="sp_nav_close"><a href="/">メニューを閉じる</a></div>
+<div class="sub">
+	<span m:id="l_ite_standardCategory">
+		<span m:id="l_equ_cate_checkPeriod">
+			<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+			<object class="xsp_obj" m:id="count_sub1"></object>
+			<ul class="l_con_list_01 clearfix example">
+				<span  m:id="l_ite_cate">
+					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
+					<li class="ctList" style="position:relative"><!--基準点追加-->
+					
+					<div class="p_0">
+					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+					<span m:id="span_subCate_arrow" id="arrow_1">
+						<span m:id="disp_subCate_category_name">ファッション</span>
+					</span>
+					</a>
+					</div>
+					<div id="p_1">
+					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+					<span m:id="span_subCate_arrow" id="arrow_1">
+						<span m:id="disp_subCate_category_name">ファッション</span>
+					</span>
+					</a>
+					</div>
+                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
+						<span m:id="l_ite_subCate"> 
+							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
+							<li class="ctArrow">
+							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+							</li>
+							</span>
+						</span>
+						</ul>
+					</li>
+					</span>
+				</span>
+			</ul>
+		</span>
+	</span>
+</div>
+</span></span>
+<!--▲▲▲カテゴリー▲▲▲-->    				
+ <!-- InstanceEndEditable -->
+    </div>
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <!-- メインコンテンツ_外枠 -->
@@ -670,8 +665,6 @@ $(window).on('load resize', function(){
 </div>
 <!-- 左コンテンツ -->
   <div id="contents_r">
-  
-
   <!-- メインコンテンツ -->
   <div id="content_wrap">
 
@@ -1433,6 +1426,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 </div><!--container-->
+
+
 <!-- InstanceEndEditable -->
 </div>
 <!--container-->
@@ -1479,9 +1474,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <p><span>クレジットカード<br>手数料0円</span></p>
             <div><img src="/contents/shop/00000005/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
             <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
-            <p><span>代金引換<br>代引手数料300円</span></p>
-           
-            <div class="secure clearfix">
+             <p><span>代金引換<br>代引手数料300円</span></p>
+                  <div class="secure clearfix">
 			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
 		    </div>          </dd>
@@ -1490,15 +1484,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </div>
   </div>
 </div>
-<!-- ガイド -->    
+<!-- ガイド -->
 <!-- footer追加 -->
 <div id="footer02">
-  <div id="footer_wrap02">  
+  <div id="footer_wrap02">
 <div class="add_ft_wp">　
     <div class="add_inner">
     <div class="inn_tit">メインメニュー</div>
       <ul>
-        <li><a href="http://www-st.cococimo.jp/lifestyle/" style="opacity: 1;">トップページ</a></li>
+        <li><a m:id="e_link_logo_shop_shop" href="/">トップページ</a></li>
         <li><a href="/shop/lifestyle/static/cocoblog/" style="opacity: 1;">ココチモブログ</a></li>
         <li><a href="/shop/lifestyle/static/kanren/" style="opacity: 1;">関連サイト</a></li>
         <li><a href="/shop/lifestyle/static/guide/" style="opacity: 1;">ショッピングガイド</a></li>
@@ -1507,7 +1501,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
  		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
       </ul>      
-      </div>      
+      </div>
 <!--▼▼▼カテゴリー(フッター)▼▼▼-->
 <span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="add_inner footer_cate">
@@ -1538,15 +1532,16 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/contents/life/">生活雑貨・北欧雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/interior/">インテリア雑貨の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>               
+        <li><a href="/shop/lifestyle/static/contents/tableitem/">調理器具の通販特集</a></li>
         <li><a href="/shop/lifestyle/static/contents/dailyitem/">デイリーアイテムの通信販売</a></li>
-        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>        
-      </ul>       
+        <li><a href="/shop/lifestyle/static/contents/nordicitem/">ノルディックアイテムの通信販売</a></li>
+        <li><a href="/shop/lifestyle/static/contents/handyitem/">北洋雑貨・日用品</a></li>
+        <li><a href="/shop/lifestyle/static/contents/kitchenitem/">生活雑貨</a></li>                               
+      </ul>   
       </div>
 </div>
-<!--▲▲▲カテゴリー(フッター)▲▲▲-->    
+<!--▲▲▲カテゴリー(フッター)▲▲▲-->      
 <br clear="all" />
     <div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
@@ -1557,7 +1552,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/lifestyle/static/first/">ココチモとは</a></li>
       </ul>
     </div>
-    
     <div class="pc_display">
       <h3 id="icon_04">会員の方</h3>
       <ul>
@@ -1566,8 +1560,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </ul>
     </div>
     <div id="footer03" class="pc_display">
-      <div class="clearfix" id="footer_wrap03">
-        
+      <div class="clearfix" id="footer_wrap03">        
         <ul class="clearfix">
           <!--<li class="first"><a href="/shop/lifestyle/static/faq/">よくあるご質問</a></li>-->
           <li><a href="/shop/lifestyle/static/guide/">ショッピングガイド</a></li>
@@ -1576,11 +1569,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
           <li><a href="/shop/lifestyle/static/notation/">特定商取引に基づく表示</a></li>
           <li><a href="/shop/lifestyle/static/company/">会社情報</a></li>
           <!--<li class="end"><a href="#">利用規約</a></li>-->
-        </ul>        
+        </ul>
         <p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
       </div><!--footer_wrap03-->
     </div>
-    <div id="footer05" class="sp_only">      
+    <div id="footer05" class="sp_only">
       <div class="mt10 sp_secure clearfix">
         <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
         <p>
@@ -1665,6 +1658,22 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
 </div>
 </noscript>
 </div>
-<!-- InstanceEndEditable -->  
+<!-- InstanceEndEditable -->
+<!-- ▼▼▼ Criteo ▼▼▼ -->
+<!-- Criteo loader -->
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
+var protocol;
+if (location.protocol == "https:") { protocol = "https:";} else { protocol = "http:"; }
+document.write('<script language="JavaScript" type="text/javascript" src="' + protocol + '\/\/static.criteo.net/js/ld/ld.js"><\/script>');
+//]]>
+</script>
+<meta m:id="criteo_common_q" content=""></meta>
+<meta m:id="criteo_common_account" content=""></meta>
+<meta m:id="criteo_member" content=""></meta>
+<meta m:id="criteo_common_site_type" content=""></meta>
+<meta m:id="criteo_view_item" content=""></meta>
+<meta m:id="criteo_q_push" content=""></meta>
+<!-- ▲▲▲ Criteo ▲▲▲ --> 
 </body>
 <!-- InstanceEnd --></html>

@@ -58,14 +58,126 @@ $(function() {
 });
 </script>
 <style>
-.sp_on{ display:none}
 .spbr br{ display:none}
+.sp_on{ display:none}
+div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorankgoods_cart_img_rank3, div.autorankgoods_cart_img_rank4over {
+    background: url(../contents/lifestyle/goods/image/cart_br_banner_01.gif) no-repeat right center;
+    width: 101% !important;
+    height: 24px !important;
+	background-size: cover;
+	width: 200px\9 !important; /* IE8 and below */	
+}
+#header #header_wrap #header_r #header_search {
+	clear:both !important;
+	left:262px !important;
+	right:0 !important;
+	top: 76px !important;
+    width: 698px !important;
+}
+#header #header_wrap #header_r #header_search input{
+    width: 481px !important;
+	height:29px;
+    padding: 3px!important;
+	padding:8px\9 !important;
+	height:19px\9 !important;
+    padding-right: 4px !important;
+    border: 1px solid #999 !important;
+    background-color: #fff !important;
+    font-size: 96% !important;
+    text-indent: 1px;
+	overflow:hidden !important;
+
+}
+.header_search_in .box_02{
+	width:200px !important;
+	overflow:hidden !important;
+	height:auto;
+	}
+#header #header_wrap #header_r #header_search .box_02 a {
+    width: 100%!important;
+    padding: 8px 0!important;
+	margin-left:10px;
+    border: 0!important;
+    background-color: #203d7d!important;
+    background-position: 38px 10px!important;
+    background-repeat: no-repeat!important;
+    color: #fff!important;
+    font-size: 90%!important;
+	cursor:pointer !important;
+}
+#header #header_wrap #header_logo {
+    top: 65px;
+}
+.add_p {
+    top: 90px !important;
+    left:0 !important;
+	font-weight:normal !important
+}
+.devicePC #header {
+    height: 126px;
+}
 
 @media (max-width: 1280px)
 {
-.deviceSP #contents {
-    padding-top: 50%;
+.wrap_main {
+    margin: 0;
+    padding-top:0!important;
+}
+/*#contents {padding-top:5% !important}*/
+}
+@media (max-width:640px)
+{
+#header #header_wrap #header_logo {
+    top:5%;
 }	
+.deviceSP #contents {
+    padding-top: 30% !important;
+}	
+#header #header_wrap #header_r #header_search {
+	left:0 !important;
+	right:0 !important;
+	margin:auto !important;	
+	top: auto !important;
+    width: 100% !important;
+}
+#header #header_wrap #header_r #header_search input{
+    width: 84% !important;
+    height: 30px;	
+	border: 1px solid #000 !important;
+    padding: 3px !important;
+    padding-right: 0 !important;
+    background-color: #fff !important;
+    font-size: 113% !important;
+    line-height: 1.29 !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-indent: 1px;
+	overflow:hidden !important;	
+    min-height: inherit!important;
+}
+.header_search_in .box_02{
+	width:11% !important;
+	overflow:hidden !important;
+	height:auto;
+	min-height: inherit!important;	
+	}
+#header #header_wrap #header_r #header_search .box_02 a {
+    width: 100%!important;
+    margin-left: 0!important;
+	padding:0 !important;
+    height: 30px;
+	border: 0!important;
+    background-color: #000!important;
+    background-position: center!important;
+	background-size:50% !important;	
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 14px!important;
+    line-height: 14px!important;
+    letter-spacing: 3px!important;
+    text-indent: 0!important;
+	}
+.wrap_main{margin-top:0!important}
 .add_p {display:none !important}
 #pan-navi{display:none !important}	
 .header_cate{display:none}
@@ -81,25 +193,16 @@ $(function() {
     text-align: left;
 	font-size:12px;
 	float: none !important;
+	margin-top:10%;
 	}
 .sp_on h1{
 	font-size:12px !important;
 	color:#121F8B;
 	}		
-.wrap_main {
-    margin: 0;
-    padding-top:0!important;
-}
-/*#contents {padding-top:5% !important}*/
-}
-@media (max-width:640px)
-{
-.wrap_main{margin-top:0!important}
-.sp_on{margin-top:10%;}
 .rankinglist li:nth-child(3) {
 	clear:both !important
 }
-div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2 {
+div#autorankgoods_cart_img_rank1, div#autorankgoods_cart_img_rank2, div#autorankgoods_cart_img_rank3, div.autorankgoods_cart_img_rank4over {
     background: url(../contents/lifestyle/goods/image/sp_cart_br_banner_02.gif)no-repeat right center;
     width: 84px !important;
     height: 36px !important;
@@ -120,6 +223,9 @@ border:1px #c4c4c4 solid;
 .wrap_specialcontents .stafflist li.autoreco:nth-child(2) {
     margin-right:0 !important
 }
+.wrap_specialcontents .stafflist li.autoreco:nth-child(3) {
+	clear:both !important
+}
 .wrap_specialcontents .stafflist li.autoreco:nth-child(3), .wrap_specialcontents .stafflist li.autoreco:nth-child(4), .wrap_specialcontents .stafflist li.autoreco:nth-child(5)
  {
     width: 30% !important;
@@ -128,9 +234,13 @@ border:1px #c4c4c4 solid;
 .wrap_specialcontents .stafflist .autoreco .cartAddbtn.newCartAddbtn_sp.sp_only{
 	border:none !important
 }
-.div.wrap_specialcontents:nth-child(16) {
-    display: none;
+.wrap_specialcontents:nth-child(16) {
+	display:block !important
 }
+.wrap_specialcontents p {
+    margin-bottom: 0 !important;
+}
+.sp10{ margin-top:0 !important}
 }
 @media (max-width:480px)
 {
@@ -286,6 +396,7 @@ $(function () {
 	<div id="header_r" class="clearfix">
             <div id="header_r_01" class="clearfix header_r_color">
 <!-- ▼▼▼検索▼▼▼ -->
+
 <div id="header_search" >
 		<div class="clearfix header_search_in">
 		<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -302,7 +413,7 @@ $(function () {
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>
@@ -509,7 +620,9 @@ function initCorners() {
 <link rel="stylesheet" href="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.css" type="text/css"/></link>
 
 <script type="text/javascript" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/slick_slide.js"></script>
-<br clear="all" />
+<style>
+.wrap_main{margin-top:3%!important}
+</style>
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
     	<p>
@@ -519,16 +632,16 @@ function initCorners() {
 			
 			<div>
 			<!--<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_03.jpg" alt="ラプアンカンクリ" ></a>-->
-			<a href="/shop/lifestyle/static/blanket/#sec03" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
+			<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_14.jpg" alt="ラプアンカンクリ" ></a>
 			</div>
             <div>
-			<a href="/shop/lifestyle/e/SDVT58/c/001001012011/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_24.jpg" alt="プラスディー テトラ" ></a>
+			<a href="/shop/lifestyle/category/001001012022/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_24.jpg" alt="プラスディー テトラ" ></a>
 			</div>                        
 			<div>
 			<a href="/shop/lifestyle/category/001001012070/list/" class="wrap_pc"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
 			</div>
 			<div>
-			<a href="/shop/lifestyle/e/DVL37/c/002005001/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_22.jpg" alt="リサ・ラーソン　ポトル" ></a>
+			<a href="/lifestyle/item_basedress/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_25.jpg" alt="リサ・ラーソン　ベースドレス" ></a>
 			</div>            
 
 
@@ -554,7 +667,7 @@ function initCorners() {
 			<a href="/shop/lifestyle/category/001001012030/list/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_20.jpg" alt="イッタラ" ></a>
 			</div>
 			<div>
-			<a href="/shop/lifestyle/e/DVL37/c/002005001/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_22.jpg" alt="リサ・ラーソン　ポトル" ></a>
+			<a href="/lifestyle/item_basedress/"><img m:id="static_img" src="../../../contents/shop/00000005/common_sp/common_kigokochi02/images/main/PC_25.jpg" alt="リサ・ラーソン　ベースドレス" ></a>
 			</div>                                    
 
   <div>
@@ -838,7 +951,7 @@ function initCorners() {
                <p class="txt13 mt10"><b>
                 <a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a>
                </b></p>
-              <p class="txt13 mt10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+              <p class="txt13 mt10 sp10"> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
             <!-- 閲覧履歴一覧からカートに入れる -->
 			<span m:id="l_can_addCartDirect_autoReco">
 				<span m:id="l_equ_autoReco_valiationSize">
@@ -912,45 +1025,45 @@ function initCorners() {
 		<div class="wrap_specialcontents">
 		<h2 class="webf">ラプアン・カンクリ特集</h2>
 		<ul class="rankinglist heightLineParent">
-		<li><a href="/shop/lifestyle/e/SDVS04/c/001001009014/">
+		<li><a href="/shop/lifestyle/e/SDVH82/">
 			<div class="rankimg">
 			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/luu1.jpg" alt="">
 			</div>
-			<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-			KOIRA ブランケット（130x180）</b></p>
-			<p class="txt13">\20,520 (税込)</p></a>
+			<p class="txt13">ラプアンカンクリ（LAPUAN KANKURIT）<br />
+キッチンタオル</p>
+			<p class="txt13">\2,808 (税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVS27/c/001001004005/">
+		<li><a href="/shop/lifestyle/e/SDVR75/">
 			<div class="rankimg">
 			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/luu2.jpg" alt="">
 			</div>
 			<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-			ＩＩＤＡポケットショール</b></p>
-			<p class="txt13">\12,960 (税込)</p></a>
+リネンバッグ</b></p>
+			<p class="txt13">\4,104 (税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVR94/c/001001012057/">
+		<li><a href="/shop/lifestyle/e/SDVI03/">
 			<div class="rankimg">
 			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/lu3.jpg" alt="">
 			</div>
-			<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-			LAMMASブランケット</b></p>
-			<p class="txt13">\10,800(税込)</p></a>
+			<p class="txt13">ラプアンカンクリ（LAPUAN KANKURIT）<br />
+KASTEリネンハンドタオル</p>
+			<p class="txt13">\3,132(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVS41/c/001001012057/">
+		<li><a href="/shop/lifestyle/e/SDVI01/">
 			<div class="rankimg">
 			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/lu4.jpg" alt="">
 			</div>
 			<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-			ＬＡＭＭＡＳ湯たんぽ</b></p>
-			<p class="txt13">\6,804(税込)</p></a>
+KOIRAPUISTOキッチンタオル</b></p>
+			<p class="txt13">\2,592(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVS13/c/001001012057/">
+		<li><a href="/shop/lifestyle/e/SDVH88/">
 			<div class="rankimg">
 			<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/lu5.jpg" alt="">
 			</div>
 			<p class="txt13"><b>ラプアンカンクリ（LAPUAN KANKURIT）<br />
-			ＥＳＩＫＫＯブランケット</b></p>
-			<p class="txt13">\20,520(税込)</p></a>
+羊・キッチンタオル</b></p>
+			<p class="txt13">\2,592(税込)</p></a>
 		</li>                                                                		                               
 		</ul>
 		<br clear="all">
@@ -1006,46 +1119,49 @@ function initCorners() {
 		<!--▲▲▲RANKING▲▲▲-->        
 		<!--▼▼▼RANKING▼▼▼-->
 		<div class="wrap_specialcontents">
-		<h2 class="webf">ネコ雑貨特集</h2>
+		<h2 class="webf">琺瑯（ほうろう）特集</h2>
 		<ul class="rankinglist">
-		<li><a href="/shop/lifestyle/e/DVV91/">
+		<li><a href="/lifestyle/item_amkettle/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat1.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/horo1.jpg" alt="">
 		</div>
-		<p class="txt13"><b>リサ・ラーソン<br />
-ぬいぐるみシリーズ（ネコ）</b></p>
-		<p class="txt13">\4,860 (税込)</p></a>
+		<p class="txt13"><b>野田琺瑯（のだほうろう）<br />
+アムケトル・グリーン（IH対応）
+</b></p>
+		<p class="txt13">\6,480 (税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/DVV91/c/001001012057/">
+		<li><a href="/shop/lifestyle/e/DVA19/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat2.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/horo2.jpg" alt="">
 		</div>
-		<p class="txt13"><b>リサ・ラーソン　猫箸置き</b></p>
-		<p class="txt13">\2,160(税込)</p></a>
+		<p class="txt13"><b>野田琺瑯（のだほうろう）<br />
+        楕円形洗い桶</b></p>
+		<p class="txt13">\5,400(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/DVE16/">
+		<li><a href="/shop/lifestyle/e/DVA8/s/DVA0A/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat3.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/horo3.jpg" alt="">
 		</div>
-		<p class="txt13"><b>e.スポンジワイプ<br />
-おひさま5枚セット</b></p>
-		<p class="txt13">\2,970(税込)</p></a>
+		<p class="txt13"><b>月兎印<br />
+ミルクパン ブラウン</b></p>
+		<p class="txt13">\3,240(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/DVX26/">
+		<li><a href="/shop/lifestyle/e/DVA3/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat4.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/horo4.jpg" alt="">
 		</div>
-		<p class="txt13"><b>ロロスツィード<br />
-プッテ・ザ・キャット　ブランケット</b></p>
-		<p class="txt13">\28,080(税込)</p></a>
+		<p class="txt13"><b>月兎印<br />
+キャセロール 19cm
+</b></p>
+		<p class="txt13">\4,860(税込)</p></a>
 		</li>
-		<li><a href="/shop/lifestyle/e/SDVH82/">
+		<li><a href="/shop/lifestyle/e/DVA24/">
 		<div class="rankimg">
-		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/cat5.jpg" alt="">
+		<img m:id="static_img" src="../../../contents/shop/00000005/goods/image/horo5.jpg" alt="">
 		</div>
-		<p class="txt13"><b>ラプアンカンクリ<br />
-キッチンタオル</b></p>
-		<p class="txt13">\2,808(税込)</p></a>
+		<p class="txt13"><b>野田琺瑯（のだほうろう）<br />
+レクタングル深型（L）</b></p>
+		<p class="txt13">\2,106(税込)</p></a>
 		</li>                                
 		</ul>
 		<br clear="all">
@@ -1569,6 +1685,10 @@ function initCorners() {
 			<div class="wrap_right wrap_pc"><a href="/shop/lifestyle/static/cocoblog/" class="a_line">&gt; ココチモブログ</a></div>
 			<div class="blogclear"><br clear="all"></div>
 			<ul class="bloglist">
+			<li><a href="/shop/lifestyle/static/cocoblog/160308/">
+				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160308-01ss.jpg" alt="ココチモブログ" >
+				<p class="txt13 mt10">時短レシピ：野菜をおいしく手軽に楽しめるホットサンド</p></a>
+			</li>
 			<li><a href="/shop/lifestyle/static/cocoblog/160226/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160226-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">スタイリスト渥美友理さんに“リサ・ラーソン・ベースドレス”を使ったお花の飾り方を教えていただきました♪</p></a>
@@ -1581,11 +1701,11 @@ function initCorners() {
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160219-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">おでんに欠かせない大根(^-^)　すりおろして「みぞれおでん」を美味しくつくってみよう。</p></a>
 			</li> 
-			<li><a href="/shop/lifestyle/static/cocoblog/160216/">
+<!--			<li><a href="/shop/lifestyle/static/cocoblog/160216/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160216-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">Silkeborg（シルケボー）ブランケットのサプライヤーさんをお訪ねしました。</p></a>
 			</li> 
-<!--			<li><a href="/shop/lifestyle/static/cocoblog/160209/">
+			<li><a href="/shop/lifestyle/static/cocoblog/160209/">
 				<img m:id="static_img"  src="../../../contents/shop/00000005/image/static/img/cocoblog/20160209-01ss.jpg" alt="ココチモブログ" >
 				<p class="txt13 mt10">アイデアがあふれる楽しいアイテムいっぱい♪</p></a>
 			</li> 

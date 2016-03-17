@@ -129,9 +129,15 @@ return false;
 }
 @media (max-width: 1280px)
 {
-.deviceSP #contents {
-    padding-top:40%;
-}	
+
+.header_cate{display:none}
+}
+@media (max-width: 768px){
+#pan-navi {margin:0 0 5% 0 !important}
+}
+@media (max-width: 640px)
+{
+
 .add_p_st2 {
 	clear:both !important;
     position: relative;
@@ -145,15 +151,7 @@ return false;
     line-height: 16px;
     z-index: 9999 !important;
 }
-.add_paa{margin-top:0 !important}
-#pan-navi { display:block !important}
-.header_cate{display:none}
-}
-@media (max-width: 768px){
-#pan-navi {margin:0 0 5% 0 !important}
-}
-@media (max-width: 640px)
-{
+#pan-navi { display:block !important}	
 .add_top{display:none}	
 .add_p {display:none !important}
 #pan-navi{display:none !important}
@@ -172,7 +170,7 @@ return false;
     top:1%;
 }	
 .deviceSP #contents {
-    padding-top:48% !important;
+    padding-top:43% !important;
 }	
 #header #header_wrap #header_r #header_search {
 	left:0 !important;
@@ -229,6 +227,11 @@ return false;
 .deviceSP #contents {
     padding-top:50%;
 }}
+@media (max-width: 370px){
+.add_paa {
+    margin-top: 0% !important;
+}
+}
 </style>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -453,7 +456,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </ul>
  </div>
 </span>
-<br />
+
 <div id="contents_r" class="add_paa">
 <span m:id="str_file">静的ファイル表示領域</span>
 </div>

@@ -295,11 +295,11 @@ function siteCatalistAddCart1(s_products){
 
 <!-- header追加 -->
 <!-- name="header_logo" -->
-<div id="header_logo">
+<h1 id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
 </span>
-</div>
+</h1>
 <!-- EndEditable -->
 </a>
 
@@ -325,7 +325,7 @@ function siteCatalistAddCart1(s_products){
 			</form>
 			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 			<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-			<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+			<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 			<div class="box_02">
 	    	<a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
 	   	 	</div>
@@ -571,18 +571,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<input type="hidden" name="ext_goods_sku_code" />
 </form>
 <div id="contents">
-<div class="sp_on clearfix">
+<div class="sp_on">
 <h1><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
-  <div>
-    <div><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></div>
-    <div><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></span></div>
-    <div m:id="if_exists_goods">&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></div>
-	<div m:id="if_not_exists_breadcrumb_category_and_goods">&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span>の通販</div>
-  </div>
-
-</div>	
-<h1 class="add_top"><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
-<div id="pan-navi" class="clearfix">
+</div>	<div id="pan-navi" class="clearfix">
 	  <ul class="clearfix">
 	    <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
 	    <li><span m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></li>
