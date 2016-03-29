@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
@@ -52,24 +52,24 @@
 <!--/ tracking urchin -->
 <style>
 #header_logo {
-    background: url(/contents/shop/00000006/shop/image/pc_logo_s.jpg) no-repeat;	
-	width: 190px !important;
+    background: url(/contents/00000002/shop/image/pc_logo_s.jpg) no-repeat;	
+	width: 150px !important;
 	}
 #header_logo2 {
     text-indent: -9999px;
-    background: url(/contents/shop/00000006/shop/image/pc_logo_life.jpg) no-repeat;
-    width: 220px;
+    background: url(/contents/00000002/shop/image/pc_logo_life.jpg) no-repeat;
+    width: 200px;
 	position:absolute;
-	top:3px;
-	left:202px
+	top:3x;
+	left:160px
 }
 #header_logo3 {
     text-indent: -9999px;
-    background: url(/contents/shop/00000006/shop/image/pc_logo_ii.jpg) no-repeat;
-    width: 190px;
+    background: url(/contents/00000002/shop/image/pc_logo_ii.jpg) no-repeat;
+    width: 150px;
 	position:absolute;
 	top:0;
-	left:430px
+	left:365px
 }
 @media (max-width:640px)
 {
@@ -79,8 +79,7 @@
     width: 30% !important;
 	}
 #header_logo2{
-	top:0;
-	left:32%;
+	left:33%;
     background: none;
     width: 33% !important;
 	}
@@ -88,14 +87,15 @@
 	left:66%;
     background: none;
     width: 30%;
+	height:30px !important    
 	}	
 #header_logo img, #header_logo2 img, #header_logo3 img{
 	position:relative;
 	z-index:999999;
 	display:block;
     max-width: 100%;
-    height: auto !important;
-	margin-top:20% !important;
+    height: auto;
+	margin-top:20% !important	
 	}
 #header {
     margin-bottom:6%;
@@ -105,9 +105,12 @@
 </head>
  
 <body id="top">
+<!-- InstanceBeginEditable name="body" -->
+<!-- InstanceEndEditable -->
+
 <div id="container">
-  <!-- ********** include:mall/header.jsp ********** -->
-  <object class="xsp_obj" m:id="e_var_mall_link"></object>
+<!-- ********** include:mall/header.jsp ********** -->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <div id="header">
 <div id="header_wrap" class="clearfix">
@@ -115,25 +118,25 @@
 <!--------1-------->
 <a href="http://www-st.cococimo.jp/">
 <div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/pc_logo_s.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+<img m:id="static_img" src="../../../contents/shop/00000002/shop/image/pc_logo_s.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
 </span>
 </div></a>
 <!--------2-------->
 <a href="http://www-st.cococimo.jp/lifestyle/">
 <div id="header_logo2"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/pc_logo_life.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+<img m:id="static_img" src="../../../contents/shop/00000002/shop/image/pc_logo_life.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
 </span>
 </div></a>
 <!--------3-------->
 <a href="http://www-st.iikigokochi.jp/">
 <div id="header_logo3"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/pc_logo_ii.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+<img m:id="static_img" src="../../../contents/shop/00000002/shop/image/pc_logo_ii.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
 </span>
 </div></a>
 
 
 <div id="header_tell" class="pc_only">
-<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/pc_tell_s.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
+<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
 </div>
 
 </div>
@@ -159,7 +162,9 @@
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
 </div>
-<div id="contents_r"> <span m:id="l_pre_display_code">
+<div id="contents_r">
+<!-- InstanceBeginEditable name="contents" -->
+<span m:id="l_pre_display_code">
 <object class="xsp_obj" m:id="e_var_goods1"></object>
 </span>
 <span m:id="l_notPre_display_code">
@@ -168,78 +173,78 @@
 <object class="xsp_obj" m:id="e_var_sku"></object>
 <object class="xsp_obj" m:id="e_var_inqClassMap"></object>
 <div class="r_con_box_04">
-  <div class="r_con_box_04_in">
-  <h1 class="temp_tit_n02 temp_tit_n02_cor">お問い合わせ内容の入力</h1>
-  <div class="sec_02 clearfix">
-    
-    
-  <div class="ad_navi">
-  <ul class="clearfix">
-  <li><div class="ad_navi_in ad_navi_t">お問い合わせ内容の入力</div></li>
-  <li><div class="ad_navi_in">お問い合わせ内容の確</div></li>
-  <li class="last"><div class="ad_navi_in">お問い合わせ完了</div></li>
-  </ul>
-  </div>
-    
-  <p class="left memadd_mb_02"><!--お問い合わせいただく前に、ご利用ガイドやよくあるご質問をご覧ください。-->
-    ココチモへのお問い合わせは、下記専用フォームにご入力ください。<br />
-    お問い合わせが集中した場合や、お問い合わせの内容によっては、お返事に時間がかかる場合がございます。<br />
-    また、お電話・お手紙でお返事させていただく場合もございますので、あらかじめご了承ください。<br />
-    18：00以降および土日祝にお問合せいただいた場合翌営業日以降のご連絡となります。<br />
-    また、上記フリーダイヤルにて年中無休でお問合せを受付けておりますので、あわせてご利用ください。
-    
-    
-    
-  </p>
-    
-  <!-- エラーメッセージ -->
-    <span m:id="l_msgPre_1">
-      <div class="error">
-        入力内容にエラーがあります。
-        </div>
-      </span>
-    <!--/ エラーメッセージ -->
-    
-  <form m:id="e_form_inquiryConfirm" method="POST" action="inquiryConfirm.html">
-    <span m:id="l_pre__S">
-      <input m:id="h_hid__S" type="hidden" name="_S" value="00000006" />
-      </span>
-  <h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
-    
-  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-  <tr><th>お名前<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_01"/>&nbsp;名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_01" />
-  <span m:id="l_msgPre_name_sei"><br /><span class="error"><span m:id="h_err_name_sei">名前(姓)エラーメッセージ</span></span></span>
-    <span m:id="l_msgPre_name_mei"><br /><span class="error"><span m:id="h_err_name_mei">名前(名)エラーメッセージ</span></span></span>
-    <span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
-    
-  </td></tr>
-  <tr><th>フリガナ<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_01"/>&nbsp;名&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_01" /> <span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
-    
-  <span m:id="l_msgPre_name_sei_kana">
-    <br />
-    <span class="error">
-      <span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
-      </span>
-    </span>
-    <span m:id="l_msgPre_name_mei_kana">
-      <br />
-      <span class="error">
-        <span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span>
-        </span>
-      </span>
-    
-  </td></tr>
-  <tr><th>メールアドレス<span class="imp">必須</span></th>
-  <td class="bor_bottom"><input type="text" m:id="h_txt_email"  name="email" class="in_w_02"/><span class="exp"><span m:id="sample_mail">例：tuuhan@u-can.co.jp</span></span>
-  <span m:id="l_msgPre_email">
-    <br />
-    <span class="error">
-      <span m:id="h_err_email">メールアドレス入力エラーメッセージ</span>
-      </span>
-    </span>
-  </td>
-  </tr>
-  <!--保留<tr><th>PCメールアドレス<span class="imp">必須</span><p>（確認用）</p></th><td class="bor_bottom"><input type="text" m:id="input_email_confirm" name="email_confirm" class="in_w_02" oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);" /><span class="exp">確認のためもう一度お願いします</span>
+<div class="r_con_box_04_in">
+<h1 class="temp_tit_n02 temp_tit_n02_cor">お問い合わせ内容の入力</h1>
+<div class="sec_02 clearfix">
+
+
+<div class="ad_navi">
+<ul class="clearfix">
+<li><div class="ad_navi_in ad_navi_t">お問い合わせ内容の入力</div></li>
+<li><div class="ad_navi_in">お問い合わせ内容の確</div></li>
+<li class="last"><div class="ad_navi_in">お問い合わせ完了</div></li>
+</ul>
+</div>
+
+<p class="left memadd_mb_02"><!--お問い合わせいただく前に、ご利用ガイドやよくあるご質問をご覧ください。-->
+ココチモへのお問い合わせは、下記専用フォームにご入力ください。<br />
+お問い合わせが集中した場合や、お問い合わせの内容によっては、お返事に時間がかかる場合がございます。<br />
+また、お電話・お手紙でお返事させていただく場合もございますので、あらかじめご了承ください。<br />
+18：00以降および土日祝にお問合せいただいた場合翌営業日以降のご連絡となります。<br />
+また、上記フリーダイヤルにて年中無休でお問合せを受付けておりますので、あわせてご利用ください。
+
+
+
+</p>
+
+<!-- エラーメッセージ -->
+		<span m:id="l_msgPre_1">
+			<div class="error">
+				入力内容にエラーがあります。
+			</div>
+		</span>
+		<!--/ エラーメッセージ -->
+
+<form m:id="e_form_inquiryConfirm" method="POST" action="inquiryConfirm.html">
+		<span m:id="l_pre__S">
+			<input m:id="h_hid__S" type="hidden" name="_S" value="00000006" />
+		</span>
+<h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>お名前<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_01"/>&nbsp;名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_01" />
+<span m:id="l_msgPre_name_sei"><br /><span class="error"><span m:id="h_err_name_sei">名前(姓)エラーメッセージ</span></span></span>
+					<span m:id="l_msgPre_name_mei"><br /><span class="error"><span m:id="h_err_name_mei">名前(名)エラーメッセージ</span></span></span>
+ <span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
+
+</td></tr>
+<tr><th>フリガナ<span class="imp">必須</span></th><td class="bor_bottom">姓&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_01"/>&nbsp;名&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_01" /> <span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
+
+<span m:id="l_msgPre_name_sei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
+								</span>
+					        </span>
+							<span m:id="l_msgPre_name_mei_kana">
+								<br />
+								<span class="error">
+									<span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span>
+								</span>
+					        </span>
+
+</td></tr>
+<tr><th>メールアドレス<span class="imp">必須</span></th>
+<td class="bor_bottom"><input type="text" m:id="h_txt_email"  name="email" class="in_w_02"/><span class="exp"><span m:id="sample_mail">例：tuuhan@u-can.co.jp</span></span>
+<span m:id="l_msgPre_email">
+								<br />
+								<span class="error">
+									<span m:id="h_err_email">メールアドレス入力エラーメッセージ</span>
+								</span>
+					        </span>
+</td>
+</tr>
+<!--保留<tr><th>PCメールアドレス<span class="imp">必須</span><p>（確認用）</p></th><td class="bor_bottom"><input type="text" m:id="input_email_confirm" name="email_confirm" class="in_w_02" oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);" /><span class="exp">確認のためもう一度お願いします</span>
 <p class="clear memadd_red"><span class="error">メールアドレスをお間違えになると、ユーキャンからの<br />
 ｅメールが他の方に届くことがあります。ご注意ください。</span></p> 
 <span m:id="l_msgPre_email_confirm">
@@ -250,97 +255,97 @@
 					        </span>
 
 </td></tr>-->
-  <tr><th>電話番号<!--<span class="imp">必須</span>--></th><td class="bor_bottom">
-  <input m:id="b_wr_tel_no1" type="text" class="in_w_04" />&nbsp;-&nbsp;<input type="text" m:id="b_wr_tel_no2" class="in_w_04" />&nbsp;-&nbsp;<input m:id="b_wr_tel_no3" type="text" class="in_w_04" />
-  <span class="exp">例：03-0000-0000</span>
-  <span m:id="l_msgPre_tel_no"><div><span class="error"><span m:id="h_err_tel_no">電話番号エラーメッセージ</span></span></div></span>
-  </td></tr>
-  </table>
-    
-    
-  <h4 class="temp_tit_06 clear"><div>お問い合わせ内容の入力</div></h4>
-    
-  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-  <span m:id="l_pre_goods">
-  <object class="xsp_obj" m:id="b_var_inq_class"></object>
-  <tr><th>お問い合わせ種別</th><td class="bor_bottom"><span m:id="disp_inq_class_code_name">お問い合わせ種別内容</span></td></tr>
-  <tr><th>商品名</th><td class="bor_bottom"><span m:id="b_wr_goods_name">商品名です</span>
-    <span m:id="l_notEmp_goods_sku_name">&nbsp;
-      <span m:id="b_wr_goods_sku_name">商品sku名です</span>
-      </span></td></tr>
-  <input m:id="h_hid_inq_class" type="hidden" name="inq_class" value="" />
-    <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-    <input m:id="h_hid_goods_code" type="hidden" name="goods_code" value=""/>
-    <input m:id="h_hid_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
-    <input m:id="h_hid_goods_name" type="hidden" name="goods_name" value="" />
-    <span m:id="l_pre_sku">
-      <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-      <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-      <input m:id="h_hid_goods_sku_name" type="hidden" name="goods_sku_name" value="" />
-      </span>
-    </span>
-    
-  <span m:id="l_pre_order_history">
-  <tr><th>お問い合わせ種別<span class="imp">必須</span></th>
-  <td class="bor_bottom">
-  <select m:id="h_sel_inq_class" class="memadd_input_01">
-    <option value="">-- 選択してください --</option>
-    <option m:id="options_collection">お問い合わせ1</option>
-    <option m:id="dummy">お問い合わせ2</option>
-    <option m:id="dummy">お問い合わせ3</option>
-    <option m:id="dummy">お問い合わせ4</option>
-    <option m:id="dummy">お問い合わせ5</option>
-    </select>
-    <span m:id="l_msgPre_inq_class"><br /><span class="error"><span m:id="h_err_inq_class">お問い合わせ種別エラーメッセージ</span></span></span>
-  </td></tr>
-  <tr><th>注文番号</th><td class="bor_bottom"><span m:id="b_wr_order_no">112233456789</span>
-  </td></tr>
-  <input m:id="h_hid_inq_class" type="hidden" name="inq_class" value="" />
-    <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-    <input m:id="h_hid_order_no" type="hidden" name="order_no" value=""/>
-    </span>
-    
-  <span m:id="l_notPre_goods">  
-  <tr><th>お問い合わせ種別<span class="imp">必須</span></th><td class="bor_bottom">
-    <select m:id="h_sel_inq_class" class="memadd_input_01">
-      <option value="">-- 選択してください --</option>
-      <option m:id="options_collection">お問い合わせ1</option>
-      <option m:id="dummy">お問い合わせ2</option>
-      <option m:id="dummy">お問い合わせ3</option>
-      <option m:id="dummy">お問い合わせ4</option>
-      <option m:id="dummy">お問い合わせ5</option>
-      </select>
-    <span m:id="l_msgPre_inq_class"><br /><span class="error"><span m:id="h_err_inq_class">お問い合わせ種別エラーメッセージ</span></span></span>
-  </td></tr>
-  <tr><th>ご注文番号</th><td class="bor_bottom"><input m:id="h_txt_order_no" type="text" name="order_no"class="in_w_02" maxlength="20">
-    <span m:id="l_msgPre_order_no"><br /><span class="error"><span m:id="h_err_order_no">注文番号エラーメッセージ</span></span></span>
-  </td></tr>
-  </span>
-  <tr><th>お問い合わせ内容<span class="imp">必須</span></th><td class="bor_bottom">
-  <textarea m:id="h_txt_inq_cont" name="inq_cont" style="width:100%;" rows="15"></textarea>
-  <span m:id="l_msgPre_inq_cont"><span class="error error_padding_top"><span m:id="h_err_inq_cont">お問い合わせ内容エラーメッセージ</span></span></span>
-  <span m:id="l_notEmp_member_no">
-    <input m:id="h_hid_member_no" type="hidden" name="member_no" />
-    </span>             
-  </td></tr>             
-    
-  </table>
-    
-    <!-- ボタン -->
-    <div class="inq_input_bt_01 s_bt_484">
-      <a m:id="a_link_inquiryConfirm" href="inquiryConfirm.html" onclick="return anchorButtonClick( document.inquiryAddForm );"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/inq_sousin_bt_01.png" alt="確認"></a>
-      </div>
-    <!--/ ボタン -->
-    <input type="hidden" name="checkId"/>
-    </form>
-    
-  </div>
-    
-  </div>
-  
-  
+<tr><th>電話番号<!--<span class="imp">必須</span>--></th><td class="bor_bottom">
+<input m:id="b_wr_tel_no1" type="text" class="in_w_04" />&nbsp;-&nbsp;<input type="text" m:id="b_wr_tel_no2" class="in_w_04" />&nbsp;-&nbsp;<input m:id="b_wr_tel_no3" type="text" class="in_w_04" />
+<span class="exp">例：03-0000-0000</span>
+<span m:id="l_msgPre_tel_no"><div><span class="error"><span m:id="h_err_tel_no">電話番号エラーメッセージ</span></span></div></span>
+</td></tr>
+</table>
+
+
+<h4 class="temp_tit_06 clear"><div>お問い合わせ内容の入力</div></h4>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<span m:id="l_pre_goods">
+<object class="xsp_obj" m:id="b_var_inq_class"></object>
+<tr><th>お問い合わせ種別</th><td class="bor_bottom"><span m:id="disp_inq_class_code_name">お問い合わせ種別内容</span></td></tr>
+<tr><th>商品名</th><td class="bor_bottom"><span m:id="b_wr_goods_name">商品名です</span>
+						<span m:id="l_notEmp_goods_sku_name">&nbsp;
+	                        <span m:id="b_wr_goods_sku_name">商品sku名です</span>
+	                    </span></td></tr>
+<input m:id="h_hid_inq_class" type="hidden" name="inq_class" value="" />
+				<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+				<input m:id="h_hid_goods_code" type="hidden" name="goods_code" value=""/>
+				<input m:id="h_hid_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
+				<input m:id="h_hid_goods_name" type="hidden" name="goods_name" value="" />
+				<span m:id="l_pre_sku">
+					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+					<input m:id="h_hid_goods_sku_name" type="hidden" name="goods_sku_name" value="" />
+				</span>
+			</span>
+
+<span m:id="l_pre_order_history">
+<tr><th>お問い合わせ種別<span class="imp">必須</span></th>
+<td class="bor_bottom">
+<select m:id="h_sel_inq_class" class="memadd_input_01">
+				        	<option value="">-- 選択してください --</option>
+				        	<option m:id="options_collection">お問い合わせ1</option>
+				        	<option m:id="dummy">お問い合わせ2</option>
+				        	<option m:id="dummy">お問い合わせ3</option>
+				        	<option m:id="dummy">お問い合わせ4</option>
+				        	<option m:id="dummy">お問い合わせ5</option>
+				        </select>
+						<span m:id="l_msgPre_inq_class"><br /><span class="error"><span m:id="h_err_inq_class">お問い合わせ種別エラーメッセージ</span></span></span>
+</td></tr>
+<tr><th>注文番号</th><td class="bor_bottom"><span m:id="b_wr_order_no">112233456789</span>
+</td></tr>
+<input m:id="h_hid_inq_class" type="hidden" name="inq_class" value="" />
+				<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+				<input m:id="h_hid_order_no" type="hidden" name="order_no" value=""/>
+				</span>
+                
+<span m:id="l_notPre_goods">  
+<tr><th>お問い合わせ種別<span class="imp">必須</span></th><td class="bor_bottom">
+ <select m:id="h_sel_inq_class" class="memadd_input_01">
+				        	<option value="">-- 選択してください --</option>
+				        	<option m:id="options_collection">お問い合わせ1</option>
+				        	<option m:id="dummy">お問い合わせ2</option>
+				        	<option m:id="dummy">お問い合わせ3</option>
+				        	<option m:id="dummy">お問い合わせ4</option>
+				        	<option m:id="dummy">お問い合わせ5</option>
+				        </select>
+						<span m:id="l_msgPre_inq_class"><br /><span class="error"><span m:id="h_err_inq_class">お問い合わせ種別エラーメッセージ</span></span></span>
+</td></tr>
+<tr><th>ご注文番号</th><td class="bor_bottom"><input m:id="h_txt_order_no" type="text" name="order_no"class="in_w_02" maxlength="20">
+						<span m:id="l_msgPre_order_no"><br /><span class="error"><span m:id="h_err_order_no">注文番号エラーメッセージ</span></span></span>
+</td></tr>
+</span>
+<tr><th>お問い合わせ内容<span class="imp">必須</span></th><td class="bor_bottom">
+<textarea m:id="h_txt_inq_cont" name="inq_cont" style="width:100%;" rows="15"></textarea>
+<span m:id="l_msgPre_inq_cont"><span class="error error_padding_top"><span m:id="h_err_inq_cont">お問い合わせ内容エラーメッセージ</span></span></span>
+<span m:id="l_notEmp_member_no">
+				<input m:id="h_hid_member_no" type="hidden" name="member_no" />
+			</span>             
+</td></tr>             
+             
+</table>
+
+		<!-- ボタン -->
+		<div class="inq_input_bt_01 s_bt_484">
+			<a m:id="a_link_inquiryConfirm" href="inquiryConfirm.html" onclick="return anchorButtonClick( document.inquiryAddForm );"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/inq_sousin_bt_01.png" alt="確認"></a>
+		</div>
+		<!--/ ボタン -->
+		<input type="hidden" name="checkId"/>
+		</form>
+
 </div>
+
 </div>
+
+
+</div>
+<!-- InstanceEndEditable --></div>
 <!--contents_r-->
 
 <div id="contents_l">
@@ -578,6 +583,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
+<!-- InstanceBeginEditable name="sitecatalyst" -->
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -620,6 +626,10 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
 
+<!-- InstanceEndEditable -->
+
+
+
 <script type='text/javascript'>
 if(typeof dmids == "undefined"){var dmids = {}};
 dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
@@ -627,5 +637,5 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </body>
-</html>
+<!-- InstanceEnd --></html>
 
