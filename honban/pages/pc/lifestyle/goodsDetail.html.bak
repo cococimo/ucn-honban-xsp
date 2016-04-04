@@ -108,7 +108,12 @@
 #contents {
     padding: 130px 0 0;
 }
-
+.add_poc{
+	max-width:100%;
+	height:auto;
+	margin:-5% auto 6% auto;
+	display:block	
+}
 @media (max-width: 1280px)
 {
 .i_main .h3s img {width:95%}
@@ -283,7 +288,10 @@ select.goods_sku_code {
 .con_list_five .cartAddbtn {
 	width:100%;
 }
-
+.add_poc{
+	margin-top:0
+}
+}
 </style>		
 <link href="contents/lifestyle/css/side_menu.css" rel="stylesheet" type="text/css" media="all" />
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
@@ -457,7 +465,7 @@ window.onunload = function() {
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 		<div class="box_02">
     <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
     </div>
@@ -751,6 +759,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</div>
 	</span>
 </span>
+
+<h1 class="add_top"><span m:id="disp_goods_name">カナナリュック</span>の通販・通信販売</h1>
+
 <div id="pan-navi" >
   <ul class="clearfix">
     <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
@@ -1256,6 +1267,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 
+<a href="/shop/lifestyle/static/nordic_porch/"><img src="contents/shop/00000005/goods/image/640_200.jpg" class="add_poc" alt="" /></a>
 
 
 <!-- 商品情報 -->
