@@ -107,7 +107,20 @@
 .devicePC #header {
     height: 126px;
 }
-
+.bankil{
+	background:none !important;
+    margin-left:7px !important;
+    padding: 0 !important;
+}
+.cartright {
+	margin-top:66px
+}
+.banliv{
+	display:none
+}
+#guideWrapper {
+    margin-top: 50px;
+}
 @media (max-width: 1280px)
 {
 .header_cate{display:none}
@@ -368,7 +381,13 @@ input[type="radio"]:checked:after {
     -webkit-border-radius: 12px;
     border-radius: 12px;
 }
-
+.bankil{
+	display:none
+}
+.banliv{
+	display: block;
+	margin-bottom:20px
+}
 }
 </style>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000005/js/jquery.js"></script>
@@ -847,6 +866,14 @@ $(window).on('load resize', function(){
 <li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お客様情報の入力</div></div></div></li>
 <li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お申込み内容の確認</div></div></div></li>
 <li class="last"><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お申込み完了</div></div></div></li>
+<li style="background:none">
+<div class="ad_navi_in2 bankil">
+<div class="ad_in_in">
+<div class="ad_in_in2">
+<a href="/shop/lifestyle/static/nordic_porch/"><img src="contents/shop/00000005/goods/image/250_250.jpg" class="add_poc" alt="" /></a>
+</div></div></div>
+</li>
+
 </ul>
 </div>
 
@@ -929,6 +956,7 @@ $(window).on('load resize', function(){
 	<span m:id="disp_msg">エラーメッセージその２</span>
   </span></div>
 </span>
+
 <!-- ▼▼ 個別送料対応 2015.08.27 koba ▼▼ --> 
 <span m:id="init_individual"></span>
 <!-- ▲▲ 個別送料対応 2015.08.27 koba ▲▲ -->
@@ -936,7 +964,11 @@ $(window).on('load resize', function(){
 <span m:id="l_notPre_other_shop_cart">
 <object class="xsp_obj" m:id="e_var_free_guide_list"></object>
 <!-- 無料資料請求ではない場合 -->
-<span m:id="l_notPre_free_guide">	
+<span m:id="l_notPre_free_guide">
+
+<div class="banliv">
+	<a href="/shop/lifestyle/static/nordic_porch/"><img src="contents/shop/00000005/goods/image/250_250.jpg" class="add_poc" alt="" /></a>
+</div>	
 <!-- カートメイン -->
 <div class="cartMain">
 <!-- cartLeft -->
