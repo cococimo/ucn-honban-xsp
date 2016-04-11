@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_3.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_shop_1.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
@@ -14,9 +14,9 @@
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-<meta name="description" content="ココチモのログインページです。会員登録済みのお客様はこちらからログインいただけます。- ココチモ（cococimo）の通販ショップ">
-<meta name="keywords" content="ログイン,login,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
-<title>ログイン - ココチモ（cococimo）の通販ショップ</title>
+<meta name="description" content="ココチモよりお手もとにダイレクトメールが届いたお客様向けのログインページです。- ココチモ（cococimo）の通販ショップ">
+<meta name="keywords" content="ダイレクトメール,DM,カタログ,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,DM,ダイレクトメール,ユーキャン">
+<title>ダイレクトメールをご覧になった方 - ココチモ（cococimo）の通販ショップ</title>
 
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
@@ -26,6 +26,9 @@
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
 
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000003/js/selectivizr.js"></script>
+<![endif]-->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/yuga.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/iepngfix_tilebg.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.ad-gallery.js"></script>
@@ -36,69 +39,18 @@
 
 
 
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.exdropdown.0.1.3.js"></script>
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/exdropdown.css" type="text/css" media="all" />
 
-		<script>
-			jQuery(function($){
-				$('ul.example').exDropDown();
-			});
-		</script>
+
 
 
 
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<style>
-#header_search {
-    left: 262px !important;
-}
-.header_list_01 {
-	width:216px;
-	float:right;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 40px !important;
-    width: 440px !important;
-}
-#header_search .box_02 input {
-    height: 42px !important;
-	font-size:12px;	
-}
-@media (max-width: 640px) {
-#header_search {
-    left: 0 !important;
-}
-.header_list_01 {
-	width:100%;
-	float: none;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 30px !important;
-    width: 100% !important;
-}
-#header_search .box_02 input {
-    height: 32px !important;
-}
-#header_search .box_01 {
-    width: 85% !important;
-}
-#header_search .box_02 {
-    width: 15% !important;
-}
-}
-</style>
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+
 </head>
  
 <body id="top">
@@ -106,18 +58,20 @@
 <!-- InstanceEndEditable -->
 
 <div id="container">
-<!-- ********** include:mall/header.jsp ********** -->
-<object class="xsp_obj" m:id="e_var_mall_link"></object>
-<span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
+
 <div id="header">
 <div id="header_wrap" class="clearfix">
 <span m:id="l_equ_hierarchy_3_shop">
 <a m:id="e_link_logo_shop_shop" href="/">
+
+
+<!-- InstanceBeginEditable name="header_logo" -->
 <div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
 <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
 </span>
-</div></a>
-
+</div>
+<!-- InstanceEndEditable -->
+</a>
 
 <div id="header_r" class="clearfix">
 <div id="header_r_01" class="clearfix">
@@ -188,7 +142,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -206,379 +160,156 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <div id="contents">
 
-<!--<div id="pan-navi" >
-  <ul class="clearfix">
-    <li><a m:id="pankuzu_top_link" href="shop.html"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
-    <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
-  </ul>
-</div>-->
-<div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
-<style>
-.sp_on{ display:none}
-.memadd_table_01 tr:nth-child(1){ display:none;}
-.memadd_table_01 tr:nth-child(3){ display:none;}
-.add_h5 {
-    border-bottom: 1px dotted #9f9590!important;
-    font-size: 16px!important;
-	font-weight:normal !important;
-    margin-bottom: 5px!important;
-    text-align: left!important;
-    color: #595857 !important;
-}
-.memadd_mb_02{margin-bottom:5px !important}
-@media (max-width: 1280px)
-{
-.add_p {display:none !important}
-#pan-navi{display:none !important}
-.sp_on{
-	display: block;
-	font-size:12px;
-	padding-left:4%;
-	}
-.sp_on h1{
-	font-size:12px !important;
-	color:#121F8B;
-	text-align:left
-	}	
-.header_cate{display:none}
-.pank li{float:left}
-.sp_td{display:none !important}
-}
-@media (max-width: 640px) {
-.memadd_table_01 th{ display:none;}
-.memadd_table_01 tr:nth-child(1){ display: block}
-.memadd_table_01 tr:nth-child(3){ display: block}
 
-.sp_tcel{
-    background: #00ada0 !important;
-    border-bottom: 1px solid #ececec;
-    color: #fff;
-    font-size: 12px;
-    padding: 2% 1.5% 3% 2% !important;
-    width: 97% !important;
-	display:block !important;
-}
-.memadd_table_01 td span.imp {
-    background: none repeat scroll 0 0 #f35b71;
-    color: #ffffff;
-    float: right;
-    font-size: 10px;
-    font-weight: normal;
-    padding: 2px;
-}
-.sec_02 input {
-    border: 1px solid rgba(180,180,180,1.00) !important;
-	padding:1.2% 0 !important;
-}
-.sec_02 .in_w_02{
-/* border-radius */
-border-radius:5px;
--webkit-border-radius:5px;
--moz-border-radius:5px;
-}
-.add_h5 {font-size: 13px !important}
-.memadd_mb_02{margin-bottom:0 !important}
-.mb20{text-align:left !important; margin-bottom:10px !important; font-size:14px !important;}
-.inq_input_bt_01 input {
-	width:94% !important;
-	outline:none !important;
-	border:none !important
-	}
-.memadd_table_01 {margin-bottom:20px!important}	
-}
-</style>   
-<span m:id="l_pre_display_code">
-			<object class="xsp_obj" m:id="e_var_goods1"></object>
-		</span>
-		<span m:id="l_notPre_display_code">
-			<object class="xsp_obj" m:id="e_var_goods2"></object>
-		</span>
-		<object class="xsp_obj" m:id="e_var_sku"></object>
-		
-		<object class="xsp_obj" m:id="e_var_inqClassMap"></object>
+<div id="contents_r_02">
+<!-- InstanceBeginEditable name="contents_wide" -->
 <div class="r_con_box_04">
 <div class="r_con_box_04_in">
-<h1 class="temp_tit_n02 temp_tit_n02_cor">ログイン</h1>
+<h1 class="temp_tit_n02 temp_tit_n02_cor">ダイレクトメールをご覧になった方<!--ご本人確認--></h1>
 <div class="sec_02 clearfix">
-<h5 class="add_h5">●ココチモ会員の方</h5>
-<p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
+
+
+<p class="left memadd_mb_02">ダイレクトメールご案内のお客様番号とお電話番号を入力して「確認」を押してください。<br />
+会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。
 </p>
+
 <span m:id="l_msgPre_errors_member_login">
 		<div class="error">
-			ログインに失敗しました。
+			<p>
+				ログインに失敗しました。
+			</p>
+		</div>
+		</span>
+		<span m:id="l_msgPre_errors_dm_login">
+		<div class="error mb20">
+			<p>
+				ご本人確認に失敗しました。
+			</p>
 		</div>
 		</span>
 
 
-
 <form m:id="h_form_loginAuth" method="POST" action="shop.html">
-			<span m:id="l_pre__S">
-				<input m:id="h_hid__S" type="hidden" name="_S" value="00000002" />
-			</span>
-<h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
+				  	<span m:id="l_pre__S">
+						<input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+						<!--
+						<input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />	
+						-->
+				 	</span>
+					<!-- ログインログイン情報入力 -->
+
+<h4 class="temp_tit_06 clear"><div>会員登録済みの方はこちらから</div></h4>
 
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
-<tr><th>ログインID<span class="imp">必須</span></th>
-<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
-<span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
+<tr><th>ログインID<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="loginForm" property="login_id"  class="in_w_02"/>
 <span m:id="l_msgPre_login_id">
-<div>							<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
-</span>
-</div>						</span>
-
-
-</td>
-</tr>
-<tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
-<tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
-
-<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
-<div><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
+<div>									<span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span></div>
+								</span>
+</td></tr>
+<tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="loginForm" property="password" class="in_w_02"/>
+<div>
 <span m:id="l_msgPre_password">
-<div>							<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
-</div>						</span>
-
+									<span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span>
+								</span></div>
+<a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a>                                
 </td></tr>
 
 </table>
 
+
 		<!-- ボタン -->
-		<div class="inq_input_bt_01 s_bt_350">
-		<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /> 
-        <a m:id="e_link_memberAdd_shop" href="memberAddInput.html" style="display:block; font-size:12px; margin:5% 0 0 3%; text-align:left !important">会員登録はコチラ</a>
+		<div class="inq_input_bt_01 clearfix s_bt_350">
+<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
+        
 		</div>
 		<!--/ ボタン -->
-		<script type="text/javascript">
-		<!--
-			document.loginForm.login_id.focus();
-		//-->
-		</script> 
-		</form>
-		
-		<!-- インクルード領域 -->
-		<span m:id="timed_include" filename="memberLogin_head"></span>
-		<!--/ インクルード領域  -->
+<script type="text/javascript">
+						<!--
+							document.loginForm.login_id.focus();
+						//-->
+						</script> 
+                        </form>
 
 
-</div></div>
+
+<form m:id="h_form_dmLoginAuth" method="POST" action="memberAddInput.html">
+				  	<span m:id="l_pre__S">
+						<input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+						<!--
+						<input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />	
+						-->
+				 	</span>
+					<!-- DM認証入力 -->
 
 
+<h4 class="temp_tit_06 clear"><div>非会員でお手もとにダイレクトメールがある方はこちらから</div></h4>
+
+<div class="hotSellerBox_img center mb20">
+<img src="../../../contents/shop/00000003/shop/image/label2.jpg" style="max-width:100%"  />
+ 
+							<!--<img m:id="h_img_dm_message" src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" width="128" border="0" alt="DM案内" />-->
+					    </div>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>お客様番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_customer_no" type="text" name="dmLoginForm" property="customer_no"  class="in_w_02"/>
+<span m:id="l_msgPre_customer_no">
+									<div><span class="error"><span m:id="h_err_customer_no">お客様番号入力エラーメッセージ</span></span></div>
+								</span>
+</td></tr>
+<tr><th>お電話番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_tel_no1" type="text" name="dmLoginForm" property="tel_no1" class="in_w_04" maxlength="5" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no2" type="text" name="dmLoginForm" property="tel_no2" class="in_w_04" maxlength="4" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no3" type="text" name="dmLoginForm" property="tel_no3" class="in_w_04" maxlength="4" /><span class="exp">例：<span m:id="sample_tel_1" >045-332-6655 (半角数字)</span></span><br />
+<span m:id="l_msgPre_tel_no">
+								<span class="error">
+								<span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span>
+								<span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span>
+								<span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span>
+								<span m:id="h_err_tel_no">電話番号エラーメッセージ</span>
+								</span>
+</span>                                
+</td></tr>
+
+</table>
+<p class="mb20">お電話番号をご登録でないお客様、<br/>またはご登録電話番号をお忘れの方は、<br/>お手数ですがお届けしておりますダイレクトメールの購入申込書でご注文ください。</p>
+
+
+
+		<!-- ボタン -->
+		<div class="inq_input_bt_01 clearfix s_bt_350">
+<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
+        
+		</div>
+		<!--/ ボタン -->
+<script type="text/javascript">
+						<!--
+							document.dmLoginForm.customer_no.focus();
+						//-->
+						</script> 
+</form>                                
+        
+        
+        
+</div>
 </div>
 
-<!-- InstanceEndEditable --></div>
-<!--contents_r-->
-<div id="contents_l">
-  <object class="xsp_obj" m:id="e_var_standardCategory">
-  </object>
-  <object class="xsp_obj" m:id="e_var_campaignCategory">
-  </object>
-  <object class="xsp_obj" m:id="count">
-  </object>
-  <object class="xsp_obj" m:id="cate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate2_count">
-  </object>
-  <object class="xsp_obj" m:id="e_var_dmHistory">
-  </object>
-<!--▼▼▼カテゴリー▼▼▼-->
-<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
-<div class="l_con_box_01">
-<div id="l_tit_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_tit_01.jpg" alt="カテゴリーから探す" /></div>
 
-<div class="sub">
-	<span m:id="l_ite_standardCategory">
-		<span m:id="l_equ_cate_checkPeriod">
-			<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-			<object class="xsp_obj" m:id="count_sub1"></object>
-			<ul class="l_con_list_01 clearfix example">
-				<span  m:id="l_ite_cate">
-					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-					<li>
-					
-					<div id="p_0">
-					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-					<span m:id="span_subCate_arrow" id="arrow_1">
-						<span m:id="disp_subCate_category_name">ファッション</span>
-					</span>
-					</a>
-					</div>
-					
-					
-					<div id="p_1">
-					<a>
-					<span m:id="span_subCate_arrow" id="arrow_1">
-						<span m:id="disp_subCate_category_name">ファッション</span>
-					</span>
-					</a>
-					</div>
 
-					
-						<ul m:id="tag_dd_subCate">
-						<span m:id="l_ite_subCate"> 
-							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-							<li>
-							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-							<ul m:id="tag_dd_subCate2">
-							<span m:id="l_ite_subCate2"> 
-							<span m:id="l_equ_subCate3_checkPeriod"> <span m:id="icnt_increment"></span>
-							<li>
-							<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-							</li>
-							</span>
-							</span>
-							</ul>							
-							</li>
-							</span>
-						</span>
-						</ul>
-					</li>
-					</span>
-				</span>
-			</ul>
-		</span>
-	</span>
-</div>
-</span></span>
-<!--▲▲▲カテゴリー▲▲▲-->
-  <!--▼▼▼ログイン者表示▼▼▼-->
-  <object class="xsp_obj" m:id="e_var_total_price_amt">
-  </object>
-  <object class="xsp_obj" m:id="e_var_total_point_amt">
-  </object>
-  <object class="xsp_obj" m:id="e_var_total_order_num">
-  </object>
-  <div class="l_con_box_01 pc_only">
-    <div id="l_tit_02"><span m:id="l_pre_login_member_name"> <span m:id="disp_member_name">山田　太郎</span></span><span m:id="l_notPre_login_member_name">ゲスト</span></div>
-    <dl class="l_con_list_02">
-      <dt>商品点数</dt>
-      <dd><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span>点</dd>
-      <dt>金額小計</dt>
-      <dd><span m:id="b_wr_side_total_price_amt"><span m:id="dummy">●●●●</span></span>円</dd>
-    </dl>
-    <div id="l_bt_01"> <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
-s.linkTrackVars='events'; 
-s.linkTrackEvents='scView';
-s.events='scView';
-s.tl(this,'o','cartview',null,'navigate');return false
-">お買い物かごを見る</a></div>
-  </div>
-  <!--▲▲▲ログイン者表示▲▲▲-->
-  <!--▼▼▼DM▼▼▼-->
-  <div>
-  <span m:id="l_pre_member_logout_button">
-	  <object class="xsp_obj" m:id="e_var_memberDmHistoryList"></object>
-	  <span m:id="l_notEmp_memberDmHistoryList">
-		<a m:id="e_link_memberMenu_memberDMHistory" href="memberDMHistory.html" >DM送付履歴はこちら</a>
-	  </span>
-  </span>
-  <span m:id="l_notPre_member_login">
-    <div id="l_bt_02"> 
-    <span m:id="l_notPre_dm_member">
-	  <a m:id="e_link_dmlogin" href="dmLogin.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_bt_02.jpg" alt="DMをご覧になった方はコチラ" /></a>
-    </span>
-    </div>
-  <!--▲▲▲DM▲▲▲-->
-  <!--▼▼▼DM送付履歴▼▼▼-->
-  <span m:id="l_pre_dm_member">
-  <object class="xsp_obj" m:id="e_var_memberDmList"></object>
-  <span m:id="l_notEmp_dmHistoryList"> <span class="dm_button">
-	<a m:id="e_link_menu_dmHistory" href="dmHistory.html" >DM送付履歴はこちら</a>
-  </span> </span>
-  </span>
-  </span>
-  </div>
-  <!--▲▲▲DM送付履歴▲▲▲-->
-  <!--▼▼▼左カラムバナー▼▼▼-->
-<!--  <div class="l_bar_list pc_only">
-    <ul>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_01.jpg" width="190" height="60" /></a></li>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_02.jpg" width="190" height="60" /></a></li>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_03.jpg" width="190" height="60" /></a></li>
-    </ul>
-  </div>-->
-  <!--▲▲▲左カラムバナー▲▲▲-->
- <!--▼▼▼最近チェックした商品▼▼▼-->
-  <object class="xsp_obj" m:id="e_var_browsingGoodsList">
-  </object>
-  <span m:id="l_notEmp_browsingGoodsList">
-  <div class="l_con_box_03">
-    <div id="l_tit_04" class="sp_r_tit_02 pc_only">最近チェックした商品</div>
-    <div class="temp_tit_n02 temp_tit_n02_cor sp_only shu_n_01">最近チェックした商品</div>
-    <div class="l_con_box_03_in clearfix shu_n_02">
-    <ul class="l_con_list_04">
-    <span m:id="l_ite_browsingGoodsList"> 
-     <span m:id="l_notDisp_other_site"> 
-     <span m:id="l_notEqu_idx">
-     
-        <li>
-          <div class="box_01 heightLine-check">
-            <div class="box_02">
-              <div class="img_box"><a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
-              <p> <span m:id="l_notEqu_browsingGoods_pretaxPrice">
-			        <span class="original_price">
-			            <span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
-			        </span>&nbsp;
-			    </span>
-			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
-</p>
-            </div>
-          </div>
-        </li>
-        </span>
-    </span>
-    </span>
-        <li m:id="dummy">
-          <div class="box_01">
-            <div class="box_02">
-              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li m:id="dummy" class="sp_end">
-          <div class="box_01">
-            <div class="box_02">
-              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li m:id="dummy" class="pc_only">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-        </li>
-      
-    </ul> </div>
-  </div>
-  </span>
-  <!--▲▲▲最近チェックした商品▲▲▲-->
-  <div class="pc_social pc_only no_pankuzu">
-    <div class="pc_social_in">
-      <ul>
-        <li><a href="#top"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/fl_bt_01.jpg" width="28" height="115" alt="ホーム" /></a></li>
-       <!-- <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_02.jpg" width="28" height="29" alt="ホーム" /></a></li>
-        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_03.jpg" width="28" height="28" alt="ホーム" /></a></li>
-        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_04.jpg" width="28" height="28" alt="ホーム" /></a></li>-->
-        <li><a href="/shop/c/static/sitemap/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/fl_bt_05.jpg" width="28" height="98" alt="ホーム" /></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!--contents_l-->
+
+
+
+
+
+
+</div><!--r_con_box_03-->
+
+
+
+<!-- InstanceEndEditable -->
+</div><!--contents_r_02--><!-- InstanceBeginEditable name="footer_01" -->
+
 <div id="footer01" class=" pc_only">
   <div id="footer_wrap01">
     <h2 id="footer_tit_01">お電話・FAXでもご注文を承ります。</h2>
     <div class="clearfix">
-      <div class="box_00"> お電話でのお問合せ</div>
+	　<div class="box_00"> お電話でのお問合せ</div>
       <div class="box_03 clearfix">
         <p><a href="/shop/c/static/fax/">FAX注文について</a></p>
         <div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_footer_bt_003.jpg" alt="FAX申込書ページ" /></a></div>
@@ -589,9 +320,19 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 <!--footer-->
 
+
+
+<!-- InstanceEndEditable -->
+
+
+
+
+
+
 </div><!--contents-->
 
 </div><!--container-->
+
 
 
 
@@ -612,20 +353,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <li><a m:id="static_link" href="#">ファッション</a></li>
 <li><a m:id="static_link" href="#">美容用品</a></li>
 </ul>-->
- <object class="xsp_obj" m:id="e_var_standardCategory">
-  </object>
-  <object class="xsp_obj" m:id="e_var_campaignCategory">
-  </object>
-  <object class="xsp_obj" m:id="count">
-  </object>
-  <object class="xsp_obj" m:id="cate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate2_count">
-  </object>
-  <object class="xsp_obj" m:id="e_var_dmHistory">
-  </object>
+
 <span m:id="l_pre_standardCategory">
 <span m:id="l_notEmp_standardCategory_childCategories">
 <span m:id="l_ite_standardCategory">
@@ -668,13 +396,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
           食品・飲料
         </a></li>
         <li m:id="dummy"><a href="goodsSearchShop_shop.html">
-          キッチン
+         キッチン
         </a></li>        
 </span>           
  </ul>
  </span></span>
   </span></span>
-
 
 
 
@@ -705,14 +432,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <a m:id="e_link_mypage_shop" href="memberMypage.html" title="マイページ">マイページ</a></div></li>
 </ul>
 </div>
-
 <div class=" pc_only pc_secure">
 <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 <p>
 このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
 </p>
 </div>
-
 </div>
 </div><!--footer_wrap02-->
 </div><!--footer02-->
@@ -733,8 +458,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 <div id="footer04" class="sp_only">
-<h2><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_tit.png" alt="
-お電話でもご購入いただけます" /></h2>
+<h2><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_tit.png" alt="お電話でもご購入いただけます" /></h2>
 <div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.png" alt="お電話でのご注文　0120-552-476 7時から22時（年中無休）" /></div>
 <div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_02.png" alt="FAXでのご注文　0120-552-607"  /><p><a href="/shop/c/static/fax/">FAXでのご注文方法について</a></div>
 </div><!--footer04-->
@@ -748,7 +472,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </p>
 </div>
 
-<p>Copyright U-CAN, Inc. All Rights Reserved</p>
+<p>Copyright 2013 U-CAN, Inc. All Rights Reserved</p>
 
 </div><!--footer05-->
 <!-- tracking ga -->
@@ -764,7 +488,7 @@ More info available at http://www.omniture.com -->
 <script language="JavaScript" type="text/javascript"><!--
 /* You may give each page an identifying name, server, and channel on
 the next lines. */
-s.pageName="ログイン"
+s.pageName="DM顧客認証"
 s.server=""
 s.channel="ログイン関連"
 s.pageType=""
@@ -778,7 +502,7 @@ s.prop13=s_prop13
 s.campaign=""
 s.state=""
 s.zip=""
-s.events="event26"
+s.events=""
 s.products=""
 s.purchaseID=""
 s.eVar1=""
@@ -795,7 +519,6 @@ var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-
 
 <!-- InstanceEndEditable -->
 

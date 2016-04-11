@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_shop_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
@@ -36,41 +36,71 @@
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
-
-
-
-
-
-
-
-
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-
-<!-- InstanceEndEditable -->
-
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
  
 <body id="top">
-<!-- InstanceBeginEditable name="body" -->
-<!-- InstanceEndEditable -->
-
 <div id="container">
-
-<div id="header">
+  
+  <div id="header">
 <div id="header_wrap" class="clearfix">
 <span m:id="l_equ_hierarchy_3_shop">
 <a m:id="e_link_logo_shop_shop" href="/">
 
-
-<!-- InstanceBeginEditable name="header_logo" -->
 <div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
-</span>
+  <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+  </span>
 </div>
-<!-- InstanceEndEditable -->
 </a>
 
 <div id="header_r" class="clearfix">
@@ -142,7 +172,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -162,148 +192,143 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 <div id="contents_r_02">
-<!-- InstanceBeginEditable name="contents_wide" -->
 <div class="r_con_box_04">
-<div class="r_con_box_04_in">
-<h1 class="temp_tit_n02 temp_tit_n02_cor">ダイレクトメールをご覧になった方<!--ご本人確認--></h1>
-<div class="sec_02 clearfix">
-
-
-<p class="left memadd_mb_02">ダイレクトメールご案内のお客様番号とお電話番号を入力して「確認」を押してください。<br />
-会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。
-</p>
-
-<span m:id="l_msgPre_errors_member_login">
-		<div class="error">
-			<p>
-				ログインに失敗しました。
-			</p>
-		</div>
-		</span>
-		<span m:id="l_msgPre_errors_dm_login">
-		<div class="error mb20">
-			<p>
-				ご本人確認に失敗しました。
-			</p>
-		</div>
-		</span>
-
-
-<form m:id="h_form_loginAuth" method="POST" action="shop.html">
-				  	<span m:id="l_pre__S">
-						<input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
-						<!--
+  <div class="r_con_box_04_in">
+  <h1 class="temp_tit_n02 temp_tit_n02_cor">ダイレクトメールをご覧になった方<!--ご本人確認--></h1>
+  <div class="sec_02 clearfix">
+    
+    
+  <p class="left memadd_mb_02">ダイレクトメールご案内のお客様番号とお電話番号を入力して「確認」を押してください。<br />
+    会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。
+  </p>
+    
+  <span m:id="l_msgPre_errors_member_login">
+    <div class="error">
+      <p>
+        ログインに失敗しました。
+        </p>
+      </div>
+    </span>
+    <span m:id="l_msgPre_errors_dm_login">
+      <div class="error mb20">
+        <p>
+          ご本人確認に失敗しました。
+          </p>
+        </div>
+      </span>
+    
+    
+  <form m:id="h_form_loginAuth" method="POST" action="shop.html">
+    <span m:id="l_pre__S">
+      <input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+      <!--
 						<input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />	
 						-->
-				 	</span>
-					<!-- ログインログイン情報入力 -->
-
-<h4 class="temp_tit_06 clear"><div>会員登録済みの方はこちらから</div></h4>
-
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><th>ログインID<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="loginForm" property="login_id"  class="in_w_02"/>
-<span m:id="l_msgPre_login_id">
-<div>									<span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span></div>
-								</span>
-</td></tr>
-<tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="loginForm" property="password" class="in_w_02"/>
-<div>
-<span m:id="l_msgPre_password">
-									<span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span>
-								</span></div>
-<a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a>                                
-</td></tr>
-
-</table>
-
-
-		<!-- ボタン -->
-		<div class="inq_input_bt_01 clearfix s_bt_350">
-<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
-        
-		</div>
-		<!--/ ボタン -->
-<script type="text/javascript">
+      </span>
+    <!-- ログインログイン情報入力 -->
+    
+  <h4 class="temp_tit_06 clear"><div>会員登録済みの方はこちらから</div></h4>
+    
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+  <tr><th>ログインID<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="loginForm" property="login_id"  class="in_w_02"/>
+  <span m:id="l_msgPre_login_id">
+  <div>									<span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span></div>
+    </span>
+  </td></tr>
+  <tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="loginForm" property="password" class="in_w_02"/>
+  <div>
+  <span m:id="l_msgPre_password">
+    <span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span>
+    </span></div>
+  <a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a>                                
+  </td></tr>
+    
+  </table>
+    
+    
+    <!-- ボタン -->
+    <div class="inq_input_bt_01 clearfix s_bt_350">
+  <input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
+      
+      </div>
+    <!--/ ボタン -->
+  <script type="text/javascript">
 						<!--
 							document.loginForm.login_id.focus();
 						//-->
 						</script> 
-                        </form>
-
-
-
-<form m:id="h_form_dmLoginAuth" method="POST" action="memberAddInput.html">
-				  	<span m:id="l_pre__S">
-						<input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
-						<!--
+    </form>
+    
+    
+    
+  <form m:id="h_form_dmLoginAuth" method="POST" action="memberAddInput.html">
+    <span m:id="l_pre__S">
+      <input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+      <!--
 						<input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />	
 						-->
-				 	</span>
-					<!-- DM認証入力 -->
-
-
-<h4 class="temp_tit_06 clear"><div>非会員でお手もとにダイレクトメールがある方はこちらから</div></h4>
-
-<div class="hotSellerBox_img center mb20">
-<img src="../../../contents/shop/00000003/shop/image/label2.jpg" style="max-width:100%"  />
- 
-							<!--<img m:id="h_img_dm_message" src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" width="128" border="0" alt="DM案内" />-->
-					    </div>
-
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><th>お客様番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_customer_no" type="text" name="dmLoginForm" property="customer_no"  class="in_w_02"/>
-<span m:id="l_msgPre_customer_no">
-									<div><span class="error"><span m:id="h_err_customer_no">お客様番号入力エラーメッセージ</span></span></div>
-								</span>
-</td></tr>
-<tr><th>お電話番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_tel_no1" type="text" name="dmLoginForm" property="tel_no1" class="in_w_04" maxlength="5" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no2" type="text" name="dmLoginForm" property="tel_no2" class="in_w_04" maxlength="4" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no3" type="text" name="dmLoginForm" property="tel_no3" class="in_w_04" maxlength="4" /><span class="exp">例：<span m:id="sample_tel_1" >045-332-6655 (半角数字)</span></span><br />
-<span m:id="l_msgPre_tel_no">
-								<span class="error">
-								<span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span>
-								<span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span>
-								<span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span>
-								<span m:id="h_err_tel_no">電話番号エラーメッセージ</span>
-								</span>
-</span>                                
-</td></tr>
-
-</table>
-<p class="mb20">お電話番号をご登録でないお客様、<br/>またはご登録電話番号をお忘れの方は、<br/>お手数ですがお届けしておりますダイレクトメールの購入申込書でご注文ください。</p>
-
-
-
-		<!-- ボタン -->
-		<div class="inq_input_bt_01 clearfix s_bt_350">
-<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
-        
-		</div>
-		<!--/ ボタン -->
-<script type="text/javascript">
+      </span>
+    <!-- DM認証入力 -->
+    
+    
+  <h4 class="temp_tit_06 clear"><div>非会員でお手もとにダイレクトメールがある方はこちらから</div></h4>
+    
+  <div class="hotSellerBox_img center mb20">
+  <img src="../../../contents/shop/00000003/shop/image/label2.jpg" style="max-width:100%"  />
+    
+    <!--<img m:id="h_img_dm_message" src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" width="128" border="0" alt="DM案内" />-->
+    </div>
+    
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+  <tr><th>お客様番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_customer_no" type="text" name="dmLoginForm" property="customer_no"  class="in_w_02"/>
+  <span m:id="l_msgPre_customer_no">
+    <div><span class="error"><span m:id="h_err_customer_no">お客様番号入力エラーメッセージ</span></span></div>
+    </span>
+  </td></tr>
+  <tr><th>お電話番号<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_txt_tel_no1" type="text" name="dmLoginForm" property="tel_no1" class="in_w_04" maxlength="5" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no2" type="text" name="dmLoginForm" property="tel_no2" class="in_w_04" maxlength="4" />&nbsp;-&nbsp;<input m:id="h_txt_tel_no3" type="text" name="dmLoginForm" property="tel_no3" class="in_w_04" maxlength="4" /><span class="exp">例：<span m:id="sample_tel_1" >045-332-6655 (半角数字)</span></span><br />
+  <span m:id="l_msgPre_tel_no">
+    <span class="error">
+      <span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span>
+      <span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span>
+      <span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span>
+      <span m:id="h_err_tel_no">電話番号エラーメッセージ</span>
+      </span>
+  </span>                                
+  </td></tr>
+    
+  </table>
+  <p class="mb20">お電話番号をご登録でないお客様、<br/>またはご登録電話番号をお忘れの方は、<br/>お手数ですがお届けしておりますダイレクトメールの購入申込書でご注文ください。</p>
+    
+    
+    
+    <!-- ボタン -->
+    <div class="inq_input_bt_01 clearfix s_bt_350">
+  <input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png"  alt="ログイン" />        
+      
+      </div>
+    <!--/ ボタン -->
+  <script type="text/javascript">
 						<!--
 							document.dmLoginForm.customer_no.focus();
 						//-->
 						</script> 
-</form>                                
-        
-        
-        
-</div>
-</div>
-
-
-
-
-
-
-
-
-
+  </form>                                
+    
+    
+    
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </div><!--r_con_box_03-->
-
-
-
-<!-- InstanceEndEditable -->
-</div><!--contents_r_02--><!-- InstanceBeginEditable name="footer_01" -->
+</div><!--contents_r_02-->
 
 <div id="footer01" class=" pc_only">
   <div id="footer_wrap01">
@@ -313,19 +338,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
       <div class="box_03 clearfix">
         <p><a href="/shop/c/static/fax/">FAX注文について</a></p>
         <div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_footer_bt_003.jpg" alt="FAX申込書ページ" /></a></div>
+        </div>
       </div>
     </div>
-  </div>
   <!--footer_wrap01-->
 </div>
 <!--footer-->
-
-
-
-<!-- InstanceEndEditable -->
-
-
-
 
 
 
@@ -478,8 +496,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
-
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -519,8 +535,6 @@ var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-
-<!-- InstanceEndEditable -->
 
 <script type="text/javascript" language="javascript">
 var yahoo_retargeting_id = 'JAG00YJOZ2';
@@ -566,5 +580,5 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </body>
-<!-- InstanceEnd --></html>
+</html>
 

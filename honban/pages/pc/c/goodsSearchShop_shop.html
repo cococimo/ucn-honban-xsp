@@ -53,8 +53,55 @@
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 
 
 <script type="text/javascript">
@@ -189,7 +236,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">

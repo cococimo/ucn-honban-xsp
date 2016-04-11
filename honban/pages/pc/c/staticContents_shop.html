@@ -55,9 +55,55 @@
 <script m:id="common_js_ext" type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script>window.jQuery || document.write('<script src="contents/js/jquery/jquery-1.7.2.min.js"><\/script><script src="contents/js/jquery/jquery-ui-1.8.18.min.js"><\/script><script src="contents/js/jquery/jquery.easing-1.3.min.js"><\/script>')</script>
 <link m:id="canonical" rel="canonical" href="/shop/c/static/features/"/>
-
-<!-- InstanceEndEditable -->
-
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
  
 <body id="top">
@@ -142,7 +188,7 @@
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">

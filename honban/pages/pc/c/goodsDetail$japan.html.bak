@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja">
+<html xmlns:m="http://mayaa.seasar.org" lang="ja"><!-- InstanceBegin template="/Templates/PC_tmp_shop_2.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- head -->
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
@@ -25,6 +25,7 @@
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="head" -->
 <meta m:id="e_var_member_goodsDetail">
 <meta m:id="e_var_goods">
 <meta m:id="e_var_goodsUrlPrefix">
@@ -106,60 +107,14 @@ function siteCatalistAddCart1(s_products){
     </span>
 </span>
 <meta m:id="e_var_cart">
-<style>
-#header_search {
-    left: 262px !important;
-}
-.header_list_01 {
-	width:216px;
-	float:right;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 40px !important;
-    width: 440px !important;
-}
-#header_search .box_02 input {
-    height: 42px !important;
-	font-size:12px;	
-}
-@media (max-width: 640px) {
-#header_wrap {
-    overflow: visible !important;
-}	
-#header_search {
-    left: 0 !important;
-}
-.header_list_01 {
-	width:100%;
-	float: none;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 30px !important;
-    width: 100% !important;
-}
-#header_search .box_02 input {
-    height: 32px !important;
-}
-#header_search .box_01 {
-    width: 85% !important;
-}
-#header_search .box_02 {
-    width: 15% !important;
-}
-}
-</style>
+<!-- InstanceEndEditable -->
+
+
 </head>
 <body id="top">
+<!-- InstanceBeginEditable name="body" -->
+<!-- InstanceEndEditable -->
+
 <div id="container">
 
 <div id="header">
@@ -167,10 +122,13 @@ function siteCatalistAddCart1(s_products){
 <span m:id="l_equ_hierarchy_3_shop">
 <a m:id="e_link_logo_shop_shop" href="/">
 
+
+<!-- InstanceBeginEditable name="header_logo" -->
 <h1 id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-  <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="【今よりもっと“心地いい”をお届けするココチモ（cococimo）】" />
-  </span>
+<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="【今よりもっと“心地いい”をお届けするココチモ（cococimo）】" />
+</span>
 </h1>
+<!-- InstanceEndEditable -->
 </a>
 
 <div id="header_r" class="clearfix">
@@ -239,7 +197,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input placeholder="商品名、商品番号を入力してください" m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -266,7 +224,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </form>
 <div id="content">
   <!-- メインコンテンツ -->
-  <div id="content_wrap"> <!-- PAGE:商品詳細 -->
+  <div id="content_wrap">
+  <!-- InstanceBeginEditable name="contents" -->
+
+
+	  	<!-- PAGE:商品詳細 -->
 		<span m:id="l_notPre_goods">
 		<div class="error">
 			<p>
@@ -392,13 +354,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</div><!-- /#japanWrap -->
 
 <br clear="all">
+
 <!-- 商品レビュー start-->
 <object class="xsp_obj" m:id="e_var_goodsReview"></object>
 <object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
 <object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
 <object class="xsp_obj" m:id="e_var_review_evaluation"></object>
 <span m:id="l_equ_show_status_public">
-<div class="r_con_box_03" style="margin-bottom:20px">
+<div class="r_con_box_03">
 <h2 class="temp_tit_n02 temp_tit_n02_cor">この商品をご購入のお客様から寄せられたお声</h2>
 <div class="sec_01 clearfix">
 
@@ -461,6 +424,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--r_con_box_03-->
 
 <!-- /商品レビュー end-->
+
 <!-- あなたの閲覧履歴からのおススメ -->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
 <span m:id="l_notEmp_autoRecommendGoodsList">
@@ -540,16 +504,16 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			</script></span>
 <!--/ include:00000003/goods/default.jsp -->
 		</span>
-	<div class="shopping_guide">
-  <h3>ショッピングガイド</h3>
+		<!-- InstanceEndEditable -->
+
+
+    <div class="shopping_guide">
+<h3>ショッピングガイド</h3>
   <div class="guidebox">
     <div class="guidebox_left">
     <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
-    <div style="text-align:center">
     <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-    </div>
-	<div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（産地直送品、メーカー直送家具を除く）</div>                        
-
+      <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（産地直送品を除く）</div>
       <div class="box_souryou">
       <p>お買い物総額5,000円（税込）未満の場合<br>
       <span class="souryoutxt">＝送料500円</span><br>
@@ -572,8 +536,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
 			されます。<br /><br />        
             </p>
-			</div>
-			      
+			</div>        
     <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl03.gif" alt="配送について" class="sgttl">
     <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic06.gif" class="yamato sgttl" alt="ヤマト運輸が代行配送します。">
     <p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br>
@@ -776,7 +739,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <div id="footer04" class="sp_only">
 <h2><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_tit.png" alt="お電話でもご購入いただけます" /></h2>
-<div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.png" alt="お電話でのご注文　0120-552-476 7時から22時（年中無休）" /></div>
+<div class="box_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_01.png" alt="お電話でのご注文　0120-552-186 7時から22時（年中無休）" /></div>
 <div class="box_02"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_footer_01_img_02.png" alt="FAXでのご注文　0120-552-607"  /><p><a href="/shop/c/static/fax/">FAXでのご注文方法について</a></div>
 </div><!--footer04-->
 
@@ -799,6 +762,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--/ ********** include:shop/footer.jsp ********** -->
 
 <!--/ コンテナ -->
+<!-- InstanceBeginEditable name="sitecatalyst" -->
+
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -840,9 +805,9 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
+<!-- InstanceEndEditable -->
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
-<!--
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -855,7 +820,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_member" content=""></meta>
 <meta m:id="criteo_common_site_type" content=""></meta>
 <meta m:id="criteo_view_item" content=""></meta>
--->
+<meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 </body>
-</html>
+<!-- InstanceEnd --></html>

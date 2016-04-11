@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja"><!-- InstanceBegin template="/Templates/PC_tmp_shop_2.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns:m="http://mayaa.seasar.org" lang="ja">
 <head>
 
 <script src="/contents/js/adlpo.js" type="text/javascript"></script>
@@ -33,7 +33,6 @@
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
 <meta m:id="e_var_member_goodsDetail">
 <script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
 <meta m:id="site_products">
@@ -112,10 +111,63 @@ function siteCatalistAddCart1(s_products){
     </span>
 </span>
 <meta m:id="e_var_cart">
-<!-- InstanceEndEditable -->
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header {
+    margin-bottom: 20% !important;
+}
+#header_wrap {
+    overflow: visible !important;
+}		
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
 <body>
-<!-- InstanceBeginEditable name="body" --><!-- InstanceEndEditable -->
 <!-- コンテナ -->
 
 <!-- ********** include:shop/header.jsp ********** -->
@@ -129,12 +181,10 @@ function siteCatalistAddCart1(s_products){
 <span m:id="l_equ_hierarchy_3_shop">
 <a m:id="e_link_logo_shop_shop" href="http://www.cococimo.jp/">
 
-<!-- InstanceBeginEditable name="header_logo" -->
 <div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-	<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
-</span>
+  <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
+  </span>
 </div>
-<!-- InstanceEndEditable -->
 </a>
 
 <div id="header_r" class="clearfix">
@@ -203,7 +253,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input placeholder="商品名、商品番号を入力してください" m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -227,12 +277,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </form>
 <div id="content">
   <!-- メインコンテンツ -->
-  <div id="content_wrap">
-  <!-- InstanceBeginEditable name="contents" -->
-
-		
-		
-	  	<!-- PAGE:商品詳細 -->
+  <div id="content_wrap"> <!-- PAGE:商品詳細 -->
 		<span m:id="l_notPre_goods">
 		<div class="error">
 			<p>
@@ -577,10 +622,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			</script></span>
 <!--/ include:00000003/goods/default.jsp -->
 		</span>
-		<!-- InstanceEndEditable -->
-  
-        <!-- ページトップ -->
-        <p id="page_top"><a href="#header">このページの先頭へ</a></p>
+		<!-- ページトップ -->
+    <p id="page_top"><a href="#header">このページの先頭へ</a></p>
         <!--/ ページトップ -->
         </div>
   </div><!-- content -->
@@ -645,8 +688,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--/ ********** include:shop/footer.jsp ********** -->
 
 <!--/ コンテナ -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
-
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -689,8 +730,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 <script language="javascript">  (function () {    var _lgy     = document.createElement("script");    var _lgy_adv = 882;    window._lgy_advs = window._lgy_advs || {};    window._lgy_advs[_lgy_adv] = false;    window._lgy_options = window._lgy_options || {};    window._lgy_options[_lgy_adv] = {};    _lgy.async = true;    _lgy.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'dsp.logly.co.jp/seg.js';    var _lgy0 = document.getElementsByTagName('script')[0];    _lgy0.parentNode.insertBefore(_lgy, _lgy0);  })();</script><!--Start of DoubleClick Floodlight Tag: Please do not removeActivity name of this tag: 商品詳細URL of the webpage where the tag is expected to be placed: http://www.cococimo.jpThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.Creation Date: 09/07/2015--><script type="text/javascript">var axel = Math.random() + "";var a = axel * 10000000000000;document.write('<iframe src="https://5090105.fls.doubleclick.net/activityi;src=5090105;type=invmedia;cat=ibzmeo0y;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');</script><noscript><iframe src="https://5090105.fls.doubleclick.net/activityi;src=5090105;type=invmedia;cat=ibzmeo0y;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe></noscript><!-- End of DoubleClick Floodlight Tag: Please do not remove -->
-
-<!-- InstanceEndEditable -->
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
 
@@ -708,4 +747,4 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_view_item" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 </body>
-<!-- InstanceEnd --></html>
+</html>

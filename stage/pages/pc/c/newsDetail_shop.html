@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_3.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
@@ -109,15 +109,58 @@ nextText: "",
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-
-<!-- InstanceEndEditable -->
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
  
 <body id="top">
-<!-- InstanceBeginEditable name="body" -->
-<!-- InstanceEndEditable -->
-
 <div id="container">
 <!-- ********** include:mall/header.jsp ********** -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
@@ -195,7 +238,7 @@ nextText: "",
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input placeholder="商品名、商品番号を入力してください" m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -220,55 +263,43 @@ nextText: "",
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
 </div>-->
-<div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
-
-
-
-
-
-<!--　ここから　-->
+<div id="contents_r"> <!--　ここから　-->
 
 <object class="xsp_obj" m:id="e_var_news"></object>
 <object class="xsp_obj" m:id="b_param_classify"></object>
 
 <div class="r_con_box_04">
-	<div class="r_con_box_04_in">
-	<h3 class="temp_tit_n02 temp_tit_n02_cor">ニュース詳細</h3>
-		<div class="sec_02 clearfix">
-	<object class="xsp_obj" m:id="b_var_isExistNews_zero"></object>
-	
-		
-		<span m:id="l_notEmp_news">
-		<!-- ニュース表示ブロック -->
-			<span m:id="l_ite_news">
-				<span m:id="l_equ_seqno">
-					<div class="newsBox">
-						<span m:id="b_wr_display_period_from">2009/11/20</span><br />
-						<div class="newsTitle"><span m:id="disp_news_title">ニュースタイトル</span></div>
-						<div class="newsText"><span m:id="disp_news_content">ニュースお知らせ内容</div>
-					</div>
-					
-					<object class="xsp_obj" m:id="b_var_isExistNews_one"></object>
-				</span>
-			</span>
-		</span>
-		
-		
-
-		</div><!--sec_02-->
-	</div><!--r_con_box_04_in-->
-
+  <div class="r_con_box_04_in">
+    <h3 class="temp_tit_n02 temp_tit_n02_cor">ニュース詳細</h3>
+    <div class="sec_02 clearfix">
+      <object class="xsp_obj" m:id="b_var_isExistNews_zero"></object>
+      
+      
+      <span m:id="l_notEmp_news">
+        <!-- ニュース表示ブロック -->
+        <span m:id="l_ite_news">
+          <span m:id="l_equ_seqno">
+            <div class="newsBox">
+              <span m:id="b_wr_display_period_from">2009/11/20</span><br />
+              <div class="newsTitle"><span m:id="disp_news_title">ニュースタイトル</span></div>
+              <div class="newsText"><span m:id="disp_news_content">ニュースお知らせ内容</div>
+              </div>
+            
+            <object class="xsp_obj" m:id="b_var_isExistNews_one"></object>
+          </span>
+          </span>
+        </span>
+      
+      
+      
+      </div><!--sec_02-->
+    </div><!--r_con_box_04_in-->
+  
 </div><!--r_con_box_04-->
 
 
 
-<!--　ここまで　-->
-
-
-
-
-
-<!-- InstanceEndEditable --></div>
+<!--　ここまで　--></div>
 <!--contents_r-->
 <div id="contents_l">
   <object class="xsp_obj" m:id="e_var_standardCategory">
@@ -643,7 +674,6 @@ nextText: "",
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
 <span m:id="site_prop13"></span>
 <span m:id="site_pagename"></span>
 <!-- SiteCatalyst code version: H.26.1.
@@ -687,8 +717,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 
-<!-- InstanceEndEditable -->
-
 <script type="text/javascript">
   (function () {
     var tagjs = document.createElement("script");
@@ -711,4 +739,4 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 
 
 </body>
-<!-- InstanceEnd --></html>
+</html>

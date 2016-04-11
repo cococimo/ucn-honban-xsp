@@ -1,6 +1,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_3.dwt" codeOutsideHTMLIsLocked="false" -->
+<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
 <meta http-equiv="content-language" content="ja">
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
@@ -50,14 +50,58 @@
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
  
 <body id="top">
-<!-- InstanceBeginEditable name="body" -->
-<!-- InstanceEndEditable -->
-
 <div id="container">
 <!-- ********** include:mall/header.jsp ********** -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
@@ -141,7 +185,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -167,7 +211,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
 </div>-->
-<div id="contents_r"><!-- InstanceBeginEditable name="contents" -->
+<div id="contents_r">
 <style>
 .sp_on{ display:none}
 .memadd_table_01 tr:nth-child(1){ display:none;}
@@ -252,76 +296,75 @@ border-radius:5px;
 		
 		<object class="xsp_obj" m:id="e_var_inqClassMap"></object>
 <div class="r_con_box_04">
-<div class="r_con_box_04_in">
-<h1 class="temp_tit_n02 temp_tit_n02_cor">ログイン</h1>
-<div class="sec_02 clearfix">
-<h5 class="add_h5">●ココチモ会員の方</h5>
-<p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
-</p>
-<span m:id="l_msgPre_errors_member_login">
-		<div class="error">
-			ログインに失敗しました。
-		</div>
-		</span>
-
-
-
-<form m:id="h_form_loginAuth" method="POST" action="shop.html">
-			<span m:id="l_pre__S">
-				<input m:id="h_hid__S" type="hidden" name="_S" value="00000002" />
-			</span>
-<h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
-
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
-<tr><th>ログインID<span class="imp">必須</span></th>
-<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
-<span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
-<span m:id="l_msgPre_login_id">
-<div>							<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
-</span>
-</div>						</span>
-
-
-</td>
-</tr>
-<tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
-<tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
-
-<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
-<div><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
-<span m:id="l_msgPre_password">
-<div>							<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
-</div>						</span>
-
-</td></tr>
-
-</table>
-
-		<!-- ボタン -->
-		<div class="inq_input_bt_01 s_bt_350">
-		<input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /> 
-        <a m:id="e_link_memberAdd_shop" href="memberAddInput.html" style="display:block; font-size:12px; margin:5% 0 0 3%; text-align:left !important">会員登録はコチラ</a>
-		</div>
-		<!--/ ボタン -->
-		<script type="text/javascript">
+  <div class="r_con_box_04_in">
+  <h1 class="temp_tit_n02 temp_tit_n02_cor">ログイン</h1>
+  <div class="sec_02 clearfix">
+  <h5 class="add_h5">●ココチモ会員の方</h5>
+  <p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
+  </p>
+  <span m:id="l_msgPre_errors_member_login">
+    <div class="error">
+      ログインに失敗しました。
+      </div>
+    </span>
+    
+    
+    
+  <form m:id="h_form_loginAuth" method="POST" action="shop.html">
+    <span m:id="l_pre__S">
+      <input m:id="h_hid__S" type="hidden" name="_S" value="00000002" />
+      </span>
+  <h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
+    
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+  <tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
+  <tr><th>ログインID<span class="imp">必須</span></th>
+  <td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
+  <span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
+  <span m:id="l_msgPre_login_id">
+  <div>							<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
+  </span>
+  </div>						</span>
+    
+    
+  </td>
+  </tr>
+  <tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
+  <tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
+    
+  <span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
+  <div><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
+  <span m:id="l_msgPre_password">
+  <div>							<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
+  </div>						</span>
+    
+  </td></tr>
+    
+  </table>
+    
+    <!-- ボタン -->
+    <div class="inq_input_bt_01 s_bt_350">
+      <input type="image" m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /> 
+      <a m:id="e_link_memberAdd_shop" href="memberAddInput.html" style="display:block; font-size:12px; margin:5% 0 0 3%; text-align:left !important">会員登録はコチラ</a>
+      </div>
+    <!--/ ボタン -->
+    <script type="text/javascript">
 		<!--
 			document.loginForm.login_id.focus();
 		//-->
 		</script> 
-		</form>
-		
-		<!-- インクルード領域 -->
-		<span m:id="timed_include" filename="memberLogin_head"></span>
-		<!--/ インクルード領域  -->
-
-
-</div></div>
-
-
+    </form>
+    
+    <!-- インクルード領域 -->
+    <span m:id="timed_include" filename="memberLogin_head"></span>
+    <!--/ インクルード領域  -->
+    
+    
+  </div></div>
+  
+  
 </div>
-
-<!-- InstanceEndEditable --></div>
+</div>
 <!--contents_r-->
 <div id="contents_l">
   <object class="xsp_obj" m:id="e_var_standardCategory">
@@ -707,8 +750,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
-
 <span m:id="site_prop13"></span>
 <!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
@@ -748,9 +789,6 @@ var s_code=s.t();if(s_code)document.write(s_code)//--></script>
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
 //--></script><noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-
-
-<!-- InstanceEndEditable -->
 
 <script type="text/javascript" language="javascript">
 var yahoo_retargeting_id = 'JAG00YJOZ2';
@@ -796,5 +834,5 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </body>
-<!-- InstanceEnd --></html>
+</html>
 
