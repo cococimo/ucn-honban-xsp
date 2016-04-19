@@ -1951,14 +1951,23 @@ p.link {
     text-indent: -9999px;
 }
 .r_con_list_01cat li:first-child .rank_01 {
-    background: url("../shop/image/pc_sec2_img_02.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../shop/image/pc_sec2_img_02.jpg") no-repeat scroll left top;
 }
 .r_con_list_01cat li:nth-child(2) .rank_01 {
-    background: url("../shop/image/pc_sec2_img_03.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../shop/image/pc_sec2_img_03.jpg") no-repeat scroll left top;
 }
 .r_con_list_01cat li:nth-child(3) .rank_01 {
-    background: url("../shop/image/pc_sec2_img_04.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../shop/image/pc_sec2_img_04.jpg") no-repeat scroll left top;
 }
+
+/*IE8*/
+ul.r_con_list_01cat > *:first-child + * .rank_01 {
+    background: url("../shop/image/pc_sec2_img_03.jpg") no-repeat scroll left top;
+}
+ul.r_con_list_01cat > *:first-child + * + *  .rank_01 {
+    background: url("../shop/image/pc_sec2_img_04.jpg") no-repeat scroll left top;
+}
+
 .r_con_list_01 li h3 {
     font-size: 16px;
     line-height: 22px;

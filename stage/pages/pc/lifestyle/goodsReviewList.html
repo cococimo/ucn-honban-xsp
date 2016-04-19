@@ -158,6 +158,11 @@ select.goods_sku_code {
     	 <span m:id="redirect_err" />
     </span>
 </span>
+
+<meta m:id="parentShop">
+<meta m:id="ancestralCategory">
+<meta m:id="breadcrumbCategory">
+
 <object class="xsp_obj" m:id="e_var_shop_goodsDetail"></object>
 <object class="xsp_obj" m:id="e_var_concernedGoods"></object>
 </span>
@@ -487,7 +492,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div id="pan-navi" style=" margin-bottom:20px">
   <ul class="clearfix">
     <li><a m:id="pankuzu_top_link" href="shop.html"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li m:id="if_exists_parent_shop">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+    <li><span m:id="loop_exists_breadcrumb_category"><span m:id="if_disp_pCategory">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></span></span></li>
     <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
@@ -717,6 +722,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!-- レビュー -->
 
    <!--▼▼▼おすすめの商品▼▼▼-->
+<!--
 <span m:id="l_notEmp_recommendGoodsList">
 <div class="con_box clearfix">
     <h2>おすすめの商品</h2>   
@@ -787,7 +793,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
     
     
 </div>   
-</span>   
+</span>
+-->   
    <!--▲▲▲おすすめの商品▲▲▲--> 
 
 
@@ -1303,6 +1310,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
+<meta m:id="site_products">
 <!--/ tracking ga -->
 <!-- name="sitecatalyst" -->
 

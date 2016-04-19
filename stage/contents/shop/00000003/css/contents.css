@@ -1464,6 +1464,24 @@ p.link {
 	padding-right:17px;
 }
 
+.r_con_list_05 > *:first-child + * + *, .r_con_list_05 > *:first-child + * + * + *, .r_con_list_05 > *:first-child + * + * + * + *, .r_con_list_05 > *:first-child + * + * + * + * + * {
+	width:144px;
+	display:inline;
+	float:left;
+	border-left:none;
+	border-right:#9f9590 1px dotted;
+	border-top:#9f9590 1px dotted;
+	padding:15px 19px;
+	text-align:left;
+	margin-left:0px;
+}
+.r_con_list_05 > * :first-child + * + * {
+	padding-left:17px;
+}
+.r_con_list_05 > * :first-child + * + * + * + * + * {
+	border-right:none;
+	padding-right:17px;
+}
 
 
 
@@ -1638,6 +1656,24 @@ background:#fab3bf;
 	padding-right:17px;
 }
 
+.r_con_list_09 > *:first-child + * + *, .r_con_list_09 > *:first-child + * + * + *, .r_con_list_09 > *:first-child + * + * + * + *, .r_con_list_09 > *:first-child + * + * + * + * + * {
+	width:144px;
+	display:inline;
+	float:left;
+	border-left:none;
+	border-right:#9f9590 1px dotted;
+	border-top:#9f9590 1px dotted;
+	padding:15px 19px;
+	text-align:left;
+	margin-left:0px;
+}
+.r_con_list_09 > *:first-child + * + * {
+	padding-left:17px;
+}
+.r_con_list_09 > *:first-child + * + * + * + * + * {
+	border-right:none;
+	padding-right:17px;
+}
 
 
 
@@ -7649,7 +7685,7 @@ div.child{
 	text-align:centet;
 	border: solid;
 }
-#contents_r li div .productDetail_cart_bt_normal img,#contents_l li div img,
+#contents_r li div .productDetail_cart_bt_normal img,
 img[id*="not_priceGoodsBtnID_"],img[id*="not_recentBtnID_"],img[id*="not_newGoodsBtnID_"],img[id*="not_goodsListBtnID_"],img[id*="not_autoRecoBtnID_"],select.goods_sku_code,img[id*="not_autoRankBtnID_"]{
 	margin-left:auto;
 	margin-right:auto;
@@ -7657,6 +7693,14 @@ img[id*="not_priceGoodsBtnID_"],img[id*="not_recentBtnID_"],img[id*="not_newGood
 	margin-bottom: 5px;
 	margin-top: 10px;
 }
+#contents_l li div img{
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 100%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 div[id*="not_priceGoodsBtnID_"],div[id*="not_recentBtnID_"],div[id*="not_newGoodsBtnID_"],div[id*="not_goodsListBtnID_"],div[id*="not_autoRecoBtnID_"],div[id*="not_autoRankBtnID_"]{
 	height:1.5em;
 }

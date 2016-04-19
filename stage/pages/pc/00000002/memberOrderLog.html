@@ -34,6 +34,14 @@
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 
+<!--[if lt IE 9]>
+<script src="contents/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+    $(".l_con_list_01 li #p_0 a ").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
 
 
 
@@ -167,71 +175,72 @@
 </span>
 
 
-
+<form m:id="e_form_goodsReviewInput" name="goodsReviewForm" method="POST" action="goodsReviewInput.html">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th>商品名</th>
-<th class="memadd_table_02_w_03">商品単価</th>
-<th class="memadd_table_02_w_05">数量</th>
-<th class="memadd_table_02_w_06">ご注文金額</th>
+<tr>
+<th width="25%;">商品名</th>
+<th class="memadd_table_02_w_03" width="15%;">商品単価</th>
+<th class="memadd_table_02_w_05" width="10%;">数量</th>
+<th class="memadd_table_02_w_06" width="15%;">ご注文金額</th>
 <span m:id="l_match_speecsEnable_true">
 <!-- <th class="memadd_table_02_w_03">配送状況</th> -->
-<th class="memadd_table_02_w_03">配送状況／<br/>ヤマトお問い合わせ番号</th>
-<th class="memadd_table_02_w_03">配送先番号</th>
+<th class="memadd_table_02_w_03" width="15%;">配送状況／<br/>ヤマトお問い合わせ番号</th>
+<th class="memadd_table_02_w_03" width"="10%;">配送先番号</th>
 </span>
-<th class="memadd_table_02_w_03">レビュー投稿</th>
+<th class="memadd_table_02_w_03" width="10%;">レビュー投稿</th>
 </tr>
 
 <object class="xsp_obj" m:id="b_var_orderDetails"></object>
-<form m:id="e_form_goodsReviewInput" name="goodsReviewForm" method="POST" action="goodsReviewInput.html">
+
 			
 			<span m:id="l_ite_detail">
 				<span m:id="l_pre_disp_detail">
 <tr>
 <!-- <td class="center color_w_b"><span m:id="disp_detail_goods_sku_name">ビール</span></td> -->
-<td class="color_w_b">
+<td class="color_w_b" width="25%;" align="center;">
 	<div class="center"><span m:id="disp_detail_goods_sku_name">ビール</span></div>
 	<!--  ECキャンセル、返品、交換 -->
 	<!-- <div style="text-align:right;"><a m:id="e_link_cancelInputCheck" href="cancelInput.html">注文キャンセル／返品／交換</a></div> -->
 	<div class="right"><a m:id="e_link_cancelInputCheck" href="cancelInput.html">注文キャンセル／返品／交換</a></div>
 	<!--  /ECキャンセル、返品、交換 -->
 </td>
-<td class="right color_w_b"><span m:id="b_wr_goods_price">5,000</span> 円</td>
-<td class="right color_w_b"><span m:id="disp_detail_goods_num">3</span></td>
-<td class="right color_w_b"><span m:id="b_wr_total_goods_price">10,000</span> 円</td>
+<td class="right color_w_b" width="15%;" align="center;"><span m:id="b_wr_goods_price">5,000</span> 円</td>
+<td class="right color_w_b" width="10%;" align="center;"><span m:id="disp_detail_goods_num">3</span></td>
+<td class="right color_w_b" width="15%;" align="center;"><span m:id="b_wr_total_goods_price">10,000</span> 円</td>
 
 <span m:id="l_match_speecsEnable_true">
-<td class="color_w_b yamatoGrouping">
+<td class="color_w_b yamatoGrouping" width="15%;" align="center;">
 <span m:id="disp_detail_order_detail_status">出荷前／999999999999</span>
 </td>
-<td class="color_w_b">
+<td class="color_w_b" width="10%;" align="center;">
 <a m:id="a_detail_est_no" href="#1"><span m:id="disp_detail_destination_no">155</span></a>
 </td>
 </span>
-<td class="color_w_b">
+<td class="color_w_b" width="10%;" align="center;">
 <span m:id="propriety_status_0">
-						<SCRIPT LANGUAGE="JavaScript"> 
-							<!-- 
-							function SetFormValue(idx){ 
-							document.forms["goodsReviewForm"]._S.value = document.getElementById("_S_"+idx).value;
-							document.forms["goodsReviewForm"].goods_code.value = document.getElementById("goods_code_"+idx).value;
-							document.forms["goodsReviewForm"].order_no.value = document.getElementById("order_no_"+idx).value;
-							document.forms["goodsReviewForm"].display_code.value = document.getElementById("display_code_"+idx).value;
-							} 
-							//-- > 
-						</SCRIPT>
-							<input m:id="tmp_shop_no" type="hidden" name="shop_no" value="00000002">
-							<input m:id="tmp_goods_code" type="hidden" name="goods_code" value="">
-							<input m:id="tmp_order_no" type="hidden" name="order_no" value="">
-							<input m:id="tmp_display_code" type="hidden" name="display_code" value="">
-						  <a m:id="a_link_goodsReviewInput" href="goodsReviewInput.html" onclick="return anchorButtonClick( document.goodsReviewForm );"><font color="#5ae">投稿</font></a>
-						</span>
-						<span m:id="propriety_status_1">
-							受付対象外
-						</span>
-						<span m:id="propriety_status_2">
-							投稿済
-						</span> 
-                        
+<SCRIPT LANGUAGE="JavaScript">
+	<!--
+	function SetFormValue(idx){ 
+	document.forms["goodsReviewForm"]._S.value = document.getElementById("_S_"+idx).value;
+	document.forms["goodsReviewForm"].goods_code.value = document.getElementById("goods_code_"+idx).value;
+	document.forms["goodsReviewForm"].order_no.value = document.getElementById("order_no_"+idx).value;
+	document.forms["goodsReviewForm"].display_code.value = document.getElementById("display_code_"+idx).value;
+	} 
+	// -->
+</SCRIPT>
+	<input m:id="tmp_shop_no" type="hidden" name="shop_no" value="00000002">
+	<input m:id="tmp_goods_code" type="hidden" name="goods_code" value="">
+	<input m:id="tmp_order_no" type="hidden" name="order_no" value="">
+	<input m:id="tmp_display_code" type="hidden" name="display_code" value="">
+  <a m:id="a_link_goodsReviewInput" href="goodsReviewInput.html" onclick="return anchorButtonClick( document.goodsReviewForm );"><font color="#5ae">投稿</font></a>
+</span>
+<span m:id="propriety_status_1">
+	受付対象外
+</span>
+<span m:id="propriety_status_2">
+	投稿済
+</span> 
+
 </td>
 </tr>
 </span></span>
@@ -239,7 +248,10 @@
 			<input m:id="goodsReviewForm_goods_code" type="hidden" name="goods_code" value="">
 			<input m:id="goodsReviewForm_order_no" type="hidden" name="order_no" value="">
 			<input m:id="goodsReviewForm_display_code" type="hidden" name="display_code" value="">
-<!-- </span></span> -->			</form>
+<!-- </span>
+</span>
+</td></tr> -->
+
 
 
 
@@ -347,6 +359,7 @@
 	</td>
 </tr>
 </table>
+</form>
 
 <span m:id="l_pre_disp_promotion_name">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
