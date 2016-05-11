@@ -73,6 +73,9 @@ $(function() {
 .ad_navi .ad_navi_t {
     background: #b22222 !important;
 }
+.memadd_table_02{
+	border-right:1px solid #ececec;
+}
 .memadd_table_02 th {
     background: #464646;
 }
@@ -88,6 +91,9 @@ $(function() {
 }
 .memadd_table_02 td.last_02 {
     border-right: none !important;
+}
+.memadd_table_02 td {
+    border-left: none;
 }
 </style>
 		<!-- tracking urchin -->
@@ -528,7 +534,7 @@ $(window).on('load resize', function(){
   <tr><th><span m:id="l_notPre_free_guide">ご注文番号</span></th>
   </tr>
   <tr>
-  <td><span m:id="disp_order_no">201306110001</span>
+  <td style="border-left: 1px solid #ececec;"><span m:id="disp_order_no">201306110001</span>
   </td>
   </tr>
   </table>
@@ -538,7 +544,7 @@ $(window).on('load resize', function(){
   <object class="xsp_obj" m:id="e_var_wrapping"></object>
   <span m:id="l_notPre_free_guide">
   <!-- ********** include:orderDetail.jsp ********** -->
-  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02" style="border-right:none">
   <tr><th>商品名</th>
   <th class="memadd_table_02_w_02">商品単価</th>
   <th class="memadd_table_02_w_03">数量</th>
@@ -674,7 +680,7 @@ $(window).on('load resize', function(){
   <tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
   </tr>
   <tr m:id="l_ite_goodsPremium">
-  <td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
+  <td style="border-left: 1px solid #ececec;"><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
   <td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
   </tr>
   </table>

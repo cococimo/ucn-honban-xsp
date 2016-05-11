@@ -235,6 +235,10 @@ input[type="radio"]:checked:after {
     -webkit-border-radius: 12px;
     border-radius: 12px;
 }
+input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
+    padding: 1.2% 0 !important;
+}
 .wrap_form_table input[type="radio"]{margin:0 3% 0 0 !important;}
 .memadd_t_box_01 .box_01, .memadd_t_box_02 .box_01 {
     display: block !important;
@@ -251,7 +255,51 @@ input[type="radio"]:checked:after {
 .wrap_cart04 .memadd_table_02 {
     border-right: none;
 }
-
+.add_radz {
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+.inp_bs {
+    display: block;
+    width: 20%;
+    padding: 3% 0;
+    margin-right: 0.5%;
+    float: left;
+    margin-left: 0;
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(150,150,150,1.00);
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+}
+.box_form_td li {
+    width: 99% !important;
+    margin-left: -1% !important;
+}
+.wrap_form_table .in_w_06, .wrap_form_table .in_w_06b {
+    width: 75% !important;
+    border-radius: 0px 5px 5px 0px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+}
+.wrap_form_table .in_w_02, .wrap_form_table .in_w_08, .wrap_form_table .in_w_09, .wrap_form_table .in_w_10 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 88% !important;
+}
+.wrap_form_table .in_w_04, .wrap_form_table .in_w_07, .memadd_input_04, .memadd_input_01{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 2% !important;
+    float: none !important;
+}
+.wrap_form_table .in_w_04 {
+    width: 26% !important;
+}
 }
 </style>
 <!--[if (gte IE 6)&(lte IE 8)]>
@@ -1107,7 +1155,7 @@ $(window).on('load resize', function(){
 		<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
 			<tr>
 				<th>ログインID</th>
-				<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
+   				<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02 add_radz"/>
 					<span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
 					<span m:id="l_msgPre_login_id">
 						<div>
@@ -1118,7 +1166,7 @@ $(window).on('load resize', function(){
 			</tr>
 			<tr>
 				<th>パスワード</th>
-				<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
+				<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02 add_radz" />
 					<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
 					<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
 					<span m:id="l_msgPre_password">
@@ -1144,11 +1192,11 @@ $(window).on('load resize', function(){
 	<div class="box_form_th">お名前<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>姓&nbsp;<input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
-	<li>名&nbsp;<input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
+	<li><span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
+	<li><span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
 	</ul>
 	
-	<span class="exp"><span m:id="sample_name_1">例：着心地　太郎</span></span>
+	<span class="exp">例：着心地　太郎</span>
 	<div class="boxclear"></div>
 	
 	<span m:id="l_msgPre_name_sei">
@@ -1172,10 +1220,10 @@ $(window).on('load resize', function(){
 	<div class="box_form_th">フリガナ<span class="imp">必須</span></div>
 	<div class="box_form_td">
 	<ul>
-	<li>セイ&nbsp;<input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
-	<li>メイ&nbsp;<input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
+	<li><span class="inp_bs">セイ</span><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06b"/></li>
+	<li><span class="inp_bs">メイ</span><input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06b" /></li>
 	</ul>
-	<span class="exp"><span m:id="sample_kana_1">例：キゴコチ　タロウ</span></span>
+	<span class="exp">例：キゴコチ　タロウ</span>
 		<div class="boxclear"></div>
 		
 		<span m:id="l_msgPre_name_sei_kana">
@@ -1296,7 +1344,7 @@ $(window).on('load resize', function(){
 		</span>
 	</span>
 	<span class="exp">
-		<span m:id="sample_city">例：田代町字岩谷</span>
+	新宿区
 	</span></div>
 </div>
 
@@ -1316,7 +1364,7 @@ $(window).on('load resize', function(){
 		</span>
 	</span>
 	<span class="exp">
-		<span m:id="sample_town">例：田代町字岩谷</span>
+		高田馬場
 	</span></div>
 </div>
 
@@ -1354,7 +1402,7 @@ $(window).on('load resize', function(){
 		</span>
 	</span>
 	<span class="exp">
-		<span m:id="sample_bldg">例：ユーキャンビル １０３号室</span>
+		ユーキャンビル
 	</span></div>
 </div>
 
@@ -1368,8 +1416,8 @@ $(window).on('load resize', function(){
 	<div class="box_form_td">
 	
 	<ul>
-	<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
-	<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
+	<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_address_co_sei" name="address_co_sei"/></li>
+	<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" /></li>
 	</ul>
 	
 
@@ -1386,7 +1434,7 @@ $(window).on('load resize', function(){
 		</span>
 	</span>
 	<span class="exp">
-		<span m:id="sample_address_co_1">例：鈴木　一郎</span>
+		着心地　太郎
 	</span>
 	</div>
 </div>
@@ -2158,10 +2206,10 @@ TEL：090-1234-1234
 	<div class="box_form_th">お名前<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
-		<li>名&nbsp;<input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
+		<li><span class="inp_bs">姓</span><input type="text" name="dst_name_sei" class="in_w_06"  m:id="h_txt_dst_name_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" name="dst_name_mei" class="in_w_06" m:id="h_txt_dst_name_mei"/></li>
 		</ul>
-		<span class="exp"><span m:id="sample_name_2">例：着心地　太郎</span></span>
+		<span class="exp">着心地　太郎</span>
 		<div class="boxclear"></div>
 		<span m:id="l_msgPre_dst_name_sei">
 		<br />
@@ -2187,10 +2235,10 @@ TEL：090-1234-1234
 	<div class="box_form_th">フリガナ<span class="imp">必須</span></div>
 	<div class="box_form_td">
 		<ul>
-		<li>セイ&nbsp;<input type="text" name="dst_name_sei_kana" class="in_w_07"  m:id="h_txt_dst_name_sei_kana"/></li>
-		<li>メイ&nbsp;<input type="text" class="in_w_07" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
+		<li><span class="inp_bs">セイ</span><input type="text" name="dst_name_sei_kana" class="in_w_06"  m:id="h_txt_dst_name_sei_kana"/></li>
+		<li><span class="inp_bs">メイ</span><input type="text" class="in_w_06" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana"  /></li>
 		</ul>
-		<span class="exp"><span m:id="sample_kana_2">例：ヤマダ　タロウ</span></span>
+		<span class="exp">キゴコチ　タロウ</span>
 		<div class="boxclear"></div>
 		<span m:id="l_msgPre_dst_name_sei_kana"
 		<br />
@@ -2215,7 +2263,7 @@ TEL：090-1234-1234
 	<div class="box_form_td">
 		
 		<ul>
-		<li><input type="text" class="in_w_06" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
+		<li><input type="text" class="in_w_09" m:id="h_txt_dst_post_code" name="dst_post_code"  onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);"/></li>
 		<li><a m:id="a_bt_searchZip_dst" href="postCode.html" OnClick="return postCodeList( document.orderForm.dst_post_code.value, 3 );">
 			<img src="../../../contents/shop/00000006/shop/image/ma_bt_01.jpg"  alt="郵便番号検索" /></a>
 				<div>
@@ -2265,7 +2313,7 @@ TEL：090-1234-1234
 		<span class="error">
 		<span m:id="h_err_dst_address1">住所(市区郡)入力エラーメッセージ</span>
 		</span>
-		</span><span class="exp"><span m:id="sample_city">例：田代町字岩谷</span></span>
+		</span><span class="exp">新宿区</span>
 	</div>
 </div>
 
@@ -2283,7 +2331,7 @@ TEL：090-1234-1234
 		<span m:id="h_err_dst_address2">住所(町村字)入力エラーメッセージ</span>
 		</span>
 		</span>
-		<span class="exp"><span m:id="sample_town">例：田代町字岩谷</span></span>
+		<span class="exp">高田馬場</span>
 	</div>
 </div>
 
@@ -2318,7 +2366,7 @@ TEL：090-1234-1234
 		<span m:id="h_err_dst_address4">住所(建物名・部屋番号など)入力エラーメッセージ</span>
 		</span>
 		</span>
-		<span class="exp"><span m:id="sample_bldg">例：ユーキャンビル １０３号室</span></span>
+		<span class="exp">ユーキャンビル</span>
 	</div>
 </div>
 
@@ -2328,8 +2376,8 @@ TEL：090-1234-1234
 	<div class="box_form_th">様方</div>
 	<div class="box_form_td">
 		<ul>
-		<li>姓&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
-		<li>名&nbsp;<input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
+		<li><span class="inp_bs">姓</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei"/></li>
+		<li><span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" /></li>
 		</ul>
 		
 		<span m:id="l_msgPre_dst_address_co_sei">
@@ -2344,7 +2392,7 @@ TEL：090-1234-1234
 		<span m:id="h_err_dst_address_co_mei">様方(名)入力エラーメッセージ</span>
 		</span>
 		</span>
-		<span class="exp"><span m:id="sample_address_co_1">例：鈴木　一郎</span></span>
+		<span class="exp">着心地　太郎</span>
 	</div>
 </div>
 
