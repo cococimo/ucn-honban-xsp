@@ -245,7 +245,6 @@ body{
 	border-bottom: solid 1px #d9d9d9; 
 	list-style: none;
 	background: #f2f2f2;
-    padding:10% 0;		
 }
 /*#slide_menu li a{
     display: block;
@@ -302,13 +301,15 @@ ul.accordion > li > div .p_0{
     border-left: none !important
 }
 .sp_login_menu, .sp_member {
+	display:block !important;
+	/*padding:3% 0 !important;*/
     position: relative;
     top: 0;
     right:0;
 }
 .sp_nav ul.l_con_list_01 li {padding:3% 0 !important}
 .ctList{background: #f2f2f2;}
-.ctList .p_0{padding-left:5% !important}
+.ctList .p_0{padding-left:14% !important}
 .sp_nav .l_con_box_01 {
     background: none;
     padding-bottom:0;
@@ -413,29 +414,107 @@ ul.accordion > li > div .p_0{
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
+.l_tit{
+	font-size:16px;
+	font-weight:bold;
+	padding:2% 0 2% 3%;
+	line-height:33px;
+background: #f4f4f4; /* Old browsers */
+background: -moz-linear-gradient(top,  #f4f4f4 1%, #ffffff 22%, #e2e2e2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f4f4f4 1%,#ffffff 22%,#e2e2e2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f4f4f4 1%,#ffffff 22%,#e2e2e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */	
+    border-bottom: solid 1px #d9d9d9;	
+}
 .chil_all{
 	display:block;
 	text-align:right;
 	padding: 3% 3% 0 0 !important;
 	height:10px !important;
 	}
-#slide_menu li, #sp_login_menu li{padding: 3% 0 !important;text-align:left !important}
+#slide_menu li, #sp_login_menu li{/*padding: 3% 0 !important*/;text-align:left !important}
 .sp_member a {
     background: none;
 	padding-left:4%;
     font-size: 14px;
-    font-weight: bold;
-    line-height: 38px;
-    padding-top: 0 !important;
+    padding-top: 0 !important;	
 }
+.sp_member li, .sp_login_menu li{
+	padding:3% 0;
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ffffff 22%, #e2e2e2 100%) !important;
+    background: -webkit-linear-gradient(top, #f4f4f4 1%,#ffffff 22%,#e2e2e2 100%) !important;
+    background: linear-gradient(to bottom, #f4f4f4 1%,#ffffff 22%,#e2e2e2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#e2e2e2',GradientType=0 );
+    border-bottom: solid 1px #d9d9d9;
+    font-size: 16px;			
+	}
+.sp_member li a, .sp_login_menu li a{
+	display:block;
+	line-height:38px !important;
+	font-weight:bold;
+	}	
 #header_login a {
     background: none !important;
     border-radius: 0px !important;
 	color:#000000 !important;
 	text-align:left;
-	line-height:12px !important;
 	padding-left:3%;	
 }
+.l_con_box_01{
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important
+}
+#header_login a{margin-bottom:0 !important; line-height: inherit !important}
+.sp_login_menu #header_login a {
+	display:block !important;
+    padding: 3.6% 0 3.6% 3.6% !important;
+	font-weight:bold;	
+}
+#header_mypage a {
+	font-size:14px;
+    padding: 3.6% 0 3.6% 3.6% !important;
+    background: none !important;
+    color: #000000!important;
+	border-radius: 0px !important;
+    line-height: inherit !important;
+    text-align: left !important;
+    font-weight: normal !important;
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(1){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_kit.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(2){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_tbl.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(3){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_fas.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(4){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_int.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(5){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_life.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
+}
+#slide_menu .l_con_list_01 .ctList:nth-child(6){
+	background-image:url(../../../contents/lifestyle/goods/image/ic_brd.svg) !important;
+	background-position:3px 11px!important;
+	background-repeat:no-repeat !important;
+	background-size:12% !important
 }
 </style>
 <script>
@@ -573,6 +652,7 @@ $(this).parent(".ctList").find(".child_cat").slideToggle("fast");//ÅhslowÅhÅhnor
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
                             <div class="l_con_box_01">
+							<div class="l_tit">ÉJÉeÉSÉäÇ©ÇÁíTÇ∑</div>
                                 <div class="sub">
                                     <span m:id="l_ite_standardCategory">
                                         <span m:id="l_equ_cate_checkPeriod">

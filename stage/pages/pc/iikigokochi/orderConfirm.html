@@ -73,6 +73,67 @@ $(function() {
 
 <!--/ tracking urchin -->
 <!-- name="head" -->
+<style>
+.ad_navi .ad_navi_t {
+    background: #b22222 !important;
+}
+.memadd_table_02 th {
+    background: #464646;
+}
+.btn_nex_01 a {
+    background: none repeat scroll 0 0 #b22222;
+}
+.new_tbl{float:right}	
+.new_tbl td{
+	width:150px;
+	height:50px;
+	border-bottom:1px solid #ececec;
+	padding-left:10px;
+	text-align:right;
+	font-size:14px
+	}
+.new_tbl td:nth-child(odd){
+	}	
+.new_tbl .killl{border-bottom:none}
+.memadd_table_02 td.color_w_b, .memadd_table_02 td{
+    background: none repeat scroll 0 0 #ffffff !important;
+}
+.memadd_table_02 td{
+}
+.confirm2block{border-right: 1px solid #ececec;}
+.memadd_table_02 td.last_02 {
+}
+.memadd_table_02 td:nth-child(5) {
+    border-right: none !important;
+}
+.memadd_table_02 td {
+    border-right: 1px solid #ececec;
+}
+@media (max-width:640px)
+{
+.rightLine{border-right:none !important}	
+.new_tbl{
+	width:100%;
+	float:none;
+	}	
+.new_tbl td{
+	text-align:left;
+	padding-left:2%;
+}
+.wrap_cart02{
+}
+.memadd_table_02 td {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #ececec;
+}
+}
+@media (max-width:320px)
+{
+.wrap_cart02 .memadd_table_02{
+	width:73% !important
+		}
+}
+</style>
 <script><!--
 var clicked = false;
 //--></script>
@@ -718,13 +779,13 @@ $(window).on('load resize', function(){
 </table>
 </div>
 <div class="wrap_cart03">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<table cellpadding="0" cellspacing="0" border="0" class="new_tbl">
 <object class="xsp_obj" m:id="i_shopping_total_count"></object>
 <span m:id="div_shopping_total">
 <tr>
-<td style="border-top:none;" colspan="2" class="right cart_table_02_color_01">商品合計</td>
+<td style="border-top:none;" >商品合計</td>
 
-<td style="border-top:none;" colspan="2" class="last_02 right">
+<td style="border-top:none;" >
 	<!--<span m:id="b_wr_total_price">9500</span> 円-->
 	<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
 	<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
@@ -734,19 +795,19 @@ $(window).on('load resize', function(){
 <!--保留<tr>
 <td colspan="2" class="right">手数料</td>
 <td class="bor_l_none"></td>
-<td class="last_02 right">55円</td>
+<td class="">55円</td>
 </tr>-->
 <span m:id="div_shopping_total">
 <tr>
-<td colspan="2" class="right cart_table_02_color_01">送料</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
+<td >送料</td>
+<td ><span m:id="b_wr_postage">800</span> 円</td>
 </tr>
 </span>
 <span m:id="l_notEqu_total_postage">
 <span m:id="div_shopping_total">
 <tr>
-<td colspan="2" class="right cart_table_02_color_01">(うち商品個別送料)</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_total_postage">800</span> 円</td>
+<td >(うち商品個別送料)</td>
+<td ><span m:id="b_wr_total_postage">800</span> 円</td>
 </tr>
 </span>
 </span>
@@ -754,15 +815,15 @@ $(window).on('load resize', function(){
 <span m:id="l_notEqu_total_discount">
 <span m:id="div_shopping_total">
 <tr>
-<td colspan="2" class="right cart_table_02_color_01">会員割引額</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_total_discount">500</span> 円</td>
+<td >会員割引額</td>
+<td ><span m:id="b_wr_total_discount">500</span> 円</td>
 </tr>
 </span>
 </span>
 <span m:id="l_notEqu_charged_option">
 <tr m:id="div_shopping_total">
-  <td colspan="2" class="right cart_table_02_color_01"><span m:id="disp_wrapping_name">有料オプション</span></td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_charged_option">300</span> 円</td>
+  <td ><span m:id="disp_wrapping_name">有料オプション</span></td>
+<td ><span m:id="b_wr_charged_option">300</span> 円</td>
 </tr>
 </span>
 <span m:id="l_notEqu_premium_discount_amount">
@@ -770,49 +831,49 @@ $(window).on('load resize', function(){
 	<span m:id="l_equ_totalMemberSpecialDiscount">
  		<span m:id="l_notEqu_special_discount_amount">
 			<tr m:id="div_shopping_total">
-				<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
-				<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
+				<td >特典割引額</td>
+				<td  style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
 			</tr>
 		</span>
 	</span>
 	<span m:id="l_notEqu_totalMemberSpecialDiscount">
 		<tr m:id="div_shopping_total">
-			<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
-			<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+			<td >特典割引額</td>
+			<td  style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
 		</tr>
 	</span>
 	<!-- <tr m:id="div_shopping_total">
-		<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
-		<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+		<td >特典割引額</td>
+		<td  style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
 	</tr> -->
 	
 </span>
 <span m:id="l_equ_point_pres">
 				<span m:id="l_pre_member">
 <tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">ご使用ポイント</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_used_point">500</span> pt</td>
+<td >ご使用ポイント</td>
+<td ><span m:id="b_wr_used_point">500</span> pt</td>
 </tr>
 </span>
 </span>
 <tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">合計金額</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+<td >合計金額</td>
+<td ><span m:id="b_wr_order_price_total">10000</span> 円</td>
 </tr>
 <span m:id="l_notEqu_fee">
 <tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">決済手数料</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_fee">700</span> 円</td>
+<td >決済手数料</td>
+<td ><span m:id="b_wr_fee">700</span> 円</td>
 </tr>
 </span>
 <tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">請求金額</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_payment_amount">9000</span> 円</td>
+<td >請求金額</td>
+<td ><span m:id="b_wr_payment_amount">9000</span> 円</td>
 </tr>
 <span m:id="l_notEqu_totalPointAmt">
 <tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">獲得予定ポイント</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
+<td class=" killl">獲得予定ポイント</td>
+<td ><span m:id="b_wr_totalPointAmt killl">90</span> pt</td>
 </tr>
 </span>
 </table>
@@ -825,7 +886,7 @@ $(window).on('load resize', function(){
 </tr>
 <tr m:id="l_ite_goodsPremium">
 <td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
-<td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
+<td class=" memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
 </tr>
 </table>
 </span>
@@ -867,7 +928,7 @@ $(window).on('load resize', function(){
 		表書き（<span m:id="disp_inscription">御祝</span>）<br />
 		</span>
 		<span m:id="l_notEmp_gift_order_name">
-		記名（<span m:id="disp_gift_order_name">山田　太郎</span>）
+		記名（<span m:id="disp_gift_order_name">着心地　太郎</span>）
 		</span>
 		</td>
 		</tr>
@@ -957,7 +1018,7 @@ $(window).on('load resize', function(){
 <tr>
 <td class="last_02">
 <span class="fs16">
-【お名前】<span m:id="disp_order_name_sei">山田</span> <span m:id="disp_order_name_mei">太郎</span><br />
+【お名前】<span m:id="disp_order_name_sei">着心地</span> <span m:id="disp_order_name_mei">太郎</span><br />
 【フリガナ】<span m:id="disp_order_name_sei_kana">ヤマダ</span> <span m:id="disp_order_name_mei_kana">タロウ</span><br />
 【メールアドレス】<span m:id="disp_order_emal">eltex@co.jp</span><br />
 <!--【職業】<span m:id="l_pre_disp_order_job_name"><span m:id="disp_order_job_name">会社員</span><br /></span>-->
@@ -987,8 +1048,8 @@ $(window).on('load resize', function(){
 						お客様情報と同じ
 					</span>
 					<span m:id="l_notEqu_isDestinedMemberAddress">
-【お名前】<span m:id="disp_destination_name_sei">山田</span> <span m:id="disp_destination_name_mei">花子</span><br />
-【フリガナ】<span m:id="disp_destination_name_sei_kana">山田</span> <span m:id="disp_destination_name_mei_kana">ハナコ</span><br />
+【お名前】<span m:id="disp_destination_name_sei">着心地</span> <span m:id="disp_destination_name_mei">花子</span><br />
+【フリガナ】<span m:id="disp_destination_name_sei_kana">着心地</span> <span m:id="disp_destination_name_mei_kana">ハナコ</span><br />
 						<span m:id="l_notEmp_office">
 【会社名】<span m:id="disp_destination_office">ダミー会社名</span><br />
 		                </span><br />
@@ -1486,7 +1547,42 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 <!--EndEditable -->
 
+<script type="text/javascript" language="javascript">
+var yahoo_retargeting_id = 'JAG00YJOZ2';
+var yahoo_retargeting_label = '';
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 980914824;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
 
+
+<script type="text/javascript"  
+src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt=""  
+src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
 
 <script type='text/javascript'>
 if(typeof dmids == "undefined"){var dmids = {}};
@@ -1495,6 +1591,7 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </div>
+<script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=202'></script>
 <!-- footer追加 -->
 <!-- InstanceEndEditable -->  
 </body>
