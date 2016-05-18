@@ -82,10 +82,69 @@ $(function() {
 	border-bottom:1px solid #E6E6E6;
 	padding-bottom:60px;
 }
+.r_con_box_n_01_cat {
+    background: none !important;
+    border-radius: 0!important;
+    box-shadow: 0 0 0 #ffffff;
+	margin-bottom: 20px!important;
+    margin-left: 0!important;
+    margin: 20px auto!important;
+    padding: 0!important;
+    width: 100%!important;
+}
+#contents .wrap_specialcontents h2 {
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+h2.webf {
+    margin-bottom: 30px !important;
+    border-radius: 0;
+    background: #F5F3F1;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: normal !important;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #333;
+	text-align:left !important
+}
+#contents .wrap_specialcontents li {
+    width: 19% !important;
+    margin-right: 1% !important;
+	}
+#contents .wrap_specialcontents li{
+	text-align:left
+}
+.r_con_list_01cat li {
+    border-left: none !important;
+    padding: 15px 0;
+}
+.r_con_list_01cat li h3 a{
+    font-weight: normal !important;
+    color: #777 !important;
+    font-size: 14px !important;
+}
+div.box_02 {
+    margin: 20px 10px;
+}
 @media (max-width:640px) {
 #contents_r{
 	padding-bottom:0;
 	margin:0 auto 40px !important;
+}
+#contents .wrap_specialcontents li {
+    width: 46% !important;
+    margin-bottom: 0;
+}
+h2.webf {
+	margin-bottom: 10px !important;
+    border-radius: 0;
+    font-weight: normal !important;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    padding: 14px 0 14px 5px;
 }
 }
 
@@ -415,6 +474,7 @@ ul.example.other li{
 }
 }
 </style>
+</script>
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -497,7 +557,7 @@ ul.example.other li{
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。"></div>
                 <div class="box_02">
                 <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
@@ -578,6 +638,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature9/">選べる夏のコットンチュニック特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature8/">オリジナル シルク ネックレス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature7/">フレンチブラウス特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature6/">オーガニックコットンアイテム特集</a></li>
         <li class="sp_gnav_link accordion">
@@ -844,6 +908,9 @@ $(window).on('load resize', function(){
   <ul>
     <li><a href="/shop/category/001001008/list/">新着商品</a></li>
     <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+    <li><a href="/shop/category/001001010/list/">インナー/レギンス</a></li>
+    <li><a href="/shop/category/001001013/list/">シューズ</a></li>
+    <li><a href="/shop/category/001001014/list/">アクセサリー/ ストール・スヌード</a></li>
   </ul>
 </div>
 
@@ -1161,9 +1228,9 @@ $(window).on('load resize', function(){
   <div class="r_con_box_n_01_cat">
     <div class="wrap_specialcontents rank3">
       <!--<h2 class="sp_only sp_r_tit_01"><img src="../contents/shop/00000003/shop/image/sp/sp_sec_02_img_01.png" alt="売れている商品" /></h2>-->
-      <h2 class="webf">人気のアイテム</h2>
+      <h2 class="webf">このカテゴリでの人気アイテム</h2>
       <div class="r_con_box_n_01_in_cat clearfix">
-        <ul class="r_con_list_01cat heightLine-rank01 clearfix">
+        <ul class="r_con_list_01cat clearfix">
        <span m:id="l_ite_autoRankGoodsList">
  
           <li class="heightLine-rank01 sp_first">
@@ -1487,9 +1554,9 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
+	<li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
+      <li><a href="/shop/static/feature9/">選べる夏のコットンチュニック特集</a></li><li><a href="/shop/static/feature8/">オリジナル シルク ネックレス特集</a></li><li><a href="/shop/static/feature7/">フレンチブラウス特集</a></li><li><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
       <li><a href="/shop/static/feature6/">オーガニックコットン<br class="only_pc">アイテム特集</a></li>
-      <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
     </ul>
     <ul class="footer_category only_pc">
       <li>
