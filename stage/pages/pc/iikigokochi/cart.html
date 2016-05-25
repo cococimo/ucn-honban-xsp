@@ -272,6 +272,9 @@ input[type="radio"]:checked:after {
 }
 .con_list_five li div.box_02 {
     margin: 0 10px !important;
+}
+.con_list_five.orderReceipt li {
+    height: inherit!important;
 }	
 }
 </style>
@@ -427,12 +430,15 @@ if ( window.addEventListener ) {
                 	<div class="inner">
                 		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
                     <ul class="btn_category_pullDown">
-                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
-                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
-                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
-                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
-                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
-                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><span>ジャケット/<br />アウター</span></a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><span>ワンピース</span></a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><span>バック</span></a></li>
+                      <li><a href="/shop/category/001001010/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" /><span>インナー/<br />レギンス</span></a></li>
+                      <li><a href="/shop/category/001001013/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" /><span>シューズ</span></a></li>
+                      <li><a href="/shop/category/001001014/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ ストール・スヌード" /><span>アクセサリー/<br />ストール・スヌード</span></a></li>
                     </ul>
                     <ul class="btn_category_sub_pullDown">
                       <li><a href="/shop/category/001001008/list/">新着商品</a></li>
@@ -541,6 +547,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
 	<li class="sp_gnav_link"><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature9/">選べる夏のコットンチュニック特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature9/">オリジナル シルク ネックレス特集</a></li>
@@ -796,9 +803,10 @@ $(window).on('load resize', function(){
 <span m:id="l_equ_cart_empty">
 <p class="left memadd_mb_02">現在、お買い物かごに商品は入っておりません。</p>
 
-<div class="inq_input_bt_01 clearfix s_bt_350">
-        <a m:id="e_link_home" href="/"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_bt_none.png" alt="お買い物を続ける" /></a>
+<div class="inq_input_bt_01 go_buy clearfix s_bt_350">
+        <a m:id="e_link_home" href="/" style="font-weight:normal; color:#FFFFFF">お買い物を続ける<!--<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_bt_none.png" alt="お買い物を続ける" />--></a>
 		</div>
+        
 
 </span>
 
@@ -1852,6 +1860,7 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
 	<li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
 	<li><a href="/shop/static/feature9/">選べる夏のコットンチュニック特集</a></li><li><a href="/shop/static/feature8/">オリジナル シルク ネックレス特集</a></li><li><a href="/shop/static/feature7/">フレンチブラウス特集</a></li><li><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
       <li><a href="/shop/static/feature6/">オーガニックコットン<br class="only_pc">アイテム特集</a></li>
