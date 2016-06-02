@@ -22,8 +22,8 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <meta m:id="str_file_meta" content="">
 <!-- InstanceEndEditable -->
 <!-- common css -->
-<link rel="shortcut icon" href="../../../contents/shop/00000006/image/iikigokochi.ico" type="image/vnd.microsoft.icon" />
-<link rel="icon" href="../../../contents/shop/00000006/image/iikigokochi.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
@@ -162,12 +162,15 @@ $(function() {
                 	<div class="inner">
                 		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
                     <ul class="btn_category_pullDown">
-                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
-                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
-                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
-                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
-                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
-                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><span>ジャケット/<br />アウター</span></a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><span>ワンピース</span></a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><span>バック</span></a></li>
+                      <li><a href="/shop/category/001001010/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" /><span>インナー/<br />レギンス</span></a></li>
+                      <li><a href="/shop/category/001001013/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" /><span>シューズ</span></a></li>
+                      <li><a href="/shop/category/001001014/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ ストール・スヌード" /><span>アクセサリー/<br />ストール・スヌード</span></a></li>
                     </ul>
                     <ul class="btn_category_sub_pullDown">
                       <li><a href="/shop/category/001001008/list/">新着商品</a></li>
@@ -195,7 +198,7 @@ $(function() {
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。"></div>
                 <div class="box_02">
                 <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
@@ -276,7 +279,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -480,9 +483,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature/">アイテム特集</a></li>
-      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
-      <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
+      <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
+	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
+	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
     </ul>
     <ul class="footer_category only_pc">
       <li>

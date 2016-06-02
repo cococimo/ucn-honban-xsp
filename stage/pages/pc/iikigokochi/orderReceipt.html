@@ -95,6 +95,47 @@ $(function() {
 .memadd_table_02 td {
     border-left: none;
 }
+.con_block {
+    background: none !important;
+    /*margin-bottom: 20px;
+    padding: 30px 0;*/
+}
+.con_box_check {
+    width: 100% !important;
+}
+.con_box_check h2 {
+    margin-bottom: 30px !important;
+    border-radius: 0;
+    background: #F5F3F1;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: normal !important;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #333;
+	}
+.con_list_five li {
+    border-radius: 0;
+    width: 19% !important;
+    margin-right: 1% !important;
+}
+.con_list_five li:last-child{
+    margin-right:0 !important;
+}
+.con_list_five h3 a, .cash {
+    font-weight: normal !important;
+    color: #777 !important;
+    font-size: 14px !important;
+}
+@media (max-width:640px)
+{
+.con_list_five li div.box_02 {
+    margin: 0 10px !important;
+}
+.con_list_five.orderReceipt li {
+    height: inherit!important;
+}
+}
 </style>
 		<!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
@@ -735,83 +776,6 @@ $(window).on('load resize', function(){
   <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
   <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
     
-    
-    
-    <!--▼▼▼こんな商品も買っています▼▼▼-->
-    <div class="con_block">
-      <span m:id="l_notEmp_autoRecommendGoodsList">
-  <div class="con_box_check clearfix">
-    <h2>この商品を買われた方はこんな商品も買っています</h2>   
-    
-    
-  <ul class="con_list_five orderReceipt">
-    <span m:id="l_ite_autoRecommendGoodsList">
-    <span m:id="l_notEqu_autoRecommendGoodsList_idx">
-      <li class="heightLine-new01">
-        <div class="box_01 heightLine-new02">
-          <div class="box_02">
-            <div class="img_box"> 
-              <span m:id="l_pre_autoRecommendGoods_representSku">
-                <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
-                  </object>
-                <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" /></a></span>
-              </div>
-            <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
-            <p><span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
-            </div>
-          </div>
-        </li>
-    
-    <li class="heightLine-new01" m:id="dummy">
-      <div class="box_01 heightLine-new02">
-        <div class="box_02">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_02.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-          </div>
-        </div>
-      </li>
-    
-    <li class="heightLine-new01" m:id="dummy">
-      <div class="box_01 heightLine-new02">
-        <div class="box_02">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_03.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-          </div>
-        </div>
-      </li>
-    
-    <li class="heightLine-new01" m:id="dummy">
-      <div class="box_01 heightLine-new02">
-        <div class="box_02">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_04.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-          </div>
-        </div>
-      </li>
-    
-    <li class="heightLine-new01" m:id="dummy">
-      <div class="box_01 heightLine-new02">
-        <div class="box_02">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_05.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-          </div>
-        </div>
-      </li>
-    
-      </span>
-      </span>
-    </ul>     
-    </span>  
-  </div>   
-  </span>  
-  </div> 
-    <!--▲▲▲こんな商品も買っています▲▲▲-->
-    
-    
   <form name="orderNextProc" method="post" action="orderNextProc.do">
     <input m:id="i_hid_order_next_key" type="hidden" name="order_next_key" value="5"/>
     <input m:id="i_hid_order_next_mode" type="hidden" name="order_next_mode" value="6" />
@@ -921,7 +885,80 @@ $(window).on('load resize', function(){
     
   </div><!--contents_r_02-->
   
-  
+     <!--▼▼▼こんな商品も買っています▼▼▼-->
+    <div class="con_block">
+      <span m:id="l_notEmp_autoRecommendGoodsList">
+  <div class="con_box_check clearfix">
+    <h2>この商品を買われた方はこんな商品も買っています</h2>   
+    
+    
+  <ul class="con_list_five orderReceipt">
+    <span m:id="l_ite_autoRecommendGoodsList">
+    <span m:id="l_notEqu_autoRecommendGoodsList_idx">
+      <li class="heightLine-new01">
+        <div class="box_01 heightLine-new02">
+          <div class="box_02">
+            <div class="img_box"> 
+              <span m:id="l_pre_autoRecommendGoods_representSku">
+                <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
+                  </object>
+                <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" /></a></span>
+              </div>
+            <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
+            <p><span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+            </div>
+          </div>
+        </li>
+    
+    <li class="heightLine-new01" m:id="dummy">
+      <div class="box_01 heightLine-new02">
+        <div class="box_02">
+          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_02.jpg" /></a></div>
+          <h3><a href="#">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+          </div>
+        </div>
+      </li>
+    
+    <li class="heightLine-new01" m:id="dummy">
+      <div class="box_01 heightLine-new02">
+        <div class="box_02">
+          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_03.jpg" /></a></div>
+          <h3><a href="#">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+          </div>
+        </div>
+      </li>
+    
+    <li class="heightLine-new01" m:id="dummy">
+      <div class="box_01 heightLine-new02">
+        <div class="box_02">
+          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_04.jpg" /></a></div>
+          <h3><a href="#">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+          </div>
+        </div>
+      </li>
+    
+    <li class="heightLine-new01" m:id="dummy">
+      <div class="box_01 heightLine-new02">
+        <div class="box_02">
+          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000006/goods/image/item_sample_05.jpg" /></a></div>
+          <h3><a href="#">商品名商品名</a></h3>
+          <p>50円（税込）</p>
+          </div>
+        </div>
+      </li>
+    
+      </span>
+      </span>
+    </ul>     
+    </span>  
+  </div>   
+  </span>  
+  </div> 
+    <!--▲▲▲こんな商品も買っています▲▲▲-->
+ 
   
   
   <!-- ここまで -->
@@ -995,9 +1032,10 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature/">アイテム特集</a></li>
-      <li><a href="/shop/static/feature2/">コーディネート特集</a></li>
-      <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
+      <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
+	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
+	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
     </ul>
     <ul class="footer_category only_pc">
       <li>
