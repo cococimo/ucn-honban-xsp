@@ -83,10 +83,81 @@ $(function() {
 	float:none;
 	display:block;
 }
+/*0420add*/
+#conb_wr{
+    
+}
+.con_box{
+    clear: both;
+	width: 100%!important;
+	padding-top:50px !important
+}
+.con_box h2{
+	margin-bottom:30px !important;
+    border-radius:0;
+    background: #F5F3F1;
+    border-top: 1px solid #e6e6e6;	
+    border-bottom: 1px solid #e6e6e6;
+	font-weight:normal !important;
+	line-height: 1.5;
+    font-size: 20px;
+    color: #333;	
+	}
+.con_box.clearfix ul.con_list_six{
+	width:94% !important;
+	margin:0 auto;
+}
+.con_list_six li {
+	width:15.6% !important;
+	margin-right:1% !important;
+}
+.con_list_six li:last-child{
+	margin-right:0!important;
+}
+#conb_wr h3{margin-top:10px}
+#conb_wr h3 a, .cash{
+	font-weight:normal !important;
+	color: #777 !important;
+    font-size: 14px !important;
+}
+#contents_r {
+    margin-bottom:40px !important;
+}
+.goods_datail_table {
+    margin-bottom: 40px;
+}
 @media (max-width:640px) {
+.goods_datail_table {
+    margin-bottom: 10px;
+}	
+#conb_wr{
+    padding:0;
+}
+.con_box{
+    clear: both;
+	width: 100%!important;
+	padding-top:20px !important
+}
+.con_box h2{
+	margin-bottom:10px !important;
+    border-radius:0;
+	font-weight:normal !important;
+	line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+	text-align:center;
+	padding: 14px 0;	
+	}	
 #contents_r{
 	padding-bottom:0;
-	margin:0 auto 40px !important;
+	margin:0 auto 30px !important;
+}
+ul.con_list_six {
+    width: 99% !important;
+	padding-left:2%
+}
+.con_box .con_list_six .heightLine-new01 {
+    width: 32% !important;
 }
 }
 #contents_l{
@@ -642,6 +713,35 @@ div.res_cart a:hover{
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
 <![endif]-->
+
+		<script>
+		/*
+			jQuery(function($){
+		//		$('ul.example').exDropDown();
+		//	});
+			*/
+
+			jQuery(function($){
+					
+				var nav_lists = $('.sub').html();
+				
+				
+				glheight =$(".detailGuideBlock").eq(0).height();
+				$(".detailGuideBlock").eq(1).css({height:glheight+"px"});
+				
+				var url = location.href;
+		//もともとの文字列
+var result = url.replace(/[?+](.*)/, "");	//置き換え後の文字列
+console.log(result);
+
+var ifremstr = '<iframe src="//www.facebook.com/plugins/like.php?href='+result+'&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=80&amp;appId=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>';
+
+$(".faceBooks").append(ifremstr);
+
+			});
+			
+
+		</script>
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -745,34 +845,6 @@ window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
-		<script>
-		/*
-			jQuery(function($){
-		//		$('ul.example').exDropDown();
-		//	});
-			*/
-
-			jQuery(function($){
-					
-				var nav_lists = $('.sub').html();
-				
-				
-				glheight =$(".detailGuideBlock").eq(0).height();
-				$(".detailGuideBlock").eq(1).css({height:glheight+"px"});
-				
-				var url = location.href;
-		//もともとの文字列
-var result = url.replace(/[?+](.*)/, "");	//置き換え後の文字列
-console.log(result);
-
-var ifremstr = '<iframe src="//www.facebook.com/plugins/like.php?href='+result+'&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=80&amp;appId=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>';
-
-$(".faceBooks").append(ifremstr);
-
-			});
-			
-
-		</script>
 <!-- InstanceEndEditable -->
 </head>
 <body id="top">
@@ -812,12 +884,15 @@ $(".faceBooks").append(ifremstr);
                 	<div class="inner">
                 		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
                     <ul class="btn_category_pullDown">
-                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
-                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
-                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
-                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
-                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
-                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><span>ジャケット/<br />アウター</span></a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><span>ワンピース</span></a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><span>バック</span></a></li>
+                      <li><a href="/shop/category/001001010/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" /><span>インナー/<br />レギンス</span></a></li>
+                      <li><a href="/shop/category/001001013/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" /><span>シューズ</span></a></li>
+                      <li><a href="/shop/category/001001014/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ ストール・スヌード" /><span>アクセサリー/<br />ストール・スヌード</span></a></li>
                     </ul>
                     <ul class="btn_category_sub_pullDown">
                       <li><a href="/shop/category/001001008/list/">新着商品</a></li>
@@ -845,7 +920,7 @@ $(".faceBooks").append(ifremstr);
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。"></div>
                 <div class="box_02">
                 <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
@@ -924,8 +999,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature6/">オーガニックコットンアイテム特集</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -1785,6 +1859,7 @@ $(window).on('load resize', function(){
  <!--▼▼▼この商品を見た人はこの商品も見ています▼▼▼-->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
 <span m:id="l_notEmp_autoRecommendGoodsList">
+<div id="conb_wr" class="clearfix">
 <div class="con_box clearfix">
 <!--<h2 class="sp_only sp_r_tit_01"><img src="../../../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
 <h2>この商品を見た人はこの商品も見ています</h2>
@@ -1819,6 +1894,7 @@ $(window).on('load resize', function(){
     </span>
     </span>
     </ul>     
+</div>
 </div>
 </span>
  <!--▲▲▲この商品を見た人はこの商品も見ています▲▲▲-->
@@ -2093,7 +2169,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <!--▲▲▲下部バナー▲▲▲-->
 
 <!--▼▼▼pagetop▼▼▼-->
-<div class="con_box clearfix">
+<div class="con_box clearfix" style="width:100%;">
   <!-- シェアボタンに変換される -->
   <div class="pagetop">
     <div class="fb-like" data-href="http://syncer.jp" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
@@ -2185,10 +2261,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature4/">ブラウス&チュニック特集</a></li>
-      <li><a href="/shop/static/feature6/">オーガニックコットン<br class="only_pc">アイテム特集</a></li>
-      <li><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
-    </ul>
+      <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
+	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
+	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      </ul>
     <ul class="footer_category only_pc">
       <li>
       	<a href="#">商品カテゴリー</a>
