@@ -24,8 +24,8 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <title>お申込み内容の確認 - ココチモ（cococimo）の通販ショップ</title>
 <!-- InstanceEndEditable -->
 <!-- common css -->
-<link rel="shortcut icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="icon" href="../../../contents/shop/00000006/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
@@ -77,9 +77,16 @@ $(function() {
 .ad_navi .ad_navi_t {
     background: #b22222 !important;
 }
+.memadd_table_02{border-bottom: 1px solid #c8c8c8 !important}
 .memadd_table_02 th {
-    background: #464646;
+    background: #FFF !important;
+	color:#333 !important;
+    border-left: none !important;
+    border-top: none !important;	
 }
+.memadd_table_02 td {
+    border-top: 1px solid #c8c8c8 !important;
+	}
 .btn_nex_01 a {
     background: none repeat scroll 0 0 #b22222;
 }
@@ -87,20 +94,31 @@ $(function() {
 .new_tbl td{
 	width:150px;
 	height:50px;
-	border-bottom:1px solid #ececec;
+	border-bottom:1px solid #c8c8c8;
 	padding-left:10px;
 	text-align:right;
 	font-size:14px
 	}
 .new_tbl td:nth-child(odd){
 	}	
-.new_tbl .killl{border-bottom:none}
 .memadd_table_02 td.color_w_b, .memadd_table_02 td{
     background: none repeat scroll 0 0 #ffffff !important;
 }
 .memadd_table_02 td{
+	border-left:none !important;
+	border-right:none !important
 }
-.confirm2block{border-right: 1px solid #ececec;}
+.confirm2block {
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+}
+.confirm2block .memadd_table_02 {
+    border-bottom: none!important;
+}
+.memadd_cau_box_01 {
+    border: 1px solid #464646;
+}
 .memadd_table_02 td.last_02 {
 }
 .memadd_table_02 td:nth-child(5) {
@@ -874,8 +892,8 @@ $(window).on('load resize', function(){
 </tr>
 </span>
 <tr m:id="div_shopping_total">
-<td >請求金額</td>
-<td ><span m:id="b_wr_payment_amount">9000</span> 円</td>
+<td style="font-weight:bold">請求金額</td>
+<td style="font-weight:bold"><span m:id="b_wr_payment_amount">9000</span> 円</td>
 </tr>
 <span m:id="l_notEqu_totalPointAmt">
 <tr m:id="div_shopping_total">

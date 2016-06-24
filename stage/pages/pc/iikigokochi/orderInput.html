@@ -73,19 +73,47 @@ $(function() {
 .ad_navi .ad_navi_t, .btn_nex_01 a{
     background: #b22222 !important;
 }
+.memadd_table_01 {
+    border: none !important;	
+	border-bottom: none !important;
+	width:57.8% !important;
+	float:left
+	}
 .memadd_table_01 th, .box_form_th, .box_form_th02, .box_form_table, .box_form_table02, .box_form_th03, .memadd_table_02 th{
     background: none;
 	color:#333
 }
 .memadd_table_02 th{
-	border-left:none !important
+	border-left:none !important;
+}
+.memadd_table_01 th {
+    border-right: none !important;
+	border-bottom: none !important;
+	width:20% !important
+}
+.memadd_table_02 td {
+    border-top: 1px solid #c8c8c8 !important;
+}
+.memadd_table_01 td.bor_bottom {
+	border-bottom: none !important;
+}
+.memadd_table_02 th {
+    background: #ffffff!important;
+    border-top: none !important;
+}
+.box_form_table, .box_form_table02 {
+	border-top: 1px solid #c8c8c8 !important;
+	border-bottom: 1px solid #c8c8c8 !important;	
+}
+.memadd_table_01 .in_w_02 {
+    width: 200px !important;
 }
 .box_form_td, .box_form_td02 {border-left: none !important}
 a.loginBt {
-    background: none repeat scroll 0 0 #b22222;
+    background: none repeat scroll 0 0 #464646;
     color: #fff !important;
 }
-a.loginBt:hover{background: #FFA0A2}
+a.loginBt:hover{background: #666666}
 .selcv {
     display: block;
     margin-bottom: 3%;
@@ -93,9 +121,46 @@ a.loginBt:hover{background: #FFA0A2}
 .wrap_cart04 .memadd_table_02 {
     border-right: none;
 }
+.memadd_table_02 {
+    border-bottom: 1px solid #c8c8c8 !important;
+}
 .memadd_table_02 td {
     border-left: none;
 }
+.wrap_form_table{
+	clear:both !important
+}
+a.loginBt {
+	margin-top:8px !important;
+	float:left;
+	display: block;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+	font-weight:normal !important;
+    line-height: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    width: 140px !important;
+		margin: 0 auto;
+}
+a.loginBt:hover {
+	margin-top:8px !important;
+	display: block;
+    border-radius: 4px;
+    color: #fff;
+	text-decoration: none;
+    font-size: 14px;
+	font-weight:normal !important;	
+    line-height: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    width: 140px !important;
+		margin: 0 auto;
+}
+
 .box_form_table, .box_form_table02{
 	border-right:none !important;
 }
@@ -122,17 +187,85 @@ a.loginBt:hover{background: #FFA0A2}
 	font-weight:bold;
     font-size: 11px;
 }
+.box_form_table select.memadd_input_04{
+	text-align:left !important
+}
+.nolg{
+margin:50px 0 20px 0;
+font-size:16px !important
+}
+.ad_navi {
+    margin-bottom: 26px !important;
+}
 @media (max-width:640px)
 {
+.nolg{
+margin:30px 0 10px 0
+}
+a.loginBt {
+	margin-top:30px !important;
+	clear:both;
+	float:none;
+	display: block;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+	font-weight: bold;
+    line-height: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    width: 70% !important;
+		margin: 0 auto;
+}
+
+a.loginBt:hover {
+	margin-top:30px !important;	
+	display: block;
+    border-radius: 4px;
+    color: #fff;
+	text-decoration: none;
+    font-size: 14px;
+	font-weight: bold;
+    line-height:10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    width: 70% !important;
+		margin: 0 auto;
+}
+	
+.box_form_table{
+	border-bottom:none !important;
+	border-top:none !important
+	}
+.box_form_table:after {
+    clear: both;
+    content: "";
+    display: none !important;
+    height: 0;
+    overflow: hidden;
+}
+.box_form_th, .box_form_th02{
+	border-bottom:1px solid #c8c8c8 !important
+}
+.memadd_table_02{border-bottom:none !important}
 .memadd_table_02 td{
 	border-left:none
 }
 .memadd_table_02 td.last_02 {
     border-right: none;
 }
+.temp_tit_06 {
+    border-bottom: 1px solid #c8c8c8;
+    padding-bottom: 8px;
+}
 .box_form_table, .box_form_table02{background:none !important}	
+.box_form_table02{border-bottom:none !important; border-top:none !important}
 .memadd_table_02 th {
     background: none repeat scroll 0 0 #464646;
+	color:#333 !important;
+	border-bottom:1px solid #c8c8c8 !important
 	}
 	.memadd_table_01 td.bor_bottom {
     border-bottom:none;
@@ -146,8 +279,11 @@ a.loginBt:hover{background: #FFA0A2}
 #sepDeliv1 table tr:nth-child(2){border-top:none !important}
 #sepDeliv1 table td:nth-child(1):before {
 content: "商品名";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
+    border-bottom: 1px solid #c8c8c8 !important;
+	font-size:14px;		
+	font-weight:bold;	
 	width:98% !important;
 	padding:5px;
 	display:block !important;
@@ -155,8 +291,11 @@ content: "商品名";
 }
 #sepDeliv1 table td:nth-child(2):before {
 content: "配送希望日";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
+    border-bottom: 1px solid #c8c8c8 !important;
+	font-size:14px;		
+	font-weight:bold;	
 	width:98% !important;
 	padding:5px;
 	display:block !important;
@@ -164,8 +303,11 @@ content: "配送希望日";
 }
 #sepDeliv1 table td:nth-child(3):before {
 content: "配送希望時間帯";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
+    border-bottom: 1px solid #c8c8c8 !important;
+	font-size:14px;		
+	font-weight:bold;	
 	width:98% !important;
 	padding:5px;
 	display:block !important;
@@ -250,7 +392,7 @@ input[type="radio"]:checked:after {
 }
 input {
     border: 1px solid rgba(180,180,180,1.00) !important;
-    padding: 1.2% 0 !important;
+    padding: 1.2% 0 1.2% 2% !important;
 }
 .wrap_form_table input[type="radio"]{margin:0 3% 0 0 !important;}
 .memadd_t_box_01 .box_01, .memadd_t_box_02 .box_01 {
@@ -1143,7 +1285,6 @@ $(window).on('load resize', function(){
 <input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
 <input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
 <input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
-<h4 class="temp_tit_06 clear"><div>お客様情報</div></h4>
 <!-- ログイン時 -->
 <span m:id="l_pre_member">
 <object class="xsp_obj" m:id="b_var_member_tel_no"></object>
@@ -1181,7 +1322,6 @@ $(window).on('load resize', function(){
 				<th>パスワード</th>
 				<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02 add_radz" />
 					<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
-					<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
 					<span m:id="l_msgPre_password">
 						<div>
 							<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
@@ -1197,8 +1337,10 @@ $(window).on('load resize', function(){
 		<!--/ ボタン -->
 	</div>
 </span>
-<h4 m:id="dummy" class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
+<div class="mt10" style="clear:both; margin:0 0 20px"><a m:id="e_link_reminderPwdInput" style="text-decoration:underline; color:blue" href="memberReminderPwdInput.html">
+パスワードを忘れた方はこちら</a></div>
 
+<h4 class="temp_tit_06 clear nolg"><div>ログインせずにお買物するお客様はこちらから、ご入力ください。</div></h4>
 <div class="wrap_form_table">
 
 <div class="box_form_table">
@@ -2559,8 +2701,8 @@ TEL：090-1234-1234
 </tr>-->
 <span m:id="div_shopping_total">
 <tr>
-<td class="right cart_table_02_color_01">請求金額</td>
-<td class="last_02 right" id="total_amt"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+<td class="right cart_table_02_color_01" style="font-weight:bold">請求金額</td>
+<td class="last_02 right" id="total_amt" style="font-weight:bold"><span m:id="b_wr_order_price_total">10000</span> 円</td>
 </tr>
 </span>
 <!--<tr>
