@@ -79,9 +79,27 @@ $(function() {
 .memadd_table_02 {
     border-bottom: none;
 }
+.cart_table_02{
+	border-bottom:none!important
+}
+
 .cart_table_02 th, .memadd_table_02 th{
-    background: #464646 !important;
+    background:#FFFFFF !important;
+	color:#333
 	}
+.cart_table_02 th {
+    border-left: none !important;
+    border-top: none !important;
+}
+.cart_table_02 td {
+	border-top:#c8c8c8 1px solid !important;
+}
+td.addbod{border-top-color:#464646 !important}
+.memadd_table_02 th {
+    border-left: none;
+    border-top: none;
+	border-bottom:#464646 1px solid !important;	
+}
 .memadd_table_02 td.cart_table_02_setumei {
     background: #ffffff !important;
     border-left: none !important;
@@ -98,7 +116,7 @@ $(function() {
     border-top: none;
 }
 .memadd_table_02 {
-    background: none repeat scroll 0 0 #464646;
+    background: none repeat scroll 0 0 #c8c8c8;
 }
 .radioFloat {
     padding: 10px 5px;
@@ -147,8 +165,32 @@ $(function() {
     color: #777 !important;
     font-size: 14px !important;
 }
+.box_right02{font-size:14px !important}
+.total_annotation{
+clear:both !important;
+padding-top:16px !important;
+font-size:14px !important;
+}
+.wrap_cart .cart_table_02 {
+    width: 43% !important;
+}
 @media (max-width:640px)
 {
+.memadd_bt_con_01 {
+    margin-bottom: 14px !important;
+}	
+.wrap_cart .cart_table_02{
+	width:100% !important
+}
+.box_right {
+	width:100% !important
+}
+.box_right02{
+	float:none
+}
+.cart_table_02 {
+    margin-bottom: 0px;
+	}
 .con_box_check h2{
     margin-bottom: 10px !important;
     border-radius: 0;
@@ -172,37 +214,49 @@ border:none;
 /*****res_tbl*****/
 .cart_table_sp td:nth-child(1):before {
 content: "商品名";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
 	width:98% !important;
 	padding:5px;
+    border-bottom: 1px solid #464646 !important;
+	font-size:14px;		
+	font-weight:bold;
 	display:block !important;
 	margin:10px 0 !important;
 }
 .cart_table_sp td:nth-child(2):before {
 content: "商品単価";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
 	width:98% !important;
 	padding:5px;
+    border-bottom: 1px solid #464646 !important;
+	font-size:14px;		
+	font-weight:bold;	
 	display:block !important;
 	margin:10px 0 !important;
 }
 .cart_table_sp td:nth-child(4):before {
 content: "数量";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
 	width:98% !important;
 	padding:5px;
+    border-bottom: 1px solid #464646 !important;
+	font-size:14px;		
+	font-weight:bold;	
 	display:block !important;
 	margin:10px 0 !important;
 }
 .cart_table_sp td:nth-child(5):before {
 content: "小計";
-    background: #464646;
-    color: #FFF;
+    background: #FFF;
+    color: #333;
 	width:98% !important;
 	padding:5px;
+    border-bottom: 1px solid #464646 !important;
+	font-size:14px;	
+	font-weight:bold;	
 	display:block !important;
 	margin:10px 0 !important;
 }
@@ -547,6 +601,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature14/">夏の30daysコーディネート特集</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature13/">東炊きリネンブラウス&amp;ロングスカート特集</a></li>
 	<li class="sp_gnav_link"><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
@@ -915,7 +971,7 @@ $(window).on('load resize', function(){
 <tr>
 
 
-<td class="itemname_td">
+<td class="itemname_td addbod">
 <div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
 <span m:id="l_notEqu_removeMe">
 <span m:id="h_link_cart_default_url">
@@ -963,10 +1019,10 @@ $(window).on('load resize', function(){
 
 <!-- <td class="right"><span m:id="b_wr_goods_price_tax">2000</span> 円</td> -->
 <span m:id="l_notEqu_installment">
-<td class="left lump1" >
+<td class="left lump1 addbod" >
 	一括払
 </td>
-<td class="right lump2">
+<td class="right lump2 addbod">
 	<span m:id="l_equ_memberSpecialDiscount">
 	  <span m:id="disp_goods_special_price">1000 円　</span>
 	</span>
@@ -1002,7 +1058,7 @@ $(window).on('load resize', function(){
 </td>
 </span>
 
-<td>
+<td class="addbod">
   <!-- <input m:id="h_txt_order_num_string" type="text" name="" value="" class="in_w_01" maxlength="2" /> -->
   <select m:id="h_sel_order_num" class="in_w_01" maxlength="2" >
 				<option m:id="h_pull_order_num" value="3">3</option>
@@ -1012,7 +1068,7 @@ $(window).on('load resize', function(){
 </td>
 
 
-<td class="right">
+<td class="right addbod">
   <!-- <span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円　</span> -->
   <span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
   <span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
@@ -1059,22 +1115,13 @@ $(window).on('load resize', function(){
 
 </tr>
 </span>
-
-<tr>
-
-<!-- <td colspan="4"> -->
-<td colspan="5">
+</table>
 
 <div class="memadd_bt_con_01">
 <div class="box_right"><a m:id="h_link_shopping_calc" href="cart.html" onclick=""><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_delete_bt_05-2014.png" alt="再計算する" /></a></div>
 <div class="box_right02">数量を変更したい場合は数量を再選択の上<br />
   「再計算する」ボタンを押してください。</div>
 </div>
-</td>
-</tr>
-
-
-</table>
 
 <div class="wrap_cart">
 <div class="right total_annotation">(※商品金額計は一括金額を表示しています)</div>
@@ -1854,9 +1901,9 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature14/">夏の30daysコーディネート特集</a></li>
+      <li><a href="/shop/static/feature13/">東炊きリネンブラウス&amp;ロングスカート特集</a></li>
       <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
-	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
-	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
      </ul>
     <ul class="footer_category only_pc">
