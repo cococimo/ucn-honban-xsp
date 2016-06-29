@@ -99,6 +99,9 @@ $(function() {
     height: 42px !important;
 	font-size:12px;	
 }
+.ad-gallery .ad-thumbs li a.ad-active img {
+    border: 2px solid #f49b19 !important;
+}
 @media (max-width: 640px) {
 #header_search {
     left: 0 !important;
@@ -138,7 +141,7 @@ $(function() {
  <script type="text/javascript">
   $(function() {
 	var galleries = $('.ad-gallery').adGallery({
-	animation_speed: 1000,
+	animation_speed: 300,
 	display_next_and_prev: true,
 	display_back_and_forward: true,
 	slideshow: {
@@ -147,7 +150,8 @@ $(function() {
 	speed: 5000,
 	start_label: 'Start',
 	stop_label: 'Stop',
-	}
+	},
+    effect: 'fade'
 	});
   });
   </script>
@@ -329,6 +333,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <a m:id="static_link" href="../../../contents/shop/00000003/shop/image/n_main_vis_93.jpg">
       <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_sam_93.jpg" title="しゃべる地球儀　ネオビジョン" alt="しゃべる地球儀　ネオビジョン" longdesc="/shop/c/e/DDO01/c/001001009001/?slidebanner1_ddo01" />
       </a>
+          <li>
+    <a m:id="static_link" href="../../../contents/shop/00000003/shop/image/n_main_vis_14.jpg">
+      <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_sam_14.jpg" title="新登場、おいしい食卓！" alt="新登場、おいしい食卓！" longdesc="/shop/c/static/oishi_shokutaku/?slidebanner5_oishisyokutaku" />
+      </a>
+    </li> 
   </li>
   <li> <a m:id="static_link" href="../../../contents/shop/00000003/shop/image/n_main_vis_10_2.jpg">         
     <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_sam_09.jpg" title="まんが日本昔ばなし DVD10巻セット。" alt="まんが日本昔ばなし DVD10巻セット。" longdesc="/item_manganihon/?slidebanner2_dff8e" /></a></li>
@@ -342,11 +351,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_sam_26.jpg" title="防災セット" alt="防災セット" longdesc="/shop/c/e/DEB91/c/001001010001/?slidebanner4_deb91" />
         </a>
       </li>
-    <li>
-    <a m:id="static_link" href="../../../contents/shop/00000003/shop/image/n_main_vis_14.jpg">
-      <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_sam_14.jpg" title="新登場、おいしい食卓！" alt="新登場、おいしい食卓！" longdesc="/shop/c/static/oishi_shokutaku/?slidebanner5_oishisyokutaku" />
-      </a>
-    </li>  
+ 
   </div>
   <script type='text/javascript'>adlpoMain('miyagi_ehime_sitetop_banner_1202','lc=os','ch=Shift-JIS');</script>
 
@@ -366,13 +371,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="flexslider">
       <ul class="slides">
         <li><a href="/shop/c/e/DDO01/c/001001009001/?slidebanner1_ddo01"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_93.jpg" class="image5" alt="しゃべる地球儀　ネオビジョン" /></a></li>  
+        <li> <a href="/shop/c/static/oishi_shokutaku/?slidebanner5_oishisyokutaku"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_14.jpg" class="image5" alt="新登場、おいしい食卓！" /></a></li>  
+        
         <li><a href="/item_manganihon/?slidebanner2_dff8e"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_10_2.jpg" class="image5" alt="まんが日本昔ばなし DVD10巻セット" /></a></li>	    
         <li><a href="/item_xd-sk6800/?slidebanner3_dce80"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_53.jpg" class="image5" alt="カシオ電子辞書" /></a></li>      
         
         <li><a href="/shop/c/e/DEB91/c/001001010001/?slidebanner4_deb91"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_26.jpg" class="image5" alt="防災セット" /></a></li>    
-        
-        <li> <a href="/shop/c/static/oishi_shokutaku/?slidebanner5_oishisyokutaku"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_14.jpg" class="image5" alt="新登場、おいしい食卓！" /></a></li>     
-
         
         </ul>
       </div>
@@ -383,10 +387,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
    <a href="/item_neovision/?topbanner1_ddo01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_talk_s.jpg" class="bannermr" alt="しゃべる地球儀" /></a>  
    <a href="/shop/c/category/001001015/list/?topbanner2_gourmet" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_gourmet_s.jpg" class="bannermr" alt="美味しい食卓" /></a>  
    <a href="/item_xd-sk6800/?topbanner3_dce80" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dictio_s.jpg" class="bannermr" alt="カシオ電子辞書" /></a> 
-   <a href="/item_citizen-c660/?topbanner4_dce80" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_citizen.jpg" class="bannermr" alt="シチズン受け時計" /></a>  
+   <a href="/item_sekaimeisaku/?topbanner4_dfo0e" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_meisaku_s.jpg" class="bannermr" alt="世界名作劇場" /></a> 
    <a href="/item_manganihon/?topbanner5_dff8e" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_manga.jpg" class="bannermr" alt="まんが日本昔話DVD" /></a>  
-   <a href="/item_multibostonbag/?topbanner6_dad90" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_boston_s.jpg" class="bannermr" alt="多機能ボストン" /></a> 
-<!--  <a href="/item_bousaiset/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_bousai.gif" class="bannermr" alt="防災セット" /></a>   <a href="/shop/c/e/DEC21/c/001001010002/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_b_radio_s.gif" class="bannermr" alt="AMFM/防災ラジオ" /></a>   -->
+   <a href="/item_citizen-c660/?topbanner6_dce80" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_citizen.jpg" class="bannermr" alt="シチズン腕時計" /></a> 
+   
+   
+<!--      <a href="/item_multibostonbag/?topbanner6_dad90" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_boston_s.jpg" class="bannermr" alt="多機能ボストン" /></a> 
+  <a href="/item_bousaiset/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_bousai.gif" class="bannermr" alt="防災セット" /></a>   <a href="/shop/c/e/DEC21/c/001001010002/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_b_radio_s.gif" class="bannermr" alt="AMFM/防災ラジオ" /></a>   -->
   
   <!-- トップ小バナー2段目　ここから  <a href="/item_manganihon/data3/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_kinnkyuA3_s.gif" class="bannermr" alt="まんが日本昔ばなし緊急アンケート3" /></a>   <a href="/item_manganihon/data4/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_kinnkyuA4_s.gif" class="bannermr" alt="まんが日本昔ばなし緊急アンケート4" /></a>-->
   
