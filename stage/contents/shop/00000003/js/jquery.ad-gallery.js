@@ -9,7 +9,7 @@
  */
 (function($) {
   $.fn.adGallery = function(options) {
-    var defaults = { loader_image: 'loader.gif',
+    var defaults = { loader_image: '../contents/c/shop/image/loader.gif',
                      start_at_index: 0,
                      update_window_hash: false,
                      description_wrapper: false,
@@ -321,7 +321,13 @@
     },
     _initLink: function(link) {
       var context = this;
-      link.click(
+      link.hover(
+        function() {
+          context.showImage(link.data("ad-i"));
+          context.slideshow.stop();
+          return false;
+        }
+      ).click(
         function() {
           context.showImage(link.data("ad-i"));
           context.slideshow.stop();
