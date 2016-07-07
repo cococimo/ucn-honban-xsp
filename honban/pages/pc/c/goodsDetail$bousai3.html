@@ -112,6 +112,63 @@ function siteCatalistAddCart1(s_products){
 </head>
 <body>
 
+<!--▼▼▼ tagForm ▼▼▼-->
+<object class="xsp_obj" m:id="e_var_tagCart"></object>
+<form name="tagForm" action="#" method="post">
+<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
+<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
+<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
+<span m:id="l_equ_tagCart_empty">
+<span m:id="l_notEqu_tagCart_empty_shop">
+<input type="hidden" name="order_amount" value="" />
+<input type="hidden" name="total_sale_price" value="" />
+<input type="hidden" name="total_order_num" value="" />
+<input type="hidden" name="postage" value="" />
+<input type="hidden" name="category_code" value="" />
+<input type="hidden" name="category_name" value="" />
+<input type="hidden" name="ext_goods_code" value="" />
+<input type="hidden" name="ext_goods_sku_code" value="" />
+<input type="hidden" name="goods_name" value="" />
+<input type="hidden" name="goods_price" value="" />
+<input type="hidden" name="order_num" value="" />
+<input type="hidden" name="goods_url" value="" />
+<input type="hidden" name="goods_img_url" value="" />
+</span></span>
+<span m:id="l_notEqu_tagCart_empty">
+<span m:id="l_notEqu_tagCart_empty_shop">
+<input type="hidden" name="order_amount" value="" />
+<input type="hidden" name="total_sale_price" value="" />
+<input type="hidden" name="total_order_num" value="" />
+<input type="hidden" name="postage" value="" />
+<input type="hidden" name="category_code" value="" />
+<input type="hidden" name="category_name" value="" />
+<input type="hidden" name="ext_goods_code" value="" />
+<input type="hidden" name="ext_goods_sku_code" value="" />
+<input type="hidden" name="goods_name" value="" />
+<input type="hidden" name="goods_price" value="" />
+<input type="hidden" name="order_num" value="" />
+<input type="hidden" name="goods_url" value="" />
+<input type="hidden" name="goods_img_url" value="" />
+</span></span>
+<span m:id="l_notEqu_tagCart_empty">
+<span m:id="l_notEqu_tagCart_not_empty_shop">
+<input m:id="tagForm_total_order" type="hidden" name="order_amount" value="" />
+<input m:id="tagForm_total_sale" type="hidden" name="total_sale_price" value="" />
+<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
+<input m:id="tagForm_postage" type="hidden" name="postage" value="" />
+<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
+<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
+<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
+<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
+<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
+<input m:id="tagForm_goods_num" type="hidden" name="order_num" value="" />
+<input m:id="tagForm_goods_url" type="hidden" name="goods_url" value="" />
+<input m:id="tagForm_goods_img_url" type="hidden" name="goods_img_url" value="" />
+</span></span>
+</form>
+<!--▲▲▲ tagForm ▲▲▲-->
+
 <!-- InstanceBeginEditable name="body" --><!-- InstanceEndEditable -->
 <!-- コンテナ -->
 
@@ -421,6 +478,16 @@ function siteCatalistAddCart1(s_products){
 					<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
 					<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 					</form>
+
+         <!-- お届け時期のお知らせ▼ -->      
+         <!-- 
+        <div style="border:#EE0003 1px solid; padding:15px; margin:0 20px; width:auto;">
+        <p style="color:red;"><b>【お届け時期のお知らせ】</b><br>
+現在、本商品は当初の予想以上のお申し込みの集中により在庫切れとなっており、お届けが6月下旬以降を予定しております。<br>
+お待たせしてしまい大変申し訳ございませんが、ご了承くださいますよう、よろしくお願い申し上げます。</p>
+        </div>	<br><br>-->
+ <!-- お届け時期のお知らせ▲ --> 
+
 				<!-- 商品詳細など -->
 				
 				

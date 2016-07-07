@@ -199,6 +199,63 @@ $(function() {
 <!-- InstanceEndEditable -->
 </head>
 <body id="top">
+
+<!--▼▼▼ tagForm ▼▼▼-->
+<object class="xsp_obj" m:id="e_var_tagCart"></object>
+<form name="tagForm" action="#" method="post">
+<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
+<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
+<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
+<span m:id="l_equ_tagCart_empty">
+<span m:id="l_notEqu_tagCart_empty_shop">
+<input type="hidden" name="order_amount" value="" />
+<input type="hidden" name="total_sale_price" value="" />
+<input type="hidden" name="total_order_num" value="" />
+<input type="hidden" name="postage" value="" />
+<input type="hidden" name="category_code" value="" />
+<input type="hidden" name="category_name" value="" />
+<input type="hidden" name="ext_goods_code" value="" />
+<input type="hidden" name="ext_goods_sku_code" value="" />
+<input type="hidden" name="goods_name" value="" />
+<input type="hidden" name="goods_price" value="" />
+<input type="hidden" name="order_num" value="" />
+<input type="hidden" name="goods_url" value="" />
+<input type="hidden" name="goods_img_url" value="" />
+</span></span>
+<span m:id="l_notEqu_tagCart_empty">
+<span m:id="l_notEqu_tagCart_empty_shop">
+<input type="hidden" name="order_amount" value="" />
+<input type="hidden" name="total_sale_price" value="" />
+<input type="hidden" name="total_order_num" value="" />
+<input type="hidden" name="postage" value="" />
+<input type="hidden" name="category_code" value="" />
+<input type="hidden" name="category_name" value="" />
+<input type="hidden" name="ext_goods_code" value="" />
+<input type="hidden" name="ext_goods_sku_code" value="" />
+<input type="hidden" name="goods_name" value="" />
+<input type="hidden" name="goods_price" value="" />
+<input type="hidden" name="order_num" value="" />
+<input type="hidden" name="goods_url" value="" />
+<input type="hidden" name="goods_img_url" value="" />
+</span></span>
+<span m:id="l_notEqu_tagCart_empty">
+<span m:id="l_notEqu_tagCart_not_empty_shop">
+<input m:id="tagForm_total_order" type="hidden" name="order_amount" value="" />
+<input m:id="tagForm_total_sale" type="hidden" name="total_sale_price" value="" />
+<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
+<input m:id="tagForm_postage" type="hidden" name="postage" value="" />
+<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
+<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
+<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
+<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
+<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
+<input m:id="tagForm_goods_num" type="hidden" name="order_num" value="" />
+<input m:id="tagForm_goods_url" type="hidden" name="goods_url" value="" />
+<input m:id="tagForm_goods_img_url" type="hidden" name="goods_img_url" value="" />
+</span></span>
+</form>
+<!--▲▲▲ tagForm ▲▲▲-->
 <!-- name="body" -->
 <!-- EndEditable -->
 <div id="container">
@@ -352,9 +409,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature15/">あけびの手提かご特集</a></li>
 	<li class="sp_gnav_link"><a href="/shop/static/feature14/">夏の30daysコーディネート特集</a></li>
 	<li class="sp_gnav_link"><a href="/shop/static/feature13/">東炊きリネンブラウス&amp;ロングスカート特集</a></li>
-	<li class="sp_gnav_link"><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -505,6 +562,7 @@ function initCorners() {
 
 		<!-- メインビジュアル（PC用）ここから -->
 		<div class="mainimages">
+      <div><a href="/shop/static/feature15/" class="wrap_pc"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/PC_feature15.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature14/" class="wrap_pc"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/PC_feature14.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature13/" class="wrap_pc"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/PC_feature13.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature12/" class="wrap_pc"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/PC_feature12.jpg" alt="" /></a></div>
@@ -528,6 +586,7 @@ function initCorners() {
   
   	<!-- メインビジュアル（SP用）ここから -->
 		<div class="mainimagessp">
+      <div><a href="/shop/static/feature15/" class="wrap_sp"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/SP_feature15.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature14/" class="wrap_sp"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/SP_feature14.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature13/" class="wrap_sp"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/SP_feature13.jpg" alt="" /></a></div>
       <div><a href="/shop/static/feature12/" class="wrap_sp"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/SP_feature12.jpg" alt="" /></a></div>
@@ -658,6 +717,16 @@ function initCorners() {
       </h2>
      <div class="specialcontents_photowrap">
         <ul>
+          <li>
+            <h3 class="img_special">
+            	<a href="/shop/static/feature15/">
+              	<img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/pic_feature15.jpg" class="photo" alt="">
+                <img src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/ttl_special_feature15.png" alt="" class="ttl feature10">
+              </a>
+            </h3>
+            <p class="cap_special">「ひとつは必ずもっていたい」<br />かごバッグへの女性の憧れ、叶えます。<br /><br /></p>
+            <p class="btn_special"><a href="/shop/static/feature14/">More</a></p>
+          </li>
           <li>
             <h3 class="img_special">
             	<a href="/shop/static/feature14/">
@@ -1015,6 +1084,10 @@ function initCorners() {
       	<div class="infobox">
     			<h2><img src="../../../contents/shop/00000006/shop/image/kigokochi/ttl_information.gif" width="523" height="32" alt=""/></h2>
           <dl>
+          	<dt>2016/7/4</dt>
+            <dd><a href="/shop/static/feature15/">あけびの手提かご特集を公開しました。</a></dd>
+          </dl>
+          <dl>
           	<dt>2016/6/20</dt>
             <dd><a href="/shop/static/feature14/">夏の30daysコーディネート特集を公開しました。</a></dd>
           </dl>
@@ -1255,9 +1328,9 @@ function initCorners() {
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
+      <li><a href="/shop/static/feature15/">あけびの手提かご特集</a></li>
       <li><a href="/shop/static/feature14/">夏の30daysコーディネート特集</a></li>
       <li><a href="/shop/static/feature13/">東炊きリネンブラウス&amp;ロングスカート特集</a></li>
-      <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
     </ul>
     <ul class="footer_category only_pc">
