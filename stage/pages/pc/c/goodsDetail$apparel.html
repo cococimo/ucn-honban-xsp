@@ -67,6 +67,7 @@ $(function() {
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <meta m:id="e_var_member_goodsDetail">
+<meta m:id="site_products">
 <script language="JavaScript" type="text/javascript"><!--
 function reportParamFavorite_trans(){
   document.memberFavoriteAddForm.submit();
@@ -116,7 +117,6 @@ function siteCatalistAddCart1(s_products){
 }
 //-->
 </script>
-<meta m:id="site_products">
 <span m:id="l_notPre_goods">
     <meta m:id="e_var_goods2">
     <span m:id="l_notPre_goods">
@@ -137,9 +137,57 @@ function siteCatalistAddCart1(s_products){
 	    </span>
     </span>
 </span>
-<meta class="xsp_obj" m:id="e_var_cart">
+<meta m:id="e_var_cart">
 <!-- InstanceEndEditable -->
-
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
  
 <body id="top">
@@ -288,7 +336,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -362,13 +410,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- include:00000003/goods/default.jsp -->
 
+
 <!-- ここから -->
+
 
 
 <!-- インクルード領域 -->
 <span m:id="html_include1">外部HTML1 表示領域</span>
 <!--/ インクルード領域  -->
-
 	<div class="ectemp_left">
 	    <div class="wrap_eccart">
 		<!-- カート -->
@@ -417,14 +466,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal" onclick=""></a>
 			</form>
 			</span>
-            
-<span m:id="l_equ_soldOutSalesStatus">
-		<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-	</span>
-	<span m:id="l_equ_noStockSalesStatus">
-		<img src="contents/shop/00000003/image/mizai.jpg" alt="在庫がありません。入庫までお待ちください" />
-	</span>
-    			
+			
 			<span m:id="l_notEqu_select">
 <img src="contents/shop/00000003/shop/image/pc_item_bt_02off.jpg" alt="色・サイズ、数量をご指定下さい" class="image96" />
 </span>
@@ -435,14 +477,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<!-- /カート -->
 	    </div>
 	</div>
-
-
 	<!-- /left -->
 
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <!-- FlexSlider -->
-<script defer src="http://www-st.cococimo.jp/shop/c/e/DHD/contents/shop/00000003/common_sp/common_s_temp/js/jquery.flexslider.js"></script>
+<script defer src="/shop/c/e/DHD/contents/shop/00000003/common_sp/common_s_temp/js/jquery.flexslider.js"></script>
 <script type="text/javascript">
 $(function(){
     SyntaxHighlighter.all();
@@ -457,14 +497,11 @@ $(window).load(function(){
     });
 });
 </script>
-
-
 </div>
 
 <!-- 内容ここまで -->
 
 </div><!--r_con_box_03-->
-<br clear="all" />
 
 <!-- 商品レビュー start-->
 <object class="xsp_obj" m:id="e_var_goodsReview"></object>
@@ -536,11 +573,12 @@ $(window).load(function(){
 
 <!-- /商品レビュー end-->
 
+<br clear="all" />
+
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
 <span m:id="l_notEmp_autoRecommendGoodsList">
 <div class="r_con_box_02">
 <!--<h2 class="sp_only sp_r_tit_01"><img src="../../../contents/shop/00000003/shop/image/sp/sp_sec_04_img_01.png" alt="あなたの閲覧履歴からのおススメです" /></h2>-->
-<h2 class="temp_tit_n021 temp_tit_n02_cor">この商品を見た人はこの商品も見ています</h2>
 <div class="clearfix r_con_box_02_in">
 
 <ul class="r_con_list_04">
@@ -655,7 +693,7 @@ $(window).load(function(){
 		<div class="guidebox_left">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（産地直送品、メーカー直送家具を除く）</div>        
+                <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（常温、冷蔵、冷凍と表示のある商品を除く）</div>
 			<div class="box_souryou">
 			<p>お買い物総額5,000円（税込）未満の場合<br>
 			<span class="souryoutxt">＝送料500円</span><br>
@@ -663,23 +701,29 @@ $(window).load(function(){
 			500円の送料がかかります。</p>
 			</div>
 			
-			<div class="box_souryou02">
-			<p>お買い物総額5,000円以上&#65374;10,000円未満<br>
-			<span class="souryoutxt">＝送料250円</span><br>
-			１回のお買い上げ総額が5,000円以上から10,000円
-			未満の場合、250円の送料がかかります。</p>
-            </div>
-            
-			<div style="margin-top:-20px; padding:8px">
-			<p>
-			ただし、産地直送品（商品ページの詳細部分<br />に明記）は、お申込みの商品名１つごとで、<br />
-			お届け先１ヵ所につき、常温は税込600円、<br />冷凍・冷蔵は税込800円がかかります<br />（全国一律）。<br />
-			※同じ商品名で、お届け先が同じ場合はいくつでも上記料金となります。<br />
+        <div class="box_souryou02">
+          <p>お買い物総額5,000円以上&#65374;10,000円未満<br>
+            <span class="souryoutxt">＝送料250円</span><br>
+            １回のお買い上げ総額が5,000円以上から10,000円
+            未満の場合、250円の送料がかかります。</p>
+          </div><!--
+        <div style="margin:-20px 0 0 0; text-align:left; font-size:12px; background-color: #F7F5F0;
+    padding: 8px;">
+          ※「おいしい食卓」常温B表示のある商品も上記送料を適用。
+        </div> --> 
+        <div style="padding:8px">
+          <p>
+          <strong>&#12316;「おいしい食卓」に関して&#12316;</strong><br />
+		    お申込みの商品名1つごと・お届け先1ヵ所につき、常温は税込600円、<br />冷凍・冷蔵は税込800円がかかります<br />（全国一律）。<br />
+			※同一商品を2個以上同時にお申込みの場合は1個分の送料となります。ただし、お届け先が異なる場合はお届け先ごとに送料を申し受けます。<br />
 			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
 			されます。<br /><br />        
             </p>
-			</div>                      
-			
+            <p>
+            <strong>商品のお届け</strong><br />
+            商品はお申込みから通常1週間&#12316;10日前後でお届けいたします。
+            </p>
+			</div>              
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl03.gif" alt="配送について" class="sgttl">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic06.gif" class="yamato sgttl" alt="ヤマト運輸が代行配送します。">
 		<p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br>
@@ -693,7 +737,9 @@ $(window).load(function(){
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic03.gif" class="card02 sgttl" alt="ご利用可能なクレジットカード">
 		<p class="txt12">その他、各種クレジットカードがご利用いただけます。<br>
 		<span class="kome">※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</span></p>
-		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円">
+		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円"><br />
+<br />
+
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl04.gif" class="sgttl" alt="商品のお届けについて">
 		<p class="txt_shouhin">お申込みから<b>通常３&#65374;６日</b>ほどでお届けいたします。期日・時間帯をご指定いただける商品もございます。<br>
 ※年末年始のご注文はお届けに時間をいただく場合がございます。</p>
@@ -702,8 +748,7 @@ $(window).load(function(){
 		ご希望の場合はお電話でお申込みください。</p>
 		<p class="txt_rapping"><span class="point01">お申込みは下記ココチモお客様センターまで</span><br>
 		<span class="point02">フリーダイヤル</span><span class="point03">0120-552-186</span><br>
-		受付時間…7：00&#65374;22：00（年中無休）<br>
-		※IP電話をご利用の方は03-5547-2511へおかけください。</p>
+		受付時間…7：00&#65374;22：00（日曜・祝日も受付けます）</p>
 		</div>
 	</div><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_foot02.gif" class="shopping_guide_foot" alt="">
 </div>
@@ -932,7 +977,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 </div><!--contents-->
 
-</div>
+</div><!--container-->
+
 
 
 
@@ -1152,7 +1198,6 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
-<!--
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -1165,7 +1210,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_member" content=""></meta>
 <meta m:id="criteo_common_site_type" content=""></meta>
 <meta m:id="criteo_view_item" content=""></meta>
--->
+<meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
 </body>
