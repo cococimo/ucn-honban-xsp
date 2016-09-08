@@ -271,6 +271,68 @@ function siteCatalistAddCart1(s_products){
 <!-- InstanceBeginEditable name="body" -->
 <!-- InstanceEndEditable -->
 
+<!-- カートリカバリー t_yoshida 20160908 add-->
+<span m:id="l_notEqu_tagCart_not_empty_shop">
+
+<script>			
+var ext_goods_code = document.tagForm.ext_goods_code.value;
+var goods_url = document.tagForm.goods_url.value;
+var goods_name = document.tagForm.goods_name.value;
+var goods_img_url = document.tagForm.goods_img_url.value;
+var goods_price = document.tagForm.goods_price.value;
+var order_num = document.tagForm.order_num.value;
+
+var ext_goods_code_Array = ext_goods_code.split("|");
+var goods_url_Array = goods_url.split("|");
+var goods_name_Array = goods_name.split("|");
+var goods_img_url_Array = goods_img_url.split("|");
+var goods_price_Array = goods_price.split("|");
+var order_num_Array = order_num.split("|");
+
+var  cnt = ext_goods_code_Array.length;  
+
+
+  document.write("<script>"); 			
+  document.write("contx = {");			
+  document.write("\'user\': {");			
+    document.write("\'id\': \'"+document.tagForm.email.value+"\'");			
+    document.write("},");			
+    document.write("\'cart\': {");			
+      document.write("\'items\': [");		
+
+      for(i=0;i<cnt;i++){     	
+        document.write("{");			
+          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
+          document.write("\'page\':  \'"+goods_url_Array[i]+"\',");			
+          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");			
+          document.write("\'image\': \'"+goods_img_url_Array[i]+"\',");			
+          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
+          document.write("\'count\': \'"+order_num_Array[i]+"\',");			
+          document.write("\'stock\': \'\'");			
+        document.write("}");
+        document.write("}");
+        if(i != cnt-1){
+        document.write(",");
+        }
+      } 			
+      document.write("]");			
+    document.write("}");			
+  document.write("};");	
+  document.write("<\/script>"); 		
+</script>			
+		
+
+<script>
+
+(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
+j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
+})(window,document,'script','contx','CTX-f9ehSMTr');
+
+</script>
+
+</span>
+<!-- カートリカバリーここまで -->
 <div id="container">
 
 <div id="header">
