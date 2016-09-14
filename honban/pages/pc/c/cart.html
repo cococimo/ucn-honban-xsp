@@ -355,13 +355,15 @@ var  cnt = ext_goods_code_Array.length;
           document.write("\'count\': \'"+order_num_Array[i]+"\',");			
           document.write("\'stock\': \'\'");			
         document.write("}");
+        if(i != cnt-1){
+        document.write(",");
+        }
       } 			
       document.write("]");			
     document.write("}");			
   document.write("};");	
   document.write("<\/script>"); 		
-</script>			
-		
+</script>	
 
 <script>
 
@@ -371,7 +373,6 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 })(window,document,'script','contx','CTX-f9ehSMTr');
 
 </script>
-
 </span>
 <!-- カートリカバリーここまで -->
 
