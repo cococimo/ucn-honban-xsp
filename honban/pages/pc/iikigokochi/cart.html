@@ -446,6 +446,11 @@ if ( window.addEventListener ) {
 <!-- InstanceBeginEditable name="head" -->
 
 <!-- InstanceEndEditable -->
+
+<!-- DLPO -->
+<script src="/contents/shop/00000006/js/kigokochi/adlpo.js" type="text/javascript"></script>
+<!-- DLPO -->
+
 </head>
 <body id="top">
 
@@ -514,6 +519,68 @@ if ( window.addEventListener ) {
 </span></span>
 </form>
 <!--▲▲▲ tagForm ▲▲▲-->
+
+<!-- カートリカバリー -->
+<span m:id="l_notEqu_tagCart_not_empty_shop">
+
+<script>			
+var ext_goods_code = document.tagForm.ext_goods_code.value;
+var goods_url = document.tagForm.goods_url.value;
+var goods_name = document.tagForm.goods_name.value;
+var goods_img_url = document.tagForm.goods_img_url.value;
+var goods_price = document.tagForm.goods_price.value;
+var order_num = document.tagForm.order_num.value;
+
+var ext_goods_code_Array = ext_goods_code.split("|");
+var goods_url_Array = goods_url.split("|");
+var goods_name_Array = goods_name.split("|");
+var goods_img_url_Array = goods_img_url.split("|");
+var goods_price_Array = goods_price.split("|");
+var order_num_Array = order_num.split("|");
+
+var  cnt = ext_goods_code_Array.length;  
+
+
+  document.write("<script>"); 			
+  document.write("contx = {");			
+  document.write("\'user\': {");			
+    document.write("\'id\': \'"+document.tagForm.email.value+"\'");			
+    document.write("},");			
+    document.write("\'cart\': {");			
+      document.write("\'items\': [");		
+
+      for(i=0;i<cnt;i++){     	
+        document.write("{");			
+          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
+          document.write("\'page\':  \'"+goods_url_Array[i]+"\',");			
+          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");			
+          document.write("\'image\': \'"+goods_img_url_Array[i]+"\',");			
+          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
+          document.write("\'count\': \'"+order_num_Array[i]+"\',");			
+          document.write("\'stock\': \'\'");			
+        document.write("}");
+        if(i != cnt-1){
+        document.write(",");
+        }
+      } 			
+      document.write("]");			
+    document.write("}");			
+  document.write("};");	
+  document.write("<\/script>"); 		
+</script>	
+
+<script>
+(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
+j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
+})(window,document,'script','contx','CTX-Wpop-5g5');
+</script>
+
+</span>
+
+<!-- カートリカバリー　ここまで -->
+
+
 <!-- name="body" -->
 <!-- EndEditable -->
 <div id="container">
@@ -667,9 +734,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-	<li class="sp_gnav_link"><a href="/shop/static/feature14/">夏の30daysコーディネート特集</a></li>
-	<li class="sp_gnav_link"><a href="/shop/static/feature13/">東炊きリネンブラウス&amp;ロングスカート特集</a></li>
-	<li class="sp_gnav_link"><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature16/">ワイドパンツ特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -1037,7 +1103,7 @@ $(window).on('load resize', function(){
 <tr>
 
 
-<td class="itemname_td">
+<td class="itemname_td addbod">
 <div class="delete_link_left"><!-- ■ ■ 個別送料対応 2015.08.27 koba ■ ■ --><span m:id="l_equ_individual"></span><!-- /■ ■ 個別送料対応 2015.08.27 koba ■ ■ -->
 <span m:id="l_notEqu_removeMe">
 <span m:id="h_link_cart_default_url">
@@ -1085,10 +1151,10 @@ $(window).on('load resize', function(){
 
 <!-- <td class="right"><span m:id="b_wr_goods_price_tax">2000</span> 円</td> -->
 <span m:id="l_notEqu_installment">
-<td class="left lump1" >
+<td class="left lump1 addbod" >
 	一括払
 </td>
-<td class="right lump2">
+<td class="right lump2 addbod">
 	<span m:id="l_equ_memberSpecialDiscount">
 	  <span m:id="disp_goods_special_price">1000 円　</span>
 	</span>
@@ -1124,7 +1190,7 @@ $(window).on('load resize', function(){
 </td>
 </span>
 
-<td>
+<td class="addbod">
   <!-- <input m:id="h_txt_order_num_string" type="text" name="" value="" class="in_w_01" maxlength="2" /> -->
   <select m:id="h_sel_order_num" class="in_w_01" maxlength="2" >
 				<option m:id="h_pull_order_num" value="3">3</option>
@@ -1134,7 +1200,7 @@ $(window).on('load resize', function(){
 </td>
 
 
-<td class="right">
+<td class="right addbod">
   <!-- <span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円　</span> -->
   <span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
   <span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
@@ -1188,7 +1254,6 @@ $(window).on('load resize', function(){
 <div class="box_right02">数量を変更したい場合は数量を再選択の上<br />
   「再計算する」ボタンを押してください。</div>
 </div>
-
 
 <div class="wrap_cart">
 <div class="right total_annotation">(※商品金額計は一括金額を表示しています)</div>
@@ -1568,9 +1633,15 @@ $(window).on('load resize', function(){
 					    </span>
 	                    
 	</div>
-	<div class=" box_01 n_bt_re_01 go_buy mb30">
+	<!-- DLPO -->
+	<div class='ADLPODefault'>
+	<div class=" box_01 n_bt_re_01 go_buy mb30">	
 	<a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a></div>
+	</div>
+<script type='text/javascript'>adlpoMain('sale201608','lc=os','ch=Shift-JIS');</script>
+    <!-- DLPOここまで -->
 	</div><!-- /cartright -->
+	
 
 </div><!-- /cartMain -->
 <div class="cartMain">
@@ -1609,9 +1680,13 @@ $(window).on('load resize', function(){
 					</a>
 				</span>
 	</div>
-	<div class=" box_01 n_bt_re_01 go_buy mb30">
-		<a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a>
+	<!-- DLPO -->
+	<div class='ADLPODefault'>
+	<div class=" box_01 n_bt_re_01 go_buy mb30">	
+	<a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a></div>
 	</div>
+<script type='text/javascript'>adlpoMain('sale201608','lc=os','ch=Shift-JIS');</script>
+    <!-- DLPOここまで -->
 
 </div>
 <!-- /お客様情報入力 下部 -->
@@ -1822,7 +1897,7 @@ $(window).on('load resize', function(){
      <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼-->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
  <div class="con_block">
-  <span m:id="l_notEmp_autoRecommendGoodsList">
+   <span m:id="l_notEmp_autoRecommendGoodsList">
 <div class="con_box_check clearfix">
     <h2>この商品を買われた方はこんな商品も買っています</h2>   
 
@@ -1892,7 +1967,7 @@ $(window).on('load resize', function(){
     </ul>     
       
 </div>  
-</span>  
+</span>
 </div> 
   <!--▲▲▲こんな商品も買っています▲▲▲-->
 
@@ -1968,10 +2043,10 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
-	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
-	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
-      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      </ul>
+      <li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>
+      <li><a href="/shop/static/feature16/">ワイドパンツ特集</a></li>
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
+     </ul>
     <ul class="footer_category only_pc">
       <li>
       	<a href="#">商品カテゴリー</a>
@@ -2176,6 +2251,41 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </div>
+<!-- ▼▼▼ google ▼▼▼ -->
+<script>			
+var ext_goods_code = document.tagForm.ext_goods_code.value;
+var goods_url = document.tagForm.goods_url.value;
+var goods_name = document.tagForm.goods_name.value;
+var goods_img_url = document.tagForm.goods_img_url.value;
+var goods_price = document.tagForm.goods_price.value;
+var order_num = document.tagForm.order_num.value;
+
+var ext_goods_code_Array = ext_goods_code.split("|");
+var goods_url_Array = goods_url.split("|");
+var goods_name_Array = goods_name.split("|");
+var goods_img_url_Array = goods_img_url.split("|");
+var goods_price_Array = goods_price.split("|");
+var order_num_Array = order_num.split("|");
+
+var  cnt = ext_goods_code_Array.length;  
+var google_total_value = 0;
+var google_ext_goods_code = "";
+      for(i=0;i<cnt;i++){
+		google_total_value = parseInt(google_total_value) + parseInt(goods_price_Array[i])*parseInt(order_num_Array[i]);
+		google_ext_goods_code = google_ext_goods_code + ext_goods_code_Array[i];
+		if(i != cnt-1 && cnt != 1){
+        google_ext_goods_code = google_ext_goods_code + ",";
+        }
+      } 
+</script>
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: ext_goods_code_Array,
+ecomm_pagetype: "cart",
+ecomm_totalvalue: google_total_value
+};
+</script>
+<!-- ▲▲▲ google ▲▲▲ -->
 <!-- InstanceEndEditable -->  
 </body>
 <!-- InstanceEnd --></html>
