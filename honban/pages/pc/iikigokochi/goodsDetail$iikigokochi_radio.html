@@ -2482,6 +2482,19 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </div>
 </div><!-- /#footer02 -->
 	<!-- InstanceBeginEditable name="footer_script" -->
+	<!-- ¥¥¥ google ¥¥¥ -->
+<form name="googleGoodsForm">
+<input m:id="h_hid_google_goods_ext_goods_code" type="hidden" name="ext_goods_code" value="XXX99"/>
+<input m:id="h_hid_google_goods_sale_price" type="hidden" name="sale_price" value="123"/>
+</form>
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: document.googleGoodsForm.google_goods_ext_goods_code.value,
+ecomm_pagetype: "product",
+ecomm_totalvalue: document.googleGoodsForm.google_goods_sale_price.value
+};
+</script>
+<!-- £££ google £££ -->
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
@@ -2554,19 +2567,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 
 </div>
 <!-- footer’Ç‰Á -->
-<!-- ¥¥¥ google ¥¥¥ -->
-<form name="googleGoodsForm">
-<input m:id="h_hid_google_goods_ext_goods_code" type="hidden" name="ext_goods_code" value="XXX99"/>
-<input m:id="h_hid_google_goods_sale_price" type="hidden" name="sale_price" value="123"/>
-</form>
-<script type="text/javascript">
-var google_tag_params = {
-ecomm_prodid: document.googleGoodsForm.google_goods_ext_goods_code.value,
-ecomm_pagetype: "product",
-ecomm_totalvalue: document.googleGoodsForm.google_goods_sale_price.value
-};
-</script>
-<!-- £££ google £££ -->
 <!-- InstanceEndEditable -->  
 </body>
 <!-- InstanceEnd --></html>

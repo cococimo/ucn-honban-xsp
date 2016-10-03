@@ -171,6 +171,11 @@ window._fbq.push(['track', '6026760052541', {'value':'0.00','currency':'JPY'}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026760052541&amp;cd[value]=0.00&amp;cd[currency]=JPY&amp;noscript=1" /></noscript>
 <!-- InstanceEndEditable -->
+
+<!-- DLPO -->
+<script src="/contents/shop/00000006/js/kigokochi/adlpo.js" type="text/javascript"></script>
+<!-- DLPO -->
+
 </head>
 <body id="top">
 
@@ -197,6 +202,60 @@ window._fbq.push(['track', '6026760052541', {'value':'0.00','currency':'JPY'}]);
 <input m:id="tagForm_goods_num" type="hidden" name="goods_num" value="" />
 </form>
 <!--▲▲▲ tagForm ▲▲▲-->
+
+<!-- カートリカバリー -->
+
+<script>
+var ext_goods_code = document.tagForm.ext_goods_code.value;
+var goods_name = document.tagForm.goods_name.value;
+var goods_price = document.tagForm.goods_price.value;
+var goods_num = document.tagForm.goods_num.value;
+
+var ext_goods_code_Array = ext_goods_code.split("|");
+var goods_name_Array = goods_name.split("|");
+var goods_price_Array = goods_price.split("|");
+var goods_num_Array = goods_num.split("|");
+
+var  cnt = ext_goods_code_Array.length;  
+  document.write("<script>");
+  document.write("contx = {");
+  document.write("\'user\': {");
+    document.write("\'id\': \'"+document.tagForm.email.value+"\'");	
+    document.write("},");
+    document.write("\'cart\': {");	
+      document.write("\'items\': []");	
+      document.write("},");
+          document.write("\'cv\': {");
+          document.write(" \'items\': [");
+      for(i=0;i<cnt;i++){    
+        document.write("{");	
+          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
+          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");	
+          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
+          document.write("\'count\': \'"+goods_num_Array[i]+"\',");		
+          document.write("\'stock\': \'\'");
+        document.write("}");
+        if(i != cnt-1){
+        document.write(",");
+        }
+      } 		        			
+      document.write("]");			
+    document.write("}");			
+  document.write("};");		
+  document.write("<\/script>"); 		
+</script>
+
+<script>
+(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
+j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
+})(window,document,'script','contx','CTX-Wpop-5g5-TEST');
+</script>
+
+<!-- カートリカバリー　ここまで -->
+
+
+
 <!-- name="body" -->
 <!-- EndEditable -->
 <div id="container">
@@ -1206,6 +1265,26 @@ $(window).on('load resize', function(){
   </div>
 </div><!-- /#footer02 -->
 	<!-- InstanceBeginEditable name="footer_script" -->
+
+<!-- ▼▼▼ google ▼▼▼ -->
+<script type="text/javascript">
+var google_ext_goods_code = "";
+</script>
+<span m:id="l_ite_detail">
+<script type="text/javascript">
+		google_ext_goods_code = google_ext_goods_code + ${detail.ext_goods_code} + ",";
+</script>
+</span>
+
+<script type="text/javascript">
+google_ext_goods_code = google_ext_goods_code.replace( /,$/g , "" ) ;
+var google_tag_params = {
+ecomm_prodid: ext_goods_code_Array,
+ecomm_pagetype: "purchase",
+ecomm_totalvalue: '${order.payment_amount}',
+};
+</script>
+<!-- ▲▲▲ google ▲▲▲ -->
 <!-- ▼▼▼▼▼tracking ga▼▼▼▼▼ -->
 
 <!-- inclue order_receipt_tags -->
@@ -1493,5 +1572,10 @@ var google_remarketing_only = false;
 </noscript>
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=203'></script>
 <!-- InstanceEndEditable -->  
+
+<!-- DLPO CV -->  
+<script type='text/javascript'>adlpoMain('kigokochi_CV','pr=cv');</script>
+<!-- DLPO CV -->  
+
 </body>
 <!-- InstanceEnd --></html>

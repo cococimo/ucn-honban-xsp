@@ -607,6 +607,25 @@ alt="ZŠ˜^“o˜^"></span></a>
 
 
 <img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
+<!-- ¥¥¥ google ¥¥¥ -->
+<script type="text/javascript">
+var google_ext_goods_code = "";
+</script>
+<span m:id="l_ite_detail">
+<script type="text/javascript">
+		google_ext_goods_code = google_ext_goods_code + ${detail.ext_goods_code} + ",";
+</script>
+</span>
+
+<script type="text/javascript">
+google_ext_goods_code = google_ext_goods_code.replace( /,$/g , "" ) ;
+var google_tag_params = {
+ecomm_prodid: ext_goods_code_Array,
+ecomm_pagetype: "purchase",
+ecomm_totalvalue: '${order.payment_amount}',
+};
+</script>
+<!-- £££ google £££ -->
 <!-- InstanceEndEditable -->
 </div><!--contents_r_02-->
 
