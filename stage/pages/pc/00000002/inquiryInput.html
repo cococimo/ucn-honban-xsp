@@ -68,8 +68,8 @@ $(function() {
     background: url(/contents/00000002/shop/image/pc_logo_life.jpg) no-repeat;
     width: 220px;
 	position:absolute;
-	top:6px;
-	left:202px
+	top:2px;
+	left:195px
 }
 #header_logo3 {
     text-indent: -9999px;
@@ -138,6 +138,8 @@ $(function() {
 <img m:id="static_img" src="../../../contents/shop/00000002/shop/image/pc_logo_ii.jpg" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
 </span>
 </div></a>
+
+
 <div id="header_tell" class="pc_only">
 <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell_s.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
 </div>
@@ -192,7 +194,7 @@ $(function() {
     お問い合わせが集中した場合や、お問い合わせの内容によっては、お返事に時間がかかる場合がございます。<br />
     また、お電話・お手紙でお返事させていただく場合もございますので、あらかじめご了承ください。<br />
     18：00以降および土日祝にお問合せいただいた場合翌営業日以降のご連絡となります。<br />
-    また、上記フリーダイヤルにて年中無休でお問合せを受付けておりますので、あわせてご利用ください。
+    また、フリーダイヤル <b style="color:red;">0120-552-186</b>（6時&#12316;22時） にて日曜・祝日もお問合せを受付けておりますので、あわせてご利用ください。
     
     
     
@@ -422,7 +424,7 @@ $(function() {
       <dt>金額小計</dt>
       <dd><span m:id="b_wr_side_total_price_amt"><span m:id="dummy">●●●●</span></span>円</dd>
     </dl>
-    <div id="l_bt_01"> <a href="/shop/cart.do" onClick="
+    <div id="l_bt_01"> <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events'; 
 s.linkTrackEvents='scView';
 s.events='scView';
