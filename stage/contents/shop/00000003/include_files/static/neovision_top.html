@@ -1,3 +1,6 @@
+<script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="contents/shop/00000003/js/jquery.fixedheaderscroll.js"></script>
+<script type="text/javascript" src="contents/shop/00000003/js/exword2.js"></script>
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/neovision-style.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <!--[if IE 8]>
@@ -18,11 +21,219 @@ window.onerror = function(){
 
 <style>
 *{font-family:'ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif}
+.mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+.mincho *{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+
+.wrap_con .first .first_pc h1{text-align:center;padding-top:10px;margin: 0 0 0 20px;}
+.wrap_con .first .first_pc h1 img{width:785px}
+/*Hamburger menu*/
+#c-nav {
+	display:none;
+	position: fixed;
+	right: 20px;
+	z-index: 10;
+	padding-top: 56px;
+	min-height: 56px;
+	min-width: 48px;
+	}
+
+@media only screen and (max-width: 640px) {
+    .c-nav {
+        top:10px;
+        right: 10px
+    }
+}
+
+.c-nav .c-nav-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer
+}
+
+.c-nav .c-nav-btn:hover {
+    overflow: hidden
+}
+
+.c-nav .c-nav-btn:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 56px;
+    background: rgba(255,255,255,.25)
+}
+
+.c-nav .c-nav-inner {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    display: none
+}
+
+.c-nav .c-nav-inner a {
+    border-bottom: 1px solid #fff
+}
+
+.c-nav .c-nav-inner .nav01 a {
+    border-color: #5977ae!important
+}
+
+.c-nav .c-nav-inner .nav02 a {
+    border-color: #d29d00!important
+}
+
+.c-nav .c-nav-inner .nav03 a {
+    border-color: #c3185c!important
+}
+
+.c-nav .c-nav-inner .nav04 a {
+    border-color: #678c4f!important
+}
+
+.c-nav .c-nav-inner .nav05 a {
+    border-color: #616ab9!important
+}
+
+.c-nav .c-nav-inner a {
+    display: block;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+    color: #000;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-left: 6px solid #000
+}
+
+.c-nav .c-nav-inner a:hover {
+    background: #f9f9f9
+}
+
+/*top-btn*/
+.totop-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    height: 56px;
+    width: 48px
+}
+
+@media only screen and (max-width: 640px) {
+    .totop-btn {
+        bottom:10px;
+        right: 10px
+    }
+}
+
+.totop-btn a:hover {
+    overflow: hidden;
+    display: inline-block
+}
+
+.totop-btn a:hover img {
+    opacity: 1
+}
+
+.totop-btn a:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 52px;
+    background: rgba(255,255,255,.25)
+}
+
+/*もっと見るボタン*/
+@media (max-width: 640px) {
+	#header{margin-bottom: 0;}
+	#header_r {padding-top: 3%;}
+	#header_r_01 {margin-bottom: 5px;}
+}
+
+.contain-second,.voice-second {
+    display: none
+}
+
+.contain-toggle a,.voice-toggle a {
+    border: 3px solid #7fab84;
+    color: #3a5f3e;
+    text-decoration: none;
+    padding: .75em 2em;
+    display: block;
+    text-align: center;
+    background: #e1ffe4;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+    border-radius: 8px
+}
+
+.contain-toggle a:hover,.voice-toggle a:hover {
+    background: #ebffed
+}
+
+@media only screen and (max-width: 640px) {
+    a:hover img {
+        opacity:1!important
+    }
+
+    .contain-toggle a,.voice-toggle a {
+        font-size: 18px
+    }
+}
+
+.forth-container p.forth-p02,.second-box01 p,.second-box02>.cl-fix:first-child>div:first-child p,.second-container dl dd,.second-container dl dt,.second-container p {
+    font-size: 16px;
+    line-height: 1.65
+}
+
+.contain-toggle {
+    margin: 20px 1em 10px;
+    }
+  
+/*tel btn*/
+.tel {
+	margin-top:1em;
+    display: inline-block;
+ }
+
 </style>
 <div class="wrap_con">
+	<div id="c-nav" class="c-nav">
+		<p id="c-nav-open" class="c-nav-btn">
+			<img src="contents/c/shop/image/sp/sp_img_nav.png" alt="メニュー" width="48">
+		</p>
+		<div class="c-nav-inner">
+			<p id="c-nav-close" class="c-nav-btn">
+				<img src="contents/c/shop/image/sp/sp_img_nav_close.png" alt="閉じる" width="48">
+			</p>
+			<ul>
+				<li class="nav01">
+					<a href="#movie">WEB限定動画公開中！</a>
+				</li>
+				<li class="nav02">
+					<a href="#enjoy">こんなに楽しい「しゃべる地球儀」</a>
+				</li>
+				<li class="nav03">
+					<a href="#newCon">こんなところが新しい！！</a>
+				</li>
+				<li class="nav04">
+					<a href="#review">全国から喜びの声、続々と！</a>
+				</li>
+				<li class="nav05">
+					<a href="#gaiyou">商品概要</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 		<div class="bs-wrap first">
 				<div class="first_pc spn">
-					<h2><img src="contents/shop/00000003/image/static/img/neovision/first01.png" alt="しゃべる地球儀"></h2>
+					<h1><img src="contents/shop/00000003/image/static/img/neovision/first01.png" alt="しゃべる地球儀　パーフェクトグローブネオビジョン 通販"></h1>
 					<p class="p01"><img src="contents/shop/00000003/image/static/img/neovision/first02.png" alt="映像10,000シーン以上収録！"></p>
 					<p class="p02"><img src="contents/shop/00000003/image/static/img/neovision/first03.png" alt="すべての操作はタッチペン１本で！！電源スイッチの操作もできます。"></p>
 					<p class="p03"><img src="contents/shop/00000003/image/static/img/neovision/first04.png" alt="ココチモオリジナル迫力の大画面！７インチ液晶パネル"></p>
@@ -35,13 +246,13 @@ window.onerror = function(){
                                   <script type='text/javascript'>adlpoMain('hiroshima_yamaguchi2_neovision','lc=os','ch=Shift-JIS');</script>
                                   
 			<div class="bs-wrap second">
-				<h2><!--ただいまCM放送中！-->WEB限定動画公開中！</h2>
+				<h2 id="movie"><!--ただいまCM放送中！-->WEB限定動画公開中！</h2>
 				<div class="second-movie">
-                <div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ny-eqnWyHRM?rel=0" frameborder="0" allowfullscreen></iframe>
+                <div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ny-eqnWyHRM?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 					<!--旧CM<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J-xsNMqT5l0?rel=0" frameborder="0" allowfullscreen></iframe>--></div>
 				</div>
 			</div>
-			<div class="bs-wrap third">
+			<div class="bs-wrap third" id="enjoy">
 				<div class="thirdin clearfix">
 					<p class="p01"><span class="span01">触れて！</span><span class="span02">聞いて！</span><span class="span03">見て！</span></p>
 					<h2><img src="contents/shop/00000003/image/static/img/neovision/third01.png" alt="こんなに楽しい「しゃべる地球儀」" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/third_sp01.png" alt="こんなに楽しい「しゃべる地球儀」" class="spi"></h2>
@@ -75,11 +286,12 @@ window.onerror = function(){
 					<input type="hidden" name="goods_sku_code" value="00000275">
 					<input type="hidden" name="ext_goods_sku_code" value="DEB00">
 					<input type="hidden" name="order_num_string" value="1"> -->
-					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a></p>
-					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a></p>
+					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
+
 			<!-- 	</form> -->
 			</div>
-			<div class="bs-wrap fifth">
+			<div class="bs-wrap fifth" id="newCon">
 				<div class="fifth-ttl">
 					<h2><img src="contents/shop/00000003/image/static/img/neovision/fifth02.png" alt="「しゃべる地球儀」はこんなところが新しい！" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/fifth_sp01.png" alt="「しゃべる地球儀」はこんなところが新しい！" class="spi"></h2>
 				</div>
@@ -111,34 +323,37 @@ window.onerror = function(){
 						<dt>発明と革新</dt>
 						<dd>●羅針盤（紀元前800年） ●印刷機（1436年） ●蒸気機関車（1804年） ●電話（1876年） ●自動車（1885年） ●テレビ（1927年） ●ジェット機（1939年） ●コンピュータ（1941年） ●人工衛星（1957年） ●ＣＤ（1965年） ●携帯電話（1973年） ●インターネット（1989年）…他</dd>
 					</dl>
-					<dl class="clearfix">
-						<dt class="animal">動物<br><span class="font-s">両生類と無脊椎動物</span></dt>
-						<dd>●アリジゴク／バッタ…他（アフリカ） ●アルプスサラマンダー／アカガエル…他（ヨーロッパ） ●マレーシアツノガエル…他（アジア） ●セアカコケグモ／タマムシ…他（オセアニア） ●アメリカヒキガエル／サザンドワーフサイレン…他（北アメリカ） ●ゴリアテグモ…他（南アメリカ）</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt>恐竜の時代</dt>
-						<dd>●ティラノサウルスレックス／トリケラトプス…他（北アメリカ） ●ギガノトサウルス／パタゴサウルス…他（南アメリカ） ●エジプトサウルス／スピノサウルス…他（アフリカ）●始祖鳥／プテラノドン…他（ヨーロッパ） ●プロトケラトプス…他（アジア） ●アグロサウルス…他（オセアニア）</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt class="animal">動物<br><span class="font-s">魚類と爬虫類</span></dt>
-						<dd>●デンキナマズ／カメレオン…他（アフリカ） ●コイ／ヨーロッパドクヘビ…他（ヨーロッパ） ●ライギョ／キングコブラ…他（アジア） ●ホオジロザメ／アオウミガメ…他（オセアニア） ●ニジマス／ガラガラヘビ…他（北アメリカ） ●アナコンダ／グリーンイグアナ…他（南アメリカ）</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt>食べ物</dt>
-						<dd>●アサード（アルゼンチン） ●ミートパイ（オーストラリア）●チーズ（フランス） ●炒飯（中華人民共和国） ●カレー（インド） ●パスタ（イタリア） ●寿司（日本） ●クスクス（モロッコ） ●セビーチェ（ペルー） ●ボルシチ（ロシア）●キムチ（大韓民国） ●ステーキ（アメリカ合衆国）…他</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt>世界の国旗</dt>
-						<dd>●弥生文化／漢王朝…他（アジア） ●アルテミス神殿／ローマ帝国／フランス革命…他（ヨーロッパ） ●エジプト文明／ツタンカーメン…他（アフリカ） ●マヤ文明／独立宣言／同時多発テロ…他（アメリカ） ●モアイ／マゼラン／ウルルの発見…他（オセアニア）</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt>世界の歴史</dt>
-						<dd>●フランス／イタリア／ドイツ／イギリス…他（ヨーロッパ） ●モロッコ／エジプト／カメルーン／ケニア…他（アフリカ） ●日本／中華人民共和国／インド…他（アジア） ●オーストラリア／ニュージーランド…他（オセアニア）●アメリカ合衆国／カナダ／ブラジル…他（アメリカ）</dd>
-					</dl>
-					<dl class="clearfix">
-						<dt>ランドマーク</dt>
-						<dd>●アブ・シンベル／ヴィクトリアの滝…他（アフリカ） ●凱旋門／モン・サン・ミッシェル／ポンペイ…他（ヨーロッパ） ●アンコールワット／金閣寺／タージ・マハル…他（アジアと中近東） ●グレートバリアリーフ／エアーズロック…他（オセアニア） ●ナイアガラの滝／マチュピチュ（アメリカ）</dd>
-					</dl>
+					<div class="contain-second">
+						<dl class="clearfix">
+							<dt class="animal">動物<br><span class="font-s">両生類と無脊椎動物</span></dt>
+							<dd>●アリジゴク／バッタ…他（アフリカ） ●アルプスサラマンダー／アカガエル…他（ヨーロッパ） ●マレーシアツノガエル…他（アジア） ●セアカコケグモ／タマムシ…他（オセアニア） ●アメリカヒキガエル／サザンドワーフサイレン…他（北アメリカ） ●ゴリアテグモ…他（南アメリカ）</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>恐竜の時代</dt>
+							<dd>●ティラノサウルスレックス／トリケラトプス…他（北アメリカ） ●ギガノトサウルス／パタゴサウルス…他（南アメリカ） ●エジプトサウルス／スピノサウルス…他（アフリカ）●始祖鳥／プテラノドン…他（ヨーロッパ） ●プロトケラトプス…他（アジア） ●アグロサウルス…他（オセアニア）</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt class="animal">動物<br><span class="font-s">魚類と爬虫類</span></dt>
+							<dd>●デンキナマズ／カメレオン…他（アフリカ） ●コイ／ヨーロッパドクヘビ…他（ヨーロッパ） ●ライギョ／キングコブラ…他（アジア） ●ホオジロザメ／アオウミガメ…他（オセアニア） ●ニジマス／ガラガラヘビ…他（北アメリカ） ●アナコンダ／グリーンイグアナ…他（南アメリカ）</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>食べ物</dt>
+							<dd>●アサード（アルゼンチン） ●ミートパイ（オーストラリア）●チーズ（フランス） ●炒飯（中華人民共和国） ●カレー（インド） ●パスタ（イタリア） ●寿司（日本） ●クスクス（モロッコ） ●セビーチェ（ペルー） ●ボルシチ（ロシア）●キムチ（大韓民国） ●ステーキ（アメリカ合衆国）…他</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>世界の国旗</dt>
+							<dd>●弥生文化／漢王朝…他（アジア） ●アルテミス神殿／ローマ帝国／フランス革命…他（ヨーロッパ） ●エジプト文明／ツタンカーメン…他（アフリカ） ●マヤ文明／独立宣言／同時多発テロ…他（アメリカ） ●モアイ／マゼラン／ウルルの発見…他（オセアニア）</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>世界の歴史</dt>
+							<dd>●フランス／イタリア／ドイツ／イギリス…他（ヨーロッパ） ●モロッコ／エジプト／カメルーン／ケニア…他（アフリカ） ●日本／中華人民共和国／インド…他（アジア） ●オーストラリア／ニュージーランド…他（オセアニア）●アメリカ合衆国／カナダ／ブラジル…他（アメリカ）</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>ランドマーク</dt>
+							<dd>●アブ・シンベル／ヴィクトリアの滝…他（アフリカ） ●凱旋門／モン・サン・ミッシェル／ポンペイ…他（ヨーロッパ） ●アンコールワット／金閣寺／タージ・マハル…他（アジアと中近東） ●グレートバリアリーフ／エアーズロック…他（オセアニア） ●ナイアガラの滝／マチュピチュ（アメリカ）</dd>
+						</dl>
+					</div><!-- contain second -->
+					<p class="contain-toggle"><a href="#" class="noscroll">▼ 収録内容を<br class="sp-v">もっと見る</a></p>
 				</div>
 				<h3><span class="num">4</span><span class="text">パッと飛び出す！<br class="spb">収納式の日本地図を搭載。</span></h3>
 				<div class="fifth-box04 clearfix">
@@ -175,11 +390,11 @@ window.onerror = function(){
 					<input type="hidden" name="goods_sku_code" value="00000275">
 					<input type="hidden" name="ext_goods_sku_code" value="DEB00">
 					<input type="hidden" name="order_num_string" value="1"> -->
-					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a></p>
-					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a></p>
+					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
 			<!-- 	</form> -->
 			</div>
-			<div class="bs-wrap sixth">
+			<div class="bs-wrap sixth" id="review">
 				<div class="sixthin clearfix">
 					<h2><img src="contents/shop/00000003/image/static/img/neovision/sixth01.png" alt="全国から喜びの声、続々と！" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/sixth_sp01.png" alt="全国から喜びの声、続々と！" class="spi"></h2>
 					<div class="sixth-box01 clearfix">
@@ -225,7 +440,7 @@ window.onerror = function(){
 					</div>
 				</div>
 			</div>
-		</div>
+
             <!--　プレゼント▼▼ --><!--
 			<div class="bs-wrap forth">
 				<div class="forthin">
