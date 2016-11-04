@@ -23,14 +23,14 @@ input[type=radio]{
 ※住所が変更になった場合、お手数ですが再度こちらの入力フォームよりご登録ください。</span>
 </div>
 
-<form method="POST" action="https://fofa.jp/ucan/ra.p/104" id="ff_form">
+<form method="POST" action="https://fofa.jp/ucan/ra.p/104" id="ff_form" autocomplete="nope">
 <table class="table_01">
 <tr>
 <th>お名前（漢字）<span class="imp">必須</span><br>
 <span>例：山田　花子<br>
 （全角：姓名共に10文字以内）</span></th>
 <td><div class="input_area">
-姓&nbsp;<input type="text" name="c_name[0]" size="10" maxlength="10" value="" class="box01 mf">名&nbsp;<input type="text" name="c_name[1]" size="10" maxlength="10" value="" class="box01" />
+姓&nbsp;<input type="text" name="c_name[0]" size="10" maxlength="10" value="" class="box01 mf" autocomplete="nope">名&nbsp;<input type="text" name="c_name[1]" size="10" maxlength="10" value="" class="box01" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="name_confirm"></div></td>
 </tr>
@@ -40,7 +40,7 @@ input[type=radio]{
 <span>例：ヤマダ　ハナコ<br>
 （全角：セイ、メイ共に15文字以内）</span></th>
 <td><div class="input_area">
-セイ&nbsp;<input type="text" name="c_name2[0]" size="10" maxlength="15" value="" class="box02 mf2">メイ&nbsp;<input type="text" name="c_name2[1]" size="10" maxlength="15" value="" class="box02" />
+セイ&nbsp;<input type="text" name="c_name2[0]" size="10" maxlength="15" value="" class="box02 mf2" autocomplete="nope">メイ&nbsp;<input type="text" name="c_name2[1]" size="10" maxlength="15" value="" class="box02" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="name2_confirm"></div></td>
 </tr>
@@ -49,7 +49,7 @@ input[type=radio]{
 <th>郵便番号<span class="imp">必須</span><br>
 <span>（主番3文字、枝番4文字以内）</span></th>
 <td><div class="input_area">
-　〒&nbsp;<input type="text" name="c_post[0]" size="10" maxlength="3" value="" class="box03">&nbsp;-&nbsp;<input type="text" name="c_post[1]" size="10" maxlength="4" value="" class="box03">
+　〒&nbsp;<input type="text" name="c_post[0]" size="10" maxlength="3" value="" class="box03" autocomplete="nope">&nbsp;-&nbsp;<input type="text" name="c_post[1]" size="10" maxlength="4" value="" class="box03" autocomplete="nope">
 </div><!-- /.input_area -->
 <div id="post_confirm"></div></td>
 </tr>
@@ -115,7 +115,7 @@ input[type=radio]{
 <th>市区郡<span class="imp">必須</span><br>
 <span>（全角：10文字以内）</span></th>
 <td><div class="input_area">
-<input type="text" name="c_area2" size="15" maxlength="10" value="" class="box05" />
+<input type="text" name="c_area2" size="15" maxlength="10" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="area2_confirm"></div></td>
 </tr>
@@ -124,7 +124,7 @@ input[type=radio]{
 <th>町村字<span class="imp">必須</span><br>
 <span>（全角：15文字以内）</span></th>
 <td><div class="input_area">
-<input type="text" name="c_area3" size="15" maxlength="15" value="" class="box05" />
+<input type="text" name="c_area3" size="15" maxlength="15" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="area3_confirm"></div></td>
 </tr>
@@ -133,7 +133,7 @@ input[type=radio]{
 <th>番地<span class="imp">必須</span><br>
 <span>（全角：15文字以内）</span></th>
 <td><div class="input_area">
-<input type="text" name="c_area4" size="15" maxlength="15" value="" class="box05" />
+<input type="text" name="c_area4" size="15" maxlength="15" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="area4_confirm"></div></td>
 </tr>
@@ -142,7 +142,7 @@ input[type=radio]{
 <th>建物名・部屋番号<br>
 <span>（全角）</span></th>
 <td><div class="input_area">
-<input type="text" name="c_area5" size="15" maxlength="15" value="" class="box05" />
+<input type="text" name="c_area5" size="15" maxlength="15" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="area5_confirm"></div></td>
 </tr>
@@ -150,7 +150,7 @@ input[type=radio]{
 <tr>
 <th>様方<br></th>
 <td><div class="input_area">
-<input type="text" name="c_area6" size="15" maxlength="15" value="" class="box05" />
+<input type="text" name="c_area6" size="15" maxlength="15" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="area6_confirm"></div></td>
 </tr>
@@ -160,7 +160,7 @@ input[type=radio]{
 <span>（半角数字）<br>
 ※ご自宅・携帯どちらの番号でも構いません</span></th>
 <td><div class="input_area">
-<input type="text" name="c_tel[0]" size="10" maxlength="5" value="" class="box06">&nbsp;-&nbsp;<input type="text" name="c_tel[1]" size="10" maxlength="4" value="" class="box06">&nbsp;-&nbsp;<input type="text" name="c_tel[2]" size="10" maxlength="4" value="" class="box06">
+<input type="text" name="c_tel[0]" size="10" maxlength="5" value="" class="box06" autocomplete="nope">&nbsp;-&nbsp;<input type="text" name="c_tel[1]" size="10" maxlength="4" value="" class="box06" autocomplete="nope">&nbsp;-&nbsp;<input type="text" name="c_tel[2]" size="10" maxlength="4" value="" class="box06" autocomplete="nope">
 </div><!-- /.input_area -->
 <div id="tel_confirm"></div></td>
 </tr>
@@ -168,7 +168,7 @@ input[type=radio]{
 <tr>
 <th>メールアドレス<span class="imp">必須</span></th>
 <td><div class="input_area">
-<input type="text" name="email" size="30" maxlength="128" value="" class="box05" />
+<input type="text" name="email" size="30" maxlength="128" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="email_confirm"></div></td>
 </tr>
@@ -185,7 +185,7 @@ input[type=radio]{
 <tr>
 <th>年齢</th>
 <td><div class="input_area">
-<input type="text" name="c_age" size="15" maxlength="15" value="" class="box06" />&nbsp;歳
+<input type="text" name="c_age" size="15" maxlength="15" value="" class="box06" autocomplete="nope" />&nbsp;歳
 </div><!-- /.input_area -->
 <div id="age_confirm"></div></td>
 </tr>
@@ -466,6 +466,9 @@ $(document).ready(function(){
 			$(this).val(han);
 		});
 	});
+
+		// Create jQuery object for input element
+	$(input).attr("autocomplete", "off");
 });
 </script>
 
