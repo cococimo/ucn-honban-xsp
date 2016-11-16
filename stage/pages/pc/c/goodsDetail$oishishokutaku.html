@@ -3,7 +3,16 @@
 <head>
 <!-- head -->
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
-
+<meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
+<script src="/contents/c/js/jquery.js" type="text/javascript" language="JavaScript"></script>
+<!--[if lt IE 9]>
+<script src="contents/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+    $(".l_con_list_01 li a").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
 <meta http-equiv="content-type" content="text/html; charset=Windows-31J">
 <meta http-equiv="content-style-type" content="text/css">
 <meta http-equiv="content-script-type" content="text/javascript">
@@ -16,7 +25,7 @@
 <meta m:id="e_var_goods">
 <meta m:id="e_var_goodsUrlPrefix">
 
-<meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
+
 
 <link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
 <title m:id="title" arg1="" arg2=" ココチモ（cococimo）のECサイト">データベースから値を取得し表示します</title>
@@ -24,7 +33,7 @@
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
-<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="shop.html" />
+
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/nihon/layout.css" media="all">
@@ -162,6 +171,36 @@ function siteCatalistAddCart1(s_products){
 }
 }
 </style>
+<style>
+/*161025▼▼▼カテゴリ追加*/
+#content_wrap .wrap_con_l {
+    width:190px;
+    float: left;
+    text-align:center;
+    margin:20px 0;
+    padding-top:0;
+    padding-bottom:10px;
+    -webkit-box-shadow:none; /* Safari, Chrome用 */
+    -moz-box-shadow: none; /* Firefox用 */
+    box-shadow: none; /* CSS3 */
+    font-family:"メイリオ", Meiryo;
+    background:#f4efea;
+    border:#e2e2e2 1px solid;
+}
+#content_wrap .wrap_con_l ul{
+    padding: 0 5px;
+}
+#content_wrap .l_con_list_01 a {
+    display:block;
+    text-align:left;
+    font-weight:bold;
+    font-size:14px;
+    line-height:28px;
+    padding:0 0;
+}
+/*161025▲▲▲カテゴリ追加*/
+</style>
+
 </head>
 <body id="top">
 
@@ -370,7 +409,28 @@ function siteCatalistAddCart1(s_products){
   </ul>
 </div>
 
+<!--▼▼▼カテゴリー▼▼▼-->
+<div class="wrap_con_l l_con_box_01">
 
+<div id="l_tit_01"><img src="/contents/c/shop/image/sp/sp_l_tit_01.jpg" alt="カテゴリーから探す"></div>
+    <ul class="l_con_list_01 clearfix example ex-drop-down ex-dr-root ex-dr">
+      <li><a href="/shop/c/category/001001015/list/">おいしい食卓・一覧</a></li>
+      <li><a href="/shop/c/category/001001015012/list/">主食</a></li>
+      <li><a href="/shop/c/category/001001015013/list/">肉</a></li>
+      <li><a href="/shop/c/category/001001015014/list/">魚介・海産物</a></li>
+      <li><a href="/shop/c/category/001001015020/list/">野菜</a></li>
+      <li><a href="/shop/c/category/001001015021/list/">果物</a></li>
+      <li><a href="/shop/c/category/001001015019/list/">和のお惣菜</a></li>
+      <li><a href="/shop/c/category/001001015015/list/">洋のお惣菜</a></li>
+      <li><a href="/shop/c/category/001001015022/list/">中華・その他お惣菜</a></li>
+      <li><a href="/shop/c/category/001001015023/list/">缶詰</a></li>
+      <li><a href="/shop/c/category/001001015001/list/">飲料・お酒</a></li>
+      <li><a href="/shop/c/category/001001015016/list/">スイーツ</a></li>
+      <li><a href="/shop/c/category/001001015002/list/">調味料</a></li>
+    </ul>
+
+</div>
+<!--▲▲▲カテゴリー▲▲▲-->
 
 
   		  <!-- インクルード領域 -->
