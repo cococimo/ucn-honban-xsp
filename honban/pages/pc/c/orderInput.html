@@ -453,6 +453,20 @@ var iCurDstSelected = 0;
 	}
 
   </script>
+
+ <script>
+//autocomplete無効
+window.onload = function() {
+
+	var comp = document.querySelectorAll('input[type="text"]');
+
+    for(var i=0;i<comp.length;i++) {
+      comp[i].autocomplete="nope";
+    }
+}
+</script>
+
+
 <span m:id="l_pre_member">
 	<span m:id="l_notEmp_addressBookList">
 		<script type="text/javascript">
@@ -828,7 +842,7 @@ var iCurDstSelected = 0;
         <div class="box_01 box_left">
           <input type="text" class="in_w_09" m:id="h_txt_post_code" name="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
         
-        <div class="box_01b">枠内に郵便番号7ケタを入力すると自動的に住所を表示します。郵便番号を調べたい方は→から</div>
+        <div class="box_01b">枠内に郵便番号7ケタを入力すると自動的に住所を表示します。郵便番号を調べたい方はこちらから</div>
         
         <div class="box_02 box_right">
           <a m:id="a_bt_searchZip" href="postCode.html" OnClick="return postCodeList( document.orderForm.post_code.value, 2 );">
@@ -988,7 +1002,7 @@ var iCurDstSelected = 0;
     
   <div class="box_form_table">
     <div class="box_form_th">電話番号<span class="imp">必須</span></div>
-    <div class="box_form_td"><input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
+    <div class="box_form_td">TEL&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
       <span m:id="l_msgPre_tel_no">
         <br />
         <span class="error">
@@ -2186,7 +2200,7 @@ var iCurDstSelected = 0;
     
     
   <div class="box_02">
-  <a m:id="a_link_submit" href="orderConfirm.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_09.png" alt="次へ" /></a>
+  <a m:id="a_link_submit" href="orderConfirm.html" id="FormAssist_submit"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_09.png" alt="次へ" /></a>
   </div>
     
     
@@ -2345,7 +2359,7 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
 <noscript>
   <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
-
+<script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=101'></script>
 </body>
 <!-- InstanceEnd --></html>
 

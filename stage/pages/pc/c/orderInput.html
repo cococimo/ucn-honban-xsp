@@ -446,6 +446,19 @@ var iCurDstSelected = 0;
 	}
 
   </script>
+
+ <script>
+//autocomplete無効
+window.onload = function() {
+	var comp = document.querySelectorAll('input[type="text"]');
+
+    for(var i=0;i<comp.length;i++) {
+      comp[i].autocomplete="nope";
+    }
+}
+</script>
+
+
 <span m:id="l_pre_member">
 	<span m:id="l_notEmp_addressBookList">
 		<script type="text/javascript">
@@ -646,7 +659,7 @@ var iCurDstSelected = 0;
         </span>
       </div>
   </span>
-  <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html">
+  <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
   <input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
   <input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
   <input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
@@ -719,7 +732,7 @@ var iCurDstSelected = 0;
     <div class="box_form_th">お名前（全角）<span class="imp">必須</span></div>
     <div class="box_form_td">
       <ul>
-        <li><span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06"/></li>
+        <li><span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06" /></li>
         <li><span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" /></li>
         </ul>
       
@@ -974,7 +987,7 @@ var iCurDstSelected = 0;
     
   <div class="box_form_table">
     <div class="box_form_th">電話番号<span class="imp">必須</span></div>
-    <div class="box_form_td"><input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
+    <div class="box_form_td">TEL&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
       <span m:id="l_msgPre_tel_no">
         <br />
         <span class="error">
@@ -2301,7 +2314,6 @@ var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
 /* ]]> */
 </script>
-
 
 <script type="text/javascript"  
 src="//www.googleadservices.com/pagead/conversion.js">
