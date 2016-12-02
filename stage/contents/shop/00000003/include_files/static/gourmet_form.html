@@ -13,6 +13,21 @@ input[type=radio]{
 #id_1_2{
 	margin-left:20px;
 }
+.form_sp_only {display:none;}
+@media (max-width: 640px) {
+	.form_sp_only {display:block;}
+
+ }
+@media (max-width: 450px) {
+ 	#confirm_button img {
+		width: 30%;
+		height:auto;
+	}
+	#confirm_button input {
+		width: 50%;
+		height:auto;
+	}
+}
 </style>
 <div class="container">
 <img src="contents/shop/00000003/common_sp/common_yoyakuform/gourmet/images/demo.gif" alt="" class="imgsp100">
@@ -30,7 +45,7 @@ input[type=radio]{
 <span>例：山田　花子<br>
 （全角：姓名共に10文字以内）</span></th>
 <td><div class="input_area">
-姓&nbsp;<input type="text" name="c_name[0]" size="10" maxlength="10" value="" class="box01 mf" autocomplete="nope">名&nbsp;<input type="text" name="c_name[1]" size="10" maxlength="10" value="" class="box01" autocomplete="nope" />
+姓&nbsp;<input type="text" name="c_name[0]" size="10" maxlength="10" value="" class="box01 mf" autocomplete="nope"><br class="form_sp_only">名&nbsp;<input type="text" name="c_name[1]" size="10" maxlength="10" value="" class="box01" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="name_confirm"></div></td>
 </tr>
@@ -40,7 +55,7 @@ input[type=radio]{
 <span>例：ヤマダ　ハナコ<br>
 （全角：セイ、メイ共に15文字以内）</span></th>
 <td><div class="input_area">
-セイ&nbsp;<input type="text" name="c_name2[0]" size="10" maxlength="15" value="" class="box02 mf2" autocomplete="nope">メイ&nbsp;<input type="text" name="c_name2[1]" size="10" maxlength="15" value="" class="box02" autocomplete="nope" />
+セイ&nbsp;<input type="text" name="c_name2[0]" size="10" maxlength="15" value="" class="box02 mf2" autocomplete="nope"><br class="form_sp_only">メイ&nbsp;<input type="text" name="c_name2[1]" size="10" maxlength="15" value="" class="box02" autocomplete="nope" />
 </div><!-- /.input_area -->
 <div id="name2_confirm"></div></td>
 </tr>
@@ -131,7 +146,7 @@ input[type=radio]{
 
 <tr>
 <th>番地<span class="imp">必須</span><br>
-<span>（全角：15文字以内）</span></th>
+<span>（15文字以内）</span></th>
 <td><div class="input_area">
 <input type="text" name="c_area4" size="15" maxlength="15" value="" class="box05" autocomplete="nope" />
 </div><!-- /.input_area -->
