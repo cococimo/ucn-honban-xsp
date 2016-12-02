@@ -279,6 +279,16 @@ border-radius:3px;
 	}
 }
 </style>
+<style>
+/*決済方法表示調整*/
+.box_form_td03 {
+    padding: 20px 20px 0 20px;
+ }
+@media (max-width: 640px) {
+	.box_form_td03 {
+	    padding: 10px 10px 10px;
+	}
+</style>
 <object class="xsp_obj" m:id="e_var_prefecture"></object>
 <object class="xsp_obj" m:id="e_var_opportunityMap"></object>
 <object class="xsp_obj" m:id="e_var_jobMap"></object>
@@ -678,15 +688,16 @@ window.onload = function() {
   <span m:id="l_notPre_member_login_button_shop">
     <div class="login_msg">
       <h5 class="add_h5">●ココチモ会員の方</h5>
-      <p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p>
+      <p style="padding-bottom:40px;">ココチモ会員のお客様は、<a href="/shop/login.do?_S=c" target="_blank">こちらから</a>ログインしてください。</p>
+      <!-- <p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p> -->
       </div>
-    <span m:id="l_msgPre_errors_member_login">
+    <!-- <span m:id="l_msgPre_errors_member_login">
       <div class="error">
         <p>ログインID・パスワードをご確認ください。</p>
         </div>
-      </span>
+      </span> -->
     <div class="orderInputLogin">
-      <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+ <!--      <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
         <tr>
           <th>ログインID</th>
           <td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
@@ -710,16 +721,14 @@ window.onload = function() {
               </span>
             </td>
           </tr>
-        </table>
+        </table> -->
       <!-- ボタン -->
-      <div>
+      <!-- <div>
         <a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /></a>
-        </div>
-      <h5 class="add_h5">●はじめての方・会員登録されていない方</h5>        
+        </div> -->
+      <h5 class="add_h5">●初めての方、会員登録をされていない方はこちらから。</h5>        
       <p class="vis_add">
-        会員登録されていなくてもお買い物ができます。以下に必要情報を入力して
-        「お申込み内容確認へ」ボタンを押してください。購入完了後、
-        そのまま会員登録（無料）もできます。
+        以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。
         </p>
       <!--/ ボタン -->
       </div>

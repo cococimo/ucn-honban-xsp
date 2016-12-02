@@ -461,6 +461,10 @@ border-radius:5px;
     width: 24% !important;
 }
   }
+
+#payment_020 > label::after {
+	content:'（手数料300円を申し受けます）';
+}
 </style>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
@@ -1312,17 +1316,21 @@ window.onload = function() {
 	<p class="red left">会員ログイン中です。</p>
 </div>
 <!-- 非ログイン時 -->
+<style>
+.login_msg a {text-decoration:underline;}
+</style>
 <span m:id="l_notPre_member_login_button_shop">
 	<div class="login_msg">
-		<p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p>
+		<p>ココチモ会員のお客様は、<a href="/shop/login.do?_S=c" target="_blank">こちらから</a>ログインしてください。</p>
+		<!-- <p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p> -->
 	</div>
-	<span m:id="l_msgPre_errors_member_login">
+<!-- 	<span m:id="l_msgPre_errors_member_login">
 		<div class="error">
 			<p>ログインID・パスワードをご確認ください。</p>
 		</div>
-	</span>
+	</span> -->
 	<div class="orderInputLogin">
-		<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<!-- 		<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
 			<tr>
 				<th>ログインID</th>
    				<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02 add_radz"/>
@@ -1346,18 +1354,21 @@ window.onload = function() {
 					</span>
 				</td>
 			</tr>
-		</table>
+		</table> -->
 		<!-- ボタン -->
-		<div>
+<!-- 		<div>
 	        <a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt">ログイン</a>
-		</div>
+		</div> -->
 		<!--/ ボタン -->
 	</div>
 </span>
 <span m:id="l_notPre_member_login_button_shop">
-<div class="mt10" style="clear:both; margin:0 0 20px"><a m:id="e_link_reminderPwdInput" style="text-decoration:underline; color:blue" href="memberReminderPwdInput.html">
-パスワードを忘れた方はこちら</a></div>
-<h4 class="temp_tit_06 clear nolg"><div>ログインせずにお買物するお客様はこちらから、ご入力ください。</div></h4>
+<!-- <div class="mt10" style="clear:both; margin:0 0 20px"><a m:id="e_link_reminderPwdInput" style="text-decoration:underline; color:blue" href="memberReminderPwdInput.html">
+パスワードを忘れた方はこちら</a></div> -->
+<h4 class="temp_tit_06 clear nolg" style="margin-bottom:10px;"><div>初めての方、会員登録をされていない方はこちらから。</div></h4>
+<p style="padding-bottom:10px;">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。
+購入完了後、そのまま会員登録（無料）も可能です。</p>
+<!-- <h4 class="temp_tit_06 clear nolg"><div>ログインせずにお買物するお客様はこちらから、ご入力ください。</div></h4> -->
 </span>
 <div class="wrap_form_table">
 
