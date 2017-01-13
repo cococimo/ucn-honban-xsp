@@ -573,7 +573,7 @@ var  cnt = ext_goods_code_Array.length;
 (function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
 j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
-})(window,document,'script','contx','CTX-Wpop-5g5');
+})(window,document,'script','contx','CTX-Wpop-5g5-TEST');
 </script>
 
 </span>
@@ -734,8 +734,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>
+	<li class="sp_gnav_link"><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature16/">ワイドパンツ特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -1710,18 +1715,18 @@ $(window).on('load resize', function(){
   	<span m:id="l_pre_promoPostFree"/>
   	
     <span m:id="l_notEqu_free">
-    	<!-- 送料無料プロモーション有の場合、送料無料レコメンド表示しない。(2014/08/22) -->
+    	<!-- 送料無料プロモーション有の場合、送料無料レコメンド表示しない。(2014/08/22) *->
     	<span m:id="l_notEqu_promoPostFree">
 	      <span m:id="l_match_shopCart_shop_no">
             <span m:id="l_notEqu_special">
-              <p class="sousintext"><span m:id="b_msg_info_cart_postage">あと1000円で送料無料</span></p>
+              <p class="sousintext"><span m:id="b_msg_info_cart_postage">あと1000円で送料無料</span></p>-->
 	        <div class="shopping_postage_free_msg">
           
           
           
           
   
-     <!--▼▼▼送料無料に近い単価商品▼▼▼-->
+     <!--▼▼▼送料無料に近い単価商品▼▼▼*->
      <object class="xsp_obj" m:id="e_var_priceGoodsList"></object>
  <div class="con_block">
   <span m:id="l_notEmp_priceGoodsList">
@@ -1802,14 +1807,15 @@ $(window).on('load resize', function(){
 </div>  
 </span>  
 </div> 
-   <!--▲▲▲送料無料に近い単価商品▲▲▲--> 
+   <!-*▲▲▲送料無料に近い単価商品▲▲▲--> 
         
         
         
 		   </div> 
-      </span> 
+ <!--あと1000円で送料無料
+       </span> 
 		 </span>
-	 	</span>
+	 	</span> /ここまで-->
 	</span>
  </span>
 <!--/ 送料メッセージ -->
@@ -1894,7 +1900,7 @@ $(window).on('load resize', function(){
 
 </div><!--contents_r_02-->
 
-     <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼-->
+     <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼*->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
  <div class="con_block">
    <span m:id="l_notEmp_autoRecommendGoodsList">
@@ -1969,7 +1975,7 @@ $(window).on('load resize', function(){
 </div>  
 </span>
 </div> 
-  <!--▲▲▲こんな商品も買っています▲▲▲-->
+  <!-*▲▲▲こんな商品も買っています▲▲▲-->
 
 </div><!--contents-->
 
@@ -1977,41 +1983,6 @@ $(window).on('load resize', function(){
 <!-- ▲カート▲ -->
 
 </div><!--container-->
-<!-- ▼▼▼ google ▼▼▼ -->
-<script>			
-var ext_goods_code = document.tagForm.ext_goods_code.value;
-var goods_url = document.tagForm.goods_url.value;
-var goods_name = document.tagForm.goods_name.value;
-var goods_img_url = document.tagForm.goods_img_url.value;
-var goods_price = document.tagForm.goods_price.value;
-var order_num = document.tagForm.order_num.value;
-
-var ext_goods_code_Array = ext_goods_code.split("|");
-var goods_url_Array = goods_url.split("|");
-var goods_name_Array = goods_name.split("|");
-var goods_img_url_Array = goods_img_url.split("|");
-var goods_price_Array = goods_price.split("|");
-var order_num_Array = order_num.split("|");
-
-var  cnt = ext_goods_code_Array.length;  
-var google_total_value = 0;
-var google_ext_goods_code = "";
-      for(i=0;i<cnt;i++){
-		google_total_value = parseInt(google_total_value) + parseInt(goods_price_Array[i])*parseInt(order_num_Array[i]);
-		google_ext_goods_code = google_ext_goods_code + ext_goods_code_Array[i];
-		if(i != cnt-1 && cnt != 1){
-        google_ext_goods_code = google_ext_goods_code + ",";
-        }
-      } 
-</script>
-<script type="text/javascript">
-var google_tag_params = {
-ecomm_prodid: ext_goods_code_Array,
-ecomm_pagetype: "cart",
-ecomm_totalvalue: google_total_value
-};
-</script>
-<!-- ▲▲▲ google ▲▲▲ -->
 <!-- InstanceEndEditable -->
 </div>
 <!--container-->
@@ -2078,8 +2049,14 @@ ecomm_totalvalue: google_total_value
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>
-      <li><a href="/shop/static/feature16/">ワイドパンツ特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
+      <!--<li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>-->
+      <!--<li><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>-->
+      <!--<li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>-->
+      
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
      </ul>
     <ul class="footer_category only_pc">
@@ -2286,7 +2263,6 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
 </div>
-
 <!-- InstanceEndEditable -->  
 </body>
 <!-- InstanceEnd --></html>
