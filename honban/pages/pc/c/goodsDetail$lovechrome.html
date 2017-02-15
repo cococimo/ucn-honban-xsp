@@ -484,7 +484,23 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <span m:id="l_include3_in_period">
 <span m:id="html3_include3">外部HTML3 表示領域</span>
 </span>
-
+<span m:id="l_equ_canAddCart">
+  <form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
+  <input m:id="h_hid__S" type="hidden" name="_S" value="" />
+  <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+  <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+  <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+  <input type="hidden" name="order_num_string" value="1" />
+  <p class="shopping"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn.jpg" alt="カートに入れる" class="hover mt30"/></a></p>
+  <p class="shopping_sp"><a m:id="h_link_canAddCart2" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/lovechrome/btn02.jpg" alt="お買い物かごに入れる" class="hover spbtn" ></a></p>
+  </form>
+</span>
+  <span m:id="l_notEqu_canAddCart">
+    <span m:id="l_equ_soldOutSalesStatus">
+      <p class="shopping"><img src="contents/shop/00000003/image/kanbai2.jpg" alt="完売しました" /></p>
+      <p class="shopping_sp"><img src="contents/shop/00000003/image/kanbai2.png" alt="完売しました" /></p>
+    </span>
+  </span>
     </div>
 </div>
 
