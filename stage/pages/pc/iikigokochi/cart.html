@@ -734,13 +734,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>
+        <!--<li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>-->
 	<li class="sp_gnav_link"><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -751,6 +751,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <li><a href="/shop/category/001001005/list/">スカート</a></li>
             <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
             <li><a href="/shop/category/001001001/list/">バック</a></li>
+            <li><a href="/shop/category/001001010/list/">インナー・レギンス</a></li>
+            <li class="h2"><a href="/shop/category/001001013/list/">シューズ</a></li>
+            <li class="h2 line2"><a href="/shop/category/001001014/list/">アクセサリー/<br>ストール・スヌード</a></li>
             <li><a href="/shop/category/001001008/list/">新着商品</a></li>
             <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
             <li><span></span></li>
@@ -758,6 +761,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </li>
         <li class="sp_gnav_link_sub">
         	<p><a href="/shop/static/size/">サイズガイド</a></p>
+        	<p><a href="/shop/static/sentaku/">洗濯表示一覧</a></p>
          	<p><a href="/shop/static/guide/">ショッピングガイド</a></p>
         	<p><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></p>
         </li>
@@ -1899,7 +1903,7 @@ $(window).on('load resize', function(){
 
 </div><!--contents_r_02-->
 
-     <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼*->
+     <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼-->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
  <div class="con_block">
    <span m:id="l_notEmp_autoRecommendGoodsList">
@@ -1974,7 +1978,7 @@ $(window).on('load resize', function(){
 </div>  
 </span>
 </div> 
-  <!-*▲▲▲こんな商品も買っています▲▲▲-->
+  <!--▲▲▲こんな商品も買っています▲▲▲-->
 
 </div><!--contents-->
 
@@ -2048,28 +2052,34 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature25/">着心地のいい服の素材特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature26/">春の22days コーディネート特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
+     <!--<li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-      <!--<li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>-->
-      <!--<li><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>-->
-      <!--<li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>-->
+      <li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>
+    　<li><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
+     <li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>-->
       
-      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
-     </ul>
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>
+    </ul>
     <ul class="footer_category only_pc">
       <li>
       	<a href="#">商品カテゴリー</a>
       	<ul>
         	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
         	<li><a href="/shop/category/001001002/list/">トップス</a></li>
-        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001003/list/">コート/カーディガン</a></li>
         	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
         	<li><a href="/shop/category/001001005/list/">スカート</a></li>
         	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
         	<li><a href="/shop/category/001001001/list/">バック</a></li>
-        </ul>
+        	<li><a href="/shop/category/001001010/list/">インナー・レギンス</a></li>
+        	<li><a href="/shop/category/001001013/list/">シューズ</a></li>
+        	<li><a href="/shop/category/001001014/list/">アクセサリー/<br>ストール・スヌード</a></li>
+       </ul>
         <ul>
          	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
         	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
@@ -2089,12 +2099,12 @@ $(window).on('load resize', function(){
         	<li><a href="/shop/category/001001001/list/">バック</a></li>
          	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
         	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
-       	<li><span></span></li>
         </ul>
       </li>
     </ul>
     <ul>
       <li><a href="/shop/static/size/">サイズガイド</a></li>
+      <li><a href="/shop/static/sentaku/">洗濯表示一覧</a></li>
       <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
       <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
     </ul>
@@ -2201,7 +2211,22 @@ $(window).on('load resize', function(){
     </div>
   </div>
 </div><!-- /#footer02 -->
-	<!-- InstanceBeginEditable name="footer_script" -->   
+	<!-- InstanceBeginEditable name="footer_script" -->
+
+<!-- ▼▼▼ google 20170227動的リタゲタグ ▼▼▼ -->
+<form name="googleGoodsForm">
+<input m:id="h_hid_google_goods_ext_goods_code" type="hidden" name="ext_goods_code" value="XXX99"/>
+<input m:id="h_hid_google_goods_sale_price" type="hidden" name="sale_price" value="123"/>
+</form>
+<script type="text/javascript">
+var google_tag_params = {
+ecomm_prodid: document.googleGoodsForm.google_goods_ext_goods_code.value,
+ecomm_pagetype: "cart",
+ecomm_totalvalue: document.googleGoodsForm.google_goods_sale_price.value
+};
+</script>
+<!-- ▲▲▲ google ▲▲▲ 20170227動的リタゲタグ -->
+
 <!-- ▼▼▼▼▼tracking ga▼▼▼▼▼ -->
 
 <!-- tracking ga -->
