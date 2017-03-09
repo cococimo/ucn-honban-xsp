@@ -36,16 +36,6 @@
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery/jquery-1.6.2.min.js"></script>
 
-<!--[if lt IE 9]>
-<script src="contents/js/jquery.backgroundSize.js"></script>
-<script>
-$(function() {
-    $(".l_con_list_01 li #p_0 a ").css({backgroundSize: "contain"});
-});
-</script>
-<![endif]-->
-
-
 <!-- スマホ対応 追加 20140905 START-->
 <script language="JavaScript" type="text/javascript">
 jQuery(document).ready(function($){ //ここから
@@ -90,52 +80,7 @@ table-layout: fixed\9;
 #contents_r_02 select {
 	text-align:left
 }
-#header_search {
-    left: 262px !important;
-}
-.header_list_01 {
-	width:216px;
-	float:right;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 40px !important;
-    width: 440px !important;
-}
-#header_search .box_02 input {
-    height: 42px !important;
-	font-size:12px;	
-}
 @media (max-width: 640px) {
-#header_search {
-    left: 0 !important;
-}
-.header_list_01 {
-	width:100%;
-	float: none;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 30px !important;
-    width: 100% !important;
-}
-#header_search .box_02 input {
-    height: 32px !important;
-}
-#header_search .box_01 {
-    width: 85% !important;
-}
-#header_search .box_02 {
-    width: 15% !important;
-}	
 .ad_navi li {
 	width:25% !important;
 	margin:0 !important;
@@ -247,136 +192,8 @@ if ( window.addEventListener ) {
 </head>
  
 <body id="top">
-
-<!--▼▼▼ tagForm ▼▼▼-->
-<object class="xsp_obj" m:id="e_var_cart"></object>
-<object class="xsp_obj" m:id="e_var_tagCart"></object>
-<form name="tagForm" action="#" method="post">
-<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
-<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
-<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
-<span m:id="l_equ_tagCart_empty">
-<span m:id="l_notEqu_tagCart_empty_shop">
-<input type="hidden" name="order_amount" value="" />
-<input type="hidden" name="total_sale_price" value="" />
-<input type="hidden" name="total_order_num" value="" />
-<input type="hidden" name="postage" value="" />
-<input type="hidden" name="category_code" value="" />
-<input type="hidden" name="category_name" value="" />
-<input type="hidden" name="ext_goods_code" value="" />
-<input type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="goods_name" value="" />
-<input type="hidden" name="goods_price" value="" />
-<input type="hidden" name="order_num" value="" />
-<input type="hidden" name="goods_url" value="" />
-<input type="hidden" name="goods_img_url" value="" />
-</span></span>
-<span m:id="l_notEqu_tagCart_empty">
-<span m:id="l_notEqu_tagCart_empty_shop">
-<input type="hidden" name="order_amount" value="" />
-<input type="hidden" name="total_sale_price" value="" />
-<input type="hidden" name="total_order_num" value="" />
-<input type="hidden" name="postage" value="" />
-<input type="hidden" name="category_code" value="" />
-<input type="hidden" name="category_name" value="" />
-<input type="hidden" name="ext_goods_code" value="" />
-<input type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="goods_name" value="" />
-<input type="hidden" name="goods_price" value="" />
-<input type="hidden" name="order_num" value="" />
-<input type="hidden" name="goods_url" value="" />
-<input type="hidden" name="goods_img_url" value="" />
-</span></span>
-<span m:id="l_notEqu_tagCart_empty">
-<span m:id="init_individual"></span>
-<span m:id="l_ite_shopCart">
-<span m:id="l_ite_detail">
-<span m:id="l_equ_individual"></span>
-</span>
-</span>
-<span m:id="l_notEqu_tagCart_not_empty_shop">
-<span m:id="l_notEqu_postage"><input m:id="tagForm_total_order" type="hidden" name="order_amount" value="" /></span>
-<span m:id="l_Equ_postage"><input m:id="tagForm_total_order_postage" type="hidden" name="order_amount" value="" /></span>
-<input m:id="tagForm_total_sale" type="hidden" name="total_sale_price" value="" />
-<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
-<span m:id="l_notEqu_postage"><input m:id="tagForm_postage" type="hidden" name="postage" value="" /></span>
-<span m:id="l_Equ_postage"><input type="hidden" name="postage" value="0" /></span>
-<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
-<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
-<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
-<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
-<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
-<input m:id="tagForm_goods_num" type="hidden" name="order_num" value="" />
-<input m:id="tagForm_goods_url" type="hidden" name="goods_url" value="" />
-<input m:id="tagForm_goods_img_url" type="hidden" name="goods_img_url" value="" />
-</span></span>
-</form>
-<!--▲▲▲ tagForm ▲▲▲-->
 <!-- InstanceBeginEditable name="body" -->
 <!-- InstanceEndEditable -->
-
-<!-- カートリカバリー -->
-<span m:id="l_notEqu_tagCart_not_empty_shop">
-
-<script>			
-var ext_goods_code = document.tagForm.ext_goods_code.value;
-var goods_url = document.tagForm.goods_url.value;
-var goods_name = document.tagForm.goods_name.value;
-var goods_img_url = document.tagForm.goods_img_url.value;
-var goods_price = document.tagForm.goods_price.value;
-var order_num = document.tagForm.order_num.value;
-
-var ext_goods_code_Array = ext_goods_code.split("|");
-var goods_url_Array = goods_url.split("|");
-var goods_name_Array = goods_name.split("|");
-var goods_img_url_Array = goods_img_url.split("|");
-var goods_price_Array = goods_price.split("|");
-var order_num_Array = order_num.split("|");
-
-var  cnt = ext_goods_code_Array.length;  
-
-
-  document.write("<script>"); 			
-  document.write("contx = {");			
-  document.write("\'user\': {");			
-    document.write("\'id\': \'"+document.tagForm.email.value+"\'");			
-    document.write("},");			
-    document.write("\'cart\': {");			
-      document.write("\'items\': [");		
-
-      for(i=0;i<cnt;i++){     	
-        document.write("{");			
-          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
-          document.write("\'page\':  \'"+goods_url_Array[i]+"\',");			
-          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");			
-          document.write("\'image\': \'"+goods_img_url_Array[i]+"\',");			
-          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
-          document.write("\'count\': \'"+order_num_Array[i]+"\',");			
-          document.write("\'stock\': \'\'");			
-        document.write("}");
-        if(i != cnt-1){
-        document.write(",");
-        }
-      } 			
-      document.write("]");			
-    document.write("}");			
-  document.write("};");	
-  document.write("<\/script>"); 		
-</script>			
-		
-
-<script>
-
-(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
-var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
-j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
-})(window,document,'script','contx','CTX-f9ehSMTr');
-
-</script>
-
-</span>
-<!-- カートリカバリーここまで -->
 
 <div id="container">
 <!-- ********** include:mall/header.jsp ********** -->
@@ -461,7 +278,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -490,7 +307,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div id="contents_r_02">
 <!-- InstanceBeginEditable name="contents_wide" -->
 
-<!--<object class="xsp_obj" m:id="e_var_cart"></object>-->
+<object class="xsp_obj" m:id="e_var_cart"></object>
 	<object class="xsp_obj" m:id="e_var_wrappingMap"></object>
 	<object class="xsp_obj" m:id="e_var_jpnWrappingMap"></object>
 	<object class="xsp_obj" m:id="e_var_wrappingItemMap"></object>
@@ -1453,7 +1270,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<div class="guidebox_left">
 		<img  m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
 		<img src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px">（常温、冷蔵、冷凍と表示のある商品<!--産地直送品、メーカー直送家具-->を除く）</div>
+        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px">（産地直送品、メーカー直送家具を除く）</div>
 			<div class="box_souryou">
 			<p>お買い物総額5,000円（税込）未満の場合<br>
 			<span class="souryoutxt">＝送料500円</span><br>
@@ -1465,9 +1282,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<p>お買い物総額5,000円以上&#65374;10,000円未満<br>
 			<span class="souryoutxt">＝送料250円</span><br>
 			１回のお買い上げ総額が5,000円以上から10,000円
-			未満の場合、250円の送料がかかります。</p>
-			</div>
-		<!--	<div style="margin-top:-20px; padding:8px">
+			未満の場合、250円の送料がかかります。
+            </p>
+			</div>            
+			<div style="margin-top:-20px; padding:8px">
 			<p>
 			ただし、産地直送品（商品ページの詳細部分<br />に明記）は、お申込みの商品名１つごとで、<br />
 			お届け先１ヵ所につき、常温は税込600円、<br />冷凍・冷蔵は税込800円がかかります<br />（全国一律）。<br />
@@ -1475,21 +1293,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
 			されます。<br /><br />        
             </p>
-			</div>-->
-             <div style="padding:8px">
-          <p>
-          <strong>&#12316;「おいしい食卓」に関して&#12316;</strong><br />
-		    お申込みの商品名1つごと・お届け先1ヵ所につき、常温は税込600円、<br />冷凍・冷蔵は税込800円がかかります<br />（全国一律）。<br />
-			※同一商品を2個以上同時にお申込みの場合は1個分の送料となります。ただし、お届け先が異なる場合はお届け先ごとに送料を申し受けます。<br />
-			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
-			されます。<br /><br />        
-            </p>
-            <p>
-            <strong>商品のお届け</strong><br />
-            商品はお申込みから通常1週間&#12316;10日前後でお届けいたします。
-            </p>
-			</div>              
-                        
+			</div>                        
 		<img src="../../../contents/shop/00000003/shop/image/spg_ttl03.gif" alt="配送について" class="sgttl">
 		<img src="../../../contents/shop/00000003/shop/image/spg_pic06.gif" class="yamato sgttl" alt="ヤマト運輸が代行配送します。">
 		<p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br>
@@ -1504,7 +1308,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<p class="txt12">その他、各種クレジットカードがご利用いただけます。<br>
 		<span class="kome">※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</span></p>
 		<img src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円">
-		<!--<img src="../../../contents/shop/00000003/shop/image/spg_pic05.gif" class="konbini sgttl" alt="コンビニ・郵便局・ゆうちょ銀行　払込手数料0円">-->
+		<img src="../../../contents/shop/00000003/shop/image/spg_pic05.gif" class="konbini sgttl" alt="コンビニ・郵便局・ゆうちょ銀行　払込手数料0円">
 		<img src="../../../contents/shop/00000003/shop/image/spg_ttl04.gif" class="sgttl" alt="商品のお届けについて">
 		<p class="txt_shouhin">お申込みから<b>通常３&#65374;６日</b>ほどでお届けいたします。期日・時間帯をご指定いただける商品もございます。<br>
 ※年末年始のご注文はお届けに時間をいただく場合がございます。</p>
@@ -1513,10 +1317,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		ご希望の場合はお電話でお申込みください。</p>
 		<p class="txt_rapping"><span class="point01">お申込みは下記ココチモお客様センターまで</span><br>
 		<span class="point02">フリーダイヤル</span><span class="point03">0120-552-186</span><br>
-		受付時間…7：00&#65374;22：00（日曜・祝日も受付けます）<br>
-		<!--※IP電話をご利用の方は03-5547-2511へおかけください。--></p>
+		受付時間…7：00&#65374;22：00（年中無休）<br>
+		※IP電話をご利用の方は03-5547-2511へおかけください。</p>
 		</div>
-	</div><img src="../../../contents/shop/00000003/shop/image/spg_foot.gif" class="shopping_guide_foot" alt="商品のご注文、お問合せは電話でもOK！　0120-552-186"  style="margin-top:50px">
+	</div><img src="../../../contents/shop/00000003/shop/image/spg_foot.gif" class="shopping_guide_foot" alt="商品のご注文、お問合せは電話でもOK！　0120-552-186" style="margin-top:50px">
 </div>
 
 
@@ -1763,7 +1567,7 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
-
+<!--
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -1819,36 +1623,7 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value
   <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </noscript>
 
-<!-- [487] ADMタグ（非同期）_株式会社ユーキャン様 -->
-<div id="matm"></div>
-<script language='JavaScript' type='text/javascript' src='//track.mk.impact-ad.jp/ad/js/matm.js'></script>
-<script language='JavaScript' type='text/javascript'>
- 	matm_init((location.protocol == 'https:' ? 'https:' : 'http:') + '//track.mk.impact-ad.jp/ad/p/ot', '_aid=203&_oid=487', false, true);
- </script>
-<noscript>
-<iframe src='//track.mk.impact-ad.jp/ad/p/ot?_aid=203&_oid=487' width='0' height='0' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' bordercolor='#000000'></iframe>
-</noscript>
 
-<!-- ブルッフラGA -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
-Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56563488-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<script language="javascript">
-(function () {    var _lgy     = document.createElement("script");    var _lgy_adv = 882;    window._lgy_advs = window._lgy_advs || {};    window._lgy_advs[_lgy_adv] = false;    window._lgy_options = window._lgy_options || {};    window._lgy_options[_lgy_adv] = {};    _lgy.async = true;    _lgy.src = (("https:" == document.location.protocol) ? "https://" : "http://") + 'dsp.logly.co.jp/seg.js';    var _lgy0 = document.getElementsByTagName('script')[0];    _lgy0.parentNode.insertBefore(_lgy, _lgy0);  })();</script><!--Start of DoubleClick Floodlight Tag: Please do not removeActivity name of this tag: カートURL of the webpage where the tag is expected to be placed: http://www.cococimo.jpThis tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.Creation Date: 09/07/2015--><script type="text/javascript">var axel = Math.random() + "";var a = axel * 10000000000000;document.write('<iframe src="https://5090105.fls.doubleclick.net/activityi;src=5090105;type=invmedia;cat=8aexke1q;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://5090105.fls.doubleclick.net/activityi;src=5090105;type=invmedia;cat=8aexke1q;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
-<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
 
 </body>
 <!-- InstanceEnd --></html>
