@@ -60,85 +60,8 @@
 </head>
  
 <body id="top">
-
-<!--▼▼▼ tagForm ▼▼▼-->
-<object class="xsp_obj" m:id="e_var_order"></object>
-<form name="tagForm" action="#" method="post">
-<input m:id="tagForm_order_no" type="hidden" name="order_no" value="" />
-<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
-<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
-<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
-<input m:id="tagForm_total_order" type="hidden" name="payment_amount" value="" />
-<input m:id="tagForm_total_goods" type="hidden" name="total_price" value="" />
-<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
-<input m:id="tagForm_post_code" type="hidden" name="post_code" value="" />
-<input m:id="tagForm_area_name" type="hidden" name="area_name" value="" />
-<input m:id="tagForm_order_sex" type="hidden" name="order_sex" value="" />
-<input m:id="tagForm_total_postage" type="hidden" name="postage" value="" />
-<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
-<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
-<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
-<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
-<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
-<input m:id="tagForm_goods_num" type="hidden" name="goods_num" value="" />
-</form>
-<!--▲▲▲ tagForm ▲▲▲-->
 <!-- InstanceBeginEditable name="body" -->
 <!-- InstanceEndEditable -->
-
-<!-- カートリカバリー -->
-
-<script>
-var ext_goods_code = document.tagForm.ext_goods_code.value;
-var goods_name = document.tagForm.goods_name.value;
-var goods_price = document.tagForm.goods_price.value;
-var goods_num = document.tagForm.goods_num.value;
-
-var ext_goods_code_Array = ext_goods_code.split("|");
-var goods_name_Array = goods_name.split("|");
-var goods_price_Array = goods_price.split("|");
-var goods_num_Array = goods_num.split("|");
-
-var  cnt = ext_goods_code_Array.length;  
-  document.write("<script>");
-  document.write("contx = {");
-  document.write("\'user\': {");
-    document.write("\'id\': \'"+document.tagForm.email.value+"\'");	
-    document.write("},");
-    document.write("\'cart\': {");	
-      document.write("\'items\': []");	
-      document.write("},");
-          document.write("\'cv\': {");
-          document.write(" \'items\': [");
-      for(i=0;i<cnt;i++){    
-        document.write("{");	
-          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
-          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");	
-          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
-          document.write("\'count\': \'"+goods_num_Array[i]+"\',");		
-          document.write("\'stock\': \'\'");
-        document.write("}");
-        if(i != cnt-1){
-        document.write(",");
-        }
-      } 		        			
-      document.write("]");			
-    document.write("}");			
-  document.write("};");		
-  document.write("<\/script>"); 		
-</script>
-
-<script>
-
-(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
-var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
-j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
-})(window,document,'script','contx','CTX-f9ehSMTr-TEST');
-
-</script>
-
-<!-- カートリカバリーここまで -->
 
 <div id="container">
 
@@ -202,7 +125,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 <div id="contents_r_02">
 <!-- InstanceBeginEditable name="contents_wide" -->
 
-<!--<object class="xsp_obj" m:id="e_var_order"></object>-->
+<object class="xsp_obj" m:id="e_var_order"></object>
 <div class="r_con_box_04">
 <div class="r_con_box_04_in">
 <h1 class="temp_tit_n02 temp_tit_n02_cor"><span m:id="l_notPre_free_guide">お申込み完了</span></h1>
@@ -587,25 +510,6 @@ alt="住所録登録"></span></a>
 
 
 <img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
-<!-- ▼▼▼ google ▼▼▼ -->
-<script type="text/javascript">
-var google_ext_goods_code = "";
-</script>
-<span m:id="l_ite_detail">
-<script type="text/javascript">
-		google_ext_goods_code = google_ext_goods_code + ${detail.ext_goods_code} + ",";
-</script>
-</span>
-
-<script type="text/javascript">
-google_ext_goods_code = google_ext_goods_code.replace( /,$/g , "" ) ;
-var google_tag_params = {
-ecomm_prodid: ext_goods_code_Array,
-ecomm_pagetype: "purchase",
-ecomm_totalvalue: '${order.payment_amount}',
-};
-</script>
-<!-- ▲▲▲ google ▲▲▲ -->
 <!-- InstanceEndEditable -->
 </div><!--contents_r_02-->
 
@@ -867,21 +771,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
-
-<script type="text/javascript" language="javascript">
-var yahoo_retargeting_id = 'JAG00YJOZ2';
-var yahoo_retargeting_label = '';
-</script>
-<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 980914824;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-
-
 <script type="text/javascript"  
 src="//www.googleadservices.com/pagead/conversion.js">
 </script>
@@ -972,18 +861,6 @@ var yahoo_conversion_value = 1000;
 <!-- DLPO CVタグ -->
 <script type='text/javascript'>adlpoMain('manganihon_cv','pr=cv');</script>
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=103'></script>
-
-<!-- ▼▼▼20161220_Yahoo Code for your Target List▼▼▼ -->
-<script type="text/javascript" language="javascript">
-/* <![CDATA[ */
-var yahoo_retargeting_id = '86EWUOYILV';
-var yahoo_retargeting_label = '';
-var yahoo_retargeting_page_type = '';
-var yahoo_retargeting_items = [{item_id: '', category_id: '', price: '', quantity: ''}];
-/* ]]> */
-</script>
-<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
-<!-- ▲▲▲20161220_Yahoo Code for your Target List▲▲▲ -->
 </body>
 <!-- InstanceEnd --></html>
 
