@@ -5,6 +5,32 @@
 .mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
 .mincho *{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
 .second-box01-box01-right dt:before{content:"問";font-size:26px;color:#fff;line-height:40px;height:40px;width:40px;border-radius:50%;background:#094;position:absolute;left:-45px;top:-8px;text-align:center}
+
+/*東ハトビスケット位置調整*/
+.forth .forth-box01-right dd .bracket {font-size:26px;}
+.forth .forth-box01-right dd .sp_only_300 {display:none;}
+@media screen and (max-width:640px){
+  .forth .forth-box01-right dd .bracket {font-size:20px;left:0;}
+}
+@media screen and (max-width: 380px) {
+  .forth .forth-box01-right dd .sp_only_300 {display:block;font-size:20px;}
+}
+/*ホイッスル文字調整*/
+.fifth-container h3.type02 .sm {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+@media screen and (max-width: 640px) {
+.fifth-container h3.type02 .sm {
+    font-size: 14px;
+	}
+}
+
+
 </style>
 <!-- line-height調整 -->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -43,21 +69,28 @@ window.onload = function() {
 <div class="bs-wrap first">
 			<p class="first-p01"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-p01.png" alt="安心と暮らす全16点の必需品"></p>
 			<div class="first-box01">
-				<h2 class="first-h201"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h201.png" alt="防災セット"></h2>
-				<h3 class="first-h301"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h301.png" alt="災害時３日間を乗り切る！！"></h3><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01.jpg" alt="防災セット内容" class="first-img01">
+				<h1 class="first-h201"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h201.png" alt="防災セット"></h1>
+				<h2 class="first-h301"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h301.png" alt="災害時3日間を乗り切る！！"></h2><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01.jpg" alt="防災セット内容" class="first-img01">
 			</div>
-            
+<div class='ADLPODefault'>
+<!--表示切替箇所-->
+</div>
+<script type='text/javascript'>adlpoMain('ehime_bousai','lc=os','ch=Shift-JIS');</script>
+
             <!-- 動画ここから
 			<h2 class="first-h202 mincho">ただいま、CM放送中！</h2>
 			<div class="first-movie">
 				<div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aVJ2rNmitp4?rel=0" frameborder="0" allowfullscreen></iframe></div>
 			</div>
             動画ここまで-->
-            
-                       <h2 class="first-h202 mincho">WEB限定動画公開中！</h2>
+
+           <!-- WEB限定動画ここから            
+           <h3 class="first-h202 mincho">WEB限定動画公開中！</h3>
 			<div class="first-movie">
 				<div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/KWEt3uacY9w?rel=0" frameborder="0" allowfullscreen></iframe></div>
 			</div>
+            WEB限定動画ここまで-->            
+            
             
 			<form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
 					<input type="hidden" name="_S" value="c">
@@ -66,7 +99,7 @@ window.onload = function() {
 					<input type="hidden" name="ext_goods_sku_code" value="DEB00">
 					<input type="hidden" name="order_num_string" value="1">
 	
-                    <div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/bousai/kakaku_deb90.jpg" alt="ココチモ・オリジナル　防災セット 一括払価格30650円税込"></div>
+               <!-- <div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/bousai/kakaku_deb90.jpg" alt="ココチモ・オリジナル　防災セット 一括払価格30650円税込"></div>-->
     			
 					<p class="shopping"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"></a></p>
 					<p class="shopping_sp"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover"></a></p>
@@ -74,8 +107,7 @@ window.onload = function() {
 			<!-- <a href="#shop_smooth"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.jpg" alt="いますぐご注文" class="image96"></a> -->
 		</div>
  
- <!-- お届け時期のお知らせ▼ --> 
-  <!--     
+ <!-- お届け時期のお知らせ▼ -->   <!--     
         <div style="border:#EE0003 1px solid; padding:15px; margin:0 20px; width:auto;">
         <p style="color:red;"><b>【お届け時期のお知らせ】</b><br>
 現在、本商品は当初の予想以上のお申し込みの集中により在庫切れとなっており、お届けが6月下旬以降を予定しております。<br>
@@ -108,14 +140,15 @@ window.onload = function() {
 		<div class="bs-wrap third">
 			<h2 class="third-h201"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20101.png" alt="防災セット" class="third-h20101"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20102.png" alt="防災セット" class="third-h20102 spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20102sp.png" alt="防災セット" class="third-h20102sp spb"></h2>
 			<div class="third-box01"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-img01.png" alt="防災セット" class="third-img01 spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-img01sp.png" alt="防災セット" class="third-img01sp spb">
-				<p class="third-p01">災害が起こってから3日間は、自力で乗りきる」が防災の基本とされる近年。<br class="spn">いざという時にあなたを守るのは、あなた自身しかいません。<br class="spn">それでも、<span class="font-b">「何から揃えればいいのかわからない」「一つひとつ集めるのは大変…」</span><br class="spn">そんなあなたにお薦めなのがこの『防災セット』。災害時の必需品が、ぱっと一度に揃います。<br class="spn">充実の16点はすべて、震災経験者1,000人にアンケート調査を行って<span class="font-b">「あってよかった」</span><br class="spn"><span class="font-b">「なくて困った」</span>の声から、防災士が厳選したものばかり！災害時の状況を具体的に想定した<br class="spn">仕様で、非常事態を乗り越えるための、確かな力になります。本当に必要になってからでは<br class="spn">遅いから、お手元に今すぐ「安心」の備えを、強くお奨めいたします。</p>
+				<p class="third-p01">「災害が起こってから3日間は、自力で乗りきる」が防災の基本とされる近年。<br class="spn">いざという時にあなたを守るのは、あなた自身しかいません。<br class="spn">それでも、<span class="font-b">「何から揃えればいいのかわからない」「一つひとつ集めるのは大変…」</span><br class="spn">そんなあなたにお薦めなのがこの『防災セット』。災害時の必需品が、一度に揃います。<br class="spn">充実の16点はすべて、震災経験者1,000人にアンケート調査を行って<span class="font-b">「あってよかった」</span><br class="spn"><span class="font-b">「なくて困った」</span>の声から、防災士が厳選したものばかり！災害時の状況を具体的に想定した<br class="spn">仕様で、非常事態を乗り越えるための、確かな力になります。ココチモ防災セットは災害後<br class="spn">特に困る<span class="font-b">食料とトイレをお一人約3日分</span>ご用意。本当に必要になってからでは遅いから、<br class="spn">お手元に今すぐ「安心」の備えを、強くお奨めいたします。</p>
 			</div>
 		</div>
         
-        <!-- 期間限定プレゼント▼▼▼▼
+        <!-- 期間限定プレゼント▼▼▼▼-->
 		<div class="bs-wrap forth">
 			<h2>
-				<div class="h2-left"><span class="large">3</span>月<span class="large">14</span>日<br>（月）まで</div>
+				<div class="h2-left"><span class="large">3</span>月<span class="large">13</span>日<br>
+				  （月）まで</div>
 				<div class="h2-right"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/forth-h2img.png" alt="２つのプレゼント付き"></div>
 			</h2>
 			<div class="forth-box01">
@@ -132,17 +165,18 @@ window.onload = function() {
 				<div class="forth-box01-right">
 					<dl>
 						<dt>プレゼント&#9313;</dt>
-						<dd><span class="small">グリコ</span><br> <span class="bracket">「ビスコ保存缶」</span></dd>
+						<dd><span class="small">東ハト</span><br> 
+						<span class="bracket">「ビスケット<br class="sp_only_300">保存缶」</span></dd>
 					</dl>
 					<h3 class="mincho">長期保存できます！</h3>
 					<p class="forth-p04">※パッケージは実際の商品と<br class="spb">若干異なることが<br class="spn">ございます。 </p>
-					<p class="forth-p03">乳酸菌やカルシウム・ビタミンなど高い栄養価がある、優れた防災対策用食品・ビスコ。お子様からお年寄りの方まで、幅広い年齢の方に食べていただける、優しい風味のクリームサンドビスケットです。</p><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/forth-img02.png" alt="グリコビスコ缶" class="forth-img02">
+					<p class="forth-p03">お子様からお年寄りまで、幅広い年齢の方に食べていただけるビスケット。風味豊かなゴマの味わいが楽しめます。防災対策用食品として長期保存できる優れものです。小分け包装で分けやすく便利です。</p><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/forth-img02.png" alt="グリコビスコ缶" class="forth-img02">
 				</div>
 			</div>
 		</div>
-        期間限定プレゼント▲▲▲▲-->
+        <!--期間限定プレゼント▲▲▲▲-->
         
-        <!--　通常のビスコ缶プレゼント▼▼▼▼ -->
-        <img src="/contents/shop/00000003/image/static/img/bousai/bisco_pre.jpg" alt="ビスコ缶プレゼント" ><br>
-        <!-- 通常のビスコ缶プレゼント▲▲▲▲ -->
+        <!--　通常のビスコ缶プレゼント▼▼▼▼ 
+        <img src="/contents/shop/00000003/image/static/img/bousai/img_pre1.jpg" alt="ハーベスト缶プレゼント" ><br>
+        通常のビスコ缶プレゼント▲▲▲▲ -->
         <br><br>
