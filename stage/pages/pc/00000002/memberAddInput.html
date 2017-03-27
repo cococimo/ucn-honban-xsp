@@ -1,1070 +1,692 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#">
+<!DOCTYPE html>
+<html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="member"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta http-equiv="content-language" content="ja">
+<meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
-<meta http-equiv="content-style-type" content="text/css">
-<meta http-equiv="content-script-type" content="text/javascript">
-<!--<meta name="viewport" content="width=768">-->
+<meta http-equiv="content-style-type" content="text/css;" />
+<meta http-equiv="content-script-type" content="text/javascript"/>
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 <meta m:id="e_var_shop" content="">
 <meta m:id="e_var_headerComponent" content="">
 <meta m:id="e_var_testSite" content="">
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
+<meta name="format-detection" content="telephone=no">
+<!-- InstanceBeginEditable name="title" -->
 <meta name="description" content="ココチモの新規会員登録ページです。登録いただくとご購入時ポイントをはじめ、様々な会員限定のサービスをご利用いただけます。- ココチモ（cococimo）の通販ショップ">
 <meta name="keywords" content="会員登録,入会,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <title>会員情報の入力 - ココチモ（cococimo）の通販ショップ</title>
-
+<!-- InstanceEndEditable -->
+<!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles02.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/form.css" type="text/css" media="all" />
-
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/yuga.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/iepngfix_tilebg.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.ad-gallery.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/heightLine.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
+<script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
+<script src="/contents/c/js/new/slick.min.js"></script>
+<script src="/contents/c/js/new/common.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
-
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../contents/shop/00000003/js/selectivizr.js"></script>
+<![endif]-->
 <!--[if lt IE 9]>
 <script src="contents/js/jquery.backgroundSize.js"></script>
 <script>
 $(function() {
-    $(".l_con_list_01 li #p_0 a ").css({backgroundSize: "contain"});
+    $(".category_list .category_list_img").css({backgroundSize: "contain"});
 });
 </script>
 <![endif]-->
-
-
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.exdropdown.0.1.3.js"></script>
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/exdropdown.css" type="text/css" media="all" />
-
-		<script>
-			jQuery(function($){
-				$('ul.example').exDropDown();
-			});
-		</script>
-
-
-
+<!--[if lt IE 9]>
+<script src="/contents/js/html5shiv.js"></script>
+<script src="/contents/c/js/new/modernizr-custom.js"></script>
+<script>
+$(function(){
+	if (!Modernizr.svg){
+		$('img').each(function() {
+			$(this).attr('src', $(this).attr('src').replace(/\.svg/gi,'.png'));
+		});
+	}
+});
+</script>
+<![endif]-->
+<!--▲▲▲ 共通CSS/Script ▲▲▲-->
+<!--▼▼▼ 固有CSS/Script ▼▼▼-->
+<!-- InstanceBeginEditable name="script" -->
+<!-- InstanceEndEditable -->
+<!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
-<!--<meta m:id="str_file_meta" content="">-->
-<style>
-.memadd_table_01 .in_w_02{width:193px!important}
-.memadd_table_01 tr:nth-child(1){ display:none;}
-.memadd_table_01 tr:nth-child(3){ display:none;}
-.memadd_table_01 tr:nth-child(5){ display:none;}
-.memadd_table_01 tr:nth-child(7){ display:none;}
-
-.sp_tbl2 tr:nth-child(1){ display:none;}
-/*.sp_tbl2 tr:nth-child(2){ display:none;}*/
-.sp_tbl2 tr:nth-child(3){ display:none;}
-.sp_tbl2 tr:nth-child(5){ display:none;}
-.sp_tbl2 tr:nth-child(7){ display:none;}
-.sp_tbl2 tr:nth-child(9){ display:none;}
-.sp_tbl2 tr:nth-child(11){ display:none;}
-.sp_tbl2 tr:nth-child(13){ display:none;}
-.sp_tbl2 tr:nth-child(15){ display:none;}
-.sp_tbl2 tr:nth-child(17){ display:none;}
-.sp_tbl2 tr:nth-child(19){ display:none;}
-.sp_tbl2 tr:nth-child(21){ display:none;}
-.sp_tbl2 tr:nth-child(23){ display:none;}
-.sp_tbl2 tr:nth-child(25){ display:none;}
-.sp_tbl2 tr:nth-child(27){ display:none;}
-.sp_tbl2 tr:nth-child(29){ display:none;}
-.sp_tbl2 tr:nth-child(31){ display:none;}
-.sp_tbl2 tr:nth-child(33){ display:none;}
-.sp_on{display:none}
-@media (max-width: 640px) {
-.exp br{display:none}	
-.sp_on{
-	display: block;
-	width:58%;
-	margin-top:8%!important;
-	float:right;
-	}
-.sp_on img{
-	width:100% !important;
-	}		
-#header {
-    margin-bottom: 5% !important;
-}
-.temp_tit_06 {margin-bottom: 6px !important}
-.memadd_table_01 {border: none !important; margin-bottom:0 !important}
-.memadd_table_01 tr, .memadd_table_01 th, .memadd_table_01 td{display: block}
-.memadd_table_01 td.bor_bottom {border-bottom: none !important}
-.memadd_table_01 th{ display:none; padding:5px !important;}
-.memadd_table_01 tr:nth-child(1){ display: block}
-.memadd_table_01 tr:nth-child(3){ display: block}
-.memadd_table_01 tr:nth-child(5){ display: block}
-.memadd_table_01 tr:nth-child(7){ display: block}
-.sp_tbl2 tr:nth-child(1){ display: block;}
-.sp_tbl2 tr:nth-child(2){ display: block;}
-.sp_tbl2 tr:nth-child(3){ display: block;}
-.sp_tbl2 tr:nth-child(5){ display: block;}
-.sp_tbl2 tr:nth-child(7){ display: block;}
-.sp_tbl2 tr:nth-child(9){ display: block;}
-.sp_tbl2 tr:nth-child(11){ display: block;}
-.sp_tbl2 tr:nth-child(13){ display: block;}
-.sp_tbl2 tr:nth-child(15){ display: block;}
-.sp_tbl2 tr:nth-child(17){ display: block;}
-.sp_tbl2 tr:nth-child(19){ display: block;}
-.sp_tbl2 tr:nth-child(21){ display: block;}
-.sp_tbl2 tr:nth-child(23){ display: block;}
-.sp_tbl2 tr:nth-child(25){ display: block;}
-.sp_tbl2 tr:nth-child(27){ display: block;}
-.sp_tbl2 tr:nth-child(29){ display: block;}
-.sp_tbl2 tr:nth-child(31){ display: block;}
-.sp_tbl2 tr:nth-child(33){ display: block;}
-
-.sp_tcel{
-    background: #eaf3f1 !important;
-    border-bottom: 1px solid #ececec;
-    color: #6a807b;
-    font-size: 12px;
-    padding: 0 1% !important;
-    width: 98% !important;
-	height:28px !important;
-	line-height:28px !important;
-	display:block !important;
-}
-.sp_tcel_l{
-    background: #eaf3f1 !important;
-    border-bottom: 1px solid #ececec;
-    color: #6a807b;
-    font-size: 12px;
-    padding:1% 1% 0 1% !important;
-    width: 98% !important;
-	height:45px !important;
-	line-height:16px !important;
-	display:block !important;
-}
-
-.cel_s{
-	font-size:10px !important;
-	margin:-13px 0 0 10px !important;
-	padding:0 !important;
-	color:#888 !important
-	}
-.memadd_table_01 td span.imp {
-    background: none repeat scroll 0 0 #f35b71;
-    color: #ffffff;
-    float: right;
-    font-size: 10px;
-    font-weight: normal;
-    padding: 2px;
-	line-height:18px !important;
-	margin-top:1.2% !important
-}
-.memadd_table_01 td span.nini {
-    background: #aaa;
-    color: #FFFFFF;
-    float: right;
-    font-size: 10px;
-    font-weight: normal;
-    padding: 2px;
-	line-height:18px !important;
-	margin-top:1.2% !important	
-
-}
-.inp_bs{
-	display:block;	
-	width:20%;
-	padding:2.4% 0;
-	margin-right:0.5%;
-	float:left;
-	margin-left:0;
-	color:rgba(255,255,255,1.00);
-	background-color: rgba(150,150,150,1.00);
-	text-align:center;
-/* border-radius */
-border-radius:5px 0px 0px 5px;
--webkit-border-radius:5px 0px 0px 5px;
--moz-border-radius:5px 0px 0px 5px;	
-}
-.box_form_td li{width:99% !important; margin-left:-1% !important}
-input {
-    border: 1px solid rgba(180,180,180,1.00) !important;
-}
-.memadd_table_01 .in_w_06, .memadd_table_01 .in_w_06b {
-    width: 75% !important;
-/* border-radius */
-border-radius:0px 5px 5px 0px;
--webkit-border-radius:0px 5px 5px 0px;
--moz-border-radius:0px 5px 5px 0px;	
-}
-.memadd_table_01 .in_w_02, .memadd_table_01 .in_w_08, .memadd_table_01 .in_w_09, .memadd_table_01 .in_w_10{
-/* border-radius */
-border-radius:5px;
--webkit-border-radius:5px;
--moz-border-radius:5px;
-width:88% !important
-}
-.memadd_table_01 .in_w_04, .memadd_table_01 .in_w_07 {
-/* border-radius */
-border-radius:5px;
--webkit-border-radius:5px;
--moz-border-radius:5px;
-padding:2% !important;
-float:none !important
-}
-.memadd_table_01 .box_con {
-    float: none !important;
-    margin-right:0 !important;
-}
-.add_mt1{
-	margin:2% 0 1% 0 !important;
-}
-.add_mt2{
-	margin:4% 0 1% 0 !important
-}
-.inq_input_bt_03 .box_01, .inq_input_bt_03 .box_02 {
-    display: block !important;
-	float:none !important
-}
-.inq_input_bt_03 .box_02{
-	width:100% !important;
-	}
-.inq_input_bt_03 img{
-	width:98% !important;
-	margin:0 auto !important
-}
-.inq_input_bt_03 .box_01{
-	width:30% !important
-}
-.inq_input_bt_03 .n_bt_re_01 img {
-    width: 98% !important;
-    margin:0 auto;
-}
-.sp_secure p {
-    font-size: 7px !important;
-    line-height: 170% !important;
-    text-align: left !important;
-    width: 60% !important;
-}
-.vis_add{
-	width:98%;
-	margin:0 auto 3% auto;
-	padding:1%;
-	color:red;
-	text-align:left
-	}
-.vis_tit{
-	font-size:18px;
-	font-weight:bold;
-	display:block;
-}
-.box_form_td03 div:nth-child(2){
-	margin:4% 0!important
-}
-/*radio*/
-input[type="radio"] {
-    position: relative;
-    -webkit-appearance: button;
-    appearance: button;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 24px;
-    height: 24px;
-    content: "";
-    background-color: #FFFFFF;
-    border: 1px solid #999999;
-    -webkit-border-radius: 24px;
-    border-radius: 24px;
-    -webkit-box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
-    box-shadow: inset 4px 4px 10px rgba(0,0,0,0.2);
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-input[type="radio"]:checked:after {
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: #ff674d;
-    -webkit-border-radius: 12px;
-    border-radius: 12px;
-}
-.memadd_table_01 input[type="radio"]{margin:0 3% 0 0 !important;}
-.memadd_t_box_01 .box_01, .memadd_t_box_02 .box_01 {
-    display: block !important;
-    float: none !important;
-    width: 100% !important;
-	margin-bottom:4% !important;
-	}
-.add_exp{
-	display:block;
-	float:right;
-	color: rgba(158,158,158,1.00)
-	}
-.add_mb1{margin-bottom:10px !important}	
-	}
-</style>
-<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script m:id="common_js_ext" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-<script m:id="common_js_ext" type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script>window.jQuery || document.write('<script src="contents/js/jquery/jquery-1.7.2.min.js"><\/script><script src="contents/js/jquery/jquery-ui-1.8.18.min.js"><\/script><script src="contents/js/jquery/jquery.easing-1.3.min.js"><\/script>')</script>
+<!-- InstanceParam name="id" type="text" value="member" -->
 </head>
- 
-<body id="top">
-<div id="container">
-  <!-- ********** include:mall/header.jsp ********** -->
+<body>
+<!-- InstanceBeginEditable name="tag_body" -->
+<!-- InstanceEndEditable -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
-<div id="header">
-<div id="header_wrap" class="clearfix">
-<span m:id="l_equ_hierarchy_3_shop">
-<a m:id="e_link_logo_shop_shop" href="/">
-<div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
-</span>
-</div></a>
+<header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header_in cf">
+		<span m:id="l_equ_hierarchy_3_shop">
+			<h1 class="header_logo">
+				<a m:id="e_link_logo_shop_shop" href="/">
+					<span m:id="l_notEmp_shop_image_file_shop">
+						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+					</span>
+				</a>
+			</h1>
+			<div class="header_top">
+				<div class="header_tell" class="view">
+					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+				</div>
+				<!-- /.header_tel -->
+				<div class="header_contact">
+					<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a>
+				</div>
+				<!-- /.header_contact -->
+				<div m:id="l_pre_member_mypage_button_shop">
+					<div class="header_mypage" class="viewPc">
+						<a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+					</div>
+				</div>
+				<!-- /.header_mypage -->
+				<div class="header_ucan">
+					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				</div>
+				<!-- /.header_ucan -->
+			</div>
+			<div class="header_bottom">
+				<p class="header_username">ようこそ
+					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
+					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+				</p>
+				<!-- /.header_username -->
+				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!-- /.header_begginer -->
+				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!-- /.header_guide -->
+				<span m:id="l_equ_hierarchy_3_shop">
+					<div class="header_menu hvr-grow">
+						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
+							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
+						</a>
+					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
+					</div>
+					<!--/.header_menu-->
+				</span>
+				<div class="header_login hvr-grow">
+					<ul class="header_list_02">
+						<div m:id="l_pre_member_logout_button_shop">
+							<li id="header_logout">
+								<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+									<p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
+								</a>
+							</li>
+							</div>
+						<div m:id="l_pre_member_mypage_button_shop">
+							<li class="header_mypage_sp">
+								<a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+							</li>
+						</div>
+						<div m:id="l_notPre_member_login_button_shop">
+							<li id="header_login">
+								<a m:id="e_link_login_shop" href="../../../Templates/memberLogin.html" class="login_bt" title="ログイン">
+									<p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
+				<!-- /.header_login -->
+			</div>
+			<!-- /.header_bottom -->
+		</span>
+		<!-- /.header_item_search_box -->
+	</div>
+	<!--header_in-->
+</header>
+<!--header-->
+<!-- InstanceBeginEditable name="contents" -->
+	<div id="contents" class="contents_b">
+		<div id="contents_in" class="cf">
+			<object class="xsp_obj" m:id="e_var_prefectureMap" ></object>
+			<object class="xsp_obj" m:id="e_var_sexMap" ></object>
+			<object class="xsp_obj" m:id="e_var_opportunityMap" ></object>
+			<object class="xsp_obj" m:id="e_var_jobMap" ></object>
+			<object class="xsp_obj" m:id="e_var_dmHistory" ></object>
 
-<div id="header_tell" class="pc_only">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
-</div>
+			<form m:id="h_form_memberAddConfirm" method="POST" action="memberAddConfirm.html">
+					<ol class="cmn_step cmn_step03 cf">
+						<li class="cmn_step_item cmn_step_active">会員情報の入力</li>
+						<li class="cmn_step_item">入力内容の確認</li>
+						<li class="cmn_step_item">会員登録完了</li>
+					</ol>
+					<h1 class="cmn_tit05">会員情報の入力</h1>
 
-<div class="sp_on">
-<a href="tel:0120552476">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
-</a>
-</div>
+					<!-- <span m:id="l_notPre_free_guide">
+						<p class="left memadd_mb_02">すでに会員情報を登録いただいたことがあるお客様はご登録は不要です。</p>
+					</span> -->
+					<!--<div class="mem_add_in_txt_area_01">
+					<p><span m:id="timed_include" filename="memberAddInput_head"></span><span m:id="dummy">WEB会員特典訴求エリア</span></p>
+					</div>-->
+					<!-- <span m:id="l_pre_dm_member">
+						<div class="mem_add_in_no_bt_01">
+							<span class="dm_button"><a m:id="e_link_logo_shop_shop" href="/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/mem_add_in_n_bt_01.png" alt="会員登録せずに購入する" /></a></span>
+						</div>
+					</span> -->
 
-</div>
-</div>
-</span>
+					<p class="mb50 s_mb15 s_mt10">下記項目にご入力ください<span class="th_info"><span class="required">必須</span></span>印は必須項目です。</p>
 
-</div><!--header_wrap-->
-</div><!--header-->
+					<!--▼▼▼エラーメッセージ▼▼▼-->
+					<span m:id="l_msgPre_err">
+						<div class="error viewPc">入力内容にエラーがあります。</div>
+					</span>
+					<!--▲▲▲エラーメッセージ▲▲▲ -->
+				
+					<!--▼▼▼お客様情報▼▼▼-->
+					<h2 class="cmn_tit01 cmn_tit01_sm mt20"><span class="cmn_tit01_underline">お客さま情報</span></h2>
+					<span m:id="l_notPre_member">
+						<table class="cmn_form_table01">
+							<tr>
+								<th>お名前<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+								<td>
+									<div class="input_set input_set_name">
+										<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例:山田" /></div>
+										<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
+										<span class="suffix viewPc">様</span>
+									</div>
+									<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_name_sei">お名前(姓)入力エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_name_mei">お名前(名)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>フリガナ<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+								<td>
+									<div class="input_set input_set_kana">
+										<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例:ヤマダ" /></div>
+										<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
+										<span class="suffix viewPc">様</span>
+									</div>
+									<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>郵便番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+								<td>
+									<div class="member_yubin">
+										<p class="td_txt">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
+										<div class="input_set input_set_post mt10 s_mt10">
+											<span class="prefix">〒</span><div class="input_wrap"><input m:id="h_txt_post_code" placeholder="例 ： 1620042" type="text" name="post_code" id="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
+										</div>
+										<p class="example viewPc mt10">例：1620042</p>
+										<span id="postcode_asyncstat"/>
+										<a m:id="a_bt_searchZip" class="cmn_btn cmn_btn_green btn_postcode" href="postCode.html" OnClick="return postCodeList( document.memberAddForm.post_code.value, 1 );">郵便番号検索</a>
+										<p class="error mt10 s_mt10"><span m:id="h_err_post_code">郵便番号エラーメッセージ</span></p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th class="none_bor">都道府県<span class="th_info"><span class="required">必須</span></span></th>
+								<td>
+									<span class="select_box">
+										<select m:id="h_sel_area_cd" class="memadd_input_04">
+											<option value="">都道府県を選択</option>
+											<option m:id="h_opt_prefecture" value="001">青森県</option>
+											<option m:id="dummy" value="002">秋田県</option>
+											<option m:id="dummy" value="003">埼玉県</option>
+											<option m:id="dummy" value="004">神奈川県</option>
+											<option m:id="dummy" value="005">沖縄県</option>
+										</select>
+									</span>
+									<p class="error mt10 s_mt10"><span m:id="h_err_area_cd">都道府県エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th class="none_bor">市区郡<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+								<td>
+									<input type="text" class="in_w_02" m:id="h_txt_address1" name="address1"/>
+									<span class="example　ml20 viewPc">新宿区</span>
+									<p class="error mt10 s_mt10"><span m:id="h_err_address1">住所(市区郡)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th class="none_bor">住所（町村字）<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+								<td>
+									<input type="text" class="in_w_02" m:id="h_txt_address2" name="address2"/>
+									<span class="example　ml20 viewPc">高田馬場</span>
+									<p class="error mt10 s_mt10"><span m:id="h_err_address2">住所(町村字)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>住所（番地）<span class="th_info"><span class="required">必須</span></span></th>
+								<td>
+									<input type="text" class="in_w_02" m:id="h_txt_address3" name="address3"/>
+									<span class="example　ml20 viewPc"><span m:id="sample_house_no">４&#x2212;２&#x2212;３８</span></span>
+									<p class="error mt10 s_mt10"><span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>住所（建物名・部屋番号）<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+								<td>
+									<input type="text" class="in_w_02" m:id="h_txt_address4" name="address4"/>
+									<span class="example　ml20 viewPc">ユーキャンビル １０３号室</span>
+									<p class="error mt10 s_mt10">
+										<span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<th>様方<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+								<td>
+									<div class="input_set input_set_name">
+										<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
+										<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
+										<span class="suffix viewPc">様</span>
+									</div>
+									<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr class="tr_heading">
+								<th colspan="2"><span>電話番号は自宅、携帯のいずれか、または両方を入力してください。</span><span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+							</tr>
+							<tr>
+								<th class="none_bor">電話番号（ご自宅）<span class="th_info"><span class="optional">任意</span></span></th>
+								<td>
+									<input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
+									<p class="example viewPc mt10">例：03-0000-0000</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no">電話番号エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>電話番号（携帯）<span class="th_info"><span class="optional">任意</span></span></th>
+								<td class="bor_bottom">
+									<input m:id="h_txt_mobile_no1" type="text" name="mobile_no1" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no2" type="text" name="mobile_no2" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no3" type="text" name="mobile_no3" />
+									<p class="example viewPc mt10">例：090-0000-0000</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no1">携帯電話番号1エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no2">携帯電話番号2エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no3">携帯電話番号3エラーメッセージ</span></p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no" >携帯電話番号エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>メールアドレス<span class="th_info"><span class="suffix">【半角英数字】</span><span class="required">必須</span></span></th>
+								<td>
+									<input type="text" m:id="h_txt_email_pc"  name="email_pc" class="in_w_02 pc_b_t_01"/>
+									<p class="example viewPc mt10">例：tuuhan@u-can.co.jp</p>
+									<p class="error mt10 s_mt10"><span m:id="h_err_email_pc">PCメールアドレス入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th class="th_longchar">メールアドレス<br class="viewPc">（確認用）<span class="th_info"><span class="suffix">【半角英数字】</span><span class="required">必須</span></span></th>
+								<td>
+									<p class="example viewPc mb10">▼確認のため、もう一度ご入力ください。</p>
+									<input type="text" m:id="i_email_confirm" name="email_pc_confirm" class="in_w_02" value="" oncontextmenu="return false;" />
+									<!--<p class="clear memadd_red">メールアドレスをお間違えになると、当方メールが<br>他の方に届くことがあります。ご注意ください。</p>--> 
+									<p class="error mt10 s_mt10"><span m:id="h_err_email_pc_confirm">PCメールアドレス(確認用)入力エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<tr>
+								<th>性別<span class="th_info"><span class="optional">任意</span></span></th>
+								<td>
+									<span m:id="l_ite_sex" class="radio_wrap">
+										<object class="xsp_obj" m:id="b_var_code" ></object>
+										<label>
+											<input m:id="h_radio_sex" type="radio" name="sex" class="radio" value="key"><span m:id="b_wr_code_name">女性</span>
+										</label>
+									</span>
+									<div class="box_01"  m:id="dummy">
+										<label>
+											<input m:id="dummy" type="radio" name="sex" id="man" class="radio" value="key"><span m:id="dummy">男性</span>
+										</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>生年月日<span class="th_info"><span class="required">必須</span></span></th>
+								<td>
+									<select m:id="h_sel_birthday_year" class="memadd_input_02">
+										<option value=""></option>
+										<option m:id="h_opt_birthday_year" value="1995">1995(平成7)</option>
+										<option m:id="dummy" value="">1994(平成6)</option>
+										<option m:id="dummy" value="">1993(平成5)</option>
+										<option m:id="dummy" value="">1992(平成4)</option>
+									</select><span class="suffix">年</span><br class="viewSp">
+									<select m:id="h_sel_birthday_month" class="memadd_input_03 s_mt8">
+										<option value=""></option>
+										<option m:id="h_opt_birthday_month" value="">1</option>
+										<option m:id="dummy" value="">2</option>
+										<option m:id="dummy" value="">3</option>
+									</select><span class="suffix s_mt8">月</span>
+									<select m:id="h_sel_birthday_day" class="memadd_input_03 s_mt8">
+										<option value=""></option>
+										<option m:id="h_opt_birthday_day" value="">1</option>
+										<option m:id="dummy" value="">2</option>
+										<option m:id="dummy" value="">3</option>
+									</select><span class="suffix s_mt8">日</span>
+									<p class="error mt10 s_mt10"><span m:id="h_err_birthday">生年月日エラーメッセージ</span></p>
+								</td>
+							</tr>
+							<!--<tr><th>職業</th><td class="bor_bottom">
+							<select m:id="h_sel_job" class="memadd_input_01">
+							<option value="">--選択してください--</option>
+							<option m:id="dummy" value="">会社員</option>
+							<option m:id="dummy" value="">会社役員</option>
+							<option m:id="dummy" value="">公務員</option>
+							<option m:id="dummy" value="">自営業</option>
+							<option m:id="dummy" value="">学生</option>
+							</select>
+							<span class="error"><span m:id="h_err_job">職業エラーメッセージ</span></span>
+							</td></tr>-->
+							<tr>
+								<th>メールマガジン<span class="th_info"><span class="required">必須</span></span></th>
+								<td>
+									<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label></span>
+									<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label></span>
+									<span m:id="l_msgPre_mail_magazine_pres">
+										<p class="error mt10 s_mt10"><span m:id="h_err_mail_magazine_pres">メールマガジンエラーメッセージ</span></p>
+									</span>
+								</td>
+							</tr>
+						</table>
+					</span>
+					<!--▲▲▲お客様情報▲▲▲ -->
 
-<div id="contents">
+					<!--▼▼▼ログイン情報▼▼▼-->
+					<h2 class="cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">ログイン情報の登録</span><br class="viewSp"><span class="cmn_tit01_supple">（ログイン時に必要な情報になります）</span></h2>
+					<table class="cmn_form_table01">
+						<tr>
+							<th class="th_longchar">
+								<span class="th_txt">希望ログインID</span><span class="th_info"><span class="suffix">【半角英数字、<br class="viewPc">8&#xFF5E;20文字】</span><span class="required">必須</span></span>
+							</th>
+							<td>
+							<div class="memadd_t_box_04 clearfix" id="idCheck">
+								<input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
+								<p class="example viewPc mt10">例：yamada1234</p>
+								<p class="error mt10 s_mt10"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></p>
+								<p class="error mt10 s_mt10"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></p>
+								<p class="mt10 s_mt10 s_tac"><a m:id="a_bt_idCheck_scroll" class="cmn_btn cmn_btn_green btn_checkid" href="" onclick="">IDチェック</a><br class="viewSp"><span class="txt_checkid s_mt5">使用できるIDかチェックします</span></p>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span class="th_txt">パスワード</span><span class="th_info"><span class="suffix">【半角英数字、<br class="viewPc">8&#xFF5E;20文字】</span><span class="required">必須</span></span>
+							</th>
+							<td>
+								<p class="notes">※今後もお使いいただくため、忘れにくいものをご指定いただき、大切に保管してください。</p>
+								<p class="notes">※半角英数字 6&#xFF5E;15文字以内でご指定ください。大文字と小文字は区別して認識されます。</p>
+								<p class="notes">※セキュリティ強化のため、他サイトと同じパスワードや生年月日・電話番号など他者から推測されやすいパスワードは避け、大文字、小文字、数字を混在させることをオススメします。</p>
+								<p class="notes">※セキュリティ保護のため、入力したパスワードは●で表示されます。</p>
+								<div class="mt15">
+									<input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
+								</div>
+								<p class="error mt10 s_mt10"><span m:id="h_err_password">パスワードエラーメッセージ</span></p>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<span class="th_txt">パスワード（確認用）</span><span class="th_info"><span class="suffix viewPc">【半角英数字、<br class="viewPc">8&#xFF5E;20文字】</span><span class="required">必須</span></th>
+							<td>
+								<p class="example viewPc mb10">▼間違いを防ぐため、上で入力したパスワードを再度ご入力ください。</p>
+								<input type="password" name="password_confirm" class="in_w_02"  oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);"/>
+								<p class="error mt10 s_mt10"><span m:id="h_err_password_confirm">パスワード確認エラーメッセージ</span></p>
+								<p class="mt15 s_mt15">例：yamada1234</p>
+							</td>
+						</tr>
+					</table>
+					<!--▲▲▲ログイン情報▲▲▲ -->
 
-<!--<div id="pan-navi" >
-  <ul class="clearfix">
-    <li><a m:id="pankuzu_top_link" href="shop.html"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
-    <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
-    <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
-  </ul>
-</div>-->
-<div id="contents_r">
-<object class="xsp_obj" m:id="e_var_prefectureMap" ></object>
-		<object class="xsp_obj" m:id="e_var_sexMap" ></object>
-		<object class="xsp_obj" m:id="e_var_opportunityMap" ></object>
-		<object class="xsp_obj" m:id="e_var_jobMap" ></object>
-		<object class="xsp_obj" m:id="e_var_dmHistory" ></object>
-<form m:id="h_form_memberAddConfirm" method="POST" action="memberAddConfirm.html">        
-  <div class="r_con_box_04">
-  <div class="r_con_box_04_in">
-  <h1 class="temp_tit_n02 temp_tit_n02_cor">会員情報の入力</h1>
-  <div class="sec_02 clearfix">
-  <div class="ad_navi">
-  <ul class="clearfix">
-  <span m:id="l_notPre_free_guide">
-  <li><div class="ad_navi_in ad_navi_t">会員情報の入力</div></li>
-  <li><div class="ad_navi_in">会員情報の確認</div></li>
-  <li class="last"><div class="ad_navi_in">会員登録完了</div></li>
-  </span>
-  </ul>
-  </div>
-  <span m:id="l_notPre_free_guide">
-  <p class="left memadd_mb_02">すでに会員情報を登録いただいたことがあるお客様はご登録は不要です。 
-  </p>
-  </span>
-    
-    
-    
-  <!--<div class="mem_add_in_txt_area_01">
-<p><span m:id="timed_include" filename="memberAddInput_head"></span><span m:id="dummy">WEB会員特典訴求エリア</span></p>
-</div>-->
-    
-  <span m:id="l_pre_dm_member">
-  <div class="mem_add_in_no_bt_01">
-  <span class="dm_button"><a m:id="e_link_logo_shop_shop" href="/">
-  <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/mem_add_in_n_bt_01.png" alt="会員登録せずに購入する" /></a></a></span>
-  </div>
-  </span>
-    
-    
-  <!-- エラーメッセージ -->
-    <span m:id="l_msgPre_err">
-      <div class="error">
-        入力内容にエラーがあります。
-        </div>
-      </span>
-    <!--/ エラーメッセージ -->
-    
-  <h4 class="temp_tit_06 clear"><div>ログインID・パスワードの入力（ログイン時に必要な情報になります）</div></h4>
-    
-  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01 sp_tbl1">
-  <tr><td class="sp_tcel sp_only">希望ログインID(半角英数字、8から20文字)<span class="imp">必須</span></td></tr>
-  <tr><th>希望ログインID<span class="imp">必須</span><p>(半角英数字、8から20文字)</p></th><td class="bor_bottom">
-  <div class="memadd_t_box_04 clearfix">
-  <div class="box_01">
-  <input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/></div>
-  <div class="box_02">
-  <a m:id="a_bt_idCheck" href="" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/mem_add_in_n_bt_02.png"  alt="郵便番号検索" /></a><p class="supple_01">使用できるIDかチェックします</p>
-  </div><span class="exp"><span m:id="sample_loginid">例：0123456</span></span></div>
-  <div><span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span></div>
-    <div><span class="error"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></span></div>
-    </td></tr>
-  <tr><td class="sp_tcel sp_only">パスワード(半角英数字、8から20文字)<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">パスワード<span class="imp pc_b_t_02">必須</span><p>(半角英数字、8から20文字)</p></th>
-  <td>
-  <div class="memadd_t_box_04 clearfix">
-  <div class="box_01">
-  <input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
-  </div>
-  <span class="exp">例：tuuhan0123</span>
-  <div class="clear"><span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span></div>
-  </td></tr>
-  <tr><td class="sp_tcel sp_only">パスワード（確認用）<span class="imp">必須</span></td></tr>
-  <tr><th class="none_bor">パスワード（確認用）<span class="imp pc_b_t_02">必須</span><p>コピー貼り付けはしないでください</p></th><td>
-  <div class="memadd_t_box_04 clearfix">
-  <div class="box_01">
-  <input type="password" name="password_confirm" class="in_w_02"  oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);"/>
-  </div>
-  <span class="exp">確認のためもう一度お願いします。</span>
-  <div class="clear"><span class="error"><span m:id="h_err_password_confirm">パスワード確認エラーメッセージ</span></span></div>
-  </td></tr>
-  <tr><td class="cel_s exp sp_only">コピー貼り付けはしないでください。</td></tr>
-  </table>
-    
-  <span m:id="l_notPre_member">
-  <h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
-    
-  <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01 sp_tbl2">
-  <tr><td class="sp_tcel sp_only">お名前（全角）<span class="imp">必須</span></td></tr>
-  <tr><th>お名前（全角）<span class="imp">必須</span></th>
-  <td class="bor_bottom">
-  <span class="inp_bs">姓</span><input type="text"  m:id="h_txt_name_sei" name="name_sei" class="in_w_06 add_mb1"/>
-  <span class="inp_bs">名</span><input type="text"  m:id="h_txt_name_mei" name="name_mei" class="in_w_06" />
-  <span class="exp"><span m:id="sample_name_1">例：山田　太郎</span></span>
-  <div>
-    <span class="error">
-      <span m:id="h_err_name_sei" >お名前(姓)入力エラーメッセージ</span>
-      </span>
-    </div>
-  <div>
-  <span class="error">
-  <span m:id="h_err_name_mei" >お名前(名)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-  
-  <tr><td class="sp_tcel sp_only">フリガナ（全角）<span class="imp">必須</span></td></tr>
-  <tr><th>フリガナ（全角）<span class="imp">必須</span></th>
-  <td class="bor_bottom">
-  <span class="inp_bs">姓</span><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana"  class="in_w_06 add_mb1"/>
-  <span class="inp_bs">名</span><input type="text" m:id="h_txt_name_mei_kana"  name="name_mei_kana" class="in_w_06" />
-  <span class="exp"><span m:id="sample_kana_1">例：ヤマダ　タロウ</span></span>
-    
-  <div>
-  <span class="error">
-  <span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
-  </span>
-  </div>
-  <div>
-  <span class="error">
-  <span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-  <tr><td class="sp_tcel sp_only">メールアドレス（半角英数字）<span class="imp">必須</span></td></tr>
-  <tr><th class="none_bor">メールアドレス（半角英数字）<span class="imp">必須</span></th>
-  <td><input type="text" m:id="h_txt_email_pc"  name="email_pc" class="in_w_02 pc_b_t_01"/><span class="exp"><span m:id="sample_mail">例：tuuhan@u-can.co.jp</span></span>
-  <div>							
-  <span class="error">
-  <span m:id="h_err_email_pc">PCメールアドレス入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td>
-  </tr>
-  <tr><td class="sp_tcel sp_only">メールアドレス（確認用）<span class="imp">必須</span></td></tr>
-  <tr><th>メールアドレス（確認用）<span class="imp">必須</span></th><td class="bor_bottom"><input type="text" m:id="i_email_confirm" name="email_pc_confirm" class="in_w_02" value="" oncontextmenu="return false;" /><span class="exp">確認のためもう一度お願いします</span>
-  <!--<p class="clear memadd_red">メールアドレスをお間違えになると、当方メールが<br />他の方に届くことがあります。ご注意ください。</p>--> 
-  <div>
-  <span class="error">
-  <span m:id="h_err_email_pc_confirm"><br />PCメールアドレス(確認用)入力エラーメッセージ</span>
-  </span>
-  </div>
-    
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">郵便番号（半角英数字）<span class="imp">必須</span></td></tr>
-  <tr>
-  <th>郵便番号（半角英数字）<span class="imp">必須</span></th>
-  <td class="bor_bottom">
-  <div class="member_yubin">
-  <div class="memadd_t_box_03 clearfix">
-    <div class="box_01 box_left">
-      <input m:id="h_txt_post_code" type="text" name="post_code" id="post_code" class="in_w_09" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
-    
-    <div class="box_01b">左枠に郵便番号7ケタを入力すると自動的に住所を表示します。郵便番号を調べたい方は↓から</div>
-    
-    <div class="box_02 box_right">
-      <a m:id="a_bt_searchZip" href="postCode.html" OnClick="return postCodeList( document.memberAddForm.post_code.value, 1 );">
-        <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ma_bt_01b.jpg"  alt="郵便番号検索" />
-        </a>
-      
-      <span id="postcode_asyncstat"/><span class="error_message error ">
-        <div><span m:id="h_err_post_code">&nbsp;郵便番号エラーメッセージ</span></div>
-        </span>
-      
-      <span class="exp"><span m:id="sample_postcode">例：0123456</span></span>
-      </div>
-    
-    
-    
-  </div></div></td></tr>
-    
-    
-    
-  <tr><td class="sp_tcel sp_only">住所（都道府県）<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">住所（都道府県）<span class="imp">必須</span></th><td>
-  <select  m:id="h_sel_area_cd" class="memadd_input_04">
-  <option value="">--選択してください--</option>
-  <option m:id="h_opt_prefecture" value="001">青森県</option>
-  <option m:id="dummy" value="002">秋田県</option>
-  <option m:id="dummy" value="003">埼玉県</option>
-  <option m:id="dummy" value="004">神奈川県</option>
-  <option m:id="dummy" value="005">沖縄県</option>
-  </select>
-  <div><span class="error"><span m:id="h_err_area_cd">都道府県エラーメッセージ</span></span></div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">住所（市区郡）<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">住所（市区郡）<span class="imp">必須</span></th><td>
-  <input type="text" class="in_w_02" m:id="h_txt_address1" name="address1"/>
-  <span class="exp"><span m:id="sample_city">例：田代町字岩谷</span></span>
-  <div>
-  <span class="error">
-  <span m:id="h_err_address1">住所(市区郡)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">住所（町村字）（全角）<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">住所（町村字）（全角）<span class="imp">必須</span></th><td>
-  <input type="text" class="in_w_02" m:id="h_txt_address2" name="address2"/>
-  <span class="exp"><span m:id="sample_town">例：田代町字岩谷</span></span>
-  <div>
-  <span class="error">
-  <span m:id="h_err_address2">住所(町村字)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">住所（番地）（全角）<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">住所（番地）（全角）<span class="imp">必須</span></th><td>
-  <input type="text" class="in_w_02" m:id="h_txt_address3" name="address3"/>
-  <span class="exp"><span m:id="sample_house_no">例：４－２－３８</span></span>
-  <div>
-  <span class="error">
-  <span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">住所（建物名・部屋番号）<span class="nini">任意</span></td></tr>
-    
-  <tr><th class="none_bor">住所（建物名・部屋番号）<span class="nini">任意</span></th><td>
-  <input type="text" class="in_w_02" m:id="h_txt_address4" name="address4"/>
-  <span class="exp"><span m:id="sample_bldg">例：ユーキャンビル １０３号室</span></span>
-  <div>
-  <span class="error">
-  <span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">様方（全角）<span class="nini">任意</span></td></tr>
-    
-  <tr><th>様方（全角）<span class="nini">任意</span></th><td class="bor_bottom">
-  <span class="inp_bs">姓</span><input type="text" class="in_w_06 add_mb1" m:id="h_txt_address_co_sei" name="address_co_sei"/>
-  <span class="inp_bs">名</span><input type="text" class="in_w_06" m:id="h_txt_address_co_mei" name="address_co_mei" />
-    <span class="exp"><span m:id="sample_address_co_1">例：鈴木　一郎</span></span>
-    <div>
-  <span class="error">
-  <span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span>
-  </span>
-  </div>
-  <div>
-  <span class="error">
-  <span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span>
-  </span>
-  </div>
-    </td></tr>
-    
-  <tr><td class="sp_tcel_l sp_only">電話番号は自宅、または携帯のいずれかまたは両方を入力してください。<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor"><p><span class="imp">必須</span>電話番号は自宅、または携帯の<br />
-    いずれかまたは両方を入力してください。</p></th><td>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">電話番号（ご自宅）<span class="nini">任意</span></td></tr>
-    
-  <tr><th class="none_bor">電話番号（ご自宅）<span class="nini">任意</span></th><td>
-  <input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
-  <span class="exp"><span m:id="sample_tel_1">例：03-0000-0000</span></span>
-  <div>
-  <span class="error"><span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span>
-  <span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span>
-  <span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span>
-  <span m:id="h_err_tel_no">電話番号エラーメッセージ</span></span></div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">電話番号（携帯）<span class="nini">任意</span></td></tr>
-    
-  <tr><th>電話番号（携帯）<span class="nini">任意</span></th><td class="bor_bottom">
-  <input m:id="h_txt_mobile_no1" type="text" class="in_w_04" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no2" type="text" class="in_w_04" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no3" type="text" class="in_w_04" />
-  <span class="exp"><span m:id="sample_tel_2" >例：090-0000-0000</span></span>
-  <div>
-  <span class="error">
-  <span m:id="h_err_mobile_no1">携帯電話番号1エラーメッセージ</span>
-  <span m:id="h_err_mobile_no2">携帯電話番号2エラーメッセージ</span>
-  <span m:id="h_err_mobile_no3">携帯電話番号3エラーメッセージ</span>
-  <span m:id="h_err_mobile_no" >携帯電話番号エラーメッセージ</span>
-  </span>
-  </div>
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">性別<span class="nini">任意</span></td></tr>
-    
-  <tr><th>性別<span class="nini">任意</span></th><td class="bor_bottom">
-    
-  <div class="memadd_t_box_01 clearfix">
-  <span m:id="l_ite_sex">
-  <div class="box_01">
-    
-  <object class="xsp_obj" m:id="b_var_code" ></object>
-  <label>
-  <input m:id="h_radio_sex" type="radio" name="sex" class="radio" value="key"><span  m:id="b_wr_code_name">女性</span></label></div>
-  </span>
-  <div class="box_01"  m:id="dummy">
-  <input m:id="dummy" type="radio" name="sex" class="radio" value="key"><span m:id="dummy">男性</span>
-  </div>
-  </div>
-    
-  </td></tr>
-    
-  <tr><td class="sp_tcel sp_only">生年月日<span class="imp">必須</span></td></tr>
-    
-  <tr><th>生年月日<span class="imp">必須</span></th><td class="bor_bottom">
-    
-  <select m:id="h_sel_birthday_year" class="memadd_input_02">
-    <option value=""></option>
-    <option m:id="h_opt_birthday_year" value="1995">1995(平成7)</option>
-    <option m:id="dummy" value="">1994(平成6)</option>
-    <option m:id="dummy" value="">1993(平成5)</option>
-    <option m:id="dummy" value="">1992(平成4)</option>
-    </select>&nbsp;年&nbsp;
-    <select m:id="h_sel_birthday_month" class="memadd_input_03">
-      <option value=""></option>
-      <option m:id="h_opt_birthday_month" value="">1</option>
-      <option m:id="dummy" value="">2</option>
-      <option m:id="dummy" value="">3</option>
-      </select>&nbsp;月&nbsp;
-    <select m:id="h_sel_birthday_day" class="memadd_input_03">
-      <option value=""></option>
-      <option m:id="h_opt_birthday_day" value="">1</option>
-      <option m:id="dummy" value="">2</option>
-      <option m:id="dummy" value="">3</option>
-      </select>&nbsp;日&nbsp;
-  <div><span class="error"><span m:id="h_err_birthday">生年月日エラーメッセージ</span></span></div>
-  </td></tr>
-  <!--<tr><th>職業</th><td class="bor_bottom">
-<select m:id="h_sel_job" class="memadd_input_01">
-<option value="">--選択してください--</option>
-<option m:id="dummy" value="">会社員</option>
-<option m:id="dummy" value="">会社役員</option>
-<option m:id="dummy" value="">公務員</option>
-<option m:id="dummy" value="">自営業</option>
-<option m:id="dummy" value="">学生</option>
-</select>
-<span class="error"><span m:id="h_err_job">職業エラーメッセージ</span></span>
-</td></tr>-->
-    
-  <tr><td class="sp_tcel sp_only">メールマガジン<span class="imp">必須</span></td></tr>
-    
-  <tr><th class="none_bor">メールマガジン<span class="imp">必須</span></th><td class="bor_bottom">
-  <div class="memadd_t_box_01 clearfix">
-  <div class="box_01">
-  <label><input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label></div>
-  <div class="box_01">
-  <label><input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label></div>
-  <span m:id="l_msgPre_mail_magazine_pres">
-    <br />
-    <span class="error">
-      <span m:id="h_err_mail_magazine_pres">メールマガジンエラーメッセージ</span>
-      </span>
-    </span>
-  </div>
-  </td></tr>
-  </table>
-  </span>
-    
-  </div>
-    
-    
-  </div>
-  <span m:id="l_notPre_free_guide">
-  <div class="r_con_box_04_in">
-  <div class="memadd_cau_box_01">
-  <h3>会員規約</h3>
-  <div class="scroll_01">
-  <p>ココチモ会員規約 <br />
-  <br />
-  <strong>第１条（本規約の範囲）</strong> <br />
-    本規約は、株式会社ユーキャン（以下「当社」といいます）が運営する「ココチモ」（以下「当サービス」といいます）の提供サービスを、次条で定義する会員が利用することに伴うすべての事項にわたり適用されるものとします。 <br />
-  <br />
-  <strong>第２条（会員の定義）</strong> <br />
-    本規約において「会員」とは、本規約の内容を承認した上で、当社所定の手続に従い会員登録を申請し、当社がこれを承認した方とします。会員は会員登録をすることにより、本規約に拘束されることに異議なく同意したものとします。 <br />
-  <br />
-  <strong>第３条（登録情報の変更）</strong> <br />
-    会員は、登録した情報に変更が生じた場合には、速やかに当社の定める手続にしたがい連絡を行うものとします。 <br />
-  <br />
-  <strong>第４条（会員の退会）</strong> <br />
-    会員は、当社所定の手続を経て、いつでも退会することができるものとします。 <br />
-  <br />
-  <strong>第５条（会員資格の停止および会員登録の抹消）</strong><br />
-    会員は次の各号のいずれかに該当する場合、当社は該当会員の会員資格を事前の通知なく停止、または会員登録の抹消をすることができるものとします。 <br />
-    1）登録された内容に虚偽の事項が含まれていることが判明した場合 <br />
-    2）IDまたはパスワードを不正に使用し、またはさせた場合 <br />
-    3）他者になりすまして当サービスを利用した場合、または他者をして会員になりすまさせて当サービスを利用させた場合 <br />
-    4）当サービスのサーバ等に保存されているデータに不正にアクセスし、これを破壊もしくは破壊する恐れのある行為を行った場合<br /> 
-    5）当規約に定める規定に違反した場合 <br />
-    6）当サービスの運営を妨害した場合 <br />
-    7）その他当社が会員として不適当だと判断した場合 <br />
-  <br />
-  <strong>第６条（禁止事項）</strong><br /> 
-    会員は、第５条各号に定める会員資格の停止及び抹消事由該当の各行為を行ってはならず、また当社が提供する当サービスや商品等に関する情報を、営利目的など私的利用の範囲外の目的で利用することをしてはならないものとします。ただし、当社が事前に承諾した場合は除きます。 <br />
-  <br />
-  <strong>第７条（個人情報の取り扱い）</strong> <br />
-    当社は、当サービスを通じて取得した会員の個人情報を別途当サービス上に掲載する「個人情報保護方針」に基づき適切に取扱うものとします。 <br />
-  <br />
-  <strong>第８条（サービスの停止および中止）</strong> <br />
-    当社は、次の各号に相当する事態が発生した場合、会員への事前の通知、承諾なく、サービスを停止または中止することができるものとします。当社は、サービスの提供の一時停止、中止等により、利用者または第三者が被ったいかなる不利益、損害について、理由を問わず一切の責任を負わないものとします。<br /> 
-    1）システムの不良等により、サービスの提供が困難になった場合 <br />
-    2）火災、停電、天変地異や社会不安等の不可抗力により、サービスの提供が困難になった場合 <br />
-    3）その他やむを得ずシステムやサービスの停止または中止が必要と当社が判断した場合 <br />
-  <br />
-  <strong>第９条（規約の変更）</strong> <br />
-    当社は、会員の承諾なしに本規約を変更できるものとします。なお、変更後の会員規約は、当サービスのウェブサイト上に規約の改定内容等を掲載すること、もしくは文書通知をもって効力が生じるものとします。この場合、会員は変更後の規約に従うものとします。 <br />
-  <br />
-  <strong>第１０条（会員IDとパスワードの管理）</strong> <br />
-    当サービスのウェブサイトから会員手続きをされた場合、会員IDとパスワードが設定されます。 <br />
-    1）会員は、会員自身が設定したIDおよびパスワードを自己の責任のもとに厳重に管理、保管するものとします。<br /> 
-    2）会員はIDまたはパスワードが第三者により不正に使用されていることが判明した場合には、直ちに当社に連絡するものとします。<br />
-    3）当社は、会員の過失の有無にかかわらず、IDおよびパスワードを第三者が無断で使用した等に起因する損害につき一切の責任を負わないものとします。<br />
-  <br />
-  <strong>第１１条（免責事項） </strong><br />
-    1）当社は会員の登録内容に従って事務を処理することにより、当社の債務を履行し免責されるものとします。<br /> 
-    2）会員は、当サービスの提供するコンテンツの内容が時間の経過等の理由により、その正確性等が失われる場合があること、また、予告なく当サービスのコンテンツを変更される場合があることを認識するとともに、それらに伴い、会員に損害、損失、不利益が生じたとしても、当社はその責任を負わないことに同意するものとします。 <br />
-  <br />
-  <strong>第1２条（準拠法および合意管轄）</strong><br />
-    本規約の解釈、適用については日本法に基づくものとし、本規約に関して紛争が生じた場合、東京地方裁判所を第一審の専属的合意管轄裁判所とします。 <br />
-  </p>
-  <p class="right" style="text-align:right;">2013年11月1日制定</p>
-  </div>
-  </div>
-    
-  </div>
-  </span>
-    
-  <div class="memadd_cau_box_02">
-    入力いただきました内容、会員規約をご確認のうえ、<br />
-    確認ボタンを押してください。個人情報の取り扱いについては<a href="/shop/c/static/protection/" target="_blank">こちら</a>。
-    
-  </div>
-    
-  <div class="memadd_bt_box_01 clearfix s_bt_461">
-  <a m:id="a_bt_confirm" href="memberAddConfirm.html" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/mem_add_in_n_bt_03.png"  alt="確認" /></a>
-    
-    
-  </div>
-    
-    
-    
-    
-    
-    
-    
-    
-  </div><!--r_con_box_03-->
-  
-  <input type="hidden" name="checkId"/>
-</form>
-        
-        
-    <span m:id="l_equ_checkId">
-		<div m:id="l_msgNotPre_id">
-		<script type="text/javascript"><!--
-		{
+					<!--▼▼▼会員規約▼▼▼-->
+					<span m:id="l_notPre_free_guide">
+					<div class="member_term">
+						<h2 class="cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">会員規約</span></h2>
+						<div class="member_term_scroll">
+							<p>ココチモ会員規約<br>
+							<br>
+							<strong>第１条（本規約の範囲）</strong><br>
+							本規約は、株式会社ユーキャン（以下「当社」といいます）が運営する「ココチモ」（以下「当サービス」といいます）の提供サービスを、次条で定義する会員が利用することに伴うすべての事項にわたり適用されるものとします。<br>
+							<br>
+							<strong>第２条（会員の定義）</strong><br>
+							本規約において「会員」とは、本規約の内容を承認した上で、当社所定の手続に従い会員登録を申請し、当社がこれを承認した方とします。会員は会員登録をすることにより、本規約に拘束されることに異議なく同意したものとします。<br>
+							<br>
+							<strong>第３条（登録情報の変更）</strong><br>
+							会員は、登録した情報に変更が生じた場合には、速やかに当社の定める手続にしたがい連絡を行うものとします。<br>
+							<br>
+							<strong>第４条（会員の退会）</strong><br>
+							会員は、当社所定の手続を経て、いつでも退会することができるものとします。<br>
+							<br>
+							<strong>第５条（会員資格の停止および会員登録の抹消）</strong><br>
+							会員は次の各号のいずれかに該当する場合、当社は該当会員の会員資格を事前の通知なく停止、または会員登録の抹消をすることができるものとします。<br>
+							1）登録された内容に虚偽の事項が含まれていることが判明した場合<br>
+							2）IDまたはパスワードを不正に使用し、またはさせた場合<br>
+							3）他者になりすまして当サービスを利用した場合、または他者をして会員になりすまさせて当サービスを利用させた場合<br>
+							4）当サービスのサーバ等に保存されているデータに不正にアクセスし、これを破壊もしくは破壊する恐れのある行為を行った場合<br> 
+							5）当規約に定める規定に違反した場合<br>
+							6）当サービスの運営を妨害した場合<br>
+							7）その他当社が会員として不適当だと判断した場合<br>
+							<br>
+							<strong>第６条（禁止事項）</strong><br> 
+							会員は、第５条各号に定める会員資格の停止及び抹消事由該当の各行為を行ってはならず、また当社が提供する当サービスや商品等に関する情報を、営利目的など私的利用の範囲外の目的で利用することをしてはならないものとします。ただし、当社が事前に承諾した場合は除きます。<br>
+							<br>
+							<strong>第７条（個人情報の取り扱い）</strong><br>
+							当社は、当サービスを通じて取得した会員の個人情報を別途当サービス上に掲載する「個人情報保護方針」に基づき適切に取扱うものとします。<br>
+							<br>
+							<strong>第８条（サービスの停止および中止）</strong><br>
+							当社は、次の各号に相当する事態が発生した場合、会員への事前の通知、承諾なく、サービスを停止または中止することができるものとします。当社は、サービスの提供の一時停止、中止等により、利用者または第三者が被ったいかなる不利益、損害について、理由を問わず一切の責任を負わないものとします。<br> 
+							1）システムの不良等により、サービスの提供が困難になった場合<br>
+							2）火災、停電、天変地異や社会不安等の不可抗力により、サービスの提供が困難になった場合<br>
+							3）その他やむを得ずシステムやサービスの停止または中止が必要と当社が判断した場合<br>
+							<br>
+							<strong>第９条（規約の変更）</strong><br>
+							当社は、会員の承諾なしに本規約を変更できるものとします。なお、変更後の会員規約は、当サービスのウェブサイト上に規約の改定内容等を掲載すること、もしくは文書通知をもって効力が生じるものとします。この場合、会員は変更後の規約に従うものとします。<br>
+							<br>
+							<strong>第１０条（会員IDとパスワードの管理）</strong><br>
+							当サービスのウェブサイトから会員手続きをされた場合、会員IDとパスワードが設定されます。<br>
+							1）会員は、会員自身が設定したIDおよびパスワードを自己の責任のもとに厳重に管理、保管するものとします。<br> 
+							2）会員はIDまたはパスワードが第三者により不正に使用されていることが判明した場合には、直ちに当社に連絡するものとします。<br>
+							3）当社は、会員の過失の有無にかかわらず、IDおよびパスワードを第三者が無断で使用した等に起因する損害につき一切の責任を負わないものとします。<br>
+							<br>
+							<strong>第１１条（免責事項） </strong><br>
+							1）当社は会員の登録内容に従って事務を処理することにより、当社の債務を履行し免責されるものとします。<br> 
+							2）会員は、当サービスの提供するコンテンツの内容が時間の経過等の理由により、その正確性等が失われる場合があること、また、予告なく当サービスのコンテンツを変更される場合があることを認識するとともに、それらに伴い、会員に損害、損失、不利益が生じたとしても、当社はその責任を負わないことに同意するものとします。<br>
+							<br>
+							<strong>第1２条（準拠法および合意管轄）</strong><br>
+							本規約の解釈、適用については日本法に基づくものとし、本規約に関して紛争が生じた場合、東京地方裁判所を第一審の専属的合意管轄裁判所とします。<br>
+							</p>
+							<p class="right" style="text-align:right;">2013年11月1日制定</p>
+						</div>
+						<!-- /.member_term_scroll -->
+					</div>
+					<!-- /.member_ -->
+					</span>
+					<!--▲▲▲会員規約▲▲▲ -->
+					<div class="member_confirm">
+						<div class="member_confirm_txt">入力いただきました内容、会員規約をご確認のうえ、<br class="viewPc">確認ボタンを押してください。<br class="viewSp">個人情報の取り扱いについては<a href="/shop/c/static/protection/" target="_blank">こちら</a>。</div>
+						<div class="member_confirm_btn_area cf">
+							<a class="cmn_btn cmn_btn_orange member_confirm_btn" m:id="a_bt_confirm" href="memberAddConfirm.html" onclick="">規約に同意の上<br class="viewSp">　入力内容を確認する</a>
+							<a href="/shop/login.do" class="cmn_link01 cmn_link01_reverse member_confirm_link">戻る</a>
+						</div>
+					</div>
+					<!-- /.member_confirm -->
+				<input type="hidden" name="checkId"/>
+			</form>
+
+			<span m:id="l_equ_checkId">
+			<div m:id="l_msgNotPre_id">
+			<script type="text/javascript"><!--
+			{
 			var wrapped = window.onload;
 			window.onload = function() {
-				if (wrapped) {
-					wrapped();
-				}
-				alert("ご指定のIDはご使用になれます。");
+			if (wrapped) {
+			wrapped();
+			}
+			alert("ご指定のIDはご使用になれます。");
 			};
-		}
-		//--></script>
+			}
+			//-->
+			</script>
+			</div>
+			</span>
 		</div>
-		</span></div>
-<!--contents_r-->
-<div id="contents_l">
-  <object class="xsp_obj" m:id="e_var_standardCategory">
-  </object>
-  <object class="xsp_obj" m:id="e_var_campaignCategory">
-  </object>
-  <object class="xsp_obj" m:id="count">
-  </object>
-  <object class="xsp_obj" m:id="cate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate_count">
-  </object>
-  <object class="xsp_obj" m:id="subCate2_count">
-  </object>
-  <object class="xsp_obj" m:id="e_var_dmHistory">
-  </object>
-<!--▼▼▼カテゴリー▼▼▼-->
-<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
-<div class="l_con_box_01">
-<div id="l_tit_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_tit_01.jpg" alt="カテゴリーから探す" /></div>
-
-<div class="sub">
-	<span m:id="l_ite_standardCategory">
-		<span m:id="l_equ_cate_checkPeriod">
-			<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-			<object class="xsp_obj" m:id="count_sub1"></object>
-			<ul class="l_con_list_01 clearfix example">
-				<span  m:id="l_ite_cate">
-					<span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-					<li>
-					
-					<div id="p_0">
-					<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-					<span m:id="span_subCate_arrow" id="arrow_1">
-						<span m:id="disp_subCate_category_name">ファッション</span>
-					</span>
-					</a>
+		<!-- /#contents_in -->
+	</div>
+	<!--contents-->
+</div>
+<!--container-->
+<!-- InstanceEndEditable -->
+<footer id="footer" class="footer footer_b" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+	<div id="pagetop" class="pagetop_pc">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+	</div>
+	<div id="pagetop_sp" class="pagetop_sp">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+	</div>
+	<div class="about">
+		<div class="about_in wrapper">
+			<ul class="about_list">
+				<li class="about_list_pay js-matchHeight">
+					<span class="about_list_icon icon-dentaku"></span>
+					<p class="about_list_tit">お支払い方法について</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">お支払いには、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。</p>
 					</div>
-					
-
-					
-						<ul m:id="tag_dd_subCate">
-						<span m:id="l_ite_subCate"> 
-							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-							<li>
-							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-							</li>
-							</span>
-						</span>
-						</ul>
-					</li>
-					</span>
-				</span>
+				</li>
+				<li class="about_list_price js-matchHeight">
+					<span class="about_list_icon icon-car"></span>
+					<p class="about_list_tit">送料について</p>
+					<div class="about_list_in">
+						<div class="about_list_box">
+							<p class="about_list_txt">一回のご注文金額の合計が税込10,000円以上の場合、送料は当社負担（全国一律）になります。 税込10,000円に満たない場合は250円、また税込5,000円未満は500円ご負担いただきます。</p>
+							<div class="about_list_caution">
+								<p class="about_list_caution_tit">&#8251;ご注意&#8251;</p>
+								<p class="about_list_caution_txt"><span class="red">食品等、一部商品は送料体系が異なります。</span><br>詳しくは各商品詳細ページをご覧ください。</p>
+							</div>
+						</div>
+						<div class="about_list_img">
+							<img src="/contents/c/shop/image/img_price01.png" class="viewPc" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+							<img src="/contents/c/shop/image/img_price01_sp.png" class="viewSp" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+						</div>
+					</div>
+				</li>
+				<li class="about_list_delivery js-matchHeight">
+					<span class="about_list_icon icon-delivery"></span>
+					<p class="about_list_tit">商品のお届けについて</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">お申込みから（郵送の場合は申込書到着後）通常3&#xFF5E;6日ほどでお届けいたします。<span class="bold">ただし、一部の商品は、お届けまでに10日前後かかる場合もございます。詳しくは各商品詳細ページをご覧ください。</span></p>
+						<p class="about_list_notes">※期日・時間帯をご指定いただける商品もございます。各商品詳細ページでご確認ください。</p>
+					</div>
+				</li>
+				<li class="about_list_secure js-matchHeight">
+					<span class="about_list_icon icon-secure"></span>
+					<p class="about_list_tit">品質保証・返品について</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
+					</div>
+				</li>
+				<li class="about_list_point js-matchHeight">
+					<span class="about_list_icon icon-point"></span>
+					<p class="about_list_tit">ココチモポイントについて</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">商品のご請求金額に応じて、通常【100円につき1ポイント】をお付けします。<br>確定したポイントは次回以降のご購入の際に1ポイント＝1円としてご利用いただけます。</p>
+						<a href="/shop/c/static/guide02/#registration_merit" class="about_list_link cmn_link01">会員特典について詳しくはこちら</a>
+					</div>
+				</li>
 			</ul>
-		</span>
-	</span>
-</div>
-</span></span>
-<!--▲▲▲カテゴリー▲▲▲-->
-  <!--▼▼▼ログイン者表示▼▼▼-->
-  <object class="xsp_obj" m:id="e_var_total_price_amt">
-  </object>
-  <object class="xsp_obj" m:id="e_var_total_point_amt">
-  </object>
-  <object class="xsp_obj" m:id="e_var_total_order_num">
-  </object>
-  <div class="l_con_box_01 pc_only">
-    <div id="l_tit_02"><span m:id="l_pre_login_member_name"> <span m:id="disp_member_name">山田　太郎</span></span><span m:id="l_notPre_login_member_name">ゲスト</span></div>
-    <dl class="l_con_list_02">
-      <dt>商品点数</dt>
-      <dd><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span>点</dd>
-      <dt>金額小計</dt>
-      <dd><span m:id="b_wr_side_total_price_amt"><span m:id="dummy">●●●●</span></span>円</dd>
-    </dl>
-    <div id="l_bt_01"> <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
-s.linkTrackVars='events'; 
-s.linkTrackEvents='scView';
-s.events='scView';
-s.tl(this,'o','cartview',null,'navigate');return false
-">お買い物かごを見る</a></div>
-  </div>
-  <!--▲▲▲ログイン者表示▲▲▲-->
-  <!--▼▼▼DM▼▼▼-->
-  <div>
-  <span m:id="l_pre_member_logout_button">
-	  <object class="xsp_obj" m:id="e_var_memberDmHistoryList"></object>
-	  <span m:id="l_notEmp_memberDmHistoryList">
-		<a m:id="e_link_memberMenu_memberDMHistory" href="memberDMHistory.html" >DM送付履歴はこちら</a>
-	  </span>
-  </span>
-  <span m:id="l_notPre_member_login">
-    <div id="l_bt_02"> 
-    <span m:id="l_notPre_dm_member">
-	  <a m:id="e_link_dmlogin" href="dmLogin.html"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_bt_02.jpg" alt="DMをご覧になった方はコチラ" /></a>
-    </span>
-    </div>
-  <!--▲▲▲DM▲▲▲-->
-  <!--▼▼▼DM送付履歴▼▼▼-->
-  <span m:id="l_pre_dm_member">
-  <object class="xsp_obj" m:id="e_var_memberDmList"></object>
-  <span m:id="l_notEmp_dmHistoryList"> <span class="dm_button">
-	<a m:id="e_link_menu_dmHistory" href="dmHistory.html" >DM送付履歴はこちら</a>
-  </span> </span>
-  </span>
-  </span>
-  </div>
-  <!--▲▲▲DM送付履歴▲▲▲-->
-  <!--▼▼▼左カラムバナー▼▼▼-->
-<!--  <div class="l_bar_list pc_only">
-    <ul>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_01.jpg" width="190" height="60" /></a></li>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_02.jpg" width="190" height="60" /></a></li>
-      <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/pc_l_bar_03.jpg" width="190" height="60" /></a></li>
-    </ul>
-  </div>-->
-  <!--▲▲▲左カラムバナー▲▲▲-->
- <!--▼▼▼最近チェックした商品▼▼▼-->
-  <object class="xsp_obj" m:id="e_var_browsingGoodsList">
-  </object>
-  <span m:id="l_notEmp_browsingGoodsList">
-  <div class="l_con_box_03">
-    <div id="l_tit_04" class="sp_r_tit_02 pc_only">最近チェックした商品</div>
-    <div class="temp_tit_n02 temp_tit_n02_cor sp_only shu_n_01">最近チェックした商品</div>
-    <div class="l_con_box_03_in clearfix shu_n_02">
-    <ul class="l_con_list_04">
-    <span m:id="l_ite_browsingGoodsList"> 
-     <span m:id="l_notDisp_other_site"> 
-       <li>
-          <div class="box_01 heightLine-check">
-            <div class="box_02">
-              <div class="img_box"><a m:id="h_link_browsingGoodsList" href="goodsDetail.html"><img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
-              <p> <span m:id="l_notEqu_browsingGoods_pretaxPrice">
-			        <span class="original_price">
-			            <span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
-			        </span>&nbsp;
-			    </span>
-			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
-</p>
+			<div class="about_btn_wrap"><a href="/shop/c/static/guide/" class="about_btn cmn_btn cmn_btn_tri"><span>ご利用ガイドを見る</span></a></div>
+		</div>
+	</div>
+	<!-- /.about -->
+	<div class="tel_area">
+		<div class="tel_area_in wrapper">
+			<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
+			<p class="tel_area_txt">ココチモお客様センター</p>
+			<p class="tel_area_num">
+				<img src="/contents/c/shop/image/txt_tel02.png" class="viewPc" alt="0120-552-186">
+				<a href="tel:0120-552-186" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sp.png" alt="0120-552-186"></a>
+			</p>
+			<div class="tel_area_sub">
+				<p class="tel_area_time">（<span class="bold">6時&#xFF5E;22時</span> 日曜・祝日も受付けます）</p>
+				<div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
+                <p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
+			</div>
+		</div>
+	</div>
+	<!-- /.tel_area -->
+	<div class="footer_info">
+		<div class="footer_info_in wrapper"><div class="footer_info_site">
+			<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
+			<div class="footer_info_box">
+				<span class="footer_info_icon icon-medal"></span>
+				<p class="footer_info_subtit">ユーキャンがお届けする商品</p>
+				<p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
+					<br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
+				</div>
+				<div class="footer_info_box">
+					<span class="footer_info_icon icon-lock"></span>
+					<p class="footer_info_subtit">安心のセキュリティ</p>
+					<p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
+					<div class="pc_secure norton">
+						<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+						<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_info_consult">
+				<h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
+				<p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
+				<div class="footer_info_contact">
+					<p class="footer_info_tel"><a href="tel:0120-552-186">0120-552-186</a></p>
+					<div class="footer_info_contact_btn_wrap">
+						<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
+					</div>
+					<!-- /.footer_info_contact_btn_wrap -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.footer_info -->
+	<div class="footer_important">
+		<div class="footer_important_in wrapper">
+			<ul class="footer_important_list cf">
+				<li class="first"><a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a></li>
+				<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+				<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
+				<li><a href="/shop/c/static/company/">会社情報</a></li>
+			</ul>
+            <div class="footer_important_mark">
+                <div class="jadma">
+                	<a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
+                </div>
+                <div class="norton">
+                    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+                    <p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+                </div>
             </div>
-          </div>
-        </li>
-        </span>
-  	</span>
-        <li m:id="dummy">
-          <div class="box_01">
-            <div class="box_02">
-              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li m:id="dummy" class="sp_end">
-          <div class="box_01">
-            <div class="box_02">
-              <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li m:id="dummy" class="pc_only">
-          <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-          <h3><a href="#">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-        </li>
-      
-    </ul> </div>
-  </div>
-  </span>
-  <!--▲▲▲最近チェックした商品▲▲▲-->
-  <div class="pc_social pc_only no_pankuzu">
-    <div class="pc_social_in">
-      <ul>
-        <li><a href="#top"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/fl_bt_01.jpg" width="28" height="115" alt="ホーム" /></a></li>
-       <!-- <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_02.jpg" width="28" height="29" alt="ホーム" /></a></li>
-        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_03.jpg" width="28" height="28" alt="ホーム" /></a></li>
-        <li><a m:id="static_link" href="#"><img m:id="static_img" src="../contents/shop/00000003/shop/image/fl_bt_04.jpg" width="28" height="28" alt="ホーム" /></a></li>-->
-        <li><a href="/shop/c/static/sitemap/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/fl_bt_05.jpg" width="28" height="98" alt="ホーム" /></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!--contents_l-->
+		</div>
+	</div>
+	<!--footer_important-->
+	<div class="footer_bottom">
+		<div class="footer_bottom_in wrapper">
+			<p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
+		</div>
+		<!-- /.footer -->
+	</div>
+	<!--footer_bottom-->
+</footer>
+<!-- /#footer -->
+<!-- InstanceBeginEditable name="script_footer" -->
 
-
-
-</div><!--contents-->
-
-</div><!--container-->
-
-
-
-<div id="footer01" class=" pc_only">
-
-<div class=" pc_only pc_secure">
-<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-<p>
-このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
-</p>
-</div>
-
-</div>
-</div><!--footer_wrap02-->
-</div><!--footer02-->
-
-
-<div id="footer03">
-<div id="footer_wrap03" class="clearfix">
-<ul class="clearfix">
-<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
-<li><a href="/shop/00000002/static/protection/">個人情報保護方針</a></li>
-<li><a href="/shop/00000002/static/notation/">特定商取引に関するご案内</a></li>
-<li><a href="/shop/00000002/static/company/">会社情報</a></li>
-<!--<li class="end"><a href="#">利用規約</a></li>-->
-</ul>
-</div><!--footer_wrap03-->
-</div><!--footer03-->
-
-
-
-<div id="footer05" class="sp_only">
-
-<div class="mt10 sp_secure clearfix">
-<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-<p>
-このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
-</p>
-</div>
-
-
-</div><!--footer05-->
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
@@ -1151,6 +773,7 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 </script>
 <script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
 </script>
+<!-- InstanceEndEditable -->
 </body>
-</html>
+<!-- InstanceEnd --></html>
 

@@ -1,617 +1,846 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_shop_1.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="receipt"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta http-equiv="content-language" content="ja">
+<meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
-<meta http-equiv="content-style-type" content="text/css">
-<meta http-equiv="content-script-type" content="text/javascript">
-<!--<meta name="viewport" content="width=768">-->
+<meta http-equiv="content-style-type" content="text/css;" />
+<meta http-equiv="content-script-type" content="text/javascript"/>
 <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 <meta m:id="e_var_shop" content="">
 <meta m:id="e_var_headerComponent" content="">
 <meta m:id="e_var_testSite" content="">
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
+<meta name="format-detection" content="telephone=no">
+<!-- InstanceBeginEditable name="title" -->
 <meta name="description" content="お申込みを承りました。ご利用ありがとうございます。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta name="keywords" content="お買い物かご,ショッピングカート,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <title>お申込み完了 - ココチモ（cococimo）の通販ショップ</title>
-
+<!-- InstanceEndEditable -->
+<!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles02.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
-
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
-<!--[if (gte IE 6)&(lte IE 8)]>
-  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000003/js/selectivizr.js"></script>
-<![endif]-->
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/yuga.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/iepngfix_tilebg.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.ad-gallery.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/heightLine.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
+<script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
+<script src="/contents/c/js/new/slick.min.js"></script>
+<script src="/contents/c/js/new/common.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
-
-
-
-
-
-
-
-
-<!-- tracking urchin -->
-<meta m:id="fs_tracking_urchin" content="">
-<!--/ tracking urchin -->
-<!-- InstanceBeginEditable name="head" -->
-
-
-
-
-<!-- InstanceEndEditable -->
-
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../contents/shop/00000003/js/selectivizr.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="contents/js/jquery.backgroundSize.js"></script>
+<script>
+$(function() {
+    $(".category_list .category_list_img").css({backgroundSize: "contain"});
+});
+</script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/contents/js/html5shiv.js"></script>
+<script src="/contents/c/js/new/modernizr-custom.js"></script>
+<script>
+$(function(){
+	if (!Modernizr.svg){
+		$('img').each(function() {
+			$(this).attr('src', $(this).attr('src').replace(/\.svg/gi,'.png'));
+		});
+	}
+});
+</script>
+<![endif]-->
+<!--▲▲▲ 共通CSS/Script ▲▲▲-->
+<!--▼▼▼ 固有CSS/Script ▼▼▼-->
+<!-- InstanceBeginEditable name="script" -->
+<!--[if lt IE 9]>
+<script>
+$(function() {
+	$(".membership .membership_list_icon").css({backgroundSize: "cover"});
+});
+</script>
+<![endif]-->
 <!-- DLPO 制御タグ -->
 <script src="/contents/js/adlpo.js" type="text/javascript"></script> 
 
+<!-- カートリカバリー -->
+<script>
+var ext_goods_code = document.tagForm.ext_goods_code.value;
+var goods_name = document.tagForm.goods_name.value;
+var goods_price = document.tagForm.goods_price.value;
+var goods_num = document.tagForm.goods_num.value;
+
+var ext_goods_code_Array = ext_goods_code.split("|");
+var goods_name_Array = goods_name.split("|");
+var goods_price_Array = goods_price.split("|");
+var goods_num_Array = goods_num.split("|");
+
+var  cnt = ext_goods_code_Array.length;  
+  document.write("<script>");
+  document.write("contx = {");
+  document.write("\'user\': {");
+    document.write("\'id\': \'"+document.tagForm.email.value+"\'");	
+    document.write("},");
+    document.write("\'cart\': {");	
+      document.write("\'items\': []");	
+      document.write("},");
+          document.write("\'cv\': {");
+          document.write(" \'items\': [");
+      for(i=0;i<cnt;i++){    
+        document.write("{");	
+          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
+          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");	
+          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
+          document.write("\'count\': \'"+goods_num_Array[i]+"\',");		
+          document.write("\'stock\': \'\'");
+        document.write("}");
+        if(i != cnt-1){
+        document.write(",");
+        }
+      } 		        			
+      document.write("]");			
+    document.write("}");			
+  document.write("};");		
+  document.write("<\/script>"); 		
+</script>
+<script>
+(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
+j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
+})(window,document,'script','contx','CTX-f9ehSMTr-TEST');
+</script>
+<!-- カートリカバリーここまで -->
+<!-- InstanceEndEditable -->
+<!--▲▲▲ 固有CSS/Script ▲▲▲-->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceParam name="id" type="text" value="receipt" -->
 </head>
- 
-<body id="top">
-<!-- InstanceBeginEditable name="body" -->
-<!-- InstanceEndEditable -->
-
-<div id="container">
-
-<div id="header">
-<div id="header_wrap" class="clearfix">
-<span m:id="l_equ_hierarchy_3_shop">
-<a m:id="e_link_logo_shop_shop" href="/">
-
-
-<!-- InstanceBeginEditable name="header_logo" -->
-<style>
-@media (max-width: 640px) {
-#header {
-    margin-bottom:5%!important;
-}	
-.ad_navi li {
-	width:25% !important;
-	}
-.ad_navi li.last{width:20.5% !important;}	
-.ad_navi .ad_navi_in2 {
-    width:75%;
-}
-.ad_navi li {
-	background-position:right 45%!important;
-	margin-right:1% !important
-}
-.sp_secure p {
-    font-size: 7px !important;
-    line-height: 170% !important;
-    text-align: left !important;
-    width: 60% !important;
-}
-</style>
-<div id="header_logo"><span m:id="l_notEmp_shop_image_file_shop">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.png" alt="今よりもっと”心地いい”をお届けする　ココチモ" />
-</span>
-</div>
-<!-- InstanceEndEditable -->
-</a>
-
-<div id="header_tell" class="pc_only">
-<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/pc_tell.jpg"  alt="0120-552-476 7時から22時（年中無休）" />
-</div>
-
-</div>
-
-
-</div>
-
-
-
-</span>
-
-
-</div><!--header_wrap-->
-</div><!--header-->
-
-<div id="contents">
-
-
-<div id="contents_r_02">
-<!-- InstanceBeginEditable name="contents_wide" -->
-
+<body>
+<!-- InstanceBeginEditable name="tag_body" -->
+<!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_order"></object>
-<div class="r_con_box_04">
-<div class="r_con_box_04_in">
-<h1 class="temp_tit_n02 temp_tit_n02_cor"><span m:id="l_notPre_free_guide">お申込み完了</span></h1>
-<div class="sec_02 clearfix">
-<div class="ad_navi">
-<ul class="clearfix">
-<span m:id="l_notPre_free_guide">
-<li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お買物かご</div></div></div></li>
-<li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お客様情報の入力</div></div></div></li>
-<li><div class="ad_navi_in2"><div class="ad_in_in"><div class="ad_in_in2">お申込み内容の確認</div></div></div></li>
-<li class="last"><div class="ad_navi_in2 ad_navi_t"><div class="ad_in_in"><div class="ad_in_in2">お申込み完了</div></div></div></li>
-</span>
-</ul>
-</div>
-<span m:id="l_notPre_free_guide">
-<p class="left memadd_mb_02"><span class="reswfon_m">お申込みありがとうございます！</span><br />
-<br />
-下記の内容でお申込みを受け付けました。<br />
-お申込み内容をプリントアウトするなどして、お手元にお控えの上、大切に保管ください。<br />
-また、ご登録されているメールアドレス宛にも、注文確認メールを送信しましたのでお確かめください。<br />
-※メールの受信まで多少のお時間がかかる場合もございますので、あらかじめご了承ください。<br />
-<br />
-今後とも ココチモをよろしくお願いします。
-</p>
-</span>
-
-<span m:id="l_msgPre1">
-			<div class="error">
-				<span m:id="h_msg_msg">
-					<span m:id="disp_msg"></span>
-				</span>
-			</div>
-		</span>
-
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th><span m:id="l_notPre_free_guide">ご注文番号</span></th>
-</tr>
-<tr>
-<td><span m:id="disp_order_no">201306110001</span>
-</td>
-</tr>
-</table>
-
-	
-<object class="xsp_obj" m:id="e_var_ordShop"></object>
-<object class="xsp_obj" m:id="e_var_wrapping"></object>
-<span m:id="l_notPre_free_guide">
-<!-- ********** include:orderDetail.jsp ********** -->
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th>商品名</th>
-<th class="memadd_table_02_w_02">商品単価</th>
-<th class="memadd_table_02_w_03">数量</th>
-<th class="memadd_table_02_w_02">小計</th>
-</tr>
-<span m:id="l_ite_detail">
-<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
-<tr>
-<td class="center color_w_b">
-  <span m:id="l_equ_wrapping_goods"><div style="text-align:left;font-size:small;">以下はラッピング付帯商品になります。</div></span>
-  <span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span>
-</td>
-<td class="right color_w_b">
-	<!--<span m:id="b_wr_goods_price_tax">5000</span> 円-->
-	<span m:id="l_equ_memberSpecialDiscount">
-	  		<span m:id="disp_goods_special_price">1000 円　</span> 円
-	</span>
-	<span m:id="l_notEqu_memberSpecialDiscount">
-  		<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
-	</span>
-</td>
-<td class="right color_w_b"><span m:id="disp_detail_order_num">3</span></td>
-<td class="right color_w_b">
-	<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
-	<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
-  	<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
-</td>
-</tr>
-</span>
-</table>
-
-<div class="wrap_cart04">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-
-<object class="xsp_obj" m:id="i_shopping_total_count"></object>
-<span m:id="div_shopping_total">
-<tr>
-<td colspan="2" class="right cart_table_02_color_01">商品合計<span m:id="l_notEqu_charged_option">&nbsp;（＋&nbsp;<span m:id="disp_wrapping_name">有料オプション</span>代）</td>
-<td colspan="2" class="last_02 right">
-	<!--<span m:id="b_wr_total_price">9500</span> 円-->
-	<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
-	<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
-</td>
-</tr>
-</span> 
-<!--
-<span m:id="l_notEqu_charged_option">
-<tr m:id="div_shopping_total">
-  <td class="right cart_table_02_color_01">(内&nbsp;<span m:id="disp_wrapping_name">有料オプション</span>)</td>
-<td class="last_02 right"><span m:id="b_wr_charged_option">300</span> 円</td>
-</tr>
-</span> -->
-<!--保留<tr>
-<td colspan="2" class="right">手数料</td>
-<td class="bor_l_none"></td>
-<td class="last_02 right">55円</td>
-</tr>-->
-
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">送料</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
-</tr>
-<span m:id="l_notEqu_total_postage">
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">(うち商品個別送料)</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_total_postage">100</span> 円</td>
-</tr>
-</span>
-<object class="xsp_obj" m:id="i_shopping_total_count"></object>
-<span m:id="l_notEqu_total_discount">
-<tr>
-<td colspan="2" class="right cart_table_02_color_01" m:id="div_shopping_total">会員割引</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_total_discount">500</span> 円</td>
-</tr>
-</span>
-<span m:id="l_notEqu_premium_discount_amount">
-	<!-- 会員限定の場合 -->
-	<span m:id="l_equ_totalMemberSpecialDiscount">
- 		<span m:id="l_notEqu_special_discount_amount">
-			<tr m:id="div_shopping_total">
-				<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
-				<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
-			</tr>
-		</span>
-	</span>
-	<span m:id="l_notEqu_totalMemberSpecialDiscount">
-		<tr m:id="div_shopping_total">
-			<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
-			<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
-		</tr>
-	</span>
-	<!--<tr m:id="div_shopping_total">
-	<td class="right cart_table_02_color_01">特典割引額</td>
-	<td class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
-	</tr>-->
-</span>
-<span m:id="l_equ_point_pres">
-				<span m:id="l_pre_member">
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">ご使用ポイント</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_used_point">500</span> pt</td>
-</tr>
-</span>
-</span>
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">合計金額</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_order_price_total">10000</span> 円</td>
-</tr>
-<span m:id="l_notEqu_fee">
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">決済手数料</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_fee">700</span> 円</td>
-</tr>
-</span>
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">請求金額</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_payment_amount">9000</span> 円</td>
-</tr>
-<span m:id="l_notEqu_totalPointAmt">
-<tr m:id="div_shopping_total">
-<td colspan="2" class="right cart_table_02_color_01">獲得予定ポイント</td>
-<td colspan="2" class="last_02 right"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
-</tr>
-</span>
-</table>
-</div>
-
-<br clear="all">
-
-<span m:id="l_pre_disp_goodsPremium">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
-</tr>
-<tr m:id="l_ite_goodsPremium">
-<td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
-<td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
-</tr>
-</table>
-</span>
-<span m:id="l_pre_disp_promotionConnectName">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th class="last_02">以下の特典が適用されています</th>
-</tr>
-<tr>
-<td class="last_02"><span m:id="b_wr_promotionConnectName">ダミー特典内容</span></td>
-</tr>
-</table>
-</span>
-<!--link share-->
-<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
-<object class="xsp_obj" m:id="b_var_gift_select"></object>
-			<span m:id="l_notEqu_gift_div">
-				<span m:id="l_emp_wrapping_type">
-					<span m:id="l_emp_jpn_wrapping_type">
-						<object class="xsp_obj" m:id="b_var_gift_select2"></object>
-					</span>
-				</span>
-			</span>
-
-<span m:id="l_equ_gift_select">
-	<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-		<tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
-		</tr>
-		<tr>
-		<td class="last_02">
-		<span m:id="l_notEmp_wrapping_type">
-		ラッピング種別（<span m:id="disp_wrapping_name">フォーマルラッピング</span>）<br /></span>
-	  	<!--
-		<span m:id="l_notEmp_jpn_wrapping_type">
-		<object class="xsp_obj" m:id="e_var_jpn_wrapping"></object>
-		熨斗（<span m:id="disp_jpn_wrapping_name">御祝</span>）<br />
-		</span>
-		-->
-		<span m:id="l_notEmp_inscription">
-		表書き（<span m:id="disp_inscription">御祝</span>）<br />
-		</span>
-		<span m:id="l_notEmp_gift_order_name">
-		記名（<span m:id="disp_gift_order_name">山田　太郎</span>）
-		</span>
-		</td>
-		</tr>
-	</table>
-</span>
-<!--/ ********** include:orderDetail.jsp ********** -->
-</span>
-
-<object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
-  <!--▼▼▼こんな商品も買っています▼▼▼-->
-  <span m:id="l_notEmp_autoRecommendGoodsList">
-  <div class="r_con_box_02">
-    <h2 class="temp_tit_n021 temp_tit_n02_cor">この商品を買われた方はこんな商品も買っています</h2>
-    <div class="clearfix r_con_box_02_in"> 
-      <ul class="r_con_list_04">
-      <span m:id="l_ite_autoRecommendGoodsList">
-      <span m:id="l_notEqu_autoRecommendGoodsList_idx">
-        <li class="">
-          <div class="box_01 heightLine-osusuem01">
-            <div class="box_02">
-              <div class="img_box"><span m:id="l_pre_autoRecommendGoods_representSku">
-                <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
-                </object>
-                <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></div>
-              <h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
-              <p> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li class="" m:id="dummy">
-          <div class="box_01 heightLine-osusuem01">
-            <div class="box_02">
-              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="#">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li class=" " m:id="dummy">
-          <div class="box_01 heightLine-osusuem01">
-            <div class="box_02">
-              <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-              <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-              <p>50円（税込）</p>
-            </div>
-          </div>
-        </li>
-        <li class="heightLine-osusuem01 " m:id="dummy">
-          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-        </li>
-        <li class="heightLine-osusuem01 " m:id="dummy">
-          <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-          <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-          <p>50円（税込）</p>
-        </li>
-         </span>
-         </span>
-      </ul>
-   </div>
-  </div>
-  </span>
-  <!--▲▲▲こんな商品も買っています▲▲▲-->
-
-
-<form name="orderNextProc" method="post" action="orderNextProc.do">
-				<input m:id="i_hid_order_next_key" type="hidden" name="order_next_key" value="5"/>
-				<input m:id="i_hid_order_next_mode" type="hidden" name="order_next_mode" value="6" />
-				<input type="hidden" name="do_next" value=""/>
-			</form>
-<div class="modoru">
-	<div class="inq_input_bt_03 clearfix">
-		<span m:id="l_notEmp_order_next_mode">
-		<div class="box_02">
-		<a m:id="a_bt_next" href="memberAddressBook.html" onclick="" ><span m:id="l_equ_order_next_mode_memberAdd"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_04.png"  alt="会員登録"></span><span m:id="l_equ_order_next_mode_memberAddressBook"><img
-m:id="static_img"
-src="../../../contents/shop/00000003/shop/image/ord_con_bt_0_n_4.png" 
-alt="住所録登録"></span></a>
-		</div>
-		
-		<div class="box_01 n_bt_re_01">
-		<a m:id="e_link_top" href="/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_03.png"  alt="戻る" /></a></div>
-		</span>
-
-		<span m:id="l_emp_order_next_mode">
-		<div class="box_02">
-		<a m:id="e_link_top" href="http://www.cococimo.jp/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_bt_none.png"  alt="戻る" /></a></div>
-		</span>
-
-	</div>
-</div>
-
-<!--<span m:id="l_notEmp_order_next_mode">-->
-<span m:id="l_equ_order_next_mode_memberAdd">
-<span m:id="include_memberGuide_html">会員案内</span>
-</span>
-<!--</span>-->
-
-
-<!--　ここから
-<link href="../../../contents/shop/00000003/css/contents_02.css" rel="stylesheet" type="text/css" media="all" />
-<div class="box_thanks">
-	<h3 class="temp_tit_n02 temp_tit_n02_cor">会員登録すると、お得にご利用いただけます！</h3>
-		
-		<div class="tokuten">
-		<h4 class="temp_tit_06 clear"><div>ココチモ会員特典のご案内</div></h4>
-		
-		<p>ココチモでは会員制度をご用意しております。新規会員にご登録いただくと、ポイントをはじめ、様々な特典やサービスのご案内を随時お受けいただけます。商品購入時に、新規会員登録された方には、500ポイントをプレゼント中！登録は無料ですので、まだ登録されていない方はぜひご登録ください。</p>
-		
-			<div class="wrap_tokuten">
-				<div class="wrap_toku_left">
-				<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten01.jpg" alt="">ココチモポイントが貯まります、使えます！</p>
-				<p class="toku_txt">ココチモでは、商品のご請求金額（一括価格および同時お申込み商品の総額に限る）に応じて通常【100円につき1ポイント】をお付けします。確定したポイントは次回以降のご購入の際に代金の一部、または全部としてご使用いただくことができます。【1ポイント1円】となります。</p>
-				
-				<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten02.jpg" alt="">新規登録時に500ポイントをプレゼント！</p>
-				<p class="toku_txt">商品を購入した際に新たにココチモ会員なられた方には、500ポイントをプレゼントいたします。こちらのポイントはすぐに確定いたしますので、次回以降のご注文時にご使用いただけます。</p>
-				
-				<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten03.jpg" alt="">会員優待サービスを随時ご案内します！</p>
-				<p class="toku_txt">会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。</p>
-				
-				<p class="toku_txt02">※ポイントは、代金完済時に、一括で付与されます。<br>
-※返品された商品の分のポイントは付与されません。<br>
-※ポイントの有効期限は最終ポイント付与時から２年間です。</p>
-				</div>
-				<div class="wrap_toku_right"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/guide02.jpg" alt=""></div>
-			</div>
-		</div>
-
-</div>
-ここまで　-->
-
-<!--<span m:id="l_emp_order_next_mode">-->
-<span m:id="l_notEqu_order_next_mode_member_address">
-<span m:id="include_thanks_html">ご購入ありがとうございます</span>
-</span>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-</div><!--r_con_box_03-->
-
-
-
-
-
-<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
+<form name="tagForm" action="#" method="post">
+<input m:id="tagForm_order_no" type="hidden" name="order_no" value="" />
+<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
+<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
+<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
+<input m:id="tagForm_total_order" type="hidden" name="payment_amount" value="" />
+<input m:id="tagForm_total_goods" type="hidden" name="total_price" value="" />
+<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
+<input m:id="tagForm_post_code" type="hidden" name="post_code" value="" />
+<input m:id="tagForm_area_name" type="hidden" name="area_name" value="" />
+<input m:id="tagForm_order_sex" type="hidden" name="order_sex" value="" />
+<input m:id="tagForm_total_postage" type="hidden" name="postage" value="" />
+<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
+<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
+<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
+<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
+<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
+<input m:id="tagForm_goods_num" type="hidden" name="goods_num" value="" />
+</form>
+<!--▲▲▲ tagForm ▲▲▲-->
 <!-- InstanceEndEditable -->
-</div><!--contents_r_02-->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
+<span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
+<header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="header_in cf">
+		<span m:id="l_equ_hierarchy_3_shop">
+			<h1 class="header_logo">
+				<a m:id="e_link_logo_shop_shop" href="/">
+					<span m:id="l_notEmp_shop_image_file_shop">
+						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+					</span>
+				</a>
+			</h1>
+			<div class="header_top">
+				<div class="header_tell" class="view">
+					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+				</div>
+				<!-- /.header_tel -->
+				<div class="header_contact">
+					<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a>
+				</div>
+				<!-- /.header_contact -->
+				<div m:id="l_pre_member_mypage_button_shop">
+					<div class="header_mypage" class="viewPc">
+						<a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+					</div>
+				</div>
+				<!-- /.header_mypage -->
+				<div class="header_ucan">
+					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				</div>
+				<!-- /.header_ucan -->
+			</div>
+			<div class="header_bottom">
+				<p class="header_username">ようこそ
+					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
+					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+				</p>
+				<!-- /.header_username -->
+				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!-- /.header_begginer -->
+				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!-- /.header_guide -->
+				<span m:id="l_equ_hierarchy_3_shop">
+					<div class="header_menu hvr-grow">
+						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
+							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
+						</a>
+					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
+					</div>
+					<!--/.header_menu-->
+				</span>
+				<div class="header_login hvr-grow">
+					<ul class="header_list_02">
+						<div m:id="l_pre_member_logout_button_shop">
+							<li id="header_logout">
+								<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+									<p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
+								</a>
+							</li>
+							</div>
+						<div m:id="l_pre_member_mypage_button_shop">
+							<li class="header_mypage_sp">
+								<a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+							</li>
+						</div>
+						<div m:id="l_notPre_member_login_button_shop">
+							<li id="header_login">
+								<a m:id="e_link_login_shop" href="../../../Templates/memberLogin.html" class="login_bt" title="ログイン">
+									<p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
+				<!-- /.header_login -->
+			</div>
+			<!-- /.header_bottom -->
+		</span>
+		<!-- /.header_item_search_box -->
+	</div>
+	<!--header_in-->
+</header>
+<!--header-->
+<!-- InstanceBeginEditable name="contents" -->
+	<div id="contents" class="contents_b">
+		<div id="contents_in" class="cf">
+			<div id="cart">
+			<div class="receipt">
+				<ol class="cmn_step cmn_step04 cf">
+					<span m:id="l_notPre_free_guide">
+						<li class="cmn_step_item">お買い物<br class="viewSp">カゴ</li>
+						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
+						<li class="cmn_step_item">お申込み<br class="viewSp">内容の確認</li>
+						<li class="cmn_step_item cmn_step_active">お申込み<br class="viewSp">完了</li>
+					</span>
+				</ol>
+				<!-- /.cmn_step -->
+				<div class="cart_intro">
+					<h1 class="cart_intro_tit cmn_tit05"><span m:id="l_notPre_free_guide">お申込み完了</span></h1>
+				</div>
+				<span m:id="l_notPre_free_guide">
+					<p class="receipt_txt01 mb30 s_mb15">お申込みありがとうございます！</p>
+				</span>
+				<span m:id="l_msgPre1">
+					<div class="error">
+						<span m:id="h_msg_msg">
+							<span m:id="disp_msg"></span>
+						</span>
+					</div>
+				</span>
 
 
-</div><!--contents-->
+				
+				<table class="receipt_number">
+					<tr>
+						<th><span m:id="l_notPre_free_guide">ご注文番号</span></th>
+						<td><span m:id="disp_order_no">201306110001</span></td>
+					</tr>
+				</table>
+				<p class="receipt_txt02 mb15 s_mb10">お客様のご注文番号は上記になります。<br>
+				お申込み内容をプリントアウトするなどして、お手元にお控えの上、大切に保管ください。<br>
+				また、ご入力いただいたメールアドレス宛にも、注文確認メールを送信しましたのでお確かめください。<br>
+				※メールの受信まで多少のお時間がかかる場合もございますので、予めご了承ください。</p>
+				
+				<!--▼▼▼ 非ログイン時 ▼▼▼-->
+					<div m:id="l_notPre_member_login">
+						<p class="receipt_txt02 mb50 s_mb15">さらに、今、お客様にご入力いただきました内容でココチモ会員登録が可能です。</p>
+						<div class="receipt_register">
+							<p class="receipt_register_tit mb30 s_mb20">会員登録すると、お得にご利用いただけます！</p>
+							<p class="receipt_register_btn"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_green cmn_btn_register"><span m:id="l_equ_order_next_mode_memberAdd">今すぐ会員登録する</span></a></p>
+						</div>
+						<!-- /.receipt_register -->
+						<div class="membership mt25 s_mt20 mb60 s_mb20 receipt_membership">
+							<div class="membership_in">
+								<h3 class="membership_tit">ココチモ&nbsp;会員特典</h3>
+								<ul class="membership_list">
+									<li>
+										<p class="membership_list_icon">特典1</p>
+										<p class="membership_list_tit">ココチモポイントが<span class="red">貯まります、使えます！</span></p>
+										<p class="membership_list_txt">ココチモでは、商品のご請求金額（一括価格からポイント利用分を除いた金額が対象）に応じて通常【100円につき1ポイント】をお付けします。確定したポイントは次回以降のご購入の際に代金の一部、または全部としてご使用いただくことができます。【1ポイント1円】となります。</p>
+									</li>
+									<li>
+										<p class="membership_list_icon">特典2</p>
+										<p class="membership_list_tit">新規登録時に<br class="viewSp"><span class="red">500ポイント</span>プレゼント！</p>
+										<p class="membership_list_txt">商品を購入した際に新たにココチモ会員になられた方には、500ポイントをプレゼントいたします。次回以降のご注文時にご使用いただけます。</p>
+									</li>
+									<li>
+										<p class="membership_list_icon">特典3</p>
+										<p class="membership_list_tit"><span class="red">会員優待サービス</span>を<br class="viewSp">随時ご案内します！</p>
+										<p class="membership_list_txt">会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /.membership -->
+					</div>
+				<!--▲▲▲ 非ログイン時 ▲▲▲-->
 
-</div><!--container-->
+				<div class="receipt_complete_btn_box tac">
+					<!--▼▼▼ ログイン時 ▼▼▼-->
+						<span m:id="l_pre_member_logout_button_shop">
+							<p><a href="/shop/member.do" class="cmn_btn cmn_btn_tri cmn_btn_orange receipt_btn01"><span>マイページを確認する</span></a></p>
+							<p><a href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown receipt_btn02"><span>トップページに戻る</span></a></p>
+						</span>
+					<!--▲▲▲ ログイン時 ▲▲▲-->
+					<!--▼▼▼ 非ログイン時 ▼▼▼-->
+						<div m:id="l_notPre_member_login">
+							<a href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown receipt_btn02"><span>トップページに戻る</span></a>
+						</div>
+					<!--▲▲▲ 非ログイン時 ▲▲▲-->
+				</div>
+				<!-- /.receipt_complete_btn_box -->
+			</div>
+			<!-- /.receipt -->
+
+			<!--▼▼▼ 非表示 ▼▼▼-->
+				<div style="display: none;">
+					<!--▼▼▼ 商品詳細 ▼▼▼-->
+					<object class="xsp_obj" m:id="e_var_ordShop"></object>
+					<object class="xsp_obj" m:id="e_var_wrapping"></object>
+					<span m:id="l_notPre_free_guide">
+					<!-- ********** include:orderDetail.jsp ********** -->
+						<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+							<tr><th>商品名</th>
+								<th class="memadd_table_02_w_02">商品単価</th>
+								<th class="memadd_table_02_w_03">数量</th>
+								<th class="memadd_table_02_w_02">小計</th>
+							</tr>
+							<span m:id="l_ite_detail">
+								<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
+								<tr>
+									<td class="center color_w_b">
+										<span m:id="l_equ_wrapping_goods"><div style="text-align:left;font-size:small;">以下はラッピング付帯商品になります。</div></span>
+										<span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span>
+									</td>
+									<td class="right color_w_b">
+										<!--<span m:id="b_wr_goods_price_tax">5000</span> 円-->
+										<span m:id="l_equ_memberSpecialDiscount">
+											<span m:id="disp_goods_special_price">1000 円　</span> 円
+										</span>
+										<span m:id="l_notEqu_memberSpecialDiscount">
+											<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
+										</span>
+									</td>
+									<td class="right color_w_b"><span m:id="disp_detail_order_num">3</span></td>
+									<td class="right color_w_b">
+										<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
+										<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
+										<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
+									</td>
+								</tr>
+							</span>
+						</table>
+
+						<div class="wrap_cart04">
+							<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+
+								<object class="xsp_obj" m:id="i_shopping_total_count"></object>
+								<span m:id="div_shopping_total">
+									<tr>
+										<td colspan="2" class="right cart_table_02_color_01">商品合計<span m:id="l_notEqu_charged_option">&nbsp;（＋&nbsp;<span m:id="disp_wrapping_name">有料オプション</span>代）</td>
+										<td colspan="2" class="last_02 right">
+											<!--<span m:id="b_wr_total_price">9500</span> 円-->
+											<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
+											<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
+										</td>
+									</tr>
+								</span> 
+								<!--
+								<span m:id="l_notEqu_charged_option">
+								<tr m:id="div_shopping_total">
+								<td class="right cart_table_02_color_01">(内&nbsp;<span m:id="disp_wrapping_name">有料オプション</span>)</td>
+								<td class="last_02 right"><span m:id="b_wr_charged_option">300</span> 円</td>
+								</tr>
+								</span> -->
+								<!--保留<tr>
+								<td colspan="2" class="right">手数料</td>
+								<td class="bor_l_none"></td>
+								<td class="last_02 right">55円</td>
+								</tr>-->
+
+								<tr m:id="div_shopping_total">
+									<td colspan="2" class="right cart_table_02_color_01">送料</td>
+									<td colspan="2" class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
+								</tr>
+								<span m:id="l_notEqu_total_postage">
+									<tr m:id="div_shopping_total">
+										<td colspan="2" class="right cart_table_02_color_01">(うち商品個別送料)</td>
+										<td colspan="2" class="last_02 right"><span m:id="b_wr_total_postage">100</span> 円</td>
+									</tr>
+								</span>
+								<object class="xsp_obj" m:id="i_shopping_total_count"></object>
+								<span m:id="l_notEqu_total_discount">
+									<tr>
+										<td colspan="2" class="right cart_table_02_color_01" m:id="div_shopping_total">会員割引</td>
+										<td colspan="2" class="last_02 right"><span m:id="b_wr_total_discount">500</span> 円</td>
+									</tr>
+								</span>
+								<span m:id="l_notEqu_premium_discount_amount">
+									<!-- 会員限定の場合 -->
+									<span m:id="l_equ_totalMemberSpecialDiscount">
+										<span m:id="l_notEqu_special_discount_amount">
+											<tr m:id="div_shopping_total">
+												<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
+												<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
+											</tr>
+										</span>
+									</span>
+									<span m:id="l_notEqu_totalMemberSpecialDiscount">
+										<tr m:id="div_shopping_total">
+											<td colspan="2" class="right cart_table_02_color_01">特典割引額</td>
+											<td colspan="2" class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+										</tr>
+									</span>
+								<!--<tr m:id="div_shopping_total">
+								<td class="right cart_table_02_color_01">特典割引額</td>
+								<td class="last_02 right" style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+								</tr>-->
+								</span>
+								<span m:id="l_equ_point_pres">
+									<span m:id="l_pre_member">
+										<tr m:id="div_shopping_total">
+											<td colspan="2" class="right cart_table_02_color_01">ご使用ポイント</td>
+											<td colspan="2" class="last_02 right"><span m:id="b_wr_used_point">500</span> pt</td>
+										</tr>
+									</span>
+								</span>
+								<tr m:id="div_shopping_total">
+									<td colspan="2" class="right cart_table_02_color_01">合計金額</td>
+									<td colspan="2" class="last_02 right"><span m:id="b_wr_order_price_total">10000</span> 円</td>
+								</tr>
+								<span m:id="l_notEqu_fee">
+									<tr m:id="div_shopping_total">
+										<td colspan="2" class="right cart_table_02_color_01">決済手数料</td>
+										<td colspan="2" class="last_02 right"><span m:id="b_wr_fee">700</span> 円</td>
+									</tr>
+								</span>
+								<tr m:id="div_shopping_total">
+									<td colspan="2" class="right cart_table_02_color_01">請求金額</td>
+									<td colspan="2" class="last_02 right"><span m:id="b_wr_payment_amount">9000</span> 円</td>
+								</tr>
+								<span m:id="l_notEqu_totalPointAmt">
+									<tr m:id="div_shopping_total">
+										<td colspan="2" class="right cart_table_02_color_01">獲得予定ポイント</td>
+										<td colspan="2" class="last_02 right"><span m:id="b_wr_totalPointAmt">90</span> pt</td>
+									</tr>
+								</span>
+							</table>
+						</div>
 
 
+						<span m:id="l_pre_disp_goodsPremium">
+							<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+								<tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
+								</tr>
+								<tr m:id="l_ite_goodsPremium">
+									<td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
+									<td class="last_02 right memadd_table_02_w_02">&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
+								</tr>
+							</table>
+						</span>
+						<span m:id="l_pre_disp_promotionConnectName">
+							<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+								<tr><th class="last_02">以下の特典が適用されています</th>
+								</tr>
+								<tr>
+									<td class="last_02"><span m:id="b_wr_promotionConnectName">ダミー特典内容</span></td>
+								</tr>
+							</table>
+						</span>
+						<!--link share-->
+						<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
+						<object class="xsp_obj" m:id="b_var_gift_select"></object>
+						<span m:id="l_notEqu_gift_div">
+							<span m:id="l_emp_wrapping_type">
+								<span m:id="l_emp_jpn_wrapping_type">
+									<object class="xsp_obj" m:id="b_var_gift_select2"></object>
+								</span>
+							</span>
+						</span>
 
+						<span m:id="l_equ_gift_select">
+							<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+								<tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
+								</tr>
+								<tr>
+								<td class="last_02">
+								<span m:id="l_notEmp_wrapping_type">
+								ラッピング種別（<span m:id="disp_wrapping_name">フォーマルラッピング</span>）<br /></span>
+							  	<!--
+								<span m:id="l_notEmp_jpn_wrapping_type">
+								<object class="xsp_obj" m:id="e_var_jpn_wrapping"></object>
+								熨斗（<span m:id="disp_jpn_wrapping_name">御祝</span>）<br />
+								</span>
+								-->
+								<span m:id="l_notEmp_inscription">
+								表書き（<span m:id="disp_inscription">御祝</span>）<br />
+								</span>
+								<span m:id="l_notEmp_gift_order_name">
+								記名（<span m:id="disp_gift_order_name">山田　太郎</span>）
+								</span>
+								</td>
+								</tr>
+							</table>
+						</span>
+						<!--/ ********** include:orderDetail.jsp ********** -->
+					</span>
+					<!--▲▲▲ 商品詳細 ▲▲▲-->
+					<object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
+					<!--▼▼▼こんな商品も買っています▼▼▼-->
+					<span m:id="l_notEmp_autoRecommendGoodsList">
+						<div class="r_con_box_02">
+							<h2 class="temp_tit_n021 temp_tit_n02_cor">この商品を買われた方はこんな商品も買っています</h2>
+							<div class="clearfix r_con_box_02_in"> 
+								<ul class="r_con_list_04">
+									<span m:id="l_ite_autoRecommendGoodsList">
+										<span m:id="l_notEqu_autoRecommendGoodsList_idx">
+											<li class="">
+												<div class="box_01 heightLine-osusuem01">
+													<div class="box_02">
+														<div class="img_box"><span m:id="l_pre_autoRecommendGoods_representSku">
+														<object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage"></object>
+															<a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html"><img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span>
+														</div>
+														<h3><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">商品名商品名</span></a></h3>
+														<p> <span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"> <span class="original_price"> <span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">50</span>円（税込）</p>
+													</div>
+												</div>
+											</li>
+											<li class="" m:id="dummy">
+												<div class="box_01 heightLine-osusuem01">
+													<div class="box_02">
+														<div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+														<h3><a href="#">商品名商品名</a></h3>
+														<p>50円（税込）</p>
+													</div>
+												</div>
+											</li>
+											<li class=" " m:id="dummy">
+												<div class="box_01 heightLine-osusuem01">
+													<div class="box_02">
+														<div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+														<h3><a href="goodsDetail.html">商品名商品名</a></h3>
+														<p>50円（税込）</p>
+													</div>
+												</div>
+											</li>
+											<li class="heightLine-osusuem01 " m:id="dummy">
+												<div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+												<h3><a href="goodsDetail.html">商品名商品名</a></h3>
+												<p>50円（税込）</p>
+											</li>
+											<li class="heightLine-osusuem01 " m:id="dummy">
+												<div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+												<h3><a href="goodsDetail.html">商品名商品名</a></h3>
+												<p>50円（税込）</p>
+											</li>
+										</span>
+									</span>
+								</ul>
+							</div>
+						</div>
+					</span>
+					<!--▲▲▲こんな商品も買っています▲▲▲-->
 
+					<form name="orderNextProc" method="post" action="orderNextProc.do">
+						<input m:id="i_hid_order_next_key" type="hidden" name="order_next_key" value="5"/>
+						<input m:id="i_hid_order_next_mode" type="hidden" name="order_next_mode" value="6" />
+						<input type="hidden" name="do_next" value=""/>
+					</form>
+					<div class="modoru">
+						<div class="inq_input_bt_03 clearfix">
+							<span m:id="l_notEmp_order_next_mode">
+							<div class="box_02">
+								<a m:id="a_bt_next" href="memberAddressBook.html" onclick="" ><span m:id="l_equ_order_next_mode_memberAdd"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_04.png"  alt="会員登録"></span><span m:id="l_equ_order_next_mode_memberAddressBook"><img　m:id="static_img"　src="../../../contents/shop/00000003/shop/image/ord_con_bt_0_n_4.png" alt="住所録登録"></span></a>
+							</div>
+							
+							<div class="box_01 n_bt_re_01">
+							<a m:id="e_link_top" href="/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/ord_con_bt_03.png"  alt="戻る" /></a></div>
+							</span>
 
-<div id="footer01" class=" pc_only">
+							<span m:id="l_emp_order_next_mode">
+							<div class="box_02">
+							<a m:id="e_link_top" href="http://www.cococimo.jp/"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_bt_none.png"  alt="戻る" /></a></div>
+							</span>
+						</div>
+					</div>
 
-<div class=" pc_only pc_secure">
-<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-<p>
-このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
-</p>
+					<!--<span m:id="l_notEmp_order_next_mode">-->
+					<span m:id="l_equ_order_next_mode_memberAdd">
+					<span m:id="include_memberGuide_html">会員案内</span>
+					</span>
+					<!--</span>-->
+
+					<!--　ここから
+					<link href="../../../contents/shop/00000003/css/contents_02.css" rel="stylesheet" type="text/css" media="all" />
+					<div class="box_thanks">
+						<h3 class="temp_tit_n02 temp_tit_n02_cor">会員登録すると、お得にご利用いただけます！</h3>
+							
+							<div class="tokuten">
+							<h4 class="temp_tit_06 clear"><div>ココチモ会員特典のご案内</div></h4>
+							
+							<p>ココチモでは会員制度をご用意しております。新規会員にご登録いただくと、ポイントをはじめ、様々な特典やサービスのご案内を随時お受けいただけます。商品購入時に、新規会員登録された方には、500ポイントをプレゼント中！登録は無料ですので、まだ登録されていない方はぜひご登録ください。</p>
+							
+								<div class="wrap_tokuten">
+									<div class="wrap_toku_left">
+									<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten01.jpg" alt="">ココチモポイントが貯まります、使えます！</p>
+									<p class="toku_txt">ココチモでは、商品のご請求金額（一括価格および同時お申込み商品の総額に限る）に応じて通常【100円につき1ポイント】をお付けします。確定したポイントは次回以降のご購入の際に代金の一部、または全部としてご使用いただくことができます。【1ポイント1円】となります。</p>
+									
+									<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten02.jpg" alt="">新規登録時に500ポイントをプレゼント！</p>
+									<p class="toku_txt">商品を購入した際に新たにココチモ会員なられた方には、500ポイントをプレゼントいたします。こちらのポイントはすぐに確定いたしますので、次回以降のご注文時にご使用いただけます。</p>
+									
+									<p class="toku_ttl"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/tokuten03.jpg" alt="">会員優待サービスを随時ご案内します！</p>
+									<p class="toku_txt">会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。</p>
+									
+									<p class="toku_txt02">※ポイントは、代金完済時に、一括で付与されます。<br>
+					※返品された商品の分のポイントは付与されません。<br>
+					※ポイントの有効期限は最終ポイント付与時から２年間です。</p>
+									</div>
+									<div class="wrap_toku_right"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/guide02.jpg" alt=""></div>
+								</div>
+							</div>
+
+					</div>
+					ここまで　-->
+
+					<!--<span m:id="l_emp_order_next_mode">-->
+					<span m:id="l_notEqu_order_next_mode_member_address">
+					<span m:id="include_thanks_html">ご購入ありがとうございます</span>
+					</span>
+
+					</div>
+				</div>
+			<!--▲▲▲　非表示 ▲▲▲-->
+		</div>
+		<!-- /#cart -->
+		</div>
+		<!-- /#contents_in -->
+	</div>
+	<!--contents-->
 </div>
+<!--container-->
+<!-- InstanceEndEditable -->
+<footer id="footer" class="footer footer_b" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+	<div id="pagetop" class="pagetop_pc">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+	</div>
+	<div id="pagetop_sp" class="pagetop_sp">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+	</div>
+	<div class="about">
+		<div class="about_in wrapper">
+			<ul class="about_list">
+				<li class="about_list_pay js-matchHeight">
+					<span class="about_list_icon icon-dentaku"></span>
+					<p class="about_list_tit">お支払い方法について</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">お支払いには、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。</p>
+					</div>
+				</li>
+				<li class="about_list_price js-matchHeight">
+					<span class="about_list_icon icon-car"></span>
+					<p class="about_list_tit">送料について</p>
+					<div class="about_list_in">
+						<div class="about_list_box">
+							<p class="about_list_txt">一回のご注文金額の合計が税込10,000円以上の場合、送料は当社負担（全国一律）になります。 税込10,000円に満たない場合は250円、また税込5,000円未満は500円ご負担いただきます。</p>
+							<div class="about_list_caution">
+								<p class="about_list_caution_tit">&#8251;ご注意&#8251;</p>
+								<p class="about_list_caution_txt"><span class="red">食品等、一部商品は送料体系が異なります。</span><br>詳しくは各商品詳細ページをご覧ください。</p>
+							</div>
+						</div>
+						<div class="about_list_img">
+							<img src="/contents/c/shop/image/img_price01.png" class="viewPc" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+							<img src="/contents/c/shop/image/img_price01_sp.png" class="viewSp" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+						</div>
+					</div>
+				</li>
+				<li class="about_list_delivery js-matchHeight">
+					<span class="about_list_icon icon-delivery"></span>
+					<p class="about_list_tit">商品のお届けについて</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">お申込みから（郵送の場合は申込書到着後）通常3&#xFF5E;6日ほどでお届けいたします。<span class="bold">ただし、一部の商品は、お届けまでに10日前後かかる場合もございます。詳しくは各商品詳細ページをご覧ください。</span></p>
+						<p class="about_list_notes">※期日・時間帯をご指定いただける商品もございます。各商品詳細ページでご確認ください。</p>
+					</div>
+				</li>
+				<li class="about_list_secure js-matchHeight">
+					<span class="about_list_icon icon-secure"></span>
+					<p class="about_list_tit">品質保証・返品について</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。<span class="underline">なお、返品条件に関しては各商品ごとに異なります</span>ので、各商品ページでご確認ください。</p>
+					</div>
+				</li>
+				<li class="about_list_point js-matchHeight">
+					<span class="about_list_icon icon-point"></span>
+					<p class="about_list_tit">ココチモポイントについて</p>
+					<div class="about_list_in">
+						<p class="about_list_txt">商品のご請求金額に応じて、通常【100円につき1ポイント】をお付けします。<br>確定したポイントは次回以降のご購入の際に1ポイント＝1円としてご利用いただけます。</p>
+						<a href="/shop/c/static/guide02/#registration_merit" class="about_list_link cmn_link01">会員特典について詳しくはこちら</a>
+					</div>
+				</li>
+			</ul>
+			<div class="about_btn_wrap"><a href="/shop/c/static/guide/" class="about_btn cmn_btn cmn_btn_tri"><span>ご利用ガイドを見る</span></a></div>
+		</div>
+	</div>
+	<!-- /.about -->
+	<div class="tel_area">
+		<div class="tel_area_in wrapper">
+			<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
+			<p class="tel_area_txt">ココチモお客様センター</p>
+			<p class="tel_area_num">
+				<img src="/contents/c/shop/image/txt_tel02.png" class="viewPc" alt="0120-552-186">
+				<a href="tel:0120-552-186" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sp.png" alt="0120-552-186"></a>
+			</p>
+			<div class="tel_area_sub">
+				<p class="tel_area_time">（<span class="bold">6時&#xFF5E;22時</span> 日曜・祝日も受付けます）</p>
+				<div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
+                <p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
+			</div>
+		</div>
+	</div>
+	<!-- /.tel_area -->
+	<div class="footer_info">
+		<div class="footer_info_in wrapper"><div class="footer_info_site">
+			<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
+			<div class="footer_info_box">
+				<span class="footer_info_icon icon-medal"></span>
+				<p class="footer_info_subtit">ユーキャンがお届けする商品</p>
+				<p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
+					<br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
+				</div>
+				<div class="footer_info_box">
+					<span class="footer_info_icon icon-lock"></span>
+					<p class="footer_info_subtit">安心のセキュリティ</p>
+					<p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
+					<div class="pc_secure norton">
+						<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+						<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_info_consult">
+				<h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
+				<p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
+				<div class="footer_info_contact">
+					<p class="footer_info_tel"><a href="tel:0120-552-186">0120-552-186</a></p>
+					<div class="footer_info_contact_btn_wrap">
+						<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
+					</div>
+					<!-- /.footer_info_contact_btn_wrap -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.footer_info -->
+	<div class="footer_important">
+		<div class="footer_important_in wrapper">
+			<ul class="footer_important_list cf">
+				<li class="first"><a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a></li>
+				<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+				<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
+				<li><a href="/shop/c/static/company/">会社情報</a></li>
+			</ul>
+            <div class="footer_important_mark">
+                <div class="jadma">
+                	<a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
+                </div>
+                <div class="norton">
+                    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+                    <p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+                </div>
+            </div>
+		</div>
+	</div>
+	<!--footer_important-->
+	<div class="footer_bottom">
+		<div class="footer_bottom_in wrapper">
+			<p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
+		</div>
+		<!-- /.footer -->
+	</div>
+	<!--footer_bottom-->
+</footer>
+<!-- /#footer -->
+<!-- InstanceBeginEditable name="script_footer" -->
 
-</div>
-</div><!--footer_wrap02-->
-</div><!--footer02-->
-
-
-<div id="footer03">
-<div id="footer_wrap03" class="clearfix">
-<ul class="clearfix">
-<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
-<li><a href="/shop/00000002/static/protection/">個人情報保護方針</a></li>
-<li><a href="/shop/00000002/static/notation/">特定商取引に関するご案内</a></li>
-<li><a href="/shop/00000002/static/company/">会社情報</a></li>
-<!--<li class="end"><a href="#">利用規約</a></li>-->
-</ul>
-</div><!--footer_wrap03-->
-</div><!--footer03-->
-
-
-
-<div id="footer05" class="sp_only">
-
-<div class="mt10 sp_secure clearfix">
-<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-<p>
-このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。
-</p>
-</div>
-
-
-</div><!--footer05-->
 <!-- inclue order_receipt_tags -->
-  <span m:id="l_include_tags" filename="order_receipt_tags"></span>
+<span m:id="l_include_tags" filename="order_receipt_tags"></span>
 <!--/ inclue order_receipt_tags -->
 
 <!-- ga ec tracking-->
- <script type="text/javascript">
-  <!--
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-60578110-1']);
-     _gaq.push(['_trackPageview']);
-     _gaq.push(['_setCustomVar', 1, 'post_code', '${order.getDestination().getPost_code()}', 3]);
-     _gaq.push(['_setCustomVar', 2, 'area_code', '${order.area_code}', 3]);
-     _gaq.push(['_addTrans',
-       '${order.order_no}',
-       '',
-       '${order.payment_amount}',
-       '${order.consumption_tax}',
-       '${order.postage}',
-       '${order.address1} ${order.address2}',
-       '${order.area_name}',
-       'Japan'
-     ]);
-  // -->
- </script>
- <span m:id="l_ite_detail">
- <script type="text/javascript">
-  <!--
-      _gaq.push(['_addItem',
-       '${detail.order_no}',
-       '${detail.ext_goods_code} ${detail.ext_goods_sku_code}',
-       '${detail.goods_name}',
-       '${if(detail.getDisplayGoods() != null)detail.getDisplayGoods().getCategory_name()}',
-       '${detail.goods_price_tax}',
-       '${detail.order_num}'
-      ]);
-  // -->
- </script>
- </span>
 <script type="text/javascript">
- _gaq.push(['_set', 'currencyCode', 'JPY']);
- _gaq.push(['_trackTrans']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+<!--
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-60578110-1']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_setCustomVar', 1, 'post_code', '${order.getDestination().getPost_code()}', 3]);
+_gaq.push(['_setCustomVar', 2, 'area_code', '${order.area_code}', 3]);
+_gaq.push(['_addTrans',
+'${order.order_no}',
+'',
+'${order.payment_amount}',
+'${order.consumption_tax}',
+'${order.postage}',
+'${order.address1} ${order.address2}',
+'${order.area_name}',
+'Japan'
+]);
+// -->
+</script>
+<span m:id="l_ite_detail">
+<script type="text/javascript">
+<!--
+_gaq.push(['_addItem',
+'${detail.order_no}',
+'${detail.ext_goods_code} ${detail.ext_goods_sku_code}',
+'${detail.goods_name}',
+'${if(detail.getDisplayGoods() != null)detail.getDisplayGoods().getCategory_name()}',
+'${detail.goods_price_tax}',
+'${detail.order_num}'
+]);
+// -->
+</script>
+</span>
+<script type="text/javascript">
+_gaq.push(['_set', 'currencyCode', 'JPY']);
+_gaq.push(['_trackTrans']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 
 </script>
 <!--/ ga ec tracking -->
-
-<!-- InstanceBeginEditable name="sitecatalyst" -->
 
 <span m:id="site_prop13"></span>
 <span m:id="site_order"></span>
@@ -666,95 +895,8 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
-
-<!-- Google Code for &#36092;&#20837; Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 980914824;
-var google_conversion_language = "en";
-var google_conversion_format = "2";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "79t0CIjB5AkQiKXe0wM";
-var google_conversion_value = 0;
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/980914824/?value=0&amp;label=79t0CIjB5AkQiKXe0wM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-<!-- Yahoo Code for &#36092;&#20837; Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var yahoo_conversion_id = 1000081990;
-var yahoo_conversion_label = "8jEfCL6IvQcQwpua2wM";
-var yahoo_conversion_value = 0;
-/* ]]> */
-</script>
-<script type="text/javascript" src="http://i.yimg.jp/images/listing/tool/cv/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="http://b91.yahoo.co.jp/pagead/conversion/1000081990/?value=0&amp;label=8jEfCL6IvQcQwpua2wM&amp;guid=ON&amp;script=0&amp;disvt=true"/>
-</div>
-</noscript>
-
-
-<!-- Google Code for &#36092;&#20837; Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 971570013;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "QkAtCKvOuAgQ3fajzwM";
-var google_conversion_value = 0;
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/971570013/?value=0&amp;label=QkAtCKvOuAgQ3fajzwM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-
-<!-- Yahoo Code for your Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var yahoo_conversion_id = 1000098211;
-var yahoo_conversion_label = "nea5CPiD-QcQmI7PzwM";
-var yahoo_conversion_value = 0;
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://s.yimg.jp/images/listing/tool/cv/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="https://b91.yahoo.co.jp/pagead/conversion/1000098211/?value=0&amp;label=nea5CPiD-QcQmI7PzwM&amp;guid=ON&amp;script=0&amp;disvt=true"/>
-</div>
-</noscript>
-
-
-<script language="Javascript" type="text/javascript">
-<!--
-var account_id="zHdRqSIOLDX8aQbRYFzh"; 
-var transaction_id = "";
-var amount = "";
-if (location.protocol == "https:") { var protocol = "https:"} else { var protocol = "http:" }
-document.write("<img width=1 height=1 border=0 src='" + protocol + "//b90.yahoo.co.jp/c?account_id=" + account_id + "&transaction_id=" + transaction_id + "&amount=" + amount + "'>");
-//-->
-</script>
-
-<!-- InstanceEndEditable -->
-
 <!-- ▼▼▼ Criteo ▼▼▼ -->
-<!-- Criteo loader
+<!-- Criteo loader -->
 
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
@@ -771,51 +913,17 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
-<script type="text/javascript"  
-src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt=""  
-src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980914824/?value=0&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
 
-<script type="text/javascript">
-  (function () {
-    var tagjs = document.createElement("script");
-    var s = document.getElementsByTagName("script")[0];
-    tagjs.async = true;
-    tagjs.src = "//s.yjtag.jp/tag.js#site=HyuOvfl";
-    s.parentNode.insertBefore(tagjs, s);
-  }());
-</script>
-<noscript>
-  <iframe src="//b.yjtag.jp/iframe?c=HyuOvfl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-</noscript>
-
-<script language="Javascript" type="text/javascript">
-<!--
-/* <![CDATA[ */
-var account_id="aG6KaVAOLDXIy8orn8Oi"; 
-var transaction_id = "";
-var amount = "";
-if (location.protocol == "https:") { var protocol = "https:"} else { var protocol = "http:" }
-document.write("<img width=1 height=1 border=0 src='" + protocol + "//b90.yahoo.co.jp/c?account_id=" + account_id + "&transaction_id=" + transaction_id + "&amount=" + amount + "'>");
-/* ]]> */
-//-->
-</script>
-
-
-<!-- Google Code for &#36092;&#20837; Conversion Page ネクストライツ -->
+<!-- Google irep　リスティング0327 tag ここから -->
+<!-- Google Code for &#36092;&#20837;&#36009;&#22770;&#65288;30&#26085;&#38291;&#65289;&#30064;&#12394;&#12427;&#20516;(cv9999) Conversion Page -->
 <script type="text/javascript">
 /* <![CDATA[ */
-var google_conversion_id = 955613993;
-var google_conversion_language = "en";
+var google_conversion_id = 945487893;
+var google_conversion_language = "ja";
 var google_conversion_format = "3";
 var google_conversion_color = "ffffff";
-var google_conversion_label = "le8xCK3H0VsQqYbWxwM";
-var google_conversion_value = 1000.00;
+var google_conversion_label = "3axeCO3EiWYQlYDswgM";
+var google_conversion_value = 9999.00;
 var google_conversion_currency = "JPY";
 var google_remarketing_only = false;
 /* ]]> */
@@ -824,43 +932,45 @@ var google_remarketing_only = false;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/955613993/?value=1000.00&amp;currency_code=JPY&amp;label=le8xCK3H0VsQqYbWxwM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/945487893/?value=9999.00&amp;currency_code=JPY&amp;label=3axeCO3EiWYQlYDswgM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+<!-- Google irep　リスティング0327 tag ここまで -->
 
-<!-- Yahoo Code for your Conversion Page ネクストライツ-->
+<!-- Yahoo irep　リスティング0327  ここから -->
+<!-- Yahoo Code for your Conversion Page -->
 <script type="text/javascript">
-/* <![CDATA[ */
-var yahoo_conversion_id = 1000205817;
-var yahoo_conversion_label = "L-SQCO2opVsQlo-uxwM";
-var yahoo_conversion_value = 1000;
-/* ]]> */
+    /* <![CDATA[ */
+    var yahoo_conversion_id = 1000226404;
+    var yahoo_conversion_label = "35a8COXCiWYQtM6JwwM";
+    var yahoo_conversion_value = 9999;
+    /* ]]> */
 </script>
-<script type="text/javascript" src="https://s.yimg.jp/images/listing/tool/cv/conversion.js">
+<script type="text/javascript" src="//s.yimg.jp/images/listing/tool/cv/conversion.js">
 </script>
 <noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="https://b91.yahoo.co.jp/pagead/conversion/1000205817/?value=1000&amp;label=L-SQCO2opVsQlo-uxwM&amp;guid=ON&amp;script=0&amp;disvt=true"/>
-</div>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//b91.yahoo.co.jp/pagead/conversion/1000226404/?value=9999&label=35a8COXCiWYQtM6JwwM&guid=ON&script=0&disvt=true"/>
+    </div>
 </noscript>
+<!-- Yahoo irep　リスティング0327  ここまで -->
 
-<!-- YDNタグ ネクストライツ-->
+<!-- Yahoo irep　IM　0327  ここから -->
 <script type="text/javascript" language="javascript">
   /* <![CDATA[ */
-  var yahoo_ydn_conv_io = "Y88_bfIOLDWLOePG5GsS";
-  var yahoo_ydn_conv_label = "DEH09338UBWVZWKP0XGC37244";
+  var yahoo_ydn_conv_io = "kwuev8gOLDVFDZC2pNMG";
+  var yahoo_ydn_conv_label = "2Q5NOKYIKQ9IG0UXZWR149245";
   var yahoo_ydn_conv_transaction_id = "";
-  var yahoo_ydn_conv_amount = "1000";
+  var yahoo_ydn_conv_amount = "9999";
   /* ]]> */
 </script>
 <script type="text/javascript" language="javascript" charset="UTF-8" src="//b90.yahoo.co.jp/conv.js"></script>
-
-
-
+<!-- Yahoo irep　IM　0327  ここまで -->
 
 <!-- DLPO CVタグ -->
 <script type='text/javascript'>adlpoMain('manganihon_cv','pr=cv');</script>
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=103'></script>
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
 

@@ -19,10 +19,16 @@
 <title m:id="title" arg1="" arg2=" ココチモ（cococimo）のECサイト">データベースから値を取得し表示します</title>
 <!--<link m:id="favicon" rel="shortcut icon" href="../../../contents/favicon/favicon.ico">-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/layout.css" media="all">
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
-<link m:id="handheld" rel="alternate" media="handheld" type="application/xhtml+xml" href="shop.html" />
+
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="contents/js/jquery.backgroundSize.js"></script>
+<![endif]-->
+
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/nihon/layout.css" media="all">
 <!--/ head -->
@@ -109,8 +115,61 @@ function siteCatalistAddCart1(s_products){
 </span>
 <meta m:id="e_var_cart">
 <!-- InstanceEndEditable -->
-
-
+<style>
+#header_search {
+    left: 262px !important;
+}
+.header_list_01 {
+	width:216px;
+	float:right;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 40px !important;
+    width: 440px !important;
+}
+#header_search .box_02 input {
+    height: 42px !important;
+	font-size:12px;	
+}
+@media (max-width: 640px) {
+#header_wrap {
+    overflow: visible !important;
+}
+#content_wrap {
+    margin: 20% 0 0 auto !important;
+}	
+#header_search {
+    left: 0 !important;
+}
+.header_list_01 {
+	width:100%;
+	float: none;
+}
+.header_list_01 li {
+    display: block;
+    float: none;
+	line-height:14px !important;	
+}
+#header_search .box_01 input {
+    height: 30px !important;
+    width: 100% !important;
+}
+#header_search .box_02 input {
+    height: 32px !important;
+}
+#header_search .box_01 {
+    width: 85% !important;
+}
+#header_search .box_02 {
+    width: 15% !important;
+}
+}
+</style>
 </head>
 <body id="top">
 
@@ -255,7 +314,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -417,7 +476,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- /商品レビュー end-->
 
-
 <span m:id="html_include3">外部HTML3 表示領域<br></span>
 
 	<form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
@@ -440,10 +498,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<div class="guidebox">
 		<div class="guidebox_left">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
-        <div style="text-align:center">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-        </div>
-        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（産地直送品、メーカー直送家具を除く）</div>                        
+        <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（産地直送品を除く）</div>        
 			<div class="box_souryou">
 			<p>お買い物総額5,000円（税込）未満の場合<br>
 			<span class="souryoutxt">＝送料500円</span><br>
@@ -457,7 +513,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			１回のお買い上げ総額が5,000円以上から10,000円
 			未満の場合、250円の送料がかかります。</p>
 			</div>
-            
 			<div style="margin-top:-20px; padding:8px">
 			<p>
 			ただし、産地直送品（商品ページの詳細部分<br />に明記）は、お申込みの商品名１つごとで、<br />
@@ -466,8 +521,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
 			されます。<br /><br />        
             </p>
-			</div>
-                        
+			</div>              
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl03.gif" alt="配送について" class="sgttl">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic06.gif" class="yamato sgttl" alt="ヤマト運輸が代行配送します。">
 		<p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br>
@@ -721,7 +775,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- InstanceEndEditable -->
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
-<!--
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -734,7 +787,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_member" content=""></meta>
 <meta m:id="criteo_common_site_type" content=""></meta>
 <meta m:id="criteo_view_item" content=""></meta>
--->
+<meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 </body>
 <!-- InstanceEnd --></html>
