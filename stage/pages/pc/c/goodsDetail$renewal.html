@@ -61,6 +61,11 @@ $(function(){
 <!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
+<style>
+  #container {
+    z-index: auto;
+  }
+</style>
 <script src="/contents/c/js/new/featherlight.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
@@ -132,42 +137,24 @@ function AddCart_trans(){
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart(s_products){
- /* 
-  var goods_stock_num = document.cartGoodsAddForm.goods_stock_num.value;
-  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
-  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-　if( Number(order_num_string) > Number(goods_stock_num)){
-　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
-　}else{ 
- */
     s.linkTrackVars='events,products';
     s.linkTrackEvents='scAdd,event27';
     s.products=";"+s_products;
     s.events='scAdd,event27';
     s.tl(this,'o','cartadd');
     setTimeout("AddCart_trans()",1000);
-  /* } */
 }
 function AddCart_trans1(){
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function siteCatalistAddCart1(s_products){
-/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-/*  var goods_stock_num = document.cartGoodsAddForm1.goods_stock_num.value;
-  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
-  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-　if( Number(order_num_string) > Number(goods_stock_num)){
-　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
-　}else{ */
-/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
     s.linkTrackVars='events,products';
     s.linkTrackEvents='scAdd,event27';
     s.products=";"+s_products;
     s.events='scAdd,event27';
     s.tl(this,'o','cartadd');
     setTimeout("AddCart_trans1()",1000);
-  /* } */
 }
 function AddCart_trans_renewal(){
    document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
@@ -175,21 +162,12 @@ function AddCart_trans_renewal(){
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart_renewal(s_products){
-/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-/*  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
-  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
-　if( Number(order_num_string) > Number(goods_stock_num)){
-　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
-　}else{ */
-/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
     s.linkTrackVars='events,products';
     s.linkTrackEvents='scAdd,event27';
     s.products=";"+s_products;
     s.events='scAdd,event27';
     s.tl(this,'o','cartadd');
     setTimeout("AddCart_trans_renewal()",1000);
-  /* } */
 }
 function AddCart_trans1_renewal(){
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
@@ -197,70 +175,40 @@ function AddCart_trans1_renewal(){
   return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function siteCatalistAddCart1_renewal(s_products){
-/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-/*  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
-  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
-　if( Number(order_num_string) > Number(goods_stock_num)){
-　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
-　}else{ */
-/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
     s.linkTrackVars='events,products';
     s.linkTrackEvents='scAdd,event27';
     s.products=";"+s_products;
     s.events='scAdd,event27';
     s.tl(this,'o','cartadd');
     setTimeout("AddCart_trans1_renewal()",1000);
-  /* } */
 }
 function showCartButton(obj){
   var idx = obj.selectedIndex;
   var goods_sku_code = obj.options[idx].value;
-  var cartButton = $(".cartButton");
-  var selectButton = document.getElementsByClassName("box_itembtn selectButton");
-  var soldOutButton = document.getElementsByClassName("soldOutButton"); 
+  var cartButton = document.getElementsByClassName("cartButton");
+  var selectButton = document.getElementsByClassName("selectButton");
   if( idx != 0 ){
- /* var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value; 
-    if(0 < mortgage_possibility_num){ */
-      cartButton.show();
+      cartButton[0].style.display='inline';
       selectButton[0].style.display='none';
-      soldOutButton[0].style.display='none';
- /*   }else{
-      cartButton[0].style.display='none';
-      selectButton[0].style.display='none';
-      soldOutButton[0].style.display='inline';
-    } */
   }else{
     cartButton[0].style.display='none';
     selectButton[0].style.display='inline';
-    soldOutButton[0].style.display='none';
   }
 }
 
 function showCartButton1(obj){
   var idx = obj.selectedIndex;
   var goods_sku_code = obj.options[idx].value;
-  var cartButton = $(".cartButton1");
-  var selectButton = document.getElementsByClassName("box_itembtn selectButton1");
-  var soldOutButton = document.getElementsByClassName("soldOutButton1"); 
+  var cartButton = document.getElementsByClassName("cartButton1");
+  var selectButton = document.getElementsByClassName("selectButton1");
   if( idx != 0 ){
-/*  var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value; 
-    if(0 < mortgage_possibility_num){ */
-      cartButton.show();
+      cartButton[0].style.display='inline';
       selectButton[0].style.display='none';
-      soldOutButton[0].style.display='none';
-/*    }else{
-      cartButton[0].style.display='none';
-      selectButton[0].style.display='none';
-      soldOutButton[0].style.display='inline';
-    } */
   }else{
     cartButton[0].style.display='none';
     selectButton[0].style.display='inline';
-    soldOutButton[0].style.display='none';
   }
 }
-
 //-->
 </script>
 <!-- InstanceEndEditable -->
@@ -293,8 +241,6 @@ function showCartButton1(obj){
 <meta m:id="e_var_concernedGoods">
 <meta m:id="e_var_shopPostage">
 <meta m:id="b_var_shopPostageFlat">
-
-
 
 <meta m:id="parentShop">
 <meta m:id="ancestralCategory">
@@ -985,68 +931,72 @@ function showCartButton1(obj){
 			                <div class="goods_detail_item_order">
 			                    <span m:id="l_Emp_groupGoods">
 			                        <span m:id="l_equ_stock_manage_unit">
-			                            <div class="goods_detail_item_order01 tooltip_wrap">
-			                                <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
-			                                <div class="select_wrap">
-			                                    <span class="select_label">色・<br class="viewSp">サイズ：</span>
-			                                        <span m:id="l_equ_valiationSize">
-			                                            <span m:id="b_wr_goods_sku_name"></span>
-			                                        </span>
-			                                        <span class="select_box">
-			                                        <span m:id="l_notEqu_valiationSize">
-			                                            <select m:id="h_sel_goods_sku_code_renewal">
-			                                                <option value="">--選択してください--</option>
-			                                                <option m:id="h_opt_variations" value="">白</option>
-			                                                <option m:id="dummy" value="">黒</option>
-			                                                <option m:id="dummy" value="">赤</option>
-			                                                <option m:id="dummy" value="">青</option>
-			                                                <option m:id="dummy" value="">緑</option>
-			                                            </select>
-			                                            <span m:id="l_ite_variation">
-			                                                <object class="xsp_obj" m:id="b_var_url"></object>
-			                                                <object class="xsp_obj" m:id="b_var_staticUrl"></object>
-			                                                <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
-			                                                <input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
-			                                            </span>
-			                                        </span>
-			                                    </span>
-			                                </div>
-			                                <!-- /.select_wrap -->
-			                            </div>
-			                        </span>
+                                <script language="JavaScript" type="text/javascript">
+                                  //SKUの場合のみ、スクリプト実施
+                                  window.onload = function(){
+                                    showCartButton(document.goodsDetailCartForm.goods_sku_code);
+                                    showCartButton1(document.goodsDetailCartForm1.goods_sku_code);
+                                  }
+                                </script>
+		                            <div class="goods_detail_item_order01 tooltip_wrap">
+	                                <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
+	                                <div class="select_wrap">
+                                    <span class="select_label">色・<br class="viewSp">サイズ：</span>
+                                      <span m:id="l_equ_valiationSize">
+                                          <span m:id="b_wr_goods_sku_name"></span>
+                                      </span>
+                                      <span class="select_box">
+                                      <span m:id="l_notEqu_valiationSize">
+                                          <select m:id="h_sel_goods_sku_code_renewal">
+                                              <option value="">--選択してください--</option>
+                                              <option m:id="h_opt_variations" value="">白</option>
+                                              <option m:id="dummy" value="">黒</option>
+                                              <option m:id="dummy" value="">赤</option>
+                                              <option m:id="dummy" value="">青</option>
+                                              <option m:id="dummy" value="">緑</option>
+                                          </select>
+                                          <span m:id="l_ite_variation">
+                                              <object class="xsp_obj" m:id="b_var_url"></object>
+                                              <object class="xsp_obj" m:id="b_var_staticUrl"></object>
+                                              <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
+                                              <input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
+                                          </span>
+                                      </span>
+                                    </span>
+                                  </div>
+                                  <!-- /.select_wrap -->
+		                            </div>
+		                          </span>
 			                        <div class="goods_detail_item_order02">
-			                            <div class="select_wrap">
-			                                <div class="select_wrap">
-			                                    <span class="select_label">数量：</span>
-			                                    <span class="select_box">
-			                                        <!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                            <option m:id="h_pull_order_num" value="3">3</option>
-			                                            <option m:id="dummy">1</option>
-			                                            <option m:id="dummy">2</option>
-			                                        </select>
-			                                        <!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
-			                                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
-			                                        <!--  <span m:id="l_equ_type_sku"><td>
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                        <option m:id="h_pull_order_num" value="3">3</option>
-			                                        <option m:id="dummy">1</option>
-			                                        <option m:id="dummy">2</option>
-			                                        </select>
-			                                        </td></span>
-			                                        <span m:id="l_equ_type_simple"><td m:id="l_visible_order_num">
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                        <option m:id="h_pull_order_num" value="3">3</option>
-			                                        <option m:id="dummy">1</option>
-			                                        <option m:id="dummy">2</option>
-			                                        </select>
-			                                        </td></span>-->
-			                                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
-			                                    </span>
-			                                </div>
-			                                <!-- /.select_wrap -->
-			                            </div>
-			                            <!-- /.select_wrap -->
+                                <div class="select_wrap">
+                                    <span class="select_label">数量：</span>
+                                    <span class="select_box">
+                                        <!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
+                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+                                            <option m:id="h_pull_order_num" value="3">3</option>
+                                            <option m:id="dummy">1</option>
+                                            <option m:id="dummy">2</option>
+                                        </select>
+                                        <!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
+                                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
+                                        <!--  <span m:id="l_equ_type_sku"><td>
+                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+                                        <option m:id="h_pull_order_num" value="3">3</option>
+                                        <option m:id="dummy">1</option>
+                                        <option m:id="dummy">2</option>
+                                        </select>
+                                        </td></span>
+                                        <span m:id="l_equ_type_simple"><td m:id="l_visible_order_num">
+                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+                                        <option m:id="h_pull_order_num" value="3">3</option>
+                                        <option m:id="dummy">1</option>
+                                        <option m:id="dummy">2</option>
+                                        </select>
+                                        </td></span>-->
+                                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
+                                    </span>
+                                </div>
+                                <!-- /.select_wrap -->
 			                        </div>
 			                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->   
 			                        <!--  <tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
@@ -1063,7 +1013,6 @@ function showCartButton1(obj){
 			                            <img m:id="h_img_no_wrapping" src="../../../contents/shop/00000003/icon/no_wrapping.gif" alt="のし・ラッピング不可" align="left" />
 			                        </span> -->
 			                    </span>
-
 			                </div>
 			                <!-- /.goods_detail_item_order -->
 			                
@@ -1090,7 +1039,7 @@ function showCartButton1(obj){
 			            <!--/ アイコン -->
 
 			            <div class="goods_detail_item_order_cart">
-			                <div class="item_bt_01">
+			                <div class="item_bt_01 cartButton">
 			                    <!-- SKU商品用カートイン -->
 			                    <span m:id="l_equ_type_sku">
 			                        <span m:id="l_equ_can_addCartSku">
@@ -1101,18 +1050,15 @@ function showCartButton1(obj){
 			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
 			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
 			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <div class="cartButton" style="display:none !important;">
-			                                    <a m:id="h_link_canAddCart0_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                                    <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
-			                                </div>
+			                                <a m:id="h_link_canAddCart0_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+			                                <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
+			                                
 			                            </form>
 			                        </span>
 			                    </span>
 			                    <!-- 単品商品用カートイン -->
 			                    <span m:id="l_equ_type_simple">
 			                        　　<span m:id="l_equ_can_addCartSku">
-			                            <!--  欠品対応の場合はコメントアウト外す
-			                            <span m:id="l_equ_canAddCart"> -->
 			                            <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 			                                <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
@@ -1154,28 +1100,18 @@ function showCartButton1(obj){
 			                    <span m:id="l_equ_canNot_addCartSku_radio" class = "soldOutButton">
 			                        <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
 			                    </span>
-			                    <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
-			                    <!--  <span m:id="l_equ_type_sku">
-			                    <span class = "soldOutButton" style="display:none !important;">
-			                    <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-			                    </span>
-			                    </span>
-			                    <span m:id="l_equ_type_simple">  
-			                    <span m:id="l_equ_soldOutSalesStatus_stock">
-			                    <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-			                    </span>
-			                    </span>-->
-			                    <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
 			                    <span m:id="l_equ_noStockSalesStatus">
 			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
 			                    </span>
-			                    <div class="box_itembtn selectButton">
-			                        <span m:id="l_notEqu_select">
-			                            <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-			                        </span>
-			                    </div>
-			                </span>
-			            </div>
+                      </span>
+                      <div class="box_itembtn selectButton">
+                          <span m:id="l_equ_type_sku">
+                          <span m:id="l_equ_can_addCartSku">
+                          <span m:id="l_notEqu_select_renewal">
+                              <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
+                          </span></span></span>
+                      </div>
+                  </div>
 			            <!-- /.goods_detail_item_order_cart -->
 			            <div class="goods_detail_item_order_fav tar s_tac">
 			                <span m:id="l_pre_member">
@@ -1639,34 +1575,12 @@ function showCartButton1(obj){
 			                                            <option m:id="dummy">2</option>
 			                                        </select>
 			                                        <!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
-			                                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
-			                                        <!--  <span m:id="l_equ_type_sku"><td>
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                        <option m:id="h_pull_order_num" value="3">3</option>
-			                                        <option m:id="dummy">1</option>
-			                                        <option m:id="dummy">2</option>
-			                                        </select>
-			                                        </td></span>
-			                                        <span m:id="l_equ_type_simple"><td m:id="l_visible_order_num">
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                        <option m:id="h_pull_order_num" value="3">3</option>
-			                                        <option m:id="dummy">1</option>
-			                                        <option m:id="dummy">2</option>
-			                                        </select>
-			                                        </td></span>-->
-			                                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
 			                                    </span>
 			                                </div>
 			                                <!-- /.select_wrap -->
 			                            </div>
 			                            <!-- /.select_wrap -->
 			                        </div>
-			                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->   
-			                        <!--  <tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
-			                        <span m:id="l_equ_canAddCart"><td>△</td></span>
-			                        <span m:id="l_notEqu_canAddCart"><td>×</td></span>
-			                        </tr>-->
-			                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
 			                        <span m:id="l_pre_min_order_num2">
 			                            <th>最低購入数<span class="conma">：</span></th>
 			                            <td><span m:id="disp_min_order_num">2</span></td>
@@ -1710,7 +1624,7 @@ function showCartButton1(obj){
 			            <!--/ アイコン -->
 
 			            <div class="goods_detail_item_order_cart">
-			                <div class="item_bt_01">
+			                <div class="item_bt_01 cartButton1">
 			                    <!-- SKU商品用カートイン -->
 			                    <span m:id="l_equ_type_sku">
 			                        <span m:id="l_equ_can_addCartSku">
@@ -1721,18 +1635,14 @@ function showCartButton1(obj){
 			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
 			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
 			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <div class="cartButton1" style="display:none !important;">
-			                                    <a m:id="h_link_canAddCart1_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                                    <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
-			                                </div>
+			                                <a m:id="h_link_canAddCart1_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+			                                <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
 			                            </form>
 			                        </span>
 			                    </span>
 			                    <!-- 単品商品用カートイン -->
 			                    <span m:id="l_equ_type_simple">
-			                        　　<span m:id="l_equ_can_addCartSku">
-			                            <!--  欠品対応の場合はコメントアウト外す
-			                            <span m:id="l_equ_canAddCart"> -->
+			                       <span m:id="l_equ_can_addCartSku">
 			                            <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
 			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 			                                <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
@@ -1774,27 +1684,17 @@ function showCartButton1(obj){
 			                    <span m:id="l_equ_canNot_addCartSku_radio" class="soldOutButton1">
 			                        <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
 			                    </span>
-			                    <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ --> 
-			                    <!--  <span m:id="l_equ_type_sku">
-			                    <span class = "soldOutButton1" style="display:none !important;">
-			                    <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-			                    </span>
-			                    </span>
-			                    <span m:id="l_equ_type_simple">
-			                    <span m:id="l_equ_soldOutSalesStatus_stock" class = "soldOutButton1" style="display:none !important;">
-			                    <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-			                    </span>
-			                    </span> -->
-			                    <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
 			                    <span m:id="l_equ_noStockSalesStatus">
 			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
 			                    </span>
-			                    <div class="box_itembtn selectButton1">
-			                        <span m:id="l_notEqu_select">
-			                            <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-			                        </span>
-			                    </div>
-			                </span>
+		                      <div class="box_itembtn selectButton1">
+                            <span m:id="l_equ_type_sku">
+                            <span m:id="l_equ_can_addCartSku">
+                            <span m:id="l_notEqu_select_renewal">
+		                            <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
+		                        </span></span></span>
+		                      </div>
+                        </span>
 			            </div>
 			            <!-- /.goods_detail_item_order_cart -->
 
@@ -2608,7 +2508,7 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
-<!-- Criteo loader 
+<!-- Criteo loader -->
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
