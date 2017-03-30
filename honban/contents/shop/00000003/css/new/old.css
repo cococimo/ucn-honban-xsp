@@ -1,0 +1,35 @@
+@import url(../contents.css);
+@import url(../module.css);
+
+#contents {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.r_con_box_05,
+.r_con_box_03,
+.r_con_box_02 {
+	width: 740px;
+	margin: 30px auto;
+}
+
+@media screen and (max-width:767px) {
+	
+	#contents {
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.r_con_box_05,
+	.r_con_box_03,
+	.r_con_box_02 {
+		width: auto;
+		margin: 30px auto;
+	}
+
+}
+.item_table_05 img,
+.i_res_box_02 img,
+.l_con_list_03 img {
+	width: auto;
+}
