@@ -61,6 +61,13 @@ $(function(){
 <!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
+<style>
+/*ページ内リンク調整*/
+#shop_smooth {
+  margin-top : -150px !important;
+  padding-top : 150px !important;
+} 
+</style>
 <script src="/contents/c/js/new/featherlight.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
@@ -461,7 +468,8 @@ function showCartButton1(obj){
         <p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
         <!-- /.header_guide -->
         <div class="header_search" >
-          <div class="clearfix header_search_in">
+          <!-- <div class="clearfix header_search_in"> -->
+          <div class="header_search_in">
             <form m:id="searchForm" name="searchForm" method="GET" action="../../../Templates/goodsSearchShop_shop.html">
               <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
               <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
@@ -722,7 +730,6 @@ function showCartButton1(obj){
     <div class="goods_detail">
 
   <div id="content_wrap">
-  <!-- InstanceBeginEditable name="contents" -->
 
 		
 	  	<!-- PAGE:商品詳細 -->
@@ -864,8 +871,8 @@ function showCartButton1(obj){
 			</span> -->
 			<!--/ インクルード領域  -->
 			
-
-			<div class="inner_orderbox sp_margin" id="shop_smooth">
+      <div  id="shop_smooth"></div>
+			<div class="inner_orderbox sp_margin">
 				<h2><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
 				<div class="dvd_info">
 					<p class="dvd_pic">
@@ -1153,7 +1160,6 @@ function showCartButton1(obj){
 			</script></span>
 <!--/ include:00000003/goods/default.jsp -->
 		</span>
-		<!-- InstanceEndEditable -->
   
         </div>
   </div><!-- content -->
@@ -1246,7 +1252,11 @@ function showCartButton1(obj){
           <span class="about_list_icon icon-secure"></span>
           <p class="about_list_tit">品質保証・返品について</p>
           <div class="about_list_in">
-            <p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。<span class="underline">なお、返品条件に関しては各商品ごとに異なります</span>ので、各商品ページでご確認ください。</p>
+            <p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
+                        <div class="about_list_caution">
+                            <p class="about_list_caution_tit">※ご注意※</p>
+                            <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
+                        </div>
           </div>
         </li>
         <li class="about_list_point js-matchHeight">
