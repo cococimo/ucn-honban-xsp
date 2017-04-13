@@ -1,0 +1,2009 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*clearfix*/
+#content_wrap .clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;  
+    clear: both;
+    visibility:hidden;
+}
+#content_wrap .clearfix{
+    display: inline-block;
+}
+/* Hides from IE Mac */
+* html .clearfix{
+    height: 1%;
+}
+#content_wrap .clearfix{
+    display:block;
+}  
+
+
+/*body{
+	border-top: 4px solid #73bdac;
+	color: #333;
+	overflow: visible;
+	font-size: 14px;
+	font-family:"繝｡繧､繝ｪ繧ｪ", Meiryo, Osaka, "?ｭ?ｳ ?ｰ繧ｴ繧ｷ繝?け", "MS PGothic", "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
+
+}
+
+a{
+	color: #0e1bbb;
+	text-decoration: underline;
+}
+a:hover{
+	color: #5e69ee;
+}
+
+img.hover:hover{
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+}
+*/
+#content_wrap .sp_on{
+	display: none !important;
+}
+
+/*#header{
+	width: 100%;
+	min-width: 960px;
+	text-align: center;
+	border-bottom: 1px solid #cecdc9;
+	padding-bottom: 5px;
+}
+#header_wrap{
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+#header_left{
+	float: left;
+	overflow: hidden;
+	width: 750px;
+}
+#header_wrap #header_logo{
+	float: left;
+}
+#header_tel{
+	float: left;
+	padding-left: 95px;
+	margin-top: 55px;
+}
+#header_tel a{
+	cursor: default;
+}
+#login_wrap{
+	float: right;
+	margin-top: 15px;
+	font-size: 15px;
+}
+#login_wrap a#new_entry{
+	background-image: url(../../image/static/right_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	margin: 10px 0 0 20px;
+	padding-left: 15px;
+	text-decoration: underline;
+	display: block;
+}
+
+#content{
+	background-color: #fefcf0;
+}*/
+#content_wrap{
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+#content_wrap .inner_box01{
+	width: 960px;
+	box-shadow: 0 0 5px #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	background-color: #fff;
+	margin-bottom: 36px !important;
+	padding-bottom: 10px;
+	position: relative;
+	background-image: url(../../image/static/inner_box01_pic.png);
+	background-repeat: no-repeat;
+	background-position: 650px 90px;
+}
+#content_wrap .inner_box01 h2{
+	background-image: url(../../image/static/inner_box03_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	height: 62px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #4D9801;
+	padding: 15px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 25px;
+}
+#content_wrap .inner_box01 h3{
+	background-image: url(../../image/static/inner_box01_h3_bg.jpg);
+	background-repeat: no-repeat;
+	margin: 0 0 10px 15px;
+	padding-left: 30px;
+	color: #006666;
+	font-size: 22px;
+	font-weight: bold;
+}
+#content_wrap .inner_box01 p{
+	margin-left: 45px;
+	margin-bottom: 20px;
+}
+#content_wrap .inner_box01_pic{
+	position: absolute;
+	bottom: 2px;
+	right: 2px;;
+}
+
+#content h2.voice_title{
+	text-align: center;
+	height: 54px;
+	width: 500px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 54px;
+	margin: 0 auto;
+	background-color: #669acc;
+	border-radius: 27px;
+	-moz-border-radius: 27px;
+	-webkit-border-radius: 27px;
+	-ms-border-radius:27px;
+	margin-bottom: 17px;
+}
+#content_wrap .voice_wrap{
+	margin-bottom: 17px;
+}
+#content_wrap .voice_box{
+	float: left;
+	width: 438px;
+	height: 105px;
+	padding: 15px 20px 0px 10px;
+	background-color: #f0fcfc;
+	box-shadow: 0 0 5px #aaa;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	overflow: hidden;
+}
+#content_wrap .voice_pic{
+	float: left;
+}
+#content_wrap .voice_text{
+	float: right;
+	width: 360px;
+	font-size: 14px;
+	line-height: 160%;
+}
+#content_wrap .voice_text span{
+	font-size: 10px;
+}
+
+#content_wrap .inner_box02{
+	width: 960px;
+	box-shadow: 0 0 5px #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	background-color: #fff;
+	margin-bottom: 17px !important;
+}
+#content_wrap .inner_box02 h2{
+	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	height: 62px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #993300;
+	padding: 15px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+#content_wrap .inner_box02_wrap{
+	overflow: hidden;
+	margin: 0 25px;
+}
+#content_wrap .inner_box02 .short_box h3{
+	background-image: url(../../image/static/inner_box02_titlebg.png);
+	background-repeat: no-repeat;
+	width: 260px;
+	height: 30px;
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+#content_wrap .inner_box02 .box_wrap{
+	overflow: hidden;
+	margin: 0 25px;
+	padding-bottom: 15px;
+}
+#content_wrap .inner_box02 .short_box{
+	width: 280px;
+	height: 200px;
+	margin-bottom: 20px;
+	float: left;
+	background-color: #f7f7ef;
+}
+#content_wrap .inner_box02 ul{
+	padding-left: 20px;
+	overflow: hidden;
+	margin-top: 20px;
+	list-style: none;
+}
+#content_wrap .inner_box02 ul li{
+	margin-bottom: 5px;
+	float: left;
+	width: 125px;
+	padding-left: 20px;
+	background-image: url(../../image/static/circle_green.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 1px;
+}
+#content_wrap .inner_box02 ul li.long_text{
+	width: 200px;
+}
+#content_wrap .inner_box02 .long_box{
+	width: 624px;
+	height: 200px;
+	margin-bottom: 20px;
+	float: right;
+	overflow: hidden;
+	background-image: url(../../image/static/inner_box02_long_box_bg.jpg);
+	background-repeat: no-repeat;
+}
+#content_wrap .long_box_pic{
+	padding-left: 20px;
+	float: left;
+	width: 260px;
+}
+#content_wrap .long_box_pic2{
+	float: right;
+	width: 260px;
+	padding-left: 0;
+}
+#content_wrap .long_box_text{
+	float: right;
+	width: 290px;
+	padding-right: 30px;
+	margin-top: 40px;
+}
+#content_wrap .long_box_text2{
+	float: left;
+	width: 290px;
+	padding-left: 30px;
+	margin-top: 40px;
+}
+#content_wrap .long_box_text p.title{
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+#content_wrap .long_box_text p.title span{
+	color: #D07047;
+	font-size: 18px;
+}
+#content_wrap .inner_box02 .middle_box{
+	width: 445px;
+	height: 120px;
+	margin-bottom: 20px;
+	background-color: #f7f7ef;
+	position: relative;
+}
+#content_wrap .inner_box02 .middle_box h3{
+	background-image: url(../../image/static/inner_box02_titlebg.png);
+	background-repeat: no-repeat;
+	width: 425px;
+	padding-left: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	height: 30px;
+}
+#content_wrap .middle_box_img{
+	float: right;
+	margin-top: 5px;
+	padding-right: 5px;
+}
+
+#content_wrap .inner_box03{
+	width: 960px;
+	box-shadow: 0 0 5px #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	background-color: #fff;
+	margin-bottom: 36px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+#content_wrap .inner_box03 h2{
+	background-image: url(../../image/static/inner_box03_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	height: 62px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #4D9801;
+	padding: 15px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+#content_wrap .inner_box03 span{
+	text-align: right;
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 10px;
+}
+#content_wrap .inner_box03 div.text_box{
+	float: left;
+	padding-left: 30px;
+	line-height: 180%;
+}
+#content_wrap .inner_box03 p.pic_box{
+	float: right;
+	padding-right: 20px;
+	margin-left: 30px;
+}
+
+#content_wrap .inner_box04{
+	width: 960px;
+	box-shadow: 0 0 5px #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	background-color: #fff;
+	margin-bottom: 25px;
+}
+#content_wrap .inner_box04 h2{
+	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	height: 62px;
+	font-size: 37px;
+	font-weight: bold;
+	padding: 15px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 25px;
+}
+#content_wrap .dvd_info{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+#content_wrap .dvd_pic{
+	float: left;
+	padding-left: 25px;
+}
+#content_wrap .price{
+	padding-left: 25px;
+	float: left;
+	width: 320px;
+}
+#content_wrap .price img{
+	width: 100%;
+}
+#content_wrap .price_txt01{
+	padding-right: 20px;
+	color: #cc0004;
+	font-size: 12px;
+}
+#content_wrap .price_txt02{
+	font-size: 44px;
+	color: #cc0004;
+}
+#content_wrap .price_txt03{
+	font-size: 22px;
+	color: #cc0004;
+}
+#content_wrap .price_txt04{
+	font-size: 20px;
+}
+#content_wrap .price table{
+	margin-left: 10px;
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+#content_wrap .price table td{
+	border-bottom: 1px solid #9a9a9a;
+	height: 25px;
+}
+#content_wrap .price table .table_left{
+	text-align: right;
+	width: 130px;
+	padding-right: 20px;
+}
+#content_wrap .price table .table_right{
+	width: 160px;
+	font-weight: bold;
+}
+#content_wrap .dvd_info_right{
+	float: right;
+	padding-right: 30px;
+	width: 300px;
+}
+#content_wrap .dvd_info_right p.color_red{
+	color: #d40000;
+	margin-bottom: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#content_wrap .shopping{
+	text-align: center;
+	padding-bottom: 25px;
+}
+#content_wrap .shopping_sp{
+	display: none;
+}
+#content_wrap .inner_box04 h3{
+	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 5px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+#content_wrap .detail_box{
+	overflow: hidden;
+	margin-bottom: 25px;
+	padding: 0 25px;
+	padding-top:10px;
+}
+#content_wrap .detail_box table{
+	font-size: 16px;
+	border-top: 1px solid #d5cebc;
+	margin-bottom: 10px;
+}
+#content_wrap .detail_box table th{
+	background-color: #f7f7ef;
+	width: 115px;
+	padding: 10px 0 10px 10px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid #d5cebc;
+}
+#content_wrap .detail_box table td{
+	padding: 10px 0 10px 10px;
+	width: 325px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid #d5cebc;
+}
+#content_wrap .detail_left{
+	float: left;
+	width: 460px;
+	line-height: 22px;
+	margin-bottom: 30px;
+}
+#content_wrap .detail_left p{
+	font-size: 14px;
+}
+#content_wrap .detail_right{
+	float: right;
+	width: 390px;
+}
+#content_wrap .detail_right img{
+	width: 390px;
+}
+#content_wrap .detail_right p.detail_right_text{
+	font-size: 12px;
+	background-color: #e9e2d8;
+	padding: 5px 0 5px 10px;
+	line-height: 14px;
+}
+#content_wrap .detail_box .sub_title{
+	clear: both;
+	font-size: 20px;
+	color: #970005;
+	margin-bottom: 10px;
+}
+#content_wrap .detail_box table.fs18{
+	font-size: 18px;
+}
+
+/*#page_top{
+	text-align: right;
+	padding-bottom: 10px;
+}
+#page_top a{
+	background-image: url(../../image/static/page_top_icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 20px;
+}*/
+
+/*#footer_temp{
+	background-color: #bcded0;
+	padding: 15px 0;
+}
+#footer_wrap{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#footer_wrap ul{
+	display: inline;
+	float: left;
+}
+#footer_wrap ul li{
+	display: inline;
+	float: left;
+	background-image: url(../../image/static/footer_arrow.jpg);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	line-height: 12px;
+	padding-left: 17px;
+	border-right: 1px solid #7fa89a;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+#footer_wrap ul li:last-child{
+	border: none;
+}
+#footer_wrap .copyright{
+	display: inline;
+	float: right;
+	font-size: 8px;
+	color: #145949;
+}*/
+
+
+/* #teac_intro */
+
+#teac_intro{
+	background: url(../../image/static/img/teac/bg.jpg) #fff;
+	text-align: left;
+  	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	margin: 0 0 40px;
+	padding-bottom: 30px;
+}
+#teac_intro h1{
+	margin: 0 0 22px;
+}
+#teac_intro .inner{
+	width: 900px;
+	margin: 0 30px;
+}
+#teac_intro .txt{
+	font-size: 18px;
+	line-height: 1.9
+}
+#teac_intro .main .txt{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+#teac_intro .red{
+	color: #a20000;
+}
+#teac_intro h2{
+	font-size: 42px;
+	font-weight: bold;
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	background: url(../../image/static/img/teac/border01.gif) no-repeat left top;
+	padding: 0 0 15px 30px;
+	border-bottom: solid 1px #ccc;
+	line-height: 1.2;
+	margin: 0 0 13px;
+}
+#teac_intro h2 .ttl {
+	float: left;
+	width: 470px;
+}
+#teac_intro h2 .img {
+	float: right;
+	width: 400px;
+	margin-top: -15px;
+}
+#teac_intro h2 .small{
+	font-size: 20px;
+	line-height: 1.3;
+	display: inline-block;
+	padding-bottom: 7px;
+}
+#teac_intro .icon01 {
+	background: url(../../image/static/img/teac/icon01.gif) no-repeat left top;
+}
+#teac_intro .icon02 {
+	background: url(../../image/static/img/teac/icon02.gif) no-repeat left top;
+}
+#teac_intro .icon03 {
+	background: url(../../image/static/img/teac/icon03.gif) no-repeat left top;
+}
+#teac_intro .icon04 {
+	background: url(../../image/static/img/teac/icon04.gif) no-repeat left top;
+}
+#teac_intro .icon05 {
+	background: url(../../image/static/img/teac/icon05.gif) no-repeat left top;
+}
+#teac_intro .icon06 {
+	background: url(../../image/static/img/teac/icon06.gif) no-repeat left top;
+}
+#teac_intro .icon07 {
+	background: url(../../image/static/img/teac/icon07.gif) no-repeat left top;
+}
+#teac_intro .btn_cart {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #bc4e00), color-stop(0.00, #fea05c));
+	background: -webkit-linear-gradient(#fea05c, #bc4e00);
+	background: -moz-linear-gradient(#fea05c, #bc4e00);
+	background: -o-linear-gradient(#fea05c, #bc4e00);
+	background: -ms-linear-gradient(#fea05c, #bc4e00);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fea05c', endColorstr='#bc4e00', GradientType=0)";
+	background: linear-gradient(#fea05c, #bc4e00);
+	border-radius: 6px;
+	box-shadow: 0 2px rgba(187,187,187,1.0);
+	margin: 30px 100px 28px;
+}
+#teac_intro .btn_cart a {
+	color: #fff;
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	line-height: 110px;
+	display: block;
+	vertical-align: middle;
+}
+#teac_intro .btn_cart a .inr {
+	display: block;
+	background: url(../../image/static/img/teac/icon_arw.png) no-repeat right center;
+	margin-right: 30px;
+}
+#teac_intro .btn_cart a img {
+	vertical-align: middle;
+	padding-bottom: 10px;
+}
+#teac_intro .btn_cart a:hover {
+	text-decoration: none;
+}
+#teac_intro .btn_cart a:hover img {
+	opacity: 1.0;
+	-ms-filter: "alpha(opacity=100)";
+}
+
+#teac_intro .info .inner{
+	background: #fff;
+	padding: 20px 30px 30px;
+	width: 840px;
+}
+#teac_intro .info .img{
+	float: left;
+	width: 380px;
+}
+#teac_intro .data_price {
+	border: solid 1px #ccc;
+	padding: 5px 20px 0;
+	float: right;
+	width: 380px;
+	margin: 10px 0 0;
+}
+#teac_intro .data_price .data01{
+	font-size: 48px;
+	line-height: 1.2;
+	padding: 15px 0;
+}
+#teac_intro .data_price .data01 .red{
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+#teac_intro .data_price .small01{
+	font-size: 24px;
+	font-weight: bold;
+}
+#teac_intro .data_price .small02{
+	font-size: 28px;
+}
+#teac_intro .data_price .mini{
+	font-size: 12px;
+}
+#teac_intro .data_price .data02{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 15px 0;
+	border-top: solid 1px #ccc;
+}
+#teac_intro .data_price .data02 img{
+	margin-top: 14px;
+}
+#teac_intro .data_price .data02 .gray{
+	color: #d9d9d9;
+}
+#teac_intro .info .postage{
+	clear: both;
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 1.0;
+	padding: 40px 0 15px;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 20px;
+}
+#teac_intro .info .postage .small{
+	font-size: 20px;
+}
+#teac_intro .info .delivery_head{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.0;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+#teac_intro .info .delivery .small{
+	font-size: 20px;
+}
+#teac_intro .info .delivery .ttl{
+	float: left;
+	width: 680px;
+	line-height: 1.2;
+}
+#teac_intro .info .delivery .img{
+	float: right;
+	width: 120px;
+}
+#teac_intro .info ul li{
+	color: #fff;
+	background: #a20000;
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: center;
+	width: 266px;
+	float: left;
+	margin-right: 20px;
+}
+#teac_intro .info ul li.last{
+	margin-right: 0;
+}
+#teac_intro .info ul li img{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#teac_intro .info .time{
+	position: relative;
+	padding-top: 17px;
+	margin: 7px 0 8px;
+}
+#teac_intro .info .time_inr{
+	border: solid 1px #a20000;
+	padding: 14px 0;
+	text-align: center;
+	margin-top: -2px;
+}
+#teac_intro .info .time_inr img:first-child {
+	margin-right: 20px;
+}
+#teac_intro .info .time_arw {
+	position: absolute;
+	top: 0;
+	left: 410px;
+}
+#teac_intro .info .memo{
+	font-size: 16px;
+	line-height: 1.8;
+}
+#teac_intro .info .memo .small{
+	font-size: 14px;
+}
+#teac_intro .info .memo .mini{
+	font-size: 12px;
+	display: block;
+}
+
+#teac_intro .point{
+	margin: 90px 0 0;
+}
+#teac_intro .point h2{
+	background: url(../../image/static/img/teac/border02.gif) no-repeat left top;
+	line-height: 1.0;
+	margin: 0 0 40px;
+}
+#teac_intro .point h3{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	padding-left: 55px;
+	margin-bottom: 20px;
+	line-height:1.5;
+}
+#teac_intro .point .box{
+	padding: 0 0 40px;
+	border-bottom: solid 1px #ccc;
+	margin: 0 0 40px;
+}
+#teac_intro .point .box.last{
+	padding: 0 0 10px;
+	border-bottom: none;
+	margin: 0;
+}
+#teac_intro .point .box .txt{
+	float: left;
+	width: 580px;
+}
+#teac_intro .point .box.type02 .txt{
+	float: right;
+	width: 580px;
+}
+#teac_intro .point .box .img{
+	float: right;
+	width: 300px;
+}
+#teac_intro .point .box.type02 .img{
+	float: left;
+	width: 300px;
+}
+
+#teac_intro .interview h2{
+	font-size: 35px;
+	background: url(../../image/static/img/teac/border04.gif) no-repeat left top;
+	line-height: 1.2;
+	margin: 60px 0 30px;
+}
+#teac_intro .interview h2 .small{
+	font-size: 30px;
+}
+#teac_intro .interview h3{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	border-left: solid 6px #a20000;
+	padding-left: 15px;
+	line-height: 1.3;
+	margin: 0 0 30px;
+}
+#teac_intro .interview .txt_q{
+	font-size: 20px;
+	background: url(../../image/static/img/teac/line.gif) no-repeat left center;
+	padding-left: 50px;
+}
+#teac_intro .interview h4{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 22px;
+	line-height: 1.0;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ccc;
+	margin: 30px 0 10px;
+}
+#teac_intro .interview h4 span{
+	color: #333;
+	padding-right:3px;
+}
+#teac_intro .interview .box01{
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+#teac_intro .interview .txt{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+#teac_intro .interview .box01 .txt{
+	float: left;
+	width: 380px;
+}
+#teac_intro .interview .box01 .txt .logo{
+	margin: 0 0 15px;
+}
+#teac_intro .interview .box01 .img{
+	float: right;
+	width: 450px;
+}
+#teac_intro .interview .box02 .img{
+	float: left;
+	width: 250px;
+}
+#teac_intro .interview .box02 .img .cap{
+	display: inline-block;
+	padding-top: 5px;
+}
+#teac_intro .interview .box02 .txt{
+	float: right;
+	width: 630px;
+}
+#teac_intro .interview .box03 .txt{
+	float: left;
+	width: 580px;
+}
+#teac_intro .interview .box03 .img{
+	float: right;
+	width: 300px;
+	padding-top: 30px;
+}
+#teac_intro .interview .box04 .txt02 {
+	margin-top: 30px;
+}
+#teac_intro .interview .box04 .txt02 span {
+	font-size: 14px;
+}
+
+#teac_intro .video{
+	margin: 50px auto 60px;
+}
+#teac_intro .video iframe{
+	width: 750px;
+	height: 460px;
+	margin: 40px auto 0;
+	display: block;
+}
+
+#teac_intro .voice {
+	margin: 60px auto;
+	padding: 60px 60px 30px;
+	background: url(../../image/static/img/teac/voice_img.jpg) no-repeat left top;
+	background-size: auto 100%;
+  	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+#teac_intro .voice .voice_ttl {
+	color: #00097c;
+	background: #fff3b9;
+	border-radius: 10px;
+	font-size: 30px;
+	line-height: 1.3;
+	padding: 23px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#teac_intro .voice .box {
+	padding-bottom: 20px;
+}
+#teac_intro .voice .box_l {
+	float: left;
+	width: 405px;
+}
+#teac_intro .voice .box_r {
+	float: right;
+	width: 405px;
+}
+#teac_intro .voice .balloon{
+	background: url(../../image/static/img/teac/balloon_arw.png) no-repeat center bottom;
+	padding-bottom: 17px;
+	margin: 0 0 13px;
+}
+#teac_intro .voice .balloon_inr{
+	display: block;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff); 
+	background: rgba(255,255,255,0.9);
+	border-radius: 6px;
+	width: 365px;
+	padding: 12px 20px;
+}
+#teac_intro .voice .note{
+	clear: both;
+	margin: 15px 0 0;
+}
+
+#teac_intro .recommend{
+	margin: 40px auto 0;
+}
+#teac_intro .recommend h2{
+	background: url(../../image/static/img/teac/border05.gif) no-repeat left top;
+	line-height: 1.0;
+	margin: 0 0 30px;
+}
+#teac_intro .recommend .box{
+	padding-bottom: 30px;
+}
+#teac_intro .recommend .box .img{
+	float: left;
+	width: 220px;
+}
+#teac_intro .recommend .box .txt{
+	float: right;
+	width: 640px;
+}
+#teac_intro .recommend .writer{
+	font-weight: bold;
+	padding-bottom: 50px;
+}
+#teac_intro .recommend .mb{
+	margin-bottom: 25px;
+}
+#teac_intro .recommend .profile{
+	border: solid 1px #a20000;
+	padding: 10px;
+}
+
+
+
+#teac_intro .privilege{
+	margin: 0 auto 20px;
+}
+#teac_intro .privilege h2{
+	background: url(../../image/static/img/teac/border03.gif) no-repeat left top;
+	line-height: 1.2;
+	margin: 0 0 30px;
+}
+#teac_intro .privilege h2 .small{
+	font-size: 30px;
+}
+#teac_intro .privilege .box01 dl{
+	width: 240px;
+	height: 240px;
+	padding: 20px;
+	float: left;
+	margin: 0 30px 0 0;
+	background: #fff;
+}
+#teac_intro .privilege .box01 dl.last{
+	margin: 0;
+}
+#teac_intro .privilege .box01 dt{
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	padding-left: 40px;
+	line-height: 1.5;
+}
+#teac_intro .privilege .box01 dt.icon01{
+	background: url(../../image/static/img/teac/icon01_s.gif) no-repeat left top;
+}
+#teac_intro .privilege .box01 dt.icon02{
+	background: url(../../image/static/img/teac/icon02_s.gif) no-repeat left top;
+}
+#teac_intro .privilege .box01 dt.icon03{
+	background: url(../../image/static/img/teac/icon03_s.gif) no-repeat left top;
+}
+#teac_intro .privilege .box01 dd{
+	text-align: center;
+	vertical-align: middle;
+	width: 240px;
+	height: 220px;
+	display: table-cell;
+}
+#teac_intro .privilege .box01 dd img{
+	text-align: center;
+}
+#teac_intro .privilege .box01.type02 dl{
+	width: 395px;
+}
+#teac_intro .privilege .box01.type02 dd{
+	width: 395px;
+}
+
+#teac_intro .privilege .box02{
+	margin: 10px 0 0;
+}
+#teac_intro .privilege .box02 .ttl{
+	margin: 30px 0 0;
+	font-family:  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+#teac_intro .privilege .box02 .box_l{
+	float: left;
+	width: 425px;
+}
+#teac_intro .privilege .box02 .box_r{
+	float: right;
+	width: 425px;
+}
+#teac_intro .privilege .box02 dt{
+	font-size: 18px;
+	line-height: 1;
+	padding: 20px 0 10px;
+}
+
+
+
+
+
+
+
+/*繧ｹ繝槭?逕ｨ*/
+
+@media screen and (max-width:640px){
+
+body{
+	min-width: 100%;
+}
+
+#content_wrap .sp_margin{
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#content_wrap .sp_none{
+	display: none !important;
+}
+#content_wrap .sp_on{
+	display: block !important;
+}
+
+/*#header{
+	width: 100%;
+	min-width: 100%;
+}
+#header_wrap{
+	width: 96%;
+	padding: 0 2%;
+}
+#header_left{
+	width: 65%;
+	margin-right: 5%;
+}
+#header_wrap #header_logo{
+	margin-right: 35%;
+}
+#header_left img{
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+#header_tel{
+	padding: 0;
+	margin: 0;
+	padding-left: 3%;
+}
+#login_wrap{
+	width: 25%;
+	margin-top: 10%;
+	font-size: 12px;
+	padding-right: 1%;
+}
+#login_wrap img{
+	max-width: 100%;
+	height: auto;
+}
+#login_wrap #new_entry_wrap{
+	padding-left: 15%;
+}
+#login_wrap a#new_entry{
+	margin: 3% 0 0 0;
+	background-position: 0 5px;
+	height: 16px;
+}
+
+#content{
+	width: 100%;
+}*/
+#content_wrap{
+	width: 100%;
+}
+#content_wrap img{
+	max-width: 100%;
+	height: auto;
+}
+
+#content_wrap h2.voice_title{
+	width: auto;
+	max-width: 90%;
+	font-size: 28px;
+}
+#content h2.voice_title{
+	text-align: center;
+	height: 54px;
+	width: 500px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 54px;
+	margin: 0 auto;
+	background-color: #669acc;
+	border-radius: 27px;
+	-moz-border-radius: 27px;
+	-webkit-border-radius: 27px;
+	-ms-border-radius:27px;
+	margin-bottom: 17px;
+}
+
+
+#content_wrap .inner_box01{
+	width: auto;
+	background-image: none;
+}
+#content_wrap .inner_box01 h2{
+	width: auto;
+	height: auto;
+	background-image: url(../../image/static/inner_box03_h2_titlebg_sp.jpg);
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	background-position: 0 bottom;
+	margin-bottom: 15px;
+}
+#content_wrap .inner_box01 h3{
+	padding-right: 3%;
+	line-height: 24px;
+	padding-top: 5px;
+	margin-left: 10px;
+	background-position: 0 3px;
+}
+#content_wrap .inner_box01 p{
+	padding-right: 5%;
+	margin-left: 40px;
+}
+
+#content_wrap .voice_box{
+	float: none !important;
+	width: auto;
+	height: auto;
+	margin-bottom:10px;
+	padding: 2%;
+}
+#content_wrap .voice_pic{
+	width: 16%;
+}
+#content_wrap .voice_text{
+	width: 81%;
+	padding-right: 1%;
+	line-height: 160%;
+}
+#content_wrap .voice_text2{
+	float: left;
+	padding-right: 0;
+	padding-left: 1%;
+}
+#content_wrap .voice_pic2{
+	float: right;
+	text-align: right;
+}
+#content_wrap .sp_mb{
+	margin-bottom: 17px;
+}
+
+#content_wrap .inner_box02{
+	width: auto;
+}
+#content_wrap .inner_box02_wrap{
+	margin: 0 3%;
+}
+#content_wrap .inner_box02 h2{
+	width: auto;
+	height: auto;
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 10px;
+	margin-right: 5px;
+	background-image: url(../../image/static/inner_box02_h2_titlebg_sp.jpg);
+	background-position: 0 bottom;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
+#content_wrap .inner_box02 .long_box{
+	display: none;
+}
+#content_wrap .inner_box02 .short_box{
+	float: left;
+	width: 48%;
+	height: auto;
+}
+#content_wrap .inner_box02 .middle_box{
+	float: left;
+	width: 48%;
+	height: auto;
+}
+#content_wrap .inner_box02 .short_box h3{
+	background-image: url(../../image/static/inner_box02_titlebg.png);
+	background-repeat: no-repeat;
+	width: auto;
+	height: 30px;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+#content_wrap .inner_box02 .middle_box h3{
+	background-image: url(../../image/static/inner_box02_titlebg.png);
+	background-repeat: no-repeat;
+	width: auto;
+	height: 30px;
+	margin-bottom: 0;
+	font-size: 20px;
+}
+#content_wrap .sp_mr{
+	margin-right: 4%;
+}
+#content_wrap .inner_box02 ul{
+	margin-top: 10px;
+	padding-left: 5%;
+	width: auto;
+	overflow: inherit;
+}
+#content_wrap .inner_box02 ul li{
+	width: auto;
+	float: none;
+	font-size: 12px;
+	height: 20px;
+	margin-bottom: 3px;
+	line-height: 100%;
+	background-image: url(../../image/static/circle_green.png);
+	padding-left: 15px;
+}
+#content_wrap .inner_box02 ul li.long_text{
+	width: auto;
+}
+#content_wrap .middle_box_img{
+	width: 35%;
+}
+
+#content_wrap .inner_box03{
+	width: auto;
+}
+#content_wrap .inner_box03 h2{
+	width: auto;
+	height: auto;
+	background-image: url(../../image/static/inner_box03_h2_titlebg_sp.jpg);
+	background-position: 0 bottom;
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#content_wrap .inner_box03 p.pic_box{
+	margin-left: 5%;
+	padding-right: 0;
+}
+#content_wrap .inner_box03 div.text_box{
+	width: auto;
+	padding: 0 3%;
+}
+#content_wrap .inner_box03 .pic_box{
+	width: 40%;
+}
+#content_wrap .inner_box03 .sp_mb{
+	margin-bottom: 20px;
+}
+
+#content_wrap .inner_box04{
+	width: auto;
+	margin-bottom: 25px;
+}
+#content_wrap .inner_box04 h2{
+	width: auto;
+	height: auto;
+	background-image: url(../../image/static/inner_box02_h2_titlebg_sp.jpg);
+	background-position: 0 bottom;
+	font-size: 30px;
+	line-height: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+#content_wrap .dvd_info{
+	margin: 0 3%;
+	margin-bottom: 20px;
+}
+#content_wrap .dvd_pic{
+	float: none;
+	width: 100%;
+	padding-left: 0;
+}
+#content_wrap .dvd_pic img{
+	width: 100%;
+}
+#content_wrap .price{
+	float: none;
+	padding: 0;
+	margin-bottom: 20px;
+	width: auto;
+}
+#content_wrap .price table{
+	width: 100%;
+	margin-left: 0;
+}
+#content_wrap .price table .table_left{
+	width: 35%;	
+}
+#content_wrap .price table .table_right{
+	width: 65%;
+}
+#content_wrap .price img{
+	width: 100%;
+}
+#content_wrap .dvd_info_right{
+	float: none;
+	padding-right: 0;
+	width: auto;
+}
+#content_wrap .dvd_info_right img{
+	width: 100%;
+}
+#content_wrap .shopping{
+	display: none;
+}
+#content_wrap .shopping_sp{
+	display: block;
+	text-align: center;
+	padding-bottom: 30px;
+	margin: 0 3%;
+}
+
+#content_wrap .inner_box04 h3{
+	background-position: 0 bottom;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+#content_wrap .detail_left{
+	width: auto;
+	float: none;
+	margin-bottom: 25px;
+}
+#content_wrap .detail_box{
+	padding-top:0px;
+}
+#content_wrap .detail_box table{
+	width: 100%;
+}
+#content_wrap .detail_box table th{
+	width: 30%;
+}
+#content_wrap .detail_box table td{
+	width: 70%;
+}
+#content_wrap .detail_right{
+	float: none;
+	width: auto;
+	margin-bottom: 25px;
+}
+#content_wrap .detail_right img{
+	width: 100%;
+}
+
+/*#page_top{
+	margin: 0 3%;
+}*/
+
+/*#footer{
+	width: auto;
+	background-color: #fefcf0;
+}
+#footer_wrap{
+	width: auto;
+	margin: 0 3%;
+}
+#footer_wrap ul{
+	float: none;
+	display: block;
+	margin-bottom: 15px;
+}
+#footer_wrap ul li{
+	display: block;
+	float: none;
+	border-bottom: 1px solid #fff;
+	border-right: none;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+}
+#footer_wrap ul li a{
+	display: block;
+	padding-left: 25px;
+	text-decoration: none;
+	background-color: #bcded0;
+	background-image: url(../../image/static/footer_arrow_sp.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#footer_wrap ul li a:hover{
+	color: #0e1bbb;
+	background-color: #cff7e7;
+}
+#footer_wrap .copyright{
+	display: block;
+	text-align: center;
+	float: none;
+	color: #333;
+}*/
+
+/* #teac_intro */
+
+
+#teac_intro .inner,
+#teac_intro .info .inner {
+	width: auto;
+	margin: 0 15px;
+}
+#teac_intro .point .box .txt,
+#teac_intro .point .box.type02 .txt,
+#teac_intro .point .box .img,
+#teac_intro .point .box.type02 .img{
+	float: none;
+	width: auto;
+}
+#teac_intro .interview .box01 .txt,
+#teac_intro .interview .box01 .img,
+#teac_intro .interview .box02 .img,
+#teac_intro .interview .box02 .txt,
+#teac_intro .interview .box03 .txt,
+#teac_intro .interview .box03 .img{
+	float: none;
+	width: auto;
+}
+#teac_intro .recommend .box .img,
+#teac_intro .recommend .box .txt{
+	float: none;
+	width: auto;
+}
+#teac_intro .video iframe{
+	width: auto;
+}
+#teac_intro .head_wrap{
+	padding-top: 0;
+	padding-bottom: 20px;
+	background: url(../../image/static/img/teac/presents.png) no-repeat right top;
+}
+#teac_intro h2{
+	font-size: 26px;
+	padding: 0 0 15px 0;
+	background :none;
+}
+#teac_intro h2 .ttl,
+#teac_intro h2 .img {
+	float: none;
+	width: auto;
+}
+#teac_intro h2 .small{
+	font-size: 18px;
+}
+#teac_intro .btn_cart {
+	margin: 15px;
+}
+#teac_intro .btn_cart a {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 3.0;
+}
+#teac_intro .btn_cart a .inr {
+	margin-right: 15px;
+	background-size: 10px auto;
+}
+#teac_intro .btn_cart img{
+	max-width: 40px;
+}
+
+#teac_intro .info .inner{
+	padding: 10px 15px;
+	width: auto;
+}
+#teac_intro .info .img{
+	float: none;
+	width: auto;
+	text-align: center;
+}
+#teac_intro .data_price {
+	padding: 5px 15px 0;
+	float: none;
+	width: auto;
+}
+#teac_intro .data_price .data01{
+	font-size: 40px;
+}
+#teac_intro .data_price .data02{
+	font-size: 17px;
+}
+#teac_intro .info .postage{
+	font-size: 26px;
+	padding: 15px 0;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+#teac_intro .info .postage .small,
+#teac_intro .info .postage .small .red,
+#teac_intro .info .delivery .ttl .small{
+	display: block;
+}
+#teac_intro .info .delivery_head{
+	font-size: 26px;
+	line-height: 1.4;
+}
+#teac_intro .info .delivery .ttl {
+	line-height: 1.6;
+}
+#teac_intro .info .delivery .ttl .small {
+	font-size: 16px;
+}
+#teac_intro .info .delivery .ttl,
+#teac_intro .info .delivery .img{
+	float: none;
+	width: auto;
+	text-align: left;
+}
+#teac_intro .info ul{
+	width: 260px;
+	margin: 0 auto;
+}
+#teac_intro .info ul li{
+	width: 50px;
+	font-size: 14px;
+	line-height: 1.2;
+	margin-right: 10px;
+	text-align: center;
+	padding: 15px;
+}
+#teac_intro .info ul li span{
+	display: block;
+	text-align: center;
+}
+#teac_intro .info ul li img{
+	margin: 0 0 10px;
+}
+#teac_intro .info .time_inr img{
+	text-align: center;
+}
+#teac_intro .info .time_inr img{
+	max-width: 80%;
+	text-align: center;
+}
+#teac_intro .info .time_inr img:first-child {
+	margin: 0 0 10px 0;
+}
+#teac_intro .memo span.small{
+	display: block;
+}
+#teac_intro .info .time_arw {
+	left: 46%;
+}
+
+#teac_intro .point{
+	margin: 45px 0 0;
+}
+#teac_intro .point h2{
+	background: none;
+	margin: 0 0 20px;
+}
+#teac_intro .point h3{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 25px;
+	margin-bottom: 10px;
+	line-height:1.0;
+	background-size: 20px auto;
+}
+#teac_intro .point .box{
+	padding: 0 0 20px;
+	margin: 0 0 20px;
+}
+#teac_intro .point .box .img,
+#teac_intro .point .box.type02 .img{
+	text-align: center;
+}
+
+#teac_intro .interview h2{
+	font-size: 24px;
+	background: none;
+}
+#teac_intro .interview h2 .small{
+	font-size: 18px;
+}
+#teac_intro .interview h3{
+	font-size: 22px;
+	margin: 20px 0;
+}
+#teac_intro .interview .img{
+	text-align :center;
+}
+#teac_intro .interview .box01{
+	margin-bottom: 20px;
+}
+
+#teac_intro .video{
+	margin: 30px auto;
+}
+#teac_intro .video iframe{
+	width: auto;
+	height: auto;
+	margin: 20px auto 0;
+}
+
+#teac_intro .voice {
+	padding: 15px;
+}
+#teac_intro .voice .voice_ttl {
+	font-size: 20px;
+	padding: 15px;
+	display: block;
+	margin: 0 auto 20px;
+}
+#teac_intro .voice .box_l,
+#teac_intro .voice .box_r {
+	float: none;
+	width: auto;
+}
+#teac_intro .voice .balloon{
+	background: none;
+	padding-bottom: 0;
+	margin: 0 0 13px;
+}
+#teac_intro .voice .balloon_inr{
+	width: auto;
+	padding: 8px 12px;
+}
+
+#teac_intro .recommend{
+	margin: 30px auto 0;
+}
+#teac_intro .recommend h2{
+	background: none;
+	margin: 0 0 10px;
+}
+#teac_intro .recommend .box .img{
+	text-align: center;
+}
+#teac_intro .recommend .writer{
+	padding-bottom: 20px;
+}
+
+#teac_intro .privilege h2{
+	background: none;
+	margin: 0 0 10px;
+}
+#teac_intro .privilege .box01 dl,
+#teac_intro .privilege .box01 dl.last{
+	float: none;
+	height: auto;
+	margin: 0 auto 15px;
+}
+#teac_intro .privilege .box01 dd{
+	padding: 20px 0 0;
+	height: auto;
+}
+#teac_intro .privilege .box01.type02 dl,
+#teac_intro .privilege .box01.type02 dd{
+	width: 240px;
+}
+#teac_intro .privilege .box02 .ttl{
+	margin: 10px 0 0;
+}
+#teac_intro .privilege .box02 .box_l,
+#teac_intro .privilege .box02 .box_r{
+	float: none;
+	width: auto;
+}
+}
+
+
+
+
+
+@media screen and (max-width:480px){
+
+/*#login_wrap a#new_entry{
+	font-size: 10px;
+	background-position: 0 2px;
+}
+*/
+#content_wrap h2.voice_title{
+	font-size: 20px;
+}
+#content_wrap .inner_box01 h2{
+	font-size: 24px;
+	line-height: 28px;
+}
+#content_wrap .inner_box01 h3{
+	font-size: 20px;
+	line-height: 22px;
+}
+
+#content_wrap .inner_box02 h2{
+	font-size: 24px;
+	line-height: 28px;
+}
+#content_wrap .inner_box03 h2{
+	font-size: 24px;
+	line-height: 28px;
+}
+#content_wrap .inner_box04 h2{
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom:15px;
+}
+#content_wrap .price_txt01{
+	padding-right: 10px;
+}
+
+#content_wrap .price table .table_left{
+	width: 40%;
+}
+#content_wrap .price table .table_right{
+	width: 60%;
+}
+
+#content_wrap .inner_box02 ul li{
+	font-size: 10px;
+}
+
+
+}
+
+@media screen and (max-width:400px){
+
+/*#login_wrap{
+	width: 27%;
+	margin-top: 8%;
+}
+#login_wrap #new_entry_wrap{
+	padding-left: 0;
+}
+*/
+#content_wrap h2.voice_title{
+	font-size: 18px;
+}
+
+#content_wrap .inner_box01 h2{
+	font-size: 20px;
+	line-height: 24px;
+}
+#content_wrap .inner_box02 h2{
+	font-size: 20px;
+	line-height: 24px;
+}
+#content_wrap .inner_box03 h2{
+	font-size: 20px;
+	line-height: 24px;
+}
+#content_wrap .inner_box04 h2{
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+#content_wrap .price_txt02{
+	font-size: 40px;
+}
+
+#content_wrap .price table .table_left{
+	width: 50%;
+}
+#content_wrap .price table .table_right{
+	width: 50%;
+}
+
+}
+
+
+@media screen and (max-width:320px){
+
+
+#content_wrap h2.voice_title{
+	font-size: 18px;
+}
+#content_wrap .inner_box01 h2{
+	font-size: 18px;
+	line-height: 22px;
+}
+#content_wrap .inner_box01 h3{
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#content_wrap .inner_box02 h2{
+	font-size: 18px;
+	line-height: 22px;
+}
+#content_wrap .inner_box03 h2{
+	font-size: 18px;
+	line-height: 22px;
+}
+#content_wrap .inner_box04 h2{
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom:15px;
+}
+#content_wrap .price_txt01{
+	padding-right: 10px;
+}
+
+
+}
+
+
+
+/*----------------------------*/
+/*リニューアル修正分*/
+/*----------------------------*/
+#container {
+	overflow: hidden;
+         z-index: 2!important;
+}
+
+#content_wrap {
+	color: #333;
+	overflow: visible;
+	font-size: 14px;
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	font-weight: normal;
+}
+
+#content_wrap a{
+	color: #0e1bbb;
+	text-decoration: underline;
+}
+#content_wrap a:hover{
+	color: #5e69ee;
+}
+
+#content_wrap #teac_intro .btn_cart a:hover .inr {
+	color:#fff;
+}
+
+#content_wrap img.hover:hover{
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+}
+#content_wrap #teac_intro .data_price .data01{line-height: 1.1;}
+#content_wrap #teac_intro .data_price {box-sizing: content-box;}
+
+.goods_detail .tel img {
+    margin-left: -120px;
+}
+
+#teac_intro .info .inner {width: auto;}
+#teac_intro .btn_cart a {text-decoration: none;}
+
+#teac_intro .info .time_arw {top: -5px;}
+
+@media screen and (max-width: 767px) {
+  #content_wrap img  { width:auto;max-width:100%;}
+  #header.header {border-bottom: 1px solid #e6e6e6;}
+  #content {width: 100%;}
+  #teac_intro .info ul li {box-sizing: content-box;}
+  #teac_intro .data_price {padding: 5px 15px 0;}
+  #teac_intro .data_price .small02 {font-size: 20px;}
+  #content_wrap #teac_intro .data_price {box-sizing: border-box;}
+}
+
+@media screen and (max-width: 640px) {
+  #content_wrap img {max-width: 100%;}
+}
+
+/*----------------------------*/
+/*動画*/
+/*----------------------------*/
+#teac_intro h2.mincho{font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+#teac_intro h2.mincho *{font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+#teac_intro h2.first-ttl02{background-image:-moz-linear-gradient(90deg,#e65900 0,#f06f00 100%);background-image:-webkit-linear-gradient(90deg,#e65900 0,#f06f00 100%);background-image:-ms-linear-gradient(90deg,#e65900 0,#f06f00 100%);text-align:center;text-shadow:1.36px 2.67px 5px rgba(0,0,0,.52);color:#fff;padding:12px 0;font-size:58px;margin-bottom:30px;font-weight:normal;}
+.first-movie {
+    width: 930px;
+    height: 523px;
+    margin: 0 auto 28px;
+}
+.first-movie .youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.first-movie .youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+@media screen and (max-width: 640px) {
+	#teac_intro h2.first-ttl02{background-image:-moz-linear-gradient(90deg,#e65900 0,#f06f00 100%);background-image:-webkit-linear-gradient(90deg,#e65900 0,#f06f00 100%);background-image:-ms-linear-gradient(90deg,#e65900 0,#f06f00 100%);text-align:center;text-shadow:1.36px 2.67px 5px rgba(0,0,0,.52);color:#fff;padding:8px 0;font-size:28px;margin-bottom:30px}
+	.first-movie{width:100%;height:auto;margin:0 auto 28px;padding-left:15px;padding-right: 15px;}
+}
+
+	
+
+
+
+
+
+
+
+

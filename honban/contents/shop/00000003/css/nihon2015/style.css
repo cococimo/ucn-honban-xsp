@@ -1,4 +1,5 @@
 /* CSS Document */
+@charset "Shift_JIS";
 
 /*clearfix*/
 #content_wrap .clearfix:after{
@@ -21,30 +22,30 @@
 }  
 
 
-body #content_wrap {
+/*body{
 	border-top: 4px solid #73bdac;
 	color: #333;
 	overflow: visible;
-	font-size: 14px;
-	font-family:"繝｡繧､繝ｪ繧ｪ", Meiryo, Osaka, "?ｭ?ｳ ?ｰ繧ｴ繧ｷ繝?け", "MS PGothic", "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
+	font-size: 16px;
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif; 
 
 }
 
-#content_wrap a{
+a{
 	color: #0e1bbb;
 	text-decoration: underline;
 }
-#content_wrap a:hover{
+a:hover{
 	color: #5e69ee;
 }
 
-#content_wrap img.hover:hover{
+img.hover:hover{
 	opacity:0.8;
 	filter: alpha(opacity=80);
 	-ms-filter: "alpha(opacity=80)";
 	-moz-opacity:0.8;
 	-khtml-opacity: 0.8;
-}
+}*/
 
 #content_wrap .sp_on{
 	display: none !important;
@@ -56,7 +57,6 @@ body #content_wrap {
 	text-align: center;
 	border-bottom: 1px solid #cecdc9;
 	padding-bottom: 5px;
-	*height:100px !important;
 }
 #header_wrap{
 	width: 960px;
@@ -80,20 +80,13 @@ body #content_wrap {
 #header_tel a{
 	cursor: default;
 }
-/*20160201*/
-/*.header_list_01{
-	*margin-top:-45px !important
-}
-#content_wrap .header_list_02{
-	*margin-top:-75px !important
-}
 #login_wrap{
 	float: right;
 	margin-top: 15px;
 	font-size: 15px;
 }
 #login_wrap a#new_entry{
-	background-image: url(../../image/static/right_arrow.jpg);
+	background-image: url(../../image/static/img/nihon2015/right_arrow.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 5px;
 	margin: 10px 0 0 20px;
@@ -122,32 +115,38 @@ body #content_wrap {
 	margin-bottom: 36px !important;
 	padding-bottom: 10px;
 	position: relative;
-	background-image: url(../../image/static/inner_box01_pic.png);
+	background-image: url(../../image/static/img/nihon2015/inner_box01_pic.png);
 	background-repeat: no-repeat;
-	background-position: 650px 90px;
+	background-position: 0px 100px;
 }
 #content_wrap .inner_box01 h2{
-	background-image: url(../../image/static/inner_box03_h2_titlebg.jpg);
+	background-image: url(../../image/static/img/nihon2015/inner_box01_h2_titlebg.jpg);
 	background-repeat: no-repeat;
 	height: 62px;
 	font-size: 37px;
 	font-weight: bold;
-	color: #4D9801;
+	color: #008282;
 	padding: 15px 0 0 30px;
 	margin-left: 5px;
 	margin-bottom: 25px;
+	border-left:3px solid #fff;
+	-webkit-text-shadow: #999 0px 2px 5px;
+	-moz-text-shadow: #999 0px 2px 5px;
+	text-shadow: #999 0px 2px 5px;
+
 }
 #content_wrap .inner_box01 h3{
-	background-image: url(../../image/static/inner_box01_h3_bg.jpg);
+	background-image: url(../../image/static/img/nihon2015/inner_box01_h3_bg.jpg);
 	background-repeat: no-repeat;
-	margin: 0 0 10px 15px;
+	margin: 0 1em 10px 320px;
 	padding-left: 30px;
-	color: #006666;
+	color: #007D7D;
 	font-size: 22px;
 	font-weight: bold;
 }
 #content_wrap .inner_box01 p{
-	margin-left: 45px;
+	margin-left: 350px;
+	margin-right: 1.5em;
 	margin-bottom: 20px;
 }
 #content_wrap .inner_box01_pic{
@@ -156,15 +155,163 @@ body #content_wrap {
 	right: 2px;;
 }
 
-#content h2.voice_title{
+
+
+#content_wrap .inner_box02{
+	width: 960px;
+	box-shadow: 0 0 5px #aaa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-ms-border-radius:5px;
+	background-color: #fff;
+	margin-bottom: 40px !important;
+}
+#content_wrap .inner_box02 h2{
+	background-image: url(../../image/static/img/nihon2015/inner_box02_h2_titlebg.jpg);
+	background-repeat: no-repeat;
+	height: 62px;
+	font-size: 37px;
+	font-weight: bold;
+	color: #663333;
+	padding: 15px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	-webkit-text-shadow: #999 0px 2px 5px;
+	-moz-text-shadow: #999 0px 2px 5px;
+	text-shadow: #999 0px 2px 5px;
+}
+
+
+#content_wrap .inner_box02_wrap{
+	overflow: hidden;
+	margin: 0 25px;
+}
+#content_wrap .inner_box02 .box_wrap{
+	overflow: hidden;
+	margin: 0 25px;
+	padding-bottom: 15px;
+}
+#content_wrap .inner_box02 .short_box{
+	width: 100%;
+	margin-bottom: 15px;
+	background-color: #FAF8E4;
+	position:relative;
+	clear:both;
+	height:195px;
+}
+
+
+@media screen and (min-width:641px){
+#content_wrap .inner_box02 .boxlong{
+	height:300px;
+}
+
+
+#content_wrap .inner_box02 .short_box h3{
+	background-image: url(../../image/static/img/nihon2015/inner_box02_titlebg.png);
+	background-repeat:repeat-y;
+	font-size: 22px;
+	font-weight: bold;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+#content_wrap .inner_box02 .short_box h3 span{
+	width: 104px;
+	height:198px;
+	box-sizing:border-box;
+	padding-left:20px;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight:bold;
+}
+
+#content_wrap .inner_box02 .boxlong h3 span{
+	height:300px;
+}
+
+
+
+#content_wrap .inner_box02 ul{
+	position:absolute;
+	top:0px;
+	left:115px;
+	padding-left: 5px;
+	overflow: hidden;
+	margin-top: 20px;
+	list-style: none;
+}
+#content_wrap .inner_box02 ul li{
+	float: left;
+	width:195px;
+	margin: 0 0 5px;
+	text-align:center;
+}
+
+#content_wrap .inner_box02 ul li img{
+	display:block;
+	margin: 0 auto 10px;
+	width:178px;
+}
+#content_wrap .inner_box02 ul li.long_text{
+	font-size:14px;
+}
+
+#content_wrap .inner_box02 .long_box{
+	width: 765px;
+	margin-left:12px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background: url(../../image/static/img/nihon2015/inner_box02_long_box_bg.jpg)  250px 3px #fff;
+	background-repeat: no-repeat;
+	box-sizing:border-box;
+	position:absolute;
+	top:200px;
+	left:115px;
+	box-shadow: 0 0 5px #ccc;
+}
+
+#content_wrap .long_box p.title{
+	font-weight: bold;
+	margin:10px 0 0 20px;
+	font-size: 17px;
+	float:left;
+}
+#content_wrap .long_box p.title span{
+	color: #83AE00;
+	font-size: 19px;
+	display:block;
+	line-height:200%;
+}
+
+#content_wrap .long_box p.commnet{
+margin-left:300px;
+padding:20px 20px 20px 0;
+}
+
+}
+
+
+#content_wrap h2.voice_title{
 	text-align: center;
 	height: 54px;
-	width: 500px;
+	width: 100%;
 	font-size: 30px;
 	color: #fff;
 	line-height: 54px;
+	margin: 1.5em auto 0;
+	background:url(../../image/static/img/nihon2015/voice_title_bg.png) top center no-repeat;
+}
+
+#content_wrap h2.voice_title span{
+	display:block;
 	margin: 0 auto;
-	background-color: #669acc;
+	width: 500px;
+	text-align:center;
+	background-color: #4C937E;
 	border-radius: 27px;
 	-moz-border-radius: 27px;
 	-webkit-border-radius: 27px;
@@ -177,31 +324,71 @@ body #content_wrap {
 #content_wrap .voice_box{
 	float: left;
 	width: 438px;
-	height: 105px;
+	height: 120px;
 	padding: 15px 20px 0px 10px;
-	background-color: #f0fcfc;
 	box-shadow: 0 0 5px #aaa;
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-ms-border-radius:5px;
 	overflow: hidden;
+	margin-top:1em;
 }
+#content_wrap .voice_bg1{
+	background-color: #F0FBFB;
+}
+#content_wrap .voice_bg2{
+	background-color: #E6F1F9;
+}
+#content_wrap .voice_bg3{
+	background-color: #FDF2FC;
+}
+#content_wrap .voice_bg4{
+	background-color: #F0FCEF;
+}
+
 #content_wrap .voice_pic{
 	float: left;
+	margin-right:5px;
 }
-#content_wrap .voice_text{
-	float: right;
-	width: 360px;
-	font-size: 14px;
-	line-height: 160%;
-}
+
 #content_wrap .voice_text span{
-	font-size: 10px;
+	font-size: 12px;
+	color:#CC6666;
 }
 
-#content_wrap .inner_box02{
+
+
+#content_wrap .voice_anq{
+margin:25px 0 0.8em;
+}
+#content_wrap .anq_title{
+color:#2F7664;
+font-size:26px;
+font-weight:bold;
+background:url(../../image/static/img/nihon2015/icon_voice.png) left top no-repeat;
+padding-left:40px;
+margin-bottom:10px;
+}
+#content_wrap .anq_pic img{
+height:438px;
+float:left;
+margin-right:11px;
+width: auto;
+}
+
+#content_wrap .anq_pic:last-child{
+margin-right:0;}
+
+#content_wrap .anq_n{
+clear:left;
+text-align:right;
+font-size:70%;
+padding:5px 15px 0;
+}
+
+#content_wrap .inner_nihon_about{
 	width: 960px;
 	box-shadow: 0 0 5px #aaa;
 	border-radius: 5px;
@@ -209,166 +396,39 @@ body #content_wrap {
 	-webkit-border-radius: 5px;
 	-ms-border-radius:5px;
 	background-color: #fff;
-	margin-bottom: 17px !important;
-}
-#content_wrap .inner_box02 h2{
-	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
-	background-repeat: no-repeat;
-	height: 62px;
-	font-size: 37px;
-	font-weight: bold;
-	color: #993300;
-	padding: 15px 0 0 30px;
-	margin-left: 5px;
-	margin-bottom: 15px;
-}
-#content_wrap .inner_box02_wrap{
-	overflow: hidden;
-	margin: 0 25px;
-}
-#content_wrap .inner_box02 .short_box h3{
-	background-image: url(../../image/static/inner_box02_titlebg.png);
-	background-repeat: no-repeat;
-	width: 260px;
-	height: 30px;
-	font-size: 22px;
-	font-weight: bold;
-	padding-left: 20px;
-}
-#content_wrap .inner_box02 .box_wrap{
-	overflow: hidden;
-	margin: 0 25px;
-	padding-bottom: 15px;
-}
-#content_wrap .inner_box02 .short_box{
-	width: 280px;
-	height: 200px;
-	margin-bottom: 20px;
-	float: left;
-	background-color: #f7f7ef;
-}
-#content_wrap .inner_box02 ul{
-	padding-left: 20px;
-	overflow: hidden;
-	margin-top: 20px;
-	list-style: none;
-}
-#content_wrap .inner_box02 ul li{
-	margin-bottom: 5px;
-	float: left;
-	width: 125px;
-	padding-left: 20px;
-	background-image: url(../../image/static/circle_green.jpg);
-	background-repeat: no-repeat;
-	background-position: 0 1px;
-}
-#content_wrap .inner_box02 ul li.long_text{
-	width: 200px;
-}
-#content_wrap .inner_box02 .long_box{
-	width: 624px;
-	height: 200px;
-	margin-bottom: 20px;
-	float: right;
-	overflow: hidden;
-	background-image: url(../../image/static/inner_box02_long_box_bg.jpg);
-	background-repeat: no-repeat;
-}
-#content_wrap .long_box_pic{
-	padding-left: 20px;
-	float: left;
-	width: 260px;
-}
-#content_wrap .long_box_pic2{
-	float: right;
-	width: 260px;
-	padding-left: 0;
-}
-#content_wrap .long_box_text{
-	float: right;
-	width: 290px;
-	padding-right: 30px;
-	margin-top: 40px;
-}
-#content_wrap .long_box_text2{
-	float: left;
-	width: 290px;
-	padding-left: 30px;
-	margin-top: 40px;
-}
-#content_wrap .long_box_text p.title{
-	font-weight: bold;
-	margin-bottom: 20px;
-	font-size: 16px;
-}
-#content_wrap .long_box_text p.title span{
-	color: #D07047;
-	font-size: 18px;
-}
-#content_wrap .inner_box02 .middle_box{
-	width: 445px;
-	height: 120px;
-	margin-bottom: 20px;
-	background-color: #f7f7ef;
-	position: relative;
-}
-#content_wrap .inner_box02 .middle_box h3{
-	background-image: url(../../image/static/inner_box02_titlebg.png);
-	background-repeat: no-repeat;
-	width: 425px;
-	padding-left: 20px;
-	font-size: 22px;
-	font-weight: bold;
-	height: 30px;
-}
-#content_wrap .middle_box_img{
-	float: right;
-	margin-top: 5px;
-	padding-right: 5px;
-}
-
-#content_wrap .inner_box03{
-	width: 960px;
-	box-shadow: 0 0 5px #aaa;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-ms-border-radius:5px;
-	background-color: #fff;
-	margin-bottom: 36px;
+	margin-top: 50px;
+	margin-bottom: 40px;
 	padding-bottom: 10px;
 	overflow: hidden;
 }
-#content_wrap .inner_box03 h2{
-	background-image: url(../../image/static/inner_box03_h2_titlebg.jpg);
+#content_wrap .inner_nihon_about h2{
+	background-image: url(../../image/static/img/nihon2015/inner_box03_h2_titlebg.jpg);
 	background-repeat: no-repeat;
 	height: 62px;
 	font-size: 37px;
 	font-weight: bold;
-	color: #4D9801;
+	color: #336666;
 	padding: 15px 0 0 30px;
 	margin-left: 5px;
 	margin-bottom: 10px;
+	-webkit-text-shadow: #999 0px 2px 5px;
+	-moz-text-shadow: #999 0px 2px 5px;
+	text-shadow: #999 0px 2px 5px;
 }
-#content_wrap .inner_box03 span{
-	text-align: right;
-	display: block;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	font-size: 10px;
-}
-#content_wrap .inner_box03 div.text_box{
+#content_wrap .inner_nihon_about div.text_box{
 	float: left;
 	padding-left: 30px;
 	line-height: 180%;
 }
-#content_wrap .inner_box03 p.pic_box{
+#content_wrap .inner_nihon_about p.pic_box{
 	float: right;
 	padding-right: 20px;
 	margin-left: 30px;
 }
 
-#content_wrap .inner_box04{
+
+/*inner_orderbox*/
+#content_wrap .inner_orderbox{
 	width: 960px;
 	box-shadow: 0 0 5px #aaa;
 	border-radius: 5px;
@@ -376,25 +436,44 @@ body #content_wrap {
 	-webkit-border-radius: 5px;
 	-ms-border-radius:5px;
 	background-color: #fff;
-	margin-bottom: 25px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	margin: 0 auto 36px;
 }
-#content_wrap .inner_box04 h2{
+
+#content_wrap .inner_orderbox h2{
 	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
 	background-repeat: no-repeat;
 	height: 62px;
-	font-size: 34px;
+	font-size: 37px;
 	font-weight: bold;
 	padding: 15px 0 0 30px;
 	margin-left: 5px;
 	margin-bottom: 25px;
+	-webkit-text-shadow: #999 0px 2px 5px;
+	-moz-text-shadow: #999 0px 2px 5px;
+	text-shadow: #999 0px 2px 5px;
 }
-#content_wrap .dvd_info{
-	overflow: hidden;
-	margin-bottom: 15px;
+
+#content_wrap .inner_orderbox div.text_box{
+	float: left;
+	padding-left: 30px;
+	line-height: 180%;
 }
+#content_wrap .inner_orderbox p.pic_box{
+	float: right;
+	padding-right: 20px;
+	margin-left: 30px;
+}
+
+
+
 #content_wrap .dvd_pic{
 	float: left;
 	padding-left: 25px;
+}
+#content_wrap .dvd_pic img{
+	width: 200px;
 }
 #content_wrap .price{
 	padding-left: 25px;
@@ -406,16 +485,17 @@ body #content_wrap {
 }
 #content_wrap .price_txt01{
 	padding-right: 20px;
-	color: #cc0004;
-	font-size: 12px;
+	color:red;
 }
 #content_wrap .price_txt02{
 	font-size: 44px;
-	color: #cc0004;
+	color:red;
+	font-weight:bold;
 }
 #content_wrap .price_txt03{
 	font-size: 22px;
-	color: #cc0004;
+	color:red;
+	font-weight:bold;
 }
 #content_wrap .price_txt04{
 	font-size: 20px;
@@ -438,6 +518,17 @@ body #content_wrap {
 	width: 160px;
 	font-weight: bold;
 }
+#content_wrap .price table .price2{
+color:red;
+font-size:16pt;
+}
+
+#content_wrap .price table .price2 span{
+font-size:26pt!important; 
+font-weight:bold;
+display:inline;}
+
+
 #content_wrap .dvd_info_right{
 	float: right;
 	padding-right: 30px;
@@ -456,8 +547,8 @@ body #content_wrap {
 #content_wrap .shopping_sp{
 	display: none;
 }
-#content_wrap .inner_box04 h3{
-	background-image: url(../../image/static/inner_box02_h2_titlebg.jpg);
+#content_wrap .inner_furokubox h3{
+	background-image: url(../../image/static/img/nihon2015/inner_box02_h2_titlebg.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: 40px;
@@ -467,12 +558,26 @@ body #content_wrap {
 	margin-left: 5px;
 	margin-bottom: 10px;
 }
+
+
+h3.detail_title{
+	background: url(../../image/static/inner_box02_h2_titlebg.jpg) left bottom;
+	background-repeat: no-repeat;
+	height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 5px 0 0 30px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
 #content_wrap .detail_box{
 	overflow: hidden;
 	margin-bottom: 25px;
 	padding: 0 25px;
 	padding-top:10px;
 }
+
 #content_wrap .detail_box table{
 	font-size: 16px;
 	border-top: 1px solid #d5cebc;
@@ -525,16 +630,18 @@ body #content_wrap {
 	font-size: 18px;
 }
 
-/*#page_top{
+#page_top{
+	width:960px;
+	margin:0 auto;
 	text-align: right;
 	padding-bottom: 10px;
 }
 #page_top a{
-	background-image: url(../../image/static/page_top_icon.png);
+	background-image: url(../../image/static/img/nihon2015/page_top_icon.png);
 	background-repeat: no-repeat;
 	background-position: 0 5px;
 	padding-left: 20px;
-}*/
+}
 
 /*#footer_temp{
 	background-color: #bcded0;
@@ -552,7 +659,7 @@ body #content_wrap {
 #footer_wrap ul li{
 	display: inline;
 	float: left;
-	background-image: url(../../image/static/footer_arrow.jpg);
+	background-image: url(../../image/static/img/nihon2015/footer_arrow.jpg);
 	background-repeat: no-repeat;
 	font-size: 12px;
 	line-height: 12px;
@@ -572,13 +679,13 @@ body #content_wrap {
 }
 */
 
-/*繧ｹ繝槭?逕ｨ*/
+/*スマホ用*/
 
 @media screen and (max-width:640px){
 
-#content_wrap {
+/*body{
 	min-width: 100%;
-}
+}*/
 
 #content_wrap .sp_margin{
 	margin-left: 3%;
@@ -591,11 +698,12 @@ body #content_wrap {
 	display: block !important;
 }
 
-/*#header{
+#header{
 	width: 100%;
 	min-width: 100%;
+	margin-bottom: 2%;
 }
-#header_wrap{
+/*#header_wrap{
 	width: 96%;
 	padding: 0 2%;
 }
@@ -603,9 +711,9 @@ body #content_wrap {
 	width: 65%;
 	margin-right: 5%;
 }
-#header_wrap #header_logo{
-	margin-right: 35%;
-}
+#header_wrap #header_logo{*/
+	/*margin-right: 35%;*/
+/*}
 #header_left img{
 	max-width: 100%;
 	height: auto;
@@ -642,7 +750,7 @@ body #content_wrap {
 	width: 100%;
 }
 #content_wrap img{
-	max-width: 100% !important;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -651,49 +759,67 @@ body #content_wrap {
 	max-width: 90%;
 	font-size: 28px;
 }
-#content h2.voice_title{
+
+#content_wrap h2.voice_title{
 	text-align: center;
-	height: 54px;
-	width: 500px;
+	height: auto;
+	width: 100%;
 	font-size: 30px;
 	color: #fff;
-	line-height: 54px;
+	line-height: 110%;
 	margin: 0 auto;
-	background-color: #669acc;
+	background:none;
+}
+
+#content_wrap h2.voice_title span{
+	display:block;
+	margin: 0 auto;
+	width: 100%;
+	text-align:center;
+	background-color: #4C937E;
 	border-radius: 27px;
 	-moz-border-radius: 27px;
 	-webkit-border-radius: 27px;
 	-ms-border-radius:27px;
 	margin-bottom: 17px;
+	line-height:110%;
+	padding:10px 0;
 }
-
 
 #content_wrap .inner_box01{
 	width: auto;
 	background-image: none;
+	margin-bottom:1em!important;
 }
+
+#content_wrap .mb40{
+	margin-bottom:1em!important;
+}
+
 #content_wrap .inner_box01 h2{
 	width: auto;
 	height: auto;
-	background-image: url(../../image/static/inner_box03_h2_titlebg_sp.jpg);
+	background-image: url(../../image/static/img/nihon2015/inner_box01_h2_titlebg.jpg) ;
 	font-size: 30px;
 	line-height: 32px;
-	padding-top: 10px;
+	padding: 10px 10px 0 10px;
 	padding-bottom: 10px;
 	margin-right: 5px;
 	background-position: 0 bottom;
 	margin-bottom: 15px;
 }
 #content_wrap .inner_box01 h3{
-	padding-right: 3%;
+	padding-right: 0;
 	line-height: 24px;
 	padding-top: 5px;
 	margin-left: 10px;
+	mrgin-right:0;
 	background-position: 0 3px;
 }
 #content_wrap .inner_box01 p{
-	padding-right: 5%;
+	padding-right: 0;
 	margin-left: 40px;
+	margin-right: 10px;
 }
 
 #content_wrap .voice_box{
@@ -704,28 +830,45 @@ body #content_wrap {
 	padding: 2%;
 }
 #content_wrap .voice_pic{
-	width: 16%;
+	width: 20%;
+}
+
+#content_wrap .voice_pic2{
+float:right;
+margin-right:0;
 }
 #content_wrap .voice_text{
-	width: 81%;
+	/*width: 81%;*/
 	padding-right: 1%;
 	line-height: 160%;
 }
 #content_wrap .voice_text2{
-	float: left;
+	/*float: left;*/
 	padding-right: 0;
 	padding-left: 1%;
 }
-#content_wrap .voice_pic2{
-	float: right;
-	text-align: right;
+
+
+#content_wrap .anq_title{
+color:#2F7664;
+font-size:20px;
+font-weight:bold;
+background:url(../../image/static/img/nihon2015/icon_voice.png) left top no-repeat;
+padding-left:40px;
+margin-bottom:10px;
 }
+#content_wrap .anq_pic img{
+margin-bottom:10px;
+}
+
 #content_wrap .sp_mb{
 	margin-bottom: 17px;
 }
 
 #content_wrap .inner_box02{
 	width: auto;
+	margin-bottom:1em!important;
+
 }
 #content_wrap .inner_box02_wrap{
 	margin: 0 3%;
@@ -735,75 +878,138 @@ body #content_wrap {
 	height: auto;
 	font-size: 30px;
 	line-height: 32px;
-	padding-top: 10px;
+	padding: 10px 0 0 10px;
 	margin-right: 5px;
-	background-image: url(../../image/static/inner_box02_h2_titlebg_sp.jpg);
 	background-position: 0 bottom;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 }
-#content_wrap .inner_box02 .long_box{
-	display: none;
-}
-#content_wrap .inner_box02 .short_box{
-	float: left;
-	width: 48%;
-	height: auto;
-}
-#content_wrap .inner_box02 .middle_box{
-	float: left;
-	width: 48%;
-	height: auto;
-}
-#content_wrap .inner_box02 .short_box h3{
-	background-image: url(../../image/static/inner_box02_titlebg.png);
-	background-repeat: no-repeat;
-	width: auto;
-	height: 30px;
-	margin-bottom: 0;
-	font-size: 20px;
-}
-#content_wrap .inner_box02 .middle_box h3{
-	background-image: url(../../image/static/inner_box02_titlebg.png);
-	background-repeat: no-repeat;
-	width: auto;
-	height: 30px;
-	margin-bottom: 0;
-	font-size: 20px;
-}
+
 #content_wrap .sp_mr{
 	margin-right: 4%;
 }
-#content_wrap .inner_box02 ul{
-	margin-top: 10px;
-	padding-left: 5%;
-	width: auto;
-	overflow: inherit;
-}
-#content_wrap .inner_box02 ul li{
-	width: auto;
-	float: none;
-	font-size: 12px;
-	height: 20px;
-	margin-bottom: 3px;
-	line-height: 100%;
-	background-image: url(../../image/static/circle_green.png);
-	padding-left: 15px;
-}
-#content_wrap .inner_box02 ul li.long_text{
-	width: auto;
-}
-#content_wrap .middle_box_img{
-	width: 35%;
+
+
+#content_wrap .inner_box02 .short_box{
+	width: 100%;
+height:auto;
+	margin-bottom: 20px;
+	background-color: #FAF8E4;
+	position:relative;
+	clear:both;
 }
 
-#content_wrap .inner_box03{
-	width: auto;
+
+#content_wrap .inner_box02 .short_box h3{
+	background-image: url(../../image/static/img/nihon2015/inner_box02_titlebg.png);
+	background-repeat:repeat-y;
+	font-size: 22px;
+	font-weight: bold;
+	text-align:center;
+
 }
-#content_wrap .inner_box03 h2{
+#content_wrap .inner_box02 .short_box h3 span{
+	width: 100%;
+	height:40px;
+	box-sizing:border-box;
+	padding-left:20px;
+	font-weight:bold;
+}
+
+
+
+#content_wrap .inner_box02 ul{
+
+	padding-left: 10px;
+	overflow: hidden;
+	margin-top: 20px;
+	list-style: none;
+}
+#content_wrap .inner_box02 ul li{
+	float: left;
+	width:49%;
+	margin: 0 0 5px;
+	text-align:center;
+}
+
+#content_wrap .inner_box02 ul li:nth-of-type(odd){
+	clear:left;
+	float: left;
+}
+
+#content_wrap .inner_box02 ul li img{
+	display:block;
+	margin: 0 auto 10px;
+	width:96%;
+}
+
+#content_wrap .inner_box02 .long_box{
+	width: auto;
+	margin:3% 3% 1em ;
+	overflow: hidden;
+	background: #fff;
+	background-repeat: no-repeat;
+	box-sizing:border-box;
+	box-shadow: 0 0 5px #ccc;
+}
+
+#content_wrap .long_box p.title{
+	font-weight: bold;
+	padding:10px;
+	font-size: 17px;
+}
+#content_wrap .long_box p.title span{
+	color: #83AE00;
+	font-size: 19px;
+	display:block;
+	line-height:170%;
+}
+
+#content_wrap .long_box p.commnet{
+	padding:10px;
+}
+
+
+
+#content_wrap .inner_nihon_about{
+	width: auto;
+	margin-top: 0;
+	margin-bottom:2em;
+}
+#content_wrap .inner_nihon_about h2{
 	width: auto;
 	height: auto;
-	background-image: url(../../image/static/inner_box03_h2_titlebg_sp.jpg);
+	background-position: 0 bottom;
+	font-size: 30px;
+	line-height: 32px;
+	padding: 10px 0 0 10px;
+	padding-bottom: 10px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#content_wrap .inner_nihon_about p.pic_box{
+	margin-left: 5%;
+	padding-right: 0;
+}
+#content_wrap .inner_nihon_about div.text_box{
+	width: auto;
+	padding: 0 3%;
+}
+#content_wrap .inner_nihon_about .pic_box{
+	width: 40%;
+}
+#content_wrap .inner_nihon_about .sp_mb{
+	margin-bottom: 20px;
+}
+
+
+#content_wrap .inner_orderbox{
+	width: auto;
+}
+#content_wrap .inner_orderbox h2{
+	width: auto;
+	height: auto;
+	background-image: url(../../image/static/inner_box02_h2_titlebg_sp.jpg);
 	background-position: 0 bottom;
 	font-size: 30px;
 	line-height: 32px;
@@ -812,37 +1018,22 @@ body #content_wrap {
 	margin-right: 5px;
 	margin-bottom: 10px;
 }
-#content_wrap .inner_box03 p.pic_box{
+#content_wrap .inner_orderbox p.pic_box{
 	margin-left: 5%;
 	padding-right: 0;
 }
-#content_wrap .inner_box03 div.text_box{
+#content_wrap .inner_orderbox div.text_box{
 	width: auto;
 	padding: 0 3%;
 }
-#content_wrap .inner_box03 .pic_box{
+#content_wrap .inner_orderbox .pic_box{
 	width: 40%;
 }
-#content_wrap .inner_box03 .sp_mb{
+#content_wrap .inner_orderbox .sp_mb{
 	margin-bottom: 20px;
 }
 
-#content_wrap .inner_box04{
-	width: auto;
-	margin-bottom: 25px;
-}
-#content_wrap .inner_box04 h2{
-	width: auto;
-	height: auto;
-	background-image: url(../../image/static/inner_box02_h2_titlebg_sp.jpg);
-	background-position: 0 bottom;
-	font-size: 30px;
-	line-height: 32px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-right: 5px;
-	margin-bottom: 20px;
-}
+
 #content_wrap .dvd_info{
 	margin: 0 3%;
 	margin-bottom: 20px;
@@ -892,7 +1083,11 @@ body #content_wrap {
 	margin: 0 3%;
 }
 
-#content_wrap .inner_box04 h3{
+#content_wrap .shopping_sp img{
+width:100%;
+}
+
+#content_wrap .inner_furokubox h3{
 	background-position: 0 bottom;
 	margin-right: 5px;
 	margin-bottom: 20px;
@@ -923,8 +1118,8 @@ body #content_wrap {
 #content_wrap .detail_right img{
 	width: 100%;
 }
-
-/*#page_top{
+/*
+#page_top{
 	margin: 0 3%;
 }
 
@@ -971,11 +1166,13 @@ body #content_wrap {
 	float: none;
 	color: #333;
 }
-*/
+
+
+#page_top{
+	width:auto;
+}*/
 
 }
-
-
 
 @media screen and (max-width:480px){
 
@@ -1000,11 +1197,17 @@ body #content_wrap {
 	font-size: 24px;
 	line-height: 28px;
 }
-#content_wrap .inner_box03 h2{
+
+#content_wrap .inner_nihon_about h2{
 	font-size: 24px;
 	line-height: 28px;
 }
-#content_wrap .inner_box04 h2{
+
+#content_wrap .inner_orderbox h2{
+	font-size: 24px;
+	line-height: 28px;
+}
+#content_wrap .inner_furokubox h2{
 	font-size: 24px;
 	line-height: 28px;
 	margin-bottom:15px;
@@ -1020,8 +1223,11 @@ body #content_wrap {
 	width: 60%;
 }
 
-#content_wrap .inner_box02 ul li{
-	font-size: 10px;
+#content_wrap h2.voice_title span{
+	border-radius: 10px;
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 10px;
+	-ms-border-radius:10px;
 }
 
 
@@ -1029,13 +1235,13 @@ body #content_wrap {
 
 @media screen and (max-width:400px){
 
-/*#login_wrap{
+#login_wrap{
 	width: 27%;
 	margin-top: 8%;
 }
 #login_wrap #new_entry_wrap{
 	padding-left: 0;
-}*/
+}
 
 #content_wrap h2.voice_title{
 	font-size: 18px;
@@ -1053,12 +1259,6 @@ body #content_wrap {
 	font-size: 20px;
 	line-height: 24px;
 }
-#content_wrap .inner_box04 h2{
-	font-size: 20px;
-	line-height: 24px;
-	margin-bottom: 15px;
-}
-
 #content_wrap .price_txt02{
 	font-size: 40px;
 }
@@ -1071,7 +1271,12 @@ body #content_wrap {
 }
 
 
-
+#content_wrap h2.voice_title span{
+	border-radius: 10px;
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 10px;
+	-ms-border-radius:10px;
+}
 
 
 }
@@ -1100,15 +1305,13 @@ body #content_wrap {
 	font-size: 18px;
 	line-height: 22px;
 }
-#content_wrap .inner_box04 h2{
-	font-size: 18px;
-	line-height: 22px;
-	margin-bottom:15px;
-}
-#content_wrap .price_txt01{
-	padding-right: 10px;
-}
 
+#content_wrap h2.voice_title span{
+	border-radius: 10px;
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 10px;
+	-ms-border-radius:10px;
+}
 
 }
 
@@ -1120,10 +1323,62 @@ body #content_wrap {
     z-index: 2!important;
 }
 
+#content_wrap .flr {
+    float: right;
+}
+#content_wrap .mb0 {
+    margin-bottom: 0px;
+}
 
+/*tel番号調整*/
+.goods_detail .tel img {margin-left: -120px;}
 
+/*ページ内リンク調整*/
+#shop_smooth {
+  margin-top : -150px !important;
+  padding-top : 150px !important;
+} 
 
+#content_wrap {
+	font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+	line-height:21px;
+	font-size:16px;
+	color: #333;
+	line-height:1.4;
+	overflow: visible;
+}
 
+#content_wrap img.hover:hover{
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+}
+#content_wrap a:link{ color:#0e1bbb;text-decoration:underline;}
+#content_wrap a:visited{ color:#0e1bbb;text-decoration:none;}
+#content_wrap a:hover{ color:#5e69ee;text-decoration:underline;}
+#content_wrap a:active{ color:#0e1bbb;text-decoration:none;}
 
+#content_wrap .inner_box01 h2,
+#content_wrap .inner_box02 h2{box-sizing: content-box;}
+#content_wrap .voice_box {box-sizing: content-box;}
+#content_wrap h2.voice_title {font-weight: normal;}
+
+#content_wrap .inner_nihon_about h2 {height: 77px;}
+#content_wrap .inner_orderbox h2{height: 77px;}
+
+@media screen and (max-width: 640px) {
+	#content_wrap .anq_pic img{height:auto;}
+	#content_wrap {width: 100%;}
+	#content_wrap .inner_nihon_about h2 {height: auto;}
+	#content_wrap .inner_orderbox h2{height: auto;}
+
+@media screen and (min-width: 641px) {
+	#content_wrap .inner_box02 .boxlong,
+	#content_wrap .inner_box02 .boxlong h3 span {height: 388px;}
+	#content_wrap .inner_box02 .short_box h3 span {padding-left: 10px;}
+	#content_wrap .inner_box02 .long_box.info {background: none;background: #fff;}
+}
 
 
