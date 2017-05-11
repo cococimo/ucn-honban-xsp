@@ -69,6 +69,7 @@ $(function(){
   });
 });
 </script>
+<script type='text/javascript' src='/contents/js//adlpo.js'></script>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -417,6 +418,8 @@ $(function(){
 		        <!--▼▼▼重要なお知らせ▼▼▼-->
             </div>
         <!--▲▲▲メインヴィジュアル▲▲▲-->
+
+		<div class='ADLPODefault'>
         <!--▼▼▼初めて利用される方へ▼▼▼-->
             <div class="begginer">
                 <div class="begginer_in wrapper">
@@ -432,6 +435,9 @@ $(function(){
                 </div>
             </div>
         <!--▲▲▲初めて利用される方へ▲▲▲-->
+		</div>
+		<script type='text/javascript'>adlpoMain('top_beginner_area','lc=os','ch=Shift-JIS');</script>
+
         <div class="news_link_wrap viewSp">
             <a href="#side_widget_news"><span>お知らせを見る</span></a>
         </div>
@@ -691,20 +697,23 @@ $(function(){
                                     <span m:id="l_notEqu_autoRecommendGoodsList_idx">
                                         <li>
                                             <div class="item_list_in js-matchHeight">
-                                            	<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-                                            	<span m:id="l_autoRecommendGoods_include3_in_period">
-                                            		<span m:id="autoRecommendGoods_html3_include1">外部HTML1 表示領域(期間3)
-                                            			<div class="item_list_tag item_list_tag_recommend js-matchHeight01">
-                                            				<span class="item_list_tag_txt_recommend">オススメ</span>
-                                            				<span class="item_list_tag_txt_new">新着情報</span>
-                                            				<span class="item_list_tag_txt_popular">人気</span>
-                                            				<span class="item_list_tag_txt_soon">完売間近</span>
-                                            				<span class="item_list_tag_txt_arrival">再入荷</span>
-                                            				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-                                            				<span class="item_list_tag_txt_cm">CM放映中</span>
-                                            				<span class="item_list_tag_txt_limited">数量限定</span>
-                                            			</div>
-                                            		</span>
+                                            	<!-- span 追加対応 eA 2017.05.10 -->
+                                            	<span>
+	                                            	<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+	                                            	<span m:id="l_autoRecommendGoods_include3_in_period">
+	                                            		<span m:id="autoRecommendGoods_html3_include1">外部HTML1 表示領域(期間3)
+	                                            			<div class="item_list_tag item_list_tag_recommend js-matchHeight01">
+	                                            				<span class="item_list_tag_txt_recommend">オススメ</span>
+	                                            				<span class="item_list_tag_txt_new">新着情報</span>
+	                                            				<span class="item_list_tag_txt_popular">人気</span>
+	                                            				<span class="item_list_tag_txt_soon">完売間近</span>
+	                                            				<span class="item_list_tag_txt_arrival">再入荷</span>
+	                                            				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+	                                            				<span class="item_list_tag_txt_cm">CM放映中</span>
+	                                            				<span class="item_list_tag_txt_limited">数量限定</span>
+	                                            			</div>
+	                                            		</span>
+	                                            	</span>
                                             	</span>
                                                 <div class="img_box img_box_hover">
                                                     <span m:id="l_pre_autoRecommendGoods_representSku">
@@ -889,19 +898,22 @@ $(function(){
                                         <li>
                                             <div class="item_list_border">
                                                 <div class="ranking_list_in item_list_in js-matchHeight">
-													<span m:id="l_autoRankGoods_include3_in_period">
-													<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-														<span m:id="autoRankGoods_html3_include1">外部HTML1 表示領域(期間3)
-			            									<div class="item_list_tag item_list_tag_recommend">
-				                                                <span class="item_list_tag_txt_recommend">オススメ</span>
-				                                                <span class="item_list_tag_txt_new">新着情報</span>
-				                                                <span class="item_list_tag_txt_popular">人気</span>
-				                                                <span class="item_list_tag_txt_soon">完売間近</span>
-				                                                <span class="item_list_tag_txt_arrival">再入荷</span>
-				                                                <span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-				                                                <span class="item_list_tag_txt_cm">CM放映中</span>
-				                                                <span class="item_list_tag_txt_limited">数量限定</span>
-					                                    	</div>
+                                                	<!-- span 追加対応 eA 2017.05.10 -->
+                                                	<span>
+														<span m:id="l_autoRankGoods_include3_in_period">
+														<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+															<span m:id="autoRankGoods_html3_include1">外部HTML1 表示領域(期間3)
+				            									<div class="item_list_tag item_list_tag_recommend">
+					                                                <span class="item_list_tag_txt_recommend">オススメ</span>
+					                                                <span class="item_list_tag_txt_new">新着情報</span>
+					                                                <span class="item_list_tag_txt_popular">人気</span>
+					                                                <span class="item_list_tag_txt_soon">完売間近</span>
+					                                                <span class="item_list_tag_txt_arrival">再入荷</span>
+					                                                <span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+					                                                <span class="item_list_tag_txt_cm">CM放映中</span>
+					                                                <span class="item_list_tag_txt_limited">数量限定</span>
+						                                    	</div>
+															</span>
 														</span>
 													</span>
                                                     <div class="img_box img_box_hover">
@@ -1015,21 +1027,24 @@ $(function(){
                                 <span m:id="l_ite_newGoodsList">
                                     <li>
                                         <div class="item_list_in js-matchHeight">
-                                        	<span m:id="l_newGoods_include3_in_period">
-                                        		<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-                                        		<span m:id="newGoods_html3_include1">外部HTML1 表示領域(期間3)
-                                        			<div class="item_list_tag item_list_tag_recommend">
-                                        				<span class="item_list_tag_txt_recommend">オススメ</span>
-                                        				<span class="item_list_tag_txt_new">新着情報</span>
-                                        				<span class="item_list_tag_txt_popular">人気</span>
-                                        				<span class="item_list_tag_txt_soon">完売間近</span>
-                                        				<span class="item_list_tag_txt_arrival">再入荷</span>
-                                        				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-                                        				<span class="item_list_tag_txt_cm">CM放映中</span>
-                                        				<span class="item_list_tag_txt_limited">数量限定</span>
-                                        			</div>						                    
-                                        		</span>
-                                        	</span>
+											<!-- span 追加対応 eA 2017.05.10 -->
+											<span>
+	                                        	<span m:id="l_newGoods_include3_in_period">
+	                                        		<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+	                                        		<span m:id="newGoods_html3_include1">外部HTML1 表示領域(期間3)
+	                                        			<div class="item_list_tag item_list_tag_recommend">
+	                                        				<span class="item_list_tag_txt_recommend">オススメ</span>
+	                                        				<span class="item_list_tag_txt_new">新着情報</span>
+	                                        				<span class="item_list_tag_txt_popular">人気</span>
+	                                        				<span class="item_list_tag_txt_soon">完売間近</span>
+	                                        				<span class="item_list_tag_txt_arrival">再入荷</span>
+	                                        				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+	                                        				<span class="item_list_tag_txt_cm">CM放映中</span>
+	                                        				<span class="item_list_tag_txt_limited">数量限定</span>
+	                                        			</div>						                    
+	                                        		</span>
+	                                        	</span>
+	                                        </span>
                                             <div class="img_box img_box_hover">
                                                 <span m:id="l_pre_newGoods_representSku">
                                                     <object class="xsp_obj" m:id="b_var_newGoods_listImage">
