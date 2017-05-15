@@ -175,12 +175,15 @@ window._fbq.push(['track', '6026760052541', {'value':'0.00','currency':'JPY'}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026760052541&amp;cd[value]=0.00&amp;cd[currency]=JPY&amp;noscript=1" /></noscript>
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body id="top">
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
-
 <!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_order"></object>
 <form name="tagForm" action="#" method="post">
@@ -331,9 +334,9 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -1454,7 +1457,9 @@ var google_remarketing_only = false;
 <!-- Google Code for &#36092;&#20837; Conversion Page 20170123　リスティング　mdxここまで-->
 
 
+
 <!-- InstanceEndEditable -->  
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=203'></script>
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

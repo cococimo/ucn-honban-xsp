@@ -74,6 +74,7 @@ $(function(){
 <!-- InstanceBeginEditable name="tag_body" -->
 <!-- InstanceEndEditable -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
+<object class="xsp_obj" m:id="e_var_cart"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_in cf">
@@ -175,8 +176,26 @@ $(function(){
 			</div>
 			<div class="member_complete_btn_box">
 				<p><a m:id="e_link_mypage_shop" href="memberMypage.html" class="cmn_btn cmn_btn_tri cmn_btn_orange"><span>マイページを確認する</span></a></p>
-				<p><a m:id="e_link_top" href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown"><span>ページトップに戻る</span></a></p>
+				<!-- ▼▼▼ 会員登録からの注文入力遷移対応 n_kamine add 2017.03.14 ▼▼▼ -->
+				<span m:id="l_up_cart_flg">
+				<span m:id="l_ite_shopCart">
+				<form m:id="e_form_orderStart" method="post" action="orderInput.html">
+					<input m:id="l_hid_shop_no" type="hidden" name="_S" value=""/>
+					<input type="hidden" name="pageCart" value="pageCart"/>
+					<input m:id="h_hid_postage" type="hidden" name="postage" />
+					<input m:id="h_hid_free_guide_flg_0" type="hidden" name="free_guide_flg" value="0"/>
+					<div class="inq_input_bt_01 clearfix s_bt_350">
+						<p><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>注文手続きへ</span></a></p>
+					</div>
+				</form>
+				</span>
+				</span>
+				<span m:id="l_not_up_cart_flg">
+					<p><a m:id="e_link_top" href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown"><span>ページトップに戻る</span></a></p>
+				</span>
+				<!-- ▲▲▲ 会員登録からの注文入力遷移対応 n_kamine add 2017.03.14 ▲▲▲ -->
 			</div>
+
 			<!-- /.member_complete_btn_box -->
 			<!--  17/02/28 一旦コメントアウト
 			<p>下記のボタンをクリックし、お申し込みの手続きを続けてください。</p>

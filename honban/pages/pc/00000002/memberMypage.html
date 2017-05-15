@@ -562,88 +562,123 @@ function siteCatalistProdview(s_products,url){
                         </div>
                     </li>
                 </ul>
-                <div style="display: none;">
-                    <h2 class="cmn_tit01 mt40 mb20 s_mt25 s_mb10"><span class="cmn_tit01_underline">レビュー投稿可能な商品があります</span></h2>
-                    <ul class="item_list item_list_5col check_item_list mypage_top_list04">
-                        <li>
-                            <div class="brdr">
-                                <div class="item_list_in">
-                                    <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
-                                        <div class="img_box_hover_in">
-                                            <div class="img_box_hover_txt">
-                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                            </div>
+                <h2 class="can_add_review_item cmn_tit01 mt40 mb20 s_mt25 s_mb10"><span class="cmn_tit01_underline">レビュー投稿可能な商品があります</span></h2>
+                <span m:id="review_flg"></span>
+                <object class="xsp_obj" m:id="e_var_orderLogList" ></object>
+                <form m:id="e_form_goodsReviewInput" name="goodsReviewForm" method="POST" action="goodsReviewInput.html">
+                <ul class="item_list item_list_5col check_item_list mypage_top_list04">
+                <span m:id="l_ite_orderLogList">
+                <object class="xsp_obj" m:id="e_var_orderLog"></object>
+                <object class="xsp_obj" m:id="e_var_proprietyMap"></object>
+                <object class="xsp_obj" m:id="b_var_orderDetails"></object>
+                <span m:id="l_ite_orderLogDetails">
+                <span m:id="l_equ_shop_no">
+                <span m:id="propriety_status_0">
+                <span m:id="setUp_review_flg"></span>
+                <object class="xsp_obj" m:id="var_revGoodsLink_data"></object>
+                    <li>
+                        <div class="brdr">
+                            <div class="item_list_in">
+                                <span m:id="var_orderDetail_image_data"></span>
+                                <div class="img_box img_box_hover"> <a m:id="rev_goods_link" href="goodsDetail.html"> <img m:id="b_wr_goods_image_file" />
+                                    <div class="img_box_hover_in">
+                                        <div class="img_box_hover_txt">
+                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
                                         </div>
-                                        </a> </div>
-                                    <h3 class="item_list_tit js-matchHeight"><a href="#">カシオex-word（エクスワード）の電子辞書　XD-SK6810　50音配列キーボード</a></h3>
-                                    <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn btn_icon icon-register"><span>レビューを書く</span></a></p>
-                                </div>
+                                    </div>
+                                    </a> </div>
+                                <h3 class="item_list_tit js-matchHeight"><a m:id="rev_goods_link" href="goodsDetail.html"> <span m:id="disp_detail_goods_sku_name"></span></a></h3>
+                                <input m:id="tmp_shop_no" type="hidden" name="shop_no" value="00000002">
+                                <input m:id="tmp_goods_code" type="hidden" name="goods_code" value="">
+                                <input m:id="tmp_order_no" type="hidden" name="order_no" value="">
+                                <input m:id="tmp_display_code" type="hidden" name="display_code" value="">
+                                <input m:id="mypage_flg" type="hidden" name="mypage_flg" value="1">
+                                <p class="mypage_top_list04_btn"><a m:id="a_link_goodsReviewInput" href="goodsReviewInput.html" onclick="return anchorButtonClick( document.goodsReviewForm );" class="cmn_btn"><span class="icon-register mypage_top_list04_btn_icon">レビューを書く</span></a></p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="brdr">
-                                <div class="item_list_in">
-                                    <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
-                                        <div class="img_box_hover_in">
-                                            <div class="img_box_hover_txt">
-                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                            </div>
+                        </div>
+                    </li>
+                    <li m:id="dummy">
+                        <div class="brdr">
+                            <div class="item_list_in">
+                                <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
+                                    <div class="img_box_hover_in">
+                                        <div class="img_box_hover_txt">
+                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
                                         </div>
-                                        </a> </div>
-                                    <h3 class="item_list_tit js-matchHeight"><a href="#">アイザワ　角長ランチボックス　スリム2段</a></h3>
-                                    <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn btn_icon icon-register"><span>レビューを書く</span></a></p>
-                                </div>
+                                    </div>
+                                    </a> </div>
+                                <h3 class="item_list_tit js-matchHeight"><a href="#">アイザワ　角長ランチボックス　スリム2段</a></h3>
+                                <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn"><span class="icon-register mypage_top_list04_btn_icon">レビューを書く</span></a></p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="brdr">
-                                <div class="item_list_in">
-                                    <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
-                                        <div class="img_box_hover_in">
-                                            <div class="img_box_hover_txt">
-                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                            </div>
+                        </div>
+                    </li>
+                    <li m:id="dummy">
+                        <div class="brdr">
+                            <div class="item_list_in">
+                                <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
+                                    <div class="img_box_hover_in">
+                                        <div class="img_box_hover_txt">
+                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
                                         </div>
-                                        </a> </div>
-                                    <h3 class="item_list_tit js-matchHeight"><a href="#">アイザワ　丸型ランチボックス</a></h3>
-                                    <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn btn_icon icon-register"><span>レビューを書く</span></a></p>
-                                </div>
+                                    </div>
+                                    </a> </div>
+                                <h3 class="item_list_tit js-matchHeight"><a href="#">アイザワ　丸型ランチボックス</a></h3>
+                                <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn"><span class="icon-register mypage_top_list04_btn_icon">レビューを書く</span></a></p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="brdr">
-                                <div class="item_list_in">
-                                    <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
-                                        <div class="img_box_hover_in">
-                                            <div class="img_box_hover_txt">
-                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                            </div>
+                        </div>
+                    </li>
+                    <li m:id="dummy">
+                        <div class="brdr">
+                            <div class="item_list_in">
+                                <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
+                                    <div class="img_box_hover_in">
+                                        <div class="img_box_hover_txt">
+                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
                                         </div>
-                                        </a> </div>
-                                    <h3 class="item_list_tit js-matchHeight"><a href="#">平牧三元豚ハンバーグセット</a></h3>
-                                    <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn btn_icon icon-register"><span>レビューを書く</span></a></p>
-                                </div>
+                                    </div>
+                                    </a> </div>
+                                <h3 class="item_list_tit js-matchHeight"><a href="#">平牧三元豚ハンバーグセット</a></h3>
+                                <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn"><span class="icon-register mypage_top_list04_btn_icon">レビューを書く</span></a></p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="brdr">
-                                <div class="item_list_in">
-                                    <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
-                                        <div class="img_box_hover_in">
-                                            <div class="img_box_hover_txt">
-                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                            </div>
+                        </div>
+                    </li>
+                    <li m:id="dummy">
+                        <div class="brdr">
+                            <div class="item_list_in">
+                                <div class="img_box img_box_hover"> <a href="#"> <img src="http://placehold.it/200x200" alt="placehold.it">
+                                    <div class="img_box_hover_in">
+                                        <div class="img_box_hover_txt">
+                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
                                         </div>
-                                        </a> </div>
-                                    <h3 class="item_list_tit js-matchHeight"><a href="#">多機能ボストンバッグ</a></h3>
-                                    <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn btn_icon icon-register"><span>レビューを書く</span></a></p>
-                                </div>
+                                    </div>
+                                    </a> </div>
+                                <h3 class="item_list_tit js-matchHeight"><a href="#">多機能ボストンバッグ</a></h3>
+                                <p class="mypage_top_list04_btn"><a href="#" class="cmn_btn"><span class="icon-register mypage_top_list04_btn_icon">レビューを書く</span></a></p>
                             </div>
-                        </li>
-                    </ul>
-                    <p class="mypage_top_list04_txt01 mt15 viewSp">商品を実際に使用された感想をぜひお寄せください。他のお客様が商品を選ばれる際や、今後の商品企画に利用させていただきます。<br>
-                        レビューを投稿いただいたお客様には毎月抽選で<span>〇〇名様</span>に、<span>〇〇〇〇をプレゼント</span>いたしております。</p>
-                </div>
+                        </div>
+                    </li>
+                </span></span></span>
+                </span>
+                </ul>
+                <span m:id="l_emp_review"><style>.can_add_review_item {display: none;}</style></span>
+                <SCRIPT LANGUAGE="JavaScript">
+                    <!--
+                    function SetFormValue(idx){
+                        document.forms["goodsReviewForm"]._S.value = document.getElementById("_S_"+idx).value;
+                        document.forms["goodsReviewForm"].goods_code.value = document.getElementById("goods_code_"+idx).value;
+                        document.forms["goodsReviewForm"].order_no.value = document.getElementById("order_no_"+idx).value;
+                        document.forms["goodsReviewForm"].display_code.value = document.getElementById("display_code_"+idx).value;
+                    }
+                    //-- >
+                </SCRIPT>
+                <input m:id="goodsReviewForm_shop_no" type="hidden" name="shop_no" value="00000002">
+                <input m:id="goodsReviewForm_goods_code" type="hidden" name="goods_code" value="">
+                <input m:id="goodsReviewForm_order_no" type="hidden" name="order_no" value="">
+                <input m:id="goodsReviewForm_display_code" type="hidden" name="display_code" value="">
+                </form>
+
+                <p class="mypage_top_list04_txt01 mt15 viewSp">商品を実際に使用された感想をぜひお寄せください。他のお客様が商品を選ばれる際や、今後の商品企画に利用させていただきます。<br>
+                    レビューを投稿いただいたお客様には毎月抽選で<span>〇〇名様</span>に、<span>〇〇〇〇をプレゼント</span>いたしております。</p>
             </div>
             <!-- /.mypage_top --> 
         </div>

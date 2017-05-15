@@ -854,12 +854,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body id="top">
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
-
 <!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_tagCart"></object>
 <form name="tagForm" action="#" method="post">
@@ -988,9 +991,9 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -1065,15 +1068,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </li>
         	<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
-        <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
+        <!--<li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>-->
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-        <!--<li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>-->
-	<li class="sp_gnav_link"><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature32/">夏のおすすめコーディネート特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature27/">オーガニックコットン特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature30/">肌側シルク接結インナー特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
@@ -1517,7 +1519,7 @@ $(window).on('load resize', function(){
 			<div class="res_cart">
 				<span m:id="l_notEqu_valiationSize_sku">
 				<span m:id="l_disp_radio_forRadioTemp">
-				<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuForm">
+				<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 					<table>
 						<span m:id="l_ite_sku_variation">
 						<span m:id="l_equ_disp_skuGoods">
@@ -2482,15 +2484,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
-     <!--<li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>
-    　<li><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
-     <li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>-->
-      
+      <li class="sp_gnav_link"><a href="/shop/static/feature32/">夏のおすすめコーディネート特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature27/">オーガニックコットン特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature30/">肌側シルク接結インナー特集</a></li>
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>
     </ul>
     <ul class="footer_category only_pc">
@@ -2520,7 +2519,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       	<ul>
         	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
         	<li><a href="/shop/category/001001002/list/">トップス</a></li>
-        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001003/list/">コート/カーディガン</a></li>
         	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
         	<li><a href="/shop/category/001001005/list/">スカート</a></li>
         	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
@@ -2728,5 +2727,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 </div>
 <!-- footer追加 -->
 <!-- InstanceEndEditable -->  
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

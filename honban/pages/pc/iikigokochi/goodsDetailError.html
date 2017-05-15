@@ -776,6 +776,10 @@ div.res_cart a:hover{
 
 
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body id="top">
 <!-- Googleタグマネージャ body用 -->
@@ -850,9 +854,9 @@ div.res_cart a:hover{
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -1663,10 +1667,10 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 <!--EndEditable -->
-
   
   
 </div>
 <!-- InstanceEndEditable -->  
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

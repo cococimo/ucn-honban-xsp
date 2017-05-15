@@ -31,6 +31,12 @@
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 
+
+
+
+
+
+
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
@@ -42,6 +48,10 @@
 <meta m:id="google_tag_manager_head" content="">
 <!-- Googleタグマネージャ head用 -->
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -132,8 +142,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
-<div class="box_02"><input type="submit" value="検索"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
+<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
         <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
@@ -269,7 +279,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div class="inq_input_bt_02 clearfix">
 
     <div class="box_01 n_bt_re_01">
-			<a m:id="h_link_memberOrderLog" href="memberOrderLog.html"><img m:id="static_img" src="../../../contents/shop/00000002/shop/image/ord_con_bt_06.png"  alt="戻る"></a></div>
+			<span m:id="l_up_mypage_flg"><a m:id="e_link_member" href="memberMypage.html"><img m:id="static_img" src="../../../contents/shop/00000002/shop/image/ord_con_bt_06.png"  alt="戻る"></a></span>
+      <span m:id="l_not_up_mypage_flg"><a m:id="h_link_memberOrderLog" href="memberOrderLog.html"><img m:id="static_img" src="../../../contents/shop/00000002/shop/image/ord_con_bt_06.png"  alt="戻る"></a></span>
+    </div>
 <div class="box_02">			<a m:id="a_link_goodsReviewConfirm" href="goodsReviewConfirm.html" onclick="return anchorButtonClick( document.goodsReviewForm );"><img m:id="static_img" src="../../../contents/shop/00000002/shop/image/ord_con_bt_07.png" alt="確認"></a></div>
 		</div>
 		<!--/ ボタン -->
@@ -282,6 +294,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 </div>
+
+
+
+
+
+
 
 </div><!--r_con_box_03-->
 
@@ -697,7 +715,7 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 <!-- InstanceEndEditable -->
 
-
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>
 

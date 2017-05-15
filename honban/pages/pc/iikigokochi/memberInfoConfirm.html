@@ -55,6 +55,10 @@
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -144,8 +148,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
-<div class="box_02"><input type="submit" value="検索"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
+<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
         <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
@@ -259,7 +263,19 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 </form>
 
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
 
 
 </div><!--r_con_box_03-->
@@ -654,6 +670,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- InstanceEndEditable -->
 
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>
 

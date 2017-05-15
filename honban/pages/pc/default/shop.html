@@ -91,10 +91,12 @@ nextText: "",
   });
 </script> 
 
-
-
 <!-- InstanceEndEditable -->
 
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -186,8 +188,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
-<div class="box_02"><input type="submit" value="検索"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"></div>
+<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
         <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -280,6 +282,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <li><a href="/shop/c/static/aizawa/"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_40.jpg" class="image5" alt="工房アイザワステンレス製お弁当箱" /></a></li>    
 
 
+
+
+
 <!--  昭和の鉄道
         <li><a href="/shop/goodsDetail.do?_S=c&ext_goods_code=DFJ0E"> <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/n_main_vis_23.jpg" class="image5" alt="昭和の鉄道　DVD全12枚（特別鑑賞冊子付き）" /></a></li>
         -->
@@ -300,6 +305,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <td><a href="/shop/c/static/cocoblog/"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_2_cococimo_blog.jpg" class="bannermr" alt="ココチモブログ" /></a></td>
   </tr>
 </table>
+
   
   
      <!--▼▼▼ココチモからのお知らせ▼▼▼-->
@@ -623,7 +629,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- InstanceEndEditable --></div>
 <!--contents_r-->
-
 
 <div id="contents_l">
 
@@ -1126,6 +1131,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
+
 <script type="text/javascript" language="javascript">
 var yahoo_retargeting_id = 'JAG00YJOZ2';
 var yahoo_retargeting_label = '';
@@ -1170,6 +1176,7 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 <script src='//j.gmodmp.jp/js/d.js' type='text/javascript'>
 </script>
 
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>
 

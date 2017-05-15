@@ -521,11 +521,13 @@ $(function(){
 						<div class="member_confirm_txt">入力いただきました内容、会員規約をご確認のうえ、<br class="viewPc">確認ボタンを押してください。<br class="viewSp">個人情報の取り扱いについては<a href="/shop/c/static/protection/" target="_blank">こちら</a>。</div>
 						<div class="member_confirm_btn_area cf">
 							<a class="cmn_btn cmn_btn_orange member_confirm_btn" m:id="a_bt_confirm" href="memberAddConfirm.html" onclick="">規約に同意の上<br class="viewSp">　入力内容を確認する</a>
-							<a href="/shop/login.do" class="cmn_link01 cmn_link01_reverse member_confirm_link">戻る</a>
+							<span m:id="l_up_cart_flg"><a m:id="check_shop_no" href="cart.html" class="cmn_link01 cmn_link01_reverse member_confirm_link">戻る</a></span>
+							<span m:id="l_not_up_cart_flg"><a m:id="e_link_home" href="/" class="cmn_link01 cmn_link01_reverse member_confirm_link">戻る</a></span>
 						</div>
 					</div>
 					<!-- /.member_confirm -->
 				<input type="hidden" name="checkId"/>
+				<input m:id="h_hid_cart_flg" type="hidden" name="cart_flg" />
 			</form>
 
 			<span m:id="l_equ_checkId">

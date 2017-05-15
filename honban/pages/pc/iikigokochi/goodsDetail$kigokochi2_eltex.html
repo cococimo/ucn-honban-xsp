@@ -174,13 +174,16 @@ function siteCatalistAddCart1(s_products){
 
 <!-- detail -->
 
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
-
 <!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_tagCart"></object>
 <form name="tagForm" action="#" method="post">
@@ -275,9 +278,9 @@ function siteCatalistAddCart1(s_products){
 			<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
 			</form>
 			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
-			<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+			<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
 			<div class="box_02">
-	    	<a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+	    	<a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
 	   	 	</div>
 			</form>
 		  <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -664,7 +667,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					</div>
 				</div>
 			</span>
-			<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuForm">
+			<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 				<input m:id="h_hid__S_forSku" type="hidden" name="_S" value="" />
 				<input m:id="h_hid_display_code_forSku" type="hidden" name="display_code" value="" />
 				<input m:id="h_hid_goods_sku_code_forSku" type="hidden" name="goods_sku_code" value="" />
@@ -1478,6 +1481,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 
 
 
+<span m:id="smartSuggest"></span>
 </body>
 <!-- End --></html>
 

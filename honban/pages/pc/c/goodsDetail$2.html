@@ -428,6 +428,10 @@ $(".faceBooks").append(ifremstr);
 		</script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -478,9 +482,9 @@ $(".faceBooks").append(ifremstr);
 		</form>
 		<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
 		<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+		<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
 		<div class="box_02">
-    <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+    <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
     </div>
 		</form>
 	  <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -3311,5 +3315,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
   
 <!-- footer追加 -->
 
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

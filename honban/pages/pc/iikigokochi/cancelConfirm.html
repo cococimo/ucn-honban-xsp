@@ -37,6 +37,12 @@
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/common.js" type="text/javascript"></script>
 
+
+
+
+
+
+
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
@@ -45,6 +51,10 @@
 var clicked = false;
 //--></script>
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -137,8 +147,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
-<div class="box_02"><input type="submit" value="検索"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
+<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
         <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
@@ -682,6 +692,14 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- InstanceEndEditable -->
 
 
+
+<script type='text/javascript'>
+if(typeof dmids == "undefined"){var dmids = {}};
+dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
+</script>
+<script src='//j.gmodmp.jp/js/dc.js' type='text/javascript'>
+</script>
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>
 

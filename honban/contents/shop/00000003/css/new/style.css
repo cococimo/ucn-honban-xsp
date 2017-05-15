@@ -10742,3 +10742,15 @@
 		line-height: 1.4;
 	}
 }
+/* Å•Å•Å• 2017.05.01 ELTEXèCê≥ Å•Å•Å• */
+#home .search_item_keyword {
+	overflow: visible;
+	display: inline-block;
+}
+@media screen and (max-width:767px) {
+	#home .search_item_keyword {
+		overflow: visible;
+		display: block;
+	}
+}
+/* Å£Å£Å£ 2017.05.01 ELTEXèCê≥ Å£Å£Å£ */

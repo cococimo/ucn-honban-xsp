@@ -454,12 +454,15 @@ if ( window.addEventListener ) {
 <script src="/contents/shop/00000006/js/kigokochi/adlpo.js" type="text/javascript"></script>
 <!-- DLPO -->
 
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body id="top">
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
-
 <!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_cart"></object>
 <object class="xsp_obj" m:id="e_var_tagCart"></object>
@@ -624,7 +627,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
                     <ul class="btn_category_pullDown">
                       <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
-                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><span>ジャケット/<br />アウター</span></a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="コート/カーディガン" /><span>コート/<br />カーディガン</span></a></li>
                       <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
                       <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
                       <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><span>ワンピース</span></a></li>
@@ -659,9 +662,9 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 </form>
                 <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。"></div>
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);"  class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -740,19 +743,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
         <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
         <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
         <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
-        <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-        <!--<li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>-->
-	<li class="sp_gnav_link"><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature32/">夏のおすすめコーディネート特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature27/">オーガニックコットン特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集</a></li>
+        <li class="sp_gnav_link"><a href="/shop/static/feature30/">肌側シルク接結インナー特集</a></li>
         <li class="sp_gnav_link accordion">
         	<a href="#">商品カテゴリー</a>
           <ul>
             <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
             <li><a href="/shop/category/001001002/list/">トップス</a></li>
-            <li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+            <li><a href="/shop/category/001001003/list/">コート/カーディガン</a></li>
             <li><a href="/shop/category/001001004/list/">パンツ</a></li>
             <li><a href="/shop/category/001001005/list/">スカート</a></li>
             <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
@@ -2058,15 +2060,12 @@ $(window).on('load resize', function(){
     <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature24/">ダブルガーゼブラウス特集</a></li>
-     <!--<li class="sp_gnav_link"><a href="/shop/static/feature23/">着心地 秋冬コーディネート20</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature22/">発熱する天然素材「ほっとん」アイテム特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature21/">やわらか牛革ショートブーツ特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature20/">オーガニックコットンアイテム特集</a></li>
-      <li class="sp_gnav_link"><a href="/shop/static/feature19/">両面起毛あったかコットンブラウス特集</a></li>
-    　<li><a href="/shop/static/feature18/">リブ編みソックス&amp;レッグウォーマー特集</a></li>
-     <li><a href="/shop/static/feature17/">秋を楽しむ1週間コーディネート特集</a></li>-->
-      
+      <li class="sp_gnav_link"><a href="/shop/static/feature32/">夏のおすすめコーディネート特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature27/">オーガニックコットン特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集</a></li>
+      <li class="sp_gnav_link"><a href="/shop/static/feature30/">肌側シルク接結インナー特集</a></li>
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>
     </ul>
     <ul class="footer_category only_pc">
@@ -2096,7 +2095,7 @@ $(window).on('load resize', function(){
       	<ul>
         	<li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
         	<li><a href="/shop/category/001001002/list/">トップス</a></li>
-        	<li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
+        	<li><a href="/shop/category/001001003/list/">コート/カーディガン</a></li>
         	<li><a href="/shop/category/001001004/list/">パンツ</a></li>
         	<li><a href="/shop/category/001001005/list/">スカート</a></li>
         	<li><a href="/shop/category/001001006/list/">ワンピース</a></li>
@@ -2225,7 +2224,7 @@ $(window).on('load resize', function(){
 <script type="text/javascript">
 var google_tag_params = {
 ecomm_prodid: document.googleGoodsForm.google_goods_ext_goods_code.value,
-ecomm_pagetype: "cart",
+ecomm_pagetype: "product",
 ecomm_totalvalue: document.googleGoodsForm.google_goods_sale_price.value
 };
 </script>
@@ -2284,7 +2283,9 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
 
+
 </div>
 <!-- InstanceEndEditable -->  
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

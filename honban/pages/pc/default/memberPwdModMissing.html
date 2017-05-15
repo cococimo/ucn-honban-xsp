@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:m="http://mayaa.seasar.org" lang="ja" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#"><!-- InstanceBegin template="/Templates/PC_tmp_mall_3.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -107,6 +108,10 @@ nextText: "",
 <!-- InstanceBeginEditable name="head" -->
 
 <!-- InstanceEndEditable -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
  
 <body id="top">
@@ -190,8 +195,8 @@ nextText: "",
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
-<div class="box_02"><input type="submit" value="検索"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" autocomplete="off" id="search_form_pc"></div>
+<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
         <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -679,5 +684,6 @@ dmids["a7ab697a26801a71"] = "j.gmodmp.jp";
 </script>
 
 
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

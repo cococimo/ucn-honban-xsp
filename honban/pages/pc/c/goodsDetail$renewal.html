@@ -220,6 +220,10 @@ function showCartButton1(obj){
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="goods" -->
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -429,8 +433,8 @@ function showCartButton1(obj){
 						</form>
 						<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
 							<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-							<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索"></div>
-							<div class="box_02"><input type="submit" value="検索"></div>
+							<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+							<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 						</form>
 						<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
 							<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -489,8 +493,8 @@ function showCartButton1(obj){
 			<div class="header_item_search_area">
 				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
 					<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索"></div>
-					<div class="box_02"><input type="submit" value="検索"></div>
+					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索" autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
+					<div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
 				</form>
 				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
 					<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -2542,5 +2546,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 
 
 <!-- InstanceEndEditable -->
+<span m:id="smartSuggest"></span>
 </body>
 <!-- InstanceEnd --></html>

@@ -147,7 +147,6 @@ $(function() {
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
 
-
 <!--▼▼▼ tagForm ▼▼▼-->
 <object class="xsp_obj" m:id="e_var_cart"></object>
 <object class="xsp_obj" m:id="e_var_tagCart"></object>
@@ -1410,71 +1409,88 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
               
               <p class="cart_customer_btn mb50 s_mb15 tac"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>お客様情報の入力へ</span></a></p>
               <!--▼▼▼ ログインボックス ▼▼▼-->
-                <div style="display: none;">
-                  <p class="cart_guest_btn viewSp s_mb20 tac"><a href="#guest" class="cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>はじめて購入する方</span></a></p>
-                  <div class="purchase_box_wrap01">
-                    <div class="purchase_box login s_mb15">
-                      <h2 class="purchase_box_tit01">ログイン<span class="purchase_box_tit01_tag">会員登録がお済みのお客様</span></h2>
-                      <div class="purchase_box_in">
-                        <p class="purchase_box_txt01">ログインID、パスワードを入力して<br class="viewPc">「ログイン」を押してください。</p>
+              <span m:id="l_notEqu_member">
+                <p class="cart_guest_btn viewSp s_mb20 tac"><a href="#guest" class="cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>はじめて購入する方</span></a></p>
+                <div class="purchase_box_wrap01">
+                  <div class="purchase_box login s_mb15">
+                    <h2 class="purchase_box_tit01">ログイン<span class="purchase_box_tit01_tag">会員登録がお済みのお客様</span></h2>
+                    <div class="purchase_box_in">
+                      <p class="purchase_box_txt01">ログインID、パスワードを入力して<br class="viewPc">「ログイン」を押してください。</p>
+                      <span m:id="l_msgPre_1">
+                      <div class="error">
+                        <p>ログインに失敗しました。</p>
+                      </div>
+                      </span>
+                      <form m:id="h_form_orderLoginAuth" method="POST" action="orderInput.html">
                         <h3 class="purchase_box_tit02 cmn_tit03">ログインID<span class="purchase_box_tit02_ex">（例：yamada1234）</span></h3>
-                        <input type="text" value="">
+                        <input m:id="h_txt_login_id" type="text" name="loginForm" property="login_id" class="order_start_in" maxlength="20" /><br />
+                        <span m:id="l_msgPre_login_id">
+                          <span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span>
+                        </span>
                         <h3 class="purchase_box_tit02 cmn_tit03">パスワード<span class="purchase_box_tit02_ex">（例：abcde1234）</span></h3>
-                        <input type="text" value="">
-                        <p class="tac mb20"><a href="#" class="cmn_link01">パスワードをお忘れの方はこちら</a></p>
-                        <p class="purchase_box_btn"><a href="#" class="cmn_btn cmn_btn_login btn_icon_left"><span class="icon-login purchase_box_btn_icon"></span><span>ログインして購入</span></a></p>
-                      </div>
+                        <input m:id="h_pwd_password" type="password" name="loginForm" property="password" class="order_start_in" maxlength="20" value="" /><br />
+                        <span m:id="l_msgPre_password">
+                          <span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span><br />
+                        </span>
+                        <p class="tac mb20"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html.html">パスワードをお忘れの方はこちら</a></p>
+                        <p class="purchase_box_btn"><a href="" onclick="document.loginForm.submit();return false;" class="cmn_btn cmn_btn_login btn_icon_left"><span class="icon-login purchase_box_btn_icon"></span><span>ログインして購入</span></a></p>
+                        <!--/ ログインログイン情報入力 -->
+                        <input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+                        <input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />
+                      </form>
                     </div>
-                    <!-- /.purchase_box.login -->
-                    <div class="purchase_box_wrap02" id="guest">
-                      <div class="purchase_box guest mb30 s_mb15">
-                        <h2 class="purchase_box_tit01">会員登録をせずに購入</h2>
-                        <div class="purchase_box_in">
-                          <p class="purchase_box_btn"><a href="#" class="cmn_btn cmn_btn_guest btn_icon_left"><span class="icon-guest purchase_box_btn_icon"></span><span>ゲスト購入</span></a></p>
-                        </div>
-                      </div>
-                      <!-- /.purchase_box.guest -->
-                      <div class="purchase_box register">
-                        <h2 class="purchase_box_tit01">新規会員登録<span class="purchase_box_tit01_tag">初めてのお客様はこちらから</span></h2>
-                        <div class="purchase_box_in">
-                          <p class="purchase_box_txt01">会員登録をすると、次回以降、お届け先登録が省略できるほか、各種お得な情報をお届けいたします。</p>
-                          <p class="purchase_box_btn"><a href="#" class="cmn_btn cmn_btn_register btn_icon_left"><span class="icon-register purchase_box_btn_icon"></span><span>会員登録をして購入</span></a></p>
-                        </div>
-                      </div>
-                      <!-- /.purchase_box.register -->
-                    </div>
-                    <!-- /.purchase_box_wrap02 -->
                   </div>
+                  <!-- /.purchase_box.login -->
+                  <div class="purchase_box_wrap02" id="guest">
+                    <div class="purchase_box guest mb30 s_mb15">
+                      <h2 class="purchase_box_tit01">会員登録をせずに購入</h2>
+                      <div class="purchase_box_in">
+                        <p class="purchase_box_btn"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_guest btn_icon_left"><span class="icon-guest purchase_box_btn_icon"></span><span>ゲスト購入</span></a></p>
+                      </div>
+                    </div>
+                    <!-- /.purchase_box.guest -->
+                    <div class="purchase_box register">
+                      <h2 class="purchase_box_tit01">新規会員登録<span class="purchase_box_tit01_tag">初めてのお客様はこちらから</span></h2>
+                      <div class="purchase_box_in">
+                        <p class="purchase_box_txt01">会員登録をすると、次回以降、お届け先登録が省略できるほか、各種お得な情報をお届けいたします。</p>
+                        <form m:id="h_form_orderMemberAdd" method="post" action="memberAdd.html">
+                        <input type="hidden" name="cart_flg" value="1"/>
+                        <p class="purchase_box_btn"><a href="" onclick="document.memberAddForm.submit();return false;" class="cmn_btn cmn_btn_register btn_icon_left"><span class="icon-register purchase_box_btn_icon"></span><span>会員登録をして購入</span></a></p>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- /.purchase_box.register -->
+                  </div>
+                  <!-- /.purchase_box_wrap02 -->
                 </div>
               <!--▲▲▲ ログインボックス ▲▲▲-->
 
               <!--▼▼▼ ココチモ会員特典 ▼▼▼-->
-                <div style="display: none;">
-                  <div class="membership mt40 s_mt20 cart_membership">
-                    <div class="membership_in">
-                      <h3 class="membership_tit">ココチモ&nbsp;会員特典</h3>
-                      <ul class="membership_list">
-                        <li>
-                          <p class="membership_list_icon">特典1</p>
-                          <p class="membership_list_tit">ココチモポイントが<span class="red">貯まります、使えます！</span></p>
-                          <p class="membership_list_txt">ココチモでは、商品のご請求金額（一括価格からポイント利用分を除いた金額が対象）に応じて通常【100円につき1ポイント】をお付けします。確定したポイントは次回以降のご購入の際に代金の一部、または全部としてご使用いただくことができます。【1ポイント1円】となります。</p>
-                        </li>
-                        <li>
-                          <p class="membership_list_icon">特典2</p>
-                          <p class="membership_list_tit">新規登録時に<br class="viewSp"><span class="red">500ポイント</span>プレゼント！</p>
-                          <p class="membership_list_txt">商品を購入した際に新たにココチモ会員になられた方には、500ポイントをプレゼントいたします。こちらのポイントはすぐに確定いたしますので、次回以降のご注文時にご使用いただけます。</p>
-                        </li>
-                        <li>
-                          <p class="membership_list_icon">特典3</p>
-                          <p class="membership_list_tit"><span class="red">会員優待サービス</span>を<br class="viewSp">随時ご案内します！</p>
-                          <p class="membership_list_txt">会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。</p>
-                        </li>
-                      </ul>
-                    </div>
+                <div class="membership mt40 s_mt20 cart_membership">
+                  <div class="membership_in">
+                    <h3 class="membership_tit">ココチモ&nbsp;会員特典</h3>
+                    <ul class="membership_list">
+                      <li>
+                        <p class="membership_list_icon">特典1</p>
+                        <p class="membership_list_tit">ココチモポイントが<span class="red">貯まります、使えます！</span></p>
+                        <p class="membership_list_txt">ココチモでは、商品のご請求金額（一括価格からポイント利用分を除いた金額が対象）に応じて通常【100円につき1ポイント】をお付けします。確定したポイントは次回以降のご購入の際に代金の一部、または全部としてご使用いただくことができます。【1ポイント1円】となります。</p>
+                      </li>
+                      <li>
+                        <p class="membership_list_icon">特典2</p>
+                        <p class="membership_list_tit">新規登録時に<br class="viewSp"><span class="red">500ポイント</span>プレゼント！</p>
+                        <p class="membership_list_txt">商品を購入した際に新たにココチモ会員になられた方には、500ポイントをプレゼントいたします。こちらのポイントはすぐに確定いたしますので、次回以降のご注文時にご使用いただけます。</p>
+                      </li>
+                      <li>
+                        <p class="membership_list_icon">特典3</p>
+                        <p class="membership_list_tit"><span class="red">会員優待サービス</span>を<br class="viewSp">随時ご案内します！</p>
+                        <p class="membership_list_txt">会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。</p>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- /.membership -->
                 </div>
+                <!-- /.membership -->
               <!--▲▲▲ ココチモ会員特典 ▲▲▲-->
+              </span>
             </span>
           </div>
           <!-- /.contents_main -->
