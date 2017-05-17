@@ -28,7 +28,7 @@ NPSuggest.bind({
 	recommendItemHtmlEnabled: "off",
 	recommendItemAreaTitle: "検索結果",      // キーワード関連商品を表示の際のタイトル
 	recommendItemTiming: "mouseover",
-	recommendItemAreaTitle: "Top Results",  // キーワード関連商品を表示の際のタイトル
+	recommendItemAreaTitle: "",  // キーワード関連商品を表示の際のタイトル
 	recommendItemAreaPosition: "right",    // キーワード関連商品の表示位置 "right" / "left" / "bottom"
 	recommendItemSort: "price",
 	recommendItemLimitWidth: -1,
@@ -490,3 +490,41 @@ ul.relate {
 
 </style>
 <!-- ▲▲▲ SmartSuggest ▲▲▲ -->
+
+
+<!-- ▼▼▼ 調整用 ▼▼▼ -->
+<style>
+@media screen and (min-width: 767px) {
+	.np-keyword-suggest{width:300px;font-size:14px;}
+	.np-item-suggest{top:0;left:0;width:200px;padding: 0 0;}
+
+	.np-keyword-suggest .item{
+	  box-sizing: border-box;
+	  padding:5px 10px; 
+	}
+	.np-item-suggest .hitnum:after {
+	  content: "件 見つかりました";
+	}
+
+	.np-item-suggest .title {display:none;}
+	.np-item-suggest .item {width: 100%;box-sizing: border-box;padding-left: 0;}
+	.np-item-suggest .image {width: 62px;padding: 0;}
+	.np-item-suggest .item .item_title {
+		overflow: visible;
+	    white-space: normal;
+	    text-overflow: clip;text-decoration:underline;
+	}
+	.np-item-suggest .hitnum {background: #cdcdcd;}
+	.np-item-suggest .item a {width: 130px;}
+	.np-item-suggest table td {vertical-align: top;}
+
+	
+	.search_item_keyword_search .np-keyword-suggest {width:366px;}
+	.search_item_keyword_search .np-item-suggest{width:216px;}
+	.search_item_keyword_search .np-item-suggest .item a {width: 126px;}
+	.search_item_keyword_search .np-item-suggest .image {width:82px;}
+	.search_item_keyword_search .np-item-suggest .image img {width: 70px;}
+}
+
+</style>
+<!-- ▲▲▲ 調整用 ▲▲▲ -->
