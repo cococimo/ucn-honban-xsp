@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
 <meta http-equiv="content-script-type" content="text/javascript"/>
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+<meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 <meta m:id="e_var_shop" content="">
 <meta m:id="e_var_headerComponent" content="">
 <meta m:id="e_var_testSite" content="">
@@ -67,10 +67,6 @@ $(function(){
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="cancel_input" -->
-<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
-<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
-<script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
-<!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -137,7 +133,7 @@ $(function(){
 						</form>
 						<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
 							<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-							<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"></div>
+							<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
 							<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 						</form>
 						<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
@@ -147,6 +143,7 @@ $(function(){
 						</form>
 					</div>
 				</div>
+                
 				<!-- /.header_search -->
 				<span m:id="l_equ_hierarchy_3_shop">
 					<div class="header_menu hvr-grow" class="clearfix">
@@ -195,12 +192,12 @@ $(function(){
 		</span>
 		<div class="header_item_search_box">
 			<div class="header_item_search_area">
-				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
+				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="/goodsSearchShop_shop.html">
 					<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索" autocomplete="off" id="search_form_sp"></div>
+					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索" autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
 					<div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
 				</form>
-				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
+				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
 					<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
 					<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
 					<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
