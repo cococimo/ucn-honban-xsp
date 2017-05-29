@@ -664,30 +664,136 @@ $(function(){
         <!--▲▲▲カテゴリー▲▲▲-->
 		<div id="contents_in" class="cf">
         	<div id="contents_main" class="right">
-                <!--▼▼▼特集バナー▼▼▼-->
-                    <div class="feature">
-                        <h2 class="feature_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">おすすめ特集</span></h2>
-                        <ul class="feature_bnrs cf">
-                            <!-- <li><a href="/item_bousaiset/?topbanner1_deb91"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_bousai.gif" class="bannermr" alt="防災セット" /></a></li>
-                            <li><a href="/item_zantarworldpolar/?topbanner2_SDWH01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dwh01_s.jpg" class="bannermr" alt="ザンターワールドポーラーダウンジャケット" /></a></li>
-                            <li><a href="/shop/c/category/001001015/list/?topbanner3_gourmet" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_gourmet_s.jpg" class="bannermr" alt="おいしい食卓" /></a></li>
-                            <li><a href="/item_neovision/?topbanner4_ddo01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_talk_s.jpg" class="bannermr" alt="しゃべる地球儀" /></a></li>
-                            <li><a href="/shop/c/static/exword-interview/?topbanner5_exword-interview" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dictio_kusano.jpg" class="bannermr" alt="電子辞書特集" /></a></li>
-                            <li><a href="/shop/c/e/SDWI01/c/001001018019/?topbanner6_dwi01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dwi01_s.jpg" class="bannermr" alt="ハリスツイードジャケット" /></a></li> -->
-                            
-                            <!-- <li><a href="http://www-st2.cococimo.jp/shop/c/static/syokutaku/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature01.jpg" alt="おいしい食卓 春号"></a></li>
-                            <li><a href="http://www.cococimo.jp/shop/c/static/bousai/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature02.jpg" alt="備えて安心防災特集"></a></li>
-                            <li><a href="http://www-st2.cococimo.jp/shop/c/static/manganihon/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature03.jpg" alt="まんが日本昔ばなし"></a></li>
-                            <li><a href="http://www.cococimo.jp/item_teac/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature04.jpg" alt="ディアック"></a></li>
-                            <li><a href="http://www.cococimo.jp/shop/c/e/DDV00/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature05.jpg" alt="カシオキーボード"></a></li>
-                            <li><a href="/item_DGB00/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature06.jpg" alt="イージーウォーク"></a></li> -->
-                            <span m:id="l_include_file_tags" filename="top/feature_bnrs"></span>
-                        </ul>
-                        <div class="feature_more">
-                            <a href="/shop/c/static/feature/" class="feature_more_btn cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>おすすめ特集をもっと見る</span></a>
+                <!--▼▼▼今売れている商品ランキング▼▼▼-->
+                    <span m:id="l_notEmp_autoRankGoodsList">
+                        <div class="ranking">
+                            <h2 id="r_bt_012" class="ranking_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">売れ筋ランキング</span></h2>
+                            <ul class="ranking_list cf js-item_list">
+                                <span m:id="l_ite_autoRankGoodsList">
+                                    <span m:id="l_notEqu_autoRankGoodsList_idx">
+                                        <li>
+                                            <div class="item_list_border">
+                                                <div class="ranking_list_in item_list_in js-matchHeight">
+                                                	<!-- span 追加対応 eA 2017.05.10 -->
+                                                	<span>
+														<span m:id="l_autoRankGoods_include3_in_period">
+														<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+															<span m:id="autoRankGoods_html3_include1">外部HTML1 表示領域(期間3)
+				            									<div class="item_list_tag item_list_tag_recommend">
+					                                                <span class="item_list_tag_txt_recommend">オススメ</span>
+					                                                <span class="item_list_tag_txt_new">新着情報</span>
+					                                                <span class="item_list_tag_txt_popular">人気</span>
+					                                                <span class="item_list_tag_txt_soon">完売間近</span>
+					                                                <span class="item_list_tag_txt_arrival">再入荷</span>
+					                                                <span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+					                                                <span class="item_list_tag_txt_cm">CM放映中</span>
+					                                                <span class="item_list_tag_txt_limited">数量限定</span>
+						                                    	</div>
+															</span>
+														</span>
+													</span>
+                                                    <div class="img_box img_box_hover">
+                                                        <span m:id="l_pre_autoRankGoods_representSku">
+                                                            <object class="xsp_obj" m:id="b_var_autoRankGoods_listImage">
+                                                            </object>
+                                                            <span m:id="h_link_autoRankGoods_default_url_img">
+                                                                <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html">
+                                                                    <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+                                                                    <div class="img_box_hover_in">
+                                                                        <div class="img_box_hover_txt">
+                                                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                            <span m:id="h_link_autoRankGoods_static_url_img">
+                                                                <a m:id="h_link_autoRankGoods_list_image_goods_url" href="goodsDetail.html">
+                                                                    <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+                                                                    <div class="img_box_hover_in">
+                                                                        <div class="img_box_hover_txt">
+                                                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    <h3 class="item_list_tit">
+                                                        <span m:id="h_link_autoRankGoods_default_url">
+                                                            <a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                                                        </span>
+                                                        <span m:id="h_link_autoRankGoods_static_url">
+                                                            <a m:id="h_link_autoRankGoods_static_goods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <p class="ranking_list_yen item_list_yen">
+                                                    <span m:id="l_notEqu_autoRankGoods_pretaxPrice">
+                                                        <span class="original_price">
+                                                            <span m:id="b_wr_autoRankGoods_pretaxPrice">200</span>&nbsp;円
+                                                        </span>&nbsp;
+                                                    </span>
+                                                    <span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </span>
+                                    <li class="heightLine-rank01" m:id="dummy">
+                                        <div>
+                                            <div class="box_01">
+                                                <div class="box_02">
+                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                                                    <div class="rank_02">2位</div>
+                                                    <h3><a href="#">商品名商品名</a></h3>
+                                                    <p>50円（税込）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="heightLine-rank01 sp_end" m:id="dummy">
+                                        <div>
+                                            <div class="box_01">
+                                                <div class="box_02">
+                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                                                    <div class="rank_03">3位</div>
+                                                    <h3><a href="#">商品名商品名</a></h3>
+                                                    <p>50円（税込）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="heightLine-rank01" m:id="dummy">
+                                        <div>
+                                            <div class="box_01">
+                                                <div class="box_02">
+                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+                                                    <div class="rank_04">4位</div>
+                                                    <h3><a href="#">商品名商品名</a></h3>
+                                                    <p>50円（税込）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="heightLine-rank01 sp_end" m:id="dummy">
+                                        <div>
+                                            <div class="box_01">
+                                                <div class="box_02">
+                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
+                                                    <div class="rank_05">5位</div>
+                                                    <h3><a href="#">商品名商品名</a></h3>
+                                                    <p>50円（税込）</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </span>
+                            </ul>
+                            <div class="more_item js-more_item">
+                            <p class="more_item_txt">売れ筋ランキングをもっと見る</p>
+                            </div>
                         </div>
-                    </div>
-                <!--▲▲▲特集バナー▲▲▲-->
+                    </span>
+                <!--▲▲▲今売れている商品▲▲▲-->
                 <!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
                     <span m:id="l_notEmp_autoRecommendGoodsList">
                         <div class="recommend">
@@ -889,136 +995,6 @@ $(function(){
                         <!-- <span m:id="l_include_file_tags" filename="top/topic"></span> -->
                     </span>
                 <!--▲▲▲話題の商品▲▲▲-->
-                <!--▼▼▼今売れている商品ランキング▼▼▼-->
-                    <span m:id="l_notEmp_autoRankGoodsList">
-                        <div class="ranking">
-                            <h2 id="r_bt_012" class="ranking_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">売れ筋ランキング</span></h2>
-                            <ul class="ranking_list cf js-item_list">
-                                <span m:id="l_ite_autoRankGoodsList">
-                                    <span m:id="l_notEqu_autoRankGoodsList_idx">
-                                        <li>
-                                            <div class="item_list_border">
-                                                <div class="ranking_list_in item_list_in js-matchHeight">
-                                                	<!-- span 追加対応 eA 2017.05.10 -->
-                                                	<span>
-														<span m:id="l_autoRankGoods_include3_in_period">
-														<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-															<span m:id="autoRankGoods_html3_include1">外部HTML1 表示領域(期間3)
-				            									<div class="item_list_tag item_list_tag_recommend">
-					                                                <span class="item_list_tag_txt_recommend">オススメ</span>
-					                                                <span class="item_list_tag_txt_new">新着情報</span>
-					                                                <span class="item_list_tag_txt_popular">人気</span>
-					                                                <span class="item_list_tag_txt_soon">完売間近</span>
-					                                                <span class="item_list_tag_txt_arrival">再入荷</span>
-					                                                <span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-					                                                <span class="item_list_tag_txt_cm">CM放映中</span>
-					                                                <span class="item_list_tag_txt_limited">数量限定</span>
-						                                    	</div>
-															</span>
-														</span>
-													</span>
-                                                    <div class="img_box img_box_hover">
-                                                        <span m:id="l_pre_autoRankGoods_representSku">
-                                                            <object class="xsp_obj" m:id="b_var_autoRankGoods_listImage">
-                                                            </object>
-                                                            <span m:id="h_link_autoRankGoods_default_url_img">
-                                                                <a m:id="h_link_autoRankGoods_list_image" href="goodsDetail.html">
-                                                                    <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                                                                    <div class="img_box_hover_in">
-                                                                        <div class="img_box_hover_txt">
-                                                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </span>
-                                                            <span m:id="h_link_autoRankGoods_static_url_img">
-                                                                <a m:id="h_link_autoRankGoods_list_image_goods_url" href="goodsDetail.html">
-                                                                    <img m:id="h_img_autoRankGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                                                                    <div class="img_box_hover_in">
-                                                                        <div class="img_box_hover_txt">
-                                                                            <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <h3 class="item_list_tit">
-                                                        <span m:id="h_link_autoRankGoods_default_url">
-                                                            <a m:id="h_link_autoRankGoods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
-                                                        </span>
-                                                        <span m:id="h_link_autoRankGoods_static_url">
-                                                            <a m:id="h_link_autoRankGoods_static_goods_name" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_name">商品名商品名</span></a>
-                                                        </span>
-                                                    </h3>
-                                                </div>
-                                                <p class="ranking_list_yen item_list_yen">
-                                                    <span m:id="l_notEqu_autoRankGoods_pretaxPrice">
-                                                        <span class="original_price">
-                                                            <span m:id="b_wr_autoRankGoods_pretaxPrice">200</span>&nbsp;円
-                                                        </span>&nbsp;
-                                                    </span>
-                                                    <span m:id="b_wr_autoRankGoods_actualSalePrice">50</span>円(税込)
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </span>
-                                    <li class="heightLine-rank01" m:id="dummy">
-                                        <div>
-                                            <div class="box_01">
-                                                <div class="box_02">
-                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                                    <div class="rank_02">2位</div>
-                                                    <h3><a href="#">商品名商品名</a></h3>
-                                                    <p>50円（税込）</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="heightLine-rank01 sp_end" m:id="dummy">
-                                        <div>
-                                            <div class="box_01">
-                                                <div class="box_02">
-                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
-                                                    <div class="rank_03">3位</div>
-                                                    <h3><a href="#">商品名商品名</a></h3>
-                                                    <p>50円（税込）</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="heightLine-rank01" m:id="dummy">
-                                        <div>
-                                            <div class="box_01">
-                                                <div class="box_02">
-                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                                    <div class="rank_04">4位</div>
-                                                    <h3><a href="#">商品名商品名</a></h3>
-                                                    <p>50円（税込）</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="heightLine-rank01 sp_end" m:id="dummy">
-                                        <div>
-                                            <div class="box_01">
-                                                <div class="box_02">
-                                                    <div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_03.jpg" /></a></div>
-                                                    <div class="rank_05">5位</div>
-                                                    <h3><a href="#">商品名商品名</a></h3>
-                                                    <p>50円（税込）</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </span>
-                            </ul>
-                            <div class="more_item js-more_item">
-                            <p class="more_item_txt">売れ筋ランキングをもっと見る</p>
-                            </div>
-                        </div>
-                    </span>
-                <!--▲▲▲今売れている商品▲▲▲-->
                 <!--▼▼▼ココチモの新着商品▼▼▼-->
                     <span m:id="l_pre_newGoodsList">
                         <div class="new_item">
@@ -1128,6 +1104,30 @@ $(function(){
                         </div>
                     </span>	
                 <!--▲▲▲ココチモの新着商品▲▲▲-->
+                <!--▼▼▼特集バナー▼▼▼-->
+                    <div class="feature">
+                        <h2 class="feature_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">おすすめ特集</span></h2>
+                        <ul class="feature_bnrs cf">
+                            <!-- <li><a href="/item_bousaiset/?topbanner1_deb91"><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnar_bousai.gif" class="bannermr" alt="防災セット" /></a></li>
+                            <li><a href="/item_zantarworldpolar/?topbanner2_SDWH01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dwh01_s.jpg" class="bannermr" alt="ザンターワールドポーラーダウンジャケット" /></a></li>
+                            <li><a href="/shop/c/category/001001015/list/?topbanner3_gourmet" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_gourmet_s.jpg" class="bannermr" alt="おいしい食卓" /></a></li>
+                            <li><a href="/item_neovision/?topbanner4_ddo01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_talk_s.jpg" class="bannermr" alt="しゃべる地球儀" /></a></li>
+                            <li><a href="/shop/c/static/exword-interview/?topbanner5_exword-interview" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dictio_kusano.jpg" class="bannermr" alt="電子辞書特集" /></a></li>
+                            <li><a href="/shop/c/e/SDWI01/c/001001018019/?topbanner6_dwi01" ><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/fd_style/bnr_dwi01_s.jpg" class="bannermr" alt="ハリスツイードジャケット" /></a></li> -->
+                            
+                            <!-- <li><a href="http://www-st2.cococimo.jp/shop/c/static/syokutaku/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature01.jpg" alt="おいしい食卓 春号"></a></li>
+                            <li><a href="http://www.cococimo.jp/shop/c/static/bousai/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature02.jpg" alt="備えて安心防災特集"></a></li>
+                            <li><a href="http://www-st2.cococimo.jp/shop/c/static/manganihon/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature03.jpg" alt="まんが日本昔ばなし"></a></li>
+                            <li><a href="http://www.cococimo.jp/item_teac/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature04.jpg" alt="ディアック"></a></li>
+                            <li><a href="http://www.cococimo.jp/shop/c/e/DDV00/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature05.jpg" alt="カシオキーボード"></a></li>
+                            <li><a href="/item_DGB00/" class="hvr-float"><img src="/contents/c/shop/image/bnr_feature06.jpg" alt="イージーウォーク"></a></li> -->
+                            <span m:id="l_include_file_tags" filename="top/feature_bnrs"></span>
+                        </ul>
+                        <div class="feature_more">
+                            <a href="/shop/c/static/feature/" class="feature_more_btn cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>おすすめ特集をもっと見る</span></a>
+                        </div>
+                    </div>
+                <!--▲▲▲特集バナー▲▲▲-->
             </div>
             <!--contents_main-->
             <div id="contents_side" class="side left">
