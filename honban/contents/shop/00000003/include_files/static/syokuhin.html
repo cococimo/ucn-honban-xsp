@@ -5,6 +5,40 @@
 	});
 </script>
 
+<!-- ▼▼▼▼slider(slick)--> 
+<link rel="stylesheet" href="/contents/shop/00000003/css/oishoku_slick_css/style.css">
+<script>
+	$(function(){
+		$('.slider').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  lazyLoad: 'progressive',
+		  autoplay: true,
+		  autoplaySpeed: 3000,
+		  adaptiveHeight: true,
+				responsive:[{
+					breakpoint: 768,
+					settings:{
+						//arrows: false,
+			  		}
+				}]
+			});
+	});
+</script>
+<style>
+	.slider {margin: 0 0 65px;}
+	.slick-dots {bottom: -33px;}
+	.slick-dots li button:before{font-family: 'slick';}
+	.slick-dots li button:before {content: '';background: #000;width:11px;border-radius:50%;height:11px;}
+	.slick-prev:before {content: '←';}
+	.slick-next:before {content: '→';}
+	.center-item .slick-prev,
+	.center-item .slick-next{z-index:9}
+</style>
+<!-- ▲▲▲▲slider(slick)--> 
+
 <div id="category_syokuhin" class="category">
 	<!--<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -19,10 +53,55 @@
 	<!-- /#breadcrumb -->
 	<div class="goods_archive category_feature">
 		<div class="category_feature_intro">
-			<h2 class="category_feature_tit">
+<!-- 			<h2 class="category_feature_tit">
 				<img src="/contents/c/shop/image/category/syokuhin/img_intro01.jpg" alt="おいしい食卓" class="viewPc">
 				<img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="" class="viewSp">
-			</h2>
+			</h2> -->
+
+			<h2 style="display: none;">おいしい食卓</h2>
+
+			<!-- .slider -->
+			<div class="viewPc">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001015024/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro01.jpg" alt="おいしい食卓"></a>
+					</li>
+					<li>
+						<a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro02.jpg" alt="おいしい食卓夏特集　新着一覧"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature8/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro03.jpg" alt="おいしい食卓 北海道グルメ市！"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature7/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro04.jpg" alt="魚魚一 土用うなぎ祭り"></a>
+					</li>
+					<li>
+						<a href="/shop/searchShopShop.do?_S=c&keyword=%82%BB%82%A4%82%DF%82%F1" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro05.jpg" alt="夏の暑さをしばし忘れる、美味しいそうめん"></a>
+					</li>			
+				</ul>
+			</div>
+
+			<div class="viewSp">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001015024/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="おいしい食卓"></a>
+					</li>
+					<li>
+						<a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro02_sp.jpg" alt="おいしい食卓夏特集　新着一覧"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature8/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro03_sp.jpg" alt="おいしい食卓 北海道グルメ市！"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature7/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro04_sp.jpg" alt="魚魚一 土用うなぎ祭り"></a>
+					</li>
+					<li>
+						<a href="/shop/searchShopShop.do?_S=c&keyword=%82%BB%82%A4%82%DF%82%F1" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro05_sp.jpg" alt="夏の暑さをしばし忘れる、美味しいそうめん"></a>
+					</li>			
+				</ul>
+			</div>
+			<!-- /.slider -->
+
 			<p class="category_feature_intro_txt">みなさまに“笑顔”と“健康”をお届けしたい。 そんな思いから、日本各地より 本当の“おいしい”を集めました。<br class="viewPc">届けたい、みんなの想いがつまったおいしさ。<br class="viewPc">“こころ”と“からだ”が素直に喜ぶ食のために、おいしい食卓は、「国産」・「無添加」にこだわって商品を選んでいます。</p>
 		</div>
 		<!-- /.goods_archive_intro -->
@@ -162,9 +241,10 @@
 					<ul class="cf">
 						<li><a href="/shop/c/static/syokutaku-feature8/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature08.jpg" alt="おいしい食卓 北海道グルメ市！"></a></li>
 						<li><a href="/shop/c/static/syokutaku-feature7/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature07.jpg" alt="魚魚一 土用うなぎ祭り"></a></li>
-						<li><a href="/shop/c/static/syokutaku-blog8/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature05.jpg" alt="おい食スタッフブログ"></a></li>
 						<li><a href="/shop/c/static/syokutaku-feature2/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature06.jpg" alt="作り手の想い"></a></li>
-						<li><a href="/shop/c/static/syokutaku-feature6/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature03-3.jpg" alt="十八穀米のススメ 【第四回】"></a></li>						<!--<li><a href="/shop/c/static/syokutaku-feature1/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature04.jpg" alt="スタッフイチ押し！ 春を告げる旬の味"></a></li>-->
+          　　　　　	　　　　　　　　　　　　<li><a href="/shop/c/static/syokutaku-feature9-1/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature09.jpg" alt="すこやか和煌茶のチカラ"></a></li>
+						<li><a href="/shop/c/static/syokutaku-feature6/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature03-3.jpg" alt="十八穀米のススメ 【第四回】"></a></li>	
+						<li><a href="/shop/c/static/syokutaku-blog/syokutaku-blog10/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature05.jpg" alt="おい食スタッフブログ"></a></li>					<!--<li><a href="/shop/c/static/syokutaku-feature1/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature04.jpg" alt="スタッフイチ押し！ 春を告げる旬の味"></a></li>-->
 						<li><a href="/shop/c/static/syokutaku-concept/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature01.jpg" alt="おいしい食卓 コンセプト"></a></li>
 						<li><a href="/shop/c/static/syokutaku-guide/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature02.jpg" alt="おいしい食卓 お買い物ガイド"></a></li>
 					</ul>
@@ -353,7 +433,7 @@
 						<li><a href="/shop/c/category/001001015016/list/">和菓子・洋菓子</a></li>
 						<li><a href="/shop/c/category/001001015001/list/">飲料</a></li>
 						<li><a href="/shop/c/category/001001015002/list/">調味料</a></li>
-	                                        <!--<li><a href="/shop/c/category/001001015028/list/">酒類</a></li>-->
+	                                        <li><a href="/shop/c/category/001001015028/list/">酒類</a></li>
 
 					</ul>
 					<!-- 本番 -->
@@ -384,22 +464,22 @@
                     
                         
                         <div id="side_widget_news" class="side_widget side_widget_news mt30">
-                            <h2 class="side_widget_tit">おいしい食卓からのお知らせ</h2>
+                            <h2 class="side_widget_tit">おいしい食卓 最新のお知らせ</h2>
                             <div class="clearfix">
                                 <ul class="side_widget_list side_widget_news_list">
-                                        <li>2017/06/01 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/category/001001015026/list/">おいしい食卓 夏の新商品が登場しました！</a></li>
-                                        <li>2017/06/01 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature8/">北海道グルメ市特集が公開！</a></li>
-                                        <li>2017/06/01 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature7/">魚魚一 土用うなぎ祭り特集が公開！</a></li>
+                                        <li>2017/06/14 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog10/">おい食スタッフブログ 第10回【魅力を再発見！】が公開！</a></li>
+                                        <li>2017/06/08 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature9-1/">【すこやか和煌茶のチカラ】-おいしい飲み方編-が公開！</a></li>
+                                        <li>2017/06/08 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature2-5/">突撃取材！【作り手の想い】オホーツク海明け毛ガニ編が公開！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/category/001001015026/list/">おいしい食卓 夏の新商品が登場しました！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/static/syokutaku-feature8/">北海道グルメ市特集が公開！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/static/syokutaku-feature7/">魚魚一 土用うなぎ祭り特集が公開！</a></ili>
 
-                                        <li>2017/05/31 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog7/">おい食スタッフブログ 第8回【仁義なき試食会の世界！？】が公開！</a></li>
-                                        <li>2017/05/20 <a target="_blank" href="/shop/c/static/syokutaku-feature6/">【第4回】十八穀米のススメ 活用レシピ編-3- が公開！</a></li>
-                                        <li>2017/05/11 <a target="_blank" href="/shop/c/static/syokutaku-feature2-3/">突撃取材！【作り手の想い】金賞受賞！無添加ソーセージ編が公開！</a></li>
-                                        <!--<li>2017/04/20<a target="_blank" href="/shop/c/static/syokutaku-feature4/">【第2回】十八穀米のススメ 活用レシピ編-1- が公開！</a></li>
+                                       <!-- <li>2017/04/20<a target="_blank" href="/shop/c/static/syokutaku-feature4/">【第2回】十八穀米のススメ 活用レシピ編-1- が公開！</a></li>
                                          <li>2017/04/7<a target="_blank" href="/shop/c/static/syokutaku-feature2/">突撃取材！【作り手の想い】を公開。</a></li>-->
                                     
                                         <li>2017/03/27<a target="_blank" href="/shop/c/static/syokutaku-concept/">「おいしい食卓」のコンセプトページを公開しました。</a></li>
 
-                                       <!-- <li>2017/03/27<a target="_blank" href="/shop/c/static/syokutaku-feature3/">おいしい食卓オリジナル 十八穀米の基本のおいしい炊き方をご紹介します！</a></li>-->
+                                       <!--<li>2017/03/27<a target="_blank" href="/shop/c/static/syokutaku-feature3/">おいしい食卓オリジナル 十八穀米の基本のおいしい炊き方をご紹介します！</a></li>-->
                                     
                                     
                                 </ul>
@@ -445,8 +525,9 @@
 					<p><a href="/shop/c/category/001001015021/list/">果物</a></p>
 					<p><a href="/shop/c/category/001001015016/list/">和菓子・洋菓子</a></p>
 					<p><a href="/shop/c/category/001001015001/list/">飲料</a></p>
-　　　　　　　　　　　　　　　　　　　　<p><a href="/shop/c/category/001001015028/list/">酒類</a></p>
 					<p><a href="/shop/c/category/001001015002/list/">調味料</a></p>
+　　　　　　　　　　　　　　　　　　　　<p><a href="/shop/c/category/001001015028/list/">酒類</a></p>
+
 				</dd>
 				<!-- 本番 -->
 				<!-- <dd>
