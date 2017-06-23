@@ -1,0 +1,160 @@
+.main-visual{
+	margin-bottom:50px;
+}
+
+strong{
+	vertical-align:baseline;
+}
+
+.key-bg-color{
+	background-color:#76A32D;
+}
+
+#feature9 .detail-bnr{
+	width:1000px;
+	margin:0 auto 40px;
+	background-image:url(/contents/shop/00000003/image/static/syokutaku/feature9/1/detail-bnr-bg.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	text-align:center;
+	color:#fff;
+	padding:88px 0;
+}
+#feature9 .detail-bnr .brand{
+	font-size:20px;
+}
+#feature9 .detail-bnr hr{
+	width:60px;
+	height:1px;
+	border:none;
+	background-color:#fff;
+	display:block;
+	margin:30px auto;
+}
+#feature9 .detail-bnr .ttl{
+	margin-bottom:50px;
+}
+#feature9 .detail-bnr .btn{
+	width:353px;
+	margin: 0 auto;
+}
+#feature9 .detail-bnr .btn a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	position:relative;
+	padding:15px;
+	font-size:18px;
+	text-align:center;
+	border-radius:4px;
+	box-shadow:0 4px #55781C;
+}
+#feature9 .detail-bnr .btn a span{
+	position:relative;
+	padding-left:30px;
+}
+#feature9 .detail-bnr .btn a span::before,
+#feature9 .detail-bnr .btn a span::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+#feature9 .detail-bnr .btn a span::before{
+	width: 6px;
+	height: 6px;
+	left:0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#feature9 .detail-bnr .btn a:hover{
+	box-shadow:0 0 #55781C;
+	transform:translateY(4px);
+}
+
+#contents_in #feature9 .noticeBox{
+	width:1000px;
+	margin:0 auto 80px;
+	border-color:#76A32D;
+}
+#contents_in #feature9 .noticeBox strong{
+	vertical-align:baseline;
+	font-size:24px;
+}
+
+.contents .intro-txt{
+	text-align:center;
+	font-size:16px;
+	line-height:2.25;
+	margin-bottom:40px;
+}
+.contents .intro-txt strong{
+	font-size: 24px;
+	vertical-align: baseline;
+}
+
+
+@media screen and (max-width:767px) {
+.main-visual{
+	margin-bottom:25px;
+}
+
+#feature9 .detail-bnr{
+	width:auto;
+	margin:0 auto 15px;
+	padding:35px 0;
+}
+#feature9 .detail-bnr .brand{
+	font-size:13px;
+}
+#feature9 .detail-bnr hr{
+	width:38px;
+	margin:20px auto;
+}
+#feature9 .detail-bnr .ttl{
+	margin-bottom:20px;
+}
+#feature9 .detail-bnr .ttl img{
+	width:298px;
+}
+#feature9 .detail-bnr .btn{
+	width:226px;
+	margin: 0 auto;
+}
+#feature9 .detail-bnr .btn a{
+	padding:10px;
+	font-size:13px;
+	border-radius:2px;
+	box-shadow:0 2px #55781C;
+}
+#feature9 .detail-bnr .btn a span{
+	padding-left:12px;
+}
+#feature9 .detail-bnr .btn a span::before{
+	width: 4px;
+	height: 4px;
+}
+#contents_in #feature9 .noticeBox{
+	width:auto;
+	margin:0 15px 20px;
+}
+#contents_in #feature9 .noticeBox strong{
+	font-size:21px;
+}
+.contents .intro-txt{
+	font-size:13px;
+	line-height:2.11;
+	margin-bottom:20px;
+	text-align:left;
+	padding: 0 15px;
+}
+.contents .intro-txt strong{
+	font-size: 17px;
+}
+}
