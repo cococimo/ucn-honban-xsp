@@ -1,0 +1,494 @@
+#contents_in img{
+	max-width:initial;	
+}
+
+#contents_in .mainImg{
+	margin-bottom: 52px;
+}
+
+#contents_in .text01 {
+	margin-bottom: 69px;
+	font-size: 16px;
+	line-height: 2.2;
+}
+
+#contents_in .headLine01 {
+	margin-bottom: 27px;
+	padding-bottom: 23px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/h2_bg.gif);
+}
+
+#contents_in .headLine01 .bg {
+	padding: 0 5px 5px;
+	display: inline-block;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/line01.gif) repeat-x left bottom;
+}
+
+#contents_in .headLine01 .bg .win {
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+#contents_in .headLine01 .sml {
+	margin-left: -75px;
+	width: 150px;
+	font-size: 11px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: -14px;
+}
+
+#contents_in .textArea p {
+	margin-bottom: 29px;
+	padding-left: -1em;
+	text-indent: 1em;
+}
+
+#contents_in .textArea .word01 {
+	margin-bottom: 30px;
+}
+
+#contents_in .textArea .word02 {
+	margin-bottom: 34px;
+}
+
+#contents_in .textArea {
+	margin-bottom: 52px;
+}
+
+#contents_in .text {
+	margin-bottom: 31px;
+}
+
+#contents_in .list {
+	margin-bottom: 77px;
+}
+
+#contents_in .list li {
+	float: left;
+}
+
+#contents_in .list li span {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+}
+
+#contents_in .list li:last-child {
+	float: right;
+}
+
+#contents_in p {
+	margin-bottom: 30px;
+}
+
+#contents_in .text02 {
+	margin-bottom: 54px;
+}
+
+#contents_in .section {
+	margin-bottom: 80px;
+	padding: 29px 39px 9px;
+	border: 3px solid #4695D0;
+	background: #fff url(/contents/shop/00000003/image/static/syokutaku/feature2/7/section_bg.png) repeat-x left top;
+}
+
+#contents_in .section .ttl {
+	margin-bottom: 21px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#contents_in .section .ttl span {
+	margin: 0 auto;
+	padding: 7px 0;
+	width: 780px;
+	height: 42px;
+	display: block;
+	box-sizing: border-box; 
+	position: relative;
+	line-height: 1.2;
+	background-color: #4694D2;
+}
+
+#contents_in .section .ttl span:before {
+	width: 10px;
+	height: 42px;
+	position: absolute;
+	left: -10px;
+	top: 0;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/icon01.png) no-repeat;
+	
+	content: "";
+}
+
+#contents_in .section .ttl span:after {
+	width: 10px;
+	height: 42px;
+	position: absolute;
+	right: -10px;
+	top: 0;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/icon02.png) no-repeat;
+	
+	content: "";
+}
+
+#contents_in .section .txt01 {
+	margin-bottom: 30px;
+	padding-left: -1em;
+	text-indent: 1em;
+}
+
+#contents_in .section .txt02 {
+	margin-bottom: 33px;
+}
+
+#contents_in .section ul {
+	margin-bottom: 20px;
+}
+
+#contents_in .section li {
+	margin-right: 42px;
+	float: left;
+}
+
+#contents_in .section li:last-child {
+	margin-right: 0;
+}
+
+#contents_in .section .txt03 {
+	margin-bottom: 0;
+	font-size: 14px;
+	text-align: center;
+}
+
+#contents_in .imgBoxL {
+	margin-bottom: 54px;
+}
+
+#contents_in .imgBoxL .photoBox {
+	margin-top: 2px;
+	float: left;
+}
+
+#contents_in .imgBoxL .txtBox {
+	margin-top: -2px;
+	float: right;
+	width: 599px;
+}
+
+#contents_in .imgBoxL .txtBox p {
+	margin-bottom: 31px;
+}
+
+#contents_in .imgBoxR .photoBox {
+	margin-top: 6px;
+	float: right;
+}
+
+#contents_in .imgBoxR .txtBox {
+	float: left;
+	width: 602px;
+}
+
+#contents_in .bgPho03 {
+	margin-bottom: 25px;
+	padding: 105px 0 114px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/photo10.jpg);
+}
+
+#contents_in .mainBox02 {
+	padding-top: 100px;
+}
+
+#contents_in .comLink a {
+	background-color: #4694D2;
+	border-color: #216FAD;
+}
+
+#contents_in .comLink a:hover {
+	opacity: 0.95;
+	background-color: #4694D2;
+}
+
+#contents_in .bgPho p {
+	margin-bottom: 24px;
+}
+
+#contents_in .noticeBox {
+	padding: 46px 30px 47px;
+	border-color: #4694D2;
+}
+
+#contents_in .bgPho .ttl {
+	margin-bottom: 44px;
+}
+
+#contents_in {
+	padding-bottom: 40px;
+}
+
+
+@media screen and (max-width:767px) {
+	#contents_in .mainImg{
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .mainBox {
+		padding-top: 0;
+	}
+	
+	#contents_in .text01 {
+		margin-bottom: 30px;
+		font-size: 13px;
+		line-height: 2.1;
+	}
+	
+	#contents_in .headLine01 {
+		margin-bottom: 11px;
+		padding-bottom: 16px;
+	}
+	
+	#contents_in .headLine01 .bg {
+		padding: 0 5px;
+		background-size: 3px 5px;
+	}
+	
+	#contents_in .headLine01 .bg .win {
+		margin-top: -3px;
+	}
+	
+	#contents_in .headLine01 .sml {
+		top: inherit;
+		bottom: 90%;
+		right: 18px;
+		font-size: 6px;
+	}
+	
+	#contents_in .text {
+		margin-bottom: 14px;
+	}
+	
+	#contents_in .text p {
+		margin-bottom: 21px;
+	}
+	
+	#contents_in .list {
+		margin: 0 30px 35px;
+	}
+	
+	#contents_in .list li img {
+		width: 100%;
+	}
+	
+	#contents_in .list li span {
+		margin-top: 7px;
+		font-size: 12px;
+		line-height: 1.3;
+	}
+	
+	#contents_in .list li:first-child {
+		margin-bottom: 22px;
+		float: none;
+	}
+	
+	#contents_in .list li:last-child {
+		float: none;
+	}
+	
+	#contents_in p {
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .text02 {
+		margin-bottom: 35px;
+	}
+	
+	#contents_in .section .ttl {
+		margin-bottom: 15px;
+		font-size: 14px;
+	}
+	
+	#contents_in .section .ttl span {
+		width: auto;
+		height: auto;
+		line-height: 1.5;
+	}
+	
+	#contents_in .section {
+		margin-bottom: 35px;
+		padding: 23px 20px 12px;
+		border-width: 2px;
+		background: #fff url(/contents/shop/00000003/image/static/syokutaku/feature2/7/sp/section_bg.gif) repeat-x left top;
+		background-size: 4px 744px;
+	}
+	
+	#contents_in .section .ttl span:before {
+		width: 15px;
+		height: 109px;
+		left: -8px;
+		background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/sp/icon01.png) no-repeat;
+		background-size: 8px 56px;
+	}
+	
+	#contents_in .section .ttl span:after {
+		width: 15px;
+		height: 109px;
+		right: -15px;
+		background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/sp/icon02.png) no-repeat;
+		background-size: 8px 56px;
+	}
+	
+	#contents_in .section .txt01 {
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .section .txt02 {
+		margin-bottom: 17px;
+	}
+	
+	#contents_in .section ul {
+		margin: 0 38px;
+	}
+	
+	#contents_in .section ul li {
+		margin: 0 0 15px;
+		float: none;
+	}
+	
+	#contents_in .section ul li img {
+		width: 100%;
+	}
+	
+	#contents_in .section .txt03 {
+		font-size: 12px;
+	}
+	
+	#contents_in .imgBoxL .txtBox {
+		margin: 0 0 32px;
+		float: none;
+		width: auto;
+	}
+	
+	#contents_in .imgBoxL .photoBox {
+		margin: 0 30px;
+		float: none;
+	}
+	
+	#contents_in .imgBoxL .photoBox img {
+		width: 100%;
+	}
+	
+	#contents_in .imgBoxL {
+		margin-bottom: 38px;
+	}
+	
+	#contents_in .imgBoxR .txtBox {
+		margin-bottom: 20px;
+		float: none;
+		width: auto;
+	}
+	
+	#contents_in .imgBoxL .txtBox p {
+		margin-bottom: 22px;
+	}
+	
+	#contents_in .imgBoxR .photoBox {
+		margin: 0 30px;
+		float: none;
+	}
+	
+	#contents_in .imgBoxR .photoBox img {
+		width: 100%;
+	}
+	
+	#contents_in .mainBox02 {
+		padding-top: 50px;
+	}
+	
+	#contents_in .bgPho {
+		margin: 0 0 30px;
+	}
+	
+	#contents_in .bgPho03 {
+		padding: 62px 0 58px;
+		background: url(/contents/shop/00000003/image/static/syokutaku/feature2/7/sp/photo.jpg) no-repeat center center;
+		background-size: cover;
+	}
+	
+	#contents_in .bgPho .ttl {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	
+	#contents_in .bgPho .ttl img {
+		margin: 0 auto;
+		width: 212px;
+	}
+	
+	#contents_in .bgPho p {
+		margin-bottom: 15px;
+	}
+	
+	#contents_in .comLink a {
+		padding: 14px 5px;
+	}
+	
+	#contents_in .comLink a:hover {
+		opacity: 1;
+	}
+	
+	#contents_in .comLink {
+		width: 65%;
+	}
+	
+	#contents_in .noticeBox {
+		padding: 25px 35px;
+	}
+	
+	#contents_in .bgPho {
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .textArea p {
+		margin-bottom: 22px;
+	}
+	
+	#contents_in .textArea .word01 {
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .textArea .word02 {
+		margin-bottom: 21px;
+	}
+	
+	#contents_in .textArea {
+		margin-bottom: 33px;
+	}
+	#contents_in .moto{
+		width:15px;
+	}
+
+}
+
+@media all and (-ms-high-contrast:none){ 
+	#contents_in .section .ttl span {
+		padding: 12px 0 2px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
