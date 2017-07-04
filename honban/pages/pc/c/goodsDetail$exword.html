@@ -69,6 +69,10 @@ $(function(){
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/nihon/layout.css" media="all">
 <link rel="stylesheet" href="contents/shop/00000003/common_sp/common_s_04/style.css" type="text/css" media="all" />
+<style>
+.js-tel_sticky {display: none;}
+.is-sticky {display: block;}
+</style>
 <script>
 $(function(){
   $('.cmn_float01 .cmn_float01_r_img:has(iframe)').wrapInner('<div class="iframeWrap">');
@@ -80,11 +84,12 @@ $(function(){
       var telStickyHeight     = $telSticky.outerHeight();
       var telStickyOffset     = $telSticky.offset().top;
       var $footerTelOffset  = $('.tel_area').offset().top;
+      var $documentHeight   = $(document).height();
       $(window).scroll(function(){
         var windowHeight    = $(window).height();
         var scrollTop     = $(window).scrollTop();
 
-        if( (telStickyOffset + telStickyHeight) < (windowHeight + scrollTop) ){
+        if((($documentHeight*0.01)*20) < (windowHeight + scrollTop)){
           $telSticky.addClass('is-sticky');
           if( $footerTelOffset < (windowHeight + scrollTop) ) {
             $telSticky.addClass('is-out');
@@ -104,6 +109,11 @@ $(function(){
   $('select[name=goods_sku_code]').change(function() {
     $(this).closest('.tooltip_wrap').find('.tooltip').fadeOut();
   });
+/* cartlink
+------------------------------------- */
+   if(($('.seventh-box01').length)) {
+      $('.bs-wrap .seventh-box01').attr('id', 'goods_detail_item');
+   }
 });
 </script>
 
@@ -765,6 +775,8 @@ function showCartButton1(obj){
         </span>
       </span>
 
+<div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております" /></div>
+<!-- /.tel -->
 <!-- インクルード領域 -->
 
 <span m:id="l_include_in_period">
@@ -822,8 +834,6 @@ function showCartButton1(obj){
 </span>  -->      
 
 <!--/ インクルード領域  -->
-<div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております" /></div>
-<!-- /.tel -->
       
       
           <!-- <form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
@@ -1063,6 +1073,12 @@ function showCartButton1(obj){
       </span>
     <!--▲▲▲あなたの閲覧履歴からのおススメです▲▲▲-->
 
+    <div id="itemtop" class="itemtop_pc">
+      <a href="#goods_detail_item"><img src="/contents/c/goods/image/new/btn_itemtop_sp.png" alt="商品情報" /></a>
+    </div>
+    <div id="itemtop_sp" class="itemtop_sp">
+      <a href="#goods_detail_item"><img src="/contents/c/goods/image/new/btn_itemtop_sp.png" alt="商品情報" /></a>
+    </div>
         <!-- 商品詳細など -->
         
         
