@@ -1,0 +1,571 @@
+<script>
+	$(function(){
+		$('html').attr('id', 'category');
+		$('.category_list li:nth-child(4) a').addClass('is-current');
+	});
+</script>
+
+<!-- ▼▼▼▼slider(slick)--> 
+<link rel="stylesheet" href="/contents/shop/00000003/css/oishoku_slick_css/style.css">
+<script>
+	$(function(){
+		$('.slider').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  lazyLoad: 'progressive',
+		  autoplay: true,
+		  autoplaySpeed: 3000,
+		  adaptiveHeight: true,
+				responsive:[{
+					breakpoint: 768,
+					settings:{
+						//arrows: false,
+			  		}
+				}]
+			});
+	});
+</script>
+<style>
+	.slider {margin: 0 0 65px;}
+	.slick-dots {bottom: -33px;}
+	.slick-dots li button:before{font-family: 'slick';}
+	.slick-dots li button:before {content: '';background: #000;width:11px;border-radius:50%;height:11px;}
+	.slick-prev:before {content: '←';}
+	.slick-next:before {content: '→';}
+	.center-item .slick-prev,
+	.center-item .slick-next{z-index:9}
+</style>
+<!-- ▲▲▲▲slider(slick)--> 
+
+<div id="category_syokuhin" class="category">
+	<!--<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
+		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="/"><span itemprop="name">ココチモの通販ショップ</span></a>
+			<meta itemprop="position" content="1">
+		</li>
+		<li class="guide_home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<span itemprop="name">おいしい食卓</span>
+			<meta itemprop="position" content="2">
+		</li>
+	</ol>-->
+	<!-- /#breadcrumb -->
+	<div class="goods_archive category_feature">
+		<div class="category_feature_intro">
+<!-- 			<h2 class="category_feature_tit">
+				<img src="/contents/c/shop/image/category/syokuhin/img_intro01.jpg" alt="おいしい食卓" class="viewPc">
+				<img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="" class="viewSp">
+			</h2> -->
+
+			<h2 style="display: none;">おいしい食卓</h2>
+
+			<!-- .slider -->
+			<div class="viewPc">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001015024/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro01.jpg" alt="おいしい食卓"></a>
+					</li>
+					<li>
+						<a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro02.jpg" alt="おいしい食卓夏特集　新着一覧"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature8/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro03.jpg" alt="おいしい食卓 北海道グルメ市！"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature7/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro04.jpg" alt="魚魚一 土用うなぎ祭り"></a>
+					</li>
+					<li>
+						<a href="/shop/searchShopShop.do?_S=c&keyword=%82%BB%82%A4%82%DF%82%F1" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro05.jpg" alt="夏の暑さをしばし忘れる、美味しいそうめん"></a>
+					</li>			
+				</ul>
+			</div>
+
+			<div class="viewSp">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001015024/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="おいしい食卓"></a>
+					</li>
+					<li>
+						<a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro02_sp.jpg" alt="おいしい食卓夏特集　新着一覧"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature8/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro03_sp.jpg" alt="おいしい食卓 北海道グルメ市！"></a>
+					</li>
+					<li>
+						<a href="/shop/c/static/syokutaku-feature7/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro04_sp.jpg" alt="魚魚一 土用うなぎ祭り"></a>
+					</li>
+					<li>
+						<a href="/shop/searchShopShop.do?_S=c&keyword=%82%BB%82%A4%82%DF%82%F1" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro05_sp.jpg" alt="夏の暑さをしばし忘れる、美味しいそうめん"></a>
+					</li>			
+				</ul>
+			</div>
+			<!-- /.slider -->
+
+			<p class="category_feature_intro_txt">みなさまに“笑顔”と“健康”をお届けしたい。 そんな思いから、日本各地より 本当の“おいしい”を集めました。<br class="viewPc">届けたい、みんなの想いがつまったおいしさ。<br class="viewPc">“こころ”と“からだ”が素直に喜ぶ食のために、おいしい食卓は、「国産」・「無添加」にこだわって商品を選んでいます。</p>
+		</div>
+		<!-- /.goods_archive_intro -->
+		<div class="cf mt40 s_mt25">
+			<div id="contents_main" class="right">
+				<div class="category_feature_recommend">
+					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">おいしい食卓のおすすめ商品</span></h2>
+					<ul class="category_feature_recommend_list item_list item_list_2top js-item_list">
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">人気</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAL2/">
+										<img src="/contents/c/goods/image/new/dial2/dial2_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAL2/">オホーツク雄武産 海明け毛ガニ ２杯</a></h3>
+								<p class="text item_list_txt">今が旬！ プリッとした身と濃厚な味噌がたっぷり。</p>
+							</div>
+							<p class="cash item_list_yen">7,560円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">人気</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIE03/">
+										<img src="/contents/c/goods/image/new/die03/die03_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIE03/">北海道産 エゾバフンウニ・キタムラサキウニ食べ比べセット</a></h3>
+								<p class="text item_list_txt">ミョウバン不使用！ 雑味のない獲れたての旨み。</p>
+							</div>
+							<p class="cash item_list_yen">11,232円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAL7/">
+										<img src="/contents/c/goods/image/new/dial7/dial7_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAL7/">天然帆立貝柱 500ｇ</a></h3>
+								<p class="text item_list_txt">大きい身に旨みがたっぷり！ もっちりと濃厚な甘味が口いっぱい広がります。</p>
+							</div>
+							<p class="cash item_list_yen">3,888円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIE0G/">
+										<img src="/contents/c/goods/image/new/die0g/die0g_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIE0G/">石塚寛一さんの早生白山だだちゃ豆</a></h3>
+								<p class="text item_list_txt">とにかく濃い豆の旨みが自慢！ その存在感はもう「おつまみ」なんて言えません。</p>
+							</div>
+							<p class="cash item_list_yen">4,750円 (税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIE10/">
+										<img src="/contents/c/goods/image/new/die10/die10_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIE10/">坂本正男さんの有機メロン ２玉</a></h3>
+								<p class="text item_list_txt">【限定100セット！】不可能と思われてきた完全無農薬・有機栽培を実現したメロンです。</p>
+							</div>
+							<p class="cash item_list_yen">6,372円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIE0M/">
+										<img src="/contents/c/goods/image/new/die0m/die0m_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIE0M/">国産16種雑穀と小豆の餅入り冷やしぜんざい</a></h3>
+								<p class="text item_list_txt">甘さ控えめで、のどごしなめらか。夏に嬉しい和スイーツです。</p>
+							</div>
+							<p class="cash item_list_yen">3,456円 (税込)</p>
+						</li>
+					</ul>
+					<div class="more_item js-more_item">
+						<p class="more_item_txt">もっと見る</p>
+					</div>
+				</div>
+				<!-- /.recommend -->
+				<div class="feature">
+					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">おいしい食卓特集</span></h2>
+					<ul class="cf">
+						<li><a href="/shop/c/static/syokutaku-feature8/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature08.jpg" alt="おいしい食卓 北海道グルメ市！"></a></li>
+						<li><a href="/shop/c/static/syokutaku-feature7/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature07.jpg" alt="魚魚一 土用うなぎ祭り"></a></li>
+						<li><a href="/shop/c/static/syokutaku-feature2/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature06.jpg" alt="作り手の想い"></a></li>
+						<li><a href="/shop/c/static/syokutaku-feature9-3/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature09.jpg" alt="すこやか和煌茶のチカラ"></a></li>
+						<li><a href="/shop/c/static/syokutaku-feature6/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature03-3.jpg" alt="十八穀米のススメ 【第四回】"></a></li>	
+						<li><a href="/shop/c/static/syokutaku-blog/syokutaku-blog13/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature05.jpg" alt="おい食スタッフブログ"></a></li>					<!--<li><a href="/shop/c/static/syokutaku-feature1/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature04.jpg" alt="スタッフイチ押し！ 春を告げる旬の味"></a></li>-->
+						<li><a href="/shop/c/static/syokutaku-concept/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature01.jpg" alt="おいしい食卓 コンセプト"></a></li>
+						<li><a href="/shop/c/static/syokutaku-guide/" class="hvr-float" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_feature02.jpg" alt="おいしい食卓 お買い物ガイド"></a></li>
+					</ul>
+					<div class="feature_btnBox">
+						<a href="/shop/c/static/feature/#feature_syokuhin" class="feature_btn cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>その他特集をもっと見る</span></a>
+					</div>
+				</div>
+				<!-- /.feature -->
+				<div class="ranking">
+					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">【おいしい食卓】スタッフおすすめランキング</span></h2>
+					<ol class="ranking_list">
+						<li>
+							<div class="ranking_list_in cf">
+								<div class="ranking_list_img img_box_hover">
+									<a href="/item_SDIAM9/">
+										<img src="/contents/c/goods/image/new/diam9/diam9_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<p class="ranking_list_tit">
+									<a href="/item_SDIAM9/">浜名湖産 うなぎ蒲焼 長焼3尾</a>
+								</p>
+								<p class="ranking_list_price">12,312円(税込)</p>
+								<p class="ranking_list_detail viewSp">
+									<a href="/item_DIE04/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+								</p>
+								<div class="ranking_list_comment">
+									<p class="ranking_list_comment_tit"><span>土用だけではもったいない、滋養の食！</span></p>
+									<div class="ranking_list_comment_in">
+										<p class="ranking_list_comment_txt">ある女優さんが「撮影の前夜にはうなぎを食べます。ハードな撮影にも耐えられるし、肌の張りが全然違うんですよ」と話されるのを聞いたことがありますが、うなぎの栄養価は本当にすばらしいなぁと食すたびに再認識します。正統派浜名湖のうなぎを香ばしく焼き上げ、冷凍でお届けします。元気がほしいときに解凍していつでも召し上がれますよ。</p>
+										<p class="ranking_list_comment_info">おい食スタッフ 谷野</p>
+									</div>
+								</div>
+							</div>
+							<p class="ranking_list_detail viewPc">
+								<a href="/item_SDIAM9/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+							</p>
+						</li>
+						<li>
+							<div class="ranking_list_in cf">
+								<div class="ranking_list_img img_box_hover">
+									<a href="/item_DIA48/">
+										<img src="/contents/c/goods/image/new/dic48/dic48_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<p class="ranking_list_tit">
+									<a href="/item_DIC48/">小腹にやさしい　稲庭手延べにゅうめん</a>
+								</p>
+								<p class="ranking_list_price">4,104円（税込）</p>
+								<p class="ranking_list_detail viewSp">
+									<a href="/item_DIC48/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+								</p>
+								<div class="ranking_list_comment">
+									<p class="ranking_list_comment_tit"><span>ついつい手が伸びる！ほっとする味わいです</span></p>
+									<div class="ranking_list_comment_in">
+										<p class="ranking_list_comment_txt">比内地鶏のだしと三陸産のわかめを使ったココチモオリジナルのにゅうめんです。こだわりのわかめは肉厚で、やさしい味のだしと絡んでなんとも言えない良い香りがするんですよ！ちょっと小腹がすいた時に大活躍のほどよい量なので、常備食として人気。私自身お気に入りで、遅く帰った日にはこのにゅうめんが定番です！</p>
+										<p class="ranking_list_comment_info">おい食スタッフ 堀田</p>
+									</div>
+								</div>
+							</div>
+							<p class="ranking_list_detail viewPc">
+								<a href="/item_DIC48/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+							</p>
+						</li>
+						<li>
+							<div class="ranking_list_in cf">
+								<div class="ranking_list_img img_box_hover">
+									<a href="/item_DIAJ8/">
+										<img src="/contents/c/goods/image/new/diaj8/diaj8_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<p class="ranking_list_tit">
+									<a href="/item_DIAJ8/">あんみつ・豆かんセット</a>
+								</p>
+								<p class="ranking_list_price">3,290円（税込）</p>
+								<p class="ranking_list_detail viewSp">
+									<a href="/item_DIAJ8/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+								</p>
+								<div class="ranking_list_comment">
+									<p class="ranking_list_comment_tit"><span>“本物”の国産天草を使用！上質なおやつタイムにどうぞ。</span></p>
+									<div class="ranking_list_comment_in">
+										<p class="ranking_list_comment_txt">一般的に市販の寒天は粉寒天で作られたものが多いのですが、本商品は国産天草を圧力釜で煮出して作った本物の寒天を使用しています。寒天本来の味としっかりとした食感が感じられる、なかなか出会えない逸品です！ホッとする優しい甘さの蜜と相まって充実のおやつタイムが得られますよ。パッケージを簡素化してお得なセットでお届けします！
+</p>
+										<p class="ranking_list_comment_info">おい食スタッフ 浅村</p>
+									</div>
+								</div>
+							</div>
+							<p class="ranking_list_detail viewPc">
+								<a href="/item_DIAJ8/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+							</p>
+						</li>
+						<li>
+							<div class="ranking_list_in cf">
+								<div class="ranking_list_img img_box_hover">
+									<a href="/item_DIE0T/">
+										<img src="/contents/c/goods/image/new/die0t/die0t_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<p class="ranking_list_tit">
+									<a href="/item_DIE0T/">とうもろこし 黄・白食べ比べセット</a>
+								</p>
+								<p class="ranking_list_price">4,482円（税込）</p>
+								<p class="ranking_list_detail viewSp">
+									<a href="/item_DIE0T/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+								</p>
+								<div class="ranking_list_comment">
+									<p class="ranking_list_comment_tit"><span>“朝もぎ”をその日のうちに発送。鮮度にこだわりました！</span></p>
+									<div class="ranking_list_comment_in">
+										<p class="ranking_list_comment_txt">もぎたてのとうもろこしは他と比べものにならないほどおいしい！ なので、みなさまにもそのおいしさを味わっていただくべく、生産者さんにお願いして実現したのがこのセット。朝採ったとうもろこしをその日のうちに発送するので、たっぷりつまった甘味とプリッと弾ける食感を堪能していただけます。現地の味にガブリとかぶりついてみてください！</p>
+										<p class="ranking_list_comment_info">おい食スタッフ 浅村</p>
+									</div>
+								</div>
+							</div>
+							<p class="ranking_list_detail viewPc">
+								<a href="/item_DIE0T/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+							</p>
+						</li>
+						<li>
+							<div class="ranking_list_in cf">
+								<div class="ranking_list_img img_box_hover">
+									<a href="/item_DIAA1/">
+										<img src="/contents/c/goods/image/new/diaa1/diaa1_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<p class="ranking_list_tit">
+									<a href="/item_DIAA1/">オリジナルにんじんジュース6本セット</a>
+								</p>
+								<p class="ranking_list_price">6,994円（税込）</p>
+								<p class="ranking_list_detail viewSp">
+									<a href="/item_DIAA1/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+								</p>
+								<div class="ranking_list_comment">
+									<p class="ranking_list_comment_tit"><span>おいしく、健康。体が求める、にんじんジュース！</span></p>
+									<div class="ranking_list_comment_in">
+										<p class="ranking_list_comment_txt">朝の一杯におすすめ！寝起きの体に野菜の繊維がざざーっと染み渡るのが感じられます。にんじんとりんごをメインにした自然のままの味わいなのに、ほどよい甘さでとっても飲みやすいです。原料もすべて国産で安心。これがないと私の一日は始まりません！</p>
+										<p class="ranking_list_comment_info">おい食スタッフ 堀田</p>
+									</div>
+								</div>
+							</div>
+							<p class="ranking_list_detail viewPc">
+								<a href="/item_DIAA1/" class="ranking_list_detail_btn cmn_btn_orange">詳細を見る</a>
+							</p>
+						</li>
+					</ol>
+					<!-- /.ranking_list -->
+				</div>
+				<!-- /.ranking -->
+				<div class="mt60 s_mt0"><a href="/shop/c/static/gourmet_form/"><img src="/contents/c/shop/image/category/syokuhin/bnr_catalog01.jpg" alt="おいしい食卓のカタログのご請求"></a></div>
+			</div>
+			<!-- /.contentrs_r -->
+			<div id="contents_side" class="side left">
+				<div class="side_widget side_widget_category s_mt25">
+					<h2 class="side_widget_tit side_widget_category_tit">おいしい食卓カテゴリー</h2>
+					<ul class="side_widget_category_list">
+						<li><a href="/shop/c/category/001001015025/list/">お惣菜</a></li>
+						<li><a href="/shop/c/category/001001015023/list/">加工品・缶詰</a></li>
+						<li><a href="/shop/c/category/001001015012/list/">主食（米・麺類・パン）</a></li>
+						<li><a href="/shop/c/category/001001015013/list/">肉</a></li>
+						<li><a href="/shop/c/category/001001015014/list/">魚介類</a></li>
+						<li><a href="/shop/c/category/001001015020/list/">野菜</a></li>
+						<li><a href="/shop/c/category/001001015021/list/">果物</a></li>
+						<li><a href="/shop/c/category/001001015016/list/">和菓子・洋菓子</a></li>
+						<li><a href="/shop/c/category/001001015001/list/">飲料</a></li>
+						<li><a href="/shop/c/category/001001015002/list/">調味料</a></li>
+	                                        <li><a href="/shop/c/category/001001015028/list/">酒類</a></li>
+
+					</ul>
+					<!-- 本番 -->
+					<!-- <ul>
+						<li><a href="/shop/c/category/001001015025/list/">お惣菜</a></li>
+						<li><a href="/shop/c/category/001001015023/list/">加工品・缶詰</a></li>
+						<li><a href="/shop/c/category/001001015012/list/">主食（米・麺類・パン）</a></li>
+						<li><a href="/shop/c/category/001001015013/list/">肉</a></li>
+						<li><a href="/shop/c/category/001001015014/list/">魚介類</a></li>
+						<li><a href="/shop/c/category/001001015020/list/">野菜</a></li>
+						<li><a href="/shop/c/category/001001015021/list/">果物</a></li>
+						<li><a href="/shop/c/category/001001015016/list/">和菓子</a></li>
+						<li><a href="/shop/c/category/001001015001/list/">飲料・アルコール</a></li>
+						<li><a href="/shop/c/category/001001015002/list/">調味料</a></li>
+					</ul> -->
+					<p class="side_widget_category_all">
+						<a href="/shop/c/category/001001015024/list/">全商品一覧</a>
+					</p>
+					<p class="side_widget_category_all">
+						<a href="/shop/c/category/001001015026/list/">新着商品一覧</a>
+					</p>
+					<p class="side_widget_category_all">
+						<a href="/shop/c/category/001001015027/list/">広告掲載商品</a>
+					</p>
+				</div>
+
+                <!--▼▼▼「おいしい食卓」からのお知らせ▼▼▼-->
+                    
+                        
+                        <div id="side_widget_news" class="side_widget side_widget_news mt30">
+                            <h2 class="side_widget_tit">おいしい食卓 最新のお知らせ</h2>
+                            <div class="clearfix">
+                                <ul class="side_widget_list side_widget_news_list">
+                                        <li>2017/07/5 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog13/">おい食スタッフブログ 第13回【人間、食べたいものを食べる、これ基本也~】が公開！</a></li>
+                                        <li>2017/07/05 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature9-3/">【すこやか和煌茶のチカラ】-活用レシピ編その２-が公開！</a></li>
+<li>2017/06/30 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-feature2-7/">突撃取材！【作り手の想い】“出羽鶴”夏の地酒が公開！</a></li>
+<li>2017/06/23 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-feature9-2/">【すこやか和煌茶のチカラ】-活用レシピ編その１-が公開！</a></li>                                         <!--<li>2017/06/21 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog11/">おい食スタッフブログ 第11回【人類は麺類！？】が公開！</a></li>
+                                     　　<li>2017/06/15 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature2-5/">突撃取材！【作り手の想い】オホーツク海明け毛ガニ -加工編-が公開！</a></li>
+                                        <li>2017/06/14 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog10/">おい食スタッフブログ 第10回【魅力を再発見！】が公開！</a></li>
+                                        <li>2017/06/08 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature9-1/">【すこやか和煌茶のチカラ】-おいしい飲み方編-が公開！</a></li>-->
+                                        <li>2017/06/08<a target="_blank" href="/shop/c/static/syokutaku-feature2-5/">突撃取材！【作り手の想い】オホーツク海明け毛ガニ-漁編-が公開！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/category/001001015026/list/">おいしい食卓 夏の新商品が登場しました！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/static/syokutaku-feature8/">北海道グルメ市特集が公開！</a></li>
+                                        <li>2017/06/01 <a target="_blank" href="/shop/c/static/syokutaku-feature7/">魚魚一 土用うなぎ祭り特集が公開！</a></ili>
+
+                                       <!-- <li>2017/04/20<a target="_blank" href="/shop/c/static/syokutaku-feature4/">【第2回】十八穀米のススメ 活用レシピ編-1- が公開！</a></li>
+                                         <li>2017/04/7<a target="_blank" href="/shop/c/static/syokutaku-feature2/">突撃取材！【作り手の想い】を公開。</a></li>-->
+                                    
+                                        <li>2017/03/27<a target="_blank" href="/shop/c/static/syokutaku-concept/">「おいしい食卓」のコンセプトページを公開しました。</a></li>
+
+                                       <!--<li>2017/03/27<a target="_blank" href="/shop/c/static/syokutaku-feature3/">おいしい食卓オリジナル 十八穀米の基本のおいしい炊き方をご紹介します！</a></li>-->
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    
+                <!--▲▲▲「おいしい食卓」からのお知らせ▲▲▲-->	               
+				
+				<div class="side_widget side_widget_begginer mt18">
+					<h2 class="side_widget_tit side_widget_begginer_tit">初めてご利用される方へ</h2>
+					<div class="side_widget_begginer_in">
+						<p class="side_widget_begginer_logo"><img src="/contents/c/shop/image/sp/sp_logo.png" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】"></p>
+						<p class="side_widget_begginer_txt">ユーキャンが運営する、<br>ココチモ通販を、<br>初めてご利用される方へ</p>
+						<div class="side_widget_begginer_our"><a href="/shop/c/static/greeting/">ココチモ（私たち）<br>について</a></div>
+						<div class="side_widget_begginer_guide"><a href="#">ココチモ<br>初めてご利用ガイド</a></div>
+						<ul class="side_widget_begginer_list">
+							<li><a href="/shop/c/static/voice/">お客さまの声</a></li>
+							<li><a href="/shop/c/static/faq/">よくあるご質問</a></li>
+							<li><a href="/shop/c/static/company/">会社概要</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="side_bnr">
+					<a href="#">
+						<img src="/contents/c/shop/image/bnr_mail01.png" title="メールマガジン会員募集" alt="メールマガジン会員募集" class="viewPc">
+						<img src="/contents/c/shop/image/bnr_mail01_sp.png" title="メールマガジン会員募集" alt="メールマガジン会員募集" class="viewSp">
+					</a>
+				</div> -->
+			</div>
+			<!-- /.contents_l -->
+			</div>
+		<!-- /.cf -->
+		<div class="category_feature_bottom mt60 s_mt30">
+			<dl>
+				<dt>おいしい食卓カテゴリー</dt>
+				<dd>
+					<p><a href="/shop/c/category/001001015025/list/">お惣菜</a></p>
+					<p><a href="/shop/c/category/001001015023/list/">加工品・缶詰</a></p>
+					<p><a href="/shop/c/category/001001015012/list/">主食（米・麺類・パン）</a></p>
+					<p><a href="/shop/c/category/001001015013/list/">肉</a></p>
+					<p><a href="/shop/c/category/001001015014/list/">魚介類</a></p>
+					<p><a href="/shop/c/category/001001015020/list/">野菜</a></p>
+					<p><a href="/shop/c/category/001001015021/list/">果物</a></p>
+					<p><a href="/shop/c/category/001001015016/list/">和菓子・洋菓子</a></p>
+					<p><a href="/shop/c/category/001001015001/list/">飲料</a></p>
+					<p><a href="/shop/c/category/001001015002/list/">調味料</a></p>
+　　　　　　　　　　　　　　　　　　　　<p><a href="/shop/c/category/001001015028/list/">酒類</a></p>
+
+				</dd>
+				<!-- 本番 -->
+				<!-- <dd>
+					<p><a href="/shop/c/category/001001015025/list/">お惣菜</a></p>
+					<p><a href="/shop/c/category/001001015023/list/">加工品・缶詰</a></p>
+					<p><a href="/shop/c/category/001001015012/list/">主食（米・麺類・パン）</a></p>
+					<p><a href="/shop/c/category/001001015013/list/">肉</a></p>
+					<p><a href="/shop/c/category/001001015014/list/">魚介類</a></p>
+					<p><a href="/shop/c/category/001001015020/list/">野菜</a></p>
+					<p><a href="/shop/c/category/001001015021/list/">果物</a></p>
+					<p><a href="/shop/c/category/001001015016/list/">和菓子</a></p>
+					<p><a href="/shop/c/category/001001015001/list/">飲料・アルコール</a></p>
+					<p><a href="/shop/c/category/001001015002/list/">調味料</a></p>
+				</dd> -->
+			</dl>
+			<dl>
+				<dt>おいしい食卓特集</dt>
+				<dd>
+					<p><a href="/shop/c/static/syokutaku-feature8/" target="_blank">＼なまら旨いを体感しよう！／ 北海道グルメ市</a></p>
+					<p><a href="/shop/c/static/syokutaku-feature7/" target="_blank">魚魚一 土用うなぎ祭り♪</a></p>
+					<p><a href="/shop/c/static/syokutaku-blog1/" target="_blank">不定期更新スタッフブログ【おい食探して日々精進】</a></p>
+					<p><a href="/shop/c/static/syokutaku-feature2/" target="_blank">突撃取材！作り手の想い </a></p>
+					<p><a href="/shop/c/static/syokutaku-feature3/" target="_blank">おいしく健康！ 【十八穀米のススメ】</a></p>
+					<p><a href="/shop/c/static/syokutaku-concept/" target="_blank">“届けたい、みんなの想いがつまったおいしさ”おいしい食卓 コンセプト</a></p>
+					<p><a href="/shop/c/static/syokutaku-guide/" target="_blank">おいしい食卓 お買い物ガイド</a></p>
+				</dd>
+			</dl>
+			<div class="tac viewSp">
+				<a href="#category_syokuhin" class="cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>おいしい食卓カテゴリートップに戻る</span></a>
+			</div>
+		</div>
+		<!-- /.category_feature_bottom -->
+	</div>
+	<!--category_archive-->
+</div>
+<!-- /#category -->
