@@ -137,6 +137,27 @@ $(function(){
 	#home .word_area {
 		display: block;
 	}
+	.word_area_tit {font-size: 13px;}
+
+	.word_area_tit {
+	    color: #555555;
+	    font-size: 13px;
+	    display: inline-block;
+	}
+	/*▼▼▼css調整ここから0714*/
+	.search_area_input_wrap input[name=keyword] {
+	    padding: 5px 5px 6px;
+	    min-height: 0;
+	}
+	.search_area_input_wrap input[type=submit] {
+	    width: 97px;
+	    height: 35px;
+	    background-size: contain;
+	}
+	#home .word_area {text-align: center;}
+	.word_area_tit {font-size: 13px;}
+	.word_area_list {font-size: 13px;}
+	/*▲▲▲css調整ここまで0714*/
 	@media screen and (max-width:767px) {
 		.header_username {
 			min-width: 263px;
@@ -314,11 +335,6 @@ function showCartButton1(obj){
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="goods" -->
-
-<!--DLPO-->
-<script src="/contents/js/adlpo.js" type="text/javascript"></script>
-<!--DLPO-->
-
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -677,27 +693,27 @@ function showCartButton1(obj){
 <div class="search_area cf">
 	<div class="search_area_in cf">
 		<div class="search_area_input_wrap">
-			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="file:///D|/Templates/goodsSearchShop_shop.html">
+			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
 				<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
 				<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
 				<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 			</form>
-			<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="file:///D|/Templates/goodsSearchShopDetail.html">
+			<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
 				<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
 				<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
 				<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
 			</form>
 		</div>
-		<div class="word_area">
+<div class="word_area">
 			<p class="word_area_tit">よく検索されるキーワード</p>
 			<ul class="word_area_list">
-				<li><a href="#">みみもとくん</a></li>
-				<li><a href="#">防災セット</a></li>
-				<li><a href="#">カシオ</a></li>
-				<li><a href="#">キング・オブ・リュック</a></li>
-				<li><a href="#">マキタ掃除機</a></li>
-				<li><a href="#">まんが日本昔ばなし</a></li>
-				<li><a href="#">おいしい食卓</a></li>
+				<li><a href="/item_DCC10/">みみもとくん</a></li>
+				<li><a href="/item_bousaiset/">防災セット</a></li>
+				<li><a href="/shop/c/category/001001017031/list/">カシオ</a></li>
+				<li><a href="/item_DAK90/">キング・オブ・リュック</a></li>
+				<li><a href="/shop/c/category/001001017025/list/">マキタ掃除機</a></li>
+				<li><a href="/manganihon/">まんが日本昔ばなし</a></li>
+				<li><a href="/syokuhin/">おいしい食卓</a></li>
 			</ul>
 		</div>
 	</div>
@@ -2695,10 +2711,5 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 
 <!-- InstanceEndEditable -->
 <span m:id="smartSuggest"></span>
-
-<!--DLPO トラフィックタグ -->
-<script type='text/javascript'>adlpoMain('','pr=at','lc=os','tt=279-TihMuMmzDIA2');</script>
-<!--DLPO ここまで -->
-
 </body>
 <!-- InstanceEnd --></html>

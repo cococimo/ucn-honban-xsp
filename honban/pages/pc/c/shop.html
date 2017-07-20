@@ -134,6 +134,27 @@ $(function(){
 	#home .word_area {
 		display: block;
 	}
+	.word_area_tit {font-size: 13px;}
+
+	.word_area_tit {
+	    color: #555555;
+	    font-size: 13px;
+	    display: inline-block;
+	}
+	/*▼▼▼css調整ここから0714*/
+	.search_area_input_wrap input[name=keyword] {
+	    padding: 5px 5px 6px;
+	    min-height: 0;
+	}
+	.search_area_input_wrap input[type=submit] {
+	    width: 97px;
+	    height: 35px;
+	    background-size: contain;
+	}
+	#home .word_area {text-align: center;}
+	.word_area_tit {font-size: 13px;}
+	.word_area_list {font-size: 13px;}
+	/*▲▲▲css調整ここまで0714*/
 	@media screen and (max-width:767px) {
 		.header_username {
 			min-width: 263px;
@@ -452,18 +473,18 @@ $(function(){
 <div class="search_area cf">
 	<div class="search_area_in cf">
 		<div class="search_area_input_wrap">
-			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="file:///D|/Templates/goodsSearchShop_shop.html">
+			<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
 				<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
 				<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
 				<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 			</form>
-			<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="file:///D|/Templates/goodsSearchShopDetail.html">
+			<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
 				<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
 				<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
 				<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
 			</form>
 		</div>
-		<div class="word_area">
+<div class="word_area">
 			<p class="word_area_tit">よく検索されるキーワード</p>
 			<ul class="word_area_list">
 				<li><a href="/item_DCC10/">みみもとくん</a></li>
