@@ -1,0 +1,421 @@
+<!-- ▼▼▼ SmartSuggest ▼▼▼ -->
+<script type="text/javascript" src="//cococimo-f-s.snva.jp/js/naviplus_suggestitem_view.js" charset="UTF-8" ></script>
+<script type="text/javascript" src="//cococimo-f-s.snva.jp/js/naviplus_suggest.js" charset="UTF-8" ></script>
+<link href="//cococimo-f-s.snva.jp/css/naviplus_suggest.css" rel="stylesheet" crossorigin type="text/css" />
+<script type="text/javascript" charset="UTF-8">
+NPSuggest.bind({
+	//-- Setting ---//
+	server: "cococimo-f-s.snva.jp",   // サジェストのホスト(HTML連携の場合は不要)
+	accountID: "cococimo",
+	inputAreaID: "search_form_pc",                 // キーワード入力テキストボックス(input type="text")のidを指定
+	submitBtnID: "search_btn_pc",        // 検索フォーム送信ボタン(input type="button|image")のidを指定
+	categoryAreaID: "category_filter_type_pc",               // 商品カテゴリ指定用プルダウン(select)のidを指定
+	fieldAreaID: "",
+	field: "",
+	categoryName: "s2",
+	suggestAreaClass: "np-keyword-suggest",
+	itemListClass: "np-item-suggest",
+	maxSuggest: 7,                    // サジェストの最大キーワード数
+	matchMode: "partial",              // 前方一致("prefix") / 部分一致("partial")
+	alwaysOnTop: false,
+	sortType: 1,                      // サジェスト結果の並び順タイプ ※詳細はマニュアルを参照
+	minimumChar: 1,
+	overlayMode: "off",
+	overlayPlaceHolder: "",
+	furigana: true,
+	suggestHighlight: "off",
+	recommendItemEnabled: "on",       // キーワード関連商品を表示するかどうか(画像表示) "on" / "off"
+	recommendItemHtmlEnabled: "off",
+	recommendItemAreaTitle: "検索結果",      // キーワード関連商品を表示の際のタイトル
+	recommendItemTiming: "mouseover",
+	recommendItemAreaTitle: "Top Results",  // キーワード関連商品を表示の際のタイトル
+	recommendItemAreaPosition: "bottom",    // キーワード関連商品の表示位置 "right" / "left" / "bottom"
+	recommendItemSort: "price",
+	recommendItemLimitWidth: -1,
+	recommendItemLimitHeight: -1,
+	recommendItemUrlPrefix: "",
+	recommendImageUrlPrefix: "",
+	recommendImageAlternative: ""
+});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+NPSuggest.bind({
+	//-- Setting ---//
+	server: "cococimo-f-s.snva.jp",   // サジェストのホスト(HTML連携の場合は不要)
+	accountID: "cococimo",
+	inputAreaID: "search_form_pc_cat",                 // キーワード入力テキストボックス(input type="text")のidを指定
+	submitBtnID: "search_btn_pc_cat",        // 検索フォーム送信ボタン(input type="button|image")のidを指定
+	categoryAreaID: "category_filter_type_pc_cat",               // 商品カテゴリ指定用プルダウン(select)のidを指定
+	fieldAreaID: "",
+	field: "",
+	categoryName: "s2",
+	suggestAreaClass: "np-keyword-suggest",
+	itemListClass: "np-item-suggest",
+	maxSuggest: 7,                    // サジェストの最大キーワード数
+	matchMode: "partial",              // 前方一致("prefix") / 部分一致("partial")
+	alwaysOnTop: false,
+	sortType: 1,                      // サジェスト結果の並び順タイプ ※詳細はマニュアルを参照
+	minimumChar: 1,
+	overlayMode: "off",
+	overlayPlaceHolder: "",
+	furigana: true,
+	suggestHighlight: "off",
+	recommendItemEnabled: "on",       // キーワード関連商品を表示するかどうか(画像表示) "on" / "off"
+	recommendItemHtmlEnabled: "off",
+	recommendItemAreaTitle: "検索結果",      // キーワード関連商品を表示の際のタイトル
+	recommendItemTiming: "mouseover",
+	recommendItemAreaTitle: "Top Results",  // キーワード関連商品を表示の際のタイトル
+	recommendItemAreaPosition: "bottom",    // キーワード関連商品の表示位置 "right" / "left" / "bottom"
+	recommendItemSort: "price",
+	recommendItemLimitWidth: -1,
+	recommendItemLimitHeight: -1,
+	recommendItemUrlPrefix: "",
+	recommendImageUrlPrefix: "",
+	recommendImageAlternative: ""
+});
+</script>
+
+<!-- サジェスト用CSS -->
+<style type="text/css">
+.np-keyword-suggest *,
+.np-item-suggest *{
+  box-sizing: border-box;
+}
+		  
+.np-keyword-suggest,
+.np-item-suggest{
+  color: #333333;
+	background: #ffffff;
+}
+					 
+.np-keyword-suggest{
+	box-sizing: border-box;
+	width:400px;
+	border:1px solid #cccccc;
+}
+									  
+.np-keyword-suggest div{
+	width:100%;
+}
+											 
+.np-keyword-suggest .item{
+	box-sizing: border-box;
+	padding:10px; 
+	cursor:pointer;
+	word-wrap: normal; /* for IE */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.np-keyword-suggest .group:not(:last-child){
+	border-bottom: solid 1px #cccccc;
+}
+																			  
+.np-keyword-suggest .query:before, .title:before,.path:before,
+.narrow1:before, .narrow2:before, .narrow3:before, .narrow4:before, .narrow5:before,
+.narrow6:before, .narrow7:before, .narrow8:before, .narrow9:before, .narrow10:before,
+.keyword1:before, .keyword2:before, .keyword3:before, .keyword4:before, .keyword5:before,
+.keyword6:before, .keyword7:before, .keyword8:before, .keyword9:before, .keyword10:before {
+  box-sizing: border-box;
+  font-size:11px;
+  color:#ffffff;
+  margin-right:8px;
+  padding:3px 8px;
+  border-radius:3px;
+}
+
+.np-keyword-suggest .title:before{content:"商品名";background:#6e6e6e;}
+.np-keyword-suggest .path:before{content:"path";background:#848484;}
+.np-keyword-suggest .narrow1:before{content:"カテゴリ";background:#a4a4a4;}
+.np-keyword-suggest .narrow2:before{content:"narrow2";background:#a4a4a4;}
+.np-keyword-suggest .narrow3:before{content:"narrow3";background:#a4a4a4;}
+.np-keyword-suggest .narrow4:before{content:"narrow4";background:#a4a4a4;}
+.np-keyword-suggest .narrow5:before{content:"narrow5";background:#a4a4a4;}
+.np-keyword-suggest .narrow6:before{content:"narrow6";background:#a4a4a4;}
+.np-keyword-suggest .narrow7:before{content:"narrow7";background:#a4a4a4;}
+.np-keyword-suggest .narrow8:before{content:"narrow8";background:#a4a4a4;}
+.np-keyword-suggest .narrow9:before{content:"narrow9";background:#a4a4a4;}
+.np-keyword-suggest .narrow10:before{content:"narrow10";background:#ababab;}
+.np-keyword-suggest .keyword1:before{content:"keyword1";background:#ababab;}
+.np-keyword-suggest .keyword2:before{content:"keyword2";background:#ababab;}
+.np-keyword-suggest .keyword3:before{content:"keyword3";background:#ababab;}
+.np-keyword-suggest .keyword4:before{content:"keyword4";background:#ababab;}
+.np-keyword-suggest .keyword5:before{content:"keyword5";background:#ababab;}
+.np-keyword-suggest .keyword6:before{content:"keyword6";background:#ababab;}
+.np-keyword-suggest .keyword7:before{content:"keyword7";background:#ababab;}
+.np-keyword-suggest .keyword8:before{content:"keyword8";background:#ababab;}
+.np-keyword-suggest .keyword9:before{content:"keyword9";background:#ababab;}
+.np-keyword-suggest .keyword10:before{content:"keyword10";background:#ababab;}
+
+.np-keyword-suggest .item.selected{
+  background-color:#eeeeee;
+}
+
+.np-item-suggest{
+  box-sizing: border-box;
+  width: 300px;
+  border:1px solid #cccccc;
+}
+
+.np-item-suggest table{
+  width:100%;
+  border-collapse : collapse;
+}
+
+.np-item-suggest table tr{
+  border-top:1px solid #cccccc;
+}
+
+.np-item-suggest table tr:hover{
+  background-color:#eeeeee;
+}
+
+.np-item-suggest table tr:first-child{
+  border-top:none;
+}
+
+.np-item-suggest table td{
+  text-align: left;
+  vertical-align: middle;
+}
+
+.np-item-suggest table td a{
+  box-sizing: border-box;
+  padding:5px;
+  display: block; 
+}
+
+.np-item-suggest img{
+  max-width: 70px !important;
+  max-height: 70px !important;
+	height: auto;
+}
+
+.np-item-suggest .item{
+  width:100%;
+}
+
+.np-item-suggest .item a {
+  text-decoration: none;
+  width:220px;
+  min-height: 30px !important;
+}
+
+.np-item-suggest .item .item_desc {
+  font-size: 11px;
+}
+
+.np-item-suggest .hitnum{
+  box-sizing: border-box;
+  text-align: right;
+  color:#333333;
+  border-top: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.np-item-suggest .hitnum:after {
+  content: "件";
+}
+</style>
+
+<!-- 関連コンテンツ用CSS -->
+<style type="text/css">
+ul.relate {
+  height:100px;
+  padding:0px;
+}
+
+.relatebox {
+  width: 214px;
+  max-height: 70px;
+  margin-right: 11px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  float: left;
+}
+
+.relatebox a{
+  font-size:11px;
+}
+
+.relatebox .thumb{
+  margin: 0 12px 0 0;
+  float: left;
+}
+
+.relatebox .thumb img{
+  width:70px;
+	height:70px;  
+}
+
+.relatebox dt {
+  font-weight: bold;
+  margin-bottom:2px;
+}
+
+.relatebox-last {
+  margin-right: 0;
+}
+</style>
+
+<!-- サジェストオーバーレイ時のCSS -->
+<style type="text/css">
+
+.np-keyword-suggest_overlay {
+	width: 100% !important;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 0;
+	font-size: 15px;
+	color: #333;
+}
+.np-keyword-suggest_overlay div {
+	width: auto;
+}
+.np-keyword-suggest_overlay .inputArea {
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #eee;
+}
+.np-keyword-suggest_overlay .inputArea .cancelButton,
+.np-keyword-suggest_overlay .inputArea .submitButton {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	border: 5px solid transparent;
+	border-radius: 2px;
+}
+.np-keyword-suggest_overlay .inputArea span {
+	display: block !important;
+	margin: 0 35px;
+}
+.np-keyword-suggest_overlay .inputArea span input {
+	box-sizing: border-box;
+	width: 100% !important;
+	padding: 0 5px;
+	box-shadow: none;
+	border: 0;
+	border-radius: 2px;
+	font-size: 15px;
+}
+.np-keyword-suggest_overlay .inputArea span a {
+	top: 0 !important;
+	line-height: 32px;
+	color: #BDBDBD; 
+}
+.np-keyword-suggest_overlay .group {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-bottom: solid 1px #cccccc;
+}
+
+.np-keyword-suggest_overlay .item {
+	float: none;
+	margin: 0;
+	padding: 10px;
+	position: relative;
+        height:56px;
+	word-wrap: normal; /* for IE */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.np-keyword-suggest_overlay .item:not(:last-child) {
+	border-bottom: dotted 1px #cccccc;
+}
+
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-query > .query:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-title > .title:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-path > .path:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow1 > .narrow1:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow2 > .narrow2:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow3 > .narrow3:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow4 > .narrow4:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow5 > .narrow5:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow6 > .narrow6:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow7 > .narrow7:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow8 > .narrow8:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow9 > .narrow9:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow10 > .narrow10:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword1 > .keyword1:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword2 > .keyword2:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword3 > .keyword3:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword4 > .keyword4:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword5 > .keyword5:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword6 > .keyword6:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword7 > .keyword7:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword8 > .keyword8:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword9 > .keyword9:before,
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword10 > .keyword10:before {
+	display: inline-block;
+	width: 5em;
+	margin-right: 0.5em;
+	padding: 2px 0;
+	border-radius: 2px;
+	font-size: 85%;
+	color: #6e6e6e;
+	background:none;
+	text-align:left;
+	vertical-align: top;
+	position: absolute;
+	bottom: 4px;
+}
+
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-query > .query:before{content: "query";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-title > .title:before{content: "title";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-path > .path:before{content: "path";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow1 > .narrow1:before{content: "narrow1";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow2 > .narrow2:before{content: "narrow2";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow3 > .narrow3:before{content: "narrow3";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow4 > .narrow4:before{content: "narrow4";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow5 > .narrow5:before{content: "narrow5";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow6 > .narrow6:before{content: "narrow6";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow7 > .narrow7:before{content: "narrow7";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow8 > .narrow8:before{content: "narrow8";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow9 > .narrow9:before{content: "narrow9";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-narrow10 > .narrow10:before{content: "narrow10";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword1 > .keyword1:before{content: "keyword1";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword2 > .keyword2:before{content: "keyword2";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword3 > .keyword3:before{content: "keyword3";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword4 > .keyword4:before{content: "keyword4";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword5 > .keyword5:before{content: "keyword5";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword6 > .keyword6:before{content: "keyword6";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword7 > .keyword7:before{content: "keyword7";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword8 > .keyword8:before{content: "keyword8";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword9 > .keyword9:before{content: "keyword9";}
+.np-keyword-suggest_overlay > .np-keyword-suggest-group-keyword10 > .keyword10:before{content: "keyword10";}
+
+.np-keyword-suggest_overlay .plusButton{
+	position: absolute;
+	right: 5px;
+	box-sizing: border-box;
+	width: 25px;
+	float: none;
+	margin: 0;
+	margin-top:5px;
+	padding: 0;
+	background-color: #ccc;
+	border: 0;
+	border-radius: 2px;
+	font-size: 100%;
+	line-height: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.np-keyword-suggest_overlay .submitButton {
+    background-image: url(../img/search-flat.png);
+}
+
+.np-keyword-suggest_overlay .cancelButton {
+    background-image: url(../img/arrow-flat.png);
+}
+
+</style>
+<!-- ▲▲▲ SmartSuggest ▲▲▲ -->

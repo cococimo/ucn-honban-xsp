@@ -556,7 +556,6 @@ ul.example.other li{
                 </div>
               </li>
            </ul>
-
             <!-- ▼▼▼検索▼▼▼ -->
             <div id="header_search" >
                 <div class="clearfix header_search_in">
@@ -917,6 +916,158 @@ $(window).on('load resize', function(){
 
 <!-- 検索結果 -->
 <h2 m:id="if_not_exists_breadcrumb_category_and_goods" class="add_h2b"><span m:id="pankuzu_page_name">画面名</span></h2>
+
+<!-- ▼▼▼検索サジェスト▼▼▼ -->
+<script>
+window.onload = function() {
+		var search_form_pc = document.getElementById('search_form_pc');
+		var search_value = document.getElementById('search_form_pc').value;
+		var search_form_pc_cat = document.getElementById('search_form_pc_cat');
+
+		search_form_pc_cat.value = search_value;
+}
+</script>
+<style>
+/*.add_h2b {height: 0;}*/
+.search_area {
+    	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAJElEQVQYVxXHoREAAAzCQHDsPykyrj2iPm57kpRE3gyADNywHlU6EYluaPO+AAAAAElFTkSuQmCC);
+		padding: 14px 0;
+		margin-top:20px;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAJElEQVQYVxXHoREAAAzCQHDsPykyrj2iPm57kpRE3gyADNywHlU6EYluaPO+AAAAAElFTkSuQmCC");
+	}
+	.search_area_in {
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.search_area_input_wrap {
+		position: relative;
+		width: 700px;
+		margin: 0 auto;
+	}
+	.search_area_input_wrap input[name=keyword] {
+		width: 100%;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #d8d8d8;
+		background-color: #fff;
+		box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
+		padding: 0 0 0 10px;
+		border-radius: 6px;
+		min-height: 56px;
+		behavior: url(../../../Templates/PIE.htc);
+	}
+	.search_area_input_wrap .searchShop span {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+		right: -8px;
+		background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAAyCAYAAACOADM7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEU2NDJGRUE2NzlFMTFFN0IzN0I5RDEwOUM4QzI3RTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEU2NDJGRUI2NzlFMTFFN0IzN0I5RDEwOUM4QzI3RTciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4RTY0MkZFODY3OUUxMUU3QjM3QjlEMTA5QzhDMjdFNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4RTY0MkZFOTY3OUUxMUU3QjM3QjlEMTA5QzhDMjdFNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnExs1wAAAdMSURBVHja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") no-repeat;
+		color: transparent;
+		border: none;
+		width: 140px;
+		height: 50px;
+	}
+	.word_area {
+		margin-top: 12px;
+		display: none;
+	}
+	.word_area_tit {
+		color: #555555;
+		font-size: 14px;
+		display: inline-block;
+		padding-right: 20px;
+	}
+	.word_area_list {
+		margin-left:;
+		letter-spacing: -0.05em;
+		font-size: 16px;
+		display: inline-block;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAYAAACk7+45AAAAGUlEQVQYV2M8c+bMfwYGBgZGOAPEA4vAGADEUwbLcY+gkgAAAABJRU5ErkJggg==");
+		background-repeat: repeat-y;
+	}
+	.word_area_list li {
+		letter-spacing: 0;
+		display: inline-block;
+		margin-left: 28px;
+	}
+	.word_area_list li a {
+		text-decoration: underline;
+	}
+	.word_area_list li a:hover {
+		text-decoration: none;
+	}
+	.word_area {/*#home*/
+		display: flex;
+    	justify-content: center;
+	}
+	@media screen and (max-width:767px) {
+		.header_username {
+			min-width: 263px;
+		}
+		.header_menu a {
+			width: 58px;
+    		background-image: url(/contents/c/shop/image/btn_cart_sp.png);
+    		background-size: cover;
+		}
+		.header_login {
+			width: 58px;
+		}
+		.search_area {
+			display: none;
+		}
+	}
+</style>
+           <!-- ▼▼▼検索▼▼▼ -->
+<div class="search_area cf" id="search_sg">
+	<div class="search_area_in cf">
+		<div class="search_area_input_wrap">
+                <div class="clearfix header_search_in">
+                <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+                <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+                <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+                <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+                <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+                <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+                <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+                <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+                <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+                <input m:id="searchForm_page" type="hidden" name="page" value="1">
+                <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+                </form>
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+                <div class="box_01">
+	                <input type="text" name="keyword" maxlength="200" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc_cat">
+	                <input type="hidden" id="category_filter_type_pc_cat" value="00000006">
+                </div>
+                <div class="box_02">
+                	<a href="javascript:void(0);" id="search_btn_pc_cat" class="searchShop"><span class="pc_only">検索</span></a>
+                </div>
+                </form>
+                <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
+                    <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+                    <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+                    <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+                </form>
+			</div>
+		</div>
+		<div class="word_area">
+			<p class="word_area_tit">よく検索されるキーワード</p>
+			<ul class="word_area_list">
+				<li><a href="/item_SDKBV8/?link=rec_pc01">サンダル</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83v%83%8B%83I%81%5B%83o%81%5B">プルオーバー</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83V%83A%83T%83b%83J%81%5B">シアサッカー</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83I%81%5B%83K%83j%83b%83N%83R%83b%83g%83%93">オーガニックコットン</a></li>
+				<li><a href="/item_SDKF8A/?link=rec_pc05">ブラトップ</a></li>
+				<li><a href="/item_SDKF64/?link=rec_pc06">涼感UV</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- ▲▲▲検索▲▲▲ -->
+<!-- ▲▲▲検索サジェスト▲▲▲ -->
+
 
 <div class="cate_link only_pc">
 	<ul>
