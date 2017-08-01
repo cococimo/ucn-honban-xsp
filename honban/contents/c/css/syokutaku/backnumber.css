@@ -1,0 +1,155 @@
+#backnumber {
+	overflow:hidden;
+}
+#backnumber .main-col {
+	width: 880px;
+}
+#backnumber .main-col h3 {
+	font-size: 26px;
+	font-weight:bold;
+	padding-bottom:10px;
+	border-bottom: 3px solid #E5E4E4;
+	position:relative;
+	margin-bottom:30px;
+}
+#backnumber .main-col h3::after{
+	content:"";
+	position:absolute;
+	display:block;
+	width:50%;
+	height:3px;
+	background-color:#F39800;
+	left:0;
+	bottom:-3px;
+}
+#backnumber .link-list{
+	margin-bottom:50px;
+}
+#backnumber .link-list li{
+	display:none;
+}
+#backnumber .link-list li.show{
+	display:flex;
+	padding-bottom:15px;
+	border-bottom:1px dotted #DBDBDB;
+	margin-bottom:15px;
+	line-height:1.3;
+}
+#backnumber .link-list li.show .date{
+	width: 200px;
+	font-size:18px;
+}
+#backnumber .link-list li.show .date .new{
+	padding-left: 10px;
+	font-size:14px;
+	color:#ff0000;
+	vertical-align:middle;
+}
+#backnumber .pagenation-wrap{
+	text-align:center;
+}
+#backnumber .pagenation{
+	display:inline-block;
+}
+#backnumber .pagenation li{
+	display:inline-block;
+	color: #076194;
+	text-decoration: underline;
+	cursor:pointer;
+	font-size:14px;
+	line-height:1;
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border:1px solid #D7D7D7;
+	margin:0 7px;
+}
+#backnumber .pagenation li:hover{
+	text-decoration: none;
+}
+#backnumber .pagenation li.current{
+	color: inherit;
+	text-decoration: none;
+	cursor:default;
+	background-color:#D7D7D7;
+}
+
+#backnumber .year-archive{
+	border: 1px solid #D7D7D7;
+	padding:2px;
+}
+#backnumber .year-archive h3{
+	font-size:20px;
+	line-height:1;
+	background-color:#F8F8F8;
+	padding:15px 10px;
+	border-bottom: 1px solid #F59900;
+}
+#backnumber .year-archive ul li{
+	padding: 0 5px;
+}
+#backnumber .year-archive ul li a{
+	display:block;
+	padding:20px 10px 20px 20px;
+	font-size:18px;
+	line-height:1;
+	color:inherit;
+	text-decoration:none;
+	border-bottom:1px dotted #CCCCCC;
+	position:relative;
+}
+#backnumber .year-archive ul li:last-child a{
+	border-bottom:none;
+}
+#backnumber .year-archive ul li a::before,
+#backnumber .year-archive ul li a::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+#backnumber .year-archive ul li a::before{
+	left: 0px;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #BABABA;
+	border-right: 2px solid #BABABA;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+@media screen and (max-width:767px) {
+#backnumber{
+	padding:0 10px;
+}
+#backnumber .main-col {
+	width: auto;
+}
+#backnumber .main-col h3 {
+	font-size: 18px;
+	margin-bottom:15px;
+}
+#backnumber .main-col h3::after{
+	width:100px;
+}
+#backnumber .link-list li.show{
+	display:block;
+	line-height:1.5;
+}
+#backnumber .link-list li.show .date{
+	width: auto;
+	font-size:14px;
+}
+#backnumber .pagenation li{
+	font-size:14px;
+	width:30px;
+	height:30px;
+	line-height:30px;
+	margin:0 7px;
+}
+	
+}
