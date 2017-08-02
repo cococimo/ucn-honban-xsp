@@ -1,5 +1,5 @@
 <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="contents/shop/00000003/js/jquery.fixedheaderscroll.js"></script>
+<!-- <script type="text/javascript" src="contents/shop/00000003/js/jquery.fixedheaderscroll.js"></script> -->
 <script type="text/javascript" src="contents/shop/00000003/js/exword2.js"></script>
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/neovision-style.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -20,14 +20,14 @@ window.onerror = function(){
 <![endif]-->
 
 <style>
-*{font-family:'ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif}
-.mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
-.mincho *{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+#content_wrap *{font-family:'ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif}
+#content_wrap .mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+#content_wrap .mincho *{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
 
-.wrap_con .first .first_pc h1{text-align:center;padding-top:10px;margin: 0 0 0 20px;}
-.wrap_con .first .first_pc h1 img{width:785px}
+#content_wrap .wrap_con .first .first_pc h1{text-align:center;padding-top:10px;margin: 0 0 0 20px;}
+#content_wrap .wrap_con .first .first_pc h1 img{width:785px}
 /*Hamburger menu*/
-#c-nav {
+#content_wrap #c-nav {
 	display:none;
 	position: fixed;
 	right: 20px;
@@ -38,24 +38,26 @@ window.onerror = function(){
 	}
 
 @media only screen and (max-width: 640px) {
-    .c-nav {
+    #content_wrap .c-nav {
         top:10px;
         right: 10px
     }
 }
 
-.c-nav .c-nav-btn {
+#content_wrap .c-nav .c-nav-btn {
     position: absolute;
     right: 0;
     top: 0;
-    cursor: pointer
+    cursor: pointer;
+    width: 48px;
+    height: auto;
 }
 
-.c-nav .c-nav-btn:hover {
+#content_wrap .c-nav .c-nav-btn:hover {
     overflow: hidden
 }
 
-.c-nav .c-nav-btn:hover:after {
+#content_wrap .c-nav .c-nav-btn:hover:after {
     content: "";
     position: absolute;
     top: 0;
@@ -65,37 +67,37 @@ window.onerror = function(){
     background: rgba(255,255,255,.25)
 }
 
-.c-nav .c-nav-inner {
+#content_wrap .c-nav .c-nav-inner {
     background: #f0f0f0;
     border: 1px solid #ccc;
     display: none
 }
 
-.c-nav .c-nav-inner a {
+#content_wrap .c-nav .c-nav-inner a {
     border-bottom: 1px solid #fff
 }
 
-.c-nav .c-nav-inner .nav01 a {
+#content_wrap .c-nav .c-nav-inner .nav01 a {
     border-color: #5977ae!important
 }
 
-.c-nav .c-nav-inner .nav02 a {
+#content_wrap .c-nav .c-nav-inner .nav02 a {
     border-color: #d29d00!important
 }
 
-.c-nav .c-nav-inner .nav03 a {
+#content_wrap .c-nav .c-nav-inner .nav03 a {
     border-color: #c3185c!important
 }
 
-.c-nav .c-nav-inner .nav04 a {
+#content_wrap .c-nav .c-nav-inner .nav04 a {
     border-color: #678c4f!important
 }
 
-.c-nav .c-nav-inner .nav05 a {
+#content_wrap .c-nav .c-nav-inner .nav05 a {
     border-color: #616ab9!important
 }
 
-.c-nav .c-nav-inner a {
+#content_wrap .c-nav .c-nav-inner a {
     display: block;
     width: 100%;
     height: 3em;
@@ -109,37 +111,37 @@ window.onerror = function(){
     border-left: 6px solid #000
 }
 
-.c-nav .c-nav-inner a:hover {
+#content_wrap .c-nav .c-nav-inner a:hover {
     background: #f9f9f9
 }
 
 /*top-btn*/
-.totop-btn {
+/*.totop-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 10;
     height: 56px;
     width: 48px
-}
+}*/
 
 @media only screen and (max-width: 640px) {
-    .totop-btn {
+    #content_wrap .totop-btn {
         bottom:10px;
         right: 10px
     }
 }
 
-.totop-btn a:hover {
+#content_wrap .totop-btn a:hover {
     overflow: hidden;
     display: inline-block
 }
 
-.totop-btn a:hover img {
+#content_wrap .totop-btn a:hover img {
     opacity: 1
 }
 
-.totop-btn a:hover:after {
+#content_wrap .totop-btn a:hover:after {
     content: "";
     position: absolute;
     top: 0;
@@ -151,16 +153,16 @@ window.onerror = function(){
 
 /*もっと見るボタン*/
 @media (max-width: 640px) {
-	#header{margin-bottom: 0;}
-	#header_r {padding-top: 3%;}
-	#header_r_01 {margin-bottom: 5px;}
+	#content_wrap #header{margin-bottom: 0;}
+	#content_wrap #header_r {padding-top: 3%;}
+	#content_wrap #header_r_01 {margin-bottom: 5px;}
 }
 
-.contain-second,.voice-second {
+#content_wrap .contain-second,.voice-second {
     display: none
 }
 
-.contain-toggle a,.voice-toggle a {
+#content_wrap .contain-toggle a,.voice-toggle a {
     border: 3px solid #7fab84;
     color: #3a5f3e;
     text-decoration: none;
@@ -173,7 +175,7 @@ window.onerror = function(){
     border-radius: 8px
 }
 
-.contain-toggle a:hover,.voice-toggle a:hover {
+#content_wrap .contain-toggle a:hover,.voice-toggle a:hover {
     background: #ebffed
 }
 
@@ -182,36 +184,36 @@ window.onerror = function(){
         opacity:1!important
     }
 
-    .contain-toggle a,.voice-toggle a {
+    #content_wrap .contain-toggle a,.voice-toggle a {
         font-size: 18px
     }
 }
 
-.forth-container p.forth-p02,.second-box01 p,.second-box02>.cl-fix:first-child>div:first-child p,.second-container dl dd,.second-container dl dt,.second-container p {
+#content_wrap .forth-container p.forth-p02,#content_wrap .second-box01 p,#content_wrap .second-box02>.cl-fix:first-child>div:first-child p,#content_wrap .second-container dl dd,#content_wrap .second-container dl dt,#content_wrap .second-container p {
     font-size: 16px;
     line-height: 1.65
 }
 
-.contain-toggle {
+#content_wrap .contain-toggle {
     margin: 20px 1em 10px;
     }
   
 /*tel btn*/
-.tel {
+#content_wrap .telArea {
 	margin-top:1em;
     display: inline-block;
  }
  /*贈答用アイコン調整*/
-.ninth .ninth-box01 .img01{position:absolute;right: 200px;top: -30px;width: 220px;}
+#content_wrap .ninth .ninth-box01 .img01{position:absolute;right: 200px;top: -30px;width: 220px;}
 @media screen and (max-width: 640px){
-	.ninth .ninth-box01 .img01 {
+	#content_wrap .ninth .ninth-box01 .img01 {
     position: static;
     width: 250px;
 	}
 }
  /*欠品中のご案内*/
-.kepin {font-size:180%;font-weight: bold;display:inline-block;padding-top:16px;}
-.shopping_sp .kepin {font-size:130%;padding-top:12px;text-align:center;}
+#content_wrap .kepin {font-size:180%;font-weight: bold;display:inline-block;padding-top:16px;}
+#content_wrap .shopping_sp .kepin {font-size:110%;padding-top:12px;text-align:center;}
 </style>
 <div class="wrap_con">
 	<div id="c-nav" class="c-nav">
@@ -292,20 +294,27 @@ window.onerror = function(){
 			</div>-->
             <!--　プレゼント▲▲ -->
             
-                        <div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/neovision/kakaku_ddo01.jpg" alt="ココチモ・オリジナル　しゃべる地球儀 一括払価格36720円税込"></div>
-            
+                        <!--div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/neovision/kakaku_ddo01.jpg" alt="ココチモ・オリジナル　しゃべる地球儀 一括払価格36720円税込"></div-->
+
+			<div class="btn_section"><!-- 欠品ここから-->
+					<p class="shopping spn"><img src="contents/shop/00000003/image/static/img/neovision/btn01_2.png" alt="ご好評につき、現在欠品中です。"><span class="kepin">※次回は11月頃入荷予定となっております。</span></p>
+					<p class="shopping_sp spb"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn_2.png" alt="ご好評につき、現在欠品中です。"><span class="kepin">※次回は11月頃入荷予定となっております。</span></p>
+			</div><!-- 欠品ここまで-->
+
+
+		<!-- カートに入れるここから
 			<div class="btn_section">
-				<!-- <form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
+				<!-* <form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
 					<input type="hidden" name="_S" value="c">
 					<input type="hidden" name="display_code" value="104">
 					<input type="hidden" name="goods_sku_code" value="00000275">
 					<input type="hidden" name="ext_goods_sku_code" value="DEB00">
-					<input type="hidden" name="order_num_string" value="1"> -->
-					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="kepin">※好評のため現在欠品中です。2017年秋頃の入荷予定となります。</span>--><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
-					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><!--<span class="kepin">※好評のため現在欠品中です。<br>2017年秋頃の入荷予定となります。</span>--><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
+					<input type="hidden" name="order_num_string" value="1"> *->
+					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><!-*<span class="kepin">※好評のため現在欠品中です。2017年秋頃の入荷予定となります。</span>*-><span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><!-*<span class="kepin">※好評のため現在欠品中です。<br>2017年秋頃の入荷予定となります。</span>*-><a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
 
-			<!-- 	</form> -->
-			</div>
+			<!-* 	</form> *->
+			</div>　カートに入れるここまで-->
 			<div class="bs-wrap fifth" id="newCon">
 				<div class="fifth-ttl">
 					<h2><img src="contents/shop/00000003/image/static/img/neovision/fifth02.png" alt="「しゃべる地球儀」はこんなところが新しい！" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/fifth_sp01.png" alt="「しゃべる地球儀」はこんなところが新しい！" class="spi"></h2>
@@ -368,7 +377,7 @@ window.onerror = function(){
 							<dd>●アブ・シンベル／ヴィクトリアの滝…他（アフリカ） ●凱旋門／モン・サン・ミッシェル／ポンペイ…他（ヨーロッパ） ●アンコールワット／金閣寺／タージ・マハル…他（アジアと中近東） ●グレートバリアリーフ／エアーズロック…他（オセアニア） ●ナイアガラの滝／マチュピチュ（アメリカ）</dd>
 						</dl>
 					</div><!-- contain second -->
-					<p class="contain-toggle"><a href="#" class="noscroll">▼ 収録内容を<br class="sp-v">もっと見る</a></p>
+					<p class="contain-toggle"><a href="javascript:void(0);" class="noscroll">▼ 収録内容を<br class="sp-v">もっと見る</a></p>
 				</div>
 				<h3><span class="num">4</span><span class="text">パッと飛び出す！<br class="spb">収納式の日本地図を搭載。</span></h3>
 				<div class="fifth-box04 clearfix">
@@ -399,17 +408,24 @@ window.onerror = function(){
 				</div>
 			</div>-->
             <!--　プレゼント▲▲ -->
-			<div class="btn_section">
-			<!-- 	<form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
+
+			<div class="btn_section"><!-- 欠品ここから-->
+					<p class="shopping spn"><img src="contents/shop/00000003/image/static/img/neovision/btn01_2.png" alt="ご好評につき、現在欠品中です。"><span class="kepin">※次回は11月頃入荷予定となっております。</span></p>
+					<p class="shopping_sp spb"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn_2.png" alt="ご好評につき、現在欠品中です。"><span class="kepin">※次回は11月頃入荷予定となっております。</span></p>
+			</div><!-- 欠品ここまで-->
+
+		<!-- カートに入れるここから
+		<div class="btn_section">
+			<!-* 	<form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
 					<input type="hidden" name="_S" value="c">
 					<input type="hidden" name="display_code" value="104">
 					<input type="hidden" name="goods_sku_code" value="00000275">
 					<input type="hidden" name="ext_goods_sku_code" value="DEB00">
-					<input type="hidden" name="order_num_string" value="1"> -->
-					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="kepin">※好評のため現在欠品中です。2017年秋頃の入荷予定となります。</span>--><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
-					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><!--<span class="kepin">※好評のため現在欠品中です。<br>2017年秋頃の入荷予定となります。</span>--><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
-			<!-- 	</form> -->
-			</div>
+					<input type="hidden" name="order_num_string" value="1"> *->
+					<p class="shopping spn"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/btn01.png" alt="カートに入れる" class="hover"></a><!-*<span class="kepin">※好評のため現在欠品中です。2017年秋頃の入荷予定となります。</span>*-><span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+					<p class="shopping_sp spb"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="contents/shop/00000003/image/static/img/neovision/sp-btn.png" alt="カートに入れる" class="hover"></a><!-*<span class="kepin">※好評のため現在欠品中です。<br>2017年秋頃の入荷予定となります。</span>*-><a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
+			<!-* 	</form> *->
+			</div>　カートに入れるここまで-->
 			<div class="bs-wrap sixth" id="review">
 				<div class="sixthin clearfix">
 					<h2><img src="contents/shop/00000003/image/static/img/neovision/sixth01.png" alt="全国から喜びの声、続々と！" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/sixth_sp01.png" alt="全国から喜びの声、続々と！" class="spi"></h2>
@@ -447,7 +463,7 @@ window.onerror = function(){
 					<div class="sixth-box02-wrap clearfix">
 						<div class="sixth-box02 clearfix">
 							<h3><img src="contents/shop/00000003/image/static/img/neovision/sixth02.png" alt="別冊付録付きでお届けします。" class="spn"><img src="contents/shop/00000003/image/static/img/neovision/sixth_sp02.png" alt="別冊付録付きでお届けします。" class="spi"></h3>
-							<h4><img src="contents/shop/00000003/image/static/img/neovision/sixth05.png" alt="ワールドブック" width="408" height="64"></h4>
+							<h4><img src="contents/shop/00000003/image/static/img/neovision/sixth05.png" alt="ワールドブック" width="408" height="64" style="width:408px"></h4>
 							<img src="contents/shop/00000003/image/static/img/neovision/sixth03.png" alt="ワールドブック" class="img01 spn">
 							<div class="spb p04"><img src="contents/shop/00000003/image/static/img/neovision/sixth_sp03.png" alt="ワールドブック" class="spi"></div>
 							<p class="spb p03">■A4変形サイズ　■30ページ</p>
