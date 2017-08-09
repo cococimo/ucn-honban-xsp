@@ -1,0 +1,250 @@
+@charset "shift-jis";
+
+#contents .feature .main_visual {
+	margin-bottom: 75px;
+}
+
+#contents .sec {
+    margin: 0 auto 36px;
+    max-width: 1400px;
+    min-width: 920px;
+    padding: 0 50px;
+}
+
+.detail-bnr {
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+#feature37 .topTxt {
+	margin-bottom: 62px;
+	font-size: 18px;
+	font-family: "ü‡ñæí©","Yu Mincho","ü‡ñæí©ëÃ","YuMincho",serif;
+	text-align: center;
+	line-height: 1.8;
+}
+
+#feature37 .topTxt span {
+	margin-top: 25px;
+	display: block;
+	font-size: 16px;
+	font-family: "ÉqÉâÉMÉmäpÉS Pro W3","Hiragino Kaku Gothic Pro","ÉÅÉCÉäÉI",Meiryo,Osaka,"ÇlÇr ÇoÉSÉVÉbÉN","MS PGothic",sans-serif;
+}
+
+#feature37 h4 {
+	margin-bottom: 51px;
+	text-align: center;
+}
+
+#feature37 .photoUl {
+	margin: 0 auto;
+	width: 1020px;
+}
+
+#feature37 .photoUl li {
+	float: left;
+}
+
+#feature37 .photoUl li:nth-child(2n) {
+	float: right;
+}
+
+#feature37 .ttl {
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+#feature37 .sec {
+	max-width: 1280px;
+}
+
+#feature37 .txt {
+	margin-bottom: 110px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 1.73;
+}
+
+#feature37 .photoList {
+	margin-top: -111px;
+}
+
+#feature37 .photoList li {
+	margin: 80px 3.125% 0 0;
+	float: left;
+	width: 31.25%;
+	position: relative;
+}
+
+#feature37 .photoList li:nth-child(3n) {
+	margin-right: 0;
+}
+
+#feature37 .photoList li img {
+	width: 100%;
+}
+
+#feature37 .photoList li .number{
+	margin-bottom:20px;
+	text-align:center;
+}
+#feature37 .photoList li .number img {
+	width: auto;
+}
+#feature37 #a01 .photoList li .number img {
+	height:28px;
+}
+#feature37 #a02 .photoList li .number img {
+	height:26px;
+}
+
+#feature37 .photoList li .photo {
+	margin-bottom: 13px;
+}
+
+#feature37 .photoList li p {
+	color: #777;
+	line-height: 1.7;
+	font-size: 14px;
+}
+
+#feature37 .photoList li p a {
+	text-decoration: underline;
+}
+
+#feature37 .photoList li .text {
+	font-size: 12px;
+}
+
+#feature37 .photoList li .price {
+	color: #1e1e1e;
+}
+
+#feature37 .sec01 {
+	margin-bottom: 65px;
+	padding-top:100px;
+}
+#feature37 .sec02 {
+	padding-top:100px;
+}
+
+@media (max-width: 640px){
+	#contents .feature .ttl_section_jp img {
+		width: 293px;
+	}
+	
+	#contents .feature .ttl_section_en img {
+		width: 341px;
+	}
+	
+	.ttl_section_inner {
+		height: 48px;
+	}
+		
+	#contents .feature .main_visual {
+		margin-bottom: 48px;
+	}
+	
+	#contents .sec {
+		margin: 0 15px 24px;
+		max-width: initial;
+		min-width: initial;
+		padding: 0;
+		width: auto;
+	}
+	
+	#feature37 .topTxt {
+		margin-bottom: 30px;
+		font-size: 12px;
+		line-height: 1.67;
+	}
+	
+	#feature37 .topTxt span {
+		margin-top: 8px;
+		font-size: 12px;
+	}
+	
+	#feature37 h4 {
+		margin-bottom: 25px;
+	}
+	
+	#feature37 h4 img {
+		width: 100%;
+	}
+	
+	#feature37 .photoUl {
+		margin-bottom: 50px;
+		width: auto;
+	}
+	
+	#feature37 .photoUl li {
+		width: 48%;
+	}
+	
+	#feature37 .photoUl li img {
+		width: 100%;
+	}
+	#feature37 .photoList li .number{
+		margin-bottom:10px;
+	}
+	#feature37 #a01 .photoList li .number img {
+		height:21px;
+	}
+	#feature37 #a02 .photoList li .number img {
+		height:20px;
+	}
+	
+	#feature37 .ttl img {
+		width: 100%;
+	}
+		
+	#feature37 .txt {
+		margin-bottom: 50px;
+		font-size: 12px;
+	}
+	
+	#feature37 .photoList {
+		margin: 0 45px;
+	}
+	
+	#feature37 .photoList li {
+		margin: 45px 0 0;
+		float: none;
+		width: auto;
+	}
+	
+	#feature37 .photoList li:first-child {
+		margin: 0;
+	}
+	
+	#feature37 .photoList li p {
+		font-size: 12px;
+	}
+	
+	#feature37 .photoList li .text {
+		font-size: 10px;
+	}
+	
+	#feature37 .photoList li:before {
+		margin-left: -36px;
+		width: 72px;
+	}
+	
+	#feature37 .sec01 {
+		padding-top:0;
+	}
+	#feature37 .sec02 {
+		padding-top:0;
+	}
+	
+}
+
+@media (max-width: 374px){
+	#contents .feature .ttl_section_jp span {
+		max-width: 90%;
+	}
+	
+	.ttl_section_inner {
+		height: 45px;
+	}
+}
