@@ -1,0 +1,289 @@
+#contents_in img{
+	max-width:initial;	
+}
+
+#contents_in .mainImg{
+	margin-bottom: 52px;
+}
+
+#contents_in .topBox {
+	margin-bottom: 68px;
+}
+
+#contents_in .topBox p {
+	margin-bottom: 0;
+	line-height: 2.2;
+	text-indent: inherit;
+}
+
+#contents_in .headLine01 {
+	margin-bottom: 27px;
+	padding-bottom: 23px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/10/h2_bg.gif);
+}
+
+#contents_in .headLine01 .bg {
+	padding: 0 5px 5px;
+	display: inline-block;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/10/line01.gif) repeat-x left bottom;
+}
+
+#contents_in p {
+	margin-bottom: 32px;
+	text-indent: 17px;
+	letter-spacing: 0.5px;
+}
+
+#contents_in .text01 {
+	margin-bottom: 43px;
+}
+
+#contents_in .list {
+	margin: -36px 0 98px;
+}
+
+#contents_in .list li {
+	margin-top: 36px;
+	float: left;
+}
+
+#contents_in .list li span {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+}
+
+#contents_in .list li:nth-child(2n) {
+	float: right;
+}
+
+#contents_in .imgBoxR {
+	margin-bottom: 100px;
+	clear: both;
+}
+
+#contents_in .imgBoxR .txtBox {
+	float: left;
+	width: 580px;
+}
+
+#contents_in .imgBoxR .txtBox p {
+	margin-bottom: 31px;
+	letter-spacing: 1.5px;
+}
+
+#contents_in .imgBoxR .txtBox p:last-child {
+	margin-bottom: 0px;
+}
+
+#contents_in .imgBoxR .phoBox {
+	margin-top: 8px;
+	float: right;
+}
+
+#contents_in .imgBoxR .phoBox .txt {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+}
+
+#contents_in .btmBox {
+	width: 1000px;
+	margin: -36px auto 0;
+}
+
+#contents_in .btmBox p {
+	text-indent: inherit;
+}
+
+#contents_in .bgPho03 {
+	margin-bottom: 25px;
+	padding: 107px 0 116px;
+	box-sizing: border-box;
+	height: 461px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/10/photo05.jpg);
+	text-align:center;
+}
+
+#contents_in .bgPho p {
+	margin-bottom: 24px;
+}
+
+#contents_in .bgPho .ttl {
+	margin-bottom: 44px;
+}
+
+#contents_in .comLink a {
+	background-color: #A52237;
+	border-color: #67071B;
+}
+
+#contents_in .comLink a:hover {
+	opacity: 0.95;
+	background-color: #A52237;
+}
+
+#contents_in .noticeBox {
+	padding: 47px 30px 47px;
+	border-color: #A52237;
+}
+
+#contents_in {
+	padding-bottom: 40px;
+}
+
+@media screen and (max-width:767px) {
+	#contents_in .mainImg{
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .mainBox {
+		padding-top: 0;
+	}
+
+	#contents_in .topBox {
+		margin-bottom: 33px;
+	}
+	
+	#contents_in .topBox p {
+		line-height: 2.1;
+	}
+	
+	#contents_in .headLine01 {
+		margin-bottom: 11px;
+		padding-bottom: 16px;
+	}
+	
+	#contents_in .headLine01 .bg {
+		padding: 0 5px;
+		display: inline;
+		background-size: 3px 5px;
+	}
+	
+	#contents_in p {
+		margin-bottom: 21px;
+		line-height: 1.53;
+		text-indent: 13px;
+		letter-spacing: normal;
+	}
+
+	#contents_in .text01 {
+		margin-bottom: 26px;
+	}
+
+	#contents_in .list {
+		margin: 0 30px 42px;
+	}
+
+	#contents_in .list li {
+		margin: 0 0 26px;
+		float: none !important;
+		height: inherit !important;
+	}
+
+	#contents_in .list li:last-child {
+		margin-bottom: 0;
+	}
+	
+	#contents_in .list li img {
+		width: 100%;
+	}
+	
+	#contents_in .list li span {
+		margin: 9px 0 -4px;
+		font-size: 12px;
+		line-height: 1.25;
+	}
+
+	#contents_in .imgBoxR {
+		margin-bottom: 40px;
+	}
+	
+	#contents_in .imgBoxR .phoBox {
+		margin: 0 30px;
+		float: none;
+		width: auto;
+	}
+	
+	#contents_in .imgBoxR .phoBox img {
+		width: 100%;
+	}
+	
+	#contents_in .imgBoxR .phoBox .txt {
+		margin-top: 10px;
+		font-size: 12px;
+	}
+	
+	#contents_in .imgBoxR .txtBox {
+		margin-bottom: 16px;
+		float: none;
+		width: auto;
+	}
+	
+	#contents_in .imgBoxR .txtBox p {
+		margin-bottom: 21px;
+		letter-spacing: normal;
+	}
+	
+	#contents_in .btmBox {
+		padding-top: 0;
+		width: auto;
+		margin: 0;
+	}
+		
+	#contents_in .bgPho {
+		margin: 0 0 25px;
+	}
+		
+	#contents_in .bgPho03 {
+		padding: 60px 0 60px;
+		height: inherit;
+	    background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/10/sp/photo05.jpg);
+		background-size: cover;
+	}
+	
+	#contents_in .bgPho .ttl {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+	
+	#contents_in .bgPho .ttl img {
+		margin: 0 auto;
+		width: 114px;
+	}
+	
+	#contents_in .bgPho p {
+		margin-bottom: 15px;
+	}
+	
+	#contents_in .comLink a {
+		padding: 14px 5px;
+	}
+	
+	#contents_in .comLink a:hover {
+		opacity: 1;
+	}
+	
+	#contents_in .comLink {
+		width: 65%;
+	}
+	
+	#contents_in .noticeBox {
+		padding: 15px 25px;
+		min-height: 95px;
+	}
+	
+	#contents_in {
+		padding-bottom: 0px;
+	}
+
+}
+
+
+
+
+
+
+
+
+

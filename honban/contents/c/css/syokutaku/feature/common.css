@@ -1,0 +1,228 @@
+#contents_in{
+	font-weight:normal;
+}
+
+.sp {
+	display: none !important;
+}
+
+.only-pc{
+	display:inline-block;
+}
+@media screen and (max-width:767px) {
+.only-pc{
+	display:none;
+}	
+}
+.only-sp{
+	display:none;
+}
+@media screen and (max-width:767px) {
+.only-sp{
+	display:inline-block;
+}	
+}
+
+.alpha-over:hover{
+	transition: opacity 0.2s;
+	opacity:0.6;
+}
+@media screen and (max-width:767px) {
+.alpha-over:hover{
+	opacity:1;
+}
+}
+
+/* bgPho
+----------------------------------- */
+#contents_in .bgPho {
+	margin-bottom: 40px;
+	padding: 78px 0 85px;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature3/photo08.jpg) no-repeat center top;
+}
+
+#contents_in .bgPho p {
+	margin-bottom: 20px;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+}
+
+#contents_in .bgPho .ttl {
+	margin-bottom: 50px;
+}
+
+/* comLink
+----------------------------------- */
+#contents_in .comLink {
+	margin: 0 auto;
+	width: 353px;
+}
+
+#contents_in .comLink a {
+	padding: 0 10px;
+	position: relative;
+	display: block;
+	color: #FFF;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #A62237;
+	border-radius: 4px;
+	border-bottom: 4px solid #67071B;
+	behavior: url(/contents/shop/00000003/js/new/pie.htc);
+}
+
+#contents_in .comLink a .bgLink {
+	padding-left: 22px;
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	vertical-align: top;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature3/icon02.png) no-repeat left 17px;
+}
+
+#contents_in .comLink a:hover {
+	transition: background-color 0.3s;
+	background-color: #ac374a;
+}
+
+/* noticeBox
+----------------------------------- */
+#contents_in .noticeBox {
+	padding: 30px 30px 18px;
+	position: relative;
+	border: 4px solid #F69900;
+}
+
+#contents_in .noticeBox .notice {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#contents_in .noticeBox p {
+	margin-bottom: 0;
+	line-height: 2.1;
+	text-align: center;
+}
+
+#contents_in .noticeBox p a {
+	color:#F69900;
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	.pc {
+		display: none !important;
+	}
+	
+	.sp {
+		display: block !important;
+	}
+
+	/* bgPho
+	----------------------------------- */
+	#contents_in .bgPho {
+		margin: 0 -15px 15px;
+		padding: 30px 0 37px;
+		background-image: url(/contents/shop/00000003/image/static/syokutaku/feature3/sp_photo08.jpg);
+		background-size: cover;
+	}
+	
+	#contents_in .bgPho p {
+		margin-bottom: 12px;
+		font-size: 13px;
+		line-height: 1.8;
+	}
+	
+	#contents_in .bgPho .ttl {
+		margin: 0 auto 25px;
+		width: 82.5%;
+	}
+	
+	#contents_in .bgPho .link a .bgLink {
+		padding-left: 15px;
+	}
+	
+	/* comLink
+	----------------------------------- */
+	#contents_in .comLink {
+		width: 60%;
+	}
+	
+	#contents_in .comLink a {
+		padding: 14px 5px;
+		font-size: 13px;
+		line-height: 1;
+		height: auto;
+		border-radius: 2px;
+		border-bottom-width: 2px;
+	}
+	
+	#contents_in .comLink a .bgLink {
+		padding-left: 12px;
+		line-height: 1;
+		height: auto;
+		background-size: 6px auto;
+		background-position: left center;
+	}
+	
+	/* noticeBox
+	----------------------------------- */
+	#contents_in .noticeBox {
+		padding: 15px 5px;
+		border-width: 2px;
+	}
+	
+	#contents_in .noticeBox .notice img {
+		width: 69px;
+	}
+	
+	#contents_in .noticeBox p {
+		line-height: 1.6;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+	#contents_in .comLink a {
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.text{
+	font-size:16px;
+	line-height:1.625;
+}
+@media screen and (max-width:767px) {
+.text{
+	font-size:13px;
+	line-height:1.53;
+}
+}
+
+
+
+#contents_in .btn-to-top{
+	text-align:center;
+}
+@media screen and (max-width:767px) {
+#contents_in .btn-to-top{
+}
+#contents_in .btn-to-top img{
+	width:176px;
+}
+}
+
+
+
+
