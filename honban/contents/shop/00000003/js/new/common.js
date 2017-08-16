@@ -132,6 +132,32 @@ $(function(){
 
 	/* smoothScroll
 	------------------------------------- */
+	var nowWidth = $(window).width();
+	var timer = false;
+	var breakpoint = 767;
+	var navTop = $('#header').outerHeight();
+	var spFlag;
+
+	//sp or pc
+	spFlag = nowWidth < breakpoint ? true : false;
+
+
+	//resize
+	  window.addEventListener('resize', ReLayout); 
+
+	  function ReLayout() {
+	    if (timer !== false) {
+	      clearTimeout(timer);
+	    }
+	    timer = setTimeout(function() {
+	      if(nowWidth !== $(window).innerWidth()) {
+	      	nowWidth = $(window).width();
+	      	navTop = $('#header').outerHeight();
+	      	spFlag = nowWidth < breakpoint ? true : false;
+	      }
+	    }, 200);
+	  }
+
 	//pagetop btn
 	$('a[href="#top"]').on('click',function(){
 		//scroll speed
@@ -153,10 +179,18 @@ $(function(){
 		} else {
 			var href= $(this).attr('href');
 			var target = $(href === '#' || href === '' ? 'html' : href);
-			var position = target.offset().top;
+			var position;
+
+			if(spFlag) { 
+				position = target.offset().top - navTop;
+			} else {
+				position = target.offset().top;
+			}
+
 			$('body,html').animate({scrollTop:position}, speed, mode);
 		}
 	});
+
 
 	/* fade appear pagetop btn
 	------------------------------------- */

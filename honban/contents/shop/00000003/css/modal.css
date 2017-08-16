@@ -9,7 +9,8 @@
  
  /* body直下のwapper */
  #container {
- 	position: relative;	/* .modalBaseLayer position: absolute;の基本要素となります */
+ 	position: static;
+ 	/*position: relative;*/	/* .modalBaseLayer position: absolute;の基本要素となります */
  	min-height: 100%;	/* .modalBaseLayer を画面ぴったりに縦横100%指定するために必要 */
  	overflow: hidden;	/* モーダルウインドウの高さが、#wrapの高さを超えても表示に問題が出ないように。
  						 あと、スマートフォンで横スクロールが出ないようにする対策 */

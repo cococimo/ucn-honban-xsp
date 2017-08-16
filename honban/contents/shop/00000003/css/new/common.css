@@ -8153,6 +8153,9 @@ input[type=radio] {
 #category_syokuhin .side_widget_category_list li:nth-child(10) a {
 	background-image: url(/contents/c/shop/image/category/syokuhin/img_cat10.png);
 }
+#category_syokuhin .side_widget_category_list li:nth-child(11) a {
+	background-image: url(/contents/c/shop/image/category/syokuhin/img_cat11.png);
+}
 #category_hobby .side_widget_category_list li:nth-child(1) a {
 	background-image: url(/contents/c/shop/image/category/hobby/img_cat01.png);
 }
@@ -9202,3 +9205,22 @@ input[type=radio] {
 		border-top: none;
 	}
 }
+
+/*▼▼スマホ版ヘッダー固定*/
+@media screen and (max-width: 767px){
+
+/*	#container {padding-top:72px !important;}
+	#contents_in {padding-top:72px !important;}*/
+	body {padding-top:72px !important;}
+	#header {
+	    position: fixed;
+	    top:0;
+	    left:0;
+	    z-index:99;
+	    background:#fff;
+	}
+	.header_guide, .header_login, .header_menu, .header_search {position: fixed;}
+	.header_item_search_box {position: fixed;}
+	/*#footer,.footer {z-index: 1 !important;}*/
+}
+/*▲▲スマホ版ヘッダー固定*/
