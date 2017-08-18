@@ -34,7 +34,12 @@
     <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
     <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css" type="text/css" media="all" />
     <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
+    
+    <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/style_n.css" type="text/css" media="all" />
+    <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/common_n.css" type="text/css" media="all" />
     <!-- common js -->
+    <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/contents_20131021.css" type="text/css" media="all" />
+    
     <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
     <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/yuga.js"></script>
     <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/drop.js"></script>
@@ -72,99 +77,203 @@
         });
     </script>
     <!-- InstanceBeginEditable name="head_css_js" -->
-    <!-- tracking urchin -->
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
+<![endif]-->
 
-    <!--/ tracking urchin -->
-    <!-- name="head" -->
-    <style>
-        .ad_navi .ad_navi_t {
-            background: #b22222 !important;
-        }
-        .memadd_table_02{border-bottom: 1px solid #c8c8c8 !important}
-        .memadd_table_02 th {
-            background: #FFF !important;
-            color:#333 !important;
-            border-left: none !important;
-            border-top: none !important;
-        }
-        .memadd_table_02 td {
-            border-top: 1px solid #c8c8c8 !important;
-        }
-        .btn_nex_01 a {
-            background: none repeat scroll 0 0 #b22222;
-        }
-        .new_tbl{float:right}
-        .new_tbl td{
-            width:150px;
-            height:50px;
-            border-bottom:1px solid #c8c8c8;
-            padding-left:10px;
-            text-align:right;
-            font-size:14px
-        }
-        .new_tbl td:nth-child(odd){
-        }
-        .memadd_table_02 td.color_w_b, .memadd_table_02 td{
-            background: none repeat scroll 0 0 #ffffff !important;
-        }
-        .memadd_table_02 td{
-            border-left:none !important;
-            border-right:none !important
-        }
-        .confirm2block {
-            border-right: none !important;
-            border-left: none !important;
-            border-bottom: none !important;
-        }
-        .confirm2block .memadd_table_02 {
-            border-bottom: none!important;
-        }
-        .memadd_cau_box_01 {
-            border: 1px solid #464646;
-        }
-        .memadd_table_02 td.last_02 {
-        }
-        .memadd_table_02 td:nth-child(5) {
-            border-right: none !important;
-        }
-        .memadd_table_02 td {
-            border-right: 1px solid #ececec;
-        }
-        @media (max-width:640px)
-        {
-            .rightLine{border-right:none !important}
-            .new_tbl{
-                width:100%;
-                float:none;
-            }
-            .new_tbl td{
-                text-align:left;
-                padding-left:2%;
-            }
-            .wrap_cart02{
-                border-right:none
-            }
-            .memadd_table_02 td {
-                background: none repeat scroll 0 0 #fff;
-                border-top: 1px solid #ececec;
-            }
-            .memadd_table_02 {
-                background: none repeat scroll 0 0 !important;
-            }
-            .memadd_table_02 td.last_02 {
-                border-right: none !important;
-            }
-        }
-        @media (max-width:320px)
-        {
-            .wrap_cart02 .memadd_table_02{
-                width:73% !important
-            }
-        }
-    </style>
-    <script><!--
-    var clicked = false;
-    //--></script>
+<script type="text/javascript">
+$(function() {
+
+var galleries = $('.ad-gallery').adGallery();
+
+galleries[0].addAnimation('wild',
+function(img_container, direction, desc) {
+var current_left = parseInt(img_container.css('left'), 10);
+var current_top = parseInt(img_container.css('top'), 10);
+if(direction == 'left') {
+var old_image_left = '-'+ this.image_wrapper_width +'px';
+img_container.css('left',this.image_wrapper_width +'px');
+var old_image_top = '-'+ this.image_wrapper_height +'px';
+img_container.css('top', this.image_wrapper_height +'px');
+} else {
+var old_image_left = this.image_wrapper_width +'px';
+img_container.css('left','-'+ this.image_wrapper_width +'px');
+var old_image_top = this.image_wrapper_height +'px';
+img_container.css('top', '-'+ this.image_wrapper_height +'px');
+};
+if(desc) {
+desc.css('bottom', '-'+ desc[0].offsetHeight +'px');
+desc.animate({bottom: 0}, this.settings.animation_speed * 2);
+};
+img_container.css('opacity', 0);
+return {old_image: {left: old_image_left, top: old_image_top, opacity: 0},
+new_image: {left: current_left, top: current_top, opacity: 1},
+easing: 'easeInBounce',
+speed: 2500};
+}
+);
+});
+function debug(str) {
+if(window.console && window.console.log && jQuery.browser.mozilla) {
+console.log(str);
+} else {
+$('#debug').show().val($('#debug').val() + str +'\n');
+}
+}
+</script>
+
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+$('.flexslider').flexslider({
+animation: "slide", 
+controlNav: true,
+directionNav: false,
+randomize: true,
+reverse: true,
+slideshowSpeed: 5000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+animationSpeed: 500,
+pausePlay: false, 
+nextText: "",
+
+
+
+
+<!-- スマホ対応 追加 20140905 START-->
+<script defer="defer" language="JavaScript" type="text/javascript">
+jQuery(document).ready(function($){ //ここから
+$(document).ready(function(){
+if($(window).width()<640){
+$("table#memadd_table_02").each(function(){
+var breaked = "";
+$("th", this).each(function(){
+if(null != $(this).html()){
+breaked += "<h4 class='box_02_sp'>"+$(this).html()+"</h1>";
+}
+})
+$("td", this).each(function(){
+if(null != $("div", this).html()){
+breaked += "<div class='box_02_sp'>"+$("div", this).html()+"</div>";
+}
+});
+$(this).before(breaked);
+$(this).remove();
+}
+)}
+
+// jQueryの処理
+})
+
+
+
+$('.loginBt').on('click',function(){
+$('.loginForm').submit();
+return false;
+});
+
+}); //ここまで
+
+</script>
+
+<!--/ tracking urchin -->
+<!-- name="head" -->
+<style>
+.ad_navi .ad_navi_t {
+background: #b22222 !important;
+}
+.memadd_table_02{
+border-bottom: 1px solid #c8c8c8 !important;
+/* ELTEX追記*/
+border-right: none;
+}
+.memadd_table_02 th {
+background: #FFF !important;
+color:#333 !important;
+border-left: none !important;
+border-top: none !important;
+}
+.memadd_table_02 td {
+border-top: 1px solid #c8c8c8 !important;
+}
+.btn_nex_01 a {
+background: none repeat scroll 0 0 #b22222;
+}
+.new_tbl{float:right}
+.new_tbl td{
+width:150px;
+height:50px;
+border-bottom:1px solid #c8c8c8;
+padding-left:10px;
+text-align:right;
+font-size:14px
+}
+.memadd_table_02 td.color_w_b, .memadd_table_02 td{
+background: none repeat scroll 0 0 #ffffff !important;
+}
+.memadd_table_02 td{
+border-left:none !important;
+border-right:none !important
+}
+.confirm2block {
+border-right: none !important;
+border-left: none !important;
+border-bottom: none !important;
+}
+.confirm2block .memadd_table_02 {
+border-bottom: none!important;
+}
+.confirm2block .memadd_table_02:first-child {
+/* ELTEX追記 */
+border-right: #ececec solid 1px;
+}
+.memadd_cau_box_01 {
+border: 1px solid #464646;
+}
+.memadd_table_02 td.last_02 {
+}
+.memadd_table_02 td:nth-child(5) {
+border-right: none !important;
+}
+.memadd_table_02 td {
+border-right: 1px solid #ececec;
+}
+@media (max-width:640px)
+{
+.rightLine{border-right:none !important}
+.new_tbl{
+width:100%;
+float:none;
+}
+.new_tbl td{
+text-align:left;
+padding-left:2%;
+}
+.wrap_cart02{
+border-right:none
+}
+.memadd_table_02 td {
+background: none repeat scroll 0 0 #fff;
+border-top: 1px solid #ececec;
+}
+.memadd_table_02 {
+background: none repeat scroll 0 0 !important;
+}
+.memadd_table_02 td.last_02 {
+border-right: none !important;
+}
+}
+@media (max-width:320px)
+{
+.wrap_cart02 .memadd_table_02{
+width:73% !important
+}
+}
+.contents_side .btn_nex_01 {float: none;}
+
+</style>
+<script><!--
+var clicked = false;
+//--></script>
 
     <!-- ▼▼ 個別送料対応 2015.08.28 ▼▼ -->
     <script type="text/javascript">
@@ -177,7 +286,9 @@
 //			initPointDisp();
             }else{
                 document.getElementById("confirm_submit").style.display = 'inline';
-                document.getElementById("confirm_non_submit").style.display = 'none';
+			    document.getElementById("confirm_submit2").style.display = 'inline';
+			    document.getElementById("confirm_non_submit").style.display = 'none';
+                document.getElementById("confirm_non_submit2").style.display = 'none';
             }
         }
         // ポイント入力フォーム表示設定
@@ -210,29 +321,39 @@
                     if(isPointSubmitDisplay){
                         if(document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
                             document.getElementById("confirm_submit").style.display = 'inline';
-                            document.getElementById("confirm_non_submit").style.display = 'none';
-                            document.getElementById("submit_point").style.display = 'none';
+							document.getElementById("confirm_submit2").style.display = 'inline';
+							document.getElementById("confirm_non_submit").style.display = 'none';
+							document.getElementById("confirm_non_submit2").style.display = 'none';
+							  document.getElementById("submit_point").style.display = 'none';
                         } else {
                             document.getElementById("confirm_submit").style.display = 'none';
-                            document.getElementById("confirm_non_submit").style.display = 'inline';
-                            document.getElementById("submit_point").style.display = 'inline';
+							document.getElementById("confirm_submit2").style.display = 'none';
+							document.getElementById("confirm_non_submit").style.display = 'inline';
+							document.getElementById("confirm_non_submit2").style.display = 'inline';
+							  document.getElementById("submit_point").style.display = 'inline';
                         }
                     }else{
                         document.getElementById("confirm_submit").style.display = 'none';
-                        document.getElementById("submit_point").style.display = 'none';
-                        document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_submit2").style.display = 'none';
+						document.getElementById("submit_point").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_non_submit2").style.display = 'inline';
                     }
                     document.getElementById("point_info").style.display = 'inline';
                 }
                 else {
                     document.getElementById("confirm_submit").style.display = 'inline';
-                    document.getElementById("confirm_non_submit").style.display = 'none';
-                    document.getElementById("point_info").style.display = 'none';
+					document.getElementById("confirm_submit2").style.display = 'inline';
+					document.getElementById("confirm_non_submit").style.display = 'none';
+					document.getElementById("confirm_non_submit2").style.display = 'none';
+					  document.getElementById("point_info").style.display = 'none';
                 }
             }else{
                 document.getElementById("confirm_submit").style.display = 'inline';
-                document.getElementById("confirm_non_submit").style.display = 'none';
-                document.getElementById("point_info").style.display = 'none';
+		        document.getElementById("confirm_submit2").style.display = 'inline';
+			    document.getElementById("confirm_non_submit").style.display = 'none';
+			    document.getElementById("confirm_non_submit2").style.display = 'none';
+				document.getElementById("point_info").style.display = 'none';
             }
         }
 
@@ -254,11 +375,15 @@
             if (document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
                 document.getElementById("submit_point").style.display = 'none';
                 document.getElementById("confirm_submit").style.display = 'inline';
-                document.getElementById("confirm_non_submit").style.display = 'none';
+				document.getElementById("confirm_submit2").style.display = 'inline';
+				document.getElementById("confirm_non_submit").style.display = 'none';
+                document.getElementById("confirm_non_submit2").style.display = 'none';
             }else{
                 document.getElementById("submit_point").style.display = 'inline';
                 document.getElementById("confirm_submit").style.display = 'none';
-                document.getElementById("confirm_non_submit").style.display = 'inline';
+				document.getElementById("confirm_submit2").style.display = 'none';
+				document.getElementById("confirm_non_submit").style.display = 'inline';
+				document.getElementById("confirm_non_submit2").style.display = 'inline';
             }
         }
 
@@ -311,7 +436,7 @@
                     var shoppingSetSubtotal = document.getElementById("shopping_subtotal").innerHTML;
                     form.used_point_string.value = ableSetPoint;
                     form.used_point_string.readOnly = true;
-                    form.used_point_string.disabled = true;
+					form.used_point_string.disabled = false;
                     if(ableSetPoint != shoppingSetSubtotal){
                         form.use_point_method[1].value = '010';
                     }else{
@@ -320,11 +445,15 @@
                     if(document.orderPointPostForm.used_point.value == document.orderPointPostForm.used_point_string.value){
                         document.getElementById("submit_point").style.display = 'none';
                         document.getElementById("confirm_submit").style.display = 'inline';
-                        document.getElementById("confirm_non_submit").style.display = 'none';
+						document.getElementById("confirm_submit2").style.display = 'inline';
+						document.getElementById("confirm_non_submit").style.display = 'none';
+                        document.getElementById("confirm_non_submit2").style.display = 'none';
                     } else {
                         document.getElementById("submit_point").style.display = 'inline';
                         document.getElementById("confirm_submit").style.display = 'none';
-                        document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_submit2").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_non_submit2").style.display = 'inline';
                     }
 
 
@@ -336,16 +465,22 @@
                         if(document.orderPointPostForm.used_point.value == '0'){
                             document.getElementById("submit_point").style.display = 'none';
                             document.getElementById("confirm_submit").style.display = 'inline';
-                            document.getElementById("confirm_non_submit").style.display = 'none';
+							document.getElementById("confirm_submit2").style.display = 'inline';
+							document.getElementById("confirm_non_submit").style.display = 'none';
+                            document.getElementById("confirm_non_submit2").style.display = 'none';
                         } else {
                             document.getElementById("submit_point").style.display = 'inline';
                             document.getElementById("confirm_submit").style.display = 'none';
-                            document.getElementById("confirm_non_submit").style.display = 'inline';
+						    document.getElementById("confirm_submit2").style.display = 'none';
+						    document.getElementById("confirm_non_submit").style.display = 'inline';
+			  document.getElementById("confirm_non_submit2").style.display = 'inline';
                         }
                     } else {
                         document.getElementById("submit_point").style.display = 'inline';
                         document.getElementById("confirm_submit").style.display = 'none';
-                        document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_submit2").style.display = 'none';
+						document.getElementById("confirm_non_submit").style.display = 'inline';
+						document.getElementById("confirm_non_submit2").style.display = 'inline';
                     }
                     form.used_point_string.disabled = false;
                     form.used_point_string.readOnly = false;
@@ -357,17 +492,77 @@
     <!-- ▲▲ 個別送料対応 2015.08.28 ▲▲ -->
 
     <!-- EndEditable -->
-    <!-- InstanceEndEditable -->
-    <!--/ head -->
-    <!-- tracking urchin -->
-    <meta m:id="fs_tracking_urchin" content="">
-    <!--/ tracking urchin -->
-    <!-- InstanceBeginEditable name="head" -->
-    <object class="xsp_obj" m:id="e_var_mall_link"></object>
-    <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
-    <!-- InstanceEndEditable -->
+<style>
+.memadd_table_01 th {
+background: repeat scroll 0 0 #464646;
+}
+a.loginBt {
+background: none repeat scroll 0 0 #b22222;
+color: #fff !important;
+}
+.sp_tcel{
+display:none
+}
+.memadd_table_01 th span.imp {
+background: none repeat scroll 0 0 #b22222;
+}
+@media (max-width: 640px){
+#contents {
+margin: 0 auto;
+width: 100%;
+}
+.memadd_table_01 {
+margin-bottom:10px;
+}
+.memadd_table_01 th{ display:none;}
+.memadd_table_01 tr:nth-child(1){ display: block}
+.memadd_table_01 tr:nth-child(3){ display: block}
+.sp_tcel{
+background: #464646 !important;
+border-bottom: 1px solid #ececec;
+color: #fff;
+font-size: 12px;
+padding: 2% 1.5% 3% 2% !important;
+width: 100% !important;
+display:block !important;
+}
+.memadd_table_01 td span.imp {
+background: none repeat scroll 0 0 #b22222;
+color: #ffffff;
+float: right;
+font-size: 10px;
+font-weight: normal;
+padding: 2px;
+}
+.notationBlock input {
+border: 1px solid rgba(180,180,180,1.00) !important;
+padding:1.2% 0 !important;
+}
+.memadd_table_01 .in_w_02{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+.notationBlock {
+padding:0 30px !important;
+}
+a.loginBt {
+width: 100%;
+}
+}
+</style>
+<!-- InstanceEndEditable -->
+<!--/ head -->
+<!-- tracking urchin -->
+<meta m:id="fs_tracking_urchin" content="">
+<!--/ tracking urchin -->
+<!-- InstanceBeginEditable name="head" -->
+<object class="xsp_obj" m:id="e_var_mall_link"></object>
+<span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
+<!-- InstanceEndEditable -->
 <!-- ▼▼▼ SmartSuggest ▼▼▼ -->
-<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=12hZzy5Q9UzLh"></script>
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
 <script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
 <!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
@@ -539,7 +734,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
                     <li><a href="/shop/category/001001001/list/">バック</a></li>
                     <li><a href="/shop/category/001001008/list/">新着商品</a></li>
                     <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
-                    <li><span></span></li>
                 </ul>
             </li>
             <li class="sp_gnav_link_sub">
@@ -740,7 +934,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div id="contents">
         <!-- ここから -->
 
-        <div id="contents_r_02">
+        <div id="shopping-cart" class="wrap--default con_box">
 
 
             <object class="xsp_obj" m:id="e_var_order"></object>
@@ -752,10 +946,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
             <object class="xsp_obj" m:id="e_var_goods_jpn_wrapping_type"></object>
             <object class="xsp_obj" m:id="e_var_wrapping"></object>
 
-            <div class="r_con_box_04">
-                <div class="r_con_box_04_in">
+            <div id="shopping-cart__buy" class="contents_wrap">
+                <div class="contents_wrap">
 
-                    <div class="sec_02 clearfix">
+                    <div class="contents_main confirm_main">
 
                         <div class="ad_navi">
                             <ul class="clearfix">
@@ -776,145 +970,128 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			<div class="error"><span m:id="h_err_1">エラーメッセージ</span></div>
 		</span>
 
-                        <object class="xsp_obj" m:id="e_var_ordShop"></object><div class="wrap_cart02">
-<span m:id="l_notPre_free_guide">
-   		<!-- 注文詳細 -->
-    <!-- ********** include:orderDetail.jsp ********** -->
+<object class="xsp_obj" m:id="e_var_ordShop"></object>
 
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<!--<span m:id="disp_ordShop_shop_name"></span>-->
-<tr><th>商品名</th>
-<th class="memadd_table_02_w_02">商品単価</th>
-<th class="memadd_table_02_w_03">数量</th>
-<th class="memadd_table_02_w_03">個別送料</th>
-<th class="memadd_table_02_w_02">小計</th>
-</tr>
-<span m:id="l_ite_detail">
-<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
-<tr>
-<td class="center color_w_b" style="border-right:none"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
+        <!-- ▼▼▼ 請求金額テーブル ▼▼▼ -->
+      <div class="contents_side confirm_side">
+<span m:id="l_msgNotPre_1">
+        <div id="confirm_submit2" class="box_02 viewPc btn_nex_01">
+          <p class="confirm_side_btn01"><a m:id="a_bt_settle"  name="order_submit_link" href="orderReceipt.html" onclick="" class="#">この内容で申し込む</a></p>
+        </div>
+        <div id="confirm_non_submit2" class="box_02 viewPc btn_nex_01">
+          <p class="confirm_side_btn01"><a style="opacity: 1;" name="none">ポイントを入力してください</a></p>
+        </div>
+</span>
+        <div class="confirm_side_table confirm_side_table01">
+          <table>
+            <tbody>
+            <object class="xsp_obj" m:id="i_shopping_total_count"></object>
+              <tr class="shopping_total bg_gray1">
+                <th>請求金額</th>
+                <td><span m:id="b_wr_payment_amount">38,370</span>
+                 円</td>
+              </tr>
+              <tr class="shopping_total bg_gray1">
+                <th>獲得予定ポイント</th>
+                <td><span m:id="b_wr_totalPointAmt killl">384</span> pt</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="confirm_side_table confirm_side_table02">
+          <table>
+            <tbody>
+              <span m:id="div_shopping_total">
+              <tr class="shopping_total2 shopping_total">
+                <th>商品合計</th>
+                <td><span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
+                    <span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span></td>
+              </tr>
+              </span>
+              <tr class="shopping_total2 shopping_total">
+                <th>送料</th>
+                <td><span m:id="b_wr_postage">800</span> 円</td>
+                <span m:id="l_notEqu_total_postage">
+                <span m:id="div_shopping_total">
+                <th>(うち商品個別送料)</th>
+                <td ><span m:id="b_wr_total_postage">800</span> 円</td>
+                </span>
+                </span>
+              </tr>
+              <tr class="shopping_total2 shopping_total bg_gray2">
+                <th>ご使用ポイント</th>
+                <td><span m:id="b_wr_used_point">500</span> pt</td>
+              </tr>
+              <span m:id="l_notEqu_total_discount">
+              <span m:id="div_shopping_total">
+              <tr class="shopping_total2 shopping_total bg_gray2">
+                <th>会員割引額</th>
+                <td ><span m:id="b_wr_total_discount">500</span> 円</td>
+              </tr>
+              </span>
+              </span>
+              <span m:id="l_notEqu_charged_option">
+              <tr m:id="div_shopping_total" class="shopping_total2 shopping_total bg_gray2">
+                <td ><span m:id="disp_wrapping_name">有料オプション</span></td>
+                <td ><span m:id="b_wr_charged_option">300</span> 円</td>
+              </tr>
+              </span>
+              <span m:id="l_notEqu_premium_discount_amount">
+              <!-- 会員限定の場合 -->
+              <span m:id="l_equ_totalMemberSpecialDiscount">
+              <span m:id="l_notEqu_special_discount_amount">
+              <tr m:id="div_shopping_total" class="shopping_total2 shopping_total bg_gray2">
+                <th>特典割引額</th>
+                <td style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
+              </tr>
+              <!-- <tr m:id="div_shopping_total">
+                <td >特典割引額</td>
+                <td  style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+              </tr> -->
+              </span>
+              </span>
+              <span m:id="l_notEqu_totalMemberSpecialDiscount">
+              <tr m:id="div_shopping_total" class="shopping_total2 shopping_total bg_gray2">
+                <th>特典割引額</th>
+                <td style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
+              </tr>
+              </span>
+              </span>
+              <span m:id="l_notEqu_fee">
+              <tr m:id="div_shopping_total" class="shopping_total2 shopping_total bg_gray2">
+                <th>決済手数料</th>
+                <td><span m:id="b_wr_fee">700</span> 円</td>
+              </tr>
+              </span>
+            </tbody>
+          </table>
+        </div>
+        <div class="confirm_side_txt01">
+          <p>獲得予定ポイントは代金完済後に付与されます。<br>
+          上記内容をお確かめの上、間違いがなければ「この内容で申込む」を押してください。</p>
+        </div>
+      </div>
 
-<td class="right color_w_b" style="border-right:none">
-<!--	<span m:id="b_wr_goods_price_tax">5000</span> 円 -->
-	<span m:id="l_equ_memberSpecialDiscount">
-	  		<span m:id="disp_goods_special_price">1000 円　</span> 円
-	</span>
-	<span m:id="l_notEqu_memberSpecialDiscount">
-  		<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
-	</span>
-</td>
-<td class="right color_w_b" style="border-right:none"><span m:id="disp_detail_order_num">3</span></td>
-<td class="right color_w_b" style="border-right:none"><span m:id="l_pre_disp_detail_postage"><span m:id="disp_detail_postage"></span>円</span><span m:id="l_pre_not_disp_detail_postage">0円</span></td>
-<td class="right color_w_b" style="border-right:none">
-	<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
-	<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
-  	<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
-</td>
-</tr>
-</span>
-</table>
-                    </div>
-                        <div class="wrap_cart03">
-                            <table cellpadding="0" cellspacing="0" border="0" class="new_tbl">
-                                <object class="xsp_obj" m:id="i_shopping_total_count"></object>
-                                <span m:id="div_shopping_total">
-<tr>
-<td style="border-top:none;" >商品合計</td>
+        <!-- ▲▲▲ 請求金額テーブル ▲▲▲ -->
 
-<td style="border-top:none;" >
-	<!--<span m:id="b_wr_total_price">9500</span> 円-->
-	<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
-	<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
-</td>
-</tr>
-</span>
-                                <!--保留<tr>
-                                <td colspan="2" class="right">手数料</td>
-                                <td class="bor_l_none"></td>
-                                <td class="">55円</td>
-                                </tr>-->
-                                <span m:id="div_shopping_total">
-<tr>
-<td >送料</td>
-<td ><span m:id="b_wr_postage">800</span> 円</td>
-</tr>
-</span>
-                                <span m:id="l_notEqu_total_postage">
-<span m:id="div_shopping_total">
-<tr>
-<td >(うち商品個別送料)</td>
-<td ><span m:id="b_wr_total_postage">800</span> 円</td>
-</tr>
-</span>
-</span>
-
-                                <span m:id="l_notEqu_total_discount">
-<span m:id="div_shopping_total">
-<tr>
-<td >会員割引額</td>
-<td ><span m:id="b_wr_total_discount">500</span> 円</td>
-</tr>
-</span>
-</span>
-                                <span m:id="l_notEqu_charged_option">
-<tr m:id="div_shopping_total">
-  <td ><span m:id="disp_wrapping_name">有料オプション</span></td>
-<td ><span m:id="b_wr_charged_option">300</span> 円</td>
-</tr>
-</span>
-                                <span m:id="l_notEqu_premium_discount_amount">
-	<!-- 会員限定の場合 -->
-	<span m:id="l_equ_totalMemberSpecialDiscount">
- 		<span m:id="l_notEqu_special_discount_amount">
-			<tr m:id="div_shopping_total">
-				<td >特典割引額</td>
-				<td  style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">1000</span> 円</td>
-			</tr>
-		</span>
-	</span>
-	<span m:id="l_notEqu_totalMemberSpecialDiscount">
-		<tr m:id="div_shopping_total">
-			<td >特典割引額</td>
-			<td  style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
-		</tr>
-	</span>
-                                    <!-- <tr m:id="div_shopping_total">
-                                        <td >特典割引額</td>
-                                        <td  style="color:#FF0000">-<span m:id="b_wr_premium_discount_amount">1000</span> 円</td>
-                                    </tr> -->
-
-</span>
-                                <span m:id="l_equ_point_pres">
-				<span m:id="l_pre_member">
-<tr m:id="div_shopping_total">
-<td >ご使用ポイント</td>
-<td ><span m:id="b_wr_used_point">500</span> pt</td>
-</tr>
-</span>
-</span>
-                                <tr m:id="div_shopping_total">
-                                    <td >合計金額</td>
-                                    <td ><span m:id="b_wr_order_price_total">10000</span> 円</td>
-                                </tr>
-                                <span m:id="l_notEqu_fee">
-<tr m:id="div_shopping_total">
-<td >決済手数料</td>
-<td ><span m:id="b_wr_fee">700</span> 円</td>
-</tr>
-</span>
-                                <tr m:id="div_shopping_total">
-                                    <td style="font-weight:bold">請求金額</td>
-                                    <td style="font-weight:bold"><span m:id="b_wr_payment_amount">9000</span> 円</td>
-                                </tr>
-                                <span m:id="l_notEqu_totalPointAmt">
-<tr m:id="div_shopping_total">
-<td class=" killl">獲得予定ポイント</td>
-<td ><span m:id="b_wr_totalPointAmt killl">90</span> pt</td>
-</tr>
-</span>
-                            </table>
-                        </div>
-
+        <!-- ▼▼▼ 商品詳細 ▼▼▼ -->
+        <div class="product">
+          <p class="product_tit">お申込み商品</p>
+          <span m:id="l_ite_detail">
+          <object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
+          <div class="product_box">
+            <div class="product_img">
+              <img m:id="h_img_sku_goods_Image" src="http://dummyimage.com/150x150/000/fff&text=150*150">
+            </div>
+            <div class="product_box_txt">
+              <p class="product_box_tit"><span m:id="disp_detail_goods_name">２wayワンピース</span>&nbsp;<span m:id="disp_detail_goods_sku_name">２wayワンピース</span></p>
+              <p class="product_box_spec"><span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price" class="yen">9,612</span> 円</span>
+              <span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_goods_price_tax" class="yen">9,612</span> 円</span>
+              <span class="num">数量：<span m:id="disp_detail_order_num">1</span></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- ▲▲▲ 商品詳細 ▲▲▲ -->
 
                         <span m:id="l_pre_disp_goodsPremium">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
@@ -970,90 +1147,24 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		</tr>
 	</table>
 </span>
+</span>
                         <!--/ ********** include:orderDetail.jsp ********** -->
                         </span>
 
-                        <!-- ▼▼ 個別送料対応 2015.08.28 ▼▼ -->
-                        <div class="clearfix">&nbsp;</div>
-
-                        <!-- ポイント運用ショップ -->
-                        <span m:id="l_pre_point">
-<span m:id="l_pre_member">
-<span m:id="l_greThan_effectiveCurrentPoint">
-
-<!-- 表示切替部 start -->
-<form name="orderPointPostForm" method="post" action="orderPointPost.do">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th class="last_02">ポイントのご利用</th></tr>
-<tr>
-	<td>
-		<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する
-	</td>
-</tr>
-</table>
-<div id="point_info">
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
- <tr>
-	<td width="" style="border-top:none;" class="cart_table_02_color_01"><input type="hidden" id="existPointArea"/></td>
-	<td class="bor_bottom">
-		<input m:id="h_radio_use_point_method_010" type="radio" name="use_point_method" value="010" class="radio" onclick="setPartUsePoint(this)"/>一部のポイントを使用（使用するポイント数を以下にご入力ください）
-		<br />
-		<input m:id="h_radio_use_point_method_020" type="radio" name="use_point_method" value="020" class="radio" onclick="setAllUsePoint(this)"/>全額ポイント利用
-		<span m:id="l_msgPre_use_point">
-			<span class="error">
-				<span m:id="h_err_use_point">ポイント利用エラーメッセージ</span>
-			</span>
-		</span>
-	</td>
-</tr>
-<tr><td style="border-top:none;" class="cart_table_02_color_01">現在ポイント</td>
-	<td class="bor_bottom">
-		<span m:id="b_wr_effectiveCurrentPoint">100</span> pt
-		<span id="shopping_subtotal" style="visibility:hidden;"><span m:id="h_hid_order_price_total">123</span></span>
-	</td>
-</tr>
-<tr><td style="border-top:none;" class="cart_table_02_color_01">利用可能ポイント</td>
-	<td class="bor_bottom">
-		<span m:id="b_wr_order_available_point">100</span> pt
-		<span id="available_point" style="visibility:hidden;"><span m:id="h_hid_order_available_point">123</span></span>
-	</td>
-</tr>
-<tr><td style="border-top:none;" class="cart_table_02_color_01">ご利用ポイント</td>
-<td>
-	<input m:id="h_txt_used_point_string" type="text" name="used_point_string" value="" maxlength="7" class="in_w_04" onBlur=""> pt
-	<span m:id="l_msgPre_used_point_string">
-		<span class="exp" m:id="l_usable_point">例：0 -  <span m:id="disp_sample_available_point">1,000</span>(半角数字)</span>
-		<br/>
-		<span class="error"><span m:id="h_err_used_point_string">ご利用ポイントエラーメッセージ</span></span>
-	</span>
-</td>
-</tr>
-</table>
-	<input m:id="h_hid__S" type="hidden" name="_S"  value="00000002" />
-  	<input m:id="h_hid_key" type="hidden" name="key" value="123" />
-	<input m:id="h_hid_used_point" type="hidden" name="used_point" value="0" />
- <div id="submit_point" class="inq_input_bt_03 clearfix">
-<!-- 	<div id="submit_point"> -->
-		<a m:id="a_bt_point_settle" name="point_link" href="orderReceipt.html" onclick=""><img m:id="static_img" name="point_submit" src="../../../contents/shop/00000003/shop/image/ord_con_bt_02.png" alt="ポイント確定" /></a><br />
-	</div>
-</div>
-</form>
-    <!-- 表示切替部 end   -->
-</span>
-</span>
-</span>
-                        <!-- ▲▲ 個別送料対応 2015.08.28 ▲▲ -->
-
-                        <div class="clearfix"></div>
-                        <div class="clearfix confirm2block">
-                            <object class="xsp_obj" m:id="b_size_destinations"></object>
-                            <span m:id="l_equ_destinations_size">
+<div class="contents_foot confirm_foot">
+<div class="clearfix confirm2block">
+<!--▼▼▼ 配送先情報 ▼▼▼-->
+<object class="xsp_obj" m:id="b_size_destinations"></object>
+<span m:id="l_equ_destinations_size">
+  <!--▼▼▼ 配送先が登録情報と同じ場合 ▼▼▼-->
+<span m:id="l_equ_isDestinedMemberAddress">
+    <!--▼▼▼ お申し込み様情報 ▼▼▼-->
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02 rightLine">
-<tr><th class="last_02">お申込み者様情報</th>
+<tbody><tr><th class="last_02">お申込み者様情報</th>
 </tr>
 <tr>
 <td class="last_02">
-<span class="fs16">
+<span>
 【お名前】<span m:id="disp_order_name_sei">着心地</span> <span m:id="disp_order_name_mei">太郎</span><br />
 【フリガナ】<span m:id="disp_order_name_sei_kana">ヤマダ</span> <span m:id="disp_order_name_mei_kana">タロウ</span><br />
 【メールアドレス】<span m:id="disp_order_emal">eltex@co.jp</span><br />
@@ -1071,132 +1182,92 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </span>
 </td>
 </tr>
-</table>
-
-<span m:id="l_ite_destination">
+</tbody></table>
+     <!--▲▲▲ お申し込み様情報 ▲▲▲-->
+</span>
+  <!--▼▼▼ 別の配送先を指定している場合 ▼▼▼-->
+<span m:id="l_notEqu_isDestinedMemberAddress">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th class="last_02">配送先住所</th>
+<tbody><tr><th class="last_02">配送先住所</th>
 </tr>
 <tr>
 <td class="last_02">
-<span class="fs16">
-<span m:id="l_equ_isDestinedMemberAddress">
-						お客様情報と同じ
-					</span>
-					<span m:id="l_notEqu_isDestinedMemberAddress">
+<span>
+<span m:id="l_notEqu_isDestinedMemberAddress">
 【お名前】<span m:id="disp_destination_name_sei">着心地</span> <span m:id="disp_destination_name_mei">花子</span><br />
 【フリガナ】<span m:id="disp_destination_name_sei_kana">着心地</span> <span m:id="disp_destination_name_mei_kana">ハナコ</span><br />
 						<span m:id="l_notEmp_office">
 【会社名】<span m:id="disp_destination_office">ダミー会社名</span><br />
-		                </span><br />
+</span><br />
 
 【郵便番号】〒<span m:id="disp_destination_post_code">211-1111</span><br />
 【住所1】<span m:id="disp_destination_area_name">神奈川県</span> <span m:id="disp_destination_address1">保土ヶ谷区</span><br />
 【住所2】<span m:id="disp_destination_address2">神戸町</span> <span m:id="disp_destination_address3">１－１－１</span><span m:id="disp_destination_address4">横浜ビジネスパーク イーストタワー １４階</span><br />
 【様方】<span m:id="disp_destination_address_co_sei">様方(姓)</span>&nbsp;<span m:id="disp_destination_address_co_mei">様方(名)</span><br />
 【電話番号】<span m:id="disp_destination_tel_no">045-123-1234</span>
-					</span>
-					<br /><br />
-					<span m:id="l_if_separate">
-						<span m:id="l_ite_detail">
-                            【商品名】
-								<span m:id="disp_detail_goods_name">サンプル商品名</span><br />
-                            【配送希望日】
-									<span m:id="l_emp_appointed_delivery_date_detail">指定なし</span>
-									<span m:id="l_notEmp_appointed_delivery_date_detail">
-										<span m:id="b_wr_appointed_delivery_date_detail">2010/12/1</span>
-									</span><br />
-                            【配送希望時間帯】
-									<span m:id="l_emp_delivery_time_detail">未指定<br/></span>
-									<span m:id="l_notEmp_delivery_time_detail">
-										<object class="xsp_obj" m:id="e_var_deliveryTimeMap"></object>
-										<span m:id="disp_delivery_time_detail"></span><br/>
-									</span><br />
-						</span>
-					</span>
-					<span m:id="l_if_not_separate">
-                        【配送希望日】<br />
-                        <span m:id="l_emp_appointed_delivery_date">指定なし</span>
-                        <span m:id="l_notEmp_appointed_delivery_date"><span m:id="b_wr_appointed_delivery_date">2010/12/1</span></span>
-                        <br />
-                        【配送希望時間帯】<br />
-                        <span m:id="l_emp_delivery_time">未指定<br/></span>
-                        <span m:id="l_notEmp_delivery_time"><object class="xsp_obj" m:id="e_var_deliveryTimeMap"></object><span m:id="disp_delivery_time"></span><br/></span>
-					</span>
-					<span m:id="l_equ_deliveryLis_gift_div_1">
-						ギフト指定<br/>
-					</span>
-					<span m:id="l_notEmp_deliveryList_wrapping_type">
-						ラッピング：<span m:id="disp_deliveryList_wrapping_type">ダミーラッピング</span><br/>
-					</span>
-					<span m:id="l_notEmp_deliveryList_jpn_wrapping_type">
-						のし：<span m:id="disp_deliveryList_jpn_wrapping_type">ダミーのし</span><br/>
-					</span>
+</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</span>
+  <!--▲▲▲ 別の配送先を指定している場合 ▲▲▲-->
+</span>
+<!--▲▲▲ 配送先情報 ▲▲▲-->
+
+<!-- ▼▼▼ 決済について ▼▼▼ -->
+<span m:id="l_equ_credit">
+<object class="xsp_obj" m:id="b_var_paymentCredit"></object>
+</span>
+<form m:id="h_form_orderReceipt" method="POST" action="orderReceipt.html">
+<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
+<input m:id="h_hid_order_hash_code" type="hidden" name="order_hash_code" value="5"  />
+<input m:id="h_hid_key" type="hidden" name="key" value="123" />
+<input m:id="h_hid_masked" type="hidden" name="masked_card_number" value="123" />
+<input m:id="h_hid_saveCardFlg" type="hidden" name="save_card_flg" value="123" />
+<span m:id="l_equ_credit">
+<input m:id="h_hid_masked_pay" type="hidden" name="masked_card_number_pay" value="123" />
+</span>
+
+<input m:id="h_hid_api_trx_id" type="hidden" name="api_trx_id" value="123" />
+</form>
+
+<!--<span m:id="l_pre_disp_order_message">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th class="last_02">メッセージ、連絡事項 </th>
+</tr>
+<tr>
+<td class="last_02">
+<span>
+<span m:id="m_write_order_message"></span>
 </span>
 </td>
 </tr>
 </table>
-                        </div>
+</span>-->
 
-
-                        </span>
-                        </span>
-
-
-
-
-                        <span m:id="l_equ_credit">
-			<object class="xsp_obj" m:id="b_var_paymentCredit"></object>
-		</span>
-                        <form m:id="h_form_orderReceipt" method="POST" action="orderReceipt.html">
-                            <input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
-                            <input m:id="h_hid_order_hash_code" type="hidden" name="order_hash_code" value="5"  />
-                            <input m:id="h_hid_key" type="hidden" name="key" value="123" />
-                            <input m:id="h_hid_masked" type="hidden" name="masked_card_number" value="123" />
-                            <input m:id="h_hid_saveCardFlg" type="hidden" name="save_card_flg" value="123" />
-                            <span m:id="l_equ_credit">
-				<input m:id="h_hid_masked_pay" type="hidden" name="masked_card_number_pay" value="123" />
-			</span>
-
-                            <input m:id="h_hid_api_trx_id" type="hidden" name="api_trx_id" value="123" />
-                        </form>
-
-                        <!--<span m:id="l_pre_disp_order_message">
-                        <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-                        <tr><th class="last_02">メッセージ、連絡事項 </th>
-                        </tr>
-                        <tr>
-                        <td class="last_02">
-                        <span>
-                                                <span m:id="m_write_order_message"></span>
-                                            </span>
-                        </td>
-                        </tr>
-                        </table>
-                        </span>-->
-
-                        <span m:id="l_notPre_free_guide">
+<span m:id="l_notPre_free_guide">
 <!-- 決済について -->
 <span m:id="l_equ_credit">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
 <!-- ********** include:confirmPaymentCredit.jsp ********** -->
-<tr><th colspan="2">決済について</th></tr>
-    <!--<object class="xsp_obj" m:id="e_var_shopSettle"></object>-->
-<tr><td class="memadd_table_02_w_02">
-決済方法</td><td>
+<tbody><tr><th colspan="2">決済について</th></tr>
+<!--<object class="xsp_obj" m:id="e_var_shopSettle"></object>-->
+<tr><td class="last_02">
 <span m:id="b_wr_settlement_name1">クレジットカード</span></td>
 </tr>
 <tr>
-<td>カード番号</td>
-<td><span m:id="disp_masked_card_number">52**********1234</span></td>
+<td class="last_02">カード番号</td>
+<td class="last_02"><span m:id="disp_masked_card_number">52**********1234</span></td>
 </tr>
 <tr>
-<td>有効期限</td>
-<td><span m:id="disp_card_exp">11/11</span></td>
+<td class="last_02">有効期限</td>
+<td class="last_02"><span m:id="disp_card_exp">11/11</span></td>
 </tr>
 <tr>
-<td>支払回数</td>
-<td><span m:id="l_notEmp_andRevo_pay_times">
+<td class="last_02">支払回数</td>
+<td class="last_02"><span m:id="l_notEmp_andRevo_pay_times">
 <span m:id="disp_pay_times"></span>
 </span>
 <span m:id="l_equ_emp_pay_times">
@@ -1206,27 +1277,169 @@ s.tl(this,'o','cartview',null,'navigate');return false
 リボ払い
 </span></td>
 </tr>
+</tbody>
 </table>
 </span>
 
 <span m:id="l_notEqu_credit">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-<tr><th colspan="2">決済について</th></tr>
-<tr><td class="memadd_table_02_w_02">
-決済方法</td><td>
+<tbody><tr><th colspan="2">決済について</th></tr>
+<tr><td class="last_02">
 <span m:id="b_wr_settlement_name2">代引き又は後払い</span></td>
 </tr>
+</tbody>
 </table>
 </span>
 </span>
+<!-- ▲▲▲ 決済について ▲▲▲ -->
+</div>
+
+<!-- ▼▼▼ 配送日指定 ▼▼▼ -->
+<span m:id="l_ite_destination">
+    <div class="delivery">
+      <p class="delivery_tit">配送日指定</p>
+      <div class="delivery_box">
+<span m:id="l_if_separate">
+<span m:id="l_ite_detail">
+            <div class="delivery_box_in">
+<p>商品名：
+<span m:id="disp_detail_goods_name">サンプル商品名</span></p>
+<p>お届け日時：
+<span m:id="l_emp_appointed_delivery_date_detail">指定なし</span>
+<span m:id="l_notEmp_appointed_delivery_date_detail">
+<span m:id="b_wr_appointed_delivery_date_detail">2010/12/1</span>
+</span></p>
+<p>配送時間帯：
+<span m:id="l_emp_delivery_time_detail">未指定<br/></span>
+<span m:id="l_notEmp_delivery_time_detail">
+<object class="xsp_obj" m:id="e_var_deliveryTimeMap"></object>
+<span m:id="disp_delivery_time_detail"></span><br/>
+</span></p>
+            </div>
+</span>
+</span>
+
+<span m:id="l_if_not_separate">
+            <div class="delivery_box_in">
+<p>お届け日時：
+<span m:id="l_emp_appointed_delivery_date">指定なし</span>
+<span m:id="l_notEmp_appointed_delivery_date"><span m:id="b_wr_appointed_delivery_date">2010/12/1</span></span>
+</p>
+<p>配送時間帯：
+<span m:id="l_emp_delivery_time">未指定<br/></span>
+<span m:id="l_notEmp_delivery_time"><object class="xsp_obj" m:id="e_var_deliveryTimeMap"></object><span m:id="disp_delivery_time"></span></span></p>
+
+<p><span m:id="l_equ_deliveryLis_gift_div_1">
+ギフト指定<br/>
+</span></p>
+<span m:id="l_notEmp_deliveryList_wrapping_type">
+<p>ラッピング：<span m:id="disp_deliveryList_wrapping_type">ダミーラッピング</span></p>
+</span>
+<span m:id="l_notEmp_deliveryList_jpn_wrapping_type">
+<p>のし：<span m:id="disp_deliveryList_jpn_wrapping_type">ダミーのし</span></p>
+</span>
+            </div>
+</span>
+          </div>
+        </div>
+</span>
+<!-- ▲▲▲ 配送日指定 ▲▲▲ -->
 
 
-                    </div>
 
+<!--<span m:id="l_pre_disp_order_message">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tr><th class="last_02">メッセージ、連絡事項 </th>
+</tr>
+<tr>
+<td class="last_02">
+<span>
+<span m:id="m_write_order_message"></span>
+</span>
+</td>
+</tr>
+</table>
+</span>-->
 
+<!-- ▼▼ 個別送料対応 2015.08.28 ▼▼ -->
+<div class="clearfix">&nbsp;</div>
+<!-- ▼▼▼ ポイントのご利用 ▼▼▼ -->
+<!-- ポイント運用ショップ -->
+<span m:id="l_pre_point">
+<span m:id="l_pre_member">
+<span m:id="l_greThan_effectiveCurrentPoint">
 
-                </div>
-                <span m:id="l_notPre_free_guide">
+<!-- 表示切替部 start -->
+<div class="point">
+<form name="orderPointPostForm" method="post" action="orderPointPost.do">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tbody><tr><th class="last_02">ポイントのご利用</th></tr>
+<tr>
+<td>
+<input m:id="h_chk_use_point" type="checkbox" name="use_point" value="1" class="checkbox" onclick="changeUsePoint(this)"/>　ポイントを使用する
+<p class="confirm_point_txt">ポイントを利用する場合は、下記に入力の上、「入力したポイントを反映する」を押してください。ご請求金額が変更されますので、必ずご確認ください。</p>
+</td>
+</tr>
+</tbody></table>
+<div id="point_info">
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tbody><tr>
+<td width="" style="border-top:none;" class="cart_table_02_color_01"><input type="hidden" id="existPointArea"/></td>
+<td class="bor_bottom">
+<input m:id="h_radio_use_point_method_010" type="radio" name="use_point_method" value="010" class="radio" onclick="setPartUsePoint(this)"/>一部のポイントを使用（使用するポイント数を以下にご入力ください）
+<br />
+<input m:id="h_radio_use_point_method_020" type="radio" name="use_point_method" value="020" class="radio" onclick="setAllUsePoint(this)"/>全額ポイント利用
+<span m:id="l_msgPre_use_point">
+<span class="error">
+<span m:id="h_err_use_point">ポイント利用エラーメッセージ</span>
+</span>
+</span>
+</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">現在ポイント</td>
+<td class="bor_bottom">
+<span m:id="b_wr_effectiveCurrentPoint">100</span> pt
+<span id="shopping_subtotal" style="visibility:hidden;"><span m:id="h_hid_order_price_total">123</span></span>
+</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">利用可能ポイント</td>
+<td class="bor_bottom">
+<span m:id="b_wr_order_available_point">100</span> pt
+<span id="available_point" style="visibility:hidden;"><span m:id="h_hid_order_available_point">123</span></span>
+</td>
+</tr>
+<tr><td style="border-top:none;" class="cart_table_02_color_01">ご利用ポイント</td>
+<td>
+<input m:id="h_txt_used_point_string" type="text" name="used_point_string" value="" maxlength="7" class="in_w_04" onBlur=""> pt
+<span m:id="l_msgPre_used_point_string">
+<span class="exp" m:id="l_usable_point">例：0 -  <span m:id="disp_sample_available_point">1,000</span>(半角数字)</span>
+<br/>
+<span class="error"><span m:id="h_err_used_point_string">ご利用ポイントエラーメッセージ</span></span>
+</span>
+</td>
+</tr>
+</tbody></table>
+<input m:id="h_hid__S" type="hidden" name="_S"  value="00000002" />
+<input m:id="h_hid_key" type="hidden" name="key" value="123" />
+<input m:id="h_hid_used_point" type="hidden" name="used_point" value="0" />
+<div style="text-align: center;">
+<div id="submit_point" class="inq_input_bt_03 clearfix">
+<!-- 	<div id="submit_point"> -->
+<a m:id="a_bt_point_settle" name="point_link" href="orderReceipt.html" onclick="" class="cmn_btn cmn_btn_orange btn_middle"><span>入力したポイントを反映する</span></a><br />
+</div>
+</div>
+</div>
+</form>
+</div>
+<!-- 表示切替部 end   -->
+</span>
+</span>
+</span>
+<!-- ▲▲▲ ポイントのご利用 ▲▲▲ -->
+<!-- ▲▲ 個別送料対応 2015.08.28 ▲▲ -->
+</div>
+
+<span m:id="l_notPre_free_guide">
 <div class="r_con_box_04_in">
 <div class="memadd_cau_box_01">
 <!--<h3>ご注意</h3>-->
@@ -1238,7 +1451,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 </div>
 </span>
-
+</div><!--contents_wrap-->
 
                 <div class="inq_input_bt_03 clearfix">
 
@@ -1268,12 +1481,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 
-            </div><!--r_con_box_03-->
+            </div><!--shopping-cart__buy-->
 
 
 
 
-        </div><!--contents_r_02-->
+        </div><!--shopping-cart-->
 
 
     </div><!--contents-->
@@ -1446,6 +1659,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
         </ul>
         <ul>
             <li><a href="/shop/static/size/">サイズガイド</a></li>
+            <li><a href="/shop/static/sentaku/">洗濯表示一覧</a></li>
             <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
             <li><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
         </ul>
@@ -1553,7 +1767,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </div>
 </div><!-- /#footer02 -->
 <!-- InstanceBeginEditable name="footer_script" -->
-
 <!-- ▼▼▼▼▼tracking ga▼▼▼▼▼ -->
 
 <!-- tracking ga -->
@@ -1609,5 +1822,23 @@ if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+
 <!-- footer追加 -->
 <!-- InstanceEndEditable -->
 <span m:id="smartSuggest"></span>
+
+<!-- Ptengine 20170602 ここから -->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,56c49edf');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.jp/pta.js';
+        var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+        stag.src = _protocol + 'js.ptengine.jp/pts.js';
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
+    })();
+</script>
+<!-- Ptengine 20170602 ここまで -->      
+
 </body>
 <!-- InstanceEnd --></html>

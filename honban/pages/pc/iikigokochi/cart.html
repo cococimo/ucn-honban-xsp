@@ -25,6 +25,7 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <!-- Googleタグマネージャ head用 -->
 <meta m:id="google_tag_manager_head" content="">
 <!-- Googleタグマネージャ head用 -->
+
 <!-- InstanceEndEditable -->
 <!-- common css -->
 <link rel="shortcut icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/iikigokochi.ico" type="image/vnd.microsoft.icon" />
@@ -34,6 +35,9 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
+
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/style_n.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/common_n.css" type="text/css" media="all" />
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/yuga.js"></script>
@@ -441,6 +445,66 @@ if ( window.addEventListener ) {
 //-->
 
 </script>
+<style>
+.memadd_table_01 th {
+    background: repeat scroll 0 0 #464646;
+}
+a.loginBt {
+    background: none repeat scroll 0 0 #b22222;
+    color: #fff !important;
+}
+.sp_tcel{
+	display:none
+}
+.memadd_table_01 th span.imp {
+    background: none repeat scroll 0 0 #b22222;
+}
+@media (max-width: 640px){
+#contents {
+	margin: 0 auto;
+	width: 100%;
+}
+.memadd_table_01 {
+    margin-bottom:10px;
+}
+.memadd_table_01 th{ display:none;}
+.memadd_table_01 tr:nth-child(1){ display: block}
+.memadd_table_01 tr:nth-child(3){ display: block}
+.sp_tcel{
+    background: #464646 !important;
+    border-bottom: 1px solid #ececec;
+    color: #fff;
+    font-size: 12px;
+    padding: 2% 1.5% 3% 2% !important;
+    width: 100% !important;
+	display:block !important;
+}
+.memadd_table_01 td span.imp {
+    background: none repeat scroll 0 0 #b22222;
+    color: #ffffff;
+    float: right;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 2px;
+}
+.notationBlock input {
+    border: 1px solid rgba(180,180,180,1.00) !important;
+	padding:1.2% 0 !important;
+}
+.memadd_table_01 .in_w_02{
+/* border-radius */
+border-radius:5px;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+}
+.notationBlock {
+    padding:0 30px !important;
+}
+a.loginBt {
+    width: 100%;
+}
+}
+</style>
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -455,7 +519,7 @@ if ( window.addEventListener ) {
 <!-- DLPO -->
 
 <!-- ▼▼▼ SmartSuggest ▼▼▼ -->
-<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=12hZzy5Q9UzLh"></script>
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
 <script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
 <!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
@@ -723,7 +787,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
             </div><!-- header_r_01 -->
            </div>
     </div><!--header_wrap-->
-  	<!--▼▼▼sp_menu▼▼▼-->
+  <!--▼▼▼sp_menu▼▼▼-->
     <div class="sp_menu_only sp_login_menu">
 			<div class="sp_menu__category">
 				<p class="sp_menu__category__btn">商品カテゴリー</p>
@@ -1058,7 +1122,7 @@ $(window).on('load resize', function(){
 <div id="contents">
 
 
-<div id="contents_r_02">
+<div id="shopping-cart" class="wrap--default con_box">
 
 
 <!--<object class="xsp_obj" m:id="e_var_cart"></object>-->
@@ -1069,7 +1133,7 @@ $(window).on('load resize', function(){
 	<object class="xsp_obj" m:id="e_var_settlementMap"></object>
 	<object class="xsp_obj" m:id="e_var_saleStatus"></object>
 	<object class="xsp_obj" m:id="b_var_alc_goods_flg"></object>
-<div class="r_con_box_04">
+  <div id="shopping-cart__buy">
 <div class="r_con_box_04_in">
 
 <div class="sec_02 clearfix">
@@ -1184,6 +1248,7 @@ $(window).on('load resize', function(){
 <form m:id="h_form_cartUpdate" method="POST" action="cart.html">
 <object class="xsp_obj" m:id="e_var_cartShop"></object>
 <table cellpadding="0" cellspacing="0" border="0" class="cart_table_02 cart_table_sp">
+<tbody>
 <tr>
 <th class="cart_table_02_w_01">商品名</th>
 
@@ -1270,6 +1335,7 @@ $(window).on('load resize', function(){
 <span m:id="l_equ_installment">
 <td colspan="2" >
   <table cellpadding="0" cellspacing="0" border="0" class="cart_table_99">
+  <tbody>
 	<tr><td class="left lump1">一括払</td>
 	  <td class="right lump2">
 	<span m:id="l_equ_memberSpecialDiscount">
@@ -1290,6 +1356,7 @@ $(window).on('load resize', function(){
 	</span>
 	  </td>
     </tr>
+  </tbody>
   </table>
 </td>
 </span>
@@ -1351,6 +1418,7 @@ $(window).on('load resize', function(){
 
 </tr>
 </span>
+</tbody>
 </table>
 
 <div class="memadd_bt_con_01">
@@ -1362,7 +1430,7 @@ $(window).on('load resize', function(){
 <div class="wrap_cart">
 <div class="right total_annotation">(※商品金額計は一括金額を表示しています)</div>
 <table cellpadding="0" cellspacing="0" border="0" class="cart_table_02">
-
+<tbody>
 <tr m:id="div_shopping_total">
 <td class="right cart_table_02_color_01"><b>商品合計</b></td>
 <td class="right">
@@ -1416,7 +1484,7 @@ $(window).on('load resize', function(){
 						</span></td>
 
 </tr>
-
+</tbody>
 </table>
 
 </div>
@@ -1428,16 +1496,19 @@ $(window).on('load resize', function(){
 <!-- ▲▲ 個別送料商品メッセージ 2015.08.27 koba ▲▲ -->
 <span m:id="l_pre_disp_goodsPremium">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tbody>
 <tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
 </tr>
 <tr m:id="l_ite_goodsPremium">
 <td><span m:id="disp_goodsPremium">おまけプレミアム名</span></td>
 <td class="last_02 right memadd_table_02_w_02">&nbsp;&times;&nbsp;<span m:id="disp_goodsPremiumNum">2</span></td>
 </tr>
+</tbody>
 </table>
 </span>
 <span m:id="l_notEmp_promotionConnectName">
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tbody>
 <tr><th class="last_02">以下の特典が適用されています</th>
 </tr>
 <tr>
@@ -1445,6 +1516,7 @@ $(window).on('load resize', function(){
 						  <span m:id="b_wr_promotionConnectName">ダミー特典内容</span><br/>
 					    </span></td>
 </tr>
+</tbody>
 </table>
 </span>
 
@@ -1458,6 +1530,7 @@ $(window).on('load resize', function(){
 <!--<a href="/shop/static/wrapping/" onclick="window.open(this.href, 'wrapping', 'width=600, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;">ラッピングに関するご説明</a>-->
 
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02" id="">
+<tbody>
 <tr>
 	<th class="cart_table_02_w_02">ギフトラッピングのご指定（有料オプション</th>
 </tr>
@@ -1479,6 +1552,7 @@ $(window).on('load resize', function(){
 	</td>
 	-->
   </tr>
+  </tbody>
   </table>
 
 	　<div class="radioFloat">
@@ -1572,6 +1646,7 @@ $(window).on('load resize', function(){
 -->
 <p style="text-align:left">表書きを選択してください。</p>
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02" id="memadd_table_02">
+<tbody>
 <tr>
   	<th class="cart_table_02_w_02 th_center">表書き<br />（のし紙上段）</th>
 	<td>
@@ -1602,9 +1677,11 @@ $(window).on('load resize', function(){
 	</td>
   </span>
 </tr>
+</tbody>
 </table>
 <p style="text-align:left">記名をお入れください。連名の場合は、カンマで区切ってお入れください。</p>
 <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
+<tbody>
 <tr>
 	<th class="cart_table_02_w_02 th_center">記名<br />（のし紙下段）</th>
 	<td class="last_02">
@@ -1615,6 +1692,7 @@ $(window).on('load resize', function(){
 	</div>
 	</td>
 </tr>
+</tbody>
 </table>
 </div>
 </div>
@@ -1624,6 +1702,7 @@ $(window).on('load resize', function(){
   <span m:id="l_equ_total_order_num">
 	<p style="text-align:left">一括ラッピングする商品のご指定できる個数には制限があります。ラッピングに含める数量を指定してください。</p>
   <table cellpadding="0" cellspacing="0" border="0" class="cart_table_02">
+  <tbody>
     <tr>
       <th class="cart_table_02_w_02">ラッピング対象商品名</th>
       <th class="cart_table_02_w_02">商品サイズ</th>
@@ -1660,9 +1739,11 @@ $(window).on('load resize', function(){
 		<span m:id="l_equ_wrapping_icon_2"><img  m:id="static_img" src="../../../contents/shop/00000006/icon/wrapping_2.gif" alt="ラッピング可" /></span>
 		<span m:id="l_equ_wrapping_icon_3"><img  m:id="static_img" src="../../../contents/shop/00000006/icon/wrapping_3.gif" alt="ラッピング不可" /></span>
 	</span>
-	<div>
+	</div>
 	   </td>
       </tr>
+    </span>
+  </tbody>
   </table>
 
 <span m:id="l_msgPre_1">
@@ -1677,6 +1758,7 @@ $(window).on('load resize', function(){
   <span m:id="l_equ_capacity_over">
   <p style="text-align:left">以下がラッピング上限と超過分の目安です。超過分がなくなるように上記の商品数を減らしてください。</p>
   <table cellpadding="0" cellspacing="0" border="0" class="cart_table_02">
+  <tbody>
     <tr>
 	  <th class="cart_table_02_w_03"><span m:id="disp_wrapping_set">カジュアルラッピング</span></th>
 	   <td>
@@ -1687,6 +1769,7 @@ $(window).on('load resize', function(){
 		</span>
 	   </td>
     </tr>
+  </tbody>
   </table>
   </span>
   <div>
@@ -1721,7 +1804,6 @@ $(window).on('load resize', function(){
 <!-- /注文オプション（ギフト、熨斗、ラッピング） -->
 </form>
 </div><!-- /cartLeft -->
-<!-- cartLeft -->
 	<div class="cartright">
 	<div class="box_02 go_input mb20">
 	<span m:id="l_msgNotPre_1">
@@ -1794,6 +1876,7 @@ $(window).on('load resize', function(){
 
 </div>
 <!-- /お客様情報入力 下部 -->
+
 </div><!-- /カートメイン -->
 
 
@@ -1916,6 +1999,7 @@ $(window).on('load resize', function(){
 	 	</span>
 	</span>
  </span>
+</span>
 <!--/ 送料メッセージ -->
 
 
@@ -1990,13 +2074,84 @@ $(window).on('load resize', function(){
 </div>-->
 
 </form>
+<!--▼▼▼ ログインボックス ▼▼▼-->
+<span m:id="l_notEqu_member">
+<!-- <p class="cart_customer_btn mb50 s_mb15 tac"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>お客様情報の入力へ</span></a></p>
+<p class="cart_guest_btn viewSp s_mb20 tac"><a href="#guest" class="cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>はじめて購入する方</span></a></p> -->
+    <div class="cart-buy">
+      <div class="cart-buy__login cart-buy__box">
+        <div class="cart-buy__login-titArea">
+          <p class="cart-buy__login-tit cart-buy__tit">ログイン</p>
+          <p class="cart-buy__login-note">会員登録がお済みのお客様</p>
+        </div>
+        <p class="cart-buy__login-txt">ログインID、パスワードを入力して<br>
+        「ログイン」を押してください。</p>
+      <span m:id="l_msgPre_1">
+      <div class="error">
+        <p>ログインに失敗しました。</p>
+      </div>
+      </span>
+        <div class="cart-buy__login-form">
+          <form m:id="h_form_orderLoginAuth" method="POST" action="orderInput.html">
+            <p class="cart-buy__login-formTit">ログインID<span>（例：yamada1234）</span></p>
+            <input m:id="h_txt_login_id" type="text" name="loginForm" property="login_id" maxlength="20" />
+        <span m:id="l_msgPre_login_id">
+          <span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span>
+        </span>
+            <p class="cart-buy__login-formTit">パスワード<span>（例：abcde1234）</span></p>
+            <input m:id="h_pwd_password" type="password" name="loginForm" property="password" maxlength="20" value="" />
+        <span m:id="l_msgPre_password">
+          <span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span><br />
+        </span>
+        <p class="cart-buy__login-formForget"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html.html">パスワードをお忘れの方はこちら</a></p>
+        <input type="submit" value="ログインして購入" class="login-btn cart-buy__btn">
+        <input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
+        <input m:id="h_hid_orderShopNo" type="hidden" name="shop" property="orderShopNo"  value="00000003" />
+          </form>
+        </div>
+      </div>
+      <div class="cart-buy__notMember">
+        <div class="cart-buy__guest cart-buy__box">
+          <p class="cart-buy__guest-tit cart-buy__tit">会員登録をせずに購入</p>
+          <a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="guest-btn cart-buy__btn">ゲスト購入</a>
+        </div>
+        <div class="cart-buy__add cart-buy__box">
+          <div class="cart-buy__add-titArea">
+            <p class="cart-buy__add-tit cart-buy__tit">新規会員登録</p>
+            <p class="cart-buy__add-note">初めてのお客様はこちらから</p>
+          </div>
+          <p class="cart-buy__add-txt">会員登録をすると、次回以降、お届け先登録が省略できる<br>
+          ほか、各種お得な情報をお届けいたします。</p>
+        <form m:id="h_form_orderMemberAdd" method="post" action="memberAdd.html">
+        <input type="hidden" name="cart_flg" value="1"/>
+          <input type="submit" value="会員登録をして購入" class="register-btn cart-buy__btn">
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="contents_foot viewSp">
+      <table class="memadd_table_02" cellspacing="0" cellpadding="0" border="0">
+        <tbody><tr>
+        <th class="last_02">注意事項</th>
+        </tr>
+        <tr>
+        <td class="last_02">
+        ※お支払金額の合計は、送料、手数料、割引率などを加え、決済時に確定します。<br>
+        ※同じ商品の数量を変更する場合は、数値を入力後「再計算」を押してください。<br>
+        ※カートから商品を削除する場合は、その商品の「削除」を押してください。<br>
+        ※当サイトでは満18歳未満のお客様からのご注文は承れません。
+        </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </span>
+<!--▲▲▲ ログインボックス ▲▲▲-->
+</div><!--r_con_box_04_in-->
+</div><!--r_con_box_04_in-->
 
-</div>
-</div>
-</div><!--r_con_box_03-->
-
-
-</div><!--contents_r_02-->
+</div><!--shopping-cart__buy-->
+</div><!--shopping-cart-->
 
      <!--▼▼▼この商品を買われた方はこんな商品も買っています▼▼▼-->
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
@@ -2075,6 +2230,7 @@ $(window).on('load resize', function(){
 </div>
   <!--▲▲▲こんな商品も買っています▲▲▲-->
 
+
 </div><!--contents-->
 
 </div><!--container-->
@@ -2143,7 +2299,8 @@ $(window).on('load resize', function(){
 <!-- ガイド -->
 <!-- footer追加 -->
 <div id="footer01">
-	<div class="inner">    <ul>
+	<div class="inner">
+    <ul>
       <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
       <li><a href="/shop/static/concept/">コンセプト</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature37/">ナチュラルクール &amp; エレガントコーデ特集</a></li>
@@ -2151,13 +2308,14 @@ $(window).on('load resize', function(){
       <li class="sp_gnav_link"><a href="/shop/static/feature35/">汗染み防止コットンアイテム特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature34/">涼感UVカットプルオーバー特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature33/">着回しコーデ“7days”特集</a></li>
+
       <li class="sp_gnav_link"><a href="/shop/static/feature32/">夏のおすすめコーディネート特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集</a></li>
       <li class="sp_gnav_link"><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集</a></li>
       <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>
     </ul>
-<ul class="footer_category only_pc">
+    <ul class="footer_category only_pc">
       <li>
       	<a href="#">商品カテゴリー</a>
       	<ul>

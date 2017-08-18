@@ -1182,7 +1182,7 @@ h1.add_p_st2{
 }
 #header #header_gnav>li#header_itemlist>a {
 	background:url(../shop/image/kigokochi/header_link_list_itemlist.gif) no-repeat;
-  width: 122px;
+  width: 145px;
 	height:16px;
 	padding-right:23px;
 	position:relative;
@@ -2069,11 +2069,13 @@ div.i_sec span img {
     border-left: 1px solid #eee;
   }
   #header .sp_top_menu {
-    width: 37px;
-    height: 33px !important;
-		top:14px;
-		left:15px;
+    width: 45px;
+    height: 39px !important;
+    top: 11px;
+    left: 9px;
 		right:auto;
+    padding: 3px 8px 3px 0;
+    border-right: 1px solid #646464;
   }
   #header .sp_top_menu a {
     background: url("../shop/image/kigokochi/sp_hd_nav01.png") no-repeat 0 0;
@@ -2102,11 +2104,131 @@ div.i_sec span img {
     text-indent: -9999px;
     background-size: 100%;
   }
+  #header .sp_header_search {
+    position: relative;
+  }
+  #header .sp_header_search__btn {
+    position: absolute;
+    width: 21px;
+    height: 37px !important;
+		top:12px;
+		right:62px;
+    background: url("../shop/image/kigokochi/sp_hd_search.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  #header .sp_header_search__menu {
+    position: absolute;
+    width: 100%;
+    top: 63px;
+    background-color: #fff;
+    border-bottom: 1px solid #C0C0B7;
+    display: none;
+  }
+  #header .sp_header_search__menu__form{
+    background-color: #F4F4F4;
+    padding: 20px 15px;
+    font-size: 0;
+    border-bottom: 2px solid #C0C0B7;
+  }
+	#header .sp_header_search__menu__form #header_search {
+			border-radius: 0;
+			float: none;
+			width: auto;
+			margin-top: 0 !important;
+	}
+	#header .sp_header_search__menu__form .box_01 {
+    width: 84%;
+	}
+	#header .sp_header_search__menu__form .box_02 {
+    width: 16%;
+		margin:0;
+	}
+  #header .sp_header_search__menu__form input{
+    height: 40px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  #header .sp_header_search__menu__form input[type="text"]{
+		width: 100%;
+    border: 1px solid #C0C0B7;
+    padding: 5px;
+  }
+  #header .sp_header_search__menu__form #search_btn_pc{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #464646;
+		background-image:none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    position: relative;
+		margin-left:0;
+		text-indent:0;
+		font-size:12px;
+		display:block;
+		line-height:40px;
+  }
+
+  #header .sp_header__category{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #header .sp_header__category li{
+    width: 50%;
+    border-bottom: 1px solid #C0C0B7;
+  }
+  #header .sp_header__category li:nth-child(even){
+    border-right: 1px solid #C0C0B7;
+  }
+  #header .sp_header__category li:first-child{
+    width: 100%;
+  }
+  #header .sp_header__category li a{
+    display: block;
+    padding: 15px;
+    text-align: left;
+    background-image: url(../shop/image/kigokochi/sp_menu_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 21px auto;
+  }
+  #header .sp_header__category li:first-child a,
+  #header .sp_header__category li:nth-last-child(2) a,
+  #header .sp_header__category li:last-child a{
+    background-color: #F5F3F1;
+  }
+  #header .sp_header__category li.empty a{
+    pointer-events: none;
+    background-image: none;
+  }
+  #header .sp_header__close{
+    padding: 30px 0;
+  }
+  #header .sp_header__close .btn_close_sp{
+  	clear:both;
+  }
+  #header .sp_header__close .btn_close_sp a{
+  	display:block;
+  	background:url(../shop/image/kigokochi/btn_close_sp.png) no-repeat center center;
+  	background-size:49px auto;
+  	padding:0;
+  	text-indent:-9999px;
+  	width:186px !important;
+  	margin:0 auto;
+  	height:43px;
+  	line-height:43px;
+  	border:1px solid #c0c0b7;
+  }
+
   #header .sp_header_cart {
-    width: 52px;
-    height: 35px !important;
-		top:13px;
-		right:15px;
+    width: 27px;
+    height: 37px !important;
+		top:12px;
+		right:19px;
   }
   #header .sp_header_cart a {
     background: url("../shop/image/kigokochi/sp_hd_nav03.png") no-repeat 0 0;
@@ -2635,7 +2757,7 @@ div.i_sec span img {
   font-size: 100%;
   width: 100%;
 	background:#f5f3f1;
-	padding:15px 0 0;
+	padding:0;
 	border-bottom:1px solid #c0c0b7;
 }
 
@@ -2656,6 +2778,7 @@ div.i_sec span img {
   position: static !important;
   text-align: left;
 	overflow:hidden;
+	font-size: 12px;
 }
 
 .deviceSP #header .sp_nav .sp_member a {
@@ -2681,19 +2804,11 @@ div.i_sec span img {
 .deviceSP #header .sp_nav .sp_login_menu li#header_login,
 .deviceSP #header .sp_nav .sp_login_menu li#header_member,
 .deviceSP #header .sp_nav .sp_member li{
-	width:50%;
-	float:left;
-	padding:0 8px;
-	box-sizing:border-box;
-	border:none;
-	margin-bottom:10px;
+
 }
 .deviceSP #header .sp_nav .sp_member li#header_member,
 .deviceSP #header .sp_nav .sp_login_menu li#header_mypage{
 	display:none !important;
-}
-.deviceSP #header .sp_nav .sp_login_menu li{
-	border-top:1px solid #c0c0b7;
 }
 
 .deviceSP #header .sp_nav .sp_login_menu li.sp_gnav_link_sub{
@@ -2812,8 +2927,7 @@ div.i_sec span img {
 	padding-top:0;
 }
 
-.deviceSP #container #header .sp_nav .sp_member a span,
-.deviceSP #container #header .sp_nav .sp_login_menu a span {
+.deviceSP #container #header .sp_nav .sp_menu__login a span{
 	display:inline-block;
 	color:#323232;
 	padding:0 0 0 30px !important;
@@ -2837,6 +2951,19 @@ div.i_sec span img {
   background-size: 18px auto !important;
 }
 
+/* 20170818 ELTEX追記*/
+@media only screen and (max-width: 640px){
+	.deviceSP #container #header .sp_nav .sp_member li:first-child a span {
+		padding-left: 25px;
+	}
+	.deviceSP #container #header .sp_nav .sp_member #header_mypage a span {
+		padding-left: 25px;
+		color: #000;
+		font-weight: normal;
+	}
+}
+
+
 .deviceSP #header .sp_nav #header_kigokochi a {
   padding-left: 0;
   width: 100%;
@@ -2856,18 +2983,6 @@ div.i_sec span img {
 
 
 /* aタグ*/
-.deviceSP #header .sp_nav .logout_bt {
-  background: url(../shop/image/kigokochi/sp_hd_logout.gif) no-repeat left bottom !important;
-  line-height: 0px !important;
-  background-size: 100% !important;
-}
-
-.deviceSP #header .sp_nav .mypage_bt {
-  background: url(../shop/image/kigokochi/sp_hd_mypage.gif) no-repeat left bottom !important;
-  line-height: 0px !important;
-  background-size: 100% !important;
-}
-
 .devicePC .related_item .flex-direction-nav {
   display: none;
 }
@@ -3771,7 +3886,6 @@ script[src="//www.googleadservices.com/pagead/conversion.js"] + img{
 }
 
 .cate_link.only_sp{
-	position:absolute;
 	top:150px;
 	width:100%;
 	transition:top .5s;
@@ -3779,7 +3893,6 @@ script[src="//www.googleadservices.com/pagead/conversion.js"] + img{
 	padding:0 15px;
 }
 .cate_link.only_sp.active{
-	position:absolute;
 	top:110px;
 }
 .cate_link.only_sp>div{
@@ -5915,4 +6028,236 @@ ul.con_list_four .box_02 dl{
 }
 #header #header_wrap .header_list_03 {
     left: 200px;
+}
+
+@media (max-width: 640px) {
+	.sp_menu__category__btn{
+    font-size: 12px;
+    background-color: #F5F3F1;
+    padding: 15px;
+    border-bottom: 1px solid #C0C0B7;
+		background-image: url(/contents/iikigokochi/shop/image/kigokochi/sp_menu_plus.png);
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 23px auto;
+	}
+	.sp_menu__category__btn.open{
+		background-image: url(/contents/iikigokochi/shop/image/kigokochi/sp_menu_minus.png);
+  }
+	.sp_menu__category__list{
+		display: none;
+	}
+  .sp_menu__category__list ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sp_menu__category__list li{
+    width: 50%;
+    border-bottom:1px solid #C0C0B7;
+  }
+  .sp_menu__category__list li:nth-child(odd){
+    border-right:1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__category__list li a{
+    background-color: #fff;
+    padding: 15px;
+    padding-top: 15px !important;
+    height: 100%;
+    background: #fff url(../shop/image/kigokochi/sp_menu_arrow.png) no-repeat right center;
+    background-size: 21px auto;
+    display: table;
+    line-height: 1.5 !important;
+	}
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__category__list li.line2 a{
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+	}
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__category__list li a span{
+    display: table-cell !important;
+    vertical-align: middle;
+  }
+	.sp_menu__feature__btn{
+    font-size: 12px;
+    background-color: #F5F3F1;
+    padding: 15px;
+    border-bottom: 1px solid #C0C0B7;
+		background-image: url(/contents/iikigokochi/shop/image/kigokochi/sp_menu_plus.png);
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 23px auto;
+	}
+	.sp_menu__feature__btn.open{
+		background-image: url(/contents/iikigokochi/shop/image/kigokochi/sp_menu_minus.png);
+  }
+	.sp_menu__feature__list{
+		display: none;
+	}
+  .sp_menu__feature__list li{
+    border-bottom:1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__feature__list li a{
+    display: block;
+    background-color: #fff;
+    padding: 15px;
+    padding-top: 15px !important;
+    height: 100%;
+    background: #fff url(../shop/image/kigokochi/sp_menu_arrow.png) no-repeat right center;
+    background-size: 21px auto;
+    line-height: 1.5 !important;
+  }
+  .sp_menu__catalog{
+    padding: 15px;
+  }
+  .sp_menu__catalog__btn{
+    border: 1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__catalog__btn a{
+    display: block;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    text-align: center;
+    line-height: 1.5 !important;
+  }
+  .sp_menu__catalog__btn a span{
+    background: url(../shop/image/kigokochi/sp_menu__catalog__btn__icon.png) no-repeat left center;
+    background-size: auto 17px;
+    padding-left: 25px;
+    display: inline-block;
+    height: 17px;
+  }
+  .sp_menu__login{
+    padding: 0 15px 15px;
+    border-bottom: 1px solid #C0C0B7;
+  }
+  .sp_menu__login__btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sp_menu__login__btn li{
+    width: 48%;
+    border: 1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__login__btn li a{
+    padding-top: 0;
+    line-height: 1 !important;
+    display: block;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    text-align: center;
+    line-height: 1.5 !important;
+  }
+  .sp_nav .sp_menu__login__btn li a span{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+  }
+  .sp_menu__login__btn li.sp_menu__login__btn__login a span{
+    background-image: url(../shop/image/kigokochi/sp_hd_login.png);
+    background-size: 18px auto;
+    min-height: 16px;
+  }
+  .sp_menu__login__btn li.sp_menu__login__btn__member a span{
+    background-image: url(../shop/image/kigokochi/sp_hd_member.png);
+    background-size: 19px auto;
+    min-height: 19px;
+  }
+  .sp_menu__logout{
+    padding: 0 15px 15px;
+    border-bottom: 1px solid #C0C0B7;
+  }
+  .sp_menu__logout__btn{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sp_menu__logout__btn li{
+    width: 48%;
+    border: 1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_menu__logout__btn li a{
+    padding-top: 0;
+    line-height: 1 !important;
+    display: block;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    text-align: center;
+    line-height: 1.5 !important;
+  }
+  .sp_nav .sp_menu__logout__btn li a span{
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+  }
+  .sp_menu__logout__btn li.sp_menu__logout__btn__logout a span{
+    background-image: url(../shop/image/kigokochi/sp_hd_login.png);
+    background-size: 18px auto;
+    min-height: 16px;
+  }
+  .sp_menu__logout__btn li.sp_menu__logout__btn__mypage a span{
+    background-image: url(../shop/image/kigokochi/sp_hd_member.png);
+    background-size: 19px auto;
+    min-height: 19px;
+  }
+  .sp_menu__concept__btn{
+    border-bottom: 1px solid #C0C0B7;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__concept__btn a{
+    display: block;
+    padding: 15px;
+    background-image: url(../shop/image/kigokochi/sp_menu_arrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 21px auto;
+    line-height: 1 !important;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__01{
+  	border: none;
+  	padding: 20px 15px;
+  	overflow: hidden;
+    margin-bottom: -20px;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__01 p{
+  	float:left;
+  	margin-right:20px;
+    margin-bottom: 20px;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__01 p a{
+    line-height: 1 !important;
+    background: url(../shop/image/kigokochi/sp_menu_arrow.png) no-repeat left center;
+    background-size: 21px auto;
+    padding-left: 15px;
+    padding-top: 0;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__02{
+    background-color: #fff;
+  	border: none;
+  	padding: 20px 15px 35px;
+  	overflow: hidden;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__02 p{
+  	float:left;
+  	margin-right:20px;
+    margin-bottom: 20px;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__02 p a{
+    line-height: 1 !important;
+    background: url(../shop/image/kigokochi/sp_menu_arrow.png) no-repeat left center;
+    background-size: 21px auto;
+    padding-left: 15px;
+    padding-top: 0;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__02 .btn_close_sp{
+  	clear:both;
+  }
+  .deviceSP #header .sp_nav .sp_login_menu .sp_menu__sub__02 .btn_close_sp a{
+  	display:block;
+  	background:url(../shop/image/kigokochi/btn_close_sp.png) no-repeat center center;
+  	background-size:49px auto;
+  	padding:0;
+  	text-indent:-9999px;
+  	width:186px !important;
+  	margin:0 auto;
+  	height:43px;
+  	line-height:43px;
+  	border:1px solid #c0c0b7;
+  }
 }
