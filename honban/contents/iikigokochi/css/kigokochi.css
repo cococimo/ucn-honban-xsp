@@ -2951,19 +2951,6 @@ div.i_sec span img {
   background-size: 18px auto !important;
 }
 
-/* 20170818 ELTEX追記*/
-@media only screen and (max-width: 640px){
-	.deviceSP #container #header .sp_nav .sp_member li:first-child a span {
-		padding-left: 25px;
-	}
-	.deviceSP #container #header .sp_nav .sp_member #header_mypage a span {
-		padding-left: 25px;
-		color: #000;
-		font-weight: normal;
-	}
-}
-
-
 .deviceSP #header .sp_nav #header_kigokochi a {
   padding-left: 0;
   width: 100%;
@@ -6260,4 +6247,17 @@ ul.con_list_four .box_02 dl{
   	line-height:43px;
   	border:1px solid #c0c0b7;
   }
+}
+
+/* header_pulldownmenu_closebnt
+==========================*/
+#header_itemlist__closebnt {
+	margin: 40px auto 0;
+	display: block;
+	padding: 10px;
+	border: 1px solid  #ccc;
+	font-size: 14px;
+	line-height: 14px;
+	width: 120px;
+	text-align: center;
 }

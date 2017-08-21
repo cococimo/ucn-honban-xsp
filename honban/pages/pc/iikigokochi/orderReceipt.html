@@ -221,33 +221,33 @@ var goods_name_Array = goods_name.split("|");
 var goods_price_Array = goods_price.split("|");
 var goods_num_Array = goods_num.split("|");
 
-var  cnt = ext_goods_code_Array.length;  
+var  cnt = ext_goods_code_Array.length;
   document.write("<script>");
   document.write("contx = {");
   document.write("\'user\': {");
-    document.write("\'id\': \'"+document.tagForm.email.value+"\'");	
+    document.write("\'id\': \'"+document.tagForm.email.value+"\'");
     document.write("},");
-    document.write("\'cart\': {");	
-      document.write("\'items\': []");	
+    document.write("\'cart\': {");
+      document.write("\'items\': []");
       document.write("},");
           document.write("\'cv\': {");
           document.write(" \'items\': [");
-      for(i=0;i<cnt;i++){    
-        document.write("{");	
-          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
-          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");	
-          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
-          document.write("\'count\': \'"+goods_num_Array[i]+"\',");		
+      for(i=0;i<cnt;i++){
+        document.write("{");
+          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");
+          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");
+          document.write("\'price\': \'"+goods_price_Array[i]+"\',");
+          document.write("\'count\': \'"+goods_num_Array[i]+"\',");
           document.write("\'stock\': \'\'");
         document.write("}");
         if(i != cnt-1){
         document.write(",");
         }
-      } 		        			
-      document.write("]");			
-    document.write("}");			
-  document.write("};");		
-  document.write("<\/script>"); 		
+      }
+      document.write("]");
+    document.write("}");
+  document.write("};");
+  document.write("<\/script>");
 </script>
 
 <script>
@@ -291,7 +291,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 	<p class="site_logo"><a m:id="e_link_logo_shop_shop" href="/">着心地のいい服</a></p>
 
        <div id="header_r_01" class="clearfix header_r_color">
-       
+
        			<ul id="header_gnav" class="clearfix">
             	<li id="header_home"><a m:id="e_link_logo_shop_shop" href="/">ホーム</a></li>
             	<li id="header_concept"><a href="/shop/static/concept/">コンセプト</a></li>
@@ -313,10 +313,11 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                       <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
                     </ul>
                   </div>
+                  <a href="#" id="header_itemlist__closebnt">閉じる</a>
                 </div>
               </li>
            </ul>
-            
+
             <!-- ▼▼▼検索▼▼▼ -->
             <div id="header_search" >
                 <div class="clearfix header_search_in">
@@ -345,8 +346,8 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                     <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
                   </form>
             </div>
-            </div>           
-            <!-- ▲▲▲検索▲▲▲ -->  
+            </div>
+            <!-- ▲▲▲検索▲▲▲ -->
                         <div class="header_lists clearfix pc_not">
               <!-- ▼▼▼新規会員登録▼▼▼ -->
               <div m:id="l_notPre_member_login_shop">
@@ -378,7 +379,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 </div>
                                 <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
-s.linkTrackVars='events'; 
+s.linkTrackVars='events';
 s.linkTrackEvents='scView';
 s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
@@ -386,12 +387,12 @@ s.tl(this,'o','cartview',null,'navigate');return false
                     お買い物かごを見る
                     </a>
                 </div>
-                
+
                 <div class="header_cate">
                     <a href="#catLink">カテゴリ一覧</a>
-                </div>                
+                </div>
                 </span>
-				</div>            
+				</div>
             </div><!-- header_r_01 -->
            </div>
     </div><!--header_wrap-->
@@ -402,13 +403,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
         </ul>
     </div>
-    
+
     <div m:id="l_pre_member_logout_button_shop">
         <ul class="sp_menu_only sp_member">
     <li><a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト"><span>ログアウト</span></a></li>
          </ul>
-    </div>             
-    <ul class="sp_menu_only sp_login_menu">  
+    </div>
+    <ul class="sp_menu_only sp_login_menu">
         <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
         <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン"><span>ログイン</span></a></div>
         </li>
@@ -446,13 +447,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
     </ul>
     <div class="sp_top_menu sp_menu_only">
     	<a href="#">m</a>
-    </div>    
+    </div>
     <div class="sp_top_home sp_menu_only">
     	<a href="/">m</a>
     </div>
     <div class="sp_header_cart sp_menu_only">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
-s.linkTrackVars='events'; 
+s.linkTrackVars='events';
 s.linkTrackEvents='scView';
 s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
@@ -481,7 +482,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		    nav=document.getElementById(ThisObj).style
 		    navp=document.getElementById(ThisObj+"_plus").style
 		    navm=document.getElementById(ThisObj+"_minus").style
-		    
+
 		    if(nav.display=="none"){
 		        nav.display='block';
 		        navm.display='inline';
@@ -523,7 +524,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
   <object class="xsp_obj" m:id="subCate2_count">
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
-  </object>    
+  </object>
   <!-- InstanceBeginEditable name="header_category" -->
 <!--▼▼▼カテゴリー▼▼▼-->
 <script>
@@ -531,9 +532,9 @@ $(window).on('load resize', function(){
     var w = $(window).width();
     var x = 500;
     if (w <= x) {
-  $(".con_box img")	.eq(0).css({"max-width":"100%"});	
-		
-  $(function(){	  
+  $(".con_box img")	.eq(0).css({"max-width":"100%"});
+
+  $(function(){
 	$(".child_cat").hide();
 	$('li').removeClass('ctArrow');
 	$(".ctList").hover(function(){
@@ -553,7 +554,7 @@ $(window).on('load resize', function(){
 })
 } else {
 
-  $(function(){	  
+  $(function(){
 	$(".child_cat").show();
 	$('li').removeClass('ctArrow');
 	$(".ctList").hover(function(){
@@ -568,7 +569,7 @@ $(window).on('load resize', function(){
     }
 });
 </script>
-                   
+
                     <span m:id="l_pre_standardCategory">
                         <span m:id="l_notEmp_standardCategory_childCategories">
                             <div class="l_con_box_01">
@@ -583,7 +584,7 @@ $(window).on('load resize', function(){
                                                 <span  m:id="l_ite_cate">
                                                     <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
                                                     <li class="ctList" style="position:relative"><!--基準点追加-->
-                                                    
+
                                                     <div class="p_0">
                                                     <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
                                                     <span m:id="span_subCate_arrow" id="arrow_1">
@@ -599,7 +600,7 @@ $(window).on('load resize', function(){
                                                     </a>
                                                     </div>
                                                     <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
-                                                        <span m:id="l_ite_subCate"> 
+                                                        <span m:id="l_ite_subCate">
                                                             <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
                                                             <li class="ctArrow">
                                                             <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
@@ -618,18 +619,18 @@ $(window).on('load resize', function(){
                             </div>
                         </span>
                     </span>
-                                       
+
                     <!--▲▲▲カテゴリー▲▲▲-->
-                    <!-- InstanceEndEditable -->                
-    </div>     
+                    <!-- InstanceEndEditable -->
+    </div>
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <div id="contents">
   <!-- ここから -->
-  
+
   <div id="contents_r_02">
-    
-    
+
+
   <!--<object class="xsp_obj" m:id="e_var_order"></object>-->
   <div class="r_con_box_04">
   <div class="r_con_box_04_in pb20">
@@ -654,7 +655,7 @@ $(window).on('load resize', function(){
     今後とも ココチモをよろしくお願いします。
   </p>
   </span>
-    
+
   <span m:id="l_msgPre1">
     <div class="error">
       <span m:id="h_msg_msg">
@@ -662,7 +663,7 @@ $(window).on('load resize', function(){
         </span>
       </div>
     </span>
-    
+
   <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
   <tr><th><span m:id="l_notPre_free_guide">ご注文番号</span></th>
   </tr>
@@ -671,8 +672,8 @@ $(window).on('load resize', function(){
   </td>
   </tr>
   </table>
-    
-    
+
+
   <object class="xsp_obj" m:id="e_var_ordShop"></object>
   <object class="xsp_obj" m:id="e_var_wrapping"></object>
   <span m:id="l_notPre_free_guide">
@@ -708,10 +709,10 @@ $(window).on('load resize', function(){
   </tr>
   </span>
   </table>
-    
+
   <div class="wrap_cart04">
   <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-    
+
   <object class="xsp_obj" m:id="i_shopping_total_count"></object>
   <span m:id="div_shopping_total">
   <tr>
@@ -722,7 +723,7 @@ $(window).on('load resize', function(){
     <span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
   </td>
   </tr>
-  </span> 
+  </span>
   <!--
 <span m:id="l_notEqu_charged_option">
 <tr m:id="div_shopping_total">
@@ -735,8 +736,8 @@ $(window).on('load resize', function(){
 <td class="bor_l_none"></td>
 <td class="last_02 right">55円</td>
 </tr>-->
-    
-    
+
+
   <tr m:id="div_shopping_total">
   <td colspan="2" class="right cart_table_02_color_01">送料</td>
   <td colspan="2" class="last_02 right"><span m:id="b_wr_postage">800</span> 円</td>
@@ -805,9 +806,9 @@ $(window).on('load resize', function(){
   </span>
   </table>
   </div>
-    
+
   <br clear="all">
-    
+
   <span m:id="l_pre_disp_goodsPremium">
   <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
   <tr><th>プレゼント品</th><th class="memadd_table_02_w_02 bor_l_none"></th>
@@ -837,7 +838,7 @@ $(window).on('load resize', function(){
           </span>
         </span>
       </span>
-    
+
   <span m:id="l_equ_gift_select">
     <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
       <tr><th class="last_02">ギフトラッピングの指定（有料オプション）</th>
@@ -864,15 +865,15 @@ $(window).on('load resize', function(){
   </span>
   <!--/ ********** include:orderDetail.jsp ********** -->
   </span>
-    
-  <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
-  <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
-    
 
-    
-    
-    
-    
+  <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
+  <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
+
+
+
+
+
+
   <form name="orderNextProc" method="post" action="orderNextProc.do">
     <input m:id="i_hid_order_next_key" type="hidden" name="order_next_key" value="5"/>
     <input m:id="i_hid_order_next_mode" type="hidden" name="order_next_mode" value="6" />
@@ -888,16 +889,16 @@ $(window).on('load resize', function(){
               </span>
             <span m:id="l_equ_order_next_mode_memberAddressBook"><img
   m:id="static_img"
-  src="../../../contents/shop/00000006/shop/image/ord_con_bt_0_n_4.png" 
+  src="../../../contents/shop/00000006/shop/image/ord_con_bt_0_n_4.png"
   alt="住所録登録"></span></a>
           </div>
-        
+
         <div class="box_01 n_bt_re_01 go_top_bt">
           <a m:id="e_link_top" href="/"><span style="color:#FFFFFF">買い物を続ける</span></a></div>
         </span>
-      
-      
-      
+
+
+
       </div>
     <span m:id="l_emp_order_next_mode">
       <div class="box_02 go_top_bt">
@@ -905,22 +906,22 @@ $(window).on('load resize', function(){
       </span>
   </div>
   </div>
-    
-    
+
+
   </div>
-    
+
   <span m:id="l_notEmp_order_next_mode">
   <span m:id="l_equ_order_next_mode_memberAdd">
   <span m:id="include_memberGuide_html">会員案内</span>
   </span> </span>
-    
-    
+
+
   <!--　ここから
 <div class="con_box">
 <h2>ココチモ会員特典のご案内</h2>
 <div class="guideBlock clearfix">
-      
-      	<p class="mb25">      
+
+      	<p class="mb25">
 ココチモでは会員制度をご用意しております。<br>
 新規会員にご登録いただくと、ポイントをはじめ、様々な特典やサービスのご案内を随時お受けいただけます。<br>
 商品購入時に、新規会員登録された方には、500ポイントをプレゼント中！<br>
@@ -968,34 +969,34 @@ $(window).on('load resize', function(){
 </div>
 </div>
 ここまで　-->
-    
+
   <span m:id="l_emp_order_next_mode">
   <span m:id="include_thanks_html">ご購入ありがとうございます</span>
   </span>
-    
-    
-    
+
+
+
   </div><!--r_con_box_03-->
-    
-    
+
+
   <!--<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />-->
-    
+
   </div><!--contents_r_02-->
-  
+
      <!--▼▼▼こんな商品も買っています▼▼▼-->
     <div class="con_block">
       <span m:id="l_notEmp_autoRecommendGoodsList">
   <div class="con_box_check clearfix">
-    <h2>この商品を買われた方はこんな商品も買っています</h2>   
-    
-    
+    <h2>この商品を買われた方はこんな商品も買っています</h2>
+
+
   <ul class="con_list_five orderReceipt">
     <span m:id="l_ite_autoRecommendGoodsList">
     <span m:id="l_notEqu_autoRecommendGoodsList_idx">
       <li class="heightLine-new01">
         <div class="box_01 heightLine-new02">
           <div class="box_02">
-            <div class="img_box"> 
+            <div class="img_box">
               <span m:id="l_pre_autoRecommendGoods_representSku">
                 <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage">
                   </object>
@@ -1006,7 +1007,7 @@ $(window).on('load resize', function(){
             </div>
           </div>
         </li>
-    
+
     <li class="heightLine-new01" m:id="dummy">
       <div class="box_01 heightLine-new02">
         <div class="box_02">
@@ -1016,7 +1017,7 @@ $(window).on('load resize', function(){
           </div>
         </div>
       </li>
-    
+
     <li class="heightLine-new01" m:id="dummy">
       <div class="box_01 heightLine-new02">
         <div class="box_02">
@@ -1026,7 +1027,7 @@ $(window).on('load resize', function(){
           </div>
         </div>
       </li>
-    
+
     <li class="heightLine-new01" m:id="dummy">
       <div class="box_01 heightLine-new02">
         <div class="box_02">
@@ -1036,7 +1037,7 @@ $(window).on('load resize', function(){
           </div>
         </div>
       </li>
-    
+
     <li class="heightLine-new01" m:id="dummy">
       <div class="box_01 heightLine-new02">
         <div class="box_02">
@@ -1046,18 +1047,18 @@ $(window).on('load resize', function(){
           </div>
         </div>
       </li>
-    
+
       </span>
       </span>
-    </ul>     
-    </span>  
-  </div>   
-  </span>  
-  </div> 
+    </ul>
+    </span>
+  </div>
+  </span>
+  </div>
     <!--▲▲▲こんな商品も買っています▲▲▲-->
- 
-  
-  
+
+
+
   <!-- ここまで -->
 </div><!--contents-->
 
@@ -1111,7 +1112,7 @@ $(window).on('load resize', function(){
             <div><img src="/contents/shop/00000006/shop/image/kigokochi/ft_img03.gif" alt=""/></div>
             <p>その他、各種クレジットカードがご利用いただけます。<br/>※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</p>
             <p><span>代金引換<br>代引手数料300円</span></p>
-           
+
             <div class="secure clearfix">
 			    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.iikigokochi.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 			    <p>このページはSSL暗号化技術によって保護されています。<br />入力された全ての情報は暗号化されて安全に送信されます。</p>
@@ -1132,7 +1133,7 @@ $(window).on('load resize', function(){
       <li><a href="/shop/static/feature12/">オリジナル刺繍ネックレス特集</a></li>
 	  <li><a href="/shop/static/feature11/">フレンチリネンコットンブラウス特集</a></li>
 	  <li><a href="/shop/static/feature10/">オーガニックコットン日傘特集</a></li>
-      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>      
+      <li><a href="/shop/static/feature_backnumber/">その他特集はこちらから</a></li>
     </ul>
     <ul class="footer_category only_pc">
       <li>
@@ -1196,8 +1197,8 @@ $(window).on('load resize', function(){
         <li><a href="/shop/static/protection/" style="opacity: 1;">個人情報保護方針</a></li>
         <li><a href="/shop/static/notation/" style="opacity: 1;">特定商取引に基づく表示</a></li>
  		<li><a href="/shop/inquiryInputCheck.do" style="opacity: 1;">お問い合わせ</a></li>
-      </ul>      
-      </div>  -->    
+      </ul>
+      </div>  -->
 <!--▼▼▼カテゴリー(フッター)▼▼▼-->
 <!--<span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="add_inner footer_cate">
@@ -1229,11 +1230,11 @@ $(window).on('load resize', function(){
         <li><a href="/shop/static/contents/tableware/">テーブルウェアの通販特集</a></li>
         <li><a href="/shop/static/contents/laundry/">ランドリーグッズの通販特集</a></li>
         <li><a href="/shop/static/contents/cookware/">卓上小物の通販特集</a></li>
-        <li><a href="/shop/static/contents/tableitem/">調理器具の通販特集</a></li>                
-      </ul>       
+        <li><a href="/shop/static/contents/tableitem/">調理器具の通販特集</a></li>
+      </ul>
       </div>
 </div>-->
-<!--▲▲▲カテゴリー(フッター)▲▲▲-->    
+<!--▲▲▲カテゴリー(フッター)▲▲▲-->
 <br clear="all" />
     <!--<div class="pc_display member_signup">
       <h3 id="icon_03">初めての方へ</h3>
@@ -1244,7 +1245,7 @@ $(window).on('load resize', function(){
         <li><a href="/shop/static/first/">ココチモとは</a></li>
       </ul>
     </div>-->
-    
+
     <div class="pc_display">
       <h3 id="icon_04">会員の方</h3>
       <ul>
@@ -1254,7 +1255,7 @@ $(window).on('load resize', function(){
     </div>
     <div id="footer03" class="pc_display">
       <div class="clearfix" id="footer_wrap03">
-        
+
         <ul class="clearfix">
           <!--<li class="first"><a href="/shop/static/faq/">よくあるご質問</a></li>-->
           <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
@@ -1263,11 +1264,11 @@ $(window).on('load resize', function(){
           <li><a href="/shop/static/notation/">特定商取引に基づく表示</a></li>
           <li><a href="/shop/static/company/">会社情報</a></li>
           <!--<li class="end"><a href="#">利用規約</a></li>-->
-        </ul>        
+        </ul>
         <p class="copyright">Copyright U-CAN, Inc. All Rights Reserved</p>
       </div><!--footer_wrap03-->
     </div>
-    <div id="footer05" class="sp_only">      
+    <div id="footer05" class="sp_only">
       <div class="mt10 sp_secure clearfix">
         <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.iikigokochi.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
         <p>
@@ -1425,8 +1426,30 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
 
-<!-- InstanceEndEditable -->  
+<!-- InstanceEndEditable -->
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=203'></script>
 <span m:id="smartSuggest"></span>
+
+<!-- Ptengine 20170602 ここから -->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,56c49edf');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.jp/pta.js';
+        var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+        stag.src = _protocol + 'js.ptengine.jp/pts.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
+    })();
+</script>
+<!-- Ptengine 20170602 ここまで -->
+
+<!-- DLPO CV -->
+<script type='text/javascript'>adlpoMain('kigokochi_CV','pr=cv');</script>
+<!-- DLPO CV -->
+
 </body>
 <!-- InstanceEnd --></html>
