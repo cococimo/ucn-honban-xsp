@@ -1182,7 +1182,7 @@ h1.add_p_st2{
 }
 #header #header_gnav>li#header_itemlist>a {
 	background:url(../shop/image/kigokochi/header_link_list_itemlist.gif) no-repeat;
-  width: 122px;
+  width: 145px;
 	height:16px;
 	padding-right:23px;
 	position:relative;
@@ -2778,6 +2778,7 @@ div.i_sec span img {
   position: static !important;
   text-align: left;
 	overflow:hidden;
+	font-size: 12px;
 }
 
 .deviceSP #header .sp_nav .sp_member a {
@@ -3185,7 +3186,6 @@ div.i_sec span img {
 .wrap_information dl{
 	padding:20px 0;
 	border-bottom:1px solid #E6E6E6;
-
 	font-size:14px;
 }
 @media only screen and (max-width: 640px){
@@ -5427,7 +5427,6 @@ script[src="//www.googleadservices.com/pagead/conversion.js"] + img{
 #contents .part03 .ttl_section_jp{
   height: 13px;
 }
-
 #contents .part03 .intro_section{
   padding: 0;
 }
@@ -6248,4 +6247,17 @@ ul.con_list_four .box_02 dl{
   	line-height:43px;
   	border:1px solid #c0c0b7;
   }
+}
+
+/* header_pulldownmenu_closebnt
+==========================*/
+#header_itemlist__closebnt {
+	margin: 40px auto 0;
+	display: block;
+	padding: 10px;
+	border: 1px solid  #ccc;
+	font-size: 14px;
+	line-height: 14px;
+	width: 120px;
+	text-align: center;
 }
