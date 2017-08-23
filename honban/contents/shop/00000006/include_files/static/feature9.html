@@ -1,0 +1,242 @@
+<link href="/contents/iikigokochi/css/static/feature/feature9.css" rel="stylesheet" type="text/css" media="all" />
+
+<script src="/contents/shop/00000006/js/jquery.tile.min.js"></script>
+<script>
+$(function(){
+	$('.sec-point ul a').off('click').on('click', function(){
+		var href = $(this).attr('href');
+				
+		if( href.substring(0,1) === '#' && href.length > 1){
+			var target = $(href).offset().top - $('#header').height();
+			
+			$('html,body').stop().animate({ scrollTop: target },500);
+			return false;
+		}
+	});
+	
+	$('.item').each(function(index, element) {
+    var clone = $(this).find('.text-text').clone();
+		
+		clone.insertAfter($(this).find('.photo img')).removeClass('only_pc').addClass('only_sp');
+  });
+});
+
+$(window).on('load resize',function(){
+	$('.itemList li').tile(4);
+});
+</script>
+
+<div class="con_box feature part07">
+
+	<div class="feature_inner">
+
+    <h2 class="ttl_section">
+      <span class="ttl_section_inner">
+        <span class="ttl_section_en">
+        	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/ttl-en.gif" alt="COTTON TUNIC">
+        </span>
+        <span class="ttl_section_jp">
+        	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/ttl-jp.gif" alt="コットンチュニック">
+        </span>
+      </span>
+    </h2>
+    
+    <div class="main_visual">
+      <h3>
+        <img src="/contents/shop/00000006/shop/image/kigokochi/feature9/main-visual.jpg" width="100%" alt="" class="only_pc" />
+        <img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/main-visual.jpg" width="100%" alt="" class="only_sp" />
+      </h3>
+    </div>
+    
+    <div class="sec-intro">
+      <p>
+        日本製ならではの上質な素材とていねいな縫製。特別な存在感が香る６バリエーションが完成しました。<br>
+        落ち感があるので、着るとほっそり見えるのがポイント。複雑な織り柄や、手描き風プリントなど、着ただけでぱっと華やぐ一枚です。
+      </p>
+    </div>
+    
+    <div class="sec-point">
+    	<h4>
+      	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/ttl-point.gif" alt="パンツでもスカートでも合わせやすい６バリエーション！ お好きなデザインをお選びください。" />
+      </h4>
+      <ul class="btn-point-pc only_pc">
+      	<li><a href="#sec01"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point1.png" alt="" /></a></li>
+      	<li><a href="#sec02"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point2.png" alt="" /></a></li>
+      	<li><a href="#sec03"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point3.png" alt="" /></a></li>
+      	<li><a href="#sec04"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point4.png" alt="" /></a></li>
+      	<li><a href="#sec05"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point5.png" alt="" /></a></li>
+      	<li><a href="#sec06"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/point6.png" alt="" /></a></li>
+      </ul>
+      <div class="ph-point only_sp">
+      	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/ph-point.jpg" alt="" width="100%" />
+      </div>
+      <ul class="btn-point-sp only_sp">
+      	<li><a href="#sec01"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-01.gif" alt="" /></a></li>
+      	<li><a href="#sec02"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-02.gif" alt="" /></a></li>
+      	<li><a href="#sec03"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-03.gif" alt="" /></a></li>
+      	<li><a href="#sec04"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-04.gif" alt="" /></a></li>
+      	<li><a href="#sec05"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-05.gif" alt="" /></a></li>
+      	<li><a href="#sec06"><img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/link-in-page-06.gif" alt="" /></a></li>
+      </ul>
+      <p class="btn-detail-s">
+      	<a href="/item_SDKB6U/" target="_blank">
+        	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/btn-detail-s.gif" alt="商品詳細ページはこちらから" />
+        </a>
+      </p>
+    </div>
+    
+    <div class="intro itemList">
+      <div class="item-block">
+      	<div class="item" id="sec01">
+        	<div class="text flr">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec01-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  ネイビードット　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKB5H/">綿麻タックパンツ　杢アイボリー　9,900円（税込10,692円）</a></li>
+            	<li><a href="/item_SDKBC9/">シューズ 　オフホワイト 9,900円（税込10,692円）</a></li>
+            </ul>
+          </div>
+          
+          <div class="photo fll">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec01-hito.jpg" alt="" />
+          </div>
+        </div>
+      	<div class="item" id="sec02">
+        	<div class="text fll">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec02-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  北欧リーフ　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKB9Y/">リネンワイドパンツ　ネイビー　10,900円（税込11,772円）</a></li>
+            	<li>サンダル スタイリスト私物</li>
+            </ul>
+          </div>
+          
+          <div class="photo flr">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec02-hito.jpg" alt="" />
+          </div>
+        </div>
+      	<div class="item" id="sec03">
+        	<div class="text flr">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec03-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  ボタニカル　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKB9N/">リネンクロップドパンツ　ネイビー　11,900円（税込12,852円）</a></li>
+            	<li>バッグ スタイリスト私物</li>
+            </ul>
+          </div>
+          
+          <div class="photo fll">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec03-hito.jpg" alt="" />
+          </div>
+        </div>
+      	<div class="item" id="sec04">
+        	<div class="text fll">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec04-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  ピンク系　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKBF5/">リネンスカート　生成り　10,900円（税込11,772円）</a></li>
+            	<li><a href="/item_SDKBC9/">シューズ オフホワイト 9,900円（税込10,692円）</a></li>
+             	<li>帽子 スタイリスト私物</li>
+            </ul>
+          </div>
+          
+          <div class="photo flr">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec04-hito.jpg" alt="" />
+          </div>
+        </div>
+      	<div class="item" id="sec05">
+        	<div class="text flr">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec05-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  イエロー　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKB6H/">ストライプスカート　ホワイト×ライトブルー　8,900円（税込9,612円）</a></li>
+            	<li><a href="/item_SDKBC9/">シューズ ベージュ 9,900円（税込10,692円）</a></li>
+            </ul>
+          </div>
+          
+          <div class="photo fll">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec05-hito.jpg" alt="" />
+          </div>
+        </div>
+      	<div class="item" id="sec06">
+        	<div class="text fll">
+            <div class="text_ph">
+            	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec06-huku.jpg" alt="" />
+            </div>
+            <ul class="text-text only_pc">
+            	<li><a href="/item_SDKB6U/">選べるコットンチュニック  ネイビーボーダー　 3,990円（税込4,309円）</a></li>
+            	<li><a href="/item_SDKB5H/">リネンスカート アプリコット　10,900円（税込11,772円）</a></li>
+            	<li>サンダル スタイリスト私物</li>
+            </ul>
+          </div>
+          
+          <div class="photo flr">
+          	<img src="/contents/shop/00000006/shop/image/kigokochi/feature9/sec06-hito.jpg" alt="" />
+          </div>
+        </div>
+     </div>
+     
+    <p class="more_bunner">
+      <a target="_blank" href="/item_SDKB6U/">
+        <img class="only_pc" alt="詳しくはこちら" src="/contents/shop/00000006/shop/image/kigokochi/feature9/btn-detail-l.jpg">
+        <img width="100%" class="only_sp" alt="詳しくはこちら" src="/contents/shop/00000006/shop/image/kigokochi/feature9/sp/btn-detail-l.jpg">
+      </a>
+    </p>
+    
+    </div>
+  </div><!--feature_inner-->
+
+</div><!--con_box-->
+
+<!--▼▼▼下部バナー▼▼▼-->
+<div class="bannerbox">
+  <ul>
+    <li class="banner01">
+
+      <a href="https://www.iikigokochi.jp/shop/memberAdd.do"><div class="banner_inner">
+          <div class="banner_inner_inner">
+            <h3><img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_information_01.png" alt="新規会員登録はこちら" /></h3>
+            <p>
+              <img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_tokuten.png" width="61" height="61" alt="特典" />
+              <span>初回購入時に新規会員登録で<br />500ポイントプレゼント！</span>
+            </p>
+          <img src="../../../contents/shop/00000006/shop/image/kigokochi/photo_information_01.png" alt="" class="banner_photo" /> </div>
+        </div></a>
+    </li>
+    <li class="banner02">
+      <a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654">
+        <div class="banner_inner">
+          <div class="banner_inner_inner">
+            <h3><img src="../../../contents/shop/00000006/shop/image/kigokochi/icon_information_02.png" alt="カタログのお申込み" /></h3>
+            <p>
+              <span>カタログお申込みフォームはこちらから</span>
+            </p>
+          </div>
+          <img src="../../../contents/shop/00000006/shop/image/kigokochi/photo_information_02.png" alt="" class="banner_photo" /> </div>
+
+      </a>
+    </li>
+  </ul>
+</div>
+<!--▲▲▲下部バナー▲▲▲-->
+
+<!--▼▼▼pagetop▼▼▼-->
+<div class="con_box clearfix">
+  <div class="pagetop only_oc">
+    <a href="#container">ページトップへ</a>
+  </div>
+  <div class="pagetop02 only_sp">
+    <a href="#container">ページトップへ</a>
+  </div>
+</div>
+<!--▲▲▲pagetop▲▲▲-->
