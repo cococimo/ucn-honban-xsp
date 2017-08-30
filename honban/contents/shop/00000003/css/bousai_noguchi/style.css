@@ -1,0 +1,597 @@
+#contents_l {
+	display: none;
+}
+
+#contents_r {
+	width: 100%;
+	float: none;
+	display: block;
+}
+
+@media (max-width:640px) {
+	.spnn {
+		display: block!important;
+		margin-bottom: 10px
+	}
+}
+
+
+/*リニューアル調整*/
+
+#content .content_inner {
+	width: 960px;
+	margin: 0 auto 20px;
+	font-weight: normal;
+	padding: 20px;
+}
+
+#content .forth {
+	width: 960px;
+	margin: 0 auto 20px;
+}
+
+@media screen and (max-width:767px) {
+	#content .content_inner {
+		width: 100%;
+	}
+	#content .third .box01 .li02>img {
+		width: 203px;
+	}
+	#contents .third .box01 .li03>img {
+		width: 174px;
+	}
+	#contents .third .box01 .li05>img {
+		width: 386px;
+	}
+	#contents .third .box01 .li06>img {
+		width: 285px;
+	}
+}
+
+@media screen and (max-width:640px) {
+	#content .content_inner {
+		width: 100%;
+	}
+	#content .content_inner {
+		padding: 20px 15px 25px;
+	}
+	#content .forth {
+		width: 100%;
+	}
+	#content .third .box01 .li02>img,
+	#contents .third .box01 .li03>img {
+		width: 110px;
+	}
+	#contents .third .box01 .li05>img,
+	#contents .third .box01 .li06>img {
+		width: 200px;
+	}
+	#contents .third .box01 .li02,
+	#contents .third .box01 .li03,
+	#contents .third .box01 .li04,
+	#contents .third .box01 .li05,
+	#contents .third .box01 .li06 {
+		text-align: center;
+	}
+}
+
+.footer .tel_area * {
+	text-align: center;
+}
+
+.footer .tel_area img {
+	display: inline;
+}
+
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+#content {
+	font-size: 16px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #000;
+	line-height: 1.88;
+}
+
+#content .mainBox {
+	margin-top: 3px;
+	padding: 25px 0 44px;
+	background: url(/contents/shop/00000003/image/static/bousai_noguchi/bg.jpg) no-repeat left top;
+	text-align: right;
+}
+
+#content .mainBox p {
+	margin: 0 19px 24px 0;
+}
+
+#content .mainBox h2 {
+	margin-bottom: 30px;
+}
+
+#content .mainBox p:last-child {
+	margin: 0 23px 0 0;
+}
+
+#content .topBox {
+	padding: 20px 16px 20px 20px;
+	overflow: hidden;
+	clear: both;
+	background: #FFFEF9 url(/contents/shop/00000003/image/static/bousai_noguchi/bg02.jpg) repeat-x left bottom;
+}
+
+#content .topBox .photo {
+	margin-top: 8px;
+	float: left;
+}
+
+#content .topBox .photo span {
+	margin-top: 7px;
+	display: block;
+	color: #cd8000;
+	font-size: 14px;
+}
+
+#content .topBox .text {
+	width: 452px;
+	float: right;
+}
+
+#content .topBox .text p {
+	color: #093d04;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	font-weight: bold;
+	line-height: 1.9;
+	text-align: justify;
+	text-indent: 1em;
+	letter-spacing: -0.5px;
+}
+
+#content .bgBox {
+	margin-bottom: 29px;
+	padding: 19px 20px 21px;
+	background: url(/contents/shop/00000003/image/static/bousai_noguchi/bg03.gif) repeat left top;
+}
+
+#content .bgBox .innerBox {
+	padding: 24px 30px 23px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+}
+
+#content .innerBox p {
+	text-align: justify;
+	text-indent: 1em;
+}
+
+#content .comBox {
+	margin-bottom: 12px;
+	overflow: hidden;
+	clear: both;
+}
+
+#content .comBox .photoBox {
+	margin-top: 6px;
+	width: 401px;
+	float: left;
+}
+
+#content .comBox .textArea {
+	padding: 15px 16px 12px;
+	color: #5d5d5d;
+	font-size: 14px;
+	line-height: 1.75;
+	background-color: #F8EDCF;
+}
+
+#content .comBox .textArea .ttl {
+	margin-bottom: 1px;
+	color: #0c7b00;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#content .comBox .textArea p {
+	text-indent: 0;
+}
+
+#content .comBox .textBox {
+	width: 390px;
+	float: right;
+	line-height: 1.88;
+}
+
+#content .innerBox .text01 {
+	margin-bottom: 23px;
+}
+
+#content .headLine01 {
+	margin-bottom: 17px;
+	font-size: 18px;
+	color: #893c04;
+	line-height: 1.6;
+}
+
+#content .headLine02 {
+	margin-bottom: 25px;
+	padding: 9px 12px;
+	color: #005e69;
+	font-size: 24px;
+	background: url(/contents/shop/00000003/image/static/bousai_noguchi/bg04.gif) repeat left top;
+}
+
+#content .headLine02 span {
+	padding-left: 12px;
+	display: block;
+	border-left: 6px solid #0199ab;
+	line-height: 1.6;
+}
+
+#content .bigPhoto {
+	margin-bottom: 18px;
+}
+
+#content .innerBox .text02 {
+	margin-bottom: 15px;
+}
+
+#content .imgBox01 {
+	margin-bottom: 2px;
+}
+
+#content .imgBox01 .photoBox {
+	width: 420px;
+}
+
+#content .imgBox01 .textBox {
+	width: 374px;
+}
+
+#content .innerBox .text03 {
+	margin-bottom: 21px;
+	text-indent: 0;
+}
+
+#content .innerBox .comText {
+	margin-bottom: 27px;
+	padding: 6px 0 8px;
+	font-size: 14px;
+	text-align: center;
+	text-indent: 0;
+	line-height: 1.75;
+	border: 1px solid #B9DABA;
+	border-top: none;
+	background-color: #E9F0E8;
+}
+
+#content .comBox .comText {
+	margin-bottom: 0;
+}
+
+#content .imgBox02 {
+	margin-bottom: 18px;
+}
+
+#content .imgBox02 .photoBox {
+	width: 391px;
+}
+
+#content .imgBox02 .textBox {
+	width: 406px;
+}
+
+#content .innerBox .text04 {
+	margin-bottom: 9px;
+}
+
+#content .imgBox03 .textBox {
+	width: 384px;
+}
+
+#content .imgBox04 .photoBox {
+	width: 424px;
+	float: right;
+}
+
+#content .imgBox04 .textBox {
+	width: 365px;
+	float: left;
+}
+
+#content .imgBox05 {
+	margin-top: 3px;
+}
+
+#content .imgBox05 .photoBox {
+	margin-top: 11px;
+	width: 440px;
+	float: right;
+}
+
+#content .imgBox05 .photoBox .comText {
+	margin-bottom: 0;
+}
+
+#content .imgBox05 .textBox {
+	width: 358px;
+	float: left;
+}
+
+#content .imgBox05 .textBox p {
+	text-indent: 0;
+}
+
+#content .innerBox .title {
+	margin: 13px 0 17px;
+	text-align: center;
+	text-indent: 0;
+}
+
+#content .imgListUl {
+	padding: 17px 30px 13px 25px;
+	background-color: #FDF7E9;
+	position: relative;
+	z-index: 1;
+}
+
+#content .imgListUl li {
+	margin-bottom: 10px;
+}
+
+#content .imgListUl li:last-child {
+	margin-bottom: 0;
+}
+
+#content .imgListUl div {
+	width: 116px;
+	float: left;
+	position: relative;
+	z-index: 10;
+}
+
+#content .imgListUl div .img {
+	max-width: inherit;
+	position: absolute;
+	top: -79px;
+	left: -81px;
+	z-index: 100;
+}
+
+#content .imgListUl p {
+	margin-top: 14px;
+	width: 626px;
+	float: right;
+	color: #520227;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	text-indent: 0;
+}
+
+#content .banner {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#content .banner li {
+	display: inline;
+}
+
+#content .banner li:first-child {
+	margin-right: 2px;
+}
+
+#content .banner li a:hover {
+	opacity: 0.7;
+}
+
+#content h4 {
+	margin-bottom: 3px;
+	color: #f39801;
+	font-size: 18px;
+}
+
+#content .textList li {
+	margin-right: 10px;
+	display: inline;
+}
+
+#content .textList li:last-child {
+	margin-right: 0;
+}
+
+#content .textList li a {
+	color: #085295;
+}
+
+#content .textList a:hover {
+	text-decoration: none;
+}
+
+.sp {
+	display: none !important;
+}
+
+@media screen and (max-width:767px) {
+	.sp {
+		display: block !important;
+	}
+	.pc {
+		display: none !important;
+	}
+	#content {
+		font-size: 14px;
+		line-height: 1.75;
+	}
+	#content .mainBox {
+		margin-top: 0;
+		padding: 10px 0 5px;
+		background-image: url(/contents/shop/00000003/image/static/bousai_noguchi/sp_bg.jpg);
+		background-size: auto 100%;
+	}
+	#content .mainBox .sp {
+		width: auto;
+		display: inline !important;
+	}
+	#content .mainBox p {
+		margin: 0 9px 8px 0;
+	}
+	#content .mainBox p:last-child {
+		margin: 0 9px 0 0;
+	}
+	#content .mainBox h2 {
+		margin-bottom: 4px;
+	}
+	#content .topBox {
+		padding: 5px 12px 10px;
+		background: #FFFBCE url(/contents/shop/00000003/image/static/bousai_noguchi/sp_bg02.jpg) repeat-x left top;
+	}
+	#content .topBox .text {
+		width: auto;
+		float: inherit;
+		line-height: 1.76;
+	}
+	#content .topBox .photo {
+		margin-top: 10px;
+		float: inherit;
+	}
+	#content .topBox .photo span {
+		margin-top: 5px;
+	}
+	#content .bgBox {
+		margin-bottom: 30px;
+		padding: 22px 12px 15px;
+	}
+	#content .bgBox .innerBox {
+		padding: 6px 12px 13px;
+		background-color: rgba(255, 255, 255, 1);
+	}
+	#content .comBox .photoBox {
+		margin: 0 0 21px;
+		width: auto;
+		float: inherit;
+	}
+	#content .comBox {
+		margin-bottom: 24px;
+	}
+	#content .comBox .textArea {
+		padding: 6px 12px 9px;
+	}
+	#content .comBox .textArea .ttl {
+		font-size: 15px;
+	}
+	#content .comBox .textBox {
+		width: auto;
+		float: inherit;
+		line-height: 1.75;
+	}
+	#content .headLine01 {
+		margin-bottom: 16px;
+		font-size: 14px;
+		line-height: 1.75;
+	}
+	#content .innerBox .text01 {
+		margin-bottom: 21px;
+	}
+	#content .headLine02 {
+		margin-bottom: 27px;
+		padding: 5px 8px;
+		font-size: 16px;
+	}
+	#content .headLine02 span {
+		padding-left: 10px;
+		display: block;
+		line-height: 1.48;
+	}
+	#content .bigPhoto {
+		margin-bottom: 22px;
+	}
+	#content .innerBox .text02 {
+		margin-bottom: 21px;
+	}
+	#content .imgBox01 {
+		margin-bottom: 0;
+	}
+	#content .innerBox .text03 {
+		margin-bottom: 22px;
+	}
+	#content .innerBox .comText {
+		padding: 7px 12px;
+		text-align: justify;
+		line-height: 1.8;
+	}
+	#content .innerBox .text04 {
+		margin-bottom: 22px;
+	}
+	#content .imgBox03 .textBox {
+		margin-bottom: 21px;
+	}
+	#content .imgBox03 .photoBox {
+		margin-bottom: 0;
+	}
+	#content .imgBox04 .textBox {
+		margin-bottom: 21px;
+	}
+	#content .imgBox04 .photoBox {
+		margin-bottom: 0;
+	}
+	#content .h3Ttl span {
+		padding-top: 12px;
+		height: 46px;
+	}
+	#content .imgBox05 {
+		margin-top: 0;
+	}
+	#content .imgBox05 .textBox {
+		margin-bottom: 21px;
+	}
+	#content .imgBox05 .photoBox {
+		margin-bottom: 0;
+	}
+	#content .innerBox .title {
+		margin: 25px 0 22px;
+	}
+	#content .innerBox .title img {
+		margin: 0 auto;
+		width: 278px;
+	}
+	#content .imgListUl {
+		padding: 18px 15px 22px;
+		border-radius: 4px;
+	}
+	#content .imgListUl li {
+		margin-bottom: 20px;
+	}
+	#content .imgListUl div {
+		margin: 0 auto 4px;
+		width: 116px;
+		text-align: center;
+		float: inherit;
+	}
+	#content .imgListUl div .img {
+		width: 100px;
+		left: -100px;
+		top: -33px;
+	}
+	#content .imgListUl p {
+		margin-top: 0;
+		width: auto;
+		float: inherit;
+		color: #7b3908;
+		font-size: 14px;
+	}
+	#content .banner li {
+		margin-bottom: 15px;
+		display: block;
+	}
+	#content .banner li:last-child {
+		margin-bottom: 0;
+	}
+	#content .banner {
+		margin: 0 -6px;
+	}
+}
