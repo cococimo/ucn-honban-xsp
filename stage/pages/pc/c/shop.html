@@ -85,6 +85,7 @@ $(function(){
 	.search_area_input_wrap input[name=keyword] {
 		width: 100%;
 		border-style: solid;
+		font-size: 15px;
 		border-width: 1px;
 		border-color: #d8d8d8;
 		background-color: #fff;
@@ -147,8 +148,8 @@ $(function(){
 	    min-height: 0;
 	}
 	.search_area_input_wrap input[type=submit] {
-	    width: 97px;
-	    height: 35px;
+	    width: 84px;
+	    height: 30px;
 	    background-size: contain;
 	}
 	#home .word_area {text-align: center;}
@@ -170,6 +171,12 @@ $(function(){
 		.search_area {
 			display: none;
 		}
+	}
+
+	/*カテゴリ一覧の表示位置変更*/
+	 #home .search_item_in .category_list {display: none;}
+	@media screen and (max-width:767px) {
+		    #home .search_item_in .category_list {display: block;}
 	}
 </style>
 <!--▲▲▲ 共通CSS/Script ▲▲▲-->
@@ -200,12 +207,14 @@ $(function(){
 <!-- InstanceBeginEditable name="tag_body" -->
 
 <!--DLPO-->
- <div class="ADLPODefault"></div><script type="text/javascript">adlpoMain("cococimo_top_1","lc=os","ch=Shift-JIS");</script>
- <div class="ADLPODefault"></div><script type="text/javascript">adlpoMain("cococimo_top_2","lc=os","ch=Shift-JIS");</script>
- <div class="ADLPODefault"></div><script type="text/javascript">adlpoMain("cococimo_top_3","lc=os","ch=Shift-JIS");</script>
- <div class="ADLPODefault"></div><script type="text/javascript">adlpoMain("cococimo_top_4","lc=os","ch=Shift-JIS");</script>
- <div class="ADLPODefault"></div><script type="text/javascript">adlpoMain("cococimo_top_5","lc=os","ch=Shift-JIS");</script>
-<!--/DLPO-->
+  <div class="ADLPODefault">
+  </div>
+  <script type="text/javascript">adlpoMain("cococimo_top_1","lc=os","ch=Shift-JIS");</script>
+  <script type="text/javascript">adlpoMain("cococimo_top_2","lc=os","ch=Shift-JIS");</script>
+  <script type="text/javascript">adlpoMain("cococimo_top_3","lc=os","ch=Shift-JIS");</script>
+  <script type="text/javascript">adlpoMain("cococimo_top_4","lc=os","ch=Shift-JIS");</script>
+  <script type="text/javascript">adlpoMain("cococimo_top_5","lc=os","ch=Shift-JIS");</script>
+<!--DLPO-->
 
 
 <object class="xsp_obj" m:id="e_var_tagCart"></object>
@@ -494,6 +503,8 @@ $(function(){
 				<li><a href="/shop/c/category/001001017025/list/">マキタ掃除機</a></li>
 				<li><a href="/manganihon/">まんが日本昔ばなし</a></li>
 				<li><a href="/syokuhin/">おいしい食卓</a></li>
+				<li><a href="#">追加１</a></li>
+				<li><a href="#">追加２</a></li>
 			</ul>
 		</div>
 	</div>
@@ -507,6 +518,85 @@ $(function(){
         <input type="hidden" name="goods_url" />
     </form>
 	<div id="contents">
+	<!--▼▼▼カテゴリー▼▼▼-->
+	<style>
+		.category_contents_in {
+    		width: 1200px;
+   			margin: 0 auto;
+    		padding-bottom: 0;
+    		position: relative;
+		}
+	</style>
+	<div class="category_contents_in cf" style="">
+		<div id="category">
+			<object class="xsp_obj" m:id="e_var_standardCategory">
+			</object>
+			<object class="xsp_obj" m:id="e_var_campaignCategory">
+			</object>
+			<object class="xsp_obj" m:id="count">
+			</object>
+			<object class="xsp_obj" m:id="cate_count">
+			</object>
+			<object class="xsp_obj" m:id="subCate_count">
+			</object>
+			<object class="xsp_obj" m:id="subCate2_count">
+			</object>
+			<object class="xsp_obj" m:id="e_var_dmHistory">
+			</object>
+			<span m:id="l_pre_standardCategory">
+				<span m:id="l_notEmp_standardCategory_childCategories">
+					<div class="category_list">
+						<span m:id="l_ite_standardCategory">
+							<span m:id="l_equ_cate_checkPeriod">
+								<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+								<object class="xsp_obj" m:id="count_sub1"></object>
+								<ul class="l_con_list_01 clearfix example">
+									<span  m:id="l_ite_cate">
+										<span m:id="l_equ_subCate_checkPeriod">
+											<span m:id="icnt_increment"></span>
+											<span m:id="i_ins_subCate"></span>
+											<li>
+												<div id="p_0">
+													<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+														<span class="category_list_img"></span>
+														<span m:id="span_subCate_arrow" id="arrow_1">
+															<span m:id="disp_subCate_category_name">ファッション</span>
+														</span>
+													</a>
+												</div>
+												<ul m:id="tag_dd_subCate">
+													<span m:id="l_ite_subCate">
+														<span m:id="l_equ_subCate2_checkPeriod">
+															<span m:id="icnt_increment"></span>
+															<span m:id="i_ins_subCate2"></span>
+															<li>
+																<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+																<ul m:id="tag_dd_subCate2">
+																	<span m:id="l_ite_subCate2">
+																		<span m:id="l_equ_subCate3_checkPeriod">
+																			<span m:id="icnt_increment"></span>
+																			<li>
+																				<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
+																			</li>
+																		</span>
+																	</span>
+																</ul>
+															</li>
+														</span>
+													</span>
+												</ul>
+											</li>
+										</span>
+									</span>
+								</ul>
+							</span>
+						</span>
+					</div>
+				</span>
+			</span>
+		</div>
+	</div>
+		<!--▲▲▲カテゴリー▲▲▲-->
         <div id="pan-navi" >
             <ul class="clearfix">
                 <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
@@ -582,7 +672,7 @@ $(function(){
             </div>
         <!--▲▲▲初めて利用される方へ▲▲▲-->
 		</div>
-		<script type='text/javascript'>adlpoMain('top_beginner_area_0612','lc=os','ch=Shift-JIS');</script>
+		<script type='text/javascript'>adlpoMain('top_beginner_area','lc=os','ch=Shift-JIS');</script>
 
         <div class="news_link_wrap viewSp">
             <a href="#side_widget_news"><span>お知らせを見る</span></a>
@@ -715,7 +805,7 @@ $(function(){
                             </div>
                             <!-- /.search_item_category -->
                             <div class="search_item_keyword">
-                                <h3 class="search_item_keyword_tit search_item_subtit viewPc">商品カテゴリ</h3>
+                                <!-- <h3 class="search_item_keyword_tit search_item_subtit viewPc">商品カテゴリ</h3> -->
                                 <div class="search_item_keyword_box viewPc">
                                     <p class="search_item_keyword_subtit">商品名<br><span>で検索</span></p>
                                     <div class="search_item_keyword_search" >
@@ -1037,7 +1127,7 @@ $(function(){
 	                            <img src="/contents/c/shop/image/tit_topic_season04_sp.png" title="防災グッズ最新カタログ掲載商品" alt="防災グッズ最新カタログ掲載商品" class="viewSp">
                             </a>
                             </h2>
-                           
+                            
                             <ul class="topic_list item_list js-item_list">
                                 <span m:id="l_ite_recommendGoodsList">
                                     <li class="js-matchHeight">
