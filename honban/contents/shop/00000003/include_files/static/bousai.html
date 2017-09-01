@@ -9,6 +9,41 @@
 		.item_list_2top li:nth-child(n+1) {width: auto;}
 	}
 </style>
+
+<!-- ▼▼▼▼slider(slick)--> 
+<link rel="stylesheet" href="/contents/shop/00000003/css/bousai_slick_css/style.css">
+<script>
+	$(function(){
+		$('.slider').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  lazyLoad: 'progressive',
+		  autoplay: true,
+		  autoplaySpeed: 3000,
+		  adaptiveHeight: true,
+				responsive:[{
+					breakpoint: 768,
+					settings:{
+						//arrows: false,
+			  		}
+				}]
+			});
+	});
+</script>
+<style>
+	.slider {margin: 0 0 65px;}
+	.slick-dots {bottom: -33px;}
+	.slick-dots li button:before{font-family: 'slick';}
+	.slick-dots li button:before {content: '';background: #000;width:11px;border-radius:50%;height:11px;}
+	.slick-prev:before {content: '←';}
+	.slick-next:before {content: '→';}
+	.center-item .slick-prev,
+	.center-item .slick-next{z-index:9}
+</style>
+<!-- ▲▲▲▲slider(slick)--> 
+
 <div id="category_bousai" class="category">
 <!-- 	<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -23,10 +58,37 @@
 	<!-- /#breadcrumb -->
 	<div class="goods_archive category_feature">
 		<div class="category_feature_intro">
-			<h2 class="category_feature_tit">
+<!-- 			<h2 class="category_feature_tit">
 				<img src="/contents/c/shop/image/category/bousai/img_intro01.jpg" alt="防災用品" class="viewPc">
 				<img src="/contents/c/shop/image/category/bousai/img_intro01_sp.jpg" alt="" class="viewSp">
-			</h2>
+			</h2> -->
+
+			<h2 style="display: none;">防災用品</h2>
+
+			<!-- .slider -->
+			<div class="viewPc">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001010005/list/" target="_blank"><img src="/contents/c/shop/image/category/bousai/img_intro01.jpg" alt="防災用品"></a>
+					</li>
+					<li>
+						<a href="http://www.cococimo.jp/shop/c/category/001001010007/list/" target="_blank"><img src="/contents/c/shop/image/category/bousai/img_intro02.jpg" alt="最新版防災特集"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="viewSp">
+				<ul class="slider center-item">
+					<li>
+						<a href="/shop/c/category/001001010005/list/" target="_blank"><img src="/contents/c/shop/image/category/bousai/img_intro01_sp.jpg" alt="防災用品"></a>
+					</li>
+					<li>
+						<a href="http://www.cococimo.jp/shop/c/category/001001010007/list/" target="_blank"><img src="/contents/c/shop/image/category/bousai/img_intro02_sp.jpg" alt="最新版防災特集"></a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.slider -->
+
 			<p class="category_feature_intro_txt">ココチモでは、災害経験者1000人の声をもとに、オリジナルで制作したリュックにもカートにもなる「防災セット」をはじめ、<br class="viewPc">備蓄用の食材やヘルメット、ラジオ、トイレ、テントといった、防災用品を厳選しご紹介しています。<br class="viewPc">ぜひ、あなたの防災対策にお役立てください。</p>
 		</div>
 		<!-- /.goods_archive_intro -->
