@@ -100,6 +100,78 @@ $(function(){
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="receipt" -->
+<style>
+.header_logo:hover {
+  opacity: 1;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+@media screen and (min-width: 767px){
+  .header_logo {
+      width: 120px;
+      height: 14px;
+      position: absolute;
+      top: 0;
+   }
+   .header_logo img {
+      width: 120px
+      height: 14px;
+  }
+  .header_top {
+      padding-top: 10px;
+      height: 50px;
+  }
+  .contents_b {
+      padding-top: 20px;
+  }
+  .cmn_tit05 {
+      font-size: 20px;
+      margin: 0 0 10px;
+  }
+  .header_bottom {
+      padding-bottom: 0;
+  }
+  #cart .cart_intro {
+    margin: 0 0 20px;
+  }
+  .cmn_step04  {
+      margin: 0 0 20px;
+      display: -webkit-flex; /* Safari */
+      display: flex;
+       -webkit-justify-content: center; /* Safari */
+      justify-content: center;
+      -webkit-align-items: stretch; /* Safari */
+      align-items: center;
+  }
+  .cmn_step04 .cmn_step_item {
+    width: 140px;
+    font-size: 14px;
+  }
+  .cmn_step04 .cmn_step_item:nth-child(2) {
+    width: 150px;
+  }
+  .cmn_step04 .cmn_step_item:nth-child(3) {
+    width: 170px;
+  }
+  .cmn_step04 .cmn_step_item:before {
+      top: 10px;
+      left: 12px;
+      width: 16px;
+      height: 14px;
+      font-size: 10px;
+  }
+  .cmn_step04 .cmn_step_item {
+      height: 38px;
+      padding: 13px 0 0 36px;
+  }
+
+  .cmn_step04 .cmn_step_item:after {
+      border-width: 19px 0 19px 20px;
+  }
+  #cart .cart_side_total {
+      padding: 40px 20px 40px;
+  }
+}
+</style>
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -340,20 +412,20 @@ $(function(){
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
 			<h1 class="header_logo">
-				<a m:id="e_link_logo_shop_shop" href="/">
+				<!-- <a m:id="e_link_logo_shop_shop" href="/"> -->
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
-				</a>
+				<!-- </a> -->
 			</h1>
 			<div class="header_top">
 				<div class="header_tell" class="view">
 					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 				</div>
 				<!-- /.header_tel -->
-				<div class="header_contact">
+<!-- 				<div class="header_contact">
 					<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a>
-				</div>
+				</div> -->
 				<!-- /.header_contact -->
 				<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
@@ -362,7 +434,8 @@ $(function(){
 				</div>
 				<!-- /.header_mypage -->
 				<div class="header_ucan">
-					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+					<!-- <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a> -->
+          			<a href="javascript:void(0)" style="cursor:default;">ユーキャン</a>
 				</div>
 				<!-- /.header_ucan -->
 			</div>
@@ -372,20 +445,20 @@ $(function(){
 					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 				</p>
 				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+<!-- 				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p> -->
 				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+<!-- 				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p> -->
 				<!-- /.header_guide -->
 				<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow">
+<!-- 					<div class="header_menu hvr-grow">
 						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
 							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
 						</a>
 					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div>
+					</div> -->
 					<!--/.header_menu-->
 				</span>
-				<div class="header_login hvr-grow">
+<!-- 				<div class="header_login hvr-grow">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
@@ -407,7 +480,7 @@ $(function(){
 							</li>
 						</div>
 					</ul>
-				</div>
+				</div> -->
 				<!-- /.header_login -->
 			</div>
 			<!-- /.header_bottom -->
