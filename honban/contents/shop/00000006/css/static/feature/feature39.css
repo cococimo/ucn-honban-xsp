@@ -1,0 +1,134 @@
+@charset "Shift_JIS";
+
+#contents .feature .ttl_section_jp { bottom: -17px; }
+#contents .feature .main_visual { margin-bottom: 70px; padding: 0; }
+
+.cont_wrap { min-width: 1020px; max-width: 1281px; width: 100%; margin: 0 auto; }
+.cont_wrap .lead_text { margin-bottom: 70px; font-size: 18px; text-align: center; line-height: 36px; letter-spacing: 0.11em; }
+.cont_wrap .lead_text p { margin-bottom: 35px; }
+.cont_wrap .lead_text p:last-child { margin-bottom: 0; }
+.cont_wrap .anc_area { min-width: 1020px; max-width: 1078px; width: 100%; margin: 0 auto 80px; }
+.cont_wrap .anc_area .anc_list li { float: left; width: 14.1929%; }
+
+/*============================
+ days_area 共通レイアウト
+============================*/
+.days_title .days_title_image { width: 100%; margin-bottom: 5px; }
+.days_title .days_title_image img { width: 100%; }
+.days_title .days_title_image_caption { margin-bottom: 40px; font-size: 12px; line-height: 26px; padding: 0 10px; }
+.days_title .days_title_image_caption.pos_right { text-align: right; }
+.days_product_list { margin: 0 auto 95px; }
+.days_product_list li { position: relative; float: left; }
+.days_product_list li:after { position: absolute; z-index: 10; width: 60px; height: 60px; background: url("/contents/shop/00000006/shop/image/kigokochi/feature39/icon_01.png") no-repeat left top; content: ""; }
+.days_product_list li:last-child:after { display: none; }
+.days_product_list li .days_product_image { margin-bottom: 7px; }
+.days_product_list li .days_product_image img { width: 100%; }
+.days_product_list li .days_product_detail { font-size: 16px; text-align: center; line-height: 26px; }
+.days_product_list li .days_product_detail a { text-decoration: underline; line-height: 24px; }
+.days_product_list li .days_product_detail a:hover { text-decoration: none; }
+.days_product_list li .days_product_detail .supplement { color: #787878; font-size: 14px; line-height: 24px; }
+
+/*============================
+ days_01
+============================*/
+.cont_wrap .days_01_area .days_product_list { width: 800px; }
+.cont_wrap .days_01_area .days_product_list li:first-child { margin-right: 80px; }
+.cont_wrap .days_01_area .days_product_list li:after { top: 184px; left: 413px; }
+
+/*============================
+ days_02
+============================*/
+.cont_wrap .days_02_area .days_product_list { min-width: 1020px; max-width: 1257px; width: 100%; }
+.cont_wrap .days_02_area .days_product_list li.list_01 { width: 29.5147%; margin-right: 3%; }
+.cont_wrap .days_02_area .days_product_list li.list_01:after { top: 171px; left: 102%; }
+.cont_wrap .days_02_area .days_product_list li.list_02 { width: 34.6062%; margin-right: 5%; }
+.cont_wrap .days_02_area .days_product_list li.list_02:after { top: 171px; left: 97.4712%; }
+.cont_wrap .days_02_area .days_product_list li.list_03 { width: 27.2871%; }
+
+/*============================
+ days_03
+============================*/
+.cont_wrap .days_03_area .days_product_list { width: 749px; }
+.cont_wrap .days_03_area .days_product_list li { margin-right: 80px; }
+.cont_wrap .days_03_area .days_product_list li:last-child { margin-right: 0; }
+.cont_wrap .days_03_area .days_product_list li:after { top: 183px; left: 411px; }
+
+/*============================
+ days_04
+============================*/
+.cont_wrap .days_04_area .days_product_list { width: 837px; }
+.cont_wrap .days_04_area .days_product_list li { margin-right: 80px; }
+.cont_wrap .days_04_area .days_product_list li:last-child { margin-right: 0; }
+.cont_wrap .days_04_area .days_product_list li:after { top: 169px; left: 421px; }
+
+/*============================
+ days_05
+============================*/
+.cont_wrap .days_05_area .days_product_list { width: 802px; }
+.cont_wrap .days_05_area .days_product_list li { margin-right: 80px; }
+.cont_wrap .days_05_area .days_product_list li:last-child { margin-right: 0; }
+.cont_wrap .days_05_area .days_product_list li:after { top: 183px; left: 397px; }
+
+/*============================
+ days_06
+============================*/
+.cont_wrap .days_06_area .days_product_list { width: 767px; }
+.cont_wrap .days_06_area .days_product_list li { margin-right: 80px; }
+.cont_wrap .days_06_area .days_product_list li:last-child { margin-right: 0; }
+.cont_wrap .days_06_area .days_product_list li:after { top: 169px; left: 382px; }
+
+/*============================
+ days_07
+============================*/
+.cont_wrap .days_07_area .days_product_list { width: 838px; }
+.cont_wrap .days_07_area .days_product_list li { margin-right: 80px; }
+.cont_wrap .days_07_area .days_product_list li:last-child { margin-right: 0; }
+.cont_wrap .days_07_area .days_product_list li:after { top: 183px; left: 427px; }
+
+
+@media (max-width: 640px) {
+	#contents .feature .ttl_section { border-bottom: none; }
+	#contents .feature .ttl_section_en { margin-top: 18px; }
+	#contents .feature .ttl_section_jp { padding: 0; }
+	#contents .feature .ttl_section_jp img { width: 100%; }
+	#contents .feature .main_visual { min-width: 100%; max-width: 100%; margin-bottom: 30px; }
+	#contents .feature .main_visual img { width: 100%; }
+
+	.cont_wrap { min-width: 0; max-width: 100%; width: 92%; }
+	.cont_wrap .lead_text { width: 100%; margin-bottom: 23px; font-size: 12px; line-height: 18px; }
+	.cont_wrap .lead_text p { margin-bottom: 20px; }
+
+	.cont_wrap .anc_area { min-width: 0; max-width: 100%; width: 100%; margin-bottom: 35px; text-align: center; }
+	.cont_wrap .anc_area .anc_area_inner_top { width: 91.3043%; margin: 0 auto; }
+	.cont_wrap .anc_area .anc_area_inner_top li { width: 24.0793%; }
+	.cont_wrap .anc_area .anc_area_inner_bottom { width: 67.2463%; margin: 0 auto; }
+	.cont_wrap .anc_area .anc_area_inner_bottom li { width: 32.7586%; }
+	.cont_wrap .anc_area li img { width: 100%; }
+
+	.days_title { margin-bottom: 7px; }
+	.days_title .days_title_image { margin-bottom: 10px; }
+	.days_title .days_title_image img { width: 100%; }
+	.days_title .days_title_image_caption { margin-bottom: 0; font-size: 10px; line-height: 13px; padding:0; }
+	.days_title .days_title_image_caption.pos_right { text-align: left; }
+	.days_product_list { min-width: 0 !important; max-width: 100% !important; width: 100% !important; margin-bottom: 45px; }
+	.days_product_list li { float: none; margin-right: 0 !important; margin-bottom: 77px; }
+	.days_product_list li:after { width: 45px; height: 45px; margin-left: -22px; background-size: 100% 100%; }
+	.days_product_list li:last-child { margin-bottom: 0; }
+	.days_product_list li .days_product_image { margin-bottom: 0; }
+	.days_product_list li .days_product_image img { width: 100%; }
+	.days_product_list li .days_product_detail { font-size: 12px; line-height: 20px; }
+	.days_product_list li .days_product_detail a { line-height: 20px; }
+	.days_product_list li .days_product_detail .supplement { font-size: 11px; line-height: 20px; }
+
+	.cont_wrap .days_01_area .days_product_list li:after { top: 105.7%; left: 50%; }
+	.cont_wrap .days_02_area .days_product_list li.list_01 { width: 100%; margin-bottom: 80px; }
+	.cont_wrap .days_02_area .days_product_list li.list_01:after { top: 106.5%; left: 50%; }
+	.cont_wrap .days_02_area .days_product_list li.list_02 { width: 100%; margin-bottom: 80px; }
+	.cont_wrap .days_02_area .days_product_list li.list_02:after { top: 106.5%; left: 50%; }
+	.cont_wrap .days_02_area .days_product_list li.list_03 { width: 100%; }
+	.cont_wrap .days_03_area .days_product_list li:after { top: 106%; left: 50%; }
+	.cont_wrap .days_04_area .days_product_list li:after { top: 105.5%; left: 50%; }
+	.cont_wrap .days_05_area .days_product_list li:after { top: 105.5%; left: 50%; }
+	.cont_wrap .days_06_area .days_product_list li:after { top: 105%; left: 50%; }
+	.cont_wrap .days_07_area .days_product_list li:after { top: 105%; left: 50%; }
+}
