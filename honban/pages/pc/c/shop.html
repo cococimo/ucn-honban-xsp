@@ -190,6 +190,62 @@ $(function(){
 	@media screen and (max-width:767px) {
 		    #home .search_item_in .category_list {display: block;}
 	}
+
+	/*ジャンル別ランキング*/
+	.recommend.ranking-genre li {
+	    background-image: url(/contents/c/shop/image/ico_ranking01.png);
+	    background-repeat: no-repeat;
+	    background-position: top center;
+	    padding-top: 58px;
+	    background-size: 160px;
+	}
+	.recommend.ranking-genre li + li {
+	    background-image: url(/contents/c/shop/image/ico_ranking02.png);
+	    background-size: 40px auto;
+	    background-position: center 13px;
+	}
+	.recommend.ranking-genre li + li + li {
+	    background-image: url(/contents/c/shop/image/ico_ranking03.png);
+	}
+	.recommend.ranking-genre li + li + li+ li {
+	    background-image: url(/contents/c/shop/image/ico_ranking04.png);
+	    background-position: center 22px;
+	}
+	.recommend.ranking-genre li + li + li+ li + li {
+	    background-image: url(/contents/c/shop/image/ico_ranking05.png);
+	}
+
+	@media screen and (max-width: 767px) {
+	    .recommend.ranking-genre .item_list li {
+	        padding: 30px 25px 12px 0!important;
+	    }
+	    .recommend.ranking-genre li {
+	        background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
+	        background-repeat: no-repeat;
+	        background-position: 1rem 0;
+	        background-size: 60px auto;
+	    }
+	    .recommend.ranking-genre li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
+	        background-size: 48px auto;
+	        background-position: 1rem 2.3vw;
+	    }
+	    .recommend.ranking-genre li + li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
+	    }
+	    .recommend.ranking-genre li + li + li+ li {
+	        background-image: url(/contents/c/shop/image/ico_ranking04.png);
+	            background-size: 30px auto;
+	            background-position: 1.8rem .7vw;
+	    }
+	    .recommend.ranking-genre li + li + li+ li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking05.png);
+	    }
+
+	    .recommend.ranking-genre .more_item_txt {
+		    font-size: .75rem;
+		}
+	}
 </style>
 <!--▲▲▲ 共通CSS/Script ▲▲▲-->
 <!--▼▼▼ 固有CSS/Script ▼▼▼-->
@@ -656,25 +712,6 @@ $(function(){
             </div>
         <!--▲▲▲メインヴィジュアル▲▲▲-->
 
-		<div class='ADLPODefault'>
-        <!--▼▼▼初めて利用される方へ▼▼▼-->
-            <div class="begginer">
-                <div class="begginer_in wrapper">
-                    <p class="begginer_logo"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" /></p>
-                    <p class="begginer_txt">ユーキャンが運営する、<br>ココチモ通販を、<br>初めてご利用される方へ</p>
-                    <div class="begginer_our"><a href="/shop/c/static/greeting/">ココチモ（私たち）<br>について</a></div>
-                    <div class="begginer_guide"><a href="/shop/c/static/guide/">ココチモ<br>初めてご利用ガイド</a></div>
-                    <ul class="begginer_list">
-                        <li><a href="/shop/c/static/voice/">お客さまの声</a></li>
-                        <li><a href="/shop/c/static/faq/">よくあるご質問</a></li>
-                        <li><a href="/shop/c/static/company/">会社概要</a></li>
-                    </ul>
-                </div>
-            </div>
-        <!--▲▲▲初めて利用される方へ▲▲▲-->
-		</div>
-		<script type='text/javascript'>adlpoMain('top_beginner_area_0612','lc=os','ch=Shift-JIS');</script>
-
         <div class="news_link_wrap viewSp">
             <a href="#side_widget_news"><span>お知らせを見る</span></a>
         </div>
@@ -903,7 +940,7 @@ $(function(){
                 <!--▼▼▼今売れている商品ランキング▼▼▼-->
                     <span m:id="l_notEmp_autoRankGoodsList">
                         <div class="ranking">
-                            <h2 id="r_bt_012" class="ranking_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">売れ筋ランキング</span></h2>
+                            <h2 id="r_bt_012" class="ranking_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">売れ筋総合ランキング</span></h2>
                             <ul class="ranking_list cf js-item_list">
                                 <span m:id="l_ite_autoRankGoodsList">
                                     <span m:id="l_notEqu_autoRankGoodsList_idx">
@@ -1025,15 +1062,25 @@ $(function(){
                                 </span>
                             </ul>
                             <div class="more_item js-more_item">
-                            <p class="more_item_txt">売れ筋ランキングをもっと見る</p>
+                            <p class="more_item_txt">売れ筋総合ランキングをもっと見る</p>
                             </div>
                         </div>
                     </span>
                 <!--▲▲▲今売れている商品▲▲▲-->
+
+				<!-- ▼▼▼ランキング-おいしい食卓▼▼▼ -->
+				<span m:id="l_include_file_tags" filename="top/ranking_syokutaku"></span>
+				<!-- ▲▲▲ランキング-おいしい食卓▲▲▲ -->
+				<!-- ▼▼▼ランキング-防災用品▼▼▼ -->
+				<span m:id="l_include_file_tags" filename="top/ranking_bousai"></span>
+				<!-- ▲▲▲ランキング-防災用品▲▲▲ -->
+				<!-- ▼▼▼ランキング-ファッション・鞄の商品一覧▼▼▼ -->
+				<span m:id="l_include_file_tags" filename="top/ranking_fashion"></span>
+				<!-- ▲▲▲ランキング-ファッション・鞄の商品一覧▲▲▲ -->
                 <!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
                     <span m:id="l_notEmp_autoRecommendGoodsList">
                         <div class="recommend">
-                            <h2 class="recommend_tit cmn_tit01"><span class="cmn_tit01_underline">あなたへおすすめ商品</span></h2>
+                            <h2 class="recommend_tit cmn_tit01"><span class="cmn_tit01_underline">あなたへのおすすめ商品</span></h2>
                             <div class="clearfix recommend_in"> 
                             <ul class="recommend_list item_list item_list_5col js-item_list">
                                 <span m:id="l_ite_autoRecommendGoodsList">
@@ -1107,7 +1154,7 @@ $(function(){
                                 </span>
                             </ul>
                             <div class="more_item js-more_item">
-                                <p class="more_item_txt">あなたへおすすめ商品</p>
+                                <p class="more_item_txt">あなたへのおすすめ商品</p>
                             </div>
                             </div>
                         </div>
@@ -1557,6 +1604,26 @@ $(function(){
 		<!-- /#contents_in -->
 	</div>
 	<!--contents-->
+
+		<div class='ADLPODefault'>
+        <!--▼▼▼初めて利用される方へ▼▼▼-->
+            <div class="begginer viewPc">
+                <div class="begginer_in wrapper">
+                    <p class="begginer_logo"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" /></p>
+                    <p class="begginer_txt">ユーキャンが運営する、<br>ココチモ通販を、<br>初めてご利用される方へ</p>
+                    <div class="begginer_our"><a href="/shop/c/static/greeting/">ココチモ（私たち）<br>について</a></div>
+                    <div class="begginer_guide"><a href="/shop/c/static/guide/">ココチモ<br>初めてご利用ガイド</a></div>
+                    <ul class="begginer_list">
+                        <li><a href="/shop/c/static/voice/">お客さまの声</a></li>
+                        <li><a href="/shop/c/static/faq/">よくあるご質問</a></li>
+                        <li><a href="/shop/c/static/company/">会社概要</a></li>
+                    </ul>
+                </div>
+            </div>
+        <!--▲▲▲初めて利用される方へ▲▲▲-->
+		</div>
+		<script type='text/javascript'>adlpoMain('top_beginner_area_0612','lc=os','ch=Shift-JIS');</script>
+		
 </div>
 <!--container-->
 <!-- InstanceEndEditable -->
