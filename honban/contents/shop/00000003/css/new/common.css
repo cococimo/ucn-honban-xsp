@@ -6444,6 +6444,11 @@ input[type=submit]:hover:hover {
 .item_list .img_box a {
 	display: block;
 }
+/*addition 2017 09 29*/
+.recommend_list.item_list .img_box a{
+	height: 228px;
+}
+/*addition 2017 09 29*/
 .item_list .img_box img {
 	max-width: 100%;
 	max-height: 100%;
@@ -6531,6 +6536,11 @@ input[type=submit]:hover:hover {
 		width: 100vw;
 		position: relative;
 		z-index: 1;
+	}
+	.recommend_list.item_list .img_box a {
+		/*addition 2017 09 29*/
+		height: auto !important;
+		/*addition 2017 09 29*/
 	}
 	.item_list .img_box img {
 		width: 90px;
