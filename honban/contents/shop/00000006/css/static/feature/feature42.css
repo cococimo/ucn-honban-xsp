@@ -1,0 +1,156 @@
+@charset "shift-jis";
+
+/* main_visual
+-------------------------------------- */
+#feature42 img { max-width: 100%;}
+
+/* intro_block
+-------------------------------------- */
+.intro_block { width: 1020px; font-size: 18px; line-height: 2; letter-spacing: 0.08em; text-align: center; margin: 70px auto 0; }
+.intro_block::after { content: ""; width: 100%; height: 8px; margin-top: 80px; display: block; background: url(/contents/shop/00000006/shop/image/kigokochi/feature42/intro_line.png) 0 0 / auto 8px repeat-x;}
+.intro_block p { margin-bottom: 42px; }
+
+
+/* section_area：共通
+-------------------------------------- */
+[class^="section_area_"] { width: 100%; min-width:1020px; max-width: 1280px; margin: 100px auto 0;}
+[class^="section_area_"] .sec_title { text-align: center;}
+[class^="section_area_"] .sec_img_top { margin-top: 48px;}
+[class^="section_area_"] .sec_point { width: 1020px; margin: 50px auto 0; padding: 66px 0; position: relative; background: url(/contents/shop/00000006/shop/image/kigokochi/feature42/point_bg.png) 0 0 / 100% no-repeat;}
+[class^="section_area_"] .sec_point::before,
+[class^="section_area_"] .sec_point::after { content: ""; position: absolute;}
+[class^="section_area_"] .sec_point::before { width: 119px; height: 0; padding-top: 56px; top: -18px; right: 8px; z-index: 5; background: url(/contents/shop/00000006/shop/image/kigokochi/feature42/point_icon.png) 0 0 / 100% auto no-repeat;}
+[class^="section_area_"] .sec_point::after { width: 100%; height: 10px; background: url(/contents/shop/00000006/shop/image/kigokochi/feature42/point_bg.png) 0 100% / 100% auto no-repeat; bottom: 0; left: 0;}
+[class^="section_area_"] .sec_point_inner { width: 100%; padding-left: 260px; box-sizing: border-box;}
+[class^="section_area_"] .sec_point_inner::before { content: ""; width: 182px; height: 0; padding-top: 182px; position: absolute; top: 50%; left: 50px; transform: translateY(-50%); background: 0 0 / 100% auto no-repeat;}
+[class^="section_area_"] .sec_point p { font-size: 18px; line-height: 2; letter-spacing: 0.2em;}
+[class^="section_area_"] .sec_item { width: 1020px; margin: 60px auto 0; text-align: center;}
+[class^="section_area_"] .sec_item p { font-size: 16px; line-height: 1.7; margin-top: 22px;}
+[class^="section_area_"] .sec_item p a { color: #1f1f1f; text-decoration: underline;}
+[class^="section_area_"] .sec_item p a:hover { text-decoration: none;}
+[class^="section_area_"] .sec_item p > span { font-size: 14px; color: #787878;}
+
+
+/* section_area_01
+-------------------------------------- */
+.section_area_01 { margin-top: 100px;}
+.section_area_01 .sec_point_inner::before { background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sec01_cloth.jpg);}
+
+
+/* section_area_02
+-------------------------------------- */
+.section_area_02 { margin-top: 130px;}
+.section_area_02 .sec_point_inner::before { background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sec02_cloth.jpg);}
+.section_area_02 .sec_item p { margin-top: 17px;}
+
+
+/* section_area_03
+-------------------------------------- */
+.section_area_03 { margin-top: 130px;}
+.section_area_03 .sec_point_inner::before { background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sec03_cloth.jpg);}
+.section_area_03 .sec_item p { margin-top: 22px;}
+
+
+/* section_area_04
+-------------------------------------- */
+.section_area_04 { margin-top: 127px;}
+.section_area_04 .sec_point { padding: 30px 0;}
+.section_area_04 .sec_point_inner::before { background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sec04_cloth.jpg);}
+.section_area_04 .sec_item p { margin-top: 25px;}
+
+
+/* tunic_list_area
+-------------------------------------- */
+.tunic_list_area { margin-top: 94px; padding: 100px 0 70px; background: #fcfbed;}
+.tunic_list_area .tunic_list_ttl { text-align: center;}
+ul.tunic_list_block { width: 1020px; margin: 80px auto 0; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap;}
+ul.tunic_list_block li.tunic_item { width: 240px; margin: 74px 0 0 20px;}
+ul.tunic_list_block li.tunic_item p { font-size: 16px; line-height: 1.7; text-align: center; margin-top: 15px;}
+ul.tunic_list_block li.tunic_item p a { color: #1f1f1f; text-decoration: underline;}
+ul.tunic_list_block li.tunic_item p a:hover { text-decoration: none;}
+ul.tunic_list_block li.tunic_item p > span { font-size: 14px; color: #787878;}
+
+
+/* --------------------------------------------------
+　PC only　レイアウト
+-------------------------------------------------- */
+@media (min-width: 640px){
+
+	/* tunic_list_area
+	-------------------------------------- */
+	ul.tunic_list_block li.tunic_item:nth-child(-n+4) { margin-top: 0;}
+	ul.tunic_list_block li.tunic_item:nth-child(4n+1) { margin-left: 0;}
+
+
+} /* @media */
+
+/* --------------------------------------------------
+　SP only　レイアウト
+-------------------------------------------------- */
+@media (max-width: 640px){
+
+	/* main_visual
+	-------------------------------------- */
+	.feature .main_visual { margin-bottom: 8.5%;}
+
+	/* intro_block
+	-------------------------------------- */
+	.intro_block { width: 92%; font-size: 12px; line-height: 1.5; letter-spacing: 0.08em; margin-top: 8.7%; }
+	.intro_block::after { margin-top: 9.2%; background :url(/contents/shop/00000006/shop/image/kigokochi/feature42/intro_line.png) 0 0 / auto 4px repeat-x;}
+	.intro_block p { margin-bottom: 5.6%; }
+	.intro_block p > img { max-width: 100%;}
+
+
+	/* section_area：共通
+	-------------------------------------- */
+	[class^="section_area_"] { min-width:auto; min-width: inherit; width: 92%; margin-top: 10%;}
+	[class^="section_area_"] .sec_img_top { margin-top: 7%;}
+	[class^="section_area_"] .sec_point { width: 100%; margin-top: 4%; padding: 3.5% 0; background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sp/point_bg.png);}
+	[class^="section_area_"] .sec_point::before { width: 17.24%; padding-top: 8.115%; top: -5.8%; left: 1.7%; right: auto;}
+	[class^="section_area_"] .sec_point::after { width: 100%; height: 3%; background-image: url(/contents/shop/00000006/shop/image/kigokochi/feature42/sp/point_bg.png);}
+	[class^="section_area_"] .sec_point_inner { width: 98%; padding-left: 42%;}
+	[class^="section_area_"] .sec_point_inner::before { width: 34.78%; padding-top: 34.78%; left: 5%;}
+	[class^="section_area_"] .sec_point p { font-size: 12px; line-height: 1.5; letter-spacing: 0.14em;}
+	[class^="section_area_"] .sec_item { width: 100%; margin-top: 8.5%;}
+	[class^="section_area_"] .sec_item p { font-size: 12px; line-height: 1.8; margin-top: 3.2%;}
+	[class^="section_area_"] .sec_item p > span { font-size: 11px;}
+
+
+	/* section_area_01
+	-------------------------------------- */
+	.section_area_01 { margin-top: 12.6%;}
+	.section_area_01 .sec_point { padding: 3.5% 0;}
+
+
+	/* section_area_02
+	-------------------------------------- */
+	.section_area_02 { margin-top: 18.6%;}
+	.section_area_02 .sec_point { padding: 8.8% 0;}
+	.section_area_02 .sec_item p { margin-top: 3.2%;}
+
+
+	/* section_area_03
+	-------------------------------------- */
+	.section_area_03 { margin-top: 18.6%;}
+	.section_area_03 .sec_point { padding: 6.2% 0;}
+	.section_area_03 .sec_item p { margin-top: 3.2%;}
+
+
+	/* section_area_04
+	-------------------------------------- */
+	.section_area_04 { margin-top: 18.8%;}
+	.section_area_04 .sec_point { padding: 3.5% 0;}
+	.section_area_04 .sec_item p { margin-top: 3.2%;}
+
+	/* tunic_list_area
+	-------------------------------------- */
+	.tunic_list_area { margin-top: 12%; padding: 13.4% 0 11.5%;}
+	ul.tunic_list_block { width: 92%; margin-top: 6.6%; -webkit-justify-content: space-between; justify-content: space-between;}
+	ul.tunic_list_block li.tunic_item { width: 46.37%; margin: 10% 0 0;}
+	ul.tunic_list_block li.tunic_item:nth-child(-n+2) { margin-top: 0;}
+	ul.tunic_list_block li.tunic_item p { font-size: 12px; line-height: 1.8; margin-top: 3.8%;}
+	ul.tunic_list_block li.tunic_item p > a { letter-spacing: -0.05em;}
+	ul.tunic_list_block li.tunic_item p > span { font-size: 11px;}
+
+
+} /* @media */
