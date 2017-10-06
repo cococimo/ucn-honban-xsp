@@ -1,0 +1,763 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+#contents_in .main-visual {
+margin-bottom: 71px;
+}
+
+
+#contents_in .section {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+#contents_in .section .pTop {
+	margin-bottom: 64px;
+	text-align: center;
+	color: #41413f;
+	font-size: 16px;
+	line-height: 2.25;
+	letter-spacing: 1.0px;
+}
+
+#contents_in .section .pTop .cor {
+	color: #f39801;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.2;
+	vertical-align: unset;
+}
+
+
+#contents_in .section .check-pt01-Box{
+	margin-bottom: 70px;
+}
+
+.section .check-pt01-Box p{
+	font-size: 16px;
+	line-height: 1.875;
+	margin-bottom: 30px;
+}
+
+.section .check-pt01-Box ul li{
+	width: 1000px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+	color:#f57900;
+	border: 2px solid #f39801;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.section .check-pt01-Box ul li .check-label{
+	background-color: #F59800;
+	padding: 15px 18px;
+	width: 138px;
+	box-sizing: border-box;
+	position: relative;
+	margin-right: 43px;
+}
+.section .check-pt01-Box ul li .check-label::after{
+	content: "";
+	display: block;
+	width: 14px;
+	height: 100%;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature12/check-arrow.png) no-repeat;
+	background-size: auto 100%;
+	position: absolute;
+	top: 0;
+	right: -14px;
+}
+
+.section .check-pt02-Box{
+	margin-bottom: 70px;
+}
+
+.section .check-pt02-Box p{
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 64px;
+}
+
+.check-pt02-Box .select-block .select-column {
+	width: 480px;
+	border:1px solid #f39801;
+	text-align: center;
+	float: left;
+	padding-bottom: 10px;
+	margin-right: 40px;
+	margin-bottom: 100px;
+}
+
+.check-pt02-Box .select-block .select-column:last-child {
+	margin-right: 0;
+}
+
+.check-pt02-Box .select-block .select-column .column-ttl {
+	font-size: 28px;
+	line-height: 1;
+	padding: 18px;
+	background-color: #f39801;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.check-pt02-Box .select-block .select-column p{
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 24px;
+}
+
+.check-pt02-Box .recipe-flow {
+	text-align: center;
+}
+
+.check-pt02-Box .recipe-flow img{
+	display: inline-block;
+}
+
+
+
+.recipeBox {
+	margin-bottom: 54px;
+}
+
+.recipeBox.recipe1{
+	margin-bottom: 100px;
+}
+
+.recipeBox.recipe2{
+	margin-bottom: 100px;
+}
+
+.recipeBox:nth-child(3) {
+	margin-bottom: 50px;
+}
+
+.recipeBox .recipeTtl {
+	margin-bottom: 40px;
+}
+
+.recipeBox .imgBox01 {
+	float: right;
+	width: 40.5%;
+}
+
+.recipeBox.recipe2 .imgBox01{
+	float: left;
+}
+
+.recipeBox.recipe2 .imgBox02{
+	float: right;
+}
+
+.recipeBox .imgBox01 .txtBox .txtList.cf {
+	margin-bottom: 30px;
+}
+
+.recipeBox .imgBox02 {
+	float: left;
+	margin-bottom: 18px;
+}
+
+.recipeBox p{
+	font-size: 18px;
+	line-height: 1.7;
+	clear: both;
+}
+
+
+#contents_in .section .imgBox01 {
+	margin-bottom: 39px;
+}
+
+#contents_in .section .imgBox01 .txtBox .ttl {
+	margin-bottom: 11px;
+	color: #FFF;
+	font-size: 20px;
+	text-align: center;
+	background: #f39801;
+	border-radius: 25px;
+	font-weight: bold;
+	line-height: 39px;
+}
+
+#contents_in .section .imgBox01 .txtBox .ttl .sml {
+	font-size: 15px;
+}
+
+#contents_in .section .imgBox01 .txtBox .txtList li {
+	padding: 12px 0 10px;
+	width: 100%;
+	float: left;
+	position: relative;
+	font-size: 14px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+#contents_in .section .recipeBox.recipe1 .imgBox01 .txtBox .txtList li{
+	width: 48%;
+	margin-right: 4%;
+}
+
+#contents_in .section .recipeBox.recipe1 .imgBox01 .txtBox .txtList li:nth-child(even){
+	margin-right: 0%;
+}
+
+#contents_in .section .imgBox01 .txtBox .txtList li .txt {
+	position: absolute;
+	right: -4px;
+	top: 28%;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+#contents_in .section .imgBox01 .txtBox h3 {
+	margin-bottom: 9px;
+	color: #76a32d;
+	font-size: 18px;
+}
+
+#contents_in .section .imgBox01 .phoBox {
+	text-align: center;
+}
+
+#contents_in .section .headLine01 {
+	margin-bottom: 31px;
+	padding-bottom: 21px;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature12/line02.gif) no-repeat left bottom;
+}
+
+#contents_in .section .headLine01 span {
+	padding: 0 10px 5px;
+	color: #41413f;
+	font-size: 28px;
+	display: inline-block;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature12/line01.gif) repeat-x 0 97%;
+	margin-left: 73px;
+	position: relative;
+}
+
+#contents_in .section .headLine01 span:before{
+	content: "";
+	width: 73px;
+	height: 58px;
+	display: block;
+	background:  url(/contents/shop/00000003/image/static/syokutaku/feature12/check-pt01.png) no-repeat 0 0;
+	position: absolute;
+	top:-25px;
+	left: -73px;
+}
+
+#contents_in .section .check-pt02-Box .headLine01 span:before{
+	content: "";
+	width: 73px;
+	height: 58px;
+	display: block;
+	background:  url(/contents/shop/00000003/image/static/syokutaku/feature12/check-pt02.png) no-repeat 0 0;
+	position: absolute;
+	top:-25px;
+	left: -73px;
+}
+
+
+
+#contents_in .section .pointBox {
+	width: 1000px;
+	margin: 0 auto 60px;
+	padding: 25px;
+	position: relative;
+	border: 3px solid #f39801;
+	background-color: #FFF;
+	box-sizing: border-box;
+}
+
+#contents_in .section .pointBox .ttl {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: -106px;
+	text-align: center;
+}
+
+#contents_in .section .pointBox .ttl span {
+	padding: 0 20px;
+	display: inline-block;
+	background-color: #FFF;
+}
+
+#contents_in .section .pointBox .sub {
+	padding: 38px 0 31px;
+	text-align: center;
+	background-color: #FFF2DD;
+}
+
+#contents_in .section .text01 {
+	margin-bottom: 36px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 1.875;
+	letter-spacing: 1px;
+}
+
+#contents_in .section .pointBox .text01{
+	margin-bottom: 0;
+}
+
+#contents_in .section .text01 .cor {
+	color: #f59800;
+	vertical-align: unset;
+}
+
+#feature12{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#feature12 .detail-bnr{
+	width:480px;
+	margin:0 auto 40px;
+	text-align:center;
+	color:#fff;
+	padding:125px 0 88px;
+	float: left;
+}
+
+#feature12 .detail-bnr.bg01{
+	background-image:url(../../../image/static/syokutaku/feature12/detail-bnr-bg01.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	margin-right: 40px;
+}
+
+#feature12 .detail-bnr.bg02{
+	background-image:url(../../../image/static/syokutaku/feature12/detail-bnr-bg02.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+
+
+
+#feature12 .detail-bnr .brand{
+	font-size:20px;
+	margin-bottom: 28px;
+}
+
+#feature12 .detail-bnr .ttl{
+	margin-bottom:80px;
+}
+.btn{
+	width:353px;
+	margin: 0 auto;
+}
+.btn a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	position:relative;
+	padding:15px;
+	font-size:18px;
+	text-align:center;
+	border-radius:4px;
+	box-shadow:0 4px #cb800e;
+}
+
+.select-column .btn a{
+	padding:5px;
+}
+
+.btn a span{
+	position:relative;
+	padding-left:30px;
+}
+.btn a span::before,
+.btn a span::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+.btn a span::before{
+	width: 6px;
+	height: 6px;
+	left:0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.btn a:hover{
+	box-shadow:0 0 #55781C;
+	transform:translateY(4px);
+}
+
+
+#contents_in .noticeBox {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 45px 0;
+}
+
+@media screen and (max-width:767px) {
+	#contents_in .main-visual {
+	margin-bottom: 23px;
+}
+
+	#contents_in .section {
+		margin: 0 15px;
+		padding: 0;
+		width: auto;
+	}
+
+	#contents_in .section .pTop {
+		margin-bottom: 56px;
+		font-size: 13px;
+		line-height: 2.1;
+		letter-spacing: 0.7px;
+		text-align: left;
+	}
+
+	#contents_in .section .pTop .cor {
+		font-size: 17px;
+		line-height: 1;
+	}
+
+	#contents_in .section .headLine01 span:before{
+		content: "";
+		width: 56px;
+		height: 46px;
+		background:  url(/contents/shop/00000003/image/static/syokutaku/feature12/sp/check-pt01.png) no-repeat 0 0;
+		background-size: cover;
+		position: absolute;
+		top: -26px;
+		left: -22%;
+}
+
+	#contents_in .section .check-pt02-Box .headLine01 span:before{
+		content: "";
+		width: 56px;
+		height: 46px;
+		background:  url(/contents/shop/00000003/image/static/syokutaku/feature12/sp/check-pt02.png) no-repeat 0 0;
+		background-size: cover;
+		position: absolute;
+		top: -25px;
+		left: -24%;
+}
+
+	#contents_in .section .check-pt01-Box {
+		margin-bottom: 55px;
+}
+
+	.section .check-pt01-Box p {
+		font-size: 13px;
+		line-height: 1.7;
+		margin-bottom: 14px;
+	}
+
+	.section .check-pt01-Box ul li {
+		width: 100%;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 1.4;
+		color: #f57900;
+		border: 2px solid #f39801;
+		margin-bottom: 9px;
+		display: flex;
+		align-items: center;
+		padding-right: 12px;
+	}
+	
+	.section .check-pt01-Box ul li .check-label{
+		padding: 15px 10px;
+		min-width: 64px;
+		width: 64px;
+		margin-right: 23px;
+	}
+	.section .check-pt01-Box ul li .check-label img{
+		width: auto;
+		height: 10px;
+	}
+	
+	.section .check-pt02-Box {
+	margin-bottom: 30px;
+	}
+
+	.section .check-pt02-Box p {
+	font-size: 13px;
+	line-height: 1.7;
+	margin-bottom: 17px;
+	}
+
+	.check-pt02-Box .select-block .select-column {
+		width: 100%;
+		border: 1px solid #f39801;
+		text-align: center;
+		float: left;
+		padding-bottom: 13px;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+	.check-pt02-Box .select-block .select-column .column-ttl {
+		font-size: 21px;
+		margin-bottom: 19px;
+		padding: 12px;
+}
+
+	.check-pt02-Box .select-block .select-column p {
+	font-size: 12px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+	.check-pt02-Box .recipe-flow img {
+		margin-top: 25px;
+}
+
+	.recipeBox {
+		margin-bottom: 20px;
+	}
+
+	.recipeBox.recipe1 {
+		margin-bottom: 40px;
+	}
+
+	.recipeBox.recipe2 {
+		margin-bottom: 40px;
+	}
+
+	.recipeBox .recipeTtl {
+		margin-bottom: 20px;
+	}
+
+	.recipeBox p {
+		font-size: 12px;
+		line-height: 1.6;
+	}
+
+	#contents_in .section .imgBox01 {
+		margin: 0 0px 23px;
+		width: 100%;
+		float: none;
+	}
+
+	#contents_in .section .imgBox01 .txtBox {
+		margin-bottom: 23px;
+		width: auto;
+		float: none;
+	}
+
+	#contents_in .section .imgBox01 .txtBox .ttl {
+		margin-bottom: 5px;
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	#contents_in .section .imgBox01 .txtBox .ttl .sml {
+		font-size: 13px;
+	}
+
+	#contents_in .section .imgBox01 .txtBox p {
+		margin-bottom: 26px;
+		line-height: 1.8;
+		font-size: 13px;
+	}
+
+	.recipeBox .imgBox01 .txtBox .txtList.cf {
+		margin-bottom: 22px;
+}
+
+	#contents_in .section .imgBox01 .txtBox .txtList li {
+		padding: 9px 0;
+		margin-right: 0px;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	#contents_in .section .imgBox01 .txtBox .txtList li:nth-child(2n) {
+		float: right;
+	}
+
+	#contents_in .section .imgBox01 .txtBox .txtList li .txt {
+		right: 1px;
+		top: 7px;
+	}
+
+	#contents_in .section .imgBox01 .txtBox .txtList .none {
+		border-bottom: 1px solid #E6E6E6;
+	}
+
+	#contents_in .section .imgBox01 .txtBox h3 {
+		font-size: 16px;
+	}
+
+	#contents_in .section .imgBox01 .phoBox {
+		margin: 0 auto;
+		padding: 0;
+		float: none;
+		width: 84.5%;
+	}
+
+	#contents_in .section .imgBox01 .phoBox img {
+		width: 75%;
+	}
+
+	.recipeBox .imgBox02{
+		float: none;
+		text-align: center;
+		margin-bottom: 17px;
+	}
+
+	.recipeBox .imgBox02 img{
+		width: 82%;
+		margin: 0 auto;
+}
+
+	#contents_in .section .headLine01 {
+		margin-bottom: 16px;
+		padding-bottom: 13px;
+		background: url(/contents/shop/00000003/image/static/syokutaku/feature12/sp/line01.gif) no-repeat left bottom;
+		background-size: 100% 1px;
+	}
+
+	#contents_in .section .headLine01 span {
+	padding: 0 7px 5px 6px;
+	font-size: 17px;
+	background-size: 6px 6px;
+	margin-left: 15%;
+	}
+
+
+	#contents_in .section .pointBox {
+		width: auto;
+		margin: 0 auto 41px;
+		padding: 12px;
+		border: 2px solid #f39801;
+	}
+
+	#contents_in .section .pointBox .ttl {
+		width: 100%;
+		left: 0;
+		top: -79px;
+		text-align: center;
+	}
+
+	#contents_in .section .pointBox .ttl span {
+		padding: 0 10px;
+		display: inline-block;
+	}
+
+	#contents_in .section .pointBox .ttl span .only-sp {
+		width: 255px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#contents_in .section .pointBox .sub {
+		padding: 18px 8px 20px;
+		text-align: left;
+	}
+
+	#contents_in .section .pointBox .sub p {
+		font-size: 12px;
+		line-height: 1.6;
+		letter-spacing: 0px;
+	}
+
+	#contents_in .section .text01 {
+		margin: 0 3px 19px;
+		text-align: left;
+		font-size: 12px;
+		line-height: 1.8;
+		text-align: center;
+	}
+
+	#contents_in #feature12 .noticeBox .text {
+		margin: 0 15px;
+		letter-spacing: -1px;
+	}
+
+	.select-column .btn{
+	width: 83%;
+	}
+
+	.btn{
+		width:226px;
+		margin: 0 auto;
+	}
+	.btn a{
+		padding:10px;
+		font-size:13px;
+		border-radius:2px;
+		box-shadow:0 2px #cb800e;
+	}
+	.btn a span{
+		padding-left:12px;
+	}
+	.btn a span::before{
+		width: 4px;
+		height: 4px;
+	}
+
+	.select-column .btn a {
+		padding: 11px;
+	}
+
+	#contents_in .noticeBox {
+		padding: 25px 5px 22px;
+		width: 92%;
+	}
+
+	#feature12 {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	#feature12 .detail-bnr{
+		width:100%;
+		margin:0 auto 25px;
+		padding:77px 0 43px;
+	}
+	#feature12 .detail-bnr .brand{
+		font-size:13px;
+		margin-bottom: 18px;
+	}
+	#feature12 .detail-bnr hr{
+		width:38px;
+		margin:20px auto;
+	}
+	#feature12 .detail-bnr .ttl{
+		margin-bottom:54px;
+	}
+	#feature12 .detail-bnr .ttl img{
+		width:298px;
+	}
+	
+	#feature12 .detail-bnr.bg02 .ttl img {
+	width: 247px;
+	}
+	
+	
+	
+	
+	
+	
+}
