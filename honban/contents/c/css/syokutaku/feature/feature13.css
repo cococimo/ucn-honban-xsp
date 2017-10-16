@@ -1,0 +1,115 @@
+@charset "utf-8";
+.appeal_block {width: 783px;height: 307px;margin: 0 auto;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/appeal_bg.jpg) no-repeat;padding-top: 45px;}
+.appeal_block img { margin-bottom: 30px; }
+.appeal_link { width: 523px; margin: 0 auto; background: #ef5316; display: flex; align-items: center; height: 94px; padding: 0 30px; border-radius: 4px; text-decoration: none; position: relative; box-shadow: 0 4px #9e3b14; cursor: pointer; }
+.appeal_link:hover { transform: translateY(4px); box-shadow: none; }
+.appeal_link:after { position: absolute; top: 0; bottom: 0; right: 30px; margin: auto; content: ""; vertical-align: middle; width: 8px; height: 8px; border-top: 2px solid #fff; border-right: 2px solid #fff; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.appeal_link .link_balloon { font-size: 17px; font-weight: bold; color: #ef5316; width: 140px; height: 57px; background: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; line-height: 1.3; position: relative; }
+.appeal_link .link_balloon:after { content: ''; position: absolute; top: 0; bottom: 0; right: -5px; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 7px; border-color: transparent transparent transparent #fff; margin: auto; }
+.appeal_link span {margin-left: 22px;color: #fff;font-weight: bold;font-size: 23px;text-align: left;}
+.sec_heading {font-size: 29px;font-weight: bold;line-height: 1.5;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/txt_border.png) repeat-x;display: inline-block;background-position: bottom 4px center;margin-bottom: 20px;}
+.sec_txt {font-size: 16px;line-height: 2.25;letter-spacing: 0.05em;margin-bottom: 23px;}
+.emphasise_txt { font-size: 22px; font-weight: bold; color: #ef5316; vertical-align: baseline; }
+
+.main-visual {margin-bottom: 68px;}
+
+.sec_01 { text-align: center; margin-bottom: 60px; padding-bottom: 60px; border-bottom:1px solid #cacaca; }
+.sec_01 .sec_01_main-visual {background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec01_img01_bg.jpg) no-repeat;position: relative;margin-bottom: 20px;}
+.sec_01 .sec_01_main-visual img { margin-top: 70px; }
+
+.sec_02 {text-align: center;margin-bottom: 70px;padding-bottom: 87px;border-bottom:1px solid #cacaca;}
+.sec_02 > img {margin: 10px auto 16px;display: block;}
+.sec_02 > p { margin-bottom: 60px; }
+.sec_02 .point_block_wrap { height: 940px; display: block; position: relative; background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec02_main_img.png) no-repeat; background-position: top center; margin-bottom: 20px; }
+.sec_02 .point_block_wrap .point_block { width: 370px; }
+.sec_02 .point_block_wrap .point_block .point_block_tit_wrap { height: 130px; background: url(/contents/shop/00000003/image/static/syokutaku/feature13/point_pattern_bg.jpg) no-repeat; padding-top: 50px; position: relative; }
+.sec_02 .point_block_wrap .point_block .point_block_tit_wrap:after { content: ''; background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec02_num01.png) no-repeat; width: 100px; height: 89px; display: block; position: absolute; left: 0; right: 0; top: -50px; margin: auto; -webkit-background-size: cover; background-size: cover; }
+.sec_02 .point_block_wrap .point_block .point_block_tit_wrap h4 { color: #fff; font-size: 24px; font-weight: bold; line-height: 1.45; letter-spacing: 0.05em; }
+.sec_02 .point_block_wrap .point_block .point_block_cont {border: 2px solid #f15c18;border-radius: 0 0 5px 5px;border-top:none;padding: 27px 5px 0;}
+.sec_02 .point_block_wrap .point_block .point_block_cont img {margin-bottom: 20px;}
+.sec_02 .point_block_wrap .point_block .point_block_cont p { font-size: 16px; line-height: 1.625; letter-spacing: 0.05em; margin-bottom: 26px; }
+
+.sec_02 .point_block_wrap .point_block.point_block01 {position: absolute;left: 0;top: 37px;}
+.sec_02 .point_block_wrap .point_block.point_block02 {position: absolute;right: 0;top: 37px;}
+.sec_02 .point_block_wrap .point_block.point_block02 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec02_num02.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+.sec_02 .point_block_wrap .point_block.point_block03 {position: absolute;left: 0;bottom: 77px;}
+.sec_02 .point_block_wrap .point_block.point_block03 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec02_num03.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+.sec_02 .point_block_wrap .point_block.point_block04 {position: absolute;right: 0;bottom: 77px;}
+.sec_02 .point_block_wrap .point_block.point_block04 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec02_num04.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+
+
+
+.sec_03 {text-align: center;margin-bottom: 100px;}
+.sec_03 .sec_03_block {width: 1000px;height: 350px;margin: 30px auto 19px;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec_03_01_bg.jpg) no-repeat;}
+.sec_03 .sec_03_block .sec_03_block_txt { width: 430px; height: 350px; display: flex; justify-content: center; align-items: center; flex-direction: column; color: #fff; }
+.sec_03 .sec_03_block .sec_03_block_txt h4 { font-size: 24px; font-weight: bold; line-height: 1.25; letter-spacing: 0.02em; padding-bottom: 26px; margin-bottom: 26px; position: relative; }
+.sec_03 .sec_03_block .sec_03_block_txt h4:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 50px; height: 2px; background: #fff; display: block; margin: auto; }
+.sec_03 .sec_03_block .sec_03_block_txt p { line-height: 1.875; font-size: 16px; letter-spacing: 0.02em; }
+.sec_03 .sec_03_block.sec_03_block_02 {background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec_03_02_bg.jpg) no-repeat;/* margin-bottom: 90px; */margin: 0 auto 90px;}
+.sec_03 .sec_03_block.sec_03_block_01 .sec_03_block_txt { float: right; }
+.sec_03 .sec_03_block.sec_03_block_02 .sec_03_block_txt { width: 430px; }
+.sec_03 .bigger_appeal_block {width: 1000px;height: 510px;margin: 0 auto;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sec_03_03_bg.jpg) no-repeat;margin-bottom: 30px;}
+.sec_03 .bigger_appeal_block .inner {padding-top: 60px;}
+.sec_03 .bigger_appeal_block .inner p {font-size: 20px;color: #fff;line-height: 1.8;margin-bottom: 24px;}
+.sec_03 .bigger_appeal_block .inner img { margin-bottom: 40px; }
+
+
+@media screen and (max-width: 767px) {
+	
+	.appeal_block {width: 100%;height: 0;margin: 0 auto;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/appeal_bg.jpg) no-repeat;padding-top: 0;background-size: 100%;padding-bottom: 44.25%;padding-top: 5%;}
+	.appeal_block img {margin-bottom: 5%;}
+	.appeal_link {width: 82%; height: 60px;padding: 0 15px; }
+	.appeal_link:hover { transform: translateY(4px); box-shadow: none; }
+	.appeal_link:after { position: absolute; top: 0; bottom: 0; right: 30px; margin: auto; content: ""; vertical-align: middle; width: 8px; height: 8px; border-top: 2px solid #fff; border-right: 2px solid #fff; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+	.appeal_link .link_balloon {font-size: 10px;width: 85px;height: 40px; }
+	.appeal_link .link_balloon:after { content: ''; position: absolute; top: 0; bottom: 0; right: -5px; width: 0; height: 0; border-style: solid; border-width: 6.5px 0 6.5px 7px; border-color: transparent transparent transparent #fff; margin: auto; }
+	.appeal_link span {margin-left: 11px; font-size: 12px; }
+	.sec_heading {font-size: 17px;/ line-height: 1.5;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/txt_border.png) repeat-x;display: inline;background-position: bottom -3px center; background-size: 1px 17px; padding-bottom: 2px;}
+	.sec_txt {font-size: 13px;line-height: 2.15;letter-spacing: 0.05em;margin-bottom: 30px;text-align: left;}
+	.emphasise_txt {font-size: 17px;font-weight: bold;color: #ef5316;vertical-align: baseline;}
+	
+	.main-visual {margin-bottom: 20px;}
+	.sec_01 { padding-bottom: 30px; margin: 0 15px 24px;}
+	.sec_01 > p {margin: 20px 0 10px;}
+	.sec_01 .sec_01_main-visual {background: none; }
+	.sec_01 .sec_01_main-visual img {margin-top: 0;}
+	
+	.sec_02 { padding-bottom: 30px;margin: 0 15px 25px; }
+	.sec_02 > img {margin: 20px 0 20px;}
+	.sec_02 > p { margin-bottom: 60px; }
+	.sec_02 .point_block_wrap {height: auto; background: none; margin-bottom: 0;display: flex;flex-wrap: wrap;width: 100%;justify-content: space-between;}
+	.sec_02 .point_block_wrap .point_block {width: 48.55%;margin-bottom: 12%;}
+	.sec_02 .point_block_wrap .point_block .point_block_tit_wrap {height: 0;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/point_pattern_bg.jpg) no-repeat;padding-bottom: 38%;position: relative;background-size: cover;width: 100%;padding-top: 0;}
+	.sec_02 .point_block_wrap .point_block .point_block_tit_wrap:after {content: '';background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec02_num01.png) no-repeat;width: 100%;height: 0; top: -50%; -webkit-background-size: cover;background-size: cover;padding-bottom: 30%;}
+	.sec_02 .point_block_wrap .point_block .point_block_tit_wrap h4 { font-size: 12px; padding-top: 14%;}
+	.sec_02 .point_block_wrap .point_block .point_block_cont img {margin-bottom: 20px;}
+	.sec_02 .point_block_wrap .point_block .point_block_cont p {font-size: 11px; margin-bottom: 12px;}
+	
+	.sec_02 .point_block_wrap .point_block.point_block01 {position: static; }
+	.sec_02 .point_block_wrap .point_block.point_block02 {position: static;right: 0; }
+	.sec_02 .point_block_wrap .point_block.point_block02 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec02_num02.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+	.sec_02 .point_block_wrap .point_block.point_block03 {position: static;left: 0; margin-bottom: 20px;}
+	.sec_02 .point_block_wrap .point_block.point_block03 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec02_num03.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+	.sec_02 .point_block_wrap .point_block.point_block04 {position: static; margin-bottom: 20px;}
+	.sec_02 .point_block_wrap .point_block.point_block04 .point_block_tit_wrap:after { background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec02_num04.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+	
+	
+	
+	.sec_03 {
+		margin-bottom: 0;
+	}
+	.sec_03 .sec_03_block {width: calc(100% - 30px);height: auto;margin: 30px auto 20px;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec_03_01_bg.jpg) no-repeat;padding-top: 46%;background-size: contain;}
+	.sec_03 .sec_03_block .sec_03_block_txt {width: 100%;height: auto; }
+	.sec_03 .sec_03_block .sec_03_block_txt h4 {font-size: 14px; padding-bottom: 13px;margin-bottom: 13px; }
+	.sec_03 .sec_03_block .sec_03_block_txt h4:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 50px; height: 2px; background: #fff; display: block; margin: auto; }
+	.sec_03 .sec_03_block .sec_03_block_txt p { font-size: 12px; }
+	.sec_03 .sec_03_block.sec_03_block_02 {background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec_03_02_bg.jpg) no-repeat;margin-bottom: 50px;background-size: contain;}
+	.sec_03 .sec_03_block.sec_03_block_01 .sec_03_block_txt {float: none;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec_03_block_txt_bg.jpg);padding: 5% 0;}
+	.sec_03 .sec_03_block.sec_03_block_02 .sec_03_block_txt {width: 100%;background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec_03_block_txt_bg.jpg);padding: 5% 0;}
+	.sec_03 .bigger_appeal_block {width: 100%;height: auto; background: url(/contents/shop/00000003/image/static/syokutaku/feature13/sp/sec_03_03_bg.jpg) no-repeat; background-size: cover; }
+	.sec_03 .bigger_appeal_block .inner {padding: 10% 0;}
+	.sec_03 .bigger_appeal_block .inner p {font-size: 12px; margin-bottom: 10px;}
+	.sec_03 .bigger_appeal_block .inner img {margin-bottom: 24px;width: 70%;}
+	
+	
+}
