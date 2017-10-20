@@ -1,0 +1,129 @@
+@charset "Shift_JIS";
+
+#container .kimawashi_contents { text-align:center; }
+#container .kimawashi_title { text-align:center; background:#fff; padding: 10px 0 10px; }
+
+.kimawashi_mainvis {width:100%; margin:0 auto;min-width: 920px;max-width: 1500px;padding: 0 50px;box-sizing: border-box;}
+.kimawashi_mainvis img {width:100%; }
+
+.kimawashi_description { padding:70px 0 91px; font-size:18px; line-height:2; color:#323232; letter-spacing:0.1em; }
+.kimawashi_description p { margin-bottom:2em; }
+.kimawashi_description p:last-child { margin-bottom:0; }
+
+.kimawashi_items {width:1020px;margin:0 auto 70px;/* padding: 0 50px; *//* box-sizing: border-box; */}
+.kimawashi_items_title { margin-bottom:25px; }
+.kimawashi_items_list ul { display:flex; justify-content:space-between; flex-wrap:wrap; }
+
+.kimawashi_item_text { height:121px; font-size:16px; line-height:24px; }
+.kimawashi_item_name:link { color:#1f1f1f; text-decoration:underline; }
+.kimawashi_item_color { font-size:14px; color:#787878; }
+.kimawashi_item_price { color:#1f1f1f; line-height:26px; }
+
+.kimawashi_anchors { width:100%; max-width:1280px; margin:0 auto 200px; padding:4px 0; background:url(/contents/shop/00000006/shop/image/kigokochi/feature43/bg_01.jpg) repeat-x; }
+.kimawashi_anchors ul { width:1020px; margin:0 auto; display:flex; justify-content:space-between; }
+.kimawashi_anchors li { background:#dfdad7; }
+
+.kimawashi_days { width:100%; max-width:1380px; margin:0 auto; padding: 0 50px; box-sizing: border-box;}
+.kimawashi_day { margin-bottom:151px; }
+.kimawashi_day_mainvis { position:relative; margin-bottom:60px; }
+.kimawashi_day_mainvis img { width:100%; }
+.kimawashi_day_mainvis_notes { position:absolute; right:0; bottom:-30px; font-size:12px; line-height:2; }
+.kimawashi_day:nth-child(even) .kimawashi_day_mainvis_notes { right:auto; left:0; }
+.kimawashi_day_items ul {display:flex;justify-content:center;width: 100%; overflow: hidden; }
+.kimawashi_day_item { position:relative; padding:0 32px 120px 0; }
+.kimawashi_day_item:last-child { padding-right:0; }
+.kimawashi_day_item .kimawashi_item_image { position:relative; }
+.kimawashi_day_item .kimawashi_item_image img { width: 100%; }
+.kimawashi_day_item .kimawashi_item_image::after { content:""; position:absolute; z-index:1; right:0; top:46.9%; width:32px; height:32px; background:url(/contents/shop/00000006/shop/image/kigokochi/feature43/cross.png) no-repeat center center; }
+.kimawashi_day_item:last-child .kimawashi_item_image::after { display:none; }
+.kimawashi_day_item .kimawashi_item_text { box-sizing:border-box; position:absolute; left:0; bottom:0; width:100%; padding-right:32px; }
+.kimawashi_day_item:last-child .kimawashi_item_text { padding-right:0; }
+
+#day1 .kimawashi_item_01 { left:-30px; }
+#day1 .kimawashi_item_01 .kimawashi_item_image { top:74px; }
+#day1 .kimawashi_item_04 { left:26px; }
+#day1 .kimawashi_item_image::after { right:-52px; }
+
+#day2 .kimawashi_item_02 {margin-left:44px;/* width: 29%; */}
+#day2 .kimawashi_item_image::after { right:-32px; }
+
+#day3 .kimawashi_item_01 { left:-24px; }
+#day3 .kimawashi_item_01 .kimawashi_item_image { top:74px; }
+#day3 .kimawashi_item_01 .kimawashi_item_image::after { right:-35px; top:46.2%; }
+#day3 .kimawashi_item_02 { left:-7px; }
+#day3 .kimawashi_item_02 .kimawashi_item_image { top:66px; }
+#day3 .kimawashi_item_02 .kimawashi_item_image::after { right:-46px; top:47.9%; }
+#day3 .kimawashi_item_04 { left:6px; }
+
+#day4 .kimawashi_item_01 { margin-left:-6px; }
+#day4 .kimawashi_item_06 { left:50px; }
+#day4 .kimawashi_item_image::after { right:-53px; top:46.7%; }
+
+#day5 .kimawashi_item_03 { margin-left:5px; left:-35px; }
+#day5 .kimawashi_item_03 .kimawashi_item_image { top:67px; }
+#day5 .kimawashi_item_image::after { right:-51px; top:47%; }
+
+#day6 .kimawashi_item_02 { left:-6px; }
+#day6 .kimawashi_item_06 { left:88px; }
+#day6 .kimawashi_item_image { margin-bottom:12px; }
+#day6 .kimawashi_item_image::after { right:-97px; }
+
+#day7 .kimawashi_item_01 { margin-left:19px; }
+#day7 .kimawashi_item_01 .kimawashi_item_image { top:72px; }
+#day7 .kimawashi_item_05 { left:49px; }
+#day7 .kimawashi_item_image::after { right:-73px; top:45.5%; }
+
+#day8 .kimawashi_day_item { padding-bottom:108px; }
+#day8 .kimawashi_item_02 { left:-24px; }
+#day8 .kimawashi_item_02 .kimawashi_item_image { top:67px; }
+#day8 .kimawashi_item_04 { left:41px; }
+#day8 .kimawashi_item_image::after { right:-76px; top:47.1%; }
+
+#day9 .kimawashi_item_02 { left:6px; }
+#day9 .kimawashi_item_02 .kimawashi_item_image { top:66px; }
+#day9 .kimawashi_item_05 { left:100px; }
+#day9 .kimawashi_item_image::after { right:-118px; }
+
+#day10 .kimawashi_item_03 { left:11px; }
+#day10 .kimawashi_item_03 .kimawashi_item_image { top:65px; }
+#day10 .kimawashi_item_05 { left:55px; }
+#day10 .kimawashi_item_image::after { right:-81px; top:47%; }
+
+
+
+@media screen and (max-width:640px) {
+	
+	.kimawashi_mainvis {min-width: auto;max-width: inherit;padding: 0;}
+	
+	#container .kimawashi_contents img { width:100%; }
+	
+	#container .kimawashi_title { padding:0; margin:0 !important; }
+	
+	.kimawashi_description { padding:32px 0 45px; font-size:12px; line-height:1.5; }
+	.kimawashi_description p { margin-bottom:1.4em; }
+	
+	.kimawashi_items { width:auto; padding:0 15px; margin-bottom:15px; }
+	.kimawashi_items_list li { width:46.376812%; }
+	
+	.kimawashi_item_text { height:100px; font-size:12px; line-height:20px; padding-top:8px; }
+	.kimawashi_item_color { font-size:11px; }
+	.kimawashi_item_price { line-height:inherit; }
+	
+	.kimawashi_anchors { padding:5px 15px; margin-bottom:50px; background:url(/contents/shop/00000006/shop/image/kigokochi/feature43/sp/bg_01.jpg); background-size:10px auto; }
+	.kimawashi_anchors ul { width:auto; flex-wrap:wrap; }
+	.kimawashi_anchors li { width:17.681159%; margin:5px 0; }
+	
+	.kimawashi_days { width:auto; padding:0 15px; }
+	.kimawashi_day { margin-bottom:48px; }
+	.kimawashi_day_mainvis { margin-bottom:30px; }
+	.kimawashi_day_mainvis_notes,
+	.kimawashi_day:nth-child(even) .kimawashi_day_mainvis_notes { right:auto; left:0; bottom:-20px; font-size:11px; line-height:12px; }
+	.kimawashi_day_items ul { flex-direction:column; }
+	.kimawashi_day_item { padding:0 0 108px 0; left:0 !important; top:0 !important; margin:0 !important; }
+	.kimawashi_day_item .kimawashi_item_image { left:0 !important; top:0 !important; }
+	.kimawashi_day_item .kimawashi_item_image::after { display:none; }
+	.kimawashi_day_item .kimawashi_item_text { height:108px; padding:0; }
+	.kimawashi_day_item .kimawashi_item_text::after { content:""; position:absolute; z-index:1; left:0; bottom:0; width:100%; height:30px; background:url(/contents/shop/00000006/shop/image/kigokochi/feature43/sp/cross.png) no-repeat center center; background-size:11px auto; }
+	.kimawashi_day_item:last-child .kimawashi_item_text::after { display:none; }
+	
+}
