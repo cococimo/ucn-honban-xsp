@@ -961,7 +961,7 @@ $(window).on('load resize', function(){
 会員優待セールやポイントアップキャンペーンなどさまざまな企画をご案内する予定です。
 ※ポイントは、代金完済時に、一括で付与されます。
 ※返品された商品の分のポイントは付与されません。
-※ポイントの有・卲ﾀは最終ポイント付与時から2年間です。<br>
+※ポイントの有効期限は最終ポイント付与時から2年間です。<br>
 1ポイント1円となります。
 </dd>
 </dl></div>
@@ -1465,8 +1465,15 @@ s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
 </script>
 <!-- 0908 fujitsu IM -->
 
+<!-- 1019 CRMタグここから -->
+<img src="" id="crmTag" />
+<script>
+var crm_order_no = document.tagForm.order_no.value;
+var crm_toal_price = document.tagForm.total_price.value;
 
-
+document.getElementById("crmTag").src = "https://c.egukct.com/crm/iikigokochi/cv/" + crm_order_no + "/" + crm_toal_price + "/";
+</script>
+<!-- 1019 CRMタグここまで -->
 
 </body>
 <!-- InstanceEnd --></html>

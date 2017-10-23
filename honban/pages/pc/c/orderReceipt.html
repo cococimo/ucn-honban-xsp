@@ -1026,8 +1026,15 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 </script>
 <!-- 0908 fujitsu IM -->
 
+<!-- 1019 CRMタグここから -->
+<img src="" id="crmTag" />
+<script>
+var crm_order_no = document.tagForm.order_no.value;
+var crm_toal_price = document.tagForm.total_price.value;
 
-
+document.getElementById("crmTag").src = "https://c.egukct.com/crm/cococimo/cv/" + crm_order_no + "/" + crm_toal_price + "/";
+</script>
+<!-- 1019 CRMタグここまで -->
 
 </body>
 <!-- InstanceEnd --></html>
