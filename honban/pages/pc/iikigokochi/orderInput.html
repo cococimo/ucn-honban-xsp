@@ -468,6 +468,22 @@ border-radius:5px;
 #payment_020 > label::after {
 	content:'（手数料300円を申し受けます）';
 }
+
+.security_code input {
+	    margin: 6px 2px 2px;
+}
+.security_code .imp {
+	margin-top:-18px;
+}
+
+@media (max-width: 768px) {
+	.security_code .imp {
+		margin-top:0;
+	}
+	.security_code input {
+		    margin: 10px 0 10px 0;
+	}
+}
 </style>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
@@ -1996,9 +2012,7 @@ window.onload = function() {
 	
 	<br clear="all">
 	
-	
-
-	<div class="box_form_table">
+	<div class="box_form_table security_code">
 		<div class="box_form_th">セキュリティコード<br />
 		（半角英数字）<span class="imp">必須</span></div>
 		<div class="box_form_td">
@@ -2007,7 +2021,7 @@ window.onload = function() {
 			<br /><span class="error"><span m:id="h_err_security_code">セキュリィティコード入力エラーメッセージ</span></span>
 			</span>
 			<span class="exp">例：<span  m:id="sample_security_code">0123</span></span></div>
-			<div><label><input  m:id="h_check_security_code" type="checkbox"  value="1" name="check_security_code" />　セキュリティコードを入力しない</label></div>
+			<!-- <div><label><input  m:id="h_check_security_code" type="checkbox"  value="1" name="check_security_code" />　セキュリティコードを入力しない</label></div> -->
 		</div>
 	</div>
 
