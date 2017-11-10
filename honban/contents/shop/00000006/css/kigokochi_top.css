@@ -1,4 +1,85 @@
 /* ---------------------------------
+	NEWS PAPER
+---------------------------------- */
+.wrap_specialcontents.newspaper{
+	padding: 40px 0 0;
+	margin-bottom: -120px !important;
+}
+#contents .wrap_specialcontents h2{
+	margin-bottom: 40px !important;
+}
+.wrap_specialcontents.newspaper .ttl_section_en{
+	height: 27px;
+}
+.wrap_specialcontents.newspaper .ttl_section_en img{
+	margin: auto;
+}
+.wrap_specialcontents.newspaper .ttl_section_jp{
+	height: 16px;
+  bottom: -18px;
+}
+.wrap_specialcontents.newspaper .ttl_section_jp img{
+	width: auto;
+	margin: auto;
+}
+.wrap_specialcontents.newspaper .bnr-area{
+	background-color: #FDECD2;
+	padding: 50px 0;
+}
+.wrap_specialcontents.newspaper .bnr-area-inner{
+	min-width: 1020px;
+	max-width: 1400px;
+	margin: auto;
+}
+.wrap_specialcontents.newspaper .bnr-area-main{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+	margin-bottom: 20px;
+}
+.wrap_specialcontents.newspaper .bnr-area-main div{
+	width: 49.3%;
+}
+.wrap_specialcontents.newspaper .bnr-area-main div img{
+	width: 100%;
+}
+.wrap_specialcontents.newspaper .bnr-area-sub img{
+	margin: auto;
+}
+@media screen and (max-width: 750px) {
+.wrap_specialcontents.newspaper{
+	padding: 20px 0 !important;
+	margin-bottom: -95px !important;
+}
+#contents .wrap_specialcontents h2{
+	margin-bottom: 25px !important;
+}
+.wrap_specialcontents.newspaper .ttl_section_en{
+	height: 20px;
+}
+.wrap_specialcontents.newspaper .ttl_section_jp{
+	height: 13px;
+  bottom: -13px;
+}
+.wrap_specialcontents.newspaper .bnr-area{
+	padding: 25px 15px;
+}
+.wrap_specialcontents.newspaper .bnr-area-inner{
+	min-width: initial;
+	max-width: initial;
+}
+.wrap_specialcontents.newspaper .bnr-area-main{
+	display: block;
+}
+.wrap_specialcontents.newspaper .bnr-area-main div{
+	width: auto;
+	margin-bottom: 10px;
+}
+}
+
+
+/* ---------------------------------
 	MAIN VISUAL
 ---------------------------------- */
 .mainimages, .mainimagessp{
@@ -327,6 +408,9 @@
 }
 #contents .wrap_specialcontents .img_special .ttl.feature44{
 	width:71.159420289%;
+}
+#contents .wrap_specialcontents .img_special .ttl.feature45{
+	width:68.695652173%;
 }
 
 #contents .wrap_specialcontents .img_special .ttl.catalog{
