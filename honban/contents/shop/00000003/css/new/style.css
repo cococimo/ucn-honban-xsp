@@ -1635,10 +1635,43 @@
 	float: left;
 	width: 434px;
 	margin: 0 12px 12px 0;
+	border: 1px solid #D6D6D6;
+	padding:3px;
+}
+.category_feature .feature ul li:nth-child(odd) {
+	clear:left;
 }
 .category_feature .feature ul li a {
 	display: block;
+	color:inherit;
+	text-decoration:none;
 }
+.category_feature .feature ul li a .caption {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-top:3px;
+	min-height:47px;
+}
+.category_feature .feature ul li a .text{
+	font-size:16px;
+	padding:0 10px;
+	line-height:1.25;
+}
+.category_feature .feature ul li a .icon {
+	min-width:80px;
+	color:#fff;
+	line-height:47px;
+	text-align: center;
+	font-size:20px;
+}
+.category_feature .feature ul li a .icon.feature {
+	background-color:#49BB11;
+}
+.category_feature .feature ul li a .icon.new {
+	background-color:#CC1010;
+}
+
 .category_feature .feature_btnBox {
 	margin-top: 12px;
 	background: url(/contents/c/goods/image/new/cart/bg_pattern01.png) repeat;
@@ -10742,7 +10775,7 @@
 		line-height: 1.4;
 	}
 }
-/* ¥¥¥ 2017.05.01 ELTEXC³ ¥¥¥ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2017.05.01 ELTEXï¿½Cï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 #home .search_item_keyword {
 	overflow: visible;
 	display: inline-block;
@@ -10753,4 +10786,67 @@
 		display: block;
 	}
 }
-/* £££ 2017.05.01 ELTEXC³ £££ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2017.05.01 ELTEXï¿½Cï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2017.05.29 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß“ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½Oï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ÏX ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#home .feature_tit {margin-top: 60px;}
+#home .ranking_tit {margin-top: 0;}
+
+@media screen and (max-width: 767px){
+	#home .feature_tit {margin-top: 30px;}
+}
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2017.05.29 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß“ï¿½ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½Oï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ÏX ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+
+
+/*ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤ºèª¿æ•´(PCç‰ˆ)ã€€20171117 â–¼â–¼
+=========================================== */
+@media screen and (min-width: 768px) {
+	.header_logo {
+	    width: 120px;
+	    height: 30px;
+	    top: 5px;
+	}
+	.header_top {
+	    padding-top: 10px;
+	    height: 52px;
+	}
+
+	.header_tell {
+	    width: 530px;
+	}
+	.header_bottom {
+	    padding-bottom: 8px;
+	}
+	#category .category_list > ul > li > div a, #goods .category_list > ul > li > div a {
+	    padding: 5px 30px 3px 50px !important;
+	    font-size: 15px !important;
+	    line-height: 1.25;
+	}
+	#category .category_list > ul > li > div a:after {
+		position: absolute;
+		right: 10px;
+		top: 18px;
+	}
+	#category .category_list > ul > li>div, #goods .category_list > ul > li>div {
+	    min-height: 50px !important;
+	    height: 50px !important;
+	}
+	#category .category_list > ul > li > div a .category_list_img, #goods .category_list > ul > li > div a .category_list_img {
+	    top: 10px;
+	    left: 10px;
+	    width: 30px !important;
+	    height: 30px !important;
+	}
+	.word_area {
+	    margin-top: 8px;
+	}
+	#home .main_visual.pc_only {
+		padding: 14px 0 28px;
+	}
+}
+
+/*ãƒ˜ãƒƒãƒ€ãƒ¼è¡¨ç¤ºèª¿æ•´(PCç‰ˆ)ã€€20171117 â–²â–²
+=========================================== */
+
+
+
