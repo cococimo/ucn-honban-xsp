@@ -1,0 +1,146 @@
+@charset "Shift_JIS";
+
+#container .kimawashi_contents { text-align:center; min-width: 1020px; }
+#container .kimawashi_title { margin-bottom: 44px; padding: 6px 0 0 0; text-align:center; background:#fff; }
+#container .kimawashi_title img { width: 100%; max-width: 1020px;}
+
+.kimawashi_mainvis { width:100%; max-width:1400px; margin:0 auto 50px; }
+.kimawashi_mainvis img { width:100%; }
+
+.kimawashi_description { width:100%; max-width:1400px; margin:0 auto 150px; padding:127px 0 122px; font-size:18px; line-height:2; color:#323232; letter-spacing:0.1em; background:url(/contents/shop/00000006/shop/image/kigokochi/feature46/description_bg.jpg) no-repeat top center; background-size:cover; }
+.kimawashi_description .ttl_d { margin-bottom:47px; }
+.kimawashi_description p { margin-bottom:1.6em; }
+.kimawashi_description p:last-child { margin-bottom:0; }
+
+.image_box { background: url(/contents/shop/00000006/shop/image/kigokochi/feature46/description01_bg.jpg) no-repeat center top; margin-bottom:149px; padding: 0 10px;}
+.image_box .sub_img_box { max-width:1220px;min-width: 950px; margin: 0 auto; padding-left: 60px;}
+.image_box .sub_box { margin-top:108px; width: 45%; text-align:left; float: left; }
+.image_box .ttl_d { margin-bottom:35px; }
+.image_box .ttl_d img { width: 100%; max-width: 502px;}
+.image_box span { margin:3px 0 7px; padding-top: 3px; display: inline-block; color: #B52429; font-weight: bold; line-height: 1.2; background:url(/contents/shop/00000006/shop/image/kigokochi/feature46/span_bg.png) repeat left top; }
+.image_box p { margin-bottom:1.2em; font-size:18px; line-height:2; color:#323232;}
+.image_box .photo { float:right; margin:-70px 0 -70px; width: 49.2%; }
+.image_box .photo img { width: 100%; max-width: 600px;}
+
+.image_box01 .ttl_d img { max-width: 497px;}
+.image_box01 .sub_box {  float: right; padding-right: 10px }
+.image_box01 .photo { float:left; margin-left: -60px; }
+
+.kimawashi_items { width:1020px; margin:0 auto 220px; position:relative; }
+.kimawashi_items_title { position:absolute; right:0; top:70px; }
+.kimawashi_items_list > ul { margin-top:-60px; }
+.kimawashi_items_list ul li { float:left; }
+.kimawashi_items_list > ul > li { width:480px; margin-top:60px; }
+.kimawashi_items_list ul li:nth-child(2n) { float:right; }
+.kimawashi_items_list .list01 { margin-top:265px; }
+
+.commodity { margin-bottom: 220px; text-align:center; display: inline-block;}
+.commodity .photo { margin: 0 0 38px 16px; }
+.commodity01 { margin-bottom: 102px; }
+
+.prick { margin:0 auto 101px; padding: 35px 43px 42px 40px; width: 1020px; box-sizing: border-box;
+background:url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_top.jpg) repeat-x left top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_left.jpg) repeat-y left top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_right.jpg) repeat-y right top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_bottom.jpg) repeat-x left bottom,#F9F3E5; }
+.prick .textBox { float: left; width: 640px; font-size:16px; line-height:2.2; color:#323232; letter-spacing:0.1em; }
+.prick .textBox .ttl { margin:0 0 30px; text-align: left; }
+.prick .textBox p { margin-left: 30px;}
+.prick .photoBox { margin-top: 8px; float: right; }
+
+.combination { margin: 0 72px 78px; padding: 104px 0 0;  font-size:16px; line-height:2.2; color:#323232; letter-spacing:0.1em; background: url(/contents/shop/00000006/shop/image/kigokochi/feature46/line.png) repeat-x top left;}
+.combination .ttl { margin: 0 0 51px -20px; }
+.combination p { margin-bottom: 20px; }
+.combination p:last-child { margin-bottom: 0; }
+.combination span { font-weight: bold; color: #B5232B; }
+
+.material { margin: 0 auto 100px; max-width:1020px; overflow: hidden;}
+.material .ttl { margin-bottom: 51px; }
+.material .ttl01 { margin-bottom:53px;}
+.material ul { margin: 0 -30px 50px;}
+.material a:last-child ul { margin-bottom:0;}
+.material li { text-align: padding: 0 20px; float: left; width: 33.33%; box-sizing: border-box;}
+.material img { max-width: 100%; }
+.material .icon { margin-bottom: 51px;}
+@media screen and (max-width:1020px) {
+	.material ul { margin: 0 -20px 137px;}
+}
+
+.btm_box { max-width: 1280px; margin: 0 auto; padding: 85px 0 100px;	background: url(/contents/shop/00000006/shop/image/kigokochi/feature46/btm_line.gif) repeat-x left top; }
+.btm_box .title { margin-bottom: 30px; text-align: center; }
+.btm_box ul { margin: 0 auto; width: 1020px;}
+.btm_box li { float: left; width: 400px; padding: 45px 40px 50px; background:url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_top.jpg) repeat-x left top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_left.jpg) repeat-y left top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_right.jpg) repeat-y right top,url(/contents/shop/00000006/shop/image/kigokochi/feature46/box_bg_bottom.jpg) repeat-x left bottom; background-color:#F9F3E5;}
+.btm_box li:last-child { float: right;}
+.btm_box .ttl { margin-bottom: 20px;}
+.btm_box .photo { margin-bottom: 20px;}
+.btm_box .photo img { border: 5px solid #FFF;}
+
+
+
+@media screen and (max-width:640px) {
+	
+	#container .kimawashi_contents { min-width: 0; }
+
+	#container .kimawashi_contents img { width:100%; }
+
+	#container .kimawashi_title { padding:0; margin: 0 15px 21px !important; }
+
+	.kimawashi_mainvis { margin-bottom:21px;}
+	.kimawashi_description { margin-bottom: 26px; padding:44px 0 39px; font-size:12px; line-height:1.85; }
+	.kimawashi_description .ttl_d { margin: 0 13px 17px;}
+	.kimawashi_description p { margin-bottom:1.3em; }
+
+	.image_box { margin-bottom: 178px; padding:42px 20px 0 32px; }
+	.image_box .sub_img_box { min-width:0; padding: 0; }
+	.image_box .ttl_d { margin:0 0 18px; }
+	.image_box .ttl_d img { width: 100%; max-width: 585px;}
+	.image_box span { margin: 2px 0 3px; padding: 1px 0 1px; background-size: 6px auto; }
+	.image_box .sub_box { width:auto; margin: 0 0 27px; float: none; }
+	.image_box p { margin-bottom:1.1em; font-size:12px; line-height:1.85; }
+	.image_box .photo { margin: 0 12px 0 0; width: auto; float: none; }
+	.image_box .photo img { margin-bottom: -145px;}
+	.image_box .photo img.sp_only { display: inline-block !important;}
+
+	.kimawashi_items { width:auto; padding:0 13px; margin-bottom:42px; }
+	.kimawashi_items_title { margin:0 45px 25px; position: static; }
+	.kimawashi_items_list > ul { margin-top:-13px; }
+	.kimawashi_items_list > ul > li { width:47.975%; margin-top:13px; }
+	.kimawashi_items_list > ul > li:last-child { float:right; }
+	.kimawashi_items_list .levelUl { margin-top:-13px; }
+	.kimawashi_items_list .levelUl li { float: none !important; }
+	.kimawashi_items_list .levelUl li { margin-top:13px; }
+	.kimawashi_items_list .list01 { margin-top:13px; }
+	
+	.commodity { margin: 0 33px 43px; }
+	.commodity .photo { margin: 0 0 20px 8px; }
+	.commodity .link { margin: 0 3px; }
+	.commodity01 { margin-bottom: 41px; }
+	
+	.prick { margin:0 13px 43px; padding: 25px 14px 29px; width: auto; background-size: 17px auto,auto 17px,auto 17px,17px auto; }
+	.prick .textBox { float:none; width:auto; font-size:12px; line-height:1.86; }
+	.prick .textBox .ttl { margin: 0 18px 17px 0; }
+	.prick .textBox p { margin: 0 0 18px;}
+	.prick .photoBox { margin: 0 60px; float:none; }
+	
+	.combination { margin: 0 0 30px; padding: 48px 11px 0;  font-size:12px; line-height:1.85; background-image:url(/contents/shop/00000006/shop/image/kigokochi/feature46/sp/line.png); background-size: 8.5px auto; }
+	.combination .ttl { margin: 0 23px 38px 0; }
+	.combination p { margin-bottom: 20px; }
+	.combination p:last-child { margin-bottom: 0; }
+	.combination span { font-weight: bold; color: #B5232B; }
+	
+	.material .ttl { margin: 0 95px 19px; }
+	.material .ttl01 { margin: 0 14px 25px;}
+	.material { margin: 0 0 15px; width:auto; }
+	.material ul { margin: 0 100px 35px; position: relative; }
+	.material li { margin: 0 0 26px; float: none; width: auto;}
+	.material li .color { margin: -5px auto 0;  width: 27%; }
+	.material .icon { margin-bottom: 35px;}
+	.material .icon img { width: 6% !important;}
+	
+	.btm_box { width: auto; padding: 40px 15px; background-size: 8.5px 6px; }
+	.btm_box .title { margin-bottom: 20px; }
+	.btm_box ul { width: auto;}
+	.btm_box li { width: 48%; padding: 15px; background-size: 10px auto, auto 10px, auto 10px, 10px auto;}
+	.btm_box .ttl { margin-bottom: 10px;}
+	.btm_box .photo { margin-bottom: 10px;}
+	.btm_box .photo img { border: 2px solid #FFF;}
+
+
+}
