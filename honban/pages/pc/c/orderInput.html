@@ -33,6 +33,7 @@
 <script src="/contents/c/js/new/common.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
+<script m:id="js_gmo_url" src="https://p01.mul-pay.jp/ext/js/token.js"></script>  
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../contents/shop/00000003/js/selectivizr.js"></script>
 <![endif]-->
@@ -1128,7 +1129,7 @@ $(function(){
 											<tr>
 												<th>カード会社<span class="th_info"><span class="required">必須</span></span></th>
 												<td>
-													<select m:id="h_sel_card_brand" class="memadd_input_01 mb15">
+													<select id="card_brand" m:id="h_sel_card_brand" class="memadd_input_01 mb15">
 														<option m:id="dummy" value="">選択してください--</option>
 														<option m:id="dummy" value="">VISA</option>
 														<option m:id="dummy" value="">MASTER</option>
@@ -1140,6 +1141,7 @@ $(function(){
 														<p class="txt">ご利用いただけるカード</p>
 														<p class="img"><img m:id="icon_image" src="/contents/c/goods/image/new/cart/img_credit01.png" alt="VISA / Master Card / JCB / Diners Club INTERNATIONAL / AMERICAN EXPRESS"></p>
 													</div>
+													<p class="error mt10 s_mt10"><span id="js_err_card_brand"></span></p>
 													<span m:id="h_err_card_brand">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_brand">カード会社は必須です。</span></p>
 													</span>
@@ -1148,7 +1150,7 @@ $(function(){
 											<tr>
 												<th>カード番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
 												<td>
-													<input m:id="h_txt_card_number" type="text" name="card_number" placeholder="例:0123456789000000" />
+													<input m:id="h_txt_card_number" type="text" name="card_number" id="card_number" placeholder="例:0123456789000000" />
 													<p class="example mt10">例：0123456789000000</p>
 													<span m:id="l_equ_regist_card">
 														<div class="mt10">
@@ -1158,6 +1160,7 @@ $(function(){
 														</div>
 													</span>
 													<p class="example cmn_bold mt10">※この画面はSSLが有効になっています</p>
+													<p class="error mt10 s_mt10"><span id="js_err_card_number"></span></p>
 													<span m:id="l_msgPre_card_number">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_number">カード番号入力エラーメッセージ</span></p>
 													</span>
@@ -1167,7 +1170,7 @@ $(function(){
 												<th>セキュリティコード<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_wrap mb10">
-														<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" maxlength="4" placeholder="例:012">
+														<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" id="security_code" maxlength="4" placeholder="例:012">
 														<a class="suffix btn" id="js-securityCodeBtn" href="#about_payment" data-featherlight="#about_secode">セキュリティコードについて</a>
 														<div id="about_secode" class="lightbox">
 															<div class="img mb20"><img src="/contents/c/goods/image/new/cart/img_credit_modal01.png" alt=""></div>
@@ -1181,6 +1184,7 @@ $(function(){
 													</div>
 													<p class="example mb5 viewPc">例：0123</p>
 													<!-- <label><input m:id="h_check_security_code" type="checkbox" value="1" name="check_security_code"><span class="add_ck_in">セキュリティコードを入力しない</span></label> -->
+													<p class="error mt10 s_mt10"><span id="js_err_security_code"></span></p>
 													<span m:id="l_msgPre_security_code">
 														<p class="error mt10 s_mt10"><span m:id="h_err_security_code">セキュリィティコード入力エラーメッセージ</span></p>
 													</span>
@@ -1189,12 +1193,14 @@ $(function(){
 											<tr class="tr_deadline">
 												<th>カードの有効期限<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" m:id="h_txt_card_exp_month" name="card_exp_month" />&nbsp;月&nbsp;/&nbsp;
-													<input type="text" m:id="h_txt_card_exp_year" name="card_exp_year" />&nbsp;年
+													<input type="text" m:id="h_txt_card_exp_month" name="card_exp_month" id="card_exp_month" />&nbsp;月&nbsp;/&nbsp;
+													<input type="text" m:id="h_txt_card_exp_year" name="card_exp_year" id="card_exp_year" />&nbsp;年
 													<p class="example mt10 s_mt10">例：2013年4月の場合 04/13</p>
+													<p class="error mt10 s_mt10"><span id="js_err_card_exp_month"></span></p>
 													<span m:id="l_msgPre_card_exp_month">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_exp_month">有効期限（月）エラーメッセージ</span></p>
 													</span>
+													<p class="error mt10 s_mt10"><span id="js_err_card_exp_year"></span></p>
 													<span m:id="l_msgPre_card_exp_year">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_exp_year">有効期限（年）エラーメッセージ</span></p>
 													</span>
@@ -1224,6 +1230,8 @@ $(function(){
 													<input m:id="h_hid_save_card" type="hidden" name="save_card" value="1" />
 													<input m:id="h_hid_credit_flg" type="hidden" name="credit_flg" value="1"/>
 												</span>
+												<input m:id="h_api_url_key" type="hidden" id="api_url_key" name="api_url_key" value="aaaaaaaaaaa" />
+												<input type="hidden" id="token_code" name="token_code" value="xxxxxxxxxxx" />
 											</td>
 										</tr>
 									</table>
