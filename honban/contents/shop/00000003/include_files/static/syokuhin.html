@@ -39,6 +39,42 @@
 </style>
 <!-- ▲▲▲▲slider(slick)--> 
 
+<style>
+/*レイアウト＿商品横四列*/
+@media screen and (min-width: 767px) {
+	.item_list_2top.col_4 li {
+	width: 200px;
+    padding: 0 0 0 0;
+    border-top: none;
+    margin-bottom:20px;
+
+	}
+	.item_list_2top.col_4 li:first-child {
+	    border-right: none;
+	}
+	.item_list_2top.col_4 li + li {
+		clear:none;
+	    width: 225px;
+	    margin-left: 1px;
+	    padding: 0 0 0 25px;
+	}
+	.item_list_2top.col_4 li img {
+	    max-width: 100%;
+	    max-height: 100%;
+	}
+	.item_list_2top.col_4 li .img_box_hover_in {
+    width: 180px;
+    height: 180px;
+}
+}
+
+@media screen and (max-width: 767px) {
+	.category_feature_recommend .item_list_2top.col_4 li:nth-child(n+3) {
+    display: none;
+	}
+}
+</style>
+
 <div id="category_syokuhin" class="category">
 	<!--<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -108,9 +144,52 @@
 			<div id="contents_main" class="right">
 
 		<!-- special01 -->
-		<div class="category_feature_recommend">
-					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline"><span style="color: red;">【今メディアで話題の逸品！】</span><br>限定100セット 塩釜焼ローストビーフ</span></h2>
-              <ul class="category_feature_recommend_list item_list item_list_2top js-item_list" style="margin-bottom: 30px;">
+		<div class="category_feature_recommend" style="margin-bottom: 20px;">
+			<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline"><span style="color: red;">【今メディアで話題の逸品！】</span></span></h2>
+
+			<div class="category_feature_recommend">
+					<ul class="category_feature_recommend_list item_list item_list_2top col_4 js-item_list">
+					<li><div class="item_list_in js-matchHeight">
+							<div class="img_box img_box_hover"><a href="/item_DIA1M/" target="_blank"><img alt="" src="/contents/c/goods/image/new/dia1m/dia1m_sum01.jpg"><div class="img_box_hover_in"><div class="img_box_hover_txt"><p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p></div></div></a></div>
+							<h3 class="item_list_tit js-matchHeight01">
+								<a href="/item_DIA1M/" target="_blank">＜木の屋石巻水産＞金華さば水煮「彩」 </a></h3>
+							<p class="text item_list_txt">旬の時期限定！石巻港で水揚げされた脂のり抜群の生鮮さばを缶詰にしました。フレッシュな旨みを味わえる一品です。</p>
+						</div>
+						<p class="cash item_list_yen">2,580円 (税込)</p>
+					</li>
+					<li><div class="item_list_in js-matchHeight">
+							<div class="img_box img_box_hover"><a href="/item_DIA1L/" target="_blank"><img alt="" src="/contents/c/goods/image/new/dia1l/dia1l_sum01.jpg"><div class="img_box_hover_in"><div class="img_box_hover_txt"><p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p></div></div></a></div>
+							<h3 class="item_list_tit js-matchHeight01">
+								<a href="/item_DIA1L/" target="_blank">＜木の屋石巻水産＞金華さば味噌煮「彩」 </a></h3>
+							<p class="text item_list_txt">旬の時期限定！石巻港で水揚げされた脂のり抜群の生鮮さばを缶詰にしました。良質な脂と味噌の相性が抜群です。</p>
+						</div>
+						<p class="cash item_list_yen">2,580円 (税込)</p>
+					</li>
+					<li>
+						<div class="item_list_in js-matchHeight">
+							<div class="img_box img_box_hover"><a href="/item_DIAC1/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diac1/diac1_sum01.jpg"><div class="img_box_hover_in"><div class="img_box_hover_txt"><p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p></div></div></a></div>
+							<h3 class="item_list_tit js-matchHeight01">
+								<a href="/item_DIAC1/" target="_blank">味わい鯖水煮6缶 </a></h3>
+							<p class="text item_list_txt">本州最北端八戸の脂がのった新鮮な鯖。丁寧な手詰め作業で、まろやかな旨みを引き出しました。</p>
+						</div>
+						<p class="cash item_list_yen">2,700円 (税込)</p>
+					</li>
+					<li><div class="item_list_in js-matchHeight">
+							<div class="img_box img_box_hover"><a href="/item_DIAC2/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diac2/diac2_sum01.jpg"><div class="img_box_hover_in"><div class="img_box_hover_txt"><p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p></div></div></a></div>
+							<h3 class="item_list_tit js-matchHeight01">
+								<a href="/item_DIAC2/" target="_blank">味わい鯖味噌煮6缶</a></h3>
+							<p class="text item_list_txt">国産米と国産大豆を醸造した津軽味噌を使用し、味噌の味を際立たせるため、たっぷり煮汁を含ませました。</p>
+						</div>
+						<p class="cash item_list_yen">2,700円 (税込)</p>
+					</li>
+				</ul>
+      			<div class="more_item js-more_item">
+					<p class="more_item_txt">もっと見る</p>
+				</div>
+			</div>
+			<!-- /.deadline close -->
+
+<!--               <ul class="category_feature_recommend_list item_list item_list_2top js-item_list" style="margin-bottom: 30px;">
                 <div class="goods_detail_scene bg_sp01">
                   <span>
 
@@ -121,7 +200,7 @@
 　　<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIC76/" target="_blank">詳しくはこちら!!</a></h3>
                   </span>					
                  </div>
-	　　　　</ul>
+	　　　　</ul> -->
 	       </div>
 		<!-- special01 -->
 
@@ -415,130 +494,6 @@
 				<!-- /.deadline close -->
 
 
-
-<!--- おい食商品追加_1109 ▼▼-->
-<!-- <style>
-@media screen and (min-width: 767px) {
-	.item_list_2top.col_4 li {
-	width: 200px;
-    padding: 20px 0 0 0;
-    border-top: none;
-    margin-bottom:0;
-
-	}
-	.item_list_2top.col_4 li:first-child {
-	    border-right: none;
-	}
-	.item_list_2top.col_4 li + li {
-		clear:none;
-	    width: 225px;
-	    margin-left: 1px;
-	    padding: 20px 0 0 25px;
-	}
-	.item_list_2top.col_4 li img {
-	    max-width: 100%;
-	    max-height: 100%;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.category_feature_recommend .item_list_2top.col_4 li:nth-child(n+3) {
-    display: none;
-	}
-}
-
-
-</style>
-				<div class="category_feature_recommend"> -->
-					<!--<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline" style="margin-top: 20px;"><span style="color: red;">【注目！】</span>～わけありでお得市～ 新聞掲載商品はこちらです！<br>お買い忘れのないように！</span></h2>-->
-<!-- 					<ul class="category_feature_recommend_list item_list item_list_2top col_4 js-item_list">
-						<li><div class="item_list_in js-matchHeight">
-                                                             <div><span style="color: red; padding-bottom: 30px;">大容量でお得！</span></div>
-								<div class="img_box img_box_hover"><a href="/item_DIAX3/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diax3/diax3_sum01.jpg"><div class="img_box_hover_in"><div class="img_box_hover_txt"><p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p></div></div></a></div>
-								<h3 class="item_list_tit js-matchHeight01">
-									<a href="/item_DIAX3/" target="_blank" style="visibility: visible;">日本の野菜・極</a></h3>
-								<p class="text item_list_txt">国産100％の野菜チップス。 サクッパリッと食感も軽やか。くせになる味わいです。</p>
-							</div>
-							<p class="cash item_list_yen">3,240円 (税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-                                                             <div><span style="color: red; padding-bottom: 30px;">化学調味料無添加！</span></div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIC47/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/dic47/dic47_sum01.jpg">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIC47/" target="_blank" style="visibility: visible;">小腹にうれしい和風しょうゆラーメン</a></h3>
-								<p class="text item_list_txt">和風出汁の香るあっさりとした口当たりのスープと北海道産小麦を使ったコシのある麺が相性抜群！</p>
-							</div>
-							<p class="cash item_list_yen">3,780円(税込)</p>
-						</li>
-						<li>
-                          <div class="item_list_in js-matchHeight">
-                             <div><span style="color: red; padding-bottom: 30px;">化学調味料無添加！</span></div><div class="img_box img_box_hover">
-									<a href="/item_DICA5/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/dica5/dica5_sum01.jpg">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DICA5/" target="_blank" style="visibility: visible;">小腹にうれしいまろやか味噌ラーメン</a></h3>
-								<p class="text item_list_txt">大コクと深みのあるみそ味。箸がどんどん進みます</p>
-							</div>
-							<p class="cash item_list_yen">3,996円(税込)</p>
-						</li> -->
-						<!--<li>
-							<div class="item_list_in js-matchHeight">
-                                                             <div><span style="color: red; padding-bottom: 30px;">小分けでうれしい！</span></div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAK1/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/diak1/diak1_sum01.jpg">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAK1/" target="_blank" style="visibility: visible;">＜龍宮堂＞小魚の二名煮</a></h3>
-								<p class="text item_list_txt">不足しがちなカルシウムをおいしく手軽に摂れるヘルシーなおやつです。</p>
-							</div>
-							<p class="cash item_list_yen">3,990円 (税込)</p>
-						</li>
-					</ul>
-          			<div class="more_item js-more_item">
-						<p class="more_item_txt">もっと見る</p>
-					</div>-->
-				<!-- </div> -->
-				<!-- /.deadline close -->
-
-<!--- おい食商品追加_1109 ▲▲-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				<div class="feature">
 					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">おいしい食卓特集</span></h2>
 					<ul class="cf">
@@ -598,10 +553,10 @@
               </a>
             </li>
 						<li class="hvr-float">
-            	<a href="/shop/c/static/syokutaku-blog/syokutaku-blog30/" target="_blank">
+            	<a href="/shop/c/static/syokutaku-blog/syokutaku-blog32/" target="_blank">
               	<img src="/contents/c/shop/image/category/syokuhin/bnr-blog.jpg" alt="おい食スタッフブログ">
                 <div class="caption">
-                	<p class="text"><span style="color: red;">【11/16更新】</span>第30回：糖質の大切さ</p>
+                	<p class="text"><span style="color: red;">【11/30更新】</span>第32回：新たな視野・視座・視点で、物事を見ることの大切さ</p>
                 	<p class="icon new">NEW!</p>
                 </div>
               </a>
@@ -839,11 +794,13 @@
                             <h2 class="side_widget_tit">おいしい食卓 最新のお知らせ</h2>
                             <div class="clearfix">
                               <ul class="side_widget_list side_widget_news_list">
-                              <li>2017/11/16 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog30/">おい食スタッフブログ 第30回【糖質の大切さ】が公開！</a></li>
-                              <li>2017/11/15 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-feature2-13/">突撃取材！【作り手の想い】第13回 無添加のかまぼこ・だて巻き が公開！</a></li>
-<li>2017/11/08 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog29/">おい食スタッフブログ 第29回【『おいしい食卓』の年末年始が始まりました！】が公開！</a></li>
-<li>2017/11/06 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/category/001001015026/list/">えび・かに・いくら……【おいしい食卓 冬】の新商品が勢ぞろいしました！</a></li>
-<li>2017/11/02 <a target="_blank" href="/shop/c/static/syokutaku-feature2-12/">突撃取材！【作り手の想い】第12回 おかげさま農場"落花生「半立」" が公開！</a></li>
+                              <li>2017/11/30 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog32/">おい食スタッフブログ 第32回【新たな視野・視座・視点で、物事を見ることの大切さ】が公開！</a></li>
+                              <li>2017/11/24 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog31/">おい食スタッフブログ 第31回【産地訪問】が公開！</a></li>
+                              <li>2017/11/16 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog30/">おい食スタッフブログ 第30回【糖質の大切さ】が公開！</a></li>
+                              <li>2017/11/15 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-feature2-13/">突撃取材！【作り手の想い】第13回 無添加のかまぼこ・だて巻き が公開！</a></li>
+<li>2017/11/08 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog29/">おい食スタッフブログ 第29回【『おいしい食卓』の年末年始が始まりました！】が公開！</a></li>
+<li>2017/11/06 <span style="color: red;"></span><a target="_blank" href="/shop/c/category/001001015026/list/">えび・かに・いくら……【おいしい食卓 冬】の新商品が勢ぞろいしました！</a></li>
+
 
 <!--<li>2017/10/26 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog28/">おい食スタッフブログ 第28回【食欲の秋といえば・・・】が公開！</a></li>
                                 <li>2017/10/20 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog27/">「おい食スタッフブログ 第27回【しゃべる家電】が公開！</a></li>-->
