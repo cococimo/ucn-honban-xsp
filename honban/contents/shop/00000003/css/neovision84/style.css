@@ -1,0 +1,150 @@
+.block_intv	{
+	text-align: justify;
+	text-justify: inter-ideograph;		
+}
+.block_intv .profile {
+	line-height: 1.75;
+	border: 2px solid #f9530a;
+	border-radius: 8px;
+}
+.block_intv .profile dt {
+	font-weight: bold;
+}
+
+@media all and (min-width: 0) and (min-width: 768px) {
+	.wrapper_intv {
+		padding: 20px;
+	}
+	
+	.block_intv	{
+		padding: 0 0 2rem 0;
+	}
+	.block_intv h3 {
+		margin: 1rem 0 2rem !important;
+		text-align: center;
+	}
+	
+	.block_intv h3 img {
+		margin-left: -80px;
+	}
+	
+	
+	.block_intv p {
+		letter-spacing: .025rem;
+		font-size: 18px;
+		line-height: 1.75;
+	}
+	.block_intv .cols_two {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.block_intv .cols_two > * {
+		width: 50%;
+	}
+	.block_intv .col_first {
+		padding-right: 2rem;		
+	}
+
+	.block_intv:first-of-type .col_first {
+		width: 51%;
+	}
+
+	.block_intv:first-of-type .col_second {
+		width: 49%;
+	}
+
+	.block_intv:last-of-type .col_first {
+		width: 46.5%;
+	}
+
+	.block_intv:last-of-type .col_second {
+		width: 53.5%;
+	}
+
+	.block_intv .col_second img:first-child {
+		margin-bottom: 1rem;
+	}
+	.block_intv .profile {
+		padding: 1rem;
+		font-size: 16px;
+		margin-top: 1rem;
+	}
+
+	#content_wrap .inner02 {
+		padding: 28px 27px 12px 28px;
+	}
+
+	#content_wrap .inner02 h4 {
+		margin-bottom: 2rem;
+	}
+
+	#content_wrap .inner02 .txt_box .pho > div {
+		position: relative;
+		width: 50%;
+	}
+	#content_wrap .inner02 .txt_box .pho span {
+		position: static;
+		text-align: left;
+		display: block;
+		margin-top: 0.5rem;
+	}
+	#content_wrap .inner02 .img_box01 .pho_box {
+		top: 70px;
+		right: 0;
+	}
+	#content_wrap .inner02 .img_box02 .pho_box li {
+		margin-top: 0;
+	}
+	#content_wrap .inner02 .list,
+	#content_wrap .inner02 .txt02 {
+		margin-bottom: 1.5rem;
+	}
+	#content_wrap .inner02 .arrow li:first-child {
+		width: 420px;
+		padding-right: 1rem;
+		margin-top: 0;
+	}
+	#content_wrap .img_box_r .txt_box {
+		margin-top: 1rem;
+	}
+	#content_wrap .img_box_r .txt_box h4 {
+		margin-bottom: 1.5rem;
+	}
+	#content_wrap .img_box_r .pho_box .text {
+		position: static;
+		display: block;
+		margin-top: .25rem;
+	}
+}
+
+@media all and (min-width: 0) and (max-width: 767px) {
+	.wrapper_intv {
+		padding: 10px;
+	}
+	
+	.wrapper_intv h2 {
+		margin-bottom: 1rem;
+	}
+	
+	#content_wrap .h2_ttl01 {
+		margin-top: 0;
+	}
+	.block_intv	{
+		padding: 0 0 2rem 0;
+	}
+	.block_intv h3 {
+		margin-bottom: 1rem !important;
+	}	
+	.block_intv h4 {
+		margin: 1.5rem 0  !important;
+	}	
+	.block_intv p {
+		font-size: 15px;
+		line-height: 1.75;
+	}
+	.block_intv .profile {
+		padding: .5rem 1rem;
+		font-size: 15px;
+		margin-top: 1rem;
+	}
+}
