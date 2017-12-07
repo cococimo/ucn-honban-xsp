@@ -11,11 +11,9 @@
 				$(this).parent().removeClass('on').prev().removeClass('on');
 				var thisBtnTop = $('#content_wrap .sub_inner01 .link').offset().top;
 				if($(window).width() > 767){
-					var thisBtnTop = $('#content_wrap .sub_inner01 .link.pc').offset().top;
 					var thisAdjOffset = -20;
 				}else{
-					var thisBtnTop = $('#content_wrap .sub_inner01 .link.sp').offset().top;
-					var thisAdjOffset = -20 + ($('#header').outerHeight() * -1);
+					var thisAdjOffset = $('#header').outerHeight() / 2;
 				}
 				setTimeout(function(){
 					$('html,body').animate({scrollTop: thisBtnTop + thisAdjOffset}, 300);
@@ -480,4 +478,25 @@ false;" href=""><img src="contents/shop/00000003/image/static/neovision81/imgtex
 			</div>
 			<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision81/photo22.png" alt="パーフェクトペンで 触るだけ！"></div>
 		</div>
+	</div>
+	
+	<div class="purchase_fixed">
+		<div class="inner">
+			<p>
+				<picture>
+					<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/neovision86/sp_call.png">
+					<img src="/contents/shop/00000003/image/static/neovision86/call.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時～22時 日曜・祝日も受付けます）">
+				</picture>
+				<span class="pc">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</span>
+			</p>
+			<p>
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<picture>
+						<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/neovision86/sp_btn.png">
+						<img src="/contents/shop/00000003/image/static/neovision86/btn.png" alt="この商品を申し込む">
+					</picture>
+				</a>
+			</p>
+		</div>
+		<p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p>
 	</div>
