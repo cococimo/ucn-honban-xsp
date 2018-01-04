@@ -25,22 +25,7 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <!-- Googleタグマネージャ head用 -->
 <meta m:id="google_tag_manager_head" content="">
 <!-- Googleタグマネージャ head用 -->
-<script>(function() {
-  var _fbq = window._fbq || (window._fbq = []);
-  if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-  }
-  _fbq.push(['addPixelId', '399189536872518']);
-})();
-window._fbq = window._fbq || [];
-window._fbq.push(['track', 'PixelInitialized', {}]);
-</script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
+
 <link rel="apple-touch-icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/apple-touch-icon.png" />
 <!-- InstanceEndEditable -->
 <!-- common css -->
@@ -239,7 +224,26 @@ $(function() {
 <!-- DLPO 制御タグ -->
 
 </head>
+
 <body id="top">
+
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '399189536872518']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
+
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
@@ -857,13 +861,13 @@ function initCorners() {
 <br clear="all">
 
     <!--▼▼▼20171220年末年始お知らせ▼▼▼-->
-    <div class="innercategory2" style="margin-bottom:30px;">
+    <!-- <div class="innercategory2" style="margin-bottom:30px;">
      <h2 align="center" style="padding-top: 10px;"><span style="color:dimgray;">年末年始の配送業務・お問い合わせ対応について</span></h2>
      <p style="text-align: center;padding-top:10px;">2017年12月20日</p>
      　 <p align="center" style="padding-top: 10px;">誠に勝手ながら、12月29日(金)&#xFF5E;1月3日(水)の間は配送業務・お問い合わせ対応業務をお休みいたします。そのため、商品等の12月26日(火)以降のお申込み受付分は1月4日(木)以降、順次手続きに入らせていただきます。<br>
     ※手配･配送等の事情により、12月25日(月)までのお申込み受付分もお届けが遅れる場合がございますので、あらかじめご了承ください。また、別途お届け予定の記載のあるものは、そちらが優先されます。<br>
     上記期間中にお問い合わせいただきました内容につきましては、1月4日(木)以降に順次回答いたします。何卒ご了承ください。</p>
-    </div>
+    </div> -->
 　　　　  <!--▲▲▲20170621年末年始お知らせ▲▲▲-->
 
 
