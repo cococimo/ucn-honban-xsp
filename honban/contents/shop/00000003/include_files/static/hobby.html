@@ -15,8 +15,25 @@
 }
 .no-link.img_box_hover a {cursor: default;}
 
+/*趣味カテゴリランキング表示調整*/
+div#syokuhin,
+div#hobby,
+div#bousai{display:none;}
+.recommend.ranking-genre h2.cmn_tit01:first-child {margin-top:0;}
 
+/*スタッフおススメ表示調整*/
+.category_feature .ranking_list_img {
+	background: none !important;
+	padding: 0 0 0 0 !important;
+}
 </style>
+<!-- ▼▼▼▼ナビプラスデザイン--> 
+<style>
+	div.hobby{
+	display:inline;
+	}
+</style>
+<!-- ▲▲▲▲ナビプラスデザイン--> 
 <div id="category_hobby" class="category">
 <!-- 	<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -40,6 +57,17 @@
 		<!-- /.goods_archive_intro -->
 		<div class="cf mt40 s_mt25">
 			<div id="contents_main" class="right">
+				<!--▼▼ カテゴリランキング ▼▼-->
+				<script type="text/javascript" language="javascript">
+					<!--
+					var hobby = document.getElementById("hobby").innerHTML;
+					document.open();
+					// document.write("文字列を書き出します。");
+					document.write(hobby);
+					document.close();
+					// -->
+				</script>
+				<!--▲▲ カテゴリランキング ▲▲-->
 				<div class="category_feature_recommend">
 					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">教養・趣味のおすすめ商品</span></h2>
 					<ul class="category_feature_recommend_list item_list item_list_2top js-item_list">
@@ -235,7 +263,7 @@
 				</div>
 				<!-- /.feature -->
 				<div class="ranking">
-					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">【教養・趣味カテゴリ】スタッフおすすめランキング</span></h2>
+					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">【教養・趣味カテゴリ】スタッフおススメ商品</span></h2>
 					<ol class="ranking_list">
 <!-- 						<li>
 							<div class="ranking_list_in cf">

@@ -8,6 +8,20 @@
 	@media screen and (max-width: 767px) {
 		.item_list_2top li:nth-child(n+1) {width: auto;}
 	}
+	.category_feature .feature ul li {
+		border: none;
+	}
+	/*防災カテゴリランキング表示調整*/
+	div#syokuhin,
+	div#hobby,
+	div#bousai{display:none;}
+	.recommend.ranking-genre h2.cmn_tit01:first-child {margin-top:0;}
+
+	/*スタッフおススメ表示調整*/
+	.category_feature .ranking_list_img {
+		background: none !important;
+		padding: 0 0 0 0 !important;
+	}
 </style>
 
 <!-- ▼▼▼▼slider(slick)--> 
@@ -43,7 +57,13 @@
 	.center-item .slick-next{z-index:9}
 </style>
 <!-- ▲▲▲▲slider(slick)--> 
-
+<!-- ▼▼▼▼ナビプラスデザイン--> 
+<style>
+	div.bousai{
+	display:inline;
+	}
+</style>
+<!-- ▲▲▲▲ナビプラスデザイン--> 
 <div id="category_bousai" class="category">
 <!-- 	<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -100,6 +120,19 @@
 		<!-- /.goods_archive_intro -->
 		<div class="cf mt40 s_mt25">
 			<div id="contents_main" class="right">
+
+				<!--▼▼ カテゴリランキング ▼▼-->
+				<script type="text/javascript" language="javascript">
+					<!--
+					var bousai = document.getElementById("bousai").innerHTML;
+					document.open();
+					// document.write("文字列を書き出します。");
+					document.write(bousai);
+					document.close();
+					// -->
+				</script>
+				<!--▲▲ カテゴリランキング ▲▲-->
+
 				<div class="category_feature_recommend">
 					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">防災用品のおすすめ商品</span></h2>
 					<ul class="category_feature_recommend_list item_list item_list_2top js-item_list">
@@ -324,7 +357,7 @@
 				</div>
 				<!-- /.feature -->
 				<div class="ranking">
-					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">【防災用品】スタッフおすすめランキング</span></h2>
+					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">【防災用品】スタッフおススメ商品</span></h2>
 					<ol class="ranking_list">
 						<li>
 							<div class="ranking_list_in cf">

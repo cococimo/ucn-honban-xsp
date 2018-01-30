@@ -179,7 +179,112 @@ $(function(){
 <!--▲▲▲ 共通CSS/Script ▲▲▲-->
 <!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
+	<style>
+		/*ジャンル別ランキング*/
+		
+		.recommend.ranking-genre li {
+			background-image: url(/contents/c/shop/image/ico_ranking01.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			padding-top: 58px;
+			background-size: 160px;
+		}
 
+		.recommend.ranking-genre li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking02.png);
+			background-size: 40px auto;
+			background-position: center 13px;
+		}
+		
+		.recommend.ranking-genre li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking03.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking04.png);
+			background-position: center 22px;
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking05.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking06.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking07.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking08.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking09.png);
+		}
+		
+		.recommend.ranking-genre li+li+li+li+li+li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking10.png);
+		}
+		
+		.recommend.ranking-genre .img_box a {
+			height: 166px;
+		}
+		
+		@media screen and (max-width: 767px) {
+			.recommend.ranking-genre .item_list li {
+				padding: 30px 25px 12px 0!important;
+			}
+			.recommend.ranking-genre li {
+				background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
+				background-repeat: no-repeat;
+				background-position: 1rem 0;
+				background-size: 60px auto;
+			}
+			.recommend.ranking-genre li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
+				background-size: 48px auto;
+				background-position: 1rem 2.3vw;
+			}
+			.recommend.ranking-genre li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
+			}
+			.recommend.ranking-genre li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking04.png);
+				background-size: 30px auto;
+				background-position: 1.8rem .7vw;
+			}
+			.recommend.ranking-genre li+li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking05.png);
+			}
+		}
+		
+		.bousai,
+		.hobby,
+		.syokuhin {
+			display: none;
+		}
+		
+		@media screen and (min-width: 768px) {
+			.recommend.ranking-genre {
+				margin-bottom: 60px;
+			}
+			.item_list_5col li:nth-child(6) {
+				margin-left: 0;
+			}
+		}
+		
+		@media screen and (max-width: 767px) {
+			.recommend.ranking-genre {
+				margin-bottom: 60px;
+			}
+			.recommend.ranking-genre {
+				margin-bottom: 30px;
+			}
+		}
+	</style>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -500,7 +605,168 @@ $(function(){
             <ul class="cmn_breadcrumb">
             	<li m:id="str_file_bread"><a href="/">ココチモ（cococimo）の通販ショップ</a></li>
             </ul>
-
+		<!--▼▼▼XXX10ランキング(ナビプラスカテゴリー)▼▼▼-->
+		<div class="syokuhin" id="syokuhin">
+			<span m:id="category_code10" name="001001015">
+<object class="xsp_obj" m:id="e_var_autoRankGoodsListCate10"></object>
+ <span m:id="l_notEmp_autoRankGoodsListCate10">
+     <div class="recommend ranking-genre">
+         <h2 class="recommend_tit cmn_tit01"><span class="cmn_tit01_underline">おいしい食卓　人気商品ランキング</span></h2>
+			<div class="clearfix recommend_in">
+				<ul class="recommend_list item_list item_list_5col js-item_list">
+					<span m:id="l_ite_autoRankGoodsListCate10">
+                 <span m:id="l_notEqu_autoRankGoodsListCate10_idx">
+  <li>
+      <div class="item_list_in js-matchHeight">
+          <div class="img_box img_box_hover">
+              <span m:id="l_pre_autoRankGoods_representSkuCate">
+                  <object class="xsp_obj" m:id="b_var_autoRankGoods_listImageCate"></object>
+                  <a m:id="h_link_autoRankGoods_list_imageCate" href="goodsDetail.html">
+   <img m:id="h_img_autoRankGoods_goods_ImageCate" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+   <div class="img_box_hover_in">
+       <div class="img_box_hover_txt">
+           <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+			</div>
+		</div>
+		</a>
+		</span>
+	</div>
+	<h3 class="recommend_list_tit item_list_tit"><a m:id="h_link_autoRankGoods_nameCate" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_nameCate">商品名商品名</span></a></h3>
+	</div>
+	<p class="recommend_list_yen item_list_yen"> <span m:id="l_notEqu_autoRankGoods_pretaxPriceCate"> <span class="original_price"> <span m:id="b_wr_autoRankGoods_pretaxPriceCate">200</span>&nbsp;円</span>&nbsp;</span>
+		<span m:id="b_wr_autoRankGoods_actualSalePriceCate">50</span>円（税込）</p>
+	</li>
+	<li m:id="dummy">
+		<div class="box_01 heightLine-osusuem01">
+			<div class="box_02">
+				<div class="img_box">
+					<a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				</div>
+				<h3><a href="#">商品名商品名</a></h3>
+				<p>50円（税込）</p>
+			</div>
+		</div>
+	</li>
+	</span>
+	</span>
+	</ul>
+	<div class="more_item js-more_item">
+		<p class="more_item_txt">もっと見る</p>
+	</div>
+	</div>
+	</div>
+	</span>
+	</span>
+	</div>
+	<!--▲▲▲XXX10ランキング(ナビプラスカテゴリー)▲▲▲-->
+	<!--▼▼▼XXX5ランキング(ナビプラスカテゴリー)▼▼▼-->
+	<div class="bousai" id="bousai">
+		<span m:id="category_code5" name="001001010">
+<object class="xsp_obj" m:id="e_var_autoRankGoodsListCate5"></object>
+ <span m:id="l_notEmp_autoRankGoodsListCate5">
+     <div class="recommend ranking-genre">
+         <h2 class="recommend_tit cmn_tit01"><span class="cmn_tit01_underline">防災用品　人気商品ランキング</span></h2>
+		<div class="clearfix recommend_in">
+			<ul class="recommend_list item_list item_list_5col js-item_list">
+				<span m:id="l_ite_autoRankGoodsListCate5">
+                 <span m:id="l_notEqu_autoRankGoodsListCate5_idx">
+  <li>
+      <div class="item_list_in js-matchHeight">
+          <div class="img_box img_box_hover">
+              <span m:id="l_pre_autoRankGoods_representSkuCate">
+                  <object class="xsp_obj" m:id="b_var_autoRankGoods_listImageCate"></object>
+                  <a m:id="h_link_autoRankGoods_list_imageCate" href="goodsDetail.html">
+   <img m:id="h_img_autoRankGoods_goods_ImageCate" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+   <div class="img_box_hover_in">
+       <div class="img_box_hover_txt">
+           <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+		</div>
+	</div>
+	</a>
+	</span>
+	</div>
+	<h3 class="recommend_list_tit item_list_tit"><a m:id="h_link_autoRankGoods_nameCate" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_nameCate">商品名商品名</span></a></h3>
+	</div>
+	<p class="recommend_list_yen item_list_yen"> <span m:id="l_notEqu_autoRankGoods_pretaxPriceCate"> <span class="original_price"> <span m:id="b_wr_autoRankGoods_pretaxPriceCate">200</span>&nbsp;円</span>&nbsp;</span>
+		<span m:id="b_wr_autoRankGoods_actualSalePriceCate">50</span>円（税込）</p>
+	</li>
+	<li m:id="dummy">
+		<div class="box_01 heightLine-osusuem01">
+			<div class="box_02">
+				<div class="img_box">
+					<a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				</div>
+				<h3><a href="#">商品名商品名</a></h3>
+				<p>50円（税込）</p>
+			</div>
+		</div>
+	</li>
+	</span>
+	</span>
+	</ul>
+	<div class="more_item js-more_item">
+		<p class="more_item_txt">もっと見る</p>
+	</div>
+	</div>
+	</div>
+	</span>
+	</span>
+	</div>
+	<!--▲▲▲XXX5ランキング(ナビプラスカテゴリー)▲▲▲-->
+	<!--▼▼▼XXX5ランキング(ナビプラスカテゴリー)▼▼▼-->
+	<div class="hobby" id="hobby">
+		<span m:id="category_code5" name="001001009">
+<object class="xsp_obj" m:id="e_var_autoRankGoodsListCate5"></object>
+ <span m:id="l_notEmp_autoRankGoodsListCate5">
+     <div class="recommend ranking-genre">
+         <h2 class="recommend_tit cmn_tit01"><span class="cmn_tit01_underline">趣味・教養　人気商品ランキング</span></h2>
+		<div class="clearfix recommend_in">
+			<ul class="recommend_list item_list item_list_5col js-item_list">
+				<span m:id="l_ite_autoRankGoodsListCate5">
+                 <span m:id="l_notEqu_autoRankGoodsListCate5_idx">
+  <li>
+      <div class="item_list_in js-matchHeight">
+          <div class="img_box img_box_hover">
+              <span m:id="l_pre_autoRankGoods_representSkuCate">
+                  <object class="xsp_obj" m:id="b_var_autoRankGoods_listImageCate"></object>
+                  <a m:id="h_link_autoRankGoods_list_imageCate" href="goodsDetail.html">
+   <img m:id="h_img_autoRankGoods_goods_ImageCate" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+   <div class="img_box_hover_in">
+       <div class="img_box_hover_txt">
+           <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+		</div>
+	</div>
+	</a>
+	</span>
+	</div>
+	<h3 class="recommend_list_tit item_list_tit"><a m:id="h_link_autoRankGoods_nameCate" href="goodsDetail.html"><span m:id="disp_autoRankGoods_goods_nameCate">商品名商品名</span></a></h3>
+	</div>
+	<p class="recommend_list_yen item_list_yen"> <span m:id="l_notEqu_autoRankGoods_pretaxPriceCate"> <span class="original_price"> <span m:id="b_wr_autoRankGoods_pretaxPriceCate">200</span>&nbsp;円</span>&nbsp;</span>
+		<span m:id="b_wr_autoRankGoods_actualSalePriceCate">50</span>円（税込）</p>
+	</li>
+	<li m:id="dummy">
+		<div class="box_01 heightLine-osusuem01">
+			<div class="box_02">
+				<div class="img_box">
+					<a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
+				</div>
+				<h3><a href="#">商品名商品名</a></h3>
+				<p>50円（税込）</p>
+			</div>
+		</div>
+	</li>
+	</span>
+	</span>
+	</ul>
+	<div class="more_item js-more_item">
+		<p class="more_item_txt">もっと見る</p>
+	</div>
+	</div>
+	</div>
+	</span>
+	</span>
+	</div>
+	<!--▲▲▲XXX5ランキング(ナビプラスカテゴリー)▲▲▲-->
 			<!-- ▼▼▼PAGE:静的ファイル表示▼▼▼-->
 			<span m:id="str_file">静的ファイル表示領域</span>
 			<!-- ▲▲▲PAGE:静的ファイル表示▲▲▲-->
