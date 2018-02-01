@@ -163,3 +163,126 @@ window.onload = function() {
         <img src="/contents/shop/00000003/image/static/img/bousai/bisco_pre.jpg" alt="ビスコ缶プレゼント" ><br>
         <!-- 通常のビスコ缶プレゼント▲▲▲▲ -->
         <br><br>
+
+	<!-- カート追従バナー -->
+	<style>
+
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
+	.sp {
+		display: none !important;
+	}
+	.pc {
+		display: block !important;
+	}
+	@media all and (min-width: 0) and (max-width: 767px) {
+
+		.sp {
+			display: block !important;
+		}
+		
+		.pc {
+			display: none !important;
+		}
+	}
+		#content_wrap .purchase_fixed {
+			display: block;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		/* 	border-top: 4px solid #ffe800; */
+		/* 	background: #fcffcf; */
+			border-top: 4px solid #DB844E;
+			background: #f9f5e8;
+			width: 100%;
+			font-size: 12px;
+			text-align: center;
+			z-index: 10;
+		}
+
+		#content_wrap .purchase_fixed .inner {
+			max-width: 914px;
+			padding: 1rem;
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		#content_wrap .purchase_fixed .inner > * {
+			width: 100%;
+		}
+
+		#content_wrap .purchase_fixed .inner > p:first-of-type img {
+			width: 306px;
+		}
+
+		#content_wrap .purchase_fixed .inner > p:last-of-type img {
+			width: 455px;
+		}
+
+		#content_wrap .purchase_fixed .inner > p:first-of-type span {
+			display: block;
+			margin-top: 5px;
+		}
+
+		#content_wrap .purchase_fixed .inner a:hover {
+			opacity: .85;
+		}
+
+		@media all and (min-width: 0) and (max-width: 767px) {
+			#content_wrap .inner08 {
+				margin-top: -60px;
+				padding-top: 60px;	
+			}
+			
+			.footer #pagetop_sp {
+				bottom: 105px;
+				right: 5px;
+			}
+			#content_wrap .purchase_fixed .inner {
+				padding: .5rem .5rem .25rem 1rem;
+			}
+
+			#content_wrap .purchase_fixed .inner > p:first-of-type {
+				padding-right: .5rem;
+			}
+
+			#content_wrap .purchase_fixed .inner > p:last-of-type {
+				padding-left: .5rem;
+			}
+
+			#content_wrap .purchase_fixed .inner > p:first-of-type img {
+				width: 100%;
+			}
+			
+			#content_wrap .purchase_fixed .inner > p:last-of-type img {
+				width: 100%;
+			}
+			#content_wrap .purchase_fixed .inner + p {
+				padding-bottom: .5rem;
+			}
+		}
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+	      <p class="sp_only">
+	        <a href="tel:0120552186" style="display: inline-block;">
+	          <img src="/contents/shop/00000003/image/static/nihon2018/sp/sp_call.png">
+	        </a>
+	      </p>
+	      <p class="pc_only">
+	        <img src="/contents/shop/00000003/image/static/nihon2018/call.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+	      </p>
+			<p>
+				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+					<picture>
+						<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/img/bousai/sp_btn.png">
+						<img src="/contents/shop/00000003/image/static/img/bousai/btn.png" alt="この商品を申し込む">
+					</picture>
+				</a>
+			</p>
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+	<!-- //カート追従バナー -->
