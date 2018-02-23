@@ -1,0 +1,540 @@
+#contents_in img{
+	max-width:initial;
+}
+
+#contents_in .mainImg{
+	margin-bottom: 47px;
+}
+
+#contents_in .topBox {
+	margin-bottom: 42px;
+}
+
+#contents_in .topBox p {
+	margin-bottom: 0;
+	line-height: 2.2;
+}
+
+#contents_in .headLine01 {
+	margin-bottom: 42px;
+	padding-bottom: 23px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/11/h2_bg.gif);
+}
+
+#contents_in .headLine01 .bg {
+	padding: 0 5px 5px;
+	display: inline-block;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/11/line01.gif) repeat-x left bottom;
+}
+
+#contents_in p {
+	margin-bottom: 30px;
+}
+
+#contents_in .phoList {
+	margin-bottom: 37px;
+}
+
+#contents_in .phoList li {
+	float: left;
+	width: 373px;
+	font-size: 14px;
+}
+
+#contents_in .phoList li span {
+	white-space: nowrap;
+}
+
+#contents_in .phoList li:nth-child(3n-1) {
+	margin: 0 40px;
+}
+
+#contents_in .phoList li img {
+	margin-bottom: 11px;
+}
+
+#contents_in .headLine02 {
+	margin-bottom: 20px;
+	padding-top: 3px;
+	color: #a52237;
+	font-size: 22px;
+}
+
+#contents_in .list {
+	margin: 0 0 57px;
+}
+
+#contents_in .list li {
+	float: left;
+}
+
+#contents_in .list li span {
+	margin-top: 10px;
+	display: block;
+	font-size: 14px;
+}
+
+#contents_in .list li:nth-child(2n) {
+	float: right;
+}
+
+#contents_in .list.spColumnList{
+	margin-bottom: 41px;
+}
+
+
+#contents_in .bgPho03 {
+	margin: 100px 0 10px;
+	padding: 44px 0 116px;
+	box-sizing: border-box;
+	height: 461px;
+	background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/16/photo13.jpg);
+	text-align:center;
+}
+
+#contents_in .bgPho p {
+	margin-bottom: 17px;
+}
+
+#contents_in .bgPho .ttl {
+	margin-bottom: 30px !important;
+	margin-top: 23px;
+}
+
+#contents_in .bgPho p:nth-child(3) {
+	margin-bottom: 20px;
+}
+
+#contents_in .comLink a {
+	background-color: #A52237;
+	border-color: #67071B;
+}
+
+#contents_in .comLink a:hover {
+	opacity: 0.95;
+	background-color: #A52237;
+}
+
+#contents_in .noticeBox {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 47px 0;
+	border-color: #A52237;
+}
+
+#contents_in {
+	padding-bottom: 40px;
+}
+
+#contents_in .text01 {
+	margin-bottom: 48px;
+}
+
+#contents_in .text02 {
+	margin-bottom: 45px;
+}
+
+#contents_in .text03 {
+	margin-bottom: 45px;
+}
+
+#contents_in .text04 {
+	margin-bottom: 91px;
+}
+
+#contents_in .text05 {
+	margin-bottom: 45px;
+}
+
+#contents_in .column2_01{
+	margin-bottom: 40px;
+}
+
+#contents_in .column2_01 span{
+	margin-top: 10px; display: block; font-size: 14px;
+}
+
+#contents_in .column2_01 .columnBox01{
+	float: right;
+	width: 570px;
+}
+
+#contents_in .column2_01 .columnBox02{
+	float: left;
+}
+
+#contents_in .column2_02{
+	margin-bottom: 50px;
+}
+
+#contents_in .column2_02 .columnBox01{
+	float: left;
+	width: 570px;
+}
+
+#contents_in .column2_02 .columnBox02{
+	float: right;
+	margin-top: 4px;
+}
+
+
+#contents_in .ribbonBox {
+	border: 3px solid #a52237;
+	padding: 50px 30px;
+}
+
+#contents_in .ribbonBox .ribbonTtl{
+	width: 500px;
+	height: 42px;
+	background: #a52237;
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	line-height: 42px;
+	text-align: center;
+}
+
+#contents_in .ribbonBox .ribbonTtl::before,
+#contents_in .ribbonBox .ribbonTtl::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#contents_in .ribbonBox .ribbonTtl::before{
+	left: 0;
+	border-width: 21px 0 21px 10px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+#contents_in .ribbonBox .ribbonTtl::after{
+	right: 0;
+	border-width: 21px 10px 21px 0;
+	border-color: transparent #ffffff transparent transparent;
+}
+
+#contents_in .ribbonBox p {
+	text-align: center;
+	margin: 30px 0 0;
+}
+
+#contents_in span.only-pc {
+	display: block !important;
+}
+#contents_in span.only-sp {
+	display: none !important;
+}
+
+#contents_in .wideImgBlock {
+	margin-bottom: 50px;
+}
+
+#contents_in p.textStyle01 {
+	line-height: 2.25;
+	letter-spacing: 0.05em;
+	margin-bottom: 36px;
+}
+
+#contents_in .textStyle02 {
+	margin-top: 10px;
+	font-size: 14px;
+	display: block;
+}
+
+
+@media screen and (max-width:837px) {
+	#contents_in .mainImg{
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .mainBox {
+		padding-top: 0;
+	}
+	
+	#contents_in .topBox {
+		margin-bottom: 10px;
+	}
+	
+	#contents_in .topBox p {
+		font-size: 13px;
+		line-height: 2.1;
+	}
+	
+	#contents_in .headLine01 {
+		margin-bottom: 11px;
+		padding-bottom: 16px;
+	}
+	
+	#contents_in .headLine01 .bg {
+		padding: 0 5px;
+		display: inline;
+		background-size: 3px 5px;
+	}
+	
+	#contents_in p {
+		margin-bottom: 19px;
+		line-height: 1.55;
+		letter-spacing: normal;
+	}
+	
+	#contents_in .phoList {
+		width: 83%;
+		margin: 0 auto 22px;
+	}
+	
+	#contents_in .phoList li {
+		margin-bottom: 21px;
+		float: none;
+		width: auto;
+		font-size: 12px;
+	}
+	
+	#contents_in .phoList li:nth-child(3n-1) {
+		margin: 0 0 13px;
+	}
+	
+	#contents_in .phoList li:last-child {
+		margin-bottom: 0;
+	}
+	
+	#contents_in .phoList li img {
+		width: 100%;
+	}
+	
+	
+	#contents_in .list {
+		margin: 0 0 21px;
+	}
+	
+	#contents_in .list li {
+		width: 50%;
+		height: inherit !important;
+		margin-top: 27px;
+	}
+	
+	#contents_in .list li:last-child {
+		margin-bottom: 0;
+	}
+	
+	#contents_in .list.spColumnList{
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .list.spColumnList li {
+		width: 83%;
+		float: none;
+		margin: 0 auto 44px;
+	}
+	
+	#contents_in .list.spColumnList li:first-child{
+		margin: 0 auto 24px;
+	}
+	
+	#contents_in .list.spColumnList li:last-child{
+		margin: 0 auto;
+	}
+	
+	#contents_in .list li img {
+		width: 100%;
+	}
+	
+	#contents_in .list li span {
+		margin: 9px 0 0;
+		font-size: 12px;
+		line-height: 1.25;
+	}
+	
+	#contents_in .bgPho03 {
+		margin: 44px 0 25px;
+		padding: 41px 0 40px;
+		height: inherit;
+		background-image: url(/contents/shop/00000003/image/static/syokutaku/feature2/16/sp/photo13.jpg);
+		background-size: cover;
+	}
+	
+	#contents_in .bgPho p {
+		margin-bottom: 14px;
+	}
+	
+	#contents_in .bgPho p:nth-child(3) {
+		margin-bottom: 14px;
+	}
+	
+	#contents_in .bgPho .ttl {
+		width: 62%;
+		margin-top: 0;
+		margin-bottom: 16px !important;
+	}
+	
+	#contents_in .comLink a {
+		padding: 14px 5px;
+	}
+	
+	#contents_in .comLink a:hover {
+		opacity: 1;
+	}
+	
+	#contents_in .comLink {
+		width: 60%;
+	}
+	
+	#contents_in .noticeBox {
+		width: 92%;
+		padding: 26px 25px;
+	}
+	
+	#contents_in {
+		padding-bottom: 0px;
+	}
+	
+	#contents_in .text04 {
+		margin-bottom: 40px;
+	}
+	
+	#contents_in .text05 {
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .column2_01{
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .column2_01 span{
+		margin-top: 10px; display: block; font-size: 12px; line-height: 1.4;
+	}
+	
+	#contents_in .column2_01 .columnBox01{
+		float: none;
+		width: 100%;
+	}
+	
+	#contents_in .column2_01 .columnBox02{
+		float: none;
+		width: 83%;
+		margin: 0 auto;
+	}
+	
+	#contents_in .column2_02{
+		margin-bottom: 20px;
+	}
+	
+	#contents_in .column2_02 .columnBox01{
+		float: none;
+		width: 100%;
+	}
+	
+	#contents_in .column2_02 .columnBox02{
+		float: none;
+		width: 81.7%;
+		margin: 0 auto 5px;
+	}
+	
+	
+	#contents_in .list li .only-pc { display: none; }
+	
+	#contents_in span.only-pc {
+		display: none !important;
+	}
+	#contents_in span.only-sp {
+		display: block !important;
+	}
+	
+	#contents_in .ribbonBox {
+		border: 2px solid #a52237;
+		padding: 25px 15px;
+		width: 83%;
+		margin: 0 auto;
+	}
+	
+	#contents_in .ribbonBox .ribbonTtl{
+		width: 100%;
+		height: 22px;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	
+	#contents_in .ribbonBox .ribbonTtl::before{
+		border-width: 11px 0 11px 5px;
+	}
+	
+	#contents_in .ribbonBox .ribbonTtl::after{
+		border-width: 11px 5px 11px 0;
+	}
+	
+	
+	#contents_in .ribbonBox p {
+		margin: 15px 0 0;
+		text-align: left;
+	}
+	
+	#contents_in p.textStyle01 {
+		line-height: 1.53;
+		letter-spacing: 0.02em;
+		margin-bottom: 18px;
+	}
+	
+	#contents_in .text01 {
+		margin-bottom: 0;
+	}
+	
+	#contents_in .wideImgBlock {
+		margin-bottom: 25px;
+	}
+	
+	#contents_in .textStyle02 {
+		margin: 9px 0 0;
+		font-size: 12px;
+		line-height: 1.25;
+	}
+}
+
+
+@media screen and (min-width:838px) {
+	.mb30pc { margin-bottom: 30px !important; }
+	.mb85pc { margin-bottom: 85px !important; }
+	
+}
+
+/*16追加*/
+#contents_in .withArrow {
+    position: relative;
+}
+#contents_in .withArrow::after {
+	content: '';
+    width: 42px;
+    height: 76px;
+    position: absolute;
+    right: -55px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: url(/contents/shop/00000003/image/static/syokutaku/feature2/16/arrow-large.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+@media screen and (max-width: 837px) {
+	#contents_in .withArrow {
+		margin-bottom: 50px!important;
+	}
+	
+	#contents_in .withArrow::after {
+		content: '';
+		width: 36px;
+		height: 18px;
+		right: 0;
+		left: 0;
+		top: auto;
+		top: initial;
+		bottom: -30px;
+		background: url(/contents/shop/00000003/image/static/syokutaku/feature2/13/sp/arrow.png) no-repeat;
+		-webkit-background-size: cover; background-size: cover;
+	}
+}
+
+
+.mb0 {margin-bottom: 0;}
+.center {text-align: center;}
+
