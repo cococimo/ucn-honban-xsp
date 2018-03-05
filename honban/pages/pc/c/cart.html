@@ -212,6 +212,11 @@ $(function() {
       padding: 40px 20px 40px;
   }
 }
+		#cart .cart_price_table {
+		    float: none;
+		    width: 100%;
+		    margin: 0 0 25px;
+		}
 </style>
 </head>
 <body>
@@ -467,8 +472,8 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
         <span m:id="l_notEqu_cart_empty">
           <span m:id="l_notEqu_cart_empty_shop">
             <div class="cart_intro">
-              <h1 class="cart_intro_tit cmn_tit05">お買い物カゴ</h1>
-              <p class="cart_intro_txt">現在、お買い物かごには以下の商品が入っています。<br>内容をお確かめの上、「お客様情報の入力へ」を押し、入力画面へお進みください。<br>ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</p>
+              <h1 class="cart_intro_tit cmn_tit05">お買い物カゴ | STEP&#9312;</h1>
+              <p class="cart_intro_txt">現在、お買い物かごには以下の商品が入っています。<br>内容をお確かめの上、「ご注文の手続きはこちら」を押し、入力画面へお進みください。<br>ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</p>
               <span m:id="l_ite_shopCart">
                 <span m:id="l_pre_disp_other_shop_cart_link">
                   <p><a m:id="h_link_shop_cart"><span m:id="l_pre_disp_shop_cart">テストショップ</span>へ</a></p>
@@ -483,7 +488,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
           <span m:id="l_notEqu_cart_not_empty_shop">
             <object class="xsp_obj" m:id="e_var_disp_installment"></object>
             <div class="cart_intro">
-              <h1 class="cart_intro_tit cmn_tit05">お買い物カゴ</h1>
+              <h1 class="cart_intro_tit cmn_tit05">お買い物カゴ | STEP&#9312;</h1>
               <p class="cart_intro_txt">現在、お買い物かごには以下の商品が入っています。</p>
               <!-- <span m:id="l_pre_disp_installment"><p class="left memadd_mb_02">※後払い時は以下の分割払い価格となります。</p>
               <span m:id="l_ite_shopCart">
@@ -534,7 +539,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                   <span m:id="l_Equ_postage"><span m:id="b_wr_order_article_total">5,400</span> 円</span>
                 </dd>
               </dl>
-              <p class="cart_side_total_btn viewPc mt40"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red btn_middle">お客様情報の入力へ</a></p>
+              <p class="cart_side_total_btn viewPc mt40"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red btn_middle">ご注文の手続きはこちら</a></p>
             </div>
             <!-- /.cart_side_total -->
 
@@ -778,19 +783,6 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                   </span>
                 </table>
 
-                <div class="attention_box cart_attention_box">
-                  <p class="attention_box_tit">注意事項</p>
-                  <ul class="attention_box_txt">
-                    <li>※表示の金額は全て税込です。</li>
-                    <li>※内容をお確かめの上、「お客様情報入力へ」を押し、入力画面へお進みください。</li>
-                    <li>※ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</li>
-                    <li>※お支払金額の合計は、送料、手数料、割引率などを加え、決済時に確定します。</li>
-                    <li>※カートから商品を削除する場合は、その商品の「削除」を押してください。</li>
-                    <li>※当サイトでは満18歳未満のお客様からのご注文は承れません。</li>
-                    <li><span m:id="l_notEmp_alcGoods_inCart">※未成年者の飲酒は法律で禁じられております。当店では、未成年者への酒類の販売は固くお断りしています。</span></li>
-                  </ul>
-                </div>
-                <!-- /.attention_box -->
                 <div class="cart_recalculate">
                   <p class="cart_recalculate_txt">数量を変更したい場合は数量を再選択の上「再計算する」ボタンを押してください。<br class="viewSp">※料金は全て税込です。</p>
                   <p class="cart_recalculate_btn">
@@ -805,7 +797,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                       <a m:id="e_link_shop" href="/" class="cmn_link01 cmn_link01_reverse"><span>お買い物を続ける</span></a>
                     </li>
                     <li class="cart_price_btn02 viewSp"><a href="/shop/c/static/guide/" class="cmn_btn cmn_btn_tri btn_middle"><span>ご利用ガイド</span></a></li>
-                    <li class="cart_price_btn03"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>お客様情報の入力へ</span></a></li>
+			<li class="cart_price_btn03"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></li>
                   </ul>
                   <table class="cmn_table01 cart_price_table">
                     <tr m:id="div_shopping_total">
@@ -859,6 +851,21 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                       </td>
                     </tr>
                   </table>
+
+		<div class="attention_box cart_attention_box">
+			<p class="attention_box_tit">注意事項</p>
+			<ul class="attention_box_txt">
+				<li>※表示の金額は全て税込です。</li>
+				<li>※内容をお確かめの上、「ご注文の手続きはこちら」を押し、入力画面へお進みください。</li>
+				<li>※ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</li>
+				<li>※お支払金額の合計は、送料、手数料、割引率などを加え、決済時に確定します。</li>
+				<li>※カートから商品を削除する場合は、その商品の「削除」を押してください。</li>
+				<li>※当サイトでは満18歳未満のお客様からのご注文は承れません。</li>
+				<li><span m:id="l_notEmp_alcGoods_inCart">※未成年者の飲酒は法律で禁じられております。当店では、未成年者への酒類の販売は固くお断りしています。</span></li>
+			</ul>
+		</div>
+		<!-- /.attention_box -->
+
                   <!-- ▼▼ 個別送料商品メッセージ 2015.08.24 ▼▼ -->
                   <span m:id="l_Equ_postage">
                     <p class="cart_price_txt tar"><span m:id="b_msg_info_cart_individual_postage">送料はお申込み内容の確認画面で確定します。</span></p>
@@ -1482,7 +1489,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 <!--▲▲▲こんな商品も買っています▲▲▲-->
               </form>
               
-              <p class="cart_customer_btn mb50 s_mb15 tac"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>お客様情報の入力へ</span></a></p>
+              <p class="cart_customer_btn mb50 s_mb15 tac"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></p>
               <!--▼▼▼ ログインボックス ▼▼▼-->
               <span m:id="l_notEqu_member">
                 <p class="cart_guest_btn viewSp s_mb20 tac"><a href="#guest" class="cmn_btn cmn_btn_tri cmn_btn_brown btn_middle"><span>はじめて購入する方</span></a></p>
