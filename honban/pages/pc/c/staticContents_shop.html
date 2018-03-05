@@ -32,9 +32,9 @@
 <script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
 <script src="/contents/c/js/new/slick.min.js"></script>
 <script src="/contents/c/js/new/common.js"></script>
-<!--▼▼▼ カート投入js ▼▼▼-->
-<script src="/contents/js/staticCartSkuAdd.js" charset="UTF-8"></script>
-<!--▲▲▲ カート投入js ▲▲▲-->
+	<!--▼▼▼ カート投入js ▼▼▼-->
+	<script src="/contents/js/staticCartSkuAdd.js" charset="UTF-8"></script>
+	<!--▲▲▲ カート投入js ▲▲▲-->
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
@@ -784,7 +784,7 @@ $(function(){
                                     <span m:id="l_equ_subCate_checkPeriod">
                                     <span m:id="icnt_increment"></span>
                                     <span m:id="i_ins_subCate"></span>
-                                    <li>
+				<li class="item">
                                         <div id="p_0">
                                             <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
                                             <span class="category_list_img"></span>
@@ -793,6 +793,11 @@ $(function(){
                                             </span>
                                             </a>
                                         </div>
+					<span class="sub_nav">
+							<span class="inner">
+						<p class="tit">
+							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate_category_name">ファッション</span></a>
+					</p>
                                         <ul m:id="tag_dd_subCate">
                                             <span m:id="l_ite_subCate"> 
                                                 <span m:id="l_equ_subCate2_checkPeriod">
@@ -802,7 +807,8 @@ $(function(){
                                                     <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
                                                     <ul m:id="tag_dd_subCate2">
                                                         <span m:id="l_ite_subCate2"> 
-                                                        <span m:id="l_equ_subCate3_checkPeriod"> <span m:id="icnt_increment"></span>
+																				<span m:id="l_equ_subCate3_checkPeriod">
+																					<span m:id="icnt_increment"></span>
                                                         <li>
                                                         <a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
                                                         </li>
@@ -812,14 +818,15 @@ $(function(){
                                                 </li>
                                                 </span>
                                             </span>
+						</span>
                                         </ul>
+					</span>
                                     </li>
                                     </span>
                                 </span>
                             </ul>
                         </span>
                     </span>
-                </div>
                 </span>
                 </span>
             <!--▲▲▲カテゴリー▲▲▲-->
