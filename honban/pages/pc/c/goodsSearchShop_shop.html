@@ -391,6 +391,209 @@ $(function(){
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
+<style>
+/*ジャンル別ランキング*/
+		
+		.cart_box {
+			display: none;
+		}
+		
+		.r_con_box_n_01_in_cat li {
+			background-image: url(/contents/c/shop/image/ico_ranking01.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			padding-top: 58px;
+			background-size: 160px;
+			float: left;
+			width: 19%;
+			position: relative;
+		}
+		
+		.r_con_box_n_01_in_cat li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking02.png);
+			background-size: 40px auto;
+			background-position: center 13px;
+			margin-left: 1%;
+		}
+		
+		.r_con_box_n_01_in_cat li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking03.png);
+		}
+		
+		.r_con_box_n_01_in_cat li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking04.png);
+			background-position: center 22px;
+		}
+		
+		.r_con_box_n_01_in_cat li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking05.png);
+		}
+		@media screen and (min-width: 768px) {
+			.recommend_list.item_list .img_box a {
+				height: 228px;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			.r_con_box_n_01_in_cat li {
+				padding: 30px 25px 12px 0 !important;
+				float: none;
+				width: auto;
+				background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
+				background-repeat: no-repeat;
+				background-position: 1rem 0;
+				background-size: 60px auto;
+			}
+			.r_con_box_n_01_in_cat li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
+				background-size: 48px auto;
+				background-position: 1rem 2.3vw;
+				padding: 30px 25px 12px 0 !important;
+			}
+			.r_con_box_n_01_in_cat li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
+			}
+			.r_con_box_n_01_in_cat li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking04.png);
+				background-size: 30px auto;
+				background-position: 1.8rem .7vw;
+			}
+			.r_con_box_n_01_in_cat li+li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking05.png);
+			}
+		}
+		.r_con_box_n_01_in_cat {
+	    	overflow:hidden;
+	}
+
+
+	.r_con_box_n_01_in_cat  li .img_box_hover_in {
+		min-width: 166px;
+    	min-height: 166px;
+	}
+	.r_con_box_n_01_in_cat li .img_box img {
+	    max-width: 100%;
+	    max-height: 100%;
+	}
+	.r_con_box_n_01_in_cat .img_box a {
+    	height: 228px;
+    	display: block;
+	}
+	.r_con_box_n_01_in_cat .img_box {
+    	text-align: center;
+    	position: relative;
+	}
+	.img_box_hover_in {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+    -webkit-transition: all .5s;
+    transition: all .5s;
+	}
+	.r_con_box_n_01_in_cat .recommend_list_yen {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.cart_box {
+		display: none;
+	}
+	.cart_box img {
+		max-width: 100%;
+		height: auto;
+		width: 100%;
+	}
+	@media screen and (max-width: 767px) {
+	    .r_con_box_n_01_in_cat li {
+	        padding:30px 25px 12px 0 !important;
+	        float: none;
+    		width: auto;
+	        background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
+	        background-repeat: no-repeat;
+	        background-position: 1rem 0;
+	        background-size: 60px auto;
+	    }
+	    .r_con_box_n_01_in_cat li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
+	        background-size: 48px auto;
+	        background-position: 1rem 2.3vw;
+	        padding:30px 25px 12px 0 !important;
+
+	    }
+	    .r_con_box_n_01_in_cat li + li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
+	    }
+	    .r_con_box_n_01_in_cat li + li + li+ li {
+	        background-image: url(/contents/c/shop/image/ico_ranking04.png);
+            background-size: 30px auto;
+            background-position: 1.8rem .7vw;
+	    }
+	    .r_con_box_n_01_in_cat li + li + li+ li + li {
+	        background-image: url(/contents/c/shop/image/ico_ranking05.png);
+	    }
+
+	    .r_con_box_n_01_in_cat .more_item_txt {
+		    font-size: .75rem;
+		}
+	    .r_con_box_n_01_in_cat li .img_box {
+	    	width: 90px;
+	        float: left;
+	    	margin-right: 10px;
+	        text-align: left;
+		}
+
+		.cart_box {
+			clear: both;
+			float: right;
+			margin-top: 10px;
+		}
+		.cart_box img {
+			max-width: 100%;
+			height: auto;
+			width: auto;
+		}
+		.r_con_box_n_01_in_cat li:after {
+		    content: '\e90b';
+		    color: #bababa;
+		    font-size: 20px;
+		    height: 14px;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    position: absolute;
+		    margin: auto 0;
+		}
+		.r_con_box_n_01_in_cat .recommend_list_yen {
+			margin-top: 10px;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+		.r_con_box_n_01_in_cat .item_list.is-active li:nth-child(n+3) {
+    		display: none;
+		}
+		.r_con_box_n_01_in_cat .item_list.is-active li:nth-child(n+3) {
+    		display: block!important;
+		}
+			
+		.r_con_box_n_01_in_cat .more_item_txt {
+		    color: #fff;
+		    font-size: 15px;
+		    line-height: 43px;
+		    text-align: center;
+		}
+		.more_item.is-active {
+		
+    		clear: both;
+		}
+
+	}
+</style>
 <script type="text/javascript">
 	function checkedGoods() {
 		var objs = new String();
