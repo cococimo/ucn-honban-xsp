@@ -1,7 +1,136 @@
 <style>
-.eigth .eigth-box01>div{top: 313px;}
-.eigth .eigth-box01 p {text-align: left;}
-.eigth .eigth-box01>div dd, .eigth .eigth-box01>div dt {font-size: 14px;}
+#content_wrap .eigth .eigth-box01>div{top: 313px;}
+#content_wrap .eigth .eigth-box01 p {text-align: left;}
+#content_wrap .eigth .eigth-box01>div dd, .eigth .eigth-box01>div dt {font-size: 14px;}
+
+/*オリジナルコンテンツ4追加▼▼*/
+#content_wrap .seventh .seventh-container {
+    position: relative;
+    height: 820px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 h3 span {
+	display: inline-block;
+	float: left;
+	margin-bottom: 20px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 {
+    position: absolute;
+    top: 525px;
+    left: 0;
+    width: 560px;
+    padding-left: 205px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 img {
+position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	#content_wrap .seventh .seventh-container {
+	    position: relative;
+	    height: auto;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 {
+	    position: static;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    padding-left: 0;
+	    margin-bottom: 20px;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 {
+	    position: static;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 .cl-fix>div:first-child {
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 img {
+	    position: static;
+	    left: 0;
+	    top: 0;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 h3 span {
+		float: none;
+		margin-bottom: 0;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box03 {
+		margin-bottom: 20px;
+	}
+}
+/*オリジナルコンテンツ4追加▲▲*/
+
+
+/*オリジナルコンテンツレイアウト変更▼▼*/
+@media screen and (min-width: 640px) {
+  #content_wrap .seventh .seventh-container { height:auto;overflow:hidden;margin-bottom:20px;}
+  #content_wrap .seventh .seventh-container .seventh-box01 img,
+  #content_wrap .seventh .seventh-container .seventh-box02 img,
+  #content_wrap .seventh .seventh-container .seventh-box03 img,
+  #content_wrap .seventh .seventh-container .seventh-box04 img {
+    position:static;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box01,
+  #content_wrap .seventh .seventh-container .seventh-box02,
+  #content_wrap .seventh .seventh-container .seventh-box03,
+  #content_wrap .seventh .seventh-container .seventh-box04 {
+    position:static;
+    padding-left: 0;
+    width:auto;
+    width:48%;
+    float:left;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box03,
+  #content_wrap .seventh .seventh-container .seventh-box04 {
+    margin-top:30px;
+  
+  }
+  
+  #content_wrap .seventh .seventh-container .seventh-box01 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box04 .cl-fix div:first-child {
+    height:180px;
+    text-align:center;
+    margin-bottom:10px;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box01 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box04 .cl-fix div img {
+    width:auto;
+    max-height:180px;
+  }
+  
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div img {
+    margin-top:30px;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box03 {clear:both;}
+  #content_wrap .seventh .seventh-container .seventh-box02,
+  #content_wrap .seventh .seventh-container .seventh-box04 { float:right;}
+}
+
+
+@media screen and (max-width: 640px) {
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:first-child {
+      /*float: none;*/
+      max-width: 100%;
+      text-align: left;
+      /*width:100%;*/
+    }
+    /*#content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:last-child {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }*/
+    #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:first-child,
+    #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix>div:first-child {
+      text-align:center !important;
+     
+    }
+      
+  }
 </style>	
     <div id="original" class="bs-wrap seventh">
 		<div class="seventh-ttl01 cl-fix">
@@ -13,14 +142,14 @@
 		</div>
 		<div class="seventh-container">
 			<div class="seventh-box01">
-				<h3><span>1</span>現代用語の基礎知識2016</h3>
+				<h3><span>1</span>現代用語の基礎知識2017</h3>
 				<div class="cl-fix">
-					<div><img src="contents/shop/00000003/image/static/img/exword2/seventh04.png" alt="現代用語の基礎知識2015"></div>
+					<div><img src="contents/shop/00000003/image/static/img/exword2/seventh04.png" alt="現代用語の基礎知識2017"></div>
 					<div>
 						<p class="seventh-p01">従来の辞典では調べきれない生まれたての用語・時事用語から、時代色の豊かな用語までを幅広く収録。毎年の最新語・時事語・流行語から現代社会を理解するための基礎用語まで、第一線で活躍する専門著者がわかりやすく解説しています。</p>
 					</div>
 				</div>
-				<p class="seventh-p02">2016年版 発行：自由国民社</p>
+				<p class="seventh-p02">2017年版 発行：自由国民社</p>
 			</div>
 			<div class="seventh-box02">
 				<h3><span>2</span>昭和史年表　一億人の軌跡</h3>
@@ -33,15 +162,31 @@
 				<p class="seventh-p02">※発行：毎日新聞社</p>
 			</div>
 			<div class="seventh-box03">
-				<h3><span>3</span>抒情カラオケ 名曲集15選</h3><img src="contents/shop/00000003/image/static/img/exword1/seventh06.png" alt="抒情カラオケ 名曲集15選" class="sp-n">
+				<h3 class="js-matchHeight"><span>3</span>抒情カラオケ 名曲集15選</h3>
+        <!-- <img src="contents/shop/00000003/image/static/img/exword1/seventh06.png" alt="抒情カラオケ 名曲集15選" class="sp-n"> -->
+        <div class="cl-fix">
+          <div><img src="contents/shop/00000003/image/static/img/exword1/seventh06.png" alt="抒情カラオケ 名曲集15選"></div>
+         </div>
 				<p class="seventh-p01">カラオケ収録曲<br>故郷・早春賦・荒城の月・浜辺の歌・我は海の子・紅葉・旅愁・雪・朧月夜・春の小川・背くらべ・青葉の笛（敦盛と忠度）・箱根八里・ゴンドラの唄・故郷を離るる歌・・・全15曲。<br>※キー、テンポの調整はできません</p>
 			</div>
+			<div class="seventh-box04">
+				<h3 class="js-matchHeight"><span>4</span>脳トレ・認知症予防に役立つ <!--<br class="viewPc">-->昭和の［思い出］年表クイズ</h3>
+				<div class="cl-fix">
+					<div><img src="/item_exword-xd-sk6820/contents/shop/00000003/image/static/img/exword3/seventh07.png" alt="脳トレ・認知症予防に役立つ昭和の［思い出］年表クイズ"></div>
+					<div>
+						<p class="seventh-p01">
+							昭和の出来事をクイズで楽しみながら振り返り。<br>
+							脳トレにも役立ちます。</p>
+					</div>
+				</div>
+				<p class="seventh-p02">※発行：自由国民社</p>
+			</div>
 		</div>
-	</div>
+
 	<div class="bs-wrap third">
 	　<!-- プレゼント▼▼ -->
 		<div class="third-ttl cl-fix">
-			<div><span>1</span>月<span>23</span>日(月)まで</div>
+			<div><span>3</span>月<span>26</span>日(月)まで</div>
 			<div><img src="contents/shop/00000003/image/static/img/exword1/third01.png" alt="プレゼント付き"></div>
 		</div>
 		<div class="third-box01 cl-fix">
@@ -53,6 +198,11 @@
 			</div>
 		</div>
 	    <!--　プレゼント▲▲ -->
+	    <!--<span style="display:block;padding:14px 0;font-size:16px;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px">
+		<b style="color:red">本商品は好評のため、現在欠品中です。商品のお届けは、5月下旬から6月中旬を予定しております。<br>
+		予めご了承ください。
+			</b>
+		</span>-->
 	    
 		<!-- cart -->
 		<!-- ELTEX mod start -->
@@ -63,8 +213,8 @@
 			<input type="hidden" name="ext_goods_sku_code" value="DCE80">
 			<input type="hidden" name="order_num_string" value="1">
 		-->
-			<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
-			<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
+			<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+			<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
 		<!--	</form>-->
 		<!-- ELTEX mod end -->
 	</div>
@@ -77,7 +227,11 @@
 		</div>
 		<div class="eigth-box01"><img src="contents/shop/00000003/image/static/img/exword2/eigth03.png" alt="カシオ電子辞書" class="sp-n"><img src="contents/shop/00000003/image/static/img/exword2/sp-eigth01.png" alt="カシオ電子辞書" class="sp-i sp-mb15">
 			<p class="sp-n">※実際の商品になるべく近い色の再現に努めておりますが、撮影状況等により実際の商品と色味が若干異なる場合がございます。</p>
-			<span style="display:block;padding:14px 0;"><b>※本商品はお申込みの集中により、お届けに1週間から10日前後かかる場合がございます。予めご了承ください。</b></span><img src="contents/shop/00000003/image/static/img/exword2/eigth04.png" alt="純正ケースつき" class="sp-n eigth04"><img src="contents/shop/00000003/image/static/img/exword1/sp-eigth02.png" alt="純正ケースつき" class="sp-i sp-eigth02">
+	<!--<span style="margin-top:13px;display:block;padding:14px 0;font-size:16px;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px">
+		<b style="color:red">本商品は好評のため、現在欠品中です。商品のお届けは、5月下旬から6月中旬を予定しております。<br>
+		予めご了承ください。
+			</b>
+	</span>--><img src="contents/shop/00000003/image/static/img/exword2/eigth04.png" alt="純正ケースつき" class="sp-n eigth04"><img src="contents/shop/00000003/image/static/img/exword1/sp-eigth02.png" alt="純正ケースつき" class="sp-i sp-eigth02">
 			<div class="sp-n">
 				<dl>
 					<dt>
@@ -105,14 +259,18 @@
 				<div><img src="contents/shop/00000003/image/static/img/exword1/sp-eigth03.png" alt="純正ケースつき" class="sp-i sp-eigth02"></div>
 				<dl>
 					<dt>電子辞書部門　最優秀賞</dt>
-					<dd>全国主要家電量販店・<br>全国主要家電量販店・パソコン専門店・<br>ネットショップ2439店のPOS実売統計<br>集計対象期間：2015年1月-12月</dd>
+					<dd>全国主要家電量販店・<br>
+					  パソコン専門店・ネットショップ<br>
+            2,614店のPOS実売統計<br>
+					集計対象期間：2017年1月～12月</dd>
 				</dl>
 			</div>
 			<div class="cl-fix">
+    
 				<div><img src="contents/shop/00000003/image/static/img/exword1/sp-eigth04.png" alt="純正ケースつき" class="sp-i sp-eigth02"></div>
 				<dl>
 					<dt>電子辞書メーカーシェアNo.1</dt>
-					<dd>2015年1月-2015年12月<br>「電子手帳・辞書」メーカー別数量シェア<br>全国有力家電量販店での販売実績を<br>集計するGfK Japan調べ<br>全国主要家電量販店・パソコン専門店・<br>ネットショップ2439店のPOS実売統計<br>集計対象期間：2015年1月-12月</dd>
+					<dd>2004年～2017年<br>「電子辞書・辞書J メー力一別数量シェア<br>全国有力家電量販店での販売実績を<br>集計する GfK Japan調べ。</dd>
 				</dl>
 			</div>
 		</div>
@@ -140,13 +298,13 @@
 			<input type="hidden" name="ext_goods_sku_code" value="DCE80">
 			<input type="hidden" name="order_num_string" value="1">
 		-->
-			<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><span class="tel"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
-			<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><a class="tel" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
+			<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span></p>
+			<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a></p>
 		<!--	</form>-->
 	</div>
 	<div class="bs-wrap tenth">
 		<h2>使いやすさを追求した多彩な機能<br class="sp-b">
-		<span>（XD-SK6810）</span></h2>
+		<span>（XD-SK6820）</span></h2>
 		<div>
 			<ul>
 				<li>●カラー液晶</li>
@@ -179,15 +337,14 @@
 		</div>
 	</div>
 	<p class="ta-c" style="margin-top:10px;"><a href="/shop/c/static/exword-episode/">歴代電子辞書開発ストーリーはこちらから>></a></p>
-	<p class="ta-c" style="margin-top:10px;"><a href="/item_exword-xd-sk6810/exword-interview/">「ココチモオリジナル カシオ電子辞書」草野仁さん単独インタビューはこちらから>></a></p>
 </div>
 
-<!-- 先頭へ戻るボタン -->
+<!-- 先頭へ戻るボタン 
 <p class="totop-btn">
 	<a href="#header">
 		<img src="contents/c/shop/image/sp/sp_img_totop.png" alt="先頭へ戻る" width="48">
 	</a>
 </p>
-<!-- 先頭へ戻るボタンここまで -->
+ 先頭へ戻るボタンここまで -->
 
 
