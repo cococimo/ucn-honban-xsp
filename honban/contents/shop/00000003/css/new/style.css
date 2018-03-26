@@ -11769,3 +11769,25 @@
 	}
 
 }
+
+/*メガナビのテキスト調整(PC版)*/
+@media screen and (min-width: 768px) {
+	.category_list > ul > .item > .sub_nav ul {
+	    -webkit-flex-wrap: wrap;
+	    -moz-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    display: -webkit-flex; /* Safari */
+	    display: flex;
+		}
+	.category_list > ul > .item > .sub_nav ul li a {
+	    display: -webkit-flex; 
+	    display: flex;
+	    line-height: 1.4;
+	}
+	.category_list ul .item4:hover .sub_nav ul li {
+	    width: 210px;
+	    padding: 0 0 15px;
+	}
+
+}
