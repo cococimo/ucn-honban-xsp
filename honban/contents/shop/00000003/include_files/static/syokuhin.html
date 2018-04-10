@@ -303,6 +303,68 @@
 			display: inline;
 		}
 	}
+	/*レイアウト＿商品上4列-下3列*/
+	
+	@media screen and (min-width: 767px) {
+		.item_list_2top.col_3-col4 li + li + li {
+			border-top:none;
+		}
+		.item_list_2top.col_3-col4 li:first-child {
+			width: 275px;
+			padding: 0 0 0 0;
+			border-top: none;
+			margin-bottom: 20px;
+			border-right: none;
+		}
+		.item_list_2top.col_3-col4 li:nth-child(n+2) {
+			clear: none;
+			width: 300px;
+			margin-left: 1px;
+			padding: 0 0 0 25px;
+		}
+		.item_list_2top.col_3-col4 li:nth-child(n+4) {
+			clear: none;
+			width: 225px;
+			margin-left: 1px;
+			padding: 20px 0 0 25px;
+			border-top: 1px dotted #ccc;
+		}
+		.item_list_2top.col_3-col4 li:nth-child(n+4):nth-child(4n) {
+			width: 200px;
+			padding: 20px 0 0 0;
+			border-top: none;
+			margin-bottom: 20px;
+			border-top: 1px dotted #ccc;
+		}
+
+
+
+
+		.item_list_2top.col_3-col4 li img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		.item_list_2top.col_3-col4 li .img_box_hover_in {
+			width: 260px;
+			height: 260px;
+		}
+		.item_list_2top.col_3-col4 li:nth-child(n+4) .img_box_hover_in {
+			width: 180px;
+			height: 180px;
+		}
+	}
+	
+	@media screen and (max-width: 767px) {
+		.category_feature_recommend .item_list_2top.col_3-col4 li:nth-child(n+3) {
+			display: none;
+		}
+		.category_feature_recommend .item_list_2top.col_3-col4 li+li+li+li+li+li+li+li {
+			width: 100%;
+		}
+		.item_list .item_list_tag.notag {
+			display: inline;
+		}
+	}
 	/*食品カテゴリランキング表示調整*/
 	
 	div#syokuhin,
@@ -713,9 +775,160 @@
 				</div>
 				<!-- special01 -->
 
+				<div class="category_feature_recommend mb30">
+					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">最新カタログ ピックアップ商品</span></h2>
+					<ul class="category_feature_recommend_list item_list item_list_2top col_3-col4 js-item_list">
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">新登場！</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIDC2/" target="_blank">
+										<img src="/contents/c/goods/image/new/didc2/didc2_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIDC2/" target="_blank">白えび 刺身・昆布〆セット</a></h3>
+								<p class="text item_list_txt">「富山湾の宝石」と呼ばれる、世界でも珍しい白えびの刺身と、白えびを北海道産のおぼろ昆布で包んだ昆布〆のセット。</p>
+							</div>
+							<p class="cash item_list_yen">4,320円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">新登場！</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_SDIDC7/" target="_blank">
+										<img src="/contents/c/goods/image/new/didc7/didc7_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_SDIDC7/" target="_blank">佐藤錦秀品（600g）</a></h3>
+								<p class="text item_list_txt">さすが、さくらんぼの王様！甘みと酸味のバランスが絶妙なみずみずしさが絶品。</p>
+							</div>
+							<p class="cash item_list_yen">6,180円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">新登場！</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAX9/" target="_blank">
+										<img src="/contents/c/goods/image/new/diay1/diay1_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAX9/" target="_blank">浜名湖産 うなぎ蒲焼カット（2パック）</a></h3>
+								<p class="text item_list_txt">天下の名品をご家庭で！ 百年を越える養殖技術の伝承によって育まれた絶品うなぎ。湯煎するだけでおいしく召し上がれます。</p>
+							</div>
+							<p class="cash item_list_yen">4,536円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIZ17/" target="_blank">
+										<img src="/contents/c/goods/image/new/diz17/diz17_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIZ17/" target="_blank">秋田呑みくらべ八撰</a></h3>
+								<p class="text item_list_txt">全国屈指の酒処として知られる秋田の銘酒を、いいとこどりでセレクション。地元で人気の8蔵元からそれぞれオススメの1本を取り揃えました。</p>
+							</div>
+							<p class="cash item_list_yen">4,752円 (税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIDB1/" target="_blank">
+										<img src="/contents/c/goods/image/new/didb1/didb1_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIDB1/" target="_blank">淡路の新たまねぎ（5kg）</a></h3>
+								<p class="text item_list_txt">驚くほど甘く、やわらかな食感がたのしめる淡路島の新たまねぎ。5キロセットをお届けします。</p>
+							</div>
+							<p class="cash item_list_yen">3,480円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAB2/" target="_blank">
+										<img src="/contents/c/goods/image/new/diab2/diab2_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAB2/" target="_blank">平牧三元豚 煮込み・焼きハンバーグセット</a></h3>
+								<p class="text item_list_txt">お客様にご好評の絶品ハンバーグ。デミグラスソースで煮込んだ「煮込みハンバーグ」と、直火で焼き上げた「焼きハンバーグ」の2種セット。</p>
+							</div>
+							<p class="cash item_list_yen">3,672円 (税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_recommend">
+									<span class="item_list_tag_txt_recommend">オススメ</span>
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIDC6/" target="_blank">
+										<img src="/contents/c/goods/image/new/didc6/didc6_sum01.jpg" alt="">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIDC6/" target="_blank">清市つぁんのそばかす晩柑</a></h3>
+								<p class="text item_list_txt">「そばかす顔」が特徴のそばかす晩柑（ばんかん）。さわやかな酸味と、糖度10度以上の甘味の絶妙なハーモニーがたまりません！</p>
+							</div>
+							<p class="cash item_list_yen">3,780円 (税込)</p>
+						</li>
+					</ul>
+					<div class="more_item js-more_item">
+						<p class="more_item_txt">もっと見る</p>
+					</div>
+				</div>
+				<!-- /.recommend -->
+				<!-- /deadline close 0911 -->
+
 				<!-- special01 -->
 				<div class="category_feature_recommend mb30">
-					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">冬のあったか鍋</span>
+					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">特別なご馳走シリーズ</span>
 					</h2>
 
 					<div class="category_feature_recommend">
@@ -723,7 +936,7 @@
 							<li>
 								<div class="item_list_in js-matchHeight">
 									<div class="img_box img_box_hover">
-										<a href="/item_DIG1L/" target="_blank"><img src="/contents/c/goods/image//new/dig1l/dig1l_sum01.jpg" alt="関とら本店のとらふくちり鍋セット">
+										<a href="/item_DIAX6/" target="_blank"><img src="/contents/c/goods/image/new/diax6/diax6_sum01.jpg" alt="">
 											<div class="img_box_hover_in">
 												<div class="img_box_hover_txt">
 													<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -731,15 +944,15 @@
 											</div>
 										</a>
 									</div>
-									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIG1L/" target="_blank">関とら本店のとらふくちり鍋セット</a></h3>
-									<p class="text item_list_txt">お待たせしました！ 今年も本場・下関から、ふぐ専門店「関とら」のこだわりの国産とらふぐ鍋セットをお届けします！</p>
+									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAX6/" target="_blank">米沢牛ランプステーキ（2枚）</a></h3>
+									<p class="text item_list_txt">赤身ならではの深みあふれる弾力と、フィレ肉にも負けない上質なやわらかさで虜になること請け合い！</p>
 								</div>
-								<p class="cash item_list_yen">16,200円（税込）</p>
+								<p class="cash item_list_yen">7,776円（税込）</p>
 							</li>
 							<li>
 								<div class="item_list_in js-matchHeight">
 									<div class="img_box img_box_hover">
-										<a href="/item_DIG1M/" target="_blank"><img src="/contents/c/goods/image/new/dig1m/dig1m_sum01.jpg" alt="三陸鍋">
+										<a href="/item_DIAX7/" target="_blank"><img src="/contents/c/goods/image/new/diax7/diax7_sum01.jpg" alt="">
 											<div class="img_box_hover_in">
 												<div class="img_box_hover_txt">
 													<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -747,15 +960,15 @@
 											</div>
 										</a>
 									</div>
-									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIG1M/" target="_blank">三陸鍋</a></h3>
-									<p class="text item_list_txt">おいしさと手づくりにとことんこだわる三陸岩手の木村商店から、贅沢海鮮鍋をお届け！ 最後の一滴まで飲み干したくなるだしの味をぜひご賞味ください。</p>
+									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAX7/" target="_blank">鬼ひも川・花山うどんセット</a></h3>
+									<p class="text item_list_txt">全国のご当地うどんの日本一を決する「うどん天下一決定戦」で三連覇したうどんです。</p>
 								</div>
-								<p class="cash item_list_yen">4,860円（税込）</p>
+								<p class="cash item_list_yen">3,500円（税込）</p>
 							</li>
 							<li>
 								<div class="item_list_in js-matchHeight">
 									<div class="img_box img_box_hover">
-										<a href="/item_DIG1N/" target="_blank"><img src="/contents/c/goods/image/new/dig1n/dig1n_sum01.jpg" alt="青森県産フランス鴨鍋">
+										<a href="/item_DIAX8/" target="_blank"><img src="/contents/c/goods/image/new/diax8/diax8_sum01.jpg" alt="">
 											<div class="img_box_hover_in">
 												<div class="img_box_hover_txt">
 													<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -763,15 +976,15 @@
 											</div>
 										</a>
 									</div>
-									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIG1N/" target="_blank">青森県産フランス鴨鍋</a></h3>
-									<p class="text item_list_txt">青森育ちの「フランス鴨」を相性抜群の鴨ガラスープとともに。最後は茹で蕎麦を加えて“鴨南蛮”でシメるのも一興です。</p>
+									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAX8/" target="_blank">のどぐろと水かれいの干物</a></h3>
+									<p class="text item_list_txt">「白身のトロ」ともいわれるのどぐろは、ほどよく脂ののったふくよかな味わいです。</p>
 								</div>
 								<p class="cash item_list_yen">4,536円（税込）</p>
 							</li>
 							<li>
 								<div class="item_list_in js-matchHeight">
 									<div class="img_box img_box_hover">
-										<a href="/item_DIAU5/" target="_blank"><img src="/contents/c/goods/image/new/diau5/diau5_sum01.jpg" alt="黄金の村の木頭ゆずぽん酢・ゆずこしょう">
+										<a href="/item_DIA2P/" target="_blank"><img src="/contents/c/goods/image/new/diap1/diap1_sum01.jpg" alt="">
 											<div class="img_box_hover_in">
 												<div class="img_box_hover_txt">
 													<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -779,10 +992,10 @@
 											</div>
 										</a>
 									</div>
-									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAU5/" target="_blank">黄金の村の木頭ゆずぽん酢・ゆずこしょう</a></h3>
-									<p class="text item_list_txt">冬の料理に大活躍のゆずぽん酢とゆずこしょうセットをお届けします。</p>
+									<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIA2P/" target="_blank">スモークハウスファイン 金賞受賞ソーセージセット</a></h3>
+									<p class="text item_list_txt">本場、ドイツが認めた無添加・手作りの味。皮はパリッと歯ごたえ、中身は旨みがギュッと詰まったジューシーな逸品。</p>
 								</div>
-								<p class="cash item_list_yen">2,450円（税込）</p>
+								<p class="cash item_list_yen">3,510円（税込）</p>
 							</li>
 						</ul>
 						<div class="more_item js-more_item">
@@ -793,18 +1006,18 @@
 				<!-- special01 -->
 
 
-				<div class="category_feature_recommend mb30">
-					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">小分けがうれしい商品シリーズ</span>
+				<div class="category_feature_recommend">
+					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">個分けがうれしい商品シリーズ</span>
 					</h2>
 					<ul class="category_feature_recommend_list item_list item_list_2top col_4 js-item_list">
 						<li>
 							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_popular">
-									<span class="item_list_tag_txt_popular">人気</span>
+								<div class="item_list_tag item_list_tag_popular notag">
+									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
 								</div>
 								<div class="img_box img_box_hover">
-									<a href="/item_DIAW1/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/diaw1/diaw1_sum01.jpg">
+									<a href="/item_DIAY2/" target="_blank">
+										<img alt="" src="/contents/c/goods/image/new/diay2/diay2_sum01.jpg">
 										<div class="img_box_hover_in">
 											<div class="img_box_hover_txt">
 												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -812,18 +1025,18 @@
 										</div>
 									</a>
 								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAW1/" target="_blank">帆立グラタン・牡蠣ドリアセット</a></h3>
-								<p class="text item_list_txt">三陸産の新鮮な帆立がたっぷり入ったグラタン。 後口がよく、鼻に抜ける香りも抜群！ 冷凍のまま電子レンジ温めてアツアツをどうぞ。</p>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAY2/" target="_blank">笹かぜちまき</a></h3>
+								<p class="text item_list_txt">もっちり甘い米のおいしさも、それを引き立てる具材の味もピカイチ！生姜の利いた「焼豚」、ピリ辛ジューシーな「和牛かぐら南蛮」、酢飯の「鮭ずし」など、越後魚沼の家庭の味８種をセットにしました！ </p>
 							</div>
-							<p class="cash item_list_yen">3,080円(税込)</p>
+							<p class="cash item_list_yen">3,024円(税込)</p>
 						</li>
 						<li>
 							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_popular notag">
-									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">人気</span>
 								</div>
 								<div class="img_box img_box_hover">
-									<a href="/item_DIAW2/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diaw2/diaw2_sum01.jpg">
+									<a href="/item_DIAU6/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diau6/diau6_sum01.jpg">
 										<div class="img_box_hover_in">
 											<div class="img_box_hover_txt">
 												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -832,19 +1045,19 @@
 									</a>
 								</div>
 								<h3 class="item_list_tit js-matchHeight01">
-									<a href="/item_DIAW2/" target="_blank">じゃがいもグラタン・かにグラタン</a></h3>
-								<p class="text item_list_txt">いつもとはひと味違うグラタンが食べたい方に。 北海道の旬の素材をまるごと使ったグラタンセット！</p>
+									<a href="/item_DIAU6/" target="_blank">平牧三元豚入りのとん汁</a></h3>
+								<p class="text item_list_txt">おいしい食卓で人気の平牧三元豚と味がしみこんだ具だくさんの野菜のとん汁。湯せんにかけて召し上がれる、寒い季節の強い味方です。</p>
 							</div>
-							<p class="cash item_list_yen">4,104円 (税込)</p>
+							<p class="cash item_list_yen">3,564円 (税込)</p>
 						</li>
 						<li>
 							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_popular">
-									<span class="item_list_tag_txt_popular">人気</span>
+								<div class="item_list_tag item_list_tag_popular notag">
+									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
 								</div>
 								<div class="img_box img_box_hover">
-									<a href="/item_DIAW3/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/diaw3/diaw3_sum01.jpg">
+									<a href="/item_DIAY3/" target="_blank">
+										<img alt="" src="/contents/c/goods/image/new/diay3/diay3_sum01.jpg">
 										<div class="img_box_hover_in">
 											<div class="img_box_hover_txt">
 												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -852,8 +1065,48 @@
 										</div>
 									</a>
 								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAW3/" target="_blank">きのポックルのビーフ＆きのこのカレー</a></h3>
-								<p class="text item_list_txt">北海道産の牛肉ときのこ、野菜をふんだんに使った絶品カレー。辛すぎないのも魅力です。</p>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAY3/" target="_blank">魚やの煮つけ</a></h3>
+								<p class="text item_list_txt">三陸女川（おながわ）港の水産加工のプロがつくった、昔ながらの甘辛しょうが風味の魚の煮付。</p>
+							</div>
+							<p class="cash item_list_yen">3,240円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular notag">
+									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAR6/" target="_blank">
+										<img alt="" src="contents/c/goods/image/new/diar6/diar6_sum01.jpg">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAR6/" target="_blank">一本釣り うるめいわしの漬け丼</a></h3>
+								<p class="text item_list_txt">土佐伝統の一本釣りで獲った、今が旬のうるめいわしを漬け丼で。土佐どんぶりコンテスト準優勝の、ご当地グルメの決定版です！</p>
+							</div>
+							<p class="cash item_list_yen">3,240円(税込)</p>
+						</li>
+						<li>
+							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular notag">
+									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
+								</div>
+								<div class="img_box img_box_hover">
+									<a href="/item_DIAY5/" target="_blank">
+										<img alt="" src="contents/c/goods/image/new/diay5/diay5_sum01.jpg">
+										<div class="img_box_hover_in">
+											<div class="img_box_hover_txt">
+												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAY5/" target="_blank">ちりめんのおじや</a></h3>
+								<p class="text item_list_txt">個分けがうれしい！ちりめんもたっぷり入って、シンプルながら風味豊かなおじやです。</p>
 							</div>
 							<p class="cash item_list_yen">3,780円(税込)</p>
 						</li>
@@ -863,41 +1116,7 @@
 									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
 								</div>
 								<div class="img_box img_box_hover">
-									<a href="/item_DIAW5/" target="_blank">
-										<img alt="" src="contents/c/goods/image/new/diaw5/diaw5_sum01.jpg">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAW5/" target="_blank">2種の生姜のスープ詰合せ</a></h3>
-								<p class="text item_list_txt">高知県産の黄金生姜を使用。おいしさと安心を両立する便利なフリーズドライスープです。</p>
-							</div>
-							<p class="cash item_list_yen">3,348円(税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAW6/" target="_blank">
-										<img alt="" src="/contents/c/goods/image/new/diaw6/diaw6_sum01.jpg">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAW6/" target="_blank">札幌グランドホテルの北海道スープ詰合せ</a></h3>
-								<p class="text item_list_txt">北海道産の野菜、牛乳、生クリームを使用した４種のスープ。「おもてなしセレクション」2017年金賞受賞です！</p>
-							</div>
-							<p class="cash item_list_yen">3,996円 (税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAW7/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diaw7/diaw7_sum01.jpg">
+									<a href="/item_DIAY6/" target="_blank"><img alt="" src="/contents/c/goods/image/new/diay6/diay6_sum01.jpg">
 										<div class="img_box_hover_in">
 											<div class="img_box_hover_txt">
 												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -906,16 +1125,19 @@
 									</a>
 								</div>
 								<h3 class="item_list_tit js-matchHeight01">
-									<a href="/item_DIAW7/" target="_blank">三陸浜寿司ハーフサイズセット</a></h3>
-								<p class="text item_list_txt">厳選して仕入れたさばとさんまを、秘伝のタレで味付け。ほどよくシメて岩手県遠野産のシャリにのせた手作りの押寿司です。</p>
+									<a href="/item_DIAY6/" target="_blank">炙り金華鯖押寿し</a></h3>
+								<p class="text item_list_txt">ガリ入りでもっとおいしくなりました！宮城県石巻産の金華鯖を使った風味豊かな炙り金華鯖押寿し。</p>
 							</div>
-							<p class="cash item_list_yen">2,602円 (税込)</p>
+							<p class="cash item_list_yen">2,700円 (税込)</p>
 						</li>
 						<li>
 							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular notag">
+									<!-- <span class="item_list_tag_txt_popular">人気</span> -->
+								</div>
 								<div class="img_box img_box_hover">
-									<a href="/item_DIAS8/" target="_blank">
-										<img alt="" src="contents/c/goods/image/new/dias8/dias8_sum01.jpg">
+									<a href="/item_DIAY8/" target="_blank">
+										<img alt="" src="/contents/c/goods/image/new/diay8/diay8_sum01.jpg">
 										<div class="img_box_hover_in">
 											<div class="img_box_hover_txt">
 												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
@@ -923,13 +1145,16 @@
 										</div>
 									</a>
 								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAS8/" target="_blank">＜東日本フーズ＞　いなり寿司</a></h3>
-								<p class="text item_list_txt">シャリに白ごまを混ぜた昔ながらの味付けいなり寿司。ごはんに適した独自の冷凍法なので、解凍後もできたての味が甦ります。</p>
+								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAY8/" target="_blank">門前おやき 春セット</a></h3>
+								<p class="text item_list_txt">食べたいときにひとつずつ！春の味わい「菜花」が加わった、信州長野が誇るスローフード。</p>
 							</div>
-							<p class="cash item_list_yen">3,132円(税込)</p>
+							<p class="cash item_list_yen">2,592円 (税込)</p>
 						</li>
 						<li>
 							<div class="item_list_in js-matchHeight">
+								<div class="item_list_tag item_list_tag_popular">
+									<span class="item_list_tag_txt_popular">人気</span>
+								</div>
 								<div class="img_box img_box_hover">
 									<a href="/item_DIAK5/" target="_blank">
 										<img alt="" src="/contents/c/goods/image/new/diak5/diak5_sum01.jpg">
@@ -954,136 +1179,7 @@
 				</div>
 				<!-- /.deadline close -->
 
-				<div class="category_feature_recommend">
-					<h2 class="cmn_tit01 mt0"><span class="cmn_tit01_underline">最新カタログ ピックアップ商品</span></h2>
-					<ul class="category_feature_recommend_list item_list item_list_2top js-item_list">
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_popular">
-									<span class="item_list_tag_txt_popular">新登場！</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DICA5/" target="_blank">
-										<img src="/contents/c/goods/image/new/dica5/dica5_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DICA5/" target="_blank">小腹にうれしい まろやか味噌ラーメン</a></h3>
-								<p class="text item_list_txt">大人気のオリジナルラーメンにみそ味が新登場！寒い冬にぴったりのおいしさです。</p>
-							</div>
-							<p class="cash item_list_yen">3,996円(税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_popular">
-									<span class="item_list_tag_txt_popular">注目！</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAE9/" target="_blank">
-										<img src="/contents/c/goods/image/new/diae9/diae9_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAE9/" target="_blank">タコのやわらか煮</a></h3>
-								<p class="text item_list_txt">まず驚くのは、そのやわらかさ！シンプル味付けなのに複雑な旨みが堪能できます。</p>
-							</div>
-							<p class="cash item_list_yen">3,024円(税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_recommend">
-									<span class="item_list_tag_txt_recommend">オススメ</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIG1M/" target="_blank">
-										<img src="/contents/c/goods/image/new/dig1m/dig1m_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIG1M/" target="_blank">三陸鍋</a></h3>
-								<p class="text item_list_txt">魚介たっぷり！特製だしの深いコクと澄んだ味わいは飲み干したくなるおいしさです。</p>
-							</div>
-							<p class="cash item_list_yen">4,860円(税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_recommend">
-									<span class="item_list_tag_txt_recommend">オススメ</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAU2/" target="_blank">
-										<img src="/contents/c/goods/image/new/diau2/diau2_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAU2/" target="_blank">ラーメン屋の手作りチャーシュー</a></h3>
-								<p class="text item_list_txt">秘伝のタレでじっくり煮込んで、旨みを凝縮。職人技が光る、まさに珠玉の一品です！</p>
-							</div>
-							<p class="cash item_list_yen">6,804円 (税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_recommend">
-									<span class="item_list_tag_txt_recommend">オススメ</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAH5/" target="_blank">
-										<img src="/contents/c/goods/image/new/diah5/diah5_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAH5/" target="_blank">骨ごと食べられる干物</a></h3>
-								<p class="text item_list_txt">骨までホロホロと崩れるようなやわらかさ！カルシウムたっぷりで、身体も喜びます。</p>
-							</div>
-							<p class="cash item_list_yen">3,402円(税込)</p>
-						</li>
-						<li>
-							<div class="item_list_in js-matchHeight">
-								<div class="item_list_tag item_list_tag_recommend">
-									<span class="item_list_tag_txt_recommend">オススメ</span>
-								</div>
-								<div class="img_box img_box_hover">
-									<a href="/item_DIAW8/" target="_blank">
-										<img src="/contents/c/goods/image/new/diaw8/diaw8_sum01.jpg" alt="">
-										<div class="img_box_hover_in">
-											<div class="img_box_hover_txt">
-												<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-											</div>
-										</div>
-									</a>
-								</div>
-								<h3 class="item_list_tit js-matchHeight01"><a href="/item_DIAW8/" target="_blank">がんね栗衛門</a></h3>
-								<p class="text item_list_txt">ずっしりと栗の旨みが凝縮されたお茶菓子です。なめらかな舌触りをたのしんでください。</p>
-							</div>
-							<p class="cash item_list_yen">2,800円 (税込)</p>
-						</li>
-					</ul>
-					<div class="more_item js-more_item">
-						<p class="more_item_txt">もっと見る</p>
-					</div>
-				</div>
-				<!-- /.recommend -->
-				<!-- /deadline close 0911 -->
+
 
 
 				<div class="feature">
@@ -1103,7 +1199,7 @@
 							<a href="/shop/c/static/syokutaku-feature13/" target="_blank">
 								<img src="/contents/c/shop/image/category/syokuhin/bnr-feature13.jpg" alt="おいしい食卓シリーズ にんじんジュース">
 								<div class="caption">
-									<p class="text"><span style="color: red;">NEW!</span> とびきりおいしい にんじんジュース、 できました。</p>
+									<p class="text"><!-- <span style="color: red;">NEW!</span> --> とびきりおいしい にんじんジュース、 できました。</p>
 									<p class="icon feature">特集</p>
 								</div>
 							</a>
@@ -1112,7 +1208,7 @@
 							<a href="/shop/c/static/syokutaku-feature12/" target="_blank">
 								<img src="/contents/c/shop/image/category/syokuhin/bnr-feature12.jpg" alt="「おいしい食卓」でつくる 毎日を楽しむアレンジレシピ 長芋とろろ ネバネバとろろ編">
 								<div class="caption">
-									<p class="text"><span style="color: red;">NEW!</span> 長芋とろろの魅力とアレンジレシピをご紹介！</p>
+									<p class="text"><!-- <span style="color: red;">NEW!</span>  -->長芋とろろの魅力とアレンジレシピをご紹介！</p>
 									<p class="icon feature">特集</p>
 								</div>
 							</a>
