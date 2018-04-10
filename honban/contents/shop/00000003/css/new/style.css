@@ -153,93 +153,93 @@
 }
 
 /*メガナビのサイズ調整*/
-.category_list ul .item1:hover .sub_nav{
+.category_list ul .item2:hover .sub_nav{
 	width: 560px;
 }
-.category_list ul .item2:hover .sub_nav{
+.category_list ul .item3:hover .sub_nav{
 	width: 255px;
 }
-.category_list ul .item3:hover .sub_nav{
+.category_list ul .item4:hover .sub_nav{
 	width: 445px;
 }
-.category_list ul .item5:hover .sub_nav{
+.category_list ul .item6:hover .sub_nav{
 	width: 380px;
 	margin: 0 220px 0 0;
 }
-.category_list ul .item6:hover .sub_nav{
+.category_list ul .item7:hover .sub_nav{
 	width: 460px;
 }
-.category_list ul .item7:hover .sub_nav{
+.category_list ul .item8:hover .sub_nav{
 	width: 480px;
 }
-.category_list ul .item8:hover .sub_nav{
+.category_list ul .item9:hover .sub_nav{
 	width: 690px;
 }
-.category_list ul .item9:hover .sub_nav{
+.category_list ul .item10:hover .sub_nav{
 	width: 320px;
 }
-.category_list ul .item11:hover .sub_nav{
+.category_list ul .item12:hover .sub_nav{
 	width: 400px;
 }
-.category_list ul .item10:hover .sub_nav{
+.category_list ul .item11:hover .sub_nav{
     right: 410px;
     width: 125px;
 }
-.category_list ul .item12:hover .sub_nav{
+.category_list ul .item1:hover .sub_nav{
 	width: 255px;
 }
 /*メガナビのテキスト調整*/
-.category_list ul .item1:hover .sub_nav ul li{
+.category_list ul .item2:hover .sub_nav ul li{
 	width: 200px;
 }
-.category_list ul .item1:hover .sub_nav ul li:nth-child(3){
+.category_list ul .item2:hover .sub_nav ul li:nth-child(3){
 	width: 90px;
     margin: 0 0 0 40px;
 }
-.category_list ul .item3:hover .sub_nav ul li{
+.category_list ul .item4:hover .sub_nav ul li{
 	width: 130px
 }
 
-.category_list ul .item4:hover .sub_nav{}
-.category_list ul .item4:hover .sub_nav ul li:nth-child(3n){
+.category_list ul .item5:hover .sub_nav{}
+.category_list ul .item5:hover .sub_nav ul li:nth-child(3n){
 	width: 190px;
 }
-.category_list ul .item5:hover .sub_nav ul li{
+.category_list ul .item6:hover .sub_nav ul li{
 	width : 130px;
 }
-.category_list ul .item5:hover .sub_nav ul li:nth-child(3n){
-	width: 90px;
-}
-.category_list ul .item6:hover .sub_nav ul li{
-	width : 150px;
-}
 .category_list ul .item6:hover .sub_nav ul li:nth-child(3n){
-	width: 120px;
+	width: 90px;
 }
 .category_list ul .item7:hover .sub_nav ul li{
 	width : 150px;
 }
-.category_list ul .item8:hover .sub_nav{}
-.category_list ul .item9:hover .sub_nav ul li{
-	width : 120px;
-}
-.category_list ul .item9:hover .sub_nav ul li:nth-child(3){
-	width: 50px;
-}
-.category_list ul .item10:hover .sub_nav{}
-.category_list ul .item11:hover .sub_nav ul li{
-	width : 140px;
-}
-.category_list ul .item11:hover .sub_nav ul li:nth-child(3n+2){
-	width: 110px;
-}
-.category_list ul .item11:hover .sub_nav ul li:nth-child(3n){
+.category_list ul .item7:hover .sub_nav ul li:nth-child(3n){
 	width: 120px;
 }
+.category_list ul .item8:hover .sub_nav ul li{
+	width : 150px;
+}
+.category_list ul .item9:hover .sub_nav{}
+.category_list ul .item10:hover .sub_nav ul li{
+	width : 120px;
+}
+.category_list ul .item10:hover .sub_nav ul li:nth-child(3){
+	width: 50px;
+}
+.category_list ul .item11:hover .sub_nav{}
 .category_list ul .item12:hover .sub_nav ul li{
+	width : 140px;
+}
+.category_list ul .item12:hover .sub_nav ul li:nth-child(3n+2){
+	width: 110px;
+}
+.category_list ul .item12:hover .sub_nav ul li:nth-child(3n){
+	width: 120px;
+}
+.category_list ul .item1:hover .sub_nav ul li{
 	width : 130px;
 }
-.category_list ul .item12:hover .sub_nav ul li:nth-child(2){
+.category_list ul .item1:hover .sub_nav ul li:nth-child(2){
 	width: 80px;
 }
 
@@ -247,6 +247,7 @@
 .category_list ul .item4:hover .sub_nav,
 .category_list ul .item5:hover .sub_nav,
 .category_list ul .item6:hover .sub_nav,
+
 .category_list ul .item11:hover .sub_nav,
 .category_list ul .item12:hover .sub_nav{
 	right: 0;
@@ -300,6 +301,8 @@
     transform: rotate(45deg);
 }
 
+
+
 .category_list > ul > .item5 > .sub_nav .inner:before,
 .category_list > ul > .item11 > .sub_nav .inner:before{
 	 left: 410px;
@@ -326,14 +329,18 @@
 	display: none;
 }
 .category_list > ul > .item:hover > .sub_nav4 {
-	max-width: 780px;
 	margin: 0 420px 0 0;
 }
+.category_list > ul > .item:hover > .sub_nav5 {
+	max-width: 780px;
+	margin: 0 220px 0 0;
+}
+
 .category_list > ul > .item > .sub_nav4 .inner:before{
-    left: 495px;
+    left: 275px;
 }
 .category_list > ul > .item > .sub_nav4 .inner:after{
-    left: 496px;
+    left: 276px;
 }
 .category_list > ul > .item > .sub_nav .tit{
 	position:relative;
@@ -342,17 +349,17 @@
 	padding: 4px 0 20px 41px;
 }
 .category_list > ul > .item > .sub_nav5 .inner:before{
-    left: 215px;
+    left: 495px;
 }
 .category_list > ul > .item > .sub_nav5 .inner:after{
-    left: 216px;
+    left: 496px;
 }
 .category_list > ul > .item:hover > .sub_nav6 {
 	max-width: 780px;
 	margin: 0 20px 0 0;
 }
 .category_list > ul > .item:hover > .sub_nav10 {
-	right: 480px;
+	right: auto;
 }
 .category_list > ul > .item:hover > .sub_nav10 .inner:before{
 	    left: 20px;
@@ -361,32 +368,32 @@
 	    left: 21px;
 }
 .category_list > ul > .item:hover > .sub_nav11 {
-	margin: 0 220px 0 0;
+	margin: 0 280px 0 0;
 }
 .category_list > ul > .item:hover > .sub_nav11 .inner:before{
-    left: 233px;
+    left: 18px;
 }
 
 .category_list > ul > .item:hover > .sub_nav11 .inner:after{
-    left: 234px;
+    left: 19px;
 }
 
 .category_list > ul > .item:hover > .sub_nav12 {
 	margin: 0 20px 0 0;
 }
 .category_list > ul > .item:hover > .sub_nav12 .inner:before{
-    left: 143px;
+    left: 233px;
 }
 
 .category_list > ul > .item:hover > .sub_nav12 .inner:after{
-	left: 144px;
+	left: 234px;
 }
 
 .category_list > ul > .item > .sub_nav6 .inner:before{
-    left: 290px;
+    left: 215px;
 }
 .category_list > ul > .item > .sub_nav6 .inner:after{
-    left: 291px;
+    left: 216px;
 }
 .category_list > ul > .item > .sub_nav .tit a{
 	color: #3f3e3d;
@@ -399,10 +406,9 @@
 	width:30px;
 	height: 30px;
 }
-.category_list > ul > .item > .sub_nav2 .tit,
-.category_list > ul > .item > .sub_nav10 .tit{
+/*.category_list > ul > .item > .sub_nav10 .tit{
 	padding: 4px 0 0 41px;
-}
+}*/
 .category_list > ul > .item > .sub_nav1 .tit:before{
 	background: url(/contents/c/shop/image/img_cat01.png)no-repeat;
     background-size: 30px;
@@ -11785,9 +11791,9 @@
 	    display: flex;
 	    line-height: 1.4;
 	}
-	.category_list ul .item4:hover .sub_nav ul li {
+/*	.category_list ul .item4:hover .sub_nav ul li {
 	    width: 210px;
 	    padding: 0 0 15px;
-	}
+	}*/
 
 }
