@@ -431,3 +431,15 @@
 	    margin-top:20px;
 	}
 }
+
+/******************************************************
+180411 add
+******************************************************/
+.blog-contents .blog-body .layout-d.no-bottom img {
+	margin-bottom:0;
+}
+@media screen and (max-width:767px) {
+	.blog-contents .blog-body .layout-d.no-bottom img:first-child {
+		margin-bottom:20px;
+	}
+}
