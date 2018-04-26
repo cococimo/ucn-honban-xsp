@@ -25,7 +25,22 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <!-- Googleタグマネージャ head用 -->
 <meta m:id="google_tag_manager_head" content="">
 <!-- Googleタグマネージャ head用 -->
-
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '399189536872518']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <link rel="apple-touch-icon" href="/contents/iikigokochi/common_sp/common_kigokochi02/images/apple-touch-icon.png" />
 <!-- InstanceEndEditable -->
 <!-- common css -->
@@ -224,26 +239,7 @@ $(function() {
 <!-- DLPO 制御タグ -->
 
 </head>
-
 <body id="top">
-
-<script>(function() {
-  var _fbq = window._fbq || (window._fbq = []);
-  if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-  }
-  _fbq.push(['addPixelId', '399189536872518']);
-})();
-window._fbq = window._fbq || [];
-window._fbq.push(['track', 'PixelInitialized', {}]);
-</script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
-
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
 <!--/ Googleタグマネージャ body用 -->
@@ -338,16 +334,16 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div id="header_itemlist_pullDown">
                 	<div class="inner">
                 		<p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/?=top_header_all">全商品一覧</a></p>
-                    <ul class="btn_category_pullDown">
-                      <li><a href="/shop/category/001001002/list/?=top_header_tops"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
-                      <li><a href="/shop/category/001001003/list/?=top_header_coat"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="コート/カーディガン" /><span>コート/<br />カーディガン</span></a></li>
-                      <li><a href="/shop/category/001001004/list/?=top_header_pants"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
-                      <li><a href="/shop/category/001001005/list/?=top_header_skirt"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
-                      <li><a href="/shop/category/001001006/list/?=top_header_onep"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><span>ワンピース</span></a></li>
-                      <li><a href="/shop/category/001001001/list/?=top_header_bag"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><span>バック</span></a></li>
-                      <li><a href="/shop/category/001001010/list/?=top_header_inner"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" /><span>インナー/<br />レギンス</span></a></li>
-                      <li><a href="/shop/category/001001013/list/?=top_header_shoes"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" /><span>シューズ</span></a></li>
-                      <li><a href="/shop/category/001001014/list/?=top_header_acce"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ ストール・スヌード" /><span>アクセサリー/<br />ストール・スヌード</span></a></li>
+                               <ul class="btn_category_pullDown">
+                      <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><span>トップス</span></a></li>
+                      <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="チュニック/ワンピース" /><span>チュニック/<br />ワンピース</span></a></li>
+                      <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><span>スカート</span></a></li>
+                      <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><span>パンツ</span></a></li>
+                      <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="コート/カーディガン" /><span>コート/<br />カーディガン</span></a></li>
+                      <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><span>バック</span></a></li>
+                      <li><a href="/shop/category/001001010/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" /><span>インナー/<br />レギンス</span></a></li>
+                      <li><a href="/shop/category/001001013/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" /><span>シューズ</span></a></li>
+                      <li><a href="/shop/category/001001014/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ ストール・スヌード" /><span>アクセサリー/<br />ストール・スヌード</span></a></li>
                     </ul>
                     <ul class="btn_category_sub_pullDown">
                       <li><a href="/shop/category/001001008/list/?=top_header_new">新着商品</a></li>
@@ -693,28 +689,29 @@ function initCorners() {
 
 		<!-- メインビジュアル（PC用）ここから -->
 
-<!-- DLPO -->
-<div class='ADLPODefault'>
+<!-- DLPO
+<div class='ADLPODefault'> -->
 <!--表示切替箇所-->
     
-		<div class="mainimages">
-      <div><a href="/shop/category/001001008/list/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_winter_brand_2017.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature44/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature44.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKDC7/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_newspaper_13.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature45/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature45.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKD8T/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_newspaper_14.jpg" alt="" /></a></div>
-      <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_winter_catalog_2017.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature43/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature43.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature41/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature41.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKCW6/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_newspaper_feature41.jpg" alt="" /></a></div>
-<!--       <div><a href="/shop/static/feature42/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature42.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature40/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature40.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature39/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature39.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature38/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature38.jpg" alt="" /></a></div> -->
+		<!--<div class="mainimages" >
+      <div><a href="/shop/static/feature51/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature51.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature50/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature50.jpg" alt="" /></a></div>
+  <div><a href="/shop/category/001001008/list/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_summar_brand_2018.jpg" alt="" /></a></div>
+      <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_summar_catalog_2018.jpg" alt="" /></a></div>
+
+      <div><a href="/shop/static/feature49/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature49.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature48/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature48.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature47/" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/pc_feature47.jpg" alt="" /></a></div>
+    
+
+
+
+
+
 		</div>
     		
-</div>
-<script type='text/javascript'>adlpoMain('top_mv_pc','lc=os','ch=Shift-JIS');</script>
+</div>-->
+<!--<script type='text/javascript'>adlpoMain('top_mv_pc','lc=os','ch=Shift-JIS');</script>-->
 <!-- DLPO -->
 
   	<!-- メインビジュアル（PC用）ここまで -->
@@ -727,31 +724,25 @@ function initCorners() {
 
   	<!-- メインビジュアル（SP用）ここから -->
   	
- <!-- DLPO --> 	
- <div class='ADLPODefault'>
+ <!-- DLPO  	
+ <div class='ADLPODefault'>-->
 <!--表示切替箇所--> 	
   	
     
-		<div class="mainimagessp">
-      <div><a href="/shop/category/001001008/list/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_winter_brand_2017.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature44/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature44/sp/mainvis.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKDC7/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_newspaper_13.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature45/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature45/sp/main-visual.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKD8T/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_newspaper_14.jpg" alt="" /></a></div>
-      <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_winter_catalog_2017.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature43/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature43/sp/mainvis.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature41/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature41/sp/img_main_visual.jpg" alt="" /></a></div>
-      <div><a href="/item_SDKCW6/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_newspaper_feature41.jpg" alt="" /></a></div>
-      <!-- <div><a href="/shop/static/feature42/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature42/sp/mainvis.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature40/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature40/sp/main-visual.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature39/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature39/sp/mainvis.jpg" alt="" /></a></div>
-      <div><a href="/shop/static/feature38/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature38/sp/mainvis.jpg" alt="" /></a></div> -->
-      <div><a href="/item_SDKCP8/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_newspaper_12.jpg" alt="" /></a></div>
+		<!--<div class="mainimagessp">
+      <div><a href="/shop/static/feature51/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature51/sp/mainvis.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature50/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature50/sp/mainvis.jpg" alt="" /></a></div>
+      <div><a href="/shop/category/001001008/list/" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/main/sp_summar_brand_2018.jpg" alt="" /></a></div>
+      <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/common_sp/common_kigokochi02/images/sp_summar_catalog_2018.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature49/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature49/sp/mainvis.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature48/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature48/sp/mainvis.jpg" alt="" /></a></div>
+      <div><a href="/shop/static/feature47/" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature47/sp/mainvis.jpg" alt="" /></a></div>
+
 		</div>
     
 		
-</div>
-<script type='text/javascript'>adlpoMain('top_mv_sp','lc=os','ch=Shift-JIS');</script>		
+</div>-->
+<!--<script type='text/javascript'>adlpoMain('top_mv_sp','lc=os','ch=Shift-JIS');</script>-->	
  <!-- DLPO --> 			
     <!-- メインビジュアル（SP用）ここまで -->
 
@@ -858,7 +849,7 @@ function initCorners() {
 <object class="xsp_obj" m:id="e_var_dmHistory">
 </object>
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
-<br clear="all">
+<!--<br clear="all">-->
 
     <!--▼▼▼20171220年末年始お知らせ▼▼▼-->
     <!-- <div class="innercategory2" style="margin-bottom:30px;">
@@ -882,9 +873,9 @@ function initCorners() {
 
 
 
-<!--<div class="wrap_main wrap_pc">-->
+    <div class="wrap_main wrap_pc" style="margin-top:-80px;">
 		<!--▼▼▼20171005新聞掲載商品▼▼▼-->
-		<!--<div class="wrap_specialcontents ranking">
+		<div class="wrap_specialcontents ranking">
     <div class="inner">
     <h2 class="ttl_section">
       <span class="ttl_section_inner">
@@ -892,12 +883,16 @@ function initCorners() {
         <span class="ttl_section_jp"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/ttl_newspaper_sub.png" 
 style="width: 150px;" alt="新聞掲載商品"></span>
       </span>
-    </h2>-->
+    </h2>
     <!-- 新聞掲載商品商品1枠ここから -->
-　　　　　　<!--<a href="/item_SDKCW6/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/PC_osusume7.jpg" alt="裏起毛アフガンネックタートル">
-        　　</a>
-　　　<br clear="all"><br>-->
+     <a href="/item_SDKF9J/" target="_blank">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/PC_osusume8.jpg" alt="裏起毛アフガンネックタートル">
+          </a>
+     <br clear="all"><br>
+     <a href="/item_SDKFAC/" target="_blank">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/PC_osusume9.jpg" alt="裏起毛アフガンネックタートル">
+          </a>
+    <br clear="all"><br>
     <!-- 新聞掲載商品商品1枠ここまで -->
     <!-- 新聞掲載商品商品2枠ここから -->
 <!--<ul class="rankinglist num1">
@@ -916,17 +911,17 @@ style="width: 150px;" alt="新聞掲載商品"></span>
       </li>
 		</ul>-->
     <!-- 新聞掲載商品商品2枠ここまで -->
-<!--</div>
+    </div>
       <br clear="all">
-		</div>-->
-　　<!--▲▲▲20171005新聞掲載商品PC▲▲▲-->
-		<!--</div>-->
+		</div>
+    <!--▲▲▲20171005新聞掲載商品PC▲▲▲-->
+		</div>
 
 
 
- <!--<div class="wrap_main wrap_sp">-->
+ <div class="wrap_main wrap_sp" style="margin-top:-30px;">
 		<!--▼▼▼20171005新聞掲載商品SP▼▼▼-->
-		 <!--<div class="wrap_specialcontents ranking" style="padding-bottom: 0px; margin-bottom: 0px;">
+		 <div class="wrap_specialcontents ranking" style="padding-bottom: 0px; margin-bottom: 0px;padding-top:0;">
     <div class="inner">
     <h2 class="ttl_section">
       <span class="ttl_section_inner">
@@ -934,12 +929,16 @@ style="width: 150px;" alt="新聞掲載商品"></span>
         <span class="ttl_section_jp"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/ttl_newspaper_sub.png" 
 style="width: 150px;" alt="新聞掲載商品"></span>
       </span>
-    </h2>-->
-    <!-- 新聞掲載商品商品1ここまで -->
-　　　　　　 <!--<a href="/item_SDKCW6/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/sp_osusume7.jpg" alt="裏起毛アフガンネックタートル">
-        　　</a>
-<br clear="all">-->
+    </h2>
+    <!-- 新聞掲載商品商品1ここから -->
+     <a href="/item_SDKF9J/" target="_blank">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/SP_osusume8.jpg" alt="裏起毛アフガンネックタートル">
+        </a>
+      <br clear="all"><br>
+     <a href="/item_SDKFAC/" target="_blank">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/SP_osusume9.jpg" alt="裏起毛アフガンネックタートル">
+        </a>
+<br clear="all">
     <!-- 新聞掲載商品商品1ここまで -->
     <!-- 新聞掲載商品商品2枠ここから -->
  <!--<ul class="rankinglist num1">
@@ -955,13 +954,14 @@ style="width: 150px;" alt="新聞掲載商品"></span>
           </div></a>
       </li></ul>-->
     <!-- 商品２ここまで -->
-     <!--</div>
+     </div>
 		<br clear="all">
-		</div>-->
-　　<!--▲▲▲20171005新聞掲載商品SPここまで▲▲▲-->
-		 <!--</div>-->
+		</div>
+    <!--▲▲▲20171005新聞掲載商品SPここまで▲▲▲-->
+		 </div>
 
 
+<!--
 <div class="wrap_specialcontents newspaper">
 		<h2 class="ttl_section">
       <span class="ttl_section_inner">
@@ -988,13 +988,14 @@ style="width: 150px;" alt="新聞掲載商品"></span>
 				</div>
 				<div class="bnr-area-sub">
 					<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" target="_blank">
-						<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03.jpg" alt="“着心地のいい服”最新冬カタログ" class="only_pc">
-						<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03-sp.jpg" alt="“着心地のいい服”最新冬カタログ" class="only_sp">
+						<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03.jpg" alt="“着心地のいい服”最新春カタログ" class="only_pc">
+						<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03-sp.jpg" alt="“着心地のいい服”最新春カタログ" class="only_sp">
 					</a>
 				</div>
 			</div>
 		</div>
 </div>
+-->
 
 <div class="wrap_main wrap_pc">
 		<!--▼▼▼20171110 PICKUP PC▼▼▼-->
@@ -1008,10 +1009,16 @@ style="width: 150px;" alt="新聞掲載商品"></span>
     </h2>
 
     <!-- 注目商品PC　PICKUP ここから2枠 -->
-　　　　　　<a href="/shop/static/feature44/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_00006.jpg" alt="ほっとん配色タートル"></a><br clear="all">    
-　　　　　　 <a href="/shop/static/feature45/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_00007.jpg" alt="ホールガーメントニットチュニック特集"></a>
+　　　　　　<a href="/shop/static/feature50/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_special_2018summar.jpg" alt="トップス特集"></a><br clear="all">  
+　　　　　　<a href="/shop/static/feature47/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_00006.jpg" alt="ガウチョ特集"></a><br clear="all">    
+　　　　　　<a href="/shop/static/feature48/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_feature48.jpg" alt="春の着回し7日間特集"></a><br clear="all">   
+　　　　　　<a href="/shop/static/feature49/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pc_feature49.jpg" alt="春の10日間コーディネート特集"></a><br clear="all">  
+
+
     <!-- 新聞掲載商品商品2枠ここまで -->
 
 
@@ -1062,6 +1069,13 @@ style="width: 150px;" alt="新聞掲載商品"></span>
     <!-- 複数：注目商品ここまで -->
     </div>
 		<br clear="all">
+		
+		<div class="bnr-area-sub">
+			<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" target="_blank">
+				<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03.jpg" alt="“着心地のいい服”最新春カタログ" class="only_pc">
+			</a>
+		</div>
+		
 		</div>
 　　<!--▲▲▲20171110注目商品PC▲▲▲-->
 		</div>
@@ -1079,11 +1093,26 @@ style="width: 150px;" alt="新聞掲載商品"></span>
     </h2>
 
     <!-- 20171110 PICKUP SPここから 2枠-->
-　　　　　　<a href="/shop/static/feature44/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/sp_osusume8.jpg" alt="ほっとん配色タートル">
+
+　　<a href="/shop/static/feature50/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature50/sp/mainvis.jpg" alt="トップス特集">
         　　</a><br clear="all"> 
-　　　　　　<a href="/shop/static/feature45/" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/sp_osusume9.jpg" alt="ホールガーメントニットチュニック特集"></a>
+
+
+　　<a href="/shop/static/feature47/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature47/sp/mainvis.jpg" alt="ガウチョ特集">
+        　　</a><br clear="all"> 
+　　　　　
+　　　　　　<a href="/shop/static/feature48/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature48/sp/mainvis.jpg" alt="春の着回し7日間">
+        　　</a><br clear="all"> 
+
+　　　　　　<a href="/shop/static/feature49/" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature49/sp/mainvis.jpg" alt="春の10日間コーディネート">
+        　　</a><br clear="all"> 
+
+
+
 　　<!-- 20171110 PICKUP SPここまで -->
 
 
@@ -1132,8 +1161,16 @@ style="width: 150px;" alt="新聞掲載商品"></span>
 
 		</ul>-->
     <!-- 注目商品が複数の場合：ここから4枠 -->
+    <div class="bnr-area-sub">
+			<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" target="_blank">
+				<img src="/contents/iikigokochi/shop/image/kigokochi/newspaper-bnr-03-sp.jpg" alt="“着心地のいい服”最新春カタログ" class="only_sp">
+			</a>
+		</div>
+
     </div>
 		<br clear="all">
+		
+		
 		</div>
 		<!--▲▲▲新聞掲載商品SP▲▲▲-->
 </div>
@@ -1153,77 +1190,89 @@ style="width: 150px;" alt="新聞掲載商品"></span>
     </h2>
 			<div class="main" id="lineupItem">
 
-      	<!-- 新着商品ここから -->
-				<div class="newitemlist">
+<!-- 新着商品ここから -->
+	
+	<div class="newitemlist">
 					<!-- ITEM -->
           <span class="each_height_adjust">
             <div>
               <div class="newitem">
-                <span><span><a href="/item_SDKDH8/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_01.jpg" /></a></span></span>
+                <span><span><a href="/item_SDKF9J/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new1.jpg" /></a></span></span>
               </div>
               <p class="txt13 name">
-                <span><a href="/item_SDKDH8/" target="_blank"><span>ウール100％ショートコート </span></a></span>
+                <span><a href="/item_SDKF9J/" target="_blank"><span>フレンチリネンＴブラウス</span></a></span>
               </p>
-              <p class="txt13 price">&yen;<span><span>23,652</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
-          </span>
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKDFL/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_02.jpg" /></a></span></span>
               </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKDFL/" target="_blank"><span>ケーブルフレアチュニック</span></a></span>
-              </p>
-              <p class="txt13 price">&yen;<span><span>12,852</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
           </span>
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKDC4/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_03.jpg" /></a></span></span>
-              </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKDC4/" target="_blank"><span>サイドケーブルニットカーディガン</span></a></span>
-              </p>
-              <p class="txt13 price">&yen;<span><span>10,692</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
-          </span>
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKDF6/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_04.jpg" /></a></span></span>
-              </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKDF6/" target="_blank"><span>パール調ボタンカーディガン</span></a></span>
-              </p>
-              <p class="txt13 price">&yen;<span><span>12,852</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
-          </span>
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKDHT/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_05.jpg" /></a></span></span>
-              </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKDHT/" target="_blank"><span>ツイード調ワイドパンツ</span></a></span>
-              </p>
-              <p class="txt13 price">&yen;<span><span>15,012</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
-          </span>
+
 
 					<!-- ITEM -->
           <span class="each_height_adjust">
             <div>
               <div class="newitem">
-                <span><span><a href="/item_SDKDLY/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new_06.jpg" /></a></span></span>
+                <span><span><a href="/item_SDKFAC/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new2.jpg" /></a></span></span>
               </div>
               <p class="txt13 name">
-                <span><a href="/item_SDKDLY/" target="_blank"><span>グラニーバッグ</span></a></span>
+                <span><a href="/item_SDKFAC/" target="_blank"><span>鹿の子丸衿スキッパー</span></a></span>
               </p>
-              <p class="txt13 price">&yen;<span><span>8,532</span><!--&nbsp;円&nbsp;--> </span>(税込)</p></div>
+              </div>
+          </span>
+
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKFD4/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new3.jpg" /></a></span></span>
+              </div>
+              <p class="txt13 name">
+                <span><a href="/item_SDKFD4/" target="_blank"><span>コットンボイルスカーチョ</span></a></span>
+              </p>
+              </div>
+          </span>
+
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKFDX/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new4.jpg" /></a></span></span>
+              </div>
+              <p class="txt13 name">
+                <span><a href="/item_SDKFDX/" target="_blank"><span>リネンニット着流しカーディガン</span></a></span>
+              </p>
+              </div>
+          </span>
+
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKFCZ/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new5.jpg" /></a></span></span>
+              </div>
+              <p class="txt13 name">
+                <span><a href="/item_SDKFCZ/" target="_blank"><span>レース切り替えプルオーバー</span></a></span>
+              </p>
+              </div>
+          </span>
+
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKFD6/" target="_blank"><img src="../../../contents/shop/00000006/image/new/new6.jpg" /></a></span></span>
+              </div>
+              <p class="txt13 name">
+                <span><a href="/item_SDKFD6/" target="_blank"><span>袖スリットプルオーバー</span></a></span>
+              </p>
+              </div>
           </span>
 				</div>
-        <!-- 新着商品ここまで -->
+
+
+<!-- 新着商品ここまで -->
 
 			</div>
 		<br clear="all">
@@ -1345,14 +1394,14 @@ style="width: 150px;" alt="新聞掲載商品"></span>
          <p class="btn_allItem_pullDown01" align="center"><a href="/shop/category/001001007/list/?=top_body_all"><u>全商品一覧</u></a></p>
                     <ul class="btn_category_pullDown">
 
-<li><a href="/shop/category/001001002/list/?=top_body_tops" style="opacity: 1;"><img alt="トップス" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1021.jpg"><span><u>トップス</u></span></a></li>
-<li><a href="/shop/category/001001006/list/?=top_body_onep"><img alt="ワンピース" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1025.jpg"><span><u>チュニック/<br>ワンピース</u></span></a></li>
-<li><a href="/shop/category/001001005/list/?=top_body_skirt"><img alt="スカート" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1024.jpg"><span><u>スカート</u></span></a></li>
-<li><a href="/shop/category/001001004/list/?=top_body_pants" style="opacity: 1;"><img alt="パンツ" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1023.jpg"><span ><u>パンツ</u></span></a></li>
-<li><a href="/shop/category/001001003/list/?=top_body_coat"><img alt="コート/カーディガン" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1022.jpg"><span><u>コート/<br>カーディガン</u></span></a></li>
+<li><a href="/shop/category/001001002/list/?=top_body_tops" style="opacity: 1;"><img alt="トップス" src="/contents/shop/00000006/shop/image/kigokochi/cate1.jpg"><span><u>トップス</u></span></a></li>
+<li><a href="/shop/category/001001006/list/?=top_body_onep"><img alt="ワンピース" src="/contents/shop/00000006/shop/image/kigokochi/cate2.jpg"><span><u>チュニック/<br>ワンピース</u></span></a></li>
+<li><a href="/shop/category/001001005/list/?=top_body_skirt"><img alt="スカート" src="/contents/shop/00000006/shop/image/kigokochi/cate3.jpg"><span><u>スカート</u></span></a></li>
+<li><a href="/shop/category/001001004/list/?=top_body_pants" style="opacity: 1;"><img alt="パンツ" src="/contents/shop/00000006/shop/image/kigokochi/cate4.jpg"><span ><u>パンツ</u></span></a></li>
+<li><a href="/shop/category/001001003/list/?=top_body_coat"><img alt="コート/カーディガン" src="/contents/shop/00000006/shop/image/kigokochi/cate5.jpg"><span><u>コート/<br>カーディガン</u></span></a></li>
 <li><a href="/shop/category/001001001/list/?=top_body_bag" style="opacity: 1;"><img alt="バック" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1026.jpg"><span><u>バック</u></span></a></li>
-<li><a href="/shop/category/001001010/list/?=top_body_inner" style="opacity: 1;"><img alt="インナー/レギンス" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1027.jpg"><span><u>インナー/<br>レギンス</u></span></a></li>
-<li><a href="/shop/category/001001013/list/?=top_body_shoes"><img alt="シューズ" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1028.jpg"><span><u>シューズ<br></u></span></a></li>
+<li><a href="/shop/category/001001010/list/?=top_body_inner" style="opacity: 1;"><img alt="インナー/レギンス" src="/contents/shop/00000006/shop/image/kigokochi/cate6.jpg"><span><u>インナー/<br>レギンス</u></span></a></li>
+<li><a href="/shop/category/001001013/list/?=top_body_shoes"><img alt="シューズ" src="/contents/shop/00000006/shop/image/kigokochi/cate7.jpg"><span><u>シューズ<br></u></span></a></li>
 <li><a href="/shop/category/001001014/list/?=top_body_acce"><img alt="アクセサリー/ ストール・スヌード" src="/contents/shop/00000006/shop/image/kigokochi/btn_category_1029.jpg"><span><u>アクセサリー/<br>ストール・スヌード</u></span></a></li>
                     </ul>
 
@@ -1377,6 +1426,46 @@ style="width: 150px;" alt="新聞掲載商品"></span>
       </h2>
      <div class="specialcontents_photowrap">
         <ul>
+        	<li>
+            <h3 class="img_special">
+            	<a href="/shop/static/feature50/" target="_blank">
+              	<img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/pic_feature50.jpg" class="photo" alt="">
+                <img src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/ttl_special_feature50.png" alt="" class="ttl feature50">
+              </a>
+            </h3>
+            <p class="cap_special">暑い日にこそ着てみてほしい、<br>夏のトップスをご紹介します。</p>
+            <p class="btn_special"><a href="/shop/static/feature50/" target="_blank">More</a></p>
+          </li>
+        	<li>
+            <h3 class="img_special">
+            	<a href="/shop/static/feature49/" target="_blank">
+              	<img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/pic_feature49.jpg" class="photo" alt="">
+                <img src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/ttl_special_feature49.png" alt="" class="ttl feature49">
+              </a>
+            </h3>
+            <p class="cap_special">最新春アイテムを使った、<br />10日間コーディネートをご紹介します。</p>
+            <p class="btn_special"><a href="/shop/static/feature49/" target="_blank">More</a></p>
+          </li>
+        	<li>
+            <h3 class="img_special">
+            	<a href="/shop/static/feature48/" target="_blank">
+              	<img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/pic_feature48.jpg" class="photo" alt="">
+                <img src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/ttl_special_feature48.png" alt="" class="ttl feature48">
+              </a>
+            </h3>
+            <p class="cap_special">春らしい明るいカラーの新作で、<br>1週間のコーディネートをご提案。</p>
+            <p class="btn_special"><a href="/shop/static/feature48/" target="_blank">More</a></p>
+          </li>
+        	<li>
+            <h3 class="img_special">
+            	<a href="/shop/static/feature47/" target="_blank">
+              	<img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/pic_feature47.jpg" class="photo" alt="">
+                <img src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/ttl_special_feature47.png" alt="" class="ttl feature47">
+              </a>
+            </h3>
+            <p class="cap_special">楽ちんなのに、脚長効果！？<br />春らしい、ナチュラルな4色展開！</p>
+            <p class="btn_special"><a href="/shop/static/feature47/" target="_blank">More</a></p>
+          </li>
           <li>
             <h3 class="img_special">
             	<a href="/shop/static/feature46/" target="_blank">
@@ -1529,62 +1618,59 @@ style="width: 150px;" alt="新聞掲載商品"></span>
       </span>
     </h2>
 
-    <!-- ランキングここから -->
+<!-- ランキングここから -->
+
 		<ul class="rankinglist num1">
       <li>
-      	<a href="/item_SDKD8T/" target="_blank">
+      	<a href="/item_SDKF9J/" target="_blank">
           <div class="rankimg">
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pic_ranking_01.jpg" alt="" class="rankimg_photo">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank1.jpg" alt="フレンチリネンＴブラウス" class="rankimg_photo">
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank01.png" alt="" class="rankimg_number">
           </div>
-          <p class="name_jp">あったかほっとん配色タートル</p>
-          <p class="price">&yen;5,292（税込）</p>
+          <p class="name_jp">フレンチリネンＴブラウス</p>
         </a>
       </li>
     </ul>
 		<ul class="rankinglist num2">
       <li>
-      	<a href="/item_SDKD9T/" target="_blank">
+      	<a href="/item_SDKFAC/" target="_blank">
           <div class="rankimg">
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pic_ranking_02.jpg" alt="" class="rankimg_photo">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank2.jpg" alt="鹿の子丸衿スキッパー" class="rankimg_photo">
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank02.png" alt="" class="rankimg_number">
           </div>
-          <p class="name_jp">あったか裏ほっとんタックパンツ</p>
-          <p class="price">&yen;12,852（税込）</p>
+          <p class="name_jp">鹿の子丸衿スキッパー</p>
         </a>
       </li>
       <li>
-      	<a href="/item_SDKDC7/" target="_blank">
+      	<a href="/item_SDKFD4/" target="_blank">
           <div class="rankimg">
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pic_ranking_03.jpg" alt="" class="rankimg_photo">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank3.jpg" alt="コットンボイルスカーチョ" class="rankimg_photo">
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank03.png" alt="" class="rankimg_number">
           </div>
-          <p class="name_jp">ホールガーメント(R)ニットチュニック</p>
-          <p class="price">&yen;6,372（税込）</p>
+          <p class="name_jp">コットンボイルスカーチョ</p>
         </a>
       </li>
       <li class="clear">
-        <a href="/item_SDKDF2/" target="_blank">
+        <a href="/item_SDKFG6/" target="_blank">
           <div class="rankimg">
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pic_ranking_04.jpg" alt="" class="rankimg_photo">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank4.jpg" alt="涼感タックプルオーバー" class="rankimg_photo">
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank04.png" alt="" class="rankimg_number">
           </div>
-          <p class="name_jp">ケーブルニットプルオーバー</p>
-          <p class="price">&yen;11,772（税込）</p>
+          <p class="name_jp">涼感タックプルオーバー</p>
         </a>
       </li>
       <li>
-        <a href="/item_SDKDJT/" target="_blank">
+        <a href="/item_SDKFC3/" target="_blank">
           <div class="rankimg">
-            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/pic_ranking_05.jpg" alt="" class="rankimg_photo">
+            <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank5.jpg" alt="シアサッカーロール衿ブラウス" class="rankimg_photo">
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/ranking/rank05.png" alt="" class="rankimg_number">
           </div>
-          <p class="name_jp">裏起毛ボタニカルダイプルオーバー</p>
-          <p class="price">&yen;6,372（税込）</p>
+          <p class="name_jp">シアサッカーロール衿ブラウス</p>
         </a>
       </li>
 		</ul>
-    <!-- ランキングここまで -->
+	
+<!-- ランキングここまで -->
 
     </div>
 		<br clear="all">
@@ -1693,6 +1779,32 @@ style="width: 150px;" alt="新聞掲載商品"></span>
       	<!--▼▼▼INFORMATION▼▼▼-->
       	<div class="infobox">
     			<h2><img src="../../../contents/shop/00000006/shop/image/kigokochi/ttl_information.gif" width="523" height="32" alt=""/></h2>
+          <dl>
+            <dt>2018/4/26</dt>
+            <dd>【ゴールデンウィーク期間中の配送業務・お問い合わせについて】<br /><br />誠に勝手ながら、4月27日（金）から4月30日（月）までの商品のお申込み受付分は5月1日（火）以降、<br />
+            5月2日（水）から5月5日（土）のお申込み受付分は5月7日（月）以降、順次手続きに入らせていただきます。<br />
+            何卒、ご了承ください。
+            ※手配・配送事情によりお届けまでに時間がかかる場合がございます。 <br /><br />
+            また、4月27日(金)&#xFF5E;5月6日(日)<br />及びその前後に頂戴したメールでのお問い合わせへの回答にはお時間をいただく場合がございます。<br />
+            予めご了承ください。
+            </dd>
+          </dl> 
+         	<dl>
+          	<dt>2018/3/29</dt>
+            <dd><a href="/shop/static/feature50/">夏のトップス特集を公開しました。</a></dd>
+          </dl>
+         	<dl>
+          	<dt>2018/3/14</dt>
+            <dd><a href="/shop/static/feature49/">春の10日間コーディネート特集を公開しました。</a></dd>
+          </dl>
+         	<dl>
+          	<dt>2018/3/1</dt>
+            <dd><a href="/shop/static/feature48/">春の着回し6アイテム特集を公開しました。</a></dd>
+          </dl>
+         	<dl>
+          	<dt>2018/2/15</dt>
+            <dd><a href="/shop/static/feature47/">この春おすすめのガウチョパンツ特集を公開しました。</a></dd>
+          </dl>
           <dl>
             <dt>2017/12/20</dt>
             <dd>【年末年始の配送業務・お問い合わせ対応について】<br /><br />誠に勝手ながら、12月29日(金)&#xFF5E;1月3日(水)の間は配送業務・お問い合わせ対応業務をお休みいたします。そのため、商品等の12月26日(火)以降のお申込み受付分は1月4日(木)以降、順次手続きに入らせていただきます。<br>
