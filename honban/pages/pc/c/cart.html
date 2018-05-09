@@ -146,23 +146,64 @@ $(function() {
   opacity: 1;
   -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
 }
+		.header_username,
+		.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
+		.pagetop_pc,
+		.pagetop_sp,
+		.cart_tel_contact.side_widget {display: none !important}
+
+		#cart .cart_tel_contact_wrap {
+			overflow: hidden;
+		}
+
+		#cart .cart_tel_contact {
+			border:1px solid #ccc;
+			padding: 12px 10px 0;
+			margin:15px 0;
+			width: 410px;
+			float: left;
+		}
+		#cart .cart_tel_contact:first-child {
+			margin-right:20px;
+		}
+
+		#cart .cart_tel_contact_tit {
+/*			border-bottom: 2px solid #ff8590;
+			background: #f8f8f8;*/
+			font-size: 16px;
+/*			padding: 12px 10px 10px;
+			line-height: 1.3;*/
+		}
+		#cart .cart_tel_contact_in {
+			padding: 18px 7px 10px;
+		}
+		#cart .cart_tel_contact_txt {
+			margin: 8px 0 0;
+			padding: 8px 11px 0;
+			border-top: 1px dotted #ccc;
+			line-height: 1.3;
+			font-size: 15px;
+		}
+
 @media screen and (min-width: 767px){
   .header_logo {
       width: 120px;
-      height: 14px;
+				height: 30px;
       position: absolute;
-      top: 0;
+				top: 10px;
    }
    .header_logo img {
-      width: 120px
-      height: 14px;
+				width: 120px;
+				height: 30px;
   }
-  .header_top {
+			.header_top_cart {	
       padding-top: 10px;
-				height: 80px;
+			    width: 100%;
+			    float: right;
+			    overflow: hidden;
   }
   .contents_b {
-      padding-top: 20px;
+				padding-top: 10px;
   }
   .cmn_tit05 {
       font-size: 20px;
@@ -172,16 +213,31 @@ $(function() {
       padding-bottom: 0;
   }
   #cart .cart_intro {
+				margin: 0 0 10px;
+			}
+			#cart .cmn_tit05 {
     margin: 0 0 20px;
+			    padding: 10px 0;
   }
   .cmn_step04  {
-      margin: 0 0 20px;
-      display: -webkit-flex; /* Safari */
+				margin: 5px 0 5px;
+				display: -webkit-flex;
+				/* Safari */
       display: flex;
-       -webkit-justify-content: center; /* Safari */
+				-webkit-justify-content: center;
+				/* Safari */
       justify-content: center;
-      -webkit-align-items: stretch; /* Safari */
+				-webkit-align-items: stretch;
+				/* Safari */
       align-items: center;
+				letter-spacing: .01rem;
+			}
+			#cart .cart_recalculate {
+			    overflow: hidden;
+			    margin: 0 0 20px;
+			    padding: 5px;
+			    background-size: 4px;
+			    font-size: 14px;
   }
   .cmn_step04 .cmn_step_item {
     width: 140px;
@@ -194,29 +250,89 @@ $(function() {
     width: 170px;
   }
   .cmn_step04 .cmn_step_item:before {
-      top: 10px;
-      left: 12px;
-      width: 16px;
-      height: 14px;
-      font-size: 10px;
+			    top: 5px;
+			    left: 10px;
+			    width: 15px;
+			    height: 13px;
+			    font-size: 8px;
   }
   .cmn_step04 .cmn_step_item {
-      height: 38px;
-      padding: 13px 0 0 36px;
+				height: 28px;
+				padding: 7.5px 0 0 36px;
   }
 
   .cmn_step04 .cmn_step_item:after {
-      border-width: 19px 0 19px 20px;
+				border-width: 14px 0 14px 16px;
+				right: -16px;
   }
   #cart .cart_side_total {
       padding: 40px 20px 40px;
   }
-}
+
 		#cart .cart_price_table {
 		    float: none;
 		    width: 100%;
-		    margin: 0 0 25px;
+			    margin: 0 0 0;
+			    font-size: 	14px;
+			}
+			#cart .cart_table01 th {
+	    		padding: 10px 0;
+	    	}
+	    	#cart .cart_table01 {
+			    margin: 0 0 5px;
+			    font-size: 15px;
+			}
+			#cart .cart_table01 td {
+			    padding: 10px;
+			}
+			#cart .cart_table01 td:first-child .img_box {
+			    width: 60px;
+			}
+			#cart .cart_table01 td:first-child .detail_tag {
+			    overflow: hidden;
+			    margin: 10px 0 0;
+			}
+			#cart .cart_table01 td:first-child .delete_link {
+			    font-size: 14px;
+			    float: right;
+			}
+			#cart .cart_recalculate {
+			    margin: 0 0 0px;
+			}
+			#cart .cart_side_total {padding: 20px 20px 20px;}
+			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
+			#cart .cart_recalculate_btn a {background:none;}
 		}
+		@media screen and (max-width: 767px) {
+			.header {height: auto;}
+			#cart .cart_price_btn02 {display:none;}
+			.header_in,#header {position: static;}
+			.header_logo {top:8px;}
+			.header_top_cart {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				padding-left: 140px;
+				width: 100%;
+		}
+			.cmn_step {margin: 0 0 20px;}
+			#cart .attention_box {
+			    padding: 16px 16px 16px;
+			    margin: 10px 0 20px;
+			}
+			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
+			#cart .cart_recalculate_btn a {background: none;}
+			#cart .cart_price_btn01 {margin: 15px 0 15px;}
+		@media screen and (max-width: 370px) {
+			.header_top_cart {padding-left: 90px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 40px;
+			    margin: 0;
+			    padding: 9px 0 0;
+			    font-size: 10px;
+			}
+		}
+
 </style>
 </head>
 <body>
@@ -359,28 +475,39 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 					</span>
 				<!-- </a> -->
 			</h1>
-			<div class="header_top">
+				<!-- <div class="header_top">
 				<div class="header_tell" class="view">
 					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 						<p class="note">携帯電話からでも通話無料</p>
-				</div>
+				</div>-->
 				<!-- /.header_tel -->
 <!-- 				<div class="header_contact">
 					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
 				</div> -->
 				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
+				<!--<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
 						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /.header_mypage -->
-				<div class="header_ucan">
-					<!-- <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a> -->
+				<!--<div class="header_ucan">
+					<!-- <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
           <a href="javascript:void(0)" style="cursor:default;">ユーキャン</a>
-				</div>
+				</div>-->
 				<!-- /.header_ucan -->
 			</div>
+				<div class="header_top_cart">
+
+					<ol class="cmn_step cmn_step04 cf">
+						<li class="cmn_step_item cmn_step_active">お買い物<br class="viewSp">カゴ</li>
+						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
+						<li class="cmn_step_item">お申込み<br class="viewSp">内容の確認</li>
+						<li class="cmn_step_item">お申込み<br class="viewSp">完了</li>
+					</ol>
+					<!-- /.cmn_step -->
+			
+				</div>
 			<div class="header_bottom">
 				<p class="header_username">ようこそ
 					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
@@ -441,13 +568,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
   </form>
   <div id="contents" class="contents_b">
     <div id="contents_in" class="cf">
-      <ol class="cmn_step cmn_step04 cf">
-        <li class="cmn_step_item cmn_step_active">お買い物<br class="viewSp">カゴ</li>
-        <li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
-        <li class="cmn_step_item">お申込み<br class="viewSp">内容の確認</li>
-        <li class="cmn_step_item">お申込み<br class="viewSp">完了</li>
-      </ol>
-      <!-- /.cmn_step -->
+
 
       <!--<object class="xsp_obj" m:id="e_var_cart"></object>-->
       <object class="xsp_obj" m:id="e_var_wrappingMap"></object>
@@ -531,6 +652,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
           
            <div class="contents_side cart_side right">
             <div class="cart_side_total">
+			<p class="cart_side_total_btn mb10 viewPc"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red btn_middle">ご注文の手続きはこちら</a></p>
               <dl>
                 <dt>合計(<object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span>点)：</dt>
                 <dd>
@@ -539,7 +661,61 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                   <span m:id="l_Equ_postage"><span m:id="b_wr_order_article_total">5,400</span> 円</span>
                 </dd>
               </dl>
-              <p class="cart_side_total_btn viewPc mt40"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red btn_middle">ご注文の手続きはこちら</a></p>
+
+		<object class="xsp_obj" m:id="i_shopping_total_count"></object>
+		<table class="cmn_table01 cart_price_table">
+			<tr m:id="div_shopping_total">
+				<th>商品合計</th>
+				<td>
+					<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
+					<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
+				</td>
+			</tr>
+			<span m:id="l_notEqu_total_postage">
+	                  <tr m:id="div_shopping_total">
+	                    <th>送料</th>
+	                    <td><span m:id="b_wr_total_postage">800</span> 円</td>
+			</tr>
+			</span>
+			<span m:id="l_notEqu_charged_option">
+	                  <tr m:id="div_shopping_total">
+	                    <th><b>有料オプション</b></th>
+	                    <td><span m:id="b_wr_charged_option">300</span> 円</td>
+			</tr>
+			</span>
+			<span m:id="l_notEqu_postage">
+	                  <tr m:id="div_shopping_total">
+	                    <th><b>送料</b></th>
+	                    <td><span m:id="b_wr_postage">300</span> 円</td>
+			</tr>
+			</span>
+			<span m:id="l_notEqu_premium_discount_amount">
+	                  <span m:id="l_equ_totalMemberSpecialDiscount">
+	                    <span m:id="l_notEqu_special_discount_amount">
+	                      <tr m:id="div_shopping_total">
+	                        <th>キャンペーン値引き</th>
+	                        <td style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">300</span> 円</td>
+			</tr>
+			</span>
+			</span>
+			<span m:id="l_notEqu_totalMemberSpecialDiscount">
+	                    <tr m:id="div_shopping_total">
+	                      <th>キャンペーン値引き</th>
+	                      <td>-<span m:id="b_wr_premium_discount_amount">600</span> 円</td>
+			</tr>
+			</span>
+			</span>
+	<!-- 		<tr m:id="div_shopping_total">
+				<th><span class="bold">合計金額</span></th>
+				<td>
+					<span class="red bold">
+	                      <span m:id="l_notEqu_postage"><span m:id="b_wr_order_price_subtotal">5,400</span> 円</span>
+					<span m:id="l_Equ_postage"><span m:id="b_wr_order_article_total">5,400</span> 円</span>
+					</span>
+				</td>
+			</tr> -->
+		</table>
+
             </div>
             <!-- /.cart_side_total -->
 
@@ -607,13 +783,13 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 	▲▲▲こんな商品も買っています▲▲▲-->
 
             <p class="cart_side_guide_btn viewPc"><a href="/shop/c/static/guide/" class="cmn_btn cmn_btn_tri btn_middle cmn_btn_pink"><span>ご利用ガイド</span></a></p>
-            <div class="cart_side_contact side_widget viewPc">
+<!-- 	<div class="cart_side_contact side_widget viewPc">
               <h2 class="cart_side_contact_tit">お手続きでお困りのお客様へ</h2>
               <div class="cart_side_contact_in">
                 <p class="tac"><img src="/contents/c/goods/image/new/cart/img_tel01.png" alt="ココチモお客様センター 0120-552-186"></p>
                 <p class="cart_side_contact_txt">お手続きについてのご質問を承っております。</p>
               </div>
-            </div>
+	</div> -->
             <!-- /.cart_side_contact -->
           </div>
           <!-- /.contents_side -->
@@ -786,7 +962,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 <div class="cart_recalculate">
                   <p class="cart_recalculate_txt">数量を変更したい場合は数量を再選択の上「再計算する」ボタンを押してください。<br class="viewSp">※料金は全て税込です。</p>
                   <p class="cart_recalculate_btn">
-                    <a m:id="h_link_shopping_calc" href="cart.html" onclick="" class="cmn_btn btn_middle">再計算する</a>
+			<a m:id="h_link_shopping_calc" href="cart.html" onclick="" class="">再計算する</a>
                   </p>
                 </div>
                 <!-- /.cart_recalculate -->
@@ -799,72 +975,6 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                     <li class="cart_price_btn02 viewSp"><a href="/shop/c/static/guide/" class="cmn_btn cmn_btn_tri btn_middle"><span>ご利用ガイド</span></a></li>
 			<li class="cart_price_btn03"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></li>
                   </ul>
-                  <table class="cmn_table01 cart_price_table">
-                    <tr m:id="div_shopping_total">
-                      <th>商品合計</th>
-                      <td>
-                        <span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
-                        <span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
-                      </td>
-                    </tr>
-                    <span m:id="l_notEqu_total_postage">
-                      <tr m:id="div_shopping_total">
-                        <th>送料</th>
-                        <td><span m:id="b_wr_total_postage">800</span> 円</td>
-                      </tr>
-                    </span>
-                    <span m:id="l_notEqu_charged_option">
-                      <tr m:id="div_shopping_total">
-                        <th><b>有料オプション</b></th>
-                        <td><span m:id="b_wr_charged_option">300</span> 円</td>
-                      </tr>
-                    </span>
-                    <span m:id="l_notEqu_postage">
-                      <tr m:id="div_shopping_total">
-                        <th><b>送料</b></th>
-                        <td><span m:id="b_wr_postage">300</span> 円</td>
-                      </tr>
-                    </span>
-                    <span m:id="l_notEqu_premium_discount_amount">
-                      <span m:id="l_equ_totalMemberSpecialDiscount">
-                        <span m:id="l_notEqu_special_discount_amount">
-                          <tr m:id="div_shopping_total">
-                            <th>キャンペーン値引き</th>
-                            <td style="color:#FF0000">-<span m:id="disp_total_special_discount_amount">300</span> 円</td>
-                          </tr>
-                        </span>
-                      </span>
-                      <span m:id="l_notEqu_totalMemberSpecialDiscount">
-                        <tr m:id="div_shopping_total">
-                          <th>キャンペーン値引き</th>
-                          <td>-<span m:id="b_wr_premium_discount_amount">600</span> 円</td>
-                        </tr>
-                      </span>
-                    </span>
-                    <tr m:id="div_shopping_total">
-                      <th><span class="bold">合計金額</span></th>
-                      <td>
-                        <span class="red bold">
-                          <span m:id="l_notEqu_postage"><span m:id="b_wr_order_price_subtotal">5,400</span> 円</span>
-                          <span m:id="l_Equ_postage"><span m:id="b_wr_order_article_total">5,400</span> 円</span>
-                        </span>
-                      </td>
-                    </tr>
-                  </table>
-
-		<div class="attention_box cart_attention_box">
-			<p class="attention_box_tit">注意事項</p>
-			<ul class="attention_box_txt">
-				<li>※表示の金額は全て税込です。</li>
-				<li>※内容をお確かめの上、「ご注文の手続きはこちら」を押し、入力画面へお進みください。</li>
-				<li>※ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</li>
-				<li>※お支払金額の合計は、送料、手数料、割引率などを加え、決済時に確定します。</li>
-				<li>※カートから商品を削除する場合は、その商品の「削除」を押してください。</li>
-				<li>※当サイトでは満18歳未満のお客様からのご注文は承れません。</li>
-				<li><span m:id="l_notEmp_alcGoods_inCart">※未成年者の飲酒は法律で禁じられております。当店では、未成年者への酒類の販売は固くお断りしています。</span></li>
-			</ul>
-		</div>
-		<!-- /.attention_box -->
 
                   <!-- ▼▼ 個別送料商品メッセージ 2015.08.24 ▼▼ -->
                   <span m:id="l_Equ_postage">
@@ -928,7 +1038,9 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                           <span m:id="l_match_shopCart_shop_no">
                             <span m:id="l_notEqu_special">
                                 <div class="postage_box">
-                                  <p class="cart_addition_txt">あと<span class="red bold price"><span m:id="disp_info_cart_postage_text">3,000</span><span class="yen">円</span></span>で<span class="cmn_green bold postage">送料当社負担</span>です。<br class="viewSp">以下の商品をご一緒にいかがですか？</p>
+                                  <p class="cart_addition_txt">あと<span class="red bold price"><span m:id="disp_info_cart_postage_text">3,000</span>
+	<span class="yen">円</span>
+	</span>で<span class="cmn_green bold postage">送料当社負担</span>です。<br class="viewSp">以下の商品をご一緒にいかがですか？</p>
                                 </div>
                                 <div class="shopping_postage_free_msg">
                                 <!-- 送料無料に近い単価商品 -->
@@ -1489,6 +1601,39 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 		▲▲▲こんな商品も買っています▲▲▲-->
               </form>
               
+	<div class="attention_box cart_attention_box">
+		<p class="attention_box_tit">注意事項</p>
+		<ul class="attention_box_txt">
+			<li>※表示の金額は全て税込です。</li>
+			<li>※内容をお確かめの上、「ご注文の手続きはこちら」を押し、入力画面へお進みください。</li>
+			<li>※ほかの商品をお探しになる場合は、「お買い物を続ける」を押してください。</li>
+			<li>※お支払金額の合計は、送料、手数料、割引率などを加え、決済時に確定します。</li>
+			<li>※カートから商品を削除する場合は、その商品の「削除」を押してください。</li>
+			<li>※当サイトでは満18歳未満のお客様からのご注文は承れません。</li>
+			<li><span m:id="l_notEmp_alcGoods_inCart">※未成年者の飲酒は法律で禁じられております。当店では、未成年者への酒類の販売は固くお断りしています。</span></li>
+		</ul>
+		<div class="viewPc cart_tel_contact_wrap">
+			<div class="viewPc cart_tel_contact fr">
+				<h2 class="cart_tel_contact_tit tac">お電話でのご注文も受付けております。</h2>
+				<div class="cart_tel_contact_in">
+					<p class="tac"><img src="/contents/c/goods/image/new/cart/img_tel01.png" alt="ココチモお客様センター 0120-552-186"></p>
+					<p class="cart_tel_contact_txt">お手続きについてのご質問も承っております。</p>
+				</div>
+			</div>
+
+			<span m:id="l_notEmp_alcGoods_inCart">
+				<div class="viewPc cart_tel_contact">
+					<h2 class="cart_tel_contact_tit tac">酒類商品に関するお問い合わせはこちら</h2>
+					<div class="cart_tel_contact_in">
+						<p class="tac"><img src="/contents/c/goods/image/new/cart/img_tel01_sake.png" alt="ココチモお客様センター 0120-552-186"></p>
+						<p class="cart_tel_contact_txt bold red">※未成年の方からのご注文はお受けできません。</p>
+					</div>
+				</div>
+			</span>
+		</div>
+	</div>
+	<!-- /.attention_box -->
+
 	<!--<p class="cart_customer_btn mb50 s_mb15 tac"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></p>-->
               <!--▼▼▼ ログインボックス ▼▼▼-->
               <span m:id="l_notEqu_member">
