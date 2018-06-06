@@ -171,6 +171,69 @@ $(function(){
 					</span>
 					<object class="xsp_obj" m:id="e_var_sku"></object>
 					<object class="xsp_obj" m:id="e_var_inqClassMap"></object>
+					<!-- ▼▼▼ご利用ガイドボタン▼▼▼ -->
+					<style>
+					.faq_btn_area {
+					  margin:0 0 2rem;
+					  text-align:center;
+					}
+					.faq_info_contact_btn {
+					    background: #00a3d2;
+					    border: 1px solid #00a3d2;
+					    -webkit-transition: .8s background,1s color ease-out 0s;
+					    transition: .8s background,1s color ease-out 0s;
+					    color: #fff;
+					    text-decoration: none;
+					    line-height: 48px;
+					    display: inline-block;
+					    position: relative;
+					    text-align: center;
+					    padding-left: 1em;
+					    padding-right: 1em;
+					    border-radius: 22px;
+					}
+					.faq_info_contact_btn:after {
+					    content: '';
+					    display: inline-block;
+					    vertical-align: middle;
+					    margin-left: 5px;
+					    width: 0;
+					    height: 0;
+					    border-style: solid;
+					    border-width: 6px 0 5px 6px;
+					    border-color: transparent transparent transparent #FFF;
+					}
+					.faq_info_contact_btn:hover{
+					    background: #fff;
+					    color: #00a3d2;
+					    -webkit-transition: .2s background,.4s color ease-out .2s;
+					    transition: .2s background,.4s color ease-out .2s;
+					}
+					.faq_info_contact_btn:hover:after {
+					    border-color: transparent transparent transparent #00a3d2;
+					    -webkit-transition: .4s border cubic-bezier(.25,.46,.45,.94) .2s,.4s color cubic-bezier(.25,.46,.45,.94) .2s;
+					    transition: .4s border cubic-bezier(.25,.46,.45,.94) .2s,.4s color cubic-bezier(.25,.46,.45,.94) .2s;
+					}
+
+					@media screen and (max-width: 767px) {
+						.faq_btn_area {margin:0 0 0.5rem;}
+						.faq_info_contact_btn {
+						    line-height: 1.6;
+						    margin: 0 -10px 0;
+						    padding: 0.5em;
+						    width: auto;
+						    display:block;
+						    border-radius: 0;
+						}
+						.faq_info_contact_btn:after {
+						    border-width: 4px 0 3px 4px;
+						}
+					}
+					</style>
+					<div class="faq_btn_area">
+						<a href="/shop/c/static/guide/" class="faq_info_contact_btn">＜お問い合わせの前に・・・＞<br class="viewSp">便利な「ご利用ガイド」もご覧ください。</a>
+					</div>
+					<!-- ▲▲▲ご利用ガイドボタン▲▲▲ -->
 
 					<ol class="cmn_step cmn_step03 cf">
 						<li class="cmn_step_item cmn_step_active">お問い合わせ<br class="viewSp">内容の入力</li>
