@@ -316,6 +316,7 @@ $(function() {
 				width: 100%;
 		}
 			.cmn_step {margin: 0 0 20px;}
+			.cmn_step_item {font-size: 11px;}
 			#cart .attention_box {
 			    padding: 16px 16px 16px;
 			    margin: 10px 0 20px;
@@ -1607,28 +1608,38 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 	<!--▼▼▼カートレビュー対応▼▼▼-->
   <style>	
 	/*PC版追加 /contents/c/css/new/style.css*/
-	.goods_detail_voice_list {margin-bottom: 30px;}
-	.goods_detail_voice_list li {width: 280px;}
-	.goods_detail_voice_list_tit {font-size: 18px;}
-	.goods_detail_voice_list_txt {font-size:14px;}
-	.goods_detail_voice_list li + li {margin-left: 20px;}
-	.goods_detail_voice_list_box {padding: 20px 15px;}
+	#goods_detail_voice_area .goods_detail_voice_list {margin-bottom: 30px;}
+	#goods_detail_voice_area .goods_detail_voice_list li {width: 280px;}
+	#goods_detail_voice_area .goods_detail_voice_list_tit {font-size: 18px;}
+	#goods_detail_voice_area .goods_detail_voice_list_txt {font-size:14px;}
+	#goods_detail_voice_area .goods_detail_voice_list li + li {margin-left: 20px;}
+	#goods_detail_voice_area .goods_detail_voice_list_box {padding: 20px 15px;}
+
+	#goods_detail_voice_area .goods_detail_voice_notes {font-size:14px;margin-bottom:30px;display: none;}
               
 	@media screen and (max-width:767px) {
-		.goods_detail_voice_list {margin-top: 15px;}
-		.goods_detail_voice_list_tit {font-size: 14px;}
-		.goods_detail_voice_list li {width: auto;float: none;position: relative;}
-		.goods_detail_voice_list li + li {margin: 2px 0 0 0;}
-		.goods_detail_voice_list_box {padding: 0;}
+		#goods_detail_voice_area .goods_detail_voice_list {margin-top: 15px;}
+		#goods_detail_voice_area .goods_detail_voice_list_tit {font-size: 14px;text-align: right;}
+		#goods_detail_voice_area .goods_detail_voice_list li {width: auto;float: none;position: relative;}
+		#goods_detail_voice_area .goods_detail_voice_list li + li {margin: 2px 0 0 0;}
+		#goods_detail_voice_area .goods_detail_voice_list_box {padding: 0;}
 	}
   </style>
-	<div>
+  <script>
+  	$(function() {
+  		if($('.goods_detail_voice_list').length){
+    		$(".goods_detail_voice_notes").css({display: "block"});
+		}
+	});
+  </script>
+	<div id="goods_detail_voice_area">
 		<span m:id="l_ite_allDescendantCarts">
 			<span m:id="l_ite_detailList">
 				<span m:id="l_pre_disp_content18">
 				</span>
 			</span>
 		</span>
+		<p class="goods_detail_voice_notes">※お客様の声はココチモでご購入されたお客様のアンケートより抜粋。<br>※プロフィールはお便りをいたただいた時点のものです。</p>
 	</div>
 	<!--▲▲▲カートレビュー対応▲▲▲-->
 	<div class="attention_box cart_attention_box">
