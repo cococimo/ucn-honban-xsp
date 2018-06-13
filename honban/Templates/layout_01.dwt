@@ -11,7 +11,7 @@
 <meta m:id="e_var_testSite" content="">
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no"> 
 <!-- TemplateBeginEditable name="title" -->
 <meta name="description" content="ユーキャンのココチモ。ココチモ（cococimo）は日本昔ばなし、防災グッズ、ファッション、家具・家電、オーディオ機器、生活雑貨まで様々な商品を扱っています。「今よりもっと“心地いい”をお届けする」をテーマに、こだわり抜いた商品をご案内する通信販売サイトです。">
 <meta name="keywords" content="cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,ユーキャン">
@@ -31,7 +31,7 @@
 <script m:id="js_file" language="JavaScript" src="../contents/js/common.js" type="text/javascript"></script>
 <script m:id="static_img" language="JavaScript" src="../contents/shop/00000002/js/common.js" type="text/javascript"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
-  <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000003/js/selectivizr.js"></script>
+    <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000003/js/selectivizr.js"></script>
 <![endif]-->
 <!--[if lt IE 9]>
 <script src="contents/js/jquery.backgroundSize.js"></script>
@@ -54,8 +54,338 @@ $(function(){
 });
 </script>
 <![endif]-->
-<!--▲▲▲ 共通CSS/Script ▲▲▲-->
-<!--▼▼▼ 固有CSS/Script ▼▼▼-->
+	<style>
+		.header_username {
+			min-width: 263px;
+		}
+
+		.header_menu a {
+			width: 220px;
+			background: url(/contents/c/shop/image/btn_bag01.png) no-repeat #cc1010 center;
+		}
+		
+		.header_login {
+			text-align: center;
+			width: 202px;
+		}
+		
+		.search_area {
+			padding: 14px 0;
+			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAJElEQVQYVxXHoREAAAzCQHDsPykyrj2iPm57kpRE3gyADNywHlU6EYluaPO+AAAAAElFTkSuQmCC");
+		}
+		
+		.search_area_in {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		
+		.search_area_input_wrap {
+			position: relative;
+			width: 700px;
+			margin: 0 auto;
+		}
+		
+		.search_area_input_wrap input[name=keyword] {
+			width: 100%;
+			border-style: solid;
+			border-width: 1px;
+			border-color: #d8d8d8;
+			background-color: #fff;
+			box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .08);
+			padding: 10px 10px 11px;
+			border-radius: 6px;
+			min-height: 56px;
+			behavior: url(PIE.htc);
+		}
+		.search_area_input_wrap input[type=submit] {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			margin: auto 0;
+			right: 3px;
+			background: url("data:image/png;base64,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") no-repeat;
+			color: transparent;
+			border: none;
+			width: 140px;
+			height: 50px;
+		}
+		
+		.word_area {
+			margin-top: 12px;
+			display: none;
+		}
+		
+		.word_area_tit {
+			color: #555555;
+			font-size: 16px;
+			display: inline-block;
+		}
+		
+		.word_area_list {
+			margin-left: ;
+			letter-spacing: -0.05em;
+			font-size: 16px;
+			display: inline-block;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAYAAACk7+45AAAAGUlEQVQYV2M8c+bMfwYGBgZGOAPEA4vAGADEUwbLcY+gkgAAAABJRU5ErkJggg==");
+			background-repeat: repeat-y;
+		}
+		
+		.word_area_list li {
+			letter-spacing: 0;
+			display: inline-block;
+			margin-left: 28px;
+		}
+		
+		#home .search_area {
+			padding: 14px 0 12px;
+		}
+		
+		#home .word_area {
+			display: block;
+		}
+		
+		.word_area_tit {
+			font-size: 13px;
+		}
+		
+		.word_area_tit {
+			color: #555555;
+			font-size: 13px;
+			display: inline-block;
+		}
+		/*▼▼▼css調整ここから0714*/
+		
+		.search_area_input_wrap input[name=keyword] {
+			padding: 5px 5px 6px;
+			min-height: 0;
+		}
+		
+		.search_area_input_wrap input[type=submit] {
+			width: 97px;
+			height: 35px;
+			background-size: contain;
+		}
+		
+		#home .word_area {
+			text-align: center;
+		}
+		
+		.word_area_tit {
+			font-size: 13px;
+		}
+		
+		.word_area_list {
+			font-size: 13px;
+		}
+		/*▲▲▲css調整ここまで0714*/
+		
+		@media screen and (max-width:767px) {
+			.header_username {
+				min-width: 263px;
+			}
+			.header_menu a {
+				width: 58px;
+				background-image: url(/contents/c/shop/image/btn_cart_sp.png);
+				background-size: cover;
+			}
+			.header_login {
+				width: 58px;
+			}
+			.search_area {
+				display: none;
+			}
+		}
+		/*検索窓表示調整*/
+		
+		.search_area_input_wrap input[type=submit] {
+			width: 84px;
+			height: 30px;
+		}
+		
+		.search_area_input_wrap input[name=keyword] {
+			font-size: 15px;
+		}
+		/*カテゴリ一覧の表示位置変更*/
+		
+		.category_contents_in {
+			width: 1200px;
+			margin: 0 auto;
+			padding-bottom: 0;
+			position: relative;
+		}
+		
+		#home .search_item_in .category_list {
+			display: none;
+		}
+		
+		@media screen and (max-width:767px) {
+			#home .search_item_in .category_list {
+				display: block;
+			}
+		}
+		/*ジャンル別ランキング*/
+		
+		#home .recommend.ranking-genre li {
+			background-image: url(/contents/c/shop/image/ico_ranking01.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			padding-top: 58px;
+			background-size: 160px;
+		}
+		
+		#home .recommend.ranking-genre li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking02.png);
+			background-size: 40px auto;
+			background-position: center 13px;
+		}
+		
+		#home .recommend.ranking-genre li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking03.png);
+		}
+		
+		#home .recommend.ranking-genre li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking04.png);
+			background-position: center 22px;
+		}
+		
+		#home .recommend.ranking-genre li+li+li+li+li {
+			background-image: url(/contents/c/shop/image/ico_ranking05.png);
+		}
+		
+		#home .recommend.ranking-genre .img_box a {
+			height: 166px;
+		}
+		
+		@media screen and (max-width: 767px) {
+			#home .recommend.ranking-genre .item_list li {
+				padding: 30px 25px 12px 0!important;
+			}
+			#home .recommend.ranking-genre li {
+				background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
+				background-repeat: no-repeat;
+				background-position: 1rem 0;
+				background-size: 60px auto;
+			}
+			#home .recommend.ranking-genre li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
+				background-size: 48px auto;
+				background-position: 1rem 2.3vw;
+			}
+			#home .recommend.ranking-genre li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
+			}
+			#home .recommend.ranking-genre li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking04.png);
+				background-size: 30px auto;
+				background-position: 1.8rem .7vw;
+			}
+			#home .recommend.ranking-genre li+li+li+li+li {
+				background-image: url(/contents/c/shop/image/ico_ranking05.png);
+			}
+			#home .recommend.ranking-genre .more_item_txt,
+			#home .recommend_in.direct-mail .more_item_txt {
+				font-size: .75rem;
+			}
+		}
+		/*ヘッダー表示調整(PC版)*/
+		
+		@media screen and (min-width: 768px) {
+			.header_logo {
+				width: 120px;
+				height: 30px;
+				top: 5px;
+			}
+			.header_top {
+				padding-top: 10px;
+				height: 80px;
+			}
+			.header_tell {
+				width: 530px;
+			}
+			.header_bottom {
+				padding-bottom: 8px;
+			}
+			.header_tell .note {
+				width: 260px;
+				margin: 6px 0 0;
+				padding: 4px;
+				font-size: 12px;
+				color: #fff;
+				letter-spacing: 0;
+				text-align: center;
+				background: #e67608;
+				border-radius: 3px;
+			}
+			#category .category_list>ul>li>div a,
+			#goods .category_list>ul>li>div a {
+				padding: 5px 30px 3px 50px !important;
+				font-size: 15px !important;
+				line-height: 1.25;
+			}
+			#category .category_list>ul>li>div a:after {
+				position: absolute;
+				right: 10px;
+				top: 18px;
+			}
+			#category .category_list>ul>li>div,
+			#goods .category_list>ul>li>div {
+				min-height: 50px !important;
+				height: 50px !important;
+			}
+			#category .category_list>ul>li>div a .category_list_img,
+			#goods .category_list>ul>li>div a .category_list_img {
+				top: 10px;
+				left: 10px;
+				width: 30px !important;
+				height: 30px !important;
+			}
+			.word_area {
+				margin-top: 8px;
+			}
+			#home .main_visual.pc_only {
+				padding: 14px 0 28px;
+			}
+		}
+		/* あなたへのおすすめ商品 */
+		
+		@media screen and (min-width: 768px) {
+			.recommend_list.item_list .img_box a {
+				height: 166px;
+			}
+		}
+		/* 特集バナー */
+		
+		#home .feature_bnrs li+li+li+li+li+li+li {
+			clear: both;
+		}
+		
+		#home .feature_bnrs li+li+li+li+li+li+li+li {
+			clear: none;
+		}
+		/* ランキングタイトル表示調整 */
+		
+		@media screen and (min-width: 768px) {
+			#home .recommend.ranking-genre,
+			#home .recommend {
+				padding-top: 60px;
+			}
+		}
+		
+		@media screen and (max-width: 767px) {
+			#home .recommend.ranking-genre,
+			#home .recommend {
+				margin-top: 30px;
+			}
+		}
+		
+		@media screen and (min-width: 768px) {
+			#home .side_widget {
+				margin-top: 0 !important;
+			}
+		}
+	</style>
+	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
+	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- TemplateBeginEditable name="script" -->
 <script src="/contents/c/js/new/slick.min.js"></script>
 <script>
@@ -73,6 +403,7 @@ $(function(){
 <!--/ tracking urchin -->
 <!-- TemplateParam name="id" type="text" value="" -->
 </head>
+
 <body>
 <!-- Googleタグマネージャ body用 -->
 <meta m:id="google_tag_manager_body" content="">
@@ -80,84 +411,97 @@ $(function(){
 <!-- TemplateBeginEditable name="tag_body" -->
 BODY直後のタグなどを入れます。
 <!-- TemplateEndEditable -->
-<div id="container">
-<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-	<div class="header_in cf">
-		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
+	<div id="container">
+		<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<div class="header_in cf">
+				<span m:id="l_equ_hierarchy_3_shop">
+				<!-- TemplateBeginIf cond="id=='home'" -->
+				<h1 class="header_logo">
 				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
-						<img m:id="static_img" src="../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+						<img m:id="static_img" src="../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
+					</span> 
+				</a>
+				</h1>
+				<!-- TemplateEndIf -->
+				<!-- TemplateBeginIf cond="id!=='home'" -->
+				<p class="header_logo">
+				<a m:id="e_link_logo_shop_shop" href="/">
+					<span m:id="l_notEmp_shop_image_file_shop">
+						<img m:id="static_img" src="../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
 					</span>
 				</a>
-			</h1>
-			<div class="header_top">
-				<div class="header_tell" class="viewS">
-					<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
-                </div>
-				<!-- /.header_tel -->
-				<div class="header_contact">
-                    <a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-				</div>
-				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
-					<div class="header_mypage viewPc">
-						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+				</p>
+        <!-- TemplateEndIf -->
+				<div class="header_top">
+					<!-- TemplateBeginIf cond="id=='sake'" -->
+					<div class="header_tell" class="viewS">
+						<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01_sake.png" alt="0120-552-476 月&#xFF5E;土曜日 9時&#xFF5E;17:30時（日、祝日除く）" />
+						<p class="note">携帯電話からでも通話無料</p>
 					</div>
-				</div>
-				<!-- /.header_mypage -->
-				<div class="header_ucan">
-					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
-				</div>
-				<!-- /.header_ucan -->
-            </div>
-			<!-- /.header_top -->
-			<div class="header_bottom">
-				<p class="header_username">ようこそ
-                	<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
-                    <span m:id="l_notPre_login_member_name">ゲスト</span>さん
-                </p>
-				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
-				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
-				<!-- /.header_guide -->
-				<div class="header_search" >
-					<div class="header_search_in cf">
-						<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
-							<input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
-							<input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
-							<input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
-							<input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
-							<input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
-							<input m:id="searchForm_maker" type="hidden" name="maker" value="" />
-							<input m:id="searchForm_brand" type="hidden" name="brand" value="" />
-							<input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
-							<input m:id="searchForm_page" type="hidden" name="page" value="1">
-							<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
-						</form>
-						<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-							<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-							<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
-							<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
-						</form>
-						<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
-							<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
-							<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
-							<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
-						</form>
+					<!-- /.header_tel -->
+          <!-- TemplateEndIf -->
+					<!-- TemplateBeginIf cond="id!=='sake'" -->
+					<div class="header_tell" class="viewS">
+						<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-186 6時&#xFF5E;22時（年中無休）" />
+						<p class="note">携帯電話からでも通話無料</p>
 					</div>
+					<!-- /.header_tel -->
+          <!-- TemplateEndIf -->
+					<div class="header_contact">
+						<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+					</div>
+					<!-- /.header_contact -->
+					<div m:id="l_pre_member_mypage_button_shop">
+						<div class="header_mypage viewPc">
+							<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+						</div>
+					</div>
+					<!-- /.header_mypage -->
+					<div class="header_ucan">
+						<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+					</div>
+					<!-- /.header_ucan -->
 				</div>
-                
-				<!-- /.header_search -->
-				<span m:id="l_equ_hierarchy_3_shop">
+				<!-- /.header_top -->
+				<div class="header_bottom">
+					<p class="header_username">ようこそ
+						<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a>
+						</span>
+						<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+					</p>
+					<!-- /.header_username -->
+					<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+					<!-- /.header_begginer -->
+					<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+					<!-- /.header_guide -->
+					<div class="header_search">
+						<div class="header_search_in cf">
+							<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+								<input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+								<input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+								<input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+								<input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+								<input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+								<input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+								<input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+								<input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+								<input m:id="searchForm_page" type="hidden" name="page" value="1">
+								<input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+							</form>
+						</div>
+					</div>
+
+					<!-- /.header_search -->
+					<span m:id="l_equ_hierarchy_3_shop">
 					<div class="header_menu hvr-grow" class="clearfix">
                         <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
                             <span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
                         </a>
                         <p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-                    </div>
-					<!--/.header_menu-->
+					</p>
+				</div>
+				<!--/.header_menu-->
 				</span>
 				<div class="header_login hvr-grow">
 					<ul class="header_list_02">
@@ -167,14 +511,14 @@ BODY直後のタグなどを入れます。
 									<p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
 								</a>
 							</li>
-                        </div>
-                        <div m:id="l_pre_member_mypage_button_shop">
-                            <li class="header_mypage_sp">
-                                <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
-                            </li>
-                        </div>
+						</div>
+						<div m:id="l_pre_member_mypage_button_shop">
+							<li class="header_mypage_sp">
+								<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+							</li>
+						</div>
 						<div m:id="l_notPre_member_login_button_shop">
-                            <li id="header_login">
+							<li id="header_login">
 								<a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">
 									<p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
 								</a>
@@ -194,13 +538,115 @@ BODY直後のタグなどを入れます。
 				</div>
 			</div>
 			<!-- /.header_signup -->
-		</span>
-		<div class="header_item_search_box">
-			<div class="header_item_search_area">
-				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="/goodsSearchShop_shop.html">
+			</span>
+			<div class="header_item_search_box">
+				<div class="header_item_search_area">
+					<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="/goodsSearchShop_shop.html">
+						<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+						<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索"
+							 autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
+						<div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
+					</form>
+					<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+						<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+						<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+						<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+					</form>
+				</div>
+				<object class="xsp_obj" m:id="e_var_standardCategory">
+			</object>
+				<object class="xsp_obj" m:id="e_var_campaignCategory">
+			</object>
+				<object class="xsp_obj" m:id="count">
+			</object>
+				<object class="xsp_obj" m:id="cate_count">
+			</object>
+				<object class="xsp_obj" m:id="subCate_count">
+			</object>
+				<object class="xsp_obj" m:id="subCate2_count">
+			</object>
+				<object class="xsp_obj" m:id="e_var_dmHistory">
+			</object>
+				<span m:id="l_pre_standardCategory">
+				<span m:id="l_notEmp_standardCategory_childCategories">
+					<div class="header_category_list">
+						<span m:id="l_ite_standardCategory">
+							<span m:id="l_equ_cate_checkPeriod">
+								<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+				<object class="xsp_obj" m:id="count_sub1"></object>
+				<ul class="l_con_list_01 cf">
+					<span m:id="l_ite_cate">
+										<span m:id="l_equ_subCate_checkPeriod">
+											<span m:id="icnt_increment"></span>
+					<span m:id="i_ins_subCate"></span>
+					<li>
+						<div>
+							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+								<span m:id="span_subCate_arrow" id="arrow_1">
+									<span m:id="disp_subCate_category_name">ファッション</span>
+								</span>
+							</a>
+						</div>
+						<ul m:id="tag_dd_subCate">
+							<span m:id="l_ite_subCate"> 
+														<span m:id="l_equ_subCate2_checkPeriod">
+															<span m:id="icnt_increment"></span>
+							<span m:id="i_ins_subCate2"></span>
+							<li>
+								<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+								<ul m:id="tag_dd_subCate2">
+									<span m:id="l_ite_subCate2"> 
+										<span m:id="l_equ_subCate3_checkPeriod">
+										<span m:id="icnt_increment"></span>
+									<li>
+										<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
+									</li>
+									</span>
+									</span>
+								</ul>
+							</li>
+							</span>
+							</span>
+						</ul>
+					</li>
+					</span>
+					</span>
+				</ul>
+				</span>
+				</span>
+			</div>
+			</span>
+			</span>
+			<div class="header_feature">
+				<a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
+			</div>
+			<!-- /.header_feature -->
+			<div class="header_logout">
+				<div m:id="l_pre_member_logout_button_shop">
+					<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+						<img src="../contents/c/shop/image/txt_logout_sp.png" alt="ログアウト">
+					</a>
+				</div>
+			</div>
+			<!-- /.header_logout -->
+			<div class="header_close">
+				<span class="header_close_btn">閉じる</span>
+			</div>
+			<!-- /.header_close -->
+	</div>
+	<!-- /.header_item_search_box-->
+	</div>
+	<!--header_in-->
+</header>
+<!--header-->
+	<div class="search_area cf">
+		<div class="search_area_in cf">
+			<div class="search_area_input_wrap">
+				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
 					<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索" autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
-					<div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
+					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や気になる言葉をご入力ください" type="text" name="keyword" maxlength="200" value="商品名や気になる言葉をご入力ください"
+						 autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+					<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
 				</form>
 				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
 					<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -208,93 +654,22 @@ BODY直後のタグなどを入れます。
 					<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
 				</form>
 			</div>
-			<object class="xsp_obj" m:id="e_var_standardCategory">
-			</object>
-			<object class="xsp_obj" m:id="e_var_campaignCategory">
-			</object>
-			<object class="xsp_obj" m:id="count">
-			</object>
-			<object class="xsp_obj" m:id="cate_count">
-			</object>
-			<object class="xsp_obj" m:id="subCate_count">
-			</object>
-			<object class="xsp_obj" m:id="subCate2_count">
-			</object>
-			<object class="xsp_obj" m:id="e_var_dmHistory">
-			</object>
-			<span m:id="l_pre_standardCategory">
-				<span m:id="l_notEmp_standardCategory_childCategories">
-					<div class="header_category_list">
-						<span m:id="l_ite_standardCategory">
-							<span m:id="l_equ_cate_checkPeriod">
-								<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-								<object class="xsp_obj" m:id="count_sub1"></object>
-								<ul class="l_con_list_01 cf">
-									<span  m:id="l_ite_cate">
-										<span m:id="l_equ_subCate_checkPeriod">
-											<span m:id="icnt_increment"></span>
-											<span m:id="i_ins_subCate"></span>
-											<li>
-												<div>
-													<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-														<span m:id="span_subCate_arrow" id="arrow_1">
-															<span m:id="disp_subCate_category_name">ファッション</span>
-														</span>
-													</a>
-												</div>
-												<ul m:id="tag_dd_subCate">
-													<span m:id="l_ite_subCate"> 
-														<span m:id="l_equ_subCate2_checkPeriod">
-															<span m:id="icnt_increment"></span>
-															<span m:id="i_ins_subCate2"></span>
-															<li>
-																<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-																<ul m:id="tag_dd_subCate2">
-																	<span m:id="l_ite_subCate2"> 
-																		<span m:id="l_equ_subCate3_checkPeriod">
-																			<span m:id="icnt_increment"></span>
-																			<li>
-																				<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-																			</li>
-																		</span>
-																	</span>
-																</ul>							
-															</li>
-														</span>
-													</span>
-												</ul>
-											</li>
-										</span>
-									</span>
-								</ul>
-							</span>
-						</span>
-					</div>
-				</span>
-			</span>
-			<div class="header_feature">
-				<a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
-			</div>
-			<!-- /.header_feature -->
-            <div class="header_logout">
-                <div m:id="l_pre_member_logout_button_shop">
-                    <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
-                    	<img src="../contents/c/shop/image/txt_logout_sp.png" alt="ログアウト">
-                    </a>
-                </div>
-			</div>
-			<!-- /.header_logout -->
-			<div class="header_close">
-				<span class="header_close_btn">閉じる</span>
-			</div>
-			<!-- /.header_close -->
-		</div>
-		<!-- /.header_item_search_box-->
+			<div class="word_area">
+				<p class="word_area_tit">よく検索されるキーワード</p>
+				<ul class="word_area_list">
+					<li><a href="/item_manganihon/">まんが日本昔ばなし</a></li>
+					<li><a href="/item_bousaiset/">防災セット</a></li>
+					<li><a href="/item_DCX01/">昭和ラヂオ</a></li>
+					<li><a href="/item_DAD90/">多機能ボストンバッグ</a></li>
+					<li><a href="/bousai/">防災用品</a></li>
+					<li><a href="/item_DJD01/">カナナリュック</a></li>
+					<li><a href="/item_DLA00/">ダッキー</a></li>
+					<li><a href="/syokuhin/">おいしい食卓</a></li>
+				</ul>
+			</div>		</div>
 	</div>
-	<!--header_in-->
-</header>
-<!--header-->
-<!-- TemplateBeginEditable name="contents" -->
+	<!-- /.search_area -->
+	<!-- TemplateBeginEditable name="contents" -->
 	<div id="contents">
 		<div id="contents_in" class="cf">
 		</div>
@@ -304,199 +679,232 @@ BODY直後のタグなどを入れます。
 </div>
 <!--container-->
 <!-- TemplateEndEditable -->
-<footer id="footer" class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-	<div id="pagetop" class="pagetop_pc">
-		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
-	</div>
-	<div id="pagetop_sp" class="pagetop_sp">
-		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
-	</div>
-	<div class="about">
-		<div class="about_in wrapper">
-			<ul class="about_list">
-				<li class="about_list_pay js-matchHeight">
-					<span class="about_list_icon icon-dentaku"></span>
-					<p class="about_list_tit">お支払い方法について</p>
-					<div class="about_list_in">
-						<p class="about_list_txt">お支払いには、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。</p>
-					</div>
-				</li>
-				<li class="about_list_price js-matchHeight">
-					<span class="about_list_icon icon-car"></span>
-					<p class="about_list_tit">送料について</p>
-					<div class="about_list_in">
-						<div class="about_list_box">
-							<p class="about_list_txt">一回のご注文金額の合計が税込10,000円以上の場合、送料は当社負担（全国一律）になります。 税込10,000円に満たない場合は250円、また税込5,000円未満は500円ご負担いただきます。</p>
-							<div class="about_list_caution">
-								<p class="about_list_caution_tit">&#8251;ご注意&#8251;</p>
-								<p class="about_list_caution_txt"><span class="red">食品等、一部商品は送料体系が異なります。</span><br>詳しくは各商品詳細ページをご覧ください。</p>
+	<footer id="footer" class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+		<div id="pagetop" class="pagetop_pc">
+			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+		</div>
+		<div id="pagetop_sp" class="pagetop_sp">
+			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+		</div>
+		<div class="about">
+			<div class="about_in wrapper">
+				<ul class="about_list">
+					<li class="about_list_pay js-matchHeight">
+						<span class="about_list_icon icon-dentaku"></span>
+						<p class="about_list_tit">お支払い方法について</p>
+						<div class="about_list_in">
+							<p class="about_list_txt">お支払いには、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。</p>
+						</div>
+					</li>
+					<li class="about_list_price js-matchHeight">
+						<span class="about_list_icon icon-car"></span>
+						<p class="about_list_tit">送料について</p>
+						<div class="about_list_in">
+							<div class="about_list_box">
+								<p class="about_list_txt">一回のご注文金額の合計が税込10,000円以上の場合、送料は当社負担（全国一律）になります。 税込10,000円に満たない場合は250円、また税込5,000円未満は500円ご負担いただきます。</p>
+								<div class="about_list_caution">
+									<p class="about_list_caution_tit">&#8251;ご注意&#8251;</p>
+									<p class="about_list_caution_txt"><span class="red">食品等、一部商品は送料体系が異なります。</span><br>詳しくは各商品詳細ページをご覧ください。</p>
+								</div>
+							</div>
+							<div class="about_list_img">
+								<img src="/contents/c/shop/image/img_price01.png" class="viewPc" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+								<img src="/contents/c/shop/image/img_price01_sp.png" class="viewSp" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
 							</div>
 						</div>
-						<div class="about_list_img">
-							<img src="/contents/c/shop/image/img_price01.png" class="viewPc" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
-							<img src="/contents/c/shop/image/img_price01_sp.png" class="viewSp" alt="税込10,000円以上　送料当社負担、税込5,000円以上、税込10,000円未満、送料250円、税込5,000円未満　送料500円">
+					</li>
+					<li class="about_list_delivery js-matchHeight">
+						<span class="about_list_icon icon-delivery"></span>
+						<p class="about_list_tit">商品のお届けについて</p>
+						<div class="about_list_in">
+							<p class="about_list_txt">お申込みから（郵送の場合は申込書到着後）通常3&#xFF5E;6日ほどでお届けいたします。<span class="bold">ただし、一部の商品は、お届けまでに10日前後かかる場合もございます。詳しくは各商品詳細ページをご覧ください。</span></p>
+							<p class="about_list_notes">※期日・時間帯をご指定いただける商品もございます。各商品詳細ページでご確認ください。</p>
 						</div>
-					</div>
-				</li>
-				<li class="about_list_delivery js-matchHeight">
-					<span class="about_list_icon icon-delivery"></span>
-					<p class="about_list_tit">商品のお届けについて</p>
-					<div class="about_list_in">
-						<p class="about_list_txt">お申込みから（郵送の場合は申込書到着後）通常3&#xFF5E;6日ほどでお届けいたします。<span class="bold">ただし、一部の商品は、お届けまでに10日前後かかる場合もございます。詳しくは各商品詳細ページをご覧ください。</span></p>
-						<p class="about_list_notes">※期日・時間帯をご指定いただける商品もございます。各商品詳細ページでご確認ください。</p>
-					</div>
-				</li>
-				<li class="about_list_secure js-matchHeight">
-					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証・返品について</p>
-					<div class="about_list_in">
-						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
-                        <div class="about_list_caution">
-                            <p class="about_list_caution_tit">※ご注意※</p>
-                            <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
-                        </div>
-					</div>
-				</li>
-				<li class="about_list_point js-matchHeight">
-					<span class="about_list_icon icon-point"></span>
-					<p class="about_list_tit">ココチモポイントについて</p>
-					<div class="about_list_in">
-						<p class="about_list_txt">商品のご請求金額に応じて、通常【100円につき1ポイント】をお付けします。<br>確定したポイントは次回以降のご購入の際に1ポイント＝1円としてご利用いただけます。</p>
-						<a href="/shop/c/static/guide02/#registration_merit" class="about_list_link cmn_link01">会員特典について詳しくはこちら</a>
-					</div>
-				</li>
-			</ul>
-			<div class="about_btn_wrap"><a href="/shop/c/static/guide/" class="about_btn cmn_btn cmn_btn_tri"><span>ご利用ガイドを見る</span></a></div>
-		</div>
-	</div>
-	<!-- /.about -->
-	<div class="tel_area">
-		<div class="tel_area_in wrapper">
-			<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
-			<p class="tel_area_txt">ココチモお客様センター</p>
-			<p class="tel_area_num">
-				<img src="/contents/c/shop/image/txt_tel02.png" class="viewPc" alt="0120-552-186">
-				<a href="tel:0120-552-186" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sp.png" alt="0120-552-186"></a>
-			</p>
-			<div class="tel_area_sub">
-				<p class="tel_area_time">（<span class="bold">6時&#xFF5E;22時</span> 日曜・祝日も受付けます）</p>
-				<div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
-                <p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
+					</li>
+					<li class="about_list_secure js-matchHeight">
+						<span class="about_list_icon icon-secure"></span>
+						<p class="about_list_tit">品質保証・返品について</p>
+						<div class="about_list_in">
+							<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
+							<div class="about_list_caution">
+								<p class="about_list_caution_tit">※ご注意※</p>
+								<p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
+							</div>
+						</div>
+					</li>
+					<li class="about_list_point js-matchHeight">
+						<span class="about_list_icon icon-point"></span>
+						<p class="about_list_tit">ココチモポイントについて</p>
+						<div class="about_list_in">
+							<p class="about_list_txt">商品のご請求金額に応じて、通常【100円につき1ポイント】をお付けします。<br>確定したポイントは次回以降のご購入の際に1ポイント＝1円としてご利用いただけます。</p>
+							<a href="/shop/c/static/guide02/#registration_merit" class="about_list_link cmn_link01">会員特典について詳しくはこちら</a>
+						</div>
+					</li>
+				</ul>
+				<div class="about_btn_wrap"><a href="/shop/c/static/guide/" class="about_btn cmn_btn cmn_btn_tri"><span>ご利用ガイドを見る</span></a></div>
 			</div>
 		</div>
-	</div>
-	<!-- /.tel_area -->
-	<div class="footer_info">
-		<div class="footer_info_in wrapper"><div class="footer_info_site">
-			<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
-			<div class="footer_info_box">
-				<span class="footer_info_icon icon-medal"></span>
-				<p class="footer_info_subtit">ユーキャンがお届けする商品</p>
-				<p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
-					<br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
+		<!-- /.about -->
+    <!-- TemplateBeginIf cond="id=='sake'" -->
+		<div class="tel_area">
+			<div class="tel_area_in wrapper">
+				<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
+				<p class="tel_area_txt">ココチモお客様センター（酒類商品に関するお問い合わせ電話番号）</p>
+				<p class="tel_area_num">
+					<img src="/contents/c/shop/image/txt_tel02_sake.png" class="viewPc" alt="0120-552-476">
+					<a href="tel:0120-552-476" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sake_sp.png" alt="0120-552-476"></a>
+				</p>
+				<p class="note">携帯電話からでも通話無料</p>
+				<div class="tel_area_sub">
+					<p class="tel_area_time">（月&#xFF5E;土 <span class="bold">9時&#xFF5E;17時半</span> 日曜・祝日除く）</p>
+					<div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
+	                <p class="tel_area_caution bold red">※未成年の方からのご注文はお受けできません。</p>
+	                <p class="tel_area_caution s_mt0 bold">※おかけ間違いのないようご注意ください。</p>
 				</div>
-				<div class="footer_info_box">
-					<span class="footer_info_icon icon-lock"></span>
-					<p class="footer_info_subtit">安心のセキュリティ</p>
-					<p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
-					<div class="pc_secure norton">
+			</div>
+		</div>
+		<!-- /.tel_area -->
+    <!-- TemplateEndIf -->
+    <!-- TemplateBeginIf cond="id!=='sake'" -->
+		<div class="tel_area">
+			<div class="tel_area_in wrapper">
+				<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
+				<p class="tel_area_txt">ココチモお客様センター</p>
+				<p class="tel_area_num">
+					<img src="/contents/c/shop/image/txt_tel02.png" class="viewPc" alt="0120-552-186">
+					<a href="tel:0120-552-186" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sp.png" alt="0120-552-186"></a>
+				</p>
+				<p class="note">携帯電話からでも通話無料</p>
+				<div class="tel_area_sub">
+					<p class="tel_area_time">（<span class="bold">6時&#xFF5E;22時</span> 日曜・祝日も受付けます）</p>
+					<div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
+					<p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
+				</div>
+			</div>
+		</div>
+		<!-- /.tel_area -->
+    <!-- TemplateEndIf -->
+		<div class="footer_info">
+			<div class="footer_info_in wrapper">
+				<div class="footer_info_site">
+					<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
+					<div class="footer_info_box">
+						<span class="footer_info_icon icon-medal"></span>
+						<p class="footer_info_subtit">ユーキャンがお届けする商品</p>
+						<p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
+							<br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
+					</div>
+					<div class="footer_info_box">
+						<span class="footer_info_icon icon-lock"></span>
+						<p class="footer_info_subtit">安心のセキュリティ</p>
+						<p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
+						<div class="pc_secure norton">
+							<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+							<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer_info_consult">
+					<h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
+					<p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
+					<div class="footer_info_contact">
+						<p class="footer_info_tel"><a href="tel:0120-552-186">0120-552-186</a></p>
+						<p class="note">携帯電話からでも通話無料</p>
+						<div class="footer_info_contact_btn_wrap">
+							<a m:id="e_link_inquiry" href="inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
+						</div>
+						<!-- /.footer_info_contact_btn_wrap -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.footer_info -->
+		<div class="footer_sitemap">
+			<div class="footer_sitemap_in wrapper">
+				<div class="footer_sitemap_category">
+					<h3 class="footer_sitemap_tit">カテゴリから探す</h3>
+					<span m:id="l_pre_standardCategory">
+					<span m:id="l_notEmp_standardCategory_childCategories">
+						<span m:id="l_ite_standardCategory">
+							<span m:id="l_equ_cate_checkPeriod">
+								<span m:id="icnt_increment"></span>
+					<span m:id="i_ins_cate"></span>
+					<object class="xsp_obj" m:id="count_sub1"></object>
+					<ul class="footer_sitemap_list">
+						<span m:id="l_ite_cate">
+										<span m:id="l_equ_subCate_checkPeriod">
+											<span m:id="icnt_increment"></span>
+						<span m:id="i_ins_subCate"></span>
+						<li class="fleft">
+							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+								<span m:id="span_subCate_arrow" id="arrow_1"><span m:id="disp_subCate_category_name">ファッション</span></span>
+							</a>
+						</li>
+						</span>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家具</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家電</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">玩具・趣味</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">防災用品</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">本DVD</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">美容・健康</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">日用雑貨</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">食品・飲料</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">キッチン</a></li>
+						</span>
+					</ul>
+					</span>
+					</span>
+					</span>
+					</span>
+				</div>
+				<div class="footer_sitemap_begginer">
+					<h3 class="footer_sitemap_tit">初めての方へ</h3>
+					<ul class="footer_sitemap_list">
+						<li><a href="/shop/c/static/greeting/#origin">ココチモとは</a></li>
+						<li><a href="/shop/c/static/guide/">ご利用ガイド</a></li>
+						<li class="wrap_l oneb"><span m:id="l_notPre_member_login_shop"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></span></li>
+					</ul>
+				</div>
+				<div class="footer_sitemap_guide">
+					<h3 class="footer_sitemap_tit">ショッピングガイド</h3>
+					<ul class="footer_sitemap_list">
+						<li><a href="/shop/c/static/guide07/#return">返品・交換について</a></li>
+						<li><a href="/shop/c/static/guide07/#cancel">キャンセルについて</a></li>
+						<li><a href="/shop/c/static/faq/">よくあるご質問</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--footer_sitemap_in-->
+		</div>
+		<!--footer_sitemap -->
+		<div class="footer_important">
+			<div class="footer_important_in wrapper">
+				<ul class="footer_important_list cf">
+					<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
+					<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+					<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
+					<li><a href="/shop/c/static/company/">会社情報</a></li>
+				</ul>
+				<div class="footer_important_mark">
+					<div class="jadma">
+						<a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
+					</div>
+					<div class="norton">
 						<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
 						<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
 					</div>
 				</div>
 			</div>
-			<div class="footer_info_consult">
-				<h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
-				<p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
-				<div class="footer_info_contact">
-					<p class="footer_info_tel"><a href="tel:0120-552-186">0120-552-186</a></p>
-					<div class="footer_info_contact_btn_wrap">
-						<a m:id="e_link_inquiry" href="inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
-					</div>
-					<!-- /.footer_info_contact_btn_wrap -->
-				</div>
+		</div>
+		<!--footer_important-->
+		<div class="footer_bottom">
+			<div class="footer_bottom_in wrapper">
+				<p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
 			</div>
 		</div>
-	</div>
-	<!-- /.footer_info -->
-	<div class="footer_sitemap">
-		<div class="footer_sitemap_in wrapper">
-			<div class="footer_sitemap_category">
-				<h3 class="footer_sitemap_tit">カテゴリから探す</h3>
-				<span m:id="l_pre_standardCategory">
-					<span m:id="l_notEmp_standardCategory_childCategories">
-						<span m:id="l_ite_standardCategory">
-							<span m:id="l_equ_cate_checkPeriod">
-								<span m:id="icnt_increment"></span>
-								<span m:id="i_ins_cate"></span>
-								<object class="xsp_obj" m:id="count_sub1"></object>
-								<ul class="footer_sitemap_list">
-									<span  m:id="l_ite_cate">
-										<span m:id="l_equ_subCate_checkPeriod">
-											<span m:id="icnt_increment"></span>
-											<span m:id="i_ins_subCate"></span>
-											<li class="fleft">
-												<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-													<span m:id="span_subCate_arrow" id="arrow_1"><span m:id="disp_subCate_category_name">ファッション</span></span>
-												</a>
-											</li>
-										</span>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">家具</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">家電</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">玩具・趣味</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">防災用品</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">本DVD</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">美容・健康</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">日用雑貨</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">食品・飲料</a></li>
-										<li m:id="dummy"><a href="goodsSearchShop_shop.html">キッチン</a></li>
-									</span>
-								</ul>
-							</span>
-						</span>
-					</span>
-				</span>
-			</div>
-			<div class="footer_sitemap_begginer">
-				<h3 class="footer_sitemap_tit">初めての方へ</h3>
-				<ul class="footer_sitemap_list">
-					<li><a href="/shop/c/static/greeting/#origin">ココチモとは</a></li>
-					<li><a href="/shop/c/static/guide/">ご利用ガイド</a></li>
-					<li class="wrap_l oneb"><span m:id="l_notPre_member_login_shop"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></span></li>
-				</ul>
-			</div>
-		</div>
-		<!--footer_sitemap_in-->
-	</div>
-	<!--footer_sitemap -->
-	<div class="footer_important">
-		<div class="footer_important_in wrapper">
-			<ul class="footer_important_list cf">
-				<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
-				<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
-				<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
-				<li><a href="/shop/c/static/company/">会社情報</a></li>
-			</ul>
-            <div class="footer_important_mark">
-                <div class="jadma">
-                	<a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
-                </div>
-                <div class="norton">
-                    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-                    <p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
-                </div>
-            </div>
-		</div>
-	</div>
-	<!--footer_important-->
-	<div class="footer_bottom">
-		<div class="footer_bottom_in wrapper">
-			<p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
-		</div>
-	</div>
-	<!--footer_bottom-->
-</footer>
-<!-- /#footer -->
+		<!--footer_bottom-->
+	</footer>
+	<!-- /#footer -->
 <!-- TemplateBeginEditable name="script_footer" -->
 ここにフッターのスクリプトが入ります。
 <!-- TemplateEndEditable -->
