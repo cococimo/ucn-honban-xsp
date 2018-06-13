@@ -1445,7 +1445,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
         s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
     })();
 </script>
-<!-- Ptengine 20171024 ここまで --> 
+<!-- Ptengine 20171024 ここまで -->
 
 <!-- DLPO CV -->
 <script type='text/javascript'>adlpoMain('kigokochi_CV','pr=cv');</script>
@@ -1465,7 +1465,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 </script>
 <!-- 0908 fujitsu IM -->
 
-<!-- 1019 CRMタグここから -->
+<!-- 1019 CRMタグここから
 <img src="" id="crmTag" />
 <script>
 var crm_order_no = document.tagForm.order_no.value;
@@ -1473,7 +1473,22 @@ var crm_toal_price = document.tagForm.total_price.value;
 
 document.getElementById("crmTag").src = "https://c.egukct.com/crm/iikigokochi/cv/" + crm_order_no + "/" + crm_toal_price + "/";
 </script>
-<!-- 1019 CRMタグここまで -->
+1019 CRMタグここまで -->
+
+<!-- 180611 CRMタグここから -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var __kozuchi_cv = {
+conversion_id : 'iikigokochi',
+order_id : document.tagForm.order_no.value,
+amount : document.tagForm.total_price.value
+};
+(function(d,url){
+ s = d.getElementsByTagName("script")[0];e = d.createElement("script");e.src=url;e.async=1;s.parentNode.insertBefore(e,s);
+ })(document,'//c.crm-kozuchi.com/crm/iikigokochi/js/conversions.js');
+/* ]]> */
+</script>
+<!-- 180611 CRMタグここまで -->
 
 </body>
 <!-- InstanceEnd --></html>
