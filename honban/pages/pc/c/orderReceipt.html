@@ -997,7 +997,6 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 
 
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=103'></script>
-<!-- InstanceEndEditable -->
 
 <!-- Ptengine 20170602 ここから -->
 <script type="text/javascript">
@@ -1030,7 +1029,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 </script>
 <!-- 0908 fujitsu IM -->
 
-<!-- 1019 CRMタグここから -->
+<!-- 1019 CRMタグここから
 <img src="" id="crmTag" />
 <script>
 var crm_order_no = document.tagForm.order_no.value;
@@ -1038,8 +1037,26 @@ var crm_toal_price = document.tagForm.total_price.value;
 
 document.getElementById("crmTag").src = "https://c.egukct.com/crm/cococimo/cv/" + crm_order_no + "/" + crm_toal_price + "/";
 </script>
-<!-- 1019 CRMタグここまで -->
+ 1019 CRMタグここまで -->
 
+<!-- 180611 CRMタグここから -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var __kozuchi_cv = {
+conversion_id : 'cococimo',
+order_id : document.tagForm.order_no.value,
+amount : document.tagForm.total_price.value
+};
+(function(d,url){
+ s = d.getElementsByTagName("script")[0];e = d.createElement("script");e.src=url;e.async=1;s.parentNode.insertBefore(e,s);
+ })(document,'//c.crm-kozuchi.com/crm/cococimo/js/conversions.js');
+ 
+/* ]]> */
+</script>
+<!-- 180611 CRMタグここまで -->
+
+
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
 
