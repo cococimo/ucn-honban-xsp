@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="receipt"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>　
+<head>
 <meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
@@ -56,7 +56,201 @@ $(function(){
 	}
 });
 </script>
+
 <![endif]-->
+
+	<style>
+		.header_logo:hover {
+			opacity: 1;
+			-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+		}
+		.header_username,
+		.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
+		.pagetop_pc,
+		.pagetop_sp,
+		.cart_tel_contact.side_widget {display: none !important}
+
+		#cart .cart_tel_contact_wrap {
+			overflow: hidden;
+		}
+
+		#cart .cart_tel_contact {
+			border:1px solid #ccc;
+			padding: 12px 10px 0;
+			margin:15px 0;
+			width: 410px;
+			float: left;
+		}
+		#cart .cart_tel_contact:first-child {
+			margin-right:20px;
+		}
+
+		#cart .cart_tel_contact_tit {
+/*			border-bottom: 2px solid #ff8590;
+			background: #f8f8f8;*/
+			font-size: 16px;
+/*			padding: 12px 10px 10px;
+			line-height: 1.3;*/
+		}
+		#cart .cart_tel_contact_in {
+			padding: 18px 7px 10px;
+		}
+		#cart .cart_tel_contact_txt {
+			margin: 8px 0 0;
+			padding: 8px 11px 0;
+			border-top: 1px dotted #ccc;
+			line-height: 1.3;
+			font-size: 15px;
+		}
+
+		@media print, screen and (min-width: 767px) {
+			.header_logo {
+				width: 120px;
+				height: 30px;
+				position: absolute;
+				top: 10px;
+			}
+			.header_logo img {
+				width: 120px;
+				height: 30px;
+			}
+			.header_top_cart {	
+				padding-top: 10px;
+			    width: 100%;
+			    float: right;
+			    overflow: hidden;
+			}
+			.contents_b {
+				padding-top: 10px;
+			}
+			.cmn_tit05 {
+				font-size: 20px;
+				margin: 0 0 10px;
+			}
+			.header_bottom {
+				padding-bottom: 0;
+			}
+			#cart .cart_intro {
+				margin: 0 0 10px;
+			}
+			#cart .cmn_tit05 {
+			    margin: 0 0 20px;
+			    padding: 10px 0;
+			}
+			.cmn_step04 {
+				margin: 5px 0 10px;
+				display: -webkit-flex;
+				/* Safari */
+				display: flex;
+				-webkit-justify-content: center;
+				/* Safari */
+				justify-content: center;
+				-webkit-align-items: stretch;
+				/* Safari */
+				align-items: center;
+				letter-spacing: .01rem;
+			}
+			#cart .cart_recalculate {
+			    overflow: hidden;
+			    margin: 0 0 20px;
+			    padding: 5px;
+			    background-size: 4px;
+			    font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item {
+				width: 140px;
+				font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(2) {
+				width: 150px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(3) {
+				width: 170px;
+			}
+			.cmn_step04 .cmn_step_item:before {
+			    top: 5px;
+			    left: 10px;
+			    width: 15px;
+			    height: 13px;
+			    font-size: 8px;
+			}
+			.cmn_step04 .cmn_step_item {
+				height: 28px;
+				padding: 7.5px 0 0 36px;
+			}
+			.cmn_step04 .cmn_step_item:after {
+				border-width: 14px 0 14px 16px;
+				right: -16px;
+			}
+			#cart .cart_side_total {
+				padding: 40px 20px 40px;
+			}
+
+			#cart .cart_price_table {
+			    float: none;
+			    width: 100%;
+			    margin: 0 0 0;
+			    font-size: 	14px;
+			}
+			#cart .cart_table01 th {
+	    		padding: 10px 0;
+	    	}
+	    	#cart .cart_table01 {
+			    margin: 0 0 5px;
+			    font-size: 15px;
+			}
+			#cart .cart_table01 td {
+			    padding: 10px;
+			}
+			#cart .cart_table01 td:first-child .img_box {
+			    width: 60px;
+			}
+			#cart .cart_table01 td:first-child .detail_tag {
+			    overflow: hidden;
+			    margin: 10px 0 0;
+			}
+			#cart .cart_table01 td:first-child .delete_link {
+			    font-size: 14px;
+			    float: right;
+			}
+			#cart .cart_recalculate {
+			    margin: 0 0 0px;
+			}
+			#cart .cart_side_total {padding: 20px 20px 20px;}
+			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
+			#cart .cart_recalculate_btn a {background:none;}
+		}
+		@media screen and (max-width: 767px) {
+			.header {height: auto;}
+			#cart .cart_price_btn02 {display:none;}
+			.header_in,#header {position: static;}
+			.header_logo {top:8px;}
+			.header_top_cart {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				padding-left: 140px;
+				width: 100%;
+			}
+			.cmn_step {margin: 0 0 20px;}
+			.cmn_step_item {font-size: 11px;}
+			#cart .attention_box {
+			    padding: 16px 16px 16px;
+			    margin: 10px 0 20px;
+			}
+			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
+			#cart .cart_recalculate_btn a {background: none;}
+			#cart .cart_price_btn01 {margin: 15px 0 15px;}
+		@media screen and (max-width: 370px) {
+			.header_top_cart {padding-left: 90px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 40px;
+			    margin: 0;
+			    padding: 9px 0 0;
+			    font-size: 10px;
+			}
+		}
+	</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
@@ -100,90 +294,6 @@ $(function(){
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="receipt" -->
-<style>
-.header_logo:hover {
-  opacity: 1;
-  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
-}
-@media screen and (min-width: 767px){
-  .header_logo {
-      width: 120px;
-      height: 14px;
-      position: absolute;
-      top: 0;
-   }
-   .header_logo img {
-      width: 120px
-      height: 14px;
-  }
-  .header_top {
-      padding-top: 10px;
-      height: 50px;
-  }
-  .contents_b {
-      padding-top: 20px;
-  }
-  .cmn_tit05 {
-      font-size: 20px;
-      margin: 0 0 10px;
-  }
-  .header_bottom {
-      padding-bottom: 0;
-  }
-  #cart .cart_intro {
-    margin: 0 0 20px;
-  }
-  .cmn_step04  {
-      margin: 0 0 20px;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-       -webkit-justify-content: center; /* Safari */
-      justify-content: center;
-      -webkit-align-items: stretch; /* Safari */
-      align-items: center;
-  }
-  .cmn_step04 .cmn_step_item {
-    width: 140px;
-    font-size: 14px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(2) {
-    width: 150px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(3) {
-    width: 170px;
-  }
-  .cmn_step04 .cmn_step_item:before {
-      top: 10px;
-      left: 12px;
-      width: 16px;
-      height: 14px;
-      font-size: 10px;
-  }
-  .cmn_step04 .cmn_step_item {
-      height: 38px;
-      padding: 13px 0 0 36px;
-  }
-
-  .cmn_step04 .cmn_step_item:after {
-      border-width: 19px 0 19px 20px;
-  }
-  #cart .cart_side_total {
-      padding: 40px 20px 40px;
-  }
- .header_b .header_tell{
- 	display: none;
- }
-}
-.footer {border-top:none;}
- .about,
- .tel_area,
- .footer_info,
- .footer_sitemap {display: none;}
-
- @media screen and (max-width: 767px) {
- 	.footer_important_list{border-top: 1px dotted #ccc;}
- }
-</style>
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -405,61 +515,79 @@ $(function(){
   </span>
 </span>
 <!-- ▲▲ 個別送料対応 2015.08 ▲▲ -->
+
+<!-- ▼▼ 個別対応 css調整 2018.03 ▼▼ -->
+<style>
+.header_ucan {margin: -10px 0 0 24px;}
+</style>
+<!-- ▲▲ 個別対応 css調整 2018.03 ▲▲ -->
 <!-- InstanceEndEditable -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
-				<!-- <a m:id="e_link_logo_shop_shop" href="/"> -->
+		<h1 class="header_logo">
+				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
-				<!-- </a> -->
+				</a>
 			</h1>
-			<div class="header_top">
+			<!--<div class="header_top">
 				<div class="header_tell" class="view">
-					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+					<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 					<p class="note">携帯電話からでも通話無料</p>
-				</div>
+				</div>-->
 				<!-- /.header_tel -->
-<!-- 				<div class="header_contact">
-					<a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a>
-				</div> -->
+				<!--<div class="header_contact">
+					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+				</div>-->
 				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
+				<!--<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
 						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /.header_mypage -->
-				<div class="header_ucan">
-					<!-- <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a> -->
-          			<a href="javascript:void(0)" style="cursor:default;">ユーキャン</a>
-				</div>
-				<!-- /.header_ucan -->
-			</div>
-			<div class="header_bottom">
+				<!--<div class="header_ucan">
+					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				</div>-->
+        <!-- 購入ステップ -->
+				<!-- InstanceBeginEditable name="header_top_cart" -->
+				<div class="header_top_cart">
+					<ol class="cmn_step cmn_step04 cf">
+						<li class="cmn_step_item">お買い物<br class="viewSp">カゴ</li>
+						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
+						<li class="cmn_step_item cmn_step_active">お申込み<br class="viewSp">内容の確認</li>
+						<li class="cmn_step_item">お申込み<br class="viewSp">完了</li>
+					</ol>
+					<!-- /.cmn_step -->
+					<!-- /.header_ucan -->
+        </div>
+				<!-- InstanceEndEditable -->
+        <!-- /購入ステップ -->
+        
+				<div class="header_bottom">
 				<p class="header_username">ようこそ
 					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
 					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 				</p>
 				<!-- /.header_username -->
-<!-- 				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p> -->
+				<!--<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>-->
 				<!-- /.header_begginer -->
-<!-- 				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p> -->
+				<!--<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>-->
 				<!-- /.header_guide -->
 				<span m:id="l_equ_hierarchy_3_shop">
-<!-- 					<div class="header_menu hvr-grow">
+					<!--<div class="header_menu hvr-grow">
 						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
 							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
 						</a>
 					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div> -->
+					</div>-->
 					<!--/.header_menu-->
 				</span>
-<!-- 				<div class="header_login hvr-grow">
+				<!--<div class="header_login hvr-grow">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
@@ -481,7 +609,7 @@ $(function(){
 							</li>
 						</div>
 					</ul>
-				</div> -->
+				</div>-->
 				<!-- /.header_login -->
 			</div>
 			<!-- /.header_bottom -->
@@ -506,14 +634,6 @@ $(function(){
 	<div id="contents_in" class="cf">
 		<div id="cart">
 			<div class="confirm">
-				<ol class="cmn_step cmn_step04 cf">
-					<span m:id="l_notPre_free_guide">
-						<li class="cmn_step_item">お買い物<br class="viewSp">カゴ</li>
-						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
-						<li class="cmn_step_item cmn_step_active">お申込み<br class="viewSp">内容の確認</li>
-						<li class="cmn_step_item">お申込み<br class="viewSp">完了</li>
-					</span>
-				</ol>
 				<!-- /.cmn_step -->
 				<div class="cart_intro mb30 s_mb15">
 					<h1 class="cart_intro_tit cmn_tit05">
@@ -1233,7 +1353,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=102'></script>
-<!-- InstanceEndEditable -->
 
 <!-- Ptengine 20170602 ここから -->
 <script type="text/javascript">
@@ -1250,7 +1369,8 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
         s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
     })();
 </script>
-<!-- Ptengine 20170602 ここまで -->      
+<!-- Ptengine 20170602 ここまで -->
+<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
 

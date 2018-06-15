@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="receipt"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>　
+<head>
 <meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
@@ -56,7 +56,201 @@ $(function(){
 	}
 });
 </script>
+
 <![endif]-->
+
+	<style>
+		.header_logo:hover {
+			opacity: 1;
+			-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+		}
+		.header_username,
+		.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
+		.pagetop_pc,
+		.pagetop_sp,
+		.cart_tel_contact.side_widget {display: none !important}
+
+		#cart .cart_tel_contact_wrap {
+			overflow: hidden;
+		}
+
+		#cart .cart_tel_contact {
+			border:1px solid #ccc;
+			padding: 12px 10px 0;
+			margin:15px 0;
+			width: 410px;
+			float: left;
+		}
+		#cart .cart_tel_contact:first-child {
+			margin-right:20px;
+		}
+
+		#cart .cart_tel_contact_tit {
+/*			border-bottom: 2px solid #ff8590;
+			background: #f8f8f8;*/
+			font-size: 16px;
+/*			padding: 12px 10px 10px;
+			line-height: 1.3;*/
+		}
+		#cart .cart_tel_contact_in {
+			padding: 18px 7px 10px;
+		}
+		#cart .cart_tel_contact_txt {
+			margin: 8px 0 0;
+			padding: 8px 11px 0;
+			border-top: 1px dotted #ccc;
+			line-height: 1.3;
+			font-size: 15px;
+		}
+
+		@media print, screen and (min-width: 767px) {
+			.header_logo {
+				width: 120px;
+				height: 30px;
+				position: absolute;
+				top: 10px;
+			}
+			.header_logo img {
+				width: 120px;
+				height: 30px;
+			}
+			.header_top_cart {	
+				padding-top: 10px;
+			    width: 100%;
+			    float: right;
+			    overflow: hidden;
+			}
+			.contents_b {
+				padding-top: 10px;
+			}
+			.cmn_tit05 {
+				font-size: 20px;
+				margin: 0 0 10px;
+			}
+			.header_bottom {
+				padding-bottom: 0;
+			}
+			#cart .cart_intro {
+				margin: 0 0 10px;
+			}
+			#cart .cmn_tit05 {
+			    margin: 0 0 20px;
+			    padding: 10px 0;
+			}
+			.cmn_step04 {
+				margin: 5px 0 10px;
+				display: -webkit-flex;
+				/* Safari */
+				display: flex;
+				-webkit-justify-content: center;
+				/* Safari */
+				justify-content: center;
+				-webkit-align-items: stretch;
+				/* Safari */
+				align-items: center;
+				letter-spacing: .01rem;
+			}
+			#cart .cart_recalculate {
+			    overflow: hidden;
+			    margin: 0 0 20px;
+			    padding: 5px;
+			    background-size: 4px;
+			    font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item {
+				width: 140px;
+				font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(2) {
+				width: 150px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(3) {
+				width: 170px;
+			}
+			.cmn_step04 .cmn_step_item:before {
+			    top: 5px;
+			    left: 10px;
+			    width: 15px;
+			    height: 13px;
+			    font-size: 8px;
+			}
+			.cmn_step04 .cmn_step_item {
+				height: 28px;
+				padding: 7.5px 0 0 36px;
+			}
+			.cmn_step04 .cmn_step_item:after {
+				border-width: 14px 0 14px 16px;
+				right: -16px;
+			}
+			#cart .cart_side_total {
+				padding: 40px 20px 40px;
+			}
+
+			#cart .cart_price_table {
+			    float: none;
+			    width: 100%;
+			    margin: 0 0 0;
+			    font-size: 	14px;
+			}
+			#cart .cart_table01 th {
+	    		padding: 10px 0;
+	    	}
+	    	#cart .cart_table01 {
+			    margin: 0 0 5px;
+			    font-size: 15px;
+			}
+			#cart .cart_table01 td {
+			    padding: 10px;
+			}
+			#cart .cart_table01 td:first-child .img_box {
+			    width: 60px;
+			}
+			#cart .cart_table01 td:first-child .detail_tag {
+			    overflow: hidden;
+			    margin: 10px 0 0;
+			}
+			#cart .cart_table01 td:first-child .delete_link {
+			    font-size: 14px;
+			    float: right;
+			}
+			#cart .cart_recalculate {
+			    margin: 0 0 0px;
+			}
+			#cart .cart_side_total {padding: 20px 20px 20px;}
+			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
+			#cart .cart_recalculate_btn a {background:none;}
+		}
+		@media screen and (max-width: 767px) {
+			.header {height: auto;}
+			#cart .cart_price_btn02 {display:none;}
+			.header_in,#header {position: static;}
+			.header_logo {top:8px;}
+			.header_top_cart {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				padding-left: 140px;
+				width: 100%;
+			}
+			.cmn_step {margin: 0 0 20px;}
+			.cmn_step_item {font-size: 11px;}
+			#cart .attention_box {
+			    padding: 16px 16px 16px;
+			    margin: 10px 0 20px;
+			}
+			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
+			#cart .cart_recalculate_btn a {background: none;}
+			#cart .cart_price_btn01 {margin: 15px 0 15px;}
+		@media screen and (max-width: 370px) {
+			.header_top_cart {padding-left: 90px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 40px;
+			    margin: 0;
+			    padding: 9px 0 0;
+			    font-size: 10px;
+			}
+		}
+	</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
@@ -75,50 +269,6 @@ $(function() {
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="receipt" -->
-<style>
-@media screen and (min-width: 767px){
-  #cart .cart_intro {
-    margin: 0 0 20px;
-  }
-  .cmn_step04  {
-      margin: 0 0 20px;
-      display: -webkit-flex; /* Safari */
-      display: flex;
-       -webkit-justify-content: center; /* Safari */
-      justify-content: center;
-      -webkit-align-items: stretch; /* Safari */
-      align-items: center;
-  }
-  .cmn_step04 .cmn_step_item {
-    width: 140px;
-    font-size: 14px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(2) {
-    width: 150px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(3) {
-    width: 170px;
-  }
-  .cmn_step04 .cmn_step_item:before {
-      top: 10px;
-      left: 12px;
-      width: 16px;
-      height: 14px;
-      font-size: 10px;
-  }
-  .cmn_step04 .cmn_step_item {
-      height: 38px;
-      padding: 13px 0 0 36px;
-  }
-
-  .cmn_step04 .cmn_step_item:after {
-      border-width: 19px 0 19px 20px;
-  }
-  #cart .cart_side_total {
-      padding: 40px 20px 40px;
-  }
-}
-</style>
 </head>
 <body>
 <!-- Googleタグマネージャ body用 -->
@@ -154,54 +304,67 @@ $(function() {
 <header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
+		<h1 class="header_logo">
 				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
 				</a>
 			</h1>
-			<div class="header_top">
+			<!--<div class="header_top">
 				<div class="header_tell" class="view">
-					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+					<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 					<p class="note">携帯電話からでも通話無料</p>
-				</div>
+				</div>-->
 				<!-- /.header_tel -->
-				<div class="header_contact">
+				<!--<div class="header_contact">
 					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-				</div>
+				</div>-->
 				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
+				<!--<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
 						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /.header_mypage -->
-				<div class="header_ucan">
+				<!--<div class="header_ucan">
 					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
-				</div>
-				<!-- /.header_ucan -->
-			</div>
-			<div class="header_bottom">
+				</div>-->
+        <!-- 購入ステップ -->
+				<!-- InstanceBeginEditable name="header_top_cart" -->
+				<div class="header_top_cart">
+					<ol class="cmn_step cmn_step04 cf">
+						<li class="cmn_step_item">お買い物<br class="viewSp">カゴ</li>
+						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
+						<li class="cmn_step_item">お申込み<br class="viewSp">内容の確認</li>
+						<li class="cmn_step_item cmn_step_active">お申込み<br class="viewSp">完了</li>
+					</ol>
+					<!-- /.cmn_step -->
+					<!-- /.header_ucan -->
+        </div>
+				<!-- InstanceEndEditable -->
+        <!-- /購入ステップ -->
+        
+				<div class="header_bottom">
 				<p class="header_username">ようこそ
 					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
 					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 				</p>
 				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!--<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>-->
 				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!--<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>-->
 				<!-- /.header_guide -->
 				<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow">
+					<!--<div class="header_menu hvr-grow">
 						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
 							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
 						</a>
 					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div>
+					</div>-->
 					<!--/.header_menu-->
 				</span>
-				<div class="header_login hvr-grow">
+				<!--<div class="header_login hvr-grow">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
@@ -223,7 +386,7 @@ $(function() {
 							</li>
 						</div>
 					</ul>
-				</div>
+				</div>-->
 				<!-- /.header_login -->
 			</div>
 			<!-- /.header_bottom -->
@@ -234,22 +397,54 @@ $(function() {
 </header>
 <!--header-->
 <!-- InstanceBeginEditable name="contents" -->
+
+<style>
+/*会員登録 追加　/contents/c/css/new/style.css*/
+  #cart .cart_contents {overflow:hidden;}
+  #cart .box {width:580px;}
+  #cart .purchase_box {border:none;line-height:1.6;}
+  #cart .login_purchase_box_in {padding: 0 30px 0;}
+  #cart .login_membership_tit {line-height: 1.4;letter-spacing: -0.02em;color: rgb(63, 62, 61);padding: 18px 0;font-size: 28px;}
+  #cart .login_membership_tit:before,
+  #cart .login_membership_list li:first-child:before {width:0;height:0;background:none;display:none;}
+  #cart .receipt_register_btn a {width: 420px;}
+  #cart .membership_sub_tit {position: relative;color: #f39800;font-size: 18px;font-weight: 700;text-align: center;padding: 10px 0;}
+  #cart .login_membership_list li:first-child {padding: 20px;}
+@media screen and (max-width: 767px) {
+	.box.left,.box.right {float:none;}
+  #cart .login_purchase_box_in {padding: 0 0 0 0;}
+  #cart .membership_sub_tit {font-size: 18px;}
+  #cart .receipt_register_btn a {width: 100%;}
+	#cart .purchase_box {margin-top:20px;}
+  .cart_contents {width: auto;}
+  #cart .login_membership_list_txt {padding: 0 0 0 0;}
+  #cart .box {width:auto;}
+ }
+ 	@media print {
+		body,.header_in {width: 100%;}
+		#contents_in {width: 100%;}#cart .box {width: 100%;}
+		#cart .login_membership_list li + li,
+		#cart .login_membership_list li + li + li {width: 48%;}
+		#cart .login_purchase_box.register {margin-top:30px;}
+	}
+
+</style>
+
+
 	<div id="contents" class="contents_b">
 		<div id="contents_in" class="cf">
 			<div id="cart">
 			<div class="receipt">
-				<ol class="cmn_step cmn_step04 cf">
-					<span m:id="l_notPre_free_guide">
-						<li class="cmn_step_item">お買い物<br class="viewSp">カゴ</li>
-						<li class="cmn_step_item">お客様情報<br class="viewSp">の入力</li>
-						<li class="cmn_step_item">お申込み<br class="viewSp">内容の確認</li>
-						<li class="cmn_step_item cmn_step_active">お申込み<br class="viewSp">完了</li>
-					</span>
-				</ol>
 				<!-- /.cmn_step -->
 				<div class="cart_intro">
 					<h1 class="cart_intro_tit cmn_tit05"><span m:id="l_notPre_free_guide">お申込み完了</span></h1>
 				</div>
+
+		<!--▼▼▼ 非ログイン時 ▼▼▼ -->
+		<div m:id="l_notPre_member_login">
+          <div class="cart_contents">
+            <div class="box left">
+            
 				<span m:id="l_notPre_free_guide">
 					<p class="receipt_txt01 mb30 s_mb15">お申込みありがとうございます！</p>
 				</span>
@@ -261,7 +456,66 @@ $(function() {
 					</div>
 				</span>
 
+            <table class="receipt_number">
+              <tr>
+                <th><span m:id="l_notPre_free_guide">ご注文番号</span></th>
+                <td><span m:id="disp_order_no">201306110001</span></td>
+              </tr>
+            </table>
+            <p class="receipt_txt02 mb15 s_mb10">お客様のご注文番号は上記になります。<br>
+            お申込み内容をプリントアウトするなどして、お手元にお控えの上、大切に保管ください。<br>
+            また、ご入力いただいたメールアドレス宛にも、注文確認メールを送信しましたのでお確かめください。<br>
+            ※メールの受信まで多少のお時間がかかる場合もございますので、予めご了承ください。</p>
+           </div><!-- //.left -->
 
+          <div m:id="l_notPre_member_login" class="box right">
+            <div class="login_purchase_box purchase_box register box">
+            <!--<h2 class="purchase_box_tit01"></h2>-->
+            <div class="login_purchase_box_in purchase_box_in js-matchHeight">
+                
+             <div class="login_membership">
+						<h2 class="login_membership_tit">新規会員登録で<br class="viewPc" /><span class="red">500ポイント</span>プレゼント中！</h2>
+            <p class="tac">次回のお買い物に使えるポイントをプレゼントいたします。<br> 登録は無料ですので、ぜひご登録ください。</p>
+            <p class="receipt_register_btn mt20 s_mt10"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_green cmn_btn_register"><span m:id="l_equ_order_next_mode_memberAdd">お申込み情報でカンタン登録！</span></a></p>
+            <h3 class="membership_sub_tit">お得な会員特典について</h3>
+						<ul class="login_membership_list">
+							<li>
+								<!--<p class="login_membership_list_tit"><span class="red">500ポイント</span>をプレゼント！</p>-->
+                <p class="login_membership_list_txt">ココチモには会員登録サービスがございます。<br>会員登録をしていただくと、商品ご購入の際に必要な、お届け先情報の入力が省略でき、お買い物がぐっと簡単に！その他、お買い物に使えるポイントの付与をはじめ、様々な特典やサービスのご案内を随時お受けいただけます。</p>
+							</li>
+							<li>
+								<p class="login_membership_list_tit"><span class="red">ココチモポイント</span><br class="viewPc" />がたまる！</p>
+								
+							</li>
+
+							<li>
+								<p class="login_membership_list_tit"><span class="red">会員優待サービス</span><br class="viewPc" />随時ご案内！</p>
+							</li>
+						</ul>
+					</div>
+         
+              </div>
+            </div>
+	        </div><!--- //.right -->
+	       </div><!--- cart_contents -->
+	     </div>
+		<!-- ▲▲▲ 非ログイン時 ▲▲▲-->
+	       
+		<!--▼▼▼ ログイン時 ▼▼▼ -->
+		<div m:id="l_pre_member_logout_button_shop">
+          <div class="cart_contents">
+            <div class="box left" style="width:auto">
+            
+            <span m:id="l_notPre_free_guide">
+              <p class="receipt_txt01 mb30 s_mb15">お申込みありがとうございます！</p>
+            </span>
+            <span m:id="l_msgPre1">
+              <div class="error">
+                <span m:id="h_msg_msg">
+                  <span m:id="disp_msg"></span>
+                </span>
+              </div>
+            </span>
 
 				<table class="receipt_number">
 					<tr>
@@ -273,15 +527,19 @@ $(function() {
 				お申込み内容をプリントアウトするなどして、お手元にお控えの上、大切に保管ください。<br>
 				また、ご入力いただいたメールアドレス宛にも、注文確認メールを送信しましたのでお確かめください。<br>
 				※メールの受信まで多少のお時間がかかる場合もございますので、予めご了承ください。</p>
+           </div><!-- //.left -->
+	       </div><!--- cart_contents -->
+	     </div>
+		<!-- ▲▲▲ ログイン時 ▲▲▲-->
 
-				<!--▼▼▼ 非ログイン時 ▼▼▼-->
+				<!--▼▼▼ 非ログイン時 ▼▼▼
 					<div m:id="l_notPre_member_login">
-						<p class="receipt_txt02 mb50 s_mb15">さらに、今、お客様にご入力いただきました内容でココチモ会員登録が可能です。</p>
+						<p class="receipt_txt02 mb50 s_mb15 tac mt50 s_mt30">さらに、今、お客様にご入力いただきました内容でココチモ会員登録が可能です。</p>
 						<div class="receipt_register">
 							<p class="receipt_register_tit mb30 s_mb20">会員登録すると、お得にご利用いただけます！</p>
 							<p class="receipt_register_btn"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_green cmn_btn_register"><span m:id="l_equ_order_next_mode_memberAdd">今すぐ会員登録する</span></a></p>
 						</div>
-						<!-- /.receipt_register -->
+						<!-* /.receipt_register *->
 						<div class="membership mt25 s_mt20 mb60 s_mb20 receipt_membership">
 							<div class="membership_in">
 								<h3 class="membership_tit">ココチモ&nbsp;会員特典</h3>
@@ -304,9 +562,9 @@ $(function() {
 								</ul>
 							</div>
 						</div>
-						<!-- /.membership -->
+						<!-* /.membership *->
 					</div>
-				<!--▲▲▲ 非ログイン時 ▲▲▲-->
+				▲▲▲ 非ログイン時 ▲▲▲-->
 
 				<div class="receipt_complete_btn_box tac">
 					<!--▼▼▼ ログイン時 ▼▼▼-->
