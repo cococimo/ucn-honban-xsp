@@ -1473,7 +1473,7 @@ function showCartButton1(obj){
 			                        <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
 			                    </span>
 			                    <span m:id="l_equ_canNot_addCartSku_radio" class = "soldOutButton">
-			                        <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
+			                        <img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
 			                    </span>
 			                    <span m:id="l_equ_noStockSalesStatus">
 			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
@@ -1605,9 +1605,11 @@ function showCartButton1(obj){
 	  /.tel -->
   
   <span m:id="l_equ_type_simple"><!-- カート追従バナー -->
+
 	<style>
 	.purchase_fixed .inner a:hover {cursor: pointer;}
 	.tel.js-tel_sticky {display:none;}
+
 	.sp {display: none !important;}
 	.pc {display: block !important;}
 	@media all and (min-width: 0) and (max-width: 767px) {
@@ -1624,14 +1626,14 @@ function showCartButton1(obj){
 
 	@media all and (min-width: 0) and (max-width: 767px) {
 		.inner08 {margin-top: -60px;padding-top: 60px;	}
-		.footer #pagetop_sp {bottom: 140px;right: 0px;}
+		.footer #pagetop_sp {bottom: 105px;}
 		.purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
 		.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
 		.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
 		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
 		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
 		.purchase_fixed .inner + p {padding-bottom: .5rem;}
-	}
+    .footer #pagetop_sp {bottom: 140px;}
 	</style>
 
 	<div class="purchase_fixed">
@@ -1641,15 +1643,26 @@ function showCartButton1(obj){
 	          <img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call.png">
 	        </a>
 	      </p>
+
 	      <p class="pc_only">
 	        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 	      </p>
-			<p>
+        <span m:id="l_equ_can_addCartSku">
+			<p class="order_btn" id="purchase_btn_order">
 				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
-            <span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
-						<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
 			</p>
+      </span>
+      <!-- 欠品対応 -->
+			<span m:id="l_equ_canNot_addCartSku_radio">
+			<p class="order_btn" id="purchase_btn_keppin">
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+			</p>
+      <!-- //欠品対応 -->
+		</span>
 		</div>
 		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
@@ -2124,7 +2137,7 @@ function showCartButton1(obj){
 			                        <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
 			                    </span>
 			                    <span m:id="l_equ_canNot_addCartSku_radio" class="soldOutButton1">
-			                        <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
+			                        <img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
 			                    </span>
 			                    <span m:id="l_equ_noStockSalesStatus">
 			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
