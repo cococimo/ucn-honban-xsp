@@ -1580,7 +1580,7 @@ $(window).on('load resize', function(){
 			<span m:id="l_equ_can_addCartSku_radioTemp">
 				<a m:id="h_link_skuGoods_one" class="productDetail_cart_bt_normal" onclick="" style="width:100%;"></a>
 			</span>
-			<form method="POST" action="/shop/cartGoodsAdd.do" name="cartGoodsAddSkuFormRadio">
+			<form method="POST" action="https://www.iikigokochi.jp/shop/cartGoodsAdd.do" name="cartGoodsAddSkuFormRadio">
 				<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 				<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 				<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
@@ -1648,7 +1648,7 @@ $(window).on('load resize', function(){
 			<!-- /カート -->
 
 
-      <p class="contactBtn"><a href="/shop/inquiryInputCheck.do?display_code=3371&goods_sku_code=00000000">この商品について問い合わせる</a></p>
+      <p class="contactBtn"><a m:id="e_link_inquiryInputCheck" href="/shop/inquiryInputCheck.do?display_code=3371&goods_sku_code=00000000">この商品について問い合わせる</a></p>
 
       <!-- チャネル別決済種別制限取得 -->
       <div class="l_con_list_03 mt15 clearfix">
@@ -1745,9 +1745,61 @@ $(window).on('load resize', function(){
 <!--/ アイコン -->
 </div>
 
+
+
+
+
+
+
+
+<!--------おすすめ新着商品はこちら-------->
+
 <!-- ▼▼▼新着情報▼▼▼ -->
 <span m:id="l_include_file_tags" filename="goodsDetail/newitem"></span>
 <!-- ▲▲▲新着情報▲▲▲ -->
+
+
+<!-----レビュー------>
+              <object class="xsp_obj" m:id="e_var_goodsReview"></object>
+				<object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
+				<object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
+				<object class="xsp_obj" m:id="e_var_review_evaluation"></object>
+				<div class="r_con_box_03">
+				<span m:id="l_pre_goods_review_detail">
+				<span m:id="l_ite_goodsReviewDetailList">
+					<h2 class="temp_tit_n02 temp_tit_n02_cor">この商品をご購入のお客様から寄せられたお声</h2>
+				</span>
+				</span>
+				<div class="sec_01 clearfix">
+				<span m:id="l_pre_goods_review_detail">
+				<span m:id="l_ite_goodsReviewDetailList">
+				<div class="i_comment_box_01">
+				<div class="title_01 clearfix">
+				<h3><span m:id="disp_review_title">これ超いい！</span></h3><p>評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span></p>
+				</div>
+				<div class="txt_box_01"><span m:id="disp_review_content">
+				この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。</span>
+				<p>ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん　投稿日：<span m:id="b_wr_add_date">2011/05/01</span></p>
+				<div class="com_icon">i</div>
+				</div>
+				</div>
+				</span>
+				<div m:id="dummy" class="i_comment_box_01 com_right pc_only">
+				<div class="title_01 clearfix">
+				<h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
+				</div>
+				<div class="txt_box_01">
+				この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
+				<p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
+				<div class="com_icon">i</div>
+				</div>
+
+				</div>
+				</div>
+
+<!-----/レビュー------>
+
+<!--------styling--------->
 
 <div class="sec_goods base_color">
 <h2 class="ttl_section">

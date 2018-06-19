@@ -615,13 +615,13 @@ $(function(){
 	$('.sp_nav #header_mypage').clone().insertAfter('.sp_member li');
 	$('.header_lists li:empty, .sp_nav li:empty').remove();
 
-	$('.goods_datail_table').clone().insertAfter('.l_con_list_03');
+  $('.goods_datail_table').clone().insertAfter('.contents_right .l_con_list_03');
 	$('.goods_datail_table').parents('.i_main').remove();
 
 
 	var iMainIndex = 0;
 	//var iMainLoop = true;
-	$('.i_main').each(function(index, element) {
+	$('.sec_goods .i_main').each(function(index, element) {
 		//if(!iMainLoop)return;
 
 		//’†g‚ª‹ó‚Ìê‡‚Í—v‘f‚²‚Æíœ
