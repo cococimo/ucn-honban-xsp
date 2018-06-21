@@ -302,6 +302,7 @@ $(function() {
 			#cart .cart_side_total {padding: 20px 20px 20px;}
 			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
 			#cart .cart_recalculate_btn a {background:none;}
+			#cart .cart_price_txt {font-size: 14px;line-height: 1.4;margin-top:5px;}
 		}
 		@media screen and (max-width: 767px) {
 			.header {height: auto;}
@@ -649,6 +650,11 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 
       <span m:id="init_individual"></span>
       <span m:id="l_ite_shopCart">
+		<span m:id="l_ite_detail">
+			<span m:id="l_equ_individual"></span>
+		</span>
+	</span>
+	<span m:id="l_ite_shopCart">
         <span m:id="l_notPre_other_shop_cart">
           
            <div class="contents_side cart_side right">
@@ -663,7 +669,21 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                 </dd>
               </dl>
 
+		<object class="xsp_obj" m:id="e_var_shopPostage"></object>
+		<object class="xsp_obj" m:id="e_var_totalMemberSpecialDiscount"></object>
+		<!-- ********** eastEC Mode START ********** -->
+		<span m:id="l_match_speecsEnable_false">
+		<object class="xsp_obj" m:id="b_var_order_option_0"></object>
+		<object class="xsp_obj" m:id="b_param_postageFlat"></object>
+		</span>
+		<!-- ********** eastEC Mode END ********** -->
 		<object class="xsp_obj" m:id="i_shopping_total_count"></object>
+		<span m:id="init_individual"></span>
+		<span m:id="l_ite_shopCart">
+			<span m:id="l_ite_detail">
+				<span m:id="l_equ_individual"></span>
+			</span>
+		</span>
 		<table class="cmn_table01 cart_price_table">
 			<tr m:id="div_shopping_total">
 				<th>商品合計</th>
@@ -716,6 +736,12 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 				</td>
 			</tr> -->
 		</table>
+
+		<!-- ▼▼ 個別送料商品メッセージ 2015.08.24 ▼▼ -->
+		<span m:id="l_Equ_postage">
+            <p class="cart_price_txt"><span m:id="b_msg_info_cart_individual_postage">送料はお申込み内容の確認画面で確定します。</span></p>
+		</span>
+		<!-- ▲▲ 個別送料商品メッセージ 2015.08.24 ▲▲ -->
 
             </div>
             <!-- /.cart_side_total -->
@@ -941,13 +967,13 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                       <!--<td class="last"><div class="delete_bt"><a href="cart.html">削除する</a></div></td>-->
                     </tr>
                   </span>
-                  <object class="xsp_obj" m:id="e_var_shopPostage"></object>
-                  <object class="xsp_obj" m:id="e_var_totalMemberSpecialDiscount"></object>
+	<!-- <object class="xsp_obj" m:id="e_var_shopPostage"></object> -->
+	<!-- <object class="xsp_obj" m:id="e_var_totalMemberSpecialDiscount"></object> -->
                   <!-- ********** eastEC Mode START ********** -->
-                  <span m:id="l_match_speecsEnable_false">
+	<!-- <span m:id="l_match_speecsEnable_false">
                     <object class="xsp_obj" m:id="b_var_order_option_0"></object>
                     <object class="xsp_obj" m:id="b_param_postageFlat"></object>
-                  </span>
+                  </span> -->
                   <!-- ********** eastEC Mode END ********** -->
                   <!--<object class="xsp_obj" m:id="i_shopping_total_count"></object>-->
                   <span m:id="l_notEqu_total_discount">
@@ -977,12 +1003,6 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 			<li class="cart_price_btn03"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></li>
                   </ul>
 
-                  <!-- ▼▼ 個別送料商品メッセージ 2015.08.24 ▼▼ -->
-                  <span m:id="l_Equ_postage">
-                    <p class="cart_price_txt tar"><span m:id="b_msg_info_cart_individual_postage">送料はお申込み内容の確認画面で確定します。</span></p>
-                  </span>
-                  <!-- ▲▲ 個別送料商品メッセージ 2015.08.24 ▲▲ -->
-                  
                 </div>
                 <!-- /.cart_price -->
                 <span m:id="l_pre_disp_goodsPremium">
@@ -1043,7 +1063,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 	<span class="yen">円</span>
 	</span>で<span class="cmn_green bold postage">送料当社負担</span>です。<br class="viewSp">以下の商品をご一緒にいかがですか？</p>
                                 </div>
-                                <div class="shopping_postage_free_msg">
+                                <div class="shopping_postage_free_msg mb30">
                                 <!-- 送料無料に近い単価商品 -->
                                   <object class="xsp_obj" m:id="e_var_priceGoodsList"></object>
                                   <span m:id="l_notEmp_priceGoodsList">
