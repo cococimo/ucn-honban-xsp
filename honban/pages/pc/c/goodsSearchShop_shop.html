@@ -1046,10 +1046,15 @@ $(function(){
                 </span>
                 </span>
             <!--▲▲▲カテゴリー▲▲▲-->
+
+            <object class="xsp_obj" m:id="parentShop"></object>
+            <object class="xsp_obj" m:id="ancestralCategory"></object>
+            <object class="xsp_obj" m:id="breadcrumbCategory"></object>
+
             <div id="pan-navi" >
                 <ul class="clearfix">
                     <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-                    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
+                    <li><span m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></li>
                     <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
                     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
                 </ul>
