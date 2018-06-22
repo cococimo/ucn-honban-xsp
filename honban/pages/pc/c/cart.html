@@ -300,6 +300,7 @@ $(function() {
 			    margin: 0 0 0px;
 			}
 			#cart .cart_side_total {padding: 20px 20px 20px;}
+      #cart .cart_side_total dl dd {color:#3f3e3d;}
 			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
 			#cart .cart_recalculate_btn a {background:none;}
 			#cart .cart_price_txt {font-size: 14px;line-height: 1.4;margin-top:5px;}
@@ -1049,12 +1050,12 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                   </form>
                   <span m:id="l_notEqu_shopPostage_postage_free">
                     <object class="xsp_obj" m:id="b_var_free"></object>
-                      <!-- 送料無料プロモーション有無判定 (2014/08/22)-->
+                      <!-- 送料無料プロモーション有無判定 (2014/08/22)
                       <object class="xsp_obj" m:id="b_var_promoPostFreeFlg"></object>
                       <span m:id="l_pre_promoPostFree"/>
-                      <!--▼▼▼ 送料が1万円に満たない場合 ▼▼▼-->
+                      <!-*▼▼▼ 送料が1万円に満たない場合 ▼▼▼ *->
                         <span m:id="l_notEqu_free">
-                          <!-- 送料無料プロモーション有の場合、送料無料レコメンド表示しない。(2014/08/22) -->
+                          <!-* 送料無料プロモーション有の場合、送料無料レコメンド表示しない。(2014/08/22) *->
                           <span m:id="l_notEqu_promoPostFree">
                           <span m:id="l_match_shopCart_shop_no">
                             <span m:id="l_notEqu_special">
@@ -1064,7 +1065,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
 	</span>で<span class="cmn_green bold postage">送料当社負担</span>です。<br class="viewSp">以下の商品をご一緒にいかがですか？</p>
                                 </div>
                                 <div class="shopping_postage_free_msg mb30">
-                                <!-- 送料無料に近い単価商品 -->
+                                <!-* 送料無料に近い単価商品 *->
                                   <object class="xsp_obj" m:id="e_var_priceGoodsList"></object>
                                   <span m:id="l_notEmp_priceGoodsList">
                                     <ul class="item_list item_list_5col cart_item_list_03">
@@ -1086,7 +1087,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                                               </span>
                                             </div>
                                             <h3 class="item_list_tit"><a m:id="h_link_priceGoods_name" href="goodsDetail.html"><span m:id="disp_priceGoods_goods_name">商品名商品名</span></a></h3>
-                                            <!-- <span m:id="disp_priceGoods_goods_exp_sum"><p class="item_list_txt">商品説明ダミーテキストダミーテキストダミーテキスト</p></span> -->
+                                            <!-* <span m:id="disp_priceGoods_goods_exp_sum"><p class="item_list_txt">商品説明ダミーテキストダミーテキストダミーテキスト</p></span> *->
                                           </div>
                                           <p class="item_list_yen">
                                             <span m:id="l_notEqu_priceGoods_pretaxPrice">
@@ -1096,8 +1097,8 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                                             </span>
                                             <span m:id="b_wr_priceGoods_actualSalePrice">100</span>円(税込)&nbsp;
                                           </p>
-                                          <!-- お買い物かご一覧からカートに入れる -->
-                                            <!-- <div>
+                                          <!-* お買い物かご一覧からカートに入れる *->
+                                            <!-* <div>
                                               <span m:id="l_can_addCartDirect_priceGoods">
                                                 <span m:id="l_equ_priceGoodsList_valiationSize">
                                                   <a m:id="h_link_cartAddDirect_priceGoods" href="" class="productDetail_cart_bt_normal" onclick="">
@@ -1129,7 +1130,7 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                                                 </span>
                                               </span>
                                             </div> -->
-                                          <!--/ お買い物かご一覧からカートに入れる -->
+                                          <!--/ お買い物かご一覧からカートに入れる *->
                                           </div>
                                         </li>
                                       </span>
@@ -1155,15 +1156,15 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                                       </li>
                                     </ul>
                                   </span>
-                                <!-- /送料無料に近い単価商品 -->
+                                <!-* /送料無料に近い単価商品 *->
                                 </div>
                             </span>
                           </span>
                         </span>
                       </span>
-                    <!--▲▲▲ 送料が1万円に満たない場合 ▲▲▲-->
+                    <!-*▲▲▲ 送料が1万円に満たない場合 ▲▲▲*->
                   </span>
-                <!--▲▲▲ 送料メッセージ ▲▲▲-->
+                <!-*▲▲▲ 送料メッセージ ▲▲▲-->
 
                 
               </form>
