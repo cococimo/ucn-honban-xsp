@@ -184,53 +184,53 @@ $(function() {
 			line-height: 1.3;
 			font-size: 15px;
 		}
-
-@media screen and (min-width: 767px){
-  .header_logo {
-      width: 120px;
-				height: 30px;
-      position: absolute;
-				top: 10px;
-   }
-   .header_logo img {
-				width: 120px;
-				height: 30px;
-  }
-			.header_top_cart {	
-      padding-top: 10px;
-			    width: 100%;
-			    float: right;
-			    overflow: hidden;
-  }
-  .contents_b {
-				padding-top: 10px;
-  }
-  .cmn_tit05 {
-      font-size: 20px;
-      margin: 0 0 10px;
-  }
-  .header_bottom {
-      padding-bottom: 0;
-  }
-  #cart .cart_intro {
-				margin: 0 0 10px;
-			}
-			#cart .cmn_tit05 {
-    margin: 0 0 20px;
-			    padding: 10px 0;
-  }
-  .cmn_step04  {
-				margin: 5px 0 5px;
-				display: -webkit-flex;
-				/* Safari */
-      display: flex;
-				-webkit-justify-content: center;
-				/* Safari */
-      justify-content: center;
-				-webkit-align-items: stretch;
-				/* Safari */
-      align-items: center;
-				letter-spacing: .01rem;
+      #cart .cart_side_total dl dd {color:#3f3e3d;}
+	@media print,screen and (min-width: 767px){
+	  .header_logo {
+	      width: 120px;
+					height: 30px;
+	      position: absolute;
+					top: 10px;
+	   }
+	   .header_logo img {
+					width: 120px;
+					height: 30px;
+	  }
+				.header_top_cart {	
+	      padding-top: 10px;
+				    width: 100%;
+				    float: right;
+				    overflow: hidden;
+	  }
+	  .contents_b {
+					padding-top: 10px;
+	  }
+	  .cmn_tit05 {
+	      font-size: 20px;
+	      margin: 0 0 10px;
+	  }
+	  .header_bottom {
+	      padding-bottom: 0;
+	  }
+	  #cart .cart_intro {
+					margin: 0 0 10px;
+				}
+				#cart .cmn_tit05 {
+	    margin: 0 0 20px;
+				    padding: 10px 0;
+	  }
+	  .cmn_step04  {
+					margin: 5px 0 5px;
+					display: -webkit-flex;
+					/* Safari */
+	      display: flex;
+					-webkit-justify-content: center;
+					/* Safari */
+	      justify-content: center;
+					-webkit-align-items: stretch;
+					/* Safari */
+	      align-items: center;
+					letter-spacing: .01rem;
 			}
 			#cart .cart_recalculate {
 			    overflow: hidden;
@@ -238,36 +238,36 @@ $(function() {
 			    padding: 5px;
 			    background-size: 4px;
 			    font-size: 14px;
-  }
-  .cmn_step04 .cmn_step_item {
-    width: 140px;
-    font-size: 14px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(2) {
-    width: 150px;
-  }
-  .cmn_step04 .cmn_step_item:nth-child(3) {
-    width: 170px;
-  }
-  .cmn_step04 .cmn_step_item:before {
-			    top: 5px;
-			    left: 10px;
-			    width: 15px;
-			    height: 13px;
-			    font-size: 8px;
-  }
-  .cmn_step04 .cmn_step_item {
-				height: 28px;
-				padding: 7.5px 0 0 36px;
-  }
+	  }
+	  .cmn_step04 .cmn_step_item {
+	    width: 140px;
+	    font-size: 14px;
+	  }
+	  .cmn_step04 .cmn_step_item:nth-child(2) {
+	    width: 150px;
+	  }
+	  .cmn_step04 .cmn_step_item:nth-child(3) {
+	    width: 170px;
+	  }
+	  .cmn_step04 .cmn_step_item:before {
+				    top: 5px;
+				    left: 10px;
+				    width: 15px;
+				    height: 13px;
+				    font-size: 8px;
+	  }
+	  .cmn_step04 .cmn_step_item {
+					height: 28px;
+					padding: 7.5px 0 0 36px;
+	  }
 
-  .cmn_step04 .cmn_step_item:after {
-				border-width: 14px 0 14px 16px;
-				right: -16px;
-  }
-  #cart .cart_side_total {
-      padding: 40px 20px 40px;
-  }
+	  .cmn_step04 .cmn_step_item:after {
+					border-width: 14px 0 14px 16px;
+					right: -16px;
+	  }
+	  #cart .cart_side_total {
+	      padding: 40px 20px 40px;
+	  }
 
 		#cart .cart_price_table {
 		    float: none;
@@ -300,7 +300,6 @@ $(function() {
 			    margin: 0 0 0px;
 			}
 			#cart .cart_side_total {padding: 20px 20px 20px;}
-      #cart .cart_side_total dl dd {color:#3f3e3d;}
 			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
 			#cart .cart_recalculate_btn a {background:none;}
 			#cart .cart_price_txt {font-size: 14px;line-height: 1.4;margin-top:5px;}
@@ -1162,9 +1161,9 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                           </span>
                         </span>
                       </span>
-                    <!-*▲▲▲ 送料が1万円に満たない場合 ▲▲▲*->
+                    <!-*▲▲▲ 送料が1万円に満たない場合 ▲▲▲ -->
                   </span>
-                <!-*▲▲▲ 送料メッセージ ▲▲▲-->
+                <!--▲▲▲ 送料メッセージ ▲▲▲-->
 
                 
               </form>
