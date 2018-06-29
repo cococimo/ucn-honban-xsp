@@ -305,7 +305,9 @@ $(function() {
 			#cart .cart_price_txt {font-size: 14px;line-height: 1.4;margin-top:5px;}
 		}
 		@media screen and (max-width: 767px) {
+			body {padding-top: 64px !important;margin-bottom:64px !important;}
 			.header {height: auto;}
+			.contents_b {padding-top: 10px;}
 			#cart .cart_price_btn02 {display:none;}
 			.header_in,#header {position: static;}
 			.header_logo {top:8px;}
@@ -322,10 +324,27 @@ $(function() {
 			    padding: 16px 16px 16px;
 			    margin: 10px 0 20px;
 			}
+			#cart .cmn_table01 td, #cart .cmn_table01 th {padding: 6px 10px;}
+			#cart .cart_side_total {padding: 10px 10px;}
 			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
 			#cart .cart_recalculate_btn a {background: none;}
 			#cart .cart_price_btn01 {margin: 15px 0 15px;}
+			#cart .cart_side_total dl dd {padding-right:.2em;}
+
+			/*カートボタン調整*/
+			#cart_order_btn {
+			    position: fixed;
+			    z-index: 9999;
+			    background-color: rgba(242,242,242,0.7);
+			    margin: 0 -10px;
+			    padding:12px;
+			    bottom: 0;
+			    width: 100%;
+			}
+		}
 		@media screen and (max-width: 370px) {
+			body {padding-top: 54px !important;}
+			.header {height: auto;}
 			.header_top_cart {padding-left: 90px;}
 			.cmn_step04 .cmn_step_item {
 			    height: 40px;
@@ -1000,7 +1019,11 @@ j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
                       <a m:id="e_link_shop" href="/" class="cmn_link01 cmn_link01_reverse"><span>お買い物を続ける</span></a>
                     </li>
                     <li class="cart_price_btn02 viewSp"><a href="/shop/c/static/guide/" class="cmn_btn cmn_btn_tri btn_middle"><span>ご利用ガイド</span></a></li>
-			<li class="cart_price_btn03"><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a></li>
+			<li class="cart_price_btn03">
+				<div id="cart_order_btn">
+					<a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文の手続きはこちら</span></a>
+				</div>
+			</li>
                   </ul>
 
                 </div>
