@@ -134,23 +134,23 @@ padding:0px 10px 0 10px;
 			</div>
 
 			<!-- DLPO -->
-<div class='ADLPODefault'>
+<!--<div class='ADLPODefault'>
 <!--表示切替箇所-->
 
 			<!-- CM動画テスト▼ -->
 			<!--<br>
 			<h2 class="first-ttl02 mincho">
-				ただいま、CM放送中！WEB限定動画公開中！-->
+				ただいま、CM放送中！<!-- WEB限定動画公開中！-->
 			<!--</h2>
 			<div class="first-movie">
 				<div class="youtube">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/n3QbTju568o?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
-			 CM動画テスト▲ -->
+			<!--  CM動画テスト▲ -->
 
-		</div>
-		<script type='text/javascript'>adlpoMain('manganihon_movie','lc=os','ch=Shift-JIS');</script>
+		<!--</div>
+		<script type='text/javascript'>adlpoMain('manganihon_movie','lc=os','ch=Shift-JIS');</script>-->
 		<!-- DLPO -->
 
 
@@ -431,8 +431,130 @@ padding:0px 10px 0 10px;
 				<h2>『まんが日本昔ばなし』について</h2>
 				<div class="text_box">
 					<p class="pic_box"><img src="contents/c/image/static/img/nihon2015/inner_box03_pic.jpg" alt="花咲か爺さん" ></p>
-					<p class="sp_mb pt10">日本に残る昔ばなしを子供たちに大切に伝えていきたいという思いから、昭和50年に番組がスタート。以来、約20年にわたり放送され、最高視聴率39.8% * という驚異的な数字を記録。子供と一緒に安心して楽しめる番組として、今なお幅広い世代に愛されています。</p>
-					<span class="sp_none">※関西ビデオリサーチ調べ</span>
+					<p class="pt10">日本に残る昔ばなしを子供たちに大切に伝えていきたいという思いから、昭和50年に番組がスタート。以来、約20年にわたり放送され、最高視聴率39.8% * という驚異的な数字を記録。子供と一緒に安心して楽しめる番組として、今なお幅広い世代に愛されています。</p>
+					<p class="mb20">※関西ビデオリサーチ調べ</p>
+					<p class="mb20">語りはほっとするような声が特徴の市原悦子さんと常田富士男さん。美しく味わい深いアニメーションに色を添えます。<br>
+					※常田富士男さんは平成30年、逝去されました。</p>
 					<p>『まんが日本昔ばなし』は、公的機関からの評価も高く、数々の輝かしい賞を受賞しています。厚生省児童福祉文化賞、文化庁優秀映画作品賞、放送批評懇談会第36回期間選奨、ギャラクシー賞期間選奨、JNNネットワーク協議会賞・ネットワーク番組部門、放送文化基金賞、第7回アニメグランプリ・アニメージュ賞、JNNネットワーク協議会賞・特別賞、モービル児童文化賞…など多数受賞（各賞の名称は受賞時のものです）。</p>
 				</div>
 			</div><!-- inner_nihon_about -->
+
+	<!-- カート追従バナー -->
+	<style>
+	.tel.js-tel_sticky {display:none;}
+	.sp {
+		display: none !important;
+	}
+	.pc {
+		display: block !important;
+	}
+	@media all and (min-width: 0) and (max-width: 767px) {
+
+		.sp {
+			display: block !important;
+		}
+		
+		.pc {
+			display: none !important;
+		}
+	}
+		.purchase_fixed {
+			display: block;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		/* 	border-top: 4px solid #ffe800; */
+		/* 	background: #fcffcf; */
+			border-top: 4px solid #DB844E;
+			background: #f9f5e8;
+			width: 100%;
+			font-size: 12px;
+			text-align: center;
+			z-index: 10;
+		}
+
+		.purchase_fixed .inner {
+			max-width: 914px;
+			padding: 1rem;
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+		}
+
+		.purchase_fixed .inner > * {
+			width: 100%;
+		}
+
+		.purchase_fixed .inner > p:first-of-type img {
+			width: 306px;
+		}
+
+		.purchase_fixed .inner > p:last-of-type img {
+			width: 455px;
+		}
+
+		.purchase_fixed .inner > p:first-of-type span {
+			display: block;
+			margin-top: 5px;
+		}
+
+		.purchase_fixed .inner a:hover {
+			opacity: .85;
+		}
+
+		@media all and (min-width: 0) and (max-width: 767px) {
+			#content_wrap .inner08 {
+				margin-top: -60px;
+				padding-top: 60px;	
+			}
+			
+			.footer #pagetop_sp {
+				bottom: 105px;
+				right: 5px;
+			}
+			.purchase_fixed .inner {
+				padding: .5rem .5rem .25rem 1rem;
+			}
+
+			.purchase_fixed .inner > p:first-of-type {
+				padding-right: .5rem;
+			}
+
+			.purchase_fixed .inner > p:last-of-type {
+				padding-left: .5rem;
+			}
+
+			.purchase_fixed .inner > p:first-of-type img {
+				width: 100%;
+			}
+			
+			.purchase_fixed .inner > p:last-of-type img {
+				width: 100%;
+			}
+			.purchase_fixed .inner + p {
+				padding-bottom: .5rem;
+			}
+		}
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+			<p>
+				<picture>
+					<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/img/nihon2015/sp_call.png">
+					<img src="/contents/shop/00000003/image/static/img/nihon2015/call.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時&#xFF5E;22時 日曜・祝日も受付けます）">
+				</picture>
+				<!-- <span class="pc">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</span> -->
+			</p>
+			<p>
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<picture>
+						<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/img/nihon2015/sp_btn.png">
+						<img src="/contents/shop/00000003/image/static/img/nihon2015/btn.png" alt="この商品を申し込む">
+					</picture>
+				</a>
+			</p>
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+	<!-- //カート追従バナー -->
