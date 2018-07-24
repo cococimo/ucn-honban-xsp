@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="member_complete"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>　
+<head>
 <meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
@@ -13,13 +13,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="title" -->
-<meta name="description" content="ココチモのマイページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
-<meta name="keywords" content="マイページ,MyPage,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
-<title>会員登録完了 - ココチモ（cococimo）の通販ショップ</title>
-<!-- Googleタグマネージャ head用 -->
-<meta m:id="google_tag_manager_head" content="">
-<!-- Googleタグマネージャ head用 -->
-<!-- InstanceEndEditable -->
+	<meta name="description" content="ココチモのマイページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
+	<meta name="keywords" content="マイページ,MyPage,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
+	<title>会員登録完了 - ココチモ（cococimo）の通販ショップ</title>
+	<!-- Googleタグマネージャ head用 -->
+	<meta m:id="google_tag_manager_head" content="">
+	<!-- Googleタグマネージャ head用 -->
+	<!-- InstanceEndEditable -->
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
@@ -56,11 +56,226 @@ $(function(){
 	}
 });
 </script>
+
 <![endif]-->
+
+	<style>
+		.header_logo:hover {
+			opacity: 1;
+			-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+		}
+		.header_username,
+		.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
+		.pagetop_pc,
+		.pagetop_sp,
+		.cart_tel_contact.side_widget {display: none !important}
+
+		#cart .cart_tel_contact_wrap {
+			overflow: hidden;
+		}
+
+		#cart .cart_tel_contact {
+			border:1px solid #ccc;
+			padding: 12px 10px 0;
+			margin:15px 0;
+			width: 410px;
+			float: left;
+		}
+		#cart .cart_tel_contact:first-child {
+			margin-right:20px;
+		}
+
+		#cart .cart_tel_contact_tit {
+/*			border-bottom: 2px solid #ff8590;
+			background: #f8f8f8;*/
+			font-size: 16px;
+/*			padding: 12px 10px 10px;
+			line-height: 1.3;*/
+		}
+		#cart .cart_tel_contact_in {
+			padding: 18px 7px 10px;
+		}
+		#cart .cart_tel_contact_txt {
+			margin: 8px 0 0;
+			padding: 8px 11px 0;
+			border-top: 1px dotted #ccc;
+			line-height: 1.3;
+			font-size: 15px;
+		}
+
+		@media print, screen and (min-width: 767px) {
+			.header_logo {
+				width: 120px;
+				height: 30px;
+				position: absolute;
+				top: 10px;
+			}
+			.header_logo img {
+				width: 120px;
+				height: 30px;
+			}
+			.header_top_cart {	
+				padding-top: 10px;
+			    width: 100%;
+			    float: right;
+			    overflow: hidden;
+			}
+			.contents_b {
+				padding-top: 10px;
+			}
+			.cmn_tit05 {
+				font-size: 20px;
+				margin: 0 0 10px;
+			}
+			.header_bottom {
+				padding-bottom: 0;
+			}
+			#cart .cart_intro {
+				margin: 0 0 10px;
+			}
+			#cart .cmn_tit05 {
+			    margin: 0 0 20px;
+			    padding: 10px 0;
+			}
+			.cmn_step04 {
+				margin: 5px 0 10px;
+				display: -webkit-flex;
+				/* Safari */
+				display: flex;
+				-webkit-justify-content: center;
+				/* Safari */
+				justify-content: center;
+				-webkit-align-items: stretch;
+				/* Safari */
+				align-items: center;
+				letter-spacing: .01rem;
+			}
+			#cart .cart_recalculate {
+			    overflow: hidden;
+			    margin: 0 0 20px;
+			    padding: 5px;
+			    background-size: 4px;
+			    font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item {
+				width: 140px;
+				font-size: 14px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(2) {
+				width: 150px;
+			}
+			.cmn_step04 .cmn_step_item:nth-child(3) {
+				width: 170px;
+			}
+			.cmn_step04 .cmn_step_item:before {
+			    top: 5px;
+			    left: 10px;
+			    width: 15px;
+			    height: 13px;
+			    font-size: 8px;
+			}
+			.cmn_step04 .cmn_step_item {
+				height: 28px;
+				padding: 7.5px 0 0 36px;
+			}
+			.cmn_step04 .cmn_step_item:after {
+				border-width: 14px 0 14px 16px;
+				right: -16px;
+			}
+			#cart .cart_side_total {
+				padding: 40px 20px 40px;
+			}
+
+			#cart .cart_price_table {
+			    float: none;
+			    width: 100%;
+			    margin: 0 0 0;
+			    font-size: 	14px;
+			}
+			#cart .cart_table01 th {
+	    		padding: 10px 0;
+	    	}
+	    	#cart .cart_table01 {
+			    margin: 0 0 5px;
+			    font-size: 15px;
+			}
+			#cart .cart_table01 td {
+			    padding: 10px;
+			}
+			#cart .cart_table01 td:first-child .img_box {
+			    width: 60px;
+			}
+			#cart .cart_table01 td:first-child .detail_tag {
+			    overflow: hidden;
+			    margin: 10px 0 0;
+			}
+			#cart .cart_table01 td:first-child .delete_link {
+			    font-size: 14px;
+			    float: right;
+			}
+			#cart .cart_recalculate {
+			    margin: 0 0 0px;
+			}
+			#cart .cart_side_total {padding: 20px 20px 20px;}
+			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
+			#cart .cart_recalculate_btn a {background:none;}
+		}
+		@media screen and (max-width: 767px) {
+			body {
+    		padding-top: 64px !important;}
+			.header {height: auto;}
+			#cart .cart_price_btn02 {display:none;}
+			.header_in,#header {position: static;}
+			.header_logo {top:8px;}
+			.header_top_cart {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				padding-left: 140px;
+				width: 100%;
+			}
+			.cmn_step {margin: 0 0 20px;}
+			.cmn_step_item {font-size: 11px;}
+			#cart .attention_box {
+			    padding: 16px 16px 16px;
+			    margin: 10px 0 20px;
+			}
+			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
+			#cart .cart_recalculate_btn a {background: none;}
+			#cart .cart_price_btn01 {margin: 15px 0 15px;}
+		@media screen and (max-width: 370px) {
+			body {padding-top: 54px !important;}
+			.header_top_cart {padding-left: 90px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 40px;
+			    margin: 0;
+			    padding: 9px 0 0;
+			    font-size: 10px;
+			}
+		}
+	</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
-<!-- InstanceEndEditable -->
+<style>
+
+#member_complete .member_complete_btn_box .inq_input_bt_01 p {float:none;}
+#member_complete .member_complete_btn_box .inq_input_bt_01 p a {width: 600px;}
+#member_complete .member_complete_btn_box {margin: 55px auto 0px;}
+.footer {border-top: none;padding-top: 0;}
+.footer #pagetop,
+#footer .about,
+#footer .tel_area,
+#footer .footer_info {display:none;}
+
+
+@media screen and (max-width: 767px) {
+	.footer #pagetop_sp {display: none;}
+	#member_complete .member_complete_btn_box .inq_input_bt_01 p a {width: 100%;}
+}
+
+</style>
+	<!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
@@ -73,61 +288,72 @@ $(function(){
 <!--/ Googleタグマネージャ body用 -->
 <!-- InstanceBeginEditable name="tag_body" -->
 <object class="xsp_obj" m:id="e_var_cart"></object>
-<!-- InstanceEndEditable -->
+	<!-- InstanceEndEditable -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
-
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
 <header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
+		<h1 class="header_logo">
 				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
 				</a>
 			</h1>
-			<div class="header_top">
+			<!--<div class="header_top">
 				<div class="header_tell" class="view">
-					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+					<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 					<p class="note">携帯電話からでも通話無料</p>
-				</div>
+				</div>-->
 				<!-- /.header_tel -->
-				<div class="header_contact">
+				<!--<div class="header_contact">
 					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-				</div>
+				</div>-->
 				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
+				<!--<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
 						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /.header_mypage -->
-				<div class="header_ucan">
+				<!--<div class="header_ucan">
 					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				</div>-->
+        <!-- 購入ステップ -->
+				<!-- InstanceBeginEditable name="header_top_cart" -->
+				<div class="header_top_cart">
+					<ol class="cmn_step cmn_step04 cf">
+						<span m:id="l_notPre_free_guide">
+							<li class="cmn_step_item">会員情報の入力</li>
+							<li class="cmn_step_item">入力内容の確認</li>
+							<li class="cmn_step_item cmn_step_active">会員登録完了</li>
+						</span>
+					</ol>
 				</div>
-				<!-- /.header_ucan -->
-			</div>
-			<div class="header_bottom">
+				<!-- InstanceEndEditable -->
+        <!-- /購入ステップ -->
+        
+				<div class="header_bottom">
 				<p class="header_username">ようこそ
 					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
 					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 				</p>
 				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!--<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>-->
 				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!--<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>-->
 				<!-- /.header_guide -->
 				<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow">
+					<!--<div class="header_menu hvr-grow">
 						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
 							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
 						</a>
 					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div>
+					</div>-->
 					<!--/.header_menu-->
 				</span>
-				<div class="header_login hvr-grow">
+				<!--<div class="header_login hvr-grow">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
@@ -149,7 +375,7 @@ $(function(){
 							</li>
 						</div>
 					</ul>
-				</div>
+				</div>-->
 				<!-- /.header_login -->
 			</div>
 			<!-- /.header_bottom -->
@@ -162,22 +388,22 @@ $(function(){
 <!-- InstanceBeginEditable name="contents" -->
 	<div id="contents" class="contents_b">
 		<div id="contents_in" class="cf">
-			<ol class="cmn_step cmn_step03 cf">
-				<span m:id="l_notPre_free_guide">
-					<li class="cmn_step_item">会員情報の入力</li>
-					<li class="cmn_step_item">入力内容の確認</li>
-					<li class="cmn_step_item cmn_step_active">会員登録完了</li>
-				</span>
-			</ol>
 			<h1 class="cmn_tit05">会員登録完了</h1>
-			
+
 			<div class="member_complete_txt s_mt13">
 				<p>会員登録が完了しました。ご登録いただきありがとうございました。</p>
-				<p class="mt40 s_mt10">今後ともココチモをご愛顧のほどよろしくお願いします。</p>
-				<p class="member_complete_txt_dot mt20 s_mt10">ログイン後にご注文いただきますと、会員だけのお得な特典がご利用できます。</p>
+				<span m:id="l_up_cart_flg">
+					<p class="mt40 s_mt10">「ご注文手続きへ」ボタンを押してご注文手続きを続けてください。</p>
+				</span>
+				<span m:id="l_not_up_cart_flg">
+					<p class="mt40 s_mt10">今後ともココチモをご愛顧のほどよろしくお願いします。</p>
+					<p class="member_complete_txt_dot mt20 s_mt10">ログイン後にご注文いただきますと、会員だけのお得な特典がご利用できます。</p>
+				</span>
 			</div>
 			<div class="member_complete_btn_box">
-				<p><a m:id="e_link_mypage_shop" href="memberMypage.html" class="cmn_btn cmn_btn_tri cmn_btn_orange"><span>マイページを確認する</span></a></p>
+				<span m:id="l_not_up_cart_flg">
+					<p><a m:id="e_link_mypage_shop" href="memberMypage.html" class="cmn_btn cmn_btn_tri cmn_btn_orange"><span>マイページを確認する</span></a></p>
+				</span>
 				<!-- ▼▼▼ 会員登録からの注文入力遷移対応 n_kamine add 2017.03.14 ▼▼▼ -->
 				<span m:id="l_up_cart_flg">
 				<span m:id="l_ite_shopCart">
@@ -186,32 +412,34 @@ $(function(){
 					<input type="hidden" name="pageCart" value="pageCart"/>
 					<input m:id="h_hid_postage" type="hidden" name="postage" />
 					<input m:id="h_hid_free_guide_flg_0" type="hidden" name="free_guide_flg" value="0"/>
-					<div class="inq_input_bt_01 clearfix s_bt_350">
-						<p><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>注文手続きへ</span></a></p>
-					</div>
-				</form>
-				</span>
-				</span>
-				<span m:id="l_not_up_cart_flg">
-					<p><a m:id="e_link_top" href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown"><span>ページトップに戻る</span></a></p>
-				</span>
-				<!-- ▲▲▲ 会員登録からの注文入力遷移対応 n_kamine add 2017.03.14 ▲▲▲ -->
+					<div class="inq_input_bt_01 clearfix s_bt_350 tac nextorder">
+						<p><a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="cmn_btn cmn_btn_red"><span>ご注文手続きへ</span></a>
+				</p>
 			</div>
+			</form>
+			</span>
+			</span>
+			<span m:id="l_not_up_cart_flg">
+					<p><a m:id="e_link_top" href="/" class="cmn_btn cmn_btn_tri cmn_btn_brown"><span>ページトップに戻る</span></a>
+			</p>
+			</span>
+			<!-- ▲▲▲ 会員登録からの注文入力遷移対応 n_kamine add 2017.03.14 ▲▲▲ -->
+		</div>
 
-			<!-- /.member_complete_btn_box -->
-			<!--  17/02/28 一旦コメントアウト
+		<!-- /.member_complete_btn_box -->
+		<!--  17/02/28 一旦コメントアウト
 			<p>下記のボタンをクリックし、お申し込みの手続きを続けてください。</p>
 			<p class="member_complete_btn_apply"><a href="#" class="cmn_btn cmn_btn_red btn_large"><span>お申込み手続きへ</span></a></p>
 			-->
 
-			<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
-		</div>
-		<!-- /#contents_in -->
+		<img m:id="l_img_affiliate" src="https://tk.jrs5.com/ep" />
+	</div>
+	<!-- /#contents_in -->
 	</div>
 	<!--contents-->
-</div>
-<!--container-->
-<!-- InstanceEndEditable -->
+	</div>
+	<!--container-->
+	<!-- InstanceEndEditable -->
 <footer id="footer" class="footer footer_b" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 	<div id="pagetop" class="pagetop_pc">
 		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
@@ -360,62 +588,68 @@ $(function(){
 <!-- /#footer -->
 <!-- InstanceBeginEditable name="script_footer" -->
 
-<!-- tracking ga -->
-<span m:id="fs_tracking_ga"></span>
-<!--/ tracking ga -->
+	<!-- tracking ga -->
+	<span m:id="fs_tracking_ga"></span>
+	<!--/ tracking ga -->
 
-<span m:id="site_eVar13"></span>
-<!-- SiteCatalyst code version: H.26.1.
+	<span m:id="site_eVar13"></span>
+	<!-- SiteCatalyst code version: H.26.1.
 Copyright 1996-2013 Adobe, Inc. All Rights Reserved
 More info available at http://www.omniture.com -->
-<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
-<script language="JavaScript" type="text/javascript"><!--
-/* You may give each page an identifying name, server, and channel on
-the next lines. */
-s.pageName="会員登録完了"
-s.server=""
-s.channel="会員登録"
-s.pageType=""
-s.prop1="会員登録"
-s.prop2=""
-s.prop3=""
-s.prop4=""
-s.prop5=""
-s.prop12="member"
-s.prop13="login"
-/* Conversion Variables */
-s.campaign=""
-s.state=""
-s.zip=""
-s.events="event23"
-s.products=""
-s.purchaseID=""
-s.eVar1=""
-s.eVar2=""
-s.eVar3=""
-s.eVar4=""
-s.eVar5=""
-s.eVar13=s_eVar13
-s.eVar34=""
-s.eVar35=""
-s.eVar36=""
-s.eVar41=s_eVar41
-s.eVar42=s_eVar42
-s.eVar43=s_eVar43
-s.eVar44=s_eVar44
-s.eVar45=s_eVar45
-s.eVar46=s_eVar46
-/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s.t();if(s_code)document.write(s_code)//--></script>
-<script language="JavaScript" type="text/javascript"><!--
-if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
-height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-<!-- End SiteCatalyst code version: H.26.1. -->
+	<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		<!--
+			/* You may give each page an identifying name, server, and channel on
+			the next lines. */
+			s.pageName="会員登録完了"
+		s.server = ""
+		s.channel = "会員登録"
+		s.pageType = ""
+		s.prop1 = "会員登録"
+		s.prop2 = ""
+		s.prop3 = ""
+		s.prop4 = ""
+		s.prop5 = ""
+		s.prop12 = "member"
+		s.prop13 = "login"
+		/* Conversion Variables */
+		s.campaign = ""
+		s.state = ""
+		s.zip = ""
+		s.events = "event23"
+		s.products = ""
+		s.purchaseID = ""
+		s.eVar1 = ""
+		s.eVar2 = ""
+		s.eVar3 = ""
+		s.eVar4 = ""
+		s.eVar5 = ""
+		s.eVar13 = s_eVar13
+		s.eVar34 = ""
+		s.eVar35 = ""
+		s.eVar36 = ""
+		s.eVar41 = s_eVar41
+		s.eVar42 = s_eVar42
+		s.eVar43 = s_eVar43
+		s.eVar44 = s_eVar44
+		s.eVar45 = s_eVar45
+		s.eVar46 = s_eVar46
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code = s.t(); if (s_code) document.write(s_code)//-->
+	</script>
+	<script language="JavaScript" type="text/javascript">
+			< !--
+if(navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//-->
+	</script>
+	<noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]" height="1" width="1" border="0"
+		 alt="" /></noscript>
+	<!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.26.1. -->
 
 
 
-<!-- InstanceEndEditable -->
+	<!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
 
