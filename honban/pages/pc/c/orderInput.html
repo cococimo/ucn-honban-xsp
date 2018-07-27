@@ -254,7 +254,77 @@ $(function(){
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
-<script src="/contents/c/js/new/featherlight.js"></script>
+<style>
+.cmn_form_table01 th { background: #dddddd;border:1px solid #bfbfbf;}
+.cmn_form_table01 {border-bottom:1px solid #bfbfbf;}
+.cmn_form_table01 td {border:1px solid #bfbfbf;}
+.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
+.memadd_table_01 input[type=text],
+.memadd_table_01 input[type=password] {
+	margin: 0;
+	font-size: 16px;
+	border: 1px solid #d8d8d8;
+	background-color: #fff;
+	box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
+	max-height: 34px;
+	padding: 5px .5em;
+	letter-spacing: 0;
+  width:100%;
+}
+.memadd_table_01 .viewPc.btn {vertical-align:middle;text-align:center;width:460px;}
+.memadd_table_01 .error {padding-top: 10px;display: inline-block;}
+
+.memadd_table_01 th { background: #dddddd;border:1px solid #bfbfbf;width: 240px;padding: 14px;}
+.memadd_table_01 th .exp {font-size:14px;}
+.memadd_table_01 td { border:1px solid #bfbfbf;padding:14px;}
+
+.is-active {display:inline-block;}
+#more_login_text {display:none;}
+#more_login_text > .error{margin-top:30px;}
+
+
+@media screen and (max-width: 767px){
+  .cmn_form_table01 th .suffix {font-size: 12px;}
+  .memadd_table_01 th,
+  .memadd_table_01 td {width:100%;display:block;border:none;text-align: left;background:none;padding-bottom:0;line-height:1.4;}
+  .memadd_table_01 td .bor_bottom {padding-top:0;}
+  .memadd_table_01 th .exp {padding-left:10px;}
+  .more_login_btn.cmn_btn {font-size: 15px;width: 200px;padding: 0 10px;}
+  .orderInputLogin {padding: 10px;border: 1px solid #ccc;}
+}
+
+/*footer調整*/
+@media print, screen and (min-width: 767px) {
+  .about_list_price,
+  .about_list_point{display:none !important;width: 0;height: 0;}
+  .footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
+  .footer .about_list li {height: 286px !important;}
+}
+</style>
+<script>
+
+$(function () {
+/*ココチモ会員 入力非表示*/
+  $('#more_login_text').css({'display':'none'});
+  
+ if($('.memadd_table_01 .error').length){
+   $('#more_login_text').slideDown();
+   $('.more_login_btn').html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>').addClass('is-active');
+ }
+
+$('.more_login_btn').on('click', function () {
+		$(this).toggleClass('is-active');
+		
+		if($(this).hasClass('is-active')) {
+			$(this).html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>');
+		} else {
+			$(this).html('ログインは<a href="javascript:void(0); return false">こちら</a>');
+		}
+		$('#more_login_text').slideToggle();
+	});
+});
+</script>
+
 <script m:id="js_gmo_url" src="https://p01.mul-pay.jp/ext/js/token.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js?v1.1" type="text/javascript" charset="shift_jis"></script>
 <script m:id="static_img" language="JavaScript" src="../../../contents/shop/00000002/js/common.js" type="text/javascript" charset="shift_jis"></script>
@@ -728,8 +798,8 @@ $(function(){
 				<span m:id="l_notPre_free_guide">
 					<div class="cart_intro input_intro">
 						<h1 class="cart_intro_tit cmn_tit05">お客様情報の入力</h1>
-						<p class="cart_intro_txt">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。<br>
-							下記項目にご入力ください。<span class="required">必須</span>印は必須項目です。</p>
+						<!--<p class="cart_intro_txt">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。<br>
+							下記項目にご入力ください。<span class="required">必須</span>印は必須項目です。</p>-->
 						</div>
 					</span>
 
@@ -749,10 +819,7 @@ $(function(){
 							</span>
 						</div>
 					</span>
-
-
-				<h2 class="cmn_tit01"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
-
+				<h2 class="cmn_tit01" style="display:none;"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
 				<!--▼▼▼ form ▼▼▼-->
 				    <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
 				    	<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
@@ -782,7 +849,7 @@ $(function(){
 									<dd class="td_area"></dd>
 									<dd class="td_address_co"></dd>
 									<dt>電話番号</dt>
-									<dd calss="td_tel"></dd>
+									<dd class="td_tel"></dd>
 								</dl>
 								<!--
 								<p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>会員情報を修正する</span></a></p>
@@ -794,34 +861,42 @@ $(function(){
 				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
-									<!-- <div class="login_msg">
-										<h5 class="add_h5">●ココチモ会員の方</h5>
-										<p class="mt10">ココチモ会員のお客様は、<a href="/shop/login.do?_S=c" target="_blank">こちらから</a>ログインしてください。</p> -->
-										<!-- <p>ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。</p> -->
-									<!-- </div> -->
-									<!-- <span m:id="l_msgPre_errors_member_login">
+									 <div class="login_msg">
+										<h5 class="add_h5 mt10">●ココチモ会員の方</h5>
+										 <p class="mt10">ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。<span class="more_login_btn">ログインは<a href="javascript:void(0); return false">こちら</a></p>
+									</div>
+                  
+                  <div id="more_login_text">
+									<span m:id="l_msgPre_errors_member_login">
 									<div class="error">
 									<p>ログインID・パスワードをご確認ください。</p>
 									</div>
-									</span> -->
+									</span>
 									<div class="orderInputLogin mt30 s_mt20">
-										<!--      <table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+										<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
 										<tr>
-										<th>ログインID</th>
+										<th>ログインID<br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span></th>
 										<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
-										<span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span>
+										
 										<span m:id="l_msgPre_login_id">
 										<div>
 										<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span>
 										</div>
 										</span>
 										</td>
+                    <td class="btn viewPc" rowspan="2">
+                    <!-- ボタン -->
+										<div>
+										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
+										</div>
+                    <!--/ ボタン -->
+                    </td>
 										</tr>
 										<tr>
-										<th>パスワード</th>
+										<th>パスワード<br class="viewPc"><span class="exp">例：<span m:id="sample_password">abcde12345</span></span></th>
 										<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
-										<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
-										<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">パスワードを忘れた方はこちら</a></div>
+										
+										<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html" class="cmn_link01 s_mt5">パスワードを忘れた方はこちら</a></div>
 										<span m:id="l_msgPre_password">
 										<div>
 										<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
@@ -829,25 +904,40 @@ $(function(){
 										</span>
 										</td>
 										</tr>
-										</table> -->
+                    <tr class="viewSp">
+                    <td  colspan="3">
 										<!-- ボタン -->
-										<!-- <div>
-										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/login_in_bt_05.png" alt="ログイン" /></a>
-										</div> -->
-										<h5 class="add_h5">●初めての方、会員登録をされていない方はこちらから。</h5>        
-										<p class="vis_add mt10">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。</p>
+										<div class="mb10">
+										<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
+										</div>
 										<!--/ ボタン -->
+                    </td>
+                    </tr>
+										</table>
+                    </div><!-- /more_login_text -->
+
+
 									</div>
 								</span>
 							</div>
 							<!-- /.not_login_box -->
 						<!--▲▲▲ 非ログイン時 ▲▲▲-->
+				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
+							<div class="not_login_box mb20">
+								<span m:id="l_notPre_member_login_button_shop">
+							<h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5>        
+							<p class="vis_add mt10 mb10">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。</p>
+              </span>
+             </div>
+              <!--▲▲▲ 非ログイン時 ▲▲▲-->
+
+
 
 						<!--▼▼▼ ご注文様情報 入力フォーム　▼▼▼-->
 							<p class="input_info_count viewPc mb35" style="display: none;"><span class="red">必須項目</span>は残り<span class="number">4</span>項目です</p>
 							<table class="cmn_form_table01 input_info_table02" id="input_info_table02">
 								<tr>
-									<th>お名前<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+									<th>お名前<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="input_set input_set_name">
 											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例:山田" /></div>
@@ -864,7 +954,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>フリガナ<span class="th_info"><span class="suffix">【全角カナ】</span><span class="required">必須</span></span></th>
+									<th>フリガナ<span class="th_info"><span class="suffix">全角カナ</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="input_set input_set_kana">
 											<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例:ヤマダ" /></div>
@@ -881,7 +971,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>郵便番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+									<th>郵便番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="member_yubin">
 											<p class="td_txt cmn_bold">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
@@ -916,7 +1006,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>市区郡<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+									<th>市区郡<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
 										<input type="text" class="in_w_10" m:id="h_txt_address1" name="address1" id="address1" placeholder="例:新宿区"/>
 										<span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span>
@@ -928,7 +1018,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>町村字<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+									<th>町村字<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
 										<input type="text" class="in_w_10" m:id="h_txt_address2" name="address2" id="address2" placeholder="例:高田馬場"/>
 										<span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span>
@@ -952,7 +1042,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>建物名・部屋番号<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+									<th>建物名・部屋番号<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 									<td>
 										<input type="text" m:id="h_txt_address4" name="address4" placeholder="例:ユーキャンビル" />
 										<span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span>
@@ -964,7 +1054,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>様方<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+									<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 									<td>
 										<div class="input_set input_set_name">
 											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
@@ -981,7 +1071,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>電話番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+									<th>電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 									<td>
 										<input type="text" m:id="h_txt_tel_no1" name="tel_no1" id="tel01" placeholder="例:03" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no2" name="tel_no2" id="tel02" placeholder="0000" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no3" name="tel_no3" id="tel03" placeholder="0000" />
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p>
@@ -993,7 +1083,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>メールアドレス<span class="th_info"><span class="suffix">【半角英数字】</span><span class="required">必須</span></span></th>
+									<th>メールアドレス<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
 									<td>
 										<input type="text" m:id="h_txt_email" name="email" placeholder="例:yamada@xxx.co.jp" />
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;tuuhan@u-can.co.jp</p>
@@ -1003,7 +1093,7 @@ $(function(){
 									</td>
 								</tr>
 								<tr>
-									<th>メールアドレス<br class="viewPc">（確認用）<span class="th_info"><span class="suffix">【半角英数字】</span><span class="required">必須</span></span></th>
+									<th>メールアドレス<br class="viewPc">（確認用）<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
 									<td>
 										<p class="example viewPc mb10">▼確認のため、もう一度ご入力ください。</p>
 										<input type="text" m:id="input_email_confirm" name="email_confirm" value="" oncontextmenu="return false;" />
@@ -1263,7 +1353,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr>
-												<th>カード番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+												<th>カード番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<input m:id="h_txt_card_number" type="text" name="card_number" id="card_number" placeholder="例:0123456789000000" />
 													<p class="example mt10">例：0123456789000000</p>
@@ -1282,7 +1372,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr class="tr_security_code">
-												<th>セキュリティコード<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+												<th>セキュリティコード<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_wrap mb10">
 														<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" id="security_code" maxlength="4" placeholder="例:012">
@@ -1306,7 +1396,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr class="tr_deadline">
-												<th>カードの有効期限<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+												<th>カードの有効期限<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" m:id="h_txt_card_exp_month" name="card_exp_month" id="card_exp_month" />&nbsp;月&nbsp;/&nbsp;
 													<input type="text" m:id="h_txt_card_exp_year" name="card_exp_year" id="card_exp_year" />&nbsp;年
@@ -1552,7 +1642,7 @@ $(function(){
 										<input m:id="h_hid_address_book_id" type="hidden" name="address_book_id" value="1"/>
 										<table class="cmn_form_table01">
 											<tr>
-												<th>お名前<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+												<th>お名前<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_set input_set_name">
 														<span class="prefix">姓</span><div class="input_wrap"><input type="text" name="dst_name_sei" m:id="h_txt_dst_name_sei" placeholder="例:山田"></div>
@@ -1565,7 +1655,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr>
-												<th>フリガナ<span class="th_info"><span class="suffix">【全角カナ】</span><span class="required">必須</span></span></th>
+												<th>フリガナ<span class="th_info"><span class="suffix">全角カナ</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_set input_set_kana">
 														<span class="prefix">セイ</span><div class="input_wrap"><input type="text" name="dst_name_sei_kana" class="in_w_06b" m:id="h_txt_dst_name_sei_kana" placeholder="例:ヤマダ"></div>
@@ -1587,7 +1677,7 @@ $(function(){
 											</tr>
 
 											<tr>
-												<th>郵便番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+												<th>郵便番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="member_yubin">
 														<p class="td_txt cmn_bold">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
@@ -1625,7 +1715,7 @@ $(function(){
 											</tr>
 
 											<tr>
-												<th>市区郡<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+												<th>市区郡<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" class="in_w_02" m:id="h_txt_dst_address1" name="dst_address1" placeholder="例:新宿区">
 													<span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span>
@@ -1635,7 +1725,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr>
-												<th>町村字<span class="th_info"><span class="suffix">【全角】</span><span class="required">必須</span></span></th>
+												<th>町村字<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" m:id="h_txt_dst_address2" name="dst_address2" placeholder="例:高田馬場">
 													<span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span>
@@ -1659,7 +1749,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr>
-												<th>建物名・部屋番号<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+												<th>建物名・部屋番号<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 												<td>
 													<input type="text" class="in_w_02" m:id="h_txt_dst_address4" name="dst_address4" placeholder="例:ユーキャンビル">
 													<span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span>
@@ -1672,7 +1762,7 @@ $(function(){
 											</tr>
 
 											<tr>
-												<th>様方<span class="th_info"><span class="suffix">【全角】</span><span class="optional">任意</span></span></th>
+												<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 												<td>
 													<div class="input_set input_set_name">
 														<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例:山田"></div>
@@ -1693,7 +1783,7 @@ $(function(){
 												</td>
 											</tr>
 											<tr>
-												<th class="none_bor">電話番号<span class="th_info"><span class="suffix">【半角数字】</span><span class="required">必須</span></span></th>
+												<th class="none_bor">電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" m:id="h_txt_dst_tel_no1" name="dst_tel_no1" placeholder="例:03">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no2" name="dst_tel_no2" placeholder="例:0000">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no3" name="dst_tel_no3" placeholder="例:0000">
 													<p class="example mt10">例&nbsp;:&nbsp;03-0000-0000</p>
