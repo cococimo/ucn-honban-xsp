@@ -150,7 +150,9 @@ $(function() {
 		.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
 		.pagetop_pc,
 		.pagetop_sp,
-		.cart_tel_contact.side_widget {display: none !important}
+	.cart_tel_contact.side_widget,
+	.membership {display: none !important}
+
 	#cart .cart_tel_contact_wrap {overflow: hidden;}
 		#cart .cart_tel_contact {
 			border:1px solid #ccc;
@@ -180,7 +182,7 @@ $(function() {
 		.header_logo {width: 120px;height: 30px;position: absolute;top: 10px;}
 		.header_logo img {width: 120px;height: 30px;}
 		.header_top_cart {padding-top: 10px;width: 100%;float: right;overflow: hidden;}
-		.contents_b {padding-top: 10px;}
+		.contents_b {padding-top: 5px;}
 		.cmn_tit05{font-size:20px;margin:0 0 10px;}
 		.header_bottom{padding-bottom:0;}
 		#cart.cart_intro{margin:0 0 10px;}
@@ -206,30 +208,49 @@ $(function() {
 			#cart .cart_recalculate_btn {text-align: center;width: 270px;}
 			#cart .cart_recalculate_btn a {background:none;}
 			#cart .cart_price_txt {font-size: 14px;line-height: 1.4;margin-top:5px;}
+		.cmn_step {margin: 4px 0 8px;}
+		}
+
+		/*footerí≤êÆ*/
+		@media print, screen and (min-width: 767px) {
+			.about_list_price,
+			.about_list_point{display:none !important;width: 0;height: 0;}
+			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
+			.footer .about_list li {height: 286px !important;}
 		}
 		@media screen and (max-width: 767px) {
 			body {padding-top: 64px !important;margin-bottom:64px !important;}
 			.header {height: auto;}
-			.contents_b {padding-top: 10px;}
+			.contents_b {padding-top: 5px;}
+			.header_logo {width: 80px;}
 			#cart .cart_price_btn02 {display:none;}
-			#cart .cart_intro_tit {font-size: 14px;}
+			#cart .cart_intro {margin: 0 0 5px;}
+			#cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+
 			.header_in,#header {position: static;}
-			.header_logo {top:8px;}
+			.header_logo {top:11px;}
 			.header_top_cart {
 				position: absolute;
 				top: 3px;
 				right: 0;
-				padding-left: 140px;
+				padding-left: 110px;
 				width: 100%;
 		}
-			.cmn_step {margin: 0 0 20px;}
-			.cmn_step_item {font-size: 11px;}
+			.cmn_step {margin: 1.5px 0 20px;}
+			.cmn_step_item {font-size: 11px;border-right: none;}
 			#cart .attention_box {
-			    padding: 16px 16px 16px;
+			    padding: 0 16px 16px;
 			    margin: 10px 0 20px;
 			}
+			#cart .cart_table01 {margin: 0 0 10px;}
 			#cart .cmn_table01 td, #cart .cmn_table01 th {padding: 6px 10px;}
-			#cart .cart_side_total {padding: 10px 10px;}
+			#cart .cart_table01 td:first-child .delete_link a {color: #076194;text-decoration: underline;}
+			#cart .cart_table01 td:first-child .delete_link {margin-top: 0;padding: 0;background: none;float: right;}
+			#cart .cart_table01 td:first-child .delete_link:before {background: none;}
+			#cart .cart_side_total {padding: 10px 10px;margin: 0 0 10px;}
+			#cart .cart_table01 td:nth-child(2) .cart_table01_sp01, #cart .cart_table01 td:nth-child(3) .cart_table01_sp01{padding: 8px 0;}
+			#cart .cart_recalculate {margin: 0 0 0;padding: 0px 15px 0;}
+			#cart .cart_recalculate_txt {padding: 0 0 10px;}
 			#cart .cart_recalculate_btn {text-align:center;width: 100%;}
 			#cart .cart_recalculate_btn a {background: none;}
 			#cart .cart_price_btn01 {margin: 15px 0 15px;}
@@ -245,18 +266,43 @@ $(function() {
 			    bottom: 0;
 			    width: 100%;
 			}
+			#cart .cart_recalculate {margin: 0 0 0;padding: 0 15px 0;}
+			.cart_membership,
+			.footer_info_consult {display: none !important;}
+			.cmn_step04 .cmn_step_item {width: 20%;margin-right: 16px;}
+			.cmn_step_item:after {
+			    position: absolute;
+			    content: '';
+			    top: 0;
+				right: -16px;
+			    width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 25px 0 25px 16px;
+			    border-color: transparent transparent transparent #e6e6e6;
+		}
+			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
+			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
+
+
+		@media screen and (max-width: 460px) {
+			body {padding-top: 43px !important;}
+			.header {height: auto;}
+			.header_logo {width: 60px;}
+			.header_top_cart {padding-left: 80px;}
+			.cmn_step04 .cmn_step_item {width: 21.5%;margin-right: 8px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 34px;
+			    font-size: 10px;
+			    padding:5px 0;
+			}
+			.cmn_step_item:after {right: -8px;border-width: 17px 0 17px 8px;}
 		}
 		@media screen and (max-width: 370px) {
-			body {padding-top: 54px !important;}
-			.header {height: auto;}
-			.header_top_cart {padding-left: 90px;}
-			.cmn_step04 .cmn_step_item {
-			    height: 40px;
-			    margin: 0;
-			    padding: 9px 0 0;
-			    font-size: 10px;
-			}
+
 		}
+
+
 
 </style>
 </head>

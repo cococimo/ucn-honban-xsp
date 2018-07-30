@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="member_confirm"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>　
+<head>
 <meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
@@ -56,7 +56,153 @@ $(function(){
 	}
 });
 </script>
+
 <![endif]-->
+
+<style>
+	.header_logo:hover {
+	  opacity: 1;
+	  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	}
+	.header_username,
+	.cmn_btn.cmn_btn_tri.btn_middle.cmn_btn_pink,
+	.pagetop_pc,
+	.pagetop_sp,
+	.cart_tel_contact.side_widget,
+	.membership {display: none !important}
+
+	@media print,screen and (min-width: 767px){
+		.header_logo {width: 120px;height: 30px;position: absolute;top: 10px;}
+		.header_logo img {width: 120px;height: 30px;}
+		.header_top_cart {padding-top: 8px;width: 100%;float: right;overflow: hidden;}
+		.contents_b {padding-top: 5px;}
+		.cmn_tit05{font-size:20px;margin:0 0 10px;}
+		.cmn_step04{margin:5px 0 5px;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:stretch;align-items:center;letter-spacing:.01rem;}
+		#cart .cart_recalculate{overflow:hidden;margin:0 0 20px;padding:5px;background-size:4px;font-size:14px;}
+		.cmn_step04 .cmn_step_item{width:140px;font-size:14px;}
+		.cmn_step04 .cmn_step_item:nth-child(2){width:150px;}
+		.cmn_step04 .cmn_step_item:nth-child(3){width:170px;}
+		.cmn_step04 .cmn_step_item:before{top:5px;left:10px;width:15px;height:13px;font-size:8px;}
+		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 36px;}
+		.cmn_step04 .cmn_step_item:after{border-width:14px 0 14px 16px;right:-16px;}
+
+			
+		/*追加_cart.do*/
+		.cmn_step {margin: 4px 0 4px;}
+		.cmn_tit05 {margin: 0 0 20px;padding: 10px 0;}
+		.contents_b {padding-top: 10px;}
+		.cmn_tit01 {font-size: 20px;}
+		.cmn_tit02 {font-size: 20px;}
+
+		}
+		@media screen and (max-width: 767px) {
+			body {padding-top: 64px !important;/*margin-bottom:64px !important;*/}
+			.header {height: auto;}
+			.contents_b {padding-top: 5px;}
+			.header_logo {width: 80px;}
+
+			.header_in,#header {position: static;}
+			.header_logo {top:11px;}
+			.header_top_cart {
+				position: absolute;
+				top: 3px;
+				right: 0;
+				padding-left: 110px;
+				width: 100%;
+			}
+			.cmn_step {margin: 1.5px 0 20px;}
+			.cmn_step_item {font-size: 11px;border-right: none;}
+   		 #cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+			.cart_membership,
+			.footer_info_consult {display: none !important;}
+			.cmn_step04 .cmn_step_item {width: 20%;margin-right: 16px;}
+			.cmn_step_item:after {
+			    position: absolute;
+			    content: '';
+			    top: 0;
+					right: -16px;
+			    width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 25px 0 25px 16px;
+			    border-color: transparent transparent transparent #e6e6e6;
+			}
+			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
+			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
+
+			
+			
+
+			/*追加_cart.do*/
+			.cmn_tit05 {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+			/*.cmn_tit05 {margin: 0 -10px;padding: 13px 10px;border: 0;background: #f39801;color: #fff;font-size: 20px;}*/
+		}
+
+
+		@media screen and (max-width: 460px) {
+			body {padding-top: 43px !important;}
+			.header {height: auto;}
+			.header_logo {width: 60px;}
+			.header_top_cart {padding-left: 80px;}
+			.cmn_step04 .cmn_step_item {width: 21.5%;margin-right: 8px;}
+			.cmn_step04 .cmn_step_item {
+			    height: 34px;
+			    font-size: 10px;
+			    padding:5px 0;
+			}
+			.cmn_step_item:after {right: -8px;border-width: 17px 0 17px 8px;}
+		}
+		@media screen and (max-width: 370px) {
+
+		}
+
+		/*footer調整*/
+		@media print, screen and (min-width: 767px) {
+			.about_list_price,
+			.about_list_point{display:none !important;width: 0;height: 0;}
+			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
+			.footer .about_list li {height: 286px !important;}
+		}
+
+		/*ステップ4⇒3調整*/
+		@media print,screen and (min-width: 767px){
+			.cmn_step04.ch_step03 .cmn_step_item {width: 150px;}
+			.cmn_step04.ch_step03 .cmn_step_item:nth-child(3) {width: 150px;}
+		}
+		@media screen and (max-width: 767px) {
+			.cmn_step04.ch_step03 .cmn_step_item {width: 29%;}
+			.cmn_step04.ch_step03 .cmn_step_item {padding: 18px 0 0;}
+			.cmn_step04.ch_step03 .cmn_step_item {padding: 18px 0 0;}
+		}
+		@media screen and (max-width: 460px) {
+			.cmn_step04.ch_step03 .cmn_step_item { width: 30%;}
+			#member .cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;}
+			.cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;letter-spacing: -0.05em;}
+		}
+
+
+		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
+		.cmn_form_table02 th {background: #dddddd;}
+
+	@media print,screen and (min-width: 767px){
+		/*テーブル調整*/
+		.cmn_form_table01 th { background: #dddddd;border:1px solid #bfbfbf;}
+		.cmn_form_table01 {border-bottom:1px solid #bfbfbf;}
+		.cmn_form_table01 td {border:1px solid #bfbfbf;}
+		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
+
+		}
+		
+		@media screen and (max-width: 767px){
+			.cmn_tit01 {font-size: 14px;}
+			.cmn_form_table01 th .suffix {font-size: 12px;}
+			.cmn_form_table01 th { background: #dddddd;}
+			.cmn_form_table01 th,
+			.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
+			#member .required {font-size: 12px;}
+		}
+
+</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
@@ -100,54 +246,64 @@ $(function(){
 <header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
+		<h1 class="header_logo">
 				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
 				</a>
 			</h1>
-			<div class="header_top">
+			<!--<div class="header_top">
 				<div class="header_tell" class="view">
-					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
+					<img m:id="static_img" src="../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
 					<p class="note">携帯電話からでも通話無料</p>
-				</div>
+				</div>-->
 				<!-- /.header_tel -->
-				<div class="header_contact">
+				<!--<div class="header_contact">
 					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-				</div>
+				</div>-->
 				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
+				<!--<div m:id="l_pre_member_mypage_button_shop">
 					<div class="header_mypage" class="viewPc">
 						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 					</div>
-				</div>
+				</div>-->
 				<!-- /.header_mypage -->
-				<div class="header_ucan">
+				<!--<div class="header_ucan">
 					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				</div>-->
+        <!-- ステップ -->
+				<!-- InstanceBeginEditable name="header_top_cart" -->
+				<div class="header_top_cart">
+					<ol class="cmn_step cmn_step04 ch_step03 cf">
+						<li class="cmn_step_item">会員情報の入力</li>
+						<li class="cmn_step_item cmn_step_active">入力内容の確認</li>
+						<li class="cmn_step_item">会員登録完了</li>
+					</ol>
 				</div>
-				<!-- /.header_ucan -->
-			</div>
-			<div class="header_bottom">
+				<!-- InstanceEndEditable -->
+        <!-- /ステップ -->
+        
+				<div class="header_bottom">
 				<p class="header_username">ようこそ
 					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
 					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 				</p>
 				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!--<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>-->
 				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!--<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>-->
 				<!-- /.header_guide -->
 				<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow">
+					<!--<div class="header_menu hvr-grow">
 						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
 							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
 						</a>
 					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div>
+					</div>-->
 					<!--/.header_menu-->
 				</span>
-				<div class="header_login hvr-grow">
+				<!--<div class="header_login hvr-grow">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
@@ -169,7 +325,7 @@ $(function(){
 							</li>
 						</div>
 					</ul>
-				</div>
+				</div>-->
 				<!-- /.header_login -->
 			</div>
 			<!-- /.header_bottom -->
@@ -186,12 +342,6 @@ $(function(){
 			<object class="xsp_obj" m:id="e_var_sexMap" ></object>
 			<object class="xsp_obj" m:id="e_var_jobMap" ></object>
 			<object class="xsp_obj" m:id="e_var_opportunityMap" ></object>
-
-			<ol class="cmn_step cmn_step03 cf">
-				<li class="cmn_step_item">会員情報の入力</li>
-				<li class="cmn_step_item cmn_step_active">入力内容の確認</li>
-				<li class="cmn_step_item">会員登録完了</li>
-			</ol>
 
 			<h1 class="cmn_tit05 s_mb15">会員情報の確認</h1>
 
