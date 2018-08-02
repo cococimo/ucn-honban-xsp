@@ -402,6 +402,15 @@ $(function(){
 
 <script>
 $(function () {
+	$("#trend_area").on({
+		"mouseenter": function(){$(".trend_word_area").addClass("show_word");},
+		"mouseleave": function(){$(".trend_word_area").removeClass("show_word");}
+	});
+})
+</script>
+
+<script>
+$(function () {
 	/*スマホ版 商品カテゴリサブメニュー表示 非表示*/
 	$(".spItem").get(0).onclick = "";
 	document.getElementsByClassName("spItem").removeEventListener("click", "");
