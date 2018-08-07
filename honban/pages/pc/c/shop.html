@@ -401,7 +401,7 @@ $(function(){
 </script>
 
 <script>
-$(function () {
+$(function(){
 	$("#trend_area").on({
 		"mouseenter": function(){$(".trend_word_area").addClass("show_word");},
 		"mouseleave": function(){$(".trend_word_area").removeClass("show_word");}
@@ -414,12 +414,8 @@ $(function () {
 	/*スマホ版 商品カテゴリサブメニュー表示 非表示*/
 	$(".spItem").get(0).onclick = "";
 	document.getElementsByClassName("spItem").removeEventListener("click", "");
-
-		});
-
-
+});
 </script>
-
 
 <style>
   .footer #pagetop {display:none;}
@@ -557,15 +553,6 @@ $(function () {
 
 
 	</style>
-	<script>
-		$(function() {
-			$("#trend_area").hover(function() {
-				$(".trend_word_area").addClass("show_word");
-			}, function() {
-				$(".trend_word_area").removeClass("show_word");
-			});
-		});
-	</script>
 	<div id="container">
 		<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="header_in cf">
@@ -734,70 +721,27 @@ $(function () {
 						<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
 					</form>
 				</div>
-				<object class="xsp_obj" m:id="e_var_standardCategory">
-			</object>
-				<object class="xsp_obj" m:id="e_var_campaignCategory">
-			</object>
+				<!-- <object class="xsp_obj" m:id="e_var_standardCategory">
+			</object> -->
+				<!-- <object class="xsp_obj" m:id="e_var_campaignCategory">
+			</object> -->
 				<object class="xsp_obj" m:id="count">
 			</object>
-				<object class="xsp_obj" m:id="cate_count">
-			</object>
-				<object class="xsp_obj" m:id="subCate_count">
-			</object>
-				<object class="xsp_obj" m:id="subCate2_count">
-			</object>
-				<object class="xsp_obj" m:id="e_var_dmHistory">
-			</object>
-				<span m:id="l_pre_standardCategory">
-				<span m:id="l_notEmp_standardCategory_childCategories">
-					<div class="header_category_list">
-						<span m:id="l_ite_standardCategory">
-							<span m:id="l_equ_cate_checkPeriod">
-								<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-				<object class="xsp_obj" m:id="count_sub1"></object>
-				<ul class="l_con_list_01 cf">
-					<span m:id="l_ite_cate">
-										<span m:id="l_equ_subCate_checkPeriod">
-											<span m:id="icnt_increment"></span>
-					<span m:id="i_ins_subCate"></span>
-					<li>
-						<div>
-							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-								<span m:id="span_subCate_arrow" id="arrow_1">
-									<span m:id="disp_subCate_category_name">ファッション</span>
-								</span>
-							</a>
-						</div>
-						<ul m:id="tag_dd_subCate">
-							<span m:id="l_ite_subCate">
-														<span m:id="l_equ_subCate2_checkPeriod">
-															<span m:id="icnt_increment"></span>
-							<span m:id="i_ins_subCate2"></span>
-							<li>
-								<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-								<ul m:id="tag_dd_subCate2">
-									<span m:id="l_ite_subCate2">
-										<span m:id="l_equ_subCate3_checkPeriod">
-										<span m:id="icnt_increment"></span>
-									<li>
-										<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-									</li>
-									</span>
-									</span>
-								</ul>
-							</li>
-							</span>
-							</span>
-						</ul>
-					</li>
-					</span>
-					</span>
-				</ul>
-				</span>
-				</span>
-			</div>
-			</span>
-			</span>
+				<!-- <object class="xsp_obj" m:id="cate_count">
+			</object> -->
+				<!-- <object class="xsp_obj" m:id="subCate_count">
+			</object> -->
+				<!-- <object class="xsp_obj" m:id="subCate2_count">
+			</object> -->
+				<!-- <object class="xsp_obj" m:id="e_var_dmHistory">
+			</object> -->
+			<!--<span m:id="l_pre_standardCategory">
+					<span m:id="l_notEmp_standardCategory_childCategories">-->
+				<!--▼▼▼カテゴリーリスト_SPヘッダー▼▼▼-->
+				<span m:id="l_include_file_tags" filename="category_list/category_list_header_sp"></span>
+				<!--▲▲▲カテゴリーリスト_SPヘッダー▲▲▲-->
+				<!--</span>
+			</span>-->
 			<div class="header_feature">
 				<a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
 			</div>
@@ -831,78 +775,27 @@ $(function () {
 	<!--▼▼▼カテゴリー▼▼▼-->
 	<div class="category_contents_in cf" style="">
 		<div id="category">
-			<object class="xsp_obj" m:id="e_var_standardCategory">
-			</object>
-			<object class="xsp_obj" m:id="e_var_campaignCategory">
-			</object>
+			<!-- <object class="xsp_obj" m:id="e_var_standardCategory">
+			</object> -->
+			<!-- <object class="xsp_obj" m:id="e_var_campaignCategory">
+			</object> -->
 			<object class="xsp_obj" m:id="count">
 			</object>
-			<object class="xsp_obj" m:id="cate_count">
-			</object>
-			<object class="xsp_obj" m:id="subCate_count">
-			</object>
-			<object class="xsp_obj" m:id="subCate2_count">
-			</object>
-			<object class="xsp_obj" m:id="e_var_dmHistory">
-			</object>
-			<span m:id="l_pre_standardCategory">
-				<span m:id="l_notEmp_standardCategory_childCategories">
-					<div class="category_list">
-						<span m:id="l_ite_standardCategory">
-							<span m:id="l_equ_cate_checkPeriod">
-								<span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-								<object class="xsp_obj" m:id="count_sub1"></object>
-								<ul class="l_con_list_01 clearfix example">
-									<span  m:id="l_ite_cate">
-										<span m:id="l_equ_subCate_checkPeriod">
-											<span m:id="icnt_increment"></span>
-											<span m:id="i_ins_subCate"></span>
-					<li class="item">
-												<div id="p_0">
-													<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-														<span class="category_list_img"></span>
-														<span m:id="span_subCate_arrow" id="arrow_1">
-															<span m:id="disp_subCate_category_name">ファッション</span>
-														</span>
-													</a>
-												</div>
-						<span class="sub_nav">
-							<span class="inner">
-						<p class="tit">
-							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate_category_name">ファッション</span></a>
-						</p>
-												<ul m:id="tag_dd_subCate">
-													<span m:id="l_ite_subCate">
-														<span m:id="l_equ_subCate2_checkPeriod">
-															<span m:id="icnt_increment"></span>
-															<span m:id="i_ins_subCate2"></span>
-															<li>
-																<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-																<ul m:id="tag_dd_subCate2">
-																	<span m:id="l_ite_subCate2">
-																		<span m:id="l_equ_subCate3_checkPeriod">
-																			<span m:id="icnt_increment"></span>
-																			<li>
-																				<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-																			</li>
-																		</span>
-																	</span>
-																</ul>
-															</li>
-														</span>
-													</span>
-							</span>
-												</ul>
-						</span>
-											</li>
-										</span>
-									</span>
-								</ul>
-							</span>
-						</span>
-					</div>
-				</span>
-			</span>
+			<!-- <object class="xsp_obj" m:id="cate_count"> 
+			</object>-->
+			<!-- <object class="xsp_obj" m:id="subCate_count">
+			</object> -->
+			<!-- <object class="xsp_obj" m:id="subCate2_count">
+			</object> -->
+			<!-- <object class="xsp_obj" m:id="e_var_dmHistory">
+			</object> -->
+			<!-- <span m:id="l_pre_standardCategory">
+				<span m:id="l_notEmp_standardCategory_childCategories"> -->
+			<!--▼▼▼カテゴリーリスト_PCヘッダー▼▼▼-->
+			<span m:id="l_include_file_tags" filename="category_list/category_list_header_pc"></span>
+			<!--▲▲▲カテゴリーリスト_PCヘッダー▲▲▲-->
+				<!--</span>
+			</span> -->
 		</div>
 	</div>
 		<!--▲▲▲カテゴリー▲▲▲-->
@@ -930,8 +823,8 @@ $(function () {
         </object>
         <object class="xsp_obj" m:id="e_var_saleStatus">
         </object>
-        <object class="xsp_obj" m:id="e_var_dmHistory">
-        </object>
+        <!-- <object class="xsp_obj" m:id="e_var_dmHistory">
+        </object> -->
         <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
         <!--▼▼▼メインヴィジュアル▼▼▼-->
             <div class="wrapper">
@@ -1019,91 +912,42 @@ $(function () {
             }
             //]]>
             </script>
-            <object class="xsp_obj" m:id="e_var_standardCategory">
+            <!-- <object class="xsp_obj" m:id="e_var_standardCategory"> -->
             </object>
-            <object class="xsp_obj" m:id="e_var_campaignCategory">
-            </object>
+            <!-- <object class="xsp_obj" m:id="e_var_campaignCategory">
+            </object> -->
             <object class="xsp_obj" m:id="count">
             </object>
-            <object class="xsp_obj" m:id="cate_count">
-            </object>
-            <object class="xsp_obj" m:id="subCate_count">
-            </object>
-            <object class="xsp_obj" m:id="subCate2_count">
-            </object>
-            <object class="xsp_obj" m:id="e_var_dmHistory">
-            </object>
+            <!-- <object class="xsp_obj" m:id="cate_count"> 
+            </object>-->
+            <!-- <object class="xsp_obj" m:id="subCate_count">
+            </object> -->
+            <!-- <object class="xsp_obj" m:id="subCate2_count">
+            </object> -->
+            <!-- <object class="xsp_obj" m:id="e_var_dmHistory">
+            </object> -->
             <div class="search_item wrapper">
                 <div class="search_item_in">
-                    <span m:id="l_pre_standardCategory">
-                        <span m:id="l_notEmp_standardCategory_childCategories">
+                    <!-- <span m:id="l_pre_standardCategory"> -->
+                        <!-- <span m:id="l_notEmp_standardCategory_childCategories"> -->
                             <div class="l_con_box_01">
                             <!-- <div id="l_tit_01"><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_l_tit_01.jpg" alt="カテゴリーから探す" /></div> -->
                             <h2 class="search_item_tit">商品を探す</h2>
                             <div class="search_item_category category_list">
                                 <h3 class="search_item_category_tit search_item_subtit">商品カテゴリ</h3>
-                                <span m:id="l_ite_standardCategory">
-                                    <span m:id="l_equ_cate_checkPeriod">
-										<span m:id="count_sub1"></span>
-			<span m:id="icnt_increment"></span>
-			<span m:id="i_ins_cate"></span>
-                                        <object class="xsp_obj" m:id="count_sub1"></object>
-			<ul class="l_con_list_01 clearfix example" id="js-navi">
-                                            <span  m:id="l_ite_cate">
-                                                <span m:id="l_equ_subCate_checkPeriod">
-                                                    <span m:id="icnt_increment"></span>
-				<span m:id="count_sub1"></span>
-				<span m:id="i_ins_subCate"></span>
-				<li class="spItem">
-                                                        <div id="p_0">
-                                                            <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                                <span class="category_list_img"></span>
-                                                                <span m:id="span_subCate_arrow" id="arrow_1">
-                                                                    <span m:id="disp_subCate_category_name">ファッション</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                        <div id="p_1">
-                                                            <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                                <span m:id="span_subCate_arrow" id="arrow_1">
-                                                                    <span m:id="disp_subCate_category_name">ファッション</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-					<span class="sub_nav">
-						<span class="inner">
-						<p class="tit">
-							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate_category_name">ファッション</span></a>
-					</p>
-                                                        <ul m:id="tag_dd_subCate">
-                                                            <span m:id="l_ite_subCate">
-                                                                <span m:id="l_equ_subCate2_checkPeriod">
-                                                                    <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-                                                                    <li>
-                                                                        <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-                                                                        <ul m:id="tag_dd_subCate2">
-                                                                            <span m:id="l_ite_subCate2">
-                                                                                <span m:id="l_equ_subCate3_checkPeriod">
-                                                                                    <span m:id="icnt_increment"></span>
-                                                                                    <li>
-                                                                                        <a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-                                                                                    </li>
-                                                                                </span>
-                                                                            </span>
-                                                                        </ul>
-							</li></span>
-							</span>
-
-                                                                </span>
-                                                            </span>
-                                                        </ul>
-                                                    </li>
-                                                </span>
-                                            </span>
-                                        </ul>
-                                    </span>
-                                </span>
-                                                            <div class="search_item_keyword">
+                                <!--<span m:id="l_ite_standardCategory">-->
+                                    <!-- <span m:id="l_equ_cate_checkPeriod"> -->
+										<!-- <span m:id="count_sub1"></span> -->
+										<!-- <span m:id="icnt_increment"></span> -->
+										<!-- <span m:id="i_ins_cate"></span> -->
+                                        <!-- <object class="xsp_obj" m:id="count_sub1"></object> -->
+										<!--▼▼▼カテゴリーリスト_SPサーチアイテム▼▼▼-->
+										<ul m:id="l_include_file_tags" filename="category_list/category_list_search_item_sp" class="l_con_list_01 clearfix example" id="js-navi"></ul>
+										<!--▲▲▲カテゴリーリスト_SPサーチアイテム▲▲▲-->
+                                    <!-- </span> -->
+                                <!--</span>-->
+                            </div>
+                            <div class="search_item_keyword">
                                 <!-- <h3 class="search_item_keyword_tit search_item_subtit viewPc">商品カテゴリ</h3> -->
                                 <div class="search_item_keyword_box viewPc">
                                     <p class="search_item_keyword_subtit">商品名<br><span>で検索</span></p>
@@ -1193,8 +1037,8 @@ $(function () {
                             <!-- /.search_item_keyword -->
                             </div>
                             <!-- /.search_item_category -->
-                        </span>
-                    </span>
+                        <!-- </span> -->
+                    <!-- </span> -->
                 </div>
             </div>
         <!--▲▲▲カテゴリー▲▲▲-->
@@ -2224,39 +2068,22 @@ $(function () {
 			<div class="footer_sitemap_in wrapper">
 				<div class="footer_sitemap_category">
 					<h3 class="footer_sitemap_tit">カテゴリから探す</h3>
-					<span m:id="l_pre_standardCategory">
+					<!--<span m:id="l_pre_standardCategory">
 					<span m:id="l_notEmp_standardCategory_childCategories">
-						<span m:id="l_ite_standardCategory">
-							<span m:id="l_equ_cate_checkPeriod">
-								<span m:id="icnt_increment"></span>
-					<span m:id="i_ins_cate"></span>
-					<object class="xsp_obj" m:id="count_sub1"></object>
-					<ul class="footer_sitemap_list">
-						<span m:id="l_ite_cate">
-										<span m:id="l_equ_subCate_checkPeriod">
-											<span m:id="icnt_increment"></span>
-						<span m:id="i_ins_subCate"></span>
-						<li class="fleft">
-							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-								<span m:id="span_subCate_arrow" id="arrow_1"><span m:id="disp_subCate_category_name">ファッション</span></span>
-							</a>
-						</li>
+						<span m:id="l_ite_standardCategory">-->
+							<!-- <span m:id="l_equ_cate_checkPeriod"> -->
+								<!-- <span m:id="icnt_increment"></span> -->
+								<!-- <span m:id="i_ins_cate"></span> -->
+								<!-- <object class="xsp_obj" m:id="count_sub1"></object> -->
+								<ul class="footer_sitemap_list">
+									<!--▼▼▼カテゴリーリスト_PCフッター▼▼▼-->
+									<span m:id="l_include_file_tags" filename="category_list/category_list_footer_pc"></span>
+									<!--▲▲▲カテゴリーリスト_PCフッター▲▲▲-->
+								</ul>
+							<!-- </span> -->
+						<!--</span>
 						</span>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家具</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家電</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">玩具・趣味</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">防災用品</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">本DVD</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">美容・健康</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">日用雑貨</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">食品・飲料</a></li>
-						<li m:id="dummy"><a href="goodsSearchShop_shop.html">キッチン</a></li>
-						</span>
-					</ul>
-					</span>
-					</span>
-					</span>
-					</span>
+					</span>-->
 				</div>
 				<div class="footer_sitemap_begginer">
 					<h3 class="footer_sitemap_tit">初めての方へ</h3>
