@@ -351,17 +351,21 @@ $(function() {
 <!-- InstanceBeginEditable name="contents" -->
 
 <style>
-/*会員登録 追加　/contents/c/css/new/style.css*/
+/*会員登録 追加 /contents/c/css/new/style.css*/
   #cart .cart_contents {overflow:hidden;}
   #cart .box {width:580px;}
   #cart .purchase_box {border:none;line-height:1.6;}
   #cart .login_purchase_box_in {padding: 0 30px 0;}
-  #cart .login_membership_tit {line-height: 1.4;letter-spacing: -0.02em;color: rgb(63, 62, 61);padding: 18px 0;font-size: 28px;}
+  #cart .receipt_register_btn {line-height:1;}
+  #cart .login_membership_tit {line-height: 1.4;letter-spacing: -0.02em;color: rgb(63, 62, 61);padding: 14px 0;font-size: 26px;}
   #cart .login_membership_tit:before,
   #cart .login_membership_list li:first-child:before {width:0;height:0;background:none;display:none;}
-  #cart .receipt_register_btn a {width: 420px;}
+  #cart .receipt_register_btn a {width: 100%;}
   #cart .membership_sub_tit {position: relative;color: #f39800;font-size: 18px;font-weight: 700;text-align: center;padding: 10px 0;}
   #cart .login_membership_list li:first-child {padding: 20px;}
+  #cart .btn_wrap {background: url(/contents/c/goods/image/new/cart/bg_pattern02.png) repeat;width: auto;margin: 20px auto 2px;padding: 20px;}
+  #cart .btn_wrap .regist_txt{color:#cc1010;font-weight:bold;text-align:center;font-size: 23px;line-height: 1.5;}
+	#cart .btn_wrap .receipt_register_btn a {border-radius: 34px;font-size: 30px;line-height: 64px;}
 @media screen and (max-width: 767px) {
 	.box.left,.box.right {float:none;}
   #cart .login_purchase_box_in {padding: 0 0 0 0;}
@@ -369,8 +373,11 @@ $(function() {
   #cart .receipt_register_btn a {width: 100%;}
 	#cart .purchase_box {margin-top:20px;}
   .cart_contents {width: auto;}
-  #cart .login_membership_list_txt {padding: 0 0 0 0;}
+  #cart .login_membership_list_txt {padding: 0 0 0 0;font-size: 18px;}
   #cart .box {width:auto;}
+	#cart .receipt_register_btn {padding: 0 0;}
+	#cart .btn_wrap .regist_txt{font-size: 20px;}
+	#cart .btn_wrap .receipt_register_btn a {font-size: 24px;line-height: 64px;}
  }
  	@media print {
 		body,.header_in {width: 100%;}
@@ -420,20 +427,24 @@ $(function() {
             ※メールの受信まで多少のお時間がかかる場合もございますので、予めご了承ください。</p>
            </div><!-- //.left -->
 
-          <div m:id="l_notPre_member_login" class="box right">
-            <div class="login_purchase_box purchase_box register box">
-            <!--<h2 class="purchase_box_tit01"></h2>-->
-            <div class="login_purchase_box_in purchase_box_in js-matchHeight">
-                
-             <div class="login_membership">
-						<h2 class="login_membership_tit">新規会員登録で<br class="viewPc" /><span class="red">500ポイント</span>プレゼント中！</h2>
-            <p class="tac">次回以降のお買い物に使えるポイントをプレゼントいたします。<br> 登録は無料ですので、ぜひご登録ください。</p>
-            <p class="receipt_register_btn mt20 s_mt10"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_green cmn_btn_register"><span m:id="l_equ_order_next_mode_memberAdd">お申込み情報でカンタン登録！</span></a></p>
-            <h3 class="membership_sub_tit">お得な会員特典について</h3>
+					<div m:id="l_notPre_member_login" class="box right">
+						<div class="login_purchase_box purchase_box register box">
+						<!--<h2 class="purchase_box_tit01"></h2>-->
+						<div class="login_purchase_box_in purchase_box_in js-matchHeight">
+
+						<div class="login_membership">
+						<h2 class="login_membership_tit">新規会員登録で<br><span class="red">500ポイント</span>プレゼント中！</h2>
+						<p class="tac">次回以降のお買い物に使える<br class="viewSp" />ポイントを<br class="viewPc" />プレゼントいたします。<br>
+						登録は無料ですので、ぜひご登録ください。</p>
+						<div class="btn_wrap">
+							<p class="regist_txt">こちらからご登録いただければ、<br class="viewPc" />IDとパスワードの入力のみで登録完了！</p>
+							<p class="receipt_register_btn mt5 s_mt5"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_red"><span m:id="l_equ_order_next_mode_memberAdd">今すぐカンタン登録！</span></a></p>
+						</div>
+						<h3 class="membership_sub_tit">お得な会員特典について</h3>
 						<ul class="login_membership_list">
 							<li>
 								<!--<p class="login_membership_list_tit"><span class="red">500ポイント</span>をプレゼント！</p>-->
-                <p class="login_membership_list_txt">ココチモには会員登録サービスがございます。<br>会員登録をしていただくと、商品ご購入の際に必要な、お届け先情報の入力が省略でき、お買い物がぐっと簡単に！その他、お買い物に使えるポイントの付与をはじめ、様々な特典やサービスのご案内を随時お受けいただけます。</p>
+							<p class="login_membership_list_txt">ココチモには会員登録サービスがございます。<br>会員登録をしていただくと、商品ご購入の際に必要な、お届け先情報の入力が省略でき、お買い物がぐっと簡単に！その他、お買い物に使えるポイントの付与をはじめ、様々な特典やサービスのご案内を随時お受けいただけます。</p>
 							</li>
 							<li>
 								<p class="login_membership_list_tit"><span class="red">ココチモポイント</span><br class="viewPc" />がたまる！</p>
