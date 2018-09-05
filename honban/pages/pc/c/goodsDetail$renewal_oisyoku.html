@@ -406,6 +406,9 @@ $(function(){
      .recommend_list.item_list .img_box a {
         height: 228px;
      }
+		@media screen and (max-width:767px) {
+			#contents {position: static;}
+		}
 </style>
 <script src="/contents/c/js/new/featherlight.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
@@ -1659,7 +1662,7 @@ function showCartButton1(obj){
 	      </p>
         <span m:id="l_equ_can_addCartSku">
 			<p class="order_btn" id="purchase_btn_order">
-				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
             	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
@@ -1668,8 +1671,8 @@ function showCartButton1(obj){
       <!-- 欠品対応 -->
 			<span m:id="l_equ_canNot_addCartSku_radio">
 			<p class="order_btn" id="purchase_btn_keppin">
-            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin5.png" alt="完売しました"></span>
-				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin5.png" alt="完売しました"></span>
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
 			</p>
       <!-- //欠品対応 -->
 		</span>
@@ -2231,62 +2234,7 @@ function showCartButton1(obj){
 	<!-- /.goods_detail_spec -->
   
   <!-- ▼▼▼ 特集 ▼▼▼ -->
-  <style>
-	.goods_detail .category_feature .feature ul {display: flex;}
-	.goods_detail .category_feature .feature ul li a .text {font-size: 14px;}
-	.goods_detail .category_feature .feature ul li {width:294px;}
-	.goods_detail .category_feature .feature ul li:nth-child(odd) {clear:none;float:left;}
-	.goods_detail .category_feature .feature ul li:last-child {margin: 0 0 12px 0;float:right;}
-  	@media screen and (max-width: 767px) {
-   		.goods_detail .category_feature .feature ul {display: block;margin: 0 0 12px 0;}
-   		.goods_detail .category_feature .feature ul li {width:100%;margin: 0 0 12px 0;}
-   		.goods_detail .category_feature .feature ul li:last-child {float: none;}
-	}
-  </style>
-  <div class="category_feature">
-	<div class="feature">
-		<h2 class="cmn_tit01"><span class="cmn_tit01_underline">おいしい食卓特集</span></h2>
-		<ul class="cf">
-			<li class="hvr-float">
-				<a href="/shop/c/static/syokutaku-feature17/" target="_blank">
-					<img src="/contents/c/shop/image/category/syokuhin/bnr-feature17.jpg" alt="土用のうなぎ特集">
-					<div class="caption">
-						<p class="text"><span style="color: red;">NEW!</span> 夏といえば土用のうなぎ！浜名湖産うなぎを取り揃えました！</p>
-						<p class="icon feature">特集</p>
-					</div>
-				</a>
-			</li>
-			<li class="hvr-float">
-				<a href="/shop/c/static/syokutaku-feature16/" target="_blank">
-					<img src="/contents/c/shop/image/category/syokuhin/bnr-feature16.jpg" alt="日本の夏を食の「涼」で楽しむ！からだが喜ぶ夏の味特集">
-					<div class="caption">
-						<p class="text"><span style="color: red;">NEW!</span> 日本の夏を食の「涼」で楽しむ！からだが喜ぶ夏の味特集</p>
-						<p class="icon feature">特集</p>
-					</div>
-				</a>
-			</li>
-			<li class="hvr-float">
-				<a href="/shop/c/static/syokutaku-feature13/" target="_blank">
-					<img src="/contents/c/shop/image/category/syokuhin/bnr-feature13.jpg" alt="おいしい食卓シリーズ にんじんジュース">
-					<div class="caption">
-						<p class="text"><!-- <span style="color: red;">NEW!</span> --> とびきりおいしい にんじんジュース、 できました。</p>
-						<p class="icon feature">特集</p>
-					</div>
-				</a>
-			</li>
-			<li class="hvr-float">
-				<a href="/shop/c/static/syokutaku-feature2/" target="_blank">
-					<img src="/contents/c/shop/image/category/syokuhin/bnr-feature2.jpg" alt="作り手の想い">
-					<div class="caption">
-						<p class="text"><span style="color: red;">【2/22更新】</span>全国の生産者さんへ突撃取材！</p>
-						<p class="icon feature">特集</p>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
-	</div>
-	<!-- /.feature -->
+ 	<span m:id="l_include_file_tags" filename="syokutaku/feature_bnrs_oisyoku" id="oisyokuLink"></span>
   <!-- ▲▲▲ 特集 ▲▲▲ -->
   
 		</div>
