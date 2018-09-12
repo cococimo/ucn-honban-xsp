@@ -54,6 +54,9 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
+#content_wrap .present-area img {
+	max-width:100%;
+}
 @media screen and (max-width: 640px){
 #content_wrap .present-area {
 	padding-left: 15px;
@@ -121,7 +124,7 @@ window.onload = function() {
 			</div> -->
 			<h1><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_2.png" alt="安心と暮らす全16点の必需品"></h1>
 
-	        <!--　通常のプレゼント▼▼▼▼ -->
+	        <!-- 通常のプレゼント▼▼▼▼ -->
 	        <div class="present-area">
 	        	<img src="/contents/shop/00000003/image/static/img/bousai/bisco_pre.jpg" alt="プレゼント" style="max-width: 100%">
 	        </div><br>
@@ -153,20 +156,19 @@ window.onload = function() {
 	
                     <!--div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/bousai/kakaku_deb90.jpg" alt="ココチモ・オリジナル　防災セット 一括払価格30650円税込"></div-->
     			
-					<p class="shopping"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"></a></p>
-					<p class="shopping_sp"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover"></a></p>
+					<!--<p class="shopping"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"></a></p>
+					<p class="shopping_sp"><a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover"></a></p>-->
 					</form>
-			<!-- <a href="#shop_smooth"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.jpg" alt="いますぐご注文" class="image96"></a> -->
+			<!--<a href="#shop_smooth"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.jpg" alt="いますぐご注文" class="image96"></a>-->
 		</div>
- 
- <!-- お届け時期のお知らせ▼ --> 
-  <!--     
-        <div style="border:#EE0003 1px solid; padding:15px; margin:0 20px; width:auto;">
-        <p style="color:red;"><b>【お届け時期のお知らせ】</b><br>
-現在、本商品は当初の予想以上のお申し込みの集中により在庫切れとなっており、お届けが6月下旬以降を予定しております。<br>
-お待たせしてしまい大変申し訳ございませんが、ご了承くださいますよう、よろしくお願い申し上げます。</p>
-        </div>	<br><br>-->
- <!-- お届け時期のお知らせ▲ -->      
+ 				<!-- 完売対応 -->
+				<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
+				<!-- //完売対応 -->
+				 <!-- お届け時期のお知らせ▼ --> 
+								<div style="border:#EE0003 1px solid; padding:15px; margin:0 20px; width:auto;">
+								<p style="color:red;font-weight:bold;font-size:1.2em;text-align:center;line-height:1.5">現在、本商品は当初の予想以上のお申し込みの集中により在庫切れとなっております。</p>
+								</div>	<br><br>
+				 <!-- お届け時期のお知らせ▲ -->      
     
      
         <div class="bs-wrap second">
@@ -346,14 +348,21 @@ window.onload = function() {
 	      <p class="pc_only">
 	        <img src="/contents/shop/00000003/image/static/img/bousai/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 	      </p>
-			<p>
+			<!--<p>
 				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
 					<picture>
 						<source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/img/bousai/sp_btn.png">
 						<img src="/contents/shop/00000003/image/static/img/bousai/btn.png" alt="この商品を申し込む">
 					</picture>
 				</a>
+			</p>-->
+      <!-- 欠品対応 -->
+			
+			<p class="order_btn" id="purchase_btn_keppin">
+        <span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました" /></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました" /></span>
 			</p>
+      <!-- //欠品対応 -->
 		</div>
 		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
