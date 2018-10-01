@@ -419,6 +419,28 @@ $(function(){
 			bottom: 140px;
 		}
 	}
+/* カート下文言 */
+	.cart-notic{
+		border:#EE0003 1px solid;
+		padding:.4em; margin:0 auto;
+		max-width:928px;
+	}
+	.cart-notic p {
+		color:red;
+		font-weight:bold;
+		font-size:1.1em;
+		text-align:center;
+		line-height:1.5;
+		}
+	@media screen and (max-width: 767px){
+	.cart-notic{
+		max-width:310px;
+	}
+	.cart-notic p {
+		font-size:1em;
+	}
+}
+
 </style>
 
 	<style type="text/css">
@@ -1312,67 +1334,69 @@ function showCartButton1(obj){
 					<!-- <div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております"></div>
       <!-- /.tel -->
 
-  <!--<span m:id="l_equ_type_simple"> カート追従バナー -->
+  <!--<span m:id="l_equ_type_simple"> カート追従バナー 
+
 	<style>
-		.purchase_fixed .inner a:hover {cursor: pointer;}
-		.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
 
+	.sp {display: none !important;}
+	.pc {display: block !important;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.sp {display: block !important;}
+		.pc {display: none !important;}}
 		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
-		.purchase_fixed .inner {padding: 1rem;margin: 0 auto;max-width: 692px;overflow:hidden;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;}
 		.purchase_fixed .inner > * {width: 100%;}
-		.purchase_fixed .inner > p {float:left;}
-		.purchase_fixed .inner a:hover {opacity: .85;}
-		.purchase_fixed .inner .ph_tel {display:none;}
-
-		.purchase_fixed .inner .order_btn{width:66%;}
-		.purchase_fixed .inner .present{float:right;width:34%;padding-left:10px;padding-top:.3em;}
-
-		@media all and (min-width: 0) and (max-width: 767px) {
-			.purchase_fixed .inner {display:block;}
-			.inner08 {margin-top: -60px;padding-top: 60px;}
-			.purchase_fixed .inner {display:inline-block;padding: .5rem .5rem .25rem .5rem;}
-			.purchase_fixed .inner > p {display: inline-block;width:auto;}
-			.purchase_fixed .inner > p:first-of-type {width:40%;}
-			.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;width:58%;}
-			.purchase_fixed .inner .order_btn {padding-right:0;}
-			.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		.purchase_fixed .inner > p:first-of-type img {width: 306px;}
+		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;
 		}
-		@media print {.purchase_fixed {display: none;}}
 
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;	}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+    .footer #pagetop_sp {bottom: 140px;}
 	</style>
 
 	<div class="purchase_fixed">
 		<div class="inner">
-			<p class="sp_only">
-				<img src="/contents/shop/00000003/image/static/mimimoto/purchase_fixed_presen_sp.png" alt="プレゼント付き有効期限 9月10日(月)">
-			</p>
-			<p class="pc_only ph_tel">
-	        	<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
-	      	</p>
-        	<span m:id="l_equ_can_addCartSku">
-				<p class="order_btn" id="purchase_btn_order">
-					<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
-	            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
-					<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
-					</a>
-				</p>
-      		</span>
-      		<!-- 欠品対応 -->
-			<span m:id="l_equ_canNot_addCartSku_radio">
-				<p class="order_btn" id="purchase_btn_keppin">
-	            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
-					<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
-				</p>
-		    <!-- //欠品対応 -->
-			</span>
+	      <p class="sp_only">
+	        <a href="tel:0120552186" style="display: inline-block;">
+	          <img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call.png">
+	        </a>
+	      </p>
 
-		<div class="present pc_only">
-			<img src="/contents/shop/00000003/image/static/mimimoto/purchase_fixed_presen.png" alt="プレゼント付き有効期限 9月10日(月)">
+	      <p class="pc_only">
+	        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+	      </p>
+        <span m:id="l_equ_can_addCartSku">
+			<p class="order_btn" id="purchase_btn_order">
+				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+				</a>
+			</p>
+      </span>
+      <!-* 欠品対応 *->
+			<span m:id="l_equ_canNot_addCartSku_radio">
+			<p class="order_btn" id="purchase_btn_keppin">
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+			</p>
+      <!-* //欠品対応 *->
+		</span>
 		</div>
-		</div>
-		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+		<!-* <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> *->
 	</div>
-  <!--<span m:id="l_equ_type_simple"> カート追従バナー -->
+	</span> //カート追従バナー -->
 
 
 
@@ -1383,8 +1407,11 @@ function showCartButton1(obj){
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" />
 
-					<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<div class="cart-notic">
+						<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
+					</div>
 					</form>
 
 					<!-- ★インクルード２★-->
@@ -1549,8 +1576,12 @@ function showCartButton1(obj){
 <!--降雪対応文言
 <ecp:include m:id="fs_weather_trouble_sideless" filename="kousetsu_sideless.html" />
 -->
-					<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+
+					<div class="cart-notic">
+								<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
+					</div>
 					</form>
 				<!-- 商品詳細など -->
 	<div class="mimimoto_spec">
@@ -1939,22 +1970,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
-<!-- Ptengine 20170525 ここから -->
-<script type="text/javascript">
-    window._pt_lt = new Date().getTime();
-    window._pt_sp_2 = [];
-    _pt_sp_2.push('setAccount,56c49edf');
-    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    (function() {
-        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
-        atag.src = _protocol + 'js.ptengine.jp/pta.js';
-        var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
-        stag.src = _protocol + 'js.ptengine.jp/pts.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
-    })();
-</script>
-<!-- Ptengine 20170525 ここまで -->
+
 
 
 <!-- InstanceEndEditable -->
