@@ -709,57 +709,6 @@ div.res_cart a:hover{
 	box-sizing:border-box;
 }
 }
-
-/*ラジオボタン調整*/
-
-.left_sku_img + td label {float: none;display:block;}
-.left_sku_img + td input {float:right;}
-@media (max-width:640px) {
-.left_sku_img + td label {float: none;margin-top: 4px;display:block;padding-right:18px;}
-.left_sku_img + td label input {
-  display: none;
-}
-.left_sku_img + td label .r_btn {
-  position:absolute;
-	right:10px;
-  top: 0;
-	bottom:0;
-  width: 20px;
-  height: 20px;
-	margin:auto;
-}
-.left_sku_img + td label .r_btn::after{
-  content: "";
-  display: block;
-  top: 0;
-  right: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #999;
-  border-radius: 50%;
-}
-.left_sku_img + td label input:checked +.r_btn::after  {
-  color: #000;
-}
-.left_sku_img + td label input:checked + .r_btn::before  {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right:0;
-  bottom:0;
-	margin:auto;
-  width: 10px;
-  height: 10px;
-  background: #000;
-  border-radius: 50%;
-}
-}
-/*カートに入れるボタン 修正 */
-@media (max-width: 400px){
-	.res_cart a:hover {width:100%;}
-｝
 </style>
 <link rel="stylesheet" type="text/css" href="../../../contents/shop/00000006/js/jquery_zoomer/jquery.fs.zoomer.css"/>
 <link rel="stylesheet" type="text/css" href="../../../contents/shop/00000006/css/detail-zoom.css"/>
@@ -873,7 +822,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=399189536872518&amp;ev=PixelInitialized" /></noscript>
 <!-- InstanceEndEditable -->
 <!-- ▼▼▼ SmartSuggest ▼▼▼ -->
-<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=ODJBx9NCTK8IV"></script>
+<script type="text/javascript" src="//r.snva.jp/javascripts/reco/2/sna.js?k=12hZzy5Q9UzLh"></script>
 <script type="text/javascript">__snahost = "r.snva.jp";recoConstructer({});</script>
 <!-- ▲▲▲ SmartSuggest ▲▲▲ -->
 </head>
@@ -1628,17 +1577,15 @@ $(window).on('load resize', function(){
 								 </span>
 							</td>
 			                <td>
-			                	<label>
 								<span m:id="h_opt_sku_variations" value="">
 									<p class="goods_name_sku">白</p>
 								</span>
 								<span m:id="disp_disabled_radio">
-	    			                	<input m:id="l_no_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" disabled="disaabled"/><span class="r_btn"></span>
+    			                	<label><input m:id="l_no_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" disabled="disaabled"/></label>
                   				</span>
 								<span m:id="disp_radio">
-										<input m:id="l_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" /><span class="r_btn"></span>
+									<label><input m:id="l_radio_value" type="radio" id="sku_radio" name="sku_radio" value="" /></label>
 								</span>
-								</label>
     			            </td>
 						</tr>
 						</span>
@@ -1765,226 +1712,15 @@ $(window).on('load resize', function(){
 <!--/ アイコン -->
 </div>
 
-
-
-
-
-
-
-
-<!--------おすすめ新着商品はこちら-------->
-
 <!-- ▼▼▼新着情報▼▼▼ -->
 <span m:id="l_include_file_tags" filename="goodsDetail/newitem"></span>
 <!-- ▲▲▲新着情報▲▲▲ -->
 
 
-<!-----レビュー------>
-              <object class="xsp_obj" m:id="e_var_goodsReview"></object>
-				<object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
-				<object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
-				<object class="xsp_obj" m:id="e_var_review_evaluation"></object>
-				<div class="r_con_box_03">
-				<span m:id="l_pre_goods_review_detail">
-				<span m:id="l_ite_goodsReviewDetailList">
-					<h2 class="temp_tit_n02 temp_tit_n02_cor">この商品をご購入のお客様から寄せられたお声</h2>
-				</span>
-				</span>
-				<div class="sec_01 clearfix">
-				<span m:id="l_pre_goods_review_detail">
-				<span m:id="l_ite_goodsReviewDetailList">
-				<div class="i_comment_box_01">
-				<div class="title_01 clearfix">
-				<h3><span m:id="disp_review_title">これ超いい！</span></h3><p>評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span></p>
-				</div>
-				<div class="txt_box_01"><span m:id="disp_review_content">
-				この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。</span>
-				<p>ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん　投稿日：<span m:id="b_wr_add_date">2011/05/01</span></p>
-				<div class="com_icon">i</div>
-				</div>
-				</div>
-				</span>
-				<div m:id="dummy" class="i_comment_box_01 com_right pc_only">
-				<div class="title_01 clearfix">
-				<h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
-				</div>
-				<div class="txt_box_01">
-				この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
-				<p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
-				<div class="com_icon">i</div>
-				</div>
 
-				</div>
-				</div>
 
-<!-----/レビュー------>
-
-<!--------styling--------->
-
-<div class="sec_goods base_color">
-<h2 class="ttl_section">
-  <span class="ttl_section_inner">
-    <span class="ttl_section_en"><img src="/contents/iikigokochi/shop/image/kigokochi/ttl_styling.png" alt="STYLING"></span>
-    <span class="ttl_section_jp base_color"><img src="/contents/iikigokochi/shop/image/kigokochi/ttl_styling_sub.png" alt="詳細"></span>
-  </span>
-</h2>
 <div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname1">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname1"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content1">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content1"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname2">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname2"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content2">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content2"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname3">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname3"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content3">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content3"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname4">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname4"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content4">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content4"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname5">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname5"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content5">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content5"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname6">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname6"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content6">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content6"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname7">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname7"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content7">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content7"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname8">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname8"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content8">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content8"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname9">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname9"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content9">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content9"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname10">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname10"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content10">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content10"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname11">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colnam11"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content11">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content11"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname12">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname12"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content12">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content12"></span>
-			</p>
-		</span>
-	</div>
+
 	<div class="i_main">
 		<span  m:id="l_pre_disp_colname13">
 			<h4>
@@ -2000,100 +1736,14 @@ $(window).on('load resize', function(){
 	</div>
 </div>
 
-<div style="display:none !important;">
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname14">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname14"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content14">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content14"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname15">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname15"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content15">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content15"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname16">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname16"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content16">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content16"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname17">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname17"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content17">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content17"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname18">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname18"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content18">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content18"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname19">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname19"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content19">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content19"></span>
-			</p>
-		</span>
-	</div>
-	<div class="i_main">
-		<span  m:id="l_pre_disp_colname20">
-			<h4>
-			<span m:id="dummy">街歩きに必要な小物が納まる充実ポケット。</span>
-			<span m:id="disp_colname20"></span>
-			</h4>
-		</span>
-		<span m:id="l_pre_disp_content20">
-			<p><span m:id="dummy">「旅先で持ち歩く荷物は、実はそんなに多くない」という竹内さん。「ならば、小ぶりなサイズにして、機能的なポケットを充実させ・諱E､」という逆転の発想から生まれました。</span>
-				<span m:id="disp_content20"></span>
-			</p>
-		</span>
-	</div>
-</div>
-<p class="styling_notes">※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</p>
+
+
+
+
+
+
+
+<p class="styling_notes" style="text-align:right;">※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</p>
 </div>
 <br>
 <!--20161107追加-->
