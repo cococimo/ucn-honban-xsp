@@ -380,6 +380,7 @@ jQuery(document).ready(function($){ //‚±‚±‚©‚ç
 <span m:id="site_products"></span>
 <script defer="defer" language="JavaScript" type="text/javascript"><!--
 function siteCatalistRemoveCart(s_products,url){
+  if(1!=1){
   s.linkTrackVars='events,products';
   s.linkTrackEvents='scRemove';
   if (s_products)
@@ -388,18 +389,21 @@ function siteCatalistRemoveCart(s_products,url){
     s.products='';
   s.events='scRemove';
   s.tl(this,'o','cartremove');
-  setTimeout(function(){location.href=url;},1000);
+  }
+  setTimeout(function(){location.href=url;},0);
 }
 function RecalcCart_trans(){
   document.getElementsByName('cartUpdateForm')[0].submit();
 }
 function siteCatalistRecalcCart(s_products) {
+  if(1!=1){
   s.linkTrackVars='events,products';
   s.linkTrackEvents='event28';
   s.products=s_products;
   s.events='event28';
   s.tl(this,'o','recalculation');
-  setTimeout("RecalcCart_trans()",1000);
+  }
+  setTimeout("RecalcCart_trans()",0);
 }
 
 function displayChargedOptionInput() {
