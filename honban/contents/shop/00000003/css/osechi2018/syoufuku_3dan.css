@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.goods_detail { background: #000; margin-left: -100%; margin-right: -100%; }
+
+@media (max-width: 767px) { .goods_detail { margin-left: auto; margin-right: auto; } }
+
+.shopping, .inner_box04, .shopping_sp { display: none !important; }
+
+.osechi_wrapper { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif; background: #000; font-size: 18px; width: 1200px; margin-left: auto; margin-right: auto; overflow: hidden; color: #fff; line-height: 1.6; }
+
+@media (max-width: 767px) { .osechi_wrapper { font-size: 13px; width: auto; } }
+
+.header_osechi .back_img img { vertical-align: bottom; display: block; }
+
+.header_osechi .main_vi_01 { position: relative; }
+
+.header_osechi .main_vi_01 .ttl { position: absolute; z-index: 3; top: 40px; left: 0; right: 0; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_01 .ttl { margin-left: 10%; margin-right: 10%; top: 4vw; } }
+
+.header_osechi .main_vi_02 { position: relative; z-index: 2; }
+
+.header_osechi .main_vi_02 .icon_wrap { position: absolute; top: -30px; left: 0; right: 0; margin: auto; display: flex; justify-content: center; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_02 .icon_wrap { margin-left: 10%; margin-right: 10%; top: 3vw; } }
+
+.header_osechi .main_vi_02 .icon_wrap p { padding: 0 8px; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_02 .icon_wrap p { padding: 0 5px; } }
+
+.header_osechi .main_vi_02 .sub_ttl { position: absolute; top: 50px; left: 0; right: 0; margin: auto; text-align: center; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_02 .sub_ttl { margin-left: 2%; margin-right: 2%; top: 8.5vw; }
+  .header_osechi .main_vi_02 .sub_ttl img { height: auto; } }
+
+.header_osechi .main_vi_03 { position: relative; z-index: 2; }
+
+.header_osechi .main_vi_03 .icon_wrap { position: absolute; width: 100%; bottom: -100px; display: flex; justify-content: center; padding-top: 10px; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_03 .icon_wrap { bottom: -30px; } }
+
+.header_osechi .main_vi_04 { position: relative; z-index: 1; }
+
+.header_osechi .main_vi_04 .sub-ttl { position: absolute; top: 130px; left: 0; right: 0; bottom: 0; text-align: center; }
+
+@media (max-width: 767px) { .header_osechi .main_vi_04 .sub-ttl { top: 10vw; margin-left: 15%; margin-right: 15%; } }
+
+.order_wrap { width: 1010px; margin: 10px auto; position: relative; }
+
+@media (max-width: 767px) { .order_wrap { width: auto; margin-left: 5%; margin-right: 5%; } }
+
+.order_wrap .order_btn { position: absolute; top: 223px; left: 0; right: 0; text-align: center; }
+
+@media (max-width: 767px) { .order_wrap .order_btn { top: 20.5vw; margin-left: 5%; margin-right: 5%; } }
+
+.order_wrap .order_btn a { transition: opacity 0.2s ease; }
+
+.order_wrap .order_btn a:hover { opacity: 0.7; }
+
+.order_wrap .note { position: absolute; color: #fff; text-align: center; bottom: 30px; left: 0; right: 0; font-size: 16.5px; }
+
+@media (max-width: 767px) { .order_wrap .note { position: static; text-align: left; font-size: 10px; margin-left: 5%; margin-right: 5%; margin-top: 5px; } }
+
+.lead_osechi .back_img img { vertical-align: bottom; display: block; }
+
+.lead_osechi .main_vi_01 { position: relative; }
+
+.lead_osechi .main_vi_01 .ttl { position: absolute; top: 20px; left: 520px; }
+
+@media (max-width: 767px) { .lead_osechi .main_vi_01 .ttl { width: 20vw; top: 20px; left: 25vw; } }
+
+.lead_osechi .main_vi_01 .sub_ttl { position: absolute; top: 20px; right: 260px; }
+
+@media (max-width: 767px) { .lead_osechi .main_vi_01 .sub_ttl { width: 18vw; top: 20px; right: 20vw; } }
+
+.lead_osechi .txt_wrap { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_02_04.png); background-size: 1200px; background-repeat: no-repeat; background-position: 50% top; width: 1200px; margin-bottom: 80px; }
+
+@media (max-width: 767px) { .lead_osechi .txt_wrap { width: auto; margin-bottom: 50px; background-size: contain; } }
+
+.lead_osechi .txt_wrap .txt { font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif; font-size: 20px; color: #fff; width: 840px; padding-top: 90px; line-height: 1.7; margin: auto; }
+
+@media (max-width: 767px) { .lead_osechi .txt_wrap .txt { padding-top: 5vw; width: auto; margin-right: 5%; margin-left: 5%; font-size: 14px; } }
+
+.good_osechi { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_03.png); background-size: contain; background-repeat: no-repeat; background-position: 50% 30%; }
+
+@media (max-width: 767px) { .good_osechi { background-position: 50% top; background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_03.png), url(/contents/shop/00000003/image/static/osechi2018/3dan/img_03.png); background-position: left top,left bottom; background-repeat: no-repeat,no-repeat; background-size: contain,contain; } }
+
+.good_osechi .ttl { text-align: center; }
+
+@media (max-width: 767px) { .good_osechi .ttl { margin-left: 5%; margin-right: 5%; } }
+
+.good_osechi .good_content { width: 960px; margin-top: 20px; margin-left: auto; margin-right: auto; }
+
+@media (max-width: 767px) { .good_osechi .good_content { width: auto; } }
+
+@media (max-width: 767px) { .good_osechi .good_content h3 { max-width: 240px; padding-left: 5%; } }
+
+.good_osechi .good_content .txt { padding-left: 60px; padding-top: 20px; padding-bottom: 20px; width: 860px; font-weight: bold; line-height: 1.7; letter-spacing: 0.1em; }
+
+.good_osechi .good_content .txt p { text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
+
+@media (max-width: 767px) { .good_osechi .good_content .txt { width: auto; padding-left: 0; margin-right: 5%; margin-left: 5%; } }
+
+.good_osechi .good_content .sub_ttl { text-align: center; padding: 20px 0; }
+
+@media (max-width: 767px) { .good_osechi .good_content .sub_ttl { margin-left: 12%; margin-right: 12%; padding: 5px 0; }
+  .good_osechi .good_content .sub_ttl.first { margin-left: 8%; margin-right: 8%; } }
+
+.good_osechi .good_content .icon_wrap { display: flex; justify-content: center; margin-left: -80px; margin-right: -80px; }
+
+@media (max-width: 767px) { .good_osechi .good_content .icon_wrap { margin-left: 0; margin-right: 0; } }
+
+.good_osechi .good_content .icon_wrap p { padding: 0 8px; }
+
+@media (max-width: 767px) { .good_osechi .good_content .icon_wrap p { padding: 0 0; } }
+
+.menu_osechi .ttl { text-align: center; margin-top: 60px; }
+
+@media (max-width: 767px) { .menu_osechi .ttl { margin-left: 5%; margin-right: 5%; margin-top: 40px; } }
+
+.menu_osechi .layout_left { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_04_01.png); background-size: contain; background-repeat: no-repeat; background-position: 50% bottom; height: 541px; }
+
+.menu_osechi .layout_left.first { height: auto; padding-bottom: 40px; }
+
+@media (max-width: 767px) { .menu_osechi .layout_left { height: auto; background-size: cover; } }
+
+.menu_osechi .layout_right { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_04_02.png); background-size: contain; background-repeat: no-repeat; background-position: 50% bottom; height: 541px; }
+
+.menu_osechi .layout_right .menu_item_wrap { flex-direction: row-reverse; }
+
+@media (max-width: 767px) { .menu_osechi .layout_right { height: auto; background-size: cover; } }
+
+.menu_osechi .menu_item_wrap { width: 1010px; display: flex; justify-content: space-between; margin-left: auto; margin-right: auto; padding-top: 50px; font-size: 15px; }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap { width: auto; margin-left: 5%; margin-right: 5%; display: block; padding-top: 0; } }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .img { margin: 10px 20%; } }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap h3 { margin-left: 10%; margin-right: 10%; } }
+
+.menu_osechi .menu_item_wrap .sub_ttl { margin-top: 10px; }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .sub_ttl { margin-left: 15%; margin-right: 15%; } }
+
+.menu_osechi .menu_item_wrap .items_ttl { margin-top: 10px; font-weight: bold; text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .items_ttl { font-size: 12px; text-align: center; padding-bottom: 10px; font-weight: normal; } }
+
+.menu_osechi .menu_item_wrap .items { margin-top: 0; display: flex; justify-content: space-between; }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .items { max-width: 360px; margin-left: auto; margin-right: auto; } }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .items ul { width: 48%; } }
+
+.menu_osechi .menu_item_wrap .items li { display: flex; padding: 2px 0; font-weight: bold; text-shadow: 0 0 3px rgba(0, 0, 0, 0.8); }
+
+@media (max-width: 767px) { .menu_osechi .menu_item_wrap .items li { font-size: 12px; font-weight: normal; } }
+
+.setitem_osechi { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_05_01.png); background-size: contain; background-repeat: no-repeat; background-position: 50% top; height: 495px; }
+
+@media (max-width: 767px) { .setitem_osechi { background-size: cover; padding-bottom: 10vw; background-position: 50% bottom; height: auto; } }
+
+.setitem_osechi h2 { text-align: center; padding-top: 30px; }
+
+@media (max-width: 767px) { .setitem_osechi h2 { width: auto; margin-left: 10%; margin-right: 10%; padding-top: 5vw; } }
+
+.setitem_osechi .wrap { width: 860px; margin: 0 auto; display: flex; }
+
+@media (max-width: 767px) { .setitem_osechi .wrap { width: auto; display: block; margin-left: 5%; margin-right: 5%; padding-top: 3vw; } }
+
+.setitem_osechi .wrap .img { flex: 1 1 304px; }
+
+@media (max-width: 767px) { .setitem_osechi .wrap .img { max-width: 120px; margin-left: auto; margin-right: auto; } }
+
+.setitem_osechi .wrap .txt { flex: 1 1 450px; color: #000; padding-top: 40px; font-size: 20px; font-weight: bold; }
+
+.setitem_osechi .wrap .txt .note { margin-top: 40px; font-size: 16px; }
+
+@media (max-width: 767px) { .setitem_osechi .wrap .txt .note { margin-top: 10px; font-size: 10px; } }
+
+@media (max-width: 767px) { .setitem_osechi .wrap .txt { font-size: 13px; padding-top: 10px; } }
+
+.line { text-align: center; }
+
+.otheritem_osechi { background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_06_01.png); background-size: contain; background-repeat: no-repeat; background-position: 50% top; height: 496px; }
+
+@media (max-width: 767px) { .otheritem_osechi { background-size: cover; padding-bottom: 10vw; background-position: 50% bottom; height: auto; } }
+
+.otheritem_osechi h2 { text-align: center; padding-top: 30px; padding-bottom: 20px; }
+
+@media (max-width: 767px) { .otheritem_osechi h2 { width: auto; margin-left: 5%; margin-right: 5%; padding-top: 5vw; } }
+
+.otheritem_osechi .wrap { width: 960px; margin: 0 auto; display: flex; }
+
+@media (max-width: 767px) { .otheritem_osechi .wrap { width: auto; display: block; margin-left: 5%; margin-right: 5%; padding-top: 3vw; } }
+
+.otheritem_osechi .wrap .img { flex: 1 1 439px; }
+
+@media (max-width: 767px) { .otheritem_osechi .wrap .img { max-width: 120px; margin-left: auto; margin-right: auto; } }
+
+.otheritem_osechi .wrap .txt { flex: 1 1 450px; padding-right: 20px; font-size: 20px; font-weight: bold; }
+
+.otheritem_osechi .wrap .txt p { text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8); }
+
+@media (max-width: 767px) { .otheritem_osechi .wrap .txt { padding-right: 0; } }
+
+.otheritem_osechi .wrap .txt .btn { margin-top: 40px; }
+
+@media (max-width: 767px) { .otheritem_osechi .wrap .txt .btn { margin-top: 10px; font-size: 10px; } }
+
+.otheritem_osechi .wrap .txt .btn a { transition: opacity 0.2s ease; }
+
+.otheritem_osechi .wrap .txt .btn a:hover { opacity: 0.8; }
+
+@media (max-width: 767px) { .otheritem_osechi .wrap .txt { font-size: 13px; padding-top: 10px; } }
+
+.spec_osechi { margin-top: 30px; margin-bottom: 30px; background: url(/contents/shop/00000003/image/static/osechi2018/3dan/img_03.png); background-size: contain; background-repeat: no-repeat; background-position: 50% 40px; }
+
+.spec_osechi .lead_txt { text-align: center; }
+
+.spec_osechi .spec_box { background: #fff; width: 980px; margin: 20px auto; padding: 30px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box { width: auto; margin-left: 5%; margin-right: 5%; padding: 10px; } }
+
+.spec_osechi .spec_box h2 { text-align: center; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box h2 img { max-width: 300px; } }
+
+.spec_osechi .spec_box .point_txt.icon a { text-decoration: underline; color: #d20004; font-weight: normal; }
+
+.spec_osechi .spec_box .point_txt.icon a:before { content: ""; position: relative; display: inline-block; background: url(/contents/shop/00000003/image/static/osechi2018/3dan/PDF_32.png); width: 30px; height: 30px; top: 5px; position: relative; background-size: contain; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .point_txt.icon a:before { width: 20px; height: 20px; } }
+
+.spec_osechi .spec_box .price_wrap { margin-top: 20px; display: flex; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .price_wrap { display: block; margin-top: 10px; } }
+
+.spec_osechi .spec_box .price_wrap .img { flex: 1 1 409px; }
+
+.spec_osechi .spec_box .price_wrap .txt { flex: 1 1 440px; padding-top: 20px; }
+
+.spec_osechi .spec_box .price_wrap .txt .order_btn { margin-top: 15px; }
+
+.spec_osechi .spec_box .price_wrap .txt .order_btn a { transition: opacity 0.2s ease; }
+
+.spec_osechi .spec_box .price_wrap .txt .order_btn a:hover { opacity: 0.7; }
+
+.spec_osechi .spec_box .price_wrap .how_order .how_ttl { background: #d4d4d4; color: #000; text-align: center; padding: 5px 0; margin-top: 40px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .price_wrap .how_order .how_ttl { margin-top: 10px; } }
+
+.spec_osechi .spec_box .price_wrap .how_order .items { display: flex; justify-content: space-between; margin-top: 10px; }
+
+.spec_osechi .spec_box .price_wrap .how_order .items span { background: #00ac53; display: block; width: 49%; text-align: center; font-size: 16px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .price_wrap .how_order .items span { font-size: 13px; } }
+
+.spec_osechi .spec_box .price_wrap .how_order .links { padding-top: 10px; }
+
+.spec_osechi .spec_box .price_wrap .how_order .links a { color: #000; }
+
+.spec_osechi .spec_box .price_wrap .how_order .links a.cmn_link01::after { background: #000; }
+
+.spec_osechi .spec_box .price_wrap .how_order .links a:last-child { margin-left: 40px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .price_wrap .how_order .links a { font-size: 13px; } }
+
+.spec_osechi .spec_box .note_wrap { border-top: 1px solid #000; margin-top: 15px; padding-top: 15px; color: #000; }
+
+.spec_osechi .spec_box .note_wrap .ttl { font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif; font-weight: bold; color: #d20004; font-size: 22px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .note_wrap .ttl { font-size: 16px; } }
+
+.spec_osechi .spec_box .note_wrap .point_txt { font-weight: bold; color: #d20004; }
+
+.spec_osechi .spec_box .spec_txt_wrap { border-top: 1px solid #000; margin-top: 15px; padding-top: 15px; color: #000; }
+
+.spec_osechi .spec_box .spec_txt_wrap .acrobat_btn { margin-top: 20px; }
+
+.spec_osechi .spec_box .spec_txt_wrap .acrobat_btn img { width: 159px; }
+
+@media (max-width: 767px) { .spec_osechi .spec_box .spec_txt_wrap .acrobat_btn img { width: 90px; } }
