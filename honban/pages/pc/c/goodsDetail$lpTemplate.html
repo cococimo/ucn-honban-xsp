@@ -1339,25 +1339,26 @@ function showCartButton1(obj){
 	<style>
 	.purchase_fixed .inner a:hover {cursor: pointer;}
 	.tel.js-tel_sticky {display:none;}
+
 	.sp {display: none !important;}
 	.pc {display: block !important;}
-
 	@media all and (min-width: 0) and (max-width: 767px) {
 		.sp {display: block !important;}
 		.pc {display: none !important;}}
 		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
-		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;justify-content: space-between;margin: 0 auto;}
-		.purchase_fixed .inner > p:first-of-type img {width: 306px;}
-		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
-		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
-		.purchase_fixed .inner a:hover {opacity: .85;
+		#contents .purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;justify-content: space-between;margin: 0 auto !important;}
+		
+		/*#contents .purchase_fixed .inner > p:first-of-type img {width: 306px;}*/
+		#contents .purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		#contents .purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		#contents .purchase_fixed .inner a:hover {opacity: .85;
 		}
 
 	@media all and (min-width: 0) and (max-width: 767px) {
 		.inner08 {margin-top: -60px;padding-top: 60px;	}
 		.footer #pagetop_sp {bottom: 105px;}
-		.purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
-		.purchase_fixed .inner > * {width: 100%;}
+		#contents .purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
+		#contents .purchase_fixed .inner > * {width: 100%;}
 		.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
 		.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
 		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
