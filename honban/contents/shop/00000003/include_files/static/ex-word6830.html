@@ -9,7 +9,6 @@
 </form>
 <!--/ 商品購入カート -->
 <!-- ▲▲LPカートに入れる設定▲▲ -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="contents/shop/00000003/js/jquery.fixedheaderscroll.js"></script>
 <script type="text/javascript" src="contents/shop/00000003/js/exword2.js"></script>
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/exword1-style.css" media="all">
@@ -1344,29 +1343,38 @@ position: absolute;
 
 <!-- ▼▼▼ naviplus　▼▼▼ -->
 <script>
-	var NaviPlus_member_no = document.tagForm.member_no.value;
-	var NaviPlus_ext_goods_sku_code = 'DCE83';
-	var NaviPlus_goods_url = 'https://www.cococimo.jp/shop/c/static/ex-word6830/';	
-	var NaviPlus_goods_name = 'カシオ電子辞書 ex-word 限定モデル「XD-SK6830」';
-	var NaviPlus_goods_price = 38370;
-	var NaviPlus_goods_img_url = "https://www.cococimo.jp/shop/contents/c/goods/image/item_sum_dce83.png";
+	window.onload = function() {
+
 
 	
-	document.write("<script type=\'text/javascript\'>");
-		document.write("_sna_dam.push([\'behaviorType\', 1]);");
-		if( NaviPlus_member_no !== "0000000000") {
-			document.write("_sna_dam.push([\'userCode\', \'" + NaviPlus_member_no +"\']);");
-		}
-		document.write("_sna_dam.push([\'item\', {");
-		document.write("\'attributes\': {");
-			document.write("\'name\': \'"+ NaviPlus_goods_name +"\',");
-				document.write("\'url1\': \'" +  NaviPlus_goods_url+ "',");
-				document.write("\'price1\': \'" + NaviPlus_goods_price +"\',");
-				document.write("\'imageUrl1\': \'"+ NaviPlus_goods_img_url +"\'");
-			document.write(" },");
-		document.write("\'code\': \'" + NaviPlus_ext_goods_sku_code + "\'");
-	document.write("}]);");
-	document.write("<\/script>");
+		var NaviPlus_member_no = document.tagForm.member_no.value;
+		var NaviPlus_ext_goods_sku_code = 'DCE83';
+		var NaviPlus_goods_url = 'https://www.cococimo.jp/shop/c/static/ex-word6830/';	
+		var NaviPlus_goods_name = 'カシオ電子辞書 ex-word 限定モデル「XD-SK6830」';
+		var NaviPlus_goods_price = 38370;
+		var NaviPlus_goods_img_url = "https://www.cococimo.jp/item_ex-word/contents/c/goods/image/item_sum_dce83.png";
+
+		var Naviscript = document.createElement('script');
+
+
+		
+			Naviscript.innerHTML = "_sna_dam.push([\'behaviorType\', 1]);";
+			if( NaviPlus_member_no !== "0000000000") {
+				Naviscript.innerHTML += "_sna_dam.push([\'userCode\', \'" + NaviPlus_member_no +"\']);";
+			}
+			Naviscript.innerHTML += "_sna_dam.push([\'item\', {";
+			Naviscript.innerHTML += "\'attributes\': {";
+				Naviscript.innerHTML += "\'name\': \'"+ NaviPlus_goods_name +"\',";
+					Naviscript.innerHTML += "\'url1\': \'" +  NaviPlus_goods_url+ "',";
+					Naviscript.innerHTML += "\'price1\': \'" + NaviPlus_goods_price +"\',";
+					Naviscript.innerHTML += "\'imageUrl1\': \'"+ NaviPlus_goods_img_url +"\'";
+				Naviscript.innerHTML += " },";
+			Naviscript.innerHTML += "\'code\': \'" + NaviPlus_ext_goods_sku_code + "\'";
+		Naviscript.innerHTML += "}]);";
+	
+	document.body.appendChild(Naviscript);
+
+	};
 </script> 
 <!-- ▲▲▲ naviplus　▲▲▲ -->
 
