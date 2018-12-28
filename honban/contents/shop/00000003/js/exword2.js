@@ -38,7 +38,11 @@ $(function() {
 	// アコーディオン閉じる時の座標修正用
 	function accordionAdj(thisBtnTop) {
 		//console.log(thisBtnTop);
-		thisAdjOffset = -20;
+		if($(window).width() > 767){
+			thisAdjOffset = -20;
+		}else{
+			var thisAdjOffset = $('#header').outerHeight() * 1.5 * -1;
+		}
 		$('html,body').animate({scrollTop: thisBtnTop + thisAdjOffset}, 300);
 	}
 	

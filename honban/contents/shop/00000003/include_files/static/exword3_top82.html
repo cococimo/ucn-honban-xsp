@@ -1,0 +1,1269 @@
+<script type="text/javascript" src="contents/shop/00000003/js/jquery.fixedheaderscroll.js"></script>
+<script type="text/javascript" src="contents/shop/00000003/js/exword2.js"></script>
+<script type="text/javascript" src="/contents/shop/00000003/js/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/exword1-style.css" media="all">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/exword2-style.css" media="all">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/magnific-popup.css" media="all">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/exword1-style-ie8.css" media="all">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(function(){
+	    $('*:last-child').addClass('last-child');
+	});
+</script>
+<![endif]-->
+<style>
+	#content_wrap *{font-family:'ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif}
+	#content_wrap .mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+	#content_wrap .mincho *{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
+	/*ナビ初期　非表示*/
+	#content_wrap #c-nav {
+	display:none;
+	}
+	/*メイン画像差し替え*/
+	#content_wrap .first-ttl01>h1 {
+	float: none;
+	width: 100%;
+	padding: 0 0 0;
+	margin: 0 0 0 0;
+	}
+	#content_wrap .first-ttl01 {
+	padding: 0 0 0 0;
+	}
+	#content_wrap .first-box01>div:first-child {
+	width: 880px;
+	}
+	#content_wrap .first-box01>div:last-child {
+	width: 80px;
+	}
+	@media screen and (max-width: 640px) {
+	#content_wrap .first-box01>div:first-child {
+	width: 100%;
+	}
+	#content_wrap .first-box01>div:last-child {
+	width: 100%;
+	}
+	#content_wrap .first-ttl01>h1 {
+	margin: 0 0 0 0;
+	}
+	#content_wrap .first-box01>div:first-child img {
+	top: 0;
+	}
+	}
+	/* 画像重なり順修正 */
+	#content_wrap .test02first #box0203 .img01{z-index:99;}
+	#content_wrap .test02first .box02 p.p01{position:relative;z-index: 99;}
+  
+  /*おすすめ商品非表示*/
+  #content_wrap .recommend,
+  #content_wrap h2.recommend_tit.cmn_tit01 {display::none !important;width:0;height:0;overflow:hidden;}
+
+  /*価格表示*/
+	#content_wrap .ninth .ninth-box01>div:first-child>div:first-child dl {
+	    border-bottom: 1px solid #929292;
+	    margin-bottom: 15px;
+	    display: -webkit-flex;
+	    display: flex;
+	    -webkit-align-items: center;
+	    align-items: center;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    padding-left: 0 !important;
+	}
+	#content_wrap .ninth .ninth-box01>div:first-child>div:first-child dt {
+	    font-size: 14px;
+	    display: inline;
+	    position: relative;
+	    bottom: 0;
+	    padding-right: 20px;
+	}
+	  #content_wrap .ninth .ninth-box01>div:first-child>div:first-child dd {
+	    font-size: 24px;
+	    color: #333;
+	    display: inline;
+	    line-height: 62px;
+	}
+	#content_wrap .ninth .ninth-box01>div:first-child>div:first-child dd span {
+	    font-size: 24px;
+	    font-weight: 100;
+	    color: #333;
+	    position: relative;
+	    bottom: 0px;
+	    left: 5px;
+	    vertical-align: baseline;
+	}
+@media screen and (max-width: 640px) {
+#content_wrap .eigth {
+    width: auto;
+    margin: 0 0 30px !important;
+  }
+}
+</style>
+
+<style>
+#content_wrap .eigth .eigth-box01>div{top: 313px;}
+#content_wrap .eigth .eigth-box01 p {text-align: left;}
+#content_wrap .eigth .eigth-box01>div dd, .eigth .eigth-box01>div dt {font-size: 14px;}
+
+/*オリジナルコンテンツ4追加▼▼*/
+#content_wrap .seventh .seventh-container {
+    position: relative;
+    height: 820px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 h3 span {
+	display: inline-block;
+	float: left;
+	margin-bottom: 20px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 {
+    position: absolute;
+    top: 525px;
+    left: 0;
+    width: 560px;
+    padding-left: 205px;
+}
+#content_wrap .seventh .seventh-container .seventh-box04 img {
+position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+@media screen and (max-width: 640px) {
+	#content_wrap .seventh .seventh-container {
+	    position: relative;
+	    height: auto;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 {
+	    position: static;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    padding-left: 0;
+	    margin-bottom: 20px;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 {
+	    position: static;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 .cl-fix>div:first-child {
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 img {
+	    position: static;
+	    left: 0;
+	    top: 0;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box04 h3 span {
+		float: none;
+		margin-bottom: 0;
+	}
+	#content_wrap .seventh .seventh-container .seventh-box03 {
+		margin-bottom: 20px;
+	}
+}
+/*オリジナルコンテンツ4追加▲▲*/
+
+
+/*オリジナルコンテンツレイアウト変更▼▼*/
+@media screen and (min-width: 640px) {
+  #content_wrap .seventh .seventh-container { height:auto;overflow:hidden;margin-bottom:20px;}
+  #content_wrap .seventh .seventh-container .seventh-box01 img,
+  #content_wrap .seventh .seventh-container .seventh-box02 img,
+  #content_wrap .seventh .seventh-container .seventh-box03 img,
+  #content_wrap .seventh .seventh-container .seventh-box04 img {
+    position:static;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box01,
+  #content_wrap .seventh .seventh-container .seventh-box02,
+  #content_wrap .seventh .seventh-container .seventh-box03,
+  #content_wrap .seventh .seventh-container .seventh-box04 {
+    position:static;
+    padding-left: 0;
+    width:auto;
+    width:48%;
+    float:left;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box03,
+  #content_wrap .seventh .seventh-container .seventh-box04 {
+    margin-top:30px;
+  
+  }
+  
+  #content_wrap .seventh .seventh-container .seventh-box01 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div:first-child,
+  #content_wrap .seventh .seventh-container .seventh-box04 .cl-fix div:first-child {
+    height:180px;
+    text-align:center;
+    margin-bottom:10px;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box01 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div img,
+  #content_wrap .seventh .seventh-container .seventh-box04 .cl-fix div img {
+    width:auto;
+    max-height:180px;
+  }
+  
+  #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix div img {
+    margin-top:30px;
+  }
+  #content_wrap .seventh .seventh-container .seventh-box03 {clear:both;}
+  #content_wrap .seventh .seventh-container .seventh-box02,
+  #content_wrap .seventh .seventh-container .seventh-box04 { float:right;}
+}
+
+
+@media screen and (max-width: 640px) {
+  #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:first-child {
+      /*float: none;*/
+      max-width: 100%;
+      text-align: left;
+      /*width:100%;*/
+    }
+    /*#content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:last-child {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }*/
+    #content_wrap .seventh .seventh-container .seventh-box02 .cl-fix>div:first-child,
+    #content_wrap .seventh .seventh-container .seventh-box03 .cl-fix>div:first-child {
+      text-align:center !important;
+     
+    }
+      
+  }
+
+</style>	
+
+<style>
+	/*プレゼントレイアウト変更*/
+	#content_wrap .third .third-ttl>div:first-child {background: #cf0600;color:#fff600;font-weight: bold;}
+	#content_wrap .third .third-ttl>div:first-child span {color: #fff600;font-weight: bold;}
+	#content_wrap .third .third-box01>div:last-child {height: auto;}
+	@media screen and (max-width: 640px) {
+		#content_wrap .third .third-ttl>div:last-child {width: 63%;}
+	}
+	/*ページ全体余白調整*/
+	@media screen and (max-width: 640px) {
+		#contents_in {padding: 0 0;}
+		#content_wrap .first {padding-left: 10px;padding-right: 10px;}
+		#content_wrap .wrap_con {margin: 0 auto 20px;}
+	}
+
+	/*カートボタン位置調整*/
+	#content_wrap .third .third-box01 {
+	    margin-bottom: 0;
+	}
+  /*お届け日　位置調整*/
+  #content_wrap .note {
+  	position: relative;
+  	top:-20px;
+  	left: 20px;
+  }
+ @media screen and (max-width: 640px) {
+	#content_wrap .note {position: static;}
+	#content_wrap .ninth .ninth-box01>div:last-child {float: none;width: 100%;}
+	#content_wrap .ninth .ninth-box01>div:last-child img {position: static;width: 100%;}
+	 }
+	 /*注釈*/
+	 #content_wrap p.notice {font-size: 13px;}
+	 .first-box01 {position: relative;}
+	 .first-box01 .notice{position: absolute;bottom:-10px;left:10px;}
+	 #content_wrap .first-box01>div:first-child {padding-bottom: 20px;}
+	@media screen and (max-width: 640px) {
+		#content_wrap p.notice {font-size: 11px;line-height: 1.5;}
+		.first-box01 .notice{position: static;padding-bottom: 20px !important;padding-top: 10px !important;}
+		 #content_wrap .first-box01>div:first-child {padding-bottom: 0;}
+	}
+	/*スペック微調整*/
+	#content_wrap .bs-wrap.eigth .eigth-box01>div {top: 323px;}
+	#content_wrap .bs-wrap.eigth .eigth-box01>div dt {position: relative;line-height: 1em;vertical-align: middle;display: inline-block;}
+	#content_wrap .bs-wrap.eigth .eigth-box01>div dt:before {
+	width: 0.8em　!important;
+    height: 0.8em　!important;
+    background: #db3a37;
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: auto　!important;
+    display: inline-block　!important;
+    margin: 0.1em　!important;
+	}
+	/*アスタリスク*/
+	.forth-p01 {position: relative;}
+	.forth-p01 .asterisk {font-size: .5em;position: relative;top:-0.5em;}
+	/*便利機能表示調整*/
+	#content_wrap .forth-container p.forth-p01 {margin-right: -42px;}
+	@media screen and (max-width: 640px) {
+		#content_wrap .forth-container p.forth-p01 {margin-right: 0;}
+	}
+</style>
+
+<style>
+/*キャンペーンバナー*/
+#content_wrap .cp_bnr_wrap {
+	margin-bottom:30px;
+	font-size: 16px;
+	width: 920px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#content_wrap .cp_bnr_wrap .point_txt.icon {
+	padding-top: 20px;
+}
+#content_wrap .cp_bnr_wrap .point_txt.icon,
+#content_wrap .cp_bnr_wrap .acrobat_btn {
+	text-align:center;
+	width: 936px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+}
+#content_wrap .cp_bnr_wrap .point_txt.icon a {color:#bc001d;text-decoration: underline;font-weight: bold;}
+#content_wrap .cp_bnr_wrap .point_txt a:hover {text-decoration: none;}
+#content_wrap .cp_bnr_wrap .point_txt.icon:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(/contents/shop/00000003/image/static/img/exword4/PDF_32.png);
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    position: relative;
+    background-size: contain;
+}
+#content_wrap .cp_bnr_wrap .acrobat_btn {margin-top: 10px;}
+#content_wrap .cp_bnr_wrap .acrobat_btn a {display: inline-block;vertical-align: middle;}
+#content_wrap .cp_bnr_wrap .acrobat_btn img{max-width:159px;}
+
+@media (max-width: 768px) {
+	#content_wrap .cp_bnr_wrap {
+		width: 100%;
+		box-sizing: border-box;
+		font-size: 1.1em;
+	}
+	#content_wrap .cp_bnr_wrap .point_txt.icon,
+	#content_wrap .cp_bnr_wrap .acrobat_btn {
+		width:100%;
+	}
+	#content_wrap .cp_bnr_wrap .acrobat_btn {
+		font-size: .8em;
+	}
+	#content_wrap .cp_bnr_wrap .acrobat_btn img {
+		padding-bottom: 5px;
+	}
+	#content_wrap .cp_bnr_wrap .point_txt.icon {
+		padding-top: 0;
+		padding-bottom: 10px;
+
+	}
+}
+</style>
+
+<!-- /*▼▼CM動画設置*/ -->
+<link rel="stylesheet" href="/contents/shop/00000003/css/magnific-popup.css" type="text/css" media="all" charset="utf-8" />
+<style>
+	.wrap_con {padding-top: 0 !important;margin-top: 0 !important;}
+	#content_wrap .main_img > img {padding-top:0;}
+	#content_wrap .main_img .cm {
+		background:#007B37;
+		border-radius: 6px;
+		border:2px solid #D3E7AE;
+		width:225px;
+		padding:10px;
+		position: absolute;
+		top:212px;
+		left: 379px;
+	}
+	#content_wrap .main_img .cm h2 {
+		font-family:"ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+		color:#ffec00;
+		text-align: center;
+		padding-top: 0;
+		padding-bottom: 14px;
+		font-size: 18px;
+		line-height: 18px;
+		font-weight:bold;
+
+	}
+	#content_wrap .main_img .cm .youtubewrap {
+		border:2px solid #ffec00;
+	}
+	#content_wrap .main_img .cm .youtubewrap img {
+		width: 100%;
+	}
+	#content_wrap .main_img .link {
+		text-align: center;
+		margin:auto;
+		display: block;
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		box-sizing:border-box;
+		background:#ecf9f3;
+	}
+	#content_wrap .main_img .link a {
+	    width: 618px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    bottom: 20px;
+	}
+	#content_wrap .main_img .link img {
+	    width: 618px;
+	}
+
+
+	#content_wrap #content_wrap .main_img .link a:hover {
+    	opacity: 0.7;
+	}
+@media (max-width: 767px) and (min-width: 0) {
+	#content_wrap .main_img > img {padding-top:0;}
+	#content_wrap .main_img .link a {position: static;}
+	#content_wrap .main_img {padding-bottom:14px;}
+	#content_wrap .main_img .link,
+	#content_wrap .main_img .cm {position:static;border:none;margin-top:10px;}
+	#content_wrap .main_img .cm {width:auto;margin-left: 5%;;margin-right: 5%;}
+	#content_wrap .main_img .cm h2 {font-size:1.4em;}
+	#content_wrap .main_img .link {max-width: 67vw;margin-bottom:10px;}
+}
+
+</style>
+<!-- ▲▲CM動画設置*/　-->
+
+<div class="wrap_con">
+<!-- <div id="c-nav" class="c-nav">
+	<p id="c-nav-open" class="c-nav-btn">
+		<img src="contents/c/shop/image/sp/sp_img_nav.png" alt="メニュー" width="48">
+	</p>
+	<div class="c-nav-inner">
+		<p id="c-nav-close" class="c-nav-btn">
+			<img src="contents/c/shop/image/sp/sp_img_nav_close.png" alt="閉じる" width="48">
+		</p>
+		<ul>
+			<li class="nav01">
+				<a href="#merit">どんな疑問もスグに解決！</a>
+			</li>
+			<li class="nav02">
+				<a href="#function">"楽しく" "カンタン"に調べられる</a>
+			</li>
+			<li class="nav03">
+				<a href="#review">全国からお喜びの声が続々と！</a>
+			</li>
+			<li class="nav04">
+				<a href="#contain">収録内容</a>
+			</li>
+			<li class="nav05">
+				<a href="#original">オリジナルコンテンツ</a>
+			</li>
+		</ul>
+	</div>
+</div> -->
+<div class="bs-wrap first">
+	<div class="cl-fix">
+		<div class="main_img"><img src="contents/shop/00000003/image/static/img/exword4/main_img.png" alt="テレビCM・新聞広告で話題！ココチモオリジナル　カシオ電子辞書　期間限定プレゼント付き！　1/11（金）まで　テレビＣＭ放送中" class="viewPc"><img src="contents/shop/00000003/image/static/img/exword4/sp_main_img.png" alt=テレビCM・新聞広告で話題！ココチモオリジナル　カシオ電子辞書　期間限定プレゼント付き！　1/11（金）まで　テレビＣＭ放送中" class="viewSp">
+
+			<div class="cm">
+				<h2>テレビCM放送中</h2>
+				<div class="youtubewrap">
+					<div class="inner">
+						<a class="popup-youtube" href="//www.youtube.com/watch?v=iA0KOrZML54"><img src="/contents/shop/00000003/image/static/img/exword4/cm_youtube.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	
+<!-- ELTEX mod start -->
+<!--
+	<form name="cartGoodsAddForm002" method="POST" action="/shop/cartGoodsAdd.do">
+		<input type="hidden" name="_S" value="c">
+		<input type="hidden" name="display_code" value="104">
+		<input type="hidden" name="goods_sku_code" value="00000275">
+		<input type="hidden" name="ext_goods_sku_code" value="DCE80">
+		<input type="hidden" name="order_num_string" value="1">
+	-->
+
+	<!--  <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
+	<p class="shopping mt30"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
+	<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+	<!--	</form>-->
+
+</div>
+<!--　出し分け▼▼ -->
+<!--　出し分け▲▲ -->
+<div class="bs-wrap third">
+	<!-- プレゼント▼▼  -->
+		<div class="third-ttl cl-fix">
+			<div><span>1</span>月<span>11</span>日(金)まで</div>
+			<div><img src="contents/shop/00000003/image/static/img/exword4/third01.png" alt="期間限定プレゼント付き"></div>
+		</div>
+		<div class="third-box01 cl-fix">
+			<div><img src="contents/shop/00000003/image/static/img/exword4/third02.png" alt="消費カロリーが一目でわかる"></div>
+			<div>
+				<p class="third03"><img src="contents/shop/00000003/image/static/img/exword4/third03.png" alt="期間限定プレゼント"></p>
+				<h3>歩数計</h3>
+				<p class="third-p01">上記期限までに『カシオ電子辞書』をお申し込みの方に、ウォーキングに便利な「歩数計」をプレゼント。消費カロリーが一目で分かり、運動のやる気に繋がります！クリップ付きでお出掛けついでに簡単に身に付けられ、毎日の健康管理にオススメです！ぜひお早めにお申し込みください。<br>
+<br>
+【仕様】●サイズ(約)：幅5.5×奥行4.0×高さ3.0cm（閉時）●振子式●歩数表示：最小1歩～最大99,999歩●電池付き（動作確認用：アルカリボタン電池LR1130×1個）●台湾製<br>
+※仕様などは予告なく変更になる可能性がございます。</p><img src="contents/shop/00000003/image/static/img/exword1/third04.png" class="third04">
+			</div>
+		</div>
+    　 <!--　プレゼント▲▲ -->
+	<!--　キャンペーン▼▼ -->
+	<div class="cp_bnr_wrap">
+		<p class="bnr_img"><img class="viewPc" src="contents/shop/00000003/image/static/img/exword4/cp_bnr.jpg" alt="ココチモ会員に登録・ログインしてカシオ電子辞書をご購入された方限定！！抽選で100名様に図書カード3,000円分プレゼント！！キャンペーン期間：2019年1月4日（金）-1月11日（金）午後11時59分"><img class="viewSp" src="contents/shop/00000003/image/static/img/exword4/cp_bnr_sp.jpg" alt="ココチモ会員に登録・ログインしてカシオ電子辞書をご購入された方限定！！抽選で100名様に図書カード3,000円分プレゼント！！キャンペーン期間：2019年1月4日（金）-1月11日（金）午後11時59分"></p>
+		<p class="point_txt icon"><a href="/contents/shop/00000003/image/static/img/exword4/ex-word_campaign.pdf" target="_blank">キャンペーン要綱についてはこちらをご覧ください。</a>　<br class="viewSp">※pdfファイルが開きます。</p>
+
+		<p class="acrobat_btn"><a href="https://get.adobe.com/jp/reader/" target="_blank"><img src="/contents/shop/00000003/image/static/img/exword4/acrobat_btn.png" alt=""></a><br class="viewSp">（Adobe - Adobe Reader のダウンロードサイトに移動します。）</p>
+	</div>
+	<!--　キャンペーン▲▲ -->
+
+</div>
+
+
+
+
+<!-- cart -->
+<!-- ELTEX mod start -->
+<!--
+	<form name="cartGoodsAddForm002" method="POST" action="/shop/cartGoodsAdd.do">
+		<input type="hidden" name="_S" value="c">
+		<input type="hidden" name="display_code" value="104">
+		<input type="hidden" name="goods_sku_code" value="00000275">
+		<input type="hidden" name="ext_goods_sku_code" value="DCE80">
+		<input type="hidden" name="order_num_string" value="1">
+	-->
+
+
+<!-- 値段▼ -->
+<div class="bs-wrap eleventh">
+	<!--<span style="display:block;padding:14px 0;font-size:16px;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px">
+		<b style="color:red">本商品は好評のため、現在欠品中です。商品のお届けは、5月下旬から6月中旬を予定しております。<br>
+		予めご了承ください。
+			</b>
+	</span>-->
+<!-- 	<div class="eleventh-ttl01">
+		<div class="cl-fix">
+			<div>通販<br>限定</div>
+			<h2><img src="contents/shop/00000003/image/static/img/exword1/eigth01.png" alt="カシオ電子辞書"><br><img src="contents/shop/00000003/image/static/img/exword1/eigth02.png" alt="カシオ電子辞書" class="eigth02"></h2>
+			<div class="sp-n">
+				<dl>
+					<dt>一括払価格</dt>
+					<dd>38,370<span>円</span></dd>
+				</dl>
+				<p>※価格は全て税込みです。</p>
+			</div>
+		</div>
+	</div>
+	<div class="sp-b ninth-box01 cl-fix">
+		<div>
+			<div>
+				<dl>
+					<dt>一括払価格</dt>
+					<dd>38,370<span>円</span></dd>
+				</dl>
+				<p>※価格は全て税込みです。</p>
+			</div>
+		</div>
+	</div> -->
+	<!-- 値段▲ -->
+ <!--  <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
+	<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
+	<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+	<!--	</form>-->
+
+</div>
+<link href="/contents/c/css/exword2_top82.css" rel="stylesheet" type="text/css" media="all" />
+<div id="merit" class="wrap test02first">
+	<h2 class="h201"><img src="contents/shop/00000003/image/static/exword2_top82/third01.png" alt="どんな疑問もスグに解決日常生活から旅行まで幅広く応えます" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-third01.png" alt="どんな疑問もスグに解決日常生活から旅行まで幅広く応えます" class="spi"></h2>
+	<div class="box01">
+		<h3><img src="contents/shop/00000003/image/static/exword2_top82/third02.png" alt="こんな方にオススメです"></h3>
+		<ul>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third03.png" alt="ニュースの言葉を理解したい"></li>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third04.png" alt="花や鳥の名前を知りたい"></li>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third05.png" alt="自分や家族の健康が気になる"></li>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third06.png" alt="旅行が好き、旅の計画を立てたい"></li>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third07.png" alt="趣味を始めたい、深めたい"></li>
+			<li><img src="contents/shop/00000003/image/static/exword2_top82/third08.png" alt="語学に興味がある 等々…"></li>
+		</ul>
+		<p class="p01"><img src="contents/shop/00000003/image/static/exword2_top82/third09.png" alt="操作ラクラク"></p>
+		<p class="p02"><img src="contents/shop/00000003/image/static/exword2_top82/third10.png" alt="デジタル植物図鑑"></p>
+		<p class="p03"><img src="contents/shop/00000003/image/static/exword2_top82/third11.jpg" alt="語学に興味がある 等々…"></p>
+	</div>
+	<h2 class="h202 spn"><img src="contents/shop/00000003/image/static/exword2_top82/third12.png" alt="楽しむ夫婦"></h2>
+	<div id="box0201" class="box02">
+		<h3><img src="contents/shop/00000003/image/static/exword2_top82/third13.png" alt="有名辞書を網羅しています"></h3>
+		<h4 class="h401 mincho"><img src="contents/shop/00000003/image/static/exword2_top82/h401.png" alt="情報の宝庫。持ち運べる図書館(男性77歳)" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-h401.png" alt="情報の宝庫。持ち運べる図書館(男性77歳)" class="spi">
+		</h4>
+		<p class="p01">というお声の通り、信頼の辞書を幅広いジャンルで網羅。漢字のど忘れ、冠婚葬祭マナー、身近な法律など<br class="spn">すぐに調べられて安心。</p>
+		<p class="img01"><img src="contents/shop/00000003/image/static/exword2_top82/third14.jpg" alt="ブリタニカ現代用語"></p>
+		<p class="img02"><img src="contents/shop/00000003/image/static/img/exword4/third15.jpg" alt="ブリタニカ国際大百科事典"></p>
+		<p class="p02 product">◎ブリタニカ国際大百科事典<br><span>（ブリタニカ・ジャパン）</span></p>
+		<h4 class="h402 mincho"><img src="contents/shop/00000003/image/static/img/exword4/h402.png" alt="こんなにも便利なものがあったのか。もっと早く知りたかったという思いです(男性77歳)" class="spn"><img src="contents/shop/00000003/image/static/img/exword4/sp-h402.png" alt="こんなにも便利なものがあったのか。もっと早く知りたかったという思いです(男性77歳)" class="spi">
+		</h4>
+		<p class="img03"><img src="contents/shop/00000003/image/static/img/exword4/third16.jpg" alt="楷行草 筆順字典"></p>
+		<p class="p03 product">◎楷行草 筆順字典<br><span>（大修館書店）</span></p>
+		<p class="img04"><img src="contents/shop/00000003/image/static/exword2_top82/third17.jpg" alt="広辞苑" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-third17.jpg" alt="広辞苑" class="spi"></p>
+		<p class="p04 product">◎広辞苑 第七版<br><span>（岩波書店）</span></p>
+	</div>
+	<div id="box0202" class="box02">
+		<h3><img src="contents/shop/00000003/image/static/exword2_top82/third18.png" alt="健康に役立ちます"></h3>
+		<h4 class="h401 mincho"><img src="contents/shop/00000003/image/static/img/exword4/h403.png" alt="病院の待合室で使っております。(男性77歳)" class="spn"><img src="contents/shop/00000003/image/static/img/exword4/sp-h403.png" alt="病院の待合室で使っております。(男性77歳)" class="spi">
+		</h4>
+		<p class="p01">というお声もあるほど。<br class="spn">処方された薬や病名等を詳しく知りたいときに便利です。<br class="spn">漢方薬の情報も。<br class="spn">まさに一家に一台必携です！</p>
+		<p class="p02 product">◎ホームメディカ 新版<br>家庭医学大事典<br><span>（小学館）</span></p>
+		<p class="img01"><img src="contents/shop/00000003/image/static/exword2_top82/third19.jpg" alt="ホームメディカ新版家庭医学大事典"></p>
+		<p class="p03 product">◎病院でもらった<br>薬がわかる薬の手引き<br><span>（小学館）</span></p>
+		<p class="img02"><img src="contents/shop/00000003/image/static/img/exword4/third20.jpg" alt="週末カンタンきれい食ダイエット"></p>
+		<p class="p04 product">◎週末カンタンきれい食ダイエット<br><span>（小学館）</span></p>
+	</div>
+	<div id="box0203" class="box02">
+		<h3><img src="contents/shop/00000003/image/static/exword2_top82/third21.png" alt="海外旅行！国内旅行も！"></h3>
+		<p class="p01">一生に一度は行きたい憧れの旅の名所の解説や、16言語の日常会話にも対応。<br>海外旅行に携帯して、フリガナ通りに読めばＯＫ！</p>
+		<h4 class="h401 mincho"><img src="contents/shop/00000003/image/static/exword2_top82/h404.png" alt="コンパクト持ち運びしやすく使いやすい(男性70歳)" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-h404.png" alt="コンパクト持ち運びしやすく使いやすい(男性70歳)" class="spi">
+		</h4>
+		<p class="img01"><img src="contents/shop/00000003/image/static/exword2_top82/third22.jpg" alt="ひとり歩きの会話集シリーズ" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-third22.jpg" alt="ひとり歩きの会話集シリーズ" class="spi"></p>
+		<p class="p02 product">◎ひとり歩きの会話集シリーズ<br><span>（JTBパブリッシング）</span></p>
+		<p class="img02"><img src="contents/shop/00000003/image/static/img/exword4/third23.jpg" alt="ビジュアル・ワイド 日本名城百選"></p>
+		<p class="p03 product">◎ビジュアル・ワイド 日本名城百選<br><span>（小学館）</span></p>
+		<p class="img03"><img src="contents/shop/00000003/image/static/exword2_top82/third24.jpg" alt="ナショナルジオグラフィック一生に一度だけの旅"></p>
+		<p class="img04"><img src="contents/shop/00000003/image/static/exword2_top82/third25.jpg" alt="ナショナルジオグラフィック一生に一度だけの旅"></p>
+		<p class="p04 product">◎ナショナルジオグラフィック<br>一生に一度だけの旅<br class="spb">BEST500シリーズ<br><span>（日経ナショナルジオグラフィック社）</span></p>
+	</div>
+	<div id="box0204" class="box02">
+		<h3><img src="contents/shop/00000003/image/static/exword2_top82/third26.png" alt="生涯の趣味をサポート"></h3>
+		<h4 class="h401 mincho"><img src="contents/shop/00000003/image/static/exword2_top82/h405.png" alt="俳句・抒情カラオケなど勉強しながら楽しんでいます（女性82歳）" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-h405.png" alt="俳句・抒情カラオケなど勉強しながら楽しんでいます（女性82歳）" class="spi">
+		</h4>
+		<p class="p01">人生を豊かにしてくれる趣味の辞書・事典も充実！<br class="spn">ハイキング・自然観察、短歌俳句・・・等々、ぜひこの機会にお楽しみください。</p>
+		<p class="img01"><img src="contents/shop/00000003/image/static/exword2_top82/third27.jpg" alt="バードウォッチング"></p>
+		<p class="img02"><img src="contents/shop/00000003/image/static/exword2_top82/third28.jpg" alt="新ヤマケイポケットガイド野鳥"></p>
+		<p class="p02 product">◎新ヤマケイ<br>ポケットガイド<br>野鳥<br><span>（山と溪谷社）</span></p>
+		<p class="img03"><img src="contents/shop/00000003/image/static/exword2_top82/third29.jpg" alt="里山の植物ハンドブック" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-third29.jpg" alt="里山の植物ハンドブック" class="spi"></p>
+		<p class="p03 product">◎里山の植物ハンドブック<br>身近な野草と樹木<br>（ＮＨＫ出版）</p>
+		<h4 class="h402 mincho"><img src="contents/shop/00000003/image/static/exword2_top82/h406.png" alt="頭脳の老化防止に役立てたい（男性7６歳）" class="spn"><img src="contents/shop/00000003/image/static/exword2_top82/sp-h406.png" alt="頭脳の老化防止に役立てたい（男性7６歳）" class="spi">
+		</h4>
+		<p class="img04"><img src="contents/shop/00000003/image/static/exword2_top82/third30.png" alt="ビジュアル科学大事典"></p>
+		<p class="p04 product">◎ビジュアル<br class="spn">科学大事典<br><span>（日経ナショナル<br class="spn">ジオグラフィック社）</span></p>
+	</div>
+</div>
+<!-- <div id="merit" class="bs-wrap second">
+	<div class="second-box01">
+		<h2>電子辞書が<br>あって<br class="sp-b">よかった!</h2>
+		<p>一台あると大変便利！毎日の生活に役立つ電子辞書をご紹介します。<br class="sp-n">小さな疑問や「ど忘れ」をサッと調べられ、信頼ある有名辞書で<br>
+	  趣味や教養も深めていただける優れものです。<br class="sp-n">使い方はとてもカンタン！付属のペンで手書き入力できるので、<br>
+	  紙の辞書をめくって探すよりも断然便利です。<br>しかも、今回ご紹介するのは当社でしか手に入らない限定モデルです。<br>この機会に、是非お買い求めください。</p>
+	          <img src="contents/shop/00000003/image/static/img/exword1/second01.png" alt="電子辞書があってよかった" class="secondimg01"><img src="contents/shop/00000003/image/static/img/exword1/second02.png" alt="電子辞書" class="sp-n secondimg02"><img src="contents/shop/00000003/image/static/img/exword1/second03.png" alt="家族" class="sp-n secondimg03">
+	</div><img src="contents/shop/00000003/image/static/img/exword1/sp-second01.png" alt="電子辞書" class="sp-b sp-second01">
+	<div class="second-container">
+		<div class="second-box02 pc-mb20">
+			<div class="cl-fix">
+				<div>
+					<h2 class="pc-mb30"><span class="mincho">旅行に役立つ!</span></h2>
+					<p>いざ、海外旅行へ！「現地で会話が通じるか不安」という方も多いはず。本機はなんと１６言語の日常会話に対応。レストランでの注文や、思わぬトラブル時の一言など、旅先であなただけの通訳として活躍します。</p>
+				</div>
+				<div class="sp-mb15"><img src="contents/shop/00000003/image/static/img/exword1/second05.png" alt="旅行に役立つ" class="secondimg05 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second03.png" alt="旅行に役立つ" class="secondimg05 sp-i"></div>
+			</div>
+			<div class="cl-fix">
+				<div>
+					<h3>ひとり歩きの会話集シリーズ<span>（16言語）</span><span>JTBパブリッシング</span></h3>
+					<p><img src="contents/shop/00000003/image/static/img/exword1/second06.png" alt="ひとり歩きの会話集シリーズ" class="sp-n secondimg06"><img src="contents/shop/00000003/image/static/img/exword1/sp-second02.png" alt="ひとり歩きの会話集シリーズ" class="sp-i secondimg06"></p>
+				</div>
+				<div>
+					<dl>
+						<dt>収録内容</dt>
+						<dd>●英会話とっさのひとこと辞典●世界の料理・メニュー辞典（米・英・西・独・仏・伊編）●TroublePassport<br>●一生に一度だけの旅BEST500●和英：日本の文化・観光・歴史辞典［改訂版］…など</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="cl-fix pc-mb20">
+			<div class="second-box03">
+				<h2 class="pc-mb15"><span class="mincho">野外活動で役立つ!</span></h2>
+				<p class="pc-mb0"><img src="contents/shop/00000003/image/static/img/exword1/second07.png" alt="野外活動で役立つ" class="sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second04.png" alt="野外活動で役立つ" class="sp-i"></p>
+				<p class="pc-mb40 sp-mb20">ハイキングの途中で「あの花の名前が知りたい」と思ったことはありませんか？この電子辞書なら名前がわからなくても、花の色や形、見た地域や季節から調べたい花の名前を検索することができます。</p>
+				<h3 class="pc-mb25 sp-mb20">新版 日本三百名山　<span>登山ガイド 上・中・下</span><br><span>山と渓谷社</span></h3>
+				<p class="pc-mb25"><img src="contents/shop/00000003/image/static/img/exword1/second08.png" alt="新版 日本三百名山" class="secondimg08 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second05.png" alt="新版 日本三百名山" class="secondimg08 sp-i"></p>
+				<p class="pc-mb45 sp-mb10">▲ 登山ガイドも豊富に収録されており、週末の散策プランの参考にもなります。</p>
+				<dl>
+					<dt>収録内容</dt>
+					<dd>●新ヤマケイポケットガイド野鳥●新ヤマケイポケットガイド海水魚●里山の植物ハンドブック●里山の昆虫ハンドブック●デジタル植物図鑑日本に生育する野草/草花●関東周辺週末の山登りベスト120●別冊NHK趣味の園芸 入門…など</dd>
+				</dl>
+			</div>
+			<div class="second-box04">
+				<h2 class="pc-mb25"><span class="mincho">日常生活で役立つ!</span></h2>
+				<p class="pc-mb40 sp-mb20">本機は、定番の『広辞苑』をはじめ、基本の辞書が充実。また、いざという時の『冠婚葬祭マナー事典』、『くらしの法律百科』も収録されており、いつも先生が側にいるかのような、頼もしさです。</p>
+				<h3 class="pc-mb20 sp-mb20">楷行草筆順字典<br><span>大修館書店</span></h3>
+				<p class="pc-mb0"><img src="contents/shop/00000003/image/static/img/exword1/second09.png" alt="楷行草筆順字典" class="secondimg09 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second06.png" alt="楷行草筆順字典" class="secondimg09 sp-i"></p>
+				<p class="pc-mb45 sp-mb10">▲きれいな字体とその書き方が一目でわかる筆順辞典。葉書やご祝儀袋に名前を書く際のお手本にもなります。</p>
+				<div class="cl-fix pc-mb35">
+					<div>
+						<h3 class="pc-mb25 sp-mb30">冠婚葬祭 マナー事典<br><span>旺文社</span></h3>
+						<p class="sp-mb10"><img src="contents/shop/00000003/image/static/img/exword1/second10.png" alt="冠婚葬祭 マナー事典" class="secondimg10 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second07.png" alt="冠婚葬祭 マナー事典" class="secondimg10 sp-i" width="200"></p>
+					</div>
+					<div>
+						<h3 class="pc-mb25 sp-mb30">広辞苑<br><span>第六版 岩波書店</span></h3>
+						<p class="sp-mb30"><img src="contents/shop/00000003/image/static/img/exword1/second11.png" alt="広辞苑" class="secondimg11 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second08.png" alt="広辞苑" class="secondimg11 sp-i" width="189"></p>
+					</div>
+				</div>
+				<dl>
+					<dt>収録内容</dt>
+					<dd>●広辞苑 第六版●明鏡国語辞典 第二版●NHK 日本語発音アクセント辞典●現代カタカナ語辞典●大修館 四字熟語辞典●冠婚葬祭マナー事典●くらしの法律百科…など</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="second-box05">
+			<div class="cl-fix">
+				<div class="sp-mb20">
+					<h2 class="pc-mb25 sp-mb5"><span class="mincho">健康に役立つ!</span></h2>
+					<p>家庭用の医学書としてロングセラーの『家庭医学大辞典』、処方された薬の効能や服用法までも調べることができる『薬の手引き』を収録。まるで我が家のかかりつけのお医者さんのようで心強いです。</p>
+				</div>
+				<h3 class="h302 sp-mb20">ホームメディカ新版家庭医学大事典<br><span>小学館</span></h3>
+				<p class="sp-mb5"><img src="contents/shop/00000003/image/static/img/exword1/second12.png" alt="ホームメディカ新版家庭医学大事典" class="secondimg12 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-second09.png" alt="ホームメディカ新版家庭医学大事典" class="secondimg12 sp-i"></p>
+				<h3 class="h301 sp-mb35">薬の手引き<br><span>小学館</span></h3>
+				<div>
+					<dl>
+						<dt>収録内容</dt>
+						<dd>●気になる検査がわかる事典●病院の検査がわかる検査の手引き●漢方薬の手引き●食の医学館●日経ヘルスサプリメント事典第４版●イヌ・ネコ家庭動物の医学大百科［改訂版］…など</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div> -->
+<div class="bs-wrap third" style="margin-top:30px;">
+	<!--　プレゼント▼▼  
+		<div class="third-ttl cl-fix">
+			<div><span>8</span>月<span>6</span>日(月)まで</div>
+			<div><img src="contents/shop/00000003/image/static/img/exword1/third01.png" alt="プレゼント付き"></div>
+		</div>
+		<div class="third-box01 cl-fix">
+			<div><img src="contents/shop/00000003/image/static/img/exword1/third02.png" alt="クリーニング用クロス"></div>
+			<div>
+				<p class="third03"><img src="contents/shop/00000003/image/static/img/exword1/third03.png" alt="期間限定プレゼント"></p>
+				<h3>クリーニング用クロス</h3>
+				<p class="third-p01">画面が汚れてもサッと一拭き！<br class="sp-n">携帯する際に便利なクリーニングクロスをお付けします。<br class="sp-n">上記期限までにお申し込みの方限定のプレゼントです。<br class="sp-n">ぜひお早めにお申込みください。</p><img src="contents/shop/00000003/image/static/img/exword1/third04.png" class="third04">
+			</div>
+			</div>
+	　　プレゼント▲▲ -->
+	<!-- <a href="" class="btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="今すぐ申し込む" class="sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="今すぐ申し込む" class="sp-i"></a> -->
+<!-- </div> -->
+		<!--<span style="display:block;padding:14px 0;font-size:16px;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px">
+		<b style="color:red">本商品は好評のため、現在欠品中です。商品のお届けは、5月下旬から6月中旬を予定しております。<br>
+		予めご了承ください。
+			</b>
+	</span>-->
+<!-- <div class="bs-wrap eleventh">
+	<div class="eleventh-ttl01">
+		<div class="cl-fix">
+			<div>通販<br>限定</div>
+			<h2><img src="contents/shop/00000003/image/static/img/exword1/eigth01.png" alt="カシオ電子辞書"><br><img src="contents/shop/00000003/image/static/img/exword1/eigth02.png" alt="カシオ電子辞書" class="eigth02"></h2>
+			<div class="sp-n">
+				<dl>
+					<dt>一括払価格</dt>
+					<dd>38,370<span>円</span></dd>
+				</dl>
+				<p>※価格は全て税込みです。</p>
+			</div>
+		</div>
+	</div>
+	<div class="sp-b ninth-box01 cl-fix">
+		<div>
+			<div>
+				<dl>
+					<dt>一括払価格</dt>
+					<dd>38,370<span>円</span></dd>
+				</dl>
+				<p>※価格は全て税込みです。</p>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- cart -->
+	<!-- ELTEX mod start -->
+	<!--
+		<form name="cartGoodsAddForm003" method="POST" action="/shop/cartGoodsAdd.do">
+			<input type="hidden" name="_S" value="c">
+			<input type="hidden" name="display_code" value="104">
+			<input type="hidden" name="goods_sku_code" value="00000275">
+			<input type="hidden" name="ext_goods_sku_code" value="DCE80">
+			<input type="hidden" name="order_num_string" value="1">
+		-->
+  <!-- <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
+	<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
+	<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+	<!--	</form>-->
+</div>
+<div id="function" class="bs-wrap forth">
+	<div class="forth-container">
+		<h2 class="pc-mb35"><img src="contents/shop/00000003/image/static/img/exword1/forth01.png" alt="楽しくカンタンに調べられる5つの便利機能!!" class="sp-n forthimg01"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth01.png" alt="楽しくカンタンに調べられる5つの便利機能!!" class="sp-i forthimg01"></h2>
+		<div class="forth-box01 cl-fix">
+			<div>
+				<h3><span>機能１</span><span>検索が驚くほど快適！</span></h3>
+				<p class="forth-p01">「あいうえお」順キーボード</p>
+				<p class="forth-p02">50音順配列の「あいうえお順」キーボードを採用しました。パソコンの配列に不慣れな方も安心。お子様から年配の方まで使いやすいキーボードです。</p>
+			</div>
+			<div><img src="contents/shop/00000003/image/static/img/exword2/forth02.png" alt="キーボード" class="forthimg01 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth02.png" alt="キーボード" class="forthimg01 sp-i"></div>
+		</div>
+		<div class="forth-box02 cl-fix">
+			<div>
+				<h3><span>機能２</span><span>初めての方もラクラク！</span></h3>
+				<p class="forth-p01">タッチペンで直感操作</p>
+				<p class="forth-p02">指やタッチペンを使って直感的に操作が可能です。手書きで直接入力できるので、読み方がわからない漢字を調べる時にも便利です。</p>
+			</div>
+			<div>
+				<img src="contents/shop/00000003/image/static/img/exword1/forth03.png" alt="タッチペンで直感操作" class="forthimg02 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth03.png" alt="タッチペンで直感操作" class="forthimg02 sp-i" style="width:214px;">
+				<div class="forth-p03">手書き入力が可能。<br>らくらく検索できます。</div>
+			</div>
+			<div>
+				<img src="contents/shop/00000003/image/static/img/exword1/forth04.png" alt="タッチペンで直感操作" class="forthimg02 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth04.png" alt="タッチペンで直感操作" class="forthimg02 sp-i" style="width:204px;">
+				<div class="forth-p03">画像に触れるだけで検索<br>できます。</div>
+			</div>
+		</div>
+		<div class="forth-box03 cl-fix">
+			<div>
+				<h3><span>機能３</span><span>「止め」「はね」が見やすい！</span></h3>
+				<p class="forth-p01">教科書体表示</p>
+				<p class="forth-p02">「止め」「はね」がはっきり確認できる教科書体。教科書体ズームを使えば、教科書体で文字の拡大表示が可能です。正しい文字のお手本として大活躍します。</p>
+			</div>
+			<div>
+				<img src="contents/shop/00000003/image/static/img/exword1/forth05.png" alt="教科書体表示" class="forthimg01 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth05.png" alt="教科書体表示" class="forthimg01 sp-i">
+				<div class="forth-p03">任意の一文字を教科書体で拡大表示できます。</div>
+			</div>
+		</div>
+		<div class="forth-box04 cl-fix">
+			<div>
+				<h3><span>機能４</span><span><span class="cl-red" style="vertical-align: bottom;">動画</span>で楽しめるコンテンツも収録！</span></h3>
+				<p class="forth-p01">ラジオ体操やカラオケも</p>
+				<p class="forth-p02">なんと電子辞書で動画もご覧になれます。オリジナルの『抒情カラオケ名曲集15選』や『ラジオ体操第1/第2』など、動画コンテンツも、大きなカラー液晶画面でお楽しみいただけます。</p>
+			</div>
+			<div>
+				<img src="contents/shop/00000003/image/static/img/exword1/forth06.png" alt="ラジオ体操やカラオケも" class="forthimg02 sp-mb10 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth06.png" alt="ラジオ体操やカラオケも" class="forthimg02 sp-mb10 sp-i" style="width:211px;">
+				<div class="forth-p03">
+					<!-- <h4>ラジオ体操</h4> -->
+					<span>「座ってもできる<br>立ってもできる<br>ラジオ体操第1/第2」<br>（NHKエンタープライズ）</span>
+				</div>
+			</div>
+			<div>
+				<img src="contents/shop/00000003/image/static/img/exword1/forth07.png" alt="ラジオ体操やカラオケも" class="forthimg02 sp-mb10 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth07.png" alt="ラジオ体操やカラオケも" class="forthimg02 sp-mb10 sp-i" style="width:211px;">
+				<div class="forth-p03">
+					<h4>抒情カラオケ名曲集15選<br>（ココチモオリジナル）</h4>
+					<span>美しい風景映像とともに音楽が流れ歌詞が表示されます。</span>
+				</div>
+			</div>
+		</div>
+		<div class="forth-box05 cl-fix">
+			<div>
+				<h3><span>機能５</span><span>旅行も安心!</span></h3>
+				<p class="forth-p01">最長約130時間<span class="asterisk">(※)</span>の使用が可能</p>
+				<p class="forth-p02 pc-mb25">単3形アルカリ乾電池2本で、最長約130時間の連続駆動が可能です。また、本機は170種も辞書が入って約275gとどこへでも持っていけるので、旅行のお供としても心強いです。（単3形アルカリ乾電池２本付属。充電池は別売品となります）</p>
+				<p class="forth-p04 notice">※英和辞典の訳画面で連続表示時。画面の明るさ3で、表示状態になった30秒後に暗くなる場合。</p>
+			</div>
+			<div><img src="contents/shop/00000003/image/static/img/exword1/forth08.png" alt="旅行も安心" class="forthimg01 sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-forth08.png" alt="旅行も安心" class="forthimg01 sp-i" style="width:139px"></div>
+		</div>
+	</div>
+</div>
+<div id="review" class="bs-wrap fifth">
+	<div class="fifth-box01">
+		<h2> <span class="mincho">
+			全国からお喜びの<br class="sp-b">声が続々と！</span>
+		</h2>
+		<ul>
+			<li><span class="voice-l mincho"><span class="circle"></span>物知り博士として内心微笑んでおります。<span class="voice-prof mincho">（佐賀県 84歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>野鳥の鳴き声と、英会話の音声が入っているのがすごく気に入りました。音声もすごくきれいです。<span class="voice-prof mincho">（愛媛県 66歳 女性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>多機能でありながら使い勝手がいいです。<span class="voice-prof mincho">（福岡県 64歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>漢字の意味がすぐ画面に出るので重宝しています。<span class="voice-prof mincho">（大阪府 66歳 男性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>孫へ高校入学のお祝いにプレゼントしました。<br class="sp-n">喜んで使ってくれているようです。<span class="voice-prof mincho">（大阪府 77歳 女性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>俳句・抒情カラオケなど勉強しながら楽しんでいます。<span class="voice-prof mincho">（高知県 82歳 女性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>最近はカタカナ表示が多く、古い辞書では掲載されていないことが多いので電子辞書を探していました。<br>辞典として多くのデータが入っているので満足です。<span class="voice-prof mincho">（山口県 66歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>コンパクトで持ち運びしやすく使いやすい。<span class="voice-prof mincho">（千葉県 70歳 男性）</span></span></li>
+		</ul>
+		<ul class="voice-second">
+			<li><span class="voice-l mincho"><span class="circle"></span>活字の大きさを変えることができるのがいい。内容がいろいろあり、楽しい。<span class="voice-prof mincho">（鹿児島県 76歳 男性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>かんたんスタートガイドを見ながら使ったら意外と簡単で満足しています。<span class="voice-prof mincho">（千葉県 78歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>今までは、広辞苑、現代用語辞典、英語辞書などを個別に購入していましたが、この電子辞書は広いコンテンツを内蔵しており、手元でてっとり早く使用することができ、すばらしいと思います。<span class="voice-prof mincho">（鹿児島県 76歳 男性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>知識、教養、とくに健康問題の知識を広げたいと考え購入しましたが、期待にふさわしいの一語につきます。<span class="voice-prof mincho">（東京都 90歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>他メーカーの電子辞書を使っておりましたが、それ以上の国語、英語、生活、健康ほか趣味学習等が網羅されており、大変重宝しております。<span class="voice-prof mincho">（青森県 81歳 男性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>広範囲な分野にしかも外国分野にも詳細に説明があり、大変今後の勉学に参考になります。<span class="voice-prof mincho">（愛媛県 85歳 男性）</span></span></li>
+			<li><span class="voice-s mincho"><span class="circle"></span>川柳と水墨画教室に参加していますが、その時に漢字がわからなかったり、絵を描く際に花の名前がわからなかったりすることがあるので、これがあると大いに助かります。<span class="voice-prof mincho">（愛媛県 71歳 女性）</span></span></li>
+			<li><span class="voice-l mincho"><span class="circle"></span>少し重いのですが、吟行等で持ち歩くにはバッグの中に納まるので良かったと思います。<span class="voice-prof mincho">（愛媛県 73歳 女性）</span></span></li>
+		</ul>
+		<p class="voice-toggle"><a href="javascript:void(0);" class="noscroll">▼ ユーザーの声を<br class="sp-v">もっと見る</a></p>
+		<p class="notice">※エクスワードシリーズ購入者のアンケートより抜粋。お客様のプロフィールはお便りをいただいた時点のものです。</p>
+	</div>
+
+	<!-- cart -->
+		<!--<span style="display:block;padding:14px 0;font-size:16px;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px">
+		<b style="color:red">本商品は好評のため、現在欠品中です。商品のお届けは、5月下旬から6月中旬を予定しております。<br>
+		予めご了承ください。
+			</b>
+	</span>-->
+	<!--
+		<form name="cartGoodsAddForm004" method="POST" action="/shop/cartGoodsAdd.do">
+			<input type="hidden" name="_S" value="c">
+			<input type="hidden" name="display_code" value="104">
+			<input type="hidden" name="goods_sku_code" value="00000275">
+			<input type="hidden" name="ext_goods_sku_code" value="DCE80">
+			<input type="hidden" name="order_num_string" value="1">
+		-->
+   <!-- <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
+	<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
+	<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+	<!--	</form>-->
+</div>
+<div id="contain" class="bs-wrap sixth">
+	<h2><img src="contents/shop/00000003/image/static/img/exword1/sixth01.png" alt="知的好奇心に応える170種類の豊富な収録内容" class="sp-n"><img src="contents/shop/00000003/image/static/img/exword1/sp-sixth01.png" alt="知的好奇心に応える170種類の豊富な収録内容" class="sp-i" style="width:309px;"></h2>
+	<p class="ta-c"><img src="contents/shop/00000003/image/static/img/exword1/sixth02.png" alt="世界遺産もたっぷり楽しめます。"></p>
+	<div class="six-box01">
+		<div class="contain-first">
+			<h3>国語系</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●広辞苑 第七版 </li>
+					<li>●明鏡国語辞典 第二版 </li>
+					<li>●ＮＨＫ日本語発音アクセント辞典 新版 </li>
+					<li>●角川類語新辞典 </li>
+					<li>●日本語コロケーション辞典 </li>
+					<li>●現代カタカナ語辞典 </li>
+					<li>●大修館 全訳古語辞典 </li>
+				</ul>
+				<ul>
+					<li>●明鏡 ことわざ成句使い方辞典 </li>
+					<li>●三省堂 反対語便覧［新装版］ </li>
+					<li>●日本語知識辞典 </li>
+					<li>●続・日本語知識辞典 </li>
+					<li>●言葉の作法辞典 </li>
+					<li>●常用漢字の難読辞典 </li>
+					<li>●全国方言一覧辞典 </li>
+				</ul>
+				<ul>
+					<li>●敬語早わかり辞典 </li>
+					<li>●日本語「語源」辞典 </li>
+					<li>●日本語○×辞典 </li>
+					<li>●新漢語林 第二版 </li>
+					<li>●NHK 漢字表記辞典 </li>
+					<li>●大修館 四字熟語辞典 </li>
+					<li>●楷行草 筆順字典</li>
+				</ul>
+			</div>
+			<h3>英語系</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●ジーニアス英和辞典 第５版 </li>
+					<li>●ジーニアス和英辞典 第３版 </li>
+					<li>●和英：日本の文化・観光・歴史辞典[改訂版] </li>
+				</ul>
+				<ul>
+					<li>●カタカナで引くスペリング辞典 </li>
+					<li>●ＮＨＫラジオ 基礎英語1 2014年4月&#xFF5E;2015年3月（12冊・1年分） </li>
+				</ul>
+				<ul>
+					<li>●ＮＨＫラジオ 基礎英語2 2014年4月&#xFF5E;2015年3月（12冊・1年分） </li>
+					<li>●ＮＨＫラジオ 基礎英語3  2014年4月&#xFF5E;2015年3月（12冊・1年分）</li>
+				</ul>
+			</div>
+			<h3>百科事典</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●ブリタニカ国際大百科事典 小項目電子辞書版 </li>
+				</ul>
+				<ul>
+					<li>●百科事典マイペディア 電子辞書版</li>
+				</ul>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+			<h3>健康・医学</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●ホームメディカ 新版 家庭医学大事典 </li>
+					<li>●病院でもらった薬がわかる 薬の手引き </li>
+					<li>●漢方薬の手引き </li>
+				</ul>
+				<ul>
+					<li>●食の医学館 </li>
+					<li>●病院の検査がわかる 検査の手引き 改訂第５版 </li>
+				</ul>
+				<ul>
+					<li>●イヌ・ネコ 家庭動物の医学大百科[改訂版] </li>
+					<li>●座ってもできる 立ってもできる ラジオ体操第1/ラジオ体操第2（動画）</li>
+				</ul>
+			</div>
+		</div>
+		<!-- .contain1 -->
+		<div class="contain-second">
+			<h3>法律・マナー</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●冠婚葬祭マナー事典 </li>
+					<li>●すぐに使える 基本法律用語辞典 </li>
+				</ul>
+				<ul>
+					<li>●数え方の辞典 </li>
+					<li>●ビジネス便利事典 </li>
+				</ul>
+				<ul>
+					<li>●手紙文例集 </li>
+					<li>●スピーチ文例集</li>
+				</ul>
+			</div>
+			<h3>英会話・外国語</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●改訂版キクタン【Entry】2000 </li>
+					<li>●改訂版キクタン【Basic】4000 </li>
+					<li>●キクタン英会話 基礎編 </li>
+					<li>●キクタン英会話 初級編 </li>
+					<li>●キクタン英会話 おもてなし編 </li>
+				</ul>
+				<ul>
+					<li>●英会話とっさのひとこと辞典 </li>
+					<li>●はじめての英会話 </li>
+					<li>●ひとり歩きの会話集（英語・スペイン語・ドイツ語・フランス語・イタリア語・中国語・韓国語・タイ語・ロシア語・ブラジル/ポルトガル語・フィリピン語・トルコ語・ベトナム語・インドネシア語・マレーシア語・台湾編）</li>
+				</ul>
+				<ul>
+					<li>●Dr.PASSPORT（日本語→英語版・日本語→スペイン語版・日本語→ドイツ語版・日本語→フランス語版・日本語→イタリア語版・日本語→中国語版・日本語→韓国語版）</li>
+					<li>●TroublePassport（日本語→英語版・日本語→スペイン語版・日本語→ドイツ語版・日本語→フランス語版・日本語→イタリア語版・日本語→中国語版・日本語→韓国語版）</li>
+				</ul>
+			</div>
+			<h3>世界観光</h3>
+			<div class="cl-fix twocol">
+				<ul>
+					<li>●一生に一度だけの旅 BEST500 </li>
+					<li>●続･一生に一度だけの旅 BEST500 </li>
+					<li>●一生に一度だけの旅 世界の街道を行く BEST500 </li>
+
+				</ul>
+				<ul>
+					<li>●一生に一度だけの旅 世界の食を愉しむ BEST500 </li>
+					<li>●一生に一度だけの旅 心に響く世界 BEST500 </li>
+
+				</ul>
+				<ul>
+					<li>●エピソードで読む世界の国243 </li>
+					<li>●世界の料理・メニュー辞典（米・英・西・独・仏・伊編）</li>
+
+				</ul>
+			</div>
+			<h3>日本の歴史</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●ビジュアル・ワイド 日本名城百選 </li>
+					<li>●ビジュアル・ワイド 日本の城 </li>
+					<li>●山川 日本史小辞典 改訂新版 </li>
+				</ul>
+				<ul>
+					<li>●もういちど読む山川日本史 </li>
+					<li>●日本歴史大事典 </li>
+				</ul>
+				<ul>
+					<li>●昭和史年表 一億人の軌跡 </li>
+					<li>●昭和の［思い出］年表クイズ </li>
+				</ul>
+			</div>
+			<h3>世界の歴史</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●ビジュアル大世界史 </li>
+				</ul>
+				<ul>
+					<li>●山川 世界史小辞典 改訂新版 </li>
+				</ul>
+				<ul>
+					<li>●もういちど読む山川世界史 </li>
+				</ul>
+			</div>
+			<h3>自然</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●新版 日本三百名山 登山ガイド 上・中・下 </li>
+					<li>●関東周辺 週末の山登りベスト120 </li>
+					<li>●関西周辺 週末の山登りベスト120 </li>
+					<li>●別冊NHK趣味の園芸 園芸入門 </li>
+				</ul>
+				<ul>
+					<li>●デジタル植物図鑑 </li>
+					<li>●デジタル昆虫図鑑 </li>
+					<li>●里山の植物ハンドブック 身近な野草と樹木 </li>
+					<li>●里山の昆虫ハンドブック </li>
+				</ul>
+				<ul>
+					<li>●里山の野鳥ハンドブック </li>
+					<li>●新ヤマケイポケットガイド 野鳥 </li>
+					<li>●新ヤマケイポケットガイド 海水魚 </li>
+				</ul>
+			</div>
+			<h3>趣味・一般教養</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●現代俳句歳時記 春 現代俳句協会編 </li>
+					<li>●現代俳句歳時記 夏 現代俳句協会編 </li>
+					<li>●現代俳句歳時記 秋 現代俳句協会編 </li>
+					<li>●現代俳句歳時記 冬[新年] 現代俳句協会編 </li>
+					<li>●現代俳句歳時記 無季 現代俳句協会編 </li>
+				</ul>
+				<ul>
+					<li>●ホトトギス俳句季題便覧 </li>
+					<li>●合本俳句歳時記 第四版 </li>
+					<li>●百人一首 </li>
+					<li>●分野別 漢検でる順問題集 2級・準2級・3級・4級[新装四訂版] </li>
+					<li>●日本文学2000作品 </li>
+				</ul>
+				<ul>
+					<li>●脳鍛アプリ 明鏡日本語クロスワード </li>
+					<li>●スポーツ用語辞典第３版 </li>
+					<li>●もういちど読む山川政治経済 </li>
+					<li>●ビジュアル 科学大事典 </li>
+				</ul>
+			</div>
+			<h3>家事・料理</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●家事の基本がわかる本 掃除・洗濯・アイロン・収納のコツ </li>
+					<li>●料理の基本がわかる本 </li>
+				</ul>
+				<ul>
+					<li>●ぜひつくりたい基本のお菓子 </li>
+					<li>●家族みんなのバランスごはん [デジタル増補版] </li>
+				</ul>
+				<ul>
+					<li>●今日の夕ごはん／きれい食ダイエット </li>
+				</ul>
+			</div>
+			<h3>時事</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●現代用語の基礎知識 2018 </li>
+				</ul>
+				<ul>
+					<li></li>
+				</ul>
+			</div>
+			<h3>聞いて楽しむ</h3>
+			<div class="cl-fix">
+				<ul>
+					<li>●抒情カラオケ名曲集15選 </li>
+					<li>●聞いて味わう国語名作集 （古文・現代文・漢文） </li>
+				</ul>
+				<ul>
+					<li>●人形町らくだ亭 落語（音声） </li>
+					<li>●クラシック名曲1000フレーズ </li>
+				</ul>
+				<ul>
+					<li>●英語名演説・名せりふ集 Ver.4 </li>
+				</ul>
+			</div>
+			<p class="mt20">
+				※「日本文学2000作品」と「クラシック名曲1000フレーズ」は収録辞書数に含んでおりません。<br>
+※掲載した書籍と表紙はイメージです。収録コンテンツの全てではありません。また、コンテンツには書籍版が未刊行のもの、一部書籍版と内容が異なるものも含まれます。<br>
+※本体収録コンテンツはそれぞれの出版社より電子データとして作成、提供されており、その著作権は出版社に帰属しております。カシオ計算機（株）において、その内容を改良・改変することはできません。また、それぞれのコンテンツにおける誤記、誤植、誤用につきましては、都度出版社に連絡させていただいております。予めご了承ください。</p>
+		</div>
+		<!-- .contain2 -->
+		<p class="contain-toggle"><a href="javascript:void(0);" class="noscroll">▼ 収録内容を<br class="sp-v">もっと見る</a></p>
+	</div>
+	<p><img src="contents/shop/00000003/image/static/img/exword4/sixth03.png" alt="知的好奇心に応える170種類の豊富な収録内容"></p>
+	<p class="notice">※掲載した書籍と表紙はイメージです。収録コンテンツの全てではありません。　<br class="viewSp">※本広告に使用した写真は、一部収録画像とは異なるイメージ写真も含みます。</p>
+</div>
+
+	<!-- カート追従バナー キャンペーン-->
+	<style>
+		.cmn_btn span {position: relative;z-index: 0;}
+		.cmn_btn_tri:before {top: 0;}
+		#content_wrap .purchase_fixed .inner a:hover {cursor: pointer;}
+		.tel.js-tel_sticky {display:none;}
+
+		#content_wrap .purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index:9999;}
+		#content_wrap .purchase_fixed .inner {padding: 1rem;margin: 0 auto;max-width: 692px;overflow:hidden;display: flex;}
+		#content_wrap .purchase_fixed .inner > * {width: 100%;}
+		#content_wrap .purchase_fixed .inner a:hover {opacity: .85;}
+		#content_wrap .purchase_fixed .inner .ph_tel {display:none;}
+
+		#content_wrap .purchase_fixed .inner .order_btn{width:66%;float:right;}
+		#content_wrap .purchase_fixed .inner .present{width:34%;padding-right:10px;padding-top:.1em;}
+
+		@media all and (min-width: 0) and (max-width: 767px) {
+			#content_wrap .purchase_fixed .inner {display:block;}
+			.inner08 {margin-top: -60px;padding-top: 60px;}
+			#content_wrap .purchase_fixed .inner {
+				display: flex;
+			    padding: .5rem .5rem .25rem .5rem;
+			    justify-content: center;
+			    align-items: center;
+			    flex-direction: row;
+			}
+			#content_wrap .purchase_fixed .inner > p {display: inline-block;width:auto;}
+			#content_wrap .purchase_fixed .inner > p:first-of-type {width:36%;margin-top:.1em;}
+			#content_wrap .purchase_fixed .inner > p:last-of-type {padding-left: .5rem;width:58%;}
+			#content_wrap .purchase_fixed .inner .order_btn {padding-right:0;}
+			#content_wrap .purchase_fixed .inner + p {padding-bottom: .5rem;}
+		}
+		@media print {#content_wrap .purchase_fixed {display: none;}}
+
+	</style>
+	<div class="purchase_fixed">
+		<div class="inner">
+			<p class="sp_only">
+				<img src="/contents/shop/00000003/image/static/img/exword4/purchase_fixed_presen_sp.png" alt="プレゼント付き有効期限 1月11日(金)">
+			</p>
+			<div class="present pc_only">
+				<img src="/contents/shop/00000003/image/static/img/exword4/purchase_fixed_presen.png" alt="プレゼント付き有効期限 1月11日(金)">
+			</div>
+			<p class="pc_only ph_tel">
+	        	<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+	      	</p>
+
+			<p class="order_btn" id="purchase_btn_order">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_01.png" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_01.png" alt="この商品を申し込む"></span>
+				</a>
+			</p>
+
+
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+  <!-- <span m:id="l_equ_type_simple"> カート追従バナー キャンペーン　-->
+
+
+	<script>
+	//CM動画
+	(function($){
+	  var ua = window.navigator.userAgent.toLowerCase();
+	  if (ua.indexOf('chrome')  !== -1) {
+	    $('a[href*="youtube.com/watch"]').magnificPopup({
+	     type: 'iframe',
+	         iframe: {
+	             patterns: {
+	                 youtube: {
+	                     index: 'youtube.com', 
+	                     id: 'v=', 
+	                     src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0&mute=1'
+	                  }
+	             }
+	         }   
+	   });
+	  } else {
+	    $('a[href*="youtube.com/watch"]').magnificPopup({
+	     type: 'iframe',
+	         iframe: {
+	             patterns: {
+	                 youtube: {
+	                     index: 'youtube.com', 
+	                     id: 'v=', 
+	                     src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0'
+	                  }
+	             }
+	         }   
+	   });
+	  }   
+	})(jQuery);
+</script>
