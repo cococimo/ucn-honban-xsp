@@ -584,6 +584,7 @@
 				}
 
 				@media screen and (max-width: 767px) {
+					.oisyoku-header .sub-contents-wrap {overflow: hidden;}
 					.oisyoku-header #image-navigation .navi-image a img {
 						width: auto;
 					}
@@ -607,6 +608,7 @@
 						height: auto;
 						padding-top: 10px;
 					}
+					.slider {margin: 0 0 50px;}
 				}
 			</style>
 
@@ -654,18 +656,22 @@
 				<!-- sub-content -->
 				<div class="sub-contents-wrap">
 					<div class="sub-content first">
-						<a href="/shop/c/static/syokutaku-concept/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_02.jpg" alt="コンセプト -おいしい食卓" /></a>
+						<a href="/shop/c/static/syokutaku-concept/" target="blank" class="link-img"><img class="viewPc" src="/contents/c/shop/image/category/syokuhin/left_02.jpg" alt="コンセプト -おいしい食卓" /><img class="viewSp" src="/contents/c/shop/image/category/syokuhin/left_02_sp.png" alt="コンセプト -おいしい食卓" /></a>
 					</div>
-					<div class="sub-content second">
+					
+					<!-- <div class="sub-content second">
 						<a href="/shop/c/category/001001015029/list/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_sale.png" alt="訳あり！お買得特集" /></a>
+					</div> -->
+					<div class="sub-content second">
+						<a href="/shop/c/category/001014/list/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_noodle.png" alt="小腹にうれしいシリーズ" /></a>
 					</div>
 					<!-- <div class="sub-content second">
 						<a href="/shop/c/static/syokutaku-feature2/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_01.jpg" alt="作り手の想い" /></a>
 					</div> -->
-					<div class="sub-content catalog">
+					<!-- <div class="sub-content catalog">
 						<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=S5571&_ga=2.4119352.967005232.1515459862-61215445.1513648303" target="blank"
 						 class="link-img"><img src="/contents/c/shop/image/category/syokuhin/catalog.jpg" alt="おいしい食卓カタログ" /></a>
-					</div>
+					</div> -->
 <!--                     <div class="sub-content catalog">
 						<a href="/shop/c/static/syokutaku-guide/" target="blank"
 						 class="link-img"><img src="/contents/c/shop/image/category/syokuhin/guide.jpg" alt="おいしい食卓お買い物ガイド" /></a>
@@ -1147,6 +1153,15 @@
 							</a>
 						</li>-->
 						<li class="hvr-float">
+							<a href="/shop/c/category/001001015026/list/" target="_blank">
+								<img src="/contents/c/shop/image/category/syokuhin/bnr-feature01.jpg" alt="おいしい食卓">
+								<div class="caption">
+									<p class="text"><span style="color: red;">NEW!</span>年末年始のとっておき豪華なご馳走</p>
+									<p class="icon feature">特集</p>
+								</div>
+							</a>
+						</li>
+						<li class="hvr-float">
 							<a href="/shop/c/static/syokutaku-feature13/" target="_blank">
 								<img src="/contents/c/shop/image/category/syokuhin/bnr-feature13.jpg" alt="おいしい食卓シリーズ にんじんジュース">
 								<div class="caption">
@@ -1155,14 +1170,7 @@
 								</div>
 							</a>
 						</li>
-						<li class="hvr-float">
-							<a href="/shop/c/static/syokutaku-recipe/" target="_blank">
-								<img src="/contents/c/shop/image/category/syokuhin/bnr-recipe.jpg" alt="「おいしい食卓」でつくる おいしく健康！【活用レシピ】">
-								<div class="caption">
-									<p class="text"><!-- <span style="color: red;">NEW!</span>  -->おいしい食べ方やアレンジレシピをご紹介！</p>
-									<p class="icon feature">特集</p>
-								</div>
-											</a></li>
+
 							<!--
 						<li class="hvr-float">
             	<a href="/shop/c/static/syokutaku-feature11/" target="_blank">
@@ -1183,15 +1191,6 @@
               </a>
             </li>-->
 							<li class="hvr-float">
-								<a href="/shop/c/static/syokutaku-feature2/" target="_blank">
-									<img src="/contents/c/shop/image/category/syokuhin/bnr-feature2.jpg" alt="作り手の想い">
-									<!--<div class="caption">
-										<p class="text"><span style="color: red;">【2/22更新】</span>全国の生産者さんへ突撃取材！</p>
-										<p class="icon feature">特集</p>
-									</div>-->
-								</a>
-							</li>
-							<li class="hvr-float">
 								<a href="/shop/c/static/syokutaku-blog/syokutaku-blog60/" target="_blank">
 									<img src="/contents/c/shop/image/category/syokuhin/bnr-blog.jpg" alt="おい食スタッフブログ">
 									<!--<div class="caption">
@@ -1200,6 +1199,24 @@
 									</div>-->
 								</a>
 							</li>
+							<li class="hvr-float">
+								<a href="/shop/c/static/syokutaku-feature2/" target="_blank">
+									<img src="/contents/c/shop/image/category/syokuhin/bnr-feature2.jpg" alt="作り手の想い">
+									<!--<div class="caption">
+										<p class="text"><span style="color: red;">【2/22更新】</span>全国の生産者さんへ突撃取材！</p>
+										<p class="icon feature">特集</p>
+									</div>-->
+								</a>
+							</li>
+
+							<li class="hvr-float">
+								<a href="/shop/c/static/syokutaku-recipe/" target="_blank">
+									<img src="/contents/c/shop/image/category/syokuhin/bnr-recipe.jpg" alt="「おいしい食卓」でつくる おいしく健康！【活用レシピ】">
+									<div class="caption">
+										<p class="text"><!-- <span style="color: red;">NEW!</span>  -->おいしい食べ方やアレンジレシピをご紹介！</p>
+										<p class="icon feature">特集</p>
+									</div>
+							</a></li>
 							<li class="hvr-float">
 								<a href="/shop/c/static/syokutaku-concept/" target="_blank">
 									<img src="/contents/c/shop/image/category/syokuhin/bnr-concept.jpg" alt="おいしい食卓 コンセプト">
@@ -1385,9 +1402,9 @@
 					<!-* /.ranking_list *->
 				</div>-->
 				<!-- /.ranking -->
-				<div class="mt60 s_mt0">
+				<!-- <div class="mt60 s_mt0">
 					<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=S5571" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/bnr_catalog01.jpg" alt="おいしい食卓のカタログのご請求"></a>
-				</div>
+				</div> -->
 			</div>
 			<!-- /.contentrs_r -->
 			<div id="contents_side" class="side left">
@@ -1440,11 +1457,10 @@
 						<ul class="side_widget_list side_widget_news_list">
 							
 							<li>2018/11/06 <span style="color: red;">NEW!</span><a target="_blank" href="/shop/c/category/001001015026/list/">年末年始のとっておき！豪華なご馳走が公開</a></li>
-							<li>2018/10/22<!--  <span style="color: red;">NEW!</span> --><a target="_blank" href="/item_DIG27/">国産オリジナルおせちが公開！</a></li>
 							<li>2018/10/9 <!-- <span style="color: red;">NEW!</span> --><a target="_blank" href="/shop/c/category/001001015029/list/">訳あり！お買得特集が公開!</a></li>
 							<li>2018/9/6 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog60/">おい食スタッフブログ 第60回【「帰省」】が公開！</a></li>
 							<li>2018/8/8 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog59/">おい食スタッフブログ 第59回【「おいしい」旬を味わってください！】が公開！</a></li>
-							<!-- <li>2018/7/26 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog58/">おい食スタッフブログ 第58回【山登り】が公開！</a></li> -->
+							<li>2018/7/26 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog58/">おい食スタッフブログ 第58回【山登り】が公開！</a></li>
 							<!-- <li>2018/7/19 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog57/">おい食スタッフブログ 第57回【ロシア⇒東京⇒カタール】が公開！</a></li> -->
 							<!-- <li>2018/7/12 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog56/">おい食スタッフブログ 第56回【平成３０年７月豪雨】が公開！</a></li> -->
 							<!-- <li>2018/7/5 <span style="color: red;"></span><a target="_blank" href="/shop/c/static/syokutaku-blog/syokutaku-blog55/">おい食スタッフブログ 第55回【早くも夏本番！】が公開！</a></li> -->
