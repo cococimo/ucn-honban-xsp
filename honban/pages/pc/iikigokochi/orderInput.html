@@ -1588,7 +1588,24 @@ window.onload = function() {
 
 <div class="box_form_table">
 	<div class="box_form_th">住所（番地）<span class="imp">必須</span></div>
-	<div class="box_form_td"><input type="text" class="in_w_10" m:id="h_txt_address3" name="address3"/>
+<script charset="UTF-8">
+									function zentohan(obj){
+	if(typeof(obj.value)!="string")return false;
+	var word = obj.value;
+	//for(i=0;i<zen.length;i++){
+		var regex = new RegExp("-","gm");
+		word = word.replace(regex,"ー");
+		regex1 = new RegExp('\\u2015',"gm");
+		word = word.replace(regex1,"ー");
+		regex2 = new RegExp('\uff0d',"gm");
+		word = word.replace(regex2,"ー");
+		regex2 = new RegExp('\u2010',"gm");
+		word = word.replace(regex2,"ー");
+	//}
+	obj.value = word;
+}
+									</script>
+	<div class="box_form_td"><input type="text" class="in_w_10" m:id="h_txt_address3" name="address3" onblur="zentohan(this);"/>
 	<span m:id="l_msgPre_address3">
 	<br />
 		<span class="error">
@@ -1709,6 +1726,7 @@ window.onload = function() {
     <div class="selcv">
     <select m:id="h_sel_birthday_year" class="in_w_07" style="margin-top:3px;">
 		<option value=""></option>
+		<option m:id="sel_opt_birthday_year"value="2018">2018(平成30)</option>
         <option m:id="sel_opt_birthday_year"value="2017">2017(平成29)</option>
 		<option m:id="sel_opt_birthday_year"value="2016">2016(平成28)</option>
 		<option m:id="sel_opt_birthday_year"value="2015">2015(平成27)</option>
@@ -2560,7 +2578,7 @@ TEL：090-1234-1234
 <div class="box_form_table">
 	<div class="box_form_th">住所（番地）<span class="imp">必須</span></div>
 	<div class="box_form_td">
-		<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3"/>
+		<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3" onblur="zentohan(this);"/>
 		<span m:id="l_msgPre_dst_address3">
 		<br />
 		<span class="error">
@@ -2949,6 +2967,8 @@ TEL：090-1234-1234
 -->
 <!-- ガイド -->
 <!-- footer追加 -->
+
+<!-------
 <div id="footer01">
 	<div class="inner">
     <ul>
@@ -3002,6 +3022,7 @@ TEL：090-1234-1234
     <p class="add_p">着心地のいい服</p>
   </div>
 </div>
+---->
 <div id="footer02">
   <div id="footer_wrap02">
   	<ul>
@@ -3108,6 +3129,11 @@ TEL：090-1234-1234
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
+
+<!-- 190212 formassistで使用 -->
+<span m:id="site_prop13"></span>
+
+
 
 
 
