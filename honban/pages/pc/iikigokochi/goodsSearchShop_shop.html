@@ -549,6 +549,7 @@ ul.example.other li{
                     <ul class="btn_category_sub_pullDown">
                       <li><a href="/shop/category/001001008/list/">新着商品</a></li>
                       <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+                      <li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
                     </ul>
                   </div>
                   <a href="#" id="header_itemlist__closebnt">閉じる</a>
@@ -594,7 +595,7 @@ ul.example.other li{
               </div>
               <!-- ▲▲▲新規会員登録▲▲▲ -->
               			<ul class="header_list_02">
-        <li id="header_catalog"><a  href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="catalog_bt" title="カタログ請求" target="_blank">カタログ請求</a></li>
+       <!-- <li id="header_catalog"><a  href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="catalog_bt" title="カタログ請求" target="_blank">カタログ請求</a></li>-->
 			  <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
 			  <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
         <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
@@ -637,7 +638,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="sp_menu_only sp_login_menu">
 			<div class="sp_menu__category">
 				<p class="sp_menu__category__btn">商品カテゴリー</p>
-				<div class="sp_menu__category__list">
+				<div class="sp_menu__category__list" style="display: block;">
 					<ul>
 						<li><a href="/shop/category/001001007/list/"><span>全商品一覧</span></a></li>
 						<li><a href="/shop/category/001001002/list/"><span>トップス</span></a></li>
@@ -651,6 +652,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 						<li><a href="/shop/category/001001014/list/"><span>アクセサリー/<br>ストール・スヌード</span></a></li>
 						<li><a href="/shop/category/001001008/list/"><span>新着商品</span></a></li>
 						<li><a href="/shop/category/001001009/list/"><span>広告掲載商品</span></a></li>
+						<li><a href="/shop/category/001001011/list/"><span>SNS掲載商品</span></a></li>
+
 					</ul>
 				</div>
 			</div>
@@ -762,6 +765,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					<li class="empty"><a href="#"></a></li>
 					<li><a href="/shop/category/001001008/list/"><span>新着商品</span></a></li>
 					<li><a href="/shop/category/001001009/list/"><span>広告掲載商品</span></a></li>
+					<li><a href="/shop/category/001001011/list/"><span>SNS掲載商品</span></a></li>
+
 				</ul>
 
 				<div class="sp_header__close">
@@ -946,7 +951,8 @@ $(window).on('load resize', function(){
 <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
 <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
 <object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
-<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
+<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html" target="_blank">
+
 	<input type="hidden" name="_S" />
 	<input type="hidden" name="category_code" />
 	<input type="hidden" name="goods_url" />
@@ -1127,7 +1133,7 @@ window.onload = function() {
 			<p class="word_area_tit">よく検索されるキーワード</p>
 			<ul class="word_area_list">
 				<li><a href="/shop/category/001001008/list/">新商品</a></li>
-				<li><a href="/item_SDKAJC/">ガウチョ</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%5E%81%5B%83g%83%8B">タートル</a></li>
 				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83I%81%5B%83K%83j%83b%83N%83R%83b%83g%83%93">オーガニックコットン</a></li>
 				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%8F%83C%83h%83p%83%93%83c">ワイドパンツ</a></li>
 				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83g%83b%83v%83X">トップス</a></li>
@@ -1157,6 +1163,7 @@ window.onload = function() {
   <ul>
     <li><a href="/shop/category/001001008/list/">新着商品</a></li>
     <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+　　<li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
   </ul>
 </div>
 
@@ -1177,6 +1184,9 @@ window.onload = function() {
         <li><a href="/shop/category/001001014/list/">アクセサリー/ ストール・スヌード</a></li>
         <li><a href="/shop/category/001001008/list/">新着商品</a></li>
         <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+	<li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
+	<li></li>
+
       </ul>
       <div class="btn_close_sp"><a href="#">Close</a></div>
     </div>
@@ -1688,6 +1698,7 @@ window.onload = function() {
       </a>
       </span>
     </li>
+<!--
     <li class="banner02">
       <a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" target="_blank">
         <div class="banner_inner">
@@ -1700,7 +1711,7 @@ window.onload = function() {
           <img src="../../../contents/shop/00000006/shop/image/kigokochi/photo_information_02.png" alt="" class="banner_photo" /> </div>
         </div>
       </a>
-    </li>
+    </li>-->
   </ul>
 </div>
 <!--▲▲▲下部バナー▲▲▲-->
@@ -1805,7 +1816,8 @@ window.onload = function() {
 <li><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
 <li><a href="/shop/static/concept/">コンセプト</a></li>
 <li><a href="/shop/static/feature_backnumber/">特集一覧はこちら</a></li>
-<li><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654">カタログ請求</a></li>
+<!---20181009削除 
+<li><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654">カタログ請求</a></li>---->
 <li><a href="https://www.iikigokochi.jp/shop/memberAdd.do">新規会員登録</a></li>
 </ul>
 <ul class="footer_category only_pc">
@@ -1826,6 +1838,7 @@ window.onload = function() {
         <ul>
          	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
         	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+		<li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
         </ul>
       </li>
     </ul>
@@ -1842,6 +1855,7 @@ window.onload = function() {
         	<li><a href="/shop/category/001001001/list/">バック</a></li>
          	<li><a href="/shop/category/001001008/list/">新着商品</a></li>
         	<li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
+		<li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
         </ul>
       </li>
     </ul>
