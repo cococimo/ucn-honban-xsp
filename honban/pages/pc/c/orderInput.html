@@ -230,6 +230,8 @@ $(function(){
 #more_login_text {display:none;}
 #more_login_text > .error{margin-top:30px;}
 
+#email_area .sample_notice {margin-top:5px;font-size: .8em;}
+#email_area a {color:#d63d38;}
 
 @media screen and (max-width: 767px){
   .memadd_table_01 th,
@@ -238,6 +240,131 @@ $(function(){
   .memadd_table_01 th .exp {padding-left:10px;}
   .more_login_btn.cmn_btn {font-size: 15px;width: 200px;padding: 0 10px;}
   .orderInputLogin {padding: 10px;border: 1px solid #ccc;}
+}
+/*メールアドレス再確認*/
+.output_email_confirm_wrap {
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: middle;
+	width: 500px;
+	padding-bottom: 5px;
+}
+.output_email_confirm_wrap #output_email_confirm {
+	font-weight: bold;
+	font-size: 1.4em;
+	word-break : break-all;
+}
+@media screen and (max-width: 767px){
+	.output_email_confirm_wrap {
+		width: 100%;
+	}
+
+	.cmn_form_table01 td .input_set.input_set_name,
+	.cmn_form_table01 td .input_set.input_set_kana {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		padding-left: 0;
+	}
+
+	.cmn_form_table01 td .input_set.input_set_name .prefix ,
+	.cmn_form_table01 td .input_set.input_set_kana .prefix {
+		display: none;
+	}
+	.cmn_form_table01 td .input_set.input_set_name .input_wrap,
+	.cmn_form_table01 td .input_set.input_set_kana .input_wrap {
+		padding-left: 0;
+		width: 48%;
+	}
+}
+
+/*様方レイアウト修正*/
+.samakata {
+	background:#eee;
+	margin-top: 20px;
+	padding:10px;
+	width: 500px;
+}
+.samakata .toggle_btn{
+	display: block;
+	cursor: pointer;
+	color:inherit;
+}
+@media screen and (max-width: 767px){
+	.samakata {
+		width: 100%;
+	}
+}
+#delive_wrap {
+	background:#eee;
+	margin-top: 20px;
+	padding:10px;
+	width: 500px;
+}
+.toggle_delive_btn {
+	display: block;
+	cursor: pointer;
+	color:inherit;
+}
+
+#sepDeliv0 {
+	margin-top: 20px;
+	overflow: hidden;
+}
+#sepDeliv0 > div {
+	width:48%;
+	float: left;
+}
+#sepDeliv0 > div:last-child {
+	float: right;
+}
+@media screen and (max-width: 767px){
+	#delive_wrap {
+		width: 100%;
+
+	}
+	#sepDeliv0 {
+		display: block;
+	}
+	#sepDeliv0 > div {
+		width:100%;
+	}
+	#sepDeliv0 > div {
+		width:100%;
+		float: left;
+	}
+	#sepDeliv0 > div:last-child {
+		float: right;
+	}
+}
+
+
+
+/*生年月日修正*/
+@media screen and (max-width: 767px){
+	.cmn_form_table01 td.birthday_area {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.cmn_form_table01 td.birthday_area .suffix {
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.cmn_form_table01 td.birthday_area select[name=month], .cmn_form_table01 td.birthday_area select[name=day] {
+    	width: 100%;
+    	max-width: 60px;
+	}
+	.cmn_form_table01 td.birthday_area select {
+    	width: 100%;
+    	max-width: 120px;
+	}
 }
 </style>
 
@@ -256,9 +383,9 @@ $(function () {
  if($('.memadd_table_01 .error').length){
    $('#more_login_text').slideDown();
    $('.more_login_btn').html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>').addClass('is-active');
- }
+ 	}
 
-$('.more_login_btn').on('click', function () {
+	$('.more_login_btn').on('click', function () {
 		$(this).toggleClass('is-active');
 		
 		if($(this).hasClass('is-active')) {
@@ -268,8 +395,52 @@ $('.more_login_btn').on('click', function () {
 		}
 		$('#more_login_text').slideToggle();
 	});
+	/*トグルメニュー*/
+	$('.togglemenu').css({'display':'none'});
+	$('.toggle_btn').click(function(event) {
+		 event.preventDefault();
+		$(this).next().slideToggle();
+	});
+	$('.toggle_delive_btn').click(function(event) {
+		 event.preventDefault();
+		$('.togglemenu.delive').slideToggle();
+	});
+
+	/*メールアドレス再確認*/
+	var $output_email_confirm = $("#output_email_confirm");
+	var $input_email_confirm = $("#input_email_confirm");
+
+	function changemail(val) {
+		var mailval01 = val;
+		$output_email_confirm.text(mailval01);
+		$input_email_confirm.val(mailval01);
+	}
+
+	$('input[name="email"]').on("input",function(e) {
+		var mailval = $(this).val();
+		changemail(mailval);
+	});
+
+	if ($('input[name="email"]').val() != "") {
+		var mailval = $('input[name="email"]').val();
+		changemail(mailval);
+	}
+
+	$(".cmn_form_table01 td,.input_footer_btn a").on("click",function(e) {
+		if($(this).attr('id') == "address4_area") {return false;}
+		var mailval = $('input[name="email"]').val();
+		changemail(mailval);
+	});
+	/*プレースホルダー追加*/
+	$('input[name="name_sei"],input[name="address_co_sei"],input[name="dst_name_sei"],input[name="dst_address_co_sei"]').attr('placeholder','姓');
+	$('input[name="name_mei"],input[name="address_co_mei"],input[name="dst_name_mei"],input[name="dst_address_co_mei"]').attr('placeholder','名');
+	$('input[name="name_sei_kana"],input[name="dst_name_sei_kana"]').attr('placeholder','セイ');
+	$('input[name="name_mei_kana"],input[name="dst_name_mei_kana"]').attr('placeholder','メイ');
 });
+
 </script>
+
+
 
 <script m:id="js_gmo_url" src="https://p01.mul-pay.jp/ext/js/token.js"></script>
 <script m:id="js_file" language="JavaScript" src="../../../contents/js/common.js?v1.1" type="text/javascript" charset="shift_jis"></script>
@@ -498,11 +669,12 @@ $('.more_login_btn').on('click', function () {
 		for (var i = 0; i < selectObject.length; i++) {
 			if (selectObject[i].checked && selectObject[i].value == '1') {
 				document.getElementById("sepDeliv1").style.display = 'inline';
-				document.getElementById("sepDeliv0").style.display = 'none';
+				// document.getElementById("sepDeliv0").style.display = 'none';
+				document.getElementById("delive_wrap").style.display = 'none';
 				break;
 			} else if (selectObject[i].checked && selectObject[i].value == '0') {
 				document.getElementById("sepDeliv1").style.display = 'none';
-				document.getElementById("sepDeliv0").style.display = 'inline';
+				document.getElementById("delive_wrap").style.display = 'block';
 				break;
 			}
 		}
@@ -515,7 +687,7 @@ $('.more_login_btn').on('click', function () {
 
 	for(var i=0;i<comp.length;i++) {
 	  comp[i].autocomplete="nope";
-	}
+		}
 	}
 	</script>
 	<span m:id="l_pre_member">
@@ -804,7 +976,7 @@ $('.more_login_btn').on('click', function () {
 								<!--▲▲▲ ご注文様情報 テキスト ▲▲▲-->
 							</div>
 				    	<!--▲▲▲ ログイン時 ▲▲▲-->
-				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
+				    	<!--▼▼▼ 非ログイン時 ▼▼▼
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
 									 <div class="login_msg">
@@ -831,11 +1003,11 @@ $('.more_login_btn').on('click', function () {
 										</span>
 										</td>
                     <td class="btn viewPc" rowspan="2">
-                    <!-- ボタン -->
+                    <!-* ボタン *->
 										<div>
 										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
 										</div>
-                    <!--/ ボタン -->
+                    <!-*/ ボタン *->
                     </td>
 										</tr>
 										<tr>
@@ -852,26 +1024,26 @@ $('.more_login_btn').on('click', function () {
 										</tr>
                     <tr class="viewSp">
                     <td  colspan="3">
-										<!-- ボタン -->
+										<!-* ボタン *->
 										<div class="mb10">
 										<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
 										</div>
-										<!--/ ボタン -->
+										<!-*/ ボタン *->
                     </td>
                     </tr>
 										</table>
-                    </div><!-- /more_login_text -->
+                    </div><!-* /more_login_text *->
 
 
 									</div>
 								</span>
-							</div>
+							</div>-->
 							<!-- /.not_login_box -->
 						<!--▲▲▲ 非ログイン時 ▲▲▲-->
 				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
-							<h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5>        
+							<!-- <h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5> -->        
 							<p class="vis_add mt10 mb10">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。</p>
               </span>
              </div>
@@ -887,7 +1059,7 @@ $('.more_login_btn').on('click', function () {
 									<td>
 										<div class="input_set input_set_name">
 											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例:山田" /></div>
-											<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
+											<span class="prefix prefix_mei s_ml8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
@@ -904,7 +1076,7 @@ $('.more_login_btn').on('click', function () {
 									<td>
 										<div class="input_set input_set_kana">
 											<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例:ヤマダ" /></div>
-											<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
+											<span class="prefix prefix_mei s_ml8">メイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p>
@@ -978,7 +1150,24 @@ $('.more_login_btn').on('click', function () {
 								<tr>
 									<th>番地<span class="th_info"><span class="required">必須</span></span></th>
 									<td>
-										<input type="text" m:id="h_txt_address3" name="address3" placeholder="例:4-2-38" />
+									<script charset="UTF-8">
+									function zentohan(obj){
+	if(typeof(obj.value)!="string")return false;
+	var word = obj.value;
+	//for(i=0;i<zen.length;i++){
+		var regex = new RegExp("-","gm");
+		word = word.replace(regex,"ー");
+		regex1 = new RegExp('\\u2015',"gm");
+		word = word.replace(regex1,"ー");
+		regex2 = new RegExp('\uff0d',"gm");
+		word = word.replace(regex2,"ー");
+		regex2 = new RegExp('\u2010',"gm");
+		word = word.replace(regex2,"ー");
+	//}
+	obj.value = word;
+}
+									</script>
+										<input type="text" m:id="h_txt_address3" name="address3" placeholder="例:4-2-38" onblur="zentohan(this);"/>
 										<span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span>
 										<span m:id="l_msgPre_address3">
 											<p class="error mt10 s_mt10">
@@ -989,7 +1178,7 @@ $('.more_login_btn').on('click', function () {
 								</tr>
 								<tr>
 									<th>建物名・部屋番号<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
-									<td>
+									<td id="address4_area">
 										<input type="text" m:id="h_txt_address4" name="address4" placeholder="例:ユーキャンビル" />
 										<span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span>
 										<span m:id="l_msgPre_address4">
@@ -997,14 +1186,32 @@ $('.more_login_btn').on('click', function () {
 												<span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
 											</p>
 										</span>
+										
+										<div class="samakata">
+											<a class="toggle_btn">世帯主様と苗字が異なる方へ▼</a>
+											<div class="togglemenu mt20">
+												<div class="input_set input_set_name">
+													<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
+													<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
+													<span class="suffix viewPc">様方</span>
+												</div>
+												<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
+												<span m:id="l_msgPre_address_co_sei">
+													<p class="error mt10 s_mt10"><span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span></p>
+												</span>
+												<span m:id="l_msgPre_address_co_mei">
+													<p class="error mt10 s_mt10"><span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span></p>
+												</span>
+											</div>
+										</div>
 									</td>
 								</tr>
-								<tr>
+								<!-- <tr>
 									<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 									<td>
 										<div class="input_set input_set_name">
 											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
-											<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
+											<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
@@ -1015,7 +1222,7 @@ $('.more_login_btn').on('click', function () {
 											<p class="error mt10 s_mt10"><span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span></p>
 										</span>
 									</td>
-								</tr>
+								</tr> -->
 								<tr>
 									<th>電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 									<td>
@@ -1030,15 +1237,20 @@ $('.more_login_btn').on('click', function () {
 								</tr>
 								<tr>
 									<th>メールアドレス<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
-									<td>
+									<td id="email_area">
 										<input type="text" m:id="h_txt_email" name="email" placeholder="例:yamada@xxx.co.jp" />
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;tuuhan@u-can.co.jp</p>
 										<span m:id="l_msgPre_email">
 											<p class="error mt10 s_mt10"><span m:id="h_err_email">PCメールアドレス入力エラーメッセージ</span></p>
 										</span>
+										<p class="example red mt20 mb10">▼メールアドレスをご確認ください。
+										</p>
+										<p class="output_email_confirm_wrap mt5">確認 :　<span id="output_email_confirm"></span></p>
+										<p class="red sample_notice">確認用アドレスが反映されない時は<a href="javascript:void(0); return false">こちら</a>をクリックしてください</a></p>
+										<input id="input_email_confirm" type="hidden" m:id="input_email_confirm" name="email_confirm" value="" oncontextmenu="return false;" />
 									</td>
 								</tr>
-								<tr>
+								<!-- <tr>
 									<th>メールアドレス<br class="viewPc">（確認用）<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
 									<td>
 										<p class="example viewPc mb10">▼確認のため、もう一度ご入力ください。</p>
@@ -1049,7 +1261,7 @@ $('.more_login_btn').on('click', function () {
 											</p>
 										</span>
 									</td>
-								</tr>
+								</tr> -->
 								<tr>
 									<th>性別<span class="th_info"><span class="optional">任意</span></span></th>
 									<td>
@@ -1072,10 +1284,11 @@ $('.more_login_btn').on('click', function () {
 								</tr>
 								<tr>
 									<th>生年月日<span class="th_info"><span class="required">必須</span></span></th>
-									<td>
+									<td class="birthday_area">
 										<select m:id="h_sel_birthday_year" id="year">
 											<option value=""></option>
-											<option m:id="sel_opt_birthday_year"value="2016">2017(平成29)</option>
+											<option m:id="sel_opt_birthday_year"value="2018">2018(平成30)</option>
+											<option m:id="sel_opt_birthday_year"value="2017">2017(平成29)</option>
 											<option m:id="sel_opt_birthday_year"value="2016">2016(平成28)</option>
 											<option m:id="sel_opt_birthday_year"value="2015">2015(平成27)</option>
 											<option m:id="sel_opt_birthday_year"value="2014">2014(平成26)</option>
@@ -1188,19 +1401,19 @@ $('.more_login_btn').on('click', function () {
 											<option m:id="sel_opt_birthday_year"value="1907">1907(明治40)</option>
 											<option m:id="sel_opt_birthday_year"value="1906">1906(明治39)</option>
 										</select><span class="suffix">年</span><br class="viewSp">
-										<select m:id="h_sel_birthday_month" class="memadd_input_03 s_mt8">
+										<select m:id="h_sel_birthday_month" class="memadd_input_03">
 											<option value=""></option>
 											<option m:id="h_opt_birthday_month" value="">1</option>
 											<option m:id="dummy" value="">2</option>
 											<option m:id="dummy" value="">3</option>
-										</select><span class="suffix s_mt8">月</span>
-										<select m:id="h_sel_birthday_day" class="memadd_input_03 s_mt8">
+										</select><span class="suffix">月</span>
+										<select m:id="h_sel_birthday_day" class="memadd_input_03">
 											<option value=""></option>
 											<option m:id="h_opt_birthday_day" value="">1</option>
 											<option m:id="dummy" value="">2</option>
 											<option m:id="dummy" value="">3</option>
-										</select><span class="suffix s_mt8">日</span>
-										<p class="error mt10 s_mt10"><span m:id="h_err_birthday">生年月日エラーメッセージ</span></p>
+										</select><span class="suffix">日</span>
+										<p class="error"><span m:id="h_err_birthday">生年月日エラーメッセージ</span></p>
 									</td>
 								</tr>
 								<tr>
@@ -1592,7 +1805,7 @@ $('.more_login_btn').on('click', function () {
 												<td>
 													<div class="input_set input_set_name">
 														<span class="prefix">姓</span><div class="input_wrap"><input type="text" name="dst_name_sei" m:id="h_txt_dst_name_sei" placeholder="例:山田"></div>
-														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" name="dst_name_mei" m:id="h_txt_dst_name_mei" placeholder="例:花子"></div>
+														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" name="dst_name_mei" m:id="h_txt_dst_name_mei" placeholder="例:花子"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
 													<p class="example viewPc mt10">例&nbsp;:&nbsp;山田　太郎</p>
@@ -1605,7 +1818,7 @@ $('.more_login_btn').on('click', function () {
 												<td>
 													<div class="input_set input_set_kana">
 														<span class="prefix">セイ</span><div class="input_wrap"><input type="text" name="dst_name_sei_kana" class="in_w_06b" m:id="h_txt_dst_name_sei_kana" placeholder="例:ヤマダ"></div>
-														<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap s_mt8"><input type="text" class="in_w_06b" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana" placeholder="例:ハナコ"></div>
+														<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap"><input type="text" class="in_w_06b" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana" placeholder="例:ハナコ"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
 													<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ　タロウ</p>
@@ -1686,7 +1899,7 @@ $('.more_login_btn').on('click', function () {
 											<tr>
 												<th>番地<span class="th_info"><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3" placeholder="例:4-2-38">
+													<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3" placeholder="例:4-2-38" onblur="zentohan(this);">
 													<span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span>
 													<span m:id="l_msgPre_dst_address3">
 														<p class="error mt10 s_mt10"><span m:id="h_err_dst_address3">住所(番地)入力エラーメッセージ</span></p>
@@ -1704,15 +1917,36 @@ $('.more_login_btn').on('click', function () {
 															<p class="error mt10 s_mt10">住所(建物名・部屋番号)入力エラーメッセージ</p>
 														</span>
 													</span>
+													<div class="samakata">
+														<a class="toggle_btn">世帯主様と苗字が異なる方へ▼</a>
+														<div class="togglemenu mt20">
+															<div class="input_set input_set_name">
+																<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例:山田"></div>
+																<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
+																<span class="suffix viewPc">様方</span>
+															</div>
+															<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
+															<span m:id="l_msgPre_dst_address_co_sei">
+																<span m:id="h_err_dst_address_co_sei">
+																	<p class="error mt10 s_mt10">様方(姓)入力エラーメッセージ</p>
+																</span>
+															</span>
+															<span m:id="l_msgPre_dst_address_co_sei">
+																<span m:id="h_err_dst_address_co_mei">
+																	<p class="error mt10 s_mt10">様方(名)入力エラーメッセージ</p>
+																</span>
+															</span>
+														</div>
+													</div>
 												</td>
 											</tr>
 
-											<tr>
+											<!-- <tr>
 												<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 												<td>
 													<div class="input_set input_set_name">
 														<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例:山田"></div>
-														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
+														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
 													<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
@@ -1727,7 +1961,7 @@ $('.more_login_btn').on('click', function () {
 														</span>
 													</span>
 												</td>
-											</tr>
+											</tr> -->
 											<tr>
 												<th class="none_bor">電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
@@ -1778,6 +2012,7 @@ $('.more_login_btn').on('click', function () {
 												<span m:id="l_notPre_disp_separate_delivery">
 													<input m:id="h_hid_separate_delivery_0"  type="hidden" name="separate_delivery_date_flg" value="0" />
 												</span>
+											
 
 												<span m:id="l_msgPre_appointed_delivery_date">
 													<div class="box_form_td">
@@ -1835,35 +2070,45 @@ $('.more_login_btn').on('click', function () {
 															</span>
 														</table>
 													</div>
+
 												</span>
+									
 												<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
-												<div id="sepDeliv0">
-													<div class="box_01 add_mt1 mb5">配送希望日</div>
-													<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
-													<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01 w200">
-														<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
-														<option m:id="h_opt_deliveryDateMap" value="1">2010年07月01日</option>
-														<option m:id="dummy" value="">2010年07月02日</option>
-														<option m:id="dummy" value="">2010年07月03日</option>
-														<option m:id="dummy" value="">2010年07月04日</option>
-														<option m:id="dummy" value="">2010年07月05日</option>
-													</select>
-													<div class="mt15">
-														<div class="box_01 add_mt2 mb5">配送時間帯</div>
-														<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
-														<select m:id="h_sel_delivery_time" class="memadd_input_01 w200">
-															<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
-															<option m:id="dummy" value="">午前中</option>
-															<option m:id="dummy" value="">午後中</option>
-															<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
-															<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
-														</select>
+												<div id="delive_wrap">
+													<a class="toggle_delive_btn">配送日を希望する方へ▼</a>
+													<div id="sepDeliv0" class="togglemenu delive">
+														<div>
+															<div class="box_01 add_mt1 mb5">配送希望日</div>
+															<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
+															<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01 w200">
+																<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
+																<option m:id="h_opt_deliveryDateMap" value="1">2010年07月01日</option>
+																<option m:id="dummy" value="">2010年07月02日</option>
+																<option m:id="dummy" value="">2010年07月03日</option>
+																<option m:id="dummy" value="">2010年07月04日</option>
+																<option m:id="dummy" value="">2010年07月05日</option>
+															</select>
+														</div>
+														<div>
+															<div class="s_mt15">
+																<div class="box_01 add_mt2 mb5">配送時間帯</div>
+																<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
+																<select m:id="h_sel_delivery_time" class="memadd_input_01 w200">
+																	<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
+																	<option m:id="dummy" value="">午前中</option>
+																	<option m:id="dummy" value="">午後中</option>
+																	<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
+																	<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
+																</select>
+															</div>
+														</div>
 													</div>
 												</div>
 											</td>
 										</tr>
 									</table>
 								</div>
+							
 								<!-- /.input_date -->
 							</span>
 							<!-- /#appointed_delivery -->
@@ -2278,7 +2523,6 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=101'></script>
 
-      
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
