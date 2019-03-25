@@ -13,7 +13,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="title" -->
-		<meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
+<meta m:id="description" name="description" content="$1の商品ページです。ユーキャンのココチモ（cococimo）は「今よりもっと“心地いい”をお届けする」をテーマに、こだわり抜いた商品をご案内する通信販売サイトです。">
 		<meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 		<meta m:id="e_var_goods">
 		<meta m:id="e_var_goodsUrlPrefix">
@@ -162,7 +162,7 @@ $(function(){
 		/*▼▼▼css調整ここから0714*/
 		
 		.search_area_input_wrap input[name=keyword] {
-			padding: 5px 5px 6px;
+			padding: 7px 6px 6px;
 			min-height: 0;
 		}
 		
@@ -299,7 +299,7 @@ $(function(){
 			.header_logo {
 				width: 120px;
 				height: 30px;
-				top: 5px;
+				top: 0;
 			}
 			.header_top {
 				padding-top: 10px;
@@ -394,6 +394,162 @@ $(function(){
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 		<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
+<style>
+/*ページ内リンク調整
+#shop_smooth {
+  margin-top : -150px !important;
+  padding-top : 150px !important;
+}*/
+.recommend_list.item_list .img_box a {height: 228px;}
+@media screen and (max-width:767px) {
+	#contents {position: static;}
+}
+</style>
+<style>
+/* sp版 TEL内部リンク */
+.footer .telltop_sp {display:none;}
+@media screen and (max-width:767px) {
+	.footer #pagetop_sp {display: none;}
+	.footer .telltop_sp {
+			display: block;
+			width: 50px;
+			position: fixed;
+			z-index: 7;
+			right: 0;
+			bottom: 140px;
+		}
+	}
+/* カート下文言 */
+	.cart-notice{
+		border:#EE0003 1px solid;
+		padding:.4em; margin:-5px auto 20px;
+		max-width:928px;
+	}
+	.cart-notice p {
+		color:red;
+		font-weight:bold;
+		font-size:1.1em;
+		text-align:center;
+		line-height:1.5;
+		}
+	@media screen and (max-width: 767px){
+	.cart-notice{
+		max-width:310px;
+	}
+	.cart-notice p {
+		font-size:1em;
+	}
+}
+
+</style>
+
+	<style type="text/css">
+	/*ヘッダー調整*/
+	@media print, screen and (min-width: 767px) {
+		.header_top{width:1200px;height:90px;letter-spacing: 0;padding-top:10px;margin-bottom: 10px;border-bottom:3px solid #ece8e0;overflow:visible;}
+		.header_bottom {width:1200px;display:flex;justify-content: flex-end;}
+		.header_menu,.header_login{margin-top:20px;}
+		.header_menu{margin-left:70px;}
+		.header_ucan{margin-top:22px;margin-left:15px;float:left;}
+		.header_contact {margin:0;padding:0;float: left;margin-left: 15px;font-size: 16px;line-height: 36px;}
+		.search_area_in{width:400px;}
+		.search_area{margin-top:5px;float:left;margin-left:160px;background-image:none;}
+		.search_area_input_wrap{position:relative;width:410px;}
+
+		.header_menu a {width:160px;}
+		.header_login {width:130px;}
+		.header_login .header_login_btn {padding:0 0 0 0;}
+		.header_menu {margin-left: 15px;}
+		.header_username {min-width: initial;}
+
+		.header_mypage {margin:0;padding:0;display: block;float: left;margin-left: 18px;line-height: 36px;}
+		.header_memberAdd {float: left;width: 138px;margin-left: 18px;font-size: 16px;line-height: 36px;}
+		.header_memberAdd:before {content:  '\e921';display: inline-block;vertical-align: middle;color: #cc1010;font-size: 20px;position: relative;top: -1px;margin-right: 6px;}
+		.header_memberAdd a {position: relative;}
+		.header_memberAdd a:after {content: '';position: absolute;left: 0;bottom: -2px;display: inline-block;width: 0;height: 2px;background: #cc1010;-webkit-transition: all .3s ease;transition: all .3s ease;}
+		.header_memberAdd a:hover:after {width: 100%;}
+		.category_list > ul {width: 100%;border-top:1px dotted #d8d8d8;}
+
+		.header_memberAdd a:after,
+		.header_begginer a:after,
+		.header_guide a:after,
+		.header_contact a:after {-webkit-transition: all 0s ease;transition: all 0s ease;}
+		.search_area_in {width: auto;display: inline-block;}
+		.search_area.keyword {margin-left: 0;margin-top:0;padding-top:0;position: relative;z-index: 10;}
+		.search_area.keyword .search_area_in{width: 1200px;margin: 0 auto;}
+		.search_area.keyword .word_area {margin-top: 0;}
+		.search_area_input_wrap input[type=submit] {width: 90px;height: 35px;top: 3px;}
+		.search_area_input_wrap input[name=keyword] {font-size: 15px;}
+		}
+		@media screen and (max-width: 767px) {
+			.header_menu,.header_login{margin-top:0;}
+			.header_top{border-bottom:none;height:80px;}
+			.header_memberAdd,
+			#trend_area {display:none;}
+		}
+	/* カテゴリ-リスト */
+	#category_list {
+		float:left;
+		margin-right:15px;
+		font-size: 15px;
+	}
+	#category_list > form > p > select{
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	}
+	#category_list > form > p > select:focus {
+borer: 1px solid red;
+}
+	#category_list > form > p > select::-ms-expand {display: none;}
+	#category_list > form > p > select{
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAmCAYAAADX7PtfAAAB5klEQVRYR+2XT2rCQBjF3yhqVETanEBwLa48gSCCBxDvUao7F4JJr1Fw5Vpx4Q0EN95AEDdNUUH8g075BqaNJYn5o1mIA1kEkveb975vJhmGkAdrtVpfnPPXO3K/AXwqivLWbrcPrNls8jvCzNK6pmnN0ICMMaPb7aqhAcmqpmnsCbxpPz0jvWmcoXdpNBpFp9NBaMvCM5Ax5hgx5847pCfg8XjEbrcTwEgkcgE+n8/iPplMIhaLwQ7sCkgv05VKpZDNZnE6nUBwKUqu4/E4SGy1WmG73cIuCddAAuRyOdRqNaiqisPh8OtQApfLJQaDAebzuYBbQV0BSZlc0SiVSqhUKshkMheRrtdrDIdDTKdT4fx/5PJh10CaLUVFtapWqyiXy6JWNMj9aDTCeDwW94qi2DaWJyCpbDYbIdhoNFAsFoWbyWSCfr+P/X6PdDotYIGaRk6XXJKQYRjI5/Oo1+si6l6vh8ViIWKWz9hZdO2QBGQTUMPQVSgUxARms5noUhmx01r0BDQ7JSBFSJNIJBKOa8/s1jeQROQmQMBrUXruUquayIivbWeBHQb5XvmK1FxLpyVgNbFAQD9OHx9IqTz/2vz0huM7jx1p6Mc1zvmHruvv9F9qAHi5ecH+BC+P3HcEWUr/AOKQO+5yegC+AAAAAElFTkSuQmCC) no-repeat 100% 0;
+	    height: 38px;
+			background-size: contain;
+	    overflow: hidden;
+	    width: 160px;
+	    background-color: #fff;
+	    border: 1px solid #d8d8d8;
+	    padding-left: 5px;
+	}
+	#category_list > form > p > select > option{background-color: #f8f8f8;color: #3f3e3d;}
+
+	</style>
+	<!-- カテゴリ-リスト script▼▼▼ -->
+	<script type="text/javascript">
+	 function dropsort() {
+	        var browser = document.category_list.sort.value;
+	        if (browser == "_arrow_2_") {
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001025/list/";
+	        }else if(browser == "_arrow_3_"){
+	            location.href = "https://www.cococimo.jp/bousai/";
+	        }else if(browser == "_arrow_9_"){
+	            location.href = "https://www.cococimo.jp/manganihon/";
+	        }else if(browser == "_arrow_10_"){
+	            location.href = "https://www.cococimo.jp/hobby/";
+	        }else if(browser == "_arrow_14_"){
+	            location.href = "https://www.cococimo.jp/syokuhin/";
+	        }else if(browser == "_arrow_29_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001014/list/";
+	        }else if(browser == "_arrow_34_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001013/list/";
+	        }else if(browser == "_arrow_38_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001012/list/";
+	        }else if(browser == "_arrow_45_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001018/list/";
+	        }else if(browser == "_arrow_56_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001008/list/";
+	        }else if(browser == "_arrow_61_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001011/list/";
+	        }else if(browser == "_arrow_62_"){
+			            location.href = "https://www.cococimo.jp/shop/c/category/001001017/list/";
+			        }
+			    }
+		</script>
+	<!-- カテゴリ-リスト script▲▲▲ -->
 		<script src="/contents/c/js/new/featherlight.js"></script>
 		<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
 		<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
@@ -463,7 +619,7 @@ $(function(){
 			}
 			function AddCart_trans(){
 			   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
-			  return anchorButtonClick(document.cartGoodsAddForm);
+			   return anchorButtonClick(document.cartGoodsAddForm);
 			}
 			function siteCatalistAddCart(s_products){
 			 /* 
@@ -598,11 +754,49 @@ $(function(){
 			//-->
 		</script>
 		<!-- InstanceEndEditable -->
+		<style>
+			.recommend_list.item_list .img_box a {
+			    height: 228px;
+			}
+		</style>
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="goods" -->
+	<script language="JavaScript" type="text/javascript">
+		function selectOrderNum(formName) {
+			if (formName === "cartGoodsAddForm") {
+				document.goodsDetailCartForm.order_num_string.value = document.cartGoodsAddForm.order_num_string.value;
+				document.goodsDetailCartForm1.order_num_string.value = document.cartGoodsAddForm.order_num_string.value;
+			} else if  (formName === "goodsDetailCartForm") {
+				document.cartGoodsAddForm.order_num_string.value = document.goodsDetailCartForm.order_num_string.value;
+				document.goodsDetailCartForm1.order_num_string.value = document.goodsDetailCartForm.order_num_string.value;
+			} else if  (formName === "goodsDetailCartForm1") {
+				document.cartGoodsAddForm.order_num_string.value = document.goodsDetailCartForm1.order_num_string.value;
+				document.goodsDetailCartForm.order_num_string.value = document.goodsDetailCartForm1.order_num_string.value;
+			}
+		}
+	</script>
+	
+	<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップです。 -->
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "Product",
+	  "name" : "しゃべる地球儀",
+	  "image" : "https://www.cococimo.jp/item_neovision/contents/shop/00000003/image/static/neovision91/photo21.png",
+	  "description" : "こんな地球儀があったなんて！<BR class=\"viewPc\"/>ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、<BR class=\"pc\"/>\n\t\t\t新しい感動とワクワクをお届けします。<BR class=\"viewPc\"/>10,000シーンを超える映像(※)と、15,000を超える音声解説付きの未来型地球儀。<BR/>\n\t\t\t子供たちへの知育教材としてはもちろん、大人の知的なインテリア玩具としても傑作！！<BR/>\n\t\t\tココチモだけの７インチ大画面を配した台座は見やすいと大好評です。<BR class=\"pc\"/>\n\t\t\tぜひこの機会にお求めください。",
+	  "brand" : {
+	    "@type" : "Brand",
+	    "logo" : "https://www.cococimo.jp/contents/c/shop/image/sp/sp_logo.svg"
+	  },
+	  "offers" : {
+	    "@type" : "Offer",
+	    "price" : "39800"
+	  }
+	}
+	</script>
 </head>
 
 <body>
@@ -749,46 +943,17 @@ $(function(){
 		<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="header_in cf">
 				<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
+
+
+				<p class="header_logo">
 				<a m:id="e_link_logo_shop_shop" href="/">
 					<span m:id="l_notEmp_shop_image_file_shop">
-						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
 					</span>
 				</a>
-				</h1>
-				<div class="header_top">
-					<div class="header_tell" class="viewS">
-						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-476 7時から22時（年中無休）" />
-						<p class="note">携帯電話からでも通話無料</p>
-					</div>
-					<!-- /.header_tel -->
-					<div class="header_contact">
-						<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-					</div>
-					<!-- /.header_contact -->
-					<div m:id="l_pre_member_mypage_button_shop">
-						<div class="header_mypage viewPc">
-							<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
-						</div>
-					</div>
-					<!-- /.header_mypage -->
-					<div class="header_ucan">
-						<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
-					</div>
-					<!-- /.header_ucan -->
-				</div>
-				<!-- /.header_top -->
-				<div class="header_bottom">
-					<p class="header_username">ようこそ
-						<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a>
-						</span>
-						<span m:id="l_notPre_login_member_name">ゲスト</span>さん
 					</p>
-					<!-- /.header_username -->
-					<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
-					<!-- /.header_begginer -->
-					<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
-					<!-- /.header_guide -->
+
+				<div class="header_top">
 					<div class="header_search">
 						<div class="header_search_in cf">
 							<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -807,6 +972,46 @@ $(function(){
 					</div>
 
 					<!-- /.header_search -->
+					<div class="search_area">
+						<div id="category_list">
+						    <form name="category_list">
+						        <p>
+						            <select name="sort" onchange="dropsort()">
+						                <option value="">商品カテゴリ</option>
+						                <option value="_arrow_2_">イチオシ商品</option>
+						                <option value="_arrow_3_">防災用品</option>
+						                <option value="_arrow_9_">まんが日本昔ばなし</option>
+						                <option value="_arrow_10_">教養・趣味</option>
+						                <option value="_arrow_14_">食品(おいしい食卓)</option>
+						                <option value="_arrow_29_">家電</option>
+						                <option value="_arrow_34_">生活雑貨</option>
+						                <option value="_arrow_38_">健康</option>
+						                <option value="_arrow_45_">ファッション・鞄</option>
+						                <option value="_arrow_56_">寝具</option>
+						                <option value="_arrow_61_">DVD</option>
+						                <option value="_arrow_62_">メーカー別</option>
+						            </select>
+						        </p>
+						    </form>
+						</div>
+						<div class="search_area_in cf">
+							<div class="search_area_input_wrap">
+								<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
+									<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+									<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や気になる言葉をご入力ください" type="text" name="keyword" maxlength="200" value="商品名や気になる言葉をご入力ください"
+										 autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+									<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
+								</form>
+								<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+									<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+									<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+									<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+								</form>
+							</div>
+							</div>
+					</div>
+					<!-- /.search_area -->
+
 					<span m:id="l_equ_hierarchy_3_shop">
 					<div class="header_menu hvr-grow" class="clearfix">
                         <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
@@ -841,6 +1046,45 @@ $(function(){
 					</ul>
 				</div>
 				<!-- /.header_login -->
+					<!--<div class="header_tell" class="viewS">
+						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-186 6時&#xFF5E;22時（年中無休）" />
+						<p class="note">携帯電話からでも通話無料</p>
+					</div>
+					 /.header_tel -->
+
+					<div class="header_ucan">
+						<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+					</div>
+					<!-- /.header_ucan -->
+				</div>
+				<!-- /.header_top -->
+				<div class="header_bottom">
+
+					<p class="header_username">ようこそ
+						<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a>
+						</span>
+						<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+					</p>
+					<!-- /.header_username -->
+					<div m:id="l_pre_member_mypage_button_shop">
+						<div class="header_mypage viewPc">
+							<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+						</div>
+					</div>
+					<!-- /.header_mypage -->
+					<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+					<!-- /.header_begginer -->
+					<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+					<!-- /.header_guide -->
+
+					<div class="header_memberAdd">
+						<a m:id="e_link_login_shop" href="memberLogin.html" >新規会員登録</a>
+					</div>
+
+					<div class="header_contact">
+						<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+					</div>
+					<!-- /.header_contact -->
 			</div>
 			<!-- /.header_bottom -->
 			<div class="header_signup" style="display: none;">
@@ -953,37 +1197,6 @@ $(function(){
 	<!--header_in-->
 </header>
 <!--header-->
-	<div class="search_area cf">
-		<div class="search_area_in cf">
-			<div class="search_area_input_wrap">
-				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-					<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や気になる言葉をご入力ください" type="text" name="keyword" maxlength="200" value="商品名や気になる言葉をご入力ください"
-						 autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
-					<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
-				</form>
-				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
-					<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
-					<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
-					<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
-				</form>
-			</div>
-			<div class="word_area">
-				<p class="word_area_tit">よく検索されるキーワード</p>
-				<ul class="word_area_list">
-					<li><a href="/item_manganihon/">まんが日本昔ばなし</a></li>
-					<li><a href="/item_DCX01/">昭和ラヂオ</a></li>
-					<li><a href="/item_DWR02/">富士鷹コードバン財布</a></li>
-					<li><a href="/item_DCC10/">みみもとくんプレミアム</a></li>
-					<li><a href="/bousai/">防災用品</a></li>
-					<li><a href="/item_DGB00/">イージ・ウォーク</a></li>
-					<li><a href="/item_DIA1L/">金華さば</a></li>
-					<li><a href="/syokuhin/">おいしい食卓</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- /.search_area -->
 	<!-- InstanceBeginEditable name="contents" -->
 			<object class="xsp_obj" m:id="e_var_goodsUrlPrefix"></object>
 			<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
@@ -997,6 +1210,8 @@ $(function(){
 				<object class="xsp_obj" m:id="ancestralCategory"></object>
 				<object class="xsp_obj" m:id="breadcrumbCategory"></object>
 				<div id="contents_in" class="cf">
+					<!--▼▼▼カテゴリー▼▼▼-->
+					<!-- このぺーじでは非表示ココカラ
 					<object class="xsp_obj" m:id="e_var_standardCategory">
 					</object>
 					<object class="xsp_obj" m:id="e_var_campaignCategory">
@@ -1062,7 +1277,7 @@ $(function(){
 							</div>
 						</span>
 					</span>
-				
+					このぺーじでは非表示ココマデ -->
 					<!--▲▲▲カテゴリー▲▲▲-->
 					<div id="pan-navi" >
 						<ul class="clearfix">
@@ -1072,8 +1287,20 @@ $(function(){
 							<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
 						</ul>
 					</div>
+					
+					<!-- サムネイル画像取得 ▼▼▼-->
+					<span m:id="l_pre_goods">
+						<object class="xsp_obj" m:id="b_var_sku"></object>
+						<object class="xsp_obj" m:id="b_var_goodsImages"></object>
+					</span>
+					<div class="i_main_img_01" style="display: none;">
+						<object class="xsp_obj" m:id="b_var_image_file"></object>
+						<object class="xsp_obj" m:id="b_var_image_file2"></object>
+						<img m:id="h_img_goods" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="" />
+					</div>
+					<!-- サムネイル画像取得 ▲▲▲-->
 					<div class="goods_detail">
-						<!-- ページ内メニューここから -->
+						<!-- ページ内メニューここから
 						<div id="c-nav" class="c-nav">
 							<p id="c-nav-open" class="c-nav-btn"> <img src="/contents/c/shop/image/sp/sp_img_nav.png" alt="メニュー" width="48"> </p>
 							<div class="c-nav-inner">
@@ -1087,7 +1314,7 @@ $(function(){
 								</ul>
 							</div>
 						</div>
-						<!-- ページ内メニューここまで -->
+						ページ内メニューここまで -->
 						<div id="content_wrap">
 							<!-- インクルード領域 -->
 							<span m:id="timed_include" filename="goodsDetail_head"></span>
@@ -1374,12 +1601,28 @@ $(function(){
 						</div>
 						</span>
 						<!--▲▲▲あなたの閲覧履歴からのおススメです▲▲▲-->        
-						<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+						<form m:id="h_form_cartGoodsAdd8" method="POST" action="cart.html">
 						<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 						<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 						<input type="hidden" name="order_num_string" value="1" />
+						<!-- 数量指定コメントアウト
+						<div class="select_wrap">
+                            <div class="select_wrap">
+                                <span class="select_label">数量：</span>
+                                <span class="select_box">
+                           
+                                    <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" onchange="selectOrderNum('cartGoodsAddForm');">
+                                        <option m:id="h_pull_order_num" value="3">3</option>
+                                        <option m:id="dummy">2</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="pc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+						<p class="sp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+						数量指定コメントアウト（終了）-->
 						<!-- ELTEX add start -->
 						</form>
 						<!-- ELTEX add end -->
@@ -1389,11 +1632,43 @@ $(function(){
 						<form method="post" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm" action="goodsDetail.html">
 						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
 						<input type="hidden" name="order_num_string" value="1" />
+						<!-- 数量指定コメントアウト
+						<div class="select_wrap">
+                            <div class="select_wrap">
+                                <span class="select_label">数量：</span>
+                                <span class="select_box">
+                                    <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" onchange="selectOrderNum('goodsDetailCartForm1');">
+                                        <option m:id="h_pull_order_num" value="3">3</option>
+                                        <option m:id="dummy">2</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <p class="pc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+						<p class="sp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+						数量指定コメントアウト（終了）-->
 						</form>
 						<form method="post" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
 						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
 						<input type="hidden" name="order_num_string" value="1" />
+						<!-- 数量指定コメントアウト
+						<div class="select_wrap">
+                            <div class="select_wrap">
+                                <span class="select_label">数量：</span>
+                                <span class="select_box">
+                                    
+                                    <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" onchange="selectOrderNum('goodsDetailCartForm');">
+                                        <option m:id="h_pull_order_num" value="3">3</option>
+                                                                            <option m:id="dummy">2</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+						<p class="pc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+						<p class="sp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+						数量指定コメントアウト（終了）-->
 						</form>
+						
 						<!--/ 商品購入カート -->
 						<span m:id="l_pre_member">
 						<object class="xsp_obj" m:id="b_var_recommendURL" ></object>
@@ -1464,6 +1739,9 @@ $(function(){
 		<div id="pagetop_sp" class="pagetop_sp">
 			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
 		</div>
+		<div id="telltop_sp" class="telltop_sp">
+    	<a href="#tel_area"><img src="/contents/c/goods/image/new/btn_pagetop_sp_2.png" alt="お電話番号へ"></a>
+    </div>
 		<div class="about">
 			<div class="about_in wrapper">
 				<ul class="about_list">
@@ -1523,7 +1801,7 @@ $(function(){
 			</div>
 		</div>
 		<!-- /.about -->
-		<div class="tel_area">
+		<div class="tel_area" id="tel_area">
 			<div class="tel_area_in wrapper">
 				<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
 				<p class="tel_area_txt">ココチモお客様センター</p>
@@ -1738,6 +2016,7 @@ $(function(){
 		<meta m:id="criteo_q_push" content="">
 		</meta>
 		<!-- ▲▲▲ Criteo ▲▲▲ -->
+		
 		
 		<!-- InstanceEndEditable -->
 <span m:id="smartSuggest"></span>

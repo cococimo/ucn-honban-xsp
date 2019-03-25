@@ -764,6 +764,25 @@ borer: 1px solid red;
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceParam name="id" type="text" value="goods" -->
+
+<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップです。 -->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Product",
+  "name" : "しゃべる地球儀",
+  "image" : "https://www.cococimo.jp/item_neovision/contents/shop/00000003/image/static/neovision91/photo21.png",
+  "description" : "こんな地球儀があったなんて！<BR class=\"viewPc\"/>ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、<BR class=\"pc\"/>\n\t\t\t新しい感動とワクワクをお届けします。<BR class=\"viewPc\"/>10,000シーンを超える映像(※)と、15,000を超える音声解説付きの未来型地球儀。<BR/>\n\t\t\t子供たちへの知育教材としてはもちろん、大人の知的なインテリア玩具としても傑作！！<BR/>\n\t\t\tココチモだけの７インチ大画面を配した台座は見やすいと大好評です。<BR class=\"pc\"/>\n\t\t\tぜひこの機会にお求めください。",
+  "brand" : {
+    "@type" : "Brand",
+    "logo" : "https://www.cococimo.jp/contents/c/shop/image/sp/sp_logo.svg"
+  },
+  "offers" : {
+    "@type" : "Offer",
+    "price" : "39800"
+  }
+}
+</script>
 </head>
 
 <body>
@@ -1267,7 +1286,7 @@ borer: 1px solid red;
 					</div>
 					<!-- サムネイル画像取得 ▲▲▲-->
 					<div class="goods_detail">
-						<!-- ページ内メニューここから -->
+						<!-- ページ内メニューここから
 						<div id="c-nav" class="c-nav">
 							<p id="c-nav-open" class="c-nav-btn"> <img src="/contents/c/shop/image/sp/sp_img_nav.png" alt="メニュー" width="48"> </p>
 							<div class="c-nav-inner">
@@ -1281,7 +1300,7 @@ borer: 1px solid red;
 								</ul>
 							</div>
 						</div>
-						<!-- ページ内メニューここまで -->
+						ページ内メニューここまで -->
 						<div id="content_wrap">
 							<!-- インクルード領域 -->
 							<span m:id="timed_include" filename="goodsDetail_head"></span>
@@ -1658,6 +1677,9 @@ borer: 1px solid red;
 		<div id="pagetop_sp" class="pagetop_sp">
 			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
 		</div>
+		<div id="telltop_sp" class="telltop_sp">
+    	<a href="#tel_area"><img src="/contents/c/goods/image/new/btn_pagetop_sp_2.png" alt="お電話番号へ"></a>
+    </div>
 		<div class="about">
 			<div class="about_in wrapper">
 				<ul class="about_list">
@@ -1695,13 +1717,13 @@ borer: 1px solid red;
 					</li>
 					<li class="about_list_secure js-matchHeight">
 						<span class="about_list_icon icon-secure"></span>
-						<p class="about_list_tit">品質保証・返品について</p>
+						<p class="about_list_tit">品質保証について</p>
 						<div class="about_list_in">
 							<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
-							<div class="about_list_caution">
+							<!--<div class="about_list_caution">
 								<p class="about_list_caution_tit">※ご注意※</p>
 								<p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
-							</div>
+							</div>-->
 						</div>
 					</li>
 					<li class="about_list_point js-matchHeight">
@@ -1717,7 +1739,7 @@ borer: 1px solid red;
 			</div>
 		</div>
 		<!-- /.about -->
-		<div class="tel_area">
+		<div class="tel_area" id="tel_area">
 			<div class="tel_area_in wrapper">
 				<h2 class="tel_area_tit">お電話でのご注文も受付けております。</h2>
 				<p class="tel_area_txt">ココチモお客様センター</p>

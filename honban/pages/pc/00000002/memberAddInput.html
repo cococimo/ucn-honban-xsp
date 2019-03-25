@@ -443,7 +443,23 @@ $(function(){
 							<tr>
 								<th>住所（番地）<span class="th_info"><span class="required">必須</span></span></th>
 								<td>
-									<input type="text" class="in_w_02" m:id="h_txt_address3" name="address3"/>
+<script charset="UTF-8">
+									function zentohan(obj){
+	if(typeof(obj.value)!="string")return false;
+	var word = obj.value;
+	//for(i=0;i<zen.length;i++){
+		var regex = new RegExp("-","gm");
+		word = word.replace(regex,"ー");
+		regex1 = new RegExp('\\u2015',"gm");
+		word = word.replace(regex1,"ー");
+		regex2 = new RegExp('\uff0d',"gm");
+		word = word.replace(regex2,"ー");
+		regex2 = new RegExp('\u2010',"gm");
+		word = word.replace(regex2,"ー");
+	//}
+	obj.value = word;
+}</script>
+									<input type="text" class="in_w_02" m:id="h_txt_address3" name="address3" onblur="zentohan(this);"/>
 									<span class="example　ml20 viewPc"><span m:id="sample_house_no">４&#x2212;２&#x2212;３８</span></span>
 									<p class="error mt10 s_mt10"><span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span></p>
 								</td>
@@ -768,13 +784,13 @@ $(function(){
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証・返品について</p>
+					<p class="about_list_tit">品質保証について</p>
 					<div class="about_list_in">
 						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
-                        <div class="about_list_caution">
+                        <!--<div class="about_list_caution">
                             <p class="about_list_caution_tit">※ご注意※</p>
                             <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
-                        </div>
+                        </div>-->
 					</div>
 				</li>
 				<li class="about_list_point js-matchHeight">

@@ -62,9 +62,9 @@
 			<input type="hidden" name="ext_goods_sku_code" value="DCE80">
 			<input type="hidden" name="order_num_string" value="1">
 		-->
-    <!-- <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
-			<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!-- <span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
-			<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+    <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p>
+			<!-- <p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a>--><!-- <span class="telArea"><img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --><!--</p>-->
+			<!--<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a>--><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
 		<!--	</form>-->
 		<!-- ELTEX mod end -->
 	</div>
@@ -85,7 +85,7 @@
 			<div class="sp-n">
 				<dl>
 					<dt>
-						 
+
 						大きさ：<br class="sp-n">
 					</dt>
 					<dd>幅148.0×奥行105.5×<br class="sp-n">高さ15.7mm（閉時、最薄部）<br class="sp-n">高さ18.5mm（閉時、最厚部）</dd>
@@ -116,7 +116,7 @@
 				</dl>
 			</div>
 			<div class="cl-fix">
-    
+
 				<div><img src="contents/shop/00000003/image/static/img/exword1/sp-eigth04.png" alt="純正ケースつき" class="sp-i sp-eigth02"></div>
 				<dl>
 					<dt>販売数14年連続第一位</dt>
@@ -125,20 +125,174 @@
 			</div>
 		</div>
 	</div>
-	<div class="bs-wrap ninth">
-		<div class="ninth-box01 cl-fix">
-			<div>
-				<div>
-					<dl>
-						<dt>一括払価格</dt>
-						<dd>38,370<span>円</span></dd>
-					</dl>
-					<p>※価格は全て税込みです。</p>
+	<style>
+		#content_wrap .info_area {
+			margin: 0 auto 42px;
+		}
+
+		#content_wrap .info_area .pho_box {
+			float: right;
+		}
+
+		#content_wrap .info_area .txt_box {
+			margin-top: 18px;
+			width: 614px;
+			float: left;
+		}
+
+		#content_wrap .info_area .txt_box h3 {
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		#content_wrap .info_area ul li {
+			float: left;
+		}
+
+		#content_wrap .info_area ul li:last-child {
+			float: right;
+		}
+		/*価格*/
+		#content_wrap .txt_box .price_area {
+			border-bottom: 1px solid #929292;
+		    margin-bottom: 15px;
+		    margin-top: 24px;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-align-items: center;
+		    align-items: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    font-size: 24px;
+		    color: #333;
+		}
+
+		#content_wrap .txt_box .price_area .ikkatu {
+			font-size: 14px;
+		    display: inline;
+		    position: relative;
+		    bottom: 0;
+		    padding-right: 20px;
+		    font-weight: normal;
+		}
+		#content_wrap .txt_box .price_area .yen {
+			font-size: 24px;
+		    color: #333;
+		    display: inline;
+		    font-weight: normal;
+		    padding-left:5px;
+		    vertical-align: bottom;
+		}
+		#content_wrap .info_area .txt_box {
+			margin-top: 32px;
+		    
+		}
+		#content_wrap .info_area .txt_box h3 {
+			margin-bottom: 20px;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    font-weight: bold;
+		}
+		#content_wrap .price_txt {
+			font-weight: normal;
+			text-align: right;
+			font-size: .8em;
+			margin-bottom:32px;
+		}
+		#content_wrap .plice_list {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between; 
+		}
+		#content_wrap .plice_list .return_txt {
+			font-size: 12px;
+			padding-left: 10px;
+			padding-top: 5px;
+		}
+		#content_wrap .plice_list .return_txt a {
+			text-decoration: underline;
+		}
+		#content_wrap .plice_list .return_txt a:hover {
+			text-decoration: none;
+		}
+		#content_wrap .pho_box .note {
+			position: static;
+			font-size: 12px;
+			padding-left: 10px;
+		}
+		@media (max-width: 767px) {
+			#content_wrap .info_area {
+				margin: 0 15px 22px;
+				width: auto;
+			}
+			
+			#content_wrap .info_area p {
+				margin-bottom: 10px;
+				font-size: 12px;
+			}
+			
+			#content_wrap .info_area .txt_box {
+				width: auto;
+				float: none;
+			}
+			
+			#content_wrap .info_area .txt_box h3 {
+				margin-bottom: 10px;
+			}
+			
+			#content_wrap .info_area ul {
+				margin: 0 0;
+			}
+			
+			#content_wrap .info_area ul li {
+				float: none;
+			}
+				#content_wrap .info_area ul li:last-child {
+			    float: none;
+			}
+			#content_wrap .price_txt {
+				text-align: left;
+			}
+			#content_wrap .plice_list {
+				display: block;
+			}
+			#content_wrap .plice_list img {
+				width:100%;
+			}
+			#content_wrap .info_area .pho_box {
+					float: none;
+				}
+			#content_wrap .info_area .pho_box img {
+				width: 100%;
+			}
+		}
+	</style>
+	<div class="info_area">
+		<div class="img_box clearfix">
+			<div class="txt_box">
+				<div class="price_area">
+					<h3><span class="ikkatu">一括払価格</span>38,370<span class="yen">円</span></h3>
 				</div>
-				<div><img src="contents/shop/00000003/image/static/img/exword1/ninth02.png" alt="クレジットカード手数料0円。代金引換代引き手数料300円。"></div>
+				<p class="price_txt">※価格は全て税込みです。</p>
+				<ul class="plice_list clearfix">
+					<li><img src="contents/shop/00000003/image/static/img/infotext01.png" alt="クレジットカード　手数料0円 代金引換　代引手数料300円" style="padding-bottom: 2em" class="s_pb0"></li>
+					<li><img src="contents/c/image/static/img/infotext02.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
+					<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+					<!--▼▼▼モーダル▼▼▼-->
+					<div id="return_goods" class="lightbox">
+						<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+						<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください。</span></p>
+						<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">なお食品に関しては、商品の性質上、お申込み後のお客様都合によるキャンセル、返品はお受けできません。予めご了承ください。<br>※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
+						<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+					</div>
+					<!-- /#return_goods -->
+					</li>
+				</ul>
+				
 			</div>
-			<div><img src="contents/shop/00000003/image/static/img/exword1/ninth01.png" alt="送料">
-				<p class="note">※商品はお申込みから<br class="viewPc">通常7&#xFF5E;12日前後でお届けいたします。</p>
+			<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時&#xFF5E;12時 14時&#xFF5E;15時 16時&#xFF5E;18時 18時&#xFF5E;20時 19時&#xFF5E;21時">
+			<p class="note mt0">※商品はお申込みから<br class="viewPc">通常7&#xFF5E;12日前後でお届けいたします。</p>
 			</div>
 
 		</div>
@@ -152,8 +306,8 @@
 			<input type="hidden" name="order_num_string" value="1">
 		-->
 	    <!-- <p class="mb10"><img src="contents/shop/00000003/image/static/img/exword1/btn01_2.png" alt="ご好評につき完売しました。"></p> -->
-		<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --></p>
-		<p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a> --></p>
+		<!--<p class="shopping"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/btn01.png" alt="カートに入れる" class="hover"></a><!--<span class="telArea"> <img src="contents/shop/00000003/image/static/img/pc_call.png" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></span> --><!--</p>-->
+		<!-- <p class="shopping_sp"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal btn01"><img src="contents/shop/00000003/image/static/img/exword1/sp-btn01.png" alt="お買い物かごに入れる" class="hover"></a><!-- <a class="telArea" href="tel:0120552186"><img src="contents/shop/00000003/image/static/img/sp_btn_call.jpg" alt="お電話でのご注文：フリーダイヤル 0120-552-186 7時～22時（日曜・祝日も受付けます）"></a>></p> -->
 		<!--	</form>-->
 	</div>
 	<div class="bs-wrap tenth">
@@ -193,12 +347,10 @@
 	<p class="ta-c" style="margin-top:10px;"><a href="/shop/c/static/exword-episode/">歴代電子辞書開発ストーリーはこちらから>></a></p>
 </div>
 
-<!-- 先頭へ戻るボタン 
+<!-- 先頭へ戻るボタン
 <p class="totop-btn">
 	<a href="#header">
 		<img src="contents/c/shop/image/sp/sp_img_totop.png" alt="先頭へ戻る" width="48">
 	</a>
 </p>
  先頭へ戻るボタンここまで -->
-
-

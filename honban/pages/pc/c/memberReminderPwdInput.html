@@ -173,6 +173,22 @@ $(function(){
 						<li class="cmn_step_item">再設定完了</li>
 					</ol>
 					<!-- /.cmn_step -->
+
+			      <!-- エラーメッセージ -->
+			      <span m:id="l_msgPre_errors_reminder_nodata">
+			        <span class="headerror mb10">
+			          <div class="error">
+			            <span m:id="h_err_login_id" >ログインIDエラーメッセージ</span><br>
+			            <span m:id="h_err_email_pc" >メールアドレスエラーメッセージ</span><br>
+			            <span m:id="h_err_birthday" >生年月日エラーメッセージ</span>
+			            </div>
+			          </span>
+			        </span>
+					<span m:id="l_msgPre_errors_reminder_nodata">
+						<p class="error mt10 s_mt10 mb10">お客様の情報が取得できませんでした。</p>
+					</span>
+			      <!--/ エラーメッセージ -->
+			      
 					<h1 class="cmn_tit05">パスワード再設定</h1>
 					<h2 class="cmn_tit01"><span class="cmn_tit01_underline">ログイン情報入力</span></h2>
 					 <form m:id="h_form_reminderPwdComplete" method="POST" action="reminderPwdComplete.html">
@@ -266,13 +282,13 @@ $(function(){
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証・返品について</p>
+					<p class="about_list_tit">品質保証について</p>
 					<div class="about_list_in">
 						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って良品とお取替えいたします。</p>
-                        <div class="about_list_caution">
+                        <!--<div class="about_list_caution">
                             <p class="about_list_caution_tit">※ご注意※</p>
                             <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
-                        </div>
+                        </div>-->
 					</div>
 				</li>
 				<li class="about_list_point js-matchHeight">
