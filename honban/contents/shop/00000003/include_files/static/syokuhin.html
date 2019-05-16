@@ -197,82 +197,7 @@
 </div>
 <!--▲▲▲おい食カテゴリー▲▲▲-->
 
-<!-- ▼▼▼▼slider(slick)-->
-<link rel="stylesheet" href="/contents/shop/00000003/css/oishoku_slick_css/style.css">
-<script>
-	$(function () {
-		$('.slider').slick({
-			dots: true,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			lazyLoad: 'progressive',
-			autoplay: true,
-			autoplaySpeed: 3000,
-			adaptiveHeight: true,
-			responsive: [{
-				breakpoint: 768,
-				settings: {
-					//arrows: false,
-				}
-			}]
-		});
-	});
 
-</script>
-<!--▼▼▼▼slider(imageNavigation)-->
-<link href="/contents/shop/00000003/css/oishoku_imageNavigation_css/style.css" rel="stylesheet" type="text/css" />
-<link href="/contents/shop/00000003/css/oishoku_imageNavigation_css/image_navigation.css" rel="stylesheet" type="text/css"
-/>
-<script type="text/javascript" src="/contents/shop/00000003/js/syokutaku/jquery.imageNavigation.js"></script>
-<script type="text/javascript">
-	$(function () {
-		$("#image-navigation").imageNavigation({
-			time: 5000,
-			animationTime: 500,
-			rolloverTime: 0,
-			rolloutTime: 0
-		});
-	});
-
-</script>
-
-<!--▲▲▲▲slider(imageNavigation)-->
-<style>
-	.slider {
-		margin: 0 0 65px;
-	}
-
-	.slick-dots {
-		bottom: -33px;
-	}
-
-	.slick-dots li button:before {
-		font-family: 'slick';
-	}
-
-	.slick-dots li button:before {
-		content: '';
-		background: #000;
-		width: 11px;
-		border-radius: 50%;
-		height: 11px;
-	}
-
-	.slick-prev:before {
-		content: '←';
-	}
-
-	.slick-next:before {
-		content: '→';
-	}
-
-	.center-item .slick-prev,
-	.center-item .slick-next {
-		z-index: 9
-	}
-</style>
-<!-- ▲▲▲▲slider(slick)-->
 
 <style>
 	/*レイアウト＿商品横四列*/
@@ -351,10 +276,6 @@
 			margin-bottom: 20px;
 			border-top: 1px dotted #ccc;
 		}
-
-
-
-
 		.item_list_2top.col_3-col4 li img {
 			max-width: 100%;
 			max-height: 100%;
@@ -422,6 +343,18 @@
 	}
 </style>
 <!-- ▲▲▲▲ナビプラスデザイン-->
+
+<style>
+	.category_feature_intro a:hover {
+    opacity: 0.7;
+	}
+	@media screen and (min-width: 767px) {
+		.category_feature {
+		    margin-top: 100px;
+		}
+	}
+</style>
+
 <div id="category_syokuhin" class="category">
 	<!--<ol id="breadcrumb" class="cmn_breadcrumb guide" itemscope itemtype="http://schema.org/BreadcrumbList">
 		<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -440,281 +373,13 @@
 				<img src="/contents/c/shop/image/category/syokuhin/img_intro01.jpg" alt="おいしい食卓" class="viewPc">
 				<img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="" class="viewSp">
 			</h2> -->
+			<a href="https://www.cococimo.jp/item_DIC76/" target="_blank">
+				<img src ="https://www.cococimo.jp/contents/c/shop/image/category/syokuhin/img_intro05.jpg" class="viewPc" alt="塩釜焼ローストビーフ"><img src ="https://www.cococimo.jp/contents/c/shop/image/category/syokuhin/img_intro05_sp.jpg" class="viewSp" alt="塩釜焼ローストビーフ">
+			</a>
 
 			<h1 style="display: none;">食品・グルメ(おいしい食卓)の商品一覧</h1>
 
-			<!-- ▼▼▼navigation-slider -->
-			<style>
-				.oisyoku-header .sub-contents-wrap {
-					background: #e6e6e6;
-					padding: 10px;
-				}
-
-				@media screen and (min-width: 767px) {
-					.oisyoku-header {
-						margin-top: 100px;
-					}
-					.oisyoku-header a.link-img:hover img {
-						opacity: 0.8;
-						-ms-filter: "alpha(opacity=80)";
-						filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-					}
-					#category .goods_archive {
-						padding-top: 20px;
-					}
-					.oisyoku-header {
-						margin-bottom: 30px;
-					}
-					.oisyoku-header .sub-contents-wrap {
-						width: 290px;
-						height: 323px;
-						float: left;
-						background: #ededed;
-						padding: 10px;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content {
-						width: 100%;
-						margin-top: 11px;
-						text-align: center;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content.catalog {
-						margin-bottom: 1px;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content.first {
-						margin-top: 0;
-					}
-					.oisyoku-header #image-navigation {
-						width: 900px;
-						float: right;
-					}
-					.oisyoku-header #image-navigation .navi {
-						float: right;
-						width: 200px;
-					}
-					.oisyoku-header #image-navigation .navi-image {
-						float: left;
-						width: 700px;
-						box-sizing: content-box;
-					}
-					.oisyoku-header #image-navigation .navi ul li {
-						position: relative !important;
-						top: 0;
-						border-bottom: 1px solid #fff;
-					}
-					.oisyoku-header #image-navigation .navi ul li+li {
-						top: 80px;
-					}
-					.oisyoku-header #image-navigation .navi ul li+li+li {
-						top: 160px;
-					}
-					.oisyoku-header #image-navigation .navi ul li+li+li+li {
-						top: 240px;
-					}
-					.oisyoku-header #image-navigation .navi ul li a {
-						width: 200px;
-						height: 80px;
-						background: #fff;
-						position: absolute !important;
-						top: 0;
-						left: 0;
-					}
-					.oisyoku-header #image-navigation .navi ul li a img {
-						max-width: initial;
-						height: auto;
-					}
-					.oisyoku-header #image-navigation .navi ul li a.active img {}
-					.oisyoku-header #image-navigation .navi ul li a.active {
-						padding: 5px;
-						box-sizing: content-box;
-						background: #fff;
-						position: absolute;
-						top: -6px;
-						left: -6px;
-						z-index: 20;
-						border: 1px solid #ccc;
-					}
-					.oisyoku-header #image-navigation .navi ul li a.active::after,
-					.oisyoku-header #image-navigation .navi ul li a.active::before {
-						content: '';
-						position: absolute;
-						top: 45%;
-						left: -10px;
-						margin: -5px 0 0 0;
-						width: 0;
-						height: 0;
-						border-top: 10px solid transparent;
-						border-right: 10px solid #FFFFFF;
-						border-bottom: 10px solid transparent;
-					}
-					.oisyoku-header #image-navigation .navi ul li a.active::before {
-						border-top: 11px solid transparent;
-						border-right: 11px solid #CCC;
-						border-bottom: 11px solid transparent;
-						left: -11px;
-						margin: -6px 0 0 0;
-						z-index: 23;
-					}
-					.oisyoku-header #image-navigation .navi ul li a.active::after {
-						z-index: 25;
-					}
-					.oisyoku-header #image-navigation .navi-image a {
-						display: block;
-						width: 690px;
-						overflow: hidden;
-					}
-					.oisyoku-header #image-navigation .navi-image a img {
-						max-width: initial;
-						width: auto;
-					}
-					.oisyoku-header .goods_detail_item_more_btn {
-						color: #fff;
-						text-decoration: none;
-						background: #f39800;
-						width: 100%;
-						line-height: 44px;
-						display: inline-block;
-						border-radius: 4px;
-						border: 1px solid #f39800;
-						-webkit-transition: .8s background, 1s color ease-out 0s;
-						transition: .8s background, 1s color ease-out 0s;
-					}
-					.oisyoku-header .goods_detail_item_more_btn:before {
-						display: none;
-					}
-				}
-
-				@media screen and (max-width: 767px) {
-					.oisyoku-header .sub-contents-wrap {overflow: hidden;}
-					.oisyoku-header #image-navigation .navi-image a img {
-						width: auto;
-					}
-					.oisyoku-header .sub-contents-wrap {
-						width: 100%;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content {
-						float: none;
-						width: 49%;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content.first {
-						float: left;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content.second {
-						float: right;
-						margin-top: 0;
-					}
-					.oisyoku-header .sub-contents-wrap .sub-content.catalog {
-						clear: both;
-						width: 100%;
-						height: auto;
-						padding-top: 10px;
-					}
-					.slider {margin: 0 0 50px;}
-				}
-			</style>
-
-			<!-- navigation-slider SP -->
-			<div class="oisyoku-header viewSp cf">
-				<ul class="slider center-item">
-					<li>
-						<a href="/shop/c/category/001012/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro10_sp.jpg" alt="賛否両論"></a>
-					</li>
-					<!-- <li>
-						<a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro02_sp.jpg" alt="カタログ新作"></a>
-					</li> -->
-					<li>
-						<a href="/shop/searchShopShop.do?_S=c&keyword=%83%8D%81%5B%83X%83g%83r%81%5B%83t" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro05_sp.jpg" alt="塩釜焼ローストビーフ"></a>
-					</li>
-					<li>
-						<a href="/item_DICA5/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro12_sp.jpg" alt="小腹にうれしいまろやか味噌ラーメン"></a>
-					</li>
-					</li>
-					<li>
-						<a href="/shop/c/static/syokutaku-feature13/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro07_sp.jpg" alt="ニンジンジュース"></a>
-					</li>
-				<!--<li>
-						<a href="/shop/c/static/syokutaku-feature16/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro09_sp.jpg" alt="夏特集"></a>
-					</li>-->
-					<!--<li>
-						<a href="/item_DICA5/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro06_sp.jpg" alt="味噌ラーメン"></a>
-					</li>-->
-
-					<li>
-						<a href="/shop/c/category/001001015024/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_intro01_sp.jpg" alt="カタログ"></a>
-					</li>
-				</ul>
-			</div>
-			<!--/.navigation-slider SP -->
-			<!-- navigation-slider PC -->
-			<div class="oisyoku-header cf mb30">
-				<!-- sub-content -->
-				<div class="sub-contents-wrap">
-					<div class="sub-content first">
-						<a href="/shop/c/static/syokutaku-concept/" target="blank" class="link-img"><img class="viewPc" src="/contents/c/shop/image/category/syokuhin/left_02.jpg" alt="コンセプト -おいしい食卓" /><img class="viewSp" src="/contents/c/shop/image/category/syokuhin/left_02_sp.png" alt="コンセプト -おいしい食卓" /></a>
-					</div>
-					
-					<!-- <div class="sub-content second">
-						<a href="/shop/c/category/001001015029/list/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_sale.png" alt="訳あり！お買得特集" /></a>
-					</div> -->
-					<div class="sub-content second">
-						<a href="/shop/c/category/001014/list/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_noodle.png" alt="小腹にうれしいシリーズ" /></a>
-					</div>
-					<!-- <div class="sub-content second">
-						<a href="/shop/c/static/syokutaku-feature2/" target="blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/left_01.jpg" alt="作り手の想い" /></a>
-					</div> -->
-					<!-- <div class="sub-content catalog">
-						<a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=S5571&_ga=2.4119352.967005232.1515459862-61215445.1513648303" target="blank"
-						 class="link-img"><img src="/contents/c/shop/image/category/syokuhin/catalog.jpg" alt="おいしい食卓カタログ" /></a>
-					</div> -->
-<!--                     <div class="sub-content catalog">
-						<a href="/shop/c/static/syokutaku-guide/" target="blank"
-						 class="link-img"><img src="/contents/c/shop/image/category/syokuhin/guide.jpg" alt="おいしい食卓お買い物ガイド" /></a>
-					</div> -->
-
-				</div>
-				<!-- //sub-content -->
-
-				<!-- image-navigation-->
-				<div id="image-navigation" class="viewPc">
-					<div class="navi">
-						<ul>
-							<li>
-								<a href="/shop/c/category/001012/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/sum_intro10.jpg" alt="賛否両論"></a>
-							</li>
-
-							<!-- <li>
-								<a href="/shop/c/category/001001015026/list/" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro02.jpg" alt="カタログ最新"/></a>
-							</li> -->
-							<li>
-								<a href="/shop/searchShopShop.do?_S=c&keyword=%83%8D%81%5B%83X%83g%83r%81%5B%83t" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro05.jpg" alt="塩釜焼ローストビーフ"/></a>
-							</li>
-							<li>
-								<a href="/item_DICA5/" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro12.jpg" alt="小腹にうれしいまろやか味噌ラーメン"/></a>
-							</li>
-							<li>
-								<a href="/shop/c/static/syokutaku-feature13/" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro07.jpg" alt="ニンジンジュース"/></a>
-							</li>
-							<!--							<li>
-								<a href="/shop/c/category/001001015026/list/" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro02.jpg" alt="新着商品" /></a>
-							</li>
-                            <li>
-								<a href="/shop/c/static/syokutaku-feature16/" target="_blank" class="link-img"><img src="/contents/c/shop/image/category/syokuhin/sum_intro09.jpg" alt="夏特集"/></a>
-							</li>-->
-
-						</ul>
-					</div>
-					<div class="navi-image">
-						<a href="/shop/c/category/001012/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_new_intro10.jpg" alt="賛否両論"></a>
-						<!-- <a href="/shop/c/category/001001015026/list/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_new_intro02.jpg" alt="最新カタログ" /></a> -->
-						<a href="/shop/searchShopShop.do?_S=c&keyword=%83%8D%81%5B%83X%83g%83r%81%5B%83t" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_new_intro05.jpg" alt="塩釜焼ローストビーフ" /></a>
-						<a href="/item_DICA5/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_new_intro12.jpg" alt="小腹にうれしいまろやか味噌ラーメン" /></a>
-						<a href="/shop/c/static/syokutaku-feature13/" target="_blank"><img src="/contents/c/shop/image/category/syokuhin/img_new_intro07.jpg" alt="ニンジンジュース"/></a>
-					</div>
-					<div style="clear:both;"></div>
-				</div>
-				<!-- //image-navigation-->
-			</div>
-			<!-- /navigation-slider PC -->
-			<!-- ▲▲▲navigation-slider -->
+			
 
 			<p class="category_feature_intro_txt">みなさまに“笑顔”と“健康”をお届けしたい。 そんな思いから、日本各地より 本当の“おいしい”を集めました。<br class="viewPc">届けたい、みんなの想いがつまったおいしさ。<br class="viewPc">“こころ”と“からだ”が素直に喜ぶ食のために、おいしい食卓は、「国産」・「無添加」にこだわって商品を選んでいます。</p>
 		</div>
