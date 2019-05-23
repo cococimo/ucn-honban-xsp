@@ -442,6 +442,26 @@ $(function(){
 }
 
 </style>
+<style>
+	/*価格変更のご案内*/
+	.info_txt {
+		color:red;
+		font-weight: bold;
+		font-size:1.2em;
+		padding:0.5em;
+		border:2px solid red;
+		text-align: center;
+		max-width:934px;
+		margin:20px auto;
+	}
+	@media screen and (max-width: 767px) {
+		.info_txt {
+			font-size:1em;
+			margin:15px auto 10px;
+		}
+	}
+
+</style>
 
 	<style type="text/css">
 	/*ヘッダー調整*/
@@ -525,27 +545,27 @@ borer: 1px solid red;
 	        if (browser == "_arrow_2_") {
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001025/list/";
 	        }else if(browser == "_arrow_3_"){
-	            location.href = "https://www.cococimo.jp/bousai/";
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001010/list/";
 	        }else if(browser == "_arrow_9_"){
-	            location.href = "https://www.cococimo.jp/manganihon/";
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001009/list/";
 	        }else if(browser == "_arrow_10_"){
-	            location.href = "https://www.cococimo.jp/hobby/";
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001023/list/";
 	        }else if(browser == "_arrow_14_"){
-	            location.href = "https://www.cococimo.jp/syokuhin/";
-	        }else if(browser == "_arrow_29_"){
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001014/list/";
-	        }else if(browser == "_arrow_34_"){
+	        }else if(browser == "_arrow_29_"){
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001013/list/";
-	        }else if(browser == "_arrow_38_"){
+	        }else if(browser == "_arrow_34_"){
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001012/list/";
+	        }else if(browser == "_arrow_38_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001008/list/";
 	        }else if(browser == "_arrow_45_"){
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001018/list/";
 	        }else if(browser == "_arrow_56_"){
-	            location.href = "https://www.cococimo.jp/shop/c/category/001001008/list/";
-	        }else if(browser == "_arrow_61_"){
 	            location.href = "https://www.cococimo.jp/shop/c/category/001001011/list/";
+	        }else if(browser == "_arrow_61_"){
+	            location.href = "https://www.cococimo.jp/shop/c/category/001001017/list/";
 	        }else if(browser == "_arrow_62_"){
-			            location.href = "https://www.cococimo.jp/shop/c/category/001001017/list/";
+			            location.href = "https://www.cococimo.jp/syokuhin/";
 			        }
 			    }
 		</script>
@@ -951,18 +971,18 @@ function showCartButton1(obj){
 						        <p>
 						            <select name="sort" onchange="dropsort()">
 						                <option value="">商品カテゴリ</option>
-						                <option value="_arrow_2_">イチオシ商品</option>
+						                <option value="_arrow_2_">CM・新聞で話題</option>
 						                <option value="_arrow_3_">防災用品</option>
-						                <option value="_arrow_9_">まんが日本昔ばなし</option>
-						                <option value="_arrow_10_">教養・趣味</option>
-						                <option value="_arrow_14_">食品(おいしい食卓)</option>
-						                <option value="_arrow_29_">家電</option>
-						                <option value="_arrow_34_">生活雑貨</option>
-						                <option value="_arrow_38_">健康</option>
-						                <option value="_arrow_45_">ファッション・鞄</option>
-						                <option value="_arrow_56_">寝具</option>
-						                <option value="_arrow_61_">DVD</option>
-						                <option value="_arrow_62_">メーカー別</option>
+						                <option value="_arrow_9_">教養・趣味</option>
+						                <option value="_arrow_10_">癒しのパートナー</option>
+						                <option value="_arrow_14_">100歳まで歩こう</option>
+						                <option value="_arrow_29_">聞く・見るサポート</option>
+						                <option value="_arrow_34_">健康用品</option>
+						                <option value="_arrow_38_">快適家電・雑貨</option>
+						                <option value="_arrow_45_">メンズファッション</option>
+						                <option value="_arrow_56_">レディースファッション</option>
+						                <option value="_arrow_61_">贈り物におススメ</option>
+						                <option value="_arrow_62_">おいしい食卓（食品・グルメ）</option>
 						            </select>
 						        </p>
 						    </form>
@@ -1398,6 +1418,11 @@ function showCartButton1(obj){
 	</div>
 	</span><!-- //カート追従バナー -->
 
+	<!-- 価格変更のご案内　ここから -->
+	<div class="info_txt">
+	※こちらの商品は、2019年6月2日より価格を改定いたします。
+	</div>
+	<!-- 価格変更のご案内　ここまで -->
 
 
 					<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
@@ -1600,7 +1625,7 @@ function showCartButton1(obj){
 						<!--▲▲▲モーダル▲▲▲-->
 						
 						<p class="mt10"><img src="/contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時&#xFF5E;12時 14時&#xFF5E;15時 16時&#xFF5E;18時 18時&#xFF5E;20時 19時&#xFF5E;21時"></p>
-					<p class="note">※商品はお申込みから通常7&#xFF5E;12日前後でお届けいたします。</p>
+						<p class="note">※商品はお申込みから通常7&#xFF5E;12日前後でお届けいたします。</p>
 					</div>
 					
 					
@@ -1612,7 +1637,7 @@ function showCartButton1(obj){
 
 							<span>
 						<p class="ikkatsu_wrap">
-							<span class="ikkatsu_content">一括払価格</span><span class="ikkatsu-kakaku">26,000</span>
+							<span class="ikkatsu_content">一括払価格</span><span class="ikkatsu-kakaku"><span m:id="b_wr_actualSalePrice">27,900</span></span>
 							<span style="yen">円</span>
                         </p>
 
@@ -1630,6 +1655,14 @@ function showCartButton1(obj){
 			</div>
 		</div>
 	</div>
+
+
+	<!-- 価格変更のご案内　ここから -->
+	<div class="info_txt">
+	※こちらの商品は、2019年6月2日より価格を改定いたします。
+	</div>
+	<!-- 価格変更のご案内　ここまで -->
+
 
 					<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
 					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
@@ -1650,15 +1683,37 @@ function showCartButton1(obj){
 					</div> -->
 					</form>
 				<!-- 商品詳細など -->
+				<style>
+					.mimimoto_spec .juden {
+						display: inline-block;
+						font-weight: bold;
+						color:#000099;
+						padding: 0 0.5em;
+						border:2px solid #000099;
+					}
+					.mimimoto_spec .notic {
+						color:orange;
+						font-weight: bold;
+
+					}
+					.mimimoto_spec .inner p.set_ttl {
+						font-weight: bold;
+						font-size: 1.1em;
+						color:#633B14;
+					}
+		
+				</style>
 	<div class="mimimoto_spec">
 		<h2>商品概要</h2>
 		<div class="inner">
+			<p><span class="juden">充電式</span><br><span class="notic">連続使用時間最大約15時間</span>（音量9段階中2の時）<br><充電池が内蔵されているので乾電池の用意は必要ありません。></p>
+
+			<p class="set_ttl">■セット内容及び仕様</p>
 			<p><strong>〈送信機〉</strong><br>●変調方式：FHSS方式●送信周波数帯：2.4GHz帯●到達距離（約）：30m（障害物のない状態）●電源：DC5.0V（付属の電源アダプターを使用）●音声入力端子：直径3.5mmステレオミニプラグ●外形寸法（約）：幅80mm×奥行30mm×高さ15mm●質量（約）：30g</p>
-			<p><strong>〈受信機〉</strong><br>●受信周波数帯：2.4GHz帯●FM受信周波数：76MHz&#xFF5E;108MHz●電源：内蔵リチウムイオン充電池●電源端子（充電）：DC5.0V（付属の電源アダプターを使用）●連続使用時間（約）：最大15時間●充電時間（約）：3.5時間●スピーカー（約）：直径50mm×2●実用最大出力：1.3W＋1.3W（電源アダプター使用時）：1.0W＋1.0W（充電池使用時）●ヘッドホン端子：直径3.5mmステレオミニジャック●外部入力端子：直径3.5mmステレオミニジャック●外形寸法（約）：幅190mm×奥行140mm×高さ136mm●質量（約）：540g</p>
-			<p><strong>〈テレビマイク〉</strong><br>●電源：DC3.0V（専用送信機より供給）●マイク指向性：無指向性●マイク感度：-22dB±4@1kHz（0dB-1V/Pa)●S/N比：59dB@1kHz（0dB-1V/Pa)●最大入力音圧レベル：100dB SPL（THD&lt;1%）115dB SPL（THD≦10%）●接続端子：直径3.5mmステレオミニジャック●ケーブル長（約）：2m●質量（約）：13g</p>
-			<p><strong>〈付属品〉</strong><br>●送信機用電源アダプター●受信機用電源アダプター●音声プラグアダプター●送信機固定シート●ステレオイヤホン</p>
-			<p>■企画・販売：ユーキャン・ココチモ<br>■製造元：エムケー電子株式会社<br>■製造国：中国</p>
-			<p>※本製品は日本国内専用です。他国には独自の安全規格が定められており、本製品が他国の規格に適合することは保証いたしかねます。 <br class="hidden-pc">※本製品の電波は送信出力が小さいですが、医療機器等に影響を与えるおそれがあります。心臓ペースメーカーをご使用の方は、本製品使用にあたり医師とご相談ください。 <br class="hidden-pc">※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。木目の柄は製品ごとに若干の差異があります。 <br class="hidden-pc">※ご使用の際には、送信機をテレビに接続することが必要です。テレビのヘッドホン端子または出力端子に接続、もしくはテレビマイクを使って接続します。</p>
+			<p><strong>〈受信機〉</strong><br>●受信周波数帯：2.4GHz帯●FM受信周波数：76MHz&#xFF5E;108MHz●電源：内蔵リチウムイオン充電池●電源端子（充電）：DC5.0V（付属の電源アダプターを使用）●連続使用時間（約）：最大15時間（音量9段階中2の時）●充電時間（約）：3.5時間●スピーカー（約）：直径50mm×2●実用最大出力：1.3W＋1.3W（電源アダプター使用時）：1.0W＋1.0W（充電池使用時）●ヘッドホン端子：直径3.5mmステレオミニジャック●外部入力端子：直径3.5mmステレオミニジャック●外形寸法（約）：幅190mm×奥行140mm×高さ136mm●質量（約）：540g</p>
+			<p><strong>〈付属品〉</strong><br>●送信機用電源アダプター●受信機用電源アダプター●音声プラグアダプター●送信機固定シート●ステレオイヤホン●テレビマイク</p>
+			<p>■企画・販売：ユーキャン・ココチモ<br>■製造元：エムケー電子株式会社<br>■製造：中国</p>
+			<p>※本製品は日本国内専用です。他国には独自の安全規格が定められており、本製品が他国の規格に適合することは保証いたしかねます。 <br class="hidden-pc">※本製品の電波は送信出力が小さいですが、医療機器等に影響を与えるおそれがあります。心臓ペースメーカーをご使用の方は、本製品使用にあたり医師とご相談ください。 <br class="hidden-pc">※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。木目の柄は製品ごとに若干の差異があります。 <br class="hidden-pc">※ご使用の際には、送信機をテレビに接続することが必要です。テレビのヘッドホン端子または出力端子に接続します。※万が一、予想を上回るお申込みをいただいた場合、数ヵ月お待ちいただく場合がございます。予めご了承ください。</p>
 		</div>
 	</div>
 

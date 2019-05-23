@@ -11797,3 +11797,128 @@
 	}*/
 
 }
+
+/*メガナビのアイコン変更*/
+.category_list > ul > .item > .sub_nav {
+	display: none !important;
+}
+.category_list > ul > li > div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat001.png);
+}
+.category_list > ul > li > div a:after {
+	content: '\e90b';
+	color: #bbb;
+	font-size: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+#category .category_list > ul > li > div a.is-current,
+#category .category_list > ul > li > div a:hover {
+	background-color: #fff8dd;
+	color: #ff6b00;
+	
+}
+#category .category_list > ul > li > div a.is-current span,
+#category .category_list > ul > li > div a:hover span {
+	text-decoration: underline;	
+}
+.category_list > ul > li + li > div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat002.png);
+}
+.category_list > ul > li + li + li > div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat003.png);
+}
+.category_list > ul > li + li + li + li > div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat004.png);
+}
+.category_list > ul > li + li + li + li + li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat005.png);
+}
+.category_list > ul > li + li + li + li + li + li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat006.png);
+}
+.category_list > ul > li + li + li + li + li + li + li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat007.png);
+}
+.category_list > ul > li + li + li + li + li + li + li+li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat008.png);
+}
+.category_list > ul > li + li + li + li + li + li + li + li+li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat009.png);
+}
+.category_list > ul > li + li + li + li + li + li + li + li + li+li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat010.png);
+}
+.category_list > ul > li + li + li + li + li + li + li + li + li+li+li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat011.png);
+}
+.category_list > ul > li + li + li + li + li + li + li + li + li + li+li+li>div a .category_list_img {
+	background-image: url(/contents/c/shop/image/img_cat012.png);
+}
+.category_list > ul > .item > .sub_nav1 .tit:before{
+	background: url(/contents/c/shop/image/img_cat001.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav2 .tit:before{
+	background: url(/contents/c/shop/image/img_cat002.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav3 .tit:before{
+	background: url(/contents/c/shop/image/img_cat003.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav4 .tit:before{
+	background: url(/contents/c/shop/image/img_cat004.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav5 .tit:before{
+		background: url(/contents/c/shop/image/img_cat005.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav6 .tit:before{
+		background: url(/contents/c/shop/image/img_cat006.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav7 .tit:before{
+		background: url(/contents/c/shop/image/img_cat007.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav8 .tit:before{
+	background: url(/contents/c/shop/image/img_cat008.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav9 .tit:before{
+	background: url(/contents/c/shop/image/img_cat009.png)no-repeat;
+    background-size: 30px;
+}
+.category_list > ul > .item > .sub_nav10 .tit:before{
+	background: url(/contents/c/shop/image/img_cat010.png)no-repeat;
+    background-size: 30px;	
+}
+.category_list > ul > .item > .sub_nav11 .tit:before{
+	background: url(/contents/c/shop/image/img_cat012.png)no-repeat;
+    background-size: 30px;	
+}
+.category_list > ul > .item > .sub_nav12 .tit:before{
+	background: url(/contents/c/shop/image/img_cat011.png)no-repeat;
+    background-size: 30px;	
+}
+
+/*カテゴリメッセージ*/
+#category .goods_archive_mg {
+    overflow: hidden;
+    padding: 50px 30px;
+    text-align: center;
+    line-height: 1.6;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAKklEQVQYV2P89evX/3///jHAAOOPHz/+wzhMTEwMcAEQB6QSLADjgFQCAH13GKepCAc6AAAAAElFTkSuQmCC);
+}
+@media screen and (max-width: 767px) {
+    #category .goods_archive_mg {
+	    padding: 15px 10px;
+
+    }
+}

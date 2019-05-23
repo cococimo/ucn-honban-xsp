@@ -394,11 +394,6 @@ $(function(){
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
-<script src="/contents/c/js/new/featherlight.js"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
-<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
-<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/nihon/layout.css" media="all">
-<link rel="stylesheet" href="contents/shop/00000003/common_sp/common_s_04/style.css" type="text/css" media="all" />
 <style>
 /*ページ内リンク調整
 #shop_smooth {
@@ -408,7 +403,6 @@ $(function(){
 .recommend_list.item_list .img_box a {height: 228px;}
 @media screen and (max-width:767px) {
 	#contents {position: static;}
-	#header {z-index: 9999;}
 }
 </style>
 <style>
@@ -426,12 +420,12 @@ $(function(){
 		}
 	}
 /* カート下文言 */
-	.cart-notice{
+	.cart-notic{
 		border:#EE0003 1px solid;
-		padding:.4em; margin:-5px auto 20px;
+		padding:.4em; margin:0 auto;
 		max-width:928px;
 	}
-	.cart-notice p {
+	.cart-notic p {
 		color:red;
 		font-weight:bold;
 		font-size:1.1em;
@@ -439,10 +433,10 @@ $(function(){
 		line-height:1.5;
 		}
 	@media screen and (max-width: 767px){
-	.cart-notice{
+	.cart-notic{
 		max-width:310px;
 	}
-	.cart-notice p {
+	.cart-notic p {
 		font-size:1em;
 	}
 }
@@ -556,11 +550,11 @@ borer: 1px solid red;
 			    }
 		</script>
 	<!-- カテゴリ-リスト script▲▲▲ -->
-		<script src="/contents/c/js/new/featherlight.js"></script>
-		<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
-		<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
-<!-- 		<link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000002/css/nihon/layout.css" media="all"> -->
-<!-- 		<link rel="stylesheet" href="contents/shop/00000003/common_sp/common_s_04/style.css" type="text/css" media="all" /> -->
+	<script src="/contents/c/js/new/featherlight.js"></script>
+	<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js"
+	 charset="shift_jis"></script>
+	<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="contents/c/css/lp_template/layout.css" type="text/css" media="all" />
 <script>
 $(function(){
   $('.cmn_float01 .cmn_float01_r_img:has(iframe)').wrapInner('<div class="iframeWrap">');
@@ -761,11 +755,6 @@ function showCartButton1(obj){
 //-->
 </script>
 <!-- InstanceEndEditable -->
-		<style>
-			.recommend_list.item_list .img_box a {
-			    height: 228px;
-			}
-		</style>
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
@@ -797,6 +786,8 @@ function showCartButton1(obj){
 <meta m:id="e_var_concernedGoods">
 <meta m:id="e_var_shopPostage">
 <meta m:id="b_var_shopPostageFlat">
+
+
 
 <meta m:id="parentShop">
 <meta m:id="ancestralCategory">
@@ -933,7 +924,7 @@ function showCartButton1(obj){
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
 					</span>
 				</a>
-					</p>
+				</p>
 
 				<div class="header_top">
 					<div class="header_search">
@@ -1192,8 +1183,7 @@ function showCartButton1(obj){
   <object class="xsp_obj" m:id="ancestralCategory"></object>
   <object class="xsp_obj" m:id="breadcrumbCategory"></object>
   <div id="contents_in" class="cf">
-    <!--▼▼▼カテゴリー▼▼▼-->
-					<!-- このぺーじでは非表示ココカラ
+    <!--▼▼▼カテゴリー▼▼▼
       <object class="xsp_obj" m:id="e_var_standardCategory">
       </object>
       <object class="xsp_obj" m:id="e_var_campaignCategory">
@@ -1259,8 +1249,7 @@ function showCartButton1(obj){
           </div>
         </span>
       </span>
-					このぺーじでは非表示ココマデ -->
-    <!--▲▲▲カテゴリー▲▲▲-->
+    ▲▲▲カテゴリー▲▲▲-->
     <div id="pan-navi" >
       <ul class="clearfix">
         <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
@@ -1269,56 +1258,56 @@ function showCartButton1(obj){
         <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
       </ul>
     </div>
-		<!-- サムネイル画像取得 ▼▼▼-->
-		<span m:id="l_pre_goods">
-			<object class="xsp_obj" m:id="b_var_sku"></object>
-			<object class="xsp_obj" m:id="b_var_goodsImages"></object>
-		</span>
-		<div class="i_main_img_01" style="display: none;">
-			<object class="xsp_obj" m:id="b_var_image_file"></object>
-			<object class="xsp_obj" m:id="b_var_image_file2"></object>
-			<img m:id="h_img_goods" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="" />
-		</div>
-		<!-- サムネイル画像取得 ▲▲▲-->
+			<!-- サムネイル画像取得 ▼▼▼-->
+			<span m:id="l_pre_goods">
+				<object class="xsp_obj" m:id="b_var_sku"></object>
+				<object class="xsp_obj" m:id="b_var_goodsImages"></object>
+			</span>
+			<div class="i_main_img_01" style="display: none;">
+				<object class="xsp_obj" m:id="b_var_image_file"></object>
+				<object class="xsp_obj" m:id="b_var_image_file2"></object>
+				<img m:id="h_img_goods" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="" />
+			</div>
+			<!-- サムネイル画像取得 ▲▲▲-->
     <div class="goods_detail">
       <div id="content_wrap">
-      <!-- インクルード領域 -->
-      <span m:id="timed_include" filename="goodsDetail_head"></span>
+			<!-- インクルード領域 -->
+			<span m:id="timed_include" filename="goodsDetail_head"></span>
 <!-- ★インクルード１★-->
 
 
-      <!-- PAGE:商品詳細 -->
-    <span m:id="l_notPre_goods">
-    <div class="error">
-      <p>
-        指定の商品は見つかりませんでした。<br/>既に販売終了しているか、存在しない商品です。
-      </p>
-    </div>
-    </span>
+	  	<!-- PAGE:商品詳細 -->
+		<span m:id="l_notPre_goods">
+		<div class="error">
+			<p>
+				指定の商品は見つかりませんでした。<br/>既に販売終了しているか、存在しない商品です。
+			</p>
+		</div>
+		</span>
 
-    <span m:id="l_pre_goods">
-      <object class="xsp_obj" m:id="b_var_sku"></object>
-      <object class="xsp_obj" m:id="b_var_goodsImages"></object>
-      <object class="xsp_obj" m:id="b_var_relatedImages"></object>
-      <object class="xsp_obj" m:id="b_var_showStockDisplay"></object>
-      <object class="xsp_obj" m:id="b_var_multiple" ></object>
-      <object class="xsp_obj" m:id="b_var_catalogue"></object>
-      <object class="xsp_obj" m:id="b_var_regularly"></object>
-      <object class="xsp_obj" m:id="b_var_canAddCart"></object>
-      <object class="xsp_obj" m:id="e_var_groupGoods"></object>
+		<span m:id="l_pre_goods">
+			<object class="xsp_obj" m:id="b_var_sku"></object>
+			<object class="xsp_obj" m:id="b_var_goodsImages"></object>
+			<object class="xsp_obj" m:id="b_var_relatedImages"></object>
+			<object class="xsp_obj" m:id="b_var_showStockDisplay"></object>
+			<object class="xsp_obj" m:id="b_var_multiple" ></object>
+			<object class="xsp_obj" m:id="b_var_catalogue"></object>
+			<object class="xsp_obj" m:id="b_var_regularly"></object>
+			<object class="xsp_obj" m:id="b_var_canAddCart"></object>
+			<object class="xsp_obj" m:id="e_var_groupGoods"></object>
 
-      <span m:id="l_pre_order_num">
-        <object class="xsp_obj" m:id="b_var_order_num"></object>
-      </span>
+			<span m:id="l_pre_order_num">
+				<object class="xsp_obj" m:id="b_var_order_num"></object>
+			</span>
 
-      <span m:id="l_notPre_order_num">
-        <span m:id="l_notEmp_goods_min_order_num">
-          <object class="xsp_obj" m:id="b_var_order_num2"></object>
-        </span>
-        <span m:id="l_emp_goods_min_order_num">
-          <object class="xsp_obj" m:id="b_var_order_num3"></object>
-        </span>
-      </span>
+			<span m:id="l_notPre_order_num">
+				<span m:id="l_notEmp_goods_min_order_num">
+					<object class="xsp_obj" m:id="b_var_order_num2"></object>
+				</span>
+				<span m:id="l_emp_goods_min_order_num">
+					<object class="xsp_obj" m:id="b_var_order_num3"></object>
+				</span>
+			</span>
 
 <!-- インクルード領域 -->
 
@@ -1342,60 +1331,129 @@ function showCartButton1(obj){
 
 <!--/ インクルード領域  -->
 
-        <!--  <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
-          <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-          <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-          <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-          <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-          <input type="hidden" name="order_num_string" value="1" />
+					<!-- <div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております"></div>
+      <!-- /.tel -->
 
-          <p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-          <p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
-          </form> -->
+  <!--<span m:id="l_equ_type_simple"> カート追従バナー -->
 
-<!-- ★インクルード３★-->
+	<style>
+		.purchase_fixed .inner a:hover {cursor: pointer;}
+		.tel.js-tel_sticky {display:none;}
+
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {padding: 1rem;margin: 0 auto;max-width: 692px;overflow:hidden;}
+		.purchase_fixed .inner > * {width: 100%;}
+		.purchase_fixed .inner > p {float:right;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
+		.purchase_fixed .inner .ph_tel {display:none;}
+
+		.purchase_fixed .inner .order_btn{width:66%;}
+		.purchase_fixed .inner .present{float:left;width:34%;padding-right:10px;padding-top:.1em;}
+
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.purchase_fixed .inner {display:block;}
+			.inner08 {margin-top: -60px;padding-top: 60px;}
+			.purchase_fixed .inner {
+				display: flex;
+			    padding: .5rem .5rem .25rem .5rem;
+			    justify-content: center;
+			    align-items: center;
+			}
+			.purchase_fixed .inner > p {display: inline-block;width:auto;}
+			.purchase_fixed .inner > p:first-of-type {width:38%;margin-top:.1em;}
+			.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;width:52%;}
+			.purchase_fixed .inner .order_btn {padding-right:0;}
+			.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		}
+		@media print {.purchase_fixed {display: none;}}
+
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+	      <p class="sp_only">
+				<img src="/contents/shop/00000003/image/static/mimimoto/purchase_fixed_presen_sp.png" alt="プレゼント付き有効期限 6月10日(月)">
+	      </p>
+			<p class="pc_only ph_tel">
+	        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+	      </p>
+        <span m:id="l_equ_can_addCartSku">
+			<p class="order_btn" id="purchase_btn_order">
+				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+            	<span class="sp_only"><img src="https://www-st.cococimo.jp/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="https://www-st.cococimo.jp/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+				</a>
+			</p>
+      </span>
+      <!-- 欠品対応 -->
+			<span m:id="l_equ_canNot_addCartSku_radio">
+			<p class="order_btn" id="purchase_btn_keppin">
+            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+			</p>
+      <!-- //欠品対応 -->
+		</span>
+		<div class="present pc_only">
+			<img src="/contents/shop/00000003/image/static/mimimoto/purchase_fixed_presen.png" alt="プレゼント付き有効期限 6月10日(月)">
+		</div>
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+	</span><!-- //カート追従バナー -->
+
+
+
+					<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+					<input type="hidden" name="order_num_string" value="1" />
+
+					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<!-- <div class="cart-notic">
+						<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
+					</div> -->
+					</form>
+
+					<!-- ★インクルード２★-->
 
 <!-- インクルード領域 -->
 
 <span m:id="l_include_in_period">
-
-<span m:id="html_include3">外部HTML3 表示領域(期間1)</span>
-
+						<span m:id="html_include2">外部HTML2 表示領域(期間1)</span>
 </span>
 
 <span m:id="l_include2_in_period">
-
-<span m:id="html2_include3">外部HTML3 表示領域(期間2)</span>
-
+						<span m:id="html2_include2">外部HTML2 表示領域(期間2)</span>
 </span>
 
-<!-- <span m:id="l_include3_in_period">
+					<!-- <span m:id="l_include2_in_period">
 
-<span m:id="html3_include3">外部HTML3 表示領域(期間3)</span>
+<span m:id="html3_include2">外部HTML2 表示領域(期間3)</span>
 
-</span>  -->
+</span>		 -->
 
 <!--/ インクルード領域  -->
-								<!-- <div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております" /></div> -->
-<!-- /.tel -->
 
 
 
-          <!-- <form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
-          <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-          <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-          <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-          <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-          <input type="hidden" name="order_num_string" value="1" />
+					<!--<form m:id="h_form_cartGoodsAdd2" method="POST" action="cart.html">
+					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+					<input type="hidden" name="order_num_string" value="1" />
 
-          <p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-          <p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
-          </form> -->
+					<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					</form>-->
 
-      <!-- </div> -->
+			<!-- </div> -->
 
 <!-- <br class="all"> -->
-</div><!--content_wrap -->
+
 
 <!-- 商品レビュー start-->
 <object class="xsp_obj" m:id="e_var_goodsReview"></object>
@@ -1452,12 +1510,12 @@ function showCartButton1(obj){
 
 <div m:id="l_equ_show_status_private">
 
-          </div>
-        <!-- </span> -->
-      </span>
-      <span m:id="l_notPre_goods_review_detail">
+					</div>
+				<!-- </span> -->
+			</span>
+			<span m:id="l_notPre_goods_review_detail">
 
-      </span>
+			</span>
 
 <p class="i_link_icon_02 clearfix"><a m:id="a_link_goodsReviewList" href="goodsReviewList.html">全てのレビューを見る</a></p>
 </div>
@@ -1466,207 +1524,221 @@ function showCartButton1(obj){
 <!--r_con_box_03-->
 
 <!-- /商品レビュー end-->
-        <!--
-          <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
-          <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-          <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-          <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-          <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-          <input type="hidden" name="order_num_string" value="1" />
- -->
+
+			<style>
+				#content_wrap .seventh .price-row .dvd_info_right {
+				    float: right;
+				    width: 291px;
+				    padding-right: 0;
+				}
+				#content_wrap .seventh .price-row .dvd_pic {
+				    width: 604px;
+				    float: left;
+				    padding-left: 0;
+				}
+				#content_wrap .seventh .price-row .return_txt {
+					padding-left: 10px;
+				}
+				#content_wrap .return_txt{ 
+					font-size: 14px;
+				}
+				#content_wrap .return_txt a {
+					text-decoration: underline;
+				}
+				#content_wrap .return_txt a:hover {
+					text-decoration: none;
+				}
+				#content_wrap .seventh .price-row .dvd_pic img {
+				    max-width: none;
+				    width: 100%;
+				}
+				@media screen and (max-width: 640px) {
+					#content_wrap .seventh .price-row .dvd_info_right {
+					    float: none;
+					    width: 100%;
+					    padding-right: 0;
+					    display: block;
+					}
+					#content_wrap .seventh .price-row .dvd_pic {
+					    width: 100%;
+					    float: none;
+					    padding-left: 0;
+					}
+					#content_wrap .return_txt{ 
+						font-size: 12px;
+					}
+					#content_wrap .dvd_info {
+					    margin: 0 0;
+					}
+					#content_wrap .s_pt20 {
+						padding-top: 20px;
+					}
+					#content_wrap .seventh .price-row .dvd_pic img {
+					    max-width: 320px;
+					    width: auto;
+					}
+				}
+
+			</style>
+
+			<div class="inner_box04 sp_margin seventh" id="shop_smooth">
+				<h2><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
+				<div class="dvd_info">
+  <div class="price-row" style="">
+					<p class="dvd_pic">
+					<img src="/contents/shop/00000003/image/static/mimimoto/seventh-img01.png" alt="みみもとくんプレミアム" width="100%" border="0">
+
+					</p>
+
+					<div class="dvd_info_right">
+						<p style="clear:both"><img src="/contents/c/image/static/img/infotext02.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担"></p>
+						<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+						<!--▼▼▼モーダル▼▼▼-->
+						<div id="return_goods" class="lightbox">
+							<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+							<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください。</span></p>
+							<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">なお食品に関しては、商品の性質上、お申込み後のお客様都合によるキャンセル、返品はお受けできません。予めご了承ください。<br>※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
+							<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+						</div>
+						<!--▲▲▲モーダル▲▲▲-->
+						
+						<p class="mt10"><img src="/contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時&#xFF5E;12時 14時&#xFF5E;15時 16時&#xFF5E;18時 18時&#xFF5E;20時 19時&#xFF5E;21時"></p>
+						<p class="note">※商品はお申込みから通常7&#xFF5E;12日前後でお届けいたします。</p>
+					</div>
+					
+					
+  </div>
+			<div class="price">
+				<div class="seventh-left">
+						<span>
+							<span>
+
+							<span>
+						<p class="ikkatsu_wrap">
+							<span class="ikkatsu_content">一括払価格</span><span class="ikkatsu-kakaku"><span m:id="b_wr_actualSalePrice">27,900</span></span>
+							<span style="yen">円</span>
+                        </p>
+
+							</span>
+
+							</span>
+						</span>
+
+					<p class="zeikomi">※価格は全て税込みです。</p>
+				</div>
+				<div class="seventh-right" style="">
+					<p><img src="/contents/c/image/static/img/fee_info.png" alt="手数料"></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+					<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+					<input type="hidden" name="order_num_string" value="1" />
+
 
 <!--降雪対応文言
 <ecp:include m:id="fs_weather_trouble_sideless" filename="kousetsu_sideless.html" />
 -->
-        <!--  <p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-          <p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
-          </form> -->
+					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 
-        <!-- 商品詳細など -->
+					<!-- <div class="cart-notic">
+								<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
+					</div> -->
+					</form>
+				<!-- 商品詳細など -->
+				<style>
+					.mimimoto_spec .juden {
+						display: inline-block;
+						font-weight: bold;
+						color:#000099;
+						padding: 0 0.5em;
+						border:2px solid #000099;
+					}
+					.mimimoto_spec .notic {
+						color:orange;
+						font-weight: bold;
 
-    <!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
-      <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
-      <span m:id="l_notEmp_autoRecommendGoodsList">
-        <div class="recommend">
-          <h2 class="recommend_tit cmn_tit01"><span>あなたへおすすめ商品</span></h2>
-          <div class="clearfix recommend_in">
-            <ul class="recommend_list item_list item_list_5col_wide js-item_list">
-              <span m:id="l_ite_autoRecommendGoodsList">
-                <span m:id="l_notEqu_autoRecommendGoodsList_idx">
-                  <li>
-                    <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
-                      <input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
-                      <input m:id="h_hid_displayMode" type="hidden" name="display_mode" value="123"/>
-                    </form>
-                    <div class="item_list_in js-matchHeight">
-                      <div class="img_box img_box_hover">
-                        <span m:id="l_pre_autoRecommendGoods_representSku">
-                          <object class="xsp_obj" m:id="b_var_autoRecommendGoods_listImage"></object>
-                          <a m:id="h_link_autoRecommendGoods_list_image" href="goodsDetail.html">
-                            <img m:id="h_img_autoRecommendGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                            <div class="img_box_hover_in">
-                              <div class="img_box_hover_txt">
-                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                              </div>
-                            </div>
-                          </a>
-                        </span>
-                      </div>
-                      <h3 class="recommend_list_tit item_list_tit"><a m:id="h_link_autoRecommendGoods_name" href="goodsDetail.html"><span m:id="disp_autoRecommendGoods_goods_name">・､品名商品名</span></a></h3>
-                    </div>
-                    <p class="recommend_list_yen item_list_yen"><span m:id="l_notEqu_autoRecommendGoods_pretaxPrice"><span class="original_price"><span m:id="b_wr_autoRecommendGoods_pretaxPrice">200</span>&nbsp;円&nbsp;(税込)</span>&nbsp;</span><span m:id="b_wr_autoRecommendGoods_actualSalePrice">100</span>&nbsp;円&nbsp;(税込)</p>
-                  </li>
-                  <li class="" m:id="dummy">
-                    <div class="box_01 heightLine-osusuem01">
-                      <div class="box_02">
-                        <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-                        <h3><a href="#">商品名商品名</a></h3>
-                        <p>50円（税込）</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class=" " m:id="dummy">
-                    <div class="box_01 heightLine-osusuem01">
-                      <div class="box_02">
-                        <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-                        <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-                        <p>50円（税込）</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="heightLine-osusuem01 " m:id="dummy">
-                    <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-                    <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-                    <p>50円（税込）</p>
-                  </li>
-                  <li class="heightLine-osusuem01 " m:id="dummy">
-                    <div class="img_box"><a href="goodsDetail.html"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-                    <h3><a href="goodsDetail.html">商品名商品名</a></h3>
-                    <p>50円（税込）</p>
-                  </li>
-                </span>
-              </span>
-            </ul>
-          </div>
-        </div>
-        <!-- /.recommend -->
-      </span>
+					}
+					.mimimoto_spec .inner p.set_ttl {
+						font-weight: bold;
+						font-size: 1.1em;
+						color:#633B14;
+					}
+		
+				</style>
+	<div class="mimimoto_spec">
+		<h2>商品概要</h2>
+		<div class="inner">
+			<p><span class="juden">充電式</span><br><span class="notic">連続使用時間最大約15時間</span>（音量9段階中2の時）<br><充電池が内蔵されているので乾電池の用意は必要ありません。></p>
 
-      <!-- 関連商品のご紹介 -->
-      <span m:id="l_pre_member">
-        <object class="xsp_obj" m:id="b_var_recommendURL" ></object>
-        <object class="xsp_obj" m:id="b_var_recommendURL2" ></object>
-        <object class="xsp_obj" m:id="b_var_mail_subject" ></object>
-        <object class="xsp_obj" m:id="b_var_mail_body" ></object>
-        <object class="xsp_obj" m:id="b_var_mail_subject2" ></object>
-        <object class="xsp_obj" m:id="b_var_mail_body2" ></object>
-        <script type="text/javascript">
-        <!-- //
-        function sendMailToFriend(){
-          var subject = '${mail_subject}';
-          var body = '${mail_body}';
-          var target = "mailto:?subject=" + subject + "&body=" + body;
-          location.href = target;
-        }
-        // -->
-        </script>
-      </span>
+			<p class="set_ttl">■セット内容及び仕様</p>
+			<p><strong>〈送信機〉</strong><br>●変調方式：FHSS方式●送信周波数帯：2.4GHz帯●到達距離（約）：30m（障害物のない状態）●電源：DC5.0V（付属の電源アダプターを使用）●音声入力端子：直径3.5mmステレオミニプラグ●外形寸法（約）：幅80mm×奥行30mm×高さ15mm●質量（約）：30g</p>
+			<p><strong>〈受信機〉</strong><br>●受信周波数帯：2.4GHz帯●FM受信周波数：76MHz&#xFF5E;108MHz●電源：内蔵リチウムイオン充電池●電源端子（充電）：DC5.0V（付属の電源アダプターを使用）●連続使用時間（約）：最大15時間（音量9段階中2の時）●充電時間（約）：3.5時間●スピーカー（約）：直径50mm×2●実用最大出力：1.3W＋1.3W（電源アダプター使用時）：1.0W＋1.0W（充電池使用時）●ヘッドホン端子：直径3.5mmステレオミニジャック●外部入力端子：直径3.5mmステレオミニジャック●外形寸法（約）：幅190mm×奥行140mm×高さ136mm●質量（約）：540g</p>
+			<p><strong>〈付属品〉</strong><br>●送信機用電源アダプター●受信機用電源アダプター●音声プラグアダプター●送信機固定シート●ステレオイヤホン●テレビマイク</p>
+			<p>■企画・販売：ユーキャン・ココチモ<br>■製造元：エムケー電子株式会社<br>■製造：中国</p>
+			<p>※本製品は日本国内専用です。他国には独自の安全規格が定められており、本製品が他国の規格に適合することは保証いたしかねます。 <br class="hidden-pc">※本製品の電波は送信出力が小さいですが、医療機器等に影響を与えるおそれがあります。心臓ペースメーカーをご使用の方は、本製品使用にあたり医師とご相談ください。 <br class="hidden-pc">※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。木目の柄は製品ごとに若干の差異があります。 <br class="hidden-pc">※ご使用の際には、送信機をテレビに接続することが必要です。テレビのヘッドホン端子または出力端子に接続します。※万が一、予想を上回るお申込みをいただいた場合、数ヵ月お待ちいただく場合がございます。予めご了承ください。</p>
+		</div>
+	</div>
 
-      <span m:id="l_notEmp_concernedGoods">
-        <div class="r_con_box_02">
-          <h2 class="temp_tit_n021 temp_tit_n02_cor">この商品を見た人はこの商品も見ています</h2>
-          <div class="clearfix r_con_box_02_in">
-            <p class="i_kanren_p">この商品を購入された方は、こんな商品もチェックしています！</p>
-            <ul class="r_con_list_04">
-              <span m:id="l_ite_concerned">
-                <li>
-                  <object class="xsp_obj" m:id="b_var_isReturn"></object>
-                  <div class="item_list_in js-matchHeight">
-                    <div class="img_box img_box_hover">
-                      <span m:id="l_pre_representSku_10">
-                        <object class="xsp_obj" m:id="b_var_listImage_10"></object>
-                        <span m:id="l_notEmp_listImage_10">
-                          <span m:id="h_link_goodsDetail_default_url">
-                            <a m:id="h_link_goodsDetail" href="goodsDetail.html">
-                              <img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                              <div class="img_box_hover_in">
-                                <div class="img_box_hover_txt">
-                                  <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                </div>
-                              </div>
-                            </a>
-                          </span>
-                          <span m:id="h_link_goodsDetail_static_url">
-                            <a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html">
-                              <img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                              <div class="img_box_hover_in">
-                                <div class="img_box_hover_txt">
-                                  <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                </div>
-                              </div>
-                            </a>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                    <h3><span m:id="h_link_goodsDetail_default_url"><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></span><span m:id="h_link_goodsDetail_static_url"><a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></span></h3>
-                  </div>
-                  <p><span m:id="m_num_sale_price">50</span>円（税込）</p>
-                </li>
-              </span>
-            </ul>
-          </div>
-        </div>
-      </span>
-    <!--▲▲▲あなたの閲覧履歴からのおススメです▲▲▲-->
-
-        <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
-          <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-          <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-          <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-          <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-          <input type="hidden" name="order_num_string" value="1" />
-
-<!-- ELTEX add start -->
-        </form>
-<!-- ELTEX add end -->
-      <!-- 商品購入カート -->
-      <object class="xsp_obj" m:id="b_var_varUrl">
-      </object>
-      <form method="post" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm" action="goodsDetail.html">
-            <object class="xsp_obj" m:id="b_size_valiationSize"></object>
-            <input type="hidden" name="order_num_string" value="1" />
-      </form>
-      <form method="post" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
-            <object class="xsp_obj" m:id="b_size_valiationSize"></object>
-            <input type="hidden" name="order_num_string" value="1" />
-      </form>
-      <!--/ 商品購入カート -->
+				<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+					<input type="hidden" name="order_num_string" value="1" />
 
 
-      <span m:id="l_pre_member">
-      <object class="xsp_obj" m:id="b_var_recommendURL" ></object>
-      <object class="xsp_obj" m:id="b_var_recommendURL2" ></object>
-      <object class="xsp_obj" m:id="b_var_mail_subject" ></object>
-      <object class="xsp_obj" m:id="b_var_mail_body" ></object>
-      <object class="xsp_obj" m:id="b_var_mail_subject2" ></object>
-      <object class="xsp_obj" m:id="b_var_mail_body2" ></object>
-      <script type="text/javascript">
-      <!-- //
-        function sendMailToFriend(){
-          var subject = '${mail_subject}';
-          var body = '${mail_body}';
-          var target = "mailto:?subject=" + subject + "&body=" + body;
-          location.href = target;
-        }
-      // -->
-      </script></span>
+		</div>
+			</div>
+
+</div><!-- #wrcontent_wrap -->
+
+
+
+			<!-- 商品購入カート -->
+			<object class="xsp_obj" m:id="b_var_varUrl">
+			</object>
+			<form method="post" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm" action="goodsDetail.html">
+						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
+						<input type="hidden" name="order_num_string" value="1" />
+			</form>
+			<form method="post" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
+						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
+						<input type="hidden" name="order_num_string" value="1" />
+			</form>
+			<!--/ 商品購入カート -->
+
+
+			<span m:id="l_pre_member">
+			<object class="xsp_obj" m:id="b_var_recommendURL" ></object>
+			<object class="xsp_obj" m:id="b_var_recommendURL2" ></object>
+			<object class="xsp_obj" m:id="b_var_mail_subject" ></object>
+			<object class="xsp_obj" m:id="b_var_mail_body" ></object>
+			<object class="xsp_obj" m:id="b_var_mail_subject2" ></object>
+			<object class="xsp_obj" m:id="b_var_mail_body2" ></object>
+			<script type="text/javascript">
+			<!-- //
+				function sendMailToFriend(){
+					var subject = '${mail_subject}';
+					var body = '${mail_body}';
+					var target = "mailto:?subject=" + subject + "&body=" + body;
+					location.href = target;
+				}
+			// -->
+			</script></span>
 <!--/ include:00000003/goods/default.jsp -->
-    </span>
+		</span>
 
-        <!-- ページトップ -*>
-        <p id="page_top" style="margin-right: 20px;"><a href="#header">このページの先頭へ</a></p>
-        <!-*/ ページトップ -->
+        <!-- ページトップ
+        <p id="page_top"><a href="#header">このページの先頭へ</a></p>
+         ページトップ -->
         </div>
   </div><!-- content -->
   <!--/ メインコンテンツ -->
@@ -1798,6 +1870,7 @@ function showCartButton1(obj){
 			</div>
 		</div>
 		<!-- /.tel_area -->
+
 		<div class="footer_info">
 			<div class="footer_info_in wrapper">
 				<div class="footer_info_site">
@@ -1972,7 +2045,7 @@ height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
 <!-- End SiteCatalyst code version: H.26.1. -->
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
-<!-- Criteo loader -->
+<!--Criteo loader -->
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -1987,6 +2060,7 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_view_item" content=""></meta>
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
+
 
 
 
