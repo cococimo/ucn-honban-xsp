@@ -16,19 +16,16 @@
 <meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 
-<meta m:id="e_var_goods">
-<meta m:id="e_var_goodsUrlPrefix">
-<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
-<title m:id="title" arg1="" arg2=" | ユーキャンのココチモ（cococimo）通販サイト">データベースから値を取得し表示します</title>
+<link m:id="canonical" rel="canonical" href="/shop/c/e/goods/"/>
+<title m:id="title" arg1="" arg2=" - ココチモ（cococimo）の通販ショップ">データベースから値を取得し表示します</title>
 
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css?ver=20160222" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/styles.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/jquery.ad-gallery.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/contents_02.css" type="text/css" media="all" />
-<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
 
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
@@ -53,27 +50,39 @@
 		</script>
 
 
-<!--[if lt IE 9]>
-<script src="contents/js/jquery.backgroundSize.js"></script>
-<script>
-$(function() {
-    $(".l_con_list_01 li #p_0 a ").css({backgroundSize: "contain"});
-});
-</script>
-<![endif]-->
 
 
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
 <!-- InstanceBeginEditable name="head" -->
-<style>
-.i_res_con_04 .i_res_box_02 {
-    width: 100% !important;
-}
-</style>
-<meta m:id="e_var_member_goodsDetail">
-<meta m:id="site_products">
+
+<object class="xsp_obj" m:id="e_var_member_goodsDetail"></object>
+<object class="xsp_obj" m:id="e_var_goods"></object>
+
+<span m:id="l_notPre_goods">
+    <object class="xsp_obj" m:id="e_var_goods2"></object>
+    <span m:id="l_notPre_goods">
+    	<object class="xsp_obj" m:id="b_define_url"></object>
+    	 <span m:id="redirect_err" />
+    </span>
+</span>
+<object class="xsp_obj" m:id="e_var_shop_goodsDetail"></object>
+<object class="xsp_obj" m:id="e_var_concernedGoods"></object>
+<object class="xsp_obj" m:id="e_var_shopPostage"></object>
+<object class="xsp_obj" m:id="b_var_shopPostageFlat"></object>
+<span m:id="l_pre_shopPostage">
+    <span m:id="l_ite_postage">
+	    <span m:id="l_equ_area_code">
+		    <span m:id="l_equ_valid_flg">
+		        <object class="xsp_obj" m:id="b_var_shopPostageFlat2"></object>
+		    </span>
+	    </span>
+    </span>
+</span>
+<object class="xsp_obj" m:id="e_var_cart"></object>
+
+<span m:id="site_products"></span>
 <script language="JavaScript" type="text/javascript"><!--
 function reportParamFavorite_trans(){
   document.memberFavoriteAddForm.submit();
@@ -121,220 +130,16 @@ function siteCatalistAddCart1(s_products){
   s.tl(this,'o','cartadd');
   setTimeout("AddCart_trans1()",1000);
 }
-	window.onunload = function() {
-		jQuery(function(){
-    // 全ての選択を外す
-    $("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
-});
-    }
 //-->
 </script>
-<script src="/contents/js/adlpo.js" type="text/javascript"></script>
-
-<span m:id="l_notPre_goods">
-    <meta m:id="e_var_goods2">
-    <span m:id="l_notPre_goods">
-    	<meta m:id="b_define_url">
-    	 <span m:id="redirect_err" />
-    </span>
-</span>
-<meta m:id="e_var_shop_goodsDetail">
-<meta m:id="e_var_concernedGoods">
-<meta m:id="e_var_shopPostage">
-<meta m:id="b_var_shopPostageFlat">
-
-<meta m:id="parentShop">
-<meta m:id="ancestralCategory">
-<meta m:id="breadcrumbCategory">
-<meta m:id="e_var_saleStatus">
-
-<span m:id="l_pre_shopPostage">
-    <span m:id="l_ite_postage">
-	    <span m:id="l_equ_area_code">
-		    <span m:id="l_equ_valid_flg">
-		        <meta m:id="b_var_shopPostageFlat2">
-		    </span>
-	    </span>
-    </span>
-</span>
-<meta m:id="e_var_cart">
-<style>
-#header_search {
-    left: 262px !important;
-}
-.header_list_01 {
-	width:216px;
-	float:right;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 40px !important;
-    width: 440px !important;
-}
-#header_search .box_02 input {
-    height: 42px !important;
-	font-size:12px;	
-}
-@media (max-width: 640px) {
-#header_search {
-    left: 0 !important;
-}
-.header_list_01 {
-	width:100%;
-	float: none;
-}
-.header_list_01 li {
-    display: block;
-    float: none;
-	line-height:14px !important;	
-}
-#header_search .box_01 input {
-    height: 30px !important;
-    width: 100% !important;
-}
-#header_search .box_02 input {
-    height: 32px !important;
-}
-#header_search .box_01 {
-    width: 85% !important;
-}
-#header_search .box_02 {
-    width: 15% !important;
-}
-}
-</style>
+<!-- InstanceEndEditable -->
 
 </head>
  
 <body id="top">
-
-asdfasdf
-
-<!--▼▼▼ tagForm ▼▼▼-->
-<object class="xsp_obj" m:id="e_var_tagCart"></object>
-<form name="tagForm" action="#" method="post">
-<input m:id="tagForm_shop_no" type="hidden" name="shop_no" value="" />
-<input m:id="tagForm_member_no" type="hidden" name="member_no" value="" />
-<input m:id="tagForm_member_mail" type="hidden" name="email" value="" />
-<span m:id="l_equ_tagCart_empty">
-<span m:id="l_notEqu_tagCart_empty_shop">
-<input type="hidden" name="order_amount" value="" />
-<input type="hidden" name="total_sale_price" value="" />
-<input type="hidden" name="total_order_num" value="" />
-<input type="hidden" name="postage" value="" />
-<input type="hidden" name="category_code" value="" />
-<input type="hidden" name="category_name" value="" />
-<input type="hidden" name="ext_goods_code" value="" />
-<input type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="goods_name" value="" />
-<input type="hidden" name="goods_price" value="" />
-<input type="hidden" name="order_num" value="" />
-<input type="hidden" name="goods_url" value="" />
-<input type="hidden" name="goods_img_url" value="" />
-</span></span>
-<span m:id="l_notEqu_tagCart_empty">
-<span m:id="l_notEqu_tagCart_empty_shop">
-<input type="hidden" name="order_amount" value="" />
-<input type="hidden" name="total_sale_price" value="" />
-<input type="hidden" name="total_order_num" value="" />
-<input type="hidden" name="postage" value="" />
-<input type="hidden" name="category_code" value="" />
-<input type="hidden" name="category_name" value="" />
-<input type="hidden" name="ext_goods_code" value="" />
-<input type="hidden" name="ext_goods_sku_code" value="" />
-<input type="hidden" name="goods_name" value="" />
-<input type="hidden" name="goods_price" value="" />
-<input type="hidden" name="order_num" value="" />
-<input type="hidden" name="goods_url" value="" />
-<input type="hidden" name="goods_img_url" value="" />
-</span></span>
-<span m:id="l_notEqu_tagCart_empty">
-<span m:id="l_notEqu_tagCart_not_empty_shop">
-<input m:id="tagForm_total_order" type="hidden" name="order_amount" value="" />
-<input m:id="tagForm_total_sale" type="hidden" name="total_sale_price" value="" />
-<input m:id="tagForm_total_num" type="hidden" name="total_order_num" value="" />
-<input m:id="tagForm_postage" type="hidden" name="postage" value="" />
-<input m:id="tagForm_category_code" type="hidden" name="category_code" value="" />
-<input m:id="tagForm_category_name" type="hidden" name="category_name" value="" />
-<input m:id="tagForm_ext_goods_code" type="hidden" name="ext_goods_code" value="" />
-<input m:id="tagForm_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-<input m:id="tagForm_goods_name" type="hidden" name="goods_name" value="" />
-<input m:id="tagForm_goods_price" type="hidden" name="goods_price" value="" />
-<input m:id="tagForm_goods_num" type="hidden" name="order_num" value="" />
-<input m:id="tagForm_goods_url" type="hidden" name="goods_url" value="" />
-<input m:id="tagForm_goods_img_url" type="hidden" name="goods_img_url" value="" />
-</span></span>
-</form>
-<!--▲▲▲ tagForm ▲▲▲-->
 <!-- InstanceBeginEditable name="body" -->
 <!-- InstanceEndEditable -->
 
-<!-- カートリカバリー t_yoshida 20160908 add-->
-<span m:id="l_notEqu_tagCart_not_empty_shop">
-
-<script>			
-var ext_goods_code = document.tagForm.ext_goods_code.value;
-var goods_url = document.tagForm.goods_url.value;
-var goods_name = document.tagForm.goods_name.value;
-var goods_img_url = document.tagForm.goods_img_url.value;
-var goods_price = document.tagForm.goods_price.value;
-var order_num = document.tagForm.order_num.value;
-
-var ext_goods_code_Array = ext_goods_code.split("|");
-var goods_url_Array = goods_url.split("|");
-var goods_name_Array = goods_name.split("|");
-var goods_img_url_Array = goods_img_url.split("|");
-var goods_price_Array = goods_price.split("|");
-var order_num_Array = order_num.split("|");
-
-var  cnt = ext_goods_code_Array.length;  
-
-
-  document.write("<script>"); 			
-  document.write("contx = {");			
-  document.write("\'user\': {");			
-    document.write("\'id\': \'"+document.tagForm.email.value+"\'");			
-    document.write("},");			
-    document.write("\'cart\': {");			
-      document.write("\'items\': [");		
-
-      for(i=0;i<cnt;i++){     	
-        document.write("{");			
-          document.write("\'id\':    \'"+ext_goods_code_Array[i]+"\',");			
-          document.write("\'page\':  \'"+goods_url_Array[i]+"\',");			
-          document.write("\'name\':  \'"+goods_name_Array[i]+"\',");			
-          document.write("\'image\': \'"+goods_img_url_Array[i]+"\',");			
-          document.write("\'price\': \'"+goods_price_Array[i]+"\',");			
-          document.write("\'count\': \'"+order_num_Array[i]+"\',");			
-          document.write("\'stock\': \'\'");			
-        document.write("}");
-        document.write("}");
-        if(i != cnt-1){
-        document.write(",");
-        }
-      } 			
-      document.write("]");			
-    document.write("}");			
-  document.write("};");	
-  document.write("<\/script>"); 		
-</script>			
-		
-
-<script>
-
-(function(w,d,s,c,i){w[c]=w[c]||{};w[c].trackingId=i;
-var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;
-j.src='//cdn.contx.net/collect.js';f.parentNode.insertBefore(j,f);
-})(window,document,'script','contx','CTX-f9ehSMTr');
-
-</script>
-
-</span>
-<!-- カートリカバリーここまで -->
 <div id="container">
 
 <div id="header">
@@ -419,7 +224,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </form>
       <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
         <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名、商品番号を入力してください" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
+<div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください"></div>
 <div class="box_02"><input type="submit" value="検索"></div>
 </form>
 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -434,53 +239,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>-->
 </div><!--header_wrap-->
 </div><!--header-->
-<span m:id="l_pre_individual_postage">
-	<span m:id="l_not_pre_evenness_postage">
-		<object class="xsp_obj" m:id="e_var_postageGroupList"></object>
-		<span m:id="l_pre_postageGroupList">
-			<object class="xsp_obj" m:id="b_size_postageGroupListSize"></object>
-		</span>
-	</span>
-</span>
-<form m:id="h_form_goodsDetailStatic" method="POST" action="goodsDetail.html">
-	<input type="hidden" name="_S" />
-	<input type="hidden" name="category_code" />
-	<input type="hidden" name="goods_url" />
-	<input type="hidden" name="ext_goods_sku_code" />
-</form>
+
 <div id="contents">
-<span m:id="l_pre_individual_postage">
-	<span m:id="l_not_pre_evenness_postage">
-		<div id="modalBaseLayer" class="modalBaseLayer">
-			<div id="modal" class="modal">
-				<span m:id="l_equ_postageGroupListSize">
-					<div class="error">該当するデータがありません。<br /></div>
-				</span>
-				<span m:id="l_greThan_postageGroupListSize">
-				<a href="javascript:void(0)" class="closeModal">閉じる</a>
-					<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-						<tr>
-							<th>都道府県名</th>
-							<th>送料</th>
-						</tr>
-						<tr m:id="l_ite_postageGroupList">
-							<td><span m:id="disp_area_name"></span></td>
-							<td><span m:id="disp_postage"></span>&nbsp;円</td>
-						</tr>
-					</table>
-				</span>
-				<a href="javascript:void(0)" class="closeModal">閉じる</a>
-			</div>
-		</div>
-	</span>
-</span>
-<object class="xsp_obj" m:id="parentShop"></object>
-<object class="xsp_obj" m:id="ancestralCategory"></object>
-<object class="xsp_obj" m:id="breadcrumbCategory"></object>
+
 <div id="pan-navi" >
   <ul class="clearfix">
     <li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
-    <li><span m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><span m:id="pankuzu_category_name">カテゴリ名</span></a></span></li>
+    <li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
     <li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
     <li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
   </ul>
@@ -541,12 +306,14 @@ s.tl(this,'o','cartview',null,'navigate');return false
 						<object class="xsp_obj" m:id="b_var_image_file2"></object>
 <img m:id="h_img_goods" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="" />
 </div>
+
+<!-- おまけ画像１ -->
 <span m:id="l_pre_omake_image1">
-	<!-- おまけ画像１ -->
 	<div class="present1">
 	  <img m:id="h_img_omake_image1" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像1" />
 	</div>
 </span>
+
 <div class="sec_01_in">
 <p>
 <span m:id="disp_goods_exp1">女性の背中を美しく見せる絶妙なサイズと荷物が出し入れやすい多彩なポケット。<br />
@@ -563,6 +330,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <object class="xsp_obj" m:id="b_size_valiationSize"></object>
 <div class="i_res_box_02">
 <h4 class="temp_tit_05"><div>お支払いは</div></h4>
+
+
 <span m:id="l_notPre_settle_040">
 	<span m:id="l_pre_disp_installment">
 		<span m:id="l_pre_disp_goods_pay_times">
@@ -590,9 +359,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					
 					
 						<tr>
-							<th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格</span></th>
+							<th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_total_installment">
 										<span m:id="disp_total_installment">12,460</span>&nbsp;円&nbsp;
 									</span>
@@ -600,9 +369,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_installment">
 										<span m:id="disp_installment">1,780</span>&nbsp;円&nbsp;
 									</span>
@@ -610,9 +379,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_goods_pay_times">
 										<span m:id="disp_goods_pay_times">7回</span>&nbsp;回
 									</span>
@@ -620,9 +389,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_goods_pay_term">
 										<span m:id="disp_goods_pay_term">7</span>&nbsp;ヶ月
 									</span>
@@ -639,11 +408,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
 	<tr>
 		<th class="top">
-			<span m:id="l_notEmp_memberSpecialDiscountOpacity">一括払価格</span>
+			<span m:id="l_notEmp_memberSpecialDiscountOpacity">一括払価格：</span>
 		</th>
 		<td>
 			<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-				：<span m:id="l_notEqu_pretaxPrice">
+				<span m:id="l_notEqu_pretaxPrice">
 									<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;<!--(税込)--></span>&nbsp;
 				</span>
 				<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円
@@ -664,36 +433,36 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					
 					
 						<tr>
-							<th class="top">分割払価格</th>
+							<th class="top">分割払価格：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_total_installment">
 									<span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
 								</span>
 							</td>
 						</tr>
 						<tr>
-							<th style="vertical-align:top;">分割払金</th>
+							<th style="vertical-align:top;">分割払金：</th>
 							<td>
-								：
+								
 									<span m:id="l_pre_disp_installment">
 										<span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
 									</span>
 							</td>
 						</tr>
 						<tr>
-							<th>支払回数</th>
+							<th>支払回数：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_goods_pay_times">
 									<span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
 								</span>
 							</td>
 						</tr>
 						<tr>
-							<th>支払期間</th>
+							<th>支払期間：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_goods_pay_term">
 										<span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
 								</span>
@@ -732,8 +501,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <span m:id="l_notEmp_item_limit">
 <br/><br/>※以下の決済方法はご利用いただけません<br/>
 <span m:id="l_ite_item_limit">
-<span m:id="l_equ_item_040">
-
 <div class="error">
   <table>
     <tr>
@@ -745,7 +512,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
       </td>
     </tr>
   </table>
-</div></span>
+</div>
 <!--
 <div class="error">
 &nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
@@ -782,7 +549,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
-		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -794,28 +560,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<option m:id="dummy">2</option>
   </select>
 </td></tr>
-<!--
-<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
-									<span m:id="l_equ_canAddCart"><td>△</td></span>
-									<span m:id="l_notEqu_canAddCart"><td>×</td></span>
-									</tr>
--->
+<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th><td>△</td></tr>
 <tr m:id="l_pre_min_order_num2"><th>最低購入数<span class="conma">：</span></th><td><span m:id="disp_min_order_num">2</span></td></tr>
-<!-- 商品個別送料案内 -->
-<span m:id="l_pre_individual_postage">
-	<span m:id="l_pre_evenness_postage">
-		<!-- 一律送料 -->
-			<span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
-	</span>
-	<span m:id="l_not_pre_evenness_postage">
-		<!-- 地域別送料 -->
-		<a m:id="h_link_goodsPostage" class="pc_only" href="#">
-			<span m:id="b_write_postageGropName"></span>はコチラ
-		</a>
-		<script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
-		<a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
-	</span>
-</span>
+
 <!-- のし・ラッピング可否 -->
 <span m:id="l_pre_no_wrapping">
 <tr><td valign="top">
@@ -889,19 +636,23 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカートにあるためこちらの商品をカートに入れることができません。</p>
 </span>
 <span m:id="l_equ_soldOutSalesStatus">
-		<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました,欠品" />
-	</span>
-	<span m:id="l_equ_noStockSalesStatus">
-<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
+	<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
 </span>
-
+<span m:id="l_equ_noStockSalesStatus">
+	<img src="contents/shop/00000003/image/mizai.jpg" alt="在庫がありません。入庫までお待ちください" />
+</span>
 
 <div class="box_itembtn">
 <span m:id="l_notEqu_select">
 <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
 </span>
 </div>
+
 </span>
+
+
+
+
 </div>
 <span  m:id="l_pre_disp_colname1">
 <h2 class="temp_tit_n02"><span m:id="dummy">ココチモがおススメする理由</span><span m:id="disp_colname1"></span></h2>
@@ -1115,9 +866,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					
 					
 						<tr>
-							<th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格</span></th>
+							<th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_total_installment">
 										<span m:id="disp_total_installment">12,460</span>&nbsp;円&nbsp;
 									</span>
@@ -1125,9 +876,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_installment">
 										<span m:id="disp_installment">1,780</span>&nbsp;円&nbsp;
 									</span>
@@ -1135,9 +886,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_goods_pay_times">
 										<span m:id="disp_goods_pay_times">7回</span>&nbsp;回
 									</span>
@@ -1145,9 +896,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 							</td>
 						</tr>
 						<tr>
-							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間</span></th>
+							<th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間：</span></th>
 							<td>
-								<span m:id="l_notEmp_memberSpecialDiscountOpacity">：
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 									<span m:id="l_pre_disp_goods_pay_term">
 										<span m:id="disp_goods_pay_term">7</span>&nbsp;ヶ月
 									</span>
@@ -1164,11 +915,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
 	<tr>
 		<th class="top">
-			<span m:id="l_notEmp_memberSpecialDiscountOpacity">一括払価格</span>
+			<span m:id="l_notEmp_memberSpecialDiscountOpacity">一括払価格：</span>
 		</th>
 		<td>
 			<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-				：<span m:id="l_notEqu_pretaxPrice">
+				<span m:id="l_notEqu_pretaxPrice">
 									<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;<!--(税込)--></span>&nbsp;
 				</span>
 				<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円
@@ -1192,36 +943,36 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					
 					
 						<tr>
-							<th class="top">分割払価格</th>
+							<th class="top">分割払価格：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_total_installment">
 									<span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
 								</span>
 							</td>
 						</tr>
 						<tr>
-							<th style="vertical-align:top;">分割払金</th>
+							<th style="vertical-align:top;">分割払金：</th>
 							<td>
-								：
+								
 									<span m:id="l_pre_disp_installment">
 										<span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
 									</span>
 							</td>
 						</tr>
 						<tr>
-							<th>支払回数</th>
+							<th>支払回数：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_goods_pay_times">
 									<span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
 								</span>
 							</td>
 						</tr>
 						<tr>
-							<th>支払期間</th>
+							<th>支払期間：</th>
 							<td>
-								：
+								
 								<span m:id="l_pre_disp_goods_pay_term">
 										<span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
 								</span>
@@ -1246,7 +997,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <span m:id="l_pre_settle_040">
 <tr><th colspan="2">※上記は消費税が含まれた金額です</th></tr>                                
 </span>
-</table> 
+</table>                                
 
 <!-- チャネル別決済種別制限取得 -->
 <object class="xsp_obj" m:id="e_var_settlementMap"></object>
@@ -1258,20 +1009,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <span m:id="l_notEmp_item_limit">
 <br/><br/>※以下の決済方法はご利用いただけません<br/>
 <span m:id="l_ite_item_limit">
-	<div class="error">
-	<span m:id="l_equ_item_040">
-	  <table>
-	    <tr>
-	      <td valign="top">
-	        <img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
-	      </td>
-	      <td>
-	        <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
-	      </td>
-	    </tr>
-	  </table>
-	</div>
-</span>
+<div class="error">
+  <table>
+    <tr>
+      <td valign="top">
+        <img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+      </td>
+      <td>
+        <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+      </td>
+    </tr>
+  </table>
+</div>
 <!--
 <div class="error">
 &nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
@@ -1307,7 +1056,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
-		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1319,12 +1067,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	<option m:id="dummy">2</option>
   </select>
 </td></tr>
-<!--
-<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
-									<span m:id="l_equ_canAddCart"><td>△</td></span>
-									<span m:id="l_notEqu_canAddCart"><td>×</td></span>
-									</tr>
--->
+<tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th><td>△</td></tr>
 <tr m:id="l_pre_min_order_num2"><th>最低購入数<span class="conma">：</span></th><td><span m:id="disp_min_order_num">2</span></td></tr>
 <span m:id="l_pre_no_wrapping">
 <tr><td valign="top">
@@ -1379,13 +1122,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <p class="i_txt_01">月々わずか<span class="i_sp_01">1780</span><span class="i_sp_02">円</span>(税込)×<span class="i_sp_01">7</span>回払い</p>
 
 <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-<tr><th class="top">分割払価格</th><td>：12,460円</td></tr>
+<tr><th class="top">分割払価格:</th><td>12,460円</td></tr>
 <tr><th>分割払金</th><td>：1,780円</td></tr>
 <tr><th>支払回数</th><td>：7回</td></tr>
 <tr><th>支払期間</th><td>：7ヶ月</td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-<tr><th class="top">一括払価格</th><td>：24,800円</td></tr>
+<tr><th class="top">一括払価格：</th><td>24,800円</td></tr>
 <tr><th colspan="2">※全て消費税が含まれた金額です</th></tr>
 </table>
 </div>
@@ -1407,7 +1150,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
-		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1459,7 +1201,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 								</span></td></tr>
 </table>
 <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-<tr><th class="top">一括払価格</th><td>：<span m:id="l_notEqu_pretaxPrice">
+<tr><th class="top">一括払価格：</th><td><span m:id="l_notEqu_pretaxPrice">
 									<span class="original_price"><span m:id="b_wr_pretaxPrice">24800</span>&nbsp;円&nbsp;(税込)</span>&nbsp;
 								</span>
 								<span m:id="b_wr_actualSalePrice">17800</span>&nbsp;円&nbsp;(税込)</td></tr>
@@ -1491,7 +1233,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </select>
 <span m:id="l_ite_variation">
 <object class="xsp_obj" m:id="b_var_url"></object>
-		<object class="xsp_obj" m:id="b_var_staticUrl"></object>
 <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
 </span>
 </span></td></tr>
@@ -1598,13 +1339,11 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカートにあるためこちらの商品をカートに入れることができません。</p>
 </span>
 <span m:id="l_equ_soldOutSalesStatus">
-		<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました,欠品" />
-	</span>
-	<span m:id="l_equ_noStockSalesStatus">
-<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
+	<img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
 </span>
-
-
+<span m:id="l_equ_noStockSalesStatus">
+	<img src="contents/shop/00000003/image/mizai.jpg" alt="在庫がありません。入庫までお待ちください" />
+</span>
 <div class="box_itembtn">
 <span m:id="l_notEqu_select">
 <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
@@ -1757,7 +1496,6 @@ eltexcomment-->
 
 <ul class="r_con_list_04">
 <span m:id="l_ite_autoRecommendGoodsList">
-<span m:id="l_notEqu_autoRecommendGoodsList_idx">
 <li>
 <form m:id="h_form_autoRecommend" method="POST" action="cart.html" name="autoRecommendForm">
 								<input m:id="h_hid_goodsCode" type="hidden" name="goodsCode" value="123"/>
@@ -1773,40 +1511,9 @@ eltexcomment-->
 									</span>&nbsp;
 								</span>
 								<span m:id="b_wr_autoRecommendGoods_actualSalePrice">100</span>&nbsp;円&nbsp;(税込)</p>
-								 <!-- 閲覧履歴一覧からカートに入れる -->
-								<span m:id="l_can_addCartDirect_autoReco">
-									<span m:id="l_equ_autoReco_valiationSize">
-										<a m:id="h_link_cartAddDirect_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
-											<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
-											<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-										</a>
-									</span>
-									<span m:id="l_not_equ_autoReco_valiationSize">
-										<select m:id="h_sel_goods_sku_code1_autoReco" class="goods_sku_code">
-											<option value="">選択してください</option>
-											<option m:id="h_opt_variations_autoReco" value="">白</option>
-											<option m:id="dummy" value="">黒</option>
-											<option m:id="dummy" value="">赤</option>
-											<option m:id="dummy" value="">青</option>
-											<option m:id="dummy" value="">緑</option>
-										</select>
-										<div m:id="disp_not_cartAddBtn_autoReco"></div>
-										<!--<img m:id="disp_not_cartAddBtn_autoReco" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
-										<a m:id="h_link_cartAddDirectSku_autoReco" href="" class="productDetail_cart_bt_normal" onclick="">
-											<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
-											<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-										</a>
-									</span>
-								</span>
-								<span m:id="l_not_addCartDirect_autoReco">
-									<span m:id="disp_saleStatus_autoReco">
-									<p class="soldout"><strong>[販売終了]</strong></p>
-									</span>
-								</span>
-								<!--/ 閲覧履歴一覧からカートに入れる -->
-</div>
-</div>
+</div></div>
 </li>
+</span>
 <li m:id="dummy" class="heightLine-osusuem01"><div>
 <div class="box_01"><div class="box_02"><div class="img_box"><a href="#"><img src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
 <h3><a href="#">商品名商品名</a></h3>
@@ -1832,8 +1539,6 @@ eltexcomment-->
 <h3><a href="#">商品名商品名</a></h3>
 <p>50円（税込）</p>
 </li>
-</span>
-</span>
 </ul>
 
 </div>
@@ -1875,57 +1580,11 @@ eltexcomment-->
 <object class="xsp_obj" m:id="b_var_isReturn"></object>
 <div class="box_01"><div class="box_02"><div class="img_box"><span m:id="l_pre_representSku_10">
 <object class="xsp_obj" m:id="b_var_listImage_10"></object><span m:id="l_notEmp_listImage_10">
-<span m:id="h_link_goodsDetail_default_url">
-	<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
-</span>
-<span m:id="h_link_goodsDetail_static_url">
-	<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a>
-</span>
-</span></span></div>
-<h3>
-<span m:id="h_link_goodsDetail_default_url">
-		<a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
-	</span>
-	<span m:id="h_link_goodsDetail_static_url">
-		<a m:id="h_link_goodsDetail_goods_url" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a>
-	</span>
-</h3>
+<a m:id="h_link_goodsDetail" href="goodsDetail.html"><img m:id="h_img_goodsDetail" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></span></span></div>
+<h3><a m:id="h_link_goodsDetail" href="goodsDetail.html"><span m:id="disp_concerned_goods_name">商品名商品名</span></a></h3>
 <!--<p class="fw_n">商品説明ダミーテキストダミーテキストダミーテキスト</p>-->
 <p><span m:id="m_num_sale_price">50</span>円（税込）</p>
-
-<!-- 関連商品一覧からカートに入れる -->
-<span m:id="l_can_addCartDirect_concerned">
-	<span m:id="l_equ_concerned_valiationSize">
-		<a m:id="h_link_cartAddDirect_concerned" href="" class="productDetail_cart_bt_normal" onclick="">
-			<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
-			<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-		</a>
-	</span>
-	<span m:id="l_not_equ_concerned_valiationSize">
-		<select m:id="h_sel_goods_sku_code1_concerned" class="goods_sku_code">
-			<option value="">選択してください</option>
-			<option m:id="h_opt_variations_concerned" value="">白</option>
-			<option m:id="dummy" value="">黒</option>
-			<option m:id="dummy" value="">赤</option>
-			<option m:id="dummy" value="">青</option>
-			<option m:id="dummy" value="">緑</option>
-		</select>
-		<div m:id="disp_not_cartAddBtn_concerned"></div>
-		<!--<img m:id="disp_not_cartAddBtn_concerned" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
-		<a m:id="h_link_cartAddDirectSku_concerned" href="" class="productDetail_cart_bt_normal" onclick="">
-			<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_07.gif" alt="カートに入れる" />
-			<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-		</a>
-	</span>
-</span>
-<span m:id="l_not_addCartDirect_concerned">
-	<span m:id="disp_saleStatus_concerned">
-	<p class="soldout"><strong>[販売終了]</strong></p>
-	</span>
-</span>
-<!--/ 関連商品一覧からカートに入れる -->
-</div>
-</div>
+</div></div>
 </li>
 </span>
 <li m:id="dummy" class="heightLine-osusuem03">
@@ -1974,7 +1633,6 @@ eltexcomment-->
 		<div class="guidebox_left">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl01.gif" alt="送料について" class="sgttl">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic01.gif" alt="1万円（税込）以上のお買物で送料無料！！" class="souryou sgttl">
-                <div style="text-align:center; color:#ff3300; font-weight:bold; margin-top:-10px!important">（常温、冷蔵、冷凍と表示のある商品を除く）</div>
 			<div class="box_souryou">
 			<p>お買い物総額5,000円（税込）未満の場合<br>
 			<span class="souryoutxt">＝送料500円</span><br>
@@ -1982,34 +1640,17 @@ eltexcomment-->
 			500円の送料がかかります。</p>
 			</div>
 			
-        <div class="box_souryou02">
-          <p>お買い物総額5,000円以上&#65374;10,000円未満<br>
-            <span class="souryoutxt">＝送料250円</span><br>
-            １回のお買い上げ総額が5,000円以上から10,000円
-            未満の場合、250円の送料がかかります。</p>
-          </div>
-    <!--    <div style="margin:-20px 0 0 0; text-align:left; font-size:12px; background-color: #F7F5F0;
-    padding: 8px;">
-          ※「おいしい食卓」常温B表示のある商品も上記送料を適用。
-        </div>  -->
-        <div style="padding:8px">
-          <p>
-          <strong>&#12316;「おいしい食卓」に関して&#12316;</strong><br />
-		    お申込みの商品名1つごと・お届け先1ヵ所につき、常温は税込600円、<br />冷凍・冷蔵は税込800円がかかります<br />（全国一律）。<br />
-			※同一商品を2個以上同時にお申込みの場合は1個分の送料となります。ただし、お届け先が異なる場合はお届け先ごとに送料を申し受けます。<br />
-			※同じ商品名でも、商品お届け日が異なる場合は、お届け日ごとにそれぞれ配送料金が加算<br />
-			されます。<br /><br />        
-            </p>
-            <p>
-            <strong>商品のお届け</strong><br />
-            商品はお申込みから通常1週間&#12316;10日前後でお届けいたします。
-            </p>
-			</div>              
+			<div class="box_souryou02">
+			<p>お買い物総額5,000円以上&#65374;10,000円未満<br>
+			<span class="souryoutxt">＝送料250円</span><br>
+			１回のお買い上げ総額が5,000円以上から10,000円
+			未満の場合、250円の送料がかかります。</p>
+			</div>
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl03.gif" alt="配送について" class="sgttl">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic06.gif" class="yamato sgttl" alt="ヤマト運輸が代行配送します。">
 		<p>配送日時の指定が可能です。（一部指定不可の商品もございます。）<br>
-		時間帯指定については、下記の6つの時間帯よりお選びいただけます。</p>
-		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic07.gif" class="time sgttl" alt="配送時間の図" style="margin-bottom:50px">
+		時間帯指定については、下記の６つの時間帯よりお選びいただけます。</p>
+		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic07.gif" class="time sgttl" alt="配送時間の図">
 		</div>
 		
 		<div class="guidebox_right">
@@ -2018,9 +1659,8 @@ eltexcomment-->
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic03.gif" class="card02 sgttl" alt="ご利用可能なクレジットカード">
 		<p class="txt12">その他、各種クレジットカードがご利用いただけます。<br>
 		<span class="kome">※カード会社規定の分割払いをご利用される場合、カード会社によっては分割手数料がかかる場合がございます。詳しくはご利用のカード会社に直接おたずねください。</span></p>
-		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円"><br />
-<br />
-
+		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic04.gif" class="daibiki sgttl" alt="代金引換　代引き手数料300円">
+		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_pic05.gif" class="konbini sgttl" alt="コンビニ・郵便局・ゆうちょ銀行　払込手数料0円">
 		<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_ttl04.gif" class="sgttl" alt="商品のお届けについて">
 		<p class="txt_shouhin">お申込みから<b>通常３&#65374;６日</b>ほどでお届けいたします。期日・時間帯をご指定いただける商品もございます。<br>
 ※年末年始のご注文はお届けに時間をいただく場合がございます。</p>
@@ -2028,9 +1668,9 @@ eltexcomment-->
 		<p class="txt_rapping">プレゼント包装を承っております。また、「のし」をお付けすることもできます。<br>
 		ご希望の場合はお電話でお申込みください。</p>
 		<p class="txt_rapping"><span class="point01">お申込みは下記ココチモお客様センターまで</span><br>
-		<span class="point02">フリーダイヤル</span><span class="point03">0120-552-186</span><br>
-		受付時間…6：00&#65374;22：00（日曜・祝日も受付けます）<br>
-		※おかけ間違いのないようご注意ください。</p>
+		<span class="point02">フリーダイヤル</span><span class="point03">0120-552-476</span><br>
+		受付時間…7：00&#65374;22：00（年中無休）<br>
+		※IP電話をご利用の方は03-5547-2511へおかけください。</p>
 		</div>
 	</div><img m:id="static_img" src="../../../contents/shop/00000003/shop/image/spg_foot02.gif" class="shopping_guide_foot" alt="">
 </div>
@@ -2059,71 +1699,6 @@ eltexcomment-->
   </object>
   <object class="xsp_obj" m:id="e_var_dmHistory">
   </object>
-<!-- ▼▼ 関連カテゴリ表示欄 ▼▼ -->
-<span m:id="relate_cate_bean_def" flg="0"></span>
-<object class="xsp_obj" m:id="e_var_relateCategoryList"></object>
-<span m:id="disp_relateCategory_check">
-<div class="l_con_box_01">
-	<div class="i_tit_relate"><img src="contents/c/image/pc_l_rel_tit_01.jpg" alt="関連カテゴリーを表示します" /></div>
-	<div class="sub">
-	<span m:id="disp_relate_category_list">
-		<ul class="l_con_list_04">
-			<span m:id="l_ite_relateCategory">
-				<span m:id="l_ite_relateSubCategory2">
-					<span m:id="l_ite_relateSubCategory3">
-						<li>
-							<div id="rC_3">
-								<a m:id="h_link_relate_subCate3" href="goodsSearchShop_shop.html">
-									<span m:id="disp_relate_subCate3_category_name" id="rC3_name">孫カテゴリ</span>
-								</a>
-							</div>
-							<ul>
-								<span m:id="l_ite_relateSubCategory4">
-									<li>
-										<div id="rC_4">
-											<span id="test_img">&nbsp;&nbsp;+</span>
-												<a m:id="h_link_relate_subCate4" href="goodsSearchShop_shop.html">
-												<span m:id="disp_relate_subCate4_category_name" id="rC4_name">曾孫カテゴリ</span>
-											</a>
-										</div>
-										<ul>
-											<span m:id="l_ite_relateSubCategory5">
-												<li>
-													<div id="rC_5">
-														<span id="test_img">&nbsp;&nbsp;&nbsp;&nbsp;+</span>
-															<a m:id="h_link_relate_subCate5" href="goodsSearchShop_shop.html">
-															<span m:id="disp_relate_subCate5_category_name" id="rC5_name">玄孫カテゴリ</span>
-														</a>
-													</div>
-													<ul>
-														<span m:id="l_ite_relateSubCategory6">
-															<li>
-																<div id="rC_6">
-																	<span id="test_img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</span>
-																		<a m:id="h_link_relate_subCate6" href="goodsSearchShop_shop.html">
-																		<span m:id="disp_relate_subCate6_category_name" id="rC6_name">来孫カテゴリ</span>
-																	</a>
-																</div>
-															</li>
-														</span>
-													</ul>
-												</li>
-											</span>
-										</ul>
-									</li>
-								</span>
-							</ul>
-						</li>
-					</span>
-				</span>
-			</span>
-		</ul>
-	</span>
-	</div>
-</div>
-</span>
-<!-- ▲▲ 関連カテゴリ表示欄  ▲▲ -->
-
 <!--▼▼▼カテゴリー▼▼▼-->
 <span m:id="l_pre_standardCategory"> <span m:id="l_notEmp_standardCategory_childCategories">
 <div class="l_con_box_01">
@@ -2162,15 +1737,6 @@ eltexcomment-->
 							<span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
 							<li>
 							<a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-							<ul m:id="tag_dd_subCate2">
-							<span m:id="l_ite_subCate2"> 
-							<span m:id="l_equ_subCate3_checkPeriod"> <span m:id="icnt_increment"></span>
-							<li>
-							<a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-							</li>
-							</span>
-							</span>
-							</ul>
 							</li>
 							</span>
 						</span>
@@ -2242,13 +1808,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
   </div>-->
   <!--▲▲▲左カラムバナー▲▲▲-->
   <!--▼▼▼最近チェックした商品▼▼▼-->
-<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
-	<input type="hidden" name="display_code" />
-	<input type="hidden" name="goods_sku_code" />
-	<input type="hidden" name="ext_goods_sku_code" />
-	<input type="hidden" name="order_num_string" />
-	<input type="hidden" name="_S" />
-</form>
   <object class="xsp_obj" m:id="e_var_browsingGoodsList">
   </object>
   <span m:id="l_notEmp_browsingGoodsList">
@@ -2272,38 +1831,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			    <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
 			 </p>
             </div>
-            <!-- 最近チェックした商品一覧からカートに入れる -->
-			<span m:id="l_can_addCartDirect_recent">
-				<span m:id="l_equ_browsingList_valiationSize">
-					<a m:id="h_link_cartAddDirect_recent" href="" class="productDetail_cart_bt_normal" onclick="">
-						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
-						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-					</a>
-				</span>
-				<span m:id="l_not_equ_browsingList_valiationSize">
-					<select m:id="h_sel_goods_sku_code1_recent" class="goods_sku_code">
-						<option value="">選択してください</option>
-						<option m:id="h_opt_variations_browsing" value="">白</option>
-						<option m:id="dummy" value="">黒</option>
-						<option m:id="dummy" value="">赤</option>
-						<option m:id="dummy" value="">青</option>
-						<option m:id="dummy" value="">緑</option>
-					</select>
-					<div m:id="disp_not_cartAddBtn_recent"></div>
-					<!--<img m:id="disp_not_cartAddBtn_recent" src="contents/shop/00000003/shop/image/elt_cartAddBtn_off.png" alt="色・サイズをご指定下さい" />-->
-					<a m:id="h_link_cartAddDirectSku_recent" href="" class="productDetail_cart_bt_normal" onclick="">
-						<img class="pc_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/cart_banner_04.gif" alt="カートに入れる" />
-						<img class="sp_only" m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp_cart_banner_01.gif" alt="カートに入れる" />
-					</a>
-				</span>
-			</span>
-			<span m:id="l_not_addCartDirect_recent">
-				<span m:id="disp_saleStatus_recent">
-				<p class="soldout"><strong>[販売終了]</strong></p>
-				</span>
-			</span>
-			<!--/ 最近チェックした商品一覧からカートに入れる -->
-            
           </div>
         </li>
        </span>
@@ -2516,8 +2043,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
 <span m:id="site_prop13"></span>
+
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
+
 <script language="Javascript" type="text/javascript">
 //<![CDATA[
 var protocol;
@@ -2531,7 +2060,10 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_common_site_type" content=""></meta>
 <meta m:id="criteo_view_item" content=""></meta>
 <meta m:id="criteo_q_push" content=""></meta>
+
 <!-- ▲▲▲ Criteo ▲▲▲ -->
+
+
 <script type="text/javascript" language="javascript">
 var yahoo_retargeting_id = 'JAG00YJOZ2';
 var yahoo_retargeting_label = '';

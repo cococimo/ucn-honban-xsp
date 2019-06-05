@@ -67,76 +67,81 @@ $(function() {
 <![endif]-->
 <script src="/contents/c/js/new/featherlight.js"></script>
 <span m:id="site_products"></span>
-<script language="JavaScript" type="text/javascript"><!--
-  function siteCatalistRemoveCart(s_products,url){
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='scRemove';
-    if (s_products)
-      s.products=";"+s_products;
-    else
-      s.products='';
-    s.events='scRemove';
-    s.tl(this,'o','cartremove');
-    setTimeout(function(){location.href=url;},1000);
-  }
-  function RecalcCart_trans(){
-    document.getElementsByName('cartUpdateForm')[0].submit();
-  }
-  function siteCatalistRecalcCart(s_products) {
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='event28';
-    s.products=s_products;
-    s.events='event28';
-    s.tl(this,'o','recalculation');
-    setTimeout("RecalcCart_trans()",1000);
-  }
+	<script language="JavaScript" type="text/javascript">
+		<!--
+			function siteCatalistRemoveCart(s_products, url) {
+			if(1!=1)
+				s.linkTrackVars = 'events,products';
+				s.linkTrackEvents = 'scRemove';
+				if (s_products)
+					s.products = ";" + s_products;
+				else
+					s.products = '';
+				s.events = 'scRemove';
+				s.tl(this, 'o', 'cartremove');
+				}
+				setTimeout(function () { location.href = url; }, 1000);
+			}
+		function RecalcCart_trans() {
+			document.getElementsByName('cartUpdateForm')[0].submit();
+		}
+		function siteCatalistRecalcCart(s_products) {
+		if(1!=1){
+			s.linkTrackVars = 'events,products';
+			s.linkTrackEvents = 'event28';
+			s.products = s_products;
+			s.events = 'event28';
+			s.tl(this, 'o', 'recalculation');
+			}
+			setTimeout("RecalcCart_trans()", 1000);
+		}
 
-  function displayChargedOptionInput() {
-    /* var selectObject = document.orderInitForm.wrapping_type; */
-    var selectObject = document.cartUpdateForm.wrapping_type;
-    var isDisplay = false;
-    if (selectObject != null) {
-      for(i=0; i<selectObject.length;i++) {
-        if (selectObject[i].checked && selectObject[i].value != "")
-          isDisplay = true;
-      }
-    }
-    if (document.getElementById("charged_option_input") != null) {
-      if (isDisplay) {
-        document.getElementById("charged_option_input").style.display = 'inline';
-        if (document.getElementById("charged_option_numbers") != null) {
-          document.getElementById("charged_option_numbers").style.display = 'none';
-          var form = document.cartUpdateForm;
-          var num = 0;
-          for (var i = 0; i < form.elements.length; i++) {
-            if (form.elements[i].name.indexOf("order_num_string") != -1) {
-              num += form.elements[i].value;
-            }
-          }
-          if (num > 1) 
-            document.getElementById("charged_option_numbers").style.display = 'inline';
-        }
-      }
-      else {
-        document.getElementById("charged_option_input").style.display = 'none';
-        if (document.getElementById("charged_option_numbers") != null)
-          document.getElementById("charged_option_numbers").style.display = 'none';
-      }
-    }
-  }
-  if ( window.addEventListener ) {
-    window.addEventListener("load", displayChargedOptionInput, false);
-  } else if (window.attachEvent) {
-    window.attachEvent("onload", displayChargedOptionInput);
-  }
-  window.onunload = function() {
-    jQuery(function(){
-    // 全ての選択を外す
-    $("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
-  });
-}
+		function displayChargedOptionInput() {
+			/* var selectObject = document.orderInitForm.wrapping_type; */
+			var selectObject = document.cartUpdateForm.wrapping_type;
+			var isDisplay = false;
+			if (selectObject != null) {
+				for (i = 0; i < selectObject.length; i++) {
+					if (selectObject[i].checked && selectObject[i].value != "")
+						isDisplay = true;
+				}
+			}
+			if (document.getElementById("charged_option_input") != null) {
+				if (isDisplay) {
+					document.getElementById("charged_option_input").style.display = 'inline';
+					if (document.getElementById("charged_option_numbers") != null) {
+						document.getElementById("charged_option_numbers").style.display = 'none';
+						var form = document.cartUpdateForm;
+						var num = 0;
+						for (var i = 0; i < form.elements.length; i++) {
+							if (form.elements[i].name.indexOf("order_num_string") != -1) {
+								num += form.elements[i].value;
+							}
+						}
+						if (num > 1)
+							document.getElementById("charged_option_numbers").style.display = 'inline';
+					}
+				}
+				else {
+					document.getElementById("charged_option_input").style.display = 'none';
+					if (document.getElementById("charged_option_numbers") != null)
+						document.getElementById("charged_option_numbers").style.display = 'none';
+				}
+			}
+		}
+		if (window.addEventListener) {
+			window.addEventListener("load", displayChargedOptionInput, false);
+		} else if (window.attachEvent) {
+			window.attachEvent("onload", displayChargedOptionInput);
+		}
+		window.onunload = function () {
+			jQuery(function () {
+				// 全ての選択を外す
+				$("select[name='goods_sku_code'][class='goods_sku_code'] option").attr("selected", false);
+			});
+		}
 //-->
-</script>
+	</script>
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
 
@@ -1965,50 +1970,7 @@ $(function() {
 <!-- tracking ga -->
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
-<!-- InstanceBeginEditable name="sitecatalyst" -->
 <span m:id="site_prop13"></span>
-
-<!-- SiteCatalyst code version: H.26.1.
-Copyright 1996-2013 Adobe, Inc. All Rights Reserved
-More info available at http://www.omniture.com -->
-<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
-<script language="JavaScript" type="text/javascript"><!--
-/* You may give each page an identifying name, server, and channel on
-the next lines. */
-s.pageName="カート"
-s.server=""
-s.channel="カート"
-s.pageType=""
-s.prop1="カート"
-s.prop2=""
-s.prop3=""
-s.prop4=""
-s.prop5=""
-s.prop13=s_prop13
-/* Conversion Variables */
-s.campaign=""
-s.state=""
-s.zip=""
-s.events=""
-s.products=""
-s.purchaseID=""
-s.eVar1=""
-s.eVar2=""
-s.eVar3=""
-s.eVar4=""
-s.eVar5=""
-s.eVar34=""
-s.eVar35=""
-s.eVar36=""
-/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s.t();if(s_code)document.write(s_code)//--></script>
-<script language="JavaScript" type="text/javascript"><!--
-if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
-height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
-
-
-<!-- InstanceEndEditable -->
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
