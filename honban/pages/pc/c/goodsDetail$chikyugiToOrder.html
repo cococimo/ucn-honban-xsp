@@ -595,31 +595,11 @@ borer: 1px solid red;
 		<meta m:id="e_var_member_goodsDetail">
 		<meta m:id="site_products">
 		<script language="JavaScript" type="text/javascript"><!--
-			function reportParamFavorite_trans(){
+			function reportParamFavorite(){
 			  document.memberFavoriteAddForm.submit();
 			}
-			function reportParamFavorite(){
-			  s.linkTrackVars='events,eVar51';
-			  s.linkTrackEvents='event16';
-			  s.eVar51=";"+s_products;
-			  s.events='event16';
-			  s.tl(this,'o','okiniiri');
-			  setTimeout("reportParamFavorite_trans()",1000)
-			}
-			function reportParamFriend_trans(){
-			  sendMailToFriend();
-			}
 			function reportParamFriend(){
-			  s.linkTrackVars='events,eVar52';
-			  s.linkTrackEvents='event17';
-			  s.eVar52=";"+s_products;
-			  s.events='event17';
-			  s.tl(this,'o','friends');
-			  setTimeout("reportParamFriend_trans()",1000)
-			}
-			function AddCart_trans(){
-			   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
-			   return anchorButtonClick(document.cartGoodsAddForm);
+			  sendMailToFriend();
 			}
 			function siteCatalistAddCart(s_products){
 			 /* 
@@ -630,17 +610,9 @@ borer: 1px solid red;
 			　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
 			　}else{ 
 			 */
-			    s.linkTrackVars='events,products';
-			    s.linkTrackEvents='scAdd,event27';
-			    s.products=";"+s_products;
-			    s.events='scAdd,event27';
-			    s.tl(this,'o','cartadd');
-			    setTimeout("AddCart_trans()",1000);
+			   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
+			   return anchorButtonClick(document.cartGoodsAddForm);
 			  /* } */
-			}
-			function AddCart_trans1(){
-			   document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
-			  return anchorButtonClick(document.cartGoodsAddForm1);
 			}
 			function siteCatalistAddCart1(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
@@ -651,18 +623,9 @@ borer: 1px solid red;
 			　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以・ｺの数量を選び直してください。");
 			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
-			    s.linkTrackVars='events,products';
-			    s.linkTrackEvents='scAdd,event27';
-			    s.products=";"+s_products;
-			    s.events='scAdd,event27';
-			    s.tl(this,'o','cartadd');
-			    setTimeout("AddCart_trans1()",1000);
+			  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
+			  return anchorButtonClick(document.cartGoodsAddForm1);
 			  /* } */
-			}
-			function AddCart_trans_renewal(){
-			   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
-			   document.cartGoodsAddForm.goods_sku_code.value=document.goodsDetailCartForm.goods_sku_code.value;
-			  return anchorButtonClick(document.cartGoodsAddForm);
 			}
 			function siteCatalistAddCart_renewal(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
@@ -673,18 +636,10 @@ borer: 1px solid red;
 			　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
 			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
-			    s.linkTrackVars='events,products';
-			    s.linkTrackEvents='scAdd,event27';
-			    s.products=";"+s_products;
-			    s.events='scAdd,event27';
-			    s.tl(this,'o','cartadd');
-			    setTimeout("AddCart_trans_renewal()",1000);
+			  document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
+			  document.cartGoodsAddForm.goods_sku_code.value=document.goodsDetailCartForm.goods_sku_code.value;
+			  return anchorButtonClick(document.cartGoodsAddForm);
 			  /* } */
-			}
-			function AddCart_trans1_renewal(){
-			   document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
-			   document.cartGoodsAddForm1.goods_sku_code.value=document.goodsDetailCartForm1.goods_sku_code.value;
-			  return anchorButtonClick(document.cartGoodsAddForm1);
 			}
 			function siteCatalistAddCart1_renewal(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
@@ -695,12 +650,9 @@ borer: 1px solid red;
 			　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
 			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
-			    s.linkTrackVars='events,products';
-			    s.linkTrackEvents='scAdd,event27';
-			    s.products=";"+s_products;
-			    s.events='scAdd,event27';
-			    s.tl(this,'o','cartadd');
-			    setTimeout("AddCart_trans1_renewal()",1000);
+			  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
+			  document.cartGoodsAddForm1.goods_sku_code.value=document.goodsDetailCartForm1.goods_sku_code.value;
+			  return anchorButtonClick(document.cartGoodsAddForm1);
 			  /* } */
 			}
 			function showCartButton(obj){
@@ -1950,50 +1902,6 @@ borer: 1px solid red;
 		<span m:id="fs_tracking_ga"></span>
 		<!--/ tracking ga -->
 		<span m:id="site_prop13"></span>
-		<!-- SiteCatalyst code version: H.26.1.
-			Copyright 1996-2013 Adobe, Inc. All Rights Reserved
-			More info available at http://www.omniture.com -->
-		<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
-		<script language="JavaScript" type="text/javascript"><!--
-			/* You may give each page an identifying name, server, and channel on
-			the next lines. */
-			s.pageName="商品詳細/"+s_products
-			s.server=""
-			s.channel="商品詳細"
-			s.pageType=""
-			s.prop1="商品詳細"
-			s.prop2=""
-			s.prop3=""
-			s.prop4=""
-			s.prop5=""
-			s.prop13=s_prop13
-			/* Conversion Variables */
-			s.campaign=""
-			s.state=""
-			s.zip=""
-			s.events=s_events
-			s.products=";"+s_products;
-			s.purchaseID=""
-			s.eVar1=""
-			s.eVar2=""
-			s.eVar3=""
-			s.eVar4=""
-			s.eVar5=""
-			s.eVar34=""
-			s.eVar35=""
-			s.eVar36=s_eVar36
-			s.eVar37=s_eVar37
-			/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-			var s_code=s.t();if(s_code)document.write(s_code)//-->
-		</script>
-		<script language="JavaScript" type="text/javascript"><!--
-			if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-			//-->
-		</script>
-		<noscript><img src="http://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
-			height="1" width="1" border="0" alt="" /></noscript>
-		<!--/DO NOT REMOVE/-->
-		<!-- End SiteCatalyst code version: H.26.1. -->
 		<!-- ▼▼▼ Criteo ▼▼▼ -->
 		<!-- Criteo loader -->
 		<script language="Javascript" type="text/javascript">
