@@ -63,51 +63,19 @@
 <script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
 <span m:id="site_products"></span>
 <script language="JavaScript" type="text/javascript"><!--
-function reportParamFavorite_trans(){
+function reportParamFavorite(){
   document.memberFavoriteAddForm.submit();
 }
-function reportParamFavorite(){
-  s.linkTrackVars='events,eVar51';
-  s.linkTrackEvents='event16';
-  s.eVar51=";"+s_products;
-  s.events='event16';
-  s.tl(this,'o','okiniiri');
-  setTimeout("reportParamFavorite_trans()",1000)
-}
-function reportParamFriend_trans(){
+function reportParamFriend(){
   sendMailToFriend();
 }
-function reportParamFriend(){
-  s.linkTrackVars='events,eVar52';
-  s.linkTrackEvents='event17';
-  s.eVar52=";"+s_products;
-  s.events='event17';
-  s.tl(this,'o','friends');
-  setTimeout("reportParamFriend_trans()",1000)
-}
-function AddCart_trans(){
+function siteCatalistAddCart(s_products){
    document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm);
 }
-function siteCatalistAddCart(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans()",1000);
-}
-function AddCart_trans1(){
+function siteCatalistAddCart1(s_products){
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
-}
-function siteCatalistAddCart1(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans1()",1000);
 }
 //-->
 </script>
