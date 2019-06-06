@@ -1040,6 +1040,141 @@ $(function () {
 							</div>-->
 							<!-- /.not_login_box -->
 						<!--▲▲▲ 非ログイン時 ▲▲▲-->
+				<!--▼▼▼ お申込み内容 ▼▼▼-->
+				<style>
+					#cart .cart_intro {
+					    margin: 0 0 20px;
+					}
+					#cart .cart_order .wrap_table {
+						box-sizing: border-box;
+						margin: 10px;
+					}
+					#cart .cart_order .cart_order_table {
+						width:100%;
+					}
+					#cart .cart_order th {
+						background:#feedb7;
+					}
+					#cart .cart_order th,
+					#cart .cart_order td {
+						border:1px solid #f39800;
+						padding:10px;
+						line-height: 1.6;
+					}
+					#cart .cart_order td {
+						padding:10px;
+					}
+					#cart .cart_order th:first-of-type {
+						width:700px;
+					}
+					#cart .cart_order th:nth-child(3) {
+						width: 10%;
+					}
+					#cart .cart_order tr td:nth-child(n + 2) {
+						text-align: center;
+					}
+
+					@media screen and (max-width: 767px) {
+						#cart .cart_order .cart_addition_in {
+						    padding-bottom: 0;
+						}
+
+						#cart .cart_order th,
+						#cart .cart_order td {
+							display: block;
+						}
+						#cart .cart_order tr td:first-of-type {
+							width: 100%;
+							padding-top: 1em;
+							padding-bottom: 1em;
+						}
+						#cart .cart_order tr td:nth-child(n + 2) {
+							float: left;
+							border-top: none;
+							width: 40%;
+						}
+						#cart .cart_order table tr:nth-child(n + 3) td:first-of-type {
+							border-top: none;
+						}
+						#cart .cart_order tr td:nth-child(3) {width: 20%;}
+						#cart .cart_order tr td:not(:last-child):nth-child(n + 2) {border-right: none;}
+						#cart .cart_order .sp_th {
+							background:#feedb7;
+							border-bottom:1px solid #f39800;
+							margin-left:-10px;
+							margin-right: -10px;
+							margin-top: -10px;
+							margin-bottom: 10px;
+							padding:2px;
+						}
+
+					}
+				</style>
+					<div class="cart_addition mb20 s_mb10 input_addition cart_order">
+						<div class="cart_addition_in mb30 s_mb15">
+						<h2 class="cart_addition_tit">お申込み内容</h2>
+						<div class="wrap_table">
+						<table class="cart_order_table">
+							<tr class="viewPc"><th align="center">商品名</th>
+								<th class="memadd_table_02_w_02">商品単価</th>
+								<th class="memadd_table_02_w_03">数量</th>
+								<th class="memadd_table_02_w_02">小計</th>
+							</tr>
+							<span m:id="l_ite_detail">
+								<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
+								<tr>
+									<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
+
+									<td>
+										<p class="viewSp sp_th">商品単価</p>
+										<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
+										<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
+										<span m:id="l_notEqu_memberSpecialDiscount">
+											<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
+										</span>
+									</td>
+									<td>
+										<p class="viewSp sp_th">数量</p>
+										<span m:id="disp_detail_order_num">3</span>
+									</td>
+									<td>
+										<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
+										<p class="viewSp sp_th">小計</p>
+										<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
+										<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
+									</td>
+								</tr>
+							</span>
+						</table>
+					</div>
+						</div>
+					</div>
+				<!--▲▲▲ お申込み内容 ▲▲▲-->
+
+
+				<div class="cart_addition mb30 s_mb15 input_addition">
+					<span m:id="l_pre_disp_goodsPremium">
+						<div class="cart_addition_in mb50 s_mb25">
+							<h2 class="cart_addition_tit">プレゼント品</h2>
+							<span m:id="l_ite_goodsPremium">
+								<ul class="cart_addition_list cmn_list01">
+									<li><span m:id="disp_goodsPremium">おまけプレミアム名</span>&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></li>
+								</ul>
+							</span>
+						</div>
+					</span>
+					<span m:id="l_pre_disp_promotionConnectName">
+						<div class="cart_addition_in mb50 s_mb25">
+							<h2 class="cart_addition_tit">以下の特典が適用されています。</h2>
+							<span m:id="l_ite_promotionConnect">
+								<ul class="cart_addition_list cmn_list01">
+									<span m:id="b_wr_promotionConnectName"><li>ダミー特典内容</li></span>
+								</ul>
+							</span>
+						</div>
+					</span>
+				</div>
+				<!-- /.cart_addition -->
 				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
@@ -2123,40 +2258,6 @@ $(function () {
 							</span>
 							<!-- ********** eastEC Mode END ********** -->
 
-
-							<!--▼▼▼ お申込み内容 ▼▼▼-->
-								<div style="display:none;">
-									<h4 class="temp_tit_06 clear"><div>お申込み内容</div></h4>
-									<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_02">
-										<tr><th align="center">商品名</th>
-											<th class="memadd_table_02_w_02">商品単価</th>
-											<th class="memadd_table_02_w_03">数量</th>
-											<th class="memadd_table_02_w_02">小計</th>
-										</tr>
-										<span m:id="l_ite_detail">
-											<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
-											<tr>
-												<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
-
-												<td class="right color_w_b">
-													<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
-													<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
-													<span m:id="l_notEqu_memberSpecialDiscount">
-														<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
-													</span>
-												</td>
-												<td class="right color_w_b"><span m:id="disp_detail_order_num">3</span></td>
-												<td class="right color_w_b">
-													<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
-													<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
-													<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
-												</td>
-											</tr>
-										</span>
-									</table>
-								</div>
-							<!--▲▲▲ お申込み内容 ▲▲▲-->
-
 							<!--▼▼▼ 商品合計 ▼▼▼-->
 								<div style="display:none;">
 									<div class="wrap_cart04">
@@ -2280,36 +2381,13 @@ $(function () {
 					</form>
 				<!--▲▲▲ form ▲▲▲-->
 
-				        
+
 				<span m:id="l_notPre_free_guide">
 				  <div class="r_con_box_04_in">
 				  </div>
 				</span>
 
-				<div class="cart_addition mb30 s_mb15 input_addition">
-					<span m:id="l_pre_disp_goodsPremium">
-						<div class="cart_addition_in mb50 s_mb25">
-							<h2 class="cart_addition_tit">プレゼント品</h2>
-							<span m:id="l_ite_goodsPremium">
-								<ul class="cart_addition_list cmn_list01">
-									<li><span m:id="disp_goodsPremium">おまけプレミアム名</span>&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></li>
-								</ul>
-							</span>
-						</div>
-					</span>
-					<span m:id="l_pre_disp_promotionConnectName">
-						<div class="cart_addition_in mb50 s_mb25">
-							<h2 class="cart_addition_tit">以下の特典が適用されています。</h2>
-							<span m:id="l_ite_promotionConnect">
-								<ul class="cart_addition_list cmn_list01">
-									<span m:id="b_wr_promotionConnectName"><li>ダミー特典内容</li></span>
-								</ul>
-							</span>
-						</div>
-					</span>
-					<p class="cart_addition_txt input_addition_txt">ご入力の内容をお確かめの上、間違いがなければ「お申込み内容確認へ」ボタンを押してください。</p>
-				</div>
-				<!-- /.cart_addition -->
+				<p class="cart_addition_txt input_addition_txt s_mb20">ご入力の内容をお確かめの上、間違いがなければ「お申込み内容確認へ」ボタンを押してください。</p>
 
 				<ul class="input_footer">
 				  <li class="input_footer_btn"><a m:id="a_link_submit" href="orderConfirm.html" class="cmn_btn cmn_btn_red" id="FormAssist_submit"><span>お申込み内容確認へ</span></a></li>
