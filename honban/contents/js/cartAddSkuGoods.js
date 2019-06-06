@@ -3,12 +3,7 @@ function AddCart_trans2(formName){
 }
 
 function siteCatalistAddCart2(formName,s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout('AddCart_trans2('+ formName +')',1000);
+return anchorButtonClick(formName);
 }
 
 function getSkuGoodsParam(formName,displayCD,goodsSkuCD,extGoodsSkuCD){

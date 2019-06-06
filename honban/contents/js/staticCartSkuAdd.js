@@ -4,24 +4,16 @@ function AddCart_trans(){
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans()",1000);
+   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
+  return anchorButtonClick(document.cartGoodsAddForm);
 }
 function AddCart_trans1(){
 //  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function siteCatalistAddCart1(s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout("AddCart_trans1()",1000);
+//  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
+  return anchorButtonClick(document.cartGoodsAddForm1);
 }
 //siteCatalistAddCart SKU
 function showCartButton(obj){
@@ -43,12 +35,9 @@ function AddCart_trans_renewal(){
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart_renewal(s_products){
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='scAdd,event27';
-    s.products=";"+s_products;
-    s.events='scAdd,event27';
-    s.tl(this,'o','cartadd');
-    setTimeout("AddCart_trans_renewal()",1000);
+   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
+   document.cartGoodsAddForm.goods_sku_code.value=document.goodsDetailCartForm.goods_sku_code.value;
+  return anchorButtonClick(document.cartGoodsAddForm);
 }
 function AddCart_trans1_renewal(){
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
@@ -56,23 +45,15 @@ function AddCart_trans1_renewal(){
   return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function siteCatalistAddCart1_renewal(s_products,static_){
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='scAdd,event27';
-    s.products=";"+s_products;
-    s.events='scAdd,event27';
-    s.tl(this,'o','cartadd');
-    setTimeout("AddCart_trans1_renewal()",1000);
+   document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
+   document.cartGoodsAddForm1.goods_sku_code.value=document.goodsDetailCartForm1.goods_sku_code.value;
+  return anchorButtonClick(document.cartGoodsAddForm1);
 }
 function AddCart_trans2(formName){
   return anchorButtonClick(formName);
 }
 function siteCatalistAddCart2(formName,s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout('AddCart_trans2('+ formName +')',1000);
+  return anchorButtonClick(formName);
 }
 function getSkuGoodsParam(formName,displayCD,goodsSkuCD,extGoodsSkuCD){
 	document.forms[formName].display_code.value = displayCD;
@@ -101,7 +82,7 @@ function cartAddSkuForRadio(){
 	getSkuGoodsParam(cartAddRadioParam[0],cartAddRadioParam[1],cartAddRadioParam[2],cartAddRadioParam[3]);
 }
 function AddCart_trans_static(){
-  document.cartGoodsAddForm.action="https://" + document.domain + "/shop/cartGoodsAdd.do";
+  //document.cartGoodsAddForm.action="https://" + document.domain + "/shop/cartGoodsAdd.do";
   return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart_static(s_products,static_goods_sku_code,static_display_code){
@@ -109,12 +90,7 @@ function siteCatalistAddCart_static(s_products,static_goods_sku_code,static_disp
     document.cartGoodsAddForm.goods_sku_code.value=static_goods_sku_code;
     document.cartGoodsAddForm.display_code.value=static_display_code;
     document.cartGoodsAddForm.ext_goods_sku_code.value=s_products;
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='scAdd,event27';
-    s.products=";"+s_products;
-    s.events='scAdd,event27';
-    s.tl(this,'o','cartadd');
-    setTimeout("AddCart_trans_static()",1000);
+  return anchorButtonClick(document.cartGoodsAddForm);
 }
 function siteCatalistAddCart_skuStatic(static_goods_sku_code,static_display_code){
 	if(!static_goods_sku_code){
@@ -125,12 +101,7 @@ function siteCatalistAddCart_skuStatic(static_goods_sku_code,static_display_code
     document.cartGoodsAddForm.goods_sku_code.value=static_goods_sku_code;
     document.cartGoodsAddForm.display_code.value=static_display_code;
     document.cartGoodsAddForm.ext_goods_sku_code.value=document.getElementById(static_goods_sku_code).value;
-    s.linkTrackVars='events,products';
-    s.linkTrackEvents='scAdd,event27';
-    s.products=";"+document.getElementById(static_goods_sku_code).value;
-    s.events='scAdd,event27';
-    s.tl(this,'o','cartadd');
-    setTimeout("AddCart_trans_static()",1000);
+  return anchorButtonClick(document.cartGoodsAddForm);
 }
 function cartAddSkuForRadio_static(cartGoodsAddForm_staticName){
 	var radioListForm = document.getElementById(cartGoodsAddForm_staticName);
@@ -156,12 +127,8 @@ function AddCart_trans2(formName){
 }
 
 function siteCatalistAddCart2(formName,s_products){
-  s.linkTrackVars='events,products';
-  s.linkTrackEvents='scAdd,event27';
-  s.products=";"+s_products;
-  s.events='scAdd,event27';
-  s.tl(this,'o','cartadd');
-  setTimeout('AddCart_trans2('+ formName +')',1000);
+  document.cartGoodsAddForm.action="https://" + document.domain + "/shop/cartGoodsAdd.do";
+  return anchorButtonClick(formName);
 }
 
 function getSkuGoodsParam(formName,displayCD,goodsSkuCD,extGoodsSkuCD){

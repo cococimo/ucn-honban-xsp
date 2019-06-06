@@ -464,25 +464,18 @@ function checkConfirmKeyDown(event) {
  * サイトカタリスト カートを見る
  */
 function siteCatalistShowCart() {
+	/*
 	s.linkTrackVars='events';
 	s.linkTrackEvents='scView';
 	s.events='scView';
 	s.tl(this,'o','cartview',null,'navigate');
+	*/
 	return false;
 }
 
 //---商品一覧系からカート投入用 2015.07.18 add----------------------
-function AddCartDirect_trans1(){
-	return anchorButtonClick(document.cartGoodsAddFormDirect);
-}
-
 function siteCatalistAddCartDirect(s_products){
-	s.linkTrackVars='events,products';
-	s.linkTrackEvents='scAdd,event27';
-	s.products=";"+s_products;
-	s.events='scAdd,event27';
-	s.tl(this,'o','cartadd');
-	setTimeout("AddCartDirect_trans1()",1000);
+	return anchorButtonClick(document.cartGoodsAddFormDirect);
 }
 
 function cartAddItem(formName,strExtCD,shopS,displayCD,goodsSkuCD){
@@ -545,7 +538,7 @@ function dispCartAddBtnSkuRecent(formName,CartAddCD,BtnID,shopS,displayCD,notCar
 
 		//SKU種別変更時
 		for(var i = 0; i < document.getElementsByName("rSelected_"+BtnID).length; i++){
-			for(var j = 0; j　< document.getElementsByName("rSelected_"+BtnID)[i].getElementsByTagName('option').length; j++){
+			for(var j = 0; j < document.getElementsByName("rSelected_"+BtnID)[i].getElementsByTagName('option').length; j++){
 				if(document.getElementsByName("rSelected_"+BtnID)[i].getElementsByTagName('option')[j].value == CartAddCD){
 					document.getElementsByName("rSelected_"+BtnID)[i].getElementsByTagName('option')[j].selected = true;
 				}
