@@ -1352,7 +1352,7 @@ function showCartButton1(obj){
 	      </p>
         <span m:id="l_equ_can_addCartSku">
 			<p class="order_btn" id="purchase_btn_order">
-				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
             	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
@@ -1371,26 +1371,26 @@ function showCartButton1(obj){
 	</div>
 	</span><!-- //カート追従バナー -->
 
-	<!-- 価格変更のご案内　ここから -->
+	<!-- 価格変更のご案内　ここから 
 	<div class="info_txt">
 	※こちらの商品は、2019年6月2日より価格を改定いたします。
 	</div>
-	<!-- 価格変更のご案内　ここまで -->
+	 価格変更のご案内　ここまで -->
 
 
-					<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+					<!--0529コメントアウト <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-					<input type="hidden" name="order_num_string" value="1" />
+					<input type="hidden" name="order_num_string" value="1" /> -->
 
-					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<p class="shopping pb10"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 					<!-- <div class="cart-notic">
 						<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
 					</div> -->
-					</form>
+					<!-- </form> -->
 
 					<!-- ★インクルード２★-->
 
@@ -1421,8 +1421,8 @@ function showCartButton1(obj){
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" />
 
-					<p class="shopping"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<p class="shopping"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 					</form>-->
 
 			<!-- </div> -->
@@ -1610,14 +1610,14 @@ function showCartButton1(obj){
 	</div>
 
 
-	<!-- 価格変更のご案内　ここから -->
+	<!-- 価格変更のご案内　ここから 
 	<div class="info_txt">
 	※こちらの商品は、2019年6月2日より価格を改定いたします。
 	</div>
-	<!-- 価格変更のご案内　ここまで -->
+	 価格変更のご案内　ここまで -->
 
 
-					<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+					<form m:id="h_form_cartGoodsAdd8" method="POST" action="cart.html">
 					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
@@ -1628,8 +1628,8 @@ function showCartButton1(obj){
 <!--降雪対応文言
 <ecp:include m:id="fs_weather_trouble_sideless" filename="kousetsu_sideless.html" />
 -->
-					<p class="shopping pb10"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<p class="shopping pb10"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
+					<p class="shopping_sp s_pb1"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 
 					<!-- <div class="cart-notic">
 								<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、11月初旬から順次発送の見込みです。予めご了承ください。</p>
@@ -1670,12 +1670,12 @@ function showCartButton1(obj){
 		</div>
 	</div>
 
-				<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+				<!--0529コメントアウト <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 					<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 					<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-					<input type="hidden" name="order_num_string" value="1" />
+					<input type="hidden" name="order_num_string" value="1" /> -->
 
 
 		</div>
