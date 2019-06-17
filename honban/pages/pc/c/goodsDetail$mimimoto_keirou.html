@@ -581,22 +581,58 @@ function reportParamFriend(){
   sendMailToFriend();
 }
 function siteCatalistAddCart(s_products){
+ /*
+  var goods_stock_num = document.cartGoodsAddForm.goods_stock_num.value;
+  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
+  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+  if( Number(order_num_string) > Number(goods_stock_num)){
+    alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+  }else{
+ */
    document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm);
+  /* } */
 }
 function siteCatalistAddCart1(s_products){
+/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
+/*  var goods_stock_num = document.cartGoodsAddForm1.goods_stock_num.value;
+  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
+  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+  if( Number(order_num_string) > Number(goods_stock_num)){
+   alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+  }else{ */
+/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
+  /* } */
 }
 function siteCatalistAddCart_renewal(s_products){
+/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
+/*  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
+  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
+  if( Number(order_num_string) > Number(goods_stock_num)){
+    alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+  }else{ */
+/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
    document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
    document.cartGoodsAddForm.goods_sku_code.value=document.goodsDetailCartForm.goods_sku_code.value;
   return anchorButtonClick(document.cartGoodsAddForm);
+  /* } */
 }
 function siteCatalistAddCart1_renewal(s_products){
+/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
+/*  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
+  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
+  if( Number(order_num_string) > Number(goods_stock_num)){
+   alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+  }else{ */
+/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
    document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
    document.cartGoodsAddForm1.goods_sku_code.value=document.goodsDetailCartForm1.goods_sku_code.value;
   return anchorButtonClick(document.cartGoodsAddForm1);
+  /* } */
 }
 function showCartButton(obj){
   var idx = obj.selectedIndex;
