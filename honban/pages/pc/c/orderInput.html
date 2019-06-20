@@ -298,28 +298,24 @@ $(function(){
 		width: 100%;
 	}
 }
-.delive_wrap {
+.delivery_wrap {
 	background:#eee;
 	margin-top: 20px;
 	padding:10px;
 	width: 100%;
+}
+.delivery_wrap table {
+	background:#fff;
 }
 .toggle_delive_btn {
 	display: block;
 	cursor: pointer;
 	color:inherit;
 }
-#sepDeliv0,
-#sepDeliv1 {
-	display: none;
-}
-#sepDeliv0,
-#sepDeliv1 {
+
+#sepDeliv0 {
 	margin-top: 20px;
 	overflow: hidden;
-}
-#cart .input_date_table02 {
-	background:#fff;
 }
 #sepDeliv0 > div {
 	width:48%;
@@ -329,12 +325,11 @@ $(function(){
 	float: right;
 }
 @media screen and (max-width: 767px){
-	.delive_wrap {
+	.delivery_wrap {
 		width: 100%;
 
 	}
-	#sepDeliv0,
-	#sepDeliv1 {
+	#sepDeliv0 {
 		display: block;
 	}
 	#sepDeliv0 > div {
@@ -411,7 +406,7 @@ $(function () {
 	});
 	$('.toggle_delive_btn').click(function(event) {
 		 event.preventDefault();
-		$(this).next('.togglemenu.delive').slideToggle();
+		$('.togglemenu.delive').slideToggle();
 	});
 
 	/*メールアドレス再確認*/
@@ -675,18 +670,14 @@ $(function () {
 	function changeSepDeliInfoDisp() {
 		var selectObject = document.orderForm.separate_delivery_date_flg;
 		for (var i = 0; i < selectObject.length; i++) {
-			if (selectObject[i].checked && [i].value == '1') {
-				// document.getElementById("sepDeliv1").style.display = 'inline';
-				// document.getElementById("sepDeliv0").style.display = 'none';
-				document.getElementById("sep01").style.display = 'block';
-				document.getElementById("sep02").style.display = 'none';
-				selectObject[i].prop('checked', true);
+			if (selectObject[i].checked && selectObject[i].value == '1') {
+				document.getElementById("sepDeliv1").style.display = 'block';
+				document.getElementById("sepDeliv0").style.display = 'none';
 				break;
 			} else if (selectObject[i].checked && selectObject[i].value == '0') {
-				// document.getElementById("sepDeliv1").style.display = 'none';
-				document.getElementById("sep01").style.display = 'none';
-				document.getElementById("sep02").style.display = 'block';
-				selectObject[i].prop('checked', true);
+				document.getElementById("sepDeliv1").style.display = 'none';
+				document.getElementById("sepDeliv0").style.display = 'block';
+
 				break;
 			}
 		}
@@ -2134,8 +2125,6 @@ $(function () {
 										<tr>
 											<th>配送日時指定</th>
 											<td>
-
-												
 												<!-- カートに商品が一つの場合の切り分け -->
 												<span m:id="l_notPre_disp_separate_delivery">
 													<input m:id="h_hid_separate_delivery_0"  type="hidden" name="separate_delivery_date_flg" value="0" />
@@ -2155,91 +2144,88 @@ $(function () {
 														</span>
 													</div>
 												</span>
-												<p class="td_txt mt20 mb30 s_mt10 s_mb15">※ご要望が無い場合、最短でのお届けとなります。</p>
+												<p class="td_txt mt20 mb30 s_mt10 s_mb15">
+													※ご指定が無い場合、最短でのお届けとなります。
+												</p>
 
-												<span m:id="l_pre_disp_separate_delivery">
-													<div class="delive_wrap" id="sep02">
-														<a class="toggle_delive_btn">配送日を希望する方へ▼</a>
-														<div class="box_form_td togglemenu delive" id="sepDeliv1">
-															<span m:id="l_pre_disp_separate_delivery">
-																<label class="pr30"><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　配送希望日を一括で指定</label><br class="viewSp">
-																<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
-																<br class="viewPc">
-																<br>
-															</span>
-															<table class="input_date_table02 mb30 s_mb15">
-																<tr>
-																	<th>商品名</th>
-																	<th>配送希望日</th>
-																	<th>配送希望時間帯</th>
-																</tr>
-																<span m:id="l_ite_detail">
-																	<tr>
-																		<td><span m:id="disp_detail_goods_name"></span></td>
-																		<td>
-																			<span class="prefix viewSp">配送希望日:</span>
-																			<!-- 配送希望日 -->
-																			<object class="xsp_obj" m:id="b_var_isDeliveryDate_detail"></object>
-																			<select m:id="h_sel_appointed_delivery_date_detail" class="memadd_input_01">
-																				<option value=""><span m:id="opt_delivery_date_default_detail">指定なし</span></option>
-																				<option m:id="h_opt_deliveryDateMap_detail" value="1">2010年07月01日</option>
-																				<option m:id="dummy" value="">2010年07月02日</option>
-																				<option m:id="dummy" value="">2010年07月03日</option>
-																				<option m:id="dummy" value="">2010年07月04日</option>
-																				<option m:id="dummy" value="">2010年07月05日</option>
-																			</select>
-																		</td>
-																		<td>
-																			<span class="prefix viewSp">配送希望時間帯:</span>
-																			<!-- 配送希望時間帯 -->
-																			<object class="xsp_obj" m:id="b_var_isDeliveryTime_detail"></object>
-																			<select m:id="h_sel_delivery_time_detail" class="memadd_input_01">
-																				<option m:id="h_opt_deliveryTimeMap_detail" value="">指定なし</option>
-																				<option m:id="dummy" value="">午前中</option>
-																				<option m:id="dummy" value="">午後中</option>
-																				<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
-																				<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
-																			</select>
-																		</td>
-																	</tr>
-																</span>
-															</table>
-														</div>
-													</div>
-												</span>
-												<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
-												<div class="delive_wrap" id="sep01">
+												<div class="delivery_wrap">
 													<a class="toggle_delive_btn">配送日を希望する方へ▼</a>
-													<div id="sepDeliv0" class="togglemenu delive">
+													<div class="togglemenu delive">
 														<span m:id="l_pre_disp_separate_delivery">
-															<label class="pr30"><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio">　配送希望日を一括で指定</label><br class="viewSp">
-															<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
-															<br class="viewPc">
-															<br>
+															<div class="mt15 mb25">
+																<label><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　配送希望日を一括で指定</label>
+																<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
+															</div>
 														</span>
-														<div>
-															<div class="box_01 add_mt1 mb5">配送希望日</div>
-															<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
-															<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01 w200">
-																<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
-																<option m:id="h_opt_deliveryDateMap" value="1">2010年07月01日</option>
-																<option m:id="dummy" value="">2010年07月02日</option>
-																<option m:id="dummy" value="">2010年07月03日</option>
-																<option m:id="dummy" value="">2010年07月04日</option>
-																<option m:id="dummy" value="">2010年07月05日</option>
-															</select>
-														</div>
-														<div>
-															<div class="s_mt15">
-																<div class="box_01 add_mt2 mb5">配送時間帯</div>
-																<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
-																<select m:id="h_sel_delivery_time" class="memadd_input_01 w200">
-																	<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
-																	<option m:id="dummy" value="">午前中</option>
-																	<option m:id="dummy" value="">午後中</option>
-																	<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
-																	<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
+														<div id="delive_wrap">
+															<span m:id="l_pre_disp_separate_delivery">
+																<div class="box_form_td" id="sepDeliv1">
+																	<table class="input_date_table02">
+																		<tr>
+																			<th>商品名</th>
+																			<th>配送希望日</th>
+																			<th>配送希望時間帯</th>
+																		</tr>
+																		<span m:id="l_ite_detail">
+																			<tr>
+																				<td><span m:id="disp_detail_goods_name"></span></td>
+																				<td>
+																					<span class="prefix viewSp">配送希望日:</span>
+																					<!-- 配送希望日 -->
+																					<object class="xsp_obj" m:id="b_var_isDeliveryDate_detail"></object>
+																					<select m:id="h_sel_appointed_delivery_date_detail" class="memadd_input_01">
+																						<option value=""><span m:id="opt_delivery_date_default_detail">指定なし</span></option>
+																						<option m:id="h_opt_deliveryDateMap_detail" value="1">2010年07月01日</option>
+																						<option m:id="dummy" value="">2010年07月02日</option>
+																						<option m:id="dummy" value="">2010年07月03日</option>
+																						<option m:id="dummy" value="">2010年07月04日</option>
+																						<option m:id="dummy" value="">2010年07月05日</option>
+																					</select>
+																				</td>
+																				<td>
+																					<span class="prefix viewSp">配送希望時間帯:</span>
+																					<!-- 配送希望時間帯 -->
+																					<object class="xsp_obj" m:id="b_var_isDeliveryTime_detail"></object>
+																					<select m:id="h_sel_delivery_time_detail" class="memadd_input_01">
+																						<option m:id="h_opt_deliveryTimeMap_detail" value="">指定なし</option>
+																						<option m:id="dummy" value="">午前中</option>
+																						<option m:id="dummy" value="">午後中</option>
+																						<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
+																							<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
+																						</select>
+																					</td>
+																				</tr>
+																			</span>
+																		</table>
+																	</div>
+																</span>
+
+														<!--/ 商品毎の配送希望日指定対応 t_furuya add 2014.10.21 -->
+														<div id="sepDeliv0">
+															<div>
+																<div class="box_01 add_mt1 mb5">配送希望日</div>
+																<object class="xsp_obj" m:id="b_var_isDeliveryDate"></object>
+																<select m:id="h_sel_appointed_delivery_date" class="memadd_input_01 w200">
+																	<option value=""><span m:id="opt_delivery_date_default">指定なし</span></option>
+																	<option m:id="h_opt_deliveryDateMap" value="1">2010年07月01日</option>
+																	<option m:id="dummy" value="">2010年07月02日</option>
+																	<option m:id="dummy" value="">2010年07月03日</option>
+																	<option m:id="dummy" value="">2010年07月04日</option>
+																	<option m:id="dummy" value="">2010年07月05日</option>
 																</select>
+															</div>
+															<div>
+																<div class="s_mt15">
+																	<div class="box_01 add_mt2 mb5">配送時間帯</div>
+																	<object class="xsp_obj" m:id="b_var_isDeliveryTime"></object>
+																	<select m:id="h_sel_delivery_time" class="memadd_input_01 w200">
+																		<option m:id="h_opt_deliveryTimeMap" value="">指定なし</option>
+																		<option m:id="dummy" value="">午前中</option>
+																		<option m:id="dummy" value="">午後中</option>
+																		<option m:id="dummy" value="">１６&#xFF5E;１８時</option>
+																		<option m:id="dummy" value="">１８&#xFF5E;２１時</option>
+																	</select>
+																</div>
 															</div>
 														</div>
 													</div>
@@ -2248,7 +2234,7 @@ $(function () {
 										</tr>
 									</table>
 								</div>
-							
+							</div>
 								<!-- /.input_date -->
 							</span>
 							<!-- /#appointed_delivery -->
@@ -2564,44 +2550,7 @@ $(function () {
 <!--/ tracking ga -->
 <span m:id="site_prop13"></span>
 <span m:id="site_products"></span>
-<!-- SiteCatalyst code version: H.26.1.
-Copyright 1996-2013 Adobe, Inc. All Rights Reserved
-More info available at http://www.omniture.com -->
-<script m:id="js_file" language="JavaScript" type="text/javascript" src="../../../contents/js/s_code.js"></script>
-<script language="JavaScript" type="text/javascript"><!--
-/* You may give each page an identifying name, server, and channel on
-the next lines. */
-s.pageName="お客様情報入力フォーム"
-s.server=""
-s.channel="お客様情報入力フォーム"
-s.pageType=""
-s.prop1="お客様情報入力フォーム"
-s.prop2=""
-s.prop3=""
-s.prop4=""
-s.prop5=""
-s.prop13=s_prop13
-/* Conversion Variables */
-s.campaign=""
-s.state=""
-s.zip=""
-s.events="scCheckout"
-s.products=site_products
-s.purchaseID=""
-s.eVar1=""
-s.eVar2=""
-s.eVar3=""
-s.eVar4=""
-s.eVar5=""
-s.eVar34=""
-s.eVar35=""
-s.eVar36=""
-/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s.t();if(s_code)document.write(s_code)//--></script>
-<script language="JavaScript" type="text/javascript"><!--
-if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script><noscript><img src="https://ucanshop.122.2o7.net/b/ss/ucanshopcococimo/1/H.26.1--NS/0?[AQB]&cdp=3&[AQE]"
-height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+
 
 
 <script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=101'></script>
