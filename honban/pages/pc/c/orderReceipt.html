@@ -355,17 +355,26 @@ $(function() {
   #cart .cart_contents {overflow:hidden;}
   #cart .box {width:580px;}
   #cart .purchase_box {border:none;line-height:1.6;}
-  #cart .login_purchase_box_in {padding: 0 30px 0;}
+  #cart .login_purchase_box_in {padding: 0 30px 0;padding-right: 0;}
   #cart .receipt_register_btn {line-height:1;}
   #cart .login_membership_tit {line-height: 1.4;letter-spacing: -0.02em;color: rgb(63, 62, 61);padding: 14px 0;font-size: 26px;}
+  #cart .login_membership_list {padding: 0 0 14px;}
   #cart .login_membership_tit:before,
   #cart .login_membership_list li:first-child:before {width:0;height:0;background:none;display:none;}
+  #cart .login_membership_list li + li,
+  #cart .login_membership_list li + li + li {width: 48%;}
+
+  #cart .login_membership_list li + li + li + li {margin-top: 10px;padding: 20px;width: 100%;font-size: 16px;line-height: 1.5;text-align: left;}
+
+
+
   #cart .receipt_register_btn a {width: 100%;}
   #cart .membership_sub_tit {position: relative;color: #f39800;font-size: 18px;font-weight: 700;text-align: center;padding: 10px 0;}
   #cart .login_membership_list li:first-child {padding: 20px;}
   #cart .btn_wrap {background: url(/contents/c/goods/image/new/cart/bg_pattern02.png) repeat;width: auto;margin: 20px auto 2px;padding: 20px;}
   #cart .btn_wrap .regist_txt{color:#cc1010;font-weight:bold;text-align:center;font-size: 23px;line-height: 1.5;}
 	#cart .btn_wrap .receipt_register_btn a {border-radius: 34px;font-size: 30px;line-height: 64px;}
+  #cart .btn_wrap .notice {background:#fff;padding:20px;margin-top: 10px;}
 @media screen and (max-width: 767px) {
 	.box.left,.box.right {float:none;}
   #cart .login_purchase_box_in {padding: 0 0 0 0;}
@@ -378,10 +387,19 @@ $(function() {
 	#cart .receipt_register_btn {padding: 0 0;}
 	#cart .btn_wrap .regist_txt{font-size: 20px;}
 	#cart .btn_wrap .receipt_register_btn a {font-size: 24px;line-height: 64px;}
+  #cart .login_membership_list li + li,
+  #cart .login_membership_list li + li + li {width: 100%;}
+ }
+@media screen and (max-width: 767px) {
+	#cart .btn_wrap .receipt_register_btn a {
+	    font-size: 18px;
+	}
  }
  	@media print {
 		body,.header_in {width: 100%;}
-		#contents_in {width: 100%;}#cart .box {width: 100%;}
+		#contents_in {width: 100%;}
+		#cart .box {width: 100%;}
+		#cart .login_purchase_box_in {padding: 0 0 0;}
 		#cart .login_membership_list li + li,
 		#cart .login_membership_list li + li + li {width: 48%;}
 		#cart .login_purchase_box.register {margin-top:30px;}
@@ -439,6 +457,9 @@ $(function() {
 						<div class="btn_wrap">
 							<p class="regist_txt">こちらからご登録いただければ、<br class="viewPc" />IDとパスワードの入力のみで登録完了！</p>
 							<p class="receipt_register_btn mt5 s_mt5"><a m:id="a_bt_next" href="memberAddressBook.html" onclick="" class="cmn_btn cmn_btn_red"><span m:id="l_equ_order_next_mode_memberAdd">今すぐカンタン登録！</span></a></p>
+							<div class="notice">
+								<p class="login_membership_list_txt"><span class="red">※</span>会員登録後、マイページに今回ご購入いただいた商品の購入履歴・取得ポイント数等が反映されるまで数日かかりますので、ご了承ください。
+							</div>
 						</div>
 						<h3 class="membership_sub_tit">お得な会員特典について</h3>
 						<ul class="login_membership_list">
