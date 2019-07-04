@@ -281,12 +281,34 @@ $(function(){
 	}
 }
 
+/*様　の表示崩れ修正*/
+.cmn_form_table01 td .input_set span {
+	letter-spacing: 0.1em;
+}
+/*プルダウンメニュー調整*/
+.cmn_form_table01 td #year,
+.cmn_form_table01 td select {
+	font-size: 1em;
+}
+.cmn_form_table01 td .select_box select {
+	max-width: 320px;
+	width: auto;
+}
+@media screen and (max-width: 767px){
+	.cmn_form_table01 input::-webkit-input-placeholder {color:#616161 !important;}
+	.cmn_form_table01 input::-moz-placeholder {color:#616161 !important;}
+	.cmn_form_table01 input::-ms-input-placeholder {color:#616161 !important;}
+	.cmn_form_table01 input::placeholder {color:#616161 !important;}
+}
 /*様方レイアウト修正*/
 .samakata {
 	background:#eee;
 	margin-top: 20px;
 	padding:10px;
 	width: 500px;
+}
+.cmn_form_table01 td .samakata .suffix {
+	letter-spacing: 0.1em;
 }
 .samakata .toggle_btn{
 	display: block;
@@ -435,10 +457,24 @@ $(function () {
 		changemail(mailval);
 	});
 	/*プレースホルダー追加*/
-	$('input[name="name_sei"],input[name="address_co_sei"],input[name="dst_name_sei"],input[name="dst_address_co_sei"]').attr('placeholder','姓');
-	$('input[name="name_mei"],input[name="address_co_mei"],input[name="dst_name_mei"],input[name="dst_address_co_mei"]').attr('placeholder','名');
+	$('input[name="name_sei"],input[name="address_co_sei"],input[name="dst_name_sei"]').attr('placeholder','姓');
+	$('input[name="name_mei"],input[name="address_co_mei"],input[name="dst_name_mei"]').attr('placeholder','名');
+
+	$('input[name="dst_address_co_sei"],input[name="address_co_sei"]').attr('placeholder','世帯主様の姓');
+	$('input[name="dst_address_co_mei"],input[name="address_co_mei"]').attr('placeholder','世帯主様の名');
+
 	$('input[name="name_sei_kana"],input[name="dst_name_sei_kana"]').attr('placeholder','セイ');
 	$('input[name="name_mei_kana"],input[name="dst_name_mei_kana"]').attr('placeholder','メイ');
+
+	$('input[name="address1"],input[name="dst_address1"]').attr('placeholder','例:新宿区');
+	$('input[name="address2"],input[name="dst_address2"]').attr('placeholder','例:高田馬場');
+	$('input[name="address3"],input[name="dst_address3"]').attr('placeholder','例:４-２-３８');
+	$('input[name="address4"],input[name="dst_address4"]').attr('placeholder','例:ユーキャンビル １０３号室');
+
+	$('input[name="email"]').attr('placeholder','例：tuuhan@u-can.co.jp');
+
+	$('input[name="dst_post_code"],input[name="post_code"]').attr('placeholder','例：1620042');
+
 });
 
 </script>
@@ -924,125 +960,6 @@ $(function () {
 						</div>
 					</span>
 
-					<span m:id="l_pre_free_guide">
-						<div class="cart_intro input_intro">
-							<h1 class="cart_intro_tit cmn_tit05">お客様情報の入力</h1>
-							<p class="cart_intro_txt">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。<br>下記項目にご入力ください。<span class="required">必須</span>印は必須項目です。</p>
-						</div>
-					</span>
-					<span m:id="l_msgPre">
-						<div class="error reswfon_m"><span m:id="h_err_1">入力内容にエラーがあります。</span></div>
-					</span>
-					<span m:id="l_msgPre_2">
-						<div class="error">
-							<span m:id="h_msg_msg">
-								<span m:id="b_wr_msg"></span>
-							</span>
-						</div>
-					</span>
-				<h2 class="cmn_tit01" style="display:none;"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
-				<!--▼▼▼ form ▼▼▼-->
-				    <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
-				    	<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
-				    	<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
-				    	<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
-
-				    	<!--▼▼▼ ログイン時 ▼▼▼-->
-							<span m:id="l_pre_member">
-								<object class="xsp_obj" m:id="b_var_member_tel_no"></object>
-								<span m:id="l_emp_member_tel_no">
-									<object class="xsp_obj" m:id="b_var_member_tel_no2"></object>
-								</span>
-							</span>
-							<div m:id="l_pre_member" class="loging_msg">
-								<!--▼▼▼ ご注文様情報 テキスト ▼▼▼-->
-								<p class="input_info_msg mb20 viewPc" id="js-login_status">会員ログイン中です。</p>
-								<dl class="input_info_dl mb30">
-									<dt>お名前</dt>
-									<dd class="td_name"></dd>
-									<dt>フリガナ</dt>
-									<dd class="td_name_kana"></dd>
-									<dt>メールアドレス</dt>
-									<dd class="td_mail"></dd>
-									<dt>郵便番号</dt>
-									<dd class="td_postcode"></dd>
-									<dt>ご住所</dt>
-									<dd class="td_area"></dd>
-									<dd class="td_address_co"></dd>
-									<dt>電話番号</dt>
-									<dd class="td_tel"></dd>
-								</dl>
-								<!--
-								<p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>会員情報を修正する</span></a></p>
-								-->
-								<p class="tac mb60 s_mb30"><span class="cmn_btn cmn_btn_orange btn_middle input_info_btn"><span>ご注文者さま情報を変更する</span></span></p>
-								<!--▲▲▲ ご注文様情報 テキスト ▲▲▲-->
-							</div>
-				    	<!--▲▲▲ ログイン時 ▲▲▲-->
-				    	<!--▼▼▼ 非ログイン時 ▼▼▼
-							<div class="not_login_box mb20">
-								<span m:id="l_notPre_member_login_button_shop">
-									 <div class="login_msg">
-										<h5 class="add_h5 mt10">●ココチモ会員の方</h5>
-										 <p class="mt10">ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。<span class="more_login_btn">ログインは<a href="javascript:void(0); return false">こちら</a></p>
-									</div>
-                  
-                  <div id="more_login_text">
-									<span m:id="l_msgPre_errors_member_login">
-									<div class="error">
-									<p>ログインID・パスワードをご確認ください。</p>
-									</div>
-									</span>
-									<div class="orderInputLogin mt30 s_mt20">
-										<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-										<tr>
-										<th>ログインID<br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span></th>
-										<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
-										
-										<span m:id="l_msgPre_login_id">
-										<div>
-										<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span>
-										</div>
-										</span>
-										</td>
-                    <td class="btn viewPc" rowspan="2">
-                    <!-* ボタン *->
-										<div>
-										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
-										</div>
-                    <!-*/ ボタン *->
-                    </td>
-										</tr>
-										<tr>
-										<th>パスワード<br class="viewPc"><span class="exp">例：<span m:id="sample_password">abcde12345</span></span></th>
-										<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
-										
-										<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html" class="cmn_link01 s_mt5">パスワードを忘れた方はこちら</a></div>
-										<span m:id="l_msgPre_password">
-										<div>
-										<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
-										</div>
-										</span>
-										</td>
-										</tr>
-                    <tr class="viewSp">
-                    <td  colspan="3">
-										<!-* ボタン *->
-										<div class="mb10">
-										<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
-										</div>
-										<!-*/ ボタン *->
-                    </td>
-                    </tr>
-										</table>
-                    </div><!-* /more_login_text *->
-
-
-									</div>
-								</span>
-							</div>-->
-							<!-- /.not_login_box -->
-						<!--▲▲▲ 非ログイン時 ▲▲▲-->
 				<!--▼▼▼ お申込み内容 ▼▼▼-->
 				<style>
 					#cart .cart_intro {
@@ -1178,14 +1095,134 @@ $(function () {
 					</span>
 				</div>
 				<!-- /.cart_addition -->
+
+					<span m:id="l_pre_free_guide">
+						<div class="cart_intro input_intro">
+							<h1 class="cart_intro_tit cmn_tit05">お客様情報の入力</h1>
+							<p class="cart_intro_txt">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。<br>下記項目にご入力ください。<span class="required">必須</span>印は必須項目です。</p>
+						</div>
+					</span>
+					<span m:id="l_msgPre">
+						<div class="error reswfon_m"><span m:id="h_err_1">入力内容にエラーがあります。</span></div>
+					</span>
+					<span m:id="l_msgPre_2">
+						<div class="error">
+							<span m:id="h_msg_msg">
+								<span m:id="b_wr_msg"></span>
+							</span>
+						</div>
+					</span>
+				<h2 class="cmn_tit01" style="display:none;"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
+				<!--▼▼▼ form ▼▼▼-->
+				    <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
+				    	<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
+				    	<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
+				    	<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
+
+				    	<!--▼▼▼ ログイン時 ▼▼▼-->
+							<span m:id="l_pre_member">
+								<object class="xsp_obj" m:id="b_var_member_tel_no"></object>
+								<span m:id="l_emp_member_tel_no">
+									<object class="xsp_obj" m:id="b_var_member_tel_no2"></object>
+								</span>
+							</span>
+							<div m:id="l_pre_member" class="loging_msg">
+								<!--▼▼▼ ご注文様情報 テキスト ▼▼▼-->
+								<p class="input_info_msg mb20 viewPc" id="js-login_status">会員ログイン中です。</p>
+								<dl class="input_info_dl mb30">
+									<dt>お名前</dt>
+									<dd class="td_name"></dd>
+									<dt>フリガナ</dt>
+									<dd class="td_name_kana"></dd>
+									<dt>メールアドレス</dt>
+									<dd class="td_mail"></dd>
+									<dt>郵便番号</dt>
+									<dd class="td_postcode"></dd>
+									<dt>ご住所</dt>
+									<dd class="td_area"></dd>
+									<dd class="td_address_co"></dd>
+									<dt>電話番号</dt>
+									<dd class="td_tel"></dd>
+								</dl>
+								<!--
+								<p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>会員情報を修正する</span></a></p>
+								-->
+								<p class="tac mb60 s_mb30"><span class="cmn_btn cmn_btn_orange btn_middle input_info_btn"><span>ご注文者さま情報を変更する</span></span></p>
+								<!--▲▲▲ ご注文様情報 テキスト ▲▲▲-->
+							</div>
+				    	<!--▲▲▲ ログイン時 ▲▲▲-->
+				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
+							<div class="not_login_box mb20 mt20">
+								<span m:id="l_notPre_member_login_button_shop">
+									 <div class="login_msg">
+										<h5 class="add_h5 mt10">●ココチモ会員の方</h5>
+										 <p class="mt10">ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。<span class="more_login_btn">ログインは<a href="javascript:void(0); return false">こちら</a></p>
+									</div>
+
+									<div id="more_login_text">
+									<span m:id="l_msgPre_errors_member_login">
+									<div class="error">
+									<p>ログインID・パスワードをご確認ください。</p>
+									</div>
+									</span>
+									<div class="orderInputLogin mt30 s_mt20">
+										<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+										<tr>
+										<th>ログインID<br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span></th>
+										<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
+										
+										<span m:id="l_msgPre_login_id">
+										<div>
+										<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span>
+										</div>
+										</span>
+										</td>
+					                    <td class="btn viewPc" rowspan="2">
+					                    <!-- ボタン -->
+										<div>
+										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
+										</div>
+					                    <!--/ ボタン -->
+					                    </td>
+										</tr>
+										<tr>
+										<th>パスワード<br class="viewPc"><span class="exp">例：<span m:id="sample_password">abcde12345</span></span></th>
+										<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
+										
+										<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html" class="cmn_link01 s_mt5">パスワードを忘れた方はこちら</a></div>
+										<span m:id="l_msgPre_password">
+										<div>
+										<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
+										</div>
+										</span>
+										</td>
+										</tr>
+					                    <tr class="viewSp">
+					                    <td  colspan="3">
+										<!-- ボタン -->
+										<div class="mb10">
+										<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
+										</div>
+										<!--/ ボタン -->
+					                    </td>
+					                    </tr>
+															</table>
+					                    </div><!-- /more_login_text -->
+
+									</div>
+								</span>
+							</div>
+							<!-- /.not_login_box -->
+						<!--▲▲▲ 非ログイン時 ▲▲▲-->
+
 				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
-							<!-- <h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5> -->        
+							<h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5>
 							<p class="vis_add mt10 mb10">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。</p>
-              </span>
-             </div>
-              <!--▲▲▲ 非ログイン時 ▲▲▲-->
+			              </span>
+			             </div>
+			              <!--▲▲▲ 非ログイン時 ▲▲▲-->
 
 
 
@@ -1333,7 +1370,7 @@ $(function () {
 													<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
 													<span class="suffix viewPc">様方</span>
 												</div>
-												<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
+												<p class="example mt10">※世帯主様の姓名を入力してください。</p>
 												<span m:id="l_msgPre_address_co_sei">
 													<p class="error mt10 s_mt10"><span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span></p>
 												</span>
@@ -1995,7 +2032,7 @@ $(function () {
 												<td>
 													<span class="select_box">
 														<select m:id="h_sel_dst_area_code" class="memadd_input_01" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
-															<option value="">都道府県を選択</option>
+															<option value="">--選択してください--</option>
 															<option m:id="h_opt_prefecture" value="001">青森県</option>
 															<option m:id="dummy" value="002">秋田県</option>
 															<option m:id="dummy" value="003">埼玉県</option>
@@ -2063,7 +2100,7 @@ $(function () {
 																<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
 																<span class="suffix viewPc">様方</span>
 															</div>
-															<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
+															<p class="example mt10">※世帯主様の姓名を入力してください。</p>
 															<span m:id="l_msgPre_dst_address_co_sei">
 																<span m:id="h_err_dst_address_co_sei">
 																	<p class="error mt10 s_mt10">様方(姓)入力エラーメッセージ</p>
@@ -2104,7 +2141,7 @@ $(function () {
 												<th class="none_bor">電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" m:id="h_txt_dst_tel_no1" name="dst_tel_no1" placeholder="例:03">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no2" name="dst_tel_no2" placeholder="例:0000">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no3" name="dst_tel_no3" placeholder="例:0000">
-													<p class="example mt10">例&nbsp;:&nbsp;03-0000-0000</p>
+													<p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p>
 													<span m:id="l_msgPre_dst_tel_no">
 														<p class="error mt10 s_mt10"><span m:id="h_err_dst_tel_no">電話番号エラーメッセージ</span></p>
 													</span>
@@ -2230,11 +2267,11 @@ $(function () {
 														</div>
 													</div>
 												</div>
+											</div>
 											</td>
 										</tr>
 									</table>
 								</div>
-							</div>
 								<!-- /.input_date -->
 							</span>
 							<!-- /#appointed_delivery -->
