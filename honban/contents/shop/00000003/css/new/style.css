@@ -11857,7 +11857,7 @@
 	background-image: url(/contents/c/shop/image/img_cat011.png);
 }
 .category_list > ul > li + li + li + li + li + li + li + li + li + li+li+li>div a .category_list_img {
-	background-image: url(/contents/c/shop/image/img_cat012.png);
+	background-image: url(/contents/c/shop/image/img_cat013.png);
 }
 .category_list > ul > .item > .sub_nav1 .tit:before{
 	background: url(/contents/c/shop/image/img_cat001.png)no-repeat;
@@ -11922,3 +11922,6 @@
 
     }
 }
+
+/*ご利用ガイドを見る z-index調整*/
+.cmn_btn span,.cmn_btn_tri:before {z-index: 0;}
