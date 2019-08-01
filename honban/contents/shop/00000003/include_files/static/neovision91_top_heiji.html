@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/contents/shop/00000003/css/default.css" type="text/css" media="all" charset="utf-8" />
 <link rel="stylesheet" href="/contents/shop/00000003/css/commonnav.css" type="text/css" media="all" charset="utf-8" />
 <link rel="stylesheet" href="/contents/shop/00000003/css/neovision91/style.css" type="text/css" media="all" charset="utf-8" />
-<script src="/contents/shop/00000003/js/jquery.fixedheaderscroll.js" type="text/javascript" language="JavaScript"></script> 
+<script src="/contents/shop/00000003/js/jquery.fixedheaderscroll.js" type="text/javascript" language="JavaScript"></script>
 <script src="/contents/shop/00000003/js/neovision91/common.js" type="text/javascript" language="JavaScript"></script>
 <script>
 	$(function(){
@@ -79,6 +79,28 @@
 	/*追従バナー調整*/
 	.cmn_btn span {position: relative;z-index: 0;}
 	.cmn_btn_tri:before {top: 0;}
+	/*インタビュー　レイアウト調整*/
+	@media (min-width: 0) and (min-width: 768px) {
+		.block_intv .cols_two {
+			align-items: flex-end;
+		}
+		.block_intv .profile {
+		    font-size: 14px;
+    		line-height: 1.7;
+		}
+		.block_intv p {
+			font-size: 16px;
+			line-height: 1.7;
+		}
+	}
+@media (max-width: 767px) and (min-width: 0) {
+		.block_intv .profile {
+	    font-size: .82em;
+	    line-height: 1.6;
+	}
+}
+
+
 </style>
 <div class="content_inner">
 	<div class="main_img"><img src="contents/shop/00000003/image/static/neovision91/main_img_2.png" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_main_img_2.jpg" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="sp"><span class="pc">▲日本地図はプッシュ・オープン式。台座から出し入れ可能で便利です。</span></div>
@@ -93,15 +115,15 @@
 	</div>
 	<div class="sec02">
 
-		<!-- <h2><img src="contents/shop/00000003/image/static/neovision91/imgtext01.jpg" alt="ただいま、CM放送中！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext02.png" alt="ただいま、CM放送中！" class="sp"></h2> -->
+		<!-- <h2><img src="contents/shop/00000003/image/static/neovision91/imgtext01.jpg" alt="ただいま、CM放送中！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext02.png" alt="ただいま、CM放送中！" class="sp"></h2>
 
-		<!-- <div class="movie">
+		<div class="movie">
 			<div class="youtube">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/CiiGHnd0xC0?rel=0" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/DnqPwuG9RSk?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div> -->
 		<!-- <div class="com_area mt20">
-			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
 			<div class="img_box">
 				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="sp"></div>
 				<div class="txt_box">
@@ -112,7 +134,7 @@
 						<li>●レンズサイズ：55×40mm</li>
 						<li>●倍率：3倍</li>
 						<li>●材質：アクリル（レンズ）、ＰＶＣ（ケース）</li>
-						<li>●製造国：日本</li>
+						<li>●製造：日本</li>
 					</ul>
 					<p>※仕様は予告なく変更することがございます。</p>
 				</div>
@@ -124,7 +146,7 @@
 			予めご了承ください。</b>
 			</span> -->
 
-			<!-- 完売対応　 
+			<!-- 完売対応　
 			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 			//完売対応　 -->
 
@@ -152,7 +174,7 @@
 					<p>国名・通貨・時刻・首都など…知っておきたい世界の最新情報（※）を親切に地球儀が「しゃべって」教えてくれます。</p>
 					<div class="txt_area">
 						<p>◆大陸・州◆人口◆時刻◆最高地点◆気候◆国歌<br class="pc">
-							◆最高責任者◆言語◆人口◆特徴…計15ジャンル</p>
+							◆最高責任者◆言語◆特徴…計15ジャンル</p>
 					</div>
 					<p class="txt">※常に最新情報でご使用いただくためにはインターネット経由のデータ更新が必要です</p>
 				</div>
@@ -180,11 +202,11 @@
 				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo05.png" alt="上下左右にクルクル動く！"></div>
 			</div>
 		</div>
-		
+
 		<!-- 84追加ブロック -->
 		<div class="wrapper_intv">
 			<h2><img src="contents/shop/00000003/image/static/neovision84/neovision84_title1.png" alt="各界の著名人も『しゃべる地球儀』をお薦めしています！"></h2>
-			<!-- 益田さんブロック 
+			<!-- 益田さんブロック
 			<div class="block_intv">
 				<h3><img src="contents/shop/00000003/image/static/neovision84/neovision84_title2.png" alt="元「なるほど！ザ・ワールド」リポーター益田由美さんも使っています。" class="pc"><img src="contents/shop/00000003/image/static/neovision84/sp_neovision84_title2.png" alt="元「なるほど！ザ・ワールド」リポーター益田由美さんも使っています。" class="sp"></h3>
 				<div class="cols_two clearfix">
@@ -195,7 +217,7 @@
 					<div class="col_second">
 						<h4><img src="contents/shop/00000003/image/static/neovision84/neovision84_txt1.png" alt="いくつになっても「知る」って楽しい！「しゃべる地球儀」は知識の宝庫です。"></h4>
 						<p>しゃべる地球儀は軸が固定されていないので、全方向にクルクル回ってどの国を見るにもストレスがないのがいいですね！そして、タッチペンで地球儀や「ワールドブック」をタッチすれば、最高責任者から言語、地理まで地球儀がスラスラしゃべって教えてくれる。この地球儀はまるで小さな先生ですね。</p>
-						
+
 						<dl class="profile">
 							<dt>益田由美（ますだ　ゆみ）</dt>
 							<dd>1977年フジテレビ入社。1981年から始まった「なるほど！ザ・ワールド」で世界各国を巡るリポーターを務める。2015年フジテレビを定年退職し、現在はフリーアナウンサーとして活動。</dd>
@@ -216,10 +238,12 @@
 					<div class="col_second">
 						<h4><img src="contents/shop/00000003/image/static/neovision84/neovision84_txt2.png" alt="「勉強しなさい」という代わりにリビングに「しゃべる地球儀」を置いてください。"></h4>
 						<p>学びとは本来楽しいものでなくてはなりません。「しゃべる地球儀」はまず、子ども部屋ではなく、家族が集うリビングに置いてみてください。地球儀をひたすら回したり、タッチペンで国の名前を押してみたり、クイズ機能などで遊んでいるうちに、こちらが教えなくても自然といろんなことを覚えますよ。リビングに地球儀をおススメする理由は、もう一つあります。それはリビングには、テレビがある。例えば、テレビを見て「リビアってどこだろう？」と地球儀に触れ、目で確かめることで、文字で読むよりずっと深く理解できます。その際、地球儀をリビングの手に取りやすい場所に置くことが大切。子どもの関心なんて、もって30秒。すぐに使えなければ効果が半減してしまいますよ。</p>
-						
+
 						<dl class="profile">
-							<dt>小川大介（おがわだいすけ）</dt>
-							<dd>1973年生まれ。京都大学在学中より、大学受験予備校や大手進学塾で受験国語の看板講師として活躍。2000年、中学受験専門の「個別指導教室SS-1」を設立。代表として同教室を率いる一方で、子育て、人材育成に関する講演や執筆活動にも力を入れている。</dd>
+							<dt>小川大介（おがわ・だいすけ）</dt>
+							<dd>中学受験情報局『かしこい塾の使い方』主任相談員。<br>
+							大手進学塾で看板講師として活躍した後、中学受験専門のプロ個別指導教室SS-1を設立。<br>
+							その後現職にも就任。教科指導スキルに、声かけメソッド、逆算思考、習慣化指導を組み合わせ、短期間の成績向上を実現する独自ノウハウを確立する。個別面談の実施数は6000回を数え、受験学習はもとより、幼児低学年からの能力育成や親子関係の築き方指導に定評がある。『頭のいい子の家のリビングには必ず「辞書」「地図」「図鑑」がある』（すばる舎）『1日3分！頭がよくなる子どもとの遊びかた』（大和書房）『親も子もハッピーになる最強の子育て』（ウェッジ）など著書多数。</dd>
 						</dl>
 					</div>
 				</div>
@@ -228,9 +252,9 @@
 
 		</div>
 		<!-- 84追加ブロックここまで -->
-		
+
 		<!-- <div class="com_area">
-			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
 			<div class="img_box">
 				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="sp"></div>
 				<div class="txt_box">
@@ -241,7 +265,7 @@
 						<li>●レンズサイズ：55×40mm</li>
 						<li>●倍率：3倍</li>
 						<li>●材質：アクリル（レンズ）、ＰＶＣ（ケース）</li>
-						<li>●製造国：日本</li>
+						<li>●製造：日本</li>
 					</ul>
 					<p>※仕様は予告なく変更することがございます。</p>
 				</div>
@@ -252,7 +276,7 @@
 				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>予めご了承ください。</b>
 			</span> -->
 
-			<!-- 完売対応　 
+			<!-- 完売対応　
 			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 			 //完売対応　 -->
 
@@ -293,7 +317,7 @@
 						<li><img src="contents/shop/00000003/image/static/neovision91/imgtext17.png" alt="世界の知識を15ジャンルに分けて解説 大陸・州　国・都道府県　首都・中心都市　最高責任者 言語　人口　気候　面積 地理　通貨　時刻　最高地点 特徴　文化・歴史　国歌"></li>
 						<li><img src="contents/shop/00000003/image/static/neovision91/photo09.png" alt="驚きの事実 こんなエピソートも!ナイアガラ川が凍って20時間流れが止まったことがある。"></li>
 					</ul>
-				</div>							
+				</div>
 			</div>
 			<div class="img_box03 clearfix">
 				<div class="pho_box pc"><img src="contents/shop/00000003/image/static/neovision91/photo17.jpg" alt="全国47都道府県の情報網羅!日本の歴史や名所の映像も!!Q北海道と沖縄県はどれぐらい離れている?Q東京都と長崎県は何時間差がある?都道府県ごとの比較もこんな楽しみ方もできます。">
@@ -301,7 +325,7 @@
 				</div>
 				<div class="txt_box">
 					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext19.png" alt="魅力3 飛び出す日本地図で47都道府県めぐり。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext11.png" alt="魅力3 飛び出す日本地図で47都道府県めぐり。" class="sp"></h3>
-					
+
 					<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext21.png" alt="台座から日本地図が引き出せる！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext12.png" alt="台座から日本地図が引き出せる！" class="sp"></h4>
 					<div class="pho_box sp"><img src="contents/shop/00000003/image/static/neovision91/photo17.jpg" alt="">
 					<p>地球儀の台座から、日本地図がパッと飛び出す！タッチすれば、世界の国々と同じく、都道府県別の人口・文化・歴史など情報が楽しめます。きっと「目からウロコ」の意外な発見もあることでしょう。</p>
@@ -374,7 +398,7 @@
 			</div>
 		</div>
 		<!-- <div class="com_area">
-			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
 			<div class="img_box">
 				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="sp"></div>
 				<div class="txt_box">
@@ -385,7 +409,7 @@
 						<li>●レンズサイズ：55×40mm</li>
 						<li>●倍率：3倍</li>
 						<li>●材質：アクリル（レンズ）、ＰＶＣ（ケース）</li>
-						<li>●製造国：日本</li>
+						<li>●製造：日本</li>
 					</ul>
 					<p>※仕様は予告なく変更することがございます。</p>
 				</div>
@@ -397,7 +421,7 @@
 			予めご了承ください。</b>
 			</span> -->
 
-			<!-- 完売対応　 
+			<!-- 完売対応　
 			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 			//完売対応　 -->
 
@@ -411,7 +435,7 @@
 		<ul class="clearfix">
 			<li><img src="contents/shop/00000003/image/static/neovision91/list01.png" alt="正月に家族や友人達と一緒に操作して実に繊細な説明に皆で共に驚いています。喜んで見ております。 愛知県・男性89歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list01.png" alt="正月に家族や友人達と一緒に操作して実に繊細な説明に皆で共に驚いています。喜んで見ております。 愛知県・男性89歳" class="sp"></li>
 			<li><img src="contents/shop/00000003/image/static/neovision91/list02.png" alt="「しゃべって」リードしてくれるので孫も飛びついて遊んでいます。愛知県・男性67歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list02.png" alt="「しゃべって」リードしてくれるので孫も飛びついて遊んでいます。愛知県・男性67歳" class="sp"></li>
-			<li><img src="contents/shop/00000003/image/static/neovision91/list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="sp"></li> 
+			<li><img src="contents/shop/00000003/image/static/neovision91/list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="sp"></li>
 			<li><img src="contents/shop/00000003/image/static/neovision91/list04.png" alt="すぐに孫達と使ってみましたが遊び感覚で地理その他の情報が勉強でき、満足しています。石川県・男性63歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list04.png" alt="すぐに孫達と使ってみましたが遊び感覚で地理その他の情報が勉強でき、満足しています。石川県・男性63歳" class="sp"></li>
 			<li><img src="contents/shop/00000003/image/static/neovision91/list05.png" alt="生きている地球儀をありがとうございました。京都府・男性77歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list05.png" alt="生きている地球儀をありがとうございました。京都府・男性77歳" class="sp"></li>
 			<li><img src="contents/shop/00000003/image/static/neovision91/list06.png" alt="大変便利だと思う 小学校二年の孫がおもしろがってあそんでいる。広島県・男性75歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list06.png" alt="大変便利だと思う 小学校二年の孫がおもしろがってあそんでいる。広島県・男性75歳" class="sp"></li>
@@ -438,7 +462,7 @@
 		</div>
 	</div>
 	<!-- <div class="inner05">
-		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext33.png" alt="クリスマス・お誕生日・ご入学のプレゼントにも！"></h2>
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext33_1.png" alt="大切なお子様・お孫様へのプレゼントにもおすすめ！"></h2>
 		<div class="img_box clearfix">
 			<div class="txt_box">
 				<p>ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、世代を問わずお楽しみいただける知的インテリアの傑作です。これから世界を知るお子様、お孫様へ…この機会にお贈りしてみませんか？</p>
@@ -446,18 +470,18 @@
 					<p class="text01">▼贈答用でのご注文の場合、<br class="sp">下記の番号までお電話ください。</p>
 					<p>ココチモお客様センター</p>
 					<div class="call"><a href="tel:0120552242"><img src="contents/shop/00000003/image/static/neovision91/tel02.png" alt="0120-552-242"></a></div>
-					<p class="text03">受付時間／6：00～22：00（日曜・祝日も受付）<br>
-						※年末は28日の午後10時まで、年始は4日午前6時より受付いたします。<br>
-						※おかけ間違いのないようご注意ください。</p>
+					<p class="text03">受付時間／6：00～22：00（日曜・祝日も受付）<br> -->
+						<!-- ※年末は28日の午後10時まで、年始は4日午前6時より受付いたします。<br> -->
+						<!-- ※おかけ間違いのないようご注意ください。</p>
 				</div>
-				<p class="text02 viewPc">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に右記のシールをお貼りいたします。（2018年12月10日お申込み分まで）</p>
-				<p class="text02 viewSp">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に下記のシールをお貼りいたします。（2018年12月10日お申込み分まで）</p>
+				<p class="text02 viewPc">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に右記のシールをお貼りいたします。（2019年7月8日お申込み分まで）</p>
+				<p class="text02 viewSp">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に下記のシールをお貼りいたします。（2019年7月8日お申込み分まで）</p>
 			</div>
 			<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo20.png" alt="クリスマス・お誕生日・ご入学のプレゼントにも！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo06.jpg" alt="クリスマス・お誕生日・ご入学のプレゼントにも！" class="sp"><span><img src="contents/shop/00000003/image/static/neovision91/img01.png" alt="贈り物の品をお届けします"></span></div>
 		</div>
 	</div> -->
 	<!-- <div class="com_area">
-			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="12月10日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext02.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext03.png" alt="7月8日(月)まで 期間限定プレゼント付き！" class="sp"></h3>
 			<div class="img_box">
 				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo01.png" alt="国名や、都市名がグッと見やすく、探しやすくなります。" class="sp"></div>
 				<div class="txt_box">
@@ -468,7 +492,7 @@
 						<li>●レンズサイズ：55×40mm</li>
 						<li>●倍率：3倍</li>
 						<li>●材質：アクリル（レンズ）、ＰＶＣ（ケース）</li>
-						<li>●製造国：日本</li>
+						<li>●製造：日本</li>
 					</ul>
 					<p>※仕様は予告なく変更することがございます。</p>
 				</div>
@@ -494,12 +518,12 @@
 		<div class="sub_inner"><img src="contents/shop/00000003/image/static/neovision91/photo21.png" alt="【セット内容】">
 			<div class="txt_area">
 				<p>【セット内容】●しゃべる地球儀パーフェクトグローブネオビジョンプレミアム本体（引き出し式日本地図）●パーフェクトペン●取扱説明書●ワールドブック●USBケーブル●ACアダプター<br>
-					【商品仕様】●サイズ(約)：幅338×奥行246×高さ417mm※引き出し式日本地図使用時は奥行426mmとなります。●直径(約)：260mm●重さ(約)：2kg（パーフェクトペンを含む）●使用電池：単4アルカリ乾電池×1本（本体）※お試し電池入りでお届けします。●製造国：中国●発売元：ドウシシャ</p>
+					【商品仕様】●サイズ(約)：幅338×奥行246×高さ417mm※引き出し式日本地図使用時は奥行426mmとなります。●直径(約)：260mm●重さ(約)：2kg（パーフェクトペンを含む）●使用電池：単4アルカリ乾電池×1本（本体）※お試し電池入りでお届けします。●製造：中国●発売元：ドウシシャ</p>
 			</div>
 		</div>
 	</div>
 	<ul class="txt_list pc">
-		<li>※お申込みから通常7～12日ほどでお届けいたします。　※万が一、予想を上回るお申込みをいただいた場合数ヵ月お待ちいただく場合がございます。予めご了承ください。</li>
+		<li>※お申込みから通常3～6日ほどでお届けいたします。　※万が一、予想を上回るお申込みをいただいた場合数ヵ月お待ちいただく場合がございます。予めご了承ください。</li>
 		<li>※本体液晶画面の写真ははめ込みイメージ写真です。</li>
 		<li>※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。</li>
 		<li>※仕様などは改善・改良のため、予告なく変更することがございます。※本商品の映像データには写真と動画が含まれます。</li>
@@ -530,7 +554,7 @@
 		.pc {display: none !important;}}
 		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
 		#contents .purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;justify-content: space-between;margin: 0 auto !important;}
-		
+
 		/*#contents .purchase_fixed .inner > p:first-of-type img {width: 306px;}*/
 		#contents .purchase_fixed .inner > p:last-of-type img {width: 455px;}
 		#contents .purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
@@ -567,8 +591,8 @@
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
 			</p>
-      <!-- 欠品対応 
-			
+      <!-- 欠品対応
+
 			<p class="order_btn" id="purchase_btn_keppin">
             	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
@@ -578,9 +602,3 @@
 		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
 	<!--</span>--><!-- //カート追従バナー -->
-
-
-
-
-
-  
