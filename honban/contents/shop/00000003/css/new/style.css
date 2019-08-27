@@ -11925,3 +11925,8 @@
 
 /*ご利用ガイドを見る z-index調整*/
 .cmn_btn span,.cmn_btn_tri:before {z-index: 0;}
+
+/*スマホ版 商品詳細サムネイル画像調整 */
+@media screen and (max-width: 767px) {
+	.goods_detail_item_view .flexsliderWrap .flexslider .flex-viewport {width: 100%;}
+}
