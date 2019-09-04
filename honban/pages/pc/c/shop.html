@@ -964,9 +964,11 @@ $(function () {
             </div>
         <!--▲▲▲メインヴィジュアル▲▲▲-->
 
+        <!--▼▼▼SP版 お知らせがないときは非表示 
         <div class="news_link_wrap viewSp">
             <a href="#side_widget_news"><span>お知らせを見る</span></a>
         </div>
+        ▼▼▼-->
         <!--▼▼▼カテゴリー▼▼▼-->
             <!-- カテゴリナビ -->
             <script type="text/javascript">
@@ -2058,10 +2060,42 @@ $(function () {
                     </span>
                 <!--▲▲▲ココチモからのお知らせ▲▲▲-->
                 <!--▼▼▼バナー▼▼▼-->
-	                <div class="mt30 s_mt10">
+	                <!-- <div class="mt30 s_mt10">
 							<div class="side_widget_begginer_our"><a href="/shop/c/static/greeting/">ココチモ（私たち）<br>について</a></div>
 							<div class="side_widget_begginer_guide"><a href="/shop/c/static/guide/">ココチモ<br>初めてご利用ガイド</a></div>
+					</div> -->
+					<!--▼▼▼関連サイト▼▼▼-->
+					<style>
+						.bnr_area { border: 1px solid #d7d7d7;margin-top:30px;padding:0 10px 10px;background:#fff1df;}
+						.bnr_area .ttl {border-bottom: 2px solid #f39800;background: #ffffff;font-size: 20px;font-weight:bold;padding: 16px 10px 16px;margin-left: -9px;margin-right: -9px;margin-bottom: 16px;}
+						.bnr_area a {transition: all 300ms 0s ease;    box-shadow: 3px 2px 4px 0px #bdbdbd;display: block;}
+						.bnr_area a:hover {opacity: 0.7;}
+						@media screen and (max-width: 767px) {
+							.bnr_area {
+								margin-top: 25px;
+								border: none;
+								padding: 0;
+								background:none;
+							}
+							.bnr_area > div {
+								margin-left: 5vw;
+								margin-right: 5vw;
+							}
+							.bnr_area .ttl {background: #f8f8f8;font-size: 16px;padding: 13px 10px 11px;margin-left: 0;margin-right: 0;margin-bottom: 10px;}
+						}
+					</style>
+					<div class="bnr_area">
+						<p class="ttl">関連サイト</p>
+						<div class="mb10">
+							<a id="topSideBnr1_kigokochi_clickEv" href="https://www.iikigokochi.jp/" target="_blank"><img src="/contents/c/shop/image/top_kigokochi.png" alt="着心地のいい服"></a>
 						</div>
+						<div>
+							<a id="topSideBnr2_u-can_clickEv" href="http://www.u-canshop.jp/" target="_blank"><img src="/contents/c/shop/image/top_ucan.png" alt="ユーキャン 通販ショップ"></a>
+						</div>
+					</div>
+					<!--▲▲▲関連サイト▲▲▲-->
+
+
 					</div>
 				<!--▲▲▲バナー▲▲▲-->
             </div>
