@@ -8,7 +8,7 @@
 <meta http-equiv="content-script-type" content="text/javascript">
 <script type="text/javascript">
 if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
-		document.write('<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">');
+		document.write('<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1 ,viewport-fit=cover">');
 }else{
 		document.write('<meta name="viewport" content="width=1020">');
 }
@@ -89,6 +89,50 @@ $(function() {
 							});
 		</script>
 <!-- InstanceBeginEditable name="head_css_js" -->
+
+<!-- 201907_DLPO TOPへ戻るボタン追加用Javascript  -->
+<script type="text/javascript">
+$(function(){
+ $('body').after('<div class="pagetop01"><a noadlpo href="#container"></a></div>');
+});
+$(function(){
+   if (matchMedia('(max-width: 640px)').matches) {
+  var topBtn = $('.pagetop01');
+    topBtn.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+  }
+});
+</script>
+<!-- /201907_DLPO TOPへ戻るボタン追加用Javascript  -->
+
+<!-- 201907_DLPO TOPへ戻るボタン追加用CSS  -->
+<style type="text/css">
+@media all and (max-width: 640px){
+.pagetop01 a {float: none;background-repeat: no-repeat;background-position: 50% 50%;padding: 10px 0;font-size: 16px;display: block;text-indent: -9999px;margin: 0 auto !important;background-image: url(/contents/iikigokochi/common_sp/common_kigokochi02/images/pagetop.png) !important;background-repeat: no-repeat;background-position: center center !important;background-size: 70px auto;background-color: transparent !important;padding: 0 !important;width: 73px;height: 50px;  }  /* .pagetop01 a:hover {pointer-events: none;  } */  .pagetop01 {position: fixed;z-index:9999;bottom: 20px;right:10px;
+    /*ページトップアイコン位置調整 ios用*/
+    bottom: 44px;
+    bottom: calc(env(safe-area-inset-bottom) + 44px);
+}
+/*フッター表示調整*/
+  #footer01 {
+    overflow: hidden;
+  }
+}
+</style>
+<!--  /201907_DLPO TOPへ戻るボタン追加用CSS  -->
+
 <style>
 #contents{
 	width:100%;
@@ -727,10 +771,13 @@ function initCorners() {
 
 		<div class="mainimages">
 
+<!--
+  <div><a href="/shop/static/review/?il=top_review_carousel"  class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/review_pc.jpg" alt="期間限定！レビューを書いてポイントGETキャンペーン" /></a></div>
+
+-->
   <div><a href="/shop/static/feature_in12/?il=top_feature_in12_carousel"  class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/feature_in12/feature_in12.jpg" alt="「着心地のいい服 夏」のパンツを、スタッフが着用してみました！" /></a></div>
 
 
-  <div><a href="/shop/static/feature_in11/?il=top_feature_in11_carousel"  class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/feature_in11_top.jpg" alt="石井香苗さんインタビュー" /></a></div>
 
 
 
@@ -768,9 +815,14 @@ function initCorners() {
 <div class="mainimagessp">
 
 
+
+<!--
+      <div><a href="/shop/static/review/?il=top_review_carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/review_sp.jpg" alt="期間限定！レビューを書いてポイントGETキャンペーン" /></a></div>
+
+-->
       <div><a href="/shop/static/feature_in12/?il=top_feature_in12_carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/feature_in12/feature_in12_top_sp.jpg" alt="「着心地のいい服 夏」のパンツを、スタッフが着用してみました！" /></a></div>
 
-      <div><a href="/shop/static/feature_in11/?il=top_feature_in11_carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/feature_in11_top_sp.jpg" alt="石井香苗さんインタビュー" /></a></div>
+
 
 
 
@@ -1272,7 +1324,7 @@ function initCorners() {
 
 <div class="col3-1">
       	<a href="/item_SDKFJS/?il=top-SDKFJS-media" onclick="ga('send','event','top','SDKFJS','top_media',{'nonInteraction':1});">
-            <img m:id="static_img" src="../../../contents/shop/00000006/image/new/DKFJS_2.jpg" alt="フレンチリネンＴブラウス " class="rankimg_photo width100">
+            <img m:id="static_img" src="../../../contents/shop/00000006/image/new/DKFJS_3.jpg" alt="フレンチリネンＴブラウス " class="rankimg_photo width100">
 	<p class="font14 color_gray center padding">フレンチリネンＴブラウス </p>
           </a>
     </div>
@@ -1404,7 +1456,7 @@ function initCorners() {
 
 	<br clear="all">
 
-
+<!--
 
 <div class="pickup pickup_left pickup1">
 　　<a href="/shop/static/feature_in6/?il=top-feature_in6-pickup" target="_blank">　　　　　　
@@ -1413,23 +1465,16 @@ function initCorners() {
 	<p class="pickup_copy"><span class="pickup_title">肌側シルクやすらぎパジャマ</span>素肌に触れる裏側はなめらかなシルク、表側は柔らかなコットンの、快適な寝心地を追究した贅沢パジャマができました。</p>
 </div>
 
+-->
 
-
-<div class="pickup pickup_right pickup1">
+<div class="pickup pickup_left pickup1">
 　　<a href="/shop/static/feature36/?il=top-feature36-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature36/main-visual.jpg" alt="オールタイムサンダル特集" width="100%">
     </a>
 	<p class="pickup_copy"><span class="pickup_title">オールタイムサンダル特集</span>やわらかな国産牛革を一枚仕立てで贅沢に使用した、大人の女性のためのサンダルの登場です。</p>
 </div>
 
-
-
-
-
-	<br clear="all">
-
-
-<div class="pickup pickup_left pickup1">
+<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/feature25/?il=top-feature25-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature25/main-visual.jpg" alt="着心地のいい服 素材のご紹介" width="100%">
     </a>
@@ -1438,7 +1483,14 @@ function initCorners() {
 
 
 
-<div class="pickup pickup_right pickup1">
+	<br clear="all">
+
+
+
+
+
+
+<div class="pickup pickup_left pickup1">
 　　<a href="/shop/static/concept/?il=top-concept-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/feature_concept.jpg" alt="着心地のいい服 コンセプト" width="100%">
     </a>
@@ -1757,7 +1809,10 @@ function initCorners() {
       	<div class="infobox">
           <h2><img src="../../../contents/shop/00000006/shop/image/kigokochi/ttl_information.gif" width="523" height="32" alt=""/></h2>
 
-
+          <dl>
+            <dt>2019/9/9</dt>
+            <dd>【9月9日（月）電話受付時間変更についてのお詫び】<br><br>9月9日（月）は、台風15号の影響により、誠に勝手ながら、 電話受付開始時間を13時とさせていただきます。 既にご連絡をいただきましたお客様には、大変ご迷惑をおかけいたしました。 なお、13時以降もお電話が繋がりにくい状況が想定されるため、 お急ぎではないお客様は9月10日（火）の午前9時以降にご連絡をお願いいたします。</dd>
+          </dl>
 
           <dl>
             <dt>2019/6/3</dt>
@@ -1948,9 +2003,8 @@ function initCorners() {
             </li>
 
 
-<!---
 
-
+<!--
             <li class="banner02 banner03" style="display:block;background:#ffe0ef;">
             	<a href="/shop/static/review/" target="_blank">
             		<div class="banner_inner">
@@ -1964,8 +2018,8 @@ function initCorners() {
                 </div>
             	</a>
             </li>
+-->
 
---->
 
           </ul>
 
