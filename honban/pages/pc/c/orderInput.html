@@ -72,8 +72,8 @@ $(function(){
 	.membership {display: none !important}
 
 	@media print,screen and (min-width: 767px){
-		.header_logo {width: 120px;height: 30px;position: absolute;top: 10px;}
-		.header_logo img {width: 120px;height: 30px;}
+		.header_logo {width: 160px;height: 50px;position: absolute;top: 0;}
+		.header_logo img {width: 87px;height: auto;}
 		.header_top_cart {padding-top: 8px;width: 100%;float: right;overflow: hidden;}
 		.contents_b {padding-top: 5px;}
 		.cmn_tit05{font-size:20px;margin:0 0 10px;}
@@ -102,7 +102,7 @@ $(function(){
 			.header_logo {width: 80px;}
 
 			.header_in,#header {position: static;}
-			.header_logo {top:11px;z-index:1;}
+			.header_logo {top:5px;z-index:1;}
 			.header_top_cart {
 				position: absolute;
 				top: 3px;
@@ -129,9 +129,6 @@ $(function(){
 			}
 			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
 			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
-
-			
-			
 
 			/*追加_cart.do*/
 			.cmn_tit05 {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
@@ -192,7 +189,6 @@ $(function(){
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
 
 		}
-		
 		@media screen and (max-width: 767px){
 			.cmn_tit01 {font-size: 14px;}
 			.cmn_form_table01 th .suffix {font-size: 12px;}
@@ -404,7 +400,7 @@ $(function(){
 $(function () {
 /*ココチモ会員 入力非表示*/
   $('#more_login_text').css({'display':'none'});
-  
+
  if($('.memadd_table_01 .error').length){
    $('#more_login_text').slideDown();
    $('.more_login_btn').html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>').addClass('is-active');
@@ -412,7 +408,7 @@ $(function () {
 
 	$('.more_login_btn').on('click', function () {
 		$(this).toggleClass('is-active');
-		
+
 		if($(this).hasClass('is-active')) {
 			$(this).html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>');
 		} else {
