@@ -108,7 +108,26 @@
 	}
 }
 </style>
+<style>
+	/*価格変更のご案内*/
+	.info_txt {
+		color:red;
+		font-weight: bold;
+		font-size:1.4em;
+		padding:0.6em;
+		border:2px solid red;
+		text-align: center;
+		max-width:920px;
+		margin:40px auto;
+	}
+	@media screen and (max-width: 767px) {
+		.info_txt {
+			font-size:1em;
+			margin:15px auto 10px;
+		}
+	}
 
+</style>
 <div id="content"> 
 		<div id="content_wrap">
 			<div class="content_inner">
@@ -146,6 +165,11 @@
 					<p class="badge">
 						<img src="contents/shop/00000003/image/static/dacky/dc_txt04@2x.png" alt="ダッキーはあなたにかわいく呼びかける!!" width="160">
 					</p>
+					<!-- 価格変更のご案内　ここから 
+					<div class="info_txt">
+					※こちらの商品は、2019年10月1日より価格を改定いたします。
+					</div>
+					 価格変更のご案内　ここまで -->
 					<!-- <div class="youtube">
 						<p><img src="contents/shop/00000003/image/static/dacky/dc_txt05.svg" alt="ただ今、テレビCM放送中!!" width="378"></p>
 						<div class="ifr_cnt"><iframe width="440" height="293" src="https://www.youtube.com/embed/4r4tVoJM3OQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -753,7 +777,7 @@
 							<!--▼▼▼モーダル▼▼▼-->
 							<div id="return_goods" class="lightbox">
 								<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
-								<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください。</span></p>
+								<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
 								<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
 								<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
 							</div>
@@ -766,7 +790,7 @@
 							<p>
 								一括払価格
 								<span class="bold">
-									29,800
+									30,960
 								</span>
 								円
 							</p>
@@ -778,6 +802,11 @@
 							<img src="contents/shop/00000003/image/static/dacky/dc_img30@2x.png" width="330">
 						</div>
 					</div>
+					<!-- 価格変更のご案内　ここから 
+					<div class="info_txt">
+					※こちらの商品は、2019年10月1日より価格を改定いたします。
+					</div>
+					 価格変更のご案内　ここまで -->
 				<!-- <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
 						<input m:id="h_hid__S" type="hidden" name="_S" value="" />
 						<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
@@ -841,7 +870,6 @@
 	      <p class="pc_only">
 	        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 	      </p>
-       
 		<p class="order_btn" id="purchase_btn_order">
 			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
         	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>

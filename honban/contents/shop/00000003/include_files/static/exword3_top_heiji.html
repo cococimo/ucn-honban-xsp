@@ -360,7 +360,26 @@ position: absolute;
 	}
 }
 </style>
+<style>
+	/*価格変更のご案内*/
+	#content_wrap .info_txt {
+		color:red;
+		font-weight: bold;
+		font-size:1.6em;
+		padding:.8em;
+		border:2px solid red;
+		text-align: center;
+		max-width:900px;
+		margin:30px auto;
+	}
+	@media screen and (max-width: 767px) {
+		#content_wrap .info_txt {
+			font-size:1em;
+			margin:15px auto 10px;
+		}
+	}
 
+</style>
 <div class="wrap_con">
 <!-- <div id="c-nav" class="c-nav">
 	<p id="c-nav-open" class="c-nav-btn">
@@ -407,6 +426,12 @@ position: absolute;
 			</div> -->
 		</div>
 	</div>
+
+	<!-- 価格変更のご案内　ここから 
+	<div class="info_txt">
+	※こちらの商品は、2019年10月1日より価格を改定いたします。
+	</div>
+	  価格変更のご案内　ここまで -->
 
 <!-- ELTEX mod start -->
 <!--
