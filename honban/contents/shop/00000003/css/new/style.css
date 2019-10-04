@@ -95,9 +95,11 @@
 	margin: auto 0;
 }
 .category_list > ul > li > div a.is-current,
-.category_list > ul > li > div a:hover {
+.category_list > ul > li > div a:hover,
+#goods .category_list > ul > li > div a:hover {
 	background-color: #fff8dd;
 	color: #f39800;
+	text-decoration: underline;
 }
 .category_list > ul > li + li > div a .category_list_img {
 	background-image: url(/contents/c/shop/image/img_cat02.png);
@@ -9454,10 +9456,16 @@
 	#postCode body {
 		min-width: 320px;
 	}
+	#postCode .header {
+		border-bottom: none;
+	}
 	#postCode .header_logo {
 		position: absolute;
 		top: 18px;
 		padding: 0;
+	}
+	#postCode .header {
+		overflow:visible;
 	}
 	#postCode #contents_in {
 		padding: 0 10px;
@@ -11337,10 +11345,9 @@
 
 /*ヘッダー表示調整(PC版)　20171117 ▼▼
 =========================================== */
-@media screen and (min-width: 768px) {
+@media print, screen and (min-width: 768px) {
 	.header_logo {
 	    width: 120px;
-	    height: 30px;
 	    top: 5px;
 	}
 	.header_top {
@@ -11381,7 +11388,12 @@
 		padding: 14px 0 28px;
 	}
 }
-
+@media screen and (max-width: 767px) {
+	.header_logo {top: 0;}
+}
+@media screen and (max-width: 320px) {
+	.header_logo {top: 18px;}
+}
 /*ヘッダー表示調整(PC版)　20171117 ▲▲
 =========================================== */
 

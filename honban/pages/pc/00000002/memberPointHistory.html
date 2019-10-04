@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:m="http://mayaa.seasar.org" xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" xmlns:fb="http://ogp.me/ns/fb#" id="mypage_point_history"><!-- InstanceBegin template="/Templates/layout_02.dwt" codeOutsideHTMLIsLocked="false" -->
-<head>　
+<head>
 <meta http-equiv="content-language" content="ja" />
 <meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
 <meta http-equiv="content-style-type" content="text/css;" />
@@ -23,10 +23,11 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
-<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css?20191003" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css?20191003 type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/renewal_header.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
 <script src="/contents/c/js/new/slick.min.js"></script>
@@ -57,6 +58,9 @@ $(function(){
 });
 </script>
 <![endif]-->
+<style>
+    body {overflow-x: hidden;}
+</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
@@ -75,84 +79,159 @@ $(function(){
 <!-- InstanceEndEditable -->
 <object class="xsp_obj" m:id="e_var_mall_link"></object>
 <span m:id="l_equ_test_site" class="testsite_time"><span m:id="b_wr_test_site_time"></span></span>
-<header class="header header_b" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-	<div class="header_in cf">
-		<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
-				<a m:id="e_link_logo_shop_shop" href="/">
-					<span m:id="l_notEmp_shop_image_file_shop">
-						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
-					</span>
-				</a>
-			</h1>
-			<div class="header_top">
-				<div class="header_tell" class="view">
-					<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
-					<p class="note">携帯電話からでも通話無料</p>
-				</div>
-				<!-- /.header_tel -->
-				<div class="header_contact">
-					<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-				</div>
-				<!-- /.header_contact -->
-				<div m:id="l_pre_member_mypage_button_shop">
-					<div class="header_mypage" class="viewPc">
-						<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
-					</div>
-				</div>
-				<!-- /.header_mypage -->
-				<div class="header_ucan">
-					<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
-				</div>
-				<!-- /.header_ucan -->
-			</div>
-			<div class="header_bottom">
-				<p class="header_username">ようこそ
-					<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
-					<span m:id="l_notPre_login_member_name">ゲスト</span>さん
-				</p>
-				<!-- /.header_username -->
-				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
-				<!-- /.header_begginer -->
-				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
-				<!-- /.header_guide -->
-				<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow">
-						<a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
-							<span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
-						</a>
-					<p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-					</div>
-					<!--/.header_menu-->
-				</span>
-				<div class="header_login hvr-grow">
-					<ul class="header_list_02">
-						<div m:id="l_pre_member_logout_button_shop">
-							<li id="header_logout">
-								<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
-									<p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
-								</a>
-							</li>
-							</div>
-						<div m:id="l_pre_member_mypage_button_shop">
-							<li class="header_mypage_sp">
-								<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
-							</li>
-						</div>
-						<div m:id="l_notPre_member_login_button_shop">
-							<li id="header_login">
-								<a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">
-									<p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
-								</a>
-							</li>
-						</div>
-					</ul>
-				</div>
-				<!-- /.header_login -->
-			</div>
-			<!-- /.header_bottom -->
+   <header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header_in cf">
+            <span m:id="l_equ_hierarchy_3_shop">
+                <div class="header_bottom changetop">
+                    <p class="header_username">ようこそ
+                        <span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span><!-- <span m:id="b_wr_name_sei">山田</span><span>&nbsp;</span><span m:id="b_wr_name_mei">花子</span> --></a>
+                        </span>
+                        <span m:id="l_notPre_login_member_name">ゲスト</span>さん
+                    </p>
+                    <!-- /.header_username -->
+                    <div m:id="l_pre_member_mypage_button_shop">
+                        <div class="header_mypage viewPc">
+                            <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+                        </div>
+                    </div>
+                    <!-- /.header_mypage -->
+                    <p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+                    <!-- /.header_begginer -->
+                    <p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+                    <!-- /.header_guide -->
+
+                    <div class="header_memberAdd">
+                        <a m:id="e_link_login_shop" href="memberLogin.html" >新規会員登録</a>
+                    </div>
+
+                    <div class="header_contact">
+                        <a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+                    </div>
+                    <!-- /.header_contact -->
+                </div>
+                <!-- /.header_bottom -->
+                <div class="header_top_wrap">
+                    <div class="header_top">
+                        <p class="header_logo">
+                    <a m:id="e_link_logo_shop_shop" href="/">
+                        <span m:id="l_notEmp_shop_image_file_shop">
+                                    <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
+                        </span>
+                    </a>
+                        </p>
+                    <div class="header_search">
+                        <div class="header_search_in cf">
+                            <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+                                <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+                                <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+                                <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+                                <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+                                <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+                                <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+                                <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+                                <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+                                <input m:id="searchForm_page" type="hidden" name="page" value="1">
+                                <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- /.header_search -->
+                        <div class="search_area cf">
+                        <div class="search_area_in cf">
+                            <div class="search_area_input_wrap">
+                                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
+                                    <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+                                    <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名・キーワードで検索" type="text" name="keyword" maxlength="200" value="商品名・キーワードで検索"
+                                         autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+                                    <div class="box_02 icon-search"><input type="submit" value="検索" id="search_btn_pc" ></div>
+                                </form>
+                                <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+                                    <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+                                    <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+                                    <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+                                </form>
+                            </div>
+                            </div>
+                    </div>
+                    <!-- /.search_area -->
+
+                    <!-- ▼▼▼トレンド商品▼▼▼ 
+                    <span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span>
+                    ▲▲▲トレンド商品▲▲▲ -->
+
+                    <span m:id="l_equ_hierarchy_3_shop">
+                    <div class="header_menu" class="clearfix">
+                        <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
+                            <span class="header_bag_btn"><span class="icon-cart"><img src="/contents/c/shop/image/btn_cart_icon.svg" alt=""></span><span class="header_bag_txt">お買い物<br>かご</span></span>
+                        </a>
+                        <p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
+                    </p>
+                </div>
+                <!--/.header_menu-->
+                </span>
+                <div class="header_login">
+                    <ul class="header_list_02">
+                        <div m:id="l_pre_member_logout_button_shop">
+                            <li id="header_logout">
+                                <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+                                    <p class="header_logout_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_logout_icon.svg" alt=""></span><span class="header_logout_txt">ログアウト</span></p>
+                                </a>
+                            </li>
+                        </div>
+                        <div m:id="l_pre_member_mypage_button_shop">
+                            <li class="header_mypage_sp">
+                                <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+                            </li>
+                        </div>
+                        <div m:id="l_notPre_member_login_button_shop">
+                            <li id="header_login">
+                                <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">
+                                    <p class="header_login_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_login_icon.svg" alt=""></span><span class="header_login_txt">ログイン</span></p>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <!-- /.header_login -->
+            </div>
+            <!-- /.header_bottom -->
 		</span>
-		<!-- /.header_item_search_box -->
+
+        <div class="header_item_search_box">
+            <div class="header_item_search_area">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="/goodsSearchShop_shop.html">
+                    <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+                    <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索"
+                         autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
+                    <div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
+                </form>
+                <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+                    <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+                    <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+                    <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+                </form>
+            </div>
+
+        <div class="header_feature">
+            <a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
+        </div>
+        <!-- /.header_feature -->
+        <div class="header_logout">
+            <div m:id="l_pre_member_logout_button_shop">
+                <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+                    <img src="../../../contents/c/shop/image/txt_logout_sp.png" alt="ログアウト">
+                </a>
+            </div>
+        </div>
+        <!-- /.header_logout -->
+        <div class="header_close">
+            <span class="header_close_btn">閉じる</span>
+        </div>
+        <!-- /.header_close -->
+    </div>
+	<!-- /.header_item_search_box -->
+
 	</div>
 	<!--header_in-->
 </header>

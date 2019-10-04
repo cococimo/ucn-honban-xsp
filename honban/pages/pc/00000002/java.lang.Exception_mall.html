@@ -23,10 +23,11 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
-<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css?20191003" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css?20191003" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/renewal_header.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
 <script src="/contents/c/js/new/slick.min.js"></script>
@@ -57,336 +58,6 @@ $(function(){
 });
 </script>
 <![endif]-->
-	<style>
-		.header_username {
-			min-width: 263px;
-		}
-
-		.header_menu a {
-			width: 220px;
-			background: url(/contents/c/shop/image/btn_bag01.png) no-repeat #cc1010 center;
-		}
-		
-		.header_login {
-			text-align: center;
-			width: 202px;
-		}
-		
-		.search_area {
-			padding: 14px 0;
-			background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAJElEQVQYVxXHoREAAAzCQHDsPykyrj2iPm57kpRE3gyADNywHlU6EYluaPO+AAAAAElFTkSuQmCC");
-		}
-		
-		.search_area_in {
-			width: 1200px;
-			margin: 0 auto;
-		}
-		
-		.search_area_input_wrap {
-			position: relative;
-			width: 700px;
-			margin: 0 auto;
-		}
-		
-		.search_area_input_wrap input[name=keyword] {
-			width: 100%;
-			border-style: solid;
-			border-width: 1px;
-			border-color: #d8d8d8;
-			background-color: #fff;
-			box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .08);
-			padding: 10px 10px 11px;
-			border-radius: 6px;
-			min-height: 56px;
-			behavior: url(PIE.htc);
-		}
-		.search_area_input_wrap input[type=submit] {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			margin: auto 0;
-			right: 3px;
-			background: url("data:image/png;base64,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") no-repeat;
-			color: transparent;
-			border: none;
-			width: 140px;
-			height: 50px;
-		}
-		
-		.word_area {
-			margin-top: 12px;
-			display: none;
-		}
-		
-		.word_area_tit {
-			color: #555555;
-			font-size: 16px;
-			display: inline-block;
-		}
-		
-		.word_area_list {
-			margin-left: ;
-			letter-spacing: -0.05em;
-			font-size: 16px;
-			display: inline-block;
-			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAECAYAAACk7+45AAAAGUlEQVQYV2M8c+bMfwYGBgZGOAPEA4vAGADEUwbLcY+gkgAAAABJRU5ErkJggg==");
-			background-repeat: repeat-y;
-		}
-		
-		.word_area_list li {
-			letter-spacing: 0;
-			display: inline-block;
-			margin-left: 28px;
-		}
-		
-		#home .search_area {
-			padding: 14px 0 12px;
-		}
-		
-		#home .word_area {
-			display: block;
-		}
-		
-		.word_area_tit {
-			font-size: 13px;
-		}
-		
-		.word_area_tit {
-			color: #555555;
-			font-size: 13px;
-			display: inline-block;
-		}
-		/*▼▼▼css調整ここから0714*/
-		
-		.search_area_input_wrap input[name=keyword] {
-			padding: 5px 5px 6px;
-			min-height: 0;
-		}
-		
-		.search_area_input_wrap input[type=submit] {
-			width: 97px;
-			height: 35px;
-			background-size: contain;
-		}
-		
-		#home .word_area {
-			text-align: center;
-		}
-		
-		.word_area_tit {
-			font-size: 13px;
-		}
-		
-		.word_area_list {
-			font-size: 13px;
-		}
-		/*▲▲▲css調整ここまで0714*/
-		
-		@media screen and (max-width:767px) {
-			.header_username {
-				min-width: 263px;
-			}
-			.header_menu a {
-				width: 58px;
-				background-image: url(/contents/c/shop/image/btn_cart_sp.png);
-				background-size: cover;
-			}
-			.header_login {
-				width: 58px;
-			}
-			.search_area {
-				display: none;
-			}
-		}
-		/*検索窓表示調整*/
-		
-		.search_area_input_wrap input[type=submit] {
-			width: 84px;
-			height: 30px;
-		}
-		
-		.search_area_input_wrap input[name=keyword] {
-			font-size: 15px;
-		}
-		/*カテゴリ一覧の表示位置変更*/
-		
-		.category_contents_in {
-			width: 1200px;
-			margin: 0 auto;
-			padding-bottom: 0;
-			position: relative;
-		}
-		
-		#home .search_item_in .category_list {
-			display: none;
-		}
-		
-		@media screen and (max-width:767px) {
-			#home .search_item_in .category_list {
-				display: block;
-			}
-		}
-		/*ジャンル別ランキング*/
-		
-		#home .recommend.ranking-genre li {
-			background-image: url(/contents/c/shop/image/ico_ranking01.png);
-			background-repeat: no-repeat;
-			background-position: top center;
-			padding-top: 58px;
-			background-size: 160px;
-		}
-		
-		#home .recommend.ranking-genre li+li {
-			background-image: url(/contents/c/shop/image/ico_ranking02.png);
-			background-size: 40px auto;
-			background-position: center 13px;
-		}
-		
-		#home .recommend.ranking-genre li+li+li {
-			background-image: url(/contents/c/shop/image/ico_ranking03.png);
-		}
-		
-		#home .recommend.ranking-genre li+li+li+li {
-			background-image: url(/contents/c/shop/image/ico_ranking04.png);
-			background-position: center 22px;
-		}
-		
-		#home .recommend.ranking-genre li+li+li+li+li {
-			background-image: url(/contents/c/shop/image/ico_ranking05.png);
-		}
-		
-		#home .recommend.ranking-genre .img_box a {
-			height: 166px;
-		}
-		
-		@media screen and (max-width: 767px) {
-			#home .recommend.ranking-genre .item_list li {
-				padding: 30px 25px 12px 0!important;
-			}
-			#home .recommend.ranking-genre li {
-				background-image: url(/contents/c/shop/image/ico_ranking01_sp.png);
-				background-repeat: no-repeat;
-				background-position: 1rem 0;
-				background-size: 60px auto;
-			}
-			#home .recommend.ranking-genre li+li {
-				background-image: url(/contents/c/shop/image/ico_ranking02_sp.png);
-				background-size: 48px auto;
-				background-position: 1rem 2.3vw;
-			}
-			#home .recommend.ranking-genre li+li+li {
-				background-image: url(/contents/c/shop/image/ico_ranking03_sp.png);
-			}
-			#home .recommend.ranking-genre li+li+li+li {
-				background-image: url(/contents/c/shop/image/ico_ranking04.png);
-				background-size: 30px auto;
-				background-position: 1.8rem .7vw;
-			}
-			#home .recommend.ranking-genre li+li+li+li+li {
-				background-image: url(/contents/c/shop/image/ico_ranking05.png);
-			}
-			#home .recommend.ranking-genre .more_item_txt,
-			#home .recommend_in.direct-mail .more_item_txt {
-				font-size: .75rem;
-			}
-		}
-		/*ヘッダー表示調整(PC版)*/
-		
-		@media screen and (min-width: 768px) {
-			.header_logo {
-				width: 120px;
-				height: 30px;
-				top: 5px;
-			}
-			.header_top {
-				padding-top: 10px;
-				height: 80px;
-			}
-			.header_tell {
-				width: 530px;
-			}
-			.header_bottom {
-				padding-bottom: 8px;
-			}
-			.header_tell .note {
-				width: 260px;
-				margin: 6px 0 0;
-				padding: 4px;
-				font-size: 12px;
-				color: #fff;
-				letter-spacing: 0;
-				text-align: center;
-				background: #e67608;
-				border-radius: 3px;
-			}
-			#category .category_list>ul>li>div a,
-			#goods .category_list>ul>li>div a {
-				padding: 5px 30px 3px 50px !important;
-				font-size: 15px !important;
-				line-height: 1.25;
-			}
-			#category .category_list>ul>li>div a:after {
-				position: absolute;
-				right: 10px;
-				top: 18px;
-			}
-			#category .category_list>ul>li>div,
-			#goods .category_list>ul>li>div {
-				min-height: 50px !important;
-				height: 50px !important;
-			}
-			#category .category_list>ul>li>div a .category_list_img,
-			#goods .category_list>ul>li>div a .category_list_img {
-				top: 10px;
-				left: 10px;
-				width: 30px !important;
-				height: 30px !important;
-			}
-			.word_area {
-				margin-top: 8px;
-			}
-			#home .main_visual.pc_only {
-				padding: 14px 0 28px;
-			}
-		}
-		/* あなたへのおすすめ商品 */
-		
-		@media screen and (min-width: 768px) {
-			.recommend_list.item_list .img_box a {
-				height: 166px;
-			}
-		}
-		/* 特集バナー */
-		
-		#home .feature_bnrs li+li+li+li+li+li+li {
-			clear: both;
-		}
-		
-		#home .feature_bnrs li+li+li+li+li+li+li+li {
-			clear: none;
-		}
-		/* ランキングタイトル表示調整 */
-		
-		@media screen and (min-width: 768px) {
-			#home .recommend.ranking-genre,
-			#home .recommend {
-				padding-top: 60px;
-			}
-		}
-		
-		@media screen and (max-width: 767px) {
-			#home .recommend.ranking-genre,
-			#home .recommend {
-				margin-top: 30px;
-			}
-		}
-		
-		@media screen and (min-width: 768px) {
-			#home .side_widget {
-				margin-top: 0 !important;
-			}
-		}
-	</style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
@@ -411,46 +82,45 @@ $(function(){
 		<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="header_in cf">
 				<span m:id="l_equ_hierarchy_3_shop">
-			<h1 class="header_logo">
-				<a m:id="e_link_logo_shop_shop" href="/">
-					<span m:id="l_notEmp_shop_image_file_shop">
-						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+				
+				<div class="header_bottom changetop">
+				
+					<p class="header_username">ようこそ
+            <span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span><!-- <span m:id="b_wr_name_sei">山田</span><span>&nbsp;</span><span m:id="b_wr_name_mei">花子</span> --></a>
 					</span>
-				</a>
-				</h1>
-				<div class="header_top">
-					<div class="header_tell" class="viewS">
-						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-476 7時から22時（年中無休）" />
-						<p class="note">携帯電話からでも通話無料</p>
-					</div>
-					<!-- /.header_tel -->
-					<div class="header_contact">
-						<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
-					</div>
-					<!-- /.header_contact -->
+						<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+					</p>
+					<!-- /.header_username -->
 					<div m:id="l_pre_member_mypage_button_shop">
 						<div class="header_mypage viewPc">
 							<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
 						</div>
 					</div>
 					<!-- /.header_mypage -->
-					<div class="header_ucan">
-						<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+				<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
+				<!-- /.header_begginer -->
+				<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
+				<!-- /.header_guide -->
+
+					<div class="header_memberAdd">
+						<a m:id="e_link_login_shop" href="memberLogin.html" >新規会員登録</a>
 					</div>
-					<!-- /.header_ucan -->
+
+					<div class="header_contact">
+						<a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+					</div>
+					<!-- /.header_contact -->
 				</div>
-				<!-- /.header_top -->
-				<div class="header_bottom">
-					<p class="header_username">ようこそ
-						<span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a>
+				<!-- /.header_bottom -->
+				<div class="header_top_wrap">
+					<div class="header_top">
+						<p class="header_logo">
+      				<a m:id="e_link_logo_shop_shop" href="/">
+      					<span m:id="l_notEmp_shop_image_file_shop">
+      								<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
 						</span>
-						<span m:id="l_notPre_login_member_name">ゲスト</span>さん
+      				</a>
 					</p>
-					<!-- /.header_username -->
-					<p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
-					<!-- /.header_begginer -->
-					<p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
-					<!-- /.header_guide -->
 					<div class="header_search">
 						<div class="header_search_in cf">
 							<form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
@@ -469,22 +139,45 @@ $(function(){
 					</div>
 
 					<!-- /.header_search -->
+						<div class="search_area cf">
+						<div class="search_area_in cf">
+							<div class="search_area_input_wrap">
+								<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
+									<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+									<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名・キーワードで検索" type="text" name="keyword" maxlength="200" value="商品名・キーワードで検索"
+										 autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+									<div class="box_02 icon-search"><input type="submit" value="検索" id="search_btn_pc" ></div>
+								</form>
+								<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+									<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+									<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+									<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+								</form>
+							</div>
+							</div>
+					</div>
+					<!-- /.search_area -->
+
+					<!-- ▼▼▼トレンド商品▼▼▼ 
+					<span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span>
+					 ▲▲▲トレンド商品▲▲▲ -->
+
 					<span m:id="l_equ_hierarchy_3_shop">
-					<div class="header_menu hvr-grow" class="clearfix">
+					<div class="header_menu" class="clearfix">
                         <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
-                            <span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
+                            <span class="header_bag_btn"><span class="icon-cart"><img src="/contents/c/shop/image/btn_cart_icon.svg" alt=""></span><span class="header_bag_txt">お買い物<br>かご</span></span>
                         </a>
                         <p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
 					</p>
 				</div>
 				<!--/.header_menu-->
 				</span>
-				<div class="header_login hvr-grow">
+				<div class="header_login">
 					<ul class="header_list_02">
 						<div m:id="l_pre_member_logout_button_shop">
 							<li id="header_logout">
 								<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
-									<p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
+									<p class="header_logout_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_logout_icon.svg" alt=""></span><span class="header_logout_txt">ログアウト</span></p>
 								</a>
 							</li>
 						</div>
@@ -496,15 +189,29 @@ $(function(){
 						<div m:id="l_notPre_member_login_button_shop">
 							<li id="header_login">
 								<a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">
-									<p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
+									<p class="header_login_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_login_icon.svg" alt=""></span><span class="header_login_txt">ログイン</span></p>
 								</a>
 							</li>
 						</div>
 					</ul>
 				</div>
 				<!-- /.header_login -->
+				<div class="header_member viewPc">
+					<p class="header_member_btn"><a href="/shop/memberAdd.do" class="member_bt" title=""><span class="icon-member"><img src="/contents/c/shop/image/btn_member_icon.svg" alt=""></span><span class="header_member_txt">新規<br>会員登録</span></a></p>
 			</div>
-			<!-- /.header_bottom -->
+					<!--<div class="header_tell" class="viewS">
+						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-186 6時&#xFF5E;22時（年中無休）" />
+						<p class="note">携帯電話からでも通話無料</p>
+			</div>
+					 /.header_tel -->
+
+					<!--<div class="header_ucan">
+						<a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+						</div> -->
+					<!-- /.header_ucan -->
+					</div><!-- /.header_top -->
+				</div><!-- header_top_wrap -->
+
 			<div class="header_signup" style="display: none;">
 				<div m:id="l_notPre_member_login_shop">
 					<ul class="header_list_01">
@@ -615,37 +322,6 @@ $(function(){
 	<!--header_in-->
 </header>
 <!--header-->
-	<div class="search_area cf">
-		<div class="search_area_in cf">
-			<div class="search_area_input_wrap">
-				<form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
-					<input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-					<div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や気になる言葉をご入力ください" type="text" name="keyword" maxlength="200" value="商品名や気になる言葉をご入力ください"
-						 autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
-					<div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
-				</form>
-				<form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
-					<input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
-					<input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
-					<input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
-				</form>
-			</div>
-			<div class="word_area">
-				<p class="word_area_tit">よく検索されるキーワード</p>
-				<ul class="word_area_list">
-					<li><a href="/item_manganihon/">まんが日本昔ばなし</a></li>
-					<li><a href="/item_DCX01/">昭和ラヂオ</a></li>
-					<li><a href="/item_DWR02/">富士鷹コードバン財布</a></li>
-					<li><a href="/item_DCC10/">みみもとくんプレミアム</a></li>
-					<li><a href="/bousai/">防災用品</a></li>
-					<li><a href="/item_DGB00/">イージ・ウォーク</a></li>
-					<li><a href="/item_DIA1L/">金華さば</a></li>
-					<li><a href="/syokuhin/">おいしい食卓</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- /.search_area -->
 	<!-- InstanceBeginEditable name="contents" -->
 	<div id="contents" class="contents_b">
 		<div id="contents_in" class="cf">
