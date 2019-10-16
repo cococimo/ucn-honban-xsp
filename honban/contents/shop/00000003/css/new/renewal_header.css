@@ -10,6 +10,7 @@
 .search_area_input_wrap {position:relative;width:574px;}
 .search_area_input_wrap input[name=keyword] {
 	width: 100%;
+	height: 42px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: #ffe0b8;
@@ -61,10 +62,10 @@
 =========================================== */
 @media print, screen and (min-width: 767px) {
 	/*header_layout*/
-	.header_logo a {padding-top: 5px;}
-	.header_top_wrap {background:#fff1df;height: 80px;width: auto;margin-left: -500%;margin-right: -500%;
+	.header_logo a {padding-top: 0;}
+	.header_top_wrap {background:#fff1df;position:relative;height: 80px;width: auto;margin-left: -500%;margin-right: -500%;
 		display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;clear:both;}
-	.header_top{width:1200px;letter-spacing: 0;overflow:visible;padding-top:24.5px;position: absolute;right: 0;top:40px;margin: auto;display: flex;}
+	.header_top{width:1200px;letter-spacing: 0;height:80px;overflow:visible;padding-top:18px;position: absolute;right: 0;top:0;bottom:0;left:0;margin: auto;display: flex;}
 	.header_bottom.changetop {width:1200px;display:flex;justify-content: flex-end;padding-bottom: 0;padding-top: 10px;font-size: 14px !important;}
 
 	/*header_bottom.changetop_content*/
@@ -78,10 +79,12 @@
 	.header_username {font-size: 18px !important;}
 	.header_username {min-width: initial;margin-right: 15px;}
 	.header_username .mypage_bt span { vertical-align: baseline; }
-	.header_begginer,.header_guide,.header_memberAdd,.header_contact {font-size: 14px !important;margin-left:0 !important;}
-	.header_mypage {margin:0 !important;padding:0;display: block;float: left;line-height: 36px;width:110px;}
+	.header_begginer,.header_guide,.header_memberAdd,.header_contact,.header_mypage {font-size: 1.1em !important;margin-left:0 !important;}
+	.header_begginer {width: auto;padding-right: 10px;}
+	.header_mypage {width:auto;margin:0 !important;padding-right:10px;display: block;float: left;line-height: 36px;}
 	.header_memberAdd {display: none !important;}
-	.header_guide {width:122px;}
+	.header_guide {width:auto;padding-right: 10px;}
+	.header_contact{width:auto;}
 
 	/*header_top*/
 	.header_menu,.header_login,.header_logout,.header_member {margin-left: 10px;float: left;}
