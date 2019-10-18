@@ -761,10 +761,23 @@ function initCorners() {
 <link rel="stylesheet" href="../../../contents/shop/00000006/common_sp/common_kigokochi02/slick_slide.css" type="text/css"/></link>
 </link>
 <script type="text/javascript" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/slick_slide.js"></script>
+
+
+<!-- メインビジュアル　カルーセル（PC用）ここから -->
+<style>
+  /* SP版で表示 */
+  @media only screen and (max-width: 640px) {
+    #contents .wrap_main.wrap_pc {min-width: 100%;max-width: 100%;}
+    #contents .wrap_pc {display: block;height: auto;width: auto;}
+    #contents .wrap_main {padding-top: 0;}
+    #contents .wrap_main .slick-prev {left: 3vw !important;}
+    #contents .wrap_main .slick-next {right: 3vw !important;}
+  }
+</style>
+
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
 
-<!-- メインビジュアル　カルーセル（PC用）ここから -->
 
 
 		<div class="mainimages">
@@ -802,22 +815,14 @@ function initCorners() {
 	</div>
 
 </div>
-<div class="wrap_main wrap_sp">
-	<div class="main" id="wmainimages">
-
-
 
 <!-- メインビジュアル（SP用）ここから -->
-
-
+<!-- <div class="wrap_main wrap_sp">
+	<div class="main" id="wmainimages">
 <div class="mainimagessp">
-
-
-
-<!--
+<!-＊
       <div><a href="/shop/static/review/?il=top_review_carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/review_sp.jpg" alt="期間限定！レビューを書いてポイントGETキャンペーン" /></a></div>
-
--->
+＊->
       <div><a href="/shop/static/feature_in12/?il=top_feature_in12_carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/feature_in12/feature_in12_top_sp.jpg" alt="「着心地のいい服 夏」のパンツを、スタッフが着用してみました！" /></a></div>
 
 
@@ -826,19 +831,15 @@ function initCorners() {
 
       <div><a href="/shop/category/001001008/list/?il=top-newitem-carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/midsummer_brand_2019_sp.jpg" alt="盛夏の新作アイテムはこちら" /></a></div>
 
-
-
-<!--20190924
-     <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654&il=top-catalog-carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/sp_summar_catalog_2019.jpg" alt="カタログのお申込み" /></a></div>-->
+<!-＊20190924
+     <div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654&il=top-catalog-carousel" class="wrap_sp" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/sp_summar_catalog_2019.jpg" alt="カタログのお申込み" /></a></div>＊->
 
 <div><a href="/shop/static/feature25/?il=top_feature25_carousel" class="wrap_sp" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature25/sp/main-visual.jpg" alt="“着心地がいい服”の素材" /></a></div>
 
-  
-</div>
-
-
 </div>
 </div>
+</div> -->
+<!-- メインビジュアル（SP用）ここまで -->
 <link m:id="css_file" rel="stylesheet" type="text/css" href="../../../contents/shop/00000006/common_sp/common_kigokochi02/functionality.css">
 		<span m:id="l_pre_standardCategory">
 		<span m:id="l_notEmp_standardCategory_childCategories">
