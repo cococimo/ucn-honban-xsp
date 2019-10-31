@@ -9042,7 +9042,8 @@ input[type=radio] {
 		font-size: 21px;
 		background: url(/contents/c/shop/image/ico_tel01_sp.png) no-repeat left center;
 		background-size: 27px auto;
-		width: 175px;
+		font-size: 21px;
+		width: 204px;
 		margin: 0 auto;
 		padding-left: 30px;
 		text-align: center;
@@ -9261,11 +9262,8 @@ input[type=radio] {
 	}
 }
 
-/*▼▼スマホ版ヘッダー固定*/
+/*▼▼スマホ版ヘッダー固定
 @media screen and (max-width: 767px){
-
-/*	#container {padding-top:72px !important;}
-	#contents_in {padding-top:72px !important;}*/
 	body {padding-top:72px !important;}
 	#header {
 	    position: fixed;
@@ -9276,9 +9274,8 @@ input[type=radio] {
 	}
 	.header_guide, .header_login, .header_menu, .header_search {position: fixed;}
 	.header_item_search_box {position: fixed;}
-	/*#footer,.footer {z-index: 1 !important;}*/
 }
-/*▲▲スマホ版ヘッダー固定*/
+▲▲スマホ版ヘッダー固定*/
 
 /*▼▼スマホ版 footer追従*/
 @media screen and (max-width:767px) {
@@ -9367,4 +9364,3 @@ input[type=radio] {
 	display: none;
 }
 /*▲▲▲ヘッダー_お買い物ボタン 非表示 */
-

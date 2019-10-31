@@ -180,12 +180,14 @@ $(function () {
 			var href = $(this).attr('href');
 			var target = $(href === '#' || href === '' ? 'html' : href);
 			var position;
+			position = target.offset().top;
 
-			if (spFlag) {
-				position = target.offset().top - navTop;
-			} else {
-				position = target.offset().top;
-			}
+			// SP版ヘッダー固定--ページ内リンク調整
+			// if (spFlag) {
+			// 	position = target.offset().top - navTop;
+			// } else {
+			// 	position = target.offset().top;
+			// }
 
 			$('body,html').animate({ scrollTop: position }, speed, mode);
 		}
