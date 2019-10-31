@@ -99,6 +99,7 @@
 	.header_logout_btn,
 	.header_member_btn {background:none;background-color: rgb(255,0,0,0);position: relative;width: 108px;height: 47px;z-index: 3;transition: all 300ms 0s ease;}
 	.header_menu a:hover {z-index: 1;}
+	.header_menu a {background:rgba(0,0,0,0) !important;position: relative;z-index: 10 !important;}
 	.header_menu a + .header_bag_btn .header_bag_txt,
 	.header_login_btn a .header_login_txt,
 	.header_logout_btn a .header_logout_txt,
@@ -304,6 +305,6 @@
 	.search_area {display: none;}
 	.header_menu a {width: 58px;background-image: url(/contents/c/shop/image/btn_cart_sp.png);background-size: cover;}
 	.header_menu,.header_login{margin-top:0;}
-	.header_top{border-bottom:none;height:80px;}
+	.header_top{border-bottom:none;height:0;}
 	.header_memberAdd {display: none !important;}
 }
