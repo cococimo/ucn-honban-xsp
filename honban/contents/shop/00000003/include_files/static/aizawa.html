@@ -14,7 +14,43 @@
 	  	width: 100%;
 	  	float: none;
 	  	display: block;
-  	}
+    }
+    .header_in.cf {
+      overflow:visible;
+    }
+    @media screen and (max-width: 640px) {
+      h1.grid-100 span img {width:220px;}
+      .a-01 .intro-block {width: 100%;}
+      .a-04 .item-section .border-box-02 .img-adjust-02 {width: 17px;}
+      .a-03 .border-box-01 .mobile-grid-50 h1  {width:82px;}
+      .a-07 .box-title img.img-two {width: 225px;}
+      .a-07 .box-title img.img-one {width: 198px;}
+      .a-07 .box-title img.img-three {width: 416px;}
+      .item_list li:nth-child(n+3) {display: block;}
+    }
+    
+    /* 180913 完売対応 */
+    .btn-01.kanbai {
+      background:#6d6d6d;
+    }
+    .btn-01.kanbai:hover {
+      color:#fff !important;
+    }
+    #content .a-02 .item-section .img-block, .a-03 .item-section .img-block {
+      height:134px;
+      width:auto;
+    }
+    @media screen and (max-width: 640px) {
+      #content .a-02 .item-section .img-block, .a-03 .item-section .img-block {
+        height:auto;
+        width:auto;
+      }
+    }
+  @media print, screen and (min-width: 768px) {
+     .recommend_list.item_list .img_box a {
+        height: 228px;
+      }
+    }
   </style>
 	<span filename="goodsDetail_head"></span>
 	<!--/ インクルード領域  -->
@@ -27,9 +63,9 @@
   <div id="content" class="init">
     <div id="content_wrap">
       <div class="content_inner grid-container">
-        <div class="whats_special">【cococimoの特集とは？】メイドインジャパンの名品、知られざる海外の逸品など、「ココチモ-COCOCIMO」オススメの商品をこだわりを持ってご紹介するページです。</div>
+        <!--div class="whats_special">【cococimoの特集とは？】メイドインジャパンの名品、知られざる海外の逸品など、「ココチモ-COCOCIMO」オススメの商品をこだわりを持ってご紹介するページです。</div-->
         <article class="a-style-01 a-01 grid-100">
-          <h1><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_01-2x.png" alt="機能的で美しいお弁当箱の理想型　工房アイザワのステンレス製お弁当箱"></h1>
+          <h1 style="text-align:center;"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_01-2x.png" alt="機能的で美しいお弁当箱の理想型　工房アイザワのステンレス製お弁当箱"></h1>
           <p class="intro-block">
             匂いが移らず、しっかり密閉できて、衛生的。<br>
             軽くて丈夫でお手入れも簡単と、いいこと尽くめのステンレス製お弁当箱。こんなスグレモノを作っているメーカーは、何と国内に１社しかないのです。国内唯一ということは、世界にも１つということ。日本特有のお弁当文化に革新をもたらした、工房アイザワのお弁当箱をご紹介します！
@@ -37,26 +73,31 @@
         </article>
         <article class="a-style-01 a-02 grid-container gc-pd-0">
           <h1 class="grid-100"><span><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_02-2x.png" alt="商品ラインナップ" width="220"></span></h1>
-          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_05-2x.jpg" alt="角形ランチボックス中1段" width="214" class="img-block sp-img-100">
-            <h1>■角形ランチボックス中1段</h1>
-            <p class="price-block">3,670円</p>
-            <p class="btn-block"><a href="/shop/c/e/DVW31/" class="btn-01">詳しくはこちら</a></p>
-          </section>
           <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_06-2x.jpg" alt="角形ランチボックス小1段" width="214" class="img-block sp-img-100">
             <h1>■角形ランチボックス小1段</h1>
-            <p class="price-block">2,808円</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD23/" class="btn-01">詳しくはこちら</a></p>
+            <p class="price-block">3,456円</p>
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
+            <!-- <p class="btn-block"><a href="/shop/c/e/DHBX5/" class="btn-01">詳しくはこちら</a></p> -->
           </section>
-          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_08-2x.jpg" alt="丸形ランチボックス2段" width="214" class="img-block sp-img-100">
-            <h1>■丸形ランチボックス2段</h1>
-            <p class="price-block">5,184円</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD21/" class="btn-01">詳しくはこちら</a></p>
-          </section>
-          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_09-2x.jpg" alt="角長ランチボックス スリム2段" width="214" class="img-block sp-img-100">
+            <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_09-2x.jpg" alt="角長ランチボックス スリム2段" width="214" class="img-block sp-img-100">
             <h1>■角長ランチボックス スリム2段</h1>
             <p class="price-block">5,184円</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD22/" class="btn-01">詳しくはこちら</a></p>
+            <!-- <p class="btn-block"><a href="/item_lunchbox_slim/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
+          </section>        
+          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_05-2x.jpg" alt="角形ランチボックス中1段" width="214" class="img-block sp-img-100">
+            <h1>■角形ランチボックス中1段</h1>
+            <p class="price-block">4,320円</p>
+            <!-- <p class="btn-block"><a href="/item_DVW31/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
           </section>
+          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_08-2x.jpg" alt="丸形ランチボックス" width="214" class="img-block sp-img-100">
+            <h1>■丸形ランチボックス</h1>
+            <p class="price-block">6,264円</p>
+            <!-- <p class="btn-block"><a href="/shop/c/e/DHBX4/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
+          </section>
+
         </article>
         <article class="a-style-01 a-03 grid-container">
           <div class="border-box-01 cf">
@@ -265,30 +306,34 @@
         </article>
         <article class="a-style-01 a-02 grid-container gc-pd-0 a-02-b">
           <h1 class="grid-100"><span><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_02-2x.png" alt="商品ラインナップ" width="220"></span></h1>
-          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_05-2x.jpg" alt="角形ランチボックス中1段" width="214" class="img-block sp-img-100">
-            <h1>■角形ランチボックス中1段</h1>
-            <p class="price-block">3,670円</p>
-            <p class="spec-block">160×134×50mm　容量670ml<br>＊仕切り板１枚付き</p>
-            <p class="btn-block"><a href="/shop/c/e/DVW31/" class="btn-01">詳しくはこちら</a></p>
-          </section>
           <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_06-2x.jpg" alt="角形ランチボックス小1段" width="214" class="img-block sp-img-100">
             <h1>■角形ランチボックス小1段</h1>
-            <p class="price-block">2,808円</p>
+            <p class="price-block">3,456円</p>
             <p class="spec-block">130×115×47mm　容量360ml<br>＊仕切り板１枚付き<br>小さいけれど意外に入ります。ちょっと豪華なおかず入れとしても。</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD23/" class="btn-01">詳しくはこちら</a></p>
-          </section>
-          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_08-2x.jpg" alt="丸形ランチボックス2段" width="214" class="img-block sp-img-100">
-            <h1>■丸形ランチボックス2段</h1>
-            <p class="price-block">5,184円</p>
-            <p class="spec-block">133φ×93mm(2段)　容量400ml×2<br>＊仕切り板１枚付き<br>たっぷり入る２段式。行楽やアウトドアライフのお供にも最適。</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD21/" class="btn-01">詳しくはこちら</a></p>
+            <p class="btn-block"><a href="/shop/c/e/DHBX5/" class="btn-01">詳しくはこちら</a></p>
           </section>
           <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_09-2x.jpg" alt="角長ランチボックス スリム2段" width="214" class="img-block sp-img-100">
             <h1>■角長ランチボックス スリム2段</h1>
             <p class="price-block">5,184円</p>
             <p class="spec-block">200×65×85mm　容量350ml×2<br>＊仕切り板１枚付き<br>学生カバンや通勤カバンの底にすっぽり入る細長型。押し寿司、のり巻きやサンドイッチにもぴったり！</p>
-            <p class="btn-block"><a href="/shop/c/e/DVD22/" class="btn-01">詳しくはこちら</a></p>
+            <!-- <p class="btn-block"><a href="/item_lunchbox_slim/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
           </section>
+          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_05-2x.jpg" alt="角形ランチボックス中1段" width="214" class="img-block sp-img-100">
+            <h1>■角形ランチボックス中1段</h1>
+            <p class="price-block">4,320円</p>
+            <p class="spec-block">309×134×50mm　容量670ml<br>＊仕切り板１枚付き</p>
+            <!-- <p class="btn-block"><a href="/item_DVW31/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
+          </section>
+          <section class="item-section grid-25 mobile-grid-100"><img src="contents/shop/00000003/image/static/aizawa_image/aizawa_img_08-2x.jpg" alt="丸形ランチボックス" width="214" class="img-block sp-img-100">
+            <h1>■丸形ランチボックス</h1>
+            <p class="price-block">6,264円</p>
+            <p class="spec-block">133φ×93mm(2段)　容量400ml×2<br>＊仕切り板１枚付き<br>たっぷり入る２段式。行楽やアウトドアライフのお供にも最適。</p>
+            <!-- <p class="btn-block"><a href="/shop/c/e/DHBX4/" class="btn-01">詳しくはこちら</a></p> -->
+            <p class="btn-block"><span class="btn-01 kanbai">完売しました</span></p>
+          </section>
+
         </article>
       </div>
     </div>
