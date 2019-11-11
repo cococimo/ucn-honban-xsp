@@ -24,7 +24,7 @@
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
-<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css?20191107" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
@@ -59,6 +59,7 @@ $(function(){
 
 <![endif]-->
 
+
 <style>
 	.header_logo:hover {
 	  opacity: 1;
@@ -79,63 +80,43 @@ $(function(){
 		.cmn_tit05{font-size:20px;margin:0 0 10px;}
 		.cmn_step04{margin:5px 0 5px;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:stretch;align-items:center;letter-spacing:.01rem;}
 		#cart .cart_recalculate{overflow:hidden;margin:0 0 20px;padding:5px;background-size:4px;font-size:14px;}
-		.cmn_step04 .cmn_step_item{width:140px;font-size:14px;}
+		.cmn_step04 .cmn_step_item{width:120px;font-size:14px;}
 		.cmn_step04 .cmn_step_item:nth-child(2){width:150px;}
 		.cmn_step04 .cmn_step_item:nth-child(3){width:170px;}
-		.cmn_step04 .cmn_step_item:before{top:5px;left:10px;width:15px;height:13px;font-size:8px;}
-		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 36px;}
+		.cmn_step04 .cmn_step_item:before{display:none;top:5px;left:10px;width:15px;height:13px;font-size:8px;}
+		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 7.5px;text-align: center;}
 		.cmn_step04 .cmn_step_item:after{border-width:14px 0 14px 16px;right:-16px;}
 
-			
 		/*追加_cart.do*/
 		.cmn_step {margin: 4px 0 4px;}
 		.cmn_tit05 {margin: 0 0 20px;padding: 10px 0;}
 		.contents_b {padding-top: 10px;}
 		.cmn_tit01 {font-size: 20px;}
 		.cmn_tit02 {font-size: 20px;}
-
 		}
 		@media screen and (max-width: 767px) {
 			body {padding-top: 64px !important;/*margin-bottom:64px !important;*/}
 			.header {height: auto;}
 			.contents_b {padding-top: 5px;}
 			.header_logo {width: 80px;}
-
 			.header_in,#header {position: static;}
 			.header_logo {top:5px;z-index:1;}
-			.header_top_cart {
-				position: absolute;
-				top: 3px;
-				right: 0;
-				padding-left: 110px;
-				width: 100%;
+			.header_top_cart {position: absolute;top: 3px;right: 0;padding-left: 110px;width: 100%;
 			}
 			.cmn_step {margin: 1.5px 0 20px;}
 			.cmn_step_item {font-size: 11px;border-right: none;}
-   		 #cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+			#cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			.cart_membership,
 			.footer_info_consult {display: none !important;}
 			.cmn_step04 .cmn_step_item {width: 20%;margin-right: 16px;}
-			.cmn_step_item:after {
-			    position: absolute;
-			    content: '';
-			    top: 0;
-					right: -16px;
-			    width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 25px 0 25px 16px;
-			    border-color: transparent transparent transparent #e6e6e6;
-			}
+			.cmn_step_item:after {position: absolute;content: '';top: 0;right: -16px;width: 0;height: 0;border-style: solid;border-width: 25px 0 25px 16px;border-color: transparent transparent transparent #e6e6e6;}
 			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
 			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
-
 			/*追加_cart.do*/
+
 			.cmn_tit05 {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			/*.cmn_tit05 {margin: 0 -10px;padding: 13px 10px;border: 0;background: #f39801;color: #fff;font-size: 20px;}*/
 		}
-
-
 		@media screen and (max-width: 460px) {
 			body {padding-top: 43px !important;}
 			.header {height: auto;}
@@ -176,217 +157,629 @@ $(function(){
 			#member .cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;}
 			.cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;letter-spacing: -0.05em;}
 		}
-
-
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-		.cmn_form_table02 th {background: #dddddd;}
+		.cmn_form_table02 th {background: #e8f8ff;}
 
 	@media print,screen and (min-width: 767px){
 		/*テーブル調整*/
-		.cmn_form_table01 th { background: #dddddd;border:1px solid #bfbfbf;}
+		.cmn_form_table01 th {background: #e8f8ff;border:1px solid #bfbfbf;}
 		.cmn_form_table01 {border-bottom:1px solid #bfbfbf;}
-		.cmn_form_table01 td {border:1px solid #bfbfbf;}
+		.cmn_form_table01 td {border:1px solid #bfbfbf;padding:30px 20px;}
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-
-		}
-		@media screen and (max-width: 767px){
-			.cmn_tit01 {font-size: 14px;}
-			.cmn_form_table01 th .suffix {font-size: 12px;}
-			.cmn_form_table01 th { background: #dddddd;}
-			.cmn_form_table01 th,
-			.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
-			#member .required {font-size: 12px;}
-		}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_tit01 {font-size: 14px;}
+		.cmn_form_table01 th .suffix {font-size: 12px;}
+		.cmn_form_table01 th { background: #e8f8ff;}
+		.cmn_form_table01 th,
+		.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
+		#member .required {font-size: 12px;}
+	}
 
 </style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <style>
-.memadd_table_01 input[type=text],
-.memadd_table_01 input[type=password] {
-	margin: 0;
-	font-size: 16px;
-	border: 1px solid #d8d8d8;
-	background-color: #fff;
-	box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
-	max-height: 34px;
-	padding: 5px .5em;
-	letter-spacing: 0;
-  width:100%;
-}
-.memadd_table_01 .viewPc.btn {vertical-align:middle;text-align:center;width:460px;}
-.memadd_table_01 .error {padding-top: 10px;display: inline-block;}
 
-.memadd_table_01 th { background: #dddddd;border:1px solid #bfbfbf;width: 240px;padding: 14px;}
-.memadd_table_01 th .exp {font-size:14px;}
-.memadd_table_01 td { border:1px solid #bfbfbf;padding:14px;}
-
-.is-active {display:inline-block;}
-#more_login_text {display:none;}
-#more_login_text > .error{margin-top:30px;}
-
-#email_area .sample_notice {margin-top:5px;font-size: .8em;}
-#email_area a {color:#d63d38;}
-
-@media screen and (max-width: 767px){
-  .memadd_table_01 th,
-  .memadd_table_01 td {width:100%;display:block;border:none;text-align: left;background:none;padding-bottom:0;line-height:1.4;}
-  .memadd_table_01 td .bor_bottom {padding-top:0;}
-  .memadd_table_01 th .exp {padding-left:10px;}
-  .more_login_btn.cmn_btn {font-size: 15px;width: 200px;padding: 0 10px;}
-  .orderInputLogin {padding: 10px;border: 1px solid #ccc;}
-}
-/*メールアドレス再確認*/
-.output_email_confirm_wrap {
-	border-bottom: 1px solid #ccc;
-	display: inline-block;
-	vertical-align: middle;
-	width: 500px;
-	padding-bottom: 5px;
-}
-.output_email_confirm_wrap #output_email_confirm {
-	font-weight: bold;
-	font-size: 1.4em;
-	word-break : break-all;
-}
-@media screen and (max-width: 767px){
-	.output_email_confirm_wrap {
-		width: 100%;
+	/* page-layout */
+	@media print,screen and (min-width: 767px){
+		.cmn_form_table01,
+		.memadd_table_01,
+		.input_info_dl,
+		.user_info_change,
+		#cart .input .cmn_tit01,
+		.error.reswfon_m,
+		.cart_intro_tit {max-width:810px;}
+		.cmn_form_table01 th {width:260px;}
 	}
-
-	.cmn_form_table01 td .input_set.input_set_name,
-	.cmn_form_table01 td .input_set.input_set_kana {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		padding-left: 0;
+	/* placeholder */
+	.cmn_form_table01 td #post_code::-webkit-input-placeholder,
+	.cmn_form_table01 td #dst_post_code::-webkit-input-placeholder,
+	.cmn_form_table01 td input[name=card_number]::-webkit-input-placeholder,
+	.cmn_form_table01 td input[type=password]::-webkit-input-placeholder,
+	.cmn_form_table01 td input[type=text]::-webkit-input-placeholder {
+		color: #868686 !important;
 	}
+	.cmn_form_table01 td #post_code::-moz-placeholder,
+	.cmn_form_table01 td #dst_post_code::-moz-placeholder,
+	.cmn_form_table01 td input[name=card_number]::-moz-placeholder,
+	.cmn_form_table01 td input[type=password]::-moz-placeholder,
+	.cmn_form_table01 td input[type=text]::-moz-placeholder {
+		color: #868686 !important;
+	}
+	.cmn_form_table01 td #post_code:-ms-input-placeholder,
+	.cmn_form_table01 td #dst_post_code:-ms-input-placeholder,
+	.cmn_form_table01 td input[name=card_number]:-ms-input-placeholder,
+	.cmn_form_table01 td input[type=password]:-ms-input-placeholder,
+	.cmn_form_table01 td input[type=text]:-ms-input-placeholder {
+		color: #868686 !important;
+	}
+	.cmn_form_table01 td #post_code::placeholder,
+	.cmn_form_table01 td #dst_post_code::placeholder,
+	.cmn_form_table01 td input[name=card_number]::placeholder,
+	.cmn_form_table01 td input[type=password]::placeholder,
+	.cmn_form_table01 td input[type=text]::placeholder {
+		color: #868686 !important;
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			color: #868686 !important;
+		}
 
+		.cmn_form_table01 td input[name=dst_tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::-webkit-input-placeholder {
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::-moz-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]:-ms-input-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::placeholder{
+			color: #868686 !important;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+
+		.cmn_form_table01 td input[name=dst_tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::-webkit-input-placeholder {
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::-moz-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]:-ms-input-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=dst_tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=dst_tel_no3]::placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+	}
+	/* form-focus */
+	.cmn_form_table01 td #post_code:focus,
+	.cmn_form_table01 td #dst_post_code:focus,
+	.cmn_form_table01 td select:focus,
+	.cmn_form_table01 td input[type=text]:focus,
+	.cmn_form_table01 td input[name=security_code]:focus,
+	.cmn_form_table01 td input[name=card_number]:focus,
+	.cmn_form_table01 td input[name=card_exp_month]:focus,
+	.cmn_form_table01 td input[name=card_exp_year]:focus,
+	.memadd_table_01 td input[type=text]:focus,
+	.memadd_table_01 td input[type=password]:focus,
+	.cmn_form_table01 td #tel01:focus,
+	.cmn_form_table01 td #tel02:focus,
+	.cmn_form_table01 td #tel03:focus, 
+	.cmn_form_table01 td #year:focus,
+	.cmn_form_table01 td select:focus {
+		border:1px solid #00a3d2 !important;
+		outline: none;
+		opacity: 1 !important;
+	}
+	
+	/* form-pars*/
+	.cmn_form_table01 td #post_code,
+	.cmn_form_table01 td #dst_post_code,
+	.cmn_form_table01 td select,
+	.cmn_form_table01 td input[type=text],
+	.cmn_form_table01 td input[name=security_code],
+	.cmn_form_table01 td input[name=card_number],
+	.cmn_form_table01 td input[name=card_exp_month],
+	.cmn_form_table01 td input[name=card_exp_year],
+	.memadd_table_01 td input[type=text],
+	.memadd_table_01 td input[type=password],
+	.cmn_form_table01 td input[name=tel_no1],
+	.cmn_form_table01 td input[name=tel_no2],
+	.cmn_form_table01 td input[name=tel_no3],
+	.cmn_form_table01 td input[name=dst_tel_no1],
+	.cmn_form_table01 td input[name=dst_tel_no2],
+	.cmn_form_table01 td input[name=dst_tel_no3],
+	.cmn_form_table01 td #tel01,
+	.cmn_form_table01 td #tel02,
+	.cmn_form_table01 td #tel03, 
+	.cmn_form_table01 td #year,
+	.cmn_form_table01 td select {
+		border-radius: 5px;
+		padding: .6em 0.7em;
+		font-size: 1em;
+		max-height: initial;
+		max-height: auto;
+	}
+	.cmn_form_table01 td .input_set {padding-top: 0;}
+
+	@media print,screen and (min-width: 767px){
+		.memadd_table_01 input[type=text],
+		.memadd_table_01 input[type=password],
+		.side_login_form input[type=text],
+		.side_login_form input[type=password] {
+			margin: 0;
+			font-size: 16px;
+			border: 1px solid #d8d8d8;
+			background-color: #fff;
+			box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
+			padding: 5px .5em;
+			letter-spacing: 0;
+			width:100%;
+			border-radius:5px;
+		}
+		.cmn_form_table01 td #post_code,
+		.cmn_form_table01 td input[type=password] {
+			width: 180px;
+		}
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=dst_tel_no1],
+		.cmn_form_table01 td input[name=dst_tel_no2],
+		.cmn_form_table01 td input[name=dst_tel_no3]{
+			width:155px;
+		}
+		.cmn_form_table01 td input[name=address1],
+		.cmn_form_table01 td input[name=address2],
+		.cmn_form_table01 td input[name=address3],
+		.cmn_form_table01 td input[name=login_id],
+		.cmn_form_table01 td input[type=password],
+		#cart .input_address02 input[name=dst_address1],
+		#cart .input_address02 input[name=dst_address2],
+		#cart .input_address02 input[name=dst_address3],
+		#cart .input_address02 input[name=dst_address4],
+		#cart .input input[name=email],
+		#cart .input input[name=email_confirm],
+		#cart .input_credit,
+		#cart .input_credit input[name=card_number] {width: 400px;}
+		#cart .input_credit select[name=card_brand] {width:220px;}
+		#cart .input_credit input[name=card_exp_month],
+		#cart .input_credit input[name=card_exp_year] {width:120px;}
+		.cmn_form_table01 td select[name=pay_time] {width:120px;}	
+		.cmn_form_table01 td input[name=name_sei],
+		.cmn_form_table01 td input[name=name_mei],
+		.cmn_form_table01 td input[name=name_sei_kana],
+		.cmn_form_table01 td input[name=name_mei_kana],
+		.cmn_form_table01 td input[name=dst_name_sei],
+		.cmn_form_table01 td input[name=dst_name_mei],
+		.cmn_form_table01 td input[name=dst_name_sei_kana],
+		.cmn_form_table01 td input[name=dst_name_mei_kana],
+		.cmn_form_table01 td #post_code,
+		.cmn_form_table01 td #dst_post_code {
+			margin-left:1.5em;
+			width:180px;
+		}
+		.cmn_form_table01 td input[name=name_sei_kana],
+		.cmn_form_table01 td input[name=name_mei_kana],
+		#cart .cmn_form_table01 td input[name=dst_name_sei_kana],
+		#cart .cmn_form_table01 td input[name=dst_name_mei_kana] {
+			margin-left: .5em;
+		}
+		.cmn_form_table01 td .input_set span {letter-spacing: 0.1em;}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=dst_tel_no1],
+		.cmn_form_table01 td input[name=dst_tel_no2],
+		.cmn_form_table01 td input[name=dst_tel_no3]{
+			width:30% !important;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=dst_tel_no1],
+		.cmn_form_table01 td input[name=dst_tel_no2],
+		.cmn_form_table01 td input[name=dst_tel_no3]{
+			width:29% !important;
+		}
+	}
+	/* require&suffix */
+	@media print,screen and (min-width: 767px){
+		.cmn_form_table01 th .optional, .cmn_form_table01 th .required,
+		.cmn_form_table01 th .suffix {
+			font-size: 12px;
+    		padding: 0 .5em;
+		}
+		.txt_float {width:100px;display: block;float:left;}
+	}
+	/* error */
+	.error {display: block;}
+	
+	/* login-form */
+	@media print,screen and (min-width: 767px){
+		.login_msg .add_h5 {border-bottom: 1px solid #000;padding-bottom:10px;margin-bottom:16px;}
+	}
+	.orderInputLogin {padding: 10px;border: 1px solid #ccc;}
+	.orderInputLogin .cmn_link01 {font-size:.85em;}
+	.orderInputLogin .memadd_table_01 th,
+	.orderInputLogin .memadd_table_01 td {width:100%;display:block;border:none;text-align:left;background:none;padding:14px;line-height:1.4;}
+	.orderInputLogin .memadd_table_01 th {font-size:1em;padding-bottom:5px;}
+	.orderInputLogin .memadd_table_01 td {padding-top:0; }
+	.orderInputLogin .memadd_table_01 td input[type=text],
+	.orderInputLogin .memadd_table_01 td input[type=password] {width: 100%;}
+	.orderInputLogin .more_login_btn.cmn_btn {font-size: 15px;width: 200px;padding: 0 10px;}
+	.orderInputLogin .login_btn {
+		max-width:340px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+	.orderInputLogin .memadd_table_01 .viewPc.btn {vertical-align:middle;text-align:center;}
+	.orderInputLogin .memadd_table_01 .error {padding-top: 10px;display: inline-block;}
+	.is-active {display:inline-block;}
+	#more_login_text {display:none;}
+	#more_login_text > .error{margin-top:30px;}
+	/* sei&mei */
 	.cmn_form_table01 td .input_set.input_set_name .prefix ,
-	.cmn_form_table01 td .input_set.input_set_kana .prefix {
-		display: none;
+	.cmn_form_table01 td .input_set.input_set_kana .prefix,
+	.cmn_form_table01 td .input_set .prefix {
+		position: static;
 	}
-	.cmn_form_table01 td .input_set.input_set_name .input_wrap,
-	.cmn_form_table01 td .input_set.input_set_kana .input_wrap {
-		padding-left: 0;
-		width: 48%;
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td .input_set .input_wrap {padding-left: 25px;}
+		.cmn_form_table01 td .input_set.input_set_name,
+		.cmn_form_table01 td .input_set.input_set_kana {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding-left: 0;
+		}
+		.cmn_form_table01 td .input_set.input_set_name .prefix ,
+		.cmn_form_table01 td .input_set.input_set_kana .prefix {
+			display: none;
+		}
+		.cmn_form_table01 td .input_set.input_set_name .input_wrap,
+		.cmn_form_table01 td .input_set.input_set_kana .input_wrap {
+			padding-left: 0;
+			width: 48%;
+		}
 	}
-}
-
-/*様　の表示崩れ修正*/
-.cmn_form_table01 td .input_set span {
-	letter-spacing: 0.1em;
-}
-/*プルダウンメニュー調整*/
-.cmn_form_table01 td #year,
-.cmn_form_table01 td select {
-	font-size: 1em;
-}
-.cmn_form_table01 td .select_box select {
-	max-width: 320px;
-	width: auto;
-}
-@media screen and (max-width: 767px){
-	.cmn_form_table01 input::-webkit-input-placeholder {color:#616161 !important;}
-	.cmn_form_table01 input::-moz-placeholder {color:#616161 !important;}
-	.cmn_form_table01 input::-ms-input-placeholder {color:#616161 !important;}
-	.cmn_form_table01 input::placeholder {color:#616161 !important;}
-}
-/*様方レイアウト修正*/
-.samakata {
-	background:#eee;
-	margin-top: 20px;
-	padding:10px;
-	width: 500px;
-}
-.cmn_form_table01 td .samakata .suffix {
-	letter-spacing: 0.1em;
-}
-.samakata .toggle_btn{
-	display: block;
-	cursor: pointer;
-	color:inherit;
-}
-@media screen and (max-width: 767px){
-	.samakata {
-		width: 100%;
+	/* postcode */
+	.btn_postcode {display: none !important;}
+	.cmn_form_table01 td #post_code,
+	.cmn_form_table01 td #dst_post_code {max-width: 180px;float:left;}
+	.input_set_post .post_notice{margin-top: 17px;padding-left: 20px;float: right;letter-spacing: 0;}
+	@media screen and (max-width: 767px) {
+		.cmn_form_table01 td #post_code,
+		.cmn_form_table01 td #dst_post_code {max-width: 45%;}
+		.cmn_form_table01 td .member_yubin {padding-bottom: 0;}
+		.input_set_post .post_notice{margin-top: 0;padding-top: 1.5%;padding-left: 10px;width: 53%;height: 2.8em;}
 	}
-}
-.delivery_wrap {
-	background:#eee;
-	margin-top: 20px;
-	padding:10px;
-	width: 100%;
-}
-.delivery_wrap table {
-	background:#fff;
-}
-.toggle_delive_btn {
-	display: block;
-	cursor: pointer;
-	color:inherit;
-}
-
-#sepDeliv0 {
-	margin-top: 20px;
-	overflow: hidden;
-}
-#sepDeliv0 > div {
-	width:48%;
-	float: left;
-}
-#sepDeliv0 > div:last-child {
-	float: right;
-}
-@media screen and (max-width: 767px){
-	.delivery_wrap {
-		width: 100%;
-
+	/* radio */
+	input[type="radio"] {
+		-webkit-appearance: none;
+		appearance: none;
+		position: relative !important;
+		border-radius: 24px;
+		border: 2px solid #4c4c4c;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 34px !important;
+		height: 34px !important;
+		vertical-align: middle;
+		margin: 8px 2px 8px 0px !important;
+		background:#fff;
+		outline: none;
 	}
-	#sepDeliv0 {
+	input[type="radio"]:checked:before {
+		position: absolute !important;
+		left: 40%;
+		top: 41%;
 		display: block;
+		margin: -5px 0 0 -5px;
+		content: "";
+		border-radius: 20px;
+		width: 16px;
+		height: 16px;
+		background: black;
 	}
-	#sepDeliv0 > div {
-		width:100%;
+	input[type="radio"]:focus:checked {border:2px solid #00a3d2 !important;}
+	.radio_wrap input[type="radio"] {margin-right: 1.2em !important;}
+	.cmn_form_table01 td .radio_wrap {width: 49%;}
+	/* radio - sex */
+	.sex_wrap {display: flex;}
+	.sex_wrap > span {display: inline-block;width:50%;}
+	.sex_wrap > span:nth-of-type(3) {width:0;}
+	.sex_wrap span:nth-of-type(2) {order: -1;}
+	@media screen and (max-width: 767px) {
+		.cmn_form_table01 td .sex_wrap .radio_wrap {width: auto;}
 	}
-	#sepDeliv0 > div {
-		width:100%;
-		float: left;
+	/* email */
+	.output_email_confirm_wrap {
+		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		vertical-align: middle;
+		width: 400px;
+		padding-bottom: 5px;
 	}
-	#sepDeliv0 > div:last-child {
-		float: right;
+	.output_email_confirm_wrap #output_email_confirm {
+		font-weight: bold;
+		font-size: 1.4em;
+		word-break : break-all;
 	}
-}
+	@media screen and (max-width: 767px){
+		.output_email_confirm_wrap {width: 100%;}
+	}
+	#email_area .sample_notice {margin-top:5px;font-size: .8em;}
+	#email_area .sample_notice a {color:#d63d38}
 
-
-
-/*生年月日修正*/
-@media screen and (max-width: 767px){
-	.cmn_form_table01 td.birthday_area {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
+	/* payment */
+	@media screen and (max-width: 767px) {
+		#payment_020 {padding-bottom: 0;}
+		#cart .input_credit .tr_security_code .btn {
+			font-size: 13px;
+			text-align: center;
+			text-decoration: none;
+			margin-top: 8px;
+			display: inline;
+			background: none;
+			line-height: 30px;
+			border-radius: 0;
+			width: auto;
+			color: #076194;
+    		text-decoration: underline;
+		}
 	}
-	.cmn_form_table01 td.birthday_area .suffix {
-		margin-left: .5em;
-		margin-right: .5em;
+	/* date of birth */
+	.cmn_form_table01 td #year,
+	.cmn_form_table01 td select {font-size: 1em;}
+	.cmn_form_table01 td .select_box select {max-width: 380px;width: auto;}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td.birthday_area {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		.cmn_form_table01 td #year {font-size: 12.5px;}
+		.cmn_form_table01 td.birthday_area .suffix {margin-left: .5em;margin-right: .5em;}
+		.cmn_form_table01 td.birthday_area select[name=month], .cmn_form_table01 td.birthday_area select[name=day] {width: 100%;max-width: 60px;}
+		.cmn_form_table01 td.birthday_area select {width: 100%;max-width: 38vw;}
 	}
-	.cmn_form_table01 td.birthday_area select[name=month], .cmn_form_table01 td.birthday_area select[name=day] {
-    	width: 100%;
-    	max-width: 60px;
+	/* samakata */
+	.samakata {background:#eee;margin-top: 20px;padding:10px;width: 500px;}
+	.cmn_form_table01 td .samakata .suffix {letter-spacing: 0.1em;}
+	.samakata .toggle_btn{display: block;cursor: pointer;color:inherit;}
+	.cmn_form_table01 td input[name=address_co_sei],
+	.cmn_form_table01 td input[name=address_co_mei],
+	.cmn_form_table01 td input[name=dst_address_co_sei],
+	.cmn_form_table01 td input[name=dst_address_co_mei] {margin-left: 10px !important;}
+	
+	@media screen and (max-width: 767px){
+		.samakata {width: 100%;}
+		.cmn_form_table01 td input[name=address_co_sei],
+		.cmn_form_table01 td input[name=address_co_mei],
+		.cmn_form_table01 td input[name=dst_address_co_sei],
+		.cmn_form_table01 td input[name=dst_address_co_mei] {margin-left: 0 !important;}
 	}
-	.cmn_form_table01 td.birthday_area select {
-    	width: 100%;
-    	max-width: 120px;
+	/* delivery */
+	.delivery_wrap {background:#eee;width: 100%;padding:14px;}
+	#cart .input_date_table02 {width: 100%;}
+	#cart .input_date_table02 td {background:#fff;}
+	#cart .input_date_table02 tr:last-child {margin-bottom:0 !important;}
+	@media print,screen and (min-width: 767px){
+		#cart .input_date_table02 tr:nth-child(1) {display: none;}
+		#cart .input_date_table02 tr {display: block;margin: 0 0 15px;border-bottom: 1px solid #e5e4e4;}
+		#cart .input_date_table02 td, #cart .input_date_table02 th {display: block;padding: 20px 15px;width: 100%;border-bottom:none;background:#fff;}
+		#cart .input_date_table02 tr td select {margin-left: 140px;width: 170px;}
+		#cart .input_date_table02 tr td:nth-child(1) {padding: 12px 10px;background: #feedb7;line-height: 1.4;}
+		#cart .input_date_table02 tr td:nth-child(2) {border-top: 1px solid #e5e4e4;border-bottom:none}
+		#cart .input_date_table02 tr td .prefix {display: inline-block;float: left;width: 140px;line-height: 50px;margin-right: -140px;}
+		#cart .input_date_table02 tr td:nth-child(3) {border-bottom:1px solid #f39800;border-top:none;padding-top:0}
+		#cart .input_date_table01 td label {font-size: .9em;}
+		#cart .input_date_table01 td label + label {margin-left: 20px;}
+		#cart #sepDeliv1 .input_date_table02 tr td select {width: 300px;}
 	}
-}
+	.toggle_delive_btn {display: block;cursor: pointer;color:inherit;}
+	#sepDeliv0 {overflow: hidden;}
+	#sepDeliv0 > div {width:48%;float: left;}
+	#sepDeliv0 > div:last-child {float: left;}
+	@media screen and (max-width: 767px){
+		.delivery_wrap {width: 100%;}
+		#sepDeliv0 {display: block;}
+		#sepDeliv0 > div {width:100%;}
+		#sepDeliv0 > div {width:100%;float: left;}
+		#sepDeliv0 > div:last-child {float: right;}
+	}
+	</style>
+	
+	<style>
+		/* side_menu */
+		#cart .cart_intro {margin: 0 0 20px;}
+		#cart .cart_order .wrap_table {box-sizing: border-box;margin: 10px;}
+		#cart .cart_order .cart_order_table {width:100%;}
+		#cart .cart_order th {background:#feedb7;}
+		#cart .cart_order th,
+		#cart .cart_order td {border:1px solid #f39800;padding:10px;line-height: 1.6;}
+		#cart .cart_order tr:first-of-type td:not(:first-of-type) {border-bottom:none;}
+		#cart .cart_order td {padding:10px;}
+		#cart .cart_order th:first-of-type {width:atuo;}
+		#cart .cart_order th:nth-child(3) {width: 10%;}
+		#cart .cart_order tr td:nth-child(n + 2) {text-align: center;}
+		#cart .cart_order .cart_addition_in {padding-bottom: 0;}
+		#cart .cart_order tr td:first-of-type {font-weight: bold;width: 100%;padding-top: 1em;padding-bottom: 1em;}
+		#cart .cart_order th,
+		#cart .cart_order td,
+		#cart .cart_order tr td:last-of-type {display: block;font-weight: normal;}
+		#cart .cart_order tr td:nth-child(n + 2) {float: left;border-top: none;width: 40%;}
+		#cart .cart_order table tr:nth-child(n + 3) td:first-of-type {border-top: none;}
+		#cart .cart_order tr td:nth-child(3) {width: 20%;}
+		#cart .cart_order tr td:not(:last-child):nth-child(n + 2) {border-right: none;}
+		#cart .cart_order .sp_th {
+			background:#feedb7;
+			border-bottom:1px solid #f39800;
+			margin-left:-10px;
+			margin-right: -10px;
+			margin-top: -10px;
+			margin-bottom: 10px;
+			padding:2px;
+		}
+		@media print,screen and (min-width: 767px){
+			#cart .input_side {position: absolute;width: 360px;left: auto;right: 0;top:0;}
+		}
+		@media screen and (max-width: 767px){
+			#cart .cart_intro{margin:0 0 10px;}
+			#cart .cart_addition_in {border:none;}
+			#cart .cart_order .wrap_table {margin: 0;}
+			#cart .cart_order th,
+			#cart .cart_order td {padding:5px 10px;color:#9c9c9c;}
+			#cart .cart_order tr td:first-of-type {color: #3f3e3d;padding-top: 5px;padding-bottom: 5px;}
+			#cart .cart_order .sp_th {
+			margin-left:-10px;
+			margin-right: -10px;
+			margin-top: -5px;
+			margin-bottom: 5px;
+			color: #3f3e3d;
+			}
+			#cart .cart_order tr:last-of-type td {color:#9c9c9c;}
+			/* #cart .cart_addition .spttl,
+			#cart .cart_addition .cart_addition_list,
+			#cart .cart_addition .cart_addition_list {display: inline-block;}
+			#cart .cart_addition .cart_addition_list {padding:0 0;}
+			#cart .cart_addition .cart_addition_list.cmn_list01 {margin:0 0}
+			#cart .cart_addition_list li {padding: 0 0 0 0;font-size: 14px;}
+			#cart .cart_addition_list li:before {display:none;} */
+		}
 </style>
 
 <!-- ▼▼ポップアップ -->
@@ -398,25 +791,56 @@ $(function(){
 <script>
 
 $(function () {
-/*ココチモ会員 入力非表示*/
-  $('#more_login_text').css({'display':'none'});
+    /* // ココチモ会員 入力非表示
+    ------------------------------------- */
+	function switchmemadd() {
+		var nowWidth = $(window).width();
+		var timer = false;
+		var breakpoint = 767;
+		var spFlag;
 
- if($('.memadd_table_01 .error').length){
-   $('#more_login_text').slideDown();
-   $('.more_login_btn').html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>').addClass('is-active');
- 	}
+		//sp or pc
+		spFlag = nowWidth < breakpoint ? true : false;
+		$('.more_login_btn a')
+			.removeClass('is-active')
+			.off("click");
 
-	$('.more_login_btn').on('click', function () {
-		$(this).toggleClass('is-active');
+		if (spFlag) {
+			$('#more_login_text').css({'display':'none'});
+			if($('.memadd_table_01 .error').length){
+				$('#more_login_text').slideDown();
+				$('.more_login_btn').addClass('is-active');
+				}
 
-		if($(this).hasClass('is-active')) {
-			$(this).html('ログイン入力欄を<a href="javascript:void(0); return false">閉じる<a/>');
+				$('.more_login_btn a').on('click', function () {
+					$(this).toggleClass('is-active');
+					$('#more_login_text').slideToggle();
+				});
 		} else {
-			$(this).html('ログインは<a href="javascript:void(0); return false">こちら</a>');
+			$('#more_login_text').css({'display':'block'});
 		}
-		$('#more_login_text').slideToggle();
-	});
-	/*トグルメニュー*/
+	}
+
+  
+    /* resize†
+    ------------------------------------- */
+    var resizeTimer;
+	var currentWidth = window.innerWidth;
+    $(window).on('resize', function() {
+		if (currentWidth == window.innerWidth) {
+        	return;
+    	}
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+			switchmemadd();
+        }, 200);
+    });
+
+    /* initial
+    ------------------------------------- */
+	switchmemadd()
+
+	// トグルメニュー
 	$('.togglemenu').css({'display':'none'});
 	$('.toggle_btn').click(function(event) {
 		 event.preventDefault();
@@ -427,7 +851,7 @@ $(function () {
 		$('.togglemenu.delive').slideToggle();
 	});
 
-	/*メールアドレス再確認*/
+	// メールアドレス再確認
 	var $output_email_confirm = $("#output_email_confirm");
 	var $input_email_confirm = $("#input_email_confirm");
 
@@ -447,34 +871,67 @@ $(function () {
 		changemail(mailval);
 	}
 
-	$(".cmn_form_table01 td,.input_footer_btn a").on("click",function(e) {
-		if($(this).attr('id') == "address4_area") {return false;}
+	$(".sample_notice a").on("click",function(e) {
 		var mailval = $('input[name="email"]').val();
 		changemail(mailval);
 	});
-	/*プレースホルダー追加*/
-	$('input[name="name_sei"],input[name="address_co_sei"],input[name="dst_name_sei"]').attr('placeholder','姓');
-	$('input[name="name_mei"],input[name="address_co_mei"],input[name="dst_name_mei"]').attr('placeholder','名');
 
+	// $(".cmn_form_table01 td,.input_footer_btn a").on("click",function(e) {
+	// 	if($(this).attr('id') == "address4_area") {return false;}
+	// 	var mailval = $('input[name="email"]').val();
+	// 	changemail(mailval);
+	// });
+	// プレースホルダー追加
+	$('input[name="name_sei"],input[name="address_co_sei"],input[name="dst_name_sei"]').attr('placeholder','例：山田');
+	$('input[name="name_mei"],input[name="address_co_mei"],input[name="dst_name_mei"]').attr('placeholder','例：太郎');
 	$('input[name="dst_address_co_sei"],input[name="address_co_sei"]').attr('placeholder','世帯主様の姓');
 	$('input[name="dst_address_co_mei"],input[name="address_co_mei"]').attr('placeholder','世帯主様の名');
-
-	$('input[name="name_sei_kana"],input[name="dst_name_sei_kana"]').attr('placeholder','セイ');
-	$('input[name="name_mei_kana"],input[name="dst_name_mei_kana"]').attr('placeholder','メイ');
-
-	$('input[name="address1"],input[name="dst_address1"]').attr('placeholder','例:新宿区');
-	$('input[name="address2"],input[name="dst_address2"]').attr('placeholder','例:高田馬場');
-	$('input[name="address3"],input[name="dst_address3"]').attr('placeholder','例:４-２-３８');
-	$('input[name="address4"],input[name="dst_address4"]').attr('placeholder','例:ユーキャンビル １０３号室');
-
+	$('input[name="name_sei_kana"],input[name="dst_name_sei_kana"]').attr('placeholder','例：ヤマダ');
+	$('input[name="name_mei_kana"],input[name="dst_name_mei_kana"]').attr('placeholder','例：タロウ');
+	$('input[name="address1"],input[name="dst_address1"]').attr('placeholder','例：新宿区');
+	$('input[name="address2"],input[name="dst_address2"]').attr('placeholder','例：高田馬場');
+	$('input[name="address3"],input[name="dst_address3"]').attr('placeholder','例：４-２-３８');
+	$('input[name="address4"],input[name="dst_address4"]').attr('placeholder','例：ユーキャンビル １０３号室');
+	$('input[name="tel_no1"]').attr('placeholder','例：03');
+	$('input[name="tel_no2"]').attr('placeholder','例：0000');
+	$('input[name="tel_no3"]').attr('placeholder','例：0000');
+	$('input[name="dst_tel_no1"]').attr('placeholder','例：03');
+	$('input[name="dst_tel_no2"]').attr('placeholder','例：0000');
+	$('input[name="dst_tel_no3"]').attr('placeholder','例：0000');
 	$('input[name="email"]').attr('placeholder','例：tuuhan@u-can.co.jp');
-
 	$('input[name="dst_post_code"],input[name="post_code"]').attr('placeholder','例：1620042');
+	$('input[name="card_number"]').attr('placeholder','例：0123456789000000');
+	$('input[name="security_code"]').attr('placeholder','例：012');
+	$('input[name=card_exp_month]').attr('placeholder','例：04');
+	$('input[name=card_exp_year]').attr('placeholder','例：24');
+
+	//enterフォーカス移動
+	$('form').on('keydown', 'input, button, select', function(e) {
+    if (e.keyCode == 13) {
+        if ($(this).attr("type") == 'submit') return;
+
+        var form = $(this).closest('form');
+        var focusable = form.find('input, button[type="submit"], select, textarea')
+            .not('[readonly]').filter(':visible');
+
+        if (e.shiftKey) {
+            focusable.eq(focusable.index(this) - 1).focus();
+        } else {
+            var next = focusable.eq(focusable.index(this) + 1);
+            if (next.length) {
+                next.focus();
+            } else {
+                focusable.eq(0).focus();
+            }
+        }
+
+        e.preventDefault();
+    }
+});
 
 });
 
 </script>
-
 
 
 <script m:id="js_gmo_url" src="https://p01.mul-pay.jp/ext/js/token.js"></script>
@@ -953,144 +1410,159 @@ $(function () {
 						<h1 class="cart_intro_tit cmn_tit05">お客様情報の入力</h1>
 						<!--<p class="cart_intro_txt">お客様情報、決済方法、配送先をそれぞれ入力、選択してください。<br>
 							下記項目にご入力ください。<span class="required">必須</span>印は必須項目です。</p>-->
-						</div>
-					</span>
-
-				<!--▼▼▼ お申込み内容 ▼▼▼-->
-				<style>
-					#cart .cart_intro {
-					    margin: 0 0 20px;
-					}
-					#cart .cart_order .wrap_table {
-						box-sizing: border-box;
-						margin: 10px;
-					}
-					#cart .cart_order .cart_order_table {
-						width:100%;
-					}
-					#cart .cart_order th {
-						background:#feedb7;
-					}
-					#cart .cart_order th,
-					#cart .cart_order td {
-						border:1px solid #f39800;
-						padding:10px;
-						line-height: 1.6;
-					}
-					#cart .cart_order td {
-						padding:10px;
-					}
-					#cart .cart_order th:first-of-type {
-						width:700px;
-					}
-					#cart .cart_order th:nth-child(3) {
-						width: 10%;
-					}
-					#cart .cart_order tr td:nth-child(n + 2) {
-						text-align: center;
-					}
-
-					@media screen and (max-width: 767px) {
-						#cart .cart_order .cart_addition_in {
-						    padding-bottom: 0;
-						}
-
-						#cart .cart_order th,
-						#cart .cart_order td {
-							display: block;
-						}
-						#cart .cart_order tr td:first-of-type {
-							width: 100%;
-							padding-top: 1em;
-							padding-bottom: 1em;
-						}
-						#cart .cart_order tr td:nth-child(n + 2) {
-							float: left;
-							border-top: none;
-							width: 40%;
-						}
-						#cart .cart_order table tr:nth-child(n + 3) td:first-of-type {
-							border-top: none;
-						}
-						#cart .cart_order tr td:nth-child(3) {width: 20%;}
-						#cart .cart_order tr td:not(:last-child):nth-child(n + 2) {border-right: none;}
-						#cart .cart_order .sp_th {
-							background:#feedb7;
-							border-bottom:1px solid #f39800;
-							margin-left:-10px;
-							margin-right: -10px;
-							margin-top: -10px;
-							margin-bottom: 10px;
-							padding:2px;
-						}
-
-					}
-				</style>
+					</div>
+				</span>
+				<!--▼▼▼ form ▼▼▼-->
+				<form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
+					<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
+					<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
+					<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
+				<!--▼▼▼ side_menu ▼▼▼-->
+				<div class="input_side">
 					<div class="cart_addition mb20 s_mb10 input_addition cart_order">
 						<div class="cart_addition_in mb30 s_mb15">
-						<h2 class="cart_addition_tit">お申込み内容</h2>
-						<div class="wrap_table">
-						<table class="cart_order_table">
-							<tr class="viewPc"><th align="center">商品名</th>
-								<th class="memadd_table_02_w_02">商品単価</th>
-								<th class="memadd_table_02_w_03">数量</th>
-								<th class="memadd_table_02_w_02">小計</th>
-							</tr>
-							<span m:id="l_ite_detail">
-								<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
-								<tr>
-									<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
-
-									<td>
-										<p class="viewSp sp_th">商品単価</p>
-										<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
-										<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
-										<span m:id="l_notEqu_memberSpecialDiscount">
-											<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
+							<h2 class="cart_addition_tit viewPc">お申込み内容</h2>
+							<p class="viewSp mb5">[お申込み内容]</p>
+							<div class="wrap_table">
+								<table class="cart_order_table">
+									<!-- <tr class="viewPc"><th align="center">商品名</th>
+										<th class="memadd_table_02_w_02">商品単価</th>
+										<th class="memadd_table_02_w_03">数量</th>
+										<th class="memadd_table_02_w_02">小計</th>
+									</tr> -->
+									<span m:id="l_ite_detail">
+										<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
+										<tr>
+											<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
+		
+											<td>
+												<p class="sp_th">商品単価</p>
+												<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
+												<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
+												<span m:id="l_notEqu_memberSpecialDiscount">
+													<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
+												</span>
+											</td>
+											<td>
+												<p class="sp_th">数量</p>
+												<span m:id="disp_detail_order_num">3</span>
+											</td>
+											<td>
+												<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
+												<p class="sp_th">小計</p>
+												<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
+												<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
+											</td>
+										</tr>
+									</span>
+										<!--▼▼▼ side_商品合計金額 ▼▼▼-->
+										<tr>
+											<td colspan="3" style="text-align:right;">商品合計:
+												<!-- <span m:id="b_wr_total_price">9500</span> 円-->
+												<span style="padding-left:30px;">
+													<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
+													<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
+												</span>
+											</td>
+										</tr>
+										<!--▲▲▲ side_商品合計金額 ▲▲▲-->
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="cart_addition mb30 s_mb15 input_addition">
+							<span m:id="l_pre_disp_goodsPremium">
+								<div class="cart_addition_in mb50 s_mb0">
+									<div class="cart_addition_in mb50 s_mb25">
+										<h2 class="cart_addition_tit">プレゼント品</h2>
+										<span m:id="l_ite_goodsPremium">
+											<ul class="cart_addition_list cmn_list01">
+												<li><span m:id="disp_goodsPremium">おまけプレミアム名</span>&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></li>
+											</ul>
 										</span>
-									</td>
-									<td>
-										<p class="viewSp sp_th">数量</p>
-										<span m:id="disp_detail_order_num">3</span>
-									</td>
-									<td>
-										<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
-										<p class="viewSp sp_th">小計</p>
-										<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
-										<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
-									</td>
-								</tr>
+									</div>
 							</span>
-						</table>
-					</div>
-						</div>
-					</div>
-				<!--▲▲▲ お申込み内容 ▲▲▲-->
+							<span m:id="l_pre_disp_promotionConnectName">
+								<div class="cart_addition_in mb50 s_mb25">
+									<h2 class="cart_addition_tit">以下の特典が適用されています。</h2>
+									<span m:id="l_ite_promotionConnect">
+										<ul class="cart_addition_list cmn_list01">
+											<span m:id="b_wr_promotionConnectName"><li>ダミー特典内容</li></span>
+										</ul>
+									</span>
+								</div>
+							</span>
+						</div> -->
+						
+				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
+						<div class="not_login_box mb20 mt20">
+							<span m:id="l_notPre_member_login_button_shop">
+								 <div class="login_msg">
+									<h5 class="add_h5 mt10 viewPc">●ココチモ会員の方</h5>
+									<p class="mt10 viewPc">下記にログインID・パスワードを入力してログインしてください。</p>
+									<h5 class="add_h5 mt10 viewSp"><span class="more_login_btn">●ココチモ会員の方は<a href="javascript:void(0); return false">こちら</a></span></h5>
+									 <p class="mt10"><a m:id="e_link_login_shop" href="memberLogin.html" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
+								</div>
 
+								<div id="more_login_text">
+								<span m:id="l_msgPre_errors_member_login">
+								<div class="error">
+								<p>ログインID・パスワードをご確認ください。</p>
+								</div>
+								</span>
+								<div class="orderInputLogin mt30 s_mt20">
+									<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+									<tr>
+									<th>ログインID<!-- <br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span> --></th>
+									<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
+									
+									<span m:id="l_msgPre_login_id">
+									<div>
+									<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span>
+									</div>
+									</span>
+									</td>
+									</tr>
+									<tr>
+									<th>パスワード<!--<br class="viewPc"><span class="exp">例：<span m:id="sample_password">abcde12345</span></span> --></th>
+									<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
+									
+									<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html" class="cmn_link01 s_mt5">パスワードを忘れた方はこちら</a></div>
+									<span m:id="l_msgPre_password">
+									<div>
+									<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
+									</div>
+									</span>
+									</td>
+									</tr>
+									<tr>
+										<td class="btn viewPc" colspan="2">
+											<!-- ボタン -->
+											<div>
+											<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
+											</div>
+											<!--/ ボタン -->
+										</td>
+									</tr>
+									<tr class="viewSp">
+										<td  colspan="3">
+											<!-- ボタン -->
+											<div class="mb10">
+											<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
+											</div>
+											<!--/ ボタン -->
+										</td>
+									</tr>
+									</table>
+									</div><!-- /more_login_text -->
 
-				<div class="cart_addition mb30 s_mb15 input_addition">
-					<span m:id="l_pre_disp_goodsPremium">
-						<div class="cart_addition_in mb50 s_mb25">
-							<h2 class="cart_addition_tit">プレゼント品</h2>
-							<span m:id="l_ite_goodsPremium">
-								<ul class="cart_addition_list cmn_list01">
-									<li><span m:id="disp_goodsPremium">おまけプレミアム名</span>&nbsp;×&nbsp;<span m:id="disp_goodsPremiumNum">2</span></li>
-								</ul>
+								</div>
 							</span>
 						</div>
-					</span>
-					<span m:id="l_pre_disp_promotionConnectName">
-						<div class="cart_addition_in mb50 s_mb25">
-							<h2 class="cart_addition_tit">以下の特典が適用されています。</h2>
-							<span m:id="l_ite_promotionConnect">
-								<ul class="cart_addition_list cmn_list01">
-									<span m:id="b_wr_promotionConnectName"><li>ダミー特典内容</li></span>
-								</ul>
-							</span>
-						</div>
-					</span>
-				</div>
-				<!-- /.cart_addition -->
+						<!-- /.not_login_box -->
+					<!--▲▲▲ 非ログイン時 ▲▲▲-->	
+				</div><!--▲▲▲ side_menu ▲▲▲-->
 
 					<span m:id="l_pre_free_guide">
 						<div class="cart_intro input_intro">
@@ -1108,12 +1580,7 @@ $(function () {
 							</span>
 						</div>
 					</span>
-				<h2 class="cmn_tit01" style="display:none;"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
-				<!--▼▼▼ form ▼▼▼-->
-				    <form m:id="h_form_orderInputPost" method="POST" action="orderConfirm.html" autocomplete="off">
-				    	<input m:id="i_hid_order_key" type="hidden" name="key" value="10"/>
-				    	<input m:id="h_hid__S" type="hidden" name="shop" value="00000002"/>
-				    	<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
+					<h2 class="cmn_tit01" style="display:none;"><span class="cmn_tit01_underline">ご注文者様情報</span></h2>
 
 				    	<!--▼▼▼ ログイン時 ▼▼▼-->
 							<span m:id="l_pre_member">
@@ -1143,85 +1610,20 @@ $(function () {
 								<!--
 								<p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>会員情報を修正する</span></a></p>
 								-->
-								<p class="tac mb60 s_mb30"><span class="cmn_btn cmn_btn_orange btn_middle input_info_btn"><span>ご注文者さま情報を変更する</span></span></p>
+								<p class="user_info_change tac mb60 s_mb30"><span class="cmn_btn cmn_btn_orange btn_middle input_info_btn"><span>ご注文者さま情報を変更する</span></span></p>
 								<!--▲▲▲ ご注文様情報 テキスト ▲▲▲-->
 							</div>
 				    	<!--▲▲▲ ログイン時 ▲▲▲-->
-				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
-							<div class="not_login_box mb20 mt20">
-								<span m:id="l_notPre_member_login_button_shop">
-									 <div class="login_msg">
-										<h5 class="add_h5 mt10">●ココチモ会員の方</h5>
-										 <p class="mt10">ココチモ会員のお客様は、こちらにログインID、パスワードを入力してログインしてください。<span class="more_login_btn">ログインは<a href="javascript:void(0); return false">こちら</a></p>
-									</div>
-
-									<div id="more_login_text">
-									<span m:id="l_msgPre_errors_member_login">
-									<div class="error">
-									<p>ログインID・パスワードをご確認ください。</p>
-									</div>
-									</span>
-									<div class="orderInputLogin mt30 s_mt20">
-										<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-										<tr>
-										<th>ログインID<br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span></th>
-										<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
-										
-										<span m:id="l_msgPre_login_id">
-										<div>
-										<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span>
-										</div>
-										</span>
-										</td>
-					                    <td class="btn viewPc" rowspan="2">
-					                    <!-- ボタン -->
-										<div>
-										<a m:id="a_bt_orderInputLogin" href="orderInputLogin.do" class="loginBt"><img  src="/contents/c/goods/image/new/cart/btn_login01_pc.png" alt="ログイン" /></a>
-										</div>
-					                    <!--/ ボタン -->
-					                    </td>
-										</tr>
-										<tr>
-										<th>パスワード<br class="viewPc"><span class="exp">例：<span m:id="sample_password">abcde12345</span></span></th>
-										<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="order_password" class="in_w_02" />
-										
-										<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html" class="cmn_link01 s_mt5">パスワードを忘れた方はこちら</a></div>
-										<span m:id="l_msgPre_password">
-										<div>
-										<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
-										</div>
-										</span>
-										</td>
-										</tr>
-					                    <tr class="viewSp">
-					                    <td  colspan="3">
-										<!-- ボタン -->
-										<div class="mb10">
-										<a onclick="document.orderForm.orderLoginChk.value='true';return anchorButtonClick( document.orderForm, null, 'orderInputLogin.do' );" href="orderInputLogin.do" class="loginBt"><img src="/contents/c/goods/image/new/cart/btn_login01_sp.png" alt="ログイン" class="viewSp login_btn"></a>
-										</div>
-										<!--/ ボタン -->
-					                    </td>
-					                    </tr>
-															</table>
-					                    </div><!-- /more_login_text -->
-
-									</div>
-								</span>
-							</div>
-							<!-- /.not_login_box -->
-						<!--▲▲▲ 非ログイン時 ▲▲▲-->
 
 				    	<!--▼▼▼ 非ログイン時 ▼▼▼-->
 							<div class="not_login_box mb20">
 								<span m:id="l_notPre_member_login_button_shop">
-							<h5 class="add_h5 mt30">●初めての方、会員登録をされていない方はこちらから。</h5>
-							<p class="vis_add mt10 mb10">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。購入完了後、そのまま会員登録（無料）も可能です。</p>
+							<h5 class="add_h5 mt30">●初めての方、会員登録せずに注文される方</h5>
+							<p class="vis_add mt10 mb10 viewPc">以下に必要情報をご入力いただき、「お申込み内容確認へ」ボタンを押してください。</p>
+							<p class="vis_add mt10 mb10 viewSp">以下に必要情報をご入力ください。</p>
 			              </span>
 			             </div>
 			              <!--▲▲▲ 非ログイン時 ▲▲▲-->
-
-
-
 						<!--▼▼▼ ご注文様情報 入力フォーム　▼▼▼-->
 							<p class="input_info_count viewPc mb35" style="display: none;"><span class="red">必須項目</span>は残り<span class="number">4</span>項目です</p>
 							<table class="cmn_form_table01 input_info_table02" id="input_info_table02">
@@ -1229,11 +1631,11 @@ $(function () {
 									<th>お名前<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="input_set input_set_name">
-											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例:山田" /></div>
-											<span class="prefix prefix_mei s_ml8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
+											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例：山田" /></div>
+											<span class="prefix prefix_mei s_ml8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例：花子" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
-										<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
+										<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p> -->
 										<span m:id="l_msgPre_name_sei">
 											<p class="error mt10 s_mt10"><span m:id="h_err_name_sei">お名前(姓)入力エラーメッセージ</span></p>
 										</span>
@@ -1246,11 +1648,11 @@ $(function () {
 									<th>フリガナ<span class="th_info"><span class="suffix">全角カナ</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="input_set input_set_kana">
-											<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例:ヤマダ" /></div>
-											<span class="prefix prefix_mei s_ml8">メイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
+											<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例：ヤマダ" /></div>
+											<span class="prefix prefix_mei s_ml8">メイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例：ハナコ" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
-										<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p>
+										<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p> -->
 										<span m:id="l_msgPre_name_sei_kana">
 											<p class="error mt10 s_mt10"><span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span></p>
 										</span>
@@ -1263,11 +1665,12 @@ $(function () {
 									<th>郵便番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 									<td>
 										<div class="member_yubin">
-											<p class="td_txt cmn_bold">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
-											<div class="input_set input_set_post mt10 s_mt10">
-												<span class="prefix">〒</span><div class="input_wrap"><input m:id="h_txt_post_code" placeholder="例:1620042" type="text" name="post_code" id="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
+											<div class="input_set input_set_post">
+												<span class="prefix">〒</span><div class="input_wrap"><input m:id="h_txt_post_code" placeholder="例：1620042" type="text" name="post_code" id="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/>
+												<p class="example post_notice">※ハイフン「-」は入力不要です。</p>
+												</div>
 											</div>
-											<p class="example viewPc mt10">例：1620042</p>
+											<p class="example mt10">※郵便番号をご入力頂くと、住所の一部が自動入力されます。</p>
 											<span id="postcode_asyncstat"/>
 											<a m:id="a_bt_searchZip" href="postCode.html" OnClick="return postCodeList( document.orderForm.post_code.value, 2 );" class="cmn_btn cmn_btn_green btn_postcode">郵便番号検索</a>
 											<p class="error mt10 s_mt10"><span m:id="h_err_post_code">郵便番号エラーメッセージ</span></p>
@@ -1278,8 +1681,8 @@ $(function () {
 									<th>都道府県<span class="th_info"><span class="required">必須</span></span></th>
 									<td>
 										<span class="select_box">
-											<select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" style="margin-top:10px;" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
-												<option value="">--選択してください--</option>
+											<select m:id="h_sel_area_code" class="memadd_input_04" id="area_cd" class="mt10 s_mt10" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
+												<option value="">--選択--</option>
 												<option m:id="h_opt_prefecture" value="001">青森県</option>
 												<option m:id="dummy" value="002">秋田県</option>
 												<option m:id="dummy" value="003">埼玉県</option>
@@ -1297,8 +1700,8 @@ $(function () {
 								<tr>
 									<th>市区郡<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
-										<input type="text" class="in_w_10" m:id="h_txt_address1" name="address1" id="address1" placeholder="例:新宿区"/>
-										<span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span>
+										<input type="text" class="in_w_10" m:id="h_txt_address1" name="address1" id="address1" placeholder="例：新宿区"/>
+										<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span> -->
 										<span m:id="l_msgPre_address1">
 											<p class="error mt10 s_mt10">
 												<span m:id="h_err_address1">住所(市区郡)入力エラーメッセージ</span>
@@ -1309,8 +1712,8 @@ $(function () {
 								<tr>
 									<th>町村字<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 									<td>
-										<input type="text" class="in_w_10" m:id="h_txt_address2" name="address2" id="address2" placeholder="例:高田馬場"/>
-										<span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span>
+										<input type="text" class="in_w_10" m:id="h_txt_address2" name="address2" id="address2" placeholder="例：高田馬場"/>
+										<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span> -->
 										<span m:id="l_msgPre_address2">
 											<p class="error mt10 s_mt10">
 												<span m:id="h_err_address2">住所(町村字)入力エラーメッセージ</span>
@@ -1338,8 +1741,8 @@ $(function () {
 	obj.value = word;
 }
 									</script>
-										<input type="text" m:id="h_txt_address3" name="address3" placeholder="例:4-2-38" onblur="zentohan(this);"/>
-										<span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span>
+										<input type="text" m:id="h_txt_address3" name="address3" placeholder="例：4-2-38" onblur="zentohan(this);"/>
+										<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span> -->
 										<span m:id="l_msgPre_address3">
 											<p class="error mt10 s_mt10">
 												<span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span>
@@ -1348,10 +1751,10 @@ $(function () {
 									</td>
 								</tr>
 								<tr>
-									<th>建物名・部屋番号<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
+									<th><span class="txt_float">建物名・<br class="viewPc">部屋番号</span><span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 									<td id="address4_area">
-										<input type="text" m:id="h_txt_address4" name="address4" placeholder="例:ユーキャンビル" />
-										<span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span>
+										<input type="text" m:id="h_txt_address4" name="address4" placeholder="例：ユーキャンビル" />
+										<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span> -->
 										<span m:id="l_msgPre_address4">
 											<p class="error mt10 s_mt10">
 												<span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
@@ -1359,12 +1762,12 @@ $(function () {
 										</span>
 										
 										<div class="samakata">
-											<a class="toggle_btn">世帯主様と苗字が異なる方へ▼</a>
+											<a class="toggle_btn">世帯主様と苗字が異なる方はこちら▼</a>
 											<div class="togglemenu mt20">
 												<div class="input_set input_set_name">
-													<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
-													<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
-													<span class="suffix viewPc">様方</span>
+													<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例：山田" /></div>
+													<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例：花子" /></div>
+													<span class="suffix right mt10 viewPc">様方</span>
 												</div>
 												<p class="example mt10">※世帯主様の姓名を入力してください。</p>
 												<span m:id="l_msgPre_address_co_sei">
@@ -1381,8 +1784,8 @@ $(function () {
 									<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 									<td>
 										<div class="input_set input_set_name">
-											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
-											<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
+											<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例：山田" /></div>
+											<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap "><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例：花子" /></div>
 											<span class="suffix viewPc">様</span>
 										</div>
 										<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
@@ -1397,8 +1800,8 @@ $(function () {
 								<tr>
 									<th>電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 									<td>
-										<input type="text" m:id="h_txt_tel_no1" name="tel_no1" id="tel01" placeholder="例:03" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no2" name="tel_no2" id="tel02" placeholder="0000" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no3" name="tel_no3" id="tel03" placeholder="0000" />
-										<p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p>
+										<input type="text" m:id="h_txt_tel_no1" name="tel_no1" id="tel01" placeholder="例：03" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no2" name="tel_no2" id="tel02" placeholder="0000" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no3" name="tel_no3" id="tel03" placeholder="0000" />
+										<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p> -->
 										<span m:id="l_msgPre_tel_no">
 											<span class="error">
 												<span m:id="h_err_tel_no">連絡先電話番号入力エラーメッセージ</span>
@@ -1407,17 +1810,17 @@ $(function () {
 									</td>
 								</tr>
 								<tr>
-									<th>メールアドレス<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
+									<th><span class="txt_float">メール<br class="viewPc">アドレス</span><span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
 									<td id="email_area">
-										<input type="text" m:id="h_txt_email" name="email" placeholder="例:yamada@xxx.co.jp" />
-										<p class="example viewPc mt10">例&nbsp;:&nbsp;tuuhan@u-can.co.jp</p>
+										<input type="text" m:id="h_txt_email" name="email" placeholder="例：yamada@xxx.co.jp" />
+										<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;tuuhan@u-can.co.jp</p> -->
 										<span m:id="l_msgPre_email">
 											<p class="error mt10 s_mt10"><span m:id="h_err_email">PCメールアドレス入力エラーメッセージ</span></p>
 										</span>
-										<p class="example red mt20 mb10">▼メールアドレスをご確認ください。
+										<p class="example mt20 mb10">▼メールアドレスをご確認ください。
 										</p>
 										<p class="output_email_confirm_wrap mt5">確認 :　<span id="output_email_confirm"></span></p>
-										<p class="red sample_notice">確認用アドレスが反映されない時は<a href="javascript:void(0); return false">こちら</a>をクリックしてください</a></p>
+										<p class="sample_notice">確認用アドレスが反映されない時は<a href="javascript:void(0); return false">こちら</a>をクリックしてください</a></p>
 										<input id="input_email_confirm" type="hidden" m:id="input_email_confirm" name="email_confirm" value="" oncontextmenu="return false;" />
 									</td>
 								</tr>
@@ -1436,21 +1839,23 @@ $(function () {
 								<tr>
 									<th>性別<span class="th_info"><span class="optional">任意</span></span></th>
 									<td>
-										<span m:id="l_ite_sex">
-											<span class="radio_wrap">
-												<object class="xsp_obj" m:id="b_var_code" ></object>
-												<label>
-													<input m:id="h_radio_sex" type="radio" name="order_sex" class="radio" value="key"><span m:id="b_wr_code_name">女性</span>
-												</label>
+										<div class="sex_wrap">
+											<span m:id="l_ite_sex">
+												<span class="radio_wrap">
+													<object class="xsp_obj" m:id="b_var_code" ></object>
+													<label>
+														<input m:id="h_radio_sex" type="radio" name="order_sex" class="radio" value="key"><span m:id="b_wr_code_name">女性</span>
+													</label>
+												</span>
 											</span>
-										</span>
-										<span class="radio_wrap">
-											<div class="box_01"  m:id="dummy">
-												<label>
-													<input m:id="dummy" type="radio" name="sex" id="man" class="radio" value="key"><span m:id="dummy">男性</span>
-												</label>
-											</div>
-										</span>
+											<span class="radio_wrap">
+												<div class="box_01"  m:id="dummy">
+													<label>
+														<input m:id="dummy" type="radio" name="sex" id="man" class="radio" value="key"><span m:id="dummy">男性</span>
+													</label>
+												</div>
+											</span>
+										</div>
 									</td>
 								</tr>
 								<tr>
@@ -1588,7 +1993,7 @@ $(function () {
 									</td>
 								</tr>
 								<tr>
-									<th style="font-size:.9em">ココチモからのお得な情報を受け取る<span class="th_info"><span class="required">必須</span></span></th>
+									<th>メールマガジン<span class="th_info"><span class="required">必須</span></span></th>
 									<td>
 										<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label></span>
 										<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label></span>
@@ -1622,7 +2027,7 @@ $(function () {
 											<th>お支払方法<span class="th_info"><span class="required">必須</span></span></th>
 											<td>
 												<span m:id="l_ite_shopSettle">
-													<div class="memadd_mb_01 mb10 s_mb5" m:id="l_match_isSettlement"><label m:id="label_settlement_name"><input m:id="h_radio_payment_method" type="radio" class="radio" value="0" name="payment_method" onclick="displayOrdCreditDisp();">　<span m:id="b_wr_settlement_name">クレジット</span><!--<span m:id="b_wr_settlement_exp">カード決済</span>--></label><input type="hidden" m:id="h_perm_display_none" /></div>
+													<div class="memadd_mb_01 mb20 s_mb20" m:id="l_match_isSettlement"><label m:id="label_settlement_name"><input m:id="h_radio_payment_method" type="radio" class="radio" value="0" name="payment_method" onclick="displayOrdCreditDisp();">　<span m:id="b_wr_settlement_name">クレジット</span><!--<span m:id="b_wr_settlement_exp">カード決済</span>--></label><input type="hidden" m:id="h_perm_display_none" /></div>
 													<div class="memadd_mb_01" m:id="dummy"><label><input type="radio" name="payment_method" onclick="displayOrdCreditDisp();" class="radio" value="0">　代引きでの決済です</label></div>
 													<div m:id="dummy"><label><input type="radio" class="radio" value="0" name="payment_method" onclick="displayOrdCreditDisp();">　後払い [ゆうちょ銀行／コンビエンス](一括／分割)  :  後払いでの決済です</label></div>
 												</span>
@@ -1664,18 +2069,18 @@ $(function () {
 											<tr>
 												<th>カード会社<span class="th_info"><span class="required">必須</span></span></th>
 												<td>
-													<select id="card_brand" m:id="h_sel_card_brand" class="memadd_input_01 mb15">
-														<option m:id="dummy" value="">選択してください--</option>
+													<select id="card_brand" m:id="h_sel_card_brand" class="memadd_input_01 ">
+														<option m:id="dummy" value="">--選択--</option>
 														<option m:id="dummy" value="">VISA</option>
 														<option m:id="dummy" value="">MASTER</option>
 														<option m:id="dummy" value="">JCB</option>
 														<option m:id="dummy" value="">AMEX</option>
 														<option m:id="dummy" value="">DINERS</option>
 													</select>
-													<div class="input_credit_card">
+													<!-- <div class="input_credit_card">
 														<p class="txt">ご利用いただけるカード</p>
 														<p class="img"><img m:id="icon_image" src="/contents/c/goods/image/new/cart/img_credit01.png" alt="VISA / Master Card / JCB / Diners Club INTERNATIONAL / AMERICAN EXPRESS"></p>
-													</div>
+													</div> -->
 													<p class="error mt10 s_mt10"><span id="js_err_card_brand"></span></p>
 													<span m:id="h_err_card_brand">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_brand">カード会社は必須です。</span></p>
@@ -1685,8 +2090,8 @@ $(function () {
 											<tr>
 												<th>カード番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
-													<input m:id="h_txt_card_number" type="text" name="card_number" id="card_number" placeholder="例:0123456789000000" />
-													<p class="example mt10">例：0123456789000000</p>
+													<input m:id="h_txt_card_number" type="text" name="card_number" id="card_number" placeholder="例：0123456789000000" />
+													<!-- <p class="example mt10">例：0123456789000000</p> -->
 													<span m:id="l_equ_regist_card">
 														<div class="mt10">
 															<label><input m:id="h_check_regist_card" type="checkbox" value="1" name="save_card_flg" />
@@ -1694,7 +2099,7 @@ $(function () {
 															</label>
 														</div>
 													</span>
-													<p class="example cmn_bold mt10">※この画面はSSLが有効になっています</p>
+													<p class="example cmn_bold mt10">※ハイフン「-」は入力不要です。</p>
 													<p class="error mt10 s_mt10"><span id="js_err_card_number"></span></p>
 													<span m:id="l_msgPre_card_number">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_number">カード番号入力エラーメッセージ</span></p>
@@ -1702,14 +2107,14 @@ $(function () {
 												</td>
 											</tr>
 											<tr class="tr_security_code">
-												<th>セキュリティコード<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
+												<th><span class="txt_float">セキュリティコード</span><span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_wrap mb10">
-														<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" id="security_code" maxlength="4" placeholder="例:012">
+														<input type="text" class="in_w_04" m:id="h_txt_security_code" name="security_code" id="security_code" maxlength="4" placeholder="例：012">
 														<a class="suffix btn" id="js-securityCodeBtn" href="#about_payment" data-featherlight="#about_secode">セキュリティコードについて</a>
 														<div id="about_secode" class="lightbox">
 															<div class="img mb20"><img src="/contents/c/goods/image/new/cart/img_credit_modal01.png" alt=""></div>
-															<p class="txt mb40 s_mb15">カードの裏面に、カード番号に続けて<br>3桁、もしくは4桁のコードが<br class="viewSp">印字されています。<br>※AMEXの場合は、<br class="viewSp">表面右上4桁のコードです。</p>
+															<p class="txt mb40 s_mb15">セキュリティコードは、カード裏面の著名欄に印字された数字の末尾3桁です。<br>※AMEXの場合は、<br class="viewSp">カード表面の4桁の数字です。</p>
 															<div class="tac">
 																<span class="lightbox_close_btn featherlight-close">閉じる</span>
 															</div>
@@ -1717,7 +2122,7 @@ $(function () {
 														</div>
 														<!-- /#js-securityCodeContent -->
 													</div>
-													<p class="example mb5 viewPc">例：0123</p>
+													<!-- <p class="example mb5 viewPc">例：012</p> -->
 													<!-- <label><input m:id="h_check_security_code" type="checkbox" value="1" name="check_security_code"><span class="add_ck_in">セキュリティコードを入力しない</span></label> -->
 													<p class="error mt10 s_mt10"><span id="js_err_security_code"></span></p>
 													<span m:id="l_msgPre_security_code">
@@ -1726,11 +2131,11 @@ $(function () {
 												</td>
 											</tr>
 											<tr class="tr_deadline">
-												<th>カードの有効期限<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
+												<th><span class="txt_float">カードの<br class="viewPc">有効期限</span><span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<input type="text" m:id="h_txt_card_exp_month" name="card_exp_month" id="card_exp_month" />&nbsp;月&nbsp;/&nbsp;
 													<input type="text" m:id="h_txt_card_exp_year" name="card_exp_year" id="card_exp_year" />&nbsp;年
-													<p class="example mt10 s_mt10">例：2013年4月の場合 04/13</p>
+													<!-- <p class="example mt10 s_mt10">例：2013年4月の場合 04/13</p> -->
 													<p class="error mt10 s_mt10"><span id="js_err_card_exp_month"></span></p>
 													<span m:id="l_msgPre_card_exp_month">
 														<p class="error mt10 s_mt10"><span m:id="h_err_card_exp_month">有効期限（月）エラーメッセージ</span></p>
@@ -1750,14 +2155,15 @@ $(function () {
 											<th>支払回数<span class="th_info"><span class="required">必須</span></span></th>
 											<td>
 												<select m:id="h_sel_pay_times" class="memadd_input_01">
-													<option m:id="dummy" value="">--選択してください--</option>
+													<option m:id="dummy" value="">--選択--</option>
 													<option m:id="dummy" value="">１回</option>
 													<option m:id="dummy" value="">２回</option>
 													<option m:id="dummy" value="">３回</option>
 													<option m:id="dummy" value="">４回</option>
 													<option m:id="dummy" value="">５回</option>
 												</select>
-												<p class="example mt10 s_mt10">※ご利用いただくカード会社によって、ご利用いただける分割お支払い回数が異なります</p>
+												<p class="example mt10 s_mt10">※カード会社によって、ご利用いただける分割お支払い回数が異なります。(AMEX、Dinersは1回払いのみ受付可能です)</span>
+												</p>
 												<span m:id="h_err_pay_times">
 													<p class="error mt10 s_mt10">支払回数エラーメッセージ</p>
 												</span>
@@ -1846,7 +2252,7 @@ $(function () {
 									<tr>
 										<th>配送先<span class="th_info"><span class="required">必須</span></span></th>
 										<td>
-											<label><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp(1);" class="radio" >　上記のご住所</label>
+											<label class="s_mb20"><input m:id="h_radio_destined_0"  type="radio" name="destined" value="0" onclick="changeOrdDstInfoDisp(1);" class="radio" >　上記のご住所</label>
 											<label><input m:id="h_radio_destined_1" type="radio" name="destined" value="1" onclick="changeOrdDstInfoDisp(1);" class="radio" >　別の配送先を指定する</label>
 											<span m:id="l_msgPre_destined">
 												<span class="error">
@@ -1975,11 +2381,11 @@ $(function () {
 												<th>お名前<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_set input_set_name">
-														<span class="prefix">姓</span><div class="input_wrap"><input type="text" name="dst_name_sei" m:id="h_txt_dst_name_sei" placeholder="例:山田"></div>
-														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" name="dst_name_mei" m:id="h_txt_dst_name_mei" placeholder="例:花子"></div>
+														<span class="prefix">姓</span><div class="input_wrap"><input type="text" name="dst_name_sei" m:id="h_txt_dst_name_sei" placeholder="例：山田"></div>
+														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" name="dst_name_mei" m:id="h_txt_dst_name_mei" placeholder="例：花子"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
-													<p class="example viewPc mt10">例&nbsp;:&nbsp;山田　太郎</p>
+													<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;山田　太郎</p> -->
 													<span m:id="l_msgPre_dst_name_sei"><p class="error mt10 s_mt10"><span m:id="h_err_dst_name_sei">お名前入(姓)力エラーメッセージ</span></p></span>
 													<span m:id="l_msgPre_dst_name_mei"><p class="error mt10 s_mt10"><span m:id="h_err_dst_name_mei">お名前入(名)力エラーメッセージ</span></p></span>
 												</td>
@@ -1988,11 +2394,11 @@ $(function () {
 												<th>フリガナ<span class="th_info"><span class="suffix">全角カナ</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="input_set input_set_kana">
-														<span class="prefix">セイ</span><div class="input_wrap"><input type="text" name="dst_name_sei_kana" class="in_w_06b" m:id="h_txt_dst_name_sei_kana" placeholder="例:ヤマダ"></div>
-														<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap"><input type="text" class="in_w_06b" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana" placeholder="例:ハナコ"></div>
+														<span class="prefix">セイ</span><div class="input_wrap"><input type="text" name="dst_name_sei_kana" class="in_w_06b" m:id="h_txt_dst_name_sei_kana" placeholder="例：ヤマダ"></div>
+														<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap"><input type="text" class="in_w_06b" m:id="h_txt_dst_name_mei_kana" name="dst_name_mei_kana" placeholder="例：ハナコ"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
-													<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ　タロウ</p>
+													<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ　タロウ</p> -->
 													<span m:id="l_msgPre_dst_name_sei_kana">
 														<p class="error mt10 s_mt10">
 															<span m:id="h_err_dst_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span>
@@ -2010,11 +2416,11 @@ $(function () {
 												<th>郵便番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
 													<div class="member_yubin">
-														<p class="td_txt cmn_bold">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
-														<div class="input_set input_set_post mt10 s_mt10">
-															<span class="prefix">〒</span><div class="input_wrap"><input type="text" class="in_w_09" m:id="h_txt_dst_post_code" name="dst_post_code" onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);" placeholder="例:1620042"></div>
+														<div class="input_set input_set_post">
+															<span class="prefix">〒</span><div class="input_wrap"><input type="text" class="in_w_09" m:id="h_txt_dst_post_code" name="dst_post_code" onblur="javascript:searchAddress(this, this.form.dst_area_code, this.form.dst_address1, this.form.dst_address2);" placeholder="例：1620042">
+															<p class="example post_notice">※ハイフン「-」は入力不要です。</p></div>
 														</div>
-														<p class="example viewPc mt10">例&nbsp;:&nbsp;0123456</p>
+														<p class="example mt10">※郵便番号をご入力頂くと、住所の一部が自動入力されます。</p>
 														<span id="postcode_asyncstat"/>
 														<a m:id="a_bt_searchZip_dst" href="postCode.html" class="cmn_btn cmn_btn_green btn_postcode" onclick="return postCodeList( document.orderForm.dst_post_code.value, 3 );">郵便番号検索</a>
 														<p class="error mt10 s_mt10" id="postcode_asyncstat">
@@ -2028,7 +2434,7 @@ $(function () {
 												<td>
 													<span class="select_box">
 														<select m:id="h_sel_dst_area_code" class="memadd_input_01" onchange="javascript:orderCalculate(this.form._S, this.form.destined, this.form.area_code, this.form.dst_area_code);">
-															<option value="">--選択してください--</option>
+															<option value="">--選択--</option>
 															<option m:id="h_opt_prefecture" value="001">青森県</option>
 															<option m:id="dummy" value="002">秋田県</option>
 															<option m:id="dummy" value="003">埼玉県</option>
@@ -2047,8 +2453,8 @@ $(function () {
 											<tr>
 												<th>市区郡<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" class="in_w_02" m:id="h_txt_dst_address1" name="dst_address1" placeholder="例:新宿区">
-													<span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span>
+													<input type="text" class="in_w_02" m:id="h_txt_dst_address1" name="dst_address1" placeholder="例：新宿区">
+													<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;新宿区</span> -->
 													<span m:id="l_msgPre_dst_address1">
 														<p class="error mt10 s_mt10"><span m:id="h_err_dst_address1">住所(市区郡)入力エラーメッセージ</span></p>
 													</span>
@@ -2057,8 +2463,8 @@ $(function () {
 											<tr>
 												<th>町村字<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" m:id="h_txt_dst_address2" name="dst_address2" placeholder="例:高田馬場">
-													<span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span>
+													<input type="text" m:id="h_txt_dst_address2" name="dst_address2" placeholder="例：高田馬場">
+													<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;高田馬場</span> -->
 													<span m:id="l_msgPre_dst_address2">
 														<p class="error mt10 s_mt10">
 															<span m:id="h_err_dst_address2">住所(町村字)入力エラーメッセージ</span>
@@ -2070,8 +2476,8 @@ $(function () {
 											<tr>
 												<th>番地<span class="th_info"><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3" placeholder="例:4-2-38" onblur="zentohan(this);">
-													<span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span>
+													<input type="text" class="in_w_02" m:id="h_txt_dst_address3" name="dst_address3" placeholder="例：4-2-38" onblur="zentohan(this);">
+													<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;４&#x2212;２&#x2212;３８</span> -->
 													<span m:id="l_msgPre_dst_address3">
 														<p class="error mt10 s_mt10"><span m:id="h_err_dst_address3">住所(番地)入力エラーメッセージ</span></p>
 													</span>
@@ -2079,10 +2485,10 @@ $(function () {
 												</td>
 											</tr>
 											<tr>
-												<th>建物名・部屋番号<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
+												<th><span class="txt_float">建物名・<br class="viewPc">部屋番号</span><span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 												<td>
-													<input type="text" class="in_w_02" m:id="h_txt_dst_address4" name="dst_address4" placeholder="例:ユーキャンビル">
-													<span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span>
+													<input type="text" class="in_w_02" m:id="h_txt_dst_address4" name="dst_address4" placeholder="例：ユーキャンビル">
+													<!-- <span class="example ml20 viewPc">例&nbsp;:&nbsp;ユーキャンビル １０３号室</span> -->
 													<span m:id="l_msgPre_dst_address4">
 														<span m:id="h_err_dst_address4">
 															<p class="error mt10 s_mt10">住所(建物名・部屋番号)入力エラーメッセージ</p>
@@ -2092,9 +2498,9 @@ $(function () {
 														<a class="toggle_btn">世帯主様と苗字が異なる方へ▼</a>
 														<div class="togglemenu mt20">
 															<div class="input_set input_set_name">
-																<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例:山田"></div>
-																<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
-																<span class="suffix viewPc">様方</span>
+																<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例：山田"></div>
+																<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例：花子"></div>
+																<span class="suffix right mt10 viewPc">様方</span>
 															</div>
 															<p class="example mt10">※世帯主様の姓名を入力してください。</p>
 															<span m:id="l_msgPre_dst_address_co_sei">
@@ -2116,8 +2522,8 @@ $(function () {
 												<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 												<td>
 													<div class="input_set input_set_name">
-														<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例:山田"></div>
-														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例:花子"></div>
+														<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_sei" name="dst_address_co_sei" placeholder="例：山田"></div>
+														<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_dst_address_co_mei" name="dst_address_co_mei" placeholder="例：花子"></div>
 														<span class="suffix viewPc">様</span>
 													</div>
 													<p class="example viewPc mt10">例&nbsp;:&nbsp;鈴木　一郎</p>
@@ -2136,8 +2542,8 @@ $(function () {
 											<tr>
 												<th class="none_bor">電話番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 												<td>
-													<input type="text" m:id="h_txt_dst_tel_no1" name="dst_tel_no1" placeholder="例:03">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no2" name="dst_tel_no2" placeholder="例:0000">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no3" name="dst_tel_no3" placeholder="例:0000">
-													<p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p>
+													<input type="text" m:id="h_txt_dst_tel_no1" name="dst_tel_no1" placeholder="例：03">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no2" name="dst_tel_no2" placeholder="例：0000">&nbsp;-&nbsp;<input type="text" m:id="h_txt_dst_tel_no3" name="dst_tel_no3" placeholder="例：0000">
+													<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;03-0000-0000</p> -->
 													<span m:id="l_msgPre_dst_tel_no">
 														<p class="error mt10 s_mt10"><span m:id="h_err_dst_tel_no">電話番号エラーメッセージ</span></p>
 													</span>
@@ -2148,7 +2554,6 @@ $(function () {
 								<!--▲▲▲ お届け先ご住所の入力 ▲▲▲-->
 							</div>
 						<!--▲▲▲ #dst_info ▲▲▲-->
-
 
 						<!--▼▼▼ 配送先日時指定 ▼▼▼-->
 							<span id="appointed_delivery">
@@ -2177,17 +2582,17 @@ $(function () {
 														</span>
 													</div>
 												</span>
-												<p class="td_txt mt20 mb30 s_mt10 s_mb15">
+												<p class="td_txt mb15">
 													※ご指定が無い場合、最短でのお届けとなります。
 												</p>
 
 												<div class="delivery_wrap">
-													<a class="toggle_delive_btn">配送日を希望する方へ▼</a>
-													<div class="togglemenu delive">
+													<!-- <a class="toggle_delive_btn">配送日を希望する方へ▼</a> -->
+													<div class="delive">
 														<span m:id="l_pre_disp_separate_delivery">
 															<div class="mt15 mb25">
-																<label><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >　配送希望日を一括で指定</label>
-																<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio" >　商品毎に配送希望日を指定</label>
+																<label><input m:id="h_radio_separate_delivery_0"  type="radio" name="separate_delivery_date_flg" value="0" onclick="changeSepDeliInfoDisp();" class="radio" >配送希望日を一括で指定</label>
+																<label><input m:id="h_radio_separate_delivery_1" type="radio" name="separate_delivery_date_flg" value="1" onclick="changeSepDeliInfoDisp();" class="radio" >商品毎に配送希望日を指定</label>
 															</div>
 														</span>
 														<div id="delive_wrap">
