@@ -79,66 +79,43 @@ $(function(){
 		.cmn_tit05{font-size:20px;margin:0 0 10px;}
 		.cmn_step04{margin:5px 0 5px;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:stretch;align-items:center;letter-spacing:.01rem;}
 		#cart .cart_recalculate{overflow:hidden;margin:0 0 20px;padding:5px;background-size:4px;font-size:14px;}
-		.cmn_step04 .cmn_step_item{width:140px;font-size:14px;}
+		.cmn_step04 .cmn_step_item{width:120px;font-size:14px;}
 		.cmn_step04 .cmn_step_item:nth-child(2){width:150px;}
 		.cmn_step04 .cmn_step_item:nth-child(3){width:170px;}
-		.cmn_step04 .cmn_step_item:before{top:5px;left:10px;width:15px;height:13px;font-size:8px;}
-		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 36px;}
+		.cmn_step04 .cmn_step_item:before{display:none;top:5px;left:10px;width:15px;height:13px;font-size:8px;}
+		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 7.5px;text-align: center;}
 		.cmn_step04 .cmn_step_item:after{border-width:14px 0 14px 16px;right:-16px;}
 
-			
 		/*追加_cart.do*/
 		.cmn_step {margin: 4px 0 4px;}
 		.cmn_tit05 {margin: 0 0 20px;padding: 10px 0;}
 		.contents_b {padding-top: 10px;}
 		.cmn_tit01 {font-size: 20px;}
 		.cmn_tit02 {font-size: 20px;}
-
 		}
 		@media screen and (max-width: 767px) {
 			body {padding-top: 64px !important;/*margin-bottom:64px !important;*/}
 			.header {height: auto;}
 			.contents_b {padding-top: 5px;}
 			.header_logo {width: 80px;}
-
 			.header_in,#header {position: static;}
 			.header_logo {top:5px;z-index:1;}
-			.header_top_cart {
-				position: absolute;
-				top: 3px;
-				right: 0;
-				padding-left: 110px;
-				width: 100%;
+			.header_top_cart {position: absolute;top: 3px;right: 0;padding-left: 110px;width: 100%;
 			}
 			.cmn_step {margin: 1.5px 0 20px;}
 			.cmn_step_item {font-size: 11px;border-right: none;}
-   		 #cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+			#cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			.cart_membership,
 			.footer_info_consult {display: none !important;}
 			.cmn_step04 .cmn_step_item {width: 20%;margin-right: 16px;}
-			.cmn_step_item:after {
-			    position: absolute;
-			    content: '';
-			    top: 0;
-					right: -16px;
-			    width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 25px 0 25px 16px;
-			    border-color: transparent transparent transparent #e6e6e6;
-			}
+			.cmn_step_item:after {position: absolute;content: '';top: 0;right: -16px;width: 0;height: 0;border-style: solid;border-width: 25px 0 25px 16px;border-color: transparent transparent transparent #e6e6e6;}
 			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
 			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
-
-			
-			
-
 			/*追加_cart.do*/
+
 			.cmn_tit05 {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			/*.cmn_tit05 {margin: 0 -10px;padding: 13px 10px;border: 0;background: #f39801;color: #fff;font-size: 20px;}*/
 		}
-
-
 		@media screen and (max-width: 460px) {
 			body {padding-top: 43px !important;}
 			.header {height: auto;}
@@ -179,28 +156,24 @@ $(function(){
 			#member .cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;}
 			.cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;letter-spacing: -0.05em;}
 		}
-
-
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-		.cmn_form_table02 th {background: #dddddd;}
+		.cmn_form_table02 th {background: #e8f8ff;}
 
 	@media print,screen and (min-width: 767px){
 		/*テーブル調整*/
-		.cmn_form_table01 th { background: #dddddd;border:1px solid #bfbfbf;}
+		.cmn_form_table01 th {background: #e8f8ff;border:1px solid #bfbfbf;}
 		.cmn_form_table01 {border-bottom:1px solid #bfbfbf;}
-		.cmn_form_table01 td {border:1px solid #bfbfbf;}
+		.cmn_form_table01 td {border:1px solid #bfbfbf;padding:30px 20px;}
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-
-		}
-		
-		@media screen and (max-width: 767px){
-			.cmn_tit01 {font-size: 14px;}
-			.cmn_form_table01 th .suffix {font-size: 12px;}
-			.cmn_form_table01 th { background: #dddddd;}
-			.cmn_form_table01 th,
-			.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
-			#member .required {font-size: 12px;}
-		}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_tit01 {font-size: 14px;}
+		.cmn_form_table01 th .suffix {font-size: 12px;}
+		.cmn_form_table01 th { background: #e8f8ff;}
+		.cmn_form_table01 th,
+		.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
+		#member .required {font-size: 12px;}
+	}
 
 </style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
@@ -214,6 +187,11 @@ $(function() {
 </script>
 <![endif]-->
 
+<style>
+	#cart .receipt_txt01 {
+		line-height: 1.6;
+	}
+</style>
 
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
