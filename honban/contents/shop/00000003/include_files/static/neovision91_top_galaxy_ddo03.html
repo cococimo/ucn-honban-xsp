@@ -1,0 +1,1227 @@
+<link rel="stylesheet" href="/contents/shop/00000003/css/default.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="/contents/shop/00000003/css/commonnav.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="/contents/shop/00000003/css/neovision91/style.css" type="text/css" media="all" charset="utf-8" />
+<link rel="stylesheet" href="/contents/shop/00000003/css/neovision91/flexslider.css?1120" type="text/css" media="all" charset="utf-8" />
+<script src="/contents/shop/00000003/js/jquery.fixedheaderscroll.js" type="text/javascript" language="JavaScript"></script>
+<script src="/contents/shop/00000003/js/neovision91/common.js" type="text/javascript" language="JavaScript"></script>
+<script src="/contents/shop/00000003/js/neovision91/jquery.flexslider-min.js" type="text/javascript" language="JavaScript"></script>
+<script>
+	$(function(){
+		$('#content_wrap .sub_inner01 .link span').click(function(){
+			if($(this).parent().hasClass('on')){
+				$(this).parent().removeClass('on').prev().removeClass('on');
+					var thisBtnTop = $('#content_wrap .sub_inner01 .link').offset().top;
+				if($(window).width() > 767){
+					var thisAdjOffset = -20;
+				}else{
+					var thisAdjOffset = $('#header').outerHeight() * 2 * -1;
+				}
+				setTimeout(function(){
+					$('html,body').animate({scrollTop: thisBtnTop + thisAdjOffset}, 300);
+				},100);
+			}else{
+				$(this).parent().addClass('on').prev().addClass('on');
+			}
+			return false;
+		});
+	});
+	$(function(){
+		$('#content_wrap .inner03 .link span').click(function(){
+			if($(this).parent().hasClass('on')){
+				$(this).parent().removeClass('on');
+				$('#sec03 ul').removeClass('on');
+				if($(window).width() > 767){
+					var thisBtnTop = $('#content_wrap .inner03 .link.pc').offset().top;
+					var thisAdjOffset = -20;
+				}else{
+					var thisBtnTop = $('#content_wrap .inner03 .link.sp').offset().top;
+					var thisAdjOffset = -20 + ($('#header').outerHeight() * -1) - ($('#header').outerHeight());
+				}
+				setTimeout(function(){
+					$('html,body').animate({scrollTop: thisBtnTop + thisAdjOffset}, 300);
+				},100);
+			}else{
+				$(this).parent().addClass('on');
+				$('#sec03 ul').addClass('on');
+			}
+			return false;
+		});
+	});
+</script>
+<script>
+
+	$(function () {
+		$(window).load(function () {
+			$('.goods_flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+			$('#neovision_slider_area').removeClass('loading');
+			$('#neovision_slider_area .loading_icon').remove();
+				}
+			});
+		});
+	});
+</script>
+<script>
+		// Picture element HTML5 shiv
+		document.createElement( "picture" );
+</script>
+<script type="text/javascript" src="/contents/shop/00000003/js/neovision91/picturefill.js"></script>
+	<style>
+	/*CM動画設置*/
+	#content_wrap .sec02 .movie_ttl {
+		font-size: 50px;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+		text-shadow:0px 2px 4px #4d4d4d;
+		background: #f18200; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f18200 0%, #f7a100 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #f18200 0%,#f7a100 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #f18200 0%,#f7a100 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f18200', endColorstr='#f7a100',GradientType=0 ); /* IE6-9 */
+	}
+	#content_wrap .sec02 .movie {
+		margin: 0 0 0 0;
+		padding: 0 20px 29px;
+		background:#F7A100;
+	}
+	@media (max-width: 767px) and (min-width: 0){
+			#content_wrap .sec02 .movie_ttl {
+			font-size: 1.8em;
+		}
+		#content_wrap .sec02 .movie {
+			margin: 0 0 0 0;
+			padding: 0 18px 25px;
+		}
+	}
+	.movie .youtube{
+	  position:relative;
+	  width:1160px;
+	  padding-top:56.25%;
+
+	}
+	.movie .youtube iframe{
+	  position:absolute;
+	  top:0;
+	  right:0;
+	  width:100%;
+	  height:100%;
+	    box-sizing: border-box;
+	}
+	@media (max-width: 767px) and (min-width: 0) {
+		.movie .youtube{
+		  position:relative;
+		  width:100%;
+		  height: auto;
+		  padding-top:56.25%;
+		}
+	}
+	/*補足テキスト*/
+	#content_wrap p.subtxt {
+		font-size: 12px !important;
+	}
+</style>
+<style>
+	/*追従バナー調整*/
+	.cmn_btn span {position: relative;z-index: 0;}
+	.cmn_btn_tri:before {top: 0;}
+	/*インタビュー　レイアウト調整*/
+	@media (min-width: 0) and (min-width: 768px) {
+		.block_intv h2 {
+			margin: 1rem 0 10px !important;
+			text-align: center;
+		}
+		.block_intv .cols_two {
+			align-items: flex-end;
+		}
+		.block_intv .profile {
+			font-size: 14px;
+			line-height: 1.7;
+		}
+		.block_intv p {
+			font-size: 16px;
+			line-height: 1.7;
+		}
+	}
+	@media (max-width: 767px) and (min-width: 0) {
+		.block_intv h2 {
+			margin-bottom: 1rem !important;
+		}
+		.block_intv {
+			padding: 0 5px 10px 5px;
+		}
+		.block_intv .profile {
+			font-size: .82em;
+			line-height: 1.6;
+		}
+	}
+/* スペックレイアウト調整 */
+#content_wrap .inner06 .sub_inner .txt_area {height: auto;}
+
+</style>
+
+
+<style>
+/* 購入ボタン */
+.order_btn {
+	font-size: 1.2em;
+	color: #fff;
+	display: inline-block;
+	background:#FF0000;
+	display: inline-block;
+	text-align:center;
+	vertical-align: middle;
+	border-radius:20em;
+	border:3px solid #fff;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+	transition: all 300ms 0s ease;
+}
+.order_btn:hover {
+	background:#4e75af;
+}
+.order_btn a {
+	padding: 0.3em 1.2em 0.1em;
+	display: inline-block;
+}
+.order_btn a img {
+	max-width:230px;
+}
+@media (max-width: 767px) and (min-width: 0) {
+	.order_btn {
+		font-size: 1em;
+		border-radius:20px;
+		border:2px solid #fff;
+	}
+}
+</style>
+<style>
+/* 完売対応 */
+.order_btn.sold_out,
+.order_btn.sold_out:hover {
+	background:#868686;
+}
+.order_btn.sold_out a {
+	pointer-events:none;
+	cursor:default;
+}
+</style>
+<style>
+/* ギャラクシーモデル追加 */
+.galaxy_model_area {
+	position:relative;
+	z-index: 1;
+	width: 1200px;
+	height: 690px;
+	overflow: hidden;
+}
+.galaxy_model_area .item {
+	position: absolute;
+	z-index: 2;
+}
+.galaxy_model_area .limited_color {
+	top:20px;
+	right: 83px;
+}
+.galaxy_model_area .present {
+	top:270px;
+	right: 6px;
+}
+.galaxy_model_area .order_btn a {
+	transition: all 300ms 0s ease;
+}
+.galaxy_model_area .order_btn a:hover {
+	/* opacity: 0.9;
+    filter: alpha(opacity=90); */
+}
+.galaxy_model_area .order_btn.general_model {
+	top:578px;
+	left: 177px;
+
+}
+.galaxy_model_area .order_btn.galaxy_model {
+	top:578px;
+	left: 612px;
+}
+
+
+@media (max-width: 767px) and (min-width: 0) {
+	.galaxy_model_area {
+		width: auto;
+		height: 103vw;
+		background: #030C1B;
+	}
+
+	.galaxy_model_area .order_btn {
+		width: 40vw;
+		border-radius: 12px;
+		border: 1px solid #fff !important;
+	}
+	.galaxy_model_area .order_btn.general_model {
+		top: 78vw;
+		left: 5vw;
+		
+
+	}
+	.galaxy_model_area .order_btn.galaxy_model {
+		top: 78vw;
+		left: 52vw;
+
+	}
+	.galaxy_model_area .limited_color {
+		width: 23vw;
+		top: 0.5vw;
+		right: 0.5vw;
+	}
+	.galaxy_model_area .present {
+		top: auto;
+		right: 0;
+		bottom: 0;
+	}
+
+}
+
+
+
+/* @media (max-width: 767px) and (min-width: 0) {
+	#content_wrap .main_img {
+	    margin: 0 0 0;
+	    position: inherit;
+	}
+} */
+</style>
+
+<style>
+/* プレゼントバナー */
+.present_bnr {
+	margin: 30px 20px 33px;
+}
+@media (max-width: 767px) and (min-width: 0) {
+	.present_bnr {
+		margin: 20px 12px 25px;
+	}
+}
+
+</style>
+<style>
+	#neovision_slider_area.loading .goods_flexslider {
+		opacity: 0;
+	}
+	#neovision_slider_area .loading_icon {
+		position: relative;
+	}
+	#neovision_slider_area .loading_icon:before {
+		content: url(/contents/shop/00000003/image/static/neovision91/slider/icon_loader.gif);
+		display: block;
+		text-align: center;
+		color: #000;
+		font-weight: bold;
+		font-size: 5vw;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: 45vw auto;
+	}
+
+	#neovision_slider_area .flex-viewport {
+    	max-height: initial;
+	}
+	.deviceSP .flex-control-paging li a {
+		width: 10px;
+		height: 10px;
+	}
+	.flex-control-nav li {
+		margin: 0 2px;
+		}
+	.neovision_slider {
+		margin-bottom: 15vw;
+		position: relative;
+	}
+	.neovision_slider .flex-control-nav {
+    	bottom: -10vw;
+	}
+	.neovision_slider .goods_flexslider .flex-direction-nav a:before {
+		font-family: flexslider-icon!important;
+		display: inline-block;
+		content: '\f001';
+		color: rgba(0, 0, 0, 0.5);
+	}
+	.neovision_slider .goods_flexslider a.flex-next:before {
+		content: '\f002';
+	}
+
+</style>
+<style>
+	.naovision_sp_slider {display: none;}
+</style>
+<div class="content_inner">
+	<div class="naovision_sp_slider">
+		<div class="neovision_slider loading" id="neovision_slider_area">
+			<div class="loading_icon"></div>
+			<div class="goods_flexslider">
+				<ul class="slides">
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo001.jpg?1120" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo002.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo003.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo004.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo005.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo006.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo007.jpg?1127" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo008.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo009.jpg?1125" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo010.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo011.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo012.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo013.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo014.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo015.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo016.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo017.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo018.jpg" alt=""></li>
+					
+				</ul>
+			</div>
+		</div><!-- neovision_slider -->
+	</div>
+
+<style>
+	/* 残りわずか */
+.galaxy_model_area .limited_color {
+    top: 37px;
+    right: 10px;
+}
+.galaxy_model_area .present {
+	top: 334px;
+    right: 6px;
+}
+@media (max-width: 767px) and (min-width: 0) {
+	.galaxy_model_area .limited_color {
+		top: 0.5vw;
+		right: 0.5vw;
+	}
+	.galaxy_model_area .present {
+		top: auto;
+		right: 0;
+		bottom: 0;
+	}
+}
+</style>
+	<div class="galaxy_model_area">
+		<picture>
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_sp.jpg">
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01.jpg">
+			<img src="/contents/shop/00000003/image/static/neovision91/img_new_01.jpg" alt="">
+		</picture>
+		<!-- <p class="limited_color item"><img src="contents/shop/00000003/image/static/neovision91/img_new_01_4.png" alt="WEB限定カラーギャラクシーブルーモデル"></p> -->
+		<p class="limited_color item"><img src="contents/shop/00000003/image/static/neovision91/img_new_01_4_2.png?1203" alt="WEB限定カラーギャラクシーブルーモデル 残りわずか！"></p>
+		
+		<picture>
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_5_sp.png">
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_5.png">
+			<img class="present item" src="/contents/shop/00000003/image/static/neovision91/img_new_01_5.png" alt="">
+		</picture>
+
+		<!-- ▼▼通常モデル-カートボタン▼▼ -->
+		<div class="order_btn item general_model">
+			<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+				<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+			</a>
+		</div>
+		<!-- ▲▲通常モデル-カートボタン▲▲ -->
+
+		<!-- ▼▼ギャラクシーカートボタン▼▼ -->
+		<div class="order_btn item galaxy_model">
+			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+			</a>
+		</div>
+		<!-- <div class="order_btn item galaxy_model sold_out">
+			<a href="javascript:void(0);">
+				<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+			</a>
+		</div> -->
+		<!-- ▲▲ギャラクシーカートボタン▲▲ -->
+	</div>
+
+	<div class="main_img"><img src="contents/shop/00000003/image/static/neovision91/main_img_4.png" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_main_img_2.jpg" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="sp"><span class="pc">▲日本地図はプッシュ・オープン式。台座から出し入れ可能で便利です。</span></div>
+	<div class="sec01">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext09.png" alt="見て、聞いて、触って楽しい「しゃべる地球儀」はココチモ限定の地球儀です！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext01.png" width="273" alt="見て、聞いて、触って楽しい「しゃべる地球儀」はココチモ限定の地球儀です！" class="sp"></h2>
+		<p>こんな地球儀があったなんて！<br class="viewPc">ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、<br class="pc">
+			新しい感動とワクワクをお届けします。<br class="viewPc">10,000シーンを超える映像(※)と、15,000を超える音声解説付きの未来型地球儀。<br>
+			子供たちへの知育教材としてはもちろん、大人の知的なインテリア玩具としても傑作！！<br>
+			ココチモだけの７インチ大画面を配した台座は見やすいと大好評です。<br class="pc">
+			ぜひこの機会にお求めください。</p>
+		<p class="subtxt">※映像には写真と動画が含まれます。</p>
+	</div>
+
+	<style>
+		.galaxy_lead {
+			position: relative;
+			width: 1200px;
+			height:664px;
+			margin-bottom: 30px;
+		}
+		.galaxy_lead .txt_area {
+			position: absolute;
+			top:114px;
+			right: 44px;
+			width: 555px;
+		}
+		.galaxy_lead .txt_area .txt {
+			padding: 25px;
+			font-weight: normal;
+			font-size: 18px;
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+		.galaxy_lead .txt_area .notice {
+			padding-top: 3px;
+			font-size: .8em;
+			font-weight: normal;
+		}
+		.galaxy_lead .txt_area .txt p {
+		text-align: justify;
+			text-justify: inter-ideograph;
+			letter-spacing: -0.04em;
+		}
+		.galaxy_lead .txt .blue {
+			color:#3e17a2;
+			vertical-align: top;
+		}
+		.galaxy_lead .txt .red {
+			color:#cf0000;
+			vertical-align: top;
+		}
+		.galaxy_lead .order_btn {
+			position: absolute;
+			right: 80px;
+			bottom: 22px;
+		}
+		.galaxy_lead .order_btn {
+			border-radius: 1.2em;
+			border: 4px solid #fff;
+			box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+		}
+
+		.galaxy_lead .order_btn a {
+			padding: 0.5em 2em 0.5em;
+			display: inline-block;
+		}
+		.galaxy_lead .order_btn a img {
+			max-width: 390px;
+		}
+	@media (max-width: 767px) and (min-width: 0) {
+		.galaxy_lead {
+			position: relative;
+			background:#112143;
+			width: auto;
+			height:auto;
+			margin-bottom: 30px;
+    		padding-bottom: 24px;
+		}
+		.galaxy_lead .txt_area {
+			position: static;
+			width: auto;
+			margin: 14px 10px 25px;
+		}
+		.galaxy_lead .txt_area .txt {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 18px;
+			font-weight: normal;
+			width: auto;
+			font-size: 14px;
+		}
+		.galaxy_lead .txt_area .notice {
+			color: #fff;
+		}
+		.galaxy_lead .order_btn {
+			position: static;
+			margin: 0 auto 0;
+			max-width: 247px;
+			display: block;
+		}
+		.galaxy_lead .order_btn a img {
+			max-width: 240px;
+		}
+		.galaxy_lead .order_btn {
+			border: 2px solid #fff;
+			box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+		}
+	}
+	</style>
+
+	<div class="galaxy_lead">
+		<h2 style="display: none;">【先着1000台限り！】WEB限定カラー ギャラクシーブルーモデル</h2>
+		<picture>
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_sp2.jpg">
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_2.jpg">
+			<img src="/contents/shop/00000003/image/static/neovision91/img_new_02_2.jpg" alt="">
+		</picture>
+		<div class="txt_area">
+			<div class="txt">
+				<p>『しゃべる地球儀』のWEB限定カラー<span class="blue bold">「ギャラクシーブルーモデル」</span>が新登場！
+					深みのあるブルーの台座の上で、輝くシルバーのフレームに彩られた地球儀の球体――その姿は、まさに“銀河系に煌めく地球”。</p>
+					<p>ロマンあふれるデザインの本モデルは、<span class="red bold">お子様へのプレゼントにもオススメ。</span>「カッコいい！」と喜ばれること請け合いです。</p>
+					<p>上品で知的なインテリアとして、お部屋の中で特別な存在感を放つ『しゃべる地球儀　ギャラクシーブルーモデル』。<span class="red bold">1000台限定、お申込み先着順でのお届け</span>となりますので、ぜひお早めにお申込みください。</p>
+			</div>
+			<p class="notice">※台座・フレーム・ペンの色が「通常モデル」と異なりますが、その他の仕様・機能・収録コンテンツ等は「通常モデル」と同様です。</p>
+		</div>
+
+		<!-- ▼▼ギャラクシーカートボタン▼▼ -->
+		<div class="order_btn">
+			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+			</a>
+		</div>
+		<!-- <div class="order_btn sold_out">
+			<a href="javascript:void(0);">
+				<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+			</a>
+		</div> -->
+		<!-- ▲▲ギャラクシーカートボタン▲▲ -->
+	</div>
+	<div class="sec02">
+
+		<h2 class="movie_ttl">テレビCMでも話題！<!--<img src="contents/shop/00000003/image/static/neovision91/imgtext01.jpg" alt="ただいま、CM放送中！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext02.png" alt="ただいま、CM放送中！ただいま、CM放送中！" class="sp">--></h2>
+
+		<div class="movie">
+			<div class="youtube">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/dzWSpFLPwU8?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<!-- ▼▼プレゼントバナー▼▼ -->
+		<div class="present_bnr">
+			<picture>
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03_sp.jpg">
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg">
+				<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　重厚感ある風合いとレトロなデザインが上品な空間を演出。えんぴつ削りはもちろん、お部屋のインテリアとしても楽しめます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
+			</picture>
+		</div>
+		<!-- ▲▲プレゼントバナー▲▲-->
+
+		<style>
+		.order_btn_area {
+			margin:60px 80px 60px 100px;
+		}
+		.order_btn_area .item_box {
+			float: left;
+			position: relative;
+		}
+		.order_btn_area .item_box:nth-child(2) {
+			float: right;
+		}
+		.order_btn_area .item_box .img {
+			width: 120px;
+			position: absolute;
+			top: -30px;
+			left: -25px;
+		}
+		.order_btn_area .item_box .order_btn a img {
+			max-width: 320px;
+		}
+		.order_btn_area .item_box .order_btn {
+			border-radius: 1.2em;
+		}
+		.order_btn_area .item_box .order_btn a {
+			padding: 0.8em 2em 0.5em 4em;
+			display: inline-block;
+		}
+		@media (max-width: 767px) and (min-width: 0) {
+			.order_btn_area {
+				margin:30px 12px;
+			}
+			.order_btn_area .item_box {
+				float: none !important;
+				max-width: 220px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.order_btn_area .item_box:nth-child(2) {
+				margin-top: 40px;
+			}
+			.order_btn_area .item_box .img {
+				width: 68px;
+				position: absolute;
+				top: -22px;
+				left: -20px;
+			}
+			.order_btn_area .item_box .order_btn a img {
+				max-width: 240px;
+			}
+
+		}
+		</style>
+
+		<div class="com_box mt30">
+			<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="order_btn_area cf">
+				<div class="item_box general_model">
+					<div class="order_btn">
+						<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+						</a>
+					</div>
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_1.png" alt="通常モデル">
+					</div>
+				</div>	
+				<div class="item_box galaxy_model">
+					<div class="order_btn">
+						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+						</a>
+					</div>
+					<!--<div class="order_btn sold_out">
+						<a href="javascript:void(0);">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+						</a>
+					</div>-->
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
+					</div>
+				</div>
+			</div>
+			<!-- ▲▲お申込みボタン▲▲ -->
+
+			<!-- <span style="max-width:930px;margin-left:auto;margin-right:auto;display:block;padding:14px 0;font-size:1.2rem;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px;background:#fff65e;">
+				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>
+			予めご了承ください。</b>
+			</span> -->
+
+			<!-- 完売対応　
+			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
+			//完売対応　 -->
+
+			<!-- ▼▼LPカートに入れる設定▼▼ -->
+			<!-- 商品購入カート -->
+			<form name="cartGoodsAddForm_static" method="POST" action="/shop/cartGoodsAddToOrder.do">
+			<input type="hidden" name="_S" value="c">
+			<input type="hidden" name="display_code" value="9999">
+			<input type="hidden" name="goods_sku_code" value="99999999">
+			<input type="hidden" name="ext_goods_sku_code" value="ZZZ99">
+			<input type="hidden" name="order_num_string" value="1">
+			</form>
+			<!--/ 商品購入カート -->
+			<!-- ▲▲LPカートに入れる設定▲▲ -->
+			<!--▼▼▼ カート投入js ▼▼▼-->
+			<!-- <script src="/contents/js/staticCartSkuAdd.js" charset="UTF-8"></script> -->
+			<script>
+				function siteCatalistAddCart_static(s_products,static_goods_sku_code,static_display_code){
+					document.cartGoodsAddForm_static.order_num_string.value="1";
+					document.cartGoodsAddForm_static.goods_sku_code.value=static_goods_sku_code;
+					document.cartGoodsAddForm_static.display_code.value=static_display_code;
+					document.cartGoodsAddForm_static.ext_goods_sku_code.value=s_products;
+					return anchorButtonClick(document.cartGoodsAddForm_static);
+				}
+			</script>
+			<!--▲▲▲ カート投入js ▲▲▲-->
+
+			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
+			<p class="sp">タッチすると直接電話がかけられます。<br>
+				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+		</div>
+		<div id="sec01" class="inner01">
+			<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext04.png" alt="見て、聞いて、触って楽しい！！"></h2>
+			<div class="img_box01">
+				<div class="txt_box txt_box01">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext05.png" alt="映像"></h3>
+					<p class="ttl">10,000以上のシーン</p>
+					<p>地球儀に触れるとびっくり！台座の液晶パネルに世界各国の大自然、歴史名所、美しい風景が映し出されます。<br>
+						7インチの大画面モニターだから、見やすさも抜群！</p>
+					<p class="subtxt">※映像には写真と動画が含まれます。</p>
+				</div>
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo02.png" alt="7インチの大画面モニターで見やすい！世界遺産や大自然も！ 約15.4cm～約8.6cm" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo03.png" alt="7インチの大画面モニターで見やすい！世界遺産や大自然も！ 約15.4cm～約8.6cm" class="sp"></div>
+			</div>
+			<div class="img_box02">
+				<div class="txt_box">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext06.png" alt="音声"></h3>
+					<p class="ttl">15,000以上の情報</p>
+					<p>国名・通貨・時刻・首都など…知っておきたい世界の最新情報（※）を親切に地球儀が「しゃべって」教えてくれます。</p>
+					<div class="txt_area">
+						<p>◆大陸・州◆人口◆時刻◆最高地点◆気候◆国歌<br class="pc">
+							◆最高責任者◆言語◆特徴…計15ジャンル</p>
+					</div>
+					<p class="txt">※常に最新情報でご使用いただくためにはインターネット経由のデータ更新が必要です</p>
+				</div>
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo03.png" alt="音声"></div>
+			</div>
+			<div class="img_box01 img_box03">
+				<div class="txt_box">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext07.png" alt="日本地図"></h3>
+					<p class="ttl">日本地図が<br>
+						パッと飛び出す</p>
+					<p>台座に格納されている日本地図をタッチすれば、都道府県の詳細情報を音声で解説。さらに紹介映像も。</p>
+				</div>
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo04.png" alt="日本地図" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo04.png" alt="日本地図" class="sp"><span class="pc bold">▲日本の名所もご覧になれます。</span><span class="sp bold">日本の名所も<br>
+ご覧になれます。<img src="contents/shop/00000003/image/static/neovision91/icon02.png" alt="" width="10"></span></div>
+			</div>
+			<div class="img_box02 img_box04">
+				<div class="txt_box">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext08.png" alt="360度回転"></h3>
+					<p class="ttl">上下左右にくるくる<br>
+						動くから<br>
+						楽しく地球と遊べる！</p>
+					<p>360度回転する地球儀。なめらかに動くのでお好きな角度で楽しめます。<br>
+						アフリカ大陸はどこ？一番南にある島はどこだろう？など、気になる地域を素早く見つけられます。</p>
+				</div>
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo05.png" alt="上下左右にクルクル動く！"></div>
+			</div>
+		</div>
+
+		<div class="com_box">
+			<!-- <span style="max-width:930px;margin-left:auto;margin-right:auto;display:block;padding:14px 0;font-size:1.2rem;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px;background:#fff65e;">
+				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>予めご了承ください。</b>
+			</span> -->
+
+			<!-- 完売対応　
+			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
+			 //完売対応　 -->
+
+
+			<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="order_btn_area cf">
+				<div class="item_box general_model">
+					<div class="order_btn">
+						<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+						</a>
+					</div>
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_1.png" alt="通常モデル">
+					</div>
+				</div>	
+				<div class="item_box galaxy_model">
+					<div class="order_btn ">
+						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+						</a>
+					</div>
+					<!--<div class="order_btn sold_out">
+						<a href="javascript:void(0);">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+						</a>
+					</div>-->
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
+					</div>
+				</div>
+			</div>
+			<!-- ▲▲お申込みボタン▲▲ -->
+			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
+			<p class="sp">タッチすると直接電話がかけられます。<br>
+				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+		</div>
+		<h2 id="sec02" class="h2_ttl01" style="margin-top:10px;"><img src="contents/shop/00000003/image/static/neovision91/imgtext11.png" alt="大人も子供も楽しめる多機能地球儀！お客様のお声とともにその魅力に迫ります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext04.png" alt="大人も子供も楽しめる多機能地球儀！お客様のお声とともにその魅力に迫ります。" class="sp"></h2>
+		<div class="inner02">
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext12.png" alt="魅力1 10,000以上の映像で旅行気分。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext05.png" alt="魅力1 10,000以上の映像で旅行気分。" class="sp"></h3>
+			<div class="img_box01">
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo16.png" alt="スピーカー ７インチ画面" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo05.png" alt="スピーカー ７インチ画面" class="sp"></div>
+				<div class="txt_box">
+					<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext13.png" alt="「世界一周の夢が見られる」（広島県・女性・80歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext06.png" alt="「世界一周の夢が見られる」（広島県・女性・80歳）" class="sp"></h4>
+					<p>知りたい場所をタッチすると画面に映像が映し出されます。</p>
+					<div class="pho"><img src="contents/shop/00000003/image/static/neovision91/photo06.png" alt="7インチの大画面 その国を旅しているかのよう!"><span>▲フランスの世界遺産 モン・サン・ミッシェル。</span></div>
+				</div>
+			</div>
+			<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext14.png" alt="「かつて訪れた地域が楽しめる」（男性・75歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext08.png" alt="「かつて訪れた地域が楽しめる」（男性・75歳）" class="sp"></h4>
+			<p class="txt01">というお声の通り、大自然や観光名所、街並みなどの風景が楽しめます。まるで自宅に居ながらにして旅しているかのよう！地球の素晴らしさを実感できます。</p>
+			<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext15.png" alt="魅力2 タッチペン１本でラクラク操作！まるで話す百科事典" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext09.png" alt="魅力2 タッチペン１本でラクラク操作！まるで話す百科事典" class="sp"></h3>
+			<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext16.png" alt="「操作方法も簡単ですごく助かりました」（女性36歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext10.png" alt="「操作方法も簡単ですごく助かりました」（女性36歳）" class="sp"></h4>
+			<ul class="pho_list">
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo07.png" alt="地球儀上の知りたい国をタッチするだけ!"><span class="sp">操作方法は、全て付属のタッチペンで触れるだけ。<br>
+				小さなお子さんも機械が苦手な大人も安心してお楽しみいただけます。</span></li>
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo08.png?1122" alt="まるで百科事典!通貨、首都など世界の情報をしゃべって教えてくれる!ネパールの最高地点のエベレストの標高は8848mです。オーストラリアの首都はキャンベラです。インドの人口はおよそ12億5170万人です。イギリスの通貨はスターリング・ボンドです。"></li>
+			</ul>
+			<p class="txt01 pc">操作方法は、全て付属のタッチペンで触れるだけ。<br>
+				小さなお子さんも機械が苦手な大人も安心してお楽しみいただけます。</p>
+			<div class="img_box02 clearfix">
+				<div class="txt_box">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext18.png" alt="「情報が多くて操作が楽しい」（男性84歳）"></h3>
+					<p>あの国の首都はどこ？この国の観光地は？音声でお話しするように教えてくれるのはもちろん、国歌のメロディーを奏でたり、2ヶ国の面積や人口の比較もカンタンに！大人も子供も時を忘れる面白さです。</p>
+				</div>
+				<div class="pho_box">
+					<ul>
+						<li><img src="contents/shop/00000003/image/static/neovision91/imgtext17.png" alt="世界の知識を15ジャンルに分けて解説 大陸・州　国・都道府県　首都・中心都市　最高責任者 言語　人口　気候　面積 地理　通貨　時刻　最高地点 特徴　文化・歴史　国歌"></li>
+						<li><img src="contents/shop/00000003/image/static/neovision91/photo09.png?1121" alt="驚きの事実 こんなエピソートも!ナイアガラ川が凍って20時間流れが止まったことを知っていましたか？"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="img_box03 clearfix">
+				<div class="pho_box pc"><img src="contents/shop/00000003/image/static/neovision91/photo17.jpg" alt="全国47都道府県の情報網羅!日本の歴史や名所の映像も!!Q北海道と沖縄県はどれぐらい離れている?Q東京都と長崎県は何時間差がある?都道府県ごとの比較もこんな楽しみ方もできます。">
+					<p>地球儀の台座から、日本地図がパッと飛び出す！タッチすれば、世界の国々と同じく、都道府県別の人口・文化・歴史など情報が楽しめます。きっと「目からウロコ」の意外な発見もあることでしょう。</p>
+				</div>
+				<div class="txt_box">
+					<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext19.png" alt="魅力3 飛び出す日本地図で47都道府県めぐり。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext11.png" alt="魅力3 飛び出す日本地図で47都道府県めぐり。" class="sp"></h3>
+
+					<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext21.png" alt="台座から日本地図が引き出せる！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext12.png" alt="台座から日本地図が引き出せる！" class="sp"></h4>
+					<div class="pho_box sp"><img src="contents/shop/00000003/image/static/neovision91/photo17.jpg" alt="">
+					<p>地球儀の台座から、日本地図がパッと飛び出す！タッチすれば、世界の国々と同じく、都道府県別の人口・文化・歴史など情報が楽しめます。きっと「目からウロコ」の意外な発見もあることでしょう。</p>
+				</div>
+					<div class="pho"><img src="contents/shop/00000003/image/static/neovision91/photo10.png" alt="全国47都道府県の情報網羅!日本の歴史や名所の映像も!!Q北海道と沖縄県はどれぐらい離れている?Q東京都と長崎県は何時間差がある?都道府県ごとの比較も こんな楽しみ方もできます。"></div>
+				</div>
+			</div>
+			<h3 class="h3_spec01"><img src="contents/shop/00000003/image/static/neovision91/imgtext22.png" alt="魅力4 時空を超えるロマンが楽しめる！ご家族との会話も盛り上がります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext13.png" alt="魅力4 時空を超えるロマンが楽しめる！ご家族との会話も盛り上がります。" class="sp"></h3>
+			<h4 class="h4_ttl01"><img src="contents/shop/00000003/image/static/neovision91/imgtext23.png" alt="「よくこんな便利なものをつくってくれた事と感謝する」（男性79歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext14.png" alt="「よくこんな便利なものをつくってくれた事と感謝する」（男性79歳）" class="sp"></h4>
+			<ul class="list clearfix">
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo13.png" alt="野生動物">
+					<p>▲ジャイアント・パンダ</p>
+				</li>
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo14.png" alt="恐竜の時代">
+					<p>▲トリケラトプス</p>
+				</li>
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo11.png" alt="世界の歴史">
+					<p>▲アレクサンドロス大王</p>
+				</li>
+				<li><img src="contents/shop/00000003/image/static/neovision91/photo12.png" alt="人類の発明">
+					<p>▲自動車の発明</p>
+				</li>
+			</ul>
+			<p class="txt02">別冊付録を利用すると時間をさかのぼって「世界の歴史」を楽しめるほか、「恐竜の時代」「野生動物」など、お子さんと一緒にワクワクできる情報も目白押しです。</p>
+			<ul class="arrow clearfix">
+				<li><img src="contents/shop/00000003/image/static/neovision91/imgtext25.png?1121" alt="地球儀と連動した 付録冊子「ワールドブック」が さらに楽しみを広げてくれます。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext15.png?1121" alt="地球儀と連動した 付録冊子「ワールドブック」が さらに楽しみを広げてくれます。" class="sp"></li>
+				<li>
+					<p class="ttl"><img src="contents/shop/00000003/image/static/neovision91/imgtext24.png" alt="別冊付録 楽しく遊べる「ワールドブック」" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext16.png" alt="別冊付録 楽しく遊べる「ワールドブック」" class="sp"></p>
+					<p class="txt"><img src="contents/shop/00000003/image/static/neovision91/imgtext26.png" alt="地球上の生物や人類の歴史など1000を超える情報収録！！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext17.png" alt="地球上の生物や人類の歴史など1000を超える情報収録！！" class="sp"></p>
+					<div class="img_box clearfix">
+						<div class="txt_box">
+							<p><span>パーフェクトペンで触れると、地球儀と同じように関連の画像と音声が地球儀本体から流れます。</span>世界がもっとよくわかる別冊付録つきのお届けです。</p>
+							<p class="text">◆A4変形サイズ ◆30ページ</p>
+						</div>
+						<div class="pho"><img src="contents/shop/00000003/image/static/neovision91/photo18.png?1125" alt="地球上の生物や人類の歴史など1000を超える情報収録！！"></div>
+					</div>
+				</li>
+			</ul>
+			<div class="sub_inner01">
+				<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext27.png" alt="歴史・恐竜・発明… 様々な映像内容を収録。地球の記録をご堪能ください。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext18.png" alt="歴史・恐竜・発明… 様々な映像内容を収録。地球の記録をご堪能ください。" class="sp"></h2>
+				<dl class="clearfix">
+					<dt><span class="inner">動物<span class="small">哺乳類と鳥類</span></span></dt>
+					<dd>●ゴリラ／ライオン／キリン…他（アフリカ） ●ノウサギ／コブハクチョウ…他（ヨーロッパ） ●オランウータン／ジャイアントパンダ…他（アジア） ●カンガルー／コアラ…他（オセアニア） ●ヘラジカ／ビーバー／シロフクロウ…他（北アメリカ） ●ラマ／コンドル…他（南アメリカ）</dd>
+					<dt><span class="inner">発明と革新</span></dt>
+					<dd>●羅針盤（紀元前200年） ●印刷機（1436年） ●蒸気機関車（1804年） ●電話（1876年） ●自動車（1885年） ●テレビ（1927年） ●ジェット機（1939年） ●コンピューター＜電子計算機＞（1941年） ●人工衛星（1957年） ●ＣＤ（1965年） ●携帯電話（1973年） ●インターネット（1989年）…他</dd>
+					<dt><span class="inner">動物<span class="small">両生類と無脊椎動物</span></span></dt>
+					<dd>●アリジゴク／ブラダーバッタ…他（アフリカ） ●アルプスサラマンダー／アカガエル…他（ヨーロッパ） ●マレーシアツノガエル…他（アジア） ●セアカゴケグモ／タマムシ…他（オセアニア） ●アメリカヒキガエル／サザンドワーフサイレン…他（北アメリカ） ●ゴリアテグモ…他（南アメリカ）</dd>
+					<dt><span class="inner">恐竜の時代</span></dt>
+					<dd>●ティラノサウルスレックス／トリケラトプス…他（北アメリカ） ●ギガノトサウルス／パタゴザウルス…他（南アメリカ） ●エジプトサウルス／スピノサウルス…他（アフリカ）●始祖鳥（アーケオプテリクス）／プテラノドン…他（ヨーロッパ） ●プロトケラトプス…他（アジア） ●アグロサウルス…他（オセアニア）</dd>
+					<dt><span class="inner">動物<span class="small">魚類と爬虫類</span></span></dt>
+					<dd>●デンキナマズ／カメレオン…他（アフリカ） ●コイ／ヨーロッパドクヘビ…他（ヨーロッパ） ●ライギョ／キングコブラ…他（アジア） ●ホオジロザメ／アオウミガメ…他（オセアニア） ●ニジマス／ガラガラヘビ…他（北アメリカ） ●アナコンダ／グリーンイグアナ…他（南アメリカ）</dd>
+					<dt><span class="inner">食べ物</span></dt>
+					<dd>●アサード（アルゼンチン） ●ミートパイ（オーストラリア）●チーズ（フランス） ●炒飯（中華人民共和国） ●カレー（インド） ●パスタ（イタリア） ●寿司（日本） ●クスクス（モロッコ） ●セビチェ（ペルー） ●ボルシチ（ロシア）●キムチ（大韓民国） ●ステーキ（アメリカ合衆国）…他</dd>
+					<dt><span class="inner">世界の歴史</span></dt>
+					<dd>●弥生文化／漢王朝…他（アジア） ●アルテミス神殿／ローマ帝国／フランス革命…他（ヨーロッパ） ●エジプト文明／ツタンカーメン…他（アフリカ） ●マヤ文明／独立宣言／同時多発テロ…他（アメリカ） ●イースター島／マゼラン／ウルルの発見…他（オセアニア）</dd>
+					<dt><span class="inner">世界の国旗</span></dt>
+					<dd>●フランス／イタリア／ドイツ／イギリス…他（ヨーロッパ） ●モロッコ／エジプト／カメルーン／ケニア…他（アフリカ） ●日本／中華人民共和国／インド…他（アジア） ●オーストラリア／ニュージーランド…他（オセアニア）●アメリカ合衆国／カナダ／ブラジル…他（アメリカ）</dd>
+					<dt><span class="inner">ランドマーク</span></dt>
+					<dd>●アブ・シンベル神殿／ヴィクトリアの滝…他（アフリカ） ●凱旋門／モン・サン・ミッシェル／ポンペイ…他（ヨーロッパ） ●アンコール・ワット／タージ・マハル…他（アジアと中近東） ●グレート・バリア・リーフ／ウルル（エアーズ・ロック）…他（オセアニア） ●ナイアガラの滝／マチュ・ピチュ…他（アメリカ）</dd>
+				</dl>
+				<div class="link"><span><img src="contents/shop/00000003/image/static/neovision91/imgtext28.png" alt="収録内容をもっと見る" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext19.png" alt="収録内容をもっと見る" class="sp"></span></div>
+			</div>
+			<h3 class="h3_ttl01"><img src="contents/shop/00000003/image/static/neovision91/imgtext29.png" alt="魅力5 インテリアとしてもお部屋に映える。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext20.png" alt="魅力5 インテリアとしてもお部屋に映える。" class="sp"></h3>
+			<div class="img_box_r clearfix">
+				<div class="txt_box">
+					<h4><img src="contents/shop/00000003/image/static/neovision91/imgtext30.png" alt="「何だか、持っているだけで 世界が広がる感じ」（女性55歳）"></h4>
+					<p>インテリアとしても憧れの地球儀です。直径約26cmという絶妙なサイズ感と高級感あるデザインで、あなたのリビングや書斎を格上げしてくれます。</p>
+				</div>
+				<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo15.png" alt="リビングにも映える 知的インテリア"><span class="pc text"><img src="contents/shop/00000003/image/static/neovision91/icon02.png" alt="リビングにも映える 知的インテリア">リビングに置けば、ニュースやテレビで取りあげられた国が、すぐに調べられます</span><span class="sp">▲リビングに置けば、ニュースやテレビで<br>取りあげられた国が、すぐに調べられます</span></div>
+			</div>
+		</div>
+
+		<div class="com_box com_box01">
+			<!-- <span style="max-width:930px;margin-left:auto;margin-right:auto;display:block;padding:14px 0;font-size:1.2rem;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px;background:#fff65e;">
+				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>
+			予めご了承ください。</b>
+			</span> -->
+
+			<!-- 完売対応　
+			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
+			//完売対応　 -->
+
+			<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="order_btn_area cf">
+				<div class="item_box general_model">
+					<div class="order_btn">
+						<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+						</a>
+					</div>
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_1.png" alt="通常モデル">
+					</div>
+				</div>	
+				<div class="item_box galaxy_model">
+					<div class="order_btn">
+						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+						</a>
+					</div>
+					<!--<div class="order_btn sold_out">
+						<a href="javascript:void(0);">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+						</a>
+					</div>-->
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
+					</div>
+				</div>
+			</div>
+			<!-- ▲▲お申込みボタン▲▲ -->
+			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
+			<p class="sp">タッチすると直接電話がかけられます。<br>
+				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+		</div>
+	<div id="sec03" class="inner03">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext31.png" alt="全国からお喜びの声、続々と！"></h2>
+		<ul class="clearfix">
+			<li><img src="contents/shop/00000003/image/static/neovision91/list01.png" alt="正月に家族や友人達と一緒に操作して実に繊細な説明に皆で共に驚いています。喜んで見ております。 愛知県・男性89歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list01.png" alt="正月に家族や友人達と一緒に操作して実に繊細な説明に皆で共に驚いています。喜んで見ております。 愛知県・男性89歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list02.png" alt="「しゃべって」リードしてくれるので孫も飛びついて遊んでいます。愛知県・男性67歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list02.png" alt="「しゃべって」リードしてくれるので孫も飛びついて遊んでいます。愛知県・男性67歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list03.png" alt="情報が多くて操作も楽しい！他の地球儀では、味わう事が出来ません。神奈川県・男性84歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list04.png" alt="すぐに孫達と使ってみましたが遊び感覚で地理その他の情報が勉強でき、満足しています。石川県・男性63歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list04.png" alt="すぐに孫達と使ってみましたが遊び感覚で地理その他の情報が勉強でき、満足しています。石川県・男性63歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list05.png" alt="生きている地球儀をありがとうございました。京都府・男性77歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list05.png" alt="生きている地球儀をありがとうございました。京都府・男性77歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list06.png" alt="大変便利だと思う 小学校二年の孫がおもしろがってあそんでいる。広島県・男性75歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list06.png" alt="大変便利だと思う 小学校二年の孫がおもしろがってあそんでいる。広島県・男性75歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list07.png" alt="孫へのプレゼントとして購入致しました。これからは世界へ出て大きな仕事をしてほしいと思っております。兵庫県・男性75歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list07.png" alt="孫へのプレゼントとして購入致しました。これからは世界へ出て大きな仕事をしてほしいと思っております。兵庫県・男性75歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list08.png" alt="中学・高校時代から地理が好きでした。今回の地球儀を購入できて喜んでいます 更なる勉強ができると思います。岐阜県・男性80歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list08.png" alt="中学・高校時代から地理が好きでした。今回の地球儀を購入できて喜んでいます 更なる勉強ができると思います。岐阜県・男性80歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list09.png" alt="もともと地球儀は欲しいと思っていたんですけど、他にも通貨や人口など、普通の地球儀ではわからないことが、タッチするだけですぐわかるのがすごいと思います。その国の国歌なんて本で調べてわかってても、音楽で実際聞くことってないですよね。操作方法も簡単ですごく助かりました。青森県・女性36歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list09.png" alt="もともと地球儀は欲しいと思っていたんですけど、他にも通貨や人口など、普通の地球儀ではわからないことが、タッチするだけですぐわかるのがすごいと思います。その国の国歌なんて本で調べてわかってても、音楽で実際聞くことってないですよね。操作方法も簡単ですごく助かりました。青森県・女性36歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list10.png" alt="孫へクリスマスプレゼントしました。大変喜んでいるそうで満足です。福岡県・男性65歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list10.png" alt="孫へクリスマスプレゼントしました。大変喜んでいるそうで満足です。福岡県・男性65歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list11.png" alt="最近ニュースが世界的になってきたので場所を 確かめる事ができるので必要だと思って買いました。 愛知県・女性79歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list11.png" alt="最近ニュースが世界的になってきたので場所を 確かめる事ができるので必要だと思って買いました。 愛知県・女性79歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list12.png" alt="認知症にならないように頭を使ってみようと思って購入しました。 山形県・女性73歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list12.png" alt="認知症にならないように頭を使ってみようと思って購入しました。 山形県・女性73歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list13.png" alt="おもしろい。視野が広がった。広島県・男性70歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list13.png" alt="おもしろい。視野が広がった。広島県・男性70歳" class="sp"></li>
+			<li><img src="contents/shop/00000003/image/static/neovision91/list14.png" alt="世界一周の夢が見られる。広島県・女性80歳" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_list14.png" alt="世界一周の夢が見られる。広島県・女性80歳" class="sp"></li>
+		</ul>
+		<div class="link pc"><span><img src="contents/shop/00000003/image/static/neovision91/icon03.png" alt="全国からお喜びの声、続々と！"></span></div>
+		<div class="link sp"><span><img src="contents/shop/00000003/image/static/neovision91/sp_icon03.png" alt="全国からお喜びの声、続々と！"></span></div>
+	</div>
+	<div id="sec04" class="inner04 mb30 s_mb20">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext20.png" alt="「グローバル時代、地球儀は必要不可欠なもの」" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext21.png" alt="「グローバル時代、地球儀は必要不可欠なもの」" class="sp"></h2>
+		<div class="img_box clearfix">
+			<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo19.png?1125" alt="筑波大学人間系教育学域教授　日本社会科教育学会長日本地理教育学会長 いだ　よしやす 井田仁康 博士" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext22.png?1125" alt="筑波大学人間系教育学域教授　日本社会科教育学会長日本地理教育学会長 いだ　よしやす 井田仁康 博士" class="sp"></div>
+			<div class="txt_box">
+				<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext32.png" alt="地球儀で頭がよくなる！？"></h3>
+				<p>地球儀は平面の地図では表わせない、球体である世界を一目瞭然に見渡すことができます。さらに「しゃべる地球儀」は、子どもから大人まで、映像や音声で楽しみながら世界のイメージを膨らませることのできる新しい地球儀です。未来ある子どもたちにとって、認識を深めることは視野を広げ、複雑な社会事象を見通すグローバルな観点を持つことにつながります。必ず将来役立つ経験となることでしょう。</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 84追加ブロック -->
+	<div class="wrapper_intv mb20 s_mb0">
+			<!-- <h2><img src="contents/shop/00000003/image/static/neovision84/neovision84_title1.png" alt="各界の著名人も『しゃべる地球儀』をお薦めしています！"></h2> -->
+			<!-- 小川先生ブロック -->
+			<div class="block_intv">
+				<h2><img src="contents/shop/00000003/image/static/neovision84/neovision84_title3.png" alt="中学受験のプロ小川大介先生も薦めています！" class="pc"><img src="contents/shop/00000003/image/static/neovision84/sp_neovision84_title3.png" alt="中学受験のプロ小川大介先生も薦めています！" class="sp"></h2>
+				<div class="cols_two clearfix">
+					<div class="col_first">
+						<img src="contents/shop/00000003/image/static/neovision84/neovision84_img02.jpg" alt="小川大介（おがわだいすけ）" class="pc">
+						<img src="contents/shop/00000003/image/static/neovision84/sp_neovision84_img02.jpg" alt="小川大介（おがわだいすけ）" class="sp">
+					</div>
+					<div class="col_second">
+						<h4><img src="contents/shop/00000003/image/static/neovision84/neovision84_txt2.png" alt="「勉強しなさい」という代わりにリビングに「しゃべる地球儀」を置いてください。"></h4>
+						<p>学びとは本来楽しいものでなくてはなりません。「しゃべる地球儀」はまず、子ども部屋ではなく、家族が集うリビングに置いてみてください。地球儀をひたすら回したり、タッチペンで国の名前を押してみたり、クイズ機能などで遊んでいるうちに、こちらが教えなくても自然といろんなことを覚えますよ。リビングに地球儀をおススメする理由は、もう一つあります。それはリビングには、テレビがある。例えば、テレビを見て「リビアってどこだろう？」と地球儀に触れ、目で確かめることで、文字で読むよりずっと深く理解できます。その際、地球儀をリビングの手に取りやすい場所に置くことが大切。子どもの関心なんて、もって30秒。すぐに使えなければ効果が半減してしまいますよ。</p>
+
+						<dl class="profile">
+							<dt>小川大介（おがわ・だいすけ）</dt>
+							<dd>中学受験情報局『かしこい塾の使い方』主任相談員。<br>京都大学在学中より、大学受験予備校や大手進学塾で受験国語の看板講師として活躍。<br class="viewPc">2000年、中学受験専門の「個別指導教室SS-1」を設立。<br>代表として同教室を率いる一方で、子育て、人材育成に関する講演や執筆活動にも力を入れている。『頭がいい子の家のリビングには必ず「辞書」「地図」「図鑑」がある』（すばる舎）など著書多数。</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- 小川先生ブロックここまで -->
+		</div>
+		<!-- 84追加ブロックここまで -->
+
+	<!-- <div class="inner05">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext33_1.png" alt="大切なお子様・お孫様へのプレゼントにもおすすめ！"></h2>
+		<div class="img_box clearfix">
+			<div class="txt_box">
+				<p>ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、世代を問わずお楽しみいただける知的インテリアの傑作です。これから世界を知るお子様、お孫様へ…この機会にお贈りしてみませんか？</p>
+				<div class="txt_area">
+					<p class="text01">▼贈答用でのご注文の場合、<br class="sp">下記の番号までお電話ください。</p>
+					<p>ココチモお客様センター</p>
+					<div class="call"><a href="tel:0120552242"><img src="contents/shop/00000003/image/static/neovision91/tel02.png" alt="0120-552-242"></a></div>
+					<p class="text03">受付時間／6：00～22：00（日曜・祝日も受付）<br> -->
+						<!-- ※年末は28日の午後10時まで、年始は4日午前6時より受付いたします。<br> -->
+						<!-- ※おかけ間違いのないようご注意ください。</p>
+				</div>
+				<p class="text02 viewPc">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に右記のシールをお貼りいたします。（令和元年12月9日お申込み分まで）</p>
+				<p class="text02 viewSp">※商品サイズの都合上、ギフト包装等の対応はできかねますが、ご贈答の際、箱の外側に下記のシールをお貼りいたします。（令和元年12月9日お申込み分まで）</p>
+			</div>
+			<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo20.png" alt="クリスマス・お誕生日・ご入学のプレゼントにも！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_photo06.jpg" alt="クリスマス・お誕生日・ご入学のプレゼントにも！" class="sp"><span><img src="contents/shop/00000003/image/static/neovision91/img01.png" alt="贈り物の品をお届けします"></span></div>
+		</div>
+	</div> -->
+
+		<div class="com_box com_box02">
+			<!-- <span style="max-width:930px;margin-left:auto;margin-right:auto;display:block;padding:14px 0;font-size:1.2rem;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px;background:#fff65e;">
+				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>
+			予めご了承ください。</b>
+			</span> -->
+
+			<!-- 完売対応　
+			<div class="link"><img src="contents/shop/00000003/image/static/neovision91/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
+			 //完売対応　 -->
+
+			<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="order_btn_area cf">
+				<div class="item_box general_model">
+					<div class="order_btn">
+						<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+						</a>
+					</div>
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_1.png" alt="通常モデル">
+					</div>
+				</div>	
+				<div class="item_box galaxy_model">
+					<div class="order_btn">
+						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+						</a>
+					</div>
+					<!-- <div class="order_btn sold_out">
+						<a href="javascript:void(0);">
+							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+						</a>
+					</div> -->
+					<div class="img">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
+					</div>
+				</div>
+			</div>
+			<!-- ▲▲お申込みボタン▲▲ -->
+			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
+			<p class="sp">タッチすると直接電話がかけられます。<br>
+				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+		</div>
+	<div id="sec05" class="inner06">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext34.png" alt="ココチモオリジナル しゃべる地球儀 パーフェクトグローブ NeoVision　ネオビジョン"></h2>
+		<div class="sub_inner"><img src="contents/shop/00000003/image/static/neovision91/photo21.png" alt="【セット内容】">
+			<div class="txt_area">
+				<p>【セット内容】●しゃべる地球儀パーフェクトグローブネオビジョンプレミアム本体（引き出し式日本地図）●パーフェクトペン●取扱説明書●ワールドブック●USBケーブル●ACアダプター<br>
+					【商品仕様】●サイズ(約)：幅338×奥行246×高さ417mm※引き出し式日本地図使用時は奥行426mmとなります。●直径(約)：260mm●重さ(約)：2kg（パーフェクトペンを含む）●使用電池：単4アルカリ乾電池×1本（本体）※お試し電池入りでお届けします。●製造：中国●発売元：ドウシシャ</p>
+			</div>
+		</div>
+	</div>
+	<!-- <ul class="txt_list pc">
+		<li>※お申込みから通常3～6日ほどでお届けいたします。　※万が一、予想を上回るお申込みをいただいた場合数ヵ月お待ちいただく場合がございます。予めご了承ください。</li>
+		<li>※本体液晶画面の写真ははめ込みイメージ写真です。</li>
+		<li>※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。</li>
+		<li>※仕様などは改善・改良のため、予告なく変更することがございます。※本商品の映像データには写真と動画が含まれます。</li>
+	</ul> -->
+	<div class="inner07">
+		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext35.png" alt="別冊付録 楽しく遊べる「ワールドブック」" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext16.png" alt="別冊付録 楽しく遊べる「ワールドブック」" class="sp"></h2>
+		<div class="img_box clearfix">
+			<div class="txt_box">
+				<h3><img src="contents/shop/00000003/image/static/neovision91/imgtext36.png" alt="地球上の生物や人類の歴史など 1000を超える情報収録！！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext17.png" alt="地球上の生物や人類の歴史など 1000を超える情報収録！！" class="sp"></h3>
+				<p><span>パーフェクトペンで触れると、地球儀と同じように関連の画像と音声が地球儀本体から流れます。</span><br class="pc">
+					世界がもっとよくわかる別冊付録つきのお届けです。</p>
+				<p class="text">◆A4変形サイズ ◆30ページ</p>
+			</div>
+			<div class="pho_box"><img src="contents/shop/00000003/image/static/neovision91/photo22.png?1125" alt="パーフェクトペンで 触るだけ！"></div>
+		</div>
+	</div>
+
+
+  <!--<span m:id="l_equ_type_simple">--><!-- カート追従バナー -->
+
+	<style>
+
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		#contents .purchase_fixed .inner {max-width:100%;width:1020px;padding: 10px;display: flex;align-items: center;justify-content: space-between;margin: 0 auto !important;padding-left: 28px;}
+		#contents .purchase_fixed .inner .item_box {
+			position: relative;
+		}
+		#contents .purchase_fixed .inner .item_box .img {
+			width: 94px;
+			position: absolute;
+			top: -26px;
+			left: -47px;
+		}
+		#contents .purchase_fixed .inner .item_box .order_btn {border-radius: 17px;}
+
+		#contents .purchase_fixed .inner .item_box.general_model {
+			flex:0 1 340px;
+		}
+
+		#contents .purchase_fixed .inner .item_box.galaxy_model {
+			margin-left:70px;
+			flex:0 1 340px;
+		}
+		#contents .purchase_fixed .inner .item_box.present_item {
+			margin-left:20px;
+			flex:0 1 216px;
+		}
+		#contents .purchase_fixed .inner .item_box .order_btn a {
+			padding: 0.7em 3em 0.6em 3em;
+		}
+		/* IE9 ハック */
+		@media screen and (min-width: 0\0) and (min-resolution: .001dpcm) {
+			.purchase_fixed {display:none;}
+		}
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.purchase_fixed {border-top: 2px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+			#contents .purchase_fixed .inner {width:auto;padding:10px 5px 10px 10px}
+			
+			#contents .purchase_fixed .inner .item_box {
+				width: 48%;
+			}
+			#contents .purchase_fixed .inner .item_box .order_btn {border-radius: 1.2em;}
+			
+			#contents .purchase_fixed .inner .item_box .order_btn a {
+				padding: 0.6em 1em 0.6em 3.2em;
+			}
+			#contents .purchase_fixed .inner .item_box.galaxy_model {
+				margin-left: 8vw;
+			}
+			#contents .purchase_fixed .inner .item_box .img {
+				max-width: 14.5vw;
+				position: absolute;
+				top: -42%;
+				left: -4%;
+			}
+			#contents .purchase_fixed .inner .item_box.galaxy_model .img {
+				left: -12%;
+			}
+
+		}
+		@media (max-width: 320px) and (min-width: 0) {
+			#contents .purchase_fixed .inner .item_box .order_btn a {
+				padding: 0.6em 1em 0.6em 2.6em;
+			}
+		}
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+	<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="item_box general_model">
+				<div class="order_btn">
+					<!--ST<a onclick="siteCatalistAddCart_static('DDO02','00010478','10776');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO02','00011275','22731');return false;" href="">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_1.png" alt="通常モデルお申込みはこちら">
+					</a>
+				</div>
+				<div class="img">
+					<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_1.png" alt="通常モデル">
+				</div>
+			</div>
+
+			<div class="item_box galaxy_model">
+				<div class="order_btn">
+					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
+					</a>
+				</div>
+				<!--<div class="order_btn sold_out">
+					<a href="javascript:void(0);">
+						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
+					</a>
+				</div>-->
+				<div class="img">
+					<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
+				</div>
+			</div>
+			<div class="item_box present_item viewPc">
+				<img src="/contents/shop/00000003/image/static/neovision91/purchase_fixed_presen_1209.png" alt="プレゼント付き有効期限12月9日（月）">
+			</div>
+
+			
+		</div>
+	</div>
+	<!--</span>--><!-- //カート追従バナー -->
