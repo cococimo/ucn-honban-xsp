@@ -206,6 +206,41 @@
 	pointer-events:none;
 	cursor:default;
 }
+.sold_out_txt {
+	text-align: center;
+	color:red;
+	font-weight: bold;
+	padding:14px;
+	margin:30px 20px;
+	border:3px solid red;
+}
+.galaxy_model_area .sold_out_txt {
+	position: absolute;
+	bottom: 45px;
+	right: 30px;
+    font-size: 13.5px;
+    color: #fff;
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0;
+    border: none;
+    width: 250px;
+    text-align: left;
+}
+@media (max-width: 767px) and (min-width: 0) {
+	.sold_out_txt {
+	margin:-10px 12px 15px;
+	}
+	.galaxy_model_area{
+		/* height: 120vw !important; */
+	}
+	.galaxy_model_area .sold_out_txt {
+		position: static;
+		width: auto;
+		font-size: 12px;
+		margin:0 20px 20px;
+	}
+}
 </style>
 <style>
 /* ギャラクシーモデル追加 */
@@ -364,7 +399,7 @@
 			<div class="goods_flexslider">
 				<ul class="slides">
 					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo001.jpg?1120" alt=""></li>
-					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo002.jpg" alt=""></li>
+					<!-- <li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo002.jpg" alt=""></li> -->
 					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo003.jpg" alt=""></li>
 					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo004.jpg" alt=""></li>
 					<li><img src="/contents/shop/00000003/image/static/neovision91/slider/ddo005.jpg" alt=""></li>
@@ -394,8 +429,8 @@
     right: 10px;
 }
 .galaxy_model_area .present {
-	top: 334px;
-    right: 6px;
+	top: 30px;
+    right: 10px;
 }
 @media (max-width: 767px) and (min-width: 0) {
 	.galaxy_model_area .limited_color {
@@ -411,12 +446,13 @@
 </style>
 	<div class="galaxy_model_area">
 		<picture>
-			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_sp.jpg">
+			<!-- <source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_sp.jpg"> -->
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_sp_3.jpg">
 			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01.jpg">
 			<img src="/contents/shop/00000003/image/static/neovision91/img_new_01.jpg" alt="">
 		</picture>
 		<!-- <p class="limited_color item"><img src="contents/shop/00000003/image/static/neovision91/img_new_01_4.png" alt="WEB限定カラーギャラクシーブルーモデル"></p> -->
-		<p class="limited_color item"><img src="contents/shop/00000003/image/static/neovision91/img_new_01_4_2.png?1203" alt="WEB限定カラーギャラクシーブルーモデル 残りわずか！"></p>
+		<!-- <p class="limited_color item"><img src="contents/shop/00000003/image/static/neovision91/img_new_01_4_2.png?1203" alt="WEB限定カラーギャラクシーブルーモデル 残りわずか！"></p> -->
 		
 		<picture>
 			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_01_5_sp.png">
@@ -433,17 +469,19 @@
 		<!-- ▲▲通常モデル-カートボタン▲▲ -->
 
 		<!-- ▼▼ギャラクシーカートボタン▼▼ -->
-		<div class="order_btn item galaxy_model">
+		<!-- <div class="order_btn item galaxy_model">
 			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 			<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 			</a>
-		</div>
-		<!-- <div class="order_btn item galaxy_model sold_out">
+		</div> -->
+		<div class="order_btn item galaxy_model sold_out">
 			<a href="javascript:void(0);">
 				<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 			</a>
-		</div> -->
+		</div>
 		<!-- ▲▲ギャラクシーカートボタン▲▲ -->
+		
+		<div class="sold_out_txt viewPc">※ギャラクシーブルーモデルは販売を終了いたしました。再生産は行いませんので、ご了承ください。</div>
 	</div>
 
 	<div class="main_img"><img src="contents/shop/00000003/image/static/neovision91/main_img_4.png" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_main_img_2.jpg" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="sp"><span class="pc">▲日本地図はプッシュ・オープン式。台座から出し入れ可能で便利です。</span></div>
@@ -555,9 +593,9 @@
 	<div class="galaxy_lead">
 		<h2 style="display: none;">【先着1000台限り！】WEB限定カラー ギャラクシーブルーモデル</h2>
 		<picture>
-			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_sp2.jpg">
-			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_2.jpg">
-			<img src="/contents/shop/00000003/image/static/neovision91/img_new_02_2.jpg" alt="">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_sp3.jpg">
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_02_3.jpg">
+			<img src="/contents/shop/00000003/image/static/neovision91/img_new_02_3.jpg" alt="">
 		</picture>
 		<div class="txt_area">
 			<div class="txt">
@@ -570,23 +608,24 @@
 		</div>
 
 		<!-- ▼▼ギャラクシーカートボタン▼▼ -->
-		<div class="order_btn">
+		<!-- <div class="order_btn">
 			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 			<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 			</a>
-		</div>
-		<!-- <div class="order_btn sold_out">
+		</div> -->
+		<div class="order_btn sold_out">
 			<a href="javascript:void(0);">
 				<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 			</a>
-		</div> -->
+		</div>
 		<!-- ▲▲ギャラクシーカートボタン▲▲ -->
 	</div>
+	<div class="sold_out_txt">※ギャラクシーブルーモデルは販売を終了いたしました。再生産は行いませんので、ご了承ください。</div>
 	<div class="sec02">
 
-		<h2 class="movie_ttl">テレビCMでも話題！<!--<img src="contents/shop/00000003/image/static/neovision91/imgtext01.jpg" alt="ただいま、CM放送中！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext02.png" alt="ただいま、CM放送中！ただいま、CM放送中！" class="sp">--></h2>
+		<h2 class="movie_ttl viewSp">テレビCMでも話題！<!--<img src="contents/shop/00000003/image/static/neovision91/imgtext01.jpg" alt="ただいま、CM放送中！" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext02.png" alt="ただいま、CM放送中！ただいま、CM放送中！" class="sp">--></h2>
 
-		<div class="movie">
+		<div class="movie viewSp">
 			<div class="youtube">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/dzWSpFLPwU8?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -668,16 +707,16 @@
 					</div>
 				</div>	
 				<div class="item_box galaxy_model">
-					<div class="order_btn">
+					<!-- <div class="order_btn">
 						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 						</a>
-					</div>
-					<!--<div class="order_btn sold_out">
+					</div> -->
+					<div class="order_btn sold_out">
 						<a href="javascript:void(0);">
 							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 						</a>
-					</div>-->
+					</div>
 					<div class="img">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
 					</div>
@@ -793,25 +832,23 @@
 					</div>
 				</div>	
 				<div class="item_box galaxy_model">
-					<div class="order_btn ">
+					<!-- <div class="order_btn ">
 						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 						</a>
-					</div>
-					<!--<div class="order_btn sold_out">
+					</div> -->
+					<div class="order_btn sold_out">
 						<a href="javascript:void(0);">
 							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 						</a>
-					</div>-->
+					</div>
 					<div class="img">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
 					</div>
 				</div>
 			</div>
 			<!-- ▲▲お申込みボタン▲▲ -->
-			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
-			<p class="sp">タッチすると直接電話がかけられます。<br>
-				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+
 		</div>
 		<h2 id="sec02" class="h2_ttl01" style="margin-top:10px;"><img src="contents/shop/00000003/image/static/neovision91/imgtext11.png" alt="大人も子供も楽しめる多機能地球儀！お客様のお声とともにその魅力に迫ります。" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_imgtext04.png" alt="大人も子供も楽しめる多機能地球儀！お客様のお声とともにその魅力に迫ります。" class="sp"></h2>
 		<div class="inner02">
@@ -949,25 +986,23 @@
 					</div>
 				</div>	
 				<div class="item_box galaxy_model">
-					<div class="order_btn">
+					<!-- <div class="order_btn">
 						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 						</a>
-					</div>
-					<!--<div class="order_btn sold_out">
+					</div> -->
+					<div class="order_btn sold_out">
 						<a href="javascript:void(0);">
 							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 						</a>
-					</div>-->
+					</div>
 					<div class="img">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
 					</div>
 				</div>
 			</div>
 			<!-- ▲▲お申込みボタン▲▲ -->
-			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
-			<p class="sp">タッチすると直接電話がかけられます。<br>
-				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+
 		</div>
 	<div id="sec03" class="inner03">
 		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext31.png" alt="全国からお喜びの声、続々と！"></h2>
@@ -1070,25 +1105,23 @@
 					</div>
 				</div>	
 				<div class="item_box galaxy_model">
-					<div class="order_btn">
+					<!-- <div class="order_btn">
 						<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 						</a>
-					</div>
-					<!-- <div class="order_btn sold_out">
+					</div> -->
+					<div class="order_btn sold_out">
 						<a href="javascript:void(0);">
 							<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 						</a>
-					</div> -->
+					</div>
 					<div class="img">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
 					</div>
 				</div>
 			</div>
 			<!-- ▲▲お申込みボタン▲▲ -->
-			<!-- <div class="call"><a href="tel:0120552186"><img src="contents/shop/00000003/image/static/neovision91/pc_call.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_tel.png" alt="お電話でのご注文はこちらまで 0120-552-186　6時～22時(日曜・祝日も受付けます)" class="sp"></a></div>
-			<p class="sp">タッチすると直接電話がかけられます。<br>
-				<span>6時～22時</span> 日曜・祝日も受付けます。</p> -->
+
 		</div>
 	<div id="sec05" class="inner06">
 		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext34.png" alt="ココチモオリジナル しゃべる地球儀 パーフェクトグローブ NeoVision　ネオビジョン"></h2>
@@ -1203,16 +1236,16 @@
 			</div>
 
 			<div class="item_box galaxy_model">
-				<div class="order_btn">
+				<!-- <div class="order_btn">
 					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 					<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png" alt="ギャラクシーブルーモデルお申込みはこちら">
 					</a>
-				</div>
-				<!--<div class="order_btn sold_out">
+				</div> -->
+				<div class="order_btn sold_out">
 					<a href="javascript:void(0);">
 						<img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
 					</a>
-				</div>-->
+				</div>
 				<div class="img">
 					<img src="/contents/shop/00000003/image/static/neovision91/img_kirinuki_2.png" alt="ギャラクシーブルーモデル">
 				</div>
