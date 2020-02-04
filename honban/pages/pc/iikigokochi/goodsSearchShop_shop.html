@@ -74,6 +74,8 @@ $(function() {
 <!-- InstanceBeginEditable name="head_css_js" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/side_menu.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/goods_search_shop_shop.css" type="text/css" media="all" />
+
+
 <style>
 #contents{
 	padding:147px 0 0;
@@ -235,6 +237,18 @@ ul.example.other li{
 	margin-bottom:0;
 	padding-bottom:0;
 }
+
+
+<!-- 202001_DLPO ソート強調用CSS  -->
+@media all and (max-width: 640px){
+.SelectSort{
+font-weight:bold;
+}
+}
+
+<!-- /202001_DLPO ソート強調用CSS  -->
+
+
 @media (max-width: 768px){
 .l_con_box_01 {
 	background: none;
@@ -242,6 +256,7 @@ ul.example.other li{
 	margin:0;
 	padding:0;
 }
+
 }
 @media (max-width: 640px){
 .l_con_box_01 {
@@ -277,9 +292,9 @@ ul.example.other li{
 }
 @media (max-width: 640px){
 .cate_ttl{
-	margin:35px auto 45px;
+	margin:10px auto 10px;
 	width:100%;
-	padding:30px 15px 0;
+	padding:10px 15px 0;
 	box-sizing:border-box;
 }
 }
@@ -369,8 +384,16 @@ ul.example.other li{
 }
 
 .goods_nav{
-	display:none;
+	width: 1020px;
+	margin: 0 auto;
 }
+
+@media (max-width:640px) {
+.goods_nav{
+	width: 377px;
+}
+}
+
 .r_con_box_01_in{
 	width:1020px;
 	margin:0 auto;
@@ -722,7 +745,7 @@ s.linkTrackVars='events';
 s.linkTrackEvents='scView';
 s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
-">お買い物かごを見る</a>
+"></a>
      </div>
     <div class="sp_nav">
       <!-- カテゴリナビ -->
@@ -775,8 +798,18 @@ s.tl(this,'o','cartview',null,'navigate');return false
 			}
 		}
 		//]]>
-		</script>
 
+
+window.addEventListener("load", function (){
+ if($('.goods_list_con_box_02 li:not(:has(a))').length){
+  $('.goods_list_con_box_02 li:not(:has(a))').addClass('SelectSort');
+ } else {
+  $('.goods_list_con_box_02 li.last').addClass('SelectSort');
+ }
+});
+
+
+		</script>
 
 <!-- 201904_DLPOABテストページネーション最適化 -->
 <script type="text/javascript">
@@ -792,6 +825,18 @@ $(function(){
 </script>
 <!-- 201904_DLPOABテストページネーション最適化// -->
 
+<!-- 202001_DLPO ソート強調用Javascript  -->
+<script type="text/javascript">
+
+  window.addEventListener("load", function (){
+   if($('.goods_list_con_box_02 li:not(:has(a))').length){
+    $('.goods_list_con_box_02 li:not(:has(a))').addClass('SelectSort');
+   } else {
+    $('.goods_list_con_box_02 li.last').addClass('SelectSort');
+   }
+  });
+  </script>
+<!-- /202001_DLPO ソート強調用Javascript  -->
 
   <object class="xsp_obj" m:id="e_var_standardCategory">
   </object>
@@ -1090,6 +1135,15 @@ window.onload = function() {
 		}
 	}
 </style>
+
+<!-- 202001_DLPO ソート強調用CSS  -->
+<style>
+  .SelectSort{
+    font-weight:bold;
+  }
+</style>
+<!-- /202001_DLPO ソート強調用CSS  -->
+
            <!-- ▼▼▼検索▼▼▼ -->
 <div class="search_area cf" id="search_sg">
 	<div class="search_area_in cf">
@@ -1127,10 +1181,10 @@ window.onload = function() {
 		<div class="word_area">
 			<p class="word_area_tit">よく検索されるキーワード</p>
 			<ul class="word_area_list">
-				<li><a href="/shop/category/001001008/list/">新商品</a></li>
-				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%5E%81%5B%83g%83%8B">タートル</a></li>
-				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83I%81%5B%83K%83j%83b%83N%83R%83b%83g%83%93">オーガニックコットン</a></li>
-				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%8F%83C%83h%83p%83%93%83c">ワイドパンツ</a></li>
+				<li><a href="/shop/category/001001008/list/?il=goodsSearch-new-kw">新商品</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83E%81%5B%83%8B&il=goodsSearch-linen-kw">ウール</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83I%81%5B%83K%83j%83b%83N%83R%83b%83g%83%93&il=goodsSearch-organiccotton-kw">オーガニックコットン</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%8F%83C%83h%83p%83%93%83c&il=goodsSearch-widepants-kw">ワイドパンツ</a></li>
 			
 			</ul>
 		</div>
@@ -1175,24 +1229,87 @@ window.onload = function() {
 
     <a href="#">ほかのカテゴリを見る</a>
     <div>
-      <ul>
-        <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
-        <li><a href="/shop/category/001001002/list/">トップス</a></li>
-        <li><a href="/shop/category/001001003/list/">コート / カーディガン</a></li>
-        <li><a href="/shop/category/001001004/list/">パンツ</a></li>
-        <li><a href="/shop/category/001001005/list/">スカート</a></li>
-        <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
-        <li><a href="/shop/category/001001001/list/">バッグ/ 傘・日傘/ 帽子</a></li>
-        <li><a href="/shop/category/001001010/list/">インナー/レギンス</a></li>
-        <li><a href="/shop/category/001001013/list/">シューズ</a></li>
-        <li><a href="/shop/category/001001014/list/">アクセサリー/ ストール・スヌード</a></li>
-        <li><a href="/shop/category/001001008/list/">新着商品</a></li>
-        <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
-<li><a href="/shop/category/001001017/list/">ハッピーサイズ</a></li>
-	<li><a href="/shop/category/001001011/list/">SNS掲載商品</a></li>
-	<li></li>
-
-      </ul>
+<ul id="ul_ab01">
+    <li>
+        <a href="/shop/category/001001007/list/">全商品一覧</a>
+    </li>
+</ul>
+<ul id="ul_ab02">
+    <li class="li_migisen">
+        <a href="/shop/category/001001002/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" style="width: 70px;"/></div>
+            <p class="aboneline">トップス<br></p>
+        </a>
+    </li>
+    <li class="li_migisen">
+        <a href="/shop/category/001001006/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="チュニック/ワンピース" style="width: 70px;"/></div>
+            <p>チュニック/<br>ワンピース</p>
+        </a>
+    </li>
+    <li class="border-right0">
+        <a href="/shop/category/001001004/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ"  style="width: 70px;"/></div>
+            <p class="aboneline">パンツ<br></p>
+        </a>
+    </li>
+</ul>
+<ul id="ul_ab03">
+    <li class="li_migisen">
+        <a href="/shop/category/001001005/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" style="width: 70px;"/></div>
+            <p class="aboneline">スカート<br></p>
+        </a>
+    </li>
+    <li class="li_migisen">
+        <a href="/shop/category/001001003/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="コート/カーディガン" style="width: 70px;"/></div>
+             <p class="aboneline">コート/<br>カーディガン</p>
+        </a>
+    </li>
+    <li class="border-right0">
+        <a href="/shop/category/001001001/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バッグ/傘・日傘/帽子" style="width: 70px;"/></div>
+            <p>バッグ/<br>傘・日傘/帽子</p>
+        </a>
+    </li>
+</ul>
+<ul id="ul_ab04">
+    <li class="li_migisen">
+        <a href="/shop/category/001001010/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown07.jpg" alt="インナー/レギンス" style="width: 70px;"/></div>
+            <p class="aboneline">インナー/レギンス<br></p>
+        </a>
+    </li>
+    <li class="li_migisen">
+        <a href="/shop/category/001001013/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown08.jpg" alt="シューズ" style="width: 70px;"/></div>
+            <p class="aboneline">シューズ<br></p>
+        </a>
+    </li>
+    <li class="border-right0">
+        <a href="/shop/category/001001014/list/">
+            <div><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown09.jpg" alt="アクセサリー/ストール・スヌード" style="width: 70px;"/></div>
+            <p>アクセサリー/<br>ストール・スヌード</p>
+        </a>
+    </li>
+</ul>
+<ul id="ul_ab05">
+    <li class="li_migisen">
+        <a href="/shop/category/001001008/list/">新着商品</a>
+    </li>
+    <li>
+        <a href="/shop/category/001001009/list/">広告掲載商品</a>
+    </li>
+</ul>
+<ul id="ul_ab06">
+    <li class="li_migisen">
+        <a href="/shop/category/001001017/list/">ハッピーサイズ</a>
+    </li>
+    <li>
+        <a href="/shop/category/001001011/list/">SNS掲載商品</a>
+    </li>
+</ul>
       <div class="btn_close_sp"><a href="#">Close</a></div>
     </div>
   </div>
@@ -1229,7 +1346,7 @@ window.onload = function() {
 <span m:id="l_notEqu_searchResult_numberOfRecords">
 <div class="clearfix goods_nav">
   <ul class="goods_list_con_box_02">
-  <li><a m:id="h_link_push" href="goodsSearchShop_shop.html" onclick="javascript:document.searchForm.order.value = 'PUSH'; document.searchForm.submit(); return false;">おすすめ</a></li>
+<!--  <li><a m:id="h_link_push" href="goodsSearchShop_shop.html" onclick="javascript:document.searchForm.order.value = 'PUSH'; document.searchForm.submit(); return false;">おすすめ</a></li>-->
   <li><a m:id="h_link_price_asc" href="goodsSearchShop_shop.html" onclick="javascript:document.searchForm.order.value = 'PRICE_ASC'; document.searchForm.submit(); return false;">価格が安い順</a></li>
   <li><a m:id="h_link_price_desc" href="goodsSearchShop_shop.html" onclick="javascript:document.searchForm.order.value = 'PRICE_DESC'; document.searchForm.submit(); return false;">価格が高い順</a></li>
   <li class="last"><a m:id="h_link_newest" href="goodsSearchShop_shop.html" onclick="javascript:document.searchForm.order.value = 'NEWEST'; document.searchForm.submit(); return false;">新しい順</a></li>
@@ -1271,14 +1388,18 @@ window.onload = function() {
 				</span>
 				</div>
 				<!-- 商品SKUアイコン-->
+				<span m:id="b_wr_goodsImageList_icon"></span>
 				<div class="img_box sku_icon_list">
 				<object class="xsp_obj" m:id="b_var_sku"></object>
 				<span m:id="l_ite_sku_variation">
 					<span m:id="l_ite_sku_variation_icon">
+						<span m:id="l_sku_img_check_icon">
 						<span m:id="l_equ_icon_file_one">
 							<div class="img_icon">
 								<img m:id="h_img_icon_file" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="">
+								<span m:id="l_sku_img_check_contain_icon"></span>
 							</div>
+						</span>
 						</span>
 					</span>
 				</span>
@@ -1707,7 +1828,7 @@ window.onload = function() {
       </span>
     </li>
 
-    <li class="banner02">
+  <li class="banner02" id="body_catalog">
       <a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" target="_blank">
         <div class="banner_inner">
           <div class="banner_inner_inner">
