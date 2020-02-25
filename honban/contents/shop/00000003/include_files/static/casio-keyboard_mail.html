@@ -1,0 +1,1059 @@
+<!-- sliderプラグイン追加　ここから -->
+<script src="/contents/c/js/jquery.flexslider.js" type="text/javascript" language="JavaScript"></script>
+<script src="/contents/c/js/new/featherlight.js"></script>
+<!-- sliderプラグイン追加　ここまで -->
+<!-- ▼▼LPカートに入れる設定▼▼ -->
+<!-- 商品購入カート -->
+<form name="cartGoodsAddForm" method="POST" action="/shop/cartGoodsAddToOrder.do">
+	<input type="hidden" name="_S" value="c">
+	<input type="hidden" name="display_code" value="9999">
+	<input type="hidden" name="goods_sku_code" value="99999999">
+	<input type="hidden" name="ext_goods_sku_code" value="ZZZ99">
+	<input type="hidden" name="order_num_string" value="1">
+  </form>
+  <!--/ 商品購入カート -->
+  <!-- ▲▲LPカートに入れる設定▲▲ -->
+
+<!-- カシオ キーボード　ここから -->
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/default.css" media="all">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/casio_keyboard/style.css?0109-2" media="all">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/casio_keyboard/flexslider.css" media="all">
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese" rel="stylesheet">
+<!-- WEBフォント -->
+<script>
+	(function(d) {
+	  var config = {
+		kitId: 'ajn1vai',
+		scriptTimeout: 3000,
+		async: true
+	  },
+	  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+  </script>
+  <!-- /WEBフォント -->
+
+  <style>
+	.casio_keyboard_slider .goods_flexslider .flex-direction-nav a {
+		margin: 15px 0 0;
+		top: 100%;
+		width: 35px;
+		height: 35px;
+		font-size:0;
+	}
+	@media (max-width: 320px) {
+		.deviceSP .flex-control-paging li a {
+			width: 10px !important;
+			height: 10px !important;
+		}
+	}
+</style>
+<div class="goods_wrap">
+
+<div class="viewSp">
+	<div class="casio_keyboard_slider loading" id="casio_keyboard_slider_area">
+		<div class="loading_icon"></div>
+			<div class="goods_flexslider">
+				<ul class="slides">
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_01.jpg?1224" alt=""></li>
+				<!-- <li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_02.jpg?1224" alt=""></li> -->
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_03.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_04.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_05.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_06.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_07.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_08.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_09.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_10.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_11.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_12.jpg?1224" alt=""></li>
+				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_13.jpg?1224" alt=""></li>
+			</ul>
+		</div>
+	</div><!-- casio_keyboard_slider -->
+</div>
+<!-- お申込みボタン SP版のみ表示 ここから -->
+<p class="order_btn viewSp" style="margin-top: 60px;">
+	<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+			<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+		</picture>
+	</a>
+</p>
+<!-- お申込みボタン ここまで -->
+
+<div class="casio_keyboard_wrapper">
+	<div class="item_visual viewPc">
+		<h1>
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_main_2.jpg">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_main_2.jpg">
+			<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_main_2.jpg" alt="">
+		</picture>
+		</h1>
+	</div>
+
+	<!-- お申込みボタン -->
+	<p class="order_btn viewPc">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+	<!-- 欠品ご案内ここから -->
+	<style>
+		.sold_out_area {
+			margin-top: 60px;
+		}
+		.sold_out_txt {
+			max-width: 930px;
+			font-size: 16px;
+			color:#000;
+			font-weight: normal;
+			text-align: center;
+			padding:14px;
+			margin:30px 20px;
+			border:3px solid #000;
+			margin-left: auto;
+			margin-right: auto;
+			word-break: break-all;
+	
+		}
+		.shop-list {margin-top:1em;text-align: left;max-width:820px;margin-left: auto;margin-right: auto;}
+		@media (max-width: 767px) and (min-width: 0){
+			.sold_out_area {
+				margin-top:20px;
+			}
+			.sold_out_txt {
+				margin:5px 0 10px;
+				font-weight: normal;
+				border: none;
+				font-size: .9em;
+				text-align: left;
+				border:2px solid #000;
+			}
+		}
+	</style>
+	<div class="sold_out_area">
+		<div class="sold_out_txt"><p class="pb5">【商品のお届けについて】</p>
+			<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
+				商品は引き続きご購入いただけますが、お届けまでにお時間がかかりますので、<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
+		</div>
+		<div class="sold_out_txt"><p class="pb5">【お支払い方法について】</p>
+			<p>現在、こちらのサイトで『大人の楽らくキーボード』をご注文いただく場合、お支払い方法は「代金引換」のみになります。<br>クレジットカードでのお支払いをご希望の方は、下記のショッピングモールをご利用ください。</p>
+			<ul class="mt shop-list">
+				<li>・楽天市場　ココチモ店<br class="viewSp">【<a href="https://item.rakuten.co.jp/cococimo/ddv03/" target="_blank">https://item.rakuten.co.jp/cococimo/ddv03/</a>】</li>
+				<li>・Yahoo!ショッピング　ココチモ店<br class="viewSp">【<a href="https://store.shopping.yahoo.co.jp/cococimo/ddv03.html" target="_blank">https://store.shopping.yahoo.co.jp/cococimo/ddv03.html</a>】</li>
+	
+			</ul>
+		</div>
+	</div>
+	<!-- 欠品ご案内ここまで -->
+	<section class="casio_keyboard_lead">
+		<h2 class="section_ttl">楽譜が読めなくても大丈夫！光る鍵盤で、あなたの夢が叶います。</h2>
+		<div class="content_box">
+			<div class="txt">
+				<p>いつかは弾きたいと思っていた憧れのピアノやキーボード。今、始めてみませんか？鍵盤を触るのが初めてでも大丈夫！<span class="underline">「光る鍵盤」機能で、あなたもカンタンに名曲を奏でられます。</span>クラシックの名曲から抒情歌、歌謡曲まで、おなじみのメロディーを230曲も収録。「素敵な趣味を始めたい」大人のための一台です！</p>
+				<p>音楽は、どこまでも自由で楽しいもの。この好機をお見逃しなく、ぜひこのキーボードと一緒に、豊かな毎日をお過ごしください。</p>
+			</div>
+			<div class="img">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_01.png" alt="">
+			</div>
+		</div>
+	</section><!-- /casio_keyboard_lead -->
+
+	<!-- キャンペーン ここから -->
+	<div class="campaign_area s_mt0">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_pc_2.jpg">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_sp_2.png">　
+				<img class="cam_bnr" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_pc_2.jpg" alt="期間限定プレゼント！【デジタル温度・湿度計】有効期限までに「キーボード」をお申込みの方のみプレゼント！お部屋の温度・湿度から、熱中症やインフルエンザの危機度を知らせてくれます。大きな文字でよみやすいのも嬉しいポイント。ぜひお早めにお申し込みください。※仕様などは予告なく変更となる可能性がございます。●電池付きでお届けします。（単4形乾電池×1個■サイズ（約）：縦65×横65×幅15mm■表示温度範囲：-9.9&#xFF5E;50.0&#8451;（精度&#133;50&#xFF5E;80%:&#177;5%/その他の範囲：&#177;10%）■製造：中国">
+		</picture>
+	</div>
+	<!-- キャンペーン ここまで -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+	<section class="casio_keyboard_uservoice">
+		<span class="bg_img voice_img">
+			<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_02_2.png" alt="お喜びの声をご紹介します。">
+		</span>
+		<h2 class="section_ttl">
+			<span>「毎日楽しい！」</span><span style="margin-left: -.6em;">「夢が叶った！」</span>
+		</h2>
+		<div class="voice_box">
+			<ul class="voice_list">
+				<li>毎日弾いています。今では、<span class="large">私の心の拠りどころ</span>です。<span class="user inline">（東京都・女性・73歳）</span></li>
+				<li>光を指で追って、迷いなく奏でることができた。<span class="large">ピアニスト気分。</span><span class="user">（福島県・女性・83歳）</span></li>
+				<li><span class="large">使いやすく、覚えやすい。</span><span class="user inline">（福島県・女性・82歳）</span></li>
+				<li>光が点滅し、キーボードをたたくだけで曲がひけるので、最高です。<span class="user">（東京都・男性・66歳）</span></li>
+				<li>楽譜なんて読めませんでしたが、三ヵ月でみんなの前でお披露目できました。<span class="user">（埼玉県・女性・74歳）</span></li>
+				<li>音色が美しく、曲目も豊富なのでとても気に入っています。<span class="user">（愛知県・男性・57歳）</span></li>
+				<li><span class="large">メロディーを聴いているだけでも癒されます。</span><span class="user">（兵庫県・女性・80歳）</span></li>
+			</ul>
+	
+			<p class="subtxt">※以前にココチモから『カシオキーボード』シリーズをご購入されたお客様のアンケートより。<br class="viewPc">プロフィールはお便りをいただいた時点のものです。使用感には個人差があります。</p>
+		</div>
+		<span class="bg_img note_img01">
+			<img src="/contents/shop/00000003/image/static/casio_keyboard/bg_2_1.png" alt="">
+		</span>
+	</section><!-- /casio_keyboard_uservoice -->
+
+
+	<section class="casio_keyboard_int">
+		<h2 class="section_ttl"><img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img16.png" alt="大林素子（おおばやしもとこ）さんもオススメ！初心者でもやさしく弾ける“楽らくキーボード”"></h2>
+		<div class="content_box">
+			<div class="txt">
+				<p>子供の頃からピアノに憧れていたんですが、習う機会がなくて。<br>だから私、楽譜が読めないんですよ。でも音楽は大好きなんです。</p>
+				<p>このキーボードは、鍵盤が光ってガイドしてくれるから、初心者でも始めるハードルがすごく低いと思います。これなら無理せずラクに続けられる。</p>
+				<p>特にびっくりしたのが「らくらくモード」！　これに設定すると、ちょっと間違えても最後まで弾ける（笑）。まるでピアニストになった気分です。</p>
+				<p>「この歳になってできるかな……」なんて思わずに、新しい趣味として、ぜひご一緒にトライしましょう！</p>
+				<div class="box">
+					<p class="oobayashi_name">大林 素子（おおばやし・もとこ）</p>
+					<p>11歳からバレーボールを始め、高校在学中に全日本代表に初選出される。88年ソウル五輪、92年バルセロナ五輪、96年アトランタ五輪に出場し、97年に引退。現在は、スポーツキャスター、舞台・ドラマでの女優業など、幅広い分野で活躍している。</p>
+				</div>
+			</div>
+			<div class="img">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_03.png" alt="ぜひ、ご一緒に始めましょう！">
+			</div>
+		</div>
+	</section><!-- /casio_keyboard_int -->
+
+
+	<!-- お申込みボタン -->
+	<p class="order_btn">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	<section class="casio_keyboard_details">
+		<h2 class="section_ttl">感動！指先から名曲が溢れ出す。</h2>
+		<p class="subttl">初めてでも弾ける！楽しい工夫がいっぱいのキーボード！</p>
+		<div class="details_content">
+			<div class="detail_item" id="feature01">
+				<h3 class="list_tit">楽譜が読めなくても「光る鍵盤」と「3段階レッスン」で、弾けるようになるまでしっかりフォロー。</h3>
+				<p class="goods_detail_description_txt01 cmn_column02_03_txt01">
+					鍵盤を触るのが初めてでも大丈夫！内蔵されている曲を選んで、光る鍵盤を見ながら3つのステップで弾けるようになるまでフォロー。<br>もちろん、経験者の方にも大満足の本格的な音質です。小さなお子様から大人の方まで幅広くお楽しみいただけます。
+				</p>
+				<div class="large_img">
+					<p class="w_img">
+						<picture>
+							<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_04_1.png">
+							<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_04_1_sp.png">
+							<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_04_1.png" alt="(1)お手本（自動演奏）を聴いて、メロディーを覚える（2）光る鍵盤に合わせて指を動かす（3）鍵盤の光なしで弾く">
+						</picture>
+					</p>
+				</div>
+			</div><!-- /detail_item -->
+			<div class="detail_item" id="feature02">
+				<h3 class="list_tit">らくらくモード搭載で、どの鍵盤を押しても正しいメロディーが奏でられる。</h3>
+				<div class="content_box">
+					<div class="list_img">
+						<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_04_2.png" alt="らくらくモード">
+					</div>
+					<div class="list_txt">
+						<p>
+							「らくらくモード」を使用すれば、どの鍵盤を押しても正しいメロディーで弾くことができます。（光っている鍵盤以外を押しても正しいメロディーが奏でられます。）初めての方でも手軽に演奏する喜びを味わっていただけます。
+						</p>
+						
+						<p class="balloon_img viewPc"><img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_04_2_2.png" alt="どの鍵盤を押しても正しい音で演奏できる「らくらくモード」。リズムに乗って鍵盤を押すだけ！"></p>
+
+						<br>
+					</div>
+				</div>
+		
+			</div><!-- /detail_item -->
+			<div class="detail_item" id="feature03">
+				<h3 class="list_tit">全230曲もの多彩な曲を内蔵。<br class="viewSp">ココチモだけのオリジナル仕様です。</h3>
+				<p class="goods_detail_description_txt01 cmn_column02_03_txt01">
+					キーボードに内蔵されている曲数はなんと230曲。憧れのクラシックや世界の名曲、日本の歌やヒット曲まで、気分やシーンに合わせて、お好きな曲を楽しく演奏できます。自動演奏機能と付属のマイクを使えば、カラオケとしてお楽しみいただくこともできます。
+				</p>
+				<div class="large_img">
+					<p class="w_img">
+						<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img05.png" class="viewPc" alt="">
+						<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img05_sp.png" class="viewSp" alt="">
+					</p>
+				</div>
+				<div class="music_list">
+					<p class="main_ttl">ココチモオリジナルの全230曲<span>気分やシーンに合わせて、お好きな曲を楽しく演奏できます。</span></p>
+							<div class="list_box piano contain">
+								<p class="sub_ttl">ピアノ／クラシック</p>
+								<div class="inner">
+									<ul>
+										<li>エリーゼのために</li>
+										<li>乙女の祈り</li>
+										<li>小犬のワルツ</li>
+										<li>トルコ行進曲（モーツァルト）</li>
+										<li>トロイメライ</li>
+										<li>別れの曲</li>
+										<li>愛の夢　第３番</li>
+										<li>ノクターン　作品９の２（ショパン）</li>
+										<li>カノン（パッヘルベル）</li>
+										<li>ジュ・トゥ・ヴ</li>
+										<li>メリーさんのひつじ</li>
+										<li>白鳥　「動物の謝肉祭」より</li>
+										<li>ソナタ　作品13「悲愴」　第２楽章</li>
+										<li>野ばら</li>
+										<li>Ｇ線上のアリア</li>
+										<li>春　「四季」より</li>
+									</ul>
+									<ul>
+										<li>ハバネラ　歌劇「カルメン」より</li>
+										<li>乾杯の歌　歌劇「椿姫」より</li>
+										<li>ハンガリー舞曲　第５番</li>
+										<li>ト長調のメヌエット</li>
+										<li>ニ長調のミュゼット</li>
+										<li>ガボット（ゴセック）</li>
+										<li>アラベスク（ブルクミュラー）</li>
+										<li>チョップスティックス</li>
+										<li>ひいらぎかざろう</li>
+										<li>喜びの歌</li>
+										<li>アヴェ・マリア（グノー）</li>
+										<li>ソナチネ　作品36の１　第１楽章</li>
+										<li>プレリュード　作品28の７（ショパン）</li>
+										<li>夢</li>
+										<li>ジムノペディ　第１番</li>
+										<li>家路　「新世界から」より</li>
+									</ul>
+									<ul>
+										<li>婚礼の合唱　｢ローエングリン｣より</li>
+										<li>ソナタ　作品27の２　「月光」　第１楽章</li>
+										<li>エンターテイナー</li>
+										<li>結婚行進曲　「真夏の夜の夢」より</li>
+										<li>アメリカン・パトロール</li>
+										<li>楽しき農夫</li>
+										<li>すみれ</li>
+										<li>紡ぎ歌</li>
+										<li>貴婦人の乗馬</li>
+										<li>ソナチネ 作品20の１ 第１楽章</li>
+										<li>ソナタ　Ｋ．５４５　第１楽章</li>
+										<li>ガボット ｢フランス組曲 第５番｣より</li>
+										<li>主よ、人の望みの喜びよ</li>
+										<li>セレナード　「アイネ・クライネ・ナハトムジーク」より</li>
+									</ul>
+									<ul>
+										<li>行進曲　「くるみ割り人形」より</li>
+										<li>闘牛士の歌 組曲「カルメン」より</li>
+										<li>ラルゴ（ヘンデル）</li>
+										<li>無邪気</li>
+										<li>プロムナード ｢展覧会の絵｣より</li>
+										<li>インヴェンション　第１番</li>
+										<li>プレリュード　第１番（Ｊ．Ｓ．バッハ）</li>
+										<li>人形の夢と目覚め</li>
+										<li>亜麻色の髪の乙女</li>
+										<li>ユーモレスク(ドヴォルザーク)</li>
+										<li>アラベスク　第１番（ドビュッシー）</li>
+										<li>軍隊行進曲　第１番</li>
+										<li>花の歌</li>
+										<li>華麗なる大円舞曲</li>
+									</ul>
+								</div>
+							</div>
+				
+							<div class="list_box japan contain">
+								<p class="sub_ttl">日本の名曲</p>
+								<div class="inner">
+									<ul>
+										<li>故郷</li>
+										<li>早春賦</li>
+										<li>赤とんぼ</li>
+										<li>荒城の月</li>
+										<li>浜辺の歌</li>
+										<li>四季の歌</li>
+										<li>おぼろ月夜</li>
+									</ul>
+									<ul>
+										<li>冬景色</li>
+										<li>さくら さくら</li>
+										<li>夏の思い出</li>
+										<li>春がきた</li>
+										<li>春の小川</li>
+										<li>花</li>
+										<li>バラが咲いた</li>
+									</ul>
+									<ul>
+										<li>こいのぼり</li>
+										<li>茶つみ</li>
+										<li>みかんの花咲く丘</li>
+										<li>かたつむり</li>
+										<li>我は海の子</li>
+										<li>もみじ</li>
+										<li>宵待草</li>
+									</ul>
+									<ul>
+										<li>ふじ山</li>
+										<li>琵琶湖周航の歌</li>
+										<li>げんこつ山のたぬきさん</li>
+										<li>どんぐりころころ</li>
+									</ul>
+								</div>
+							</div>
+				
+							<div class="list_box world contain">
+								<p class="sub_ttl">世界の名曲</p>
+								<div class="inner">
+									<ul>
+										<li>聖者の行進</li>
+										<li>グリーンスリーブス</li>
+										<li>アニー・ローリー</li>
+										<li>峠の我が家</li>
+										<li>アメイジング・グレイス</li>
+										<li>ロング・ロング・アゴー</li>
+										<li>きらきら星</li>
+										<li>大きな古時計</li>
+										<li>サンタ・ルチア</li>
+										<li>トロイカ</li>
+										<li>ちょうちょう</li>
+									</ul>
+									<ul>
+										<li>オン・トップ・オブ・オールド・スモーキー</li>
+										<li>ほたるの光</li>
+										<li>ぶんぶんぶん</li>
+										<li>かわいいオーガスチン</li>
+										<li>こげよマイケル</li>
+										<li>ダニー・ボーイ</li>
+										<li>マイ・ボニー</li>
+										<li>埴生の宿</li>
+										<li>オーラ・リー</li>
+										<li>アロハ・オエ</li>
+										<li>ジェリコの戦い</li>
+									</ul>
+									<ul>
+										<li>パン屋さん</li>
+										<li>ロンドン橋</li>
+										<li>大きな栗の木の下で</li>
+										<li>森のくまさん</li>
+										<li>夢路より</li>
+										<li>しあわせなら手をたたこう</li>
+										<li>愛しのクレメンタイン</li>
+										<li>茶色のこびん</li>
+										<li>朝日のあたる家</li>
+										<li>黄色いリボン</li>
+										<li>アルプス一万尺</li>
+									</ul>
+									<ul>
+										<li>ケンタッキーの我が家</li>
+										<li>森へ行きましょう</li>
+										<li>ワルツィング・マチルダ</li>
+										<li>アビニョンの橋で</li>
+										<li>線路は続くよどこまでも</li>
+										<li>おお スザンナ</li>
+										<li>草競馬</li>
+										<li>金髪のジェニー</li>
+										<li>わらの中の七面鳥</li>
+										<li>さらばジャマイカ</li>
+									</ul>
+								</div>
+							</div>
+				
+							<div class="list_box pops contain">
+								<p class="sub_ttl">歌謡曲／ポップス</p>
+								<div class="inner">
+									<ul>
+										<li>いい日旅立ち</li>
+										<li>見上げてごらん夜の星を</li>
+										<li>もしもピアノが弾けたなら</li>
+										<li>千の風になって</li>
+										<li>川の流れのように</li>
+										<li>人生いろいろ</li>
+										<li>時の流れに身をまかせ</li>
+										<li>糸</li>
+										<li>なごり雪</li>
+										<li>涙そうそう</li>
+										<li>ハナミズキ</li>
+									</ul>
+									<ul>
+										<li>世界に一つだけの花</li>
+										<li>また君に恋してる</li>
+										<li>愛燦燦</li>
+										<li>夜霧よ今夜も有難う</li>
+										<li>与作</li>
+										<li>まつり</li>
+										<li>北の宿から</li>
+										<li>おふくろさん</li>
+										<li>よこはま・たそがれ</li>
+										<li>酒よ</li>
+										<li>雪國</li>
+									</ul>
+									<ul>
+										<li>北酒場</li>
+										<li>矢切の渡し</li>
+										<li>兄弟船</li>
+										<li>さざんかの宿</li>
+										<li>おもいで酒</li>
+										<li>天城越え</li>
+										<li>津軽海峡・冬景色</li>
+										<li>喝采</li>
+										<li>越冬つばめ</li>
+										<li>珍島物語</li>
+										<li>秋桜</li>
+									</ul>
+									<ul>
+										<li>昴 ─すばる─</li>
+										<li>神田川</li>
+										<li>あの素晴らしい愛をもう一度</li>
+										<li>花&#xFF5E;すべての人の心に花を&#xFF5E;</li>
+										<li>箱根八里の半次郎</li>
+										<li>つぐない</li>
+										<li>ブルー・ライト・ヨコハマ</li>
+										<li>北国の春</li>								
+									</ul>
+								</div>
+							</div>
+				
+							<div class="list_box anime contain">
+								<p class="sub_ttl">アニメソング／イベント</p>
+								<div class="inner">
+								<ul>
+									<li>アンパンマンのマーチ</li>
+									<li>さんぽ　｢となりのトトロ｣より</li>
+									<li>星に願いを</li>							
+								</ul>
+								<ul>
+									<li class="f-small">君をのせて　｢天空の城ラピュタ｣より</li>
+									<li class="f-small">ハッピー・バースデイ・トゥ・ユー</li>
+									<li>きよしこの夜</li>							
+								</ul>
+								<ul>
+									<li>ジングル・ベル</li>
+									<li>おめでとうクリスマス</li>
+									<li>もろびとこぞりて</li>
+									
+								</ul>
+								<ul>
+									<li>もみの木</li>
+									<li>ラジオ体操第一</li>
+								</ul>
+								</div>
+							</div>
+				
+							<div class="list_box brain contain">
+								<p class="sub_ttl">脳にキク</p>
+								<div class="inner">
+									<ul>
+										<li>エクササイズ・フレーズ　１&#xFF5E;50</li>
+									</ul>
+								</div>
+							</div>
+				
+							<p class="subtxt contain"><span class="point_color">※</span>「ピアノ／クラシック曲」は歌詞集、「エクササイズ・フレーズ」は歌詞集・楽譜集への掲載はありません。また、著作権の都合により、「糸」「星に願いを」は歌詞集・楽譜集、「 森へ行きましょう」は歌詞集に掲載していません。</p>
+
+
+				</div><!-- /music_list -->
+			</div><!-- /detail_item -->
+		</div><!-- /details_content -->
+		<div class="list_toggle open_link">
+							<a href="javascript:void(0);"></a>
+						</div>
+	</section><!-- /casio_keyboard_detail -->
+
+
+
+
+
+	<!-- お申込みボタン -->
+	<p class="order_btn">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	<section class="casio_keyboard_enjoy">
+		<h2 class="section_ttl">音楽が趣味って楽しい！ピアニスト気分で名曲を楽しめます！</h2>
+		<p class="subttl deco">初めてのピアノがカンタンに楽しく！</p>
+		<p>初めてでも楽しい！一人でも弾ける！工夫がいっぱいのキーボードです。主な機能をご紹介します。</p>
+		<div class="large_img">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05.png" alt="">
+			</picture>
+		</div>
+		<div class="enjoy_content">
+			<div class="item">
+				<p class="ttl">「光る鍵盤」でカンタン！</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img07.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">楽譜が読めなくても大丈夫！鍵盤が光って弾く場所を教えてくれる「光ナビ」。よく知っている名曲のメロディーに合わせて光を追いかけるだけだから、今までピアノを弾いたことがない方でも安心です。</p>
+				</div>
+			</div><!-- /item -->
+
+			<div class="item">
+				<p class="ttl">「らくらくモード」なら<br class="viewPc">最後まで演奏できる！</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img08.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">「らくらくモード」ならどの鍵盤を押しても正しいメロディーで弾けるので、初めての方でもお好きな曲を最後まで手軽に演奏する悦びを味わっていただけます。</p>
+				</div>
+			</div><!-- /item -->
+
+			<div class="item">
+				<p class="ttl">わかりやすい液晶画面！<br class="viewPc">指使いも一目でわかる。</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_img09.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">液晶画面には曲目の他に、正しい鍵盤の位置と、指使いを表示。どの鍵盤をどの指で押したらいいかすぐにわかるから、練習も楽らくです。</p>
+				</div>
+			</div><!-- /item -->
+
+			<div class="item">
+				<p class="ttl">自動演奏も楽しめる！</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05_2_4.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">ココチモオリジナルキーボードに内蔵されている全230曲が自動演奏できます。演奏の練習をする時にはもちろん、ただメロディーを流すだけでも楽しめるすぐれもの。</p>
+				</div>
+			</div><!-- /item -->
+
+			<div class="item">
+				<p class="ttl">グランドピアノをはじめ<br class="viewPc">高音質600音色を内蔵。</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05_2_5.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">美しいグランドピアノの音色を再生。高音質を追求し、カシオが独自に開発しました。その他全600音色を内蔵し、演奏を思いきり楽しめます。</p>
+				</div>
+			</div><!-- /item -->
+
+			<div class="item">
+				<p class="ttl">音量調整が自由に設定可能。</p>
+				<div class="img_box">
+					<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_05_2_6.png" alt="">
+				</div>
+				<div class="txt_box">
+					<p class="txt">ご自宅で練習したり、みんなで歌う時の伴奏にしたり…と、お使いの場面に合わせてボリュームを細かく調整できます。</p>
+				</div>
+			</div><!-- /item -->
+
+		</div><!-- /enjoy_content -->
+
+		<div class="support_wrap">
+			<h3 class="subttl deco">上達をサポートしてくれるうれしい3大付録つき</h3>
+			<!-- <p>ココチモオリジナルの3大付録つきで、もっとお楽しみいただけます。</p> -->
+			<div class="support_content">
+				<div class="item">
+					<div class="img_box">
+						<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_06_1.png" alt="">
+					</div>
+					<p class="ttl">1. 歌詞集・楽譜集</p>
+					<p class="txt">オリジナルの内蔵曲に対応した歌詞集・楽譜集付き！歌詞を見ながら歌ったり、楽譜で指使いを覚えたり…音楽の世界がぐっと広がります。</p>
+					<p class="sub_txt">
+						※「ピアノ／クラシック曲」は歌詞集、「エクササイズ・フレーズ」は歌詞集・楽譜集への掲載はありません。また、著作権の都合により、「糸」「星に願いを」は歌詞集・楽譜集、「森へ行きましょう」は歌詞集に掲載していません。
+					</p>
+				</div><!-- /item -->
+
+				<div class="item">
+					<div class="img_box">
+						<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_06_2.png" alt="">
+					</div>
+					<p class="ttl">2. ヘッドホン</p>
+					<p class="txt">ヘッドホンがあれば、早朝でも深夜でもお好きな時間に一日中気兼ねなく練習できます。通常は別売りですが、ココチモでは特別にセットにしています。</p>
+				</div><!-- /item -->
+
+				<div class="item">
+					<div class="img_box">
+						<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_06_3.png" alt="">
+					</div>
+					
+					<p class="ttl">3. 専用マイク</p>
+					<p class="txt">専用のマイクと、マイクを立てるためのスタンド付き。自動演奏に合わせてカラオケを楽しんだり…弾いて歌ってお楽しみいただけます。</p>
+				</div><!-- /item -->
+				
+			</div><!-- /support_content -->
+		</div><!-- /support_wrap -->
+	</section><!-- /casio_keyboard_enjoy -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	<section class="casio_keyboard_brain">
+		<div class="content">
+			<h2 class="section_ttl">脳活性にも！「脳にキク」エクササイズ・フレーズを収録。</h2>
+			<p class="txt">東北大学・川島隆太教授の指導のもとで行った実験により、脳の活性化につながることが実証された「脳にキク」エクササイズ・フレーズを収録。短いフレーズを繰り返し弾くことで、子供から大人まで効果的に脳を活性化させることができます。</p>
+
+			<div class="profile_box">
+				<p class="name">川島隆太教授　プロフィール</p>
+				<p class="txt">東北大学加齢医学研究所教授。認知症の予防、脳機能の改善、幼少時の脳機能の発達促進などを目的に「脳機能イメージング」理論を研究。単純な読み・書き・計算を反復練習することによって脳の前頭前野を活性化する「学習療法」を発表。「脳を鍛える大人の計算ドリル」他、著書多数。</p>
+			</div>
+		</div>
+
+		<div class="effect_box">
+			<h3 class="ttl">赤い色が濃いほどより脳が活性化している状態。</h3>
+			<div class="img_box">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_07.png" alt="" class="mt20">
+				<div class="img_txt_box">
+					<p class="sub_ttl indent-1">※光トポグラフィ装置による<br class="viewPc">脳（前頭前野）の3Ｄ画像</p>
+					<p>■学術指導：東北大学 川島隆太教授<br>■実験協力：東北大学 加齢医学研究所</p>
+				</div>
+			</div>
+			<p class="sub_txt"><span class="point_color">※</span>脳の活性化には個人差があります。<br class="viewSp"><span class="point_color">※</span>カシオ「光ナビゲーションキーボード」は医療機器ではありません。</p>
+		</div>
+	</section>
+
+	<section class="casio_keyboard_family">
+		<span class="bg_img voice_img">
+			<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_08_2.png" alt="お喜びの声をご紹介します。">
+		</span>
+		<h2 class="section_ttl">
+			ご家族みんなで楽しめます！
+		</h2>
+		<div class="voice_box">
+			<ul class="voice_list">
+				<li><span class="large">脳トレに最良だと思います。</span><span class="user">（北海道・男性・77歳）</span></li>
+				<li>指を使うことで脳の活性化に期待。<span class="user">（三重県・男性・69歳）</span></li>
+				<li>これを機会に、脳と手の動作の活性化をしたい。<span class="user">（東京都・男性・78歳）</span></li>
+				<li>孫にプレゼントしました。とっても喜んでいました。<span class="user">（熊本県・女性・63歳）</span></li>
+				<li><span class="large">ピアノが弾けたらと思い、孫と一緒に、</span><br class="viewPc">また、妻と…カラオケも楽しめたらと思っています。<span class="user">（栃木県・男性・67歳）</span></li>
+				<li>キーボードのおかげで孫とのふれあいがより深くなり、幸せです。<span class="user">（三重県・男性・69歳）</span></li>
+			</ul>
+		</div>
+		<p class="subtxt">※以前にココチモから『カシオキーボード』シリーズをご購入されたお客様のアンケートより。プロフィールはお便りをいただいた時点のものです。使用感には個人差があります。</p>
+	</section><!-- /casio_keyboard_family -->
+
+	<!-- キャンペーン ここから -->
+	<div class="campaign_area">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_pc_2.jpg">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_sp_2.png">
+				<img class="cam_bnr" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_pc_2.jpg" alt="期間限定プレゼント！">
+		</picture>
+	</div>
+	<!-- キャンペーン ここまで -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	<section class="casio_keyboard_spec">
+		<h2 class="section_ttl">商品仕様</h2>
+		<div class="main_vi">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_det.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_det.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_det.png" alt="">
+			</picture>
+		</div>
+		<div class="spec_table">
+			<div class="tb">
+				<table class="goods_detail_spec_table goods_detail_spec_table01">
+					<tbody>
+						<tr>
+							<th>セット内容</th>
+						</tr>
+						<tr>
+							<td>
+								<ul class="spec_list">
+									<li>カシオ光ナビゲーションキーボード　LK-516<br></li>
+									<li>歌詞集</li>
+									<li>楽譜集</li>
+									<li>譜面立て</li>
+									<li>ヘッドホン</li>
+									<li>マイク（コード長さ約3m）</li>
+									<li>マイクホルダー</li>
+									<li>ACアダプター</li>
+								</ul>
+								<p>※キーボードスタンドは付属していません。</p>
+							</td>
+						</tr>
+						<tr>
+							<th>カシオ光ナビゲーションキーボード LK-516 仕様</th>
+						</tr>
+						<tr>
+							<td>
+							<ul class="spec_list">
+								<li>鍵盤数：61鍵盤</li>
+								<li>内蔵曲：全230曲</li>
+								<li>サイズ（約）：幅94.8×奥行35×高さ10.9cm</li>
+								<li>重さ（約）：4.5kg（乾電池含まず）</li>
+								<li>材質：PS</li>
+								<li>消費電力：7.5W、単3形アルカリ乾電池×6本または家庭用AC100V電源（付属ACアダプター）使用</li>
+								<li>製造：中国</li>
+							</ul>
+							<p>※専用のアプリケーションより追加の曲をダウンロードできます。</p>
+						</td>
+						</tr>
+						<tr>
+							<td>
+								<ul class="remarks_list">
+									<li>実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。</li>
+									<li>商品は通常7&#xFF5E;12日前後でお届けいたします。</li>
+									<li>ご用意していた数量を超えるご注文があった場合、完売や、数ヵ月お待ちいただくことがございます。何卒ご了承ください。</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="img_box viewPc">
+				<img class="img" src="/contents/shop/00000003/image/static/casio_keyboard/ddv03_new_09.png" alt="">
+			</div>
+		</div><!-- /spec_table-->
+	</section><!-- /casio_keyboard_spec -->
+
+	<div class="casio_keyboard_info">
+		<div class="inner08">
+			<div class="img_box clearfix">
+				<div class="txt_box">
+					<div class="price_area">
+						<h3><span class="ikkatu">一括払価格</span>39,800<span class="yen">円</span></h3>
+					</div>
+					<p class="price_txt">※価格は全て税込みです。</p>
+					<ul class="plice_list">
+						<li><img src="contents/c/image/static/img/infotext01.png" alt="クレジットカード　手数料0円 代金引換　代引手数料300円"></li>
+						<li><img src="/contents/shop/00000003/image/static/casio_keyboard/infotext02.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
+						<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+						<!--▼▼▼モーダル▼▼▼-->
+						<div id="return_goods" class="lightbox">
+							<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+							<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
+							<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
+							<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+						</div>
+						<!-- /#return_goods -->
+						<!-- <img src="contents/shop/00000003/image/static/casio_keyboard/sp_imgtext24.png" alt="送料は当社が負担　8日以内なら返品可能 本体未開封に限ります。※返品の際の送料はお客様のご負担になります" class="sp"> --></li>
+					</ul>
+				</div>
+				<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時～12時 14時～15時 16時～18時 18時～20時 19時～21時"></div>
+			</div>
+		</div>
+	</div><!-- /casio_keyboard_info -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn pb60 s_pb30">
+		<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
+				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+</div><!-- casio_keyboard_wrapper -->
+</div><!-- goods_wrap -->
+
+<!-- ▼▼▼追従ボタン-->
+<div class="goto_cart">
+	<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+		<img src="/contents/shop/00000003/image/static/casio_keyboard/cart_button.png" alt="ご注文はこちらから" />
+	</a>
+</div>
+<!-- ▲▲▲追従ボタン-->
+
+	<!--<span m:id="l_equ_type_simple">-->
+	<!-- カート追従バナー -->
+	<style>
+		.purchase_fixed {
+			display: block;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			border-top: 4px solid #DB844E;
+			background: #f9f5e8;
+			width: 100%;
+			font-size: 12px;
+			text-align: center;
+			z-index: 10;
+		}
+		#contents .purchase_fixed .inner a:hover {opacity: .85;}
+		#contents .purchase_fixed .inner {
+			max-width: 100%;
+			width: 780px;
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 auto !important;
+		}
+		#contents .purchase_fixed .inner .item_box {
+			position: relative;
+		}
+		#contents .purchase_fixed .inner .item_box.fix_order_btn {
+				width:65%;
+		}
+		#contents .purchase_fixed .inner .item_box.present_item {
+			margin-left: 0;
+			margin-right: 20px;
+			width:31%;
+		}
+		/* IE9 ハック */
+		@media screen and (min-width: 0\0) and (min-resolution: .001dpcm) {
+			.purchase_fixed {
+				display: none;
+			}
+		}
+
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.purchase_fixed {
+				border-top: 2px solid #DB844E;
+				background: #f9f5e8;
+				width: 100%;
+				font-size: 12px;
+				text-align: center;
+				z-index: 10;
+			}
+			#contents .purchase_fixed .inner {
+				width: auto;
+				padding: 10px 10px 10px 10px
+			}
+			#contents .purchase_fixed .inner .item_box {
+			}
+			#contents .purchase_fixed .inner .item_box.fix_order_btn {
+				flex:1 1 452px;
+				width: auto;
+			}
+			#contents .purchase_fixed .inner .item_box.present_item {
+			margin-left: 0;
+			margin-right: 10px;
+			flex: 0 1 327px;
+			width: auto;
+		}
+
+	}
+	</style>
+	<div class="purchase_fixed">
+		<div class="inner">
+			<div class="item_box present_item">
+				<img class="sp_only" src="/contents/shop/00000003/image/static/casio_keyboard/purchase_fixed_presen_sp.png" alt="プレゼント付き有効期限1月14日（火）"><img class="pc_only" src="/contents/shop/00000003/image/static/casio_keyboard/purchase_fixed_presen.png" alt="プレゼント付き有効期限1月14日（火）">
+			</div>
+			<!-- ▼▼お申込みボタン▼▼ -->
+			<div class="item_box fix_order_btn" id="purchase_btn_order">
+				<!-- ST <a onclick="siteCatalistAddCart_static('DDV03','00010485','10990');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDV03','00011242','22225');return false;" href="">
+
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<!--</span>-->
+	<!-- //カート追従バナー -->
+
+<!-- スクリプト ここから -->
+<script>
+$(function () {
+	
+	$(window).load(function () {
+		$('.goods_flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+		$('#casio_keyboard_slider_area').removeClass('loading');
+		$('#casio_keyboard_slider_area .loading_icon').remove();
+			}
+		});
+
+	});
+
+	
+
+	/* initial
+	------------------------------------- */
+	// switchImg();
+	showMore();
+
+    /* showmore
+	------------------------------------- */
+	function showMore() {
+		if($(window).width() > 767){
+			
+				$('.music_list .contain').slice(2, 7).wrapAll('<div class="slideArea close"></div>');
+		}else{
+
+			$('.music_list .contain').slice(1, 7).wrapAll('<div class="slideArea close"></div>');
+		}
+		var slideHeight = 0;
+		var slideTop = 0;
+		var slideArea;
+
+		slideArea = $('.slideArea');
+		$('.casio_keyboard_details .list_toggle a').off();
+
+		$('.casio_keyboard_details .list_toggle a').click(function () {
+			slideHeight = slideArea.height();
+			slideTop = slideArea.offset().top;
+
+			if ($(this).hasClass('opened')) {
+				$(this).removeClass('opened');
+				$('.casio_keyboard_details .list_toggle').addClass('open_link').removeClass('close_link');
+				$('.slideArea')
+				.addClass('close')
+				.removeClass('open');
+				
+				$('html,body').animate({ scrollTop: slideTop }, 300);
+
+			} else {
+				$(this).addClass('opened');
+				$('.casio_keyboard_details .list_toggle')
+				.removeClass('open_link')
+				.addClass('close_link');
+				$('.slideArea').addClass('open').removeClass('close');
+			}
+		});
+	}
+
+});
+</script>
+
+<script>
+	// Picture element HTML5 shiv
+	document.createElement( "picture" );
+</script>
+<script type="text/javascript" src="/contents/shop/00000003/js/casio_keyboard/picturefill.js"></script>
+
+

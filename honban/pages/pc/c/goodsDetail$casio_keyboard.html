@@ -13,16 +13,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta name="format-detection" content="telephone=no">
 <!-- InstanceBeginEditable name="title" -->
-<meta name="description" content="しゃべる地球儀　パーフェクトグローブネオビジョンならユーキャンのココチモ。ココチモ（cococimo）は、防災グッズ、ファッション、家具・家電、オーディオ機器、生活雑貨まで様々な商品を扱っています。「今よりもっと“心地いい”をお届けする」をテーマに、こだわり抜いた商品をご案内する通信販売サイトです。">
-		<meta name="keywords" content="しゃべる地球儀,パーフェクトグローブネオビジョンプレミアム,テレビ地球儀,直径26ｃｍ地球儀,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
+<meta m:id="description" name="description" content="$1の商品ページです。ユーキャンのココチモ（cococimo）は「今よりもっと“心地いい”をお届けする」をテーマに、こだわり抜いた商品をご案内する通信販売サイトです。">
+		<meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 		<meta m:id="e_var_goods">
 		<meta m:id="e_var_goodsUrlPrefix">
 		<link m:id="canonical" rel="canonical" href="http://www.cococimo.jp/shop/c/e/goods/"/>
-		<!-- <title m:id="title" arg1="" arg2=" - ココチモ（cococimo）の通販ショップ">データベースから値を取得し表示します</title> -->
-		<title>しゃべる地球儀 ネオビジョン プレミアム - ココチモ（cococimo）の通販ショップ</title>
+		<title m:id="title" arg1="" arg2=" - ココチモ（cococimo）の通販ショップ">データベースから値を取得し表示します</title>
 
 
-		<!-- Anti-flicker snippet (recommended)  -->
+		<!-- Anti-flicker snippet (recommended)-->
 		<style>.async-hide { opacity: 0 !important} </style>
 		<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
@@ -35,16 +34,17 @@
 		<!-- Googleタグマネージャ head用 -->
 
 		<!-- OGPタグ　ここから -->
-		<meta property="og:title" content="しゃべる地球儀 ネオビジョン プレミアム" />
+		<meta property="og:title" content="カシオ 大人の楽らくキーボード" />
 		<meta property="og:type" content="article" />
-		<meta property="og:description" content="見て、聞いて、触って楽しい「しゃべる地球儀」はココチモ限定の地球儀です！" />
-		<meta property="og:url" content="https://www.cococimo.jp/item_neovision/" />
+		<meta property="og:description" content="初めてでも一人で弾ける、工夫いっぱいのキーボード" />
+		<meta property="og:url" content="https://www.cococimo.jp/item_casio-keyboard/" />
 		<meta property="og:site_name" content="ココチモ（cococimo）の通販ショップ" />
-		<meta property="og:image" content="https://www.cococimo.jp/contents/shop/00000003/image/static/neovision91/ogp_1200x630.jpg" />
+		<meta property="og:image" content="https://www.cococimo.jp/contents/c/goods/image/new/ddv03/ddv03_sum1.png" />
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@otasuke_tapita" />
 		<!-- OGPタグ　ここまで -->
+
 		<!-- InstanceEndEditable -->
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
@@ -138,65 +138,58 @@ $(function(){
 			  sendMailToFriend();
 			}
 			function siteCatalistAddCart(s_products){
-			 
-			var goods_stock_num = document.cartGoodsAddForm.goods_stock_num.value;
-			var order_num_string = document.goodsDetailCartForm.order_num_string.value;
-			var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-			if( 5 >= Number(goods_stock_num)){
-				alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。");
-			} else if( Number(order_num_string) > Number(goods_stock_num)){
-			  alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。"+goods_stock_num+"個以下の数量を選び直してください。");
-			}else{ 
+			 /* 
+			  var goods_stock_num = document.cartGoodsAddForm.goods_stock_num.value;
+			  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
+			  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+			　if( Number(order_num_string) > Number(goods_stock_num)){
+			　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+			　}else{ 
+			 */
 			   document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
 			   return anchorButtonClick(document.cartGoodsAddForm);
-			  }
+			  /* } */
 			}
 			function siteCatalistAddCart1(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-			var goods_stock_num = document.cartGoodsAddForm1.goods_stock_num.value;
-			var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
-			var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-			if( 5 >= Number(goods_stock_num)){
-			alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。");
-			} else if( Number(order_num_string) > Number(goods_stock_num)){
-			 alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。"+goods_stock_num+"個以下の数量を選び直してください。");
-			}else{
+			/*  var goods_stock_num = document.cartGoodsAddForm1.goods_stock_num.value;
+			  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
+			  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+			　if( Number(order_num_string) > Number(goods_stock_num)){
+			　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以・ｺの数量を選び直してください。");
+			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
 			  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
 			  return anchorButtonClick(document.cartGoodsAddForm1);
-			  }
+			  /* } */
 			}
 			function siteCatalistAddCart_renewal(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-			var order_num_string = document.goodsDetailCartForm.order_num_string.value;
-			var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-			var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
-			if( 5 >= Number(goods_stock_num)){
-			alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。");
-			} else if( Number(order_num_string) > Number(goods_stock_num)){
-			  alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。"+goods_stock_num+"個以下の数量を選び直してください。");
-			}else{
+			/*  var order_num_string = document.goodsDetailCartForm.order_num_string.value;
+			  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+			  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
+			　if( Number(order_num_string) > Number(goods_stock_num)){
+			　  alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
 			  document.cartGoodsAddForm.order_num_string.value=document.goodsDetailCartForm.order_num_string.value;
 			  document.cartGoodsAddForm.goods_sku_code.value=document.goodsDetailCartForm.goods_sku_code.value;
 			  return anchorButtonClick(document.cartGoodsAddForm);
-			  }
+			  /* } */
 			}
 			function siteCatalistAddCart1_renewal(s_products){
 			/* ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ */
-			var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
-			var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
-			var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
-			if( 5 >= Number(goods_stock_num)){
-				alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。");
-			} else if( Number(order_num_string) > Number(goods_stock_num)){
-			 alert("大変申し訳ございません。「ギャラクシーブルーモデル」はご好評につき完売いたしました。"+goods_stock_num+"個以下の数量を選び直してください。");
-			}else{
+			/*  var order_num_string = document.goodsDetailCartForm1.order_num_string.value;
+			  var goods_sku_code = document.goodsDetailCartForm.goods_sku_code.value;
+			  var goods_stock_num = document.getElementsByName(goods_sku_code)[1].value;
+			　if( Number(order_num_string) > Number(goods_stock_num)){
+			　 alert("ご希望の数量分の在庫がありません。"+goods_stock_num+"個以下の数量を選び直してください。");
+			　}else{ */
 			/* ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ */
 			  document.cartGoodsAddForm1.order_num_string.value=document.goodsDetailCartForm1.order_num_string.value;
 			  document.cartGoodsAddForm1.goods_sku_code.value=document.goodsDetailCartForm1.goods_sku_code.value;
 			  return anchorButtonClick(document.cartGoodsAddForm1);
-			  }
+			  /* } */
 			}
 			function showCartButton(obj){
 			  var idx = obj.selectedIndex;
@@ -275,24 +268,6 @@ $(function(){
 		}
 	</script>
 	
-	<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップです。 -->
-	<script type="application/ld+json">
-	{
-	  "@context" : "http://schema.org",
-	  "@type" : "Product",
-	  "name" : "しゃべる地球儀",
-	  "image" : "https://www.cococimo.jp/item_neovision/contents/shop/00000003/image/static/neovision91/photo21.png",
-	  "description" : "こんな地球儀があったなんて！<BR class=\"viewPc\"/>ココチモオリジナル『しゃべる地球儀パーフェクトグローブ・ネオビジョン』は、<BR class=\"pc\"/>\n\t\t\t新しい感動とワクワクをお届けします。<BR class=\"viewPc\"/>10,000シーンを超える映像(※)と、15,000を超える音声解説付きの未来型地球儀。<BR/>\n\t\t\t子供たちへの知育教材としてはもちろん、大人の知的なインテリア玩具としても傑作！！<BR/>\n\t\t\tココチモだけの７インチ大画面を配した台座は見やすいと大好評です。<BR class=\"pc\"/>\n\t\t\tぜひこの機会にお求めください。",
-	  "brand" : {
-	    "@type" : "Brand",
-	    "logo" : "https://www.cococimo.jp/contents/c/shop/image/sp/sp_logo.svg"
-	  },
-	  "offers" : {
-	    "@type" : "Offer",
-	    "price" : "39800"
-	  }
-	}
-	</script>
 </head>
 
 <body>
@@ -516,9 +491,108 @@ $(function(){
 					<!-- /.search_area -->
 
 					<!-- ▼▼▼トレンド商品▼▼▼ -->
-					<span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span>
+					<!-- <span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span> -->
 					<!-- ▲▲▲トレンド商品▲▲▲ -->
-
+					<!-- ▼▼▼カテゴリ一ボタン▼▼▼ -->
+					<style>
+						@media print, screen and (min-width: 767px) {
+							#trend_area {
+								position: relative;
+								float: left;
+							}
+							#category .category_list, #goods .category_list, #home .category_list, .category_list {
+								display: none;
+							}
+							#category .category_list.active, #goods .category_list.active, #home .category_list.active, .category_list.active {
+								display: block;
+							}
+					
+							.search_area_input_wrap {
+								width: 524px;
+							}
+							#trend_area .ttl_category {
+								width: 147px;
+								margin-left: 10px;
+								margin-top: 18px;
+								padding-bottom:3px;
+								text-align: left;
+								position: relative;
+								font-size:15px;
+								font-weight: bold;
+								display: inline-block;
+								color: #2C6190;
+								border-bottom:1px solid transparent;
+								transition: all 300ms 0s ease;
+							}
+							#trend_area .ttl_category.ttl_active:hover,
+							#trend_area .ttl_category.ttl_active {
+								border-bottom:1px solid #F18700;
+							}
+							#trend_area .ttl_category:hover {
+								border-bottom:1px solid #2C6190;
+								color: #F18700;
+							}
+							#trend_area .ttl_category #open_cat.btn_open {
+								border-bottom:none;
+								color: #F18700;;
+							}
+							#trend_area .ttl_category a#open_cat {
+								color:#2C6190;
+								position: relative;
+								display: inline-block;
+								transition: all 300ms 0s ease;
+							}
+							#trend_area .ttl_category a#open_cat:hover {
+								text-decoration: none;
+					
+							}
+							#trend_area .ttl_category a#open_cat:after {
+								content: '';
+								display: inline;
+								width: 0;
+								height: 0;
+								position: absolute;
+								margin: auto;
+								top: 0;
+								bottom: 0;
+								right: -20px;
+								transition: border-color 300ms 0s ease;
+							}
+							#trend_area .ttl_category #open_cat.btn_close:after {
+								border-left: 8px solid transparent;
+								border-right: 8px solid transparent;
+								border-top: 8px solid #2C6190;
+								transition: border-color 300ms 0s ease;
+							}
+							#trend_area .ttl_category #open_cat.btn_open:after {
+								border-left: 8px solid transparent;
+								border-right: 8px solid transparent;
+								border-bottom: 8px solid #F18700;
+								transition: border-color 300ms 0s ease;
+							}
+						}
+						</style>
+						<div id="trend_area">
+							<p class="ttl_category"><a id="open_cat" href="#">カテゴリから探す</a></p>
+						</div>
+						<script>
+							$(function () {
+								var openBtn = $('#open_cat')
+								openBtn.removeClass().addClass("btn_close");
+								openBtn.click(function (event) {
+								if($(this).hasClass("btn_close")) {
+									$(this).removeClass("btn_close").addClass("btn_open");
+								} else if($(this).hasClass("btn_open")) {
+									$(this).removeClass("btn_open").addClass("btn_close");
+								}
+								$('.category_list').slideToggle();
+								$('.category_list').toggleClass("active");
+								$('.ttl_category').toggleClass("ttl_active");
+								event.preventDefault();
+							});
+						});
+						</script>
+					<!-- ▲▲▲カテゴリ一ボタン▲▲▲ -->
 					<span m:id="l_equ_hierarchy_3_shop">
 					<div class="header_menu" class="clearfix">
                         <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
@@ -759,20 +833,12 @@ $(function(){
 						</span>
 					</span>
 					<!--▲▲▲カテゴリー▲▲▲-->
-					<!-- <div id="pan-navi" >
+					<div id="pan-navi" >
 						<ul class="clearfix">
 							<li><a m:id="pankuzu_top_link" href="/"><span m:id="pankuzu_top_name"><span m:id="dummy">TOP</span></span></a></li>
 							<li m:id="loop_exists_breadcrumb_category">&nbsp;&gt;&nbsp;<a m:id="pankuzu_category_link" href="goodsSearchShop_shop.html"><strong><span m:id="pankuzu_category_name">カテゴリ名</span></strong></a></li>
 							<li m:id="if_exists_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_goods_name">商品名</span></li>
 							<li m:id="if_not_exists_breadcrumb_category_and_goods">&nbsp;&gt;&nbsp;<span m:id="pankuzu_page_name">画面名</span></li>
-						</ul>
-					</div> -->
-					<div id="pan-navi">
-						<ul class="clearfix">
-							<li><a href="https://www.cococimo.jp/c/">ココチモ（COCOCIMO）の通販ショップ</a></li>
-								&gt; <a href="/shop/c/category/001001025/list/">CM・新聞で話題</a>
-							<li>&nbsp;&gt;&nbsp;しゃべる地球儀 ネオビジョン プレミアム</li>
-							
 						</ul>
 					</div>
 					
@@ -788,21 +854,7 @@ $(function(){
 					</div>
 					<!-- サムネイル画像取得 ▲▲▲-->
 					<div class="goods_detail">
-						<!-- ページ内メニューここから
-						<div id="c-nav" class="c-nav">
-							<p id="c-nav-open" class="c-nav-btn"> <img src="/contents/c/shop/image/sp/sp_img_nav.png" alt="メニュー" width="48"> </p>
-							<div class="c-nav-inner">
-								<p id="c-nav-close" class="c-nav-btn"> <img src="/contents/c/shop/image/sp/sp_img_nav_close.png" alt="閉じる" width="48"> </p>
-								<ul>
-									<li class="nav01"> <a href="#sec01">見て、聞いて、触って楽しい！！</a></li>
-									<li class="nav02"> <a href="#sec02">大人も子供も楽しめる</a></li>
-									<li class="nav03"> <a href="#sec03">全国からお喜びの声続々と！</a></li>
-									<li class="nav04"> <a href="#sec04">地球儀で頭が良くなる！？</a></li>
-									<li class="nav05"> <a href="#sec05">商品詳細</a></li>
-								</ul>
-							</div>
-						</div>
-						ページ内メニューここまで -->
+						
 						<div id="content_wrap">
 							<!-- インクルード領域 -->
 							<span m:id="timed_include" filename="goodsDetail_head"></span>
@@ -956,7 +1008,7 @@ $(function(){
 							<p class="shopping_sp"><a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01-sp.png" alt="お買い物かごに入れる" class="hover" ></a></p>
 							</form> -->
 						<!-- 商品詳細など -->
-						<!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼-->
+						<!--▼▼▼あなたの閲覧履歴からのおススメです▼▼▼
 						<object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object> 
 						<span m:id="l_notEmp_autoRecommendGoodsList">
 						<div class="recommend">
@@ -1021,7 +1073,7 @@ $(function(){
 						</ul>
 						</div>
 						</div>
-						<!-- /.recommend -->
+						 /.recommend -->
 						</span>
 						<!-- 関連商品のご紹介 -->
 						<span m:id="l_pre_member">
@@ -1095,8 +1147,6 @@ $(function(){
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 						<input type="hidden" name="order_num_string" value="1" />
-						<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-						<input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
 						<!-- 数量指定コメントアウト
 						<div class="select_wrap">
                             <div class="select_wrap">
@@ -1122,8 +1172,6 @@ $(function(){
 						<form method="post" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm" action="goodsDetail.html">
 						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
 						<input type="hidden" name="order_num_string" value="1" />
-						<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-						<input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
 						<!-- 数量指定コメントアウト
 						<div class="select_wrap">
                             <div class="select_wrap">
@@ -1143,8 +1191,6 @@ $(function(){
 						<form method="post" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
 						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
 						<input type="hidden" name="order_num_string" value="1" />
-						<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-						<input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
 						<!-- 数量指定コメントアウト
 						<div class="select_wrap">
                             <div class="select_wrap">
@@ -1186,6 +1232,7 @@ $(function(){
 						<!-- ページトップ -*>
 							<p id="page_top" style="margin-right: 20px;"><a href="#header">このページの先頭へ</a></p>
 							<!-*/ ページトップ -->
+					
 					</div>
 				</div>
 				<!-- content -->
@@ -1227,7 +1274,7 @@ $(function(){
 		<!--container-->
 		<!-- InstanceEndEditable -->
 	<footer id="footer" class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-		<div id="pagetop" class="pagetop_pc">
+		<!-- <div id="pagetop" class="pagetop_pc">
 			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
 		</div>
 		<div id="pagetop_sp" class="pagetop_sp">
@@ -1235,7 +1282,7 @@ $(function(){
 		</div>
 		<div id="telltop_sp" class="telltop_sp">
     	<a href="#tel_area"><img src="/contents/c/goods/image/new/btn_pagetop_sp_2.png" alt="お電話番号へ"></a>
-    </div>
+    </div> -->
 		<div class="about">
 			<div class="about_in wrapper">
 				<ul class="about_list">
