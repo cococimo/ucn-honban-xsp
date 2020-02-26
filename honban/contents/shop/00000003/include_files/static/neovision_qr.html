@@ -16,6 +16,18 @@
 <!--/ 商品購入カート -->
 <!-- ▲▲LPカートに入れる設定▲▲ -->
 
+<style>
+/* 完売対応 */
+.order_btn.sold_out,
+.order_btn.sold_out:hover {
+	background:#868686;
+}
+.order_btn.sold_out a {
+	pointer-events:none;
+	cursor:default;
+}
+</style>
+
 <!--/ インクルード領域  -->
 <!-- PAGE:商品詳細 -->
 <!-- include:00000003/goods/default.jsp -->
@@ -125,10 +137,15 @@
           </div>
 
           <!-- ▼▼ギャラクシーカートボタン▼▼ -->
-          <div class="order_btn">
-            <!--ST<a onclick="siteCatalistAddCart_static('DDO03','00011414','11721');return false;" href="">--><a onclick="siteCatalistAddCart_static('DDO03','00011885','23212');return false;" href="">
-              <img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png"
+          <!-- <div class="order_btn"> -->
+            <!--ST<a onclick="siteCatalistAddCart_static('DDO03','00011414','11721');return false;" href="">--><!--本番<a onclick="siteCatalistAddCart_static('DDO03','00011885','23212');return false;" href="">-->
+              <!-- <img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_2.png"
                 alt="ギャラクシーブルーモデルお申込みはこちら">
+            </a>
+          </div> -->
+          <div class="order_btn item galaxy_model sold_out">
+            <a href="javascript:void(0);">
+              <img src="/contents/shop/00000003/image/static/neovision91/img_new_bt_sp_moji_sold_out.png" alt="ギャラクシーブルーモデルは完売いたしました。">
             </a>
           </div>
           <!-- ▲▲ギャラクシーカートボタン▲▲ -->
