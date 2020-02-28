@@ -821,33 +821,199 @@
 		</div><!-- /spec_table-->
 	</section><!-- /casio_keyboard_spec -->
 
-	<div class="casio_keyboard_info">
-		<div class="inner08">
-			<div class="img_box clearfix">
-				<div class="txt_box">
-					<div class="price_area">
-						<h3><span class="ikkatu">一括払価格</span>39,800<span class="yen">円</span></h3>
+	<style>
+		.casio_keyboard_info {
+			font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+			padding-top:42px;
+		}
+		@media (max-width: 767px) {
+			.casio_keyboard_info {
+				padding-top:10px;
+			}
+		}
+		/* 価格info */
+		.price_info_area {
+			font-size: 15px;
+			margin: 0 auto 42px;
+			font-weight: normal;
+			position: relative;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: center;
+		}
+		@media (max-width: 767px) {
+			.price_info_area {
+				font-size: 1em;
+				margin: 0 15px 0;
+				display: block;
+			}
+		}
+		.price_info_area .price_info {
+			width:360px;
+			margin-right: 20px;
+		}
+		@media (max-width: 767px) {
+			.price_info_area .price_info {
+				width:auto;
+				margin-right: 0;
+				display: flex;
+				flex-direction: column;
+			}
+			.price_info_area .price_info .price_split_wrap{
+				order: 1;
+	
+			}
+			.price_info_area .price_info .plice_list {
+				order: 3
+	
+			}
+			.price_info_area .price_info .price-notice {
+				order: 2;
+				margin-bottom: 20px;
+			}
+		}
+		.price_info_area .plice_delivery {
+			width:291px;
+		}
+		@media (max-width: 767px) {
+			.price_info_area .plice_delivery {
+				width:auto;
+			}
+		}
+		.price_info_area .price_info .price_split_wrap {
+			border: 1px solid #acdde0;
+			padding: 2% 3%;
+			margin: 0 0 3px;
+		}
+		.price_info_area .price_info .price_split_wrap .kakaku {
+			font-size: .9em;
+		}
+		.price_info_area .price_info .price_split_wrap .price_split {
+			font-size: 1.3em;
+			font-weight: bold;
+			line-height: 1.5;
+		}
+		.price_info_area .price_info .price_split_wrap .price_split span {
+			vertical-align: baseline;
+		}
+		.price_info_area .price_info .price_split_wrap .price_split span.month {
+			font-weight: normal;
+		}
+		.price_info_area .price_info .price_split_wrap .price_split span.value {
+			color: #cf1f1f;
+			font-weight: bold;
+			font-size: 1.9em;
+		}
+		.price_info_area .price_info .price_split_wrap .price_split span.num {
+			font-weight: bold;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail {
+			overflow: hidden;
+			line-height: 1.4;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail dt {
+			width: 50%;
+			float: left;
+			padding:5px;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
+			padding-bottom:0;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+			padding-left: 1em;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail dd {
+			padding:5px 5px 5px 40%;
+			border-bottom: 1px dotted #ccc;
+			text-align: right;
+		}
+		.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
+			padding:5px 5px 0 40%;
+			border-bottom: none;
+		}
+		.price_info_area .price_info .plice_list {
+			text-align: center;
+		}
+		@media (max-width: 767px) {
+			.price_info_area .price_info .plice_list img {
+				width: auto;
+				max-width: 291px;
+			}
+		}
+	
+		.price_info_area .price_info .price-notice {
+			font-size: .83em;
+			margin-top: 5px;
+		}
+		.price_info_area .price_info .price-notice  li {
+			text-indent: -1em;
+			padding-left: 2em;
+		}
+		@media (max-width: 767px) {
+			.plice_delivery {
+				text-align: center;
+				padding-top:10px;
+			}
+			.plice_delivery img {
+				width: auto;
+				max-width:291px;
+			}
+		}
+		.plice_delivery .return_txt {
+			padding:10px 0 30px;
+			text-align: center;
+		}
+		@media (max-width: 767px) {
+			.plice_delivery .return_txt {
+				padding:5px 0 10px;
+				text-align: center;
+			}
+		}
+		</style>
+	
+		<div class="casio_keyboard_info">
+			<div class="price_info_area">
+				<div class="price_info">
+					<div class="price_split_wrap">
+						<p class="kakaku">【税込価格】</p>
+						<p class="price_split"><span class="month">月々 </span><span class="value">2,880円</span><span class="num">×14回払</span></p>
+						<dl class="price_detail">
+							<dt>■分割払価格</dt>
+							<dd>40,320円</dd>
+							<dt class="indent">●一回の分割払金</dt>
+							<dd>2,880円</dd>
+							<dt class="indent">●支払回数</dt>
+							<dd>14回</dd>
+							<dt class="indent">●支払期間</dt>
+							<dd>14ヶ月</dd>
+							<dt>■一括払価格</dt>
+							<dd>39,800円</dd>
+						</dl>
 					</div>
-					<p class="price_txt">※価格は全て税込みです。</p>
-					<ul class="plice_list">
-						<li><img src="contents/c/image/static/img/infotext01.png" alt="クレジットカード　手数料0円 代金引換　代引手数料300円"></li>
-						<li><img src="/contents/shop/00000003/image/static/casio_keyboard/infotext02.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
-						<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
-						<!--▼▼▼モーダル▼▼▼-->
-						<div id="return_goods" class="lightbox">
-							<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
-							<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
-							<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
-							<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
-						</div>
-						<!-- /#return_goods -->
-						<!-- <img src="contents/shop/00000003/image/static/casio_keyboard/sp_imgtext24.png" alt="送料は当社が負担　8日以内なら返品可能 本体未開封に限ります。※返品の際の送料はお客様のご負担になります" class="sp"> --></li>
+					<div class="plice_list">
+						<img src="contents/c/image/static/img/infotext01_postpay.png" alt="後払い（分割/一括）手数料0円　クレジットカード　手数料0円 代金引換　代引手数料300円">
+					</div>
+					<ul class="price-notice">
+						<li>※金額はすべて税込みです。</li>
+						<li style="letter-spacing:-0.05em">※現在、本商品はクレジットカード決済はご利用いただけません。</li>
+						<li>※代金引換の場合は、一括払いのみとなります。</li>
+						<li>※商品はお申込みから通常7&#xFF5E;12日前後でお届けいたします。</li>
 					</ul>
 				</div>
-				<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時～12時 14時～15時 16時～18時 18時～20時 19時～21時"></div>
+				<div class="plice_delivery">
+					<img src="/contents/c/image/static/img/infotext02_free.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
+					<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+					<!--▼▼▼モーダル▼▼▼-->
+					<div id="return_goods" class="lightbox">
+						<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+						<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
+						<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
+						<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+					</div><!-- /#return_goods -->
+					<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時～12時 14時～15時 16時～18時 18時～20時 19時～21時"></div>
+				</div>
 			</div>
-		</div>
-	</div><!-- /casio_keyboard_info -->
+		</div><!-- /casio_keyboard_info -->
 
 	<!-- お申込みボタン -->
 	<p class="order_btn pb60 s_pb30">
