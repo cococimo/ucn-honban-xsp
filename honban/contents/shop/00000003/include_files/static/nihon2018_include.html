@@ -12,8 +12,7 @@
 <style>
 .purchase_fixed .inner a:hover {cursor: pointer;}
 .yt_area,
-.header_mypage,
-.category_list {display: none !important;}
+.header_mypage {display: none !important;}
 
 /*add_include*/
 .inner_orderbox,
@@ -46,13 +45,30 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
   .copy {display: none;}
   section.featue .ft_area .ft_award .ft_award_caption {font-size: 13px;>
 }
-
+</style>
+<style>
+.info_wrap {background:#ffd9bd;padding:20px;font-size: 1.3em;font-weight:bold;text-align:center;max-width:980px;margin:10px auto 20px;line-height:1.5}
+.info_bnr { padding-left:30px;padding-right:30px;display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;padding-bottom:30px;margin-bottom: 30px;border-bottom:1px dotted #ccc;}
+.info_bnr .item {width: 560px;}
+.info_bnr .item a {transition: 1s all ease 0s;}
+.info_bnr .item a:hover {opacity: 0.6;}
+@media screen and (max-width: 768px) {
+  .info_wrap {padding:10px;font-size: .9em;text-align:left;margin:10px auto 10px;}
+  .info_bnr {display:block;padding-left:0;padding-right:0;padding-bottom:10px;margin-bottom: 20px;}
+  .info_bnr .item {width:100%;padding-bottom: 10px;}
+}
 
 </style>
+<div class="info_wrap">『まんが日本昔ばなし DVD10巻セット』はご好評につき、完売いたしました。<br>ココチモでは他にも、お子様・お孫様への贈り物にオススメの<br class="viewPc">以下のような商品がございます。よろしければご覧ください。</div>
+<div class="info_bnr">
+  <div class="item"><a class="item" href="/item_neovision/"><img src="/contents/shop/00000003/shop/image/ddo02_600.png" alt="しゃべる地球儀"></a></div>
+  <div class="item"><a class="item" href="/item_dacky/"><img src="/contents/shop/00000003/shop/image/dla00_600.png" alt="おしゃべりダッキー"></a></div>
+  <!--<div class="item"><a class="item" href="/item_DFO0E/"><img src="/contents/shop/00000003/shop/image/dfo0e_600.png" alt="世界名作昔ばなしDVD8巻セット"></a></div>-->
+</div>
 
 <main>
 <div class="copy_wrap">
-  
+
 </div>
 <section id="header_vi" class="vi_d">
     <h1>新聞広告やテレビCMでおなじみの まんが日本昔ばなし 今だけ！ご購入記念「昔ばなし太郎人形」プレゼント</h1>
@@ -68,12 +84,12 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
       </div>
       <div class="developer">企画・製作：川内彩友美　&copy;愛企画センター</div>
     </div>
-    <div class="tobuy_btn">
+   <!--  <div class="tobuy_btn">
       <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
         <img src="contents/shop/00000003/image/static/nihon2018/btn_text.png" alt="ご購入はこちら" class="sp_none">
         <img src="contents/shop/00000003/image/static/nihon2018/sp/btn_text_sp.png" alt="ご購入はこちら" class="pc_none">
       </a>
-    </div>
+    </div> -->
   </section>
   <section class="featue">
     <div class="ft_title">
@@ -94,7 +110,7 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
           <figure class="ft_img"><img src="contents/shop/00000003/image/static/nihon2018/fertures_p2_img.png" alt=""></figure>
           <div class="ft_part_title"><img src="contents/shop/00000003/image/static/nihon2018/fertures_p2.png" alt="其の二:語りはおなじみ市原悦子さんと常田富士男さん。"></div>
           <div class="ft_desc">
-            ストーリーの進行は、ほっとするような声が特徴の市原悦子さんと常田富士男さん。美しく味わい深いアニメーションに色を添えます。<br>※常田富士男さんは平成30年7月、逝去されました。ご冥福をお祈り申し上げます。
+            ストーリーの進行は、ほっとするような声が特徴の市原悦子さんと常田富士男さん。美しく味わい深いアニメーションに色を添えます。<br>※市原悦子さんは平成31年1月、逝去されました。<br>※常田富士男さんは平成30年7月、逝去されました。
           </div>
         </div>
         <div class="ft_box">
@@ -163,12 +179,15 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
         </div>
       </div>
     </div>
-    <div class="tobuy_btn inner_button">
+	<div class="tobuy_btn inner_button tac">
+	    <img src="contents/shop/00000003/image/static/nihon2018/btn01_2.png" alt="ご好評につき完売しました">
+	</div>
+    <!-- <div class="tobuy_btn inner_button">
       <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
         <img src="contents/shop/00000003/image/static/nihon2018/btn_text.png" class="sp_none" alt="ご購入はこちら">
         <img src="contents/shop/00000003/image/static/nihon2018/sp/btn_text_sp.png" class="pc_none" alt="ご購入はこちら">
       </a>
-    </div>
+    </div> -->
   </section>
   <secton class="stories">
     <h2 class="stoies_title sp_none"><img src="contents/shop/00000003/image/static/nihon2018/story_title.png" alt="名作揃いの全40話"></h2>
@@ -498,12 +517,15 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
       </div>
     </div>
     <div class="grid_copy">&copy;愛企画センター</div>
-    <div class="tobuy_btn inner_button">
-      <a onclick="ga('send','event','nihon2018_a','click','inToCart_03',1);siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
+	<div class="tobuy_btn inner_button tac">
+	    <img src="contents/shop/00000003/image/static/nihon2018/btn01_2.png" alt="ご好評につき完売しました">
+	</div>
+    <!-- <div class="tobuy_btn inner_button">
+      <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
         <img src="contents/shop/00000003/image/static/nihon2018/btn_text.png" class="sp_none" alt="ご購入はこちら">
         <img src="contents/shop/00000003/image/static/nihon2018/sp/btn_text_sp.png" class="pc_none" alt="ご購入はこちら">
       </a>
-    </div>
+    </div> -->
   </secton>
   <section id="favorite">
     <h2 class="sp_none"><img src="contents/shop/00000003/image/static/nihon2018/favaritstory.png" alt="「まんが日本昔ばなしDVD全10巻セット」の中で好きなお話は？"></h2>
@@ -625,7 +647,7 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
           <div class="customer_box h180">
             <div class="voice">
               <dl>
-                <dt>登場人物や動物の見せる思いやりや勇気は子どものの心にきっと深く響いていると思います。</dt>
+                <dt>登場人物や動物の見せる思いやりや勇気は子どもの心にきっと深く響いていると思います。</dt>
                 <dd>北海道・女性50代</dd>
               </dl>
             </div>
@@ -725,12 +747,15 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
         </div>
       </div>
     </div>
-    <div class="tobuy_btn inner_button">
-      <a onclick="ga('send','event','nihon2018_a','click','inToCart_04',1);siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
+	<div class="tobuy_btn inner_button tac pr10 pl10">
+	    <img src="contents/shop/00000003/image/static/nihon2018/btn01_2.png" alt="ご好評につき完売しました">
+	</div>
+    <!-- <div class="tobuy_btn inner_button">
+      <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
         <img src="contents/shop/00000003/image/static/nihon2018/btn_text.png" class="sp_none" alt="ご購入はこちら">
         <img src="contents/shop/00000003/image/static/nihon2018/sp/btn_text_sp.png" class="pc_none" alt="ご購入はこちら">
       </a>
-    </div>
+    </div> -->
     <div class="prod_detail inner">
       <h3 class="prod_detail_title">商品詳細／特典・付録</h3>
       <div class="pd_area">
@@ -753,8 +778,8 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
             <td>ユーキャン・ココチモ</td>
           </tr>
           <caption align="bottom">
-            <p>※1巻ごとの分売はいたしておりません。</p>
-            <p>※DVD対応のプレイヤーで再生してください。パソコンでの動作保証はいたしておりません。</p>
+            <p>1巻ごとの分売はいたしておりません。</p>
+            <p>DVD対応のプレイヤーで再生してください。パソコンでの動作保証はいたしておりません。</p>
           </caption>
         </table>
       </div>
@@ -783,12 +808,15 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
         </div>
       </div>
     </div>
-    <div class="tobuy_btn inner_button set_btm_btn">
-      <a onclick="ga('send','event','nihon2018_a','click','inToCart_05',1);siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
+	<div class="tobuy_btn inner_button tac mt30 pr10 pl10">
+	    <img src="contents/shop/00000003/image/static/nihon2018/btn01_2.png" alt="ご好評につき完売しました">
+	</div>
+    <!-- <div class="tobuy_btn inner_button set_btm_btn">
+      <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
         <img src="contents/shop/00000003/image/static/nihon2018/btn_text.png" class="sp_none" alt="ご購入はこちら">
         <img src="contents/shop/00000003/image/static/nihon2018/sp/btn_text_sp.png" class="pc_none" alt="ご購入はこちら">
       </a>
-    </div>
+    </div> -->
   </section>
 </main>
 <!-- 固定コンバージョン -->
@@ -801,13 +829,17 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
       </picture>
     </p>
     <p>
-      <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;">
+      <!-- <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;"> -->
       <!-- <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href=""> -->
-      <picture>
+      <!-- <picture>
         <source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/nihon2018/sp/sp_fixedfooter_btn.png">
         <img src="/contents/shop/00000003/image/static/nihon2018/fixedfooter_btn.png" alt="この商品を申し込む">
       </picture>
-      </a>
+      </a> -->
+      <picture>
+        <source media="(max-width: 640px)" srcset="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png">
+        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました" class="pl10">
+      </picture>
     </p>
   </div>
 </div>
@@ -866,7 +898,7 @@ section.featue .ft_area .ft_award .ft_award_caption .txt {display: block;}
         // titleSrc: 'alt'  // キャプションとして表示する属性を指定(titleなど)
     }
   });
-  
+
   $('.yt_box').magnificPopup({
     delegate: 'a', // 子要素のセレクタ
     type: 'iframe',

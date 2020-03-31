@@ -894,32 +894,3 @@
 		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
   <!--<span m:id="l_equ_type_simple"> カート追従バナー -->
-
-
-<!-- ▼▼▼ naviplus　▼▼▼ -->
-<script>
-	var NaviPlus_member_no = document.tagForm.member_no.value;
-	var NaviPlus_ext_goods_sku_code = 'DLA00';
-	var NaviPlus_goods_url = 'https://www.cococimo.jp/shop/c/static/dacky81_top/';	
-	var NaviPlus_goods_name = 'プリンス・ダッキーセット（ココチモオリジナル）';
-	var NaviPlus_goods_price = 29800;
-	var NaviPlus_goods_img_url = "https://www.cococimo.jp/item_dacky/contents/c/goods/image/new/dla00/dla00_sum1.png";
-
-	
-	document.write("<script type=\'text/javascript\'>");
-		document.write("_sna_dam.push([\'behaviorType\', 1]);");
-		if( NaviPlus_member_no !== "0000000000") {
-			document.write("_sna_dam.push([\'userCode\', \'" + NaviPlus_member_no +"\']);");
-		}
-		document.write("_sna_dam.push([\'item\', {");
-		document.write("\'attributes\': {");
-			document.write("\'name\': \'"+ NaviPlus_goods_name +"\',");
-				document.write("\'url1\': \'" +  NaviPlus_goods_url+ "',");
-				document.write("\'price1\': \'" + NaviPlus_goods_price +"\',");
-				document.write("\'imageUrl1\': \'"+ NaviPlus_goods_img_url +"\'");
-			document.write(" },");
-		document.write("\'code\': \'" + NaviPlus_ext_goods_sku_code + "\'");
-	document.write("}]);");
-	document.write("<\/script>");
-</script> 
-<!-- ▲▲▲ naviplus　▲▲▲ -->
