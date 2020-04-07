@@ -511,9 +511,108 @@ function showCartButton1(obj){
           <!-- /.search_area -->
 
           <!-- ▼▼▼トレンド商品▼▼▼ -->
-          <span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span>
+					<!-- <span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span> -->
           <!-- ▲▲▲トレンド商品▲▲▲ -->
+					<!-- ▼▼▼カテゴリ一ボタン▼▼▼ -->
+					<style>
+						@media print, screen and (min-width: 767px) {
+							#trend_area {
+								position: relative;
+								float: left;
+							}
+							#category .category_list, #goods .category_list, #home .category_list, .category_list {
+								display: none;
+							}
+							#category .category_list.active, #goods .category_list.active, #home .category_list.active, .category_list.active {
+								display: block;
+							}
 
+							.search_area_input_wrap {
+								width: 524px;
+							}
+							#trend_area .ttl_category {
+								width: 147px;
+								margin-left: 10px;
+								margin-top: 18px;
+								padding-bottom:3px;
+								text-align: left;
+								position: relative;
+								font-size:15px;
+								font-weight: bold;
+								display: inline-block;
+								color: #2C6190;
+								border-bottom:1px solid transparent;
+								transition: all 300ms 0s ease;
+							}
+							#trend_area .ttl_category.ttl_active:hover,
+							#trend_area .ttl_category.ttl_active {
+								border-bottom:1px solid #F18700;
+							}
+							#trend_area .ttl_category:hover {
+								border-bottom:1px solid #2C6190;
+								color: #F18700;
+							}
+							#trend_area .ttl_category #open_cat.btn_open {
+								border-bottom:none;
+								color: #F18700;;
+							}
+							#trend_area .ttl_category a#open_cat {
+								color:#2C6190;
+								position: relative;
+								display: inline-block;
+								transition: all 300ms 0s ease;
+							}
+							#trend_area .ttl_category a#open_cat:hover {
+								text-decoration: none;
+					
+							}
+							#trend_area .ttl_category a#open_cat:after {
+								content: '';
+								display: inline;
+								width: 0;
+								height: 0;
+								position: absolute;
+								margin: auto;
+								top: 0;
+								bottom: 0;
+								right: -20px;
+								transition: border-color 300ms 0s ease;
+							}
+							#trend_area .ttl_category #open_cat.btn_close:after {
+								border-left: 8px solid transparent;
+								border-right: 8px solid transparent;
+								border-top: 8px solid #2C6190;
+								transition: border-color 300ms 0s ease;
+							}
+							#trend_area .ttl_category #open_cat.btn_open:after {
+								border-left: 8px solid transparent;
+								border-right: 8px solid transparent;
+								border-bottom: 8px solid #F18700;
+								transition: border-color 300ms 0s ease;
+							}
+						}
+						</style>
+						<div id="trend_area">
+							<p class="ttl_category"><a id="open_cat" href="#">カテゴリから探す</a></p>
+						</div>
+						<script>
+							$(function () {
+								var openBtn = $('#open_cat')
+								openBtn.removeClass().addClass("btn_close");
+								openBtn.click(function (event) {
+								if($(this).hasClass("btn_close")) {
+									$(this).removeClass("btn_close").addClass("btn_open");
+								} else if($(this).hasClass("btn_open")) {
+									$(this).removeClass("btn_open").addClass("btn_close");
+								}
+								$('.category_list').slideToggle();
+								$('.category_list').toggleClass("active");
+								$('.ttl_category').toggleClass("ttl_active");
+								event.preventDefault();
+							});
+						});
+						</script>
+					<!-- ▲▲▲カテゴリ一ボタン▲▲▲ -->
           <span m:id="l_equ_hierarchy_3_shop">
           <div class="header_menu" class="clearfix">
             <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
