@@ -163,80 +163,23 @@
 			}	
 		},
 		//ページ内リンクはするするスクロール
-		scroll: function(options) {
-			//ドキュメントのスクロールを制御するオブジェクト
-			var scroller = (function() {
-				var c = $.extend({
-					easing:100,
-					step:30,
-					fps:60,
-					fragment:''
-				}, options);
-				c.ms = Math.floor(1000/c.fps);
-				var timerId;
-				var param = {
-					stepCount:0,
-					startY:0,
-					endY:0,
-					lastY:0
-				};
-				//スクロール中に実行されるfunction
-				function move() {
-					if (param.stepCount == c.step) {
-						//スクロール終了時
-						setFragment(param.hrefdata.absolutePath);
-						window.scrollTo(getCurrentX(), param.endY);
-					} else if (param.lastY == getCurrentY()) {
-						//通常スクロール時
-						param.stepCount++;
-						window.scrollTo(getCurrentX(), getEasingY());
-						param.lastY = getEasingY();
-						timerId = setTimeout(move, c.ms); 
-					} else {
-						//キャンセル発生
-						if (getCurrentY()+getViewportHeight() == getDocumentHeight()) {
-							//画面下のためスクロール終了
-							setFragment(param.hrefdata.absolutePath);
-						}
-					}
-				}
-				function setFragment(path){
-					location.href = path
-				}
-				function getCurrentY() {
-					return document.body.scrollTop  || document.documentElement.scrollTop;
-				}
-				function getCurrentX() {
-					return document.body.scrollLeft  || document.documentElement.scrollLeft;
-				}
-				function getDocumentHeight(){
-					return document.documentElement.scrollHeight || document.body.scrollHeight;
-				}
-				function getViewportHeight(){
-					return (!$.browser.safari && !$.browser.opera) ? document.documentElement.clientHeight || document.body.clientHeight || document.body.scrollHeight : window.innerHeight;
-				}
-				function getEasingY() {
-					return Math.floor(getEasing(param.startY, param.endY, param.stepCount, c.step, c.easing));
-				}
-				function getEasing(start, end, stepCount, step, easing) {
-					var s = stepCount / step;
-					return (end - start) * (s + easing / (100 * Math.PI) * Math.sin(Math.PI * s)) + start;
-				}
-				return {
-					set: function(options) {
-						this.stop();
-						if (options.startY == undefined) options.startY = getCurrentY();
-						param = $.extend(param, options);
-						param.lastY = param.startY;
-						timerId = setTimeout(move, c.ms); 
-					},
-					stop: function(){
-						clearTimeout(timerId);
-						param.stepCount = 0;
-					}
-				};
-			})();
-			$('a[href^=#], area[href^=#]').not('a[href=#], area[href=#]').each(function(){
+scroll: function(options) {
+
+jQuery(function(){
+var headH = 0;
+
+jQuery("a[href^='#']").click(function() {
+var speed = "slow";
+var href= jQuery(this).attr("href");
+var target = jQuery(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top - headH;
+jQuery("html,body").animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+
+}
+			$('a[href^=#], area[href^=#]').not('a[href=#], area[href=#],.specialLink').each(function(){
 				this.hrefdata = new $.yuga.Uri(this.getAttribute('href'));
 			}).click(function(){
 				var target = $('#'+this.hrefdata.fragment);
