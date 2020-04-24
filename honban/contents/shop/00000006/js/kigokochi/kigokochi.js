@@ -826,11 +826,24 @@ $(function(){
             topBtn.fadeOut();
         }
     });
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
+    // topBtn.click(function () {
+    //     $('body,html').animate({
+    //         scrollTop: 0
+    //     }, 500);
+    //     return false;
+    // });
   }
 });
+
+/*ページ内遷移をするするスクロール化*/
+$(function(){
+    var headH = 0;
+    $("a[href^='#']").click(function() {
+      var speed = "slow";
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top - headH;
+      $("html,body").animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+  });
