@@ -615,13 +615,13 @@ $(function(){
 	$('.sp_nav #header_mypage').clone().insertAfter('.sp_member li');
 	$('.header_lists li:empty, .sp_nav li:empty').remove();
 
-	$('.goods_datail_table').clone().insertAfter('.l_con_list_03');
+  $('.goods_datail_table').clone().insertAfter('.contents_right .l_con_list_03');
 	$('.goods_datail_table').parents('.i_main').remove();
 
 
 	var iMainIndex = 0;
 	//var iMainLoop = true;
-	$('.i_main').each(function(index, element) {
+	$('.sec_goods .i_main').each(function(index, element) {
 		//if(!iMainLoop)return;
 
 		//中身が空の場合は要素ごと削除
@@ -783,4 +783,54 @@ $(function(){
 	$('.sp_top_menu a').click(function(){
 		$('.sp_header_search__menu').hide();
   });
+});
+
+
+ //201904_DLPOABテストページネーション最適化
+
+$(function(){
+ //1ページ目の場合、ユーザーが前へボタンを押さないように文字色を薄くする
+ if(!($(".prev > span > a").length)) {
+  $(".prev > span").addClass('disablePagination');
+ //最終ページの場合、ユーザーが次へボタンを押さないように文字色を薄くする
+ } else if(!($(".next > span > a").length)) {
+  $(".next > span").addClass('disablePagination');
+ }
+});
+
+
+ //202001_DLPO ソート強調用Javascript
+
+  window.addEventListener("load", function (){
+   if($('.goods_list_con_box_02 li:not(:has(a))').length){
+    $('.goods_list_con_box_02 li:not(:has(a))').addClass('SelectSort');
+   } else {
+    $('.goods_list_con_box_02 li.last').addClass('SelectSort');
+   }
+  });
+
+
+ //201907_DLPO TOPへ戻るボタン追加用Javascript
+
+$(function(){
+ $('body').after('<div class="pagetop01"><a noadlpo href="#container"></a></div>');
+});
+$(function(){
+   if (matchMedia('(max-width: 640px)').matches) {
+  var topBtn = $('.pagetop01');
+    topBtn.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+  }
 });
