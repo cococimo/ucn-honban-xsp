@@ -927,7 +927,24 @@
 						text-align: center;
 					}
 				}
-			
+				.goods_detail_item_postage {
+					display: block;
+					margin-top: 0;
+					margin-bottom: 5px;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+					font-size: 1em;
+					font-weight: normal;
+					border: 1px solid #cc1010;
+					line-height: 1.5em;
+				}
+				@media screen and (max-width: 767px) {
+					.goods_detail_item_postage {
+					width: auto;
+					}
+				
+				}
 			</style>
 			<div class="info_area">
 				<div class="price_info_area">
@@ -935,6 +952,9 @@
 						<div class="price_split_wrap">
 							<p class="kakaku">【税込価格】</p>
 							<p class="price_split"><span class="month">月々 </span><span class="value">4,980円</span><span class="num">×20回払</span></p>
+							<p class="goods_detail_item_postage">
+								<!--<span class="goods_detail_item_postage_prefix">￥</span>-->送料無料
+							</p>
 							<dl class="price_detail">
 								<dt>■分割払価格</dt>
 								<dd>99,600円</dd>
@@ -958,7 +978,7 @@
 						</ul>
 					</div>
 					<div class="plice_delivery">
-						<img src="/contents/c/image/static/img/infotext02_free.png" alt="送料無料　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
+						<img src="/contents/shop/00000003/image/static/img/infotext02_free.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
 						<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
 						<!--▼▼▼モーダル▼▼▼-->
 						<div id="return_goods" class="lightbox">
