@@ -72,73 +72,50 @@ $(function(){
 	.membership {display: none !important}
 
 	@media print,screen and (min-width: 767px){
-		.header_logo {width: 120px;height: 30px;position: absolute;top: 10px;}
-		.header_logo img {width: 120px;height: 30px;}
+		.header_logo {width: 160px;height: 50px;position: absolute;top: 0;}
+		.header_logo img {width: 87px;height: auto;}
 		.header_top_cart {padding-top: 8px;width: 100%;float: right;overflow: hidden;}
 		.contents_b {padding-top: 5px;}
 		.cmn_tit05{font-size:20px;margin:0 0 10px;}
 		.cmn_step04{margin:5px 0 5px;display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;-webkit-align-items:stretch;align-items:center;letter-spacing:.01rem;}
 		#cart .cart_recalculate{overflow:hidden;margin:0 0 20px;padding:5px;background-size:4px;font-size:14px;}
-		.cmn_step04 .cmn_step_item{width:140px;font-size:14px;}
+		.cmn_step04 .cmn_step_item{width:120px;font-size:14px;}
 		.cmn_step04 .cmn_step_item:nth-child(2){width:150px;}
 		.cmn_step04 .cmn_step_item:nth-child(3){width:170px;}
-		.cmn_step04 .cmn_step_item:before{top:5px;left:10px;width:15px;height:13px;font-size:8px;}
-		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 36px;}
+		.cmn_step04 .cmn_step_item:before{display:none;top:5px;left:10px;width:15px;height:13px;font-size:8px;}
+		.cmn_step04 .cmn_step_item{height:28px;padding:7.5px 0 0 7.5px;text-align: center;}
 		.cmn_step04 .cmn_step_item:after{border-width:14px 0 14px 16px;right:-16px;}
 
-			
 		/*追加_cart.do*/
 		.cmn_step {margin: 4px 0 4px;}
 		.cmn_tit05 {margin: 0 0 20px;padding: 10px 0;}
 		.contents_b {padding-top: 10px;}
 		.cmn_tit01 {font-size: 20px;}
 		.cmn_tit02 {font-size: 20px;}
-
 		}
 		@media screen and (max-width: 767px) {
 			body {padding-top: 64px !important;/*margin-bottom:64px !important;*/}
 			.header {height: auto;}
 			.contents_b {padding-top: 5px;}
 			.header_logo {width: 80px;}
-
 			.header_in,#header {position: static;}
-			.header_logo {top:11px;z-index:1;}
-			.header_top_cart {
-				position: absolute;
-				top: 3px;
-				right: 0;
-				padding-left: 110px;
-				width: 100%;
+			.header_logo {top:5px;z-index:1;}
+			.header_top_cart {position: absolute;top: 3px;right: 0;padding-left: 110px;width: 100%;
 			}
 			.cmn_step {margin: 1.5px 0 20px;}
 			.cmn_step_item {font-size: 11px;border-right: none;}
-   		 #cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
+			#cart .cart_intro_tit {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			.cart_membership,
 			.footer_info_consult {display: none !important;}
 			.cmn_step04 .cmn_step_item {width: 20%;margin-right: 16px;}
-			.cmn_step_item:after {
-			    position: absolute;
-			    content: '';
-			    top: 0;
-					right: -16px;
-			    width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 25px 0 25px 16px;
-			    border-color: transparent transparent transparent #e6e6e6;
-			}
+			.cmn_step_item:after {position: absolute;content: '';top: 0;right: -16px;width: 0;height: 0;border-style: solid;border-width: 25px 0 25px 16px;border-color: transparent transparent transparent #e6e6e6;}
 			.cmn_step_item.cmn_step_active:after {border-color: transparent transparent transparent #f39800;}
 			.footer_important_list {border-top:1px dotted #ccc;margin-top:10px;}
-
-			
-			
-
 			/*追加_cart.do*/
+
 			.cmn_tit05 {font-size: 14px;margin: 0 -10px 5px;padding: 6px 10px;}
 			/*.cmn_tit05 {margin: 0 -10px;padding: 13px 10px;border: 0;background: #f39801;color: #fff;font-size: 20px;}*/
 		}
-
-
 		@media screen and (max-width: 460px) {
 			body {padding-top: 43px !important;}
 			.header {height: auto;}
@@ -179,28 +156,24 @@ $(function(){
 			#member .cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;}
 			.cmn_step04.ch_step03 .cmn_step_item {padding: 10px 0 0;letter-spacing: -0.05em;}
 		}
-
-
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-		.cmn_form_table02 th {background: #dddddd;}
+		.cmn_form_table02 th {background: #e8f8ff;}
 
 	@media print,screen and (min-width: 767px){
 		/*テーブル調整*/
-		.cmn_form_table01 th { background: #dddddd;border:1px solid #bfbfbf;}
+		.cmn_form_table01 th {background: #e8f8ff;border:1px solid #bfbfbf;}
 		.cmn_form_table01 {border-bottom:1px solid #bfbfbf;}
-		.cmn_form_table01 td {border:1px solid #bfbfbf;}
+		.cmn_form_table01 td {border:1px solid #bfbfbf;padding:30px 20px;}
 		.cmn_form_table01 th .suffix {color: #fff;background:#00a3d2;margin-right:5px;padding:0 8px;vertical-align: baseline;}
-
-		}
-		
-		@media screen and (max-width: 767px){
-			.cmn_tit01 {font-size: 14px;}
-			.cmn_form_table01 th .suffix {font-size: 12px;}
-			.cmn_form_table01 th { background: #dddddd;}
-			.cmn_form_table01 th,
-			.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
-			#member .required {font-size: 12px;}
-		}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_tit01 {font-size: 14px;}
+		.cmn_form_table01 th .suffix {font-size: 12px;}
+		.cmn_form_table01 th { background: #e8f8ff;}
+		.cmn_form_table01 th,
+		.cmn_form_table01 td {border:1px solid #bfbfbf;border-bottom:none;}
+		#member .required {font-size: 12px;}
+	}
 
 </style>
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
@@ -223,6 +196,564 @@ $(function(){
 		.cmn_form_table01 th .suffix .viewSp {display:inline !important;font-size:13px;}
 	}
 </style>
+
+<style>
+
+	/* page-layout */
+	@media print,screen and (min-width: 767px){
+		.cmn_form_table01,
+		.memadd_table_01,
+		.input_info_dl,
+		.user_info_change,
+		#cart .input .cmn_tit01,
+		.error.reswfon_m,
+		.cart_intro_tit {max-width:980px;margin-left: auto;margin-right: auto;}
+		.cmn_form_table01 th {width:360px;}
+	}
+	/* ttl-layout */
+	@media print,screen and (min-width: 767px){
+		.cmn_tit01 {
+			max-width:980px;margin-left: auto;margin-right: auto;
+		}
+	}
+
+	/* placeholder */
+	.cmn_form_table01 td #post_code::-webkit-input-placeholder,
+	.cmn_form_table01 td #dst_post_code::-webkit-input-placeholder,
+	.cmn_form_table01 td input[name=card_number]::-webkit-input-placeholder,
+	.cmn_form_table01 td input[type=password]::-webkit-input-placeholder,
+	.cmn_form_table01 td input[type=text]::-webkit-input-placeholder {
+		color: #868686 !important;
+	}
+	.cmn_form_table01 td #post_code::-moz-placeholder,
+	.cmn_form_table01 td #dst_post_code::-moz-placeholder,
+	.cmn_form_table01 td input[name=card_number]::-moz-placeholder,
+	.cmn_form_table01 td input[type=password]::-moz-placeholder,
+	.cmn_form_table01 td input[type=text]::-moz-placeholder {
+		color: #868686 !important;
+	}
+	.cmn_form_table01 td #post_code:-ms-input-placeholder,
+	.cmn_form_table01 td #dst_post_code:-ms-input-placeholder,
+	.cmn_form_table01 td input[name=card_number]:-ms-input-placeholder,
+	.cmn_form_table01 td input[type=password]:-ms-input-placeholder,
+	.cmn_form_table01 td input[type=text]:-ms-input-placeholder {
+		color: #868686 !important;
+	}
+	.cmn_form_table01 td #post_code::placeholder,
+	.cmn_form_table01 td #dst_post_code::placeholder,
+	.cmn_form_table01 td input[name=card_number]::placeholder,
+	.cmn_form_table01 td input[type=password]::placeholder,
+	.cmn_form_table01 td input[type=text]::placeholder {
+		color: #868686 !important;
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::-webkit-input-placeholder {
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::-moz-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]:-ms-input-placeholder{
+			color: #868686 !important;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::placeholder{
+			color: #868686 !important;
+		}
+	}
+
+	/* form-select reset */
+	.cmn_form_table01 select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAA0klEQVQ4T63U6w3CMAwE4LtFWK2JBGULELAELylZjS5i5KqqaJtXG/w30Sc7OZnW2r1z7o0/lFo0xnxIeufcuca01l5ExPQggB3J61Z0wE4AuhHU7ragP5gSU3AtOsPCYCkawOJgDo1gaTCGJrA8OEczWBk4ZPNGUkREo5Gqjk3TtCTvmpqaYAMQAMceMcYcADwq0B7z3r/GrirQEevf/HfMDegEW4Arx19gQbAQDWJRUA90t4nIM/BRUSwJRtAklgVnqK63Nrfdi8Ks4yuew/TOF4QYpCqtK3cmAAAAAElFTkSuQmCC);
+		background-size: 10px;
+		background-repeat: no-repeat;
+		background-position: right 14px center;
+		background-color: #fff;
+	}
+	.cmn_form_table01 select::-ms-expand {
+		display: none;
+	}
+
+	/* form-layout */
+	@media screen and (max-width: 320px){
+		.cmn_form_table01 td input[name=tel_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-webkit-input-placeholder {
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::-moz-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=tel_no3]:-ms-input-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=tel_no1]::placeholder,
+		.cmn_form_table01 td input[name=tel_no2]::placeholder,
+		.cmn_form_table01 td input[name=tel_no3]::placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::-webkit-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::-webkit-input-placeholder {
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::-moz-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::-moz-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::-moz-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]:-ms-input-placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]:-ms-input-placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+		.cmn_form_table01 td input[name=mobile_no1]::placeholder,
+		.cmn_form_table01 td input[name=mobile_no2]::placeholder,
+		.cmn_form_table01 td input[name=mobile_no3]::placeholder{
+			font-size:.9em !important;
+			letter-spacing:-0.05em;
+			line-height:1.8;
+		}
+	}
+
+	/* form-focus */
+	.cmn_form_table01 td #post_code:focus,
+	.cmn_form_table01 td select:focus,
+	.cmn_form_table01 td input[type=text]:focus,
+	.memadd_table_01 td input[type=text]:focus,
+	.memadd_table_01 td input[type=password]:focus,
+	.cmn_form_table01 td #tel01:focus,
+	.cmn_form_table01 td #tel02:focus,
+	.cmn_form_table01 td #tel03:focus, 
+	.cmn_form_table01 td #mobile_no1:focus,
+	.cmn_form_table01 td #mobile_no2:focus,
+	.cmn_form_table01 td #mobile_no3:focus, 
+	.cmn_form_table01 td.birthday_area select[name=year]:focus,
+	.cmn_form_table01 td select:focus {
+		border:1px solid #00a3d2 !important;
+		outline: none;
+		opacity: 1 !important;
+	}
+	
+	/* form-pars*/
+	.cmn_form_table01 td #post_code,
+	.cmn_form_table01 td select,
+	.cmn_form_table01 td input[type=text],
+	.cmn_form_table01 td input[type=password],
+	.memadd_table_01 td input[type=text],
+	.memadd_table_01 td input[type=password],
+	.cmn_form_table01 td input[name=tel_no1],
+	.cmn_form_table01 td input[name=tel_no2],
+	.cmn_form_table01 td input[name=tel_no3],
+	.cmn_form_table01 td input[name=mobile_no1],
+	.cmn_form_table01 td input[name=mobile_no2],
+	.cmn_form_table01 td input[name=mobile_no3],
+	
+	.cmn_form_table01 td #tel01,
+	.cmn_form_table01 td #tel02,
+	.cmn_form_table01 td #tel03, 
+	.cmn_form_table01 td #mobiel_no1,
+	.cmn_form_table01 td #mobiel_no2,
+	.cmn_form_table01 td #mobiel_no3, 
+	.cmn_form_table01 td.birthday_area select[name=year],
+	.cmn_form_table01 td select {
+		border-radius: 5px !important;
+		padding: .6em 0.7em !important;
+		font-size: 1em !important;
+		max-height: initial !important;
+		max-height: auto !important;
+	}
+	.cmn_form_table01 td .input_set {padding-top: 0;}
+
+	@media print,screen and (min-width: 767px){
+		.memadd_table_01 input[type=text],
+		.memadd_table_01 input[type=password],
+		.side_login_form input[type=text],
+		.side_login_form input[type=password] {
+			margin: 0;
+			font-size: 16px;
+			border: 1px solid #d8d8d8;
+			background-color: #fff;
+			box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
+			padding: 5px .5em;
+			letter-spacing: 0;
+			width:100%;
+			border-radius:5px;
+		}
+		.cmn_form_table01 td #post_code,
+		.cmn_form_table01 td input[type=password] {
+			width: 180px;
+		}
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=mobile_no1],
+		.cmn_form_table01 td input[name=mobile_no2],
+		.cmn_form_table01 td input[name=mobile_no3]{
+			width:155px;
+		}
+		.cmn_form_table01 td input[name=address1],
+		.cmn_form_table01 td input[name=address2],
+		.cmn_form_table01 td input[name=address3],
+		.cmn_form_table01 td input[name=login_id],
+		.cmn_form_table01 td input[type=password]{
+			width: 400px;
+		}
+
+		.cmn_form_table01 td select[name=pay_time] {width:120px;}	
+		.cmn_form_table01 td input[name=name_sei],
+		.cmn_form_table01 td input[name=name_mei],
+		.cmn_form_table01 td input[name=name_sei_kana],
+		.cmn_form_table01 td input[name=name_mei_kana],
+		.cmn_form_table01 td #post_code {
+			margin-left:1.5em;
+			width:180px;
+		}
+		.cmn_form_table01 td input[name=name_sei_kana],
+		.cmn_form_table01 td input[name=name_mei_kana] {
+			margin-left: .5em;
+		}
+		.cmn_form_table01 td .input_set span {letter-spacing: 0.1em;}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=mobile_no1],
+		.cmn_form_table01 td input[name=mobile_no2],
+		.cmn_form_table01 td input[name=mobile_no3]{
+			width:30% !important;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.cmn_form_table01 td input[name=tel_no1],
+		.cmn_form_table01 td input[name=tel_no2],
+		.cmn_form_table01 td input[name=tel_no3],
+		.cmn_form_table01 td input[name=mobile_no1],
+		.cmn_form_table01 td input[name=mobile_no2],
+		.cmn_form_table01 td input[name=mobile_no3]{
+			width:29% !important;
+		}
+	}
+	/* require&suffix */
+	@media print,screen and (min-width: 767px){
+		.cmn_form_table01 th .optional, .cmn_form_table01 th .required,
+		.cmn_form_table01 th .suffix {
+			font-size: 12px;
+    		padding: 0 .5em;
+		}
+		.txt_float {width:160px;display: block;float:left;}
+	}
+	/* error */
+	.error {display: block;}
+	
+	/* login-form */
+	@media print,screen and (min-width: 767px){
+		.login_msg .add_h5 {border-bottom: 1px solid #000;padding-bottom:10px;margin-bottom:16px;}
+	}
+	.orderInputLogin {padding: 10px;border: 1px solid #ccc;}
+	.orderInputLogin .cmn_link01 {font-size:.85em;}
+	.orderInputLogin .memadd_table_01 th,
+	.orderInputLogin .memadd_table_01 td {width:100%;display:block;border:none;text-align:left;background:none;padding:14px;line-height:1.4;}
+	.orderInputLogin .memadd_table_01 th {font-size:1em;padding-bottom:5px;}
+	.orderInputLogin .memadd_table_01 td {padding-top:0; }
+	.orderInputLogin .memadd_table_01 td input[type=text],
+	.orderInputLogin .memadd_table_01 td input[type=password] {width: 100%;}
+	.orderInputLogin .more_login_btn.cmn_btn {font-size: 15px;width: 200px;padding: 0 10px;}
+	.orderInputLogin .login_btn {
+		max-width:340px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+	}
+	.orderInputLogin .memadd_table_01 .viewPc.btn {vertical-align:middle;text-align:center;}
+	.orderInputLogin .memadd_table_01 .error {padding-top: 10px;display: inline-block;}
+	.is-active {display:inline-block;}
+	#more_login_text {display:none;}
+	#more_login_text > .error{margin-top:30px;}
+	/* sei&mei */
+	.cmn_form_table01 td .input_set.input_set_name .prefix ,
+	.cmn_form_table01 td .input_set.input_set_kana .prefix,
+	.cmn_form_table01 td .input_set .prefix {
+		position: static;
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td .input_set .input_wrap {padding-left: 25px;}
+		.cmn_form_table01 td .input_set.input_set_name,
+		.cmn_form_table01 td .input_set.input_set_kana {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding-left: 0;
+		}
+		.cmn_form_table01 td .input_set.input_set_name .prefix ,
+		.cmn_form_table01 td .input_set.input_set_kana .prefix {
+			display: none;
+		}
+		.cmn_form_table01 td .input_set.input_set_name .input_wrap,
+		.cmn_form_table01 td .input_set.input_set_kana .input_wrap {
+			padding-left: 0;
+			width: 48%;
+		}
+	}
+	/* postcode */
+	.btn_postcode {display: none !important;}
+	.cmn_form_table01 td #post_code {max-width: 180px;float:left;}
+	.input_set_post .post_notice{margin-top: 17px;padding-left: 20px;float: right;letter-spacing: 0;}
+	@media screen and (max-width: 767px) {
+		.cmn_form_table01 td #post_code {max-width: 45%;}
+		.cmn_form_table01 td .member_yubin {padding-bottom: 0;}
+		.input_set_post .post_notice{margin-top: 0;padding-top: 1.5%;padding-left: 10px;width: 53%;height: 2.8em;}
+		.input_set_post .post_notice.example {font-size: 14px;}
+	}
+	/* radio */
+	input[type="radio"] {
+		-webkit-appearance: none;
+		appearance: none;
+		position: relative !important;
+		border-radius: 24px;
+		border: 2px solid #4c4c4c;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 34px !important;
+		height: 34px !important;
+		vertical-align: middle;
+		margin: 8px 2px 8px 0px !important;
+		background:#fff;
+		outline: none;
+	}
+	input[type="radio"]:checked:before {
+		position: absolute !important;
+		left: 40%;
+		top: 41%;
+		display: block;
+		margin: -5px 0 0 -5px;
+		content: "";
+		border-radius: 20px;
+		width: 16px;
+		height: 16px;
+		background: black;
+	}
+	input[type="radio"]:focus:checked {border:2px solid #00a3d2 !important;}
+	.radio_wrap input[type="radio"] {margin-right: 1.2em !important;}
+	.cmn_form_table01 td .radio_wrap {width: 49%;}
+	/* radio - sex */
+	.sex_wrap {display: flex;}
+	.sex_wrap > span {display: inline-block;width:50%;}
+	/* .sex_wrap > span:nth-of-type(3) {width:0;} */
+	.sex_wrap span:nth-of-type(2) {order: -1;}
+	@media screen and (max-width: 767px) {
+		.cmn_form_table01 td .sex_wrap .radio_wrap {width: 50%;}
+	}
+	/* email */
+	.output_email_confirm_wrap {
+		border-bottom: 1px solid #ccc;
+		display: inline-block;
+		vertical-align: middle;
+		width: 400px;
+		padding-bottom: 5px;
+	}
+	.output_email_confirm_wrap #output_email_confirm {
+		font-weight: bold;
+		font-size: 1.4em;
+		word-break : break-all;
+	}
+	@media screen and (max-width: 767px){
+		.output_email_confirm_wrap {width: 100%;}
+	}
+	#email_area .sample_notice {margin-top:5px;font-size: .8em;}
+	#email_area .sample_notice a {color:#d63d38}
+
+	/* date of birth */
+	.cmn_form_table01 td.birthday_area select[name=year],
+	.cmn_form_table01 td select {font-size: 1em;}
+	.cmn_form_table01 td .select_box select {max-width: 380px;}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td.birthday_area {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		.cmn_form_table01 td.birthday_area select[name=year] {font-size: 12.5px;}
+		.cmn_form_table01 td.birthday_area .suffix {margin-left: .5em;margin-right: .5em;}
+		.cmn_form_table01 td.birthday_area select[name=month], .cmn_form_table01 td.birthday_area select[name=day] {width: 100%;max-width: 60px;}
+		.cmn_form_table01 td.birthday_area select {width: 100%;max-width: 38vw;}
+	}
+	/* samakata */
+	.samakata {background:#eee;margin-top: 20px;padding:10px;width: 500px;}
+	.cmn_form_table01 td .samakata .suffix {letter-spacing: 0.1em;}
+	.samakata .toggle_btn{display: block;cursor: pointer;color:inherit;}
+	.cmn_form_table01 td input[name=address_co_sei],
+	.cmn_form_table01 td input[name=address_co_mei] {margin-left: 10px !important;}
+	
+	@media screen and (max-width: 767px){
+		.samakata {width: 100%;}
+		.cmn_form_table01 td input[name=address_co_sei],
+		.cmn_form_table01 td input[name=address_co_mei] {margin-left: 0 !important;}
+	}
+	@media screen and (max-width: 767px){
+		.cmn_form_table01 td.tel_input_area {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	</style>
+	<script>
+		$(function () {
+			// トグルメニュー
+			$('.togglemenu').css({'display':'none'});
+			$('.toggle_btn').click(function(event) {
+				event.preventDefault();
+				$(this).next().slideToggle();
+			});
+
+			// メールアドレス再確認
+			var $output_email_confirm = $("#output_email_confirm");
+			var $input_email_confirm = $("#input_email_confirm");
+
+			function changemail(val) {
+				var mailval01 = val;
+				$output_email_confirm.text(mailval01);
+				$input_email_confirm.val(mailval01);
+			}
+
+			$('input[name="email_pc"]').on("input",function(e) {
+				var mailval = $(this).val();
+				changemail(mailval);
+			});
+
+			if ($('input[name="email_pc"]').val() != "") {
+				var mailval = $('input[name="email_pc"]').val();
+				changemail(mailval);
+			}
+
+			$(".sample_notice a").on("click",function(e) {
+				var mailval = $('input[name="email_pc"]').val();
+				changemail(mailval);
+			});
+
+			// $(".cmn_form_table01 td,.input_footer_btn a").on("click",function(e) {
+			// 	if($(this).attr('id') == "address4_area") {return false;}
+			// 	var mailval = $('input[name="email_pc"]').val();
+			// 	changemail(mailval);
+			// });
+			// プレースホルダー追加
+			$('input[name="name_sei"],input[name="address_co_sei"]').attr('placeholder','例：山田');
+			$('input[name="name_mei"],input[name="address_co_mei"]').attr('placeholder','例：太郎');
+			$('input[name="address_co_sei"]').attr('placeholder','世帯主様の姓');
+			$('input[name="address_co_mei"]').attr('placeholder','世帯主様の名');
+			$('input[name="name_sei_kana"]').attr('placeholder','例：ヤマダ');
+			$('input[name="name_mei_kana"]').attr('placeholder','例：タロウ');
+			$('input[name="address1"]').attr('placeholder','例：新宿区');
+			$('input[name="address2"]').attr('placeholder','例：高田馬場');
+			$('input[name="address3"]').attr('placeholder','例：４-２-３８');
+			$('input[name="address4"]').attr('placeholder','例：ユーキャンビル １０３号室');
+			$('input[name="tel_no1"]').attr('placeholder','例：03');
+			$('input[name="tel_no2"]').attr('placeholder','例：0000');
+			$('input[name="tel_no3"]').attr('placeholder','例：0000');
+
+			$('input[name="mobile_no1"]').attr('placeholder','例：090');
+			$('input[name="mobile_no2"]').attr('placeholder','例：0000');
+			$('input[name="mobile_no3"]').attr('placeholder','例：0000');
+			
+		
+			$('input[name="email_pc"]').attr('placeholder','例：tuuhan@u-can.co.jp');
+			$('input[name="post_code"]').attr('placeholder','例：1620042');
+			$('input[name=login_id]').attr('placeholder','例：yamada1234');
+			
+
+			//enterフォーカス移動
+			$('form').on('keydown', 'input, button, select', function(e) {
+			if (e.keyCode == 13) {
+				if ($(this).attr("type") == 'submit') return;
+
+				var form = $(this).closest('form');
+				var focusable = form.find('input, button[type="submit"], select, textarea')
+					.not('[readonly]').filter(':visible');
+
+				if (e.shiftKey) {
+					focusable.eq(focusable.index(this) - 1).focus();
+				} else {
+					var next = focusable.eq(focusable.index(this) + 1);
+					if (next.length) {
+						next.focus();
+					} else {
+						focusable.eq(0).focus();
+					}
+				}
+					e.preventDefault();
+				}
+			});
+
+			//スマホのみ数字キーにする
+			if((navigator.userAgent.indexOf('iPhone') > 0 && navigator.userAgent.indexOf('iPad') == -1) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+				$('input[name=post_code]').get(0).type = 'tel';
+				$('input[name=tel_no1]').get(0).type = 'tel';
+				$('input[name=tel_no2]').get(0).type = 'tel';
+				$('input[name=tel_no3]').get(0).type = 'tel';
+				$('input[name=mobile_no1]').get(0).type = 'tel';
+				$('input[name=mobile_no2]').get(0).type = 'tel';
+				$('input[name=mobile_no3]').get(0).type = 'tel';
+			}
+			
+			
+		});
+	</script>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -372,23 +903,23 @@ $(function(){
 								<td>
 									<div class="input_set input_set_name">
 										<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei" name="name_sei" placeholder="例:山田" /></div>
-										<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
+										<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei" name="name_mei" placeholder="例:花子" /></div>
 										<span class="suffix viewPc">様</span>
 									</div>
-									<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
+									<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_name_sei">お名前(姓)入力エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_name_mei">お名前(名)入力エラーメッセージ</span></p>
 								</td>
 							</tr>
 							<tr>
-								<th>フリガナ<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
+								<th>フリガナ<span class="th_info"><span class="suffix">全角カナ</span><span class="required">必須</span></span></th>
 								<td>
 									<div class="input_set input_set_kana">
 										<span class="prefix">セイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_sei_kana" name="name_sei_kana" placeholder="例:ヤマダ" /></div>
-										<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
+										<span class="prefix prefix_mei s_mt8">メイ</span><div class="input_wrap"><input type="text" m:id="h_txt_name_mei_kana" name="name_mei_kana" placeholder="例:ハナコ" /></div>
 										<span class="suffix viewPc">様</span>
 									</div>
-									<p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p>
+									<!-- <p class="example viewPc mt10">例&nbsp;:&nbsp;ヤマダ&nbsp;ハナコ</p> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_name_sei_kana">フリガナ(姓)入力エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_name_mei_kana">フリガナ(名)入力エラーメッセージ</span></p>
 								</td>
@@ -397,16 +928,30 @@ $(function(){
 								<th>郵便番号<span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 								<td>
 									<div class="member_yubin">
+										<div class="input_set input_set_post">
+											<span class="prefix">〒</span><div class="input_wrap"><input m:id="h_txt_post_code" placeholder="例 ： 1620042" type="text" name="post_code" id="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);" pattern="\d*" />
+											<p class="example post_notice">※ハイフン「-」は入力不要です。</p>
+											</div>
+										</div>
+										<p class="example mt10">※郵便番号をご入力頂くと、住所の一部が自動入力されます。</p>
+										<span id="postcode_asyncstat"/>
+										<a m:id="a_bt_searchZip" href="postCode.html" OnClick="return postCodeList( document.memberAddForm.post_code.value, 1 );" class="cmn_btn cmn_btn_green btn_postcode">郵便番号検索</a>
+										<p class="error mt10 s_mt10"><span m:id="h_err_post_code">郵便番号エラーメッセージ</span></p>
+									</div>
+								</td>
+
+								<!-- <td>
+									<div class="member_yubin">
 										<p class="td_txt">郵便番号をご入力頂くと、住所が自動で入力されます。</p>
 										<div class="input_set input_set_post mt10 s_mt10">
 											<span class="prefix">〒</span><div class="input_wrap"><input m:id="h_txt_post_code" placeholder="例 ： 1620042" type="text" name="post_code" id="post_code" maxlength="7" onkeyup="javascript:searchAddress(this, this.form.area_cd, this.form.address1, this.form.address2);"/></div>
 										</div>
-										<p class="example viewPc mt10">例：1620042</p>
+										<!-* <p class="example viewPc mt10">例：1620042</p> *->
 										<span id="postcode_asyncstat"/>
 										<a m:id="a_bt_searchZip" class="cmn_btn cmn_btn_green btn_postcode" href="postCode.html" OnClick="return postCodeList( document.memberAddForm.post_code.value, 1 );">郵便番号検索</a>
 										<p class="error mt10 s_mt10"><span m:id="h_err_post_code">郵便番号エラーメッセージ</span></p>
 									</div>
-								</td>
+								</td> -->
 							</tr>
 							<tr>
 								<th class="none_bor">都道府県<span class="th_info"><span class="required">必須</span></span></th>
@@ -428,20 +973,20 @@ $(function(){
 								<th class="none_bor">市区郡<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 								<td>
 									<input type="text" class="in_w_02" m:id="h_txt_address1" name="address1"/>
-									<span class="example　ml20 viewPc">新宿区</span>
+									<!-- <span class="example　ml20 viewPc">新宿区</span> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_address1">住所(市区郡)入力エラーメッセージ</span></p>
 								</td>
 							</tr>
 							<tr>
-								<th class="none_bor">住所（町村字）<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
+								<th class="none_bor">町村字<span class="th_info"><span class="suffix">全角</span><span class="required">必須</span></span></th>
 								<td>
 									<input type="text" class="in_w_02" m:id="h_txt_address2" name="address2"/>
-									<span class="example　ml20 viewPc">高田馬場</span>
+									<!-- <span class="example　ml20 viewPc">高田馬場</span> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_address2">住所(町村字)入力エラーメッセージ</span></p>
 								</td>
 							</tr>
 							<tr>
-								<th>住所（番地）<span class="th_info"><span class="required">必須</span></span></th>
+								<th>番地<span class="th_info"><span class="required">必須</span></span></th>
 								<td>
 <script charset="UTF-8">
 									function zentohan(obj){
@@ -460,21 +1005,39 @@ $(function(){
 	obj.value = word;
 }</script>
 									<input type="text" class="in_w_02" m:id="h_txt_address3" name="address3" onblur="zentohan(this);"/>
-									<span class="example　ml20 viewPc"><span m:id="sample_house_no">４&#x2212;２&#x2212;３８</span></span>
+									<!-- <span class="example　ml20 viewPc"><span m:id="sample_house_no">４&#x2212;２&#x2212;３８</span></span> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_address3">住所(番地)入力エラーメッセージ</span></p>
 								</td>
 							</tr>
 							<tr>
-								<th>住所（建物名・部屋番号）<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
+								<th><span class="txt_float">建物名・部屋番号</span><span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 								<td>
 									<input type="text" class="in_w_02" m:id="h_txt_address4" name="address4"/>
-									<span class="example　ml20 viewPc">ユーキャンビル １０３号室</span>
+									<!-- <span class="example　ml20 viewPc">ユーキャンビル １０３号室</span> -->
 									<p class="error mt10 s_mt10">
 										<span m:id="h_err_address4">住所(建物名・部屋番号)入力エラーメッセージ</span>
 									</p>
+									<div class="samakata">
+										<a class="toggle_btn">世帯主様と苗字が異なる方へ▼</a>
+										<div class="togglemenu mt20">
+											<div class="input_set input_set_name">
+												<span class="prefix">姓</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_sei" name="address_co_sei" placeholder="例:山田" /></div>
+												<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap"><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
+												<span class="suffix right mt10 viewPc">様方</span>
+											</div>
+											<p class="example mt10">※世帯主様の姓名を入力してください。</p>
+											
+											<span m:id="h_err_address_co_sei">
+												<p class="error mt10 s_mt10">様方(姓)入力エラーメッセージ</p>
+											</span>
+											<span m:id="h_err_address_co_mei">
+												<p class="error mt10 s_mt10">様方(名)入力エラーメッセージ</p>
+											</span>
+										</div>
+									</div>
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th>様方<span class="th_info"><span class="suffix">全角</span><span class="optional">任意</span></span></th>
 								<td>
 									<div class="input_set input_set_name">
@@ -482,19 +1045,19 @@ $(function(){
 										<span class="prefix prefix_mei s_mt8">名</span><div class="input_wrap s_mt8"><input type="text" m:id="h_txt_address_co_mei" name="address_co_mei" placeholder="例:花子" /></div>
 										<span class="suffix viewPc">様</span>
 									</div>
-									<p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p>
+									<!-* <p class="example viewPc mt10">例&nbsp;:&nbsp;山田&nbsp;花子</p> *->
 									<p class="error mt10 s_mt10"><span m:id="h_err_address_co_sei">様方(姓)入力エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_address_co_mei">様方(名)入力エラーメッセージ</span></p>
 								</td>
-							</tr>
+							</tr> -->
 							<tr class="tr_heading">
 								<th colspan="2"><span>電話番号は自宅、携帯のいずれか、または両方を入力してください。</span><span class="th_info"><span class="suffix">半角数字</span><span class="required">必須</span></span></th>
 							</tr>
 							<tr>
-								<th class="none_bor">電話番号（ご自宅）<span class="th_info"><span class="optional">任意</span></span></th>
-								<td>
+								<th class="none_bor">電話番号（ご自宅）<span class="th_info"><!--<span class="optional">任意</span>--></span></th>
+								<td class="tel_input_area">
 									<input type="text" class="in_w_04" m:id="h_txt_tel_no1" name="tel_no1" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no2" name="tel_no2" />&nbsp;-&nbsp;<input type="text" class="in_w_04" m:id="h_txt_tel_no3" name="tel_no3" />
-									<p class="example viewPc mt10">例：03-0000-0000</p>
+									<!-- <p class="example viewPc mt10">例：03-0000-0000</p> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no1">電話番号1エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no2">電話番号2エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_tel_no3">電話番号3エラーメッセージ</span></p>
@@ -502,10 +1065,10 @@ $(function(){
 								</td>
 							</tr>
 							<tr>
-								<th>電話番号（携帯）<span class="th_info"><span class="optional">任意</span></span></th>
-								<td class="bor_bottom">
+								<th>電話番号（携帯）<span class="th_info"><!--<span class="optional">任意</span>--></span></th>
+								<td class="bor_bottom tel_input_area">
 									<input m:id="h_txt_mobile_no1" type="text" name="mobile_no1" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no2" type="text" name="mobile_no2" />&nbsp;-&nbsp;<input m:id="h_txt_mobile_no3" type="text" name="mobile_no3" />
-									<p class="example viewPc mt10">例：090-0000-0000</p>
+									<!-- <p class="example viewPc mt10">例：090-0000-0000</p> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no1">携帯電話番号1エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no2">携帯電話番号2エラーメッセージ</span></p>
 									<p class="error mt10 s_mt10"><span m:id="h_err_mobile_no3">携帯電話番号3エラーメッセージ</span></p>
@@ -513,31 +1076,39 @@ $(function(){
 								</td>
 							</tr>
 							<tr>
-								<th>メールアドレス<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
-								<td>
+								<th><span class="txt_float">メールアドレス</span><span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
+								<td id="email_area">
 									<input type="text" m:id="h_txt_email_pc"  name="email_pc" class="in_w_02 pc_b_t_01"/>
-									<p class="example viewPc mt10">例：tuuhan@u-can.co.jp</p>
+									<!-- <p class="example viewPc mt10">例：tuuhan@u-can.co.jp</p> -->
 									<p class="error mt10 s_mt10"><span m:id="h_err_email_pc">PCメールアドレス入力エラーメッセージ</span></p>
+									<p class="example mt20 mb10">▼メールアドレスをご確認ください。
+									</p>
+									<p class="output_email_confirm_wrap mt5">確認 :　<span id="output_email_confirm"></span></p>
+									<p class="sample_notice">確認用アドレスが反映されない時は<a href="javascript:void(0); return false">こちら</a>をクリックしてください</a></p>
+									<input id="input_email_confirm" type="hidden" m:id="i_email_confirm" name="email_pc_confirm" class="in_w_02" value="" oncontextmenu="return false;" />
 								</td>
 							</tr>
-							<tr>
+							<!-- <tr>
 								<th class="th_longchar">メールアドレス<br class="viewPc">（確認用）<span class="th_info"><span class="suffix">半角英数字</span><span class="required">必須</span></span></th>
 								<td>
 									<p class="example viewPc mb10">▼確認のため、もう一度ご入力ください。</p>
 									<input type="text" m:id="i_email_confirm" name="email_pc_confirm" class="in_w_02" value="" oncontextmenu="return false;" />
-									<!--<p class="clear memadd_red">メールアドレスをお間違えになると、当方メールが<br>他の方に届くことがあります。ご注意ください。</p>--> 
+									<!-*<p class="clear memadd_red">メールアドレスをお間違えになると、当方メールが<br>他の方に届くことがあります。ご注意ください。</p>*-> 
 									<p class="error mt10 s_mt10"><span m:id="h_err_email_pc_confirm">PCメールアドレス(確認用)入力エラーメッセージ</span></p>
 								</td>
-							</tr>
+							</tr> -->
 							<tr>
 								<th>性別<span class="th_info"><span class="optional">任意</span></span></th>
 								<td>
-									<span m:id="l_ite_sex" class="radio_wrap">
-										<object class="xsp_obj" m:id="b_var_code" ></object>
-										<label>
-											<input m:id="h_radio_sex" type="radio" name="sex" class="radio" value="key"><span m:id="b_wr_code_name">女性</span>
-										</label>
-									</span>
+									<div class="sex_wrap">
+										<span m:id="l_ite_sex" class="radio_wrap">
+											<object class="xsp_obj" m:id="b_var_code" ></object>
+											<label>
+												<input m:id="h_radio_sex" type="radio" name="sex" class="radio" value="key"><span m:id="b_wr_code_name">女性</span>
+											</label>
+										</span>
+									</div>
+									
 									<div class="box_01"  m:id="dummy">
 										<label>
 											<input m:id="dummy" type="radio" name="sex" id="man" class="radio" value="key"><span m:id="dummy">男性</span>
@@ -547,7 +1118,7 @@ $(function(){
 							</tr>
 							<tr>
 								<th>生年月日<span class="th_info"><span class="required">必須</span></span></th>
-								<td>
+								<td class="birthday_area">
 									<select m:id="h_sel_birthday_year" class="memadd_input_02">
 										<option value=""></option>
 										<option m:id="h_opt_birthday_year" value="1995">1995(平成7)</option>
@@ -555,13 +1126,13 @@ $(function(){
 										<option m:id="dummy" value="">1993(平成5)</option>
 										<option m:id="dummy" value="">1992(平成4)</option>
 									</select><span class="suffix">年</span><br class="viewSp">
-									<select m:id="h_sel_birthday_month" class="memadd_input_03 s_mt8">
+									<select m:id="h_sel_birthday_month" class="memadd_input_03">
 										<option value=""></option>
 										<option m:id="h_opt_birthday_month" value="">1</option>
 										<option m:id="dummy" value="">2</option>
 										<option m:id="dummy" value="">3</option>
 									</select><span class="suffix s_mt8">月</span>
-									<select m:id="h_sel_birthday_day" class="memadd_input_03 s_mt8">
+									<select m:id="h_sel_birthday_day" class="memadd_input_03">
 										<option value=""></option>
 										<option m:id="h_opt_birthday_day" value="">1</option>
 										<option m:id="dummy" value="">2</option>
@@ -582,7 +1153,7 @@ $(function(){
 							<span class="error"><span m:id="h_err_job">職業エラーメッセージ</span></span>
 							</td></tr>-->
 							<tr>
-								<th style="font-size:.9em">ココチモからのお得な情報を受け取る<span class="th_info"><span class="required">必須</span></span></th>
+								<th>ココチモからの<br>お得な情報を受け取る<span class="th_info"><span class="required">必須</span></span></th>
 								<td>
 									<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label></span>
 									<span class="radio_wrap"><label><input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label></span>
@@ -600,12 +1171,12 @@ $(function(){
 					<table class="cmn_form_table01">
 						<tr>
 							<th class="th_longchar">
-								<span class="th_txt">希望ログインID</span><span class="th_info"><span class="suffix">半角英数字<span class="viewSp">、8&#xFF5E;20文字</span></span><span class="line_2 viewPc">（8&#xFF5E;20文字）</span><span class="required">必須</span></span>
+								<span class="th_txt">ログインID</span><span class="th_info"><span class="suffix">半角英数字<span class="viewSp" style="vertical-align:top;">、8&#xFF5E;20文字</span></span><span class="line_2 viewPc">（8&#xFF5E;20文字）</span><span class="required">必須</span></span>
 							</th>
 							<td>
 							<div class="memadd_t_box_04 clearfix" id="idCheck">
 								<input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
-								<p class="example viewPc mt10">例：yamada1234</p>
+								<!-- <p class="example viewPc mt10">例：yamada1234</p> -->
 								<p class="error mt10 s_mt10"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></p>
 								<p class="error mt10 s_mt10"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></p>
 								<p class="mt10 s_mt10 s_tac"><a m:id="a_bt_idCheck_scroll" class="cmn_btn cmn_btn_green btn_checkid" href="" onclick="">IDチェック</a><br class="viewSp"><span class="txt_checkid s_mt5">使用できるIDかチェックします</span></p>
@@ -613,13 +1184,14 @@ $(function(){
 						</tr>
 						<tr>
 							<th>
-								<span class="th_txt">パスワード</span><span class="th_info"><span class="suffix">半角英数字<span class="viewSp">、8&#xFF5E;20文字</span></span><span class="line_2 viewPc">（8&#xFF5E;20文字）</span><span class="required">必須</span></span>
+								<span class="th_txt">パスワード</span><span class="th_info"><span class="suffix">半角英数字<span class="viewSp" style="vertical-align:top;">、8&#xFF5E;20文字</span></span><span class="line_2 viewPc">（8&#xFF5E;20文字）</span><span class="required">必須</span></span>
+								<!-- <p style="margin-top:0.8em;font-size: .9em;font-weight: normal;">※半角英数字8&#xFF5E;20文字でご入力ください。大文字と小文字は区別して認識されます。</p> -->
 							</th>
 							<td>
-								<p class="notes">※今後もお使いいただくため、忘れにくいものをご指定いただき、大切に保管してください。</p>
+								<!-- <p class="notes">※今後もお使いいただくため、忘れにくいものをご指定いただき、大切に保管してください。</p>
 								<p class="notes">※半角英数字 8&#xFF5E;20文字以内でご指定ください。大文字と小文字は区別して認識されます。</p>
 								<p class="notes">※セキュリティ強化のため、他サイトと同じパスワードや生年月日・電話番号など他者から推測されやすいパスワードは避け、大文字、小文字、数字を混在させることをオススメします。</p>
-								<p class="notes">※セキュリティ保護のため、入力したパスワードは●で表示されます。</p>
+								<p class="notes">※セキュリティ保護のため、入力したパスワードは●で表示されます。</p> -->
 								<div class="mt15">
 									<input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
 								</div>
@@ -634,7 +1206,7 @@ $(function(){
 								<p class="example viewPc mb10">▼間違いを防ぐため、上で入力したパスワードを再度ご入力ください。</p>
 								<input type="password" name="password_confirm" class="in_w_02"  oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);"/>
 								<p class="error mt10 s_mt10"><span m:id="h_err_password_confirm">パスワード確認エラーメッセージ</span></p>
-								<p class="mt15 s_mt15">例：yamada1234</p>
+								<!-- <p class="mt15 s_mt15">例：yamada1234</p> -->
 							</td>
 						</tr>
 					</table>
