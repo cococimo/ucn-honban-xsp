@@ -17,13 +17,13 @@
 <meta name="keywords" content="cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,ユーキャン">
 <title>【ココチモ（COCOCIMO）】ユーキャンの通販サイト</title>
 
-<!-- Anti-flicker snippet (recommended)  -->
+<!-- Anti-flicker snippet (recommended) 
 <style>.async-hide { opacity: 0 !important} </style>
 <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
 })(window,document.documentElement,'async-hide','dataLayer',3000,
-{'GTM-TL7VHF9':true});</script>
+{'GTM-TL7VHF9':true});</script> -->
 
 <!-- Googleタグマネージャ head用 -->
 <meta m:id="google_tag_manager_head" content="">
@@ -151,6 +151,51 @@ $(function () {
     #home .important_txt {font-size: 13px;line-height: 1.4;}
    }
 </style>
+
+<style>
+	/* 最近チェックした商品　spのみ表示順変更 */
+	.user_check_box {
+		width: 290px;
+		margin-bottom: 30px;
+	}
+	@media screen and (max-width: 767px) {
+		#contents_in {
+			display: flex;
+			flex-direction: column;
+		}
+		.user_check_box {
+			order:1;
+		}
+		#contents_main {
+			order: 2;
+		}
+		#contents_side {
+			order: 3;
+		}
+		.user_check_box {
+			width: auto;
+			float: none;
+		}
+		.user_check_box  .side_widget_recent {
+			margin-top: 0;
+		}
+
+		/* アイテムの表示制限解除 */
+		.item_list li:nth-child(n+3){
+			display: block;
+		}
+		.item_list li:nth-child(n+4) {
+			display: none;
+		}
+		.user_check_box .item_list li:nth-child(n+3) {
+			display: block;
+		}
+		/* #home .ranking_list li + li + li+li {
+			display: block;
+		} */
+	}
+</style>
+
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -993,8 +1038,117 @@ $(function () {
                     </span>
                 <!--▲▲▲今売れている商品▲▲▲-->
 
+				<!--▼▼▼ココチモの新着商品▼▼▼-->
+				<span m:id="l_pre_newGoodsList">
+					<div class="new_item" id="newitemLink">
+						<h2 id="r_bt_04" class="new_item_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">新着商品</span></h2>
+						<div class="new_item_in">
+						<ul class="new_item_list item_list item_list_2top js-item_list">
+							<span m:id="l_ite_newGoodsList">
+								<li>
+									<div class="item_list_in js-matchHeight">
+										<!-- span 追加対応 eA 2017.05.10 -->
+										<span>
+											<span m:id="l_newGoods_include3_in_period">
+												<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+												<span m:id="newGoods_html3_include1">外部HTML1 表示領域(期間3)
+													<div class="item_list_tag item_list_tag_recommend">
+														<span class="item_list_tag_txt_recommend">オススメ</span>
+														<span class="item_list_tag_txt_new">新着情報</span>
+														<span class="item_list_tag_txt_popular">人気</span>
+														<span class="item_list_tag_txt_soon">完売間近</span>
+														<span class="item_list_tag_txt_arrival">再入荷</span>
+														<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+														<span class="item_list_tag_txt_cm">CM放映中</span>
+														<span class="item_list_tag_txt_limited">数量限定</span>
+													</div>
+												</span>
+											</span>
+										</span>
+										<div class="img_box img_box_hover">
+											<span m:id="l_pre_newGoods_representSku">
+												<object class="xsp_obj" m:id="b_var_newGoods_listImage">
+												</object>
+												<span m:id="h_link_newGoods_default_url_img">
+													<a m:id="h_link_newGoods_list_image" href="goodsDetail.html">
+														<img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+														<div class="img_box_hover_in">
+															<div class="img_box_hover_txt">
+																<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+															</div>
+														</div>
+													</a>
+												</span>
+												<span m:id="h_link_newGoods_static_url_img">
+													<a m:id="h_link_newGoods_list_image_goods_url" href="goodsDetail.html">
+														<img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
+														<div class="img_box_hover_in">
+															<div class="img_box_hover_txt">
+																<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+															</div>
+														</div>
+													</a>
+												</span>
+											</span>
+										</div>
+										<h3 class="item_list_tit js-matchHeight01">
+											<span m:id="h_link_newGoods_default_url">
+												<a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+											</span>
+											<span m:id="h_link_newGoods_static_url">
+												<a m:id="h_link_newGoods_name_goods_url" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
+											</span>
+										</h3>
+										<p class="text item_list_txt"><span m:id="disp_newGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
+									</div>
+									<p class="cash item_list_yen"><span m:id="l_notEqu_newGoods_pretaxPrice"> <span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円&nbsp; </span> <span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
+								</li>
+							</span>
+							<li class="heightLine-new01 sp_end" m:id="dummy">
+								<div class="new">NEW</div>
+								<div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p class="text">商品説明ダミーテキストダミーテキストダミーテキスト</p>
+								<p class="cash">50円（税込）</p>
+							</li>
+							<li class="heightLine-new02 first" m:id="dummy">
+								<div class="new">NEW</div>
+								<div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p class="text">商品説明ダミーテキストダミーテキストダミー</p>
+								<p class="cash">50円（税込）</p>
+							</li>
+							<li class="heightLine-new02" m:id="dummy">
+								<div class="new">NEW</div>
+								<div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p class="text">商品説明ダミーテキストダミーテキストダミー</p>
+								<p class="cash">50円（税込）</p>
+							</li>
+							<li class="heightLine-new02" m:id="dummy">
+								<div class="new">NEW</div>
+								<div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p class="text">商品説明ダミーテキストダミーテキストダミー</p>
+								<p class="cash">50円（税込）</p>
+							</li>
+							<li class="heightLine-new02 last" m:id="dummy">
+								<div class="new">NEW</div>
+								<div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p class="text">商品説明ダミーテキストダミーテキストダミー</p>
+								<p class="cash">50円（税込）</p>
+							</li>
+						</ul>
+						<div class="more_item js-more_item">
+							<p class="more_item_txt">新着商品をもっと見る</p>
+						</div>
+						</div>
+					</div>
+				</span>
+			<!--▲▲▲ココチモの新着商品▲▲▲-->
 
-	<!--▼▼▼XXX5ランキング(ナビプラスカテゴリー)▼▼▼-->
+	<!--▼▼▼XXX5ランキング(ナビプラスカテゴリー)▼▼▼
 	<div>
 		<span m:id="category_code5" name="001001010">
 <object class="xsp_obj" m:id="e_var_autoRankGoodsListCate5"></object>
@@ -1047,7 +1201,7 @@ $(function () {
 	</span>
 	</span>
 	</div>
-	<!--▲▲▲XXX5ランキング(ナビプラスカテゴリー)▲▲▲-->
+	▲▲▲XXX5ランキング(ナビプラスカテゴリー)▲▲▲-->
 	<!--▼▼▼XXX5ランキング(ナビプラスカテゴリー)▼▼▼-->
 	<!-- <div>
 		<span m:id="category_code5" name="001001015">
@@ -1287,7 +1441,7 @@ $(function () {
                                 </span>
                             </ul>
                             <div class="more_item js-more_item">
-                                <p class="more_item_txt">あなたへのおすすめ商品</p>
+                                <p class="more_item_txt" style="letter-spacing:-0.05em">あなたへのおすすめ商品をもっと見る</p>
                             </div>
                             </div>
                         </div>
@@ -1418,115 +1572,7 @@ $(function () {
                         <!-- <span m:id="l_include_file_tags" filename="top/topic"></span> -->
                     </span>
                 <!--▲▲▲話題の商品▲▲▲-->
-                <!--▼▼▼ココチモの新着商品▼▼▼-->
-                    <span m:id="l_pre_newGoodsList">
-                        <div class="new_item" id="newitemLink">
-                            <h2 id="r_bt_04" class="new_item_tit cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">新着商品</span></h2>
-                            <div class="new_item_in">
-                            <ul class="new_item_list item_list item_list_2top js-item_list">
-                                <span m:id="l_ite_newGoodsList">
-                                    <li>
-                                        <div class="item_list_in js-matchHeight">
-											<!-- span 追加対応 eA 2017.05.10 -->
-											<span>
-	                                        	<span m:id="l_newGoods_include3_in_period">
-	                                        		<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-	                                        		<span m:id="newGoods_html3_include1">外部HTML1 表示領域(期間3)
-	                                        			<div class="item_list_tag item_list_tag_recommend">
-	                                        				<span class="item_list_tag_txt_recommend">オススメ</span>
-	                                        				<span class="item_list_tag_txt_new">新着情報</span>
-	                                        				<span class="item_list_tag_txt_popular">人気</span>
-	                                        				<span class="item_list_tag_txt_soon">完売間近</span>
-	                                        				<span class="item_list_tag_txt_arrival">再入荷</span>
-	                                        				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-	                                        				<span class="item_list_tag_txt_cm">CM放映中</span>
-	                                        				<span class="item_list_tag_txt_limited">数量限定</span>
-	                                        			</div>
-	                                        		</span>
-	                                        	</span>
-	                                        </span>
-                                            <div class="img_box img_box_hover">
-                                                <span m:id="l_pre_newGoods_representSku">
-                                                    <object class="xsp_obj" m:id="b_var_newGoods_listImage">
-                                                    </object>
-                                                    <span m:id="h_link_newGoods_default_url_img">
-                                                        <a m:id="h_link_newGoods_list_image" href="goodsDetail.html">
-                                                            <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                                                            <div class="img_box_hover_in">
-                                                                <div class="img_box_hover_txt">
-                                                                    <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </span>
-                                                    <span m:id="h_link_newGoods_static_url_img">
-                                                        <a m:id="h_link_newGoods_list_image_goods_url" href="goodsDetail.html">
-                                                            <img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" />
-                                                            <div class="img_box_hover_in">
-                                                                <div class="img_box_hover_txt">
-                                                                    <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                            <h3 class="item_list_tit js-matchHeight01">
-                                                <span m:id="h_link_newGoods_default_url">
-                                                    <a m:id="h_link_newGoods_name" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
-                                                </span>
-                                                <span m:id="h_link_newGoods_static_url">
-                                                    <a m:id="h_link_newGoods_name_goods_url" href="goodsDetail.html"><span m:id="disp_newGoods_goods_name">商品名商品名</span></a>
-                                                </span>
-                                            </h3>
-                                            <p class="text item_list_txt"><span m:id="disp_newGoods_goods_exp_sum">商品説明ダミーテキストダミーテキストダミーテキスト</span></p>
-                                        </div>
-                                        <p class="cash item_list_yen"><span m:id="l_notEqu_newGoods_pretaxPrice"> <span m:id="b_wr_newGoods_pretaxPrice">200</span>&nbsp;円&nbsp; </span> <span m:id="b_wr_newGoods_actualSalePrice">100</span>円 (税込)</p>
-                                    </li>
-                                </span>
-                                <li class="heightLine-new01 sp_end" m:id="dummy">
-                                    <div class="new">NEW</div>
-                                    <div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p class="text">商品説明ダミーテキストダミーテキストダミーテキスト</p>
-                                    <p class="cash">50円（税込）</p>
-                                </li>
-                                <li class="heightLine-new02 first" m:id="dummy">
-                                    <div class="new">NEW</div>
-                                    <div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_01.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p class="text">商品説明ダミーテキストダミーテキストダミー</p>
-                                    <p class="cash">50円（税込）</p>
-                                </li>
-                                <li class="heightLine-new02" m:id="dummy">
-                                    <div class="new">NEW</div>
-                                    <div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p class="text">商品説明ダミーテキストダミーテキストダミー</p>
-                                    <p class="cash">50円（税込）</p>
-                                </li>
-                                <li class="heightLine-new02" m:id="dummy">
-                                    <div class="new">NEW</div>
-                                    <div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p class="text">商品説明ダミーテキストダミーテキストダミー</p>
-                                    <p class="cash">50円（税込）</p>
-                                </li>
-                                <li class="heightLine-new02 last" m:id="dummy">
-                                    <div class="new">NEW</div>
-                                    <div class="img_box"><a m:id="h_link_newGoods_list_image" href="goodsDetail.html"><img m:id="h_img_newGoods_goods_Image" src="../../../contents/shop/00000003/shop/image/item_sample_02.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p class="text">商品説明ダミーテキストダミーテキストダミー</p>
-                                    <p class="cash">50円（税込）</p>
-                                </li>
-                            </ul>
-                            <div class="more_item js-more_item">
-                                <p class="more_item_txt">新着商品をもっと見る</p>
-                            </div>
-                            </div>
-                        </div>
-                    </span>
-                <!--▲▲▲ココチモの新着商品▲▲▲-->
+
 
 				<!--▼▼▼特集バナー▼▼▼-->
 				<div class="feature mt60 s_mt30" id="featureLink">
@@ -1540,8 +1586,101 @@ $(function () {
 	            </div>
 	            <!--▲▲▲特集バナー▲▲▲-->   
 
-            </div>
-            <!--contents_main-->
+			</div>
+
+			<!--contents_main-->
+			<div class="side left user_check_box">
+				<!--▼▼▼最近チェックした商品▼▼▼-->
+				<form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
+					<input type="hidden" name="display_code" />
+					<input type="hidden" name="goods_sku_code" />
+					<input type="hidden" name="ext_goods_sku_code" />
+					<input type="hidden" name="order_num_string" />
+					<input type="hidden" name="_S" />
+				</form>
+				<object class="xsp_obj" m:id="e_var_browsingGoodsList">
+				</object>
+				<span m:id="l_notEmp_browsingGoodsList">
+					<div class="side_widget side_widget_recent">
+						<h2 class="side_widget_tit side_widget_recent_tit">最近チェックした商品</h2>
+						<ul class="side_widget_list side_widget_recent_list item_list js-item_list">
+							<span m:id="l_ite_browsingGoodsList">
+								<span m:id="l_notDisp_other_site">
+									<li>
+										<div class="item_list_in">
+											<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
+											<span m:id="l_browsingGoods_include3_in_period">
+												<span m:id="browsingGoods_html3_include1">外部HTML1 表示領域(期間3)
+													<div class="item_list_tag item_list_tag_recommend">
+														<span class="item_list_tag_txt_recommend">オススメ</span>
+														<span class="item_list_tag_txt_new">新着情報</span>
+														<span class="item_list_tag_txt_popular">人気</span>
+														<span class="item_list_tag_txt_soon">完売間近</span>
+														<span class="item_list_tag_txt_arrival">再入荷</span>
+														<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
+														<span class="item_list_tag_txt_cm">CM放映中</span>
+														<span class="item_list_tag_txt_limited">数量限定</span>
+													</div>
+												</span>
+											</span>
+											<div class="img_box img_box_hover">
+												<a m:id="h_link_browsingGoodsList" href="goodsDetail.html">
+													<img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" />
+													<div class="img_box_hover_in">
+														<div class="img_box_hover_txt">
+															<p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
+														</div>
+													</div>
+												</a>
+											</div>
+											<h3 class="side_widget_recent_subtit item_list_tit"><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
+										</div>
+										<!-- /.item_list_in -->
+										<p class="cash item_list_yen">
+											<span m:id="l_notEqu_browsingGoods_pretaxPrice">
+												<span class="original_price">
+													<span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
+												</span>&nbsp;
+											</span>
+											<span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
+										</p>
+									</li>
+								</span>
+							</span>
+							<li m:id="dummy">
+								<div class="box_01">
+									<div class="box_02">
+										<div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+										<h3><a href="#">商品名商品名</a></h3>
+										<p>50円（税込）</p>
+									</div>
+								</div>
+							</li>
+							<li m:id="dummy" class="sp_end">
+								<div class="box_01">
+									<div class="box_02">
+										<div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+										<h3><a href="#">商品名商品名</a></h3>
+										<p>50円（税込）</p>
+									</div>
+								</div>
+							</li>
+							<li m:id="dummy" class="pc_only">
+								<div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
+								<h3><a href="#">商品名商品名</a></h3>
+								<p>50円（税込）</p>
+							</li>
+						</ul>
+						<!-- <div class="more_item js-more_item">
+							<p class="more_item_txt">最近チェックした商品をもっと見る</p>
+						</div> -->
+					</div>
+				</span>
+			<!--▲▲▲最近チェックした商品▲▲▲-->
+
+			</div>
+
+
             <div id="contents_side" class="side left">
                 <!--▼▼▼ログイン者表示▼▼▼-->
                     <object class="xsp_obj" m:id="e_var_total_price_amt">
@@ -1601,93 +1740,7 @@ $(function () {
                         </div>
                     </div>
                 <!--▲▲▲会員限定▲▲▲-->
-                <!--▼▼▼最近チェックした商品▼▼▼-->
-                    <form m:id="h_form_cartGoodsAddDirect" method="POST" action="cart.html">
-                        <input type="hidden" name="display_code" />
-                        <input type="hidden" name="goods_sku_code" />
-                        <input type="hidden" name="ext_goods_sku_code" />
-                        <input type="hidden" name="order_num_string" />
-                        <input type="hidden" name="_S" />
-                    </form>
-                    <object class="xsp_obj" m:id="e_var_browsingGoodsList">
-                    </object>
-                    <span m:id="l_notEmp_browsingGoodsList">
-                        <div class="side_widget side_widget_recent">
-                            <h2 class="side_widget_tit side_widget_recent_tit">最近チェックした商品</h2>
-                            <ul class="side_widget_list side_widget_recent_list item_list js-item_list">
-                                <span m:id="l_ite_browsingGoodsList">
-                                    <span m:id="l_notDisp_other_site">
-                                        <li>
-                                            <div class="item_list_in">
-                                            	<!-- アイコン追加対応 n_kamine add 2017.02.07 -->
-                                            	<span m:id="l_browsingGoods_include3_in_period">
-                                            		<span m:id="browsingGoods_html3_include1">外部HTML1 表示領域(期間3)
-                                            			<div class="item_list_tag item_list_tag_recommend">
-                                            				<span class="item_list_tag_txt_recommend">オススメ</span>
-                                            				<span class="item_list_tag_txt_new">新着情報</span>
-                                            				<span class="item_list_tag_txt_popular">人気</span>
-                                            				<span class="item_list_tag_txt_soon">完売間近</span>
-                                            				<span class="item_list_tag_txt_arrival">再入荷</span>
-                                            				<span class="item_list_tag_txt_newspaper">新聞掲載中</span>
-                                            				<span class="item_list_tag_txt_cm">CM放映中</span>
-                                            				<span class="item_list_tag_txt_limited">数量限定</span>
-                                            			</div>
-                                            		</span>
-                                            	</span>
-                                                <div class="img_box img_box_hover">
-                                                    <a m:id="h_link_browsingGoodsList" href="goodsDetail.html">
-                                                        <img m:id="i_img_browsingGoodsList" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" />
-                                                        <div class="img_box_hover_in">
-                                                            <div class="img_box_hover_txt">
-                                                                <p class="img_box_hover_txt_in"><span>詳細を見る</span><span class="icon-stick-arrow-right"></span></p>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <h3 class="side_widget_recent_subtit item_list_tit"><a m:id="l_notEmp_browsing_goods_display" href="goodsDetail.html"><span m:id="disp_browsing_goods_name">商品名商品名</span></a></h3>
-                                            </div>
-                                            <!-- /.item_list_in -->
-                                            <p class="cash item_list_yen">
-                                                <span m:id="l_notEqu_browsingGoods_pretaxPrice">
-                                                    <span class="original_price">
-                                                        <span m:id="b_wr_browsingGoods_pretaxPrice">200</span>&nbsp;円
-                                                    </span>&nbsp;
-                                                </span>
-                                                <span m:id="b_wr_browsingGoods_actualSalePrice">50</span>円(税込)
-                                            </p>
-                                        </li>
-                                    </span>
-                                </span>
-                                <li m:id="dummy">
-                                    <div class="box_01">
-                                        <div class="box_02">
-                                            <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-                                            <h3><a href="#">商品名商品名</a></h3>
-                                            <p>50円（税込）</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li m:id="dummy" class="sp_end">
-                                    <div class="box_01">
-                                        <div class="box_02">
-                                            <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-                                            <h3><a href="#">商品名商品名</a></h3>
-                                            <p>50円（税込）</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li m:id="dummy" class="pc_only">
-                                    <div class="img_box"><a href="#"><img m:id="static_img" src="../../../contents/shop/00000003/goods/image/item_sample_01.jpg" /></a></div>
-                                    <h3><a href="#">商品名商品名</a></h3>
-                                    <p>50円（税込）</p>
-                                </li>
-                            </ul>
-                            <div class="more_item js-more_item">
-                                <p class="more_item_txt">最近チェックした商品をもっと見る</p>
-                            </div>
-                        </div>
-                    </span>
-                <!--▲▲▲最近チェックした商品▲▲▲-->
+    
                 <!-- <div class="side_bnr　mb20">
                 	<a href="#">
                 		<img src="/contents/c/shop/image/bnr_mail01.png" title="メールマガジン会員募集" alt="メールマガジン会員募集" class="viewPc">
