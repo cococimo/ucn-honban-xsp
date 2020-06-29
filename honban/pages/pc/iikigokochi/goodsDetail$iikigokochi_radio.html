@@ -61,7 +61,7 @@ $(function() {
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/kigokochi/kigokochi.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.exdropdown.0.1.3.js"></script>
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
-		<script >
+	<script >
 		/*
 			jQuery(function($){
 				$('ul.example').exDropDown();
@@ -69,12 +69,31 @@ $(function() {
 			*/
 			jQuery(function($){
 			//	$('ul.example').exDropDown();
-				$('.searchShop').on('click',function(){
-				$('.gsearchShop').submit();
+				$('.searchShop1').on('click',function(){
+				$('#gsearchShop1').submit();
 					return false;
 				});
 							});
 		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop2').on('click',function(){
+				$('#gsearchShop2').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop3').on('click',function(){
+				$('#gsearchShop3').submit();
+					return false;
+				});
+							});
+		</script>
+	
 <!-- InstanceBeginEditable name="head_css_js" -->
 <style>
 #contents{
@@ -1029,11 +1048,11 @@ $(function(){
                 <input m:id="searchForm_page" type="hidden" name="page" value="1">
                 <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
                 </form>
-                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop1">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
                 <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop searchShop1"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -1094,10 +1113,6 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="sp_menu_only sp_login_menu">
 
 
-<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
-<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
-<!-- ▲▲▲header2▲▲▲ -->		
-
 
 			<div class="sp_menu__login">
 				<ul class="sp_menu__login__btn">
@@ -1113,6 +1128,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					</li>
 				</ul>
 			</div>
+
+<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
+<!-- ▲▲▲header2▲▲▲ -->		
+
+
+
 			<div class="sp_menu__logout">
 				<ul class="sp_menu__logout__btn">
 	        <li class="sp_menu__logout__btn__logout">
@@ -1168,7 +1190,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					        <input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名や商品番号、キーワードで検索。" autocomplete="off" id="search_form_pc">
 					        <input type="hidden" id="category_filter_type_pc" value="00000006">
 					      </div>
-					      <div class="box_02"> <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop">検索</a> </div>
+					      <div class="box_02"> <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop searchShop1">検索</a> </div>
 					    </form>
 					    <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
 					      <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
