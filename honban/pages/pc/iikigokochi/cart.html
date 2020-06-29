@@ -381,6 +381,27 @@ jQuery(document).ready(function($){ //ここから
 
 </script>
 
+<script>
+	// お買い物に戻るボタン挙動
+	jQuery(document).ready(function($){
+		(function(){
+			var ref = document.referrer;
+			var itemReg = new RegExp('/item_(.*?)/');
+			var featureReg = new RegExp('/feature(.*?)/');
+
+			$('.historyback').bind("click",function(){
+				var that = this;
+				if(ref.match(itemReg) || ref.match(featureReg) ){
+					history.back();
+				}else{
+					location.href = $(this).attr("href");
+				}
+				return false;
+			});
+		})();
+	});
+</script>
+
 <!-- tracking urchin -->
 <meta m:id="fs_tracking_urchin" content="">
 <!--/ tracking urchin -->
@@ -1114,7 +1135,8 @@ $(window).on('load resize', function(){
 <p class="left memadd_mb_02">現在、お買い物かごに商品は入っておりません。</p>
 
 <div class="inq_input_bt_01 go_buy clearfix s_bt_350">
-        <a m:id="e_link_home" href="/" style="font-weight:normal; color:#FFFFFF">お買い物を続ける<!--<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_bt_none.png" alt="お買い物を続ける" />--></a>
+        <!-- <a m:id="e_link_home" href="/" style="font-weight:normal; color:#FFFFFF">お買い物を続ける<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_bt_none.png" alt="お買い物を続ける" /></a> -->
+        <a class="historyback" href="/" style="font-weight:normal; color:#FFFFFF">お買い物を続ける<!--<img m:id="static_img" src="../../../contents/shop/00000006/shop/image/cart_bt_none.png" alt="お買い物を続ける" />--></a>
 		</div>
 
 
@@ -1806,7 +1828,10 @@ $(window).on('load resize', function(){
 	
 	
 	<div class=" box_01 n_bt_re_01 go_buy mb30">
-	<a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a></div>
+  <!-- <a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a> -->
+  <a class="parentsLink historyback" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a>
+
+</div>
 
 	</div><!-- /cartright -->
 
@@ -1867,7 +1892,9 @@ $(window).on('load resize', function(){
 	
 
 	<div class=" box_01 n_bt_re_01 go_buy mb30">
-	<a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a></div>
+  <!-- <a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a> -->
+  <a class="parentsLink historyback" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a>
+</div>
 
 
 </div>
