@@ -181,7 +181,6 @@ $(function(){
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <style>
-
 	/* page-layout */
 	@media print,screen and (min-width: 767px){
 		.cmn_form_table01,
@@ -762,8 +761,8 @@ $(function(){
 			#cart .cart_addition_in {border:none;}
 			#cart .cart_order .wrap_table {margin: 0;}
 			#cart .cart_order th,
-			#cart .cart_order td {padding:5px 10px;color:#9c9c9c;}
-			#cart .cart_order tr td:first-of-type {color: #3f3e3d;padding-top: 5px;padding-bottom: 5px;}
+			#cart .cart_order td {padding:5px 10px;color: #3f3e3d;}
+			#cart .cart_order tr td:first-of-type {padding-top: 5px;padding-bottom: 5px;}
 			#cart .cart_order .sp_th {
 			margin-left:-10px;
 			margin-right: -10px;
@@ -771,7 +770,7 @@ $(function(){
 			margin-bottom: 5px;
 			color: #3f3e3d;
 			}
-			#cart .cart_order tr:last-of-type td {color:#9c9c9c;}
+			/* #cart .cart_order tr:last-of-type td {color:#9c9c9c;} */
 			/* #cart .cart_addition .spttl,
 			#cart .cart_addition .cart_addition_list,
 			#cart .cart_addition .cart_addition_list {display: inline-block;}
@@ -785,6 +784,14 @@ $(function(){
 			#cart .cart_order tr td:first-of-type {float:left;}
 			.orderInputLogin .memadd_table_01 th, .orderInputLogin .memadd_table_01 td {float:left;}
 		}
+</style>
+
+<style>
+	/* ABtest */
+	.cart_ad_under {display: none;}
+	@media print,screen and (min-width: 767px){
+		.cart_ad_under {max-width:810px;display: none;}
+	}
 </style>
 
 <!-- ▼▼ポップアップ -->
@@ -843,7 +850,7 @@ $(function () {
 
     /* initial
     ------------------------------------- */
-	switchmemadd()
+	switchmemadd();
 
 	// トグルメニュー
 	$('.togglemenu').css({'display':'none'});
@@ -1425,7 +1432,7 @@ $(function () {
 				<!--▼▼▼ side_menu ▼▼▼-->
 				<div class="input_side">
 					<div class="cart_addition mb20 s_mb10 input_addition cart_order">
-						<div class="cart_addition_in mb30 s_mb15">
+						<div class="cart_addition_in mb30 s_mb15 cart_ad_top">
 							<h2 class="cart_addition_tit viewPc">お申込み内容</h2>
 							<p class="viewSp mb5">[お申込み内容]</p>
 							<div class="wrap_table">
@@ -1472,8 +1479,10 @@ $(function () {
 										</tr>
 										<!--▲▲▲ side_商品合計金額 ▲▲▲-->
 									</table>
+									<p class="tar mt5"><a m:id="h_link_cart" href="cart.html" class="cmn_link01" style="font-size:.85em">お申込み内容の変更</a></p>
 								</div>
 							</div>
+							
 						</div>
 						
 						<!-- <div class="cart_addition mb30 s_mb15 input_addition">
@@ -1507,7 +1516,8 @@ $(function () {
 									<h5 class="add_h5 mt10 viewPc">●ココチモ会員の方</h5>
 									<p class="mt10 viewPc">下記にログインID・パスワードを入力してログインしてください。</p>
 									<h5 class="add_h5 mt10 viewSp"><span class="more_login_btn">●ココチモ会員の方は<a href="javascript:void(0); return false">こちら</a></span></h5>
-									 <p class="mt10"><a m:id="e_link_login_shop" href="memberLogin.html" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
+									<p class="mt10"><a href="/shop/memberAdd.do" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
+
 								</div>
 
 								<div id="more_login_text">
@@ -2590,7 +2600,7 @@ $(function () {
 													</div>
 												</span>
 												<p class="td_txt mb15">
-													※ご指定が無い場合、最短でのお届けとなります。
+													※ご指定がない場合、最短でのお届けとなります。
 												</p>
 
 												<div class="delivery_wrap">
@@ -2694,6 +2704,62 @@ $(function () {
 							</span>
 							<!-- ********** eastEC Mode END ********** -->
 
+
+							<!--▼▼▼ 商品合計_under ▼▼▼-->
+							<div class="cart_addition mb20 s_mb10 input_addition cart_order cart_ad_under">
+								<div class="cart_addition_in mb30 s_mb15">
+									<h2 class="cart_addition_tit viewPc">お申込み内容</h2>
+									<p class="viewSp mb5">[お申込み内容]</p>
+									<div class="wrap_table">
+										<table class="cart_order_table">
+											<!-- <tr class="viewPc"><th align="center">商品名</th>
+												<th class="memadd_table_02_w_02">商品単価</th>
+												<th class="memadd_table_02_w_03">数量</th>
+												<th class="memadd_table_02_w_02">小計</th>
+											</tr> -->
+											<span m:id="l_ite_detail">
+												<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
+												<tr>
+													<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
+				
+													<td>
+														<p class="sp_th">一括払価格</p>
+														<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
+														<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
+														<span m:id="l_notEqu_memberSpecialDiscount">
+															<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
+														</span>
+													</td>
+													<td>
+														<p class="sp_th">数量</p>
+														<span m:id="disp_detail_order_num">3</span>
+													</td>
+													<td>
+														<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
+														<p class="sp_th">小計</p>
+														<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
+														<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
+													</td>
+												</tr>
+											</span>
+												<!--▼▼▼ side_商品合計金額 ▼▼▼-->
+												<tr>
+													<td colspan="3" style="text-align:right;">商品合計:
+														<!-- <span m:id="b_wr_total_price">9500</span> 円-->
+														<span style="padding-left:30px;">
+															<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
+															<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
+														</span>
+													</td>
+												</tr>
+												<!--▲▲▲ side_商品合計金額 ▲▲▲-->
+											</table>
+											<p class="tar mt5"><a m:id="h_link_cart" href="cart.html" class="cmn_link01" style="font-size:.85em">お申込み内容の変更</a></p>
+										</div>
+									</div>
+									
+								</div>
+							<!--▲▲▲ 商品合計_under ▲▲▲-->
 							<!--▼▼▼ 商品合計 ▼▼▼-->
 								<div style="display:none;">
 									<div class="wrap_cart04">
@@ -2827,7 +2893,7 @@ $(function () {
 
 				<ul class="input_footer">
 				  <li class="input_footer_btn"><a m:id="a_link_submit" href="orderConfirm.html" class="cmn_btn cmn_btn_red" id="FormAssist_submit"><span>お申込み内容確認へ</span></a></li>
-				  <li class="input_footer_txt"><a m:id="h_link_cart" href="cart.html" class="cmn_link01 cmn_link01_reverse">戻る</a></li>
+				  <!-- <li class="input_footer_txt"><a m:id="h_link_cart" href="cart.html" class="cmn_link01 cmn_link01_reverse">戻る</a></li> -->
 				</ul>
 				<!-- /.input_footer -->
 
