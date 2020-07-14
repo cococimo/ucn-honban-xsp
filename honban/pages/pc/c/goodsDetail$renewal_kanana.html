@@ -81,9 +81,9 @@ $(function(){
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
 
 <style>
-.goods_detail_item_price_prefix{font-size: 18px;line-height: 28px;}
+/* .goods_detail_item_price_prefix{font-size: 18px;line-height: 28px;}
 .goods_detail_item_price_yen{font-size: 24px;}
-.goods_detail_item_price_yen span {font-size: 18px;font-weight: normal;}
+.goods_detail_item_price_yen span {font-size: 18px;font-weight: normal;} */
 .goods_detail_item_postage {border: 2px solid #cc1010;margin-top: 10px;text-align: center;font-weight: bold;font-size: 20px;margin-left: 4em;}
 .goods_detail_item_plan {padding-top: 22px;}
 #goods .itemtop_pc {width: 110px;right: 10px;bottom: 50px;filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));}
@@ -134,6 +134,14 @@ img[src$=".svg"] {
 	.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}*/
 	.goods_detail_item_view .flexsliderWrap .flexslider .flex-viewport {
 	    width: 100%;}
+}
+.goods_detail_item_plan_list li:last-child {
+	margin-right: 0;
+}
+@media screen and (max-width: 767px){
+	.goods_detail_item_plan_list li:nth-child(2n) {
+		float: left;
+	}
 }
 </style>
 
@@ -234,6 +242,254 @@ function showCartButton1(obj){
 }
 //-->
 </script>
+<script>
+	// 後払いの場合、一括価格を非表示
+	$(function() {
+	  if($('.price_info_area').length){
+		$(".ikkatu_wrap").css({display: "none"});
+	} else {
+		$(".ikkatu_wrap").css({display: "block"});
+	}
+  });
+</script>
+
+<style>
+  .goods_detail_item_txt02 {
+    background:#DDDDDD;
+    padding:10px;
+  }
+  .goods_detail_item_plan {
+	  padding-top: 22px;
+	}
+  .goods_detail_item_txt02 .txt_indent {
+    padding-left: 1em;
+    font-size: .83em;
+  }
+@media screen and (max-width: 767px) {
+  .notic_txt {
+    display: flex;
+  }
+  .notic_txt .cmn_link01 {
+    font-size: 3vw;
+	margin-left: 15px;
+  }
+  .notic_txt .cmn_link01:before {
+  left: -15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .notic_txt .cmn_link01 {
+	margin-left: 10px;
+  }
+  .notic_txt .cmn_link01:before {
+  left: -10px;
+  }
+}
+</style>
+<style>
+	.price_info_area .price_info .price_split_wrap .price_split span {
+		font-weight: normal;
+	}
+	.goods_detail_item_order {
+		margin: 20px 0 0;
+	}
+	.goods_detail_item_postage {
+		display: block;
+		/* max-width: 10em; */
+		margin-top: 0;
+		margin-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 1em;
+		font-weight: normal;
+		border: 1px solid #cc1010;
+		line-height: 1.5em;
+	}
+	@media screen and (max-width: 767px) {
+		.goods_detail_item_postage {
+		width: auto;
+		}
+	
+	}
+	
+	.goods_detail_item_plan_list li {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 3px 5px;
+		background: #26a903;
+		color: #fff;
+		width:31.2%
+	}
+	@media screen and (max-width: 320px){
+		.goods_detail_item_plan_list li {
+			width:30%
+		}
+	}
+
+	.goods_detail_item_plan_list li:last-child {
+		margin-right: 0;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_plan_list li:nth-child(2) {
+			margin-right: 10px;
+		}
+	}
+	.goods_detail_item_tag {
+		text-align: left;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_tag {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	.price_info_area {
+		font-size: 15px;
+		margin: 0 auto 0;
+		text-align: left;
+		font-weight: normal;
+		position: relative;
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+	@media (max-width: 767px) {
+		.price_info_area {
+			font-size: 1em;
+			margin: 0 0 0;
+			display: block;
+		}
+	}
+	.price_info_area .price_info {
+		width:360px;
+		margin-right: 0;
+		margin:0 auto;
+		background: #fff;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .price_info {
+			width: auto;
+			margin-right: 0;
+		}
+			
+	}
+	.price_info_area .plice_delivery {
+		width:291px;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .plice_delivery {
+			width:auto;
+		}
+	}
+	.price_info_area .price_info .price_split_wrap {
+		border: 1px solid #acdde0;
+		padding: 2% 3%;
+		margin: 0 0 3px;
+	}
+	.price_info_area .price_info .price_split_wrap .kakaku {
+		font-size: .9em;
+	}
+	.price_info_area .price_info .price_split_wrap .price_split {
+		font-size:1.3em;
+		font-weight: normal;
+		line-height:1.5;
+		/* margin-bottom: 5px; */
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span {
+		vertical-align: baseline;
+		font-weight: normal;
+		
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.month {
+		font-weight: normal;
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.value span {
+		color: #cf1f1f !important;
+		font-weight: bold;
+		font-size: 2.3rem;
+	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_split span.value span {
+		font-size: 1.9rem;
+	}
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.num,
+	.price_info_area .price_info .price_split_wrap .price_split span.num span {
+		font-weight: bold;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail {
+		overflow: hidden;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt {
+		width: 50%;
+		float: left;
+		padding:5px;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
+		padding-bottom:0;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+		padding-left: 1em;
+	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+			padding-left:.5em;
+		}
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dd {
+		padding:5px 5px 5px 40%;
+		border-bottom: 1px dotted #ccc;
+		text-align: right;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
+		padding:5px 5px 0 40%;
+		border-bottom: none;
+	}
+	.price_info_area .price_info .plice_list {
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .price_info .plice_list img {
+			width: auto;
+			max-width: 291px;
+		}
+	}
+	.price-notice {
+		font-size: .83em;
+		margin-top: 5px;
+		width:360px;
+		margin:5px auto 0;
+	}
+	@media (max-width: 767px) {
+		.price-notice {
+			width:auto;
+		}
+	}
+	.price-notice  li {
+		text-indent: -1em;
+		padding-left: 1em;
+	}
+	@media (max-width: 767px) {
+		.plice_delivery {
+			text-align: center;
+			padding-top:10px;
+		}
+		.plice_delivery img {
+			width: auto;
+			max-width:291px;
+		}
+	}
+	.plice_delivery .return_txt {
+		padding:10px 0 30px;
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		.plice_delivery .return_txt {
+			padding:5px 0 10px;
+			text-align: center;
+		}
+	}
+</style>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -890,686 +1146,518 @@ function showCartButton1(obj){
 			</span>
 
 			<!--▼▼▼商品▼▼▼-->
-			    <div class="goods_detail_item mt80 s_mt30 cf">
-			        <div class="goods_detail_item_view">
-			            <div class="flexsliderWrap">
-			                <span m:id="l_notEqu_valiationSize_sku">
-			                    <div class="flexslider sliderInner">
-			                        <ul class="slides cf">
-		                                <span m:id="img_check_list_main"></span>
-			                            <span m:id="l_ite_sku_variation">
-		                                	<span m:id="img_check_list_main_flg"></span>
-			                                <span m:id="def_goods_img_sku_main"></span>
-			                                <span m:id="l_ite_sku_gods_img_main">
-			                                	<span m:id="l_sku_img_main_check_script"></span>
-			                                	<span m:id="l_sku_img_check_main_def">
-			                                	<li>
-				                                	<img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-				                                	<span m:id="l_sku_img_check_contain_main"></span>
-				                                </li>
-				                                </span>
-				                                <span m:id="img_check_list_main_flg_def"></span> 
-			                            </span>
-			                        </ul>
-			                    </div>
-			                    <!-- /.flexslider -->
-			                    <div class="carousel sliderCarousel">
-			                        <ul class="slides clearfix">
-			                        	<span m:id="img_check_list"></span>
-			                            <span m:id="l_ite_sku_variation">
-			                            	<span m:id="img_check_list_flg"></span>
-			                                <span m:id="def_goods_img_sku"></span>
-			                                <span m:id="l_ite_sku_gods_img">
-			                                	<span m:id="l_sku_img_check_script"></span>
-			                                	<span m:id="l_sku_img_check_def">
-				                                    <li m:id="b_wr_sku_goods_img">
-				                                        <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-				                                    </li>
-				                                    <span m:id="l_sku_img_check_contain"></span>
-				                                </span>
-				                                <span m:id="img_check_list_flg_def"></span>
-			                                </span>
-			                            </span>
-			                        </ul>
-			                    </div>
-			                    <!-- /.carousel -->
-			                </span>
-			            </div>
-			            <!-- /.flexsliderWrap -->
-			            <!-- <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span> -->
-						      <!-- <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span> -->
-                  <!-- <ul class="goods_detail_item_sns">
-                    <li>
-                      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
-                      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li>
-                    <li> -->
-                      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
-                    <!-- </li>
-                  </ul> -->
-			        </div>
-			        <!-- /.goods_detail_view -->
-<style>
-.price_info_area .price_info .price_split_wrap .price_split span {
-	font-weight: normal;
-}
-.goods_detail_item_order {
-	margin: 20px 0 0;
-}
-.goods_detail_item_postage {
-	display: block;
-    /* max-width: 10em; */
-	margin-top: 0;
-	margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 1em;
-    font-weight: normal;
-    border: 1px solid #cc1010;
-    line-height: 1.5em;
-}
-@media screen and (max-width: 767px) {
-	.goods_detail_item_postage {
-	width: auto;
-	}
-
-}
-
-.goods_detail_item_plan_list li {
-	float: left;
-	margin: 0 10px 0 0;
-	padding: 3px 5px;
-	background: #26a903;
-	color: #fff;
-	width:31.3%
-}
-.goods_detail_item_plan_list li:last-child {
-	margin-right: 0;
-}
-@media screen and (max-width: 767px){
-	.goods_detail_item_plan_list li:nth-child(2n) {
-		float: left;
-	}
-}
-.goods_detail_item_tag {
-	text-align: left;
-}
-@media screen and (max-width: 767px){
-	.goods_detail_item_tag {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-}
-
-.price_info_area {
-	font-size: 15px;
-	margin: 0 auto 0;
-	text-align: left;
-	font-weight: normal;
-	position: relative;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-@media (max-width: 767px) {
-	.price_info_area {
-		font-size: 1em;
-		margin: 0 0 0;
-		display: block;
-	}
-}
-.price_info_area .price_info {
-	width:360px;
-	margin-right: 0;
-	margin:0 auto;
-}
-@media (max-width: 767px) {
-	.price_info_area .price_info {
-		width: auto;
-		margin-right: 0;
-	}
-		
-}
-.price_info_area .plice_delivery {
-	width:291px;
-}
-@media (max-width: 767px) {
-	.price_info_area .plice_delivery {
-		width:auto;
-	}
-}
-.price_info_area .price_info .price_split_wrap {
-	border: 1px solid #acdde0;
-	padding: 2% 3%;
-	margin: 0 0 3px;
-	background: #fff;
-}
-.price_info_area .price_info .price_split_wrap .kakaku {
-	font-size: .9em;
-}
-.price_info_area .price_info .price_split_wrap .price_split {
-	font-size:1.3em;
-	font-weight: normal;
-	line-height:1.5;
-	/* margin-bottom: 5px; */
-}
-.price_info_area .price_info .price_split_wrap .price_split span {
-	vertical-align: baseline;
-	font-weight: normal;
-	
-}
-.price_info_area .price_info .price_split_wrap .price_split span.month {
-	font-weight: normal;
-}
-.price_info_area .price_info .price_split_wrap .price_split span.value span {
-	color: #cf1f1f !important;
-	font-weight: bold;
-	font-size: 2.3rem;
-}
-.price_info_area .price_info .price_split_wrap .price_split span.num,
-.price_info_area .price_info .price_split_wrap .price_split span.num span {
-	font-weight: bold;
-}
-.price_info_area .price_info .price_split_wrap .price_detail {
-	overflow: hidden;
-}
-.price_info_area .price_info .price_split_wrap .price_detail dt {
-	width: 50%;
-	float: left;
-	padding:5px;
-}
-.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
-	padding-bottom:0;
-}
-.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
-	padding-left: 1em;
-}
-.price_info_area .price_info .price_split_wrap .price_detail dd {
-	padding:5px 5px 5px 40%;
-	border-bottom: 1px dotted #ccc;
-	text-align: right;
-}
-.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
-	padding:5px 5px 0 40%;
-	border-bottom: none;
-}
-.price_info_area .price_info .plice_list {
-	text-align: center;
-}
-@media (max-width: 767px) {
-	.price_info_area .price_info .plice_list img {
-		width: auto;
-		max-width: 291px;
-	}
-}
-
-.price-notice {
-	font-size: .83em;
-	margin-top: 5px;
-	width:360px;
-	margin:5px auto 0;
-}
-@media (max-width: 767px) {
-	.price-notice {
-		width:auto;
-	}
-}
-.price-notice  li {
-	text-indent: -1em;
-	padding-left: 1em;
-}
-@media (max-width: 767px) {
-	.plice_delivery {
-		text-align: center;
-		padding-top:10px;
-	}
-	.plice_delivery img {
-		width: auto;
-		max-width:291px;
-	}
-}
-.plice_delivery .return_txt {
-	padding:10px 0 30px;
-	text-align: center;
-}
-@media (max-width: 767px) {
-	.plice_delivery .return_txt {
-		padding:5px 0 10px;
-		text-align: center;
-	}
-}
-</style>
-			        <div class="goods_detail_item_tag">
-			            <object class="xsp_obj" m:id="b_var_varUrl"></object>
-			            <!--▼▼▼フォーム▼▼▼-->
-			            <form method="get" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
-			                <object class="xsp_obj" m:id="b_size_valiationSize"></object>
-							<div class="price_info_area">
-								<div class="price_info">
-									<div class="price_split_wrap">
-										<p class="kakaku">【税込価格】</p>
-										  <span m:id="l_notPre_settle_040">
-			                    <span m:id="l_pre_disp_installment">
-			                        <span m:id="l_pre_disp_goods_pay_times">
-			                            <span m:id="l_pre_disp_goods_pay_term">
-			                                <span m:id="l_pre_disp_total_installment">
-															<p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
-			                                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-																	<span class="num">
-																		<span class="value">
-			                                                <span m:id="l_pre_disp_installment">
-																				<span m:id="disp_installment">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
-			                                        </span>
-			                                    </p>
-															<span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
-															<dl class="price_detail">
-																<dt>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">■分割払価格</span>
-																</dt>
-																<dd>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_total_installment">
-																			<span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </span>
-																</dd>
-																<dt class="indent">
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
-																</dt>
-																<dd>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_installment">
-																			<span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </span>
-																</dd>
-																<dt class="indent">
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
-																</dt>
-																<dd>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_goods_pay_times">
-																			<span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
-			                                                    </span>
-			                                                </span>
-																</dd>
-																<dt class="indent">
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
-																</dt>
-																<dd>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_goods_pay_term">
-																			<span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
-			                                </span>
-			                            </span>
-																</dd>
-																<dt>
-																	<span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
-																</dt>
-																<dd>
-		                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-		                            <span m:id="l_notEqu_pretaxPrice">
-		                                <span m:id="b_wr_pretaxPrice">24800</span>
-		                            </span>
-		                            <span m:id="b_wr_actualSalePrice">17800</span>
-																		
-		                        <!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
-		                        <!-- 会員限定で値引きの場合、表示される -->
-																	<span>円&nbsp;</span>
-		                        <!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
-		                        <span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
-		                    </span>
-																</dd>
-															</dl>
-														</span>
-													</span>
-												</span>
+			<div class="goods_detail_item mt80 s_mt30 cf" id="goods_detail_item">
+				<div class="goods_detail_item_view">
+					<div class="flexsliderWrap">
+						<span m:id="l_notEqu_valiationSize_sku">
+							<div class="flexslider sliderInner">
+								<ul class="slides cf">
+									<span m:id="img_check_list_main"></span>
+									<span m:id="l_ite_sku_variation">
+										<span m:id="img_check_list_main_flg"></span>
+										<span m:id="def_goods_img_sku_main"></span>
+										<span m:id="l_ite_sku_gods_img_main">
+											<span m:id="l_sku_img_main_check_script"></span>
+											<span m:id="l_sku_img_check_main_def">
+											<li>
+												<img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+												<span m:id="l_sku_img_check_contain_main"></span>
+											</li>
 											</span>
-										</span> 
-									</div><!-- price_split_wrap -->
-								</div><!-- price_info -->
-								<ul class="price-notice">
-									<li>※金額はすべて税込みです。</li>
-									<li>※代金引換の場合は、一括払いのみとなります。</li>
+											<span m:id="img_check_list_main_flg_def"></span> 
+									</span>
 								</ul>
-							</div><!-- price_info_area -->
-							
-			                <!-- /.goods_detail_item_price -->
-			                
-                      <span m:id="l_pre_individual_postage">
-                        <p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
-                            <span m:id="l_pre_evenness_postage">
-                              <!-- 一律送料 -->
-                              <span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
-                            </span>
-                            <span m:id="l_not_pre_evenness_postage">
-                              <!-- 地域別送料 -->
-                              <a m:id="h_link_goodsPostage" class="pc_only" href="#">
-                                <span m:id="b_write_postageGropName"></span>はコチラ
-                              </a>
-                              <script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
-                              <a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
-                            </span>
-                        </p>
-                      </span>
-			                <!-- /.goods_detail_item_postage -->
-			                <span m:id="l_equ_memberSpecialDiscount"><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span>
-			                <span m:id="l_equ_memberSpecialDiscount">
-			                    <span m:id="l_notPre_settle_040">
-			                        <span m:id="l_pre_disp_installment">
-			                            <span m:id="l_pre_disp_goods_pay_times">
-			                                <span m:id="l_pre_disp_goods_pay_term">
-			                                    <span m:id="l_pre_disp_total_installment">
-			                                        <!-- <span m:id="l_pre_disp_installment"> -->
-			                                        <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-			                                            <tr>
-			                                                <th class="top">分割払価格</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_total_installment">
-			                                                        <span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th style="vertical-align:top;">分割払金</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_installment">
-			                                                        <span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th>支払回数</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_goods_pay_times">
-			                                                        <span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th>支払期間</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_goods_pay_term">
-			                                                        <span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                        </table>
-			                                    </span>
-			                                </span>
-			                            </span>
-			                        </span>
-			                    </span>
-			                </span>
-			                <!-- /会員限定で値引きの場合、表示される -->
-			                <div class="goods_detail_item_order">
-			                    <span m:id="l_Emp_groupGoods">
-			                        <span m:id="l_equ_stock_manage_unit">
-                                <script language="JavaScript" type="text/javascript">
-                                  //SKUの場合のみ、スクリプト実施
-                                  window.onload = function(){
-                                    showCartButton(document.goodsDetailCartForm.goods_sku_code);
-                                    showCartButton1(document.goodsDetailCartForm1.goods_sku_code);
-                                  }
-                                </script>
-		                            <div class="goods_detail_item_order01 tooltip_wrap">
-	                                <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
-	                                <div class="select_wrap">
-                                    <span class="select_label">色・<br class="viewSp">サイズ：</span>
-                                      <span m:id="l_equ_valiationSize">
-                                          <span>
-                                          <span m:id="b_wr_goods_sku_name"></span>
-                                         </span>
-                                      </span>
-                                      <span class="select_box">
-                                      <span m:id="l_notEqu_valiationSize">
-                                          <select m:id="h_sel_goods_sku_code_renewal">
-                                              <option value="">--選択してください--</option>
-                                              <option m:id="h_opt_variations" value="">白</option>
-                                              <option m:id="dummy" value="">黒</option>
-                                              <option m:id="dummy" value="">赤</option>
-                                              <option m:id="dummy" value="">青</option>
-                                              <option m:id="dummy" value="">緑</option>
-                                          </select>
-                                          <span m:id="l_ite_variation">
-                                              <object class="xsp_obj" m:id="b_var_url"></object>
-                                              <object class="xsp_obj" m:id="b_var_staticUrl"></object>
-                                              <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
-                                              <input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
-                                          </span>
-                                      </span>
-                                    </span>
-                                  </div>
-                                  <!-- /.select_wrap -->
-		                            </div>
-		                          </span>
-			                        <div class="goods_detail_item_order02">
-                                <div class="select_wrap">
-                                    <span class="select_label">数量：</span>
-                                    <span class="select_box">
-                                        <!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
-                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-                                            <option m:id="h_pull_order_num" value="3">3</option>
-                                            <option m:id="dummy">1</option>
-                                            <option m:id="dummy">2</option>
-                                        </select>
-                                        <!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
-                                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
-                                        <!--  <span m:id="l_equ_type_sku"><td>
-                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-                                        <option m:id="h_pull_order_num" value="3">3</option>
-                                        <option m:id="dummy">1</option>
-                                        <option m:id="dummy">2</option>
-                                        </select>
-                                        </td></span>
-                                        <span m:id="l_equ_type_simple"><td m:id="l_visible_order_num">
-                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-                                        <option m:id="h_pull_order_num" value="3">3</option>
-                                        <option m:id="dummy">1</option>
-                                        <option m:id="dummy">2</option>
-                                        </select>
-                                        </td></span>-->
-                                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
-                                    </span>
-                                </div>
-                                <!-- /.select_wrap -->
-			                        </div>
-			                        <!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
-			                        <!--  <tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
-			                        <span m:id="l_equ_canAddCart"><td>△</td></span>
-			                        <span m:id="l_notEqu_canAddCart"><td>×</td></span>
-			                        </tr>-->
-			                        <!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
-			                        <span m:id="l_pre_min_order_num2">
-			                            <th>最低購入数<span class="conma">：</span></th>
-			                            <td><span m:id="disp_min_order_num">2</span></td>
-			                        </span>
-			                        <!-- のし・ラッピング可否 -->
-			                        <!-- <span m:id="l_pre_no_wrapping">
-			                            <img m:id="h_img_no_wrapping" src="../../../contents/shop/00000003/icon/no_wrapping.gif" alt="のし・ラッピング不可" align="left" />
-			                        </span> -->
-			                    </span>
-			                </div>
-			                <!-- /.goods_detail_item_order -->
+							</div>
+							<!-- /.flexslider -->
+							<div class="carousel sliderCarousel">
+								<ul class="slides clearfix">
+									<span m:id="img_check_list"></span>
+									<span m:id="l_ite_sku_variation">
+										<span m:id="img_check_list_flg"></span>
+										<span m:id="def_goods_img_sku"></span>
+										<span m:id="l_ite_sku_gods_img">
+											<span m:id="l_sku_img_check_script"></span>
+											<span m:id="l_sku_img_check_def">
+												<li m:id="b_wr_sku_goods_img">
+													<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+												</li>
+												<span m:id="l_sku_img_check_contain"></span>
+											</span>
+											<span m:id="img_check_list_flg_def"></span>
+										</span>
+									</span>
+								</ul>
+							</div>
+							<!-- /.carousel -->
+						</span>
+					</div>
+					<!-- /.flexsliderWrap -->
+					<!-- <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span>
+						  <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span>
+			  <ul class="goods_detail_item_sns">
+				<li>
+				  <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
+				  <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+				</li>
+				<li>
+				  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+				  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</li>
+				<li> -->
+				  <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
+				<!-- </li>
+			  </ul> -->
+				</div>
+				<!-- /.goods_detail_view -->
+				<div class="goods_detail_item_tag">
+					<object class="xsp_obj" m:id="b_var_varUrl"></object>
+					<!--▼▼▼フォーム▼▼▼-->
 
-			                <a name="h_sel_goods_sku_code"></a>
-			                <span m:id="l_pre_omake_image2">
-			                    <!-- おまけ画像２ -->
-			                    <div class="present2">
-			                        <img m:id="h_img_omake_image2" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像2" />
-			                    </div>
-			                </span>
-			            </form>
-			            <!--▲▲▲フォーム▲▲▲-->
-			            <div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
-			            <!--降雪対応文言
-			            <ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
-			            降雪対応文言-->
-			            <!-- アイコン -->
-			            <!-- <div > -->
-			            <div class="box_itembtn">
-			                <span m:id="l_ite_icon">
-			                    <img m:id="h_img_icon_file" src="../../../contents/shop/00000002/icon/icon_01.gif" alt="注目" />
-			                </span>
-			            </div>
-			            <!--/ アイコン -->
-
-			            <div class="goods_detail_item_order_cart">
-			                <div class="item_bt_01 cartButton">
-			                    <!-- SKU商品用カートイン -->
-			                    <span m:id="l_equ_type_sku">
-			                        <span m:id="l_equ_can_addCartSku">
-			                            <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
-			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			                                <input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
-			                                <input m:id="h_hid_ext_goods_sku_code_renewal" type="hidden" name="ext_goods_sku_code" value="" />
-			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <a m:id="h_link_canAddCart0_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                                <!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
-
-			                            </form>
-			                        </span>
-			                    </span>
-			                    <!-- 単品商品用カートイン -->
-			                    <span m:id="l_equ_type_simple">
-			                        <span m:id="l_equ_can_addCartSku">
-			                            <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
-			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			                                <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-			                                <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                                <!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
-			                            </form>
-			                        </span>
-			                    </span>
-			                </div>
-			                <span m:id="l_notEqu_canAddCart">
-			                    <span m:id="l_notPre_member">
-			                        <span m:id="l_equ_actualSaleStatus">
-			                            <p class="i_caution_01">こちらの商品は先行販売商品です。会員の方のみ先行して購入可能となっております。</p>
-			                        </span>
-			                        <span m:id="l_notEqu_goodsLimitStatus">
-			                            <p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_pre_member">
-			                        <span m:id="l_equ_goodsLimitStatus">
-			                            <p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_notEqu_multiple">
-			                        <p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
-			                    </span>
-			                    <span m:id="l_equ_multiple">
-			                        <span m:id="l_notEqu_catalogue">
-			                            <p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_notEqu_regularly">
-			                        <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
-			                    </span>
-			                    <span m:id="l_equ_canNot_addCartSku_radio" class = "soldOutButton">
-			                        <img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
-			                    </span>
-			                    <span m:id="l_equ_noStockSalesStatus">
-			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
-			                    </span>
-                      </span>
-                      <div class="box_itembtn selectButton">
-                          <span m:id="l_equ_type_sku">
-                          <span m:id="l_equ_can_addCartSku">
-                          <span m:id="l_notEqu_select_renewal">
-                              <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-                          </span></span></span>
-                      </div>
-                  </div>
-			            <!-- /.goods_detail_item_order_cart -->
-			           <span m:id="l_pre_member">
-			                <div class="goods_detail_item_order_fav tar s_tac">
-			                    <form m:id="e_form_memberFavoriteAdd" method="POST" action="memberMypage.html">
-			                        <input m:id="input_hid_display_code" type="hidden" name="display_code" value=""/>
-			                            <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
-			                    </form>
-			                    <p style="display: none"><!--<a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">-->
-			                        <a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">お友達にメールで知らせる</a>
-			                    </p>
-			                </div>
-			            </span>
-			            <!-- チャネル別決済種別制限取得 -->
-			            <div class="goods_detail_item_plan">
-			                <object class="xsp_obj" m:id="e_var_settlementMap"></object>
-			                <p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
-			                <ul class="goods_detail_item_plan_list">
-								<li><img src="contents/c/icon/settle_ok_040.gif" alt="後払い利用可"></li>
-								<li><img src="contents/c/icon/settle_ok_130.gif" alt="クレジットカード(GMOマルチペイメント)利用可"></li>
-								<li><img src="contents/c/icon/settle_ok_020.gif" alt="代金引換利用可"></li>
-			                    <!-- <li><span class="icon-circle"></span>クレジットカード</li>
-			                    <li><span class="icon-circle"></span>代金引換</li> -->
-								<!-- <span m:id="l_ite_valid_settle">
-                            <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+					<form method="get" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
+						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
+						
+								<span m:id="l_notPre_settle_040">
+								<span m:id="l_pre_disp_installment">
+									<span m:id="l_pre_disp_goods_pay_times">
+										<span m:id="l_pre_disp_goods_pay_term">
+											<span m:id="l_pre_disp_total_installment">
+												<div class="price_info_area">
+													<div class="price_info">
+														<div class="price_split_wrap">
+															<p class="kakaku">【税込価格】</p>
+												<p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
+													<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+														<span class="num">
+															<span class="value">
+																<span m:id="l_pre_disp_installment">
+																	<span m:id="disp_installment">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
+													</span>
+												</p>
+												<span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+												<dl class="price_detail">
+													<dt>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">■分割払価格</span>
+													</dt>
+													<dd>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+															<span m:id="l_pre_disp_total_installment">
+																<span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
+															</span>
+														</span>
+													</dd>
+													<dt class="indent">
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
+													</dt>
+													<dd>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+															<span m:id="l_pre_disp_installment">
+																<span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
+															</span>
+														</span>
+													</dd>
+													<dt class="indent">
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
+													</dt>
+													<dd>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+															<span m:id="l_pre_disp_goods_pay_times">
+																<span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
+															</span>
+														</span>
+													</dd>
+													<dt class="indent">
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
+													</dt>
+													<dd>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+															<span m:id="l_pre_disp_goods_pay_term">
+																<span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
+															</span>
+														</span>
+													</dd>
+													<dt>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
+													</dt>
+													<dd>
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+															<span m:id="l_notEqu_pretaxPrice">
+																<span m:id="b_wr_pretaxPrice">24800</span>
+															</span>
+														<span m:id="b_wr_actualSalePrice">17800</span>
+															
+														<!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+														<!-- 会員限定で値引きの場合、表示される -->
+														<span>円&nbsp;</span>
+														<!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+														<span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+													
+													</dd>
+												</dl>
+											</div><!-- price_split_wrap -->
+										</div><!-- price_info -->
+										<ul class="price-notice">
+											<li>※金額はすべて税込みです。</li>
+											<li>※代金引換の場合は、一括払いのみとなります。</li>
+										</ul>
+									</div><!-- price_info_area -->
+								</span>
+							</span>
+						</span>
+					</span>
+				</span> 
+						
+				<div class="ikkatu_wrap" style="display: none;">
+				<p class="goods_detail_item_price">
+					<span class="goods_detail_item_price_prefix"><span m:id="l_notEmp_memberSpecialDiscountOpacity">価格</span></span>
+					<span class="goods_detail_item_price_yen">
+						<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+							<span m:id="l_notEqu_pretaxPrice">
+								<span m:id="b_wr_pretaxPrice">24800</span>
+							</span>
+							<span m:id="b_wr_actualSalePrice">17800</span>
+						</span>
+						<!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+						<!-- 会員限定で値引きの場合、表示される -->
+						<span>円(税込)</span>
+						<!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+						<span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+					</span>
+					</p>
+					<!-- /.goods_detail_item_price -->
+					<span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+				</div>
+				<!-- /.goods_detail_item_price -->
+				  <span m:id="l_pre_individual_postage">
+					<p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
+						<span m:id="l_pre_evenness_postage">
+						  <!-- 一律送料 -->
+						  <span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
+						</span>
+						<span m:id="l_not_pre_evenness_postage">
+						  <!-- 地域別送料 -->
+						  <a m:id="h_link_goodsPostage" class="pc_only" href="#">
+							<span m:id="b_write_postageGropName"></span>はコチラ
+						  </a>
+						  <script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
+						  <a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
+						</span>
+					</p>
+				  </span>
+						<!-- /.goods_detail_item_postage -->
+						<span m:id="l_equ_memberSpecialDiscount"><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span>
+						<span m:id="l_equ_memberSpecialDiscount">
+							<span m:id="l_notPre_settle_040">
+								<span m:id="l_pre_disp_installment">
+									<span m:id="l_pre_disp_goods_pay_times">
+										<span m:id="l_pre_disp_goods_pay_term">
+											<span m:id="l_pre_disp_total_installment">
+												<!-- <span m:id="l_pre_disp_installment"> -->
+												<table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
+													<tr>
+														<th class="top">分割払価格</th>
+														<td>：
+															<span m:id="l_pre_disp_total_installment">
+																<span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th style="vertical-align:top;">分割払金</th>
+														<td>：
+															<span m:id="l_pre_disp_installment">
+																<span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th>支払回数</th>
+														<td>：
+															<span m:id="l_pre_disp_goods_pay_times">
+																<span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th>支払期間</th>
+														<td>：
+															<span m:id="l_pre_disp_goods_pay_term">
+																<span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
+															</span>
+														</td>
+													</tr>
+												</table>
+											</span>
+										</span>
+									</span>
+								</span>
+							</span>
+						</span>
+						<!-- /会員限定で値引きの場合、表示される -->
+						<div class="goods_detail_item_order">
+							<span m:id="l_Emp_groupGoods">
+								<span m:id="l_equ_stock_manage_unit">
+							<script language="JavaScript" type="text/javascript">
+							  //SKUの場合のみ、スクリプト実施
+							  window.onload = function(){
+								showCartButton(document.goodsDetailCartForm.goods_sku_code);
+								showCartButton1(document.goodsDetailCartForm1.goods_sku_code);
+							  }
+							</script>
+								<div class="goods_detail_item_order01 tooltip_wrap">
+								<div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
+								<div class="select_wrap">
+								<span class="select_label">色・<br class="viewSp">サイズ：</span>
+								  <span m:id="l_equ_valiationSize">
+									  <span>
+									  <span m:id="b_wr_goods_sku_name"></span>
+									 </span>
+								  </span>
+								  <span class="select_box">
+								  <span m:id="l_notEqu_valiationSize">
+									  <select m:id="h_sel_goods_sku_code_renewal">
+										  <option value="">--選択してください--</option>
+										  <option m:id="h_opt_variations" value="">白</option>
+										  <option m:id="dummy" value="">黒</option>
+										  <option m:id="dummy" value="">赤</option>
+										  <option m:id="dummy" value="">青</option>
+										  <option m:id="dummy" value="">緑</option>
+									  </select>
+									  <span m:id="l_ite_variation">
+										  <object class="xsp_obj" m:id="b_var_url"></object>
+										  <object class="xsp_obj" m:id="b_var_staticUrl"></object>
+										  <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
+										  <input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
+									  </span>
+								  </span>
+								</span>
+							  </div>
+							  <!-- /.select_wrap -->
+								</div>
+							  </span>
+								<div class="goods_detail_item_order02">
+							<div class="select_wrap">
+								<span class="select_label">数量：</span>
+								<span class="select_box">
+									<!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
+									<select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+										<option m:id="h_pull_order_num" value="3">3</option>
+										<option m:id="dummy">1</option>
+										<option m:id="dummy">2</option>
+									</select>
+									<!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
+									<!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
+									<!--  <span m:id="l_equ_type_sku"><td>
+									<select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+									<option m:id="h_pull_order_num" value="3">3</option>
+									<option m:id="dummy">1</option>
+									<option m:id="dummy">2</option>
+									</select>
+									</td></span>
+									<span m:id="l_equ_type_simple"><td m:id="l_visible_order_num">
+									<select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+									<option m:id="h_pull_order_num" value="3">3</option>
+									<option m:id="dummy">1</option>
+									<option m:id="dummy">2</option>
+									</select>
+									</td></span>-->
+									<!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
+								</span>
+							</div>
+							<!-- /.select_wrap -->
+								</div>
+								<!-- ▼▼▼ 欠品対応の場合はコメントアウト外す ▼▼▼ -->
+								<!--  <tr m:id="l_equ_showStockDisplay"><th>在庫数<span class="conma">：</span></th>
+								<span m:id="l_equ_canAddCart"><td>△</td></span>
+								<span m:id="l_notEqu_canAddCart"><td>×</td></span>
+								</tr>-->
+								<!-- ▲▲▲ 欠品対応の場合はコメントアウト外す ▲▲▲ -->
+								<span m:id="l_pre_min_order_num2">
+									<th>最低購入数<span class="conma">：</span></th>
+									<td><span m:id="disp_min_order_num">2</span></td>
+								</span>
+								<!-- のし・ラッピング可否 -->
+								<!-- <span m:id="l_pre_no_wrapping">
+									<img m:id="h_img_no_wrapping" src="../../../contents/shop/00000003/icon/no_wrapping.gif" alt="のし・ラッピング不可" align="left" />
 								</span> -->
-			                </ul>
-			                <div class="l_con_list_03" style="display: none;">
-			                    <span m:id="l_pre_item_limit">
-			                        <span m:id="l_ite_valid_settle" >
-			                            <img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
-			                        </span>
-			                        <span m:id="l_notEmp_item_limit">
-			                            ※以下の決済方法はご利用いただけません<br/>
-			                            <span m:id="l_ite_item_limit">
-			                                <span m:id="l_equ_item_040">
-			                                    <div class="error">
-			                                        <table>
-			                                            <tr>
-			                                                <td valign="top">
-			                                                    <img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
-			                                                </td>
-			                                                <td>
-			                                                    <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
-			                                                </td>
-			                                            </tr>
-			                                        </table>
-			                                    </div>
-			                                </span>
-			                                <!--
-			                                <div class="error">
-			                                &nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
-			                                <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
-			                                </div>
-			                                -->
-			                            </span>
-			                        </span>
-			                    </span>
-			                </div>
-			            </div>
-			            <!-- /チャネル別決済種別制限取得 -->
-                  <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
-                  <!-- のし・ラッピング可否 -->
-                  <span m:id="l_pre_no_wrapping">
-                      <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
-                  </span>
+							</span>
+						</div>
+						<!-- /.goods_detail_item_order -->
 
-                  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
-                  ・返品時の送料：お客様負担
-                  </p>
-                  <p class="goods_detail_item_txt mt10">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
+						<a name="h_sel_goods_sku_code"></a>
+						<span m:id="l_pre_omake_image2">
+							<!-- おまけ画像２ -->
+							<div class="present2">
+								<img m:id="h_img_omake_image2" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像2" />
+							</div>
+						</span>
+					</form>
+					<!--▲▲▲フォーム▲▲▲-->
+					<div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
+					<!--降雪対応文言
+					<ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
+					降雪対応文言-->
+					<!-- アイコン -->
+					<!-- <div > -->
+					<div class="box_itembtn">
+						<span m:id="l_ite_icon">
+							<img m:id="h_img_icon_file" src="../../../contents/shop/00000002/icon/icon_01.gif" alt="注目" />
+						</span>
+					</div>
+					<!--/ アイコン -->
 
-                  <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
-                  <!-- <p class="notes mt8" style="padding:0.5em;border:1px solid red;color:red;">本商品は10月1日より18,700円（税込）となります。</p> -->
+					<div class="goods_detail_item_order_cart">
+						<div class="item_bt_01 cartButton">
+							<!-- SKU商品用カートイン -->
+							<span m:id="l_equ_type_sku">
+								<span m:id="l_equ_can_addCartSku">
+									<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+										<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+										<input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
+										<input m:id="h_hid_ext_goods_sku_code_renewal" type="hidden" name="ext_goods_sku_code" value="" />
+										<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+										<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+										<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
+										<a m:id="h_link_canAddCart0_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+										<!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
 
-			      </div>
-			        <!-- /.goods_detail_tag -->
-			    </div>
-			    <!-- /.goods_detail_item -->
-			<!--▲▲▲商品▲▲▲-->
+									</form>
+								</span>
+							</span>
+							<!-- 単品商品用カートイン -->
+							<span m:id="l_equ_type_simple">
+								　　<span m:id="l_equ_can_addCartSku">
+									<form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
+										<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+										<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+										<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+										<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+										<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+										<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
+										<a m:id="h_link_canAddCart0" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+										<!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
+									</form>
+								</span>
+							</span>
+						</div>
+
+						<span m:id="l_notEqu_canAddCart">
+							<span m:id="l_notPre_member">
+								<span m:id="l_equ_actualSaleStatus">
+									<p class="i_caution_01">こちらの商品は先行販売商品です。会員の方のみ先行して購入可能となっております。</p>
+								</span>
+								<span m:id="l_notEqu_goodsLimitStatus">
+									<p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
+								</span>
+							</span>
+							<span m:id="l_pre_member">
+								<span m:id="l_equ_goodsLimitStatus">
+									<p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
+								</span>
+							</span>
+							<span m:id="l_notEqu_multiple">
+								<p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
+							</span>
+							<span m:id="l_equ_multiple">
+								<span m:id="l_notEqu_catalogue">
+									<p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
+								</span>
+							</span>
+							<span m:id="l_notEqu_regularly">
+								<p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
+							</span>
+							<span m:id="l_equ_canNot_addCartSku_radio" class = "soldOutButton">
+								<img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
+							</span>
+							<span m:id="l_equ_noStockSalesStatus">
+								<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
+							</span>
+				  </span>
+				  <div class="box_itembtn selectButton">
+					  <span m:id="l_equ_type_sku">
+					  <span m:id="l_equ_can_addCartSku">
+					  <span m:id="l_notEqu_select_renewal">
+						  <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
+					  </span></span></span>
+				  </div>
+				  <p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラック」は完売しました。</p>
+			  </div>
+					<!-- /.goods_detail_item_order_cart -->
+					<span m:id="l_pre_member">
+						<div class="goods_detail_item_order_fav tar s_tac">
+							<form m:id="e_form_memberFavoriteAdd" method="POST" action="memberMypage.html">
+								<input m:id="input_hid_display_code" type="hidden" name="display_code" value=""/>
+									<a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
+							</form>
+							<p style="display: none"><!--<a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">-->
+								<a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">お友達にメールで知らせる</a>
+							</p>
+						</div>
+					</span>
+					<!-- チャネル別決済種別制限取得 -->
+					<div class="goods_detail_item_plan">
+						<object class="xsp_obj" m:id="e_var_settlementMap"></object>
+						<p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
+						<ul class="goods_detail_item_plan_list">
+							<!-- <li><span class="icon-circle"></span>クレジットカード</li>
+							<li><span class="icon-circle"></span>代金引換</li> -->
+					  <span m:id="l_pre_item_limit">
+					  <span m:id="b_wr_valied_settle_sort"></span>
+					  <span m:id="l_ite_valid_settle_sort">
+						<li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+					  </span>
+					  </span>
+						</ul>
+						<div class="l_con_list_03" style="display: none;">
+							<span m:id="l_pre_item_limit">
+								<span m:id="l_ite_valid_settle_sort" >
+									<img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
+								</span>
+								<span m:id="l_notEmp_item_limit">
+									※以下の決済方法はご利用いただけません<br/>
+									<span m:id="l_ite_item_limit">
+										<span m:id="l_equ_item_040">
+											<div class="error">
+												<table>
+													<tr>
+														<td valign="top">
+															<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+														</td>
+														<td>
+															<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</span>
+										<!--
+										<div class="error">
+										&nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+										<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+										</div>
+										-->
+									</span>
+								</span>
+							</span>
+						</div>
+					</div>
+					<!-- /チャネル別決済種別制限取得 -->
+			  <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
+			  <!-- のし・ラッピング可否 -->
+			  <span m:id="l_pre_no_wrapping">
+				  <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
+			  </span>
+
+			  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
+			  ・返品時の送料：お客様負担
+			  </p>
+			  <p class="goods_detail_item_txt mt10">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
+			  
+			  <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
+				</div>
+				<!-- /.goods_detail_tag -->
+			</div>
+			<!-- /.goods_detail_item -->
+		<!--▲▲▲商品▲▲▲-->
 
 			<!--▼▼▼モーダル▼▼▼-->
 				<div id="about_payment" class="lightbox">
@@ -1785,92 +1873,92 @@ function showCartButton1(obj){
 			<!-- /.goods_detail_spec -->
 
 			<!--▼▼▼商品▼▼▼-->
-			    <div class="goods_detail_item cf">
-			        <span m:id="l_pre_disp_colname20"><span m:id="disp_colname20">ここにBOの登録タイトル20が表示されます。</span></span>
-			        <div class="goods_detail_item_view">
-			            <div class="flexsliderWrap">
-			                <span m:id="l_notEqu_valiationSize_sku">
-			                    <div class="flexslider sliderInner">
-			                        <ul class="slides cf">
-		                                <span m:id="img_check_list_main"></span>
-			                            <span m:id="l_ite_sku_variation">
-		                                	<span m:id="img_check_list_main_flg"></span>
-			                                <span m:id="def_goods_img_sku_main"></span>
-			                                <span m:id="l_ite_sku_gods_img_main">
-			                                	<span m:id="l_sku_img_main_check_script"></span>
-			                                	<span m:id="l_sku_img_check_main_def">
-			                                	<li>
-				                                	<img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-				                                	<span m:id="l_sku_img_check_contain_main"></span>
-				                                </li>
-				                                </span>
-				                                <span m:id="img_check_list_main_flg_def"></span> 
-			                            </span>
-			                        </ul>
-			                    </div>
-			                    <!-- /.flexslider -->
-			                    <div class="carousel sliderCarousel">
-			                        <ul class="slides clearfix">
-			                        	<span m:id="img_check_list"></span>
-			                            <span m:id="l_ite_sku_variation">
-			                            	<span m:id="img_check_list_flg"></span>
-			                                <span m:id="def_goods_img_sku"></span>
-			                                <span m:id="l_ite_sku_gods_img">
-			                                	<span m:id="l_sku_img_check_script"></span>
-			                                	<span m:id="l_sku_img_check_def">
-				                                    <li m:id="b_wr_sku_goods_img">
-				                                        <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-				                                    </li>
-				                                    <span m:id="l_sku_img_check_contain"></span>
-				                                </span>
-				                                <span m:id="img_check_list_flg_def"></span>
-			                                </span>
-			                            </span>
-			                        </ul>
-			                    </div>
-			                    <!-- /.carousel -->
-			                </span>
-			            </div>
-			            <!-- /.flexsliderWrap -->
-                  <!-- <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span> -->
-                  <!-- <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span> -->
-                  <!-- <ul class="goods_detail_item_sns">
-                    <li>
-                      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
-                      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li>
-                    <li> -->
-                      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
-                    <!-- </li>
-                  </ul> -->
-			        </div>
-			        <!-- /.goods_detail_view -->
-			        <div class="goods_detail_item_tag">
-			            <object class="xsp_obj" m:id="b_var_varUrl"></object>
-			            <!--▼▼▼フォーム▼▼▼-->
-			                <object class="xsp_obj" m:id="b_size_valiationSize"></object>
-                  <form method="get" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm1" action="goodsDetail.html">
-					<div class="price_info_area" id="goods_detail_item">
-						<div class="price_info">
-							<div class="price_split_wrap">
-								<p class="kakaku">【税込価格】</p>
-								  <span m:id="l_notPre_settle_040">
-			                    <span m:id="l_pre_disp_installment">
-			                        <span m:id="l_pre_disp_goods_pay_times">
-			                            <span m:id="l_pre_disp_goods_pay_term">
-			                                <span m:id="l_pre_disp_total_installment">
+			<div class="goods_detail_item cf">
+				<span m:id="l_pre_disp_colname20"><span m:id="disp_colname20">ここにBOの登録タイトル20が表示されます。</span></span>
+				<div class="goods_detail_item_view">
+					<div class="flexsliderWrap">
+						<span m:id="l_notEqu_valiationSize_sku">
+							<div class="flexslider sliderInner">
+								<ul class="slides cf">
+									<span m:id="img_check_list_main"></span>
+									<span m:id="l_ite_sku_variation">
+										<span m:id="img_check_list_main_flg"></span>
+										<span m:id="def_goods_img_sku_main"></span>
+										<span m:id="l_ite_sku_gods_img_main">
+											<span m:id="l_sku_img_main_check_script"></span>
+											<span m:id="l_sku_img_check_main_def">
+											<li>
+												<img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+												<span m:id="l_sku_img_check_contain_main"></span>
+											</li>
+											</span>
+											<span m:id="img_check_list_main_flg_def"></span> 
+									</span>
+								</ul>
+							</div>
+							<!-- /.flexslider -->
+							<div class="carousel sliderCarousel">
+								<ul class="slides clearfix">
+									<span m:id="img_check_list"></span>
+									<span m:id="l_ite_sku_variation">
+										<span m:id="img_check_list_flg"></span>
+										<span m:id="def_goods_img_sku"></span>
+										<span m:id="l_ite_sku_gods_img">
+											<span m:id="l_sku_img_check_script"></span>
+											<span m:id="l_sku_img_check_def">
+												<li m:id="b_wr_sku_goods_img">
+													<img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+												</li>
+												<span m:id="l_sku_img_check_contain"></span>
+											</span>
+											<span m:id="img_check_list_flg_def"></span>
+										</span>
+									</span>
+								</ul>
+							</div>
+							<!-- /.carousel -->
+						</span>
+					</div>
+					<!-- /.flexsliderWrap -->
+			  <!-- <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span>
+			  <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span>
+			  <ul class="goods_detail_item_sns">
+				<li>
+				  <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
+				  <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+				</li>
+				<li>
+				  <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+				  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</li>
+				<li> -->
+				  <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
+				<!-- </li>
+			  </ul> -->
+				</div>
+				<!-- /.goods_detail_view -->
+				<div class="goods_detail_item_tag">
+					<object class="xsp_obj" m:id="b_var_varUrl"></object>
+					<!--▼▼▼フォーム▼▼▼-->
+						<object class="xsp_obj" m:id="b_size_valiationSize"></object>
+							<form method="get" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm1" action="goodsDetail.html">
+								<span m:id="l_notPre_settle_040">
+									<span m:id="l_pre_disp_installment">
+										<span m:id="l_pre_disp_goods_pay_times">
+											<span m:id="l_pre_disp_goods_pay_term">
+												<span m:id="l_pre_disp_total_installment">
+													<div class="price_info_area">
+														<div class="price_info">
+															<div class="price_split_wrap">
+																<p class="kakaku">【税込価格】</p>
 													<p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
-			                                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+														<span m:id="l_notEmp_memberSpecialDiscountOpacity">
 															<span class="num">
 																<span class="value">
-			                                                <span m:id="l_pre_disp_installment">
+																	<span m:id="l_pre_disp_installment">
 																		<span m:id="disp_installment">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
-			                                        </span>
-			                                    </p>
+														</span>
+													</p>
 													<span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
 													<dl class="price_detail">
 														<dt>
@@ -1878,379 +1966,399 @@ function showCartButton1(obj){
 														</dt>
 														<dd>
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_total_installment">
+																<span m:id="l_pre_disp_total_installment">
 																	<span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </span>
+																</span>
+															</span>
 														</dd>
 														<dt class="indent">
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
 														</dt>
 														<dd>
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_installment">
+																<span m:id="l_pre_disp_installment">
 																	<span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </span>
+																</span>
+															</span>
 														</dd>
 														<dt class="indent">
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
 														</dt>
 														<dd>
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_goods_pay_times">
+																<span m:id="l_pre_disp_goods_pay_times">
 																	<span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
-			                                                    </span>
-			                                                </span>
+																</span>
+															</span>
 														</dd>
 														<dt class="indent">
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
 														</dt>
 														<dd>
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                                                    <span m:id="l_pre_disp_goods_pay_term">
+																<span m:id="l_pre_disp_goods_pay_term">
 																	<span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
-			                        </span>
-			                    </span>
+																</span>
+															</span>
 														</dd>
 														<dt>
 															<span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
 														</dt>
 														<dd>
-			                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-			                            <span m:id="l_notEqu_pretaxPrice">
-			                                <span m:id="b_wr_pretaxPrice">24800</span>
-			                            </span>
-			                            <span m:id="b_wr_actualSalePrice">17800</span>
+															<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+																<span m:id="l_notEqu_pretaxPrice">
+																	<span m:id="b_wr_pretaxPrice">24800</span>
+																</span>
+															<span m:id="b_wr_actualSalePrice">17800</span>
 																
-			                        <!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
-			                        <!-- 会員限定で値引きの場合、表示される -->
+															<!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+															<!-- 会員限定で値引きの場合、表示される -->
 															<span>円&nbsp;</span>
-			                        <!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
-			                        <span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
-			                    </span>
+															<!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+															<span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+														
 														</dd>
 													</dl>
-												</span>
+												</div><!-- price_split_wrap -->
+											</div><!-- price_info -->
+											<ul class="price-notice">
+												<li>※金額はすべて税込みです。</li>
+												<li>※代金引換の場合は、一括払いのみとなります。</li>
+											</ul>
+										</div><!-- price_info_area -->
+									</span>
+								</span>
+							</span>
+						</span>
+					</span> 
+							
+					<div class="ikkatu_wrap" style="display: none;">
+					<p class="goods_detail_item_price">
+						<span class="goods_detail_item_price_prefix"><span m:id="l_notEmp_memberSpecialDiscountOpacity">価格</span></span>
+						<span class="goods_detail_item_price_yen">
+							<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+								<span m:id="l_notEqu_pretaxPrice">
+									<span m:id="b_wr_pretaxPrice">24800</span>
+								</span>
+								<span m:id="b_wr_actualSalePrice">17800</span>
+							</span>
+							<!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+							<!-- 会員限定で値引きの場合、表示される -->
+							<span>円(税込)</span>
+							<!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+							<span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+						</span>
+						</p>
+						<!-- /.goods_detail_item_price -->
+						<span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+					</div>
+					<!-- /.goods_detail_item_price -->
+				  <!-- 商品個別送料案内 -->
+				  <span m:id="l_pre_individual_postage">
+					<p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
+						<span m:id="l_pre_evenness_postage">
+						  <!-- 一律送料 -->
+						  <span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
+						</span>
+						<span m:id="l_not_pre_evenness_postage">
+						  <!-- 地域別送料 -->
+						  <a m:id="h_link_goodsPostage" class="pc_only" href="#">
+							<span m:id="b_write_postageGropName"></span>はコチラ
+						  </a>
+						  <script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
+						  <a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
+						</span>
+					</p>
+				  </span>
+						<!-- /.goods_detail_item_postage -->
+						<span m:id="l_equ_memberSpecialDiscount"><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span>
+						<span m:id="l_equ_memberSpecialDiscount">
+							<span m:id="l_notPre_settle_040">
+								<span m:id="l_pre_disp_installment">
+									<span m:id="l_pre_disp_goods_pay_times">
+										<span m:id="l_pre_disp_goods_pay_term">
+											<span m:id="l_pre_disp_total_installment">
+												<!-- <span m:id="l_pre_disp_installment"> -->
+												<table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
+													<tr>
+														<th class="top">分割払価格</th>
+														<td>：
+															<span m:id="l_pre_disp_total_installment">
+																<span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th style="vertical-align:top;">分割払金</th>
+														<td>：
+															<span m:id="l_pre_disp_installment">
+																<span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th>支払回数</th>
+														<td>：
+															<span m:id="l_pre_disp_goods_pay_times">
+																<span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
+															</span>
+														</td>
+													</tr>
+													<tr>
+														<th>支払期間</th>
+														<td>：
+															<span m:id="l_pre_disp_goods_pay_term">
+																<span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
+															</span>
+														</td>
+													</tr>
+												</table>
 											</span>
 										</span>
 									</span>
-								</span> 
-							</div><!-- price_split_wrap -->
-						</div><!-- price_info -->
-						<ul class="price-notice">
-							<li>※金額はすべて税込みです。</li>
-							<li>※代金引換の場合は、一括払いのみとなります。</li>
-						</ul>
-					</div><!-- price_info_area -->
-			                <!-- /.goods_detail_item_price -->
-                      
-                      <!-- 商品個別送料案内 -->
-                      <span m:id="l_pre_individual_postage">
-                        <p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
-                            <span m:id="l_pre_evenness_postage">
-                              <!-- 一律送料 -->
-                              <span m:id="b_write_evenness_postageGroupName"></span>&nbsp;:<span m:id="b_write_evenness_postage"></span>&nbsp;円
-                            </span>
-                            <span m:id="l_not_pre_evenness_postage">
-                              <!-- 地域別送料 -->
-                              <a m:id="h_link_goodsPostage" class="pc_only" href="#">
-                                <span m:id="b_write_postageGropName"></span>はコチラ
-                              </a>
-                              <script m:id="js_file" language="JavaScript" src="../../../contents/js/modal.js" type="text/javascript"></script>
-                              <a id="openModal" class="sp_only" href="javascript:void(0)">個別送料モーダル</a>
-                            </span>
-                        </p>
-                      </span>
-			                <!-- /.goods_detail_item_postage -->
-			                <span m:id="l_equ_memberSpecialDiscount"><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span>
-			                <span m:id="l_equ_memberSpecialDiscount">
-			                    <span m:id="l_notPre_settle_040">
-			                        <span m:id="l_pre_disp_installment">
-			                            <span m:id="l_pre_disp_goods_pay_times">
-			                                <span m:id="l_pre_disp_goods_pay_term">
-			                                    <span m:id="l_pre_disp_total_installment">
-			                                        <!-- <span m:id="l_pre_disp_installment"> -->
-			                                        <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-			                                            <tr>
-			                                                <th class="top">分割払価格</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_total_installment">
-			                                                        <span m:id="disp_total_installment_memberSpecial">12,460</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th style="vertical-align:top;">分割払金</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_installment">
-			                                                        <span m:id="disp_installment_memberSpecial">1,780</span>&nbsp;円&nbsp;
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th>支払回数</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_goods_pay_times">
-			                                                        <span m:id="disp_goods_pay_times_memberSpecial">7回</span>&nbsp;回
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                            <tr>
-			                                                <th>支払期間</th>
-			                                                <td>：
-			                                                    <span m:id="l_pre_disp_goods_pay_term">
-			                                                        <span m:id="disp_goods_pay_term_memberSpecial">7</span>&nbsp;ヶ月
-			                                                    </span>
-			                                                </td>
-			                                            </tr>
-			                                        </table>
-			                                    </span>
-			                                </span>
-			                            </span>
-			                        </span>
-			                    </span>
-			                </span>
-			                <!-- /会員限定で値引きの場合、表示される -->
-			                <div class="goods_detail_item_order">
-			                    <span m:id="l_Emp_groupGoods">
-			                        <span m:id="l_equ_stock_manage_unit">
-			                            <div class="goods_detail_item_order01 tooltip_wrap">
-			                                <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
-			                                <div class="select_wrap">
-			                                    <span class="select_label">色・<br class="viewSp">サイズ：</span>
-			                                        <span m:id="l_equ_valiationSize">
-			                                            <span m:id="b_wr_goods_sku_name"></span>
-			                                        </span>
-			                                        <span class="select_box">
-			                                        <span m:id="l_notEqu_valiationSize">
-			                                            <select m:id="h_sel_goods_sku_code_renewal1">
-			                                                <option value="">--選択してください--</option>
-			                                                <option m:id="h_opt_variations" value="">白</option>
-			                                                <option m:id="dummy" value="">黒</option>
-			                                                <option m:id="dummy" value="">赤</option>
-			                                                <option m:id="dummy" value="">青</option>
-			                                                <option m:id="dummy" value="">緑</option>
-			                                            </select>
-			                                            <span m:id="l_ite_variation">
-			                                                <object class="xsp_obj" m:id="b_var_url"></object>
-			                                                <object class="xsp_obj" m:id="b_var_staticUrl"></object>
-			                                                <input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
-			                                                <input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
-			                                            </span>
-			                                        </span>
-			                                    </span>
-			                                </div>
-			                                <!-- /.select_wrap -->
-			                            </div>
-			                        </span>
-			                        <div class="goods_detail_item_order02">
-			                            <div class="select_wrap">
-			                                <div class="select_wrap">
-			                                    <span class="select_label">数量：</span>
-			                                    <span class="select_box">
-			                                        <!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
-			                                        <select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
-			                                            <option m:id="h_pull_order_num" value="3">3</option>
-			                                            <option m:id="dummy">1</option>
-			                                            <option m:id="dummy">2</option>
-			                                        </select>
-			                                        <!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
-			                                    </span>
-			                                </div>
-			                                <!-- /.select_wrap -->
-			                            </div>
-			                            <!-- /.select_wrap -->
-			                        </div>
-			                        <span m:id="l_pre_min_order_num2">
-			                            <th>最低購入数<span class="conma">：</span></th>
-			                            <td><span m:id="disp_min_order_num">2</span></td>
-			                        </span>
-			                        <!-- のし・ラッピング可否 -->
-			                        <!-- <span m:id="l_pre_no_wrapping">
-			                            <img m:id="h_img_no_wrapping" src="../../../contents/shop/00000003/icon/no_wrapping.gif" alt="のし・ラッピング不可" align="left" />
-			                        </span> -->
-			                    </span>
-
-			                </div>
-			                <!-- /.goods_detail_item_order -->
-
-			                <a name="h_sel_goods_sku_code1"></a>
-
-			                <span m:id="l_pre_omake_image2">
-			                    <!-- おまけ画像２ -->
-			                    <div class="present2">
-			                        <img m:id="h_img_omake_image2" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像2" />
-			                    </div>
-			                </span>
-			                <span m:id="l_pre_omake_image3">
-			                    <!-- おまけ画像３ -->
-			                    <div class="present3">
-			                        <img m:id="h_img_omake_image3" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像3" />
-			                    </div>
-			                </span>
-			            </form>
-			            <!--▲▲▲フォーム▲▲▲-->
-			            <div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
-			            <!--降雪対応文言
-			            <ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
-			            降雪対応文言-->
-			            <!-- アイコン -->
-			            <!-- <div > -->
-			            <div class="box_itembtn">
-			                <span m:id="l_ite_icon">
-			                    <img m:id="h_img_icon_file" src="../../../contents/shop/00000002/icon/icon_01.gif" alt="注目" />
-			                </span>
-			            </div>
-			            <!--/ アイコン -->
-
-			            <div class="goods_detail_item_order_cart">
-			                <div class="item_bt_01 cartButton1">
-			                    <!-- SKU商品用カートイン -->
-			                    <span m:id="l_equ_type_sku">
-			                        <span m:id="l_equ_can_addCartSku">
-			                            <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
-			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			                                <input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
-			                                <input m:id="h_hid_ext_goods_sku_code_renewal" type="hidden" name="ext_goods_sku_code" value="" />
-			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <a m:id="h_link_canAddCart1_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                               <!--  <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
-			                            </form>
-			                        </span>
-			                    </span>
-			                    <!-- 単品商品用カートイン -->
-			                    <span m:id="l_equ_type_simple">
-			                       <span m:id="l_equ_can_addCartSku">
-			                            <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
-			                                <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
-			                                <input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
-			                                <input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-			                                <input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
-			                                <input m:id="h_hid__S" type="hidden" name="_S" value="" />
-			                                <input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
-			                                <a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
-			                                <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
-			                            </form>
-			                        </span>
-			                    </span>
-			                </div>
-			                <span m:id="l_notEqu_canAddCart">
-			                    <span m:id="l_notPre_member">
-			                        <span m:id="l_equ_actualSaleStatus">
-			                            <p class="i_caution_01">こちらの商品は先行販売商品です。会員の方のみ先行して購入可能となっております。</p>
-			                        </span>
-			                        <span m:id="l_notEqu_goodsLimitStatus">
-			                            <p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_pre_member">
-			                        <span m:id="l_equ_goodsLimitStatus">
-			                            <p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_notEqu_multiple">
-			                        <p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
-			                    </span>
-			                    <span m:id="l_equ_multiple">
-			                        <span m:id="l_notEqu_catalogue">
-			                            <p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
-			                        </span>
-			                    </span>
-			                    <span m:id="l_notEqu_regularly">
-			                        <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
-			                    </span>
-			                    <span m:id="l_equ_canNot_addCartSku_radio" class="soldOutButton1">
-			                        <img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
-			                    </span>
-			                    <span m:id="l_equ_noStockSalesStatus">
-			                        <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
-			                    </span>
-		                      <div class="box_itembtn selectButton1">
-                            <span m:id="l_equ_type_sku">
-                            <span m:id="l_equ_can_addCartSku">
-                            <span m:id="l_notEqu_select_renewal">
-		                            <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-		                        </span></span></span>
-		                      </div>
-                        </span>
-			            </div>
-			            <!-- /.goods_detail_item_order_cart -->
-
-
-						<span m:id="l_pre_member">
-				            <div class="goods_detail_item_order_fav tar s_tac">
-				                <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm1.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
-				            </div>
+								</span>
+							</span>
 						</span>
-
-			            <!-- チャネル別決済種別制限取得 -->
-			            <div class="goods_detail_item_plan">
-			                <object class="xsp_obj" m:id="e_var_settlementMap"></object>
-			                <p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
-			                <ul class="goods_detail_item_plan_list">
-								<li><img src="contents/c/icon/settle_ok_040.gif" alt="後払い利用可"></li>
-								<li><img src="contents/c/icon/settle_ok_130.gif" alt="クレジットカード(GMOマルチペイメント)利用可"></li>
-								<li><img src="contents/c/icon/settle_ok_020.gif" alt="代金引換利用可"></li>
-			                    <!-- <li><span class="icon-circle"></span>クレジットカード</li>
-			                    <li><span class="icon-circle"></span>代金引換</li> -->
-								<!-- <span m:id="l_ite_valid_settle">
-                            <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+						<!-- /会員限定で値引きの場合、表示される -->
+						<div class="goods_detail_item_order">
+							<span m:id="l_Emp_groupGoods">
+								<span m:id="l_equ_stock_manage_unit">
+									<div class="goods_detail_item_order01 tooltip_wrap">
+										<div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
+										<div class="select_wrap">
+											<span class="select_label">色・<br class="viewSp">サイズ：</span>
+												<span m:id="l_equ_valiationSize">
+													<span m:id="b_wr_goods_sku_name"></span>
+												</span>
+												<span class="select_box">
+												<span m:id="l_notEqu_valiationSize">
+													<select m:id="h_sel_goods_sku_code_renewal1">
+														<option value="">--選択してください--</option>
+														<option m:id="h_opt_variations" value="">白</option>
+														<option m:id="dummy" value="">黒</option>
+														<option m:id="dummy" value="">赤</option>
+														<option m:id="dummy" value="">青</option>
+														<option m:id="dummy" value="">緑</option>
+													</select>
+													<span m:id="l_ite_variation">
+														<object class="xsp_obj" m:id="b_var_url"></object>
+														<object class="xsp_obj" m:id="b_var_staticUrl"></object>
+														<input m:id="h_hid_variation_key" type="hidden" name="" id="" value="" />
+														<input m:id="h_hid_variation_mortgage_possibility_num" type="hidden" name="" id="" value="" />
+													</span>
+												</span>
+											</span>
+										</div>
+										<!-- /.select_wrap -->
+									</div>
+								</span>
+								<div class="goods_detail_item_order02">
+									<div class="select_wrap">
+										<div class="select_wrap">
+											<span class="select_label">数量：</span>
+											<span class="select_box">
+												<!-- <input m:id="h_txt_order_num_string" type="text" name="order_num_string" value="" size="4" maxlength="2"  class="form_input_amount"/> -->
+												<select m:id="h_sel_order_num" class="form_input_amount" maxlength="2" >
+													<option m:id="h_pull_order_num" value="3">3</option>
+													<option m:id="dummy">1</option>
+													<option m:id="dummy">2</option>
+												</select>
+												<!-- 商品番号：<span m:id="h_ext_goods_code">ext_goods_code</span>-->
+											</span>
+										</div>
+										<!-- /.select_wrap -->
+									</div>
+									<!-- /.select_wrap -->
+								</div>
+								<span m:id="l_pre_min_order_num2">
+									<th>最低購入数<span class="conma">：</span></th>
+									<td><span m:id="disp_min_order_num">2</span></td>
+								</span>
+								<!-- のし・ラッピング可否 -->
+								<!-- <span m:id="l_pre_no_wrapping">
+									<img m:id="h_img_no_wrapping" src="../../../contents/shop/00000003/icon/no_wrapping.gif" alt="のし・ラッピング不可" align="left" />
 								</span> -->
-			                </ul>
-			                <div class="l_con_list_03" style="display: none;">
-			                    <span m:id="l_pre_item_limit">
-			                        <span m:id="l_ite_valid_settle" >
-			                            <img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
-			                        </span>
-			                        <span m:id="l_notEmp_item_limit">
-			                            <br/><br/>※以下の決済方法はご利用いただけません<br/>
-			                            <span m:id="l_ite_item_limit">
-			                                <span m:id="l_equ_item_040">
-			                                    <div class="error">
-			                                        <table>
-			                                            <tr>
-			                                                <td valign="top">
-			                                                    <img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
-			                                                </td>
-			                                                <td>
-			                                                    <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
-			                                                </td>
-			                                            </tr>
-			                                        </table>
-			                                    </div>
-			                                </span>
-			                                <!--
-			                                <div class="error">
-			                                &nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
-			                                <span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
-			                                </div>
-			                                -->
-			                            </span>
-			                        </span>
-			                    </span>
-			                </div>
-			            </div>
-			            <!-- /チャネル別決済種別制限取得 -->
-			            <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
-			            <!-- のし・ラッピング可否 -->
-			            <span m:id="l_pre_no_wrapping">
-			                <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
-			            </span>
-                  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
-                  ・返品時の送料：お客様負担
-                  </p>
-			            <p class="goods_detail_item_txt mt10">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
+							</span>
 
-			            <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
-			            <!-- <p class="notes mt8" style="padding:0.5em;border:1px solid red;color:red;">本商品は10月1日より18,700円（税込）となります。</p> -->
-			        </div>
-			        <!-- /.goods_detail_tag -->
-			    </div>
-			    <!-- /.goods_detail_item -->
-			<!--▲▲▲商品▲▲▲-->
+						</div>
+						<!-- /.goods_detail_item_order -->
+
+						<a name="h_sel_goods_sku_code1"></a>
+
+						<span m:id="l_pre_omake_image2">
+							<!-- おまけ画像２ -->
+							<div class="present2">
+								<img m:id="h_img_omake_image2" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像2" />
+							</div>
+						</span>
+						<span m:id="l_pre_omake_image3">
+							<!-- おまけ画像３ -->
+							<div class="present3">
+								<img m:id="h_img_omake_image3" src="../../../contents/shop/00000003/shop/image/pc_item_img_01.jpg" alt="おまけ画像3" />
+							</div>
+						</span>
+					</form>
+					<!--▲▲▲フォーム▲▲▲-->
+					<div class="error"><span m:id="h_err_0">エラーメッセージ</span></div>
+					<!--降雪対応文言
+					<ecp:include m:id="fs_weather_trouble" filename="kousetsu.html" />
+					降雪対応文言-->
+					<!-- アイコン -->
+					<!-- <div > -->
+					<div class="box_itembtn">
+						<span m:id="l_ite_icon">
+							<img m:id="h_img_icon_file" src="../../../contents/shop/00000002/icon/icon_01.gif" alt="注目" />
+						</span>
+					</div>
+					<!--/ アイコン -->
+
+					<div class="goods_detail_item_order_cart">
+						<div class="item_bt_01 cartButton1">
+							<!-- SKU商品用カートイン -->
+							<span m:id="l_equ_type_sku">
+								<span m:id="l_equ_can_addCartSku">
+									<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+										<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+										<input m:id="h_hid_goods_sku_code_renewal" type="hidden" name="goods_sku_code" value="" />
+										<input m:id="h_hid_ext_goods_sku_code_renewal" type="hidden" name="ext_goods_sku_code" value="" />
+										<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+										<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+										<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
+										<a m:id="h_link_canAddCart1_renewal" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+										<!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
+									</form>
+								</span>
+							</span>
+							<!-- 単品商品用カートイン -->
+							<span m:id="l_equ_type_simple">
+							   <span m:id="l_equ_can_addCartSku">
+									<form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
+										<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
+										<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
+										<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
+										<input m:id="h_hid_order_num_string" type="hidden" name="order_num_string" value="" />
+										<input m:id="h_hid__S" type="hidden" name="_S" value="" />
+										<input m:id="h_hid_goods_stock_num" name="goods_stock_num" value="" />
+										<a m:id="h_link_canAddCart1" href="cart.html" class="productDetail_cart_bt_normal goods_detail_item_order_cart_btn cmn_btn cmn_btn_red btn_icon icon-cart" onclick="">お買い物かごに入れる</a>
+										<!-- <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div> -->
+									</form>
+								</span>
+							</span>
+						</div>
+						<span m:id="l_notEqu_canAddCart">
+							<span m:id="l_notPre_member">
+								<span m:id="l_equ_actualSaleStatus">
+									<p class="i_caution_01">こちらの商品は先行販売商品です。会員の方のみ先行して購入可能となっております。</p>
+								</span>
+								<span m:id="l_notEqu_goodsLimitStatus">
+									<p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
+								</span>
+							</span>
+							<span m:id="l_pre_member">
+								<span m:id="l_equ_goodsLimitStatus">
+									<p class="i_caution_01">こちらの商品は特定会員のみ購入可能な商品です。</p>
+								</span>
+							</span>
+							<span m:id="l_notEqu_multiple">
+								<p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
+							</span>
+							<span m:id="l_equ_multiple">
+								<span m:id="l_notEqu_catalogue">
+									<p class="i_caution_01">こちらの商品は２つ以上の購入はできません。</p>
+								</span>
+							</span>
+							<span m:id="l_notEqu_regularly">
+								<p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
+							</span>
+							<span m:id="l_equ_canNot_addCartSku_radio" class="soldOutButton1">
+								<img src="contents/shop/00000003/image/kanbai5.jpg" alt="完売しました" />
+							</span>
+							<span m:id="l_equ_noStockSalesStatus">
+								<span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
+							</span>
+						  <div class="box_itembtn selectButton1">
+						<span m:id="l_equ_type_sku">
+						<span m:id="l_equ_can_addCartSku">
+						<span m:id="l_notEqu_select_renewal">
+								<img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
+							</span></span></span>
+						  </div>
+					</span>
+					<p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラック」は完売しました。</p>
+					</div>
+					<!-- /.goods_detail_item_order_cart -->
+
+
+					<span m:id="l_pre_member">
+						<div class="goods_detail_item_order_fav tar s_tac">
+								<a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm1.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
+						</div>
+					</span>
+
+					<!-- チャネル別決済種別制限取得 -->
+					<div class="goods_detail_item_plan">
+						<object class="xsp_obj" m:id="e_var_settlementMap"></object>
+						<p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
+						<ul class="goods_detail_item_plan_list">
+							<!-- <li><span class="icon-circle"></span>クレジットカード</li>
+							<li><span class="icon-circle"></span>代金引換</li> -->
+					  <span m:id="l_pre_item_limit">
+					  <span m:id="l_ite_valid_settle_sort">
+						<li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+					  </span>
+					  </span>
+						</ul>
+						<div class="l_con_list_03" style="display: none;">
+							<span m:id="l_pre_item_limit">
+								<span m:id="l_ite_valid_settle_sort" >
+									<img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
+								</span>
+								<span m:id="l_notEmp_item_limit">
+									<br/><br/>※以下の決済方法はご利用いただけません<br/>
+									<span m:id="l_ite_item_limit">
+										<span m:id="l_equ_item_040">
+											<div class="error">
+												<table>
+													<tr>
+														<td valign="top">
+															<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+														</td>
+														<td>
+															<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</span>
+										<!--
+										<div class="error">
+										&nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+										<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+										</div>
+										-->
+									</span>
+								</span>
+							</span>
+						</div>
+					</div>
+					<!-- /チャネル別決済種別制限取得 -->
+					 <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
+					<!-- のし・ラッピング可否 -->
+			  <span m:id="l_pre_no_wrapping">
+				  <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
+			  </span>
+
+			  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
+			  ・返品時の送料：お客様負担
+			  </p>
+					<p class="goods_detail_item_txt mt15">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
+			  
+					<p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
+				</div>
+				<!-- /.goods_detail_tag -->
+			</div>
+			<!-- /.goods_detail_item -->
+		<!--▲▲▲商品▲▲▲-->
 		</div>
 		<!-- /.goods_detail -->
 		</div><!-- goods_wrap -->
