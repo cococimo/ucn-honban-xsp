@@ -199,6 +199,16 @@ function showCartButton1(obj){
     font-size: 3vw;
 	margin-left: 15px;
   }
+  @media screen and (max-width: 767px) {
+	.notic_txt .cmn_link01 {
+		margin-left: 5vw;
+	}
+  }
+  @media screen and (max-width: 320px) {
+	.notic_txt .cmn_link01 {
+		margin-left: 10px;
+	}
+  }
   .notic_txt .cmn_link01:before {
   left: -15px;
   }
@@ -237,17 +247,27 @@ function showCartButton1(obj){
 		padding: 3px 5px;
 		background: #26a903;
 		color: #fff;
-		width:31.2%
+		width:31.6%;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_plan_list li {
+			width:31.2%;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.goods_detail_item_plan_list li {
+			width:30.5%;
+		}
 	}
 	.goods_detail_item_plan_list li:last-child {
 		margin-right: 0;
 	}
 	@media screen and (max-width: 767px){
-		.goods_detail_item_plan_list li:last-child {
+		.goods_detail_item_plan_list li:nth-child(2) {
 			margin-right: 10px;
 		}
-		.goods_detail_item_plan_list li:nth-child(2) {
-			margin-right: 0;
+		.goods_detail_item_plan_list li:nth-child(2n){
+			float: left;
 		}
 	}
 	.goods_detail_item_tag {
@@ -279,6 +299,7 @@ function showCartButton1(obj){
 		width:360px;
 		margin-right: 0;
 		margin:0 auto;
+		background: #fff;
 	}
 	@media (max-width: 767px) {
 		.price_info_area .price_info {
@@ -322,6 +343,11 @@ function showCartButton1(obj){
 		font-weight: bold;
 		font-size: 2.3rem;
 	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_split span.value span {
+		font-size: 1.9rem;
+		}
+	}
 	.price_info_area .price_info .price_split_wrap .price_split span.num,
 	.price_info_area .price_info .price_split_wrap .price_split span.num span {
 		font-weight: bold;
@@ -339,6 +365,11 @@ function showCartButton1(obj){
 	}
 	.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
 		padding-left: 1em;
+	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+			padding-left:.5em;
+		}
 	}
 	.price_info_area .price_info .price_split_wrap .price_detail dd {
 		padding:5px 5px 5px 40%;
