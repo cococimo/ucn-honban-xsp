@@ -788,9 +788,8 @@ $(function(){
 
 <style>
 	/* ABtest */
-	.cart_ad_under {display: none;}
 	@media print,screen and (min-width: 767px){
-		.cart_ad_under {max-width:810px;display: none;}
+		.cart_ad_under {max-width:810px;}
 	}
 </style>
 
@@ -1431,63 +1430,9 @@ $(function () {
 					<input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
 				<!--▼▼▼ side_menu ▼▼▼-->
 				<div class="input_side">
-					<div class="cart_addition mb20 s_mb10 input_addition cart_order">
-						<div class="cart_addition_in mb30 s_mb15 cart_ad_top">
-							<h2 class="cart_addition_tit viewPc">お申込み内容</h2>
-							<p class="viewSp mb5">[お申込み内容]</p>
-							<div class="wrap_table">
-								<table class="cart_order_table">
-									<!-- <tr class="viewPc"><th align="center">商品名</th>
-										<th class="memadd_table_02_w_02">商品単価</th>
-										<th class="memadd_table_02_w_03">数量</th>
-										<th class="memadd_table_02_w_02">小計</th>
-									</tr> -->
-									<span m:id="l_ite_detail">
-										<object class="xsp_obj" m:id="e_var_memberSpecialDiscount"></object>
-										<tr>
-											<td class="center color_w_b"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></td>
-		
-											<td>
-												<p class="sp_th">一括払価格</p>
-												<!--  <span m:id="b_wr_goods_price_tax">5000</span> 円 -->
-												<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_goods_special_price">1000</span> 円</span>
-												<span m:id="l_notEqu_memberSpecialDiscount">
-													<span m:id="b_wr_goods_price_tax">2000 円　</span> 円
-												</span>
-											</td>
-											<td>
-												<p class="sp_th">数量</p>
-												<span m:id="disp_detail_order_num">3</span>
-											</td>
-											<td>
-												<!-- <span m:id="b_wr_total_goods_price">15000</span> 円-->
-												<p class="sp_th">小計</p>
-												<span m:id="l_equ_memberSpecialDiscount"><span m:id="disp_total_goods_special_price">1000</span> 円</span>
-												<span m:id="l_notEqu_memberSpecialDiscount"><span m:id="b_wr_total_goods_price">2000</span> 円</span>
-											</td>
-										</tr>
-									</span>
-										<!--▼▼▼ side_商品合計金額 ▼▼▼-->
-										<tr>
-											<td colspan="3" style="text-align:right;">商品合計:
-												<!-- <span m:id="b_wr_total_price">9500</span> 円-->
-												<span style="padding-left:30px;">
-													<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
-													<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
-												</span>
-											</td>
-										</tr>
-										<!--▲▲▲ side_商品合計金額 ▲▲▲-->
-									</table>
-									<p class="tar mt5"><a m:id="h_link_cart" href="cart.html" class="cmn_link01" style="font-size:.85em">お申込み内容の変更</a></p>
-								</div>
-							</div>
-							
-						</div>
-						
 						<!-- <div class="cart_addition mb30 s_mb15 input_addition">
 							<span m:id="l_pre_disp_goodsPremium">
-								<div class="cart_addition_in mb50 s_mb0">
+								<div class="cart_additxon_in mb50 s_mb0">
 									<div class="cart_addition_in mb50 s_mb25">
 										<h2 class="cart_addition_tit">プレゼント品</h2>
 										<span m:id="l_ite_goodsPremium">
