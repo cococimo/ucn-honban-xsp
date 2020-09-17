@@ -57,7 +57,7 @@ $(function() {
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/kigokochi/kigokochi.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.exdropdown.0.1.3.js"></script>
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
-		<script >
+	<script >
 		/*
 			jQuery(function($){
 				$('ul.example').exDropDown();
@@ -65,8 +65,26 @@ $(function() {
 			*/
 			jQuery(function($){
 			//	$('ul.example').exDropDown();
-				$('.searchShop').on('click',function(){
-				$('.gsearchShop').submit();
+				$('.searchShop1').on('click',function(){
+				$('#gsearchShop1').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop2').on('click',function(){
+				$('#gsearchShop2').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop3').on('click',function(){
+				$('#gsearchShop3').submit();
 					return false;
 				});
 							});
@@ -239,14 +257,8 @@ ul.example.other li{
 }
 
 
-<!-- 202001_DLPO ソート強調用CSS  -->
-@media all and (max-width: 640px){
-.SelectSort{
-font-weight:bold;
-}
-}
 
-<!-- /202001_DLPO ソート強調用CSS  -->
+
 
 
 @media (max-width: 768px){
@@ -569,11 +581,11 @@ font-weight:bold;
                 <input m:id="searchForm_page" type="hidden" name="page" value="1">
                 <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
                 </form>
-                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop1">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
                 <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop searchShop1"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -639,16 +651,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		
 
 
-
-
-<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
-<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
-<!-- ▲▲▲header2▲▲▲ -->  
-
-
-
-
-			<div class="sp_menu__login">
+		<div class="sp_menu__login">
 				<ul class="sp_menu__login__btn">
 	        <li class="sp_menu__login__btn__login">
 						<div m:id="l_notPre_member_login_button_shop">
@@ -662,6 +665,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					</li>
 				</ul>
 			</div>
+
+<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
+<!-- ▲▲▲header2▲▲▲ -->  
+
+
+
+
+	
 			<div class="sp_menu__logout">
 				<ul class="sp_menu__logout__btn">
 	        <li class="sp_menu__logout__btn__logout">
@@ -711,13 +723,13 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					      <input m:id="searchForm_page" type="hidden" name="page" value="1">
 					      <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
 	</form> -->
-					    <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+					    <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop2">
 					      <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
 					      <div class="box_01">
 					        <input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名や商品番号、キーワードで検索。" autocomplete="off" id="search_form_pc">
 					        <input type="hidden" id="category_filter_type_pc" value="00000006">
 					      </div>
-					      <div class="box_02"> <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop">検索</a> </div>
+					      <div class="box_02"> <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop searchShop2">検索</a> </div>
 					    </form>
 					    <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
 					      <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
@@ -800,43 +812,20 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		//]]>
 
 
-window.addEventListener("load", function (){
- if($('.goods_list_con_box_02 li:not(:has(a))').length){
-  $('.goods_list_con_box_02 li:not(:has(a))').addClass('SelectSort');
- } else {
-  $('.goods_list_con_box_02 li.last').addClass('SelectSort');
- }
-});
+
+
+
 
 
 		</script>
 
-<!-- 201904_DLPOABテストページネーション最適化 -->
-<script type="text/javascript">
-$(function(){
- //1ページ目の場合、ユーザーが前へボタンを押さないように文字色を薄くする
- if(!($(".prev > span > a").length)) {
-  $(".prev > span").attr("style","background: #464646 center center;color: #969696;padding: 0 2px;");
- //最終ページの場合、ユーザーが次へボタンを押さないように文字色を薄くする
- } else if(!($(".next > span > a").length)) {
-  $(".next > span").attr("style","background: #464646 center center;color: #969696;padding: 0 2px;");
- }
-});
-</script>
-<!-- 201904_DLPOABテストページネーション最適化// -->
 
-<!-- 202001_DLPO ソート強調用Javascript  -->
-<script type="text/javascript">
 
-  window.addEventListener("load", function (){
-   if($('.goods_list_con_box_02 li:not(:has(a))').length){
-    $('.goods_list_con_box_02 li:not(:has(a))').addClass('SelectSort');
-   } else {
-    $('.goods_list_con_box_02 li.last').addClass('SelectSort');
-   }
-  });
-  </script>
-<!-- /202001_DLPO ソート強調用Javascript  -->
+
+
+
+
+
 
   <object class="xsp_obj" m:id="e_var_standardCategory">
   </object>
@@ -1136,13 +1125,7 @@ window.onload = function() {
 	}
 </style>
 
-<!-- 202001_DLPO ソート強調用CSS  -->
-<style>
-  .SelectSort{
-    font-weight:bold;
-  }
-</style>
-<!-- /202001_DLPO ソート強調用CSS  -->
+
 
            <!-- ▼▼▼検索▼▼▼ -->
 <div class="search_area cf" id="search_sg">
@@ -1161,14 +1144,14 @@ window.onload = function() {
                 <input m:id="searchForm_page" type="hidden" name="page" value="1">
                 <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
                 </form>-->
-                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop3">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
                 <div class="box_01">
 	                <input type="text" name="keyword" maxlength="200" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc_cat">
 	                <input type="hidden" id="category_filter_type_pc_cat" value="00000006">
                 </div>
                 <div class="box_02">
-                	<a href="javascript:void(0);" id="search_btn_pc_cat" class="searchShop"><span>検索</span></a>
+                	<a href="javascript:void(0);" id="search_btn_pc_cat" class="searchShop searchShop3"><span>検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -1182,7 +1165,7 @@ window.onload = function() {
 			<p class="word_area_tit">よく検索されるキーワード</p>
 			<ul class="word_area_list">
 				<li><a href="/shop/category/001001008/list/?il=goodsSearch-new-kw">新商品</a></li>
-				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83E%81%5B%83%8B&il=goodsSearch-linen-kw">ウール</a></li>
+				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%8A%83l%83%93&il=goodsSearch-linen-kw">リネン</a></li>
 				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83I%81%5B%83K%83j%83b%83N%83R%83b%83g%83%93&il=goodsSearch-organiccotton-kw">オーガニックコットン</a></li>
 				<li><a href="/shop/searchShopShop.do?_S=iikigokochi&keyword=%83%8F%83C%83h%83p%83%93%83c&il=goodsSearch-widepants-kw">ワイドパンツ</a></li>
 			
@@ -1318,6 +1301,11 @@ window.onload = function() {
  	<div class="cate_ttl">
 
       <p class="add_num"><!--<span m:id="l_notEmp_keyword">--><!--</span>--><span m:id="l_notEqu_categolySearchResult"><!--<span class="fon_01">00,000</span>件中、--><span class="fon_01">対象商品数：<span m:id="b_wr_searchResult_numberOfRecords">5</span></span>件</span></p>
+
+
+<div class="xf_turtlebanner_div" style="padding-bottom:20px;"><a href="/shop/static/happy20s/"><img src="/shop/static/happy20s//contents/shop/00000006/shop/image/kigokochi/happy20s/happy20s_sp.jpg" style="width:100%;"></a></div>
+
+
 
 <!-- インクルード追加 -->
   <span m:id="l_notEqu_searchResult_numberOfRecords">

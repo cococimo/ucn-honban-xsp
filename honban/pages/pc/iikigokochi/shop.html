@@ -84,8 +84,26 @@ $(function() {
 			*/
 			jQuery(function($){
 			//	$('ul.example').exDropDown();
-				$('.searchShop').on('click',function(){
-				$('.gsearchShop').submit();
+				$('.searchShop1').on('click',function(){
+				$('#gsearchShop1').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop2').on('click',function(){
+				$('#gsearchShop2').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop3').on('click',function(){
+				$('#gsearchShop3').submit();
 					return false;
 				});
 							});
@@ -227,6 +245,7 @@ $(function() {
 }
 }
 </style>
+
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/side_menu.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi_top.css?v=2" type="text/css" media="all" />
 <!-- InstanceEndEditable -->
@@ -369,11 +388,11 @@ $(function() {
                 <input m:id="searchForm_page" type="hidden" name="page" value="1">
                 <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
                 </form>
-                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop1">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
                 <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" id="searchShop2" id="searchShop13" class="searchShop searchShop1"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -739,7 +758,11 @@ function initCorners() {
     #contents .wrap_main .slick-next {right: 3vw !important;}
   }
 </style>
-
+<style>
+  #contents #wmainimages .mainimages .slick-list .slick-slide a:hover img {
+    opacity: 1;
+  }
+</style>
 <div class="wrap_main wrap_pc">
 	<div class="main" id="wmainimages">
 
@@ -748,40 +771,41 @@ function initCorners() {
 		<div class="mainimages">
 
 <!--
-  <div><a href="/shop/static/review/?il=top_review_carousel"  class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/review.jpg" alt="期間限定！レビューを書いてポイントGETキャンペーン" /></a></div>-->
+  <div><a href="/shop/static/review/?il=top_review_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/review.jpg" alt="期間限定！レビューを書いてポイントGETキャンペーン" /></a></div>-->
 
 
+  <div><a href="/shop/static/mask/?il=top_mask_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/mask/mask_main2.jpg" alt="肌にやさしい「高機能シルクマスク」" /></a></div>
 
 
-
-  <div><a href="/shop/static/feature36/?il=top_feature36_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature36/main-visual_top2.jpg" alt="オールタイムサンダル特集" /></a></div>
-
-  <div><a href="/shop/static/feature_in14/?il=top_feature_in14_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature_in14/feature_in14_top.jpg" alt="2020夏 公式アンバサダー募集" /></a></div>
-
-
-  <div><a href="/shop/category/001001008/list/?il=top-newitem-carousel"  class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/main_bland_2020sum.jpg" alt="夏の新作アイテムはこちら" /></a></div>
-
-
-
-  <div><a href="/shop/static/happy20s/?il=top_happy20s_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/happy20s/happy20s_top.jpg" alt="2020夏 ハッピーサイズコレクション" /></a></div>
-
-
-  <div><a href="/shop/static/limited_20s/?il=top_limited_20s_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/limited_20s/limited_20s_top.jpg" alt="2020夏 ウェブサイト限定カラー" /></a></div>
-
-
-
-  <div><a href="/shop/static/organic_inner/?il=top_organic_inner_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/organic_inner/organic_inner_main.jpg" alt=" 素肌に触れるものにこそ。オーガニックコットン100％のインナー特集" /></a></div>
-
-  <div><a href="/shop/static/interview_20s/?il=top_interview_20s_carousel"  class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/interview_20s/interview_20s_top.jpg" alt=" ［インタビュー］素材と生きる。雑貨店「in・kyo」店主長谷川ちえさん" /></a></div>
-
-
-
-
-
-<div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654&il=top_catalog_carousel" class="wrap_pc" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/main_cata.jpg" alt="カタログのお申込み" /></a></div>
+  <div><a href="/shop/static/feature36/?il=top_feature36_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature36/main-visual_top2.jpg" alt="オールタイムサンダル特集" /></a></div>
 
 <!--
-      <div><a href="/shop/static/feature25/?il=top_feature25_carousel" class="wrap_pc" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature25/main-visual.jpg" alt="“着心地がいい服”の素材" /></a></div>
+  <div><a href="/shop/static/feature_in14/?il=top_feature_in14_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature_in14/feature_in14_top.jpg" alt="2020夏 公式アンバサダー募集" /></a></div>
+-->
+
+  <div><a href="/shop/category/001001008/list/?il=top-newitem-carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/main_bland_2020midsum.jpg" alt="盛夏の新作アイテムはこちら" /></a></div>
+
+
+
+  <div><a href="/shop/static/happy20s/?il=top_happy20s_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/happy20s/happy20s_top.jpg" alt="2020夏 ハッピーサイズコレクション" /></a></div>
+
+
+
+
+
+
+  <div><a href="/shop/static/organic_inner/?il=top_organic_inner_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/organic_inner/organic_inner_main.jpg" alt=" 素肌に触れるものにこそ。オーガニックコットン100％のインナー特集" /></a></div>
+
+  <div><a href="/shop/static/interview_20s/?il=top_interview_20s_carousel"  class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/interview_20s/interview_20s_top.jpg" alt=" ［インタビュー］素材と生きる。雑貨店「in・kyo」店主長谷川ちえさん" /></a></div>
+
+
+
+
+
+<div><a href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654&il=top_catalog_carousel" class="wrap_pc variation-hover" target="_blank"><img src="/contents/iikigokochi/shop/image/kigokochi/main_cata.jpg" alt="カタログのお申込み" /></a></div>
+
+<!--
+      <div><a href="/shop/static/feature25/?il=top_feature25_carousel" class="wrap_pc variation-hover" target="_blank"><img src="/contents/shop/00000006/shop/image/kigokochi/feature25/main-visual.jpg" alt="“着心地がいい服”の素材" /></a></div>
 
 
 -->
@@ -924,7 +948,7 @@ function initCorners() {
 <object class="xsp_obj" m:id="e_var_autoRecommendGoodsList"></object>
 <br clear="all">
 
-    <!--▼▼▼20200326▼▼▼-->
+    <!--▼▼▼20200326▼▼▼
     <div class="innercategory2" style="margin-bottom:30px;font-size:13px;">
         <h2 align="center" style="padding-top: 10px;font-size:15px;"><span style="color:dimgray;">新型コロナウィルスの影響による発送業務・お問い合わせに関するお知らせ</span></h2>
         <p style="text-align: center;padding-top:10px;">2020年4月8日</p>
@@ -942,7 +966,7 @@ function initCorners() {
           ご迷惑をおかけしますが、何卒宜しくお願いいたします。
             </p>
     </div>
-　　<!--▲▲▲20200326▲▲▲-->
+▲▲▲20200326▲▲▲-->
 
 
     <!--▼▼▼20191015▼▼▼
@@ -993,9 +1017,9 @@ function initCorners() {
 
     <!--▼▼▼メンテナンスお知らせ▼▼▼ 
     <div class="innercategory2" style="margin-bottom:30px;">
-      <h2 align="center" style="padding-top: 10px;"><span style="color:dimgray;">2月26日(水) 14:00&#xFF5E;15:00 サーバーメンテナンスのお知らせ</span></h2>
-      <p style="text-align: center;padding-top:10px;">2020年2月26日</p>
-      　 <p align="center" style="padding-top: 10px;">本サイトは2月26日(水) 14:00&#xFF5E;15:00にサーバーのメンテナンスを実施します。<br>それに伴い、メンテナンス中はサイトの閲覧およびサービスを一時休止いたします。<br>メンテナンス期間中はご迷惑をおかけいたしますが、何卒ご理解賜りますようお願い申し上げます。<br><br>※メンテナンスの時間は変更される場合がありますので、ご了承ください。</p>
+      <h2 align="center" style="padding-top: 10px;"><span style="color:dimgray;">6月10日(水) 午前6時&#xFF5E;6時10分 サイトメンテナンスのお知らせ</span></h2>
+      <p style="text-align: center;padding-top:10px;">2020年6月9日</p>
+      　 <p align="center" style="padding-top: 10px;">本サイトは6月10日(水) 午前6時&#xFF5E;6時10分頃にメンテナンスを実施します。<br>それに伴い、メンテナンス中はサイトの閲覧およびサービスを一時休止いたします。<br>メンテナンス期間中はご迷惑をおかけいたしますが、何卒ご理解賜りますようお願い申し上げます。<br><br>※メンテナンスの時間は変更される場合がありますので、ご了承ください。</p>
      </div>
      ▲▲▲メンテナンスお知らせ▲▲▲-->
 
@@ -1192,19 +1216,18 @@ function initCorners() {
           <span class="each_height_adjust">
             <div>	
               <div class="newitem">
-                <span><span><a href="/item_SDKJ01/?il=top-SDKE01-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ01/DKJ01_01_00001-zoom-s.jpg" alt="ジャパンリネンシャツブラウス" /></a></span></span>
+                <span><span><a href="/item_SDKJ9P/?il=top-SDKJ9P-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ9P/DKJ9P_01_00001_zoom-s.jpg" alt="涼感七分袖ハイネック" /></a></span></span>
               </div>
 
  <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ01/DKJ01.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ01/DKJ04.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ01/DKJ07.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ01/DKJ98.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ9P/DKJ9P.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ9P/DKJ9S.png">
+   
 
  </div>
 
               <p class="txt13 name">
-                <span><a href="/item_SDKE01/?il=top-SDKE01-new" target="_blank"><span>ジャパンリネンシャツブラウス</span></a></span>
+                <span><a href="/item_SDKJ9P/?il=top-SDKJ9P-new" target="_blank"><span>涼感七分袖ハイネック</span></a></span>
               </p>
               </div>
           </span>
@@ -1215,87 +1238,17 @@ function initCorners() {
           <span class="each_height_adjust">
             <div>
               <div class="newitem">
-                <span><span><a href="/item_SDKJ0L/?il=top-SDKJ0L-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ0L/DKJ0L_03_00001-zoom-s.jpg" alt="涼感５分袖ハイネック" /></a></span></span>
+                <span><span><a href="/item_SDKJAL/?il=top-SDKJAL-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJAL/DKJAL_01_00001_zoom-s.jpg" alt="衿リブ切り替えブラウス" /></a></span></span>
               </div>
 
  <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ0L.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ0P.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ0T.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ0X.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ11.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ0L/DKJ9C.png">
-
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAL/DKJAL.png">
+   <!--<img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAL/DKJAN.png">-->
+  
  </div>
 
               <p class="txt13 name">
-                <span><a href="/item_SDKJ0L/?il=top-SDKJ0L-new" target="_blank"><span>涼感５分袖ハイネック</span></a></span>
-              </p>
-              </div>
-          </span>
-
-
-
-
-
-
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKJ1W/?il=top-SDKJ1W-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ1W/DKJ1W_04_00001-zoom-s.jpg" alt="フレンチリネンＴブラウス " /></a></span></span>
-              </div>
-
- <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ1W.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ20.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ23.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ26.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ29.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ1W/DKJ9F.png">
-   </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKJ1W/?il=top-SDKJ1W-new" target="_blank"><span>フレンチリネンＴブラウス</span></a></span>
-              </p>
-              </div>
-          </span>
-
-
-
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKJ3A/?il=top-SDKE3A-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ3A/DKJ3A_04_00001-zoom-s.jpg" alt="華やぎシャーリングハイネック" /></a></span></span>
-              </div>
-
- <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ3A/DKJ3A.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ3A/DKJ3E.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ3A/DKJ3H.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ3A/DKJ3L.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ3A/DKJ3P.png">
-   </div>
-
-              <p class="txt13 name">
-                <span><a href="/item_SDKJ3A/?il=top-SDKE3A-new" target="_blank"><span>華やぎシャーリングハイネック</span></a></span>
-              </p>
-              </div>
-          </span>
-
-					<!-- ITEM -->
-          <span class="each_height_adjust">
-            <div>
-              <div class="newitem">
-                <span><span><a href="/item_SDKJ62/?il=top-SDKJ62-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ62/DKJ62_01_00001-zoom-s.jpg" alt="東炊きシャツワンピース" /></a></span></span>
-              </div>
- <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ62/DKJ62.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ62/DKJ64.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ62/DKJ9J.png">
-   </div>
-              <p class="txt13 name">
-                <span><a href="/item_SDKJ62/?il=top-SDKJ62-new" target="_blank"><span>東炊きシャツワンピース</span></a></span>
+                <span><a href="/item_SDKJAL/?il=top-SDKJAL-new" target="_blank"><span>衿リブ切り替えブラウス</span></a></span>
               </p>
               </div>
           </span>
@@ -1305,16 +1258,55 @@ function initCorners() {
           <span class="each_height_adjust">
             <div>
               <div class="newitem">
-                <span><span><a href="/item_SDKJ6D/?il=top-SDKJ6D-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJ6D/DKJ6D_01_00001-zoom-s.jpg" alt="和紙混デニムワイドパンツ" /></a></span></span>
+                <span><span><a href="/item_SDKJAW/?il=top-SDKEAW-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJAW/DKJAW_02_00001_zoom-s.jpg" alt="リネン切り替えブラウス" /></a></span></span>
               </div>
 
  <div class="other flexbox">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ6D/DKJ6D.png">
-   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJ6D/DKJ6G.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAW/DKJAW.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAW/DKJB1.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAW/DKJB4.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAW/DKJB7.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJAW/DKJBA.png">
+   </div>
 
+              <p class="txt13 name">
+                <span><a href="/item_SDKJAW/?il=top-SDKEAW-new" target="_blank"><span></span>リネン切り替えブラウス</a></span>
+              </p>
+              </div>
+          </span>
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKJBN/?il=top-SDKJBN-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJBN/DKJBN_01_00001_zoom-s.jpg" alt="チェック柄シャツブラウス" /></a></span></span>
+              </div>
+ <div class="other flexbox">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJBN/DKJBN.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJBN/DKJBR.png">
+ 
    </div>
               <p class="txt13 name">
-                <span><a href="/item_SDKJ6D/?il=top-SDKJ6D-new" target="_blank"><span>和紙混デニムワイドパンツ</span></a></span>
+                <span><a href="/item_SDKJBN/?il=top-SDKJBN-new" target="_blank"><span>チェック柄シャツブラウス</span></a></span>
+              </p>
+              </div>
+          </span>
+
+
+					<!-- ITEM -->
+          <span class="each_height_adjust">
+            <div>
+              <div class="newitem">
+                <span><span><a href="/item_SDKJC2/?il=top-SDKJC2-new" target="_blank"><img src="../../../contents/iikigokochi/goods/image/kigokochi/DKJC2/DKJC2_01_00001_zoom-s.jpg" alt="リネン100％きちんと見えワンピース" /></a></span></span>
+              </div>
+
+ <div class="other flexbox">
+ <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJC2/DKJC2.png">
+   <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJC2/DKJC4.png">
+ <img src="../../../contents/iikigokochi/goods/icon/kigokochi/DKJC2/DKJC6.png">
+   </div>
+              <p class="txt13 name">
+                <span><a href="/item_SDKJC2/?il=top-SDKJC2-new" target="_blank"><span>リネン100％きちんと見えワンピース</span></a></span>
               </p>
               </div>
           </span>
@@ -1428,11 +1420,23 @@ function initCorners() {
 
 
 
+
        <!-- 1段目 -->
 
 
 
 <div class="pickup pickup_left pickup1">
+　　<a href="/shop/static/mask/?il=top-mask-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/mask/mask_banner.jpg" alt="肌にやさしい「高機能シルクマスク」" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">肌にやさしい「高機能シルクマスク」</span>「肌にやさしくて、息苦しくないマスクが欲しい！」そんな気持ちにお応えして、肌に触れる部分にシルク100％の生地を使用した『高機能シルクマスク』をご紹介いたします。</p>
+</div>
+
+
+
+
+
+<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/feature36/?il=top-feature36-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature36/main-visual_top2_mini.jpg" alt="オールタイムサンダル特集" width="100%">
     </a>
@@ -1441,17 +1445,7 @@ function initCorners() {
 
 
 
-
-<div class="pickup pickup_right pickup1">
-　　<a href="/shop/static/feature_in14/?il=top-feature_in14-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature_in14/feature_in14_top.jpg" alt="2020夏 公式アンバサダー募集" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">2020夏 公式アンバサダー募集</span>Instagram公式アンバサダーとして、「着心地のいい服」の魅力を発信していただける方を大募集します。たくさんのご応募、お待ちしております！</p>
-</div>
-
-
-
-
+	
 	<br clear="all">
 
 
@@ -1460,15 +1454,29 @@ function initCorners() {
 
 
 <div class="pickup pickup_left pickup1">
+　　<a href="/shop/static/staff_2020sum/?il=top-staff_2020sum-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/staff_2020sum/feature_in22_500_209.jpg" alt="「着心地のいい服 2020夏」のパンツを、スタッフが着用してみました！" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">「着心地のいい服 2020夏」のパンツを、スタッフが着用してみました！</span>パンツを選ぶとき、「丈感」はとっても重要なポイント。そこで今回は、身長156cmのスタッフが、「着心地のいい服」夏のおすすめパンツを実際に着用してみました。</p>
+</div>
+
+
+<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/happy20s/?il=top-happy20s-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/happy20s/happy20s_top_mini.jpg" alt="この春おすすめのガウチョパンツ特集" width="100%">
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/happy20s/happy20s_top_mini.jpg" alt="2020夏 ハッピーサイズコレクション" width="100%">
     </a>
 	<p class="pickup_copy"><span class="pickup_title">2020夏 ハッピーサイズコレクション</span>毎日の生活を、よりゆったり、リラックスできる 着心地で過ごしてほしい。そんな思いが詰まった「着心地のいい服　ハッピーサイズコレクション」。今回は、2020年夏アイテムのご紹介です！</p>
 </div>
 
+	<br clear="all">
 
 
-<div class="pickup pickup_right pickup1">
+       <!-- 3段目 -->
+
+
+
+
+<div class="pickup pickup_left pickup1">
 　　<a href="/shop/static/limited_20s/?il=top-limited_20s-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/limited_20s/limited_20s_top_mini.jpg" alt="2020夏 ウェブサイト限定カラー登場！" width="100%">
     </a>
@@ -1476,10 +1484,12 @@ function initCorners() {
 </div>
 
 
-
-
-
-
+<div class="pickup pickup_right pickup1">
+　　<a href="/shop/static/organic_inner/?il=top-organic_inner-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/organic_inner/organic_inner_top_mini.jpg" alt="オーガニックコットン100％インナー特集" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">オーガニックコットン100％インナー特集</span>オーガニックコットンは、自然の恵みが詰まった、地球にも人にも優しい素材。そんなオーガニックコットン100％のインナーアイテムをご紹介します。</p>
+</div>
 
 	<br clear="all">
 
@@ -1490,14 +1500,6 @@ function initCorners() {
 
 
 <div class="pickup pickup_left pickup1">
-　　<a href="/shop/static/organic_inner/?il=top-organic_inner-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/organic_inner/organic_inner_top_mini.jpg" alt="オーガニックコットン100％インナー特集" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">オーガニックコットン100％インナー特集</span>オーガニックコットンは、自然の恵みが詰まった、地球にも人にも優しい素材。そんなオーガニックコットン100％のインナーアイテムをご紹介します。</p>
-</div>
-
-
-<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/interview_20s/?il=top-interview_20s-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/interview_20s/interview_20s_top_mini.jpg" alt="［インタビュー］素材と生きる" width="100%">
     </a>
@@ -1505,8 +1507,12 @@ function initCorners() {
 </div>
 
 
-
-
+<div class="pickup pickup_right pickup1">
+　　<a href="/shop/static/brooch/?il=top-brooch-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/brooch/brooch_top_mini.jpg" alt="華やぐワンポイント。天然素材のブローチ" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">華やぐワンポイント。天然素材のブローチ</span>今夏、登場した、手染めの麻を使ったオリジナルブローチ。吸い込まれるほど美しい「一点もの」の色の秘密を知るため、京都市西京区にある株式会社ルシエール・ジャパンを訪ねました。</p>
+</div>
 
 
 
@@ -1516,15 +1522,8 @@ function initCorners() {
        <!-- 4段目 -->
 
 
+
 <div class="pickup pickup_left pickup1">
-　　<a href="/shop/static/brooch/?il=top-brooch-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/brooch/brooch_top_mini.jpg" alt="華やぐワンポイント。天然素材のブローチ" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">華やぐワンポイント。天然素材のブローチ</span>今夏、登場した、手染めの麻を使ったオリジナルブローチ。吸い込まれるほど美しい「一点もの」の色の秘密を知るため、京都市西京区にある株式会社ルシエール・ジャパンを訪ねました。</p>
-</div>
-
-
-<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/azumadaki/?il=top-azumadaki-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/azumadaki/azumadaki_top.jpg" alt="江戸の染色がよみがえる―「東炊き」の魅力とは？" width="100%">
     </a>
@@ -1532,7 +1531,12 @@ function initCorners() {
 </div>
 
 
-
+<div class="pickup pickup_right pickup1">
+　　<a href="/shop/static/craftsman/?il=top-craftsman-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/craftsman/craftsman_main_mini.jpg" alt="日本の丁寧なものづくりを纏う" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">日本の丁寧なものづくりを纏う</span>『着心地のいい服』では今夏、職人が丁寧に手を入れたアイテムが登場。熟練した技と、ものづくりへのひたむきな姿勢が生み出す、極上のアイテムを身にまとう楽しみを、ぜひ一度、味わってみてください。</p>
+</div>
 
 
 	<br clear="all">
@@ -1542,16 +1546,11 @@ function initCorners() {
 
        <!-- 5段目 -->
 
+
+
+
+
 <div class="pickup pickup_left pickup1">
-　　<a href="/shop/static/craftsman/?il=top-craftsman-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/craftsman/craftsman_main_mini.jpg" alt="日本の丁寧なものづくりを纏う" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">日本の丁寧なものづくりを纏う</span>『着心地のいい服』では今夏、職人が丁寧に手を入れたアイテムが登場。熟練した技と、ものづくりへのひたむきな姿勢が生み出す、極上のアイテムを身にまとう楽しみを、ぜひ一度、味わってみてください。</p>
-</div>
-
-
-
-<div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/oumi_linen/?il=top-oumi_linen-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/oumi_linen/oumi_linen_top.jpg" alt="「近江の麻」で仕立てた、柔らかな風合いの丸衿ブラウス" width="100%">
     </a>
@@ -1559,8 +1558,12 @@ function initCorners() {
 </div>
 
 
-
-
+<div class="pickup pickup_right pickup1">
+　　<a href="/shop/static/softly-shorts/?il=top-softly-shorts-pickup" target="_blank">　　　　　　
+            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/softly-shorts/softly_shorts_main_mini.jpg" alt="ふんわりショーツ＆12分丈レギンス" width="100%">
+    </a>
+	<p class="pickup_copy"><span class="pickup_title">ふんわりショーツ＆12分丈レギンス</span>脚のつけ根を締めつけない、優しいはき心地を追求して開発された『ふんわりショーツ』と、足首を冷やさず、おしゃれなポイントを加えてくれる『12分丈レギンス』をご紹介します。</p>
+</div>
 
 	<br clear="all">
 
@@ -1572,31 +1575,9 @@ function initCorners() {
        <!-- 6段目 -->
 
 
-<div class="pickup pickup_left pickup1">
-　　<a href="/shop/static/softly-shorts/?il=top-softly-shorts-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/softly-shorts/softly_shorts_main_mini.jpg" alt="ふんわりショーツ＆12分丈レギンス" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">ふんわりショーツ＆12分丈レギンス</span>脚のつけ根を締めつけない、優しいはき心地を追求して開発された『ふんわりショーツ』と、足首を冷やさず、おしゃれなポイントを加えてくれる『12分丈レギンス』をご紹介します。</p>
-</div>
-
-<div class="pickup pickup_right pickup1">
-　　<a href="/shop/static/feature_in6/?il=top-feature_in6-pickup" target="_blank">　　　　　　
-            <img m:id="static_img" src="../../../contents/shop/00000006/shop/image/kigokochi/feature_in6/feature_in6_top_s.png" alt="肌側シルクやすらぎパジャマ" width="100%">
-    </a>
-	<p class="pickup_copy"><span class="pickup_title">肌側シルクやすらぎパジャマ</span>しっとり、軽い、暖かい。すべてが叶う、理想の一着ができました。素肌に触れる裏側はなめらかなシルク、表側は柔らかなコットンの、快適な寝心地を追究した贅沢パジャマのご紹介です。</p>
-</div>
 
 
 
-
-
-	<br clear="all">
-
-
-
-
-
-       <!-- 7段目 -->
 
 
 <div class="pickup pickup_left pickup1">
@@ -1605,6 +1586,7 @@ function initCorners() {
     </a>
 	<p class="pickup_copy"><span class="pickup_title">パーソナルカラー診断</span>「自分に似合うのは、どんな色だろう？」そんな疑問を持ったことがある方は、多いのでは。ここでは自分の髪や瞳、肌の色からあなたのパーソナルカラーを診断することができます。</p>
 </div>
+
 
 
 
@@ -1618,15 +1600,17 @@ function initCorners() {
 
 
 
-
-
-
 	<br clear="all">
 
 
 
 
-       <!-- 8段目 -->
+
+       <!-- 7段目 -->
+
+
+
+
 
 
 
@@ -1639,6 +1623,7 @@ function initCorners() {
 </div>
 
 
+
 <div class="pickup pickup_right pickup1">
 　　<a href="/shop/static/concept/?il=top-concept-pickup" target="_blank">　　　　　　
             <img m:id="static_img" src="../../../contents/shop/00000006/common_sp/common_kigokochi02/images/special/feature_concept.jpg" alt="着心地のいい服 コンセプト" width="100%">
@@ -1647,15 +1632,17 @@ function initCorners() {
 </div>
 
 
-
-
-
-
 	<br clear="all">
 
 
 
-       <!-- 9段目 -->
+
+       <!-- 8段目 -->
+
+
+
+
+
 
 
 
@@ -1667,7 +1654,16 @@ function initCorners() {
 </div>
 
 
+
 	<br clear="all">
+
+
+
+
+
+
+
+
 
 
 
@@ -1979,6 +1975,43 @@ function initCorners() {
 
           </dl>-->
 
+          <dl>
+            <dt>2020/8/14</dt>
+		<dd> 2020年9月1日より着心地のいい服 会員規約を一部変更いたします。主な変更は次の通りです。<br>・会員資格等の譲渡等の禁止の規定の追加（5条5項）<br>・規約の変更方法の変更（9条）<br><br>改定後の会員規約は<a href="/shop/static/member-agree/" target="blank">こちら</a>の通りです。
+</dd>
+          </dl>
+
+          <dl>
+            <dt>2020/7/22</dt>
+            <dd><a href="/shop/static/mask/" target="blank">「ココチモ」より、『高機能シルクマスク』がデビューしました！</a></dd>
+          </dl>
+
+          <dl>
+            <dt>2020/7/16</dt>
+            <dd><a href="/shop/category/001001008/list/" target="blank">「着心地のいい服　盛夏」アイテムがデビューしました。</a></dd>
+          </dl>
+
+
+          <dl>
+            <dt>2020/7/7</dt>
+            <dd><span style="font-weight:bold;">令和2年7月豪雨により被害に遭われた皆様へ</span><br><br>被害に遭われた皆様へ、心よりお見舞い申し上げます。<br>皆様の安全と一日も早い復旧を心よりお祈り申し上げます。
+            </dd>
+          </dl>
+          <dl>
+            <dt>2020/7/7</dt>
+            <dd><span style="font-weight:bold;">令和2年7月豪雨による配達遅延のお知らせ</span><br><br>大雨の影響により、一部地域の郵便物、商品のお届けに遅れが生じる可能性がございます。<br>ご迷惑をお掛けいたしますが、ご理解のほどよろしくお願い申し上げます。
+            </dd>
+          </dl>
+          <dl>
+            <dt>2020/5/27</dt>
+            <dd><span style="font-weight:bold;">新型コロナウィルスの影響による発送業務・お問い合わせに関するお知らせ</span><br><br>厚生労働省から発表された 「新型コロナウイルス感染症対策の基本方針」をふまえ、当社では、社員およびその家族の安全・健康確保を考慮し、在宅勤務、時差出勤を積極的に推進しております。<br><br>つきましては、ウェブサイトでのご注文はこれまで通り受け付けておりますが、当面の間、ご注文いただいた商品の配送が遅延になる可能性がございます。<br>また、お問い合わせフォームにていただいたご質問につきまして、回答までお時間をいただく場合がございますので、皆さまのご理解とご協力をお願いいたします。 <br><br>なお、サイトに掲載された商品情報・在庫情報等の更新に遅れが生じた場合、最新の情報が掲載されていないことがございますので、あらかじめご了承ください。<br><br>状況が改善しこれまで通りの体制となりましたら改めてホームページ上でお知らせいたします。<br>ご迷惑をおかけしますが、何卒宜しくお願いいたします。
+</dd>
+          </dl>
+
+          <dl>
+            <dt>2020/5/7</dt>
+            <dd><a href="/shop/static/staff_2020sum/" target="blank">「「着心地のいい服 2020夏」のパンツを、スタッフが着用してみました！」を公開しました。</a></dd>
+          </dl>
 
           <dl>
             <dt>2020/4/9</dt>
@@ -2001,55 +2034,9 @@ function initCorners() {
 
 
 
-          <dl>
-            <dt>2019/11/28</dt>
-            <dd><a href="/shop/static/feature_in21/" target="blank">「「着心地のいい服 冬」のパンツを、スタッフが着用してみました！」を公開しました。</a></dd>
-
-          </dl>
-
-          <dl>
-            <dt>2019/11/18</dt>
-            <dd><a href="/shop/static/feature_in17/" target="blank">「パーソナルカラー診断」を公開しました。</a></dd>
-
-          </dl>
-
-
-          <dl>
-            <dt>2019/11/13</dt>
-            <dd><a href="/shop/static/feature46/" target="blank">「コットン100％“裏ボア”ルームウェア」の特集を公開しました。</a></dd>
-
-          </dl>
-
-          <dl>
-            <dt>2019/11/11</dt>
-            <dd><a href="/shop/static/feature_in19/" target="blank">「こだわりの「たつのレザー」/撥水レザーバッグ」の特集を公開しました。</a></dd>
-
-          </dl>
-
-
-          <dl>
-            <dt>2019/11/8</dt>
-            <dd><a href="/shop/static/feature_in18/" target="blank">「肌側シルク接結インナー/レギンス」の特集を公開しました。</a></dd>
-
-          </dl>
-
-
-
-
-
-         
-
- 
-
-
-
-
 
      <!--
-          <dl>
-            <dt>2018/9/6</dt>
-            <dd>地震・大雨の影響による荷物のお届け遅延について<br><br>一部地域において、地震・大雨の影響によりお荷物のお届けに遅延が生じる可能性がございます。<br>お客様にはご迷惑をお掛けいたしますが、何とぞご了承いただきますようお願い申し上げます。<br>詳しくはヤマト運輸ホームページをご確認ください。<br><a href="http://www.kuronekoyamato.co.jp/" target="_blank">ヤマト運輸ホームページ</a></dd>
-          </dl>
+
 
       <dl>
             <dt>2017/12/20</dt>
@@ -2058,98 +2045,9 @@ function initCorners() {
     上記期間中にお問い合わせいただきました内容につきましては、1月4日(木)以降に順次回答いたします。何卒ご了承ください。</dd>
           </dl>
 
-          <dl>
-            <dt>2017/7/7</dt>
-            <dd style="word-break: break-all;">
-            【一部地域の集中豪雨の影響によるお荷物のお届け遅延状況について】<br /><br />ただいま、福岡県および大分県の一部地域で道路の冠水や河川の氾濫が発生し、お届け遅延が発生しております。<br /><br />
-            該当地域は下記のヤマト運輸ホームページをご確認ください。<br />
-            <span class="font_bold"><a href="http://www.kuronekoyamato.co.jp/ytc/info/info_170706.html" target="_blank">http://www.kuronekoyamato.co.jp/ytc/info/info_170706.html</a><br><br>
-            ※なお、周辺の地域でも状況により遅延が発生することがございます。<br><br>
-            大変ご迷惑をお掛けしますが、ご了承くださいますよう、よろしくお願いいたします。</dd>
-          </dl>
-         <dl>
-          	<dt>2017/7/4</dt>
-            <dd><a href="/shop/static/feature36/">オールタイムサンダル特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/6/15</dt>
-            <dd><a href="/shop/static/feature35/">汗染み防止コットンアイテム特集を公開しました。</a></dd>
-          </dl>-->
-          <!--<dl>
-          	<dt>2017/6/6</dt>
-            <dd>【6月19日(月)以降の配送時間帯指定の変更について】<br /><br />この度、着心地のいい服が商品の発送を委託しているヤマト運輸から、配送時間帯の指定枠変更が発表されました。それに伴い、配送時間帯のご指定につきまして、下記の変更を実施する運びとなりました。<br /><br />
-<span style="color:red;font-weight:bold;">●6月19日(月)以降の配送時間帯のご指定について</span><br />
-<span style="color:red;">・「12時から14時」の配送時間帯を廃止。<br />
-・「20時から21時」の配送時間帯を「19時から21時」に変更。</span><br />
-※19日以降の配達日付をご指定いただく場合、上記日時を選択されますとご希望に添えない場合がございます。あらかじめご了承ください。<br /><br />
-詳しくは下記ヤマト運輸のHPをご確認ください。<br />
-<span class="font_bold"><a href="http://www.kuronekoyamato.co.jp/ytc/info/info_170317.html" target="_blank">【ヤマト運輸　宅急便のサービス内容の変更について】</a></span><br /><br />
-ご理解のほどよろしくお願い申し上げます。 </dd>
-          </dl>-->
-           <!--<dl>
-          	<dt>2017/6/2</dt>
-            <dd><a href="/shop/static/feature34/">涼感UVカットプルオーバー特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/5/18</dt>
-            <dd><a href="/shop/static/feature33/">着回しコーデ“7days”特集を公開しました。</a></dd>
-          </dl>-->
-          <!--<dl>
-          	<dt>2017/4/28</dt>
-						<dd>【ゴールデンウィーク中のお届けについて】<br /><br />4月29日（土）から4月30日（日）までの商品のお申込み受付分は、5月1日（月）以降、5月3日（水）から5月5日（金）のお申込み受付分は、5月6日（土）以降、順次手続きに入らせていただきますのであらかじめ、ご了承ください。<br />※手配・配送事情によりお届けまでに時間がかかる場合がございます。</a></dd>
-          </dl>-->
-          <!--<dl>
-          	<dt>2017/4/17</dt>
-            <dd><a href="/shop/static/feature32/">夏のおすすめコーディネート特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/4/17</dt>
-            <dd><a href="/shop/static/feature31/">オーガニックコットン100％ブラトップ特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/3/30</dt>
-            <dd><a href="/shop/static/feature27/">オーガニックコットン特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/3/30</dt>
-            <dd><a href="/shop/static/feature28/">シアサッカー切り替えブラウス特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/3/30</dt>
-            <dd><a href="/shop/static/feature29/">フロントリボン結びふんわりブラウス特集を公開しました。</a></dd>
-          </dl>
-         　<dl>
-          	<dt>2017/3/30</dt>
-            <dd><a href="/shop/static/feature30/">肌側シルク接結インナー特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/2/28</dt>
-            <dd><a href="/shop/static/feature25/">着心地のいい服の素材特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/2/28</dt>
-            <dd><a href="/shop/static/feature26/">春の22days コーディネート特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/2/16</dt>
-            <dd><a href="/shop/static/feature24/">ダブルガーゼブラウス特集を公開しました。</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/2/16</dt>
-            <dd><a href="/shop/category/001001008/list/">【着心地のいい服】春の新作が登場しました！</a></dd>
-          </dl>
-          <dl>
-          	<dt>2017/1/4</dt>
-            <dd>【新年のご挨拶】<br />本年もどうぞよろしくお願いいたします。これからも天然素材・日本製にこだわった肌触りの優しい「着心地のいい服」を仕立てて参ります。ぜひ一度お試しいただけますと幸いです。</dd>
-          </dl>
-          <dl>
-          	<dt>2016/4/18</dt>
-            <dd>一部地域の災害の影響によるお荷物のお届け遅延状況について<br><br>一部地域において、災害の影響によりお荷物のお届けに遅延が生じております。お客様にはご迷惑をお掛けいたしますが、何とぞご了承いただきますようお願い申し上げます。</dd>
-          </dl>
-          <dl>
-          	<dt>2016/4/15</dt>
-            <dd>災害により被災された皆様へ<br><br>この度の災害で被害に遭われました皆様に、心よりお見舞い申し上げます。</dd>
-          </dl>-->
+-->
+
+
         </div>
         <!--▲▲▲INFORMATION▲▲▲-->
 
@@ -2218,6 +2116,9 @@ function initCorners() {
         	</a>
         </div>
 
+
+
+
 	<div class="tw">
 	<a href="https://twitter.com/iikigokochi" target="_blank"><img src="../../../contents/shop/00000006/shop/image/kigokochi/social/tw.png" alt="" style="width:100%;"/></a>
 	</div>
@@ -2225,11 +2126,11 @@ function initCorners() {
 	<div class="tw fb">
 	<a href="https://www.facebook.com/iikigokochi/" target="_blank"><img src="../../../contents/shop/00000006/shop/image/kigokochi/social/fb.png" alt="" style="width:90%;"/></a>
 	</div>
-<!---
 
-        <div class="fb-page" data-href="https://www.facebook.com/iikigokochi/" data-tabs="timeline" data-width="480" data-height="320" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/iikigokochi/"><a href="https://www.facebook.com/iikigokochi/">着心地のいい服</a></blockquote></div></div>
-        </div>
----->
+	<div class="tw fb">
+	<a href="https://www.instagram.com/kigokochi_official/" target="_blank"><img src="../../../contents/shop/00000006/shop/image/kigokochi/social/IG.png" alt="" style="width:100%;"/></a>
+	</div>
+
 
 <div style="clear:both;"></div>
 

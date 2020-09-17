@@ -69,8 +69,26 @@ $(function() {
 			*/
 			jQuery(function($){
 			//	$('ul.example').exDropDown();
-				$('.searchShop').on('click',function(){
-				$('.gsearchShop').submit();
+				$('.searchShop1').on('click',function(){
+				$('#gsearchShop1').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop2').on('click',function(){
+				$('#gsearchShop2').submit();
+					return false;
+				});
+							});
+		</script>
+    	<script >
+			jQuery(function($){
+			//	$('ul.example').exDropDown();
+				$('.searchShop3').on('click',function(){
+				$('#gsearchShop3').submit();
 					return false;
 				});
 							});
@@ -933,11 +951,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <input m:id="searchForm_page" type="hidden" name="page" value="1">
                 <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
                 </form>
-                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop" id="gsearchShop1">
                 <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
                 <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
                 <div class="box_02">
-                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop searchShop1"><span class="pc_only">検索</span></a>
                 </div>
                 </form>
                 <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
@@ -998,16 +1016,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
     <div class="sp_menu_only sp_login_menu">
 
 
-
-
-<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
-<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
-<!-- ▲▲▲header2▲▲▲ -->
-
-
-
-
-			<div class="sp_menu__login">
+		<div class="sp_menu__login">
 				<ul class="sp_menu__login__btn">
 	        <li class="sp_menu__login__btn__login">
 						<div m:id="l_notPre_member_login_button_shop">
@@ -1021,6 +1030,15 @@ s.tl(this,'o','cartview',null,'navigate');return false
 					</li>
 				</ul>
 			</div>
+
+<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
+<!-- ▲▲▲header2▲▲▲ -->
+
+
+
+
+	
 			<div class="sp_menu__logout">
 				<ul class="sp_menu__logout__btn">
 	        <li class="sp_menu__logout__btn__logout">

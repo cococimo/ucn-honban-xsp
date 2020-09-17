@@ -273,6 +273,13 @@ width:73% !important
 /*お申込みサムネイル非表示20180611*/
 #shopping-cart__buy .product_box_txt {padding-left: 0;}
 #shopping-cart__buy .product_img {display: none;width: 0;height: 0;margin-right: 0;}
+
+/*ヘッダーメニュー非表示 190417*/
+@media (min-width: 768px) {
+    #header_gnav{display:none}
+    #header_search{display:none}
+}
+
 </style>
 <script><!--
 var clicked = false;
@@ -576,116 +583,125 @@ width: 100%;
 <!-- name="body" -->
 <!-- EndEditable -->
 <div id="container">
-    <div id="header">
-        <div id="header_wrap" class="clearfix">
-            <a m:id="e_link_logo_shop_shop" href="/">
-                <!-- header追加 -->
-                <!-- name="header_logo" -->
-                <div id="header_logo">
+
+
+
+
+
+
+
+
+<div id="header">
+<div id="header_wrap" class="clearfix">
+<a m:id="e_link_logo_shop_shop" href="/">
+<!-- header追加 -->
+<!-- name="header_logo" -->
+<div id="header_logo">
 <span m:id="l_notEmp_shop_image_file_shop">
 【今よりもっと“心地いい”をお届けするココチモ（cococimo）】
 </span>
+</div>
+<!-- EndEditable -->
+</a>
+<!-- <div class="logoText">
+<img m:id="static_img" src="../contents/shop/00000006/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
+</div> -->
+<div id="header_r" class="clearfix">
+	<!-- InstanceBeginEditable name="head_h1" -->
+<h1 class="add_p"><a m:id="e_link_logo_shop_shop" href="/">着心地のいい服</a></h1>
+<!-- InstanceEndEditable -->
+
+	<p class="site_logo"><a m:id="e_link_logo_shop_shop" href="/">着心地のいい服</a></p>
+
+       <div id="header_r_01" class="clearfix header_r_color">
+
+
+
+
+
+
+<!-- ▼▼▼header1カテゴリから探す▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header1" id="directLink"></span>
+<!-- ▲▲▲header1▲▲▲ -->
+
+
+
+
+            <!-- ▼▼▼検索▼▼▼ -->
+            <div id="header_search" >
+                <div class="clearfix header_search_in">
+                <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+                <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+                <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+                <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+                <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+                <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+                <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+                <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+                <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+                <input m:id="searchForm_page" type="hidden" name="page" value="1">
+                <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+                </form>
+                <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+                <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名やキーワード、品番等をご入力ください。" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
+                <div class="box_02">
+                <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
                 </div>
-                <!-- EndEditable -->
-            </a>
-            <!-- <div class="logoText">
-            <img m:id="static_img" src="../contents/shop/00000006/shop/image/cococimo_logotxt.png" alt="ココチモライフスタイル">
-            </div> -->
-            <div id="header_r" class="clearfix">
-                <!-- InstanceBeginEditable name="head_h1" -->
-                <h1 class="add_p">生活雑貨・北欧雑貨の通販サイト「ココチモ」<br>ココチモナチュラル・ライフスタイル</h1>
-                <!-- InstanceEndEditable -->
+                </form>
+                <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
+                    <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+                    <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+                    <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+                  </form>
+            </div>
+            </div>
+            <!-- ▲▲▲検索▲▲▲ -->
 
-                <p class="site_logo"><a m:id="e_link_logo_shop_shop" href="/">着心地のいい服</a></p>
 
-                <div id="header_r_01" class="clearfix header_r_color">
 
-                    <ul id="header_gnav" class="clearfix">
-                        <li id="header_home"><a m:id="e_link_logo_shop_shop" href="/">ホーム</a></li>
-                        <li id="header_concept"><a href="/shop/static/concept/">コンセプト</a></li>
-                        <li id="header_itemlist">
-                            <a href="#">商品カテゴリー</a>
-                            <div id="header_itemlist_pullDown">
-                                <div class="inner">
-                                    <p class="btn_allItem_pullDown"><a href="/shop/category/001001007/list/">全商品一覧</a></p>
-                                    <ul class="btn_category_pullDown">
-                                        <li><a href="/shop/category/001001002/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown01.jpg" alt="トップス" /><br />トップス</a></li>
-                                        <li><a href="/shop/category/001001003/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown02.jpg" alt="ジャケット/アウター" /><br />ジャケット/アウター</a></li>
-                                        <li><a href="/shop/category/001001004/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown03.jpg" alt="パンツ" /><br />パンツ</a></li>
-                                        <li><a href="/shop/category/001001005/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown04.jpg" alt="スカート" /><br />スカート</a></li>
-                                        <li><a href="/shop/category/001001006/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown05.jpg" alt="ワンピース" /><br />ワンピース</a></li>
-                                        <li><a href="/shop/category/001001001/list/"><img src="/contents/shop/00000006/shop/image/kigokochi/btn_category_pulldown06.jpg" alt="バック" /><br />バック</a></li>
-                                    </ul>
-                                    <ul class="btn_category_sub_pullDown">
-                                        <li><a href="/shop/category/001001008/list/">新着商品</a></li>
-                                        <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
-                                    </ul>
-                                </div>
-                                <a href="#" id="header_itemlist__closebnt">閉じる</a>
-                            </div>
-                        </li>
-                    </ul>
 
-                    <!-- ▼▼▼検索▼▼▼ -->
-                    <div id="header_search" >
-                        <div class="clearfix header_search_in">
-                            <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
-                                <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
-                                <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
-                                <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
-                                <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
-                                <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
-                                <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
-                                <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
-                                <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
-                                <input m:id="searchForm_page" type="hidden" name="page" value="1">
-                                <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
-                            </form>
-                            <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
-                                <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-                                <div class="box_01"><input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="Search" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000006"></div>
-                                <div class="box_02">
-                                    <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop"><span class="pc_only">検索</span></a>
-                                </div>
-                            </form>
-                            <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
-                                <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
-                                <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
-                                <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ▲▲▲検索▲▲▲ -->
-                    <div class="header_lists clearfix pc_not">
-                        <!-- ▼▼▼新規会員登録▼▼▼ -->
-                        <div m:id="l_notPre_member_login_shop">
-                            <ul class="header_list_01">
-                                <li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
-                            </ul>
-                        </div>
-                        <!-- ▲▲▲新規会員登録▲▲▲ -->
-                        <ul class="header_list_02">
-        <li id="header_catalog"><a  href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="catalog_bt" title="カタログ請求" target="_blank">カタログ請求</a></li>
-                            <li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
-                            <li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
-                            <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="">マイページ</a></div></li>
-                            <!-- InstanceBeginEditable name="kigokochi" -->
-                            <!--<li id="header_kigokochi">
-                                <a  href="/shop/static/kigokochi/" class="kigokochi_bt" title="">着心地のいい服</a>
-                            </li>-->
-                            <!-- InstanceEndEditable -->
-                        </ul>
-                    </div>
-                    <div class="clearfix pc_not">
+
+ 
+        <div class="header_lists clearfix pc_not">
+              <!-- ▼▼▼新規会員登録▼▼▼ -->
+              <div m:id="l_notPre_member_login_shop">
+                <ul class="header_list_01">
+                <li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
+                </ul>
+              </div>
+              <!-- ▲▲▲新規会員登録▲▲▲ -->
+
+
+                      			<ul class="header_list_02">
+<li id="header_catalog"><a  href="https://lbopx.u-can.jp/lbop/RequestForm.do?id=K5654" class="catalog_bt" title="カタログ請求" target="_blank">カタログ請求</a></li>
+
+<li id="header_logout"><div m:id="l_pre_member_logout_button_shop"><a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">ログアウト</a></div></li>
+
+<li id="header_login"><div m:id="l_notPre_member_login_button_shop"><a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">ログイン</a></div></li>
+
+<li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""> マイページ</a></div></li>
+                <!-- InstanceBeginEditable name="kigokochi" -->
+                <!--<li id="header_kigokochi">
+                    <a  href="/shop/static/kigokochi/" class="kigokochi_bt" title="">着心地のいい服</a>
+                </li>-->
+				<!-- InstanceEndEditable -->
+			</ul>
+            </div>
+
+
+                 
+                        <div class="clearfix pc_not">
             	<span m:id="l_equ_hierarchy_3_shop">
+
                 <div class="clearfix pc_only">
                     <ul class="header_list_03">
                    <li><a href="/shop/static/guide/">ショッピングガイド</a></li>
-                    <li><a m:id="e_link_inquiry" href="
-/shop/inquiryInputCheck.do">お問い合わせ</a></li>
+                    <li padding-right:30ox;><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></li>
                     </ul>
                 </div>
-                                <div class="header_cart">
+                  
+              <div class="header_cart">
                     <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events';
 s.linkTrackEvents='scView';
@@ -700,240 +716,215 @@ s.tl(this,'o','cartview',null,'navigate');return false
                     <a href="#catLink">カテゴリ一覧</a>
                 </div>
                 </span>
-                    </div>
-                </div><!-- header_r_01 -->
-            </div>
-        </div><!--header_wrap-->
-        <!--▼▼▼sp_menu▼▼▼-->
-        <div m:id="l_notPre_member_login_shop">
-            <ul class="sp_menu_only sp_member">
-                <li id="header_member"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html"><span>新規会員登録</span></a></li>
+				</div>
+            </div><!-- header_r_01 -->
+           </div>
+    </div><!--header_wrap-->
 
-            </ul>
-        </div>
 
-        <div m:id="l_pre_member_logout_button_shop">
-            <ul class="sp_menu_only sp_member">
-                <li><a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト"><span>ログアウト</span></a></li>
-            </ul>
+
+
+
+
+  	<!--▼▼▼sp_menu▼▼▼-->
+    <div class="sp_menu_only sp_login_menu">
+		
+
+			<div class="sp_menu__login">
+				<ul class="sp_menu__login__btn">
+	        <li class="sp_menu__login__btn__login">
+						<div m:id="l_notPre_member_login_button_shop">
+	        		<a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン"><span>ログイン</span></a>
+						</div>
+	        </li>
+	        <li class="sp_menu__login__btn__member">
+						<div m:id="l_notPre_member_login_shop">
+							<a m:id="e_link_memberAdd_shop" href="memberAddInput.html"><span>新規会員登録</span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+<!-- ▼▼▼header2　SPカテゴリから探す▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header2" id="directLink"></span>
+<!-- ▲▲▲header2▲▲▲ -->
+
+
+
+
+
+
+
+
+
+
+			<div class="sp_menu__logout">
+				<ul class="sp_menu__logout__btn">
+	        <li class="sp_menu__logout__btn__logout">
+						<div m:id="l_pre_member_logout_button_shop">
+							<a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト"><span>ログアウト</span></a>
+						</div>
+	        </li>
+	        <li class="sp_menu__logout__btn__mypage">
+						<div m:id="l_pre_member_mypage_button_shop">
+							<a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+
+
+
+<!-- ▼▼▼header3　SPカテゴリから探す 後半▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header3" id="directLink"></span>
+<!-- ▲▲▲header3▲▲▲ -->
+
+
+
+
+
         </div>
-        <ul class="sp_menu_only sp_login_menu">
-            <li id="header_login"><div m:id="l_notPre_member_login_button_shop">
-                <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン"><span>ログイン</span></a></div>
-            </li>
-            <li id="header_mypage"><div m:id="l_pre_member_mypage_button_shop">
-                <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title=""><span>マイページ</span></a></div></li>        <li class="sp_gnav_link"><a m:id="e_link_logo_shop_shop" href="/">HOME</a></li>
-            <li class="sp_gnav_link"><a href="http://www.cococimo.jp/lifestyle/" target="_blank">ライフスタイル</a></li>
-            <li class="sp_gnav_link"><a href="/shop/static/concept/">コンセプト</a></li>
-            <li class="sp_gnav_link"><a href="/shop/static/feature/">アイテム特集</a></li>
-            <li class="sp_gnav_link accordion">
-                <a href="#">商品カテゴリー</a>
-                <ul>
-                    <li><a href="/shop/category/001001007/list/">全商品一覧</a></li>
-                    <li><a href="/shop/category/001001002/list/">トップス</a></li>
-                    <li><a href="/shop/category/001001003/list/">ジャケット/アウター</a></li>
-                    <li><a href="/shop/category/001001004/list/">パンツ</a></li>
-                    <li><a href="/shop/category/001001005/list/">スカート</a></li>
-                    <li><a href="/shop/category/001001006/list/">ワンピース</a></li>
-                    <li><a href="/shop/category/001001001/list/">バック</a></li>
-                    <li><a href="/shop/category/001001008/list/">新着商品</a></li>
-                    <li><a href="/shop/category/001001009/list/">広告掲載商品</a></li>
-                </ul>
-            </li>
-            <li class="sp_gnav_link_sub">
-                <p><a href="/shop/static/size/">サイズガイド</a></p>
-                <p><a href="/shop/static/guide/">ショッピングガイド</a></p>
-                <p><a m:id="e_link_inquiry" href="/shop/inquiryInputCheck.do">お問い合わせ</a></p>
-            </li>
-            <li class="sp_gnav_link_sub num2">
-                <p><a href="/shop/static/protection/">プライバシーポリシー</a></p>
-                <p><a href="/shop/static/company/">会社概要</a></p>
-                <p><a href="/shop/static/notation/">特定商法</a></p>
-                <div class="btn_close_sp"><a href="#">Close</a></div>
-            </li>
-        </ul>
-        <div class="sp_top_menu sp_menu_only">
-            <a href="#">m</a>
-        </div>
-        <div class="sp_top_home sp_menu_only">
-            <a href="/">m</a>
-        </div>
-        <div class="sp_header_cart sp_menu_only">
-            <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
+    <div class="sp_top_menu sp_menu_only">
+    	<a href="#">m</a>
+    </div>
+    <div class="sp_top_home sp_menu_only">
+    	<a href="/">m</a>
+    </div>
+		<div class="sp_header_search sp_menu_only">
+			<div class="sp_header_search__btn"></div>
+			<div class="sp_header_search__menu">
+
+				<!-- ▼▼▼検索▼▼▼ -->
+				<div class="sp_header_search__menu__form">
+					<div id="header_search" >
+					  <div class="clearfix header_search_in">
+					    <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
+					      <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
+					      <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
+					      <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
+					      <input m:id="searchForm_range_Low" type="hidden" name="range_Low" value="" />
+					      <input m:id="searchForm_range_Hight" type="hidden" name="range_Hight" value="" />
+					      <input m:id="searchForm_maker" type="hidden" name="maker" value="" />
+					      <input m:id="searchForm_brand" type="hidden" name="brand" value="" />
+					      <input m:id="searchForm_order" type="hidden" name="order" value="PUSH">
+					      <input m:id="searchForm_page" type="hidden" name="page" value="1">
+					      <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
+					    </form>
+					    <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html" class="gsearchShop">
+					      <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+					      <div class="box_01">
+					        <input m:id="h_txt_keyword" type="text" name="keyword" maxlength="200" value="商品名や気になる単語を入力ください" placeholder="商品名や商品番号、キーワードで検索。" autocomplete="off" id="search_form_pc">
+					        <input type="hidden" id="category_filter_type_pc" value="00000006">
+					      </div>
+					      <div class="box_02"> <a m:id="static_href" href="javascript:void(0);" id="search_btn_pc" class="searchShop">検索</a> </div>
+					    </form>
+					    <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="goodsSearchShopDetail.html">
+					      <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+					      <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+					      <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+					    </form>
+					  </div>
+					</div>
+				</div>
+				<!-- ▲▲▲検索▲▲▲ -->
+
+<!-- ▼▼▼header4　SPカテゴリから探す 後半▼▼▼ -->
+<span m:id="l_include_file_tags" filename="../../../00000006/include_files/static/header4" id="directLink"></span>
+<!-- ▲▲▲header2▲▲▲ -->
+
+				<div class="sp_header__close">
+					<div class="btn_close_sp"><a href="#">Close</a></div>
+				</div>
+
+			</div>
+		</div>
+    <div class="sp_header_cart sp_menu_only">
+                    <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="
 s.linkTrackVars='events';
 s.linkTrackEvents='scView';
 s.events='scView';
 s.tl(this,'o','cartview',null,'navigate');return false
-">お買い物かごを見る</a>
-        </div>
-        <div class="sp_nav">
-            <!-- カテゴリナビ -->
+"></a>
+     </div>
+    <div class="sp_nav">
+      <!-- カテゴリナビ -->
             <script type="text/javascript">
-                //<![CDATA[
-                function switchHidden(categoryCode){
-                    var cat=document.getElementById("dd_"+categoryCode);
-                    var plus=document.getElementById("plus_"+categoryCode);
-                    var minus=document.getElementById("minus_"+categoryCode);
-                    if(cat.style.display=="none"){
-                        cat.style.display="block";
-                        plus.style.display="none";
-                        minus.style.display="inline";
-                    }else{
-                        cat.style.display="none";
-                        plus.style.display="inline";
-                        minus.style.display="none";
-                    }
-                    return false;
-                }
-                function HideandUNhideObj(ThisObj){
-                    nav=document.getElementById(ThisObj).style
-                    navp=document.getElementById(ThisObj+"_plus").style
-                    navm=document.getElementById(ThisObj+"_minus").style
+		//<![CDATA[
+		function switchHidden(categoryCode){
+		    var cat=document.getElementById("dd_"+categoryCode);
+		    var plus=document.getElementById("plus_"+categoryCode);
+		    var minus=document.getElementById("minus_"+categoryCode);
+		    if(cat.style.display=="none"){
+		        cat.style.display="block";
+		        plus.style.display="none";
+		        minus.style.display="inline";
+		    }else{
+		        cat.style.display="none";
+		        plus.style.display="inline";
+		        minus.style.display="none";
+		    }
+		    return false;
+		}
+		function HideandUNhideObj(ThisObj){
+		    nav=document.getElementById(ThisObj).style
+		    navp=document.getElementById(ThisObj+"_plus").style
+		    navm=document.getElementById(ThisObj+"_minus").style
 
-                    if(nav.display=="none"){
-                        nav.display='block';
-                        navm.display='inline';
-                        navp.display='none';
-                    }else{
-                        nav.display='none';
-                        var childN1 = document.getElementById(ThisObj).childNodes[0];
-                        if (childN1 != null) {
-                            var childN2 = childN1.childNodes[1];
-                            if (childN2 != null && childN2.tagName == "DT") {
-                                navp.display='inline';
-                                navm.display='none';
-                            }
-                        }
-                    }
-                }
-                function openParent(parent){
-                    if(parent){
-                        if(parent!=defaultCategoryCode&&defaultCategoryCode.indexOf(parent)>-1){
-                            var idx=document.getElementById("index_"+parent).value;
-                            document.getElementById("plus_"+idx).style.display="none";
-                            document.getElementById("minus_"+idx).style.display="inline";
-                            document.getElementById("dd_"+idx).style.display="block";
-                        }
-                    }
-                }
-                //]]>
-            </script>
-            <object class="xsp_obj" m:id="e_var_standardCategory">
-            </object>
-            <object class="xsp_obj" m:id="e_var_campaignCategory">
-            </object>
-            <object class="xsp_obj" m:id="count">
-            </object>
-            <object class="xsp_obj" m:id="cate_count">
-            </object>
-            <object class="xsp_obj" m:id="subCate_count">
-            </object>
-            <object class="xsp_obj" m:id="subCate2_count">
-            </object>
-            <object class="xsp_obj" m:id="e_var_dmHistory">
-            </object>
-            <!-- InstanceBeginEditable name="header_category" -->
-            <!--▼▼▼カテゴリー▼▼▼-->
-            <!--▼▼▼カテゴリー▼▼▼-->
-            <script>
-                $(window).on('load resize', function(){
-                    var w = $(window).width();
-                    var x = 500;
-                    if (w <= x) {
-                        $(".con_box img")	.eq(0).css({"max-width":"100%"});
+		    if(nav.display=="none"){
+		        nav.display='block';
+		        navm.display='inline';
+		        navp.display='none';
+		    }else{
+		        nav.display='none';
+		        var childN1 = document.getElementById(ThisObj).childNodes[0];
+		        if (childN1 != null) {
+		            var childN2 = childN1.childNodes[1];
+		            if (childN2 != null && childN2.tagName == "DT") {
+		                navp.display='inline';
+		                navm.display='none';
+		            }
+		        }
+		    }
+		}
+		function openParent(parent){
+			if(parent){
+				if(parent!=defaultCategoryCode&&defaultCategoryCode.indexOf(parent)>-1){
+					var idx=document.getElementById("index_"+parent).value;
+					document.getElementById("plus_"+idx).style.display="none";
+					document.getElementById("minus_"+idx).style.display="inline";
+					document.getElementById("dd_"+idx).style.display="block";
+				}
+			}
+		}
+		//]]>
+		</script>
+             <object class="xsp_obj" m:id="e_var_standardCategory">
+  </object>
+  <object class="xsp_obj" m:id="e_var_campaignCategory">
+  </object>
+  <object class="xsp_obj" m:id="count">
+  </object>
+  <object class="xsp_obj" m:id="cate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate_count">
+  </object>
+  <object class="xsp_obj" m:id="subCate2_count">
+  </object>
+  <object class="xsp_obj" m:id="e_var_dmHistory">
+  </object>
+           <!-- InstanceBeginEditable name="header_category" -->
+		</div>
+		<!--▲▲▲sp_menu▲▲▲-->
+	</div><!--/header-->
 
-                        $(function(){
-                            $(".child_cat").hide();
-                            $('li').removeClass('ctArrow');
-                            $(".ctList").hover(function(){
-                                        $("ul:not(:animated)",this).css(
-                                                {"position":"absolute",
-                                                    "top":"0",
-                                                    "left":"140px",
-                                                    "width":"170px",
-                                                    "z-index":"999",
-                                                    "list-style":"none",
-                                                    "background-color":"#ffffff"}
-                                        ).show();
-                                    },
-                                    function(){
-                                        $("ul",this).css("left","0px").hide();
-                                    })
-                        })
-                    } else {
 
-                        $(function(){
-                            $(".child_cat").show();
-                            $('li').removeClass('ctArrow');
-                            $(".ctList").hover(function(){
-                                        $("ul:not(:animated)",this).css(
-                                                {"position":"relative",	"left":"0"}).show();
-                                    },
-                                    function(){
-                                        $("ul",this).css("left","0px").show();
-                                    })
-                        })
+          
 
-                    }
-                });
-            </script>
 
-            <span m:id="l_pre_standardCategory">
-                        <span m:id="l_notEmp_standardCategory_childCategories">
-                            <div class="l_con_box_01">
-                                <div class="sp_nav_close"><a href="/">メニューを閉じる</a></div>
-                                <div class="sub">
-                                    <span m:id="l_ite_standardCategory">
-                                        <span m:id="l_equ_cate_checkPeriod">
-                                            <span m:id="icnt_increment"></span>
-                                            <span m:id="i_ins_cate"></span>
-                                            <object class="xsp_obj" m:id="count_sub1"></object>
-                                            <ul class="l_con_list_01 clearfix example">
-                                                <span  m:id="l_ite_cate">
-                                                    <span m:id="l_equ_subCate_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate"></span>
-                                                    <li class="ctList" style="position:relative"><!--基準点追加-->
 
-                                                    <div class="p_0">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <div id="p_1">
-                                                    <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
-                                                    <span m:id="span_subCate_arrow" id="arrow_1">
-                                                        <span m:id="disp_subCate_category_name">ファッション</span>
-                                                    </span>
-                                                    </a>
-                                                    </div>
-                                                    <ul m:id="tag_dd_subCate" class="clearfix child_cat"><!--子カテ用クラス追加-->
-                                                        <span m:id="l_ite_subCate">
-                                                            <span m:id="l_equ_subCate2_checkPeriod"> <span m:id="icnt_increment"></span> <span m:id="i_ins_subCate2"></span>
-                                                            <li class="ctArrow">
-                                                            <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-                                                            </li>
-                                                            </span>
-                                                        </span>
-                                                        </ul>
-                                                    </li>
-                                                    </span>
-                                                </span>
-                                            </ul>
-                                            <ul class="l_con_list_01 clearfix example"></ul>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </span>
-                    </span>
-
-            <!--▲▲▲カテゴリー▲▲▲-->
-
-            <!--▲▲▲カテゴリー▲▲▲-->
-            <!-- InstanceEndEditable -->
-        </div>
-        <!--▲▲▲sp_menu▲▲▲-->      		</div><!--/header-->
     <!-- InstanceBeginEditable name="pankuzu_contents_waku" -->
     <div id="contents">
         <!-- ここから -->
