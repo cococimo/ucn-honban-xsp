@@ -2183,16 +2183,93 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <br clear="all">
 
 <div class="box_form_table02">
-	<div class="box_form_th">メールマガジン<span class="imp">必須</span></div>
+	<div class="box_form_th">メールマガジン<span class="nini">任意</span><!--<span class="imp">必須</span>--></div>
 	<div class="box_form_td"><div class="memadd_t_box_01 clearfix" style="margin-top:6px;">
-		<div class="box_01">
+	<!-- ラジオボックス(非表示) ▼▼ -->
+	<div class="box_01" style="display: none !important;">
 		<label>
 		<input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label>
 		</div>
-		<div class="box_01">
+		<div class="box_01" style="display: none !important;">
 		<label>
 		<input m:id="h_radio_mail_magazine_pres_0" type="radio" name="mail_magazine_pres" class="radio" value="0">希望しない</label>
 		</div>
+		<!-- ラジオボックス ▲▲ -->
+		<!-- チェックボックス ▼▼ -->
+		<div class="box_01 mail_magazine_check">
+			<input id="mail_checkbox" type="checkbox" name="mail_magazine_pres_checkbox" class="checkbox_mailmagazine_input mr5" checked="checked" /><label for="mail_checkbox">希望する</label>
+		</div>
+		<!-- <div class="clear">
+			<p id="mail">・<span class="red bold">先行販売</span>のご案内（会員登録者のみ）<br>・完売商品<span class="red bold">再入荷のお知らせ</span><br>・着心地のいい服news letter（月に2&#xFF5E;3回）<br>&nbsp;&nbsp;&nbsp;などをメルマガにてお知らせします。</p>
+		</div> -->
+		<style>
+			/* Hide Default Checkbox */
+			.mail_magazine_check input[type="checkbox"] {
+			opacity:0;
+			-webkit-appearance: none;
+			appearance: none;
+			position: absolute;
+			}
+
+			/* Create a Box */
+			.mail_magazine_check input[type="checkbox"] + label::before {
+			display: inline-block;
+			content: '';
+			width: 1rem;
+			height: 1rem;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-right: .5rem;
+			vertical-align: baseline;
+			}
+			@media (max-width: 768px) {
+				.mail_magazine_check input[type="checkbox"] + label::before {
+					vertical-align: bottom;
+				}
+			}
+
+			/* Checked Style */
+			.mail_magazine_check input[type="checkbox"]:checked + label::before {
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2NTY1NjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cG9seWxpbmUgcG9pbnRzPSIyMCA2IDkgMTcgNCAxMiI+PC9wb2x5bGluZT48L3N2Zz4=");
+			background-repeat: no-repeat;
+			background-size:cover;
+			}
+
+			/* Focused Style */
+			.mail_magazine_check input[type="checkbox"]:focus + label::before {
+			}
+		</style>
+		<script>
+			var mail_checkbox_elm = document.getElementById('mail_checkbox');
+			var mail_radio_List = orderForm.mail_magazine_pres;
+			
+			mail_checkbox_elm.addEventListener('click', function() {
+				// メルマガチェックあり
+				if(mail_checkbox_elm.checked == true) {
+					for(var i=0;i<mail_radio_List.length;i++) {
+						if(mail_radio_List[i].value == '1') {
+							mail_radio_List[i].checked = true;
+						}
+					}
+				// メルマガチェックなし
+				} else {
+					for(var j=0;j<mail_radio_List.length;j++) {
+						if(mail_radio_List[j].value == '0') {
+							mail_radio_List[j].checked = true;
+						}
+					}
+				}
+			});
+			// 読み込み時
+			window.addEventListener('load', (event) => {
+				if(mail_radio_List[0].checked == true) {
+					mail_checkbox_elm.checked = true;
+				} else {
+					mail_checkbox_elm.checked = false;
+				}
+			});
+		</script>
+		<!-- チェックボックス ▲▲ -->
 		<span m:id="l_msgPre_mail_magazine_pres">
 		<br />
 			<span class="error">
