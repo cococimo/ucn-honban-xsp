@@ -43,7 +43,7 @@
 				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_01.jpg?1224" alt=""></li>
 				<!-- <li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_02.jpg?1224" alt=""></li> -->
 				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_03.jpg?1224" alt=""></li>
-				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_04.jpg?1224" alt=""></li>
+				<!-- <li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_04.jpg?1224" alt=""></li> -->
 				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_05.jpg?1224" alt=""></li>
 				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_06.jpg?1224" alt=""></li>
 				<li><img src="/contents/shop/00000003/image/static/casio_keyboard/slider/ddv03_img_07.jpg?1224" alt=""></li>
@@ -127,10 +127,10 @@
 		}
 	</style>
 	<div class="sold_out_area">
-		<div class="sold_out_txt"><p class="pb5">【商品のお届けについて】</p>
+		<!--<div class="sold_out_txt"><p class="pb5">【商品のお届けについて】</p>
 			<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
 				商品は引き続きご購入いただけますが、お届けまでにお時間がかかりますので、<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
-		</div>
+		</div>-->
 		<!-- <div class="sold_out_txt"><p class="pb5">【お支払い方法について】</p>
 			<p>現在、こちらのサイトで『大人の楽らくキーボード』をご注文いただく場合、お支払い方法は「代金引換」のみになります。<br>クレジットカードでのお支払いをご希望の方は、下記のショッピングモールをご利用ください。</p>
 			<ul class="mt shop-list">
@@ -155,7 +155,7 @@
 		</div>
 	</section><!-- /casio_keyboard_lead -->
 	<span id="sp_target"></span>
-	<!-- キャンペーン ここから 
+	<!-- キャンペーン ここから
 	<div class="campaign_area">
 		<picture>
 			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/ddv03_pre_pc.png">
@@ -1156,65 +1156,87 @@
 
 	 //カート追従バナー キャンペーン -->
 
-	<style>
-		.purchase_fixed .inner a:hover {cursor: pointer;}
-		.tel.js-tel_sticky {display:none;}
-		.purchase_fixed .order_btn {margin-top: 0;margin-bottom: 0;}
+<!-- カート追従バナー -->
+<style>
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .order_btn {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-		@media all and (min-width: 0) and (max-width: 767px) {
-			.sp {display: block !important;}
-			.pc {display: none !important;}}
-			.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
-			#contents .purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;justify-content: space-between;margin: 0 auto !important;}
-			#contents .purchase_fixed .inner > p:last-of-type img {width: 455px;}
-			#contents .purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
-			#contents .purchase_fixed .inner a:hover {opacity: .85;
-			}
+	.sp {display: none !important;}
+	.pc {display: block !important;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.sp {display: block !important;}
+		.pc {display: none !important;}
+	}
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
 
-		@media all and (min-width: 0) and (max-width: 767px) {
-			.inner08 {margin-top: -60px;padding-top: 60px;	}
-			.footer #pagetop_sp {bottom: 105px;}
-			#contents .purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
-			#contents .purchase_fixed .inner > * {width: 100%;flex:1 1 378px;}
-			.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
-			.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
-			.purchase_fixed .inner > p:first-of-type img {width: 100%;}
-			.purchase_fixed .inner > p:last-of-type img {width: 100%;}
-			.purchase_fixed .inner + p {padding-bottom: .5rem;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+		.purchase_fixed .inner {padding: .5em .5em .3em;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: 0;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		#purchase_btn_keppin {width:100%;text-align:center;}
+		.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
 		.footer #pagetop_sp {bottom: 140px;}
+	}
+	</style>
+	<style>
+		@media (max-width: 767px) and (min-width: 0) {
+			/* SKUの商品ボタン位置調整 */
+			.goto_top #pagetop_sp {
+				bottom: 120px;
+			}
+			/* SKU以外の商品のボタン位置調整 */
+			.footer #pagetop_sp {
+				bottom: 93px;
+			}
+			#goods .itemtop_sp {
+				bottom: 93px;
+			}
 		}
-		/* IE9ハック */
-		@media screen and (min-width: 0\0) and (min-resolution: .001dpcm) {
-			.purchase_fixed {display:none;}
-		}
+
 	</style>
 
 	<div class="purchase_fixed">
 		<div class="inner">
+			<!-- 欠品対応の場合、非表示 style="display: none;"-->
 			<p class="sp_only">
-			<a href="tel:0120552186" style="display: inline-block;">
-				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call.png">
-			</a>
+				<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+				</a>
 			</p>
-
+			<!-- //欠品対応の場合、非表示 -->
 			<p class="pc_only">
-			<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 			</p>
 			<p class="order_btn" id="purchase_btn_order">
-				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
-				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
 			</p>
 			<!-- 欠品対応 
 			<p class="order_btn" id="purchase_btn_keppin">
-				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
 			</p>
-			//欠品対応 -->
+			 //欠品対応 -->
 		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
-	<!--</span>--><!-- //カート追従バナー -->
+<!-- //カート追従バナー -->
 <!-- スクリプト ここから -->
 
 <!-- <script src="/contents/shop/00000003/js/casio_keyboard/lib/greensock/TweenMax.min.js"></script>

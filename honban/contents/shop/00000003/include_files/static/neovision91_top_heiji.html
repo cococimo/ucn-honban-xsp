@@ -325,7 +325,15 @@
 		<h1 class="viewPc">
 			<img src="contents/shop/00000003/image/static/neovision91/main_bnr_neovision_heiji.png" class="テレビCM・新聞広告で話題！映像で楽しむ世界と日本 ココチモオリジナル しゃべる地球儀">
 		</h1>
-
+		<!-- ▼▼プレゼントバナー▼▼ -->
+		<div class="present_bnr">
+			<picture>
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p_sp.jpg">
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p.jpg">
+					<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　「しゃべる地球儀」の大ヒットを記念して、ウェブサイトからご購入の方に今だけの特別プレゼント！えんぴつ削りとしてはもちろん、お部屋のインテリアとしてもご愛用いただけます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
+			</picture>
+		</div>
+		<!-- ▲▲プレゼントバナー▲▲-->
 		<!-- ▼▼お申込みボタン▼▼ -->
 		<div class="order_btn_area cf">
 			<div class="link"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href=""><img src="contents/shop/00000003/image/static/neovision91/imgtext03.jpg" alt="今すぐ申し込む" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_link01.png" alt="今すぐ申し込む" class="sp"></a></div>
@@ -365,15 +373,7 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/dzWSpFLPwU8?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div> -->
-		<!-- ▼▼プレゼントバナー▼▼ 
-		<div class="present_bnr">
-			<picture>
-				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03_sp.jpg">
-				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg">
-				<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　重厚感ある風合いとレトロなデザインが上品な空間を演出。えんぴつ削りはもちろん、お部屋のインテリアとしても楽しめます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
-			</picture>
-		</div>
-		 ▲▲プレゼントバナー▲▲-->
+
 
 		<div class="com_box">
 			<!-- ▼▼お申込みボタン▼▼ -->
@@ -668,6 +668,15 @@
 		</div>
 		<!-- 84追加ブロックここまで -->
 
+		<!-- ▼▼プレゼントバナー▼▼ -->
+		<div class="present_bnr">
+			<picture>
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p_sp.jpg">
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p.jpg">
+					<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　「しゃべる地球儀」の大ヒットを記念して、ウェブサイトからご購入の方に今だけの特別プレゼント！えんぴつ削りとしてはもちろん、お部屋のインテリアとしてもご愛用いただけます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
+			</picture>
+		</div>
+		<!-- ▲▲プレゼントバナー▲▲-->
 	<!-- <div class="inner05">
 		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext33_1.png" alt="大切なお子様・お孫様へのプレゼントにもおすすめ！"></h2>
 		<div class="img_box clearfix">
@@ -734,66 +743,86 @@
 	</div>
 
 
+
+<!-- カート追従バナー -->
 	<style>
-		.purchase_fixed .inner a:hover {cursor: pointer;}
-		.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .order_btn {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
+	.purchase_fixed .sp {display: none !important;}
+	.purchase_fixed .pc {display: block !important;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.purchase_fixed .sp {display: block !important;}
+		.purchase_fixed .pc {display: none !important;}
+	}
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;}
+		.purchase_fixed .inner > * {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
 
-		@media all and (min-width: 0) and (max-width: 767px) {
-			.sp {display: block !important;}
-			.pc {display: none !important;}}
-			.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
-			#contents .purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;justify-content: space-between;margin: 0 auto !important;}
-
-			/*#contents .purchase_fixed .inner > p:first-of-type img {width: 306px;}*/
-			#contents .purchase_fixed .inner > p:last-of-type img {width: 455px;}
-			#contents .purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
-			#contents .purchase_fixed .inner a:hover {opacity: .85;
-			}
-
-		@media all and (min-width: 0) and (max-width: 767px) {
-			.inner08 {margin-top: -60px;padding-top: 60px;	}
-			.footer #pagetop_sp {bottom: 105px;}
-			#contents .purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
-			#contents .purchase_fixed .inner > * {width: 100%;flex:1 1 378px;}
-			.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
-			.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
-			.purchase_fixed .inner > p:first-of-type img {width: 100%;}
-			.purchase_fixed .inner > p:last-of-type img {width: 100%;}
-			.purchase_fixed .inner + p {padding-bottom: .5rem;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+		.purchase_fixed .inner {padding: .5em .5em .3em;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: 0;width: 100%;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		#purchase_btn_keppin {width:100%;text-align:center;}
+		.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
 		.footer #pagetop_sp {bottom: 140px;}
+	}
+	</style>
+	<style>
+		@media (max-width: 767px) and (min-width: 0) {
+			/* .goto_top #pagetop_sp {
+				bottom: 120px;
+			} */
+			/* SKU以外の商品のボタン位置調整 */
+			.footer #pagetop_sp {
+				bottom: 93px;
+				right: 0;
+			}
+			#goods .itemtop_sp {
+				bottom: 93px;
+			}
 		}
-		/* IE9 ハック */
-		@media screen and (min-width: 0\0) and (min-resolution: .001dpcm) {
-			.purchase_fixed {display:none;}
-		}
+
 	</style>
 
 	<div class="purchase_fixed">
 		<div class="inner">
+			<!-- 欠品対応の場合、非表示 -->
 			<p class="sp_only">
-			<a href="tel:0120552186" style="display: inline-block;">
-				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call.png">
-			</a>
+				<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+				</a>
 			</p>
-
+			<!-- //欠品対応の場合、非表示 -->
 			<p class="pc_only">
-			<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 			</p>
 			<p class="order_btn" id="purchase_btn_order">
-				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
-				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
 				</a>
 			</p>
-		<!-- 欠品対応
-
+			<!-- 欠品対応 
 			<p class="order_btn" id="purchase_btn_keppin">
-				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
 			</p>
-		//欠品対応 -->
+			 //欠品対応 -->
 		</div>
 		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 	</div>
-	<!--</span>--><!-- //カート追従バナー -->
+<!-- //カート追従バナー -->
