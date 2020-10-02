@@ -64,6 +64,33 @@ $(function(){
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
+<style>
+	/* ポイント説明追加 */
+	.login_membership_list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	@media screen and (max-width: 767px) {
+		.login_membership_list {
+			display: block;
+		}
+	}
+	.login_membership_list li:first-child{
+		width: 100%;
+	}
+	.login_membership_list :not(li:first-child){
+		flex: 0 0 240px;
+	}
+	.login_membership_list li .add_txt {
+		margin: 5px 10px;
+		font-weight:normal;
+		font-size: 12px;
+		text-align:left;
+		line-height: 1.4;
+
+	}
+</style>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -288,6 +315,7 @@ $(function(){
 										</li>
 										<li>
 											<p class="login_membership_list_tit"><span class="red">500ポイント</span>を<br class="viewPc">プレゼント！</p>
+											<p class="add_txt">※初回の商品ご注文後に付与され、2回目以降のご注文でご利用いただけます。</p>
 										</li>
 										<li>
 											<p class="login_membership_list_tit"><span class="red">会員優待サービス</span><br class="viewPc">随時ご案内！</p>
