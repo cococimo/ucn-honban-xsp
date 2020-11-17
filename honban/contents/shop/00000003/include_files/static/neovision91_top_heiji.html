@@ -163,16 +163,15 @@
 </style>
 
 <style>
-/* プレゼントバナー */
-.present_bnr {
-	margin: 30px 20px 30px;
-}
-@media (max-width: 767px) and (min-width: 0) {
+	/* プレゼントバナー */
 	.present_bnr {
-		margin: 20px 12px 20px;
+		margin: 30px 20px 30px;
 	}
-}
-
+	@media (max-width: 767px) and (min-width: 0) {
+		.present_bnr {
+			margin: 20px 12px 20px;
+		}
+	}
 </style>
 <style>
 	#neovision_slider_area.loading .goods_flexslider {
@@ -221,6 +220,14 @@
 	}
 	.neovision_slider .goods_flexslider a.flex-next:before {
 		content: '\f002';
+	}
+
+</style>
+<style>
+	@media screen and (max-width: 767px) {
+		.header_item_search_box {
+    		z-index: 12;
+		}
 	}
 
 </style>
@@ -288,7 +295,7 @@
 		margin: 60px auto 0;
 		text-align: center;
 	}
-	.main_area .sold_out_txt {
+	.sold_out_txt {
 		max-width: 930px;
 		font-size: 16px;
 		color:#000;
@@ -311,7 +318,7 @@
 		.main_area .order_btn_area {
 			margin: 20px auto 20px auto;
 		}
-		.main_area .sold_out_txt {
+		.sold_out_txt {
 			margin:-10px 10px 15px;
 			font-weight: normal;
 			border: none;
@@ -321,11 +328,24 @@
 		}
 	}
 	</style>
+	<div class="viewSp mr10 ml10">
+		<!-- ▼▼お申込みボタン▼▼ -->
+		<div class="order_btn_area cf">
+			<div class="link"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href=""><img src="contents/shop/00000003/image/static/neovision91/imgtext03.jpg" alt="今すぐ申し込む" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_link01.png" alt="今すぐ申し込む" class="sp"></a></div>
+		</div>
+		<!-- ▲▲お申込みボタン▲▲ -->
+
+		<!-- <div class="sold_out_txt mt10"><p class="pb5">【商品のお届けについて】</p>
+			<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
+			商品は引き続きご購入いただけますが、お届けまでにお時間がかかりますので、<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
+		</div> -->
+	</div>
+
 	<div class="main_area mb60 s_mb20 s_mt15">
-		<h1 class="viewPc">
+		<h1 class="viewPc" style="display: none;">
 			<img src="contents/shop/00000003/image/static/neovision91/main_bnr_neovision_heiji.png" class="テレビCM・新聞広告で話題！映像で楽しむ世界と日本 ココチモオリジナル しゃべる地球儀">
 		</h1>
-		<!-- ▼▼プレゼントバナー▼▼ -->
+		<!-- ▼▼プレゼントバナー▼▼ 
 		<div class="present_bnr">
 			<picture>
 				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p_sp.jpg">
@@ -333,24 +353,13 @@
 					<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　「しゃべる地球儀」の大ヒットを記念して、ウェブサイトからご購入の方に今だけの特別プレゼント！えんぴつ削りとしてはもちろん、お部屋のインテリアとしてもご愛用いただけます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
 			</picture>
 		</div>
-		<!-- ▲▲プレゼントバナー▲▲-->
-		<!-- ▼▼お申込みボタン▼▼ -->
+		 ▲▲プレゼントバナー▲▲-->
+		<!-- ▼▼お申込みボタン▼▼ 
 		<div class="order_btn_area cf">
 			<div class="link"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href=""><img src="contents/shop/00000003/image/static/neovision91/imgtext03.jpg" alt="今すぐ申し込む" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_link01.png" alt="今すぐ申し込む" class="sp"></a></div>
 		</div>
-		<!-- ▲▲お申込みボタン▲▲ -->
-		<div class="sold_out_txt"><p class="pb5">【商品のお届けについて】</p>
-			<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
-			商品は引き続きご購入いただけますが、お届けまでにお時間がかかりますので、<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
-		</div>
-		<!-- <div class="sold_out_txt"><p class="pb5">【お支払い方法について】</p>
-			<p>現在、こちらのサイトで『しゃべる地球儀』をご注文いただく場合、お支払い方法は「代金引換」のみになります。<br>「クレジットカード」でのお支払いをご希望の方は、下記のショッピングモールをご利用ください。</p>
-				<ul class="mt shop-list">
-					<li>・楽天市場　ココチモ店<br class="viewSp">【<a href="https://item.rakuten.co.jp/cococimo/ddo01/" target="_blank">https://item.rakuten.co.jp/cococimo/ddo01/</a>】</li>
-					<li>・Yahoo!ショッピング　ココチモ店<br class="viewSp">【<a href="https://store.shopping.yahoo.co.jp/cococimo/ddo02.html" target="_blank">https://store.shopping.yahoo.co.jp/cococimo/ddo02.html</a>】</li>
-
-				</ul>
-		</div> -->
+		 ▲▲お申込みボタン▲▲ -->
+		
 	</div>
 
 	<div class="main_img"><img src="contents/shop/00000003/image/static/neovision91/main_img_4.png" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_main_img_2.jpg" alt="●すぐに孫たちと使ってみましたが、遊び感覚で勉強できて満足。（石川県・男性・　歳）●孫喜ぶ。祖父も喜ぶ。（広島県・男性・　歳）●大変ユニークな商品です、孫にと思いましたが自分がまず楽しんでいます。（静岡県・男性・　歳）●中学生の孫にプレゼントしました。大変に喜んでくれました。（神奈川県・男性・　歳）●子どもの頃、こんなのがあったらな…夢中で遊ぶ孫たちがうらやましい限り。（埼玉県・女性・　歳）" class="sp"><span class="pc">▲日本地図はプッシュ・オープン式。台座から出し入れ可能で便利です。</span></div>
@@ -381,6 +390,19 @@
 				<div class="link"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href=""><img src="contents/shop/00000003/image/static/neovision91/imgtext03.jpg" alt="今すぐ申し込む" class="pc"><img src="contents/shop/00000003/image/static/neovision91/sp_link01.png" alt="今すぐ申し込む" class="sp"></a></div>
 			</div>
 			<!-- ▲▲お申込みボタン▲▲ -->
+	
+			<!-- <div class="sold_out_txt viewPc"><p class="pb5">【商品のお届けについて】</p>
+				<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
+				商品は引き続きご購入いただけますが、お届けまでにお時間がかかりますので、<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
+			</div> -->
+			<!-- <div class="sold_out_txt"><p class="pb5">【お支払い方法について】</p>
+				<p>現在、こちらのサイトで『しゃべる地球儀』をご注文いただく場合、お支払い方法は「代金引換」のみになります。<br>「クレジットカード」でのお支払いをご希望の方は、下記のショッピングモールをご利用ください。</p>
+					<ul class="mt shop-list">
+						<li>・楽天市場　ココチモ店<br class="viewSp">【<a href="https://item.rakuten.co.jp/cococimo/ddo01/" target="_blank">https://item.rakuten.co.jp/cococimo/ddo01/</a>】</li>
+						<li>・Yahoo!ショッピング　ココチモ店<br class="viewSp">【<a href="https://store.shopping.yahoo.co.jp/cococimo/ddo02.html" target="_blank">https://store.shopping.yahoo.co.jp/cococimo/ddo02.html</a>】</li>
+	
+					</ul>
+			</div> -->
 
 			<!-- <span style="max-width:930px;margin-left:auto;margin-right:auto;display:block;padding:14px 0;font-size:1.2rem;line-height:1.6;border:2px solid red;padding:10px;margin-bottom:15px;background:#fff65e;">
 				<b style="color:red">本商品は好評のため、現在欠品中です。<br class="sp">商品のお届けは、5月下旬から順次発送の見込みです。<br>また、本商品の決済方法は代金引換のみ承っております。<br>
@@ -668,7 +690,7 @@
 		</div>
 		<!-- 84追加ブロックここまで -->
 
-		<!-- ▼▼プレゼントバナー▼▼ -->
+		<!-- ▼▼プレゼントバナー▼▼ 
 		<div class="present_bnr">
 			<picture>
 				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/neovision91/img_new_03p_sp.jpg">
@@ -676,7 +698,7 @@
 					<img src="/contents/shop/00000003/image/static/neovision91/img_new_03.jpg" alt="期間限定プレゼント！アンティーク風地球儀型えんぴつ削り　「しゃべる地球儀」の大ヒットを記念して、ウェブサイトからご購入の方に今だけの特別プレゼント！えんぴつ削りとしてはもちろん、お部屋のインテリアとしてもご愛用いただけます。【仕様】●サイズ：縦62×横62×高さ78mm●素材:金属合金●重量：80g●製造:中国">
 			</picture>
 		</div>
-		<!-- ▲▲プレゼントバナー▲▲-->
+		 ▲▲プレゼントバナー▲▲-->
 	<!-- <div class="inner05">
 		<h2><img src="contents/shop/00000003/image/static/neovision91/imgtext33_1.png" alt="大切なお子様・お孫様へのプレゼントにもおすすめ！"></h2>
 		<div class="img_box clearfix">
