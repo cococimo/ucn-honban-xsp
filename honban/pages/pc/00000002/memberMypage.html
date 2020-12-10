@@ -79,6 +79,38 @@ function siteCatalistProdview(s_products,url){
 }
 //-->
 </script>
+<style>
+/* ナビ表示調整 */
+.cmn_mypage_nav_item:nth-child(1),
+.cmn_mypage_nav_item:nth-child(2) {
+	width:49%;
+}
+@media screen and (max-width: 767px) {
+    .cmn_mypage_nav_item:nth-child(1),
+    .cmn_mypage_nav_item:nth-child(2) {
+        float: none;
+        width: 100%;
+    }
+}
+.cmn_mypage_nav_item:nth-child(2) {
+    margin-right: 0;
+    float: right;
+}
+@media screen and (max-width: 767px) {
+    .cmn_mypage_nav_item:nth-child(2) {
+        float: none;
+    }
+}
+.cmn_mypage_nav_item03 {
+    margin: 15px 20px 0 0;
+}
+@media screen and (max-width: 767px) {
+    .cmn_mypage_nav_item03 {
+        margin: 3px 0 0;
+    }
+}
+
+</style>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -286,19 +318,20 @@ function siteCatalistProdview(s_products,url){
                             <a m:id="e_link_memberMenu_memberModInput" href="memberModInput.html?_S=c" class="icon-guest">会員情報を確認・変更する</a>
                         </li>
                         <li class="cmn_mypage_nav_item cmn_mypage_nav_item02">
-                            <a m:id="e_link_memberMenu_memberAddressBook" href="memberAddressBook.html" class="icon-book">住所録を登録・修正する</a>
+                            <a m:id="e_link_memberMenu_memberPointHistory" href="memberPointHistory.html" class="icon-coin">ポイントを確認する</a>
                         </li>
                         <li class="cmn_mypage_nav_item cmn_mypage_nav_item03">
                             <a m:id="e_link_memberMenu_memberOrderLogList" href="memberOrderLogList.html" class="icon-history">ご注文履歴を確認する</a>
                         </li>
                         <li class="cmn_mypage_nav_item cmn_mypage_nav_item04">
-                            <a m:id="e_link_memberMenu_memberPointHistory" href="memberPointHistory.html" class="icon-coin">ポイントを確認する</a>
+                            <a m:id="e_link_memberMenu_memberAddressBook" href="memberAddressBook.html" class="icon-book">住所録を登録・修正する</a>
                         </li>
-                        <span  m:id="l_pre_dm_member_cocoShop">
+  
+                        <!-- <span  m:id="l_pre_dm_member_cocoShop">
                             <li class="cmn_mypage_nav_item cmn_mypage_nav_item05">
                                 <a m:id="e_link_memberMenu_memberDMHistory" href="memberDMHistory.html" class="icon-mail-history">ダイレクトメールご送付履歴</a>
                             </li>
-                        </span>
+                        </span> -->
                         <li class="cmn_mypage_nav_item cmn_mypage_nav_item06">
                             <a m:id="e_link_inquiry" href="inquiryInput.html" class="icon-mail">お問い合わせ</a>
                         </li>
