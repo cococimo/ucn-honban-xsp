@@ -1190,6 +1190,67 @@ var iCurDstSelected = 0;
 		}
 	</script>
 </span>
+
+<!-- ログインの場合表示 -->
+<script>
+	$(function(){
+        var name_sei            = $('[name=name_sei]').val();
+        var name_mei            = $('[name=name_mei]').val();
+        var name_sei_kana       = $('[name=name_sei_kana]').val();
+        var name_mei_kana       = $('[name=name_mei_kana]').val();
+        var name_post_code      = $('[name=post_code]').val();
+        var area_code           = $('[name=area_code]').val();
+        var address1            = $('[name=address1]').val();
+        var address2            = $('[name=address2]').val();
+        var address3            = $('[name=address3]').val();
+        var address4            = $('[name=address4]').val();
+        var address_co_sei      = $('[name=address_co_sei]').val();
+        var address_co_mei      = $('[name=address_co_mei]').val();
+        var tel_no1             = $('[name=tel_no1]').val();
+        var tel_no2             = $('[name=tel_no2]').val();
+        var tel_no3             = $('[name=tel_no3]').val();
+        var email             	= $('[name=email]').val();
+        if( address_co_sei && address_co_mei ) {
+        	var address_co = address_co_sei + address_co_mei + " 様方";
+        }else {
+        	var address_co = address_co_sei + address_co_mei;
+        }
+
+        $('.td_name').text( name_sei + name_mei );
+        $('.td_name_kana').text( name_sei_kana + name_mei_kana );
+        $('.td_mail').text( email );
+        $('.td_postcode').text( name_post_code );
+        $('.td_area').text( address1 + address2 + address3 + address4 );
+        $('.td_address_co').text( address_co );
+        $('.td_tel').text( tel_no1 + tel_no2 + tel_no3 );
+
+        //別のお届け先
+        $('.btn_other_dst').on('click',function() {
+        	$('[name=dst_name_sei]').val('');
+        	$('[name=dst_name_mei]').val('');
+        	$('[name=dst_name_sei_kana]').val('');
+        	$('[name=dst_name_mei_kana]').val('');
+        	$('[name=dst_post_code]').val('');
+        	$('[name=dst_area_code]').val('');
+        	$('[name=dst_address1]').val('');
+        	$('[name=dst_address2]').val('');
+        	$('[name=dst_address3]').val('');
+        	$('[name=dst_address4]').val('');
+        	$('[name=dst_address_co_sei]').val('');
+        	$('[name=dst_address_co_mei]').val('');
+        	$('[name=dst_tel_no1]').val('');
+        	$('[name=dst_tel_no2]').val('');
+        	$('[name=dst_tel_no3]').val('');
+        });
+        //
+        if($('#js-login_status').length){
+        	$('#input_info_table02').hide();
+        	$('.user_info_change').on('click',function(){
+        		$('#input_info_table02').toggle();
+        	})
+        }
+	});
+</script>
 <!-- InstanceEndEditable -->
 <!--/ head -->
 <!-- tracking urchin -->
@@ -1642,6 +1703,96 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <input m:id="h_hid_order_hash_code" type="hidden" value="123" id="order_hash_code"/>
 
 <!-- ログイン時 -->
+<style>
+	.input_info_btn,
+	.user_info_change {
+		display: block;
+		background-color: #464646;
+		color: #fff;
+		font-size: 1em !important;
+		text-decoration: none;
+		text-align: center;
+		max-width: 360px;
+		padding: 1em;
+		cursor: pointer;
+		opacity: 1;
+		transition: all 0.3s;
+
+	}
+	.input_info_btn:hover,
+	.user_info_change:hover {
+		opacity: 0.5;
+	}
+	.input_info_btn a {
+		color: #fff;
+		display: block;
+	}
+	.input_info_dl {
+	width: 100%;
+	background: #f7f7f7;
+	padding: 1em;
+	overflow: hidden;
+	border: 1px solid #e5e4e4;
+	line-height: 1.6;
+	}
+	.input_info_dl dd,
+	.input_info_dl dt {
+	float: left;
+	word-break: break-all;
+	text-align:left;
+	}
+	.input_info_dl dt {
+	width: 240px;
+	clear: both;
+	font-weight: 700;
+	}
+	.input_info_btn {
+	width: 320px;
+	line-height: 46px;
+	cursor: pointer;
+	}
+	.input_info_count {
+	display: inline-block;
+	margin: 0 0 0 -20px;
+	padding: 17px 19px;
+	border-radius: 5px;
+	background: #e5e4e4;
+	font-size: 18px;
+	}
+	.input_info_count .red {
+	font-weight: 700;
+	vertical-align: baseline;
+	}
+	.input_info_count .number {
+	font-weight: 700;
+	vertical-align: baseline;
+	}
+@media screen and (max-width:767px) {
+		.input_info_table th {
+		display: table-cell;
+		width: 50%;
+	}
+		.input_info_table td {
+		width: 50%;
+		display: table-cell;
+	}
+		.input_info_dl {
+		line-height: 1.4;
+	}
+		.input_info_dl dt {
+		width: 120px;
+		margin-right: -120px;
+	}
+		.input_info_dl dd {
+		padding-left: 120px;
+	}
+		.input_info_btn {
+		margin: 0 -10px 30px;
+		width: 100%;
+		line-height: 38px;
+	}
+}
+	</style>
 <span m:id="l_pre_member">
 <object class="xsp_obj" m:id="b_var_member_tel_no"></object>
 <span m:id="l_emp_member_tel_no">
@@ -1649,8 +1800,31 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </span>
 </span>
 <div m:id="l_pre_member" class="loging_msg">
-	<p class="red left">会員ログイン中です。</p>
+	<p class="red left" id="js-login_status">会員ログイン中です。</p>
+	<dl class="input_info_dl mb30">
+		<dt>お名前</dt>
+		<dd class="td_name"></dd>
+		<dt>フリガナ</dt>
+		<dd class="td_name_kana"></dd>
+		<dt>メールアドレス</dt>
+		<dd class="td_mail"></dd>
+		<dt>郵便番号</dt>
+		<dd class="td_postcode"></dd>
+		<dt>ご住所</dt>
+		<dd class="td_area"></dd>
+		<dd class="td_address_co"></dd>
+		<dt>電話番号</dt>
+		<dd class="td_tel"></dd>
+	</dl>
+
+	<!-- <p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>会員情報を修正する</span></a></p>
+	<p class="user_info_change tac mb60 s_mb30">ご注文者さま情報を変更する</p> -->
 </div>
+
+
+
+
+
 <!-- 非ログイン時 -->
 <style>
 .login_msg a {text-decoration:underline;}
@@ -1706,7 +1880,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 購入完了後、そのまま会員登録（無料）も可能です。</p>
 <!-- <h4 class="temp_tit_06 clear nolg"><div>ログインせずにお買物するお客様はこちらから、ご入力ください。</div></h4> -->
 </span>
-<div class="wrap_form_table">
+<div class="wrap_form_table" id="input_info_table02">
 
 <div class="box_form_table">
 	<div class="box_form_th">お名前<span class="imp">必須</span><span class="imp suffix">全角</span></div>
@@ -2185,8 +2359,8 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div class="box_form_table02">
 	<div class="box_form_th">メールマガジン<span class="nini">任意</span><!--<span class="imp">必須</span>--></div>
 	<div class="box_form_td"><div class="memadd_t_box_01 clearfix" style="margin-top:6px;">
-	<!-- ラジオボックス(非表示) ▼▼ -->
-	<div class="box_01" style="display: none !important;">
+		<!-- ラジオボックス(非表示) ▼▼ -->
+		<div class="box_01" style="display: none !important;">
 		<label>
 		<input m:id="h_radio_mail_magazine_pres_1" type="radio" name="mail_magazine_pres" class="radio" value="1">希望する</label>
 		</div>
