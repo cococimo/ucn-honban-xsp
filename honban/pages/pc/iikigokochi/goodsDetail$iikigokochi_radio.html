@@ -809,7 +809,7 @@ div.res_cart a:hover{
 /*カートに入れるボタン 修正 */
 @media (max-width: 400px){
 	.res_cart a:hover {width:100%;}
-｝
+}
 </style>
 <link rel="stylesheet" type="text/css" href="../../../contents/shop/00000006/js/jquery_zoomer/jquery.fs.zoomer.css"/>
 <link rel="stylesheet" type="text/css" href="../../../contents/shop/00000006/css/detail-zoom.css"/>
@@ -1750,6 +1750,99 @@ $(window).on('load resize', function(){
      <p style="background:#F5F3F1;padding: 10px;line-height: 22px;">※8日以内であれば返品可能。<br>※未使用の場合に限ります。<br>※返品時の送料はお客様負担となります。<br><a href="/shop/static/guide/?il=goodsDetail-returns-detail#guide06" target="blank"><span style="color:#1e90ff;text-decoration: underline;">→詳しくはこちら</span></a></p>
       </div>
 
+    <!-- unisizeバナー -->
+	<!-- <div id="unisize_tag" class="unisize_tag" data-cid="3muH5T3mg4VZ9o" data-cuid="" data-itm="SDKG6R"></div> -->
+	<!-- <div id="unisize_1000"></div>
+	<script type="text/javascript" src="https://bnr.cl.unisize.makip.co.jp/tag/unisize.js"></script> -->
+	<div id="unisize_tag_area"></div>
+	<p class="unisize_attention" style="display: none;">※お客様の登録情報、ご購入履歴などを元に、レコメンドを表示しております。<br>※おすすめサイズは、あくまで参考となります。またサイズに幅のある商品については、中央値をもとに、おすすめサイズを表示しております。</p>
+
+
+	<!-- <script>
+		バナー非表示の場合、attentionを非表示
+		$(function() {
+		  if($('.unisize-banner').length){
+			$(".unisize_attention").css({display: "block"});
+		} else {
+			$(".unisize_attention").css({display: "none"});
+		}
+	  });
+
+	</script> -->
+	<script>
+	document.addEventListener('DOMContentLoaded', (event) => {
+		unisizeAddTag(unisizeTagCreate()); //<div id="unisize_tag">追加
+		unisizeAddTag(unisize1000TagCreate()); //<div id="unisize_1000">追加
+		unisizeAddTag(unisizeScriptTagCreate()); //<script type="text/javascript">追加
+
+		// setTimeout(() => {
+		// 	unisizeBannerHide();
+		// }, 2000);
+
+		// unisizeバナーが表示されるまで実行
+		const max_counter = 10;
+		let retry_counter = 0;
+		let set_interval_id = setInterval(getDiffContainerElements, 1000);
+		function getDiffContainerElements() {
+			retry_counter++;
+			// 要素がMAXカウンター値になっても見つからない場合、処理を停止
+			if(retry_counter > max_counter) {
+				clearInterval(set_interval_id);
+				delete set_interval_id;
+			}
+			let diff_container_elements = document.querySelector('.unisize-banner');
+			if(diff_container_elements.length == null ) {
+				if(typeof(set_interval_id) != 'undefined') {
+					clearInterval(set_interval_id);
+					delete set_interval_id;
+					// attention非表示の関数実行
+					unisizeAttentionHide(diff_container_elements);
+				}else {
+					return diff_container_elements();
+				}
+			}
+		}
+	});
+	function unisizeTagCreate() {
+		let unisizeTag = document.createElement('div');
+		const itemId = googleGoodsForm.google_goods_ext_goods_code.value;
+		const memberId = (tagForm.member_no.value == 0000000000) ?  "" : tagForm.member_no.value;
+		unisizeTag.setAttribute("id","unisize_tag");
+		unisizeTag.setAttribute("class","unisize_tag");
+		unisizeTag.setAttribute("data-cid","3muH5T3mg4VZ9o");
+		unisizeTag.setAttribute("data-cuid",memberId);
+		unisizeTag.setAttribute("data-itm",itemId);
+		return unisizeTag;
+	}
+	function unisize1000TagCreate() {
+		let unisize1000Tag = document.createElement('div');
+		unisize1000Tag.setAttribute("id","unisize_1000");
+		return unisize1000Tag;
+	}
+
+	function unisizeScriptTagCreate() {
+		let unisizeScriptTag = document.createElement('script');
+		unisizeScriptTag.setAttribute("src","https://bnr.cl.unisize.makip.co.jp/tag/unisize.js");
+		return unisizeScriptTag;
+	}
+	// タグの追加
+	function unisizeAddTag(tag) {
+		const unisizeTagArea = document.getElementById("unisize_tag_area");
+		unisizeTagArea.appendChild(tag);
+	}
+	// バナー非表示の場合、attentionを非表示
+	function unisizeAttentionHide(target) {
+		const unisize_banner = target;
+		const unisize_attention = document.querySelector('.unisize_attention');
+
+		if(unisize_banner !== null){
+			unisize_attention.setAttribute('style', 'display:block');
+		} else {
+			unisize_attention.setAttribute('style', 'display:none');
+		}
+	}
+	</script>
+    <!-- /unisizeバナー -->
 
 
       <!-- チャネル別決済種別制限取得 -->
