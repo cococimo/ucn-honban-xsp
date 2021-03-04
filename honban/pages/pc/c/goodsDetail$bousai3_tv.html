@@ -92,6 +92,12 @@ $(function(){
 	font-size: 16px
 }
 </style>
+<style>
+	/* SP版トップへ戻る PCでは非表示 */
+	.devicePC #pagetop_sp {
+		display:none !important;
+	}
+</style>
 <script>
 $(function(){
   $('.cmn_float01 .cmn_float01_r_img:has(iframe)').wrapInner('<div class="iframeWrap">');
@@ -246,6 +252,29 @@ function showCartButton1(obj){
 
 //-->
 </script>
+<script>
+	// トップへ戻るフェードイン
+jQuery(function() {
+	var appear = false;
+	var pagetop = $('.deviceSP #pagetop_sp');
+	$(window).scroll(function () {
+	  if ($(this).scrollTop() > 400) { 
+		if (appear == false) {
+		  appear = true;
+		  pagetop.fadeIn(300); //0.3秒かけて現れる
+		}
+	  } else {
+		if (appear) {
+		  appear = false;
+		  pagetop.fadeOut(300); //0.3秒かけて現れる
+		}
+	  }
+	});
+
+  });
+</script>
+
+  
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -918,10 +947,14 @@ function showCartButton1(obj){
 					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" /> -->
-
-					<p class="shopping"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp mb0 pb10"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/sp_link01.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+				
+				
+					<!-- お申込みボタン -->
+					<p class="order_btn viewPc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む" class="hover"/></a></p>
+					<p class="order_btn viewSp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png" alt="今すぐ申し込む" class="hover" ></a></p>
+					<!-- お申込みボタン ここまで -->
 					<!-- </form> -->
+
 
  				<!-- 完売対応 
 				<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
@@ -964,10 +997,21 @@ function showCartButton1(obj){
 					<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 					<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" /> -->
-
-					<p class="shopping"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp mb0 pb10"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/sp_link01.png" alt="お買い物かごに入れる" class="hover" ></a></p>
+					<!-- お申込みボタン -->
+					<p class="order_btn viewPc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む" class="hover"/></a></p>
+					<p class="order_btn viewSp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png" alt="今すぐ申し込む" class="hover" ></a></p>
+					<!-- お申込みボタン ここまで -->
 					<!-- </form> -->
+					<!-- お電話でもご注文いただけます SP版のみ表示  -->
+					<div class="sp-tell-order viewSp">
+						<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order.jpg" alt="お電話でもご注文いただけます！電話で気軽に注文したい！注文フォームのスマホ入力が苦手、、。そんなあなたには、お電話でのご注文をオススメいたします！「この商品いいな」」と思ったら、ぜひ下のボタンからお気軽にお電話ください！">
+						<p class="sp-tell-order-btn">
+							<a href="tel:0120-552-173" id="sp-tell-order_btn02">
+								<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order-btn.png" alt="電話で申し込む">
+							</a>
+						</p>
+					</div>
+					<!-- お電話でもご注文いただけます SP版のみ表示 ここまで -->
 
  				<!-- 完売対応 
 				<div class="kanbai" style="padding:1.2em 1.2em 2em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
@@ -1284,11 +1328,12 @@ function showCartButton1(obj){
 <!--降雪対応文言
 <ecp:include m:id="fs_weather_trouble_sideless" filename="kousetsu_sideless.html" />
 -->
-					<p class="shopping"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"/></a></p>
-					<p class="shopping_sp mb0 pb10"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/bousai/fixed03/sp_link01.png" alt="お買い物かごに入れる" class="hover" ></a></p>
-					</form>
 
-				
+				<!-- お申込みボタン -->
+				<p class="order_btn viewPc"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む" class="hover"/></a></p>
+				<p class="order_btn viewSp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png" alt="今すぐ申し込む" class="hover" ></a></p>
+				<!-- お申込みボタン ここまで -->
+					</form>
 
  				<!-- 完売対応 
 				<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
@@ -1318,38 +1363,45 @@ function showCartButton1(obj){
 						<dt>&#9312;&#9313;オリジナルリュックサック/カート</dt>
 						<dd>
 
-							リュックサック　●素材：ポリエステル・PVC●内装主素材：ナイロン●サイズ（約）：タテ450×ヨコ320×マチ210mm●重量（約）：800g●外側：ファスナーポケット×1●製造：中国<br>カート　●素材：アルミ、鉄、PP他●サイズ（約）：縦470&#xFF5E;995×横250×奥行110&#xFF5E;310mm●重量（約）：1,120g●製造：中国
+							リュックサック　●素材：ポリエステル・PVC●内装主素材：ナイロン●サイズ（約）：縦450×横320×マチ210mm●重量（約）：800g●外側：ファスナーポケット×1●製造：中国<br>カート　●素材：アルミ、鉄、PP他●サイズ（約）：縦470&#xFF5E;995×横250×奥行110&#xFF5E;310mm●重量（約）：1,120g●製造：中国
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9314;ウォータータンク</dt>
+						<dt>&#9314;ラジオ付き防災テレビ</dt>
+						<dd>
+
+							●サイズ（約）：140×97×40mm●重量（約）：305g（乾電池含まず）●ディスプレイ：3.2インチ TFTカラー液晶●付属品：ACアダプタ、ステレオイヤホン、USBケーブル（Type-C）●製造：中国
+						</dd>
+					</dl>
+					<dl>
+						<dt>&#9315;ウォータータンク</dt>
 						<dd>
 
 							●サイズ（約）：225×225×270mm(容量（約）：10リットル）●材質：ポリプロピレン、ポリエチレン●台湾製
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9315;簡単トイレセット</dt>
+						<dt>&#9316;簡単トイレセット</dt>
 						<dd>
 
 							マイレット 15回トイレセット	●抗菌性凝固剤15個●排便袋（黒ビニール15枚）●大型外袋（白ビニール3枚）●製造：日本<br>※凝固剤1個で大人の平均量（約200から300ml）を充分吸収できます。処理後の汚物は袋ごと可燃ゴミとして処分可能です。
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9316;リバーシブル・アルミブランケット</dt>
+						<dt>&#9317;リバーシブル・アルミブランケット</dt>
 						<dd>
 
-							●サイズ（約）：2130×1370mm●重量（約）：50g●素材：アルミ蒸着ポリエステル（PET）●製造：中国
+							●サイズ（約）：2,130×1,370mm●重量（約）：50g●素材：アルミ蒸着ポリエステル（PET）●製造：中国
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9317;&#xFF5E;&#9319;安心米（白飯・五目ご飯・わかめご飯）</dt>
+						<dt>&#9318;&#xFF5E;&#9320;安心米（白飯・五目ご飯・わかめご飯）</dt>
 						<dd>
-							白飯：約368kcal　五目ご飯：約361kcal　わかめご飯：約364kcal ●原材料名：【白飯】うるち米（国産）、【五目ご飯】うるち米（国産）、味付乾燥具材（ごぼう、水煮たけのこ、こんにゃく、食塩、乾しいたけ、乾燥にんじん、砂糖、かつお節エキス）/調味料（アミノ酸等）、加工デンプン、カラメル色素、水酸化カルシウム【わかめご飯】うるち米（国産）、味付乾燥具材（わかめ、食塩、砂糖、かつお節エキス）●内容量:100g（出来上がり量約270g）●製造元：アルファー食品株式会社●製造：日本<br>※うるち米以外の原材料には輸入品も含まれます。
+							白飯：約368kcal　五目ご飯：約361kcal　わかめご飯：約364kcal ●原材料名：【白飯】うるち米（国産）【五目ご飯】うるち米（国産）、味付乾燥具材（ごぼう、水煮たけのこ、こんにゃく、食塩、乾しいたけ、乾燥にんじん、砂糖、かつお節エキス）/調味料（アミノ酸等）、加工デンプン、カラメル色素、水酸化カルシウム【わかめご飯】うるち米（国産）、味付乾燥具材（わかめ、食塩、砂糖、かつお節エキス）●内容量:各約100g（できあがり量約270g）●製造元：アルファー食品株式会社●製造：日本<br>※うるち米以外の原材料には輸入品も含まれます。
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9320&#9321;災害備蓄用パン</dt>
+						<dt>&#9321;&#9322;災害備蓄用パン</dt>
 						<dd>
 
 							黒まめ：約375kcal　オレンジ：約381kcal<br>●共通原材料名：ミックス粉（小麦、糖類（砂糖、ブドウ糖）、植物油脂、植物性たん白、動物油脂（魚油）、その他）、鶏卵、マーガリン、うるち米、乳等を主要原料とする食品、豆乳加工品（豆乳、大豆粉末）、チョコレート、パン酵母、発酵風味液（砂糖、酵母エキス、食塩）/乳化剤、酒精、乳清ミネラル（ホエイソルト）、香料、PH調整剤、安定剤（ペクチン）（一部に小麦・卵・乳成分・大豆を含む）●種別原材料名：【黒豆】かのこ黒豆（黒大豆、砂糖、還元水飴）【オレンジ】オレンジ砂糖漬け（オレンジピール、砂糖、水飴、ホワイトキュラソー）（一部にオレンジを含む）●内容量：各約100g●製造：日本●製造元：社会福祉法人 江差福祉会「あすなろパン」
@@ -1357,65 +1409,59 @@ function showCartButton1(obj){
 						</dd>
 					</dl>
 					<dl class="mb0">
-						<dt>&#9322;高カロリー食品</dt>
+						<dt>&#9323;高カロリー食品</dt>
 						<dd>
 
-							ヒジョウショクER：約2,465kcal ●内容品：ビスケットバー9個 ●原材料名：ビスケット（小麦を含む）（国内製造）、ピーナッツ粉、砂糖、食用植物油、脱脂粉乳 ●内容量（約）：504g　●製造元：萬有栄養株式会社　●製造：日本
+							ヒジョウショクER：約2,465kcal ●内容品：ビスケットバー9個 ●原材料名：ビスケット（国内製造）、ピーナッツ粉、砂糖、食用植物油、脱脂粉乳（一部に小麦・落花生・乳成分を含む）●内容量（約）：504g　●製造元：萬有栄養株式会社　●製造：日本 ※原材料の一部に輸入品も含まれます。
 						</dd>
 					</dl>
 				</div>
 				<div class="sixth-box01-right">
 					<dl>
-						<dt>&#9323;食品加熱キット<br>エディック・スチームシェフ</dt>
+						<dt>&#9324;食品加熱キット<br>エディック・スチームシェフ</dt>
 						<dd>
 
-							セット内容●発熱剤20g×6個●（発熱剤専用）加熱袋×1枚 ●小分けチャック袋×1●製造：日本
+							セット内容●発熱剤20g×6個●加熱袋（発熱剤専用）×1枚 ●小分けチャック袋×1●製造：日本
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9324;&#xFF5E;&#9327;非常用 保存水</dt>
+						<dt>&#9325;&#xFF5E;&#9328;非常用保存水</dt>
 						<dd>
 							●原材料名：水（深井戸水）●内容量500ml ●製造：株式会社　霧島湧水●製造：日本
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#9328;&#xFF5E;&#12883;白十字印　救急セット</dt>
+						<dt>&#9329;&#xFF5E;&#12884;白十字印　救急セット</dt>
 						<dd>
 
-							(1)伸縮ホータイ　(2)救急絆10枚入り　(3)ハサミ　(4)脱脂綿　(5)油紙　(6)ガーゼ1m　(7)三角巾（ビニールカバーサイズ（約）：120×200×55mm）●総重量（約）：160g　●製造：ガーゼ、伸縮ホータイ、ハサミは中国　その他は日本
+							●セット内容：(1)伸縮包帯　(2)救急絆10枚入り　(3)ハサミ　(4)脱脂綿　(5)油紙　(6)ガーゼ1m　(7)三角巾 ●ビニールカバーサイズ（約）：120×200×55mm ●総重量（約）：160g●製造：ガーゼ、伸縮包帯、ハサミは中国　その他は日本
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#12884;&#xFF5E;&#12886;簡易マスク</dt>
+						<dt>&#12885;&#xFF5E;&#12887;簡易マスク</dt>
 						<dd>
 
-							●サイズ（約）：175×95mm●素材：ポリプロピレン、ポリエステル、ポリウレタン●3枚●製造：中国
+							●サイズ（約）：175×95mm●素材：不織布 ●3枚●製造：中国
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#12887;軍手</dt>
+						<dt>&#12888;軍手</dt>
 						<dd>
 
 							●素材：ポリエステル・綿・レーヨン・塩化ビニールほか●製造：中国
 						</dd>
 					</dl>
 					<dl>
-						<dt>&#12888;緊急用ホイッスル</dt>
+						<dt>&#12889;緊急用ホイッスル</dt>
 						<dd>
 							●サイズ（約）：直径12×62mm●材質：アルミ●製造：中国
-						</dd>
-					</dl>
-					<dl>
-						<dt>&#12889;ラジオ付き防災テレビ</dt>
-						<dd>
-
-							●サイズ（約）：140×97×40mm●重量（約）：327g●ディスプレイ：3.2インチ TFTカラー液晶●付属品：ACアダプタ、ステレオイヤホン、Type-Cケーブル●製造：中国
 						</dd>
 					</dl>
 					<dl>
 						<dt>&#12890;乾電池</dt>
 						<dd>●単3×4本</dd>
 					</dl>
+
 					<!-- <dl class="mb0"> -->
 					<dl>
 						<dt>&#12891;オリジナルあんしん手帳</dt>
@@ -1424,7 +1470,7 @@ function showCartButton1(obj){
 							●A5版変型●4色●56ページ
 						</dd>
 					</dl>
-					<p>※各食料品は賞味期限が2025年4月以降のものをお届けします。</p>
+					<p>※各食料品は賞味期限が2025年9月以降のものをお届けします。</p>
 					<p>※商品の仕様・デザインについては予告なく変更となる場合がございます。</p>
 					<p>※1品ごとの分売はしておりません。</p>
 				</div>
@@ -1432,11 +1478,11 @@ function showCartButton1(obj){
 		</div>
 
         <br>
-<a href="/shop/c/static/bousai_tokushu1/">
+<a href="/item_bousaiset/bousai_tokushu1/">
 <div style="text-align:center; text-decoration:underline; color:#0e1bbb;; font-size:15px;">
 【防災特集Vol.1 災害時の備え】は、こちらから>>
 </div><br>
-<a href="/shop/c/static/bousai_tokushu2/">
+<a href="/item_bousaiset/bousai_tokushu2/">
 <div style="text-align:center; text-decoration:underline; color:#0e1bbb;; font-size:15px;">
 【防災特集Vol.2 ペットと一緒に避難生活をする為に】は、こちらから>>
 </div><br>
@@ -1532,7 +1578,8 @@ function showCartButton1(obj){
 		<div id="pagetop" class="pagetop_pc">
 			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
 		</div>
-		<div id="pagetop_sp" class="pagetop_sp">
+
+		<div id="pagetop_sp" class="pagetop_sp" style="display: none;">
 			<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
 		</div>
 		<div class="about">
