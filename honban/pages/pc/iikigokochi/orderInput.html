@@ -1242,7 +1242,7 @@ var iCurDstSelected = 0;
         	$('[name=dst_tel_no2]').val('');
         	$('[name=dst_tel_no3]').val('');
         });
-        //
+
         if($('#js-login_status').length){
         	$('#input_info_table02').hide();
         	$('.user_info_change').on('click',function(){
@@ -1704,8 +1704,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 <!-- ƒƒOƒCƒ“ -->
 <style>
-	.input_info_btn,
-	.user_info_change {
+	.btn_normal {
 		display: block;
 		background-color: #464646;
 		color: #fff;
@@ -1719,11 +1718,10 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		transition: all 0.3s;
 
 	}
-	.input_info_btn:hover,
-	.user_info_change:hover {
+	.btn_normal:hover {
 		opacity: 0.5;
 	}
-	.input_info_btn a {
+	.btn_normal a {
 		color: #fff;
 		display: block;
 	}
@@ -1765,7 +1763,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 	}
 	.input_info_count .number {
 	font-weight: 700;
-	vertical-align: baseline;
+	vertical-align: baseline;	
 	}
 @media screen and (max-width:767px) {
 		.input_info_table th {
@@ -1817,10 +1815,9 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<dd class="td_tel"></dd>
 	</dl>
 
-	<!-- <p class="input_info_btn tac mb60 s_mb30"><a href="/shop/memberModInput.do" class="cmn_btn cmn_btn_orange btn_middle"><span>‰ïˆõî•ñ‚ğC³‚·‚é</span></a></p>
-	<p class="user_info_change tac mb60 s_mb30">‚²’•¶Ò‚³‚Üî•ñ‚ğ•ÏX‚·‚é</p> -->
+	<!-- <p class="input_info_btn btn_normal tac mb60 s_mb30"><a href="/shop/memberModInput.do"><span>‰ïˆõî•ñ‚ğC³‚·‚é</span></a></p>
+	<p class="user_info_change btn_normal tac mb60 s_mb30">‚²’•¶Ò‚³‚Üî•ñ‚ğ•ÏX‚·‚é</p> -->
 </div>
-
 
 
 
@@ -2252,7 +2249,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 		<option m:id="sel_opt_birthday_year"value="1978">1978(º˜a53)</option>
 		<option m:id="sel_opt_birthday_year"value="1977">1977(º˜a52)</option>
 		<option m:id="sel_opt_birthday_year"value="1976">1976(º˜a51)</option>
-		<option m:id="sel_opt_birthday_year"value="1975" selected="selected">1975(º˜a50)</option>
+		<option m:id="sel_opt_birthday_year"value="1975" selected>1975(º˜a50)</option>
 		<option m:id="sel_opt_birthday_year"value="1974">1974(º˜a49)</option>
 		<option m:id="sel_opt_birthday_year"value="1973">1973(º˜a48)</option>
 		<option m:id="sel_opt_birthday_year"value="1972">1972(º˜a47)</option>
@@ -2976,8 +2973,10 @@ TELF090-1234-1234
 <li class="last" m:id="paging_next"><span m:id="paging_end"><a m:id="paging_href" href="orderInput.html"><img m:id="static_img" src="../../../contents/shop/00000006/shop/image/good_list_icon_02.gif" alt="" /></a></span></li>
 
 </ul>
-
+<p class="input_address01_btn02 btn_normal" style="clear:both"><a href="#dst" class="cmn_btn btn_other_dst">•Ê‚Ì‚¨“Í‚¯æ‚ğw’è</a></p>
 </div>
+
+
 </span>
 </span>
 
