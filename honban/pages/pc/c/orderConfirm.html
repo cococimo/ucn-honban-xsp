@@ -838,6 +838,67 @@ $(function(){
 								</div>
 							<!--▲▲▲ ギフトラッピング ▲▲▲-->
 
+							<!--▼▼▼ 防災セット　プレゼント表記変更 20210310▼▼▼ 
+							<script>
+								//プレゼントが表示されている場合、値を取得
+								const privilege_area = document.querySelectorAll('.privilege_area');
+								
+								if(privilege_area.length > 0 && getItemNum("防災セット") !== undefined) {
+									const memadd_all_td = document.querySelectorAll('.privilege_area .memadd_table_02 td');
+
+								  for(let i = 0; i<　memadd_all_td.length;i++) {
+									  if(memadd_all_td[i].textContent.match("万能ナイフ")) {
+
+										  const self = memadd_all_td[i];
+										  const item_num = self.nextElementSibling;
+										  const item_num_value = getItemNum("防災セット");
+										  const parent = self.parentNode;
+										  const tableElm = parent.parentNode;
+										  const addElmTR = document.createElement("tr");
+										  const addElmItemName = document.createElement("td");
+										  const addElmItemNum = document.createElement("td");
+										  const targetClasses = ["last_02","right","memadd_table_02_w_02"];
+
+										  self.textContent = "万能ナイフ";
+										  item_num.textContent = item_num.textContent.replace(/\d+/g, item_num_value);
+
+
+										  addElmItemName.textContent = "ビスコ保存缶";
+
+										  targetClasses.forEach(function(targetClass) {
+											addElmItemNum.classList.add(targetClass);
+											});
+										//   addElmItemNum.classList.add("last_02","right","memadd_table_02_w_02");
+										  addElmItemNum.textContent = item_num.textContent;
+
+										  addElmTR.appendChild(addElmItemName);
+										  addElmTR.appendChild(addElmItemNum);
+		
+											// ビスコ缶要素追加
+											tableElm.insertBefore(addElmTR, parent.nextSibling)
+
+										  }
+									  }
+								}
+
+								// 購入数鵜を取得
+								function getItemNum(itemName) {
+									const confirm_item_list_tit_targets = document.querySelectorAll('.confirm_item_list_tit');
+									for(let i = 0; i<　confirm_item_list_tit_targets.length; i++) {
+									if(confirm_item_list_tit_targets[i].textContent.match(itemName)) {
+										const self = confirm_item_list_tit_targets[i];
+										const parent = self.parentNode;
+										const item_count = parent.getElementsByClassName('confirm_item_list_count')[0];
+
+										return item_count.textContent.replace("数量：","");
+										}
+
+									}
+								}
+							
+							</script>
+							▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
+
 							<!--▼▼▼ クレジット情報 ▼▼▼-->
 								<div style="display: none;">
 									<span m:id="l_equ_credit">

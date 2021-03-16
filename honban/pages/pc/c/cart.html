@@ -1016,6 +1016,34 @@ $(function() {
                   </div>
                   <!-- /.cart_addition -->
                 </span>
+
+                <!--▼▼▼ 防災セット　プレゼント表記変更 20210310▼▼▼ 
+                <script>
+                  const ext_goods_code = tagForm.ext_goods_code.value;
+                  const cart_addition_targets = document.querySelectorAll('.cart_addition_list li');
+
+                  if(ext_goods_code.match('DEB71') !== null && cart_addition_targets.length) {
+                    for(let i = 0; i<cart_addition_targets.length;i++) {
+                    const target = cart_addition_targets[i];
+                    if(target.textContent.indexOf('万能ナイフ')) {
+                        const self = cart_addition_targets[i];
+                        const parent = self.parentNode;
+                        const addElm = document.createElement('li');
+
+                        addElm.textContent = "ビスコ保存缶";
+                        self.textContent = "万能ナイフ";
+
+                        // ビスコ缶要素追加
+                        parent.insertBefore(addElm, self.nextSibling)
+
+                        break; 
+                      }
+                    }  
+                  }
+                
+                </script>
+                ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
+                                
                 <!--▼▼▼ 送料メッセージ ▼▼▼-->
                   <object class="xsp_obj" m:id="b_var_shopPostage_postage_free"></object>
                   <span m:id="l_pre_shopPostage">
