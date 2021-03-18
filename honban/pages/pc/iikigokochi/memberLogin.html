@@ -641,74 +641,451 @@ $(window).on('load resize', function(){
 		<object class="xsp_obj" m:id="e_var_sku"></object>
 
 		<object class="xsp_obj" m:id="e_var_inqClassMap"></object>
-<div class="con_box">
-<div>
+		<div class="con_box ">
+		
+				<div class="login_purchase_box purchase_box register">
+				<h2 class="purchase_box_tit01">ログイン<span class="purchase_box_tit01_tag">会員登録がお済みのお客様</span></h2>
+				<div class="sec_02 clearfix notationBlock">
+					<p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
+				
+					<span m:id="l_msgPre_errors_member_login">
+						<div class="error">
+							ログインに失敗しました。
+						</div>
+					</span>
 
-<div class="sec_02 clearfix notationBlock">
+					<form m:id="h_form_loginAuth" method="POST" action="shop.html" class="loginForm">
+						<span m:id="l_pre__S">
+							<input m:id="h_hid__S" type="hidden" name="_S" value="00000002" />
+						</span>
+						<h4 m:id="dummy" class="temp_tit_06 clear">
+							<div>ログイン情報入力</div>
+						</h4>
 
-<p class="left memadd_mb_02"><p class="mb20">会員登録がお済みの方はログインID、パスワードを入力して「ログイン」を押してください。</p>
-</p>
-<span m:id="l_msgPre_errors_member_login">
-		<div class="error">
-			ログインに失敗しました。
+						<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+							<tr>
+								<td class="sp_tcel">ログインID<span class="imp">必須</span></td>
+							</tr>
+							<tr>
+								<th>ログインID<span class="imp">必須</span></th>
+								<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id"
+										class="in_w_02" />
+									<span class="exp">例：kigokochi1234</span>
+									<span m:id="l_msgPre_login_id">
+										<div> <span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
+											</span>
+										</div>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="sp_tcel">パスワード<span class="imp">必須</span></td>
+							</tr>
+							<tr>
+								<th>パスワード<span class="imp">必須</span></th>
+								<td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password"
+										class="in_w_02" />
+
+									<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
+
+									<span m:id="l_msgPre_password">
+										<div> <span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
+										</div>
+									</span>
+
+								</td>
+							</tr>
+
+						</table>
+
+						<!-- ボタン -->
+						<div>
+							<!-- <input type="image" m:id="static_img" class="" alt="ログイン" />  -->
+							<div class="forget_pws"><a m:id="e_link_reminderPwdInput"
+								href="memberReminderPwdInput.html">※パスワードを忘れた方はこちら</a></div>
+
+							<a href="javascript:void(0);" class="loginBt"><span style="color:#FFFFFF">ログイン</span></a>
+
+						</div>
+						<!--/ ボタン -->
+						<script defer="defer" type="text/javascript">
+				<!-->
+								document.loginForm.login_id.focus();
+				//-->
+						</script>
+					</form>
+
+					<!-- インクルード領域 -->
+					<span m:id="timed_include" filename="memberLogin_head"></span>
+					<!--/ インクルード領域  -->
+
+
+				</div>
+				
+			</div>
+
+<!--▼▼▼ 新規会員登録追加 ▼▼▼-->
+<style>
+	#contents {
+		width: 1200px;
+	}
+	@media screen and (max-width:767px) {
+		#contents {
+			width: 100%;
+		}
+	}
+	.con_box {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		text-align: left;
+	}
+	@media screen and (max-width: 767px) {
+		.con_box {
+			display:block;
+		}
+	}
+	.con_box > div {
+		flex: 0 1 585px;
+	}
+	.purchase_box {
+	border: 2px solid #e6e6e6;
+	border-radius: 5px 5px 0 0;
+	}
+	@media screen and (max-width: 767px) {
+		.purchase_box {
+			margin-top:30px;
+		}
+	}
+	.con_box h2.purchase_box_tit01{
+		margin: -2px -2px 0;
+		padding: 16px 15px 15px 25px;
+		border-bottom: 2px solid #b2b0ac;
+		border-radius: 5px 5px 0 0;
+		background: url(/contents/c/goods/image/new/cart/bg_pattern01.png) repeat;
+		background-size: 4px;
+		font-size: 24px;
+		line-height: 1.3;
+	}
+	@media screen and (max-width: 767px) {
+		.con_box h2.purchase_box_tit01 {
+			height: 40px;
+			padding: 9px 8px 0 13px;
+			font-size: 15px;
+			line-height: 1.5;
+		}
+	}
+
+
+	.purchase_box_tit01_tag {
+		float: right;
+		padding: 6px 12px;
+		border-radius: 3px;
+		background: #b2b0ac;
+		color: #fff;
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	@media screen and (max-width: 767px) {
+		.purchase_box_tit01_tag {
+			padding: 5px 6px;
+			font-size: 12px;
+		}
+	}
+
+	.login_purchase_box .purchase_box_input {
+		height: 320px;
+	}
+	.purchase_box_txt01 {
+		margin: 0 0 23px;
+		line-height: 1.6;
+	}
+	.purchase_box_tit02 {
+		height: 1em;
+		margin: 0 0 17px;
+		line-height: 1em;
+	}
+	.purchase_box_tit02_ex {
+		font-size: 16px;
+	}
+	.login_purchase_box_in {
+		padding: 17px 30px 30px;
+		min-height: 536px;
+	}
+
+	.login_purchase_box input[type=password],
+	.login_purchase_box input[type=text] {
+		margin: 0;
+		font-size: 16px;
+		border: 1px solid #d8d8d8;
+		background-color: #fff;
+		box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.08);
+		max-height: 34px;
+		padding: 5px .5em;
+		letter-spacing: 0;
+	}
+	.login_purchase_box .purchase_box_tit03 {
+		margin-top: 40px;
+	}
+	.login_purchase_box_link a {
+		font-size: 18px;
+	}
+	.login_purchase_box_btn {
+		text-align: center;
+	}
+	.login_purchase_box_btn a {
+		width: 360px;
+		font-size: 20px;
+	}
+	@media screen and (max-width:767px) {
+		.login_purchase_box {
+			width: 100%;
+			border: 0;
+		}
+		.login_purchase_box.login {
+			float: none;
+			margin: 0 0 30px;
+		}
+		.login_purchase_box.register {
+			float: none;
+		}
+		.login_purchase_box_in {
+			padding: 10px;
+			min-height: auto;
+		}
+		.login_purchase_box .purchase_box_input {
+			height: auto;
+		}
+		.login_purchase_box input[type=text] {
+			margin: 0;
+		}
+		.login_purchase_box_link a {
+			font-size: 15px;
+		}
+		.login_purchase_box_btn {
+			padding: 0 15px;
+		}
+		.login_purchase_box_btn a {
+			width: 100%;
+			font-size: 16px;
+		}
+		.login_purchase_box .login_btn {
+			display: block;
+			width: 270px;
+			margin: 0 auto;
+		}
+	}
+	.login_membership {
+		padding: 0 15px;
+		border-top: 4px solid #68BDA0;
+		background: #D3EDE4;
+	}
+
+	.login_membership_tit {
+		position: relative;
+		padding: 24px 0;
+		color: #339B78;
+		font-size: 34px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.login_membership_tit:before {
+		position: absolute;
+		content: '';
+		top: -4px;
+		left: 10px;
+		width: 72px;
+		height: 100px;
+		background: url(/contents/c/goods/image/new/cart/ico_medal01.png) no-repeat;
+		background-size: 72px;
+		z-index: 2;
+	}
+	.login_membership_list {
+		overflow: hidden;
+		padding: 0 0 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	@media screen and (max-width:767px) {
+		.login_membership_list {
+		display: block;
+		}
+	}
+
+	.login_membership_list li {
+		width: 100%;
+		margin: 0 0 10px;
+		padding: 20px 0 20px 123px;
+		background: #fff;
+	}
+	.login_membership_list li:first-child {
+		position: relative;
+	}
+	.login_membership_list li:first-child:before {
+		position: absolute;
+		content: '';
+		top: 38px;
+		left: 20px;
+		width: 100px;
+		height: 76px;
+		background: url(/contents/c/goods/image/new/cart/img_coin01.png) no-repeat;
+		background-size: 100px;
+	}
+	.login_membership_list li:first-child .login_membership_list_tit {
+		margin: 0 0 8px;
+		font-size: 26px;
+	}
+	.login_membership_list li .add_txt {
+		margin: 5px 10px;
+		font-weight: normal;
+		font-size: 12px;
+		text-align: left;
+		line-height: 1.4;
+	}
+	.login_membership_list :not(li:first-child) {
+		flex: 0 0 240px;
+	}
+	.login_membership_list li + li {
+		float: left;
+		width: 240px;
+		margin: 0;
+		padding: 12px 0;
+		text-align: center;
+	}
+	.login_membership_list li + li + li {
+		float: right;
+		width: 240px;
+		margin: 0;
+		padding: 12px 0;
+		text-align: center;
+	}
+	.login_membership_list_tit {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.3;
+	}
+	.login_membership_list_txt {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	@media screen and (max-width:767px) {
+		.login_membership {
+			margin: 0 0 20px;
+			padding: 0 12px 12px;
+		}
+		.login_membership_tit {
+			padding: 16px 0 10px;
+			font-size: 20px;
+		}
+		.login_membership_tit:before {
+			width: 44px;
+			height: 59px;
+			background-size: 44px;
+		}
+		.login_membership_list {
+			padding: 0;
+		}
+		.login_membership_list li:first-child {
+			min-height: 120px;
+			margin: 0 0 6px;
+			padding: 17px 0;
+		}
+		.login_membership_list li:first-child:before {
+			top: 53px;
+			left: 10px;
+			background-size: 65px;
+		}
+		.login_membership_list li:first-child .login_membership_list_tit {
+			font-size: 17px;
+			text-align: center;
+		}
+		.login_membership_list li + li {
+			float: none;
+			width: 100%;
+			margin: 0 0 6px;
+		}
+		.login_membership_list li + li + li {
+			float: none;
+			width: 100%;
+		}
+		.login_membership_list_tit {
+			font-size: 17px;
+		}
+		.login_membership_list_txt {
+			padding: 0 0 0 74px;
+		}
+	}
+	.memadd_table_01 td span.exp {
+		display: block;
+		float: none;
+		padding: 2px;
+		text-align: left;
+	}
+	.forget_pws {
+		text-align: center;
+		margin: 20px;
+	}
+	.forget_pws a {
+		text-decoration: underline;
+	}
+	.forget_pws a:hover {
+		text-decoration: none;
+	}
+</style>
+<style>
+a.registerBt {
+    display: block;
+    background: none repeat scroll 0 0 #b22222;
+    border-radius: 4px;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    width: 360px;
+    margin: 0 auto;
+}
+@media (max-width: 640px) {
+	a.registerBt {
+		width: 100%;
+	}
+	a.registerBt:hover,
+	a.loginBt:hover {
+		width: 100%;
+	}
+}
+</style>
+
+	<div class="login_purchase_box purchase_box register">
+	<h2 class="purchase_box_tit01">新規会員登録<span class="purchase_box_tit01_tag">初めてのお客様はこちらから</span></h2>
+	<div class="login_purchase_box_in purchase_box_in js-matchHeight">
+		<p class="purchase_box_txt01">会員登録をすると、次回以降、お届け先登録が省略できるほか、各種お得な情報をお届けいたします。</p>
+		<div class="login_membership mb30">
+			<h3 class="login_membership_tit">会員特典</h3>
+			<ul class="login_membership_list">
+				<li>
+					<p class="login_membership_list_tit"><span class="red">ココチモポイント</span>がたまる！</p>
+					<p class="login_membership_list_txt">購入金額に応じてポイントが貯まり、<br class="pc_only">お買い物に利用いただけます。</p>
+				</li>
+				<li>
+					<p class="login_membership_list_tit"><span class="red">500ポイント</span>を<br class="pc_only">プレゼント！</p>
+					<p class="add_txt">※初回の商品ご注文後に付与され、2回目以降のご注文でご利用いただけます。</p>
+				</li>
+				<li>
+					<p class="login_membership_list_tit"><span class="red">会員優待サービス</span><br class="pc_only">随時ご案内！</p>
+				</li>
+			</ul>
 		</div>
-		</span>
+		<p class="login_purchase_box_btn purchase_box_btn"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html" class="registerBt"><span style="color:#FFFFFF">会員登録をする</span></a></p>
+	</div>
+	</div>
 
 
-
-<form m:id="h_form_loginAuth" method="POST" action="shop.html" class="loginForm">
-			<span m:id="l_pre__S">
-				<input m:id="h_hid__S" type="hidden" name="_S" value="00000002" />
-			</span>
-<h4 m:id="dummy" class="temp_tit_06 clear"><div>ログイン情報入力</div></h4>
-
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><td class="sp_tcel">ログインID<span class="imp">必須</span></td></tr>
-<tr><th>ログインID<span class="imp">必須</span></th>
-<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_02"/>
-<span class="exp">例：kigokochi1234</span>
-<span m:id="l_msgPre_login_id">
-<div>							<span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span>
-</span>
-</div>						</span>
-
-
-</td>
-</tr>
-<tr><td class="sp_tcel">パスワード<span class="imp">必須</span></td></tr>
-<tr><th>パスワード<span class="imp">必須</span></th><td class="bor_bottom"><input m:id="h_pwd_password" type="password" name="password" class="in_w_02" />
-
-<span class="exp">例：<span m:id="sample_password">abcde12345</span></span>
-<div class="mt10"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html">※パスワードを忘れた方はこちら</a></div>
-<span m:id="l_msgPre_password">
-<div>							<span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span>
-</div>						</span>
-
-</td></tr>
-
-</table>
-
-		<!-- ボタン -->
-		<div>
-<!-- <input type="image" m:id="static_img" class="" alt="ログイン" />  -->
-
-        <a href="javascript:void(0);" class="loginBt"><span style="color:#FFFFFF">ログイン</span></a>
-
-		</div>
-		<!--/ ボタン -->
-		<script defer="defer" type="text/javascript">
-		<!--
-			document.loginForm.login_id.focus();
-		//-->
-		</script>
-		</form>
-
-		<!-- インクルード領域 -->
-		<span m:id="timed_include" filename="memberLogin_head"></span>
-		<!--/ インクルード領域  -->
-
-
-</div></div>
+<!--▲▲▲ 新規会員登録追加 ▲▲▲-->
 
 
 </div>
