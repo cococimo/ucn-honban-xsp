@@ -283,19 +283,19 @@ jQuery(function() {
 <!-- InstanceParam name="id" type="text" value="goods" -->
 <!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップです。 -->
 <script type="application/ld+json">
-	{
-	  "@context" : "http://schema.org",
-	  "@type" : "Product",
-	  "name" : "防災セット【防災テレビ付き】",
-	  "image" : "https://www.cococimo.jp/contents/shop/00000003/image/static/img/bousai/fixed03/seventh-img01_tv.jpg",
-	  "description" : "震災経験者1,000人の声から生まれました。「何から揃えればいいのかわからない」「一つひとつ集めるのは大変…」 そんなあなたにお薦めなのがこの『防災セット』。災害時の必需品が、ぱっと一度に揃います。",
-	  "url" : "https://www.cococimo.jp/item_bousaiset/",
-	  "offers" : {
-		"@type" : "Offer",
-		"price" : "35640"
-	  }
+{
+"@context" : "http://schema.org",
+"@type" : "Product",
+"name" : "防災セット【防災テレビ付き】",
+"image" : "https://www.cococimo.jp/contents/shop/00000003/image/static/img/bousai/fixed03/seventh-img01_tv.jpg",
+"description" : "震災経験者1,000人の声から生まれました。「何から揃えればいいのかわからない」「一つひとつ集めるのは大変…」 そんなあなたにお薦めなのがこの『防災セット』。災害時の必需品が、ぱっと一度に揃います。",
+"url" : "https://www.cococimo.jp/item_bousaiset/",
+"offers" : {
+	"@type" : "Offer",
+	"price" : "35640"
 	}
-	</script>
+}
+</script>
 <!-- /Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップです。 -->
 </head>
 
@@ -1018,7 +1018,7 @@ jQuery(function() {
 					<p class="order_btn viewSp"><a m:id="h_link_canAddCart8" href="cart.html" class="productDetail_cart_bt_normal" onclick=""><img m:id="static_img" src="../../../contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png" alt="今すぐ申し込む" class="hover" ></a></p>
 					<!-- お申込みボタン ここまで -->
 					<!-- </form> -->
-					<!-- お電話でもご注文いただけます SP版のみ表示  -->
+					<!-- お電話でもご注文いただけます SP版のみ表示  
 					<div class="sp-tell-order viewSp">
 						<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order.jpg" alt="お電話でもご注文いただけます！電話で気軽に注文したい！注文フォームのスマホ入力が苦手、、。そんなあなたには、お電話でのご注文をオススメいたします！「この商品いいな」」と思ったら、ぜひ下のボタンからお気軽にお電話ください！">
 						<p class="sp-tell-order-btn">
@@ -1027,7 +1027,7 @@ jQuery(function() {
 							</a>
 						</p>
 					</div>
-					<!-- お電話でもご注文いただけます SP版のみ表示 ここまで -->
+					お電話でもご注文いただけます SP版のみ表示 ここまで -->
 
  				<!-- 完売対応 
 				<div class="kanbai" style="padding:1.2em 1.2em 2em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
@@ -1281,18 +1281,54 @@ jQuery(function() {
 				</ul>
 
 				<div class="item_plan_list">
-				<!-- チャネル別決済種別制限取得 -->
-				<div class="goods_detail_item_plan">
-					<p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
-					<ul class="goods_detail_item_plan_list">
-						<span>
-							<li><img src="contents/c/icon/settle_ok_040.gif" alt="後払い利用可" /></li>
-							<li><img src="contents/c/icon/settle_ok_130.gif" alt="クレジットカード(GMOマルチペイメント)利用可" /></li>
-							<li><img src="contents/c/icon/settle_ok_020.gif" alt="代金引換利用可" /></li>
+					<!-- チャネル別決済種別制限取得 -->
+					<div class="goods_detail_item_plan">
+						<object class="xsp_obj" m:id="e_var_settlementMap"></object>
+						<p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
+						<ul class="goods_detail_item_plan_list">
+							<!-- <li><span class="icon-circle"></span>クレジットカード</li>
+							<li><span class="icon-circle"></span>代金引換</li> -->
+						<span m:id="l_pre_item_limit">
+						<span m:id="b_wr_valied_settle_sort"></span>
+						<span m:id="l_ite_valid_settle_sort">
+						<li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
 						</span>
-					</ul>
-				</div>
-				<!-- /チャネル別決済種別制限取得 -->
+						</span>
+						</ul>
+						<div class="l_con_list_03" style="display: none;">
+							<span m:id="l_pre_item_limit">
+								<span m:id="l_ite_valid_settle_sort" >
+									<img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
+								</span>
+								<span m:id="l_notEmp_item_limit">
+									※以下の決済方法はご利用いただけません<br/>
+									<span m:id="l_ite_item_limit">
+										<span m:id="l_equ_item_040">
+											<div class="error">
+												<table>
+													<tr>
+														<td valign="top">
+															<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+														</td>
+														<td>
+															<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</span>
+										<!--
+										<div class="error">
+										&nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+										<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+										</div>
+										-->
+									</span>
+								</span>
+							</span>
+						</div>
+					</div>
+					<!-- /チャネル別決済種別制限取得 -->
 				<p class="s_tac notic_txt">
 					<a href="#about_payment" class="cmn_link01" data-featherlight="#about_payment">お支払い方法について</a>
 					<a href="#about_postage" class="cmn_link01" data-featherlight="#about_postage">送料について</a>
@@ -1610,7 +1646,7 @@ jQuery(function() {
 						<span class="about_list_icon icon-dentaku"></span>
 						<p class="about_list_tit">お支払い方法について</p>
 						<div class="about_list_in">
-							<p class="about_list_txt">お支払いには、後払い、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。<br><br>詳しくは「ご利用ガイド」をご覧ください。</p>
+							<p class="about_list_txt">お支払いには、後払い、クレジットカード決済、代金引換（代引手数料別途300円・税込）がご利用いただけます。<br /><br />詳しくは「ご利用ガイド」をご覧ください。</p>
 						</div>
 					</li>
 					<li class="about_list_price js-matchHeight">
