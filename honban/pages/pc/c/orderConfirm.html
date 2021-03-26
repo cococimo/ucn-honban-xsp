@@ -494,11 +494,11 @@ $(function(){
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
 		<h1 class="header_logo">
-				<a m:id="e_link_logo_shop_shop" href="/">
+				<!-- <a m:id="e_link_logo_shop_shop" href="/"> -->
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
-				</a>
+				<!-- </a> -->
 			</h1>
 			<!--<div class="header_top">
 				<div class="header_tell" class="view">
@@ -606,7 +606,7 @@ $(function(){
 						<span m:id="l_notPre_free_guide">お申込み内容の確認<span m:id="l_pre_free_guide">資料請求情報確認</span>
 					</h1>
 					<span m:id="l_notPre_free_guide">
-						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「この内容で申込む」を押してください。<br>修正したい場合は、「戻る」を押して再度、入力をお願いします。</p>
+						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「この内容で申込む」を押してください。<br>修正したい場合は、「入力内容を修正」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社の「個人情報保護方針」に同意いただいたものとみなします。</p>
 					</span>
 					<span m:id="l_msgPre_1"><div class="error red"><span m:id="h_err_1">エラーメッセージ</span></div></span>
 				</div>
@@ -1162,6 +1162,104 @@ $(function(){
 				
 						</div>
 						<!-- /.confirm_main_in -->
+
+						<!-- back_link-->
+						<style>
+							.back_link .cmn_link01{
+								font-size: 1em;
+							}
+						</style>
+						<object class="xsp_obj" m:id="b_var_prevPageDo"></object>
+						<span m:id="l_msgNotPre_1">
+							<p class="back_link"><a m:id="a_href_shop_no" href="orderInput.html" class="cmn_link01 cmn_link01_reverse">入力内容を修正</a></p>
+						</span>
+						<!-- /back_link-->
+
+					<!--▼▼▼個人情報保護方針▼▼▼-->
+					<style>
+						.policy_term {
+							font-size: 14px;
+						}
+						.policy_term .cmn_tit01 {
+							max-width: 980px;
+							margin-left: auto;
+							margin-right: auto;
+						}
+						.policy_term .cmn_tit03 {
+							font-size: 100%;
+							font-weight: 700;
+							line-height: 1.4;
+							padding: 0 0 0 0;
+							border-left: none;
+							margin: 0 0 0;
+						}
+						@media screen and (max-width:767px) {
+							.policy_term .cmn_tit03 {
+								padding: 0 0 0 0;
+								border-left: none;
+								margin: 0 0 0;
+							}
+						}
+						.policy_term .policy_box {
+							height: 180px;
+							padding: 20px;
+							overflow: auto;
+							border: 1px solid #e5e4e4;
+						}
+						.policy_term .policy_box p {
+							padding-bottom: 20px;
+							line-height: 1.6;
+						}
+						@media screen and (max-width:767px) {
+							.policy_term .policy_box {
+								height: 270px;
+							}
+							.policy_term .policy_box p {
+								padding-bottom: 20px;
+							}
+						}
+					</style>
+					<span>
+						<div class="policy_term mb50 s_mb20">
+							<h2 class="cmn_tit01 cmn_tit01_sm"><span class="cmn_tit01_underline">個人情報保護方針</span></h2>
+							<div class="policy_box">
+								<h2 class="cmn_tit03 tit_top">【ユーキャンは個人情報を厳重に管理します】</h2>
+								<p class="txt">お客様の個人情報は、当社の教材・商品の発送やサービスの提供およびアンケート調査のほか、当社および当社が適切と認めた企業・団体等の商品・サービスに関する当社からの案内等に利用します。
+								<!-- <span class="mt10">なお、今後のご案内資料を希望されない場合は、お手数ですが下記までご連絡願います。</span></p>
+								<p class="viewPc img mt15"><img src="/contents/shop/00000003/image/static/guide/img_cancel_pc01.png" alt="ココチモお客様センター 0120-552-186"></p>
+								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> -->
+								<h2 class="cmn_tit03">個人情報の管理対策</h2>
+								<p class="txt">当社では、「個人情報保護管理委員会」を設置し、流失・漏洩など個人情報に関する問題やトラブルが発生しないよう、社員教育・社内啓発を徹底して行うと共に、各種セキュリティ対策の点検・見直し・改定を実施して、常に個人情報の安全管理に努めます。</p>
+								<h2 class="cmn_tit03">個人情報の委託について</h2>
+								<p class="txt">商品のお届けなど、その必要から当社がお客様の個人情報を取り扱う業務を外部の事業者に業務委託する場合は、当社の選定基準を満たした事業者のみに業務を委託すると共に、当該業務の機密保持等に関する契約を締結し、委託先に対しては個人情報保護に関し適切な教育、指導、監督を行います。</p>
+								<h2 class="cmn_tit03">個人情報の照会について</h2>
+								<p class="txt">ご住所、お名前など、お客様の個人情報の開示・訂正・利用停止などにつきましては、ご本人様確認を行ったうえで適宜対応させていただきます。<br>
+								お手数ですが、下記お問い合わせ窓口までご連絡ください。</p>
+								<p class="txt mt10">連絡先：0120-552-476（9:00&#xFF5E;17:30　日祝、年末年始を除く）</p>
+								<!-- <p class="viewPc img mt15"><img src="/contents/shop/00000003/image/static/guide/img_cancel_pc01.png" alt="ココチモお客様センター 0120-552-186"></p>
+								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> -->
+								<p class="txt mt20">当社の認定個人情報保護団体は、下記の通りです。<br>
+								公益社団法人 日本通信販売協会（ＪＡＤＭＡ 通販110番）</p>
+								<p class="txt mt10 pb1"><a href="https://www.jadma.or.jp/consumers/dm110/" target="_blank">https://www.jadma.or.jp/consumers/dm110/</a><br>
+								連絡先：03-5651-1122</p>
+								<p class="txt mt10">受付：月&#xFF5E;金曜日 午前10時30分&#xFF5E;12時、午後1&#xFF5E;4時（年末・年始、祝日を除く）</p>
+								<h2 class="cmn_tit03">個人情報保護のためにSSL（暗号化技術）<br class="viewSp">を使用しています</h2>
+								<p class="txt">「ココチモ」ホームページは、シマンテック社の「SSL 証明書」を取得しています。
+								当ホームページでご入力いただくお客様の個人情報は、SSL（Secure Sockets Layer）と呼ばれる暗号化技術によって保護されていますので、安心してご利用ください（SSL 対応のブラウザでないと正しく動作しない場合がありますので、ご注意ください）。</p>
+								<h2 class="cmn_tit03">当サイトへのアクセス時に収集される<br class="viewSp">情報について</h2>
+								<p class="txt">当サイトをご利用になると、お客様のIP アドレス、OS、ご使用のブラウザ名とそのバージョン、プロバイダのホスト名等が収集されます。<br>これは統計値（アクセスログ）として処理され、サイトの改善等に利用させていただきます。これらの情報により、お客様個人を特定することは決してございません。</p>
+								<h2 class="cmn_tit03">クッキー（Cookie）について</h2>
+								<p class="txt">当サイトでは、クッキーという、当サイトとお客様のやりとりをお客様のパソコンやスマートフォン等にテキスト（文字）形式で保存する仕組みを使っております。これはお客様が当サイトに再度ご訪問された際に入力操作を簡便化したり、上記と同じく統計値として利用させていただいたりするもので、多くのウェブサイトで使われている標準的な技術です。<br>
+								<span class="mt10">また当社では、クッキーを使った行動ターゲティング広告の配信を行っています。行動ターゲティング広告とは、サイト閲覧情報等をもとに来訪者の興味・関心にあわせて広告を表示する手法です。</span>
+								<span class="mt10">なお、最適な広告表示のために、クッキー情報を当社の広告を表示・配信する他社サイトを経由して保存し、参照する場合があります。<br>クッキーは、ブラウザの設定を変更いただくことにより無効化、削除することできます。</span>
+								<span class="mt10">ただしその結果、サイトをご利用いただく際の利便性が落ちる、サービスがご利用いただけない等の不具合を生じる可能性がございますので、有効な状態としていただくことをお勧めいたします。なお、このクッキーは、広告配信のみに使用され、その他の目的には使用されません。また、お客様個人を特定・識別する情報は保持しておりませんので、ご安心ください。</span></p>
+							</div>
+							<!-- policy_box -->
+						</div>
+						<!-- /.policy -->
+						</span>
+						<!--▲▲▲個人情報保護方針▲▲▲ -->
+
 						<ul class="confirm_main_footer">
 							<object class="xsp_obj" m:id="b_var_prevPageDo"></object>
 							<span m:id="l_msgNotPre_1">
@@ -1173,9 +1271,9 @@ $(function(){
 									<!-- <img m:id="static_img" name="order_submit_button" src="../../../contents/shop/00000003/shop/image/ord_con_bt_ng.png" alt="ポイントを入力してください" /> -->
 								</li>
 							</span>
-							<li class="confirm_main_footer_txt">
-								<a m:id="a_href_shop_no" href="orderInput.html" class="cmn_link01 cmn_link01_reverse">戻る</a>
-							</li>
+							<!-- <li class="confirm_main_footer_txt">
+								<a m:id="a_href_shop_no" href="orderInput.html" class="cmn_link01 cmn_link01_reverse">入力内容を修正</a>
+							</li> -->
 						</ul>
 						<!-- /.confirm_main_footer -->
 					</div>
