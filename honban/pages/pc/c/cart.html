@@ -1021,7 +1021,11 @@ $(function() {
                 <script>
                   const ext_goods_code = tagForm.ext_goods_code.value;
                   const cart_addition_targets = document.querySelectorAll('.cart_addition_list li');
+                  console.log('ext_goods_code:' + ext_goods_code.match('DEB71'));
+                  console.log('cart_addition_target:' + cart_addition_targets);
+                  console.log(cart_addition_targets.length);
 
+                  
                   if(ext_goods_code.match('DEB71') !== null && cart_addition_targets.length) {
                     for(let i = 0; i<cart_addition_targets.length;i++) {
                     const target = cart_addition_targets[i];
