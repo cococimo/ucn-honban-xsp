@@ -916,6 +916,11 @@ $(function () {
 	$('input[name=card_exp_month]').attr('placeholder','例：04');
 	$('input[name=card_exp_year]').attr('placeholder','例：24');
 
+	//PCのみ読み込み時、フォーカス指定
+	if (!(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 || navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0)) {
+		document.orderForm.name_sei.focus(); 
+	}
+
 	//enterフォーカス移動
 	$('form').on('keydown', 'input, button, select', function(e) {
     if (e.keyCode == 13) {
@@ -1319,11 +1324,11 @@ $(function () {
 	<div class="header_in cf">
 		<span m:id="l_equ_hierarchy_3_shop">
 		<h1 class="header_logo">
-				<a m:id="e_link_logo_shop_shop" href="/">
+				<!-- <a m:id="e_link_logo_shop_shop" href="/"> -->
 					<span m:id="l_notEmp_shop_image_file_shop">
 						<img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
 					</span>
-				</a>
+				<!-- </a> -->
 			</h1>
 			<!--<div class="header_top">
 				<div class="header_tell" class="view">
