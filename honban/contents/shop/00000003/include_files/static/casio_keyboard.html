@@ -807,7 +807,7 @@
 							<td>
 								<ul class="remarks_list">
 									<li>実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。</li>
-									<li>商品は通常7&#xFF5E;12日前後でお届けいたします。</li>
+									<li>商品は通常3&#xFF5E;6日前後でお届けいたします。</li>
 									<li>ご用意していた数量を超えるご注文があった場合、完売や、数ヵ月お待ちいただくことがございます。何卒ご了承ください。</li>
 								</ul>
 							</td>
@@ -821,232 +821,7 @@
 		</div><!-- /spec_table-->
 	</section><!-- /casio_keyboard_spec -->
 
-	<style>
-		.casio_keyboard_info {
-			font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-			padding-top:42px;
-		}
-		@media (max-width: 767px) {
-			.casio_keyboard_info {
-				padding-top:10px;
-			}
-		}
-		/* 価格info */
-		.price_info_area {
-			font-size: 15px;
-			margin: 0 auto 42px;
-			font-weight: normal;
-			position: relative;
-			display: flex;
-			flex-wrap: nowrap;
-			justify-content: center;
-		}
-		@media (max-width: 767px) {
-			.price_info_area {
-				font-size: 1em;
-				margin: 0 15px 0;
-				display: block;
-			}
-		}
-		.price_info_area .price_info {
-			width:360px;
-			margin-right: 20px;
-		}
-		@media (max-width: 767px) {
-			.price_info_area .price_info {
-				width:auto;
-				margin-right: 0;
-				display: flex;
-				flex-direction: column;
-			}
-			.price_info_area .price_info .price_split_wrap{
-				order: 1;
 	
-			}
-			.price_info_area .price_info .plice_list {
-				order: 3
-	
-			}
-			.price_info_area .price_info .price-notice {
-				order: 2;
-				margin-bottom: 20px;
-			}
-		}
-		.price_info_area .plice_delivery {
-			width:291px;
-		}
-		@media (max-width: 767px) {
-			.price_info_area .plice_delivery {
-				width:auto;
-			}
-		}
-		.price_info_area .price_info .price_split_wrap {
-			border: 1px solid #acdde0;
-			padding: 2% 3%;
-			margin: 0 0 3px;
-		}
-		.price_info_area .price_info .price_split_wrap .kakaku {
-			font-size: .9em;
-		}
-		.price_info_area .price_info .price_split_wrap .price_split {
-			font-size: 1.3em;
-			font-weight: bold;
-			line-height: 1.5;
-		}
-		.price_info_area .price_info .price_split_wrap .price_split span {
-			vertical-align: baseline;
-		}
-		.price_info_area .price_info .price_split_wrap .price_split span.month {
-			font-weight: normal;
-		}
-		.price_info_area .price_info .price_split_wrap .price_split span.value {
-			color: #cf1f1f;
-			font-weight: bold;
-			font-size: 1.9em;
-		}
-		.price_info_area .price_info .price_split_wrap .price_split span.num {
-			font-weight: bold;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail {
-			overflow: hidden;
-			line-height: 1.4;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail dt {
-			width: 50%;
-			float: left;
-			padding:5px;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
-			padding-bottom:0;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
-			padding-left: 1em;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail dd {
-			padding:5px 5px 5px 40%;
-			border-bottom: 1px dotted #ccc;
-			text-align: right;
-		}
-		.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
-			padding:5px 5px 0 40%;
-			border-bottom: none;
-		}
-		.price_info_area .price_info .plice_list {
-			text-align: center;
-		}
-		@media (max-width: 767px) {
-			.price_info_area .price_info .plice_list img {
-				width: auto;
-				max-width: 291px;
-			}
-		}
-	
-		.price_info_area .price_info .price-notice {
-			font-size: .83em;
-			margin-top: 5px;
-		}
-		.price_info_area .price_info .price-notice  li {
-			text-indent: -1em;
-			padding-left: 2em;
-		}
-		@media (max-width: 767px) {
-			.plice_delivery {
-				text-align: center;
-				padding-top:10px;
-			}
-			.plice_delivery img {
-				width: auto;
-				max-width:291px;
-			}
-		}
-		.plice_delivery .return_txt {
-			padding:10px 0 30px;
-			text-align: center;
-		}
-		@media (max-width: 767px) {
-			.plice_delivery .return_txt {
-				padding:5px 0 10px;
-				text-align: center;
-			}
-		}
-		.goods_detail_item_postage {
-				display: block;
-				margin-top: 0;
-				margin-bottom: 5px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
-				font-size: 1em;
-				font-weight: normal;
-				border: 1px solid #cc1010;
-				line-height: 1.5em;
-			}
-			@media screen and (max-width: 767px) {
-				.goods_detail_item_postage {
-				width: auto;
-				}
-			
-			}
-		</style>
-	
-		<div class="casio_keyboard_info">
-			<div class="price_info_area">
-				<div class="price_info">
-					<div class="price_split_wrap">
-						<p class="kakaku">【税込価格】</p>
-						<p class="price_split"><span class="month">月々 </span><span class="value">2,880円</span><span class="num">×14回払</span></p>
-						<p class="goods_detail_item_postage">
-							<!--<span class="goods_detail_item_postage_prefix">￥</span>-->送料無料
-						</p>
-						<dl class="price_detail">
-							<dt>■分割払価格</dt>
-							<dd>40,320円</dd>
-							<dt class="indent">●一回の分割払金</dt>
-							<dd>2,880円</dd>
-							<dt class="indent">●支払回数</dt>
-							<dd>14回</dd>
-							<dt class="indent">●支払期間</dt>
-							<dd>14ヶ月</dd>
-							<dt>■一括払価格</dt>
-							<dd>39,800円</dd>
-						</dl>
-					</div>
-					<div class="plice_list">
-						<img src="contents/c/image/static/img/infotext01_postpay.png" alt="後払い（分割/一括）手数料0円　クレジットカード　手数料0円 代金引換　代引手数料300円">
-					</div>
-					<ul class="price-notice">
-						<li>※金額はすべて税込みです。</li>
-						<!-- <li style="letter-spacing:-0.05em">※現在、本商品はクレジットカード決済はご利用いただけません。</li> -->
-						<li>※代金引換の場合は、一括払いのみとなります。</li>
-						<li>※商品はお申込みから通常7&#xFF5E;12日前後でお届けいたします。</li>
-					</ul>
-				</div>
-				<div class="plice_delivery">
-					<img src="/contents/c/image/static/img/infotext02_free.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
-					<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
-					<!--▼▼▼モーダル▼▼▼-->
-					<div id="return_goods" class="lightbox">
-						<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
-						<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
-						<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
-						<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
-					</div><!-- /#return_goods -->
-					<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時～12時 14時～15時 16時～18時 18時～20時 19時～21時"></div>
-				</div>
-			</div>
-		</div><!-- /casio_keyboard_info -->
-
-	<!-- お申込みボタン -->
-	<p class="order_btn pb60 s_pb30">
-		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
-			<picture>
-				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
-				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn_sp.png">
-				<img src="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png" alt="ご注文はこちらから">
-			</picture>
-		</a>
-	</p>
-	<!-- お申込みボタン ここまで -->
 
 	</div><!-- casio_keyboard_wrapper -->
 </div><!-- goods_wrap -->
@@ -1248,175 +1023,173 @@
 
 <!-- <script src="/contents/shop/00000003/js/casio_keyboard/lib/greensock/plugins/ScrollToPlugin.min.js"></script> -->
 <script>
-$(function () {
-	
-	$(window).load(function () {
-		$('.goods_flexslider').flexslider({
-			animation: "slide",
-			start: function(slider){
-			$('#casio_keyboard_slider_area').removeClass('loading');
-			$('#casio_keyboard_slider_area .loading_icon').remove();
-			}
-		});
-
-	});
-
-    /* sp layout change
-    ------------------------------------- */
-    // function switchImg() {
-    //     var breakPoint = 767;
-    //     var windowWidth = parseInt($(window).width());
-
-    //     // int
-    //     if(windowWidth <= breakPoint) {
-    //         $('.casio_keyboard_int').each(function(){
-    //             var $img = $(this).find('.img ');
-    //             var $box = $(this).find('.content_box .box');
-    //             $box.before($img);
-    //         });
-    //     } else {
-    //         $('.casio_keyboard_int .content_box').each(function(){
-    //             var $self = $(this);
-    //             var $img = $(this).find('.img');
-    //             $self.append($img);
-    //         });
-    //     }
-	// }
-
-	/* resize†
-	------------------------------------- */
-	// var resizeTimer;
-	// $(window).on('resize', function() {
-	// 	clearTimeout(resizeTimer);
-	// 	resizeTimer = setTimeout(function() {
-	// 	 switchImg();
-	// 	showMore();
-	// 	}, 200);
-	// });
-
-	/* initial
-	------------------------------------- */
-	// switchImg();
-	showMore();
-
-	// var ua = navigator.userAgent;
-    // if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-    //     showContent();
-    // }
-	
-
-    /* showmore
-	------------------------------------- */
-	function showMore() {
-		if($(window).width() > 767){
-			
-				$('.music_list .contain').slice(2, 7).wrapAll('<div class="slideArea close"></div>');
-		}else{
-
-			$('.music_list .contain').slice(1, 7).wrapAll('<div class="slideArea close"></div>');
-		}
-		var slideHeight = 0;
-		var slideTop = 0;
-		var slideArea;
-
-		slideArea = $('.slideArea');
-		$('.casio_keyboard_details .list_toggle a').off();
-
-		$('.casio_keyboard_details .list_toggle a').click(function () {
-			slideHeight = slideArea.height();
-			slideTop = slideArea.offset().top;
-
-			if ($(this).hasClass('opened')) {
-				$(this).removeClass('opened');
-				$('.casio_keyboard_details .list_toggle').addClass('open_link').removeClass('close_link');
-				$('.slideArea')
-				.addClass('close')
-				.removeClass('open');
-				
-				$('html,body').animate({ scrollTop: slideTop }, 300);
-
-			} else {
-				$(this).addClass('opened');
-				$('.casio_keyboard_details .list_toggle')
-				.removeClass('open_link')
-				.addClass('close_link');
-				$('.slideArea').addClass('open').removeClass('close');
-			}
-		});
-	}
-
-    /* showContent
-	------------------------------------- */
-	// function showContent() {
-	// 	var keyboardArea; 
-	// 	var targetBtn;
-	// 	var targetBtnTop = 0;
-	// 	var thisAdjOffset = 100;
+	$(function () {
 		
-	// 	keyboardArea = $("#keyboardArea");
-	// 	keyboardArea.addClass('close');
-	// 	targetBtn =$("#sp_target");
-
-	// 	$('.content_toggle a').off();
-	// 	$('.content_toggle a').click(function () {
-	// 		targetBtnTop = targetBtn.offset().top;
+		$(window).load(function () {
+			$('.goods_flexslider').flexslider({
+				animation: "slide",
+				start: function(slider){
+				$('#casio_keyboard_slider_area').removeClass('loading');
+				$('#casio_keyboard_slider_area .loading_icon').remove();
+				}
+			});
+	
+		});
+	
+		/* sp layout change
+		------------------------------------- */
+		// function switchImg() {
+		//     var breakPoint = 767;
+		//     var windowWidth = parseInt($(window).width());
+	
+		//     // int
+		//     if(windowWidth <= breakPoint) {
+		//         $('.casio_keyboard_int').each(function(){
+		//             var $img = $(this).find('.img ');
+		//             var $box = $(this).find('.content_box .box');
+		//             $box.before($img);
+		//         });
+		//     } else {
+		//         $('.casio_keyboard_int .content_box').each(function(){
+		//             var $self = $(this);
+		//             var $img = $(this).find('.img');
+		//             $self.append($img);
+		//         });
+		//     }
+		// }
+	
+		/* resize†
+		------------------------------------- */
+		// var resizeTimer;
+		// $(window).on('resize', function() {
+		// 	clearTimeout(resizeTimer);
+		// 	resizeTimer = setTimeout(function() {
+		// 	 switchImg();
+		// 	showMore();
+		// 	}, 200);
+		// });
+	
+		/* initial
+		------------------------------------- */
+		// switchImg();
+		showMore();
+	
+		// var ua = navigator.userAgent;
+		// if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+		//     showContent();
+		// }
+		
+	
+		/* showmore
+		------------------------------------- */
+		function showMore() {
+			if($(window).width() > 767){
+				
+					$('.music_list .contain').slice(2, 7).wrapAll('<div class="slideArea close"></div>');
+			}else{
+	
+				$('.music_list .contain').slice(1, 7).wrapAll('<div class="slideArea close"></div>');
+			}
+			var slideHeight = 0;
+			var slideTop = 0;
+			var slideArea;
+	
+			slideArea = $('.slideArea');
+			$('.casio_keyboard_details .list_toggle a').off();
+	
+			$('.casio_keyboard_details .list_toggle a').click(function () {
+				slideHeight = slideArea.height();
+				slideTop = slideArea.offset().top;
+	
+				if ($(this).hasClass('opened')) {
+					$(this).removeClass('opened');
+					$('.casio_keyboard_details .list_toggle').addClass('open_link').removeClass('close_link');
+					$('.slideArea')
+					.addClass('close')
+					.removeClass('open');
+					
+					$('html,body').animate({ scrollTop: slideTop }, 300);
+	
+				} else {
+					$(this).addClass('opened');
+					$('.casio_keyboard_details .list_toggle')
+					.removeClass('open_link')
+					.addClass('close_link');
+					$('.slideArea').addClass('open').removeClass('close');
+				}
+			});
+		}
+	
+		/* showContent
+		------------------------------------- */
+		// function showContent() {
+		// 	var keyboardArea; 
+		// 	var targetBtn;
+		// 	var targetBtnTop = 0;
+		// 	var thisAdjOffset = 100;
 			
-			
-	// 		if ($(this).hasClass('opened')) {
-	// 			$(this).removeClass('opened');
-	// 			$('.content_toggle').addClass('open_link').removeClass('close_link');
-	// 			keyboardArea
-	// 			.addClass('close')
-	// 			.removeClass('open');
-	// 			$('html,body').animate({ scrollTop: targetBtnTop },300);
+		// 	keyboardArea = $("#keyboardArea");
+		// 	keyboardArea.addClass('close');
+		// 	targetBtn =$("#sp_target");
+	
+		// 	$('.content_toggle a').off();
+		// 	$('.content_toggle a').click(function () {
+		// 		targetBtnTop = targetBtn.offset().top;
 				
 				
-
-	// 		} else {
-	// 			$(this).addClass('opened');
-	// 			$('.content_toggle')
-	// 			.removeClass('open_link')
-	// 			.addClass('close_link');
-	// 			keyboardArea.addClass('open').removeClass('close');
-	// 		}
-	// 	});
-	// }
-
-
-    /* cart fixation
-    ------------------------------------- */
-    // var controller = new ScrollMagic.Controller();
-    // $(".goto_cart").css({'right':$(this).width()*-1 + 'px'});
-
-    // var tween_i = TweenMax.staggerTo('.goto_cart', 1, {right:'10px'} , 0.7);
-    // var scene = new ScrollMagic.Scene({
-    //     triggerElement:'.casio_keyboard_wrapper',
-    //     triggerHook: 'onEnter',
-    //     // reverse:false,
-    //     offset:0,
-    //   })
-	//   .setTween(tween_i)
-	// //   .addIndicators()
-    //   .addTo(controller); 
-
-    // var tween_j = TweenMax.staggerTo('.goto_cart', 1, {'right':$(this).width()*-1 + 'px'} , 0.7);
-    // var scene = new ScrollMagic.Scene({
-    //     triggerElement:'#footer',
-    //     triggerHook: 'onEnter',
-    //     // reverse:false,
-    //     offset:0,
-    //   })
-    //   .setTween(tween_j)
-	//   .addTo(controller); 
-	  
-
-});
-</script>
-
-<script>
-	// Picture element HTML5 shiv
-	document.createElement( "picture" );
-</script>
-<script type="text/javascript" src="/contents/shop/00000003/js/casio_keyboard/picturefill.js"></script>
-
-
+		// 		if ($(this).hasClass('opened')) {
+		// 			$(this).removeClass('opened');
+		// 			$('.content_toggle').addClass('open_link').removeClass('close_link');
+		// 			keyboardArea
+		// 			.addClass('close')
+		// 			.removeClass('open');
+		// 			$('html,body').animate({ scrollTop: targetBtnTop },300);
+					
+					
+	
+		// 		} else {
+		// 			$(this).addClass('opened');
+		// 			$('.content_toggle')
+		// 			.removeClass('open_link')
+		// 			.addClass('close_link');
+		// 			keyboardArea.addClass('open').removeClass('close');
+		// 		}
+		// 	});
+		// }
+	
+	
+		/* cart fixation
+		------------------------------------- */
+		// var controller = new ScrollMagic.Controller();
+		// $(".goto_cart").css({'right':$(this).width()*-1 + 'px'});
+	
+		// var tween_i = TweenMax.staggerTo('.goto_cart', 1, {right:'10px'} , 0.7);
+		// var scene = new ScrollMagic.Scene({
+		//     triggerElement:'.casio_keyboard_wrapper',
+		//     triggerHook: 'onEnter',
+		//     // reverse:false,
+		//     offset:0,
+		//   })
+		//   .setTween(tween_i)
+		// //   .addIndicators()
+		//   .addTo(controller); 
+	
+		// var tween_j = TweenMax.staggerTo('.goto_cart', 1, {'right':$(this).width()*-1 + 'px'} , 0.7);
+		// var scene = new ScrollMagic.Scene({
+		//     triggerElement:'#footer',
+		//     triggerHook: 'onEnter',
+		//     // reverse:false,
+		//     offset:0,
+		//   })
+		//   .setTween(tween_j)
+		//   .addTo(controller); 
+		  
+	
+	});
+	</script>
+	
+	<script>
+		// Picture element HTML5 shiv
+		document.createElement( "picture" );
+	</script>
+	<script type="text/javascript" src="/contents/shop/00000003/js/casio_keyboard/picturefill.js"></script>
