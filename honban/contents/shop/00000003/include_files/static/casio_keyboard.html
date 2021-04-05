@@ -34,7 +34,48 @@
 	}
 </style>
 <div class="goods_wrap">
+<style>
+	
+	#content_wrap .casio_keyboard_slider {
+		padding-top: 0;
+		margin-bottom: 20px;
+	}
+	#content_wrap .casio_keyboard_slider .flex-control-nav {
+		display: none;
+	}
+	#content_wrap .casio_keyboard_slider .goods_flexslider .flex-direction-nav a {
+		margin: 0 25vw 0;
+		top: 96.5vw;
+		width: 35px;
+		height: 35px;
+		font-size: 0;
+		text-align: center;
+	}
+	@media (max-width: 320px) {
+		#content_wrap .casio_keyboard_slider .goods_flexslider .flex-direction-nav a {
+		margin: 0 25vw 0;
+		top: 96.5vw;
 
+		}
+	}
+	#content_wrap .custom_nav_number {
+		width: 60px;
+		text-align: center;
+		margin: 10px auto;
+		background: rgba(0,0,0,.5);
+		border-radius: 30px;
+		color: #fff;
+		font-size: .9em;
+		padding: .3em;
+	}
+	@media (max-width: 320px) {
+		#content_wrap .deviceSP .flex-control-paging li a {
+			width: 10px !important;
+			height: 10px !important;
+		}
+	}
+
+</style>
 <div class="viewSp">
 	<div class="casio_keyboard_slider loading" id="casio_keyboard_slider_area">
 		<div class="loading_icon"></div>
@@ -58,7 +99,7 @@
 	</div><!-- casio_keyboard_slider -->
 </div>
 <!-- お申込みボタン SP版のみ表示 ここから -->
-<p class="order_btn viewSp" style="margin-top: 80px;">
+<p class="order_btn viewSp">
 	<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 		<picture>
 			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/casio_keyboard/order_btn.png">
@@ -1024,18 +1065,28 @@
 <!-- <script src="/contents/shop/00000003/js/casio_keyboard/lib/greensock/plugins/ScrollToPlugin.min.js"></script> -->
 <script>
 	$(function () {
-		
 		$(window).load(function () {
 			$('.goods_flexslider').flexslider({
 				animation: "slide",
 				start: function(slider){
 				$('#casio_keyboard_slider_area').removeClass('loading');
-				$('#casio_keyboard_slider_area .loading_icon').remove();
+				$('#casio_keyboard_slider_area　.loading_icon').remove();
+				$("<div>", {
+					class: 'custom_nav_number',
+					text: "1/" + slider.count
+				}).insertBefore('.flex-control-nav');
+				},
+				before: function(slider){
+				const $customNavNumber = $('.custom_nav_number');
+				$customNavNumber.text(`${slider.animatingTo + 1}/${slider.count}`);
 				}
 			});
 	
 		});
-	
+	});
+	</script>
+	<script>
+	$(function () {
 		/* sp layout change
 		------------------------------------- */
 		// function switchImg() {
