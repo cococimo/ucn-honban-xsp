@@ -1,0 +1,233 @@
+#content_wrap .item_info {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    padding-top:0;
+}
+@media (max-width: 767px) {
+    #content_wrap .item_info {
+        padding-top:10px;
+    }
+}
+#content_wrap .item_info .price_img {
+    text-align: center;
+    max-width: 587px;
+    margin: 0 auto 20px;
+}
+/* 価格info */
+#content_wrap .price_info_area {
+    font-size: 15px;
+    margin: 0 auto 42px;
+    font-weight: normal;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    #content_wrap .price_info_area {
+        font-size: 1em;
+        margin: 0 0 0;
+        display: block;
+    }
+}
+#content_wrap .price_info_area .price_info {
+    width:360px;
+    margin-right: 20px;
+}
+@media (max-width: 767px) {
+    #content_wrap .price_info_area .price_info {
+        width:auto;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #content_wrap .price_info_area .price_info .price_split_wrap{
+        order: 1;
+
+    }
+    #content_wrap .price_info_area .price_info .item_plan_list {
+        order: 3
+    }
+    #content_wrap .price_info_area .price_info .price_notice {
+        order: 2;
+        margin-bottom: 0;
+    }
+}
+#content_wrap .price_info_area #content_wrap .plice_delivery {
+    width:291px;
+}
+@media (max-width: 767px) {
+    #content_wrap .price_info_area #content_wrap .plice_delivery {
+        width:auto;
+    }
+}
+#content_wrap .price_info_area .price_info .price_split_wrap {
+    border: 1px solid #acdde0;
+    padding: 2% 3%;
+    margin: 0 0 3px;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .kakaku {
+    font-size: .9em;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split span {
+    vertical-align: baseline;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split span.month {
+    font-weight: normal;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split span.value {
+    color: #cf1f1f;
+    font-size: 1.9em;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split span.num,
+#content_wrap .price_info_area .price_info .price_split_wrap .price_split span.num  * {
+    font-weight: bold;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail {
+    overflow: hidden;
+    line-height: 1.4;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail dt {
+    width: 50%;
+    float: left;
+    padding:5px;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
+    padding-bottom:0;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+    padding-left: 1em;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail dd {
+    padding:5px 5px 5px 40%;
+    border-bottom: 1px dotted #ccc;
+    text-align: right;
+}
+#content_wrap .price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
+    padding:5px 5px 0 40%;
+    border-bottom: none;
+}
+#content_wrap .price_info_area .price_info .item_plan_list {
+    margin-top: 20px;
+}
+#content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list {
+    overflow: hidden;
+
+}
+#content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_tit {
+    padding: 8px;
+    text-align: center;
+}
+#content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list li {
+    width: 49%;
+    padding: 8px;
+    float: left;
+    margin: 8px 0 0;
+    padding: 3px 5px;
+    background: #26a903;
+}
+@media (max-width: 767px) {
+    #content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list span {
+        display: flex;
+        flex-direction: row;
+    }
+    #content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list span li {
+        width: 32%;
+        margin-right: 10px;
+    }
+    #content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list li:nth-child(3) {
+        margin-right: 0;
+    }
+    #content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list span li img {
+        vertical-align: middle;
+    }
+
+}
+#content_wrap .price_info_area .price_info .item_plan_list .goods_detail_item_plan_list li:nth-child(2) {
+    float: right;
+}
+
+
+#content_wrap .price_info_area .price_info .item_plan_list .notic_txt {
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+#content_wrap .price_info_area .price_info .item_plan_list .notic_txt .cmn_link01 {
+    font-size: 13px;
+}
+@media screen and (max-width: 767px) {
+    #content_wrap .price_info_area .price_info .item_plan_list .notic_txt .cmn_link01 {
+        font-size: 3.2vw;
+        text-align: left;
+        
+    }
+}
+#content_wrap .price_info_area .price_info .item_plan_list .notic_txt .cmn_link01:before {
+    font-family: icomoon !important;
+    position: relative;
+    left: 0;
+    top: -1px;
+    padding-right: 3px;
+}
+@media screen and (max-width: 767px) {
+    #content_wrap .price_info_area .price_info .item_plan_list .notic_txt .cmn_link01:before {
+        top: -2px;
+    }
+}
+
+#content_wrap .pho_box {
+        text-align: center;
+        margin-top: 20px;
+}
+
+#content_wrap .price_info_area .price_info .price_notice {
+    font-size: .83em;
+    margin-top: 5px;
+    margin-left: -1em;
+}
+#content_wrap .price_info_area .price_info .price_notice  li {
+    text-indent: -1em;
+    padding-left: 2em;
+}
+@media (max-width: 767px) {
+    #content_wrap .plice_delivery {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #content_wrap .plice_delivery img {
+        width: auto;
+        max-width:291px;
+    }
+}
+#content_wrap .plice_delivery .return_txt {
+    padding:10px 0 30px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #content_wrap .plice_delivery .return_txt {
+        padding:5px 0 10px;
+        text-align: center;
+    }
+}
+#content_wrap .goods_detail_item_postage {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1em;
+        font-weight: normal;
+        border: 1px solid #cc1010;
+        line-height: 1.5em;
+    }
+    @media screen and (max-width: 767px) {
+        #content_wrap .goods_detail_item_postage {
+        width: auto;
+        }
+    
+    }

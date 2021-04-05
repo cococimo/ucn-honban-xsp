@@ -1,0 +1,100 @@
+#content_wrap .seventh .price-row .dvd_info_right {
+    float: right;
+    width: 291px;
+    padding-right: 0;
+}
+#content_wrap .seventh .price .seventh-left {
+    float: left;
+    width: 495px;
+}
+@media screen and (max-width: 640px) {
+    #content_wrap .seventh .price .seventh-left {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+}
+}
+#content_wrap .seventh .price-row .dvd_pic {
+    width: 604px;
+    float: left;
+    padding-left: 0;
+}
+#content_wrap .seventh .price-row .return_txt {
+    padding-left: 10px;
+}
+#content_wrap .return_txt{ 
+    font-size: 14px;
+}
+#content_wrap .return_txt a {
+    text-decoration: underline;
+}
+#content_wrap .return_txt a:hover {
+    text-decoration: none;
+}
+#content_wrap .seventh .price-row .dvd_pic img {
+    max-width: none;
+    width: 100%;
+}
+#content_wrap .seventh .price {
+    border: 1px solid #dcdcdc;
+    width: 100%;
+    margin: 10px auto 0;
+    float: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px 20px 15px;
+
+}
+
+#content_wrap .seventh .price .ikkatsu_wrap {
+    border-bottom: 1px solid #a0a0a0;
+    font-size: 24px;
+    padding-bottom: 16px;
+    margin-top: 20px;
+}
+#content_wrap .seventh .price .ikkatsu_wrap .ikkatsu_content {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 640px) {
+    #content_wrap .seventh .price .ikkatsu_wrap {
+    border-bottom: 1px solid #a0a0a0;
+    font-size: 20px;
+    padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #content_wrap .seventh .price .ikkatsu-kakaku {
+        margin-left: 10px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #content_wrap .seventh .price-row .dvd_info_right {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        display: block;
+        margin-top: 20px;
+    }
+    #content_wrap .seventh .price-row .dvd_pic {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+    #content_wrap .return_txt{ 
+        font-size: 12px;
+    }
+    #content_wrap .dvd_info {
+        margin: 0 0;
+    }
+    #content_wrap .s_pt20 {
+        padding-top: 20px;
+    }
+    #content_wrap .seventh .price-row .dvd_pic img {
+        max-width: 320px;
+        width: auto;
+    }
+}
