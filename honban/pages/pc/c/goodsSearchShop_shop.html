@@ -265,6 +265,32 @@ $(function(){
 		}
 
 	}
+	/* ヘッダーの領域を狭くする（PCのみ） */
+	#category .goods_archive {
+		padding-top: 24px;
+	}
+	@media screen and (max-width: 767px) {
+		#category .goods_archive {
+			padding-top: 20px;
+		}
+	}
+	#category .goods_archive_tit {
+		font-size: 24px;
+	}
+	@media screen and (max-width: 767px) {
+		#category .goods_archive_tit {
+    		font-size: 19px;
+		}
+	}
+	#category .goods_archive_mg {
+		overflow: hidden;
+		padding: 25px 25px;
+	}
+	@media screen and (max-width: 767px) {
+		#category .goods_archive_mg {
+			padding: 15px 10px;
+		}
+	}
 </style>
 <script type="text/javascript">
 	function checkedGoods() {
@@ -357,6 +383,20 @@ $(function(){
 		var pathname= location.pathname;
 		var array = pathname.split("/");
 		var cat_num = array[4];
+		var cat_ul = $('.l_con_list_01');
+		var cat_li = cat_ul.find('li');
+
+		$(cat_li).each(function(i, val) {
+			var cat_li_a = $(val).find('a');
+			var cat_li_pathname =cat_li_a.attr('href');
+			var cat_li_array = cat_li_pathname.split("/");
+			var cat_li_num = cat_li_array[4];
+
+			if(cat_li_num === cat_num) {
+				cat_li_a.addClass('is-current');
+			}
+		});
+
 			//st
 			// var cat = {
 			// 	'001001029':1,
@@ -369,24 +409,25 @@ $(function(){
 			// 	'001001014':8,
 			// 	'001001018':9,
 			// 	'001001011':10,
-			// 	'001001017':11
+			// 	'001001017':11,
+			// 	'001001015':12
 			// };
 			//　本番
-			var cat = {
-				'001001025':1,
-				'001001010':2,
-				'001001009':3,
-				'001001023':4,
-				'001001014':5,
-				'001001013':6,
-				'001001012':7,
-				'001001008':8,
-				'001001018':9,
-				'001001011':10,
-				'001001017':11,
-				'001001015':12
-			};
-		$('.category_list li:nth-child(' + cat[cat_num] + ') a').addClass('is-current');
+			// var cat = {
+			// 	'001001025':1,
+			// 	'001001010':2,
+			// 	'001001009':3,
+			// 	'001001023':4,
+			// 	'001001014':5,
+			// 	'001001013':6,
+			// 	'001001012':7,
+			// 	'001001008':8,
+			// 	'001001018':9,
+			// 	'001001011':10,
+			// 	'001001017':11,
+			// 	'001001015':12
+			// };
+		// $('.category_list li:nth-child(' + cat[cat_num] + ') a').addClass('is-current');
 	});
 </script>
 <!-- InstanceEndEditable -->
@@ -749,7 +790,7 @@ $(function(){
                 <object class="xsp_obj" m:id="e_var_saleStatus"></object>
                 <object class="xsp_obj" m:id="e_var_consumptionTax"></object>
                 <span m:id="l_notEqu_searchResult_numberOfRecords">
-                    <div class="goods_archive_sort viewPc">
+                    <!-- <div class="goods_archive_sort viewPc">
                         <div class="goods_archive_sort_txt">表示順</div>
                         <div class="goods_archive_sort_list_wrap">
                             <ul class="goods_archive_sort_list">
@@ -759,7 +800,7 @@ $(function(){
                                 <li><input type="radio" name="sort" id="radio04" value="NEWEST"><label for="radio04" class="">新しい順</label></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="goods_archive_sort viewSp">
                         <div class="goods_archive_sort_txt">表示順</div>
                         <div class="goods_archive_sort_select select_wrap">
@@ -778,7 +819,7 @@ $(function(){
                     <!--▼▼▼検索結果▼▼▼-->	
                     <object class="xsp_obj" m:id="e_var_saleStatus"></object>
                     <object class="xsp_obj" m:id="e_var_consumptionTax"></object>
-                    <div class="search_result_txt">
+                    <div class="search_result_txt viewSp">
                         <object class="xsp_obj" m:id="e_var_category"></object>
                         <p><!--<span m:id="l_notEmp_keyword">--><span class="search_result_txt01">該当商品</span><span m:id="l_notEqu_categolySearchResult">全<span class="search_result_txt02"><span m:id="b_wr_searchResult_numberOfRecords">5</span></span>件中 <br class=viewSp""><span class="js-view_from"></span>&nbsp;-&nbsp;<span class="js-view_to"></span>　の表示</span></p>
                     </div>
@@ -786,7 +827,7 @@ $(function(){
     
                     <!--▼▼▼ページネーション▼▼▼-->
                     <span m:id="l_notEqu_searchResult_numberOfRecords">
-						<ul class="pagination">
+						<ul class="pagination viewSp">
 							<li class="first"><span m:id="paging_start"><a m:id="paging_href" href="memberPointHistory.html"></a></span></li>
 							<li class="previous"><span m:id="paging_prev"><a m:id="paging_href" href="goodsSearchShop_shop.html">前へ</a></span></li>
 							<span  m:id="paging_label">
@@ -804,7 +845,8 @@ $(function(){
                     </span>
                     <!--▲▲▲ページネーション▲▲▲-->
                 </div>
-                <!-- /.pagination_wrap -->
+				<!-- /.pagination_wrap -->
+				
               
                 <!--▼▼▼商品一覧▼▼▼-->
                 <div class="goods_list_wrap mt40 s_mt12">
@@ -1046,7 +1088,7 @@ $(function(){
                     </ul>
                 </div>
                 <!--▲▲▲商品一覧▲▲▲-->
-    
+
                 <object class="xsp_obj" m:id="e_var_saleStatus"></object>
                 <object class="xsp_obj" m:id="e_var_consumptionTax"></object>
                 <span m:id="l_notEqu_searchResult_numberOfRecords">
@@ -1076,7 +1118,23 @@ $(function(){
                         <!--▲▲▲ページネーション▲▲▲-->
                     </div>
                 </span>
-              
+
+                <!--▼▼▼並び替え▼▼▼-->
+                <span m:id="l_notEqu_searchResult_numberOfRecords">
+                    <div class="goods_archive_sort viewPc mt30">
+                        <div class="goods_archive_sort_txt">表示順</div>
+                        <div class="goods_archive_sort_list_wrap">
+                            <ul class="goods_archive_sort_list">
+                                <li><input type="radio" name="sort" id="radio01" value="PUSH"><label for="radio01" class="">オススメ順</label></li>
+                                <li><input type="radio" name="sort" id="radio02" value="PRICE_ASC"><label for="radio02" class="">価格が安い順</label></li>
+                                <li><input type="radio" name="sort" id="radio03" value="PRICE_DESC"><label for="radio03" class="">価格が高い順</label></li>
+                                <li><input type="radio" name="sort" id="radio04" value="NEWEST"><label for="radio04" class="">新しい順</label></li>
+                            </ul>
+                        </div>
+                    </div>
+				</span>
+				<!--▲▲▲並び替え▲▲▲-->
+
 				<style>
 					/* ファッションの着心地バナーを非表示 */
 					.bnr_area {display: none !important}
