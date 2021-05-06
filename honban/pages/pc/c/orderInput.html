@@ -793,6 +793,13 @@ $(function(){
 	}
 </style>
 
+<style>
+	/* 住所録ページャー位置調整 */
+	#cart .input_address01_pagination .l-pagination-dot {
+    float: none;
+}
+</style>
+
 <!-- ▼▼ポップアップ -->
 <script src="/contents/c/js/new/featherlight.js"></script>
 <style>
@@ -2386,9 +2393,7 @@ $(function () {
 							</div>
 						<!--▲▲▲ 配送先 ▲▲▲-->
 
-						<div id="dst_message">
-							<p class="required mt10">「別の配送先を指定する」をチェックした場合は、配送先情報を入力してください。</p>
-						</div>
+
 
 						<!--▼▼▼ #dst_info ▼▼▼-->
 							<div id="dst_info">
@@ -2495,7 +2500,11 @@ $(function () {
 
 								<!--▼▼▼ お届け先ご住所の入力 ▼▼▼-->
 									<div class="input_address02">
-										<h4 id="dst" class="cmn_tit01"><span class="cmn_tit01_underline">お届け先ご住所の入力</span></h4>
+										<div id="dst_message">
+											<p class="required mt30" style="line-height: 1.6;">以下に配送先情報をご入力ください。<br>
+												※別の配送先をご指定の場合、請求書等は商品に同梱されず、別途ご注文者様へ直接お送りいたします。</p>
+										</div>
+										<h4 id="dst" class="cmn_tit01 mt20"><span class="cmn_tit01_underline">配送先情報</span></h4>
 										<input m:id="h_hid_address_book_id" type="hidden" name="address_book_id" value="1"/>
 										<table class="cmn_form_table01">
 											<tr>
