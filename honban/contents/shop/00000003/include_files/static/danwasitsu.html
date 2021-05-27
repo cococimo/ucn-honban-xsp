@@ -1,6 +1,6 @@
 <!-- 暖話室　ここから -->
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/default.css" media="all">
-<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/danwasitsu/style.css?1105" media="all">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/danwasitsu/style.css?1120" media="all">
 <!-- WEBフォント -->
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600;900&display=swap" rel="stylesheet">
 
@@ -21,16 +21,16 @@
 				<img src="/contents/shop/00000003/image/static/danwasitsu/img_02.png" alt="●キッチンで幸せ：足腰など冷たかったですが、商品が来てから身体・気持ちまでポカポカです。（愛媛県・女性70歳）●寝室で幸せ：寒い夜の寝室に置いて寝ましたが、一晩中暖かくてよく眠れました。（山口県・女性68歳）●リビングで幸せ：音もなく風もなく、臭いもなくただただ優しく暖めてくれるのが嬉しいです。（東京都・女性
 				78歳）●お風呂で幸せ：移動しやすいのが良い。触れても熱くないので安心です。（福岡県・女性）">
 			</picture>
-			<div class="item_visual_campaign_time">
+			<!-- <div class="item_visual_campaign_time">
 				<picture>
 					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/danwasitsu/pr_kikan.png">
 					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/danwasitsu/sp_img_03.png">
 					<img src="/contents/shop/00000003/image/static/danwasitsu/pr_kikan.png" alt="プレゼント有効期限">
 				</picture>
 				
-			</div>
+			</div> -->
 		</div>
-		<!-- お申込みボタン -->
+		<!-- お申込みボタン 
 		<p class="order_btn" id="main_order_btn">
 			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 				<picture>
@@ -40,8 +40,8 @@
 				</picture>
 			</a>
 		</p>
-		<!-- お申込みボタン ここまで -->
-		<!-- SP版のみ表示 -->
+		お申込みボタン ここまで -->
+		<!-- SP版のみ表示 
 		<div class="sp_contents mt10 viewSp">
 			<img src="/contents/shop/00000003/image/static/danwasitsu/sp_img_05.png" alt="">
 			<div class="notic_txt">
@@ -50,11 +50,11 @@
 					<li class="indent-1">※使用感は個人の感想であり、実感には個人差があります。</li>
 				</ul>
 			</div>
-		</div>
+		</div>-->
 
 	</div>
 
-		<!-- キャンペーン ここから -->
+		<!-- キャンペーン ここから 
 		<div class="campaign_area s_mt0">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/danwasitsu/img_pr_pc.jpg">
@@ -62,10 +62,10 @@
 					<img class="cam_bnr" src="/contents/shop/00000003/image/static/danwasitsu/img_pr_pc.jpg" alt="期間限定プレゼント！【首もとほっこりマフラー】服装に合わせて色が変えられる！お出かけ時にどうぞ。外出時に首元ポカポカ。服装に合わせて色を変えられるリバーシブルマフラーです。有効期限までにお申込みの方限定のプレゼントです。ぜひお早めにお申込みください。※プレゼントの品の仕様は予告なく変更となる場合がございます。■サイ商品サイズ：100×900mm ■材質：ポリエステル ■色：ブラウン×ネイビー ■製造：中国">
 			</picture>
 		</div>
-		<!-- キャンペーン ここまで -->
+		 キャンペーン ここまで -->
 
 	<!-- お申込みボタン -->
-	<p class="order_btn">
+	<p class="order_btn first_order_btn">
 		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/danwasitsu/order_btn.png">
@@ -75,6 +75,70 @@
 		</a>
 	</p>
 	<!-- お申込みボタン ここまで -->
+<!-- <style>
+	/*キャンペーンバナー*/
+	.cp_bnr_wrap {
+		margin-top: 30px;
+	}
+	.cp_bnr_wrap .point_txt.icon {
+		padding-top: 20px;
+	}
+	.cp_bnr_wrap .point_txt.icon,
+	.cp_bnr_wrap .acrobat_btn {
+		text-align:center;
+		width: 936px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.cp_bnr_wrap .point_txt.icon a {color:#bc001d;}
+	.cp_bnr_wrap .point_txt a:hover {text-decoration: none;}
+	.cp_bnr_wrap .point_txt.icon:before {
+		content: "";
+		position: relative;
+		display: inline-block;
+		background: url(/contents/shop/00000003/image/static/dacky/PDF_32.png);
+		width: 30px;
+		height: 30px;
+		top: 5px;
+		position: relative;
+		background-size: contain;
+	}
+	.cp_bnr_wrap .acrobat_btn {
+		margin-top: 10px;
+	}
+	.cp_bnr_wrap .acrobat_btn img{max-width:159px;}
+
+	@media (max-width: 768px) {
+		.cp_bnr_wrap {
+			margin-top: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.cp_bnr_wrap .point_txt.icon,
+		.cp_bnr_wrap .acrobat_btn {
+			width:100%;
+			text-align: left;
+		}
+		.cp_bnr_wrap .ac_icon {
+			width: 110px;
+		}
+		.cp_bnr_wrap .point_txt.icon {
+			padding-top: 0;
+		}
+	}
+	</style>
+	<div class="cp_bnr_wrap">
+			<p class="tac">
+				<picture>
+					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/danwasitsu/DCH_campaign_202012-202101_PC.png">
+					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/danwasitsu/DCH_campaign_202012-202101_SP.png">
+						<img src="/contents/shop/00000003/image/static/danwasitsu/DCH_campaign_202012-202101_PC.png" alt="暖話室ご購入キャンペーン！！抽選で10名様にJCB商品券20,000円分当たる！！キャンペーン期間：2020年12月3日（木）-2021年1月4日（月）正午まで">
+				</picture>
+			</p>
+			<p class="point_txt icon"><a href="/contents/shop/00000003/image/static/danwasitsu/danwasitsu_campaign.pdf" target="_blank">キャンペーン要綱についてはこちらをご覧ください。</a>　※pdfファイルが開きます。</p>
+
+			<p class="acrobat_btn"><a href="https://get.adobe.com/jp/reader/" target="_blank"><img class="ac_icon" src="/contents/shop/00000003/image/static/danwasitsu/acrobat_btn.png" alt=""></a>（Adobe - Adobe Reader のダウンロードサイトに移動します。）</p>
+		</div> -->
 
 	<!-- マンガコンテンツ ここから-->
 	<div class="viewPc manga_area" style="display: none;">
@@ -454,7 +518,7 @@
 		</div>
 	</section><!-- /danwasitsu_company-->
 
-		<!-- キャンペーン ここから -->
+		<!-- キャンペーン ここから 
 		<div class="campaign_area s_mt0">
 			<picture>
 				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/danwasitsu/img_pr_pc.jpg">
@@ -462,7 +526,7 @@
 					<img class="cam_bnr" src="/contents/shop/00000003/image/static/danwasitsu/img_pr_pc.jpg" alt="期間限定プレゼント！【首もとほっこりマフラー】服装に合わせて色が変えられる！お出かけ時にどうぞ。外出時に首元ポカポカ。服装に合わせて色を変えられるリバーシブルマフラーです。有効期限までにお申込みの方限定のプレゼントです。ぜひお早めにお申込みください。※プレゼントの品の仕様は予告なく変更となる場合がございます。■サイ商品サイズ：100×900mm ■材質：ポリエステル ■色：ブラウン×ネイビー ■製造：中国">
 			</picture>
 		</div>
-		<!-- キャンペーン ここまで -->
+		 キャンペーン ここまで -->
 
 
 	<!-- お申込みボタン -->
@@ -871,7 +935,9 @@
 <!-- ▼▼▼追従ボタン-->
 <div class="goto_cart" id="goto_cart" style="opacity: 0;">
 	<a id="gotocartorder_btn" onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
-		<img src="/contents/shop/00000003/image/static/danwasitsu/cart_c_1.png" alt="今すぐ申し込む" />
+		<!-- <img src="/contents/shop/00000003/image/static/danwasitsu/cart_c_1.png" alt="ご注文はこちらからプレゼント付き！" /> -->
+		<img src="/contents/shop/00000003/image/static/danwasitsu/cart_cat.png" alt="ご注文はこちらから" />
+		
 	</a>
 </div>
 <div class="goto_top">
@@ -945,11 +1011,11 @@
 
 	</style>
 	<!-- 追従バナー通常　ここから-->
-	<div class="purchase_fixed viewSp normal" style="display: none">
+	<div class="purchase_fixed viewSp normal">
 		<div class="inner">
 			<!-- 欠品対応の場合、非表示 style="display: none;"-->
 			<p class="sp_only">
-				<a id="danwasitsu_tel_btn" href="tel:0120552173" style="display: inline-block;">
+				<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
 					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
 				</a>
 			</p>
@@ -974,29 +1040,29 @@
 	</div>
 	<!-- 追従バナー通常　まで-->
 
-	<!-- キャンペーン追従バナー　ここから-->
+	<!-- キャンペーン追従バナー　ここから
 	<div class="purchase_fixed cp viewSp">
 		<div class="inner">
-			<!-- 欠品対応の場合、非表示 style="display: none;"-->
+			<!-* 欠品対応の場合、非表示 style="display: none;"*->
 			<p>
 				<img src="/contents/shop/00000003/image/static/danwasitsu/purchase_fixed_presen.png" alt="プレゼント付き有効期限">
 			</p>
-			<!-- //欠品対応の場合、非表示 -->
+			<!-* //欠品対応の場合、非表示 *->
 			<p class="order_btn" id="purchase_btn_order">
 				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
 				<span><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
 				</a>
 			</p>
-			<!--- 欠品対応 
+			<!-* 欠品対応 
 			<p class="order_btn" id="purchase_btn_keppin">
 				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
 				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
 			</p>
-			 //欠品対応 -->
+			 //欠品対応 *->
 		</div>
-		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+		<!-* <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> *->
 	</div>
-	<!-- キャンペーン追従バナー　ここまで-->
+キャンペーン追従バナー　ここまで-->
 <!-- //カート追従バナー -->
 
 

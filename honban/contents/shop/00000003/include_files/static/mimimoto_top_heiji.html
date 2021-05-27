@@ -20,6 +20,28 @@
 		max-width: 100%;
 	}
 </style>
+<style>
+	/* お申込みボタン */
+	.order_btn {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		text-align: center;
+		position: relative;
+	}
+	
+	@media (max-width: 768px){
+		.order_btn {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	.order_btn a:hover {
+		opacity: 0.6;
+	}
+	.order_btn a {
+		transition: all 300ms 0s ease;
+	}
+</style>
 <div class="mimimoto_wrapper">
 	<div class="mimimoto_vi">
 		<h1><!-- <img src="/contents/shop/00000003/image/static/mimimoto/vi.png" alt="みみもとくんプレミアム" class="hidden-pc"> --><img src="/contents/shop/00000003/image/static/mimimoto/vi.png" alt="みみもとくんプレミアム" class="hidden-pc"><img src="/contents/shop/00000003/image/static/mimimoto/vi_pc_c.png?0911" alt="みみもとくんプレミアム" class="hidden-sp"></h1>
@@ -54,3 +76,128 @@
 		<img class="viewPc" src="/contents/shop/00000003/image/static/mimimoto/dcc30_pre_pc.png?1224" alt="期間限定プレゼント品贈呈中！【プレゼント1：メガネ型ルーペ】手元が大きく見えて細かい作業がラクラクに。メガネの上からも掛けられる便利な拡大鏡です。●倍率：1.6倍●材質：ポリカーポネート／ナイロン／シリコン●男女兼用●本体レンズ サイズ：約5×14cm●専用ポーチ、クロス付き●製造：中国※見え方・焦点距離には個人差があります。※仕様は予告なく変更させていただく場合があります。【プレゼント2：ルーペ付き爪切り（倍率3倍）】手先・足元がよく見えて爪がラクラク切りやすい！ルーペの角度調整も可能です。●商品サイズ／本体：約9×1.9×1.7cm ●レンズ：約4.5×7.3×1.2cm ●材質／本体：スチール・PP、レンズ：アクリル・磁石・PP ●製造：中国"><img class="viewSp"  src="/contents/shop/00000003/image/static/mimimoto/dcc30_pre_sp.png?1224" alt="" class="hidden-sp">
 	</div>
 	 ▲▲みみもとくんキャンペーン　ここまで -->
+
+
+	
+	 <!-- 完売対応　ここから
+	<style>
+		.keppin_txt {
+			max-width: 960px;
+			margin:40px auto;
+			padding:15px;
+			border:#000 2px solid;
+			font-size: .8em;
+		}
+		.keppin_txt p {
+			font-size: 1.2em;
+			font-weight:bold;
+			text-align:center;
+			line-height:1.5;
+		}
+		@media screen and (max-width: 640px) {
+			.keppin_txt {
+				margin:20px 0;
+			}
+			.keppin_txt p {
+				font-size: 1em;
+			}
+		}
+	</style>
+	<div class="keppin_txt">
+		<p>ウェブ限定カラー「パンダモデル」は完売いたしました。再販は未定ですので、ご了承ください。</p>
+	</div>
+	完売対応　ここまで-->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn mt0">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+				<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	<!-- カート追従バナー -->
+	<style>
+		.purchase_fixed .inner a:hover {cursor: pointer;}
+		.tel.js-tel_sticky {display:none;}
+		.purchase_fixed .order_btn {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.sp {display: none !important;}
+		.pc {display: block !important;}
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.sp {display: block !important;}
+			.pc {display: none !important;}
+		}
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
+
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+		.purchase_fixed .inner {padding: .5em .5em .3em;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: 0;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		#purchase_btn_keppin {width:100%;text-align:center;}
+		.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
+		.footer #pagetop_sp {bottom: 140px;}
+	}
+	</style>
+	<style>
+		@media (max-width: 767px) and (min-width: 0) {
+			/* SKUの商品ボタン位置調整 */
+			.footer #pagetop_sp {
+				bottom: 120px;
+			}
+			/* SKU以外の商品のボタン位置調整 */
+			.footer #pagetop_sp {
+				bottom: 93px;
+			}
+			#goods .itemtop_sp {
+				bottom: 93px;
+			}
+		}
+
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+			<!-- 欠品対応の場合、非表示 style="display: none;"-->
+			<p class="sp_only">
+				<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+				</a>
+			</p>
+			<!-- //欠品対応の場合、非表示 -->
+			<p class="pc_only">
+				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+			</p>
+			<p class="order_btn" id="purchase_btn_order">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+				</a>
+			</p>
+			<!-- 欠品対応 
+			<p class="order_btn" id="purchase_btn_keppin">
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+			</p>
+			 //欠品対応 -->
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+ <!-- //カート追従バナー -->

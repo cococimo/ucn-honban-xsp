@@ -1,0 +1,243 @@
+
+<div class="goods_wrap">
+	<div class="rakurakuaruku_wrapper">
+		<!-- お申込みボタン -->
+		<p class="order_btn">
+			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="raku_order_btn">
+				<picture>
+					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+					<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+				</picture>
+			</a>
+		</p>
+		<!-- お申込みボタン ここまで -->
+
+		<section class="rakurakuaruku_spec">
+			<h2 class="section_ttl">
+				製品仕様
+			</h2>
+			<div class="content_box">
+				<div>
+					<p>
+						【定格入力】<br>
+						DC19V
+					</p>
+					<p>
+						【定格消費電力】<br>
+						20W(定格1時間)
+					</p>
+					<p>
+						【機能】<br>
+						タイマー10分もしくは20分(2段切替)､屈伸回数:毎分9回･18回(2段切替)<br>
+						※電圧、周波数により屈伸回数が変動することがあります。
+					</p>
+					<p>
+						【サイズ】<br>
+						外寸寸法(約):390mm×310mm×225mm(幅×奥行×高さ)
+					</p>
+					<p>
+						【重量】<br>
+						約5.0kg
+					</p>
+				</div>
+				<div>
+					<p>
+						【保証期間】<br>
+						ご購入後3年
+					</p>
+					<p>
+						【付属品】<br>
+						・『楽ラク歩く』読本：A4/16ページ/カラー ［監修 健康運動指導士 黒田恵美子先生］<br>・滑り止めマット
+					</p>
+					<p>
+						【製造】<br>
+						台湾製
+					</p>
+					<p>
+						【製造元】<br>
+						株式会社テクノ・マイス
+					</p>
+					<p>
+						【販売元】<br>
+						株式会社ユーキャン ココチモ
+					</p>
+				
+					<p>
+						※体調に不安のある方は医師とご相談いただくことをおすすめします。<br>※メーカー生産の都合により、仕様が一部変更になる場合がございます。<br>※ご用意していた数量を超えるご注文があった場合、3ヵ月ほどお待ちいただくことがございます。
+					</p>
+				</div>
+			</div>
+
+		</section>
+
+
+
+	</div><!-- rakurakuaruku_wrapper -->
+</div><!-- goods_wrap -->
+
+
+<!-- ▼▼▼追従ボタン-->
+<style>
+	.goto_cart {
+		width: auto;
+		position: fixed;
+		right: 10px;
+		bottom: 15vh;
+		z-index: 99;
+		filter: none;
+	}
+	@media (max-width: 768px) {
+		.goto_cart {
+			right: 0;
+			bottom: 13vh;
+		}
+		.goto_cart img {
+			width: 30vw;
+		}
+	}
+	.goto_top #pagetop {
+		right: 56px;
+		/* bottom: 6vh; */
+	}
+</style>
+
+<!-- <div class="goto_cart viewPc">
+	<a id="gotocartorder_btn" onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+		<!-* <img src="/contents/shop/00000003/image/static/rakurakuaruku/cart_button.png" alt="ご注文はこちらから" /> *->
+		<img src="/contents/shop/00000003/image/static/rakurakuaruku/cartbutton.png" alt="ご注文はこちらからプレゼント付き！" />
+		
+	</a>
+</div> -->
+<div class="goto_top">
+	<div id="pagetop" class="pagetop_pc">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る"></a>
+	</div>
+	<div id="pagetop_sp" class="pagetop_sp">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る"></a>
+	</div>
+</div>
+
+<!-- ▲▲▲追従ボタン-->
+
+
+<!-- カート追従バナー -->
+<style>
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .order_btn {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.sp {display: none !important;}
+	.pc {display: block !important;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.sp {display: block !important;}
+		.pc {display: none !important;}
+	}
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
+
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+		.purchase_fixed .inner {padding: .5em .5em .3em;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: 0;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		#purchase_btn_keppin {width:100%;text-align:center;}
+		.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
+		.footer #pagetop_sp {bottom: 140px;}
+	}
+	</style>
+	<style>
+		@media (max-width: 767px) and (min-width: 0) {
+			/* SKUの商品ボタン位置調整 */
+			.goto_top #pagetop_sp {
+				bottom: 120px;
+			}
+			/* SKU以外の商品のボタン位置調整 */
+			.goto_top #pagetop_sp {
+				bottom: 93px;
+			}
+			#goods .itemtop_sp {
+				bottom: 93px;
+			}
+		}
+
+	</style>
+
+	<div class="purchase_fixed">
+		<div class="inner">
+			<!-- 欠品対応の場合、非表示 style="display: none;"-->
+			<p class="sp_only">
+				<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+				</a>
+			</p>
+			<!-- //欠品対応の場合、非表示 -->
+			<p class="pc_only">
+				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+			</p>
+			<p class="order_btn" id="purchase_btn_order">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+				</a>
+			</p>
+			<!-- 欠品対応 
+			<p class="order_btn" id="purchase_btn_keppin">
+				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
+				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+			</p>
+			 //欠品対応 -->
+		</div>
+		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+<!-- //カート追従バナー -->
+<!-- スクリプト ここから -->
+<script>
+	    /* sp layout change
+    ------------------------------------- */
+    function switchImg() {
+        var breakPoint = 767;
+        var windowWidth = parseInt($(window).width());
+
+        // int
+        if(windowWidth <= breakPoint) {
+            $('.rakurakuaruku_specialist .content_box .item').each(function(){
+                var $headline = $(this).find('.headline');
+                var $profile_box = $(this).find('.profile_box');
+                $headline.after($profile_box);
+            });
+        } else {
+            $('.rakurakuaruku_specialist .content_box .item').each(function(){
+                var $self = $(this);
+                var $profile_box = $(this).find('.profile_box');
+                $self.append($profile_box);
+            });
+        }
+	}
+
+	/* resize†
+	------------------------------------- */
+	var resizeTimer;
+	$(window).on('resize', function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function() {
+		 switchImg();
+		}, 200);
+	});
+
+	/* initial
+	------------------------------------- */
+	switchImg();
+</script>
+

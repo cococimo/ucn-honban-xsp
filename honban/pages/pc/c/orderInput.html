@@ -3021,6 +3021,120 @@ $(function () {
 </div>
 <!--container-->
 
+<!-- お電話でもご注文いただけます SP版のみ表示  -->
+<style>
+	/* お電話でもご注文いただけます SP版のみ表示 */
+	@media (max-width: 768px) {
+		.sp-tell-order {
+			margin: 0 20px 0;
+			position: fixed;
+			z-index: 9999;
+			top: 50%;
+			transform: translatey(-50%);
+		}
+		.sp-tell-order .sp-tell-order-btn {
+			position: absolute;
+			bottom: 12vw;
+			padding: 0 4vw;
+		}
+		.close-btn {
+			position: absolute;
+			top: -1em;
+			right: -.5em;
+			background: #fff;
+			font-size: 2em;
+			border-radius: 50%;
+			padding: .5em;
+			cursor: pointer;
+			transform: rotate(45deg);
+
+			-webkit-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+			-moz-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+			-ms-filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+			filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+		}
+		.cover-eml {
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0,0,0,.5);
+			position: fixed;
+			cursor: pointer;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 3;
+		}
+	}
+</style>
+<div class="sp-tell-order viewSp" style="display: none;">
+	<img src="/contents/shop/00000003/image/static/img/sp-tell-order.png" alt="お電話でもご注文いただけます！電話で気軽に注文したい！注文フォームのスマホ入力が苦手、、。そんなあなたには、お電話でのご注文をオススメいたします！「この商品いいな」」と思ったら、ぜひ下のボタンからお気軽にお電話ください！">
+	<p class="sp-tell-order-btn">
+		<a href="tel:0120-552-173" id="orderInput_tel_btn">
+			<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order-btn.png" alt="電話で申し込む">
+		</a>
+	</p>
+	<div class="close-btn icon-plus"></div>
+</div>
+
+<script src="/contents/shop/00000003/js/jquery.history.js"></script>
+<script>
+	(function() {
+
+		let popAppend = false;
+
+		//スマホのみ履歴追加
+		let hash = location.hash;
+		if((hash !== '#order') && navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+			history.pushState(null,null,location.href);
+			history.replaceState(null,null,'#order');
+		}
+
+		//設定したハッシュタグが消えたら実行
+		window.addEventListener( "hashchange",function(event){
+		// window.addEventListener('popstate', function(event) {
+			if(location.hash !== '#order' && popAppend === false) {
+				// お届け先ページ内リンク対応
+				if(location.hash == '#dst') {
+					history.back(1)
+					return;
+				}
+
+				$('.sp-tell-order').fadeIn();
+				$('body').append($("<div>", {class: 'cover-eml'}));
+				popAppend = true;
+
+				// GTMにイベント追加
+				dataLayer.push({
+					"event" : "orderinput_sp_tell_bnr_display" 
+				});
+
+				if(popAppend) {
+					$('body').on('click', '.cover-eml' , function() {
+						deleteElm();
+						popAppend = false;
+					});
+				}
+			}
+		});
+		$('body').on('click', '.close-btn', function() {
+			deleteElm();
+			popAppend = false;
+		});
+
+		//バナー削除
+		function deleteElm() {
+			$('.cover-eml').fadeOut();
+			$('.cover-eml').remove();
+			$('.sp-tell-order').fadeOut();
+		}
+	})();
+
+</script>
+
+
+<!-- お電話でもご注文いただけます SP版のみ表示 ここまで -->
+
 
 <!-- InstanceEndEditable -->
 <footer id="footer" class="footer footer_b" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">

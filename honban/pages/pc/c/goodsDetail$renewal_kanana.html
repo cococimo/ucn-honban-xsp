@@ -183,8 +183,23 @@ $(function(){
   $('select[name=goods_sku_code]').change(function() {
     $(this).closest('.tooltip_wrap').find('.tooltip').fadeOut();
   });
+  if($('.select_wrap select[name=goods_sku_code]').length){
+	   $('.goods_detail_item_order01 .select_label').removeClass('select_simple_item');
+	   $('.tooltip').show(); 
+	} else {
+		$('.goods_detail_item_order01 .select_label').addClass('select_simple_item');
+		$('.tooltip').hide();
+    }
+  
 });
 </script>
+<style>
+	@media screen and (max-width: 767px) {
+		.goods_detail_item_order01 .select_simple_item.select_label {
+		width: 50%;
+		}
+	}
+</style>
 
 <meta m:id="e_var_member_goodsDetail">
 <meta m:id="site_products">
@@ -263,7 +278,7 @@ function showCartButton1(obj){
 	}
   .goods_detail_item_txt02 .txt_indent {
     padding-left: 1em;
-    font-size: .83em;
+    font-size: .8em;
   }
 @media screen and (max-width: 767px) {
   .notic_txt {
@@ -1579,7 +1594,7 @@ function showCartButton1(obj){
 						  <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
 					  </span></span></span>
 				  </div>
-				  <p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラック」は完売しました。</p>
+				  <p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラウン」「ブラック」は完売しました。</p>
 			  </div>
 					<!-- /.goods_detail_item_order_cart -->
 					<span m:id="l_pre_member">
@@ -1687,70 +1702,104 @@ function showCartButton1(obj){
 	<!-- .tel<div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております"></div>
 	  /.tel -->
   
-  <span m:id="l_equ_type_simple"><!-- カート追従バナー -->
+	  <span m:id="l_equ_type_simple"><!-- カート追従バナー -->
 
-	<style>
-	.purchase_fixed .inner a:hover {cursor: pointer;}
-	.tel.js-tel_sticky {display:none;}
-
-	.sp {display: none !important;}
-	.pc {display: block !important;}
-	@media all and (min-width: 0) and (max-width: 767px) {
-		.sp {display: block !important;}
-		.pc {display: none !important;}}
-		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
-		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;}
-		.purchase_fixed .inner > * {width: 100%;}
-		.purchase_fixed .inner > p:first-of-type img {width: 306px;}
-		.purchase_fixed .inner > p:last-of-type img {width: 455px;}
-		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
-		.purchase_fixed .inner a:hover {opacity: .85;
+		<style>
+		.purchase_fixed .inner a:hover {cursor: pointer;}
+		.tel.js-tel_sticky {display:none;}
+	
+		.sp {display: none !important;}
+		.pc {display: block !important;}
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.sp {display: block !important;}
+			.pc {display: none !important;}
 		}
-
-	@media all and (min-width: 0) and (max-width: 767px) {
-		.inner08 {margin-top: -60px;padding-top: 60px;	}
-		.footer #pagetop_sp {bottom: 105px;}
-		.purchase_fixed .inner {padding: .5rem .5rem .25rem 1rem;}
-		.purchase_fixed .inner > p:first-of-type {padding-right: .5rem;}
-		.purchase_fixed .inner > p:last-of-type {padding-left: .5rem;}
-		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
-		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
-		.purchase_fixed .inner + p {padding-bottom: .5rem;}
-    .footer #pagetop_sp {bottom: 140px;}
-	}
-	</style>
-
-	<div class="purchase_fixed">
-		<div class="inner">
-	      <p class="sp_only">
-	        <a href="tel:0120552186" style="display: inline-block;">
-	          <img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call.png">
-	        </a>
-	      </p>
-
-	      <p class="pc_only">
-	        <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
-	      </p>
-        <span m:id="l_equ_can_addCartSku">
-			<p class="order_btn" id="purchase_btn_order">
-				<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
-            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn.png" alt="この商品を申し込む"></span>
-				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
-				</a>
-			</p>
-      </span>
-      <!-- 欠品対応 -->
-			<span m:id="l_equ_canNot_addCartSku_radio">
-			<p class="order_btn" id="purchase_btn_keppin">
-            	<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin.png" alt="完売しました"></span>
-				<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
-			</p>
-      <!-- //欠品対応 -->
-		</span>
+			.purchase_fixed .order_btn {margin-top: 0;margin-bottom: 0;}
+			.purchase_fixed .order_btn img {box-shadow: none;border-radius: 0;}
+			.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+			.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;}
+			.purchase_fixed .inner > * {width: 100%;}
+			.purchase_fixed .inner > p:last-of-type img {width: 455px;}
+			.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+			.purchase_fixed .inner a:hover {opacity: .85;}
+	
+		@media all and (min-width: 0) and (max-width: 767px) {
+			.inner08 {margin-top: -60px;padding-top: 60px;}
+			.footer #pagetop_sp {bottom: 105px;}
+			.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+			.purchase_fixed .inner {padding: .5em .5em .3em;}
+			.purchase_fixed .inner > p:first-of-type {padding-right: 0;width: 100%;}
+			.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+			.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+			.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+			.purchase_fixed .inner + p {padding-bottom: .5rem;}
+			#purchase_btn_keppin {width:100%;text-align:center;}
+			.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
+			.footer #pagetop_sp {bottom: 140px;}
+		}
+		</style>
+		<style>
+			@media (max-width: 767px) and (min-width: 0) {
+				.footer #pagetop_sp {
+					bottom: 120px;
+				}
+				/* SKU以外の商品のボタン位置調整 */
+				.footer #pagetop_sp.simple_item {
+					bottom: 93px;
+				}
+				#goods .itemtop_sp {
+					bottom: 93px;
+				}
+			}
+	
+		</style>
+		<style>
+			.select_wrap {
+    			letter-spacing: 0;
+			}
+			@media (max-width: 767px) and (min-width: 0) {
+				.goods_detail_item_order .select_label {
+					width: 65px;
+					margin-right: -75px;
+				}
+			}
+			#goods .itemtop_pc {
+				bottom: 10vw;
+			}
+		</style>
+	
+		<div class="purchase_fixed">
+			<div class="inner">
+				<span m:id="l_equ_can_addCartSku">
+					<p class="sp_only">
+						<a href="tel:0120552186" style="display: inline-block;">
+							<img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+						</a>
+						</p>
+				</span>
+				<p class="pc_only">
+					<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+				</p>
+				<span m:id="l_equ_can_addCartSku">
+					<p class="order_btn" id="purchase_btn_order">
+						<a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+						<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
+						<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+						</a>
+					</p>
+				</span>
+				<!-- 欠品対応 -->
+				<span m:id="l_equ_canNot_addCartSku_radio">
+					<p class="order_btn" id="purchase_btn_keppin">
+						<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
+						<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+					</p>
+				</span>
+				<!-- //欠品対応 -->
+			</div>
+			<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
 		</div>
-		<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
-	</div>
-	</span><!-- //カート追従バナー -->
+		</span><!-- //カート追従バナー -->
   
   <!-- ★インクルード2★-->
 		<!-- インクルード領域 -->
@@ -2284,7 +2333,7 @@ function showCartButton1(obj){
 							</span></span></span>
 						  </div>
 					</span>
-					<p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラック」は完売しました。</p>
+					<p style="font-size: .8em;padding-top: 10px;" class="red">※「ブラウン」「ブラック」は完売しました。</p>
 					</div>
 					<!-- /.goods_detail_item_order_cart -->
 

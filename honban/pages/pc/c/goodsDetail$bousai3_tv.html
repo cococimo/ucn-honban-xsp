@@ -1126,10 +1126,29 @@ jQuery(function() {
 
 <!--▼▼▼ 一括払い▼▼▼-->
 <link rel="stylesheet" href="/contents/c/css/price_info/price_info_ver01_bulk.css" type="text/css" media="all" charset="utf-8">
+<style>
+	@media screen and (max-width: 640px) {
+		#content_wrap .fifth h2.item_ttl {
+			background:none;
+			background-image: url(/contents/c/image/static/inner_box02_h2_titlebg_sp.jpg);
+			background-position: 0 bottom;
+			text-align: left;
+			padding-left: 20px;
+		}
+		#content_wrap .fifth h2.item_ttl:before,
+		#content_wrap .fifth h2.item_ttl:after {
+			content:none;
+			width: 0;
+			height: 0;
+			
+		}
+	}
+
+</style>
 
 
 <div class="inner_box04 sp_margin seventh" id="price_bulk" style="display: none;">
-<h2><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span
+<h2 class="item_ttl"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span
 			m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
 <div class="dvd_info">
 	<div class="price-row" style="">
@@ -1192,7 +1211,7 @@ jQuery(function() {
 	<link rel="stylesheet" href="/contents/c/css/price_info/price_info_ver01_split.css" type="text/css" media="all" charset="utf-8">
 
 	<div class="inner_box04 sp_margin seventh item_info" id="price_split">
-		<h2><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
+		<h2 class="item_ttl"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
 		<div class="price_img">
 			<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/seventh-img01_tv.jpg" alt="防災セット" width="100%">
 		</div>
@@ -1412,9 +1431,30 @@ jQuery(function() {
 					<input type="hidden" name="order_num_string" value="1" /> -->
 
 			<!-- 商品概要 -->
+			<style>
+			@media screen and (max-width: 640px){
+				#content_wrap .fifth h2.bousai-spec {
+					margin-left: 0;
+					margin-right: 0;
+					width: auto;
+					padding: 10px;
+					background: none;
+					position: relative;
+					text-align: left;
+					padding-top:0;
+				}
+				#content_wrap .fifth h2.bousai-spec::before,
+				#content_wrap .fifth h2.bousai-spec::after {
+					content: "";
+					width: 0;
+					height: 0;
+				}
+			}
+			</style>
+
 			<div class="bs-wrap sixth">
 			<div class="sixth-box01">
-				<h2>商品概要</h2>
+				<h2 class="bousai-spec">商品概要</h2>
 				<div class="sixth-box01-left">
 					<dl>
 						<dt>&#9312;&#9313;オリジナルリュックサック/カート</dt>
@@ -1533,16 +1573,6 @@ jQuery(function() {
 				</div>
 			</div>
 		</div>
-
-        <br>
-		<a href="/item_bousaiset/bousai_tokushu1/">
-		<div style="text-align:center; text-decoration:underline; color:#0e1bbb;; font-size:15px;">
-		【防災特集Vol.1 災害時の備え】は、こちらから>>
-		</div><br>
-		<a href="/item_bousaiset/bousai_tokushu2/">
-		<div style="text-align:center; text-decoration:underline; color:#0e1bbb;; font-size:15px;">
-		【防災特集Vol.2 ペットと一緒に避難生活をする為に】は、こちらから>>
-		</div><br>
 	</div>
 
 </div><!-- #wrcontent_wrap -->

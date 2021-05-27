@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/bousai84-style.css" media="all">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/bousai-flexslider/flexslider.css" media="all">
 <style>
 #content_wrap *{font-family:'ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,Osaka,'ＭＳ Ｐゴシック','MS PGothic',sans-serif}
 #content_wrap .mincho{line-height:130%;font-family:"ヒラギノ明朝 ProN W6",HiraMinProN-W6,"HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif}
@@ -126,9 +127,45 @@
 /*2019/08/30 セット内容にともなう修正の微調整*/
 #content_wrap .fifth-container .fifth-chart1301 {
     position: absolute;
-    right: 20px;
+	right: -30px;
     top: 20px;
     z-index: 2;
+}
+  #content_wrap .fifth-container .fifth-chart15 {
+	position: absolute;
+    right: 8px;
+    top: 6px;
+    width: 120px;
+}
+#content_wrap .fifth-container .fifth-img15 {
+	width: 293px;
+    padding-top: 33px;
+}
+@media screen and (max-width: 640px) {
+	#content_wrap .fifth-container .fifth-img15 {
+		width: auto;
+		padding-top: 0;
+	}
+}
+#content13 > div.fifth-box01-both:first-of-type {
+	padding-top: 15px;
+}
+@media screen and (max-width: 640px) {
+	#content13 > div.fifth-box01-both:first-of-type {
+		padding-top: 0;
+	}
+	#content13 > div.fifth-box01-both:first-of-type .ta-c {
+		padding-top: 30px;
+		margin-right: 80px;
+		width: auto;
+	}
+	#content13 > div.fifth-box01-both .ex-voice,
+	#content15 > div.fifth-box01-both .ex-voice {
+		margin-top: 20px;
+	}
+	#content15 > div.fifth-box01-both:first-of-type {
+		padding-top: 10px;
+	}
 }
 /* #content_wrap .fifth-container #content05.fifth-box03 h3 {
     line-height: 75px;
@@ -136,15 +173,39 @@
 #content_wrap .fifth-container h3.type02 .num {
     top:0;
 }
+#content_wrap .fifth-container .fifth-box02 h3 .num {
+	top: 0;
+}
+
+#content_wrap .fifth-container #content15 > h3 {
+    font-size: 32px;
+    line-height: 56px;
+}
 @media screen and (max-width: 640px) {
 	#content_wrap .fifth-container #content05.fifth-box03 h3 {
 		line-height: 22px;
 	}
+
 	#content_wrap .fifth #content13 h3.type02 .num {
 	    top: -6px;
 	}
-}
+	#content_wrap .fifth .fifth-container h3 {
+		font-size: 16px;
+		letter-spacing: .03em;
+		line-height: 22px;
+		margin-left: 38px;
+	}
 
+	#content_wrap .fifth-container .fifth-box02 h3.type02,
+	#content_wrap .fifth-container #content15 > h3 { 
+		font-size: 16px;
+		line-height: 22px;
+	}
+	#content_wrap .fifth-container h3 .num .num-mod02 {
+		letter-spacing: -.05em;
+	}
+	
+}
 </style>
 
 <style>
@@ -211,7 +272,8 @@
 			margin-top: 6px;
 			margin-bottom: 25px;
 			padding-left: 37px;
-			margin-right: 30px;
+			margin-right: 13vw;
+			letter-spacing: -1px;
 		}
 	}
 	/* 6～8 */
@@ -393,7 +455,224 @@
 	}
 
 </style>
+<style>
+	/* 防災テレビ表示調整 */
+	#content_wrap #content14 .fifth-box01-both#content14-both-01 .fifth-box01-right {
+		position: relative;
+		text-align: center;
+		/* top: -68px; */
+	}
+	#content_wrap #content14 .fifth-box01-both#content14-both-01 .fifth-box01-right img{
+		max-width: initial;
+		width: 100%;
+	
+	}
+	@media screen and (max-width: 640px) {
+			#content_wrap #content14 .fifth-box01-both#content14-both-01 .fifth-box01-right {
+			position: static;
+		}
+		#content_wrap #content14 .fifth-box01-both#content14-both-01 .fifth-box01-right img{
+		max-width: 240px !important;
+		width: auto;
+	
+	}
+	}
+	#content14 h3{
+		display: inline-block;
 
+	}
+	#content_wrap .icon_spec_tv {
+		max-width: 240px;
+		box-sizing: border-box;
+		padding:10px 0;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap .icon_spec_tv {
+			max-width: 160px  !important;
+		}
+	}
+	#content_wrap #content14 .fifth-box01-both#content14-both-02 .fifth-box01-left {
+		text-align: center;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap #content14 .fifth-box01-both#content14-both-02 .fifth-box01-left {
+			margin-top: 0;
+		}
+		#content_wrap .fifth #content14 .fifth-box01-both#content14-both-02 .fifth-box01-left p.ta-r img {
+			width: 100%;
+		}
+	}
+	#content_wrap .fifth-container .fifth-chart1403 {
+		right: 0;
+		bottom: 0;
+		left: -58px;
+		top: 6px;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap .fifth-container .fifth-chart1403 {
+			bottom: auto;
+			left: auto;
+		}
+	}
+	#content_wrap #content14 .fifth-box01-both#content14-both-01 {
+		padding-bottom:30px;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap #content14 .fifth-box01-both#content14-both-01 {
+			padding-bottom:0;
+		}
+	}
+	#content_wrap .tv_message {
+		position: relative;
+		margin-top: 20px;
+
+	}
+	#content_wrap .tv_message .fifth-chart1401_tv {
+		position: absolute;
+		top: -50px;
+		right: -20px;
+		z-index: 2;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap .tv_message {
+			position: relative;
+			margin-top: 10px;
+
+		}
+		#content_wrap .tv_message .fifth-chart1401_tv {
+			position: absolute;
+			right: -25px;
+			top: -12px;
+			z-index: 2;
+			width: 80px;
+		}
+	}
+	#content_wrap .radio_message {
+		position: relative;
+		margin-top: 45px;
+	}
+	#content_wrap .radio_message .fifth-chart1401 {
+		position: absolute;
+		top: -50px;
+		right: -20px;
+		z-index: 2;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap .radio_message {
+			margin-top: 30px;
+		}
+	}
+	#content_wrap #content14-both-03 .fifth-box01-left {
+		margin-top: 40px;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap #content14-both-03 .fifth-box01-left {
+			margin-top: 20px;
+		}
+	}
+</style>
+<style>
+	#content_wrap .a_notic_txt {
+		text-align: right;
+		display: block;
+		padding-bottom: 5px;
+		font-size:.8em;
+		line-height: 1.5;
+	}
+	#content_wrap .a_notic_txt .point {
+		color: purple;
+		vertical-align: top;
+	}
+	@media screen and (max-width: 640px) {
+		#content_wrap .a_notic_txt {
+			text-align: left;
+		}
+	}
+</style>
+<style>
+	/* お申込みボタン */
+	#content_wrap .order_btn {
+		margin: 0 20px 40px;
+		text-align: center;
+		position: relative;
+	}
+	
+	@media (max-width: 768px){
+		#content_wrap .order_btn {
+			margin: 0 10px 20px;
+		}
+	}
+	#content_wrap .order_btn a:hover {
+		opacity: 0.6;
+	}
+	#content_wrap .order_btn a {
+		transition: all 300ms 0s ease;
+	}
+</style>
+<style>
+	/* お電話でもご注文いただけます SP版のみ表示 */
+	@media (max-width: 768px) {
+		#content_wrap .sp-tell-order {
+			margin: 0 10px 20px;
+			position: relative;
+			
+		}
+		#content_wrap .sp-tell-order .sp-tell-order-btn {
+			position: absolute;
+			bottom: 12vw;
+			padding: 0 4vw;
+		}
+	}
+</style>
+<style>
+	/* 動画タイトル */
+	#content_wrap .first-h202, #content_wrap .third-h201 {
+		font-size: 33px;
+	}
+	@media (max-width: 768px) {
+		#content_wrap .first-h202, #content_wrap .third-h201 {
+		font-size: 13px;
+		font-weight: bold;
+		}
+	}
+</style>
+<style>
+@media screen and (max-width: 640px) {
+	/* メインビジュアル表示調整 */
+	body #content_wrap {padding-top: 0;}
+	#content_wrap .wrap_con {
+		margin: 0 auto 20px;
+		padding-bottom: 20px;
+	}
+}
+
+</style>
+
+<style>
+	/* スマホ版31点セットアイコン */
+	#content_wrap .third-img01_tv {
+		position: absolute;
+		bottom: 42vw;
+		right: 4vw;
+		width: 34vw;
+		}
+
+@media (max-width: 320px) {
+	#content_wrap .third-img01_tv {
+    bottom: 40vw;
+	width: 32vw;
+}
+	}
+
+
+</style>
+<style>
+	/* 動画、TEL注文非表示 */
+	/* #content_wrap .sp-tell-order,
+	#content_wrap .opt_movie {
+		display: none;
+	} */
+</style>
 <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
 <script>
 window.onload = function() {
@@ -427,50 +706,141 @@ window.onload = function() {
 	});
 };
 </script>
+
 <div class="wrap_con">
+
+	<!--　スライダーここから -->
+	<style>
+
+
+	</style>
+	<style>
+		
+		#content_wrap .bousai_slider {
+			padding-top: 0;
+			margin-bottom: 20px;
+		}
+		#content_wrap .bousai_slider .flex-control-nav {
+			display: none;
+		}
+		#content_wrap .bousai_slider .goods_flexslider .flex-direction-nav a {
+			margin: 0 25vw 0;
+			top: 102.5vw;
+			width: 35px;
+			height: 35px;
+			font-size: 0;
+			text-align: center;
+		}
+		@media (max-width: 320px) {
+			#content_wrap .bousai_slider .goods_flexslider .flex-direction-nav a {
+			margin: 0 25vw 0;
+			top: 103vw;
+
+			}
+		}
+		#content_wrap .custom_nav_number {
+			width: 60px;
+			text-align: center;
+			margin: 10px auto;
+			background: rgba(0,0,0,.5);
+			border-radius: 30px;
+			color: #fff;
+			font-size: .9em;
+			padding: .3em;
+		}
+		@media (max-width: 320px) {
+			#content_wrap .deviceSP .flex-control-paging li a {
+				width: 10px !important;
+				height: 10px !important;
+			}
+		}
+
+	</style>
+	<div class="viewSp">
+		<div class="bousai_slider loading" id="bousai_slider_area">
+			<div class="loading_icon"></div>
+				<div class="goods_flexslider">
+					<ul class="slides">
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_01.jpg" alt=""></li>
+					<!-- <li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_gift.jpg" alt="2大プレゼント"></li> -->
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_02.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_03.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_04.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_05.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_06.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_07.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_08.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_09.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_10.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_11.jpg" alt=""></li>
+					<li><img src="/contents/shop/00000003/image/static/img/bousai/slider/deb87_12.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div><!-- bousai_slider -->
+	</div>
+	<script>
+		$(function () {
+			
+			$(window).load(function () {
+				$('.goods_flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					$('#bousai_slider_area').removeClass('loading');
+					$('#bousai_slider_area　.loading_icon').remove();
+					$("<div>", {
+						class: 'custom_nav_number',
+						text: "1/" + slider.count
+					}).insertBefore('.flex-control-nav');
+					},
+					before: function(slider){
+					const $customNavNumber = $('.custom_nav_number');
+					$customNavNumber.text(`${slider.animatingTo + 1}/${slider.count}`);
+					}
+				});
+		
+			});
+		});
+	</script>
+	<!--　スライダーここまで -->
+	<!-- お申込みボタン SP版のみ表示 ここから -->
+	<p class="order_btn viewSp">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+				<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン SP版のみ表示 ここまで -->
+
+
 <div class="bs-wrap first">
 <!-- 			<p class="first-p01"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-p01.png" alt="安心と暮らす全31点の必需品"></p>
 			<div class="first-box01">
 				<h2 class="first-h201"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h201.png" alt="防災セット"></h2>
 				<h3 class="first-h301"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-h301.png" alt="災害時３日間を乗り切る！！"></h3><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01.jpg" alt="防災セット内容" class="first-img01">
 			</div> -->
-			<h1 class="mb0"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_2_tv.png?0812" alt="安心と暮らす全31点の必需品 防災セット[多機能ラジオ付き] "></h1>
+			<h1 class="mb0 viewPc"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_2_tv.png?0812" alt="安心と暮らす全31点の必需品 防災セット[防災テレビ付き] "></h1>
 			<div style="margin:.5rem">
-				<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_img_m01.png" alt="すでに16万人に選ばれた信頼の防災セットです" class="spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_img_m01_sp.png" alt="すでに16万人に選ばれた信頼の防災セットです" class="spb">
+				<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_img_m01.png" alt="すでに17万人に選ばれた信頼の防災セットです" class="spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/first-img01_img_m01_sp.png" alt="すでに16万人に選ばれた信頼の防災セットです" class="spb">
 			</div>
 			<div style="font-size: .85em;width:auto;padding:0 10px 10px 10px;line-height: 1.6;">
-				<p>※2010年の発売以来、当社の発売した「防災セット」シリーズ累計のご購入者（のべ人数・約）です。（2020年6月現在）</p>
+				<p>※2010年の発売以来、当社の発売した「防災セット」シリーズ累計のご購入者（のべ人数・約）です。（2020年12月現在）</p>
 				<p>※経験者の声は、2010年4月・2013年4月・2019年6月に、震災を経験された方を対象にインターネット上で実施したアンケートから抜粋・要約。</p></div>
 
-	        <!-- 2大プレゼント▼▼▼▼ 
-	        <div class="present-area">
-	        	<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/bisco_pre_2.jpg?0817" alt="災害時に役立つ2大プレゼント　プレゼント（1）万能ナイフ（2）グリコ「ビスコ保存缶」" style="max-width: 100%">
-	        </div><br>
-	        2大プレゼント▲▲▲▲ -->
-
-	        <!-- 通常のプレゼント▼▼▼▼ -->
-	        <div class="present-area">
-	        	<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/bisco_pre.jpg?0812" alt="「ビスコ保存缶」プレゼント！" style="max-width: 100%">
-	        </div><br>
-	        <!-- 通常プレゼント▲▲▲▲ -->
-
-	        <!--　期間限定プレゼントプレゼント▼▼▼▼ 
-	        <img src="/contents/shop/00000003/image/static/img/bousai/img_pre1.jpg" alt="今だけ！二つのプレゼント付き" class="campaign-img mt15">
-	         期間限定プレゼントプレゼント▲▲▲▲ --> 
-            
-            <!-- 動画ここから
-			<h2 class="first-h202 mincho">ただいま、CM放送中！</h2>
-			<div class="first-movie">
-				<div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/aVJ2rNmitp4?rel=0" frameborder="0" allowfullscreen></iframe></div>
-			</div>
-            動画ここまで-->
-            
-            <!-- <h2 class="first-h202 mincho">WEB限定動画公開中！</h2>
-			<div class="first-movie">
-				<div class="youtube">
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_3aCOh9MScI?rel=0" frameborder="0" allowfullscreen></iframe></div>
-			</div> -->
-			<!-- お届け時期のお知らせ▼  
+				<!-- お申込みボタン -->
+				<p class="order_btn mt30 viewPc">
+					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<picture>
+							<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+							<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+							<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+						</picture>
+					</a>
+				</p>
+				<!-- お申込みボタン ここまで -->
+			<!-- お届け時期のお知らせ▼  --> 
 			<style>
 				#content_wrap .keppin_txt {
 					border:#EE0003 1px solid;
@@ -492,9 +862,96 @@ window.onload = function() {
 				}
 			</style>
 			<div class="keppin_txt">
-				<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、8月中旬頃を予定しております。予めご了承ください。</p>
+				<p>本商品はご好評のため、現在欠品中です。<br>商品のお届けは、6月上旬頃を予定しております。予めご了承ください。</p>
 			</div>	<br>
-			 お届け時期のお知らせ▲ --> 
+			 <!-- お届け時期のお知らせ▲ --> 
+	        <!-- 2大プレゼント▼▼▼▼ 
+	        <div class="present-area">
+				<picture>
+					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/bousai/fixed03/gift_pre_pc.jpg">
+					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/bousai/fixed03/gift_pre_sp.jpg">
+						<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/gift_pre_pc.jpg" alt="2大プレゼント付き　プレゼント（１）万能ナイフ：5つの機能がこれ１本！　プレゼント（2）：グリコ「ビスコ保存缶」：小分け包装で便利！！長期保存できます！" style="max-width: 100%">
+				</picture>
+	        </div><br>
+	        2大プレゼント▲▲▲▲ -->
+
+				<!-- お申込みボタン 2大プレゼントと当時に表示 
+				<p class="order_btn">
+					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<picture>
+							<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+							<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+							<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+						</picture>
+					</a>
+				</p>
+				 お申込みボタン 2大プレゼントと当時に表示  ここまで -->
+
+	        <!-- 通常のプレゼント▼▼▼▼ -->
+	        <div class="present-area">
+	        	<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/bisco_pre.jpg?0812" alt="「ビスコ保存缶」プレゼント！" style="max-width: 100%">
+	        </div><br>
+	       <!-- 通常プレゼント▲▲▲▲ -->
+
+			<!-- お申込みボタン -->
+			<p class="order_btn viewSp">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<picture>
+						<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+						<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+						<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+					</picture>
+				</a>
+			</p>
+			<!-- お申込みボタン ここまで -->
+
+
+	        <!--　期間限定プレゼントプレゼント▼▼▼▼ 
+	        <img src="/contents/shop/00000003/image/static/img/bousai/img_pre1.jpg" alt="今だけ！二つのプレゼント付き" class="campaign-img mt15">
+	         期間限定プレゼントプレゼント▲▲▲▲ --> 
+
+
+			<!-- お電話でもご注文いただけます SP版のみ表示  -->
+			<!-- <div class="sp-tell-order viewSp">
+				<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order.jpg" alt="お電話でもご注文いただけます！電話で気軽に注文したい！注文フォームのスマホ入力が苦手、、。そんなあなたには、お電話でのご注文をオススメいたします！「この商品いいな」」と思ったら、ぜひ下のボタンからお気軽にお電話ください！">
+				<p class="sp-tell-order-btn" id="sp-tell-order_btn01">
+					<a href="tel:0120-552-173">
+						<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp-tell-order-btn.png" alt="電話で申し込む">
+					</a>
+				</p>
+			</div> -->
+			<!-- お電話でもご注文いただけます SP版のみ表示 ここまで -->
+            
+			<div class="opt_movie viewPc">
+				<!-- 動画ここから -->
+				<div class="movie-area">
+					<h2 class="first-h202 mincho">災害時3日間を乗りきる、<br class="viewSp">厳選グッズ31点を動画でご紹介！</h2>
+					<div class="first-movie">
+						
+						<div class="youtube"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/7HPUmcOFPoI?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					</div>
+				</div>
+				<!-- 動画ここまで-->
+				<!-- お申込みボタン -->
+				<p class="order_btn">
+					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<picture>
+							<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+							<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+							<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+						</picture>
+					</a>
+				</p>
+				<!-- お申込みボタン ここまで -->
+			</div>
+
+			
+            <!-- <h2 class="first-h202 mincho">WEB限定動画公開中！</h2>
+			<div class="first-movie">
+				<div class="youtube">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_3aCOh9MScI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+			</div> -->
+	
 			<!-- <form name="cartGoodsAddForm001" method="POST" action="/shop/cartGoodsAdd.do">
 					<input type="hidden" name="_S" value="c">
 					<input type="hidden" name="display_code" value="104">
@@ -504,15 +961,14 @@ window.onload = function() {
 	
                     <!-- <div style="margin:10px 20px;"><img src="contents/shop/00000003/image/static/img/bousai/kakaku_deb90.jpg" alt="ココチモ・オリジナル　防災セット 一括払価格30650円税込"></div> -->
     			
-					<p class="shopping pb1"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.png" alt="カートに入れる" class="hover"></a></p>
-					<p class="shopping_sp mb0 pb5"><a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" class="productDetail_cart_bt_normal"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/sp_link01.png" alt="お買い物かごに入れる" class="hover"></a></p>
+
 					<!-- </form> -->
 			<!-- <a href="#shop_smooth"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/btn01.jpg" alt="いますぐご注文" class="image96"></a> -->
 		</div>
  				<!-- 完売対応 
 				<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="contents/shop/00000003/image/static/img/bousai/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 				 //完売対応 --> 
-				 <style>
+				 <!-- <style>
 					#content_wrap .tv_link {
 						margin:0 0 60px;
 						display: inline-block;
@@ -564,7 +1020,7 @@ window.onload = function() {
 							<span class="line">防災セット（多機能ラジオ付き）はこちら ＞＞</span>
 						</span>
 					</a>
-				</div>
+				</div> -->
      
         <div class="bs-wrap second">
 			<div class="second-box01">
@@ -591,13 +1047,153 @@ window.onload = function() {
 			<h2 class="third-h201"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20101.png" alt="防災セット" class="third-h20101"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20102.png" alt="防災セット" class="third-h20102 spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-h20102sp.png" alt="防災セット" class="third-h20102sp spb"></h2>
 			<div class="third-box01"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-img01_tv.png" alt="防災セット" class="third-img01 spn"><img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-img01sp_tv.png" alt="防災セット" class="third-img01sp spb">
 				<p class="third-p01">「災害が起こってから3日間は、自力で乗りきる」が防災の基本とされる近年。<br class="spn">いざという時にあなたを守るのは、あなた自身しかいません。<br class="spn">それでも、<span class="font-b">「何から揃えればいいのかわからない」「一つひとつ集めるのは大変…」</span><br class="spn">そんなあなたにお薦めなのがこの『防災セット』。災害時の必需品が、ぱっと一度に揃います。<br class="spn">充実の31点はすべて、震災経験者1,000人にアンケート調査を行って<span class="font-b">「あってよかった」</span><br class="spn"><span class="font-b">「なくて困った」</span>の声から、防災士が厳選したものばかり！災害時の状況を具体的に想定した<br class="spn">仕様で、非常事態を乗り越えるための、確かな力になります。本当に必要になってからでは<br class="spn">遅いから、お手元に今すぐ「安心」の備えを、強くお奨めいたします。</p>
+				<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/third-img01_tv_31.png" alt="安心の31点セット" class="viewSp third-img01_tv">
 			</div>
 		</div>
-		<!-- 2大プレゼント▼▼▼▼ 
-		<div class="present-area">
-			<img src="/contents/shop/00000003/image/static/img/bousai/fixed03/bisco_pre_2.jpg?0817" alt="災害時に役立つ2大プレゼント　プレゼント（1）万能ナイフ（2）グリコ「ビスコ保存缶」" style="max-width: 100%">
-		</div><br>
-		 2大プレゼント▲▲▲▲ -->
+		<!-- お申込みボタン -->
+		<p class="order_btn">
+			<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+				<picture>
+					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+					<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+				</picture>
+			</a>
+		</p>
+		<!-- お申込みボタン ここまで -->
+		 <!--5大特長　ここから-->
+		 <style>
+			#content_wrap .features {
+				overflow: hidden;
+				width: 920px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 33px;
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features {
+					margin-bottom: 10px;
+					width: 100%;
+				}
+			}
+			#content_wrap .features .features_ttl {
+				position: relative;
+				z-index: 2;
+				font-size: 42px;
+				line-height: 1.3;
+				font-weight: bold;
+				color:#FFF100;
+				margin: 0 auto;
+				padding: 0.5em;
+				background: #004098;
+				border-radius: 8px 8px 0 0;
+				text-align: center;
+
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features .features_ttl {
+					font-size: 5.5vw;
+					margin: 0 8px 0;
+					padding: 0.3em 1em;
+				}
+			}
+			#content_wrap .features .features_item {
+				position: relative;
+				z-index: 1;
+				top: -10px;
+				padding: 40px 20px 30px;
+				background: #ffefc7;
+				border-radius: 0 0 8px 8px;
+
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features .features_item {
+					padding: 30px 8px 20px;
+					margin: 0 8px;
+				
+
+				}
+			}
+			#content_wrap .features .features_item dt {
+				font-size: 28px;
+				font-weight: bold;
+				margin-bottom: 10px;
+				color: #007130;
+				
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features .features_item dt {
+					font-size: 16px;
+					display: flex;
+					align-items: center;
+				}
+			}
+			#content_wrap .features .features_item dt .num {
+				display: inline-block;
+				width: 2em;
+				height: 2em;
+				font-size: 25px;
+				font-weight: bold;
+				line-height: 2em;
+				text-align: center;
+				color: #FFF100;
+				background: #007130;
+				border-radius: 50%;
+				margin-right: .5em;
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features .features_item dt .num {
+					font-size: 15px;
+					flex: 0 0 2em;
+				}
+			}
+			#content_wrap .features .features_item dd .bold {
+				font-weight: bold;
+				vertical-align: top;
+				color: red;
+			}
+			#content_wrap .features .features_item dd {
+				font-size: 17px;
+				padding: 0 0 30px 64px;
+				line-height: 1.6;
+			}
+			#content_wrap .features .features_item dd:last-child {
+				padding-bottom: 0;
+			}
+			@media screen and (max-width: 640px) {
+				#content_wrap .features .features_item dd {
+					font-size: 14px;
+					padding: 0 0 20px 0;
+					
+				}
+			}
+		 </style>
+		<style>
+			#content_wrap #content16 .prof {
+				bottom: 10px;
+			}
+		</style>
+		<div class="features">
+			<h2 class="features_ttl">3日間を乗りきる『防災セット』5大特長</h2>
+			<dl class="features_item">
+				<dt><span class="num">1</span>震災経験者1,000人の声から生まれた、必需品が勢揃い！</dt>
+				<dd>いざという時、本当に必要なものは何か──震災経験者（北海道胆振東部地震、熊本地震、東日本大震災、新潟県中越地震、阪神・淡路大震災）1,000人にアンケート調査を行い、<span class="bold">「あって良かった」「なくて困った」災害時の必需品を厳選</span>しました！実際の被災経験に基づいた、実力派の防災セットです。
+				</dd>
+				<dt><span class="num">2</span>「３日間を乗りきる」を想定した充実のセット内容。</dt>
+				<dd>大災害発生から3日間は支援が届かないことが想定されます。消防庁の防災マニュアルでも最低3日間の備蓄を推奨しています。本セットには災害後、特に困る<span class="bold">食料とトイレをお一人約3日分ご用意。</span>食料は成人が1日に必要な約1,600kcalを基準に3日分を、トイレは1日あたり5回を基準に3日分をご用意しています。</dd>
+				<dt><span class="num">3</span>ご自身では揃えにくいものが、一度に手に入ります。</dt>
+				<dd>長期保存が可能な食料や水、テレビでも話題となった<span class="bold">食品加熱キット、簡易トイレ、</span>携帯の充電器としても使える<span class="bold">ラジオ付き防災テレビ</span>など、ご自身では揃えにくいものがまとめて手に入ります。災害時になくてはならないものだから、非常事態に特化した本格仕様の品を、ぜひお手元にお備えください。</dd>
+				<dt><span class="num">4</span>カート付きリュックサックを制作！他では手に入りません。</dt>
+				<dd>防災グッズはいざという時、サッと持ち出せることが何より肝心。そこで、鞄のトップメーカー「エース」に協力を依頼し、カート付きのリュックサックをオリジナルで制作しました！<span class="bold">重さが不安…という方も、ひいて運べるので大変便利！</span>もちろん、外して使えばリュックだけ、カートだけでもご使用いただけます。持ち運ぶ状況に合わせて柔軟に対応できる、大活躍のオリジナルリュックです。</dd>
+				<dt><span class="num">5</span>「美味しい」「安心」な防災食にこだわりました。</dt>
+				<dd>非常時にこそ、健康を維持するために、元気を出すために、美味しくて信頼できるものを口にしたいもの。<span class="bold">本セットでお届けする水やお米・パンは、日本で製造されたもの</span>ですので、安心して召し上がっていただけます。防災士が実際に試食して選び抜いた、「美味しい」防災食です。
+				</dd>
+			</dl>
+		</div>
+
+
+		<!--5大特長　ここまで-->
+		 
 
 <!-- カート追従バナー -->
 <style>
@@ -651,6 +1247,22 @@ window.onload = function() {
 		}
 
 	</style>
+	<style>
+		/* プレゼントバナー対応 */
+		/* @media (min-width: 767px) {
+		#content_wrap .purchase_fixed .inner {
+				max-width: 783px;
+			}
+			#content_wrap .purchase_fixed .order_btn {
+				margin: 0 0 0 20px;
+			}
+			#content_wrap .purchase_fixed .inner .cp_bnr {
+				flex: 1 1 267px;
+			}
+		} */
+
+	</style>
+	
 
 	<div class="purchase_fixed">
 		<div class="inner">
@@ -664,6 +1276,9 @@ window.onload = function() {
 			<p class="pc_only">
 				<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
 			</p>
+			<!-- <p class="pc_only cp_bnr" >
+				<img src="/contents/shop//00000003/image/static/img/bousai/fixed03/purchase_fixed_presen.png" alt="プレゼント付き有効期限">
+			</p> -->
 			<p class="order_btn" id="purchase_btn_order">
 				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
 				<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>

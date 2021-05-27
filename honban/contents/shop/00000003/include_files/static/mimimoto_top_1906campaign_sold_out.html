@@ -433,48 +433,49 @@
 			</picture>
 	
 			<div class="order_btn item cp_version general_model">
-				<!--ST<a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href="">--><a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<!-- <a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">*-> -->
 					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_01.png" alt="通常モデルお申込みはこちら">
 				</a>
 			</div>
 			<div class="icon">
 				<picture>
 					<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/mimimoto/dcc_bt_sp_panda.png">
-					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/mimimoto/dcc_main_p03_few.png">
-					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_main_p03_few.png" alt="ウェブ限定パンダモデル限定1000台">
+					<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/mimimoto/dcc_main_p03_sould_out.png">
+					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_main_p03_sould_out.png" alt="ウェブ限定パンダモデル限定1000台">
 				</picture>
 			</div>
 	
 
-			<div class="order_btn item cp_version panda_model">
+			<!-- <div class="order_btn item cp_version panda_model">
 				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 				</a>
-			</div>
+			</div> -->
 			<!-- <div class="order_btn item cp_version panda_model">
 				<a onclick="siteCatalistAddCart_static('DCC45','00012284','12325');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC45','00014944','24059');return false;" href="">*->
 					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 				</a>
 			</div> -->
-			<!-- <div class="order_btn item cp_version panda_model sold_out">
+			<div class="order_btn item cp_version panda_model sold_out">
 				<a href="javascript:void(0);">
-					<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out.png?1228" alt="パンダモデルは完売いたしました。">
+					<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out_ver01.png" alt="パンダモデルは完売いたしました。※再販は未定です。">
 				</a>
-			</div> -->
+			</div>
 		</div>
-		<div class="icon02 cp_bnr">
+		<!-- <div class="icon02 cp_bnr">
 			<picture>
 				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/mimimoto/dcc_main_top_sp_date.jpg">
 				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/mimimoto/dcc_main_p04.png">
 				<img src="/contents/shop/00000003/image/static/mimimoto/dcc_main_p04.png" alt="2大プレゼント付き有効期限：1月12日（火）まで">
 			</picture>
-		</div>
-		<!-- <div class="icon02 gift_bnr viewPc">
-			<img src="/contents/shop/00000003/image/static/mimimoto/gift_bnr_pc.png" alt="贈り物にも最適です">
 		</div> -->
-	</div><!-- /main_visual_area-->
+		<div class="icon02 gift_bnr viewPc">
+			<img src="/contents/shop/00000003/image/static/mimimoto/gift_bnr_pc.png" alt="贈り物にも最適です">
+		</div>
+	</div><!-- /main_visual_area -->
 
-	<div  class="panda_area mt_s10 mt30">
+	<!-- <div  class="panda_area mt_s10 mt30">
 		<h2 class="main_ttl">
 			<picture>
 				<source media="(max-width: 767px)" srcset="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_main_panda_sp.jpg?1203">
@@ -486,7 +487,7 @@
 			<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_pc_panda.png" alt="">
 		</div>
 		<div class="txt">
-			<h3 class="ttl"><img src="/cococimo/contents/shop/00000003/image/static/mimimoto/ttl_panda_2.png?12" alt="お部屋にかわいいパンダがやって来る！？大切な方への贈り物にオススメです！"></h3>
+			<h3 class="ttl"><img src="/cococimo/contents/shop/00000003/image/static/mimimoto/ttl_panda_2.png" alt="お部屋にかわいいパンダがやって来る！？大切な方への贈り物にオススメです！"></h3>
 			<p>
 				『みみもとくん』のウェブ限定カラー<span class="str-txt bold">「パンダモデル」</span>が新登場！<br>
 				白黒模様のシンプルなカラーは、どんなお部屋にもマッチ。愛くるしいパンダのような存在感で、リビングに明るい雰囲気をもたらします。<br>
@@ -498,55 +499,47 @@
 				<div class="icon_area itemvisual">
 					<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_main_panda_icon.png" alt="">
 				</div>
-				<div class="order_btn cp_version">
+				<!-* <div class="order_btn cp_version">
 					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 					</a>
-				</div>
-				<!-- <div class="order_btn cp_version">
+				</div> *->
+				<!-* <div class="order_btn cp_version">
 					<a onclick="siteCatalistAddCart_static('DCC45','00012284','12325');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC45','00014944','24059');return false;" href="">*->
 						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 					</a>
-				</div> -->
-				<!-- <div class="order_btn cp_version sold_out">
+				</div> *->
+				<div class="order_btn cp_version sold_out">
 					<a href="javascript:void(0);">
-						<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out.png?1228" alt="パンダモデルは完売いたしました。">
+						<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out_ver01.png" alt="パンダモデルは完売いたしました。※再販は未定です。">
 					</a>
-				</div> -->
+				</div>
 			</div>
 
-		</div>
-		<p class="notice viewSp">※本体カラー以外の仕様・機能等は「通常モデル」と同様です。</p>
-		<div class="order_btn_area viewSp">
+		</div> -->
+		<!-- <p class="notice viewSp">※本体カラー以外の仕様・機能等は「通常モデル」と同様です。</p> -->
+		<!-- <div class="order_btn_area viewSp">
 			<div class="item_box panda_model">
-				<div class="order_btn cp_version">
-					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
-						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
-					</a>
-					<div class="img">
-						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png" alt="パンダモデル">
-					</div>
-				</div>
-				<!-- <div class="order_btn cp_version">
+				<!-* <div class="order_btn cp_version">
 					<a onclick="siteCatalistAddCart_static('DCC45','00012284','12325');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC45','00014944','24059');return false;" href="">*->
 						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 					</a>
 					<div class="img">
 						<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png" alt="パンダモデル">
 					</div>
-				</div> -->
-				<!-- <div class="order_btn cp_version sold_out">
+				</div> *->
+				<div class="order_btn cp_version sold_out">
 					<a href="javascript:void(0);">
-						<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out.png?1228" alt="パンダモデルは完売いたしました。">
+						<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out_ver01.png" alt="パンダモデルは完売いたしました。※再販は未定です。">
 					</a>
 					<div class="img">
 						<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png?1214" alt="パンダモデル">
 					</div>
-				</div> -->
+				</div>
 			</div>
 
 		</div>
-	</div>
+	</div> -->
     
         <!-- <div class="mimimoto_vi">
             <h1> <img src="/contents/shop/00000003/image/static/mimimoto/vi.png" alt="みみもとくんプレミアム" class="hidden-pc">
@@ -578,19 +571,20 @@
                 </div>
             </div>
         </div> -->
-        <!-- ▼▼みみもとくんキャンペーン　ここから -->
+        <!-- ▼▼みみもとくんキャンペーン　ここから 
         <div class="cp_area tac mt40 s_mt20 mb40 s_mb15">
             <img src="/contents/shop/00000003/image/static/mimimoto/dcc_pre_sp.png"  class="hidden-pc" alt="期間限定プレゼント品贈呈中！【ルーペ付き爪切り（倍率3倍）】よく見えてラクラク便利！手元・足元が拡大されてよく見えるから、爪がラクラク切りやすい！ルーペの角度調整も可能。ぜひお早めにお申し込みください。●商品サイズ／本体：約9×1.9×1.7cm ●レンズ：約4.5×7.3×1.2cm ●材質／本体：スチール・PPレンズ：アクリル・磁石・PP ●製造：中国">
             <img src="/contents/shop/00000003/image/static/mimimoto/dcc30_pre_pc.png?1208" alt="みみもとくんプレミアム" class="hidden-sp">
         </div>
-       <!-- ▲▲みみもとくんキャンペーン　ここまで -->
+        ▲▲みみもとくんキャンペーン　ここまで -->
     </div>
     
 	<!-- ▼▼お申込みボタン　ここから -->
 	<div class="order_btn_area cf">
 		<div class="item_box general_model">
 			<div class="order_btn cp_version">
-				<!--ST<a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href="">--><a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">
+				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+					<!-- <a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">*-> -->
 					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_01.png" alt="通常モデルお申込みはこちら">
 				</a>
 				<div class="img">
@@ -600,14 +594,14 @@
 		</div>
 
 		<div class="item_box panda_model">
-			<div class="order_btn cp_version">
+			<!-- <div class="order_btn cp_version">
 				<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 					<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
 				</a>
 				<div class="img">
 					<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png" alt="パンダモデル">
 				</div>
-			</div>
+			</div> -->
 			<!-- <div class="order_btn cp_version">
 				<a onclick="siteCatalistAddCart_static('DCC45','00012284','12325');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC45','00014944','24059');return false;" href="">*->
 					<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
@@ -616,14 +610,14 @@
 					<img src="/cococimo/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png" alt="パンダモデル">
 				</div>
 			</div> -->
-			<!-- <div class="order_btn cp_version sold_out">
+			<div class="order_btn cp_version sold_out">
 				<a href="javascript:void(0);">
 					<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out.png?1228" alt="パンダモデルは完売いたしました。">
 				</a>
 				<div class="img">
 					<img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png?1214" alt="パンダモデル">
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</div>
 	<!-- ▲▲お申込みボタン　ここまで -->
@@ -719,7 +713,7 @@
 	
 		</style>
 	<style>
-		/* 通常対応
+		/* 通常対応 */
 		.purchase_fixed.mimpanda_purchase_fixed.normal .inner {
 			width: 733px;
 			
@@ -729,7 +723,7 @@
 				width: 100%;
 			}
 		}
-		*/
+		
 	</style>
 
     
@@ -738,7 +732,8 @@
     <!-- ▼▼お申込みボタン▼▼ -->
             <div class="item_box general_model">
                 <div class="order_btn cp_version">
-					<!--ST<a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href="">--><a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">
+					<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+						<!-- <a onclick="siteCatalistAddCart_static('DCC51','00012285','12334');return false;" href=""><!-*本番<a onclick="siteCatalistAddCart_static('DCC51','00014945','24084');return false;" href="">*-> -->
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_01.png" alt="通常モデルお申込みはこちら">
                     </a>
                     <div class="img">
@@ -748,14 +743,14 @@
             </div>
     
             <div class="item_box panda_model">
-                <div class="order_btn cp_version">
+                <!-- <div class="order_btn cp_version">
                     <a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
                     </a>
                     <div class="img">
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png?1214" alt="パンダモデル">
                     </div>
-				</div>
+				</div> -->
                 <!-- <div class="order_btn cp_version">
                     <a onclick="siteCatalistAddCart_static('DCC45','00012284','12325');return false;" href=""><!-本番<a onclick="siteCatalistAddCart_static('DCC45','00014944','24059');return false;" href="">*->
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_2_02.png" alt="パンダモデルお申込みはこちら">
@@ -764,18 +759,18 @@
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png?1214" alt="パンダモデル">
                     </div>
 				</div> -->
-                <!-- <div class="order_btn cp_version sold_out">
+                <div class="order_btn cp_version sold_out">
 					<a href="javascript:void(0);">
 						<img src="/contents/shop/00000003/image/static/mimimoto/img_new_bt_sp_moji_sold_out.png?1228" alt="パンダモデルは完売いたしました。">
 					</a>
                     <div class="img">
                         <img src="/contents/shop/00000003/image/static/mimimoto/dcc_bt_k_02.png?1214" alt="パンダモデル">
                     </div>
-                </div> -->
+                </div>
             </div>
-            <div class="item_box present_item viewPc">
+            <!-- <div class="item_box present_item viewPc">
                 <img src="/contents/shop/00000003/image/static/mimimoto/purchase_fixed_presen_0112.png" alt="プレゼント付き有効期限1月12日（火）">
-            </div>
+            </div> -->
     
             
         </div>

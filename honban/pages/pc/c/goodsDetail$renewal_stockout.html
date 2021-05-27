@@ -11,9 +11,9 @@
 <meta m:id="e_var_testSite" content="">
 <meta m:id="e_var_member" content="">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no"> 
 <!-- InstanceBeginEditable name="title" -->
-<meta m:id="description" name="description" content="$1の商品ページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
+	<meta m:id="description" name="description" content="$1の商品ページです。ユーキャンのココチモ（cococimo）は「今よりもっと“心地いい”をお届けする」をテーマに、こだわり抜いた商品をご案内する通信販売サイトです。">
 <meta m:id="keywords" name="keywords" content="$1,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <meta m:id="e_var_goods">
 <meta m:id="e_var_goodsUrlPrefix">
@@ -26,10 +26,11 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
-<link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css?20191003" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/style.css?0827" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/renewal_header.css" type="text/css" media="all" charset="utf-8">
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/jquery.js"></script>
 <script src="/contents/c/js/new/jquery.matchHeight-min.js"></script>
 <script src="/contents/c/js/new/slick.min.js"></script>
@@ -60,14 +61,15 @@ $(function(){
 });
 </script>
 <![endif]-->
-<!--▲▲▲ 共通CSS/Script ▲▲▲-->
-<!--▼▼▼ 固有CSS/Script ▼▼▼-->
+
+	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
+	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000003/css/modal.css" type="text/css" media="all" />
 <style>
-  #container {
-    z-index: auto;
-  }
+		@media screen and (max-width:767px) {
+			#contents {position: static;}
+		}
 </style>
 <script src="/contents/c/js/new/featherlight.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000003/js/renewal.js" charset="shift_jis"></script>
@@ -164,76 +166,334 @@ function siteCatalistAddCart1_renewal(s_products){
   }
 }
 function showCartButton(obj){
-  var idx = obj.selectedIndex;
-  var goods_sku_code = obj.options[idx].value;
-  var cartButton = document.getElementsByClassName("cartButton");
-  var selectButton = document.getElementsByClassName("selectButton");
-  var soldOutButton = document.getElementsByClassName("soldOutButton");
-  var soldOutButtonSku = document.getElementsByClassName("soldOutButtonSku");
-  var goods_sales = document.getElementsByName("goods_sales");
+  // var idx = obj.selectedIndex;
+  // var goods_sku_code = obj.options[idx].value;
+  // var cartButton = document.getElementsByClassName("cartButton");
+  // var selectButton = document.getElementsByClassName("selectButton");
+  // var soldOutButton = document.getElementsByClassName("soldOutButton");
+  // var soldOutButtonSku = document.getElementsByClassName("soldOutButtonSku");
+  // var goods_sales = document.getElementsByName("goods_sales");
   if( idx != 0 ){
-    var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value;
+    // var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value;
     // SKU商品毎の在庫数を見てボタンを切り替える
     if(0 < mortgage_possibility_num){
-      cartButton[0].style.display='inline';
-      selectButton[0].style.display='none';
-      soldOutButtonSku[0].style.display='none';
+      // cartButton[0].style.display='inline';
+      // selectButton[0].style.display='none';
+      // soldOutButtonSku[0].style.display='none';
    }else{
-      cartButton[0].style.display='none';
-      selectButton[0].style.display='none';
-      soldOutButtonSku[0].style.display='inline';
+      // cartButton[0].style.display='none';
+      // selectButton[0].style.display='none';
+      // soldOutButtonSku[0].style.display='inline';
     }
   }else{
     // セレクトボックスが未選択の場合、選択ボタンを表示
-    cartButton[0].style.display='none';
-    selectButton[0].style.display='inline';
-    soldOutButtonSku[0].style.display='none';
+    // cartButton[0].style.display='none';
+    // selectButton[0].style.display='inline';
+    // soldOutButtonSku[0].style.display='none';
   }
   if(goods_sales[0].value == 'false'){
     // 販売停止状態であれば、完売ボタンを表示
-    cartButton[0].style.display='none';
-    selectButton[0].style.display='none';
-    soldOutButtonSku[0].style.display='none';
-    soldOutButton[0].style.display='inline';
+    // cartButton[0].style.display='none';
+    // selectButton[0].style.display='none';
+    // soldOutButtonSku[0].style.display='none';
+    // soldOutButton[0].style.display='inline';
   }
 }
 
 function showCartButton1(obj){
-  var idx = obj.selectedIndex;
-  var goods_sku_code = obj.options[idx].value;
-  var cartButton = document.getElementsByClassName("cartButton1");
-  var selectButton = document.getElementsByClassName("selectButton1");
-  var soldOutButton = document.getElementsByClassName("soldOutButton1");
-  var soldOutButtonSku = document.getElementsByClassName("soldOutButtonSku1");
-  var goods_sales = document.getElementsByName("goods_sales");
+  // var idx = obj.selectedIndex;
+  // var goods_sku_code = obj.options[idx].value;
+  // var cartButton = document.getElementsByClassName("cartButton1");
+  // var selectButton = document.getElementsByClassName("selectButton1");
+  // var soldOutButton = document.getElementsByClassName("soldOutButton1");
+  // var soldOutButtonSku = document.getElementsByClassName("soldOutButtonSku1");
+  // var goods_sales = document.getElementsByName("goods_sales");
   if( idx != 0 ){
-    var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value;
+    // var mortgage_possibility_num = document.getElementsByName(goods_sku_code)[1].value;
     // SKU商品毎の在庫数を見てボタンを切り替える
     if(0 < mortgage_possibility_num){
-      cartButton[0].style.display='inline';
-      selectButton[0].style.display='none';
-      soldOutButtonSku[0].style.display='none';
+      // cartButton[0].style.display='inline';
+      // selectButton[0].style.display='none';
+      // soldOutButtonSku[0].style.display='none';
    }else{
-      cartButton[0].style.display='none';
-      selectButton[0].style.display='none';
-      soldOutButtonSku[0].style.display='inline';
+      // cartButton[0].style.display='none';
+      // selectButton[0].style.display='none';
+      // soldOutButtonSku[0].style.display='inline';
     }
   }else{
     // セレクトボックスが未選択の場合、選択ボタンを表示
-    cartButton[0].style.display='none';
-    selectButton[0].style.display='inline';
-    soldOutButtonSku[0].style.display='none';
+    // cartButton[0].style.display='none';
+    // selectButton[0].style.display='inline';
+    // soldOutButtonSku[0].style.display='none';
   }
   if(goods_sales[0].value == 'false'){
     // 販売停止状態であれば、完売ボタンを表示
-    cartButton[0].style.display='none';
-    selectButton[0].style.display='none';
-    soldOutButtonSku[0].style.display='none';
-    soldOutButton[0].style.display='inline';
+    // cartButton[0].style.display='none';
+    // selectButton[0].style.display='none';
+    // soldOutButtonSku[0].style.display='none';
+    // soldOutButton[0].style.display='inline';
   }
 }
 //-->
 </script>
+<script>
+	// 後払いの場合、一括価格を非表示
+	$(function() {
+	  if($('.price_info_area').length){
+		$(".ikkatu_wrap").css({display: "none"});
+	} else {
+		$(".ikkatu_wrap").css({display: "block"});
+	}
+  });
+</script>
+
+<style>
+  .goods_detail_item_txt02 {
+    background:#DDDDDD;
+    padding:10px;
+  }
+  .goods_detail_item_plan {
+	  padding-top: 22px;
+	}
+  .goods_detail_item_txt02 .txt_indent {
+    padding-left: 1em;
+    font-size: .8em;
+  }
+@media screen and (max-width: 767px) {
+  .notic_txt {
+    display: flex;
+  }
+  .notic_txt .cmn_link01 {
+    font-size: 3vw;
+	margin-left: 15px;
+  }
+  @media screen and (max-width: 767px) {
+	.notic_txt .cmn_link01 {
+		margin-left: 5vw;
+	}
+  }
+  @media screen and (max-width: 320px) {
+	.notic_txt .cmn_link01 {
+		margin-left: 10px;
+	}
+  }
+  .notic_txt .cmn_link01:before {
+  left: -15px;
+  }
+}
+</style>
+<style>
+	.price_info_area .price_info .price_split_wrap .price_split span {
+		font-weight: normal;
+	}
+	.goods_detail_item_order {
+		margin: 20px 0 0;
+	}
+	.goods_detail_item_postage {
+		display: block;
+		/* max-width: 10em; */
+		margin-top: 0;
+		margin-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 1em;
+		font-weight: normal;
+		border: 1px solid #cc1010;
+		line-height: 1.5em;
+	}
+	@media screen and (max-width: 767px) {
+		.goods_detail_item_postage {
+		width: auto;
+		}
+	
+	}
+	
+	.goods_detail_item_plan_list li {
+		float: left;
+		margin: 0 10px 0 0;
+		padding: 3px 5px;
+		background: #26a903;
+		color: #fff;
+		width:31.6%;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_plan_list li {
+			width:31.2%;
+		}
+	}
+	@media screen and (max-width: 320px){
+		.goods_detail_item_plan_list li {
+			width:30.5%;
+		}
+	}
+
+	.goods_detail_item_plan_list li:last-child {
+		margin-right: 0;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_plan_list li:nth-child(2) {
+			margin-right: 10px;
+		}
+		.goods_detail_item_plan_list li:nth-child(2n){
+			float: left;
+		}
+	}
+	.goods_detail_item_tag {
+		text-align: left;
+	}
+	@media screen and (max-width: 767px){
+		.goods_detail_item_tag {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	.price_info_area {
+		font-size: 15px;
+		margin: 0 auto 0;
+		text-align: left;
+		font-weight: normal;
+		position: relative;
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+	@media (max-width: 767px) {
+		.price_info_area {
+			font-size: 1em;
+			margin: 0 0 0;
+			display: block;
+		}
+	}
+	.price_info_area .price_info {
+		width:360px;
+		margin-right: 0;
+		margin:0 auto;
+		background: #fff;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .price_info {
+			width: auto;
+			margin-right: 0;
+		}
+			
+	}
+	.price_info_area .plice_delivery {
+		width:291px;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .plice_delivery {
+			width:auto;
+		}
+	}
+	.price_info_area .price_info .price_split_wrap {
+		border: 1px solid #acdde0;
+		padding: 2% 3%;
+		margin: 0 0 3px;
+	}
+	.price_info_area .price_info .price_split_wrap .kakaku {
+		font-size: .9em;
+	}
+	.price_info_area .price_info .price_split_wrap .price_split {
+		font-size:1.3em;
+		font-weight: normal;
+		line-height:1.5;
+		/* margin-bottom: 5px; */
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span {
+		vertical-align: baseline;
+		font-weight: normal;
+		
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.month {
+		font-weight: normal;
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.value span {
+		color: #cf1f1f !important;
+		font-weight: bold;
+		font-size: 2.3rem;
+	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_split span.value span {
+		font-size: 1.9rem;
+		}
+	}
+	.price_info_area .price_info .price_split_wrap .price_split span.num,
+	.price_info_area .price_info .price_split_wrap .price_split span.num span {
+		font-weight: bold;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail {
+		overflow: hidden;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt {
+		width: 50%;
+		float: left;
+		padding:5px;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
+		padding-bottom:0;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+		padding-left: 1em;
+	}
+	@media (max-width: 320px) {
+		.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
+			padding-left:.5em;
+		}
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dd {
+		padding:5px 5px 5px 40%;
+		border-bottom: 1px dotted #ccc;
+		text-align: right;
+	}
+	.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
+		padding:5px 5px 0 40%;
+		border-bottom: none;
+	}
+	.price_info_area .price_info .plice_list {
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		.price_info_area .price_info .plice_list img {
+			width: auto;
+			max-width: 291px;
+		}
+	}
+	.price-notice {
+		font-size: .83em;
+		margin-top: 5px;
+		width:360px;
+		margin:5px auto 0;
+	}
+	@media (max-width: 767px) {
+		.price-notice {
+			width:auto;
+		}
+	}
+	.price-notice  li {
+		text-indent: -1em;
+		padding-left: 1em;
+	}
+	@media (max-width: 767px) {
+		.plice_delivery {
+			text-align: center;
+			padding-top:10px;
+		}
+		.plice_delivery img {
+			width: auto;
+			max-width:291px;
+		}
+	}
+	.plice_delivery .return_txt {
+		padding:10px 0 30px;
+		text-align: center;
+	}
+	@media (max-width: 767px) {
+		.plice_delivery .return_txt {
+			padding:5px 0 10px;
+			text-align: center;
+		}
+	}
+</style>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -392,50 +652,51 @@ function showCartButton1(obj){
 <!--▲▲▲ tagForm ▲▲▲-->
 <!-- InstanceEndEditable -->
 <div id="container">
-<header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-  <div class="header_in cf">
-    <span m:id="l_equ_hierarchy_3_shop">
-      <h1 class="header_logo">
-        <a m:id="e_link_logo_shop_shop" href="/">
-          <span m:id="l_notEmp_shop_image_file_shop">
-            <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="【今よりもっと“心地いい”商品をお届けする通販サイトユーキャンのココチモ(cococimo)】" />
+  <header class="header" id="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="header_in cf">
+      <span m:id="l_equ_hierarchy_3_shop">
+      
+      <div class="header_bottom changetop">
+      
+        <p class="header_username">ようこそ
+          <span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span><!-- <span m:id="b_wr_name_sei">山田</span><span>&nbsp;</span><span m:id="b_wr_name_mei">花子</span> --></a>
           </span>
-        </a>
-      </h1>
-      <div class="header_top">
-        <div class="header_tell" class="viewS">
-          <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png"  alt="0120-552-476 7時から22時（年中無休）" />
-                </div>
-        <!-- /.header_tel -->
-        <div class="header_contact">
-                    <a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a>
-        </div>
-        <!-- /.header_contact -->
+          <span m:id="l_notPre_login_member_name">ゲスト</span>さん
+        </p>
+        <!-- /.header_username -->
         <div m:id="l_pre_member_mypage_button_shop">
           <div class="header_mypage viewPc">
-            <a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+            <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
           </div>
         </div>
         <!-- /.header_mypage -->
-        <div class="header_ucan">
-          <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
-        </div>
-        <!-- /.header_ucan -->
-            </div>
-      <!-- /.header_top -->
-      <div class="header_bottom">
-        <p class="header_username">ようこそ
-                  <span m:id="l_pre_login_member_name"><a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ"><span m:id="disp_member_name">山田　太郎</span></a></span>
-                    <span m:id="l_notPre_login_member_name">ゲスト</span>さん
-                </p>
-        <!-- /.header_username -->
         <p class="header_begginer"><a href="/shop/c/static/greeting/#origin">初めての方へ</a></p>
         <!-- /.header_begginer -->
         <p class="header_guide"><a href="/shop/c/static/guide/">ご利用ガイド</a></p>
         <!-- /.header_guide -->
-        <div class="header_search" >
+
+        <div class="header_memberAdd">
+          <a m:id="e_link_login_shop" href="memberLogin.html" >新規会員登録</a>
+        </div>
+
+        <div class="header_contact">
+          <a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a>
+        </div>
+        <!-- /.header_contact -->
+      </div>
+      <!-- /.header_bottom -->
+      <div class="header_top_wrap">
+        <div class="header_top">
+          <p class="header_logo">
+            <a m:id="e_link_logo_shop_shop" href="/">
+              <span m:id="l_notEmp_shop_image_file_shop">
+                    <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/sp/sp_logo.svg" alt="今よりもっと“心地いい” をお届けするココチモ(cococimo)" />
+              </span>
+            </a>
+          </p>
+        <div class="header_search">
           <div class="header_search_in cf">
-            <form m:id="searchForm" name="searchForm" method="GET" action="../../../Templates/goodsSearchShop_shop.html">
+            <form m:id="searchForm" name="searchForm" method="GET" action="goodsSearchShop_shop.html">
               <input m:id="searchForm_shop_no" type="hidden" name="_S" value="00000002">
               <input m:id="searchForm_category_code" type="hidden" name="category_code" value="" />
               <input m:id="searchForm_select_category_code" type="hidden" name="select_category_code" value="" />
@@ -447,70 +708,198 @@ function showCartButton1(obj){
               <input m:id="searchForm_page" type="hidden" name="page" value="1">
               <input m:id="searchForm_keyword" type="hidden" name="keyword" value="">
             </form>
-            <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="../../../Templates/goodsSearchShop_shop.html">
-              <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-              <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名で検索" type="text" name="keyword" maxlength="200" value="商品名で検索" autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
-              <div class="box_02"><input type="submit" value="検索" id="search_btn_pc"></div>
-            </form>
-            <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="../../../Templates/goodsSearchShopDetail.html">
-              <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
-              <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
-              <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
-            </form>
           </div>
         </div>
 
         <!-- /.header_search -->
-        <span m:id="l_equ_hierarchy_3_shop">
-          <div class="header_menu hvr-grow" class="clearfix">
-                        <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
-                            <span class="header_bag_btn"><span class="icon-cart"></span><span class="header_bag_txt">お買い物かご</span></span>
-                        </a>
-                        <p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
-                    </div>
-          <!--/.header_menu-->
-        </span>
-        <div class="header_login hvr-grow">
-          <ul class="header_list_02">
-            <div m:id="l_pre_member_logout_button_shop">
-              <li id="header_logout">
-                <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
-                  <p class="header_logout_btn"><span class="icon-login"></span><span class="header_logout_txt">ログアウト</span></p>
-                </a>
-              </li>
-                        </div>
-                        <div m:id="l_pre_member_mypage_button_shop">
-                            <li class="header_mypage_sp">
-                                <a m:id="e_link_mypage_shop" href="../../../Templates/memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
-                            </li>
-                        </div>
-            <div m:id="l_notPre_member_login_button_shop">
-                            <li id="header_login">
-                <a m:id="e_link_login_shop" href="../../../Templates/memberLogin.html" class="login_bt" title="ログイン">
-                  <p class="header_login_btn"><span class="icon-login"></span><span class="header_login_txt">ログイン</span></p>
-                </a>
-              </li>
+          <div class="search_area cf">
+          <div class="search_area_in cf">
+            <div class="search_area_input_wrap">
+              <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="goodsSearchShop_shop.html">
+                <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
+                <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名・キーワードで検索" type="text" name="keyword" maxlength="200" value="商品名・キーワードで検索"
+                   autocomplete="off" id="search_form_pc"><input type="hidden" id="category_filter_type_pc" value="00000003"></div>
+                <div class="box_02 icon-search"><input type="submit" value="検索" id="search_btn_pc" ></div>
+              </form>
+              <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
+                <input m:id="keywordSearchShopDetailForm_shop_no" type="hidden" name="_S" value="00000002">
+                <input m:id="keywordSearchShopDetailForm_keyword" type="hidden" name="keyword" value="">
+                <input m:id="keywordSearchShopDetailForm_category_code" type="hidden" name="category_code" value="">
+              </form>
             </div>
-          </ul>
+            </div>
         </div>
-        <!-- /.header_login -->
+        <!-- /.search_area -->
+
+        <!-- ▼▼▼トレンド商品▼▼▼ -->
+        <!-- <span m:id="l_include_file_tags" filename="top/trend_area" id="trendArea" class="viewPc"></span> -->
+        <!-- ▲▲▲トレンド商品▲▲▲ -->
+        <!-- ▼▼▼カテゴリ一ボタン▼▼▼ -->
+        <style>
+          @media print, screen and (min-width: 767px) {
+            #trend_area {
+              position: relative;
+              float: left;
+            }
+            #category .category_list, #goods .category_list, #home .category_list, .category_list {
+              display: none;
+            }
+            #category .category_list.active, #goods .category_list.active, #home .category_list.active, .category_list.active {
+              display: block;
+            }
+        
+            .search_area_input_wrap {
+              width: 524px;
+            }
+            #trend_area .ttl_category {
+              width: 147px;
+              margin-left: 10px;
+              margin-top: 18px;
+              padding-bottom:3px;
+              text-align: left;
+              position: relative;
+              font-size:15px;
+              font-weight: bold;
+              display: inline-block;
+              color: #2C6190;
+              border-bottom:1px solid transparent;
+              transition: all 300ms 0s ease;
+            }
+            #trend_area .ttl_category.ttl_active:hover,
+            #trend_area .ttl_category.ttl_active {
+              border-bottom:1px solid #F18700;
+            }
+            #trend_area .ttl_category:hover {
+              border-bottom:1px solid #2C6190;
+              color: #F18700;
+            }
+            #trend_area .ttl_category #open_cat.btn_open {
+              border-bottom:none;
+              color: #F18700;;
+            }
+            #trend_area .ttl_category a#open_cat {
+              color:#2C6190;
+              position: relative;
+              display: inline-block;
+              transition: all 300ms 0s ease;
+            }
+            #trend_area .ttl_category a#open_cat:hover {
+              text-decoration: none;
+        
+            }
+            #trend_area .ttl_category a#open_cat:after {
+              content: '';
+              display: inline;
+              width: 0;
+              height: 0;
+              position: absolute;
+              margin: auto;
+              top: 0;
+              bottom: 0;
+              right: -20px;
+              transition: border-color 300ms 0s ease;
+            }
+            #trend_area .ttl_category #open_cat.btn_close:after {
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-top: 8px solid #2C6190;
+              transition: border-color 300ms 0s ease;
+            }
+            #trend_area .ttl_category #open_cat.btn_open:after {
+              border-left: 8px solid transparent;
+              border-right: 8px solid transparent;
+              border-bottom: 8px solid #F18700;
+              transition: border-color 300ms 0s ease;
+            }
+          }
+          </style>
+          <div id="trend_area">
+            <p class="ttl_category"><a id="open_cat" href="#">カテゴリから探す</a></p>
+          </div>
+          <script>
+            $(function () {
+              var openBtn = $('#open_cat')
+              openBtn.removeClass().addClass("btn_close");
+              openBtn.click(function (event) {
+              if($(this).hasClass("btn_close")) {
+                $(this).removeClass("btn_close").addClass("btn_open");
+              } else if($(this).hasClass("btn_open")) {
+                $(this).removeClass("btn_open").addClass("btn_close");
+              }
+              $('.category_list').slideToggle();
+              $('.category_list').toggleClass("active");
+              $('.ttl_category').toggleClass("ttl_active");
+              event.preventDefault();
+            });
+          });
+          </script>
+        <!-- ▲▲▲カテゴリ一ボタン▲▲▲ -->
+        <span m:id="l_equ_hierarchy_3_shop">
+        <div class="header_menu" class="clearfix">
+                      <a m:id="h_link_show_cart_link" href="/shop/cart.do" onClick="s.linkTrackVars='events'; s.linkTrackEvents='scView';s.events='scView';　s.tl(this,'o','cartview',null,'navigate');return false;">
+                          <span class="header_bag_btn"><span class="icon-cart"><img src="/contents/c/shop/image/btn_cart_icon.svg" alt=""></span><span class="header_bag_txt">お買い物<br>かご</span></span>
+                      </a>
+                      <p class="header_bag_num"><object class="xsp_obj" m:id="e_var_total_order_num"></object><span m:id="b_wr_side_total_order_num"><span m:id="dummy">●●</span></span></p>
+        </p>
       </div>
-      <!-- /.header_bottom -->
-      <div class="header_signup" style="display: none;">
-        <div m:id="l_notPre_member_login_shop">
-          <ul class="header_list_01">
-            <li><a m:id="e_link_memberAdd_shop" href="../../../Templates/memberAddInput.html">新規会員登録</a></li>
-            <li><a m:id="e_link_reminder_shop" href="../../../Templates/memberReminderPwdInput.html">パスワードを忘れた方</a></li>
-          </ul>
+      <!--/.header_menu-->
+      </span>
+      <div class="header_login">
+        <ul class="header_list_02">
+          <div m:id="l_pre_member_logout_button_shop">
+            <li id="header_logout">
+              <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+                <p class="header_logout_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_logout_icon.svg" alt=""></span><span class="header_logout_txt">ログアウト</span></p>
+              </a>
+            </li>
+          </div>
+          <div m:id="l_pre_member_mypage_button_shop">
+            <li class="header_mypage_sp">
+              <a m:id="e_link_mypage_shop" href="memberMypage.html" class="mypage_bt" title="マイページ">マイページ</a>
+            </li>
+          </div>
+          <div m:id="l_notPre_member_login_button_shop">
+            <li id="header_login">
+              <a m:id="e_link_login_shop" href="memberLogin.html" class="login_bt" title="ログイン">
+                <p class="header_login_btn"><span class="icon-login"><img src="/contents/c/shop/image/btn_login_icon.svg" alt=""></span><span class="header_login_txt">ログイン</span></p>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <!-- /.header_login -->
+      <div class="header_member viewPc">
+        <p class="header_member_btn"><a href="/shop/memberAdd.do" class="member_bt" title=""><span class="icon-member"><img src="/contents/c/shop/image/btn_member_icon.svg" alt=""></span><span class="header_member_txt">新規<br>会員登録</span></a></p>
+      </div>
+        <!--<div class="header_tell" class="viewS">
+          <img m:id="static_img" src="../../../contents/shop/00000003/shop/image/txt_tel01.png" alt="0120-552-186 6時&#xFF5E;22時（年中無休）" />
+          <p class="note">携帯電話からでも通話無料</p>
         </div>
+         /.header_tel -->
+
+        <!--<div class="header_ucan">
+          <a href="https://www.u-canhd.co.jp/" target="_blank">ユーキャン</a>
+          </div> -->
+        <!-- /.header_ucan -->
+        </div><!-- /.header_top -->
+      </div><!-- header_top_wrap -->
+
+    <div class="header_signup" style="display: none;">
+      <div m:id="l_notPre_member_login_shop">
+        <ul class="header_list_01">
+          <li><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></li>
+          <li><a m:id="e_link_reminder_shop" href="memberReminderPwdInput.html">パスワードを忘れた方</a></li>
+        </ul>
       </div>
-      <!-- /.header_signup -->
+    </div>
+    <!-- /.header_signup -->
     </span>
     <div class="header_item_search_box">
       <div class="header_item_search_area">
         <form m:id="keywordSearchShopForm" name="keywordSearchShop" action="/goodsSearchShop_shop.html">
           <input m:id="keywordSearchShopForm_shop_no" type="hidden" name="_S" value="00000002">
-          <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索" autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
+          <div class="box_01"><input m:id="h_txt_keyword" placeholder="商品名や商品番号で検索" type="text" name="keyword" maxlength="200" value="商品名や商品番号で検索"
+             autocomplete="off" id="search_form_sp"><input type="hidden" id="category_filter_type_sp" value="00000003"></div>
           <div class="box_02"><input type="submit" value="検索" id="search_btn_sp"></div>
         </form>
         <form m:id="keywordSearchShopDetailForm" name="keywordSearchShopDetail" action="/goodsSearchShopDetail.html">
@@ -520,89 +909,89 @@ function showCartButton1(obj){
         </form>
       </div>
       <object class="xsp_obj" m:id="e_var_standardCategory">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="e_var_campaignCategory">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="count">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="cate_count">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="subCate_count">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="subCate2_count">
-      </object>
+    </object>
       <object class="xsp_obj" m:id="e_var_dmHistory">
-      </object>
+    </object>
       <span m:id="l_pre_standardCategory">
-        <span m:id="l_notEmp_standardCategory_childCategories">
-          <div class="header_category_list">
-            <span m:id="l_ite_standardCategory">
-              <span m:id="l_equ_cate_checkPeriod">
-                <span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
-                <object class="xsp_obj" m:id="count_sub1"></object>
-                <ul class="l_con_list_01 cf">
-                  <span  m:id="l_ite_cate">
-                    <span m:id="l_equ_subCate_checkPeriod">
-                      <span m:id="icnt_increment"></span>
-                      <span m:id="i_ins_subCate"></span>
-                      <li>
-                        <div>
-                          <a m:id="h_link_subCate_category" href="../../../Templates/goodsSearchShop_shop.html">
-                            <span m:id="span_subCate_arrow" id="arrow_1">
-                              <span m:id="disp_subCate_category_name">ファッション</span>
-                            </span>
-                          </a>
-                        </div>
-                        <ul m:id="tag_dd_subCate">
-                          <span m:id="l_ite_subCate">
-                            <span m:id="l_equ_subCate2_checkPeriod">
-                              <span m:id="icnt_increment"></span>
-                              <span m:id="i_ins_subCate2"></span>
-                              <li>
-                                <a m:id="h_link_subCate2_category" href="../../../Templates/goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
-                                <ul m:id="tag_dd_subCate2">
-                                  <span m:id="l_ite_subCate2">
-                                    <span m:id="l_equ_subCate3_checkPeriod">
-                                      <span m:id="icnt_increment"></span>
-                                      <li>
-                                        <a m:id="h_link_subCate3_category" href="../../../Templates/goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
-                                      </li>
-                                    </span>
-                                  </span>
-                                </ul>
-                              </li>
-                            </span>
-                          </span>
-                        </ul>
-                      </li>
-                    </span>
-                  </span>
-                </ul>
+      <span m:id="l_notEmp_standardCategory_childCategories">
+        <div class="header_category_list">
+          <span m:id="l_ite_standardCategory">
+            <span m:id="l_equ_cate_checkPeriod">
+              <span m:id="icnt_increment"></span> <span m:id="i_ins_cate"></span>
+      <object class="xsp_obj" m:id="count_sub1"></object>
+      <ul class="l_con_list_01 cf">
+        <span m:id="l_ite_cate">
+                  <span m:id="l_equ_subCate_checkPeriod">
+                    <span m:id="icnt_increment"></span>
+        <span m:id="i_ins_subCate"></span>
+        <li>
+          <div>
+            <a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+              <span m:id="span_subCate_arrow" id="arrow_1">
+                <span m:id="disp_subCate_category_name">ファッション</span>
               </span>
-            </span>
+            </a>
           </div>
+          <ul m:id="tag_dd_subCate">
+            <span m:id="l_ite_subCate"> 
+                          <span m:id="l_equ_subCate2_checkPeriod">
+                            <span m:id="icnt_increment"></span>
+            <span m:id="i_ins_subCate2"></span>
+            <li>
+              <a m:id="h_link_subCate2_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate2_category_name">孫カテゴリ</span></a>
+              <ul m:id="tag_dd_subCate2">
+                <span m:id="l_ite_subCate2"> 
+                  <span m:id="l_equ_subCate3_checkPeriod">
+                  <span m:id="icnt_increment"></span>
+                <li>
+                  <a m:id="h_link_subCate3_category" href="goodsSearchShop_shop.html"><span m:id="disp_subCate3_category_name">曾孫カテゴリ</span></a>
+                </li>
+                </span>
+                </span>
+              </ul>
+            </li>
+            </span>
+            </span>
+          </ul>
+        </li>
         </span>
+        </span>
+      </ul>
       </span>
-      <div class="header_feature">
-        <a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
-      </div>
-      <!-- /.header_feature -->
-            <div class="header_logout">
-                <div m:id="l_pre_member_logout_button_shop">
-                    <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
-                      <img src="../../../contents/c/shop/image/txt_logout_sp.png" alt="ログアウト">
-                    </a>
-                </div>
-      </div>
-      <!-- /.header_logout -->
-      <div class="header_close">
-        <span class="header_close_btn">閉じる</span>
-      </div>
-      <!-- /.header_close -->
+      </span>
     </div>
-    <!-- /.header_item_search_box-->
-  </div>
-  <!--header_in-->
+    </span>
+    </span>
+    <div class="header_feature">
+      <a href="/shop/c/static/feature/" class="header_feature_btn"><span>特集一覧</span></a>
+    </div>
+    <!-- /.header_feature -->
+    <div class="header_logout">
+      <div m:id="l_pre_member_logout_button_shop">
+        <a m:id="e_link_logout_shop" href="/" class="logout_bt" title="ログアウト">
+          <img src="../../../contents/c/shop/image/txt_logout_sp.png" alt="ログアウト">
+        </a>
+      </div>
+    </div>
+    <!-- /.header_logout -->
+    <div class="header_close">
+      <span class="header_close_btn">閉じる</span>
+    </div>
+    <!-- /.header_close -->
+</div>
+<!-- /.header_item_search_box-->
+</div>
+<!--header_in-->
 </header>
 <!--header-->
 <!-- InstanceBeginEditable name="contents" -->
@@ -751,126 +1140,167 @@ function showCartButton1(obj){
       </div>
 
       <!--▼▼▼商品▼▼▼-->
-          <div class="goods_detail_item mt80 s_mt30 cf" id="goods_detail_item">
-              <div class="goods_detail_item_view">
-                  <div class="flexsliderWrap">
-                      <span m:id="l_notEqu_valiationSize_sku">
-                          <div class="flexslider sliderInner">
-                              <ul class="slides cf">
-                                  <span m:id="l_ite_sku_variation">
-                                      <span m:id="def_goods_img_sku_main"></span>
-                                      <span m:id="l_ite_sku_gods_img_main">
-                                          <li><img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
-                                      </span>
+      <div class="goods_detail_item mt80 s_mt30 cf" id="goods_detail_item">
+        <div class="goods_detail_item_view">
+            <div class="flexsliderWrap">
+                <span m:id="l_notEqu_valiationSize_sku">
+                    <div class="flexslider sliderInner">
+                        <ul class="slides cf">
+                              <span m:id="img_check_list_main"></span>
+                            <span m:id="l_ite_sku_variation">
+                                <span m:id="img_check_list_main_flg"></span>
+                                <span m:id="def_goods_img_sku_main"></span>
+                                <span m:id="l_ite_sku_gods_img_main">
+                                  <span m:id="l_sku_img_main_check_script"></span>
+                                  <span m:id="l_sku_img_check_main_def">
+                                  <li>
+                                    <img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+                                    <span m:id="l_sku_img_check_contain_main"></span>
+                                  </li>
                                   </span>
-                              </ul>
-                          </div>
-                          <!-- /.flexslider -->
-                          <div class="carousel sliderCarousel">
-                              <ul class="slides clearfix">
-                                  <span m:id="l_ite_sku_variation">
-                                      <span m:id="def_goods_img_sku"></span>
-                                      <span m:id="l_ite_sku_gods_img">
-                                          <li m:id="b_wr_sku_goods_img">
-                                              <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-                                          </li>
-                                      </span>
+                                  <span m:id="img_check_list_main_flg_def"></span> 
+                            </span>
+                        </ul>
+                    </div>
+                    <!-- /.flexslider -->
+                    <div class="carousel sliderCarousel">
+                        <ul class="slides clearfix">
+                          <span m:id="img_check_list"></span>
+                            <span m:id="l_ite_sku_variation">
+                              <span m:id="img_check_list_flg"></span>
+                                <span m:id="def_goods_img_sku"></span>
+                                <span m:id="l_ite_sku_gods_img">
+                                  <span m:id="l_sku_img_check_script"></span>
+                                  <span m:id="l_sku_img_check_def">
+                                      <li m:id="b_wr_sku_goods_img">
+                                          <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+                                      </li>
+                                      <span m:id="l_sku_img_check_contain"></span>
                                   </span>
-                              </ul>
-                          </div>
-                          <!-- /.carousel -->
+                                  <span m:id="img_check_list_flg_def"></span>
+                                </span>
+                            </span>
+                        </ul>
+                    </div>
+                    <!-- /.carousel -->
+                </span>
+            </div>
+            <!-- /.flexsliderWrap -->
+            <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span>
+            <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span>
+            <ul class="goods_detail_item_sns">
+              <li>
+                <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
+                <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+              </li>
+              <li>
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              </li>
+              <li>
+                <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
+              </li>
+            </ul>
+        </div>
+        <!-- /.goods_detail_view -->
+        <div class="goods_detail_item_tag">
+            <object class="xsp_obj" m:id="b_var_varUrl"></object>
+      <!--▼▼▼フォーム▼▼▼-->
+
+            <form method="get" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
+                <object class="xsp_obj" m:id="b_size_valiationSize"></object>
+        
+            <span m:id="l_notPre_settle_040">
+            <span m:id="l_pre_disp_installment">
+              <span m:id="l_pre_disp_goods_pay_times">
+                <span m:id="l_pre_disp_goods_pay_term">
+                  <span m:id="l_pre_disp_total_installment">
+                    <div class="price_info_area">
+                      <div class="price_info">
+                        <div class="price_split_wrap">
+                          <p class="kakaku">【税込価格】</p>
+                    <p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
+                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                        <span class="num">
+                          <span class="value">
+                            <span m:id="l_pre_disp_installment">
+                              <span m:id="disp_installment">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
                       </span>
-                  </div>
-                  <!-- /.flexsliderWrap -->
-                  <span m:id="l_pre_disp_content3"><span m:id="disp_content3">ここにBOの登録内容3が表示されます。</span></span>
-                  <span><div class="goods_detail_item_info"><a m:id="e_link_inquiryInputCheck" href="inquiryInput.html" class="goods_detail_item_info_contact ml0"><span>この商品について問い合わせる</span></a></div></span>
-                  <ul class="goods_detail_item_sns">
-                    <li>
-                      <div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
-                      <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </li>
-                    <li>
-                      <!-- <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div> -->
-                    </li>
-                  </ul>
-              </div>
-              <!-- /.goods_detail_view -->
-              <div class="goods_detail_item_tag">
-                  <object class="xsp_obj" m:id="b_var_varUrl"></object>
-                  <!--▼▼▼フォーム▼▼▼-->
-                  <form method="get" m:id="form_goodsDetailCartForm" name="goodsDetailCartForm" action="goodsDetail.html">
-                      <object class="xsp_obj" m:id="b_size_valiationSize"></object>
-                      <!-- <span m:id="l_notPre_settle_040">
-                          <span m:id="l_pre_disp_installment">
-                              <span m:id="l_pre_disp_goods_pay_times">
-                                  <span m:id="l_pre_disp_goods_pay_term">
-                                      <span m:id="l_pre_disp_total_installment">
-                                          <p class="i_txt_01"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々わずか</span>
-                                              <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-                                                  <span class="i_sp_01">
-                                                      <span m:id="l_pre_disp_installment">
-                                                          <span m:id="disp_installment">1780</span>
-                                                      </span>
-                                                      <span class="i_sp_02">円</span>
-                                                  </span>×
-                                                  <span class="i_sp_01">
-                                                      <span m:id="l_pre_disp_goods_pay_times">
-                                                          <span m:id="disp_goods_pay_times">7</span>
-                                                      </span>回払い
-                                                  </span>
-                                              </span>
-                                          </p>
-                                          <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-                                              <tr>
-                                                  <th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_total_installment">
-                                                              <span m:id="disp_total_installment">12,460</span>&nbsp;円&nbsp;
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_installment">
-                                                              <span m:id="disp_installment">1,780</span>&nbsp;円&nbsp;
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_goods_pay_times">
-                                                              <span m:id="disp_goods_pay_times">7回</span>&nbsp;回
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_goods_pay_term">
-                                                              <span m:id="disp_goods_pay_term">7</span>&nbsp;ヶ月
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                      </span>
-                                  </span>
-                              </span>
+                    </p>
+                    <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+                    <dl class="price_detail">
+                      <dt>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">■分割払価格</span>
+                      </dt>
+                      <dd>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                          <span m:id="l_pre_disp_total_installment">
+                            <span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
                           </span>
-                      </span> -->
+                        </span>
+                      </dd>
+                      <dt class="indent">
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
+                      </dt>
+                      <dd>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                          <span m:id="l_pre_disp_installment">
+                            <span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
+                          </span>
+                        </span>
+                      </dd>
+                      <dt class="indent">
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
+                      </dt>
+                      <dd>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                          <span m:id="l_pre_disp_goods_pay_times">
+                            <span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
+                          </span>
+                        </span>
+                      </dd>
+                      <dt class="indent">
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
+                      </dt>
+                      <dd>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                          <span m:id="l_pre_disp_goods_pay_term">
+                            <span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
+                          </span>
+                        </span>
+                      </dd>
+                      <dt>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
+                      </dt>
+                      <dd>
+                        <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                          <span m:id="l_notEqu_pretaxPrice">
+                            <span m:id="b_wr_pretaxPrice">24800</span>
+                          </span>
+                        <span m:id="b_wr_actualSalePrice">17800</span>
+                          
+                        <!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+                        <!-- 会員限定で値引きの場合、表示される -->
+                        <span>円&nbsp;</span>
+                        <!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+                        <span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+                      
+                      </dd>
+                    </dl>
+                  </div><!-- price_split_wrap -->
+                </div><!-- price_info -->
+                <ul class="price-notice">
+                  <li>※金額はすべて税込みです。</li>
+                  <li>※代金引換の場合は、一括払いのみとなります。</li>
+                </ul>
+              </div><!-- price_info_area -->
+            </span>
+          </span>
+        </span>
+      </span>
+    </span> 
+        
+    <div class="ikkatu_wrap" style="display: none;">
                       <p class="goods_detail_item_price">
                         <span class="goods_detail_item_price_prefix"><span m:id="l_notEmp_memberSpecialDiscountOpacity">価格</span></span>
                         <span class="goods_detail_item_price_yen">
@@ -889,6 +1319,8 @@ function showCartButton1(obj){
                       </p>
                       <!-- /.goods_detail_item_price -->
                       <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+                    </div>
+                    <!-- /.goods_detail_item_price -->
                       <span m:id="l_pre_individual_postage">
                         <p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
                             <span m:id="l_pre_evenness_postage">
@@ -966,7 +1398,7 @@ function showCartButton1(obj){
                                   }
                                 </script>
                                 <div class="goods_detail_item_order01 tooltip_wrap">
-                                  <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
+                                  <!-- <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div> -->
                                   <div class="select_wrap">
                                     <span class="select_label">色・<br class="viewSp">サイズ：</span>
                                       <span m:id="l_equ_valiationSize">
@@ -1064,7 +1496,7 @@ function showCartButton1(obj){
                   <div class="goods_detail_item_order_cart">
                       <div class="item_bt_01 cartButton">
                           <!-- SKU商品用カートイン -->
-                          <span m:id="l_equ_type_sku">
+                          <!-- <span m:id="l_equ_type_sku">
                               <span m:id="l_equ_can_addCartSku">
                                   <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
                                       <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
@@ -1078,9 +1510,9 @@ function showCartButton1(obj){
 
                                   </form>
                               </span>
-                          </span>
+                          </span> -->
                           <!-- 単品商品用カートイン -->
-                          <span m:id="l_equ_type_simple">
+                          <!-- <span m:id="l_equ_type_simple">
                                 <span m:id="l_equ_canAddCart">
                                   <form m:id="h_form_cartGoodsAdd" method="POST" action="cart.html">
                                       <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
@@ -1093,7 +1525,7 @@ function showCartButton1(obj){
                                       <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
                                   </form>
                               </span>
-                          </span>
+                          </span> -->
                       </div>
                       <input m:id="h_hid_goods_sales" name="goods_sales" type="hidden" value="" />
                       <span m:id="l_notEqu_canAddCart">
@@ -1121,50 +1553,53 @@ function showCartButton1(obj){
                           <span m:id="l_notEqu_regularly">
                               <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
                           </span>
-                          <span class="soldOutButton"><span m:id="l_equ_soldOutSalesStatus_stock">
+                          <!-- <span class="soldOutButton"><span m:id="l_equ_soldOutSalesStatus_stock">
                               <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-                          </span></span>
+                          </span></span> -->
                           <span m:id="l_equ_noStockSalesStatus">
                               <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
                           </span>
                       </span>
-                      <span class="soldOutButtonSku"><span m:id="l_equ_type_sku">
+                      <span class="soldOutButtonSku">
                         <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-                      </span></span>
+                      </span>
                       <div class="box_itembtn selectButton">
                           <span m:id="l_equ_type_sku">
                           <span m:id="l_equ_can_addCartSku">
-                          <span m:id="l_notEqu_select_renewal">
+                          <!-- <span m:id="l_notEqu_select_renewal">
                               <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-                          </span></span></span>
+                          </span></span></span> -->
                       </div>
                   </div>
                   <!-- /.goods_detail_item_order_cart -->
-                  <div class="goods_detail_item_order_fav tar s_tac">
-                      <span m:id="l_pre_member">
-                          <form m:id="e_form_memberFavoriteAdd" method="POST" action="memberMypage.html">
-                              <input m:id="input_hid_display_code" type="hidden" name="display_code" value=""/>
-                                  <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
-                          </form>
-                          <p style="display: none"><!--<a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">-->
-                              <a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">お友達にメールで知らせる</a>
-                          </p>
-                      </span>
-                  </div>
-                  <!-- チャネル別決済種別制限取得 -->
-                  <div class="goods_detail_item_plan">
-                      <object class="xsp_obj" m:id="e_var_settlementMap"></object>
-                      <p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
-                      <ul class="goods_detail_item_plan_list">
-                          <!-- <li><span class="icon-circle"></span>クレジットカード</li>
-                          <li><span class="icon-circle"></span>代金引換</li> -->
-                          <span m:id="l_ite_valid_settle">
-                            <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
-                          </span>
-                      </ul>
+                  <span m:id="l_pre_member">
+                    <div class="goods_detail_item_order_fav tar s_tac">
+                        <form m:id="e_form_memberFavoriteAdd" method="POST" action="memberMypage.html">
+                            <input m:id="input_hid_display_code" type="hidden" name="display_code" value=""/>
+                                <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
+                        </form>
+                        <p style="display: none"><!--<a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">-->
+                            <a m:id="h_link_sendMailToFriend" href="" onclick="javascript:sendMailToFriend();return false;">お友達にメールで知らせる</a>
+                        </p>
+                    </div>
+                </span>
+			            <!-- チャネル別決済種別制限取得 -->
+			            <div class="goods_detail_item_plan">
+                    <object class="xsp_obj" m:id="e_var_settlementMap"></object>
+                    <p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
+                    <ul class="goods_detail_item_plan_list">
+                        <!-- <li><span class="icon-circle"></span>クレジットカード</li>
+                        <li><span class="icon-circle"></span>代金引換</li> -->
+                        <span m:id="l_pre_item_limit">
+                        <span m:id="b_wr_valied_settle_sort"></span>
+                        <span m:id="l_ite_valid_settle_sort">
+                          <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+                        </span>
+                        </span>
+                    </ul>
                       <div class="l_con_list_03" style="display: none;">
                           <span m:id="l_pre_item_limit">
-                              <span m:id="l_ite_valid_settle" >
+                              <span m:id="l_ite_valid_settle_sort" >
                                   <img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
                               </span>
                               <span m:id="l_notEmp_item_limit">
@@ -1196,16 +1631,18 @@ function showCartButton1(obj){
                       </div>
                   </div>
                   <!-- /チャネル別決済種別制限取得 -->
-                  <p class="tar s_tac"><a href="#about_payment" class="cmn_link01" data-featherlight="#about_payment">お支払い方法について</a></p>
-                  <p class="tar s_tac"><a href="#about_postage" class="cmn_link01" data-featherlight="#about_postage">送料について</a></p>
+                  <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
+
                   <!-- のし・ラッピング可否 -->
                   <span m:id="l_pre_no_wrapping">
                       <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
                   </span>
-                  <p class="goods_detail_item_txt mt15">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
-                  
-                  <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
-
+                  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
+                    ・返品時の送料：お客様負担
+                    </p>
+                    <p class="goods_detail_item_txt mt10">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
+                    
+                    <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>               
               </div>
               <!-- /.goods_detail_tag -->
           </div>
@@ -1215,23 +1652,112 @@ function showCartButton1(obj){
       <!--▼▼▼モーダル▼▼▼-->
         <div id="about_payment" class="lightbox">
           <h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">お支払い方法について</span></h2>
-          <p style="font-size: 15px;">ココチモでお買い上げいただいた商品は「代金引換」か「クレジットカード」でのお支払いが可能です。<br>ただし、「代金引換」を選択された場合には、代引き手数料として別途300円をいただきます。<br>商品をお買い上げの際に、「お客様情報入力」フォームでどちらかを選択してください。</p>
+          <p style="font-size: 15px;">ココチモでお買い上げいただいた商品は「後払い」「クレジットカード」「代金引換」でのお支払いが可能です。<br>ただし、「代金引換」を選択された場合には、代引き手数料として別途300円をいただきます。<br>商品をお買い上げの際に、「お客様情報入力」フォームでいずれかを選択してください。</p>
           <p class="mt20 s_mt10" style="font-size:13px;">※お申込み口数によっては、当社規定により後日お支払い方法を変更させていただく場合がございます。</p>
           <p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
         </div>
         <!-- /#about_payment -->
         <div id="about_postage" class="lightbox">
           <h2 class="cmn_tit01 mt0 mb15 s_mb15"><span class="cmn_tit01_underline">通常商品</span></h2>
-          <p class="mb30 s_mb15" style="font-size: 15px;">一回のご注文金額の合計が税込み10,000円以上の場合、<span class="bold">送料は当社負担でお届け致します。</span>税込10,000円に満たない場合は、<span class="bold">250円</span>、また、税込5,000円未満の場合は<span class="bold">500円</span>を全国一律にてご負担いただきます。<br>
+          <p class="mb30 s_mb15" style="font-size: 15px;">一回のご注文金額の合計が税込み10,000円以上の場合、<span class="bold">送料無料（当社負担）でお届け致します。</span>税込10,000円に満たない場合は、<span class="bold">250円</span>、また、税込5,000円未満の場合は<span class="bold">500円</span>を全国一律にてご負担いただきます。<br>
           <span class="notice" style="font-size:13px;">※大きさ等によっては個別送料が発生する商品がございます。詳しくは各商品詳細ページをご確認ください。</span>
           </p>
           <p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
         </div>
         <!-- /#about_postage -->
+        <div id="return_goods" class="lightbox">
+					<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+					<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
+					<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
+					<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+				</div>
+				<!-- /#return_goods -->
       <!--▲▲▲モーダル▲▲▲-->
 
-        <div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております"></div>
-        <!-- /.tel -->
+        	<!-- .tel<div class="tel js-tel_sticky viewPc"><img src="/contents/c/goods/image/new/kingofluc/img_tel01.png" alt="0120-552-186、お電話でもご注文受付けております"></div>
+	  /.tel -->
+  
+  <span m:id="l_equ_type_simple"><!-- カート追従バナー -->
+
+    <style>
+    .purchase_fixed .inner a:hover {cursor: pointer;}
+    .tel.js-tel_sticky {display:none;}
+  
+    .sp {display: none !important;}
+    .pc {display: block !important;}
+    @media all and (min-width: 0) and (max-width: 767px) {
+      .sp {display: block !important;}
+      .pc {display: none !important;}
+    }
+      .purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+      .purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;}
+      .purchase_fixed .inner > * {width: 100%;}
+      .purchase_fixed .inner > p:last-of-type img {width: 455px;}
+      .purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+      .purchase_fixed .inner a:hover {opacity: .85;}
+  
+    @media all and (min-width: 0) and (max-width: 767px) {
+      .inner08 {margin-top: -60px;padding-top: 60px;}
+      .footer #pagetop_sp {bottom: 105px;}
+      .purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+      .purchase_fixed .inner {padding: .5em .5em .3em;}
+      .purchase_fixed .inner > p:first-of-type {padding-right: 0;width: 100%;}
+      .purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+      .purchase_fixed .inner > p:first-of-type img {width: 100%;}
+      .purchase_fixed .inner > p:last-of-type img {width: 100%;}
+      .purchase_fixed .inner + p {padding-bottom: .5rem;}
+      #purchase_btn_keppin {width:100%;text-align:center;}
+      .purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
+      .footer #pagetop_sp {bottom: 140px;}
+    }
+    </style>
+    <style>
+      @media (max-width: 767px) and (min-width: 0) {
+        .footer #pagetop_sp {
+          bottom: 120px;
+        }
+        /* SKU以外の商品のボタン位置調整 */
+        .footer #pagetop_sp.simple_item {
+          bottom: 93px;
+        }
+        #goods .itemtop_sp {
+          bottom: 93px;
+        }
+      }
+  
+    </style>
+  
+    <div class="purchase_fixed">
+      <div class="inner">
+        <span m:id="l_equ_can_addCartSku">
+          <!-- <p class="sp_only">
+            <a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+              <img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+            </a>
+            </p> -->
+        </span>
+        <p class="pc_only">
+          <img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+        </p>
+        <!-- <span m:id="l_equ_can_addCartSku">
+          <p class="order_btn" id="purchase_btn_order">
+            <a onclick="siteCatalistAddCart1(document.cartGoodsAddForm1.ext_goods_sku_code.value);return false;" href="" >
+            <span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
+            <span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+            </a>
+          </p>
+        </span> -->
+        <!-- 欠品対応 -->
+          <p class="order_btn" id="purchase_btn_keppin">
+            <span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
+            <span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+          </p>
+
+        <!-- //欠品対応 -->
+      </div>
+      <!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+    </div>
+    </span><!-- //カート追従バナー -->
         <div class="goods_detail_scene bg_sp01">
             <span m:id="l_pre_disp_colname4"><span m:id="disp_colname4">ここにBOの登録タイトル4が表示されます。</span></span>
             <span m:id="l_pre_disp_content4"><span m:id="disp_content4">ここにBOの登録内容4が表示されます。</span></span>
@@ -1276,88 +1802,118 @@ function showCartButton1(obj){
             <object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
             <object class="xsp_obj" m:id="e_var_review_evaluation"></object>
             <span m:id="l_equ_show_status_public">
-                <h2 class="temp_tit_n02 temp_tit_n02_cor">この商品をご購入のお客様から寄せられたお声</h2>
-                <!-- <object class="xsp_obj" m:id="e_var_goodsReview"></object>
-                <object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
-                <object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
-                <object class="xsp_obj" m:id="e_var_review_evaluation"></object> -->
-            </span>
-
-            <span m:id="l_pre_goods_review_detail">
-                <!-- <span m:id="l_equ_show_status_public"> -->
-                <span m:id="l_ite_goodsReviewDetailList">
-                    <div class="i_comment_box_01">
-                        <div class="title_01 clearfix">
+              <h2 class="cmn_tit05 cmn_tit05_lg tac">この商品をご購入のお客様から寄せられたお声</h2>
+              <!-- <object class="xsp_obj" m:id="e_var_goodsReview"></object>
+              <object class="xsp_obj" m:id="e_var_goodsReviewDetailList"></object>
+              <object class="xsp_obj" m:id="e_var_goodsReviewDetailList_full"></object>
+              <object class="xsp_obj" m:id="e_var_review_evaluation"></object> -->
+          </span>
+        <style>
+          .goods_detail_voice_list_star {color: #cc1010;}
+          .goods_detail_voice_list {margin-bottom: 90px;}
+          @media screen and (max-width: 767px) {
+            .goods_detail_voice {margin: 0 0 40px;}
+          }
+        </style>
+        <ul class="goods_detail_voice_list">
+          <span m:id="l_pre_goods_review_detail">
+              <!-- <span m:id="l_equ_show_status_public"> -->
+              <span m:id="l_ite_goodsReviewDetailList">
+                  <li class="js-matchHeight js-toggle_parent">
+                      <div class="goods_detail_voice_list_star">
+                        <p>評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span></p>
+                      </div>
+                      <div class="goods_detail_voice_list_box">
+                        <div class="goods_detail_voice_list_tit js-matchHeight01 js-toggle">
                             <h3><span m:id="disp_review_title">これ超いい！</span></h3>
-                            <p>評価&nbsp;<span><span m:id="disp_evaluation">★★★★☆</span></span></p>
                         </div>
-                        <div class="txt_box_01">
+                        <div class="goods_detail_voice_list_content content-toggle">
+                          <p class="goods_detail_voice_list_txt">
                             <span m:id="disp_review_content">この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。</span>
-                            <p>ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん　投稿日：<span m:id="b_wr_add_date">2011/05/01</span></p>
-                            <div class="com_icon">i</div>
+                          </p>
+                          <p class="goods_detail_voice_list_info"><span>北海道 50代 HT様</span><br>ニックネーム:<span m:id="disp_middle_name">大好き！</span>さん<br>投稿日：<span m:id="b_wr_add_date">2011/05/01</span></p>
+                            <!-- <div class="com_icon">i</div> -->
+                         </div>
                         </div>
-                    </div>
-                </span>
-                <div m:id="dummy">
-                    <h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
-                    <div class="txt_box_01">
-                        この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
-                        <p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
-                        <div class="com_icon">i</div>
-                    </div>
-                </div>
-                <div m:id="dummy">
-                    <h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
-                    <div class="txt_box_01">
-                        この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
-                        <p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
-                        <div class="com_icon">i</div>
-                    </div>
-                </div>
-                <div m:id="l_equ_show_status_private"></div>
-            </span>
-            <span m:id="l_notPre_goods_review_detail"></span>
-            <!-- <p class="i_link_icon_02 clearfix"><a m:id="a_link_goodsReviewList" href="goodsReviewList.html">全てのレビューを見る</a></p> -->
-        <!--▲▲▲ お客様の声 ▲▲▲-->
+                      </li>
+                  </div>
+              </span>
+              <div m:id="dummy">
+                  <h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
+                  <div class="txt_box_01">
+                      この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
+                      <p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
+                      <div class="com_icon">i</div>
+                  </div>
+              </div>
+              <div m:id="dummy">
+                  <h3>これ超いい！</h3><p>評価&nbsp;★★★★☆</p>
+                  <div class="txt_box_01">
+                      この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。この商品は、xxxxで、xxxxな割に非常に使いやすくなっていて、 非常に良いです。
+                      <p>ニックネーム:大好き！さん　投稿日：2011/05/01</p>
+                      <div class="com_icon">i</div>
+                  </div>
+              </div>
+          <div m:id="l_equ_show_status_private"></div>
+          </span>
+          </ul>
+          <span m:id="l_notPre_goods_review_detail"></span>
+          <!-- <p class="i_link_icon_02 clearfix"><a m:id="a_link_goodsReviewList" href="goodsReviewList.html">全てのレビューを見る</a></p> -->
+      <!--▲▲▲ お客様の声 ▲▲▲-->
 
 
-      <div class="goods_detail_spec" id="goods_detail_spec">
-          <span m:id="l_pre_disp_colname16"><span m:id="disp_colname16">ここにBOの登録タイトル16が表示されます。</span></span>
-          <span m:id="l_pre_disp_content16"><span m:id="disp_content16">ここにBOの登録内容16が表示されます。</span></span>
-          <p class="tar s_tal mt10 notes">※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</p>
-      </div>
-      <!-- /.goods_detail_spec -->
+    <div class="goods_detail_spec" id="goods_detail_spec">
+        <span m:id="l_pre_disp_colname16"><span m:id="disp_colname16">ここにBOの登録タイトル16が表示されます。</span></span>
+        <span m:id="l_pre_disp_content16"><span m:id="disp_content16">ここにBOの登録内容16が表示されます。</span></span>
+        <p class="tar s_tal mt10 notes">※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</p>
+    </div>
+    <!-- /.goods_detail_spec -->
 
       <!--▼▼▼商品▼▼▼-->
-          <div class="goods_detail_item cf">
-              <span m:id="l_pre_disp_colname20"><span m:id="disp_colname20">ここにBOの登録タイトル20が表示されます。</span></span>
-              <div class="goods_detail_item_view">
-                  <div class="flexsliderWrap">
-                      <span m:id="l_notEqu_valiationSize_sku">
-                          <div class="flexslider sliderInner">
-                              <ul class="slides cf">
-                                  <span m:id="l_ite_sku_variation">
-                                      <span m:id="def_goods_img_sku_main"></span>
-                                      <span m:id="l_ite_sku_gods_img_main">
-                                          <li><img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" /></li>
-                                      </span>
+      <div class="goods_detail_item cf">
+        <span m:id="l_pre_disp_colname20"><span m:id="disp_colname20">ここにBOの登録タイトル20が表示されます。</span></span>
+        <div class="goods_detail_item_view">
+            <div class="flexsliderWrap">
+                <span m:id="l_notEqu_valiationSize_sku">
+                    <div class="flexslider sliderInner">
+                        <ul class="slides cf">
+                              <span m:id="img_check_list_main"></span>
+                            <span m:id="l_ite_sku_variation">
+                                <span m:id="img_check_list_main_flg"></span>
+                                <span m:id="def_goods_img_sku_main"></span>
+                                <span m:id="l_ite_sku_gods_img_main">
+                                  <span m:id="l_sku_img_main_check_script"></span>
+                                  <span m:id="l_sku_img_check_main_def">
+                                  <li>
+                                    <img m:id="h_img_sku_goods_img_main" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+                                    <span m:id="l_sku_img_check_contain_main"></span>
+                                  </li>
                                   </span>
-                              </ul>
-                          </div>
-                          <!-- /.flexslider -->
-                          <div class="carousel sliderCarousel">
-                              <ul class="slides clearfix">
-                                  <span m:id="l_ite_sku_variation">
-                                      <span m:id="def_goods_img_sku"></span>
-                                      <span m:id="l_ite_sku_gods_img">
-                                          <li m:id="b_wr_sku_goods_img">
-                                              <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
-                                          </li>
-                                      </span>
+                                  <span m:id="img_check_list_main_flg_def"></span> 
+                            </span>
+                        </ul>
+                    </div>
+                    <!-- /.flexslider -->
+                    <div class="carousel sliderCarousel">
+                        <ul class="slides clearfix">
+                          <span m:id="img_check_list"></span>
+                            <span m:id="l_ite_sku_variation">
+                              <span m:id="img_check_list_flg"></span>
+                                <span m:id="def_goods_img_sku"></span>
+                                <span m:id="l_ite_sku_gods_img">
+                                  <span m:id="l_sku_img_check_script"></span>
+                                  <span m:id="l_sku_img_check_def">
+                                      <li m:id="b_wr_sku_goods_img">
+                                          <img m:id="h_img_sku_goods_img" src="../../../contents/shop/00000006/shop/image/item_sample_01.jpg" alt="" />
+                                      </li>
+                                      <span m:id="l_sku_img_check_contain"></span>
                                   </span>
-                              </ul>
-                          </div>
-                          <!-- /.carousel -->
+                                  <span m:id="img_check_list_flg_def"></span>
+                                </span>
+                            </span>
+                        </ul>
+                    </div>
+                    <!-- /.carousel -->
                       </span>
                   </div>
                   <!-- /.flexsliderWrap -->
@@ -1383,74 +1939,98 @@ function showCartButton1(obj){
                   <!--▼▼▼フォーム▼▼▼-->
                       <object class="xsp_obj" m:id="b_size_valiationSize"></object>
                   <form method="get" m:id="form_goodsDetailCartForm1" name="goodsDetailCartForm1" action="goodsDetail.html">
-                      <!-- <span m:id="l_notPre_settle_040">
-                          <span m:id="l_pre_disp_installment">
-                              <span m:id="l_pre_disp_goods_pay_times">
-                                  <span m:id="l_pre_disp_goods_pay_term">
-                                      <span m:id="l_pre_disp_total_installment">
-                                          <p class="i_txt_01"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々わずか</span>
-                                              <span m:id="l_notEmp_memberSpecialDiscountOpacity">
-                                                  <span class="i_sp_01">
-                                                      <span m:id="l_pre_disp_installment">
-                                                          <span m:id="disp_installment">1780</span>
-                                                      </span>
-                                                      <span class="i_sp_02">円</span>
-                                                  </span>×
-                                                  <span class="i_sp_01">
-                                                      <span m:id="l_pre_disp_goods_pay_times">
-                                                          <span m:id="disp_goods_pay_times">7</span>
-                                                      </span>回払い
-                                                  </span>
-                                              </span>
-                                          </p>
-                                          <table cellpadding="0" cellspacing="0" border="0" class="item_table_04">
-                                              <tr>
-                                                  <th class="top"><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払価格</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_total_installment">
-                                                              <span m:id="disp_total_installment">12,460</span>&nbsp;円&nbsp;
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">分割払金</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_installment">
-                                                              <span m:id="disp_installment">1,780</span>&nbsp;円&nbsp;
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払回数</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_goods_pay_times">
-                                                              <span m:id="disp_goods_pay_times">7回</span>&nbsp;回
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                              <tr>
-                                                  <th><span m:id="l_notEmp_memberSpecialDiscountOpacity">支払期間</span></th>
-                                                  <td>
-                                                      <span m:id="l_notEmp_memberSpecialDiscountOpacity">：
-                                                          <span m:id="l_pre_disp_goods_pay_term">
-                                                              <span m:id="disp_goods_pay_term">7</span>&nbsp;ヶ月
-                                                          </span>
-                                                      </span>
-                                                  </td>
-                                              </tr>
-                                          </table>
-                                      </span>
+      							<span m:id="l_notPre_settle_040">
+                      <span m:id="l_pre_disp_installment">
+                        <span m:id="l_pre_disp_goods_pay_times">
+                          <span m:id="l_pre_disp_goods_pay_term">
+                            <span m:id="l_pre_disp_total_installment">
+                              <div class="price_info_area">
+                                <div class="price_info">
+                                  <div class="price_split_wrap">
+                                    <p class="kakaku">【税込価格】</p>
+                              <p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
+                                <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                  <span class="num">
+                                    <span class="value">
+                                      <span m:id="l_pre_disp_installment">
+                                        <span m:id="disp_installment">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
+                                </span>
+                              </p>
+                              <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+                              <dl class="price_detail">
+                                <dt>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">■分割払価格</span>
+                                </dt>
+                                <dd>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                    <span m:id="l_pre_disp_total_installment">
+                                      <span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
+                                    </span>
                                   </span>
-                              </span>
-                          </span>
-                      </span> -->
-                      <p class="goods_detail_item_price">
+                                </dd>
+                                <dt class="indent">
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
+                                </dt>
+                                <dd>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                    <span m:id="l_pre_disp_installment">
+                                      <span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
+                                    </span>
+                                  </span>
+                                </dd>
+                                <dt class="indent">
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
+                                </dt>
+                                <dd>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                    <span m:id="l_pre_disp_goods_pay_times">
+                                      <span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
+                                    </span>
+                                  </span>
+                                </dd>
+                                <dt class="indent">
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
+                                </dt>
+                                <dd>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                    <span m:id="l_pre_disp_goods_pay_term">
+                                      <span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
+                                    </span>
+                                  </span>
+                                </dd>
+                                <dt>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
+                                </dt>
+                                <dd>
+                                  <span m:id="l_notEmp_memberSpecialDiscountOpacity">
+                                    <span m:id="l_notEqu_pretaxPrice">
+                                      <span m:id="b_wr_pretaxPrice">24800</span>
+                                    </span>
+                                  <span m:id="b_wr_actualSalePrice">17800</span>
+                                    
+                                  <!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+                                  <!-- 会員限定で値引きの場合、表示される -->
+                                  <span>円&nbsp;</span>
+                                  <!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+                                  <span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+                                
+                                </dd>
+                              </dl>
+                            </div><!-- price_split_wrap -->
+                          </div><!-- price_info -->
+                          <ul class="price-notice">
+                            <li>※金額はすべて税込みです。</li>
+                            <li>※代金引換の場合は、一括払いのみとなります。</li>
+                          </ul>
+                        </div><!-- price_info_area -->
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </span> 
+                  
+              <div class="ikkatu_wrap" style="display: none;">
+                <p class="goods_detail_item_price">
                           <span class="goods_detail_item_price_prefix"><span m:id="l_notEmp_memberSpecialDiscountOpacity">価格</span></span>
                           <span class="goods_detail_item_price_yen">
                               <span m:id="l_notEmp_memberSpecialDiscountOpacity">
@@ -1468,6 +2048,8 @@ function showCartButton1(obj){
                       </p>
                       <!-- /.goods_detail_item_price -->
                       <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span>
+                    </div>
+                    <!-- /.goods_detail_item_price -->
                       <!-- 商品個別送料案内 -->
                       <span m:id="l_pre_individual_postage">
                         <p class="goods_detail_item_postage"><span class="goods_detail_item_postage_prefix">￥</span>
@@ -1539,7 +2121,7 @@ function showCartButton1(obj){
                           <span m:id="l_Emp_groupGoods">
                               <span m:id="l_equ_stock_manage_unit">
                                   <div class="goods_detail_item_order01 tooltip_wrap">
-                                      <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div>
+                                      <!-- <div class="tooltip tooltip_down tooltip_pos_right">まずはここをお選びください</div> -->
                                       <div class="select_wrap">
                                           <span class="select_label">色・<br class="viewSp">サイズ：</span>
                                               <span m:id="l_equ_valiationSize">
@@ -1639,7 +2221,7 @@ function showCartButton1(obj){
                   <div class="goods_detail_item_order_cart">
                       <div class="item_bt_01 cartButton1">
                           <!-- SKU商品用カートイン -->
-                          <span m:id="l_equ_type_sku">
+                          <!-- <span m:id="l_equ_type_sku">
                               <span m:id="l_equ_can_addCartSku">
                                   <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
                                       <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
@@ -1652,9 +2234,9 @@ function showCartButton1(obj){
                                       <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
                                   </form>
                               </span>
-                          </span>
+                          </span> -->
                           <!-- 単品商品用カートイン -->
-                          <span m:id="l_equ_type_simple">
+                          <!-- <span m:id="l_equ_type_simple">
                              <span m:id="l_equ_canAddCart">
                                   <form m:id="h_form_cartGoodsAdd1" method="POST" action="cart.html">
                                       <input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
@@ -1667,7 +2249,7 @@ function showCartButton1(obj){
                                       <div class="tooltip tooltip_up tooltip_pos_left"><p class="tooltip_strong">気になったらまずは<br>お買い物かごへ！</p>※購入はまだ決まりません</div>
                                   </form>
                               </span>
-                          </span>
+                          </span> -->
                       </div>
                       <span m:id="l_notEqu_canAddCart">
                           <span m:id="l_notPre_member">
@@ -1694,9 +2276,9 @@ function showCartButton1(obj){
                           <span m:id="l_notEqu_regularly">
                               <p class="i_caution_01">こちらの商品は定期品です。<br/>周期の違う定期品がカート・ﾉあるためこちらの商品をカートに入れることができません。</p>
                           </span>
-                          <span class="soldOutButton1"><span m:id="l_equ_soldOutSalesStatus_stock">
+                          <!-- <span class="soldOutButton1"><span m:id="l_equ_soldOutSalesStatus_stock">
                               <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-                          </span></span>
+                          </span></span> -->
                           <span m:id="l_equ_noStockSalesStatus">
                               <span m:id="l_pre_disp_content20"><span m:id="disp_content20"></span></span>
                           </span>
@@ -1704,23 +2286,24 @@ function showCartButton1(obj){
                         <div class="box_itembtn selectButton1">
                           <span m:id="l_equ_type_sku">
                           <span m:id="l_equ_can_addCartSku">
-                          <span m:id="l_notEqu_select_renewal">
+                          <!-- <span m:id="l_notEqu_select_renewal">
                               <img src="contents/shop/00000003/shop/image/pc_item_bt_01off.jpg" alt="色・サイズ、数量をご指定下さい" />
-                          </span></span></span>
+                          </span></span></span> -->
                         </div>
-                          <span class="soldOutButtonSku1"><span m:id="l_equ_type_sku">
+                          <span class="soldOutButtonSku1">
                           <img src="contents/shop/00000003/image/kanbai.jpg" alt="完売しました" />
-                        </span></span>
+                       </span>
                   </div>
                   <!-- /.goods_detail_item_order_cart -->
 
 
 
-                  <div class="goods_detail_item_order_fav tar s_tac">
-                      <span m:id="l_pre_member">
-                          <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm1.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
-                      </span>
-                  </div>
+                  <span m:id="l_pre_member">
+                    <div class="goods_detail_item_order_fav tar s_tac">
+                        <a m:id="h_link_memberFavoriteAdd" href="javascript:document.memberFavoriteAddForm1.submit();" class="goods_detail_item_order_fav_btn cmn_link01">お気に入りに入れる</a>
+                    </div>
+                  </span>
+                 
 
                   <!-- チャネル別決済種別制限取得 -->
                   <div class="goods_detail_item_plan">
@@ -1729,13 +2312,15 @@ function showCartButton1(obj){
                       <ul class="goods_detail_item_plan_list">
                           <!-- <li><span class="icon-circle"></span>クレジットカード</li>
                           <li><span class="icon-circle"></span>代金引換</li> -->
-                          <span m:id="l_ite_valid_settle">
-                            <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
-                          </span>
-                      </ul>
-                      <div class="l_con_list_03" style="display: none;">
                           <span m:id="l_pre_item_limit">
-                              <span m:id="l_ite_valid_settle" >
+                            <span m:id="l_ite_valid_settle_sort">
+                              <li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+                            </span>
+                            </span>
+                        </ul>
+                        <div class="l_con_list_03" style="display: none;">
+                            <span m:id="l_pre_item_limit">
+                                <span m:id="l_ite_valid_settle_sort" >
                                   <img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
                               </span>
                               <span m:id="l_notEmp_item_limit">
@@ -1767,12 +2352,16 @@ function showCartButton1(obj){
                       </div>
                   </div>
                   <!-- /チャネル別決済種別制限取得 -->
-                  <p class="tar s_tac"><a href="#about_payment" class="cmn_link01" data-featherlight="#about_payment">お支払い方法について</a></p>
-                  <p class="tar s_tac"><a href="#about_postage" class="cmn_link01" data-featherlight="#about_postage">送料について</a></p>
+                  <p class="s_tac notic_txt"><a href="#about_payment" class="cmn_link01 mr10" data-featherlight="#about_payment">お支払い方法について</a><a href="#about_postage" class="cmn_link01 mr10 notic_txt"  data-featherlight="#about_postage">送料について</a><a href="#return_goods" data-featherlight="#return_goods" class="cmn_link01 notic_txt">返品について</a></p>
+
                   <!-- のし・ラッピング可否 -->
                   <span m:id="l_pre_no_wrapping">
                       <p class="notes mt20 red s_tac">※ギフトラッピングには対応しておりません。</p>
                   </span>
+                
+                  <p class="goods_detail_item_txt02 mt20">・8日以内であれば返品可能<br><span class="txt_indent">※未使用の場合に限る（試用・試着期間のある商品を除く）</span><br>
+                    ・返品時の送料：お客様負担
+                    </p>
                   <p class="goods_detail_item_txt mt15">お申込みから通常<span class="bold">3&#xFF5E;6日</span>ほどでお届けいたします。</p>
                   
                   <p class="notes mt8">※地域・商品によっては、もう少し日数をいただく場合があります。</p>
@@ -1924,9 +2513,11 @@ function showCartButton1(obj){
     <div id="itemtop" class="itemtop_pc">
       <a href="#goods_detail_item"><img src="/contents/c/goods/image/new/btn_itemtop_sp.png" alt="商品情報" /></a>
     </div>
-    <div id="itemtop_sp" class="itemtop_sp">
+    <span m:id="l_equ_type_sku">
+      <div id="itemtop_sp" class="itemtop_sp">
       <a href="#goods_detail_item"><img src="/contents/c/goods/image/new/btn_itemtop_sp.png" alt="商品情報" /></a>
     </div>
+    </span>
 
     <!--▼▼▼ 使わないm:id ▼▼▼-->
         <div style="display:none">
@@ -2292,9 +2883,20 @@ function showCartButton1(obj){
   <div id="pagetop" class="pagetop_pc">
     <a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
   </div>
-  <div id="pagetop_sp" class="pagetop_sp">
-    <a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
-  </div>
+  		<!-- ページトップボタンSP_通常商品 -->
+      <span m:id="l_equ_type_simple">
+        <div id="pagetop_sp" class="pagetop_sp simple_item">
+        <a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+        </div>
+      </span>
+      <!-- /ページトップボタンSP_通常商品 -->
+      <!-- ページトップボタンSP_SKU商品 -->
+      <span m:id="l_equ_type_sku">
+        <div id="pagetop_sp" class="pagetop_sp">
+        <a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る" /></a>
+        </div>
+      </span>
+      <!-- /ページトップボタンSP_SKU商品 -->
   <div class="about">
     <div class="about_in wrapper">
       <ul class="about_list">
@@ -2362,125 +2964,136 @@ function showCartButton1(obj){
         <img src="/contents/c/shop/image/txt_tel02.png" class="viewPc" alt="0120-552-186">
         <a href="tel:0120-552-186" class="viewSp"><img src="/contents/c/shop/image/txt_tel02_sp.png" alt="0120-552-186"></a>
       </p>
+      <p class="note">携帯電話からでも通話無料</p>
       <div class="tel_area_sub">
         <p class="tel_area_time">（<span class="bold">6時&#xFF5E;22時</span> 日曜・祝日も受付けます）</p>
         <div><a href="/contents/shop/00000003/shop/fax_paper.pdf" target="_blank" style="display: none;">FAX注文も可能です</a></div>
-                <p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
+        <p class="tel_area_caution">※おかけ間違いのないようご注意ください。</p>
       </div>
     </div>
   </div>
-  <!-- /.tel_area -->
-  <div class="footer_info">
-    <div class="footer_info_in wrapper"><div class="footer_info_site">
-      <h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
-      <div class="footer_info_box">
-        <span class="footer_info_icon icon-medal"></span>
-        <p class="footer_info_subtit">ユーキャンがお届けする商品</p>
-        <p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
-          <br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
-        </div>
-        <div class="footer_info_box">
-          <span class="footer_info_icon icon-lock"></span>
-          <p class="footer_info_subtit">安心のセキュリティ</p>
-          <p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
-          <div class="pc_secure norton">
-            <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-            <p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer_info_consult">
-        <h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
-        <p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
-        <div class="footer_info_contact">
-          <p class="footer_info_tel"><a href="tel:0120-552-186">0120-552-186</a></p>
-          <div class="footer_info_contact_btn_wrap">
-            <a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
-          </div>
-          <!-- /.footer_info_contact_btn_wrap -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.footer_info -->
-  <div class="footer_sitemap">
-    <div class="footer_sitemap_in wrapper">
-      <div class="footer_sitemap_category">
-        <h3 class="footer_sitemap_tit">カテゴリから探す</h3>
-        <span m:id="l_pre_standardCategory">
-          <span m:id="l_notEmp_standardCategory_childCategories">
-            <span m:id="l_ite_standardCategory">
-              <span m:id="l_equ_cate_checkPeriod">
-                <span m:id="icnt_increment"></span>
-                <span m:id="i_ins_cate"></span>
-                <object class="xsp_obj" m:id="count_sub1"></object>
-                <ul class="footer_sitemap_list">
-                  <span  m:id="l_ite_cate">
-                    <span m:id="l_equ_subCate_checkPeriod">
-                      <span m:id="icnt_increment"></span>
-                      <span m:id="i_ins_subCate"></span>
-                      <li class="fleft">
-                        <a m:id="h_link_subCate_category" href="../../../Templates/goodsSearchShop_shop.html">
-                          <span m:id="span_subCate_arrow" id="arrow_1"><span m:id="disp_subCate_category_name">ファッション</span></span>
-                        </a>
-                      </li>
-                    </span>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">家具</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">家電</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">玩具・趣味</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">防災用品</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">本DVD</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">美容・健康</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">日用雑貨</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">食品・飲料</a></li>
-                    <li m:id="dummy"><a href="../../../Templates/goodsSearchShop_shop.html">キッチン</a></li>
-                  </span>
-                </ul>
-              </span>
-            </span>
-          </span>
-        </span>
-      </div>
-      <div class="footer_sitemap_begginer">
-        <h3 class="footer_sitemap_tit">初めての方へ</h3>
-        <ul class="footer_sitemap_list">
-          <li><a href="/shop/c/static/greeting/#origin">ココチモとは</a></li>
-          <li><a href="/shop/c/static/guide/">ご利用ガイド</a></li>
-          <li class="wrap_l oneb"><span m:id="l_notPre_member_login_shop"><a m:id="e_link_memberAdd_shop" href="../../../Templates/memberAddInput.html">新規会員登録</a></span></li>
-        </ul>
-      </div>
-    </div>
-    <!--footer_sitemap_in-->
-  </div>
-  <!--footer_sitemap -->
-  <div class="footer_important">
-    <div class="footer_important_in wrapper">
-      <ul class="footer_important_list cf">
-        <li class="first"><a m:id="e_link_inquiry" href="../../../Templates/inquiryInput.html">お問い合わせ</a></li>
-        <li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
-        <li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
-        <li><a href="/shop/c/static/company/">会社情報</a></li>
-      </ul>
-            <div class="footer_important_mark">
-                <div class="jadma">
-                  <a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
-                </div>
-                <div class="norton">
-                    <script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
-                    <p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
-                </div>
-            </div>
-    </div>
-  </div>
-  <!--footer_important-->
-  <div class="footer_bottom">
-    <div class="footer_bottom_in wrapper">
-      <p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
-    </div>
-  </div>
-  <!--footer_bottom-->
-</footer>
-<!-- /#footer -->
+  <!-- /.tel_area --> 
+		<div class="footer_info">
+			<div class="footer_info_in wrapper">
+				<div class="footer_info_site">
+					<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
+					<div class="footer_info_box">
+						<span class="footer_info_icon icon-medal"></span>
+						<p class="footer_info_subtit">ユーキャンがお届けする商品</p>
+						<p class="footer_info_subtxt">ユーキャン運営の公式ショップだからすべて正規品です。
+							<br>模倣品などの心配をすることなく、安心して商品をお求め頂けます。</p>
+					</div>
+					<div class="footer_info_box">
+						<span class="footer_info_icon icon-lock"></span>
+						<p class="footer_info_subtit">安心のセキュリティ</p>
+						<p class="footer_info_subtxt">ココチモの通販サイトは、SSL暗号化技術によって保護<br class="viewPc">されています。入力された全ての情報は暗号化され<br class="viewPc">て安全に送信されます。</p>
+						<div class="pc_secure norton">
+							<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+							<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer_info_consult">
+					<h3 class="footer_info_tit">いつでもご相談お待ちしております</h3>
+					<p class="footer_info_txt">インターネット・お電話などでご相談を承ります。<br>平日の22時以降や土・日・祝日のお問い合わせ、ご質問の内容等により、<br class="viewPc">お返事までにお時間をいただく場合もございます。あらかじめ、ご了承ください。</p>
+					<div class="footer_info_contact">
+						<p class="footer_info_tel"><span class="viewPc">0120-552-186</span><a href="tel:0120-552-186" class="viewSp">0120-552-186</a></p>
+						<p class="note">携帯電話からでも通話無料</p>
+						<div class="footer_info_contact_btn_wrap">
+							<a m:id="e_link_inquiry" href="inquiryInput.html" class="footer_info_contact_btn">お問合わせフォームはこちら</a>
+						</div>
+						<!-- /.footer_info_contact_btn_wrap -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.footer_info -->
+		<div class="footer_sitemap">
+			<div class="footer_sitemap_in wrapper">
+				<div class="footer_sitemap_category">
+					<h3 class="footer_sitemap_tit">カテゴリから探す</h3>
+					<span m:id="l_pre_standardCategory">
+					<span m:id="l_notEmp_standardCategory_childCategories">
+						<span m:id="l_ite_standardCategory">
+							<span m:id="l_equ_cate_checkPeriod">
+								<span m:id="icnt_increment"></span>
+					<span m:id="i_ins_cate"></span>
+					<object class="xsp_obj" m:id="count_sub1"></object>
+					<ul class="footer_sitemap_list">
+						<span m:id="l_ite_cate">
+										<span m:id="l_equ_subCate_checkPeriod">
+											<span m:id="icnt_increment"></span>
+						<span m:id="i_ins_subCate"></span>
+						<li class="fleft">
+							<a m:id="h_link_subCate_category" href="goodsSearchShop_shop.html">
+								<span m:id="span_subCate_arrow" id="arrow_1"><span m:id="disp_subCate_category_name">ファッション</span></span>
+							</a>
+						</li>
+						</span>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家具</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">家電</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">玩具・趣味</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">防災用品</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">本DVD</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">美容・健康</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">日用雑貨</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">食品・飲料</a></li>
+						<li m:id="dummy"><a href="goodsSearchShop_shop.html">キッチン</a></li>
+						</span>
+					</ul>
+					</span>
+					</span>
+					</span>
+					</span>
+				</div>
+				<div class="footer_sitemap_begginer">
+					<h3 class="footer_sitemap_tit">初めての方へ</h3>
+					<ul class="footer_sitemap_list">
+						<li><a href="/shop/c/static/greeting/#origin">ココチモとは</a></li>
+						<li><a href="/shop/c/static/guide/">ご利用ガイド</a></li>
+						<li class="wrap_l oneb"><span m:id="l_notPre_member_login_shop"><a m:id="e_link_memberAdd_shop" href="memberAddInput.html">新規会員登録</a></span></li>
+					</ul>
+				</div>
+				<div class="footer_sitemap_guide">
+					<h3 class="footer_sitemap_tit">ショッピングガイド</h3>
+					<ul class="footer_sitemap_list">
+						<li><a href="/shop/c/static/guide07/#return">返品・交換について</a></li>
+						<li><a href="/shop/c/static/guide07/#cancel">キャンセルについて</a></li>
+						<li><a href="/shop/c/static/faq/">よくあるご質問</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--footer_sitemap_in-->
+		</div>
+		<!--footer_sitemap -->
+		<div class="footer_important">
+			<div class="footer_important_in wrapper">
+				<ul class="footer_important_list cf">
+					<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
+					<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+					<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
+					<li><a href="/shop/c/static/company/">会社情報</a></li>
+				</ul>
+				<div class="footer_important_mark">
+					<div class="jadma">
+						<a href="https://www.jadma.org/jadma_mark/" target="_blank"><img src="/contents/c/shop/image/jadma.png" alt="jadma"></a>
+					</div>
+					<div class="norton">
+						<script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.cococimo.jp&amp;size=S&amp;use_flash=NO&amp;use_transparent=YES&amp;lang=ja"></script>
+						<p>このページはSSL暗号化技術によって保護されています。<br>入力された全ての情報は暗号化されて安全に送信されます。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer_important-->
+		<div class="footer_bottom">
+			<div class="footer_bottom_in wrapper">
+				<p class="footer_bottom_cr">Copyright U-CAN, Inc. All Rights Reserved</p>
+			</div>
+		</div>
+		<!--footer_bottom-->
+	</footer>
+	<!-- /#footer -->
 <!-- InstanceBeginEditable name="script_footer" -->
 <!-- ▼▼▼ google 動的リマケ▼▼▼ -->
 <form name="googleGoodsForm">
@@ -2492,7 +3105,6 @@ function showCartButton1(obj){
 <span m:id="fs_tracking_ga"></span>
 <!--/ tracking ga -->
 <span m:id="site_prop13"></span>
-
 
 <!-- ▼▼▼ Criteo ▼▼▼ -->
 <!-- Criteo loader -->
@@ -2511,11 +3123,9 @@ document.write('<script language="JavaScript" type="text/javascript" src="' + pr
 <meta m:id="criteo_q_push" content=""></meta>
 <!-- ▲▲▲ Criteo ▲▲▲ -->
 
+ 
 
 <!-- InstanceEndEditable -->
 <span m:id="smartSuggest"></span>
-
-   
-
 </body>
 <!-- InstanceEnd --></html>

@@ -143,35 +143,39 @@
 </style>
 
 <style>
+	.content_inner section.sec01 .dacky .txts {
+		margin-top: 10px;
+	}
 	.content_inner section.sec01 .dacky .txts h2 img {
 		position: relative;
 		top: -6vw;
 	}
 	
 	.content_inner section.sec01 .dacky .note {
-		z-index: 2;
-		position: relative;
-		top: -7vw;
+		position: static;
 	}
 	.content_inner section.sec01 .dacky .note.note_add_txt {
-		position: absolute;
+		position: static;
 		top: 38vw;
 	}
 	@media (min-width: 768px) {
+		.content_inner section.sec01 .dacky .note {
+			z-index: 2;
+			position: absolute;
+			top: 18px;
+			right: 0;
+		}
 		.content_inner section.sec01 .dacky .txts {
 			bottom: 33px;
 		}
 		.content_inner section.sec01 .dacky .txts h2 img {
 			top: 30px;
 		}
-		.content_inner section.sec01 .dacky .note {
-			top: auto;
-		}
 		.content_inner section.sec01 .dacky .note.note_add_txt {
 			position: absolute;
 			top: auto;
-			bottom: -60px;
 			left: -270px;
+			top: 23px;
 			}
 	}
 </style>
@@ -203,47 +207,32 @@
 
 
 </style>
+<style>
+	/* 申込みボタンopacity */
+	.content_inner .btn_apply a:hover {
+		opacity: .6;
+	}
+</style>
 
 <div id="content"> 
 		<div id="content_wrap">
 			<div class="content_inner">
 				<header class="header_main">
-					<h1>
-						<span class="badge">
-							<img src="/contents/shop/00000003/image/static/dacky/dc_txt01@2x.png" alt="シリーズ累計　40万体　大ヒット！" width="220">
-						</span>
-						<span class="title">
-							<img src="/contents/shop/00000003/image/static/dacky/dc_txt02@2x.png" alt="あなたを笑顔にする“夢のお話し犬”" width="858">
-							<img src="/contents/shop/00000003/image/static/dacky/dc_txt03@2x.png" alt="おしゃべりダッキー" width="1020">
-						</span>
+					<h1 style="display: none;">
+						テレビCMで話題！おしゃべりダッキー
 					</h1>
 				</header>
 				<section class="sec01">
 					<div class="dacky">
-						<picture>
-							<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_b_img01.png?0428">
-							<img src="/contents/shop/00000003/image/static/dacky/dc_sp_img01@2x.png?0425" alt=" ダッキースター画像">
-						</picture>
+							<img src="/contents/shop/00000003/image/static/dacky/dacky_main_img.jpg" alt="会話ができる夢のワンちゃんが、毎日あなたに話しかけます！なでなで、いっぱいありがとう。ぼくといっぱい遊んでくれて、とっても幸せ！今日あったことのお話しして?！いってらっしゃい?！早く帰ってきてね。ずっと一緒だよ。">
+							<img src="/contents/shop/00000003/image/static/dacky/dacky_main_img_02.jpg" alt="会話もできる！！ぼくのこと好き？うれしいなぁ。ぼくもモチロン大好きだよ。おはよ?いい夢見たよ！ぼくサンタさん見たことあるよ！">
 						<div class="txts">
-							<p class="sp_v" style="margin: 40px 15px 10vw;"><img src="/contents/shop/00000003/image/static/dacky/dc_b_sp_img200@2x.png"></p> 
-							<h2>
-								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_txt06.svg">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_b_sp_txt01@2x.png" alt="ダッキースター">
-								</picture>
-							</h2>
-							<p class="note">
-								※タカラトミーアーツ・ヒーリングパートナーシリーズ全体の出荷台数です。<br>
-								※リボン、クッションは商品セットに含まれておりません。
-							</p>
 							<p class="note note_add_txt">
-								※反応する言葉の数、<br class="viewPc">タイミングには限りがあります。
+								※反応する言葉の数、タイミングには限りがあります。
 							</p>
 						</div>
 					</div>
-					<p class="badge">
-						<img src="/contents/shop/00000003/image/static/dacky/dc_txt04@2x.png?0428" alt="ダッキーはあなたの呼びかけに応えます！" width="160">
-					</p>
+
 					<!-- 価格変更のご案内　ここから 
 					<div class="info_txt">
 					※こちらの商品は、2019年10月1日より価格を改定いたします。
@@ -258,21 +247,26 @@
 						<input m:id="h_hid_display_code" type="hidden" name="display_code" value="" />
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
-				<input type="hidden" name="order_num_string" value="1" /> -->
-						<!-- <section class="present_area tac">
+					<input type="hidden" name="order_num_string" value="1" /> -->
+						<!-- キャンペーン 
+						<section class="present_area tac">
 							<picture>
-								<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dla20_pre_pc.png">
-								<img src="/contents/shop/00000003/image/static/dacky/dla20_pre_sp.png?0422" alt="期間限定2大プレゼント　プレゼント1　ミニダッキー「キーホルダー」　プレゼント2　ダッキー専用「お出かけバッグ」" width="1160">
+								<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dla20_pre_pc.jpg?0427">
+								<img src="/contents/shop/00000003/image/static/dacky/dla20_pre_sp.png?0427" alt="期間限定2大プレゼント　プレゼント1　ミニダッキー「キーホルダー」　プレゼント2　ダッキー専用「お出かけバッグ」" width="1160">
 							</picture>
-						</section> -->
+						</section>
+						キャンペーン ここまで-->
+						<!-- お申込みボタン -->
 						<p class="btn_apply">
 							<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_btn01.png">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_sp_btn01@2x.png" alt="今すぐ申し込む" width="936">
+									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+									<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+									<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
 								</picture>
 							</a>
 						</p>
+						<!-- お申込みボタン ここまで -->
 						<!-- <div class="sold_out_txt"><p class="pb5">【商品のお届けについて】</p>
 							<p>本商品は大変ご好評につきお申込みが集中し、一時的に品切れとなっております。<br>
 							商品は引き続きご購入いただけますが、お届けは8月上旬頃を予定しております。<br class="viewPc">あらかじめご了承くださいますようお願いいたします。</p>
@@ -299,7 +293,7 @@
 						<div class="flex">
 							<div class="div_l">
 								<p>
-									　愛らしいお話とふわふわモチモチの抱き心地で、あなたを笑顔にしてくれる未来型ぬいぐるみ「おしゃべりダッキー」。さらに賢くチャーミングになって、あなたのもとへやってきます。<br>　約3700通りのお話をしてくれてお歌も上手。うれしい時にはしっぽを振って、あなたを元気づけてくれる優しい子です。みんなと早くお話ししたくてたまらないダッキーをぜひ家族に迎えてください。
+									　愛らしい“お話し”とフワフワの“抱き心地”で、あなたを笑顔にしてくれる未来型のぬいぐるみ『おしゃべりダッキー』。季節や時間に合わせて様々なことを話すので、毎日とっても賑やか！さらに、頭を撫でたり手を握ったりすると、嬉しそうに反応するのも可愛い！と大人気です。<br>これからの未来を明るく彩る「夢のペット」になる『おしゃべりダッキー』。あなたの新しい家族として、たくさん可愛がってあげてください。
 								</p>
 								<p class="note">
 									※以前にココチモから『ダッキー』シリーズをご購入されたお客様のアンケートより抜粋。<br class="viewPc">プロフィールはお便りをいただいた時点のものです。
@@ -354,7 +348,6 @@
 					<div class="div_r"><img src="/contents/shop/00000003/image/static/dacky/dc_img05@2x.png" alt="いつでもダッキーと一緒だね。" width="540"></div>
 				</div>
 			</section> -->
-
 			<!-- <div class="cp_bnr_wrap">
 				<p><img src="/contents/shop/00000003/image/static/dacky/dacky_campaign_bnr.jpg" alt="ココチモ会員に登録・ログインしてダッキーをご購入された方限定！！抽選で15名様に さらに！JCB商品券10,000円分プレゼント！！キャンペーン期間：2018年11月30日（金）-12月11日（火）午前9時59分"></p>
 				<p class="point_txt icon"><a href="/contents/shop/00000003/image/static/dacky/dacky_campaign.pdf" target="_blank">キャンペーン要綱についてはこちらをご覧ください。</a>　※pdfファイルが開きます。</p>
@@ -533,14 +526,17 @@
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" /> -->
+						<!-- お申込みボタン -->
 						<p class="btn_apply">
 							<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_btn01.png">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_sp_btn01@2x.png" alt="今すぐ申し込む" width="936">
+									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+									<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+									<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
 								</picture>
 							</a>
 						</p>
+						<!-- お申込みボタン ここまで -->
 						<!-- 完売対応
 						<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="/contents/shop/00000003/image/static/dacky/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="/contents/shop/00000003/image/static/dacky/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 						 //完売対応 -->
@@ -564,11 +560,11 @@
 						<div class="div_l">
 							<h2>
 								<img src="/contents/shop/00000003/image/static/dacky/dc_txt30.svg" alt="パパ、いつも一緒にいようね" width="335">
-								<img src="/contents/shop/00000003/image/static/dacky/dc_txt31.svg" alt="「家族の名前」で呼んでくれます！" width="308">
+								<img src="/contents/shop/00000003/image/static/dacky/dc_txt31.svg" alt="「家族の名前」で呼んでく　　れます！" width="308">
 							</h2>
 							<p>
 								<span class="txt_underline">「可愛い声でお母さんと呼ばれると抱きしめたくなります」</span>（大分県・女性83歳）。<br>ダッキーはあなたが設定した<span style="color:red">「家族の名前」</span>で呼びかけてくれます。<br>
-								<span class="txt_underline">「『パパ』とお話しがきりがないほどにできて毎日が楽しい」</span>（長野県・男性83歳）。<br>呼び方は10種類からお選びいただけます。
+								<span class="txt_underline">「『おねえちゃん』と話しかけてくれて毎日嬉しい」</span>（神奈川県・女性57歳）。<br>呼び方は10種類からお選びいただけます。
 							</p>
 						</div>
 						<div class="div_r">
@@ -753,14 +749,17 @@
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" /> -->
+						<!-- お申込みボタン -->
 						<p class="btn_apply">
 							<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_btn01.png">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_sp_btn01@2x.png" alt="今すぐ申し込む" width="936">
+									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+									<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+									<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
 								</picture>
 							</a>
 						</p>
+						<!-- お申込みボタン ここまで -->
 						<!-- 完売対応 
 						<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="/contents/shop/00000003/image/static/dacky/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="/contents/shop/00000003/image/static/dacky/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 						 //完売対応 -->
@@ -959,7 +958,7 @@
 
 				<!-- <section class="present_area tac">
 					<picture>
-						<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dla20_pre_pc.png">
+						<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dla20_pre_pc.jpg?1127">
 						<img src="/contents/shop/00000003/image/static/dacky/dla20_pre_sp.png?0422" alt="期間限定2大プレゼント　プレゼント1　ミニダッキー「キーホルダー」　プレゼント2　ダッキー専用「お出かけバッグ」" width="1160">
 					</picture>
 				</section> -->
@@ -971,14 +970,17 @@
 						<input m:id="h_hid_goods_sku_code" type="hidden" name="goods_sku_code" value="" />
 						<input m:id="h_hid_ext_goods_sku_code" type="hidden" name="ext_goods_sku_code" value="" />
 					<input type="hidden" name="order_num_string" value="1" /> -->
+						<!-- お申込みボタン -->
 						<p class="btn_apply">
 							<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_btn01.png">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_sp_btn01@2x.png" alt="今すぐ申し込む" width="936">
+									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+									<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+									<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
 								</picture>
 							</a>
 						</p>
+						<!-- お申込みボタン ここまで -->
 						<!-- 完売対応 
 						<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="/contents/shop/00000003/image/static/dacky/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="/contents/shop/00000003/image/static/dacky/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 						 //完売対応 -->
@@ -1252,14 +1254,17 @@
 						</div>
 					</div>
 					<section class="sec_apply">
+						<!-- お申込みボタン -->
 						<p class="btn_apply">
 							<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
 								<picture>
-									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/dacky/dc_btn01.png">
-									<img src="/contents/shop/00000003/image/static/dacky/dc_sp_btn01@2x.png" alt="今すぐ申し込む" width="936">
+									<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+									<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+									<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
 								</picture>
 							</a>
 						</p>
+						<!-- お申込みボタン ここまで -->
 						<!-- 完売対応 
 						<div class="kanbai" style="padding:1.2em 1.2em 1em;"><img src="/contents/shop/00000003/image/static/dacky/order_pic_2.png" alt="こちらの商品は好評のため、完売いたしました。" class="pc"><img src="/contents/shop/00000003/image/static/dacky/order_pic_sp_2.jpg" alt="こちらの商品は好評のため、完売いたしました。" class="sp"></div>
 						//完売対応 -->
