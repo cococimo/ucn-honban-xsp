@@ -1,0 +1,316 @@
+
+	<div id="guide">
+		<!-- <ol id="breadcrumb" class="cmn_breadcrumb guide " itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li class="home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="/"><span itemprop="name">ココチモの通販ショップ</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li class="guide_home" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="/shop/c/static/guide/"><span itemprop="name">ご利用ガイドトップ</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			<li class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<span itemprop="name">お支払い方法について</span>
+				<meta itemprop="position" content="3">
+			</li>
+		</ol> -->
+		<style>
+
+			.txt_underline {
+				text-decoration: underline;
+				font-weight: bold;
+				vertical-align: top;
+			}
+			.txt_bold {
+				font-weight: bold;
+				vertical-align: top;
+			}
+			.arrow_blank a {
+				padding-right: 24px;
+				background: url(/contents/shop/00000003/image/static/guide/about/ico_arrow_blank.png) no-repeat right center;
+				background-size: 15px;
+			}
+			/* 注意事項 */
+			.note_ttl {
+				position: relative;
+				margin-top: 30px;
+				padding: 1em 1.2em;
+				font-size: 1.1em;
+				/* color: #f39800; */
+				font-weight: bold;
+				line-height: 1.5;
+				background: #ffeccd;
+			}
+			.note_box01 {
+				padding: 15px;
+				border: 2px solid #ffeccd;
+				border-top: none;
+				line-height: 1.5;
+			}
+			.note_list li {
+				padding-left: 1.1em;
+				text-indent: -1.1em;
+				padding-bottom: 5px;
+			}
+			@media screen and (max-width: 767px) {
+				.note_list {
+					margin-left: -10px;
+				}
+			}
+
+
+			/* ご利用手順共通 */
+			.howtouseBox {
+				display: flex;
+				flex-wrap: wrap;
+				align-content: space-between;
+			}
+			.howtouseBox li {
+				position: relative;
+				margin-bottom: 10px;
+				flex: 0 1 24%;
+			}
+			@media all and (-ms-high-contrast:none){
+				.howtouseBox.au li,
+				.howtouseBox.paypay li { flex: 0 1 21%; } /* IE10 */
+			}
+			@media screen and (max-width: 767px) {
+				.howtouseBox li {
+					flex:0 1 49%;
+				}
+			}
+			.howtouseBox li::after {
+				font-family: icomoon;
+				content:  '\e90b';
+				display: block;
+				position: absolute;
+				height: 1em;
+				top: 0;
+				bottom: 0;
+				right: -10px;
+				margin: auto;
+				padding-bottom: 10%;
+				z-index: 2;
+				color: #949494;
+			}
+			.howtouseBox li:nth-child(4)::after,
+			.howtouseBox li:last-child::after {
+				display: none;
+			}
+			@media screen and (max-width: 767px) {
+				.howtouseBox li:nth-child(2n+0)::after {
+					display: none;
+				}
+			}
+			.howtouseBox li .ex_txt {
+				padding-top: 10px;
+				font-size: .9em;
+				font-weight: bold;
+				color: #626262;
+				line-height: 1.5;
+			}
+			.howtouseBox li .ex_txt.adj {
+				position: absolute;
+				bottom: 1.5em;
+				left: 20px;
+			}
+			/* auご利用手順 */
+			.howtouseBox.au {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+			.howtouseBox.au li {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.howtouseBox.au li img {
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			/* paypayご利用手順 */
+			.howtouseBox.paypay {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+			.howtouseBox.paypay li {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		</style>
+		
+		<h1 class="cmn_tit05">「後払い」のお支払い方法</h1>
+		<p class="txt s_mt20">「後払い」をご利用の場合、お届けする商品に同梱の払込用紙で、<a href="#store_pay">郵便局・ゆうちょ銀行・コンビニエンスストア支払い</a>／<a href="#line_pay">LINE Pay請求書支払い</a>／<a href="#au_pay">au PAY（請求書支払い）</a>／<a href="#paypay">PayPay請求書払い</a>のいずれかの方法で、商品到着後2週間以内にお支払いください。<br>
+			<br>
+			※いずれのお支払い方法でも、<span class="txt_underline">一括払いまたは分割払い</span>を選択できます。商品同梱の払込用紙から一括払い用／分割払い用のどちらかを選んでお支払いください。<br>
+			※いずれのお支払い方法も、<span class="txt_underline">払込手数料は当社が負担</span>いたします。<br>
+			※ご注文口数やご注文の内容によっては、当社規定により、後日お支払い方法の変更をお願いする場合や、ご注文をお受けできない場合もございます。<br>
+			※LINE Pay請求書支払い／au PAY（請求書支払い）／PayPay請求書払いをご利用の方は、事前に<a href="#?cautions">注意事項</a>をご確認ください。<br>
+		</p>
+
+		<h2 class="cmn_tit01" id="store_pay"><span class="cmn_tit01_underline">郵便局・ゆうちょ銀行・コンビニエンスストア支払い</span></h2>
+		<p class="txt">商品同梱の払込用紙で、郵便局・ゆうちょ銀行、またはコンビニエンスストア（一部除く）からお支払いください。</p>
+
+		<h2 class="cmn_tit01" id="line_pay"><span class="cmn_tit01_underline">LINE Pay請求書支払い</span></h2>
+		<p class="txt">商品同梱の払込用紙のバーコードを、LINE Payアプリの「請求書支払い」のコードリーダーで読み取り、画面の指示に従って操作いただくと、LINE Payの残高で決済できます。</p>
+		<p class="cmn_tit02">ご利用の手順</p>
+        <ul class="howtouseBox line">
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use01.png" alt="&#9312;[請求書支払い]をタップ"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use02.png" alt="&#9313;内容を読んで[次へ]"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use03.png" alt="&#9314;立ち上がったコードリーダーでお手元のバーコードを読み込む"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use04.png" alt="&#9315;請求内容を確認する"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use05.png" alt="&#9316;支払いを行う"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use06.png" alt="&#9317;パスワードを入力する"></li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/img_use07.png" alt="&#9318;支払い完了"></li>
+		</ul>
+		<p class="note_txt">※画面はイメージです</p>
+		<h3 class="mt40 s_mt20 arrow_blank">■ LINE Payについて 詳しくは<a href="https://pay.line.me/portal/jp/main" target="_blank">こちら</a></h4>
+        
+
+		<h2 class="cmn_tit01" id="au_pay"><span class="cmn_tit01_underline">au PAY（請求書支払い）</span></h2>
+		<p class="txt">商品同梱の払込用紙のバーコードを、au PAYアプリのコードリーダーで読み取り、画面の指示に従って操作いただくと、au PAY残高で決済できます。</p>
+		<p class="cmn_tit02">ご利用の手順</p>
+		<ul class="howtouseBox au">
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/step01_home.png" alt="">
+				<p class="ex_txt">&#9312;【請求書支払い】をタップ</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/step02_menu.png" alt="">
+				<p class="ex_txt">&#9313;【バーコードを読み取る】をタップ</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/step03_barcode.png" alt="">
+				<p class="ex_txt">&#9314;請求書のバーコードを読み取る</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/step04_confirmation.png" alt="">
+				<p class="ex_txt">&#9315;請求内容を確認し、「支払いを確定」ボタンをタップ</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/step05_complete.png" alt="">
+				<p class="ex_txt">&#9316;支払い完了</p>
+			</li>
+		</ul>
+		<p class="note_txt mt20">※画面はイメージです</p>
+
+		<h3 class="mt40 s_mt20 arrow_blank">■ au PAYについて 詳しくは<a href="https://aupay.wallet.auone.jp/" target="_blank">こちら</a></h4>
+
+		<h2 class="cmn_tit01" id="paypay"><span class="cmn_tit01_underline">PayPay請求書払い</span></h2>
+		<p class="txt">商品同梱の払込用紙のバーコードを、PayPayアプリのコードリーダーで読み取り、画面の指示に従って操作いただくと、PayPay残高で決済できます。</p>
+		<p class="cmn_tit02">ご利用の手順</p>
+        <ul class="howtouseBox paypay">
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/s01.png" alt="">
+				<p class="ex_txt">&#9312;アプリのホーム画面にある「請求書払い」をタップ</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/s02.png" alt="">
+				<p class="ex_txt">&#9313;払込票のバーコードを読み取る</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/s03.png" alt="">
+				<p class="ex_txt">&#9314;支払金額及び内容を確認し「支払う」をタップ</p>
+			</li>
+			<li><img src="/contents/shop/00000003/image/static/guide/atobarai/s04.png" alt="">
+				<p class="ex_txt adj">&#9315;支払い完了</p>
+			</li>
+		</ul>
+		<p class="note_txt mt20">※画面はイメージです</p>
+
+		<h3 class="mt40 s_mt20 arrow_blank">■ PayPayについて 詳しくは<a href="https://paypay.ne.jp/" target="_blank">こちら</a></h4>
+
+
+
+		<h2 class="note_ttl mt80 s_mt40" id="?cautions">LINE Pay請求書支払い／au PAY（請求書支払い）／PayPay請求書払いをご利用の際の注意事項</h3>
+		<div class="note_box01">
+			<ul class="note_list">
+				<li>・各アプリ決済のご利用には、事前にアプリへの残高チャージが必要です。</li>
+				<li>
+					・各アプリ決済とも、利用可能な上限金額がございます。上限金額を超える払込用紙（バーコード）を読み取った場合、ご利用できない旨のエラーが表示されます。各アプリ決済の利用上限金額は以下の通りです。
+					<ul class="mt10">
+						<li>●LINE Pay 請求書支払い：払込用紙一枚あたり49,999円まで</li>
+						<li>●au PAY（請求書支払い）：払込用紙一枚あたり250,000円まで</li>
+						<li>●PayPay請求書払い：払込用紙一枚あたり300,000円まで（1日の残高支払い上限は50万円まで、1か月の支払い上限は200万円まで）</li>
+					</ul>
+				</li>
+				<li>・各アプリ決済とも、書類の領収証（お客様控え）は発行されないため、アプリ上での支払い履歴が領収証（お客様控え）の代わりになります。</li>
+				<li>・二重払い防止のため、各アプリ決済でお支払いが完了した払込用紙は、必ず破棄していただきますようお願いいたします。</li>
+			</ul>
+		</div>
+			
+		<p class="pink_btn viewSp"><a href="/shop/c/static/guide/">ご利用ガイドトップに戻る</a></p>
+		
+	<!-- #BeginLibraryItem "/Library/cmn-guide.lbi" -->
+		<div class="cmn_guide_box">
+			<h3 class="viewPc">ご利用ガイド</h3>
+			<ul class="cmn_guide_list_wrap cf">
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/greeting/"><span class="icon-rogo"></span>ココチモについて</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/greeting/#origin">初めての方へ</a></li>
+						<li><a href="/shop/c/static/greeting/#company_info">運営会社情報</a></li>
+						<li><a href="/shop/c/static/greeting/#youcan_group">ユーキャングループ</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide02/"><span class="icon-register"></span>会員登録・ログインについて</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide02/#registration_merit">会員登録とお客様のメリット</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_flow">会員登録の流れ</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_check">会員登録情報の確認・変更</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_password">パスワードについて</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_login">ログインについて</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_withdrawal">退会について</a></li>
+						<li><a href="/shop/c/static/guide02/#registration_membership">会員規約</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide03/"><span class="icon-gift-sp viewSp"></span><span class="icon-gift-pc viewPc"></span>ご注文について</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide03/#order_flow">ご注文の流れ</a></li>
+						<li><a href="/shop/c/static/guide03/#order_gift">ギフトラッピングについて</a></li>
+						<li><a href="/shop/c/static/guide03/#order_mail">注文完了メール</a></li>
+						<li><a href="/shop/c/static/guide03/#order_history">注文履歴</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide04/"><span class="icon-dentaku"></span>お支払い方法について</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide04/#payment_method">選べるお支払い方法</a></li>
+						<!-- <li><a href="/shop/c/static/guide04/#security_code">セキュリティコード</a></li> -->
+						<li><a href="/shop/c/static/guide_atobarai/">「後払い」のお支払い方法</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide05/"><span class="icon-car"></span>送料について</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide05/#regular_item">通常商品</a></li>
+						
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide06/"><span class="icon-delivery"></span>お届けについて</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide06/#delivery_standard">お届け目安</a></li>
+						<li><a href="/shop/c/static/guide06/#delivery_company">配送会社</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide07/"><span class="icon-cancel"></span>キャンセル・返品・交換</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide07/#cancel">キャンセル</a></li>
+						<li><a href="/shop/c/static/guide07/#return">返品・交換</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4><a href="/shop/c/static/guide08/"><span class="icon-point"></span>ポイントについて</a></h4>
+					<ul class="guide_list">
+						<li><a href="/shop/c/static/guide08/#how_to_get">ポイントの取得方法</a></li>
+						<li><a href="/shop/c/static/guide08/#due_date">ポイントの有効期限</a></li>
+						<li><a href="/shop/c/static/guide08/#how_to_use">ポイントのご利用方法</a></li>
+						<li><a href="/shop/c/static/guide08/#point_check">ポイントの確認</a></li>
+					</ul>
+				</li>
+				<li class="js-matchHeight">
+					<h4 class="last"><a href="/shop/c/static/guide10/"><span class="icon-headset"></span>お問い合わせ窓口について</a></h4>
+				</li>
+			</ul>
+			<!-- guide_list_wrap -->
+		</div>
+		<!-- cmn_guide_box -->
+<!-- #EndLibraryItem -->
+
+	</div>
+	<!-- /#guide -->
