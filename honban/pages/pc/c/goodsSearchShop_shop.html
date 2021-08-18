@@ -265,7 +265,7 @@ $(function(){
 		}
 
 	}
-	/* ヘッダーの領域を狭くする（PCのみ） */
+	/* タイトル文字小さく */
 	#category .goods_archive {
 		padding-top: 24px;
 	}
@@ -1137,38 +1137,36 @@ $(function(){
 
 				<style>
 					/* ファッションの着心地バナーを非表示 */
-					.bnr_area {display: none !important}
+					/* .bnr_area {display: none !important} */
 
 
-					.bnr_area_allcategory {text-align: center;margin:60px 0;}
-					.bnr_area_allcategory .ttl {font-size:17px;padding-bottom: 10px;margin-left: 28px;position: relative;display: inline-block;font-weight: bold;}
+					.bnr_area_allcategory {margin:60px 0;text-align: center;}
+					.bnr_area_allcategory .bnr {max-width:600px;margin: 0 auto;}
+
+					.bnr_area_allcategory .ttl {padding-bottom: 10px;position: relative;display: inline-block;font-size:18px;font-weight: bold;font-feature-settings: "palt";}
 					.bnr_area_allcategory a {transition: all 300ms 0s ease;}
 					.bnr_area_allcategory a:hover {opacity: 0.7;}
 					.bnr_area_allcategory .ttl:before {
-					content: '\e913';
-					vertical-align: middle;
-					color: #f39800;
-					position: absolute;
-					left: -26px;
-					top: 0;
-				}
+						content: '\e911';
+						vertical-align: middle;
+						padding-right: 5px;
+						color: #f39800;
+						display: inline;
+					}
 					@media screen and (max-width: 767px) {
 						.bnr_area_allcategory {margin:30px 0;}
-						.bnr_area_allcategory .ttl {font-size:.94em;letter-spacing:-0.04em;line-height: 1.6;margin-left: 5vw;margin-right: 5vw}
-						.bnr_area_allcategory .ttl:before {
-						position: absolute;
-						left: -1.2em;
-						top: 0.3em;
-						}
-				
+						.bnr_area_allcategory .ttl {font-size:.94em;line-height: 1.6;}
 					}
 				</style>
-				<!-- <div class="bnr_area_allcategory">
+				<div class="bnr_area_allcategory">
 					<p class="ttl">「オールタイムサンダル」はこちら（【着心地のいい服】サイトに移動します）</p>
 					<div class="bnr">
-						<a href="https://www.iikigokochi.jp/shop/static/feature36/?cococimo-category" target="_blank"><img src="/contents/shop/00000003/shop/image/sp/djj_main_sp.jpg" alt="着心地のいい服【オールタイムサンダル】"></a>
+						<a href="https://www.iikigokochi.jp/item_all-time-sandals/?track_cd=5654RDYM00&utm_source=exlink&utm_medium=none&utm_campaign=in_5654&utm_content=cococimo" target="_blank">
+							<!-- <img class="viewPc" src="/contents/shop/00000003/shop/image/djj_main_2.jpg" alt="着心地のいい服【オールタイムサンダル】"> -->
+							<img src="/contents/shop/00000003/shop/image/sp/djj_main_2_sp.jpg" alt="着心地のいい服【オールタイムサンダル】">
+						</a>
 					</div>
-				</div> -->
+				</div>
 					
                 <!-- インクルード追加 (フッタ) -->
                   
