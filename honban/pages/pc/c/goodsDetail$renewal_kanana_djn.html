@@ -180,11 +180,31 @@ $(function(){
   }
   /* tooltip
   ------------------------------------- */
-  $('select[name=goods_sku_code]').change(function() {
-    $(this).closest('.tooltip_wrap').find('.tooltip').fadeOut();
-  });
+  var selectElm = $('.goods_detail_item_order select[name=goods_sku_code]').length;
+	if(selectElm) {
+		$('select[name=goods_sku_code]').change(function() {
+			$(this).closest('.tooltip_wrap').find('.tooltip').fadeOut();
+		});
+	} else {
+		$('.tooltip_wrap').addClass('one_item').find('.tooltip').hide()
+	}
 });
 </script>
+<style>
+	.one_item .select_wrap {
+		letter-spacing:normal;
+	}
+
+	@media screen and (max-width: 767px) {
+		.goods_detail_item_order .one_item .select_label {
+			width: auto;
+			margin-right: 0;
+		}
+		.one_item .select_wrap .select_label > .viewSp {
+			display: none;
+		}
+	}
+</style>
 
 <meta m:id="e_var_member_goodsDetail">
 <meta m:id="site_products">
