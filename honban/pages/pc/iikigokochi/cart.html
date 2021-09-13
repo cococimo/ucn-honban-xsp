@@ -220,7 +220,7 @@ border:none;
 .memadd_table_02 th {
 }
 /*****res_tbl*****/
-.cart_table_sp td:nth-child(1):before {
+.cart_table_sp > tbody > tr > td:nth-child(1):before {
 content: "商品名";
     background: #FFF;
     color: #333;
@@ -232,7 +232,7 @@ content: "商品名";
 	display:block !important;
 	margin:10px 0 !important;
 }
-.cart_table_sp td:nth-child(2):before {
+.cart_table_sp > tbody > tr > td:nth-child(2):before {
 content: "商品単価";
     background: #FFF;
     color: #333;
@@ -244,7 +244,7 @@ content: "商品単価";
 	display:block !important;
 	margin:10px 0 !important;
 }
-.cart_table_sp td:nth-child(4):before {
+.cart_table_sp > tbody > tr > td:nth-child(4):before {
 content: "数量";
     background: #FFF;
     color: #333;
@@ -256,7 +256,7 @@ content: "数量";
 	display:block !important;
 	margin:10px 0 !important;
 }
-.cart_table_sp td:nth-child(5):before {
+.cart_table_sp > tbody > tr > td:nth-child(5):before {
 content: "小計";
     background: #FFF;
     color: #333;
@@ -268,7 +268,7 @@ content: "小計";
 	display:block !important;
 	margin:10px 0 !important;
 }
-.cart_table_sp td:nth-child(5){
+.cart_table_sp > tbody > tr > td:nth-child(5){
 	margin-bottom:20px
 }
 
@@ -347,10 +347,79 @@ input[type="radio"]:checked:after {
      overflow-x: hidden; 
  }
 }
-
-
-
 </style>
+
+<!-- ▼▼▼/* 分割払い表示調整 */▼▼▼ -->
+<style>
+	@media screen and (min-width: 768px) {
+		#shopping-cart.wrap--default {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	.cartLeft {
+		width: 745px;
+	}
+	@media (max-width: 640px) {
+		.cartLeft {
+			width: 100%;
+			float: none;
+			margin-bottom: 30px;
+		}
+	}
+	.cart_table_02 td > table tr:first-of-type td {
+		border-top: none !important;
+	}
+	@media (max-width: 640px) {
+		.cart_table_sp > tbody > tr.split_table > td:nth-child(3):before {
+			content: "数量";
+			background: #FFF;
+			color: #333;
+			width:98% !important;
+			padding:5px;
+			border-bottom: 1px solid #464646 !important;
+			font-size:14px;
+			font-weight:bold;
+			display:block !important;
+			margin:10px 0 !important;
+		}
+		.cart_table_sp > tbody > tr.split_table .cart_table_99  {
+			background: none;
+		}
+		.cart_table_sp > tbody > tr.split_table .cart_table_99 tr.lastChild {
+			padding-top: 14px;
+		}
+		.cart_table_sp > tbody > tr.split_table > td:nth-child(4):before {
+			content: "小計";
+			background: #FFF;
+			color: #333;
+			width:98% !important;
+			padding:5px;
+			border-bottom: 1px solid #464646 !important;
+			font-size:14px;
+			font-weight:bold;
+			display:block !important;
+			margin:10px 0 !important;
+		}
+		.cart_table_sp > tbody > tr.split_table > td:nth-child(5):before {
+			display: none;
+		}
+	}
+</style>
+<script>
+	// 分割払いの場合、class追加
+	jQuery(document).ready(function($){ 
+		var cartTable99 = $(".cart_table_99");
+		if(cartTable99.length) {
+			for(var i=0; i < cartTable99.length; i++) {
+				var trParent = cartTable99.parent().parent();
+				trParent.addClass("split_table")
+			}
+		}
+	})
+</script>
+<!-- ▲▲▲/* 分割払い表示調整 */▲▲▲ -->
+
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
@@ -1319,7 +1388,7 @@ $(window).on('load resize', function(){
 </td>
 </span>
 <span m:id="l_equ_installment">
-<td colspan="2" >
+<td colspan="2" class="left lump1 addbod">
   <table cellpadding="0" cellspacing="0" border="0" class="cart_table_99">
   <tbody>
 	<tr><td class="left lump1">一括払</td>
