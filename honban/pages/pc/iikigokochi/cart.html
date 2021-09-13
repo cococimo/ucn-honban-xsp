@@ -83,9 +83,7 @@ $(function() {
 .ad_navi .ad_navi_t {
     background: #b22222 !important;
 }
-.go_input a {
-    background: none repeat scroll 0 0 #b22222 !important;
-}
+
 .memadd_table_02 {
     border-bottom: none;
 }
@@ -1804,12 +1802,23 @@ $(window).on('load resize', function(){
     <span class="btntxt">ログインして購入</span>
   </a>
 </div>
-<p class="addText2">新商品デビュー時、<br>会員様限定の先行販売も！</p>
+<p class="addText2">新規登録で<br>500ポイントプレゼント！</p>
+
+
+      <form m:id="h_form_orderMemberAdd" method="post" action="memberAdd.html">
+        <input type="hidden" name="cart_flg" value="1"/>
+          <input type="submit" value="会員登録をして購入" class="register-btn cart-buy__btn cart-buy__btn2021">
+        </form>
+
+
+<!---
 <div class="mb20 go_loginbtn member">
   <a href="#member_registration">
     <span class="btntxt">会員登録をして購入</span>
   </a>
 </div>
+
+--->
 
 </span>
 <!----/20200409 DLPO追加------->
@@ -1817,11 +1826,27 @@ $(window).on('load resize', function(){
 
 
 	<div class="box_02 go_input mb20">
-	<span m:id="l_msgNotPre_1">
+			
+				<span m:id="l_notPre_member_login_shop">
+					<span m:id="l_msgNotPre_1">
+
 						<a m:id="h_link_order_only_shop" href="orderInput.html" onclick="">
-							<span style="color:#FFFFFF">お客様情報入力へ</span>
+							<span class="guest2021">会員登録せずに購入</span>
 						</a>
 					    </span>
+				</span>
+
+
+
+				<span m:id="l_pre_member_logout_button_shop">
+					<span m:id="l_msgNotPre_1">
+
+						<a m:id="h_link_order_only_shop" href="orderInput.html" onclick="">
+							<span class="register-btn cart-buy__btn cart-buy__btn2021">お客様情報入力へ</span>
+						</a>
+					    </span>
+				</span>
+
 
 					<span m:id="l_msgPre_3">
 						<a m:id="e_link_shop" href="/" style="pointer-events:none; background-color:#999999;">
@@ -1834,7 +1859,7 @@ $(window).on('load resize', function(){
 	
 	<div class=" box_01 n_bt_re_01 go_buy mb30">
   <!-- <a m:id="e_link_shop" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a> -->
-  <a class="parentsLink historyback" href="/"><span style="color:#FFFFFF">お買い物を続ける</span></a>
+  <a class="parentsLink historyback parentsLink2021" href="/"><span style="color: #000;font-weight: normal;font-size: 90%;">お買い物を続ける</span></a>
 
 </div>
 
@@ -2138,24 +2163,36 @@ $(window).on('load resize', function(){
           </form>
         </div>
       </div>
+
+
+
+
       <div class="cart-buy__notMember">
         <div class="cart-buy__guest cart-buy__box">
-          <p class="cart-buy__guest-tit cart-buy__tit">会員登録をせずに購入</p>
-          <a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="guest-btn cart-buy__btn">ゲスト購入</a>
-        </div>
-        <div class="cart-buy__add cart-buy__box" id="member_registration">
-          <div class="cart-buy__add-titArea">
+
+         <div class="cart-buy__add-titArea">
             <p class="cart-buy__add-tit cart-buy__tit">新規会員登録</p>
             <p class="cart-buy__add-note">初めてのお客様はこちらから</p>
           </div>
           <p class="cart-buy__add-txt">会員登録をすると、次回以降、お届け先登録が省略できる<br>
-          ほか、各種お得な情報をお届けいたします。</p>
+          ほか、次回以降のお買い物で使えるお得なポイントが溜まります。</p>
         <form m:id="h_form_orderMemberAdd" method="post" action="memberAdd.html">
         <input type="hidden" name="cart_flg" value="1"/>
-          <input type="submit" value="会員登録をして購入" class="register-btn cart-buy__btn">
+          <input type="submit" value="会員登録をして購入" class="register-btn cart-buy__btn" style="background-color:#b22222;">
         </form>
         </div>
+
+        <div class="cart-buy__add cart-buy__box" id="member_registration">
+
+          <p class="cart-buy__guest-tit cart-buy__tit">会員登録をせずに購入</p>
+          <a m:id="h_link_order_only_shop" href="orderInput.html" onclick="" class="guest-btn cart-buy__btn" style="background-color:#666;">ゲスト購入</a>
+ 
+        </div>
+
       </div>
+
+
+
     </div>
     <div class="contents_foot viewSp">
       <table class="memadd_table_02" cellspacing="0" cellpadding="0" border="0">

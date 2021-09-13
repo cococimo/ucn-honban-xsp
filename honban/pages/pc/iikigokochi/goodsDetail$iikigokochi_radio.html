@@ -489,7 +489,7 @@ div.res_cart a:hover{
 .l_con_list_03 li{
 	background:#F5F3F1;
 	padding:0;
-	width:155px;
+	width:120px;
 	height:35px;
 	text-align:center;
 	line-height:35px;
@@ -505,16 +505,12 @@ div.res_cart a:hover{
 .l_con_list_03 li:first-child{
 	margin-right:5px;
 }
-.l_con_list_03 li:last-child{
-	margin-left:5px;
-}
+
 }
 .l_con_list_03 li:first-child{
 	float:left;
 }
-.l_con_list_03 li:last-child{
-	float:right;
-}
+
 .sec_goods{
 	margin:0;
 	clear:both;
@@ -644,12 +640,10 @@ div.res_cart a:hover{
 .bannerbox li:first-child {
     float: left;
 }
-.bannerbox li:last-child {
-    float: right;
+.bannerbox li{
+	float:left;
 }
-.bannerbox li .banner_inner_inner {
-    min-height: 58px;
-}
+
 @media (max-width:640px) {
 .contents_left .detailTop .topItemL .slider .sliderCarousel .slides{
 	width:auto !important;
@@ -1850,6 +1844,8 @@ $(window).on('load resize', function(){
         <h4>ご利用可能な決済方法</h4>
         <ul>
           <li>カード決済</li>
+          <li>後払い</li>
+
           <li>代金引換</li>
         </ul>
       </div>
