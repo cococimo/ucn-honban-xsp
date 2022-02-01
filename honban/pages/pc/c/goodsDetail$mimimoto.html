@@ -26,7 +26,7 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css?20210818" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css?20191003" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/style.css?20191003" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
@@ -1207,221 +1207,243 @@ function showCartButton1(obj){
 					margin: 15px 0 10px;
 				}
 			}
+		</style>
 
-			/* 価格info */
-			.price_info_area {
-				font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-				font-size: 15px;
-				margin: 0 auto 42px;
-				font-weight: normal;
-				position: relative;
-				display: flex;
-				flex-wrap: nowrap;
-				justify-content: center;
-			}
+		<div class="info_wrap" id="shop_smooth">
+			<p class="dvd_pic">
+			<img src="/contents/shop/00000003/image/static/mimimoto/seventh-img01.png" alt="みみもとくんプレミアム">
+			</p>			
+		</div>
+
+		<style>
+			/* お支払いinfo　CSS調整 */
 			@media (max-width: 767px) {
 				.price_info_area {
-					font-size: 1em;
-					margin: 0 15px 0;
-					display: block;
+					margin: 0 0 0 !important;
 				}
 			}
-			.price_info_area .price_info {
-				width:360px;
-				margin-right: 20px;
-			}
-			@media (max-width: 767px) {
-				.price_info_area .price_info {
-					width:auto;
-					margin-right: 0;
-					display: flex;
-					flex-direction: column;
-				}
-				.price_info_area .price_info .price_split_wrap{
-					order: 1;
-			
-				}
-				.price_info_area .price_info .plice_list {
-					order: 3
-			
-				}
-				.price_info_area .price_info .price-notice {
-					order: 2;
-					margin-bottom: 20px;
-				}
-			}
-			.price_info_area .plice_delivery {
-				width:291px;
-			}
-			@media (max-width: 767px) {
-				.price_info_area .plice_delivery {
-					width:auto;
-				}
-			}
-			.price_info_area .price_info .price_split_wrap {
-				border: 1px solid #acdde0;
-				padding: 2% 3%;
-				margin: 0 0 3px;
-			}
-			.price_info_area .price_info .price_split_wrap .kakaku {
-				font-size: .9em;
-			}
-			.price_info_area .price_info .price_split_wrap .price_split {
-				font-size: 1.3em;
-				font-weight: bold;
-				margin-bottom: 5px;
-			}
-			.price_info_area .price_info .price_split_wrap .price_split span {
-				vertical-align: baseline;
-			}
-			.price_info_area .price_info .price_split_wrap .price_split span.month {
-				font-weight: normal;
-			}
-			.price_info_area .price_info .price_split_wrap .price_split span.value {
-				color: #cf1f1f;
-				font-weight: bold;
-				font-size: 1.9em;
-			}
-			.price_info_area .price_info .price_split_wrap .price_split span.num {
-				font-weight: bold;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail {
-				overflow: hidden;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail dt {
-				width: 50%;
-				float: left;
-				padding:5px;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail dt:last-of-type {
-				padding-bottom:0;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail dt.indent {
-				padding-left: 1em;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail dd {
-				padding:5px 5px 5px 40%;
-				border-bottom: 1px dotted #ccc;
-				text-align: right;
-			}
-			.price_info_area .price_info .price_split_wrap .price_detail dd:last-of-type {
-				padding:5px 5px 0 40%;
-				border-bottom: none;
-			}
-			.price_info_area .price_info .plice_list {
-				text-align: center;
-			}
-			@media (max-width: 767px) {
-				.price_info_area .price_info .plice_list img {
-					width: auto;
-					max-width: 291px;
-				}
-			}
-			
-			.price_info_area .price_info .price-notice {
-				font-size: .83em;
-				margin-top: 5px;
-			}
-			.price_info_area .price_info .price-notice  li {
-				text-indent: -1em;
-				padding-left: 2em;
-			}
-			@media (max-width: 767px) {
-				.plice_delivery {
-					text-align: center;
-					padding-top:10px;
-				}
-				.plice_delivery img {
-					width: auto;
-					max-width:291px;
-				}
-			}
-			.plice_delivery .return_txt {
-				padding:10px 0 30px;
-				text-align: center;
-			}
-			@media (max-width: 767px) {
-				.plice_delivery .return_txt {
-					padding:5px 0 10px;
-					text-align: center;
-				}
-			}
-			.goods_detail_item_postage {
-				display: block;
-				margin-top: 0;
-				margin-bottom: 5px;
-				margin-left: auto;
-				margin-right: auto;
-				text-align: center;
-				font-size: 1em;
-				font-weight: normal;
-				border: 1px solid #cc1010;
-				line-height: 1.5em;
-			}
-			@media screen and (max-width: 767px) {
-				.goods_detail_item_postage {
-				width: auto;
-				}
-			
-			}
-			</style>
+		</style>
 
-			<div class="info_wrap" id="shop_smooth">
-				<p class="dvd_pic">
-				<img src="/contents/shop/00000003/image/static/mimimoto/seventh-img01.png" alt="みみもとくんプレミアム">
-				</p>			
-  			</div>
+		<!--▼▼▼ 分割&一括払い切り分け ▼▼▼-->
+		<script>
+			// 後払いの場合、一括価格を非表示
+			$(function() {
+			if(!$('#price_split').length){
+				$("#price_bulk").css({display: "block"});
+			}
+		});
+		</script>
+		<!--▲▲▲ 分割&一括払い切り分け ▲▲▲-->
 
-			<div class="price_info_area">
-			<div class="price_info">
-				<div class="price_split_wrap">
-					<p class="kakaku">【税込価格】</p>
-					<p class="price_split"><span class="month">月々 </span><span class="value">1,860円</span><span class="num">×15回払</span></p>
-					<p class="goods_detail_item_postage">
-						<!--<span class="goods_detail_item_postage_prefix">￥</span>-->送料無料
-					</p>
-					<dl class="price_detail">
-						<dt>■分割払価格</dt>
-						<dd>27,900円</dd>
-						<dt class="indent">●一回の分割払金</dt>
-						<dd>1,860円</dd>
-						<dt class="indent">●支払回数</dt>
-						<dd>15回</dd>
-						<dt class="indent">●支払期間</dt>
-						<dd>15ヶ月</dd>
-						<dt>■一括払価格</dt>
-						<dd>27,900円</dd>
-					</dl>
+		<!--▼▼▼ お支払いinfo ▼▼▼-->
+			<link rel="stylesheet" href="/contents/c/css/price_info/price_info_normal.css" type="text/css" media="all" charset="utf-8">
+
+			<div class="inner_box04 sp_margin seventh item_info mt60 s_mt30">
+				<h2 style="display: none;"><span m:id="disp_goods_name">ダミー商品</span><span m:id="l_notEmp_goods_sku_name">&nbsp;<span m:id="disp_goods_sku_name">ダミー商品sku</span></span></h2>
+				<div class="price_img" style="display: none;">
+					<span m:id="l_notEmp_static_img_temp1">
+						<!--<span m:id="l_ite_static_img_temp1"><img m:id="h_img_productDetail_static_img_temp1" src="../../../contents/shop/00000002/image/no_image_eastEc.jpg" alt="ダミー商品" width="200" border="0"/></span>-->
+						<span m:id="l_ite_static_img_temp1">
+							<span m:id="l_disp_image">
+								<img m:id="h_img_productDetail_static_img_temp1" src="contents/shop/00000002/image/no_image_eastEc.jpg" alt="ダミー商品" border="0"/>
+							</span>
+						</span>
+					</span>
 				</div>
-				<div class="plice_list">
-					<img src="contents/c/image/static/img/infotext01_postpay.png" alt="後払い（分割/一括）手数料0円　クレジットカード　手数料0円 代金引換　代引手数料300円">
+
+				
+				<div class="price_info_area" >
+					<div class="price_info">
+						<!-- 一括支払い-->
+						<div class="price_bulk_wrap" id="price_bulk" style="display: none;">
+							<p class="price_bulk"><span class="ikkatsu">一括払価格</span><span m:id="b_wr_actualSalePrice">30,240</span><span class="yen">円</span></p>
+							<p class="goods_detail_item_postage"><!--<span class="goods_detail_item_postage_prefix">￥</span>-->送料無料</p>
+							<!-- <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span> -->
+						</div><!-- price_split_wrap -->
+						<!--/一括支払い-->
+
+						<!--分割支払い-->
+						<span m:id="l_notPre_settle_040">
+						<div class="price_split_wrap" id="price_split">
+							<p class="kakaku">【税込価格】</p>
+							<p class="price_split"><span m:id="l_notEmp_memberSpecialDiscountOpacity">月々</span>
+								<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+									<span class="num">
+										<span class="value">
+											<span m:id="l_pre_disp_installment">
+												<span m:id="disp_installment" class="bold">1780</span><span>円</span></span></span><span m:id="l_pre_disp_goods_pay_times">×<span m:id="disp_goods_pay_times">12</span></span>回払い
+									</span>
+							</p>
+							<p class="goods_detail_item_postage"><!--<span class="goods_detail_item_postage_prefix">￥</span>-->送料無料</p>
+							<!-- <span m:id="l_pre_disp_colname3"><span m:id="disp_colname3">ここにBOの登録タイトル3が表示されます。</span></span> -->
+							<dl class="price_detail">
+								<dt>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">■分割払価格</span>
+								</dt>
+								<dd>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+										<span m:id="l_pre_disp_total_installment">
+											<span m:id="disp_total_installment">23,760</span>&nbsp;円&nbsp;
+										</span>
+									</span>
+								</dd>
+								<dt class="indent">
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity" class="indent">●一回の分割払金</span>
+								</dt>
+								<dd>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+										<span m:id="l_pre_disp_installment">
+											<span m:id="disp_installment">1,980</span>&nbsp;円&nbsp;
+										</span>
+									</span>
+								</dd>
+								<dt class="indent">
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払回数</span>
+								</dt>
+								<dd>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+										<span m:id="l_pre_disp_goods_pay_times">
+											<span m:id="disp_goods_pay_times">12</span>&nbsp;回&nbsp;
+										</span>
+									</span>
+								</dd>
+								<dt class="indent">
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">●支払期間</span>
+								</dt>
+								<dd>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+										<span m:id="l_pre_disp_goods_pay_term">
+											<span m:id="disp_goods_pay_term">12</span>&nbsp;ヶ月&nbsp;
+										</span>
+									</span>
+								</dd>
+								<dt>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">■一括払価格</span>
+								</dt>
+								<dd>
+									<span m:id="l_notEmp_memberSpecialDiscountOpacity">
+										<span m:id="l_notEqu_pretaxPrice">
+											<span m:id="b_wr_pretaxPrice">24800</span>
+										</span>
+									<span m:id="b_wr_actualSalePrice">17800</span>
+										
+									<!-- <span m:id="l_equ_memberSpecialDiscount"><br><span style="color:#FF0000;font-size:20px;">会員限定価格&nbsp;<span m:id="disp_memberSpecialPrice">9800</span>&nbsp;円</span></span> -->
+									<!-- 会員限定で値引きの場合、表示される -->
+									<span>円&nbsp;</span>
+									<!-- <span m:id="l_notPre_settle_040">※全て消費税が含まれた金額です </span>
+									<span m:id="l_pre_settle_040">※上記は消費税が含まれた金額です </span> -->
+								
+								</dd>
+							</dl>
+						</div><!-- price_split_wrap -->
+					</span>
+					<!-- /分割支払い-->
+
+						<ul class="price_notice">
+							<li>※金額はすべて税込みです。</li>
+							<!-- <li style="letter-spacing:-0.05em">※現在、本商品はクレジットカード決済はご利用いただけません。</li> -->
+							<li>※代金引換の場合は、一括払いのみとなります。</li>
+							<li class="date_3-6">※商品はお申込みから通常3&#xFF5E;6日前後でお届けいたします。</li>
+							<!-- <li class="gift">※ギフトラッピングには対応しておりません。</li> -->
+						</ul>
+
+						<div class="item_plan_list">
+							<!-- チャネル別決済種別制限取得 -->
+							<div class="goods_detail_item_plan">
+								<object class="xsp_obj" m:id="e_var_settlementMap"></object>
+								<p class="goods_detail_item_plan_tit">選択可能なお支払い方法</p>
+								<ul class="goods_detail_item_plan_list">
+									<!-- <li><span class="icon-circle"></span>クレジットカード</li>
+									<li><span class="icon-circle"></span>代金引換</li> -->
+								<span m:id="l_pre_item_limit">
+								<span m:id="b_wr_valied_settle_sort"></span>
+								<span m:id="l_ite_valid_settle_sort">
+								<li><img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" /></li>
+								</span>
+								</span>
+								</ul>
+								<div class="l_con_list_03" style="display: none;">
+									<span m:id="l_pre_item_limit">
+										<span m:id="l_ite_valid_settle_sort" >
+											<img m:id="h_img_ok_settle" src="../../../contents/shop/00000003/icon/settle_ok_040.gif" alt="後払い可" />
+										</span>
+										<span m:id="l_notEmp_item_limit">
+											※以下の決済方法はご利用いただけません<br/>
+											<span m:id="l_ite_item_limit">
+												<span m:id="l_equ_item_040">
+													<div class="error">
+														<table>
+															<tr>
+																<td valign="top">
+																	<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+																</td>
+																<td>
+																	<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+																</td>
+															</tr>
+														</table>
+													</div>
+												</span>
+												<!--
+												<div class="error">
+												&nbsp;<img m:id="h_img_settle_limit" src="../../../contents/shop/00000003/icon/settle_limit_040.gif" alt="後払い不可" align="left" />
+												<span m:id="disp_settle_limit_reason">はご利用いただけません。</span><br/>
+												</div>
+												-->
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<!-- /チャネル別決済種別制限取得 -->
+						<p class="s_tac notic_txt">
+							<a href="#about_payment" class="cmn_link01" data-featherlight="#about_payment">お支払い方法について</a>
+							<a href="#about_postage" class="cmn_link01" data-featherlight="#about_postage">送料について</a>
+							<a href="#return_goods" class="cmn_link01" data-featherlight="#return_goods" >返品について</a>
+						</p>
+					</div>
 				</div>
-				<ul class="price-notice">
-					<li>※金額はすべて税込みです。</li>
-					<li>※代金引換の場合は、一括払いのみとなります。</li>
-					<li>※商品はお申込みから通常7&#xFF5E;10日前後でお届けいたします。</li>
-				</ul>
-			</div>
-			<div class="plice_delivery">
-				<img src="/contents/shop/00000003/image/static/mimimoto/infotext02_free.png" alt="送料は当社が負担　8日以内であれば返品可能（未接続の場合に限る）返品時の送料：お客様負担">
-				<p class="return_txt">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+
+				<div class="plice_delivery">
+					<img src="/contents/c/image/static/img/infotext02_free.png" alt="送料は当社が負担　8日以内であれば返品可能（未使用の場合に限る）返品時の送料：お客様負担">
+					
+					<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時～12時 14時～15時 16時～18時 18時～20時 19時～21時"></div>
+				</div>
+				</div><!-- /item_info -->
+
 				<!--▼▼▼モーダル▼▼▼-->
+				<div id="about_payment" class="lightbox">
+					<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">お支払い方法について</span></h2>
+					<p style="font-size: 15px;">ココチモでお買い上げいただいた商品は「後払い」「クレジットカード」「代金引換」でのお支払いが可能です。<br />ただし、「代金引換」を選択された場合には、代引き手数料として別途300円をいただきます。<br />商品をお買い上げの際に、「お客様情報入力」フォームでいずれかを選択してください。</p>
+					<p class="mt20 s_mt10" style="font-size:13px;">※お申込み口数によっては、当社規定により後日お支払い方法を変更させていただく場合がございます。</p>
+					<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+				</div>
+				<!-- /#about_payment -->
+				<div id="about_postage" class="lightbox">
+					<h2 class="cmn_tit01 mt0 mb15 s_mb15"><span class="cmn_tit01_underline">通常商品</span></h2>
+					<p class="mb30 s_mb15" style="font-size: 15px;">一回のご注文金額の合計が税込み10,000円以上の場合、<span class="bold">送料無料（当社負担）でお届け致します。</span>税込10,000円に満たない場合は、<span class="bold">250円</span>、また、税込5,000円未満の場合は<span class="bold">500円</span>を全国一律にてご負担いただきます。<br />
+					<span class="notice" style="font-size:13px;">※大きさ等によっては個別送料が発生する商品がございます。詳しくは各商品詳細ページをご確認ください。</span>
+					</p>
+					<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+				</div>
+				<!-- /#about_postage -->
 				<div id="return_goods" class="lightbox">
 					<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
 					<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
 					<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
 					<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
-				</div><!-- /#return_goods -->
-				<div class="pho_box"><img src="contents/c/image/static/img/infotext03.png" alt="配送指定も選べます。配送日指定可　時間帯指定可　配送先指定可 午前中8時&#xFF5E;12時 14時&#xFF5E;15時 16時&#xFF5E;18時 18時～20時 19時～21時"></div>
-			</div>
-			</div>
+				</div>
+				<!-- /#return_goods -->
+				<!--▲▲▲モーダル▲▲▲-->
+
+			<!--▲▲▲ お支払いinfo ▲▲▲-->
 
 
-	<!-- 価格変更のご案内　ここから 
-	<div class="info_txt">
-	※こちらの商品は、2019年6月2日より価格を改定いたします。
-	</div>
-	  価格変更のご案内　ここまで -->
+			<!-- 価格変更のご案内　ここから 
+			<div class="info_txt">
+			※こちらの商品は、2019年6月2日より価格を改定いたします。
+			</div>
+			価格変更のご案内　ここまで -->
 
 
 					<form m:id="h_form_cartGoodsAdd8" method="POST" action="cart.html">
@@ -1451,6 +1473,9 @@ function showCartButton1(obj){
 					</form>
 				<!-- 商品詳細など -->
 				<style>
+					#content_wrap .seventh h2 {
+						display: block;
+					}
 					.mimimoto_spec .juden {
 						display: inline-block;
 						font-weight: bold;
@@ -1480,7 +1505,7 @@ function showCartButton1(obj){
 						<p><strong>【みみもとくん（本体）】</strong><br>●受信周波数帯：2.4GHz帯●FM受信周波数：76MHz&#xFF5E;108MHz ●AM受信周波数：522kHz&#xFF5E;1620kHz ●電源：内蔵リチウムイオン充電池●電源端子（充電）：DC5.0V（付属の電源コードを使用）●連続使用時間（約）：最大15時間（音量９段階中２の時）●充電時間（約）：4.5時間●スピーカー（約）：直径50mm×2 ●実用最大出力：1.3W＋1.3W（電源コード使用時）1.0W＋1.0W（充電池使用時）●ヘッドホン端子：直径3.5mmステレオミニジャック●外部入力端子：直径3.5mmステレオミニジャック●外形寸法（約）：幅190mm×奥行140mm×高さ136mm●質量（約）：540g</p>
 						<p><strong>【付属品】</strong><br>●送信機用電源コード●本体用電源コード●音声プラグコード●両面シール（送信機固定用）●イヤホン</p>
 						<p>■企画・販売：ユーキャン・ココチモ<br>■製造元：エムケー精工株式会社<br>■製造：中国</p>
-						<p>※本製品は日本国内専用です。他国には独自の安全規格が定められており、本製品が他国の規格に適合することは保証いたしかねます。<br class="hidden-pc">※本製品の電波は送信出力が小さいですが、医療機器等に影響を与えるおそれがあります。心臓ペースメーカーをご使用の方は、本製品使用にあたり医師とご相談ください。<br class="hidden-pc">※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。<br class="hidden-pc">※使用後（接続後）の返品はお受けできませんのであらかじめご了承ください。</p>
+						<p>※本製品は日本国内専用です。他国には独自の安全規格が定められており、本製品が他国の規格に適合することは保証いたしかねます。<br class="hidden-pc">※本製品の電波は送信出力が小さいですが、医療機器等に影響を与えるおそれがあります。心臓ペースメーカーをご使用の方は、本製品使用にあたり医師とご相談ください。<br class="hidden-pc">※実際の商品になるべく近い色の再現に努めておりますが、撮影条件等により実際の商品と色味が異なる場合がございます。木目の柄は製品ごとに若干の差異があります。<br class="hidden-pc">※使用後（接続後）の返品はお受けできませんのであらかじめご了承ください。<br class="hidden-pc">※すべての方に効果があるわけではありません。</p>
 					</div>
 				</div>
 				<style>

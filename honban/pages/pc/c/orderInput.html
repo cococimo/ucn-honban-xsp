@@ -23,7 +23,7 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css?20210818" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/style.css?20191107" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
@@ -1627,9 +1627,19 @@ $(function () {
 									<h5 class="add_h5 mt10 viewPc">●ココチモ会員の方</h5>
 									<p class="mt10 viewPc">下記にログインID・パスワードを入力してログインしてください。</p>
 									<h5 class="add_h5 mt10 viewSp"><span class="more_login_btn">●ココチモ会員の方は<a href="javascript:void(0); return false">こちら</a></span></h5>
-									<p class="mt10"><a href="/shop/memberAdd.do" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
+									<p class="mt10" id="new-client"><a href="/shop/memberAdd.do" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
 
 								</div>
+								<!--▼▼▼ 電子辞書専用ページからの遷移 ▼▼▼-->
+								<script>
+			
+									const referrerURL = document.referrer;
+									const targetURL01 = "/shop/c/static/item_dcefum/";
+									if(referrerURL.indexOf(targetURL01) > 0) {
+										document.getElementById("new-client").style.display = "none";
+									}
+								</script>
+								<!--▲▲▲ 電子辞書専用ページからの遷移 ▲▲▲-->
 
 								<div id="more_login_text">
 								<span m:id="l_msgPre_errors_member_login">
