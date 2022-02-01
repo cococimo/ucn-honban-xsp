@@ -181,6 +181,16 @@ jQuery(document).ready(function($){ //ここから
 
 <link rel="stylesheet" type="text/css" href="/contents/shop/00000006/css/member/style.css"/>
 <style>
+
+
+
+a:link { color: #00a1e9; }
+a:visited { color: #00a1e9; }
+a:hover { color: #ff0000; }
+a:active { color: #00a1e9; }
+
+
+
 #contents{
   width:960px;
   margin:0 auto;
@@ -713,6 +723,8 @@ $(window).on('load resize', function(){
 </h1>
 <span m:id="l_notPre_free_guide">
 <p class="left memadd_mb_02">
+会員登録をしておけば、便利でお得なメリットがいっぱい！<br>
+詳細は<a href="/shop/static/member_merit/" target="blank">「会員登録のご案内」</a>をご確認ください。<br><br>
 新規会員登録をご希望の方は以下のフォームに必要事項をご入力下さい。<br />
 すでに会員情報を登録いただいたことがあるお客様はご登録は不要です。
 </p>
@@ -751,37 +763,7 @@ $(window).on('load resize', function(){
 			</span>
 			<!--/ エラーメッセージ -->
 
-<h4 class="temp_tit_06 clear"><div>ログインID・パスワードの入力（ログイン時に必要な情報になります）</div></h4>
 
-<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
-<tr><th>希望ログインID<span class="imp">必須</span></th><td class="bor_bottom">
-<div class="memadd_t_box_04 clearfix">
-<span class="exp">例）<span m:id="sample_loginid">例：0123456</span></span>
-<div class="box_01">
-<input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_06"/></div>
-<div class="box_02">
-<a m:id="a_bt_idCheck" href="" onclick="" class="form-btn">IDチェック</a><p class="supple_01">使用できるIDかチェックします</p>
-</div></div>
-<div><span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span></div>
-						<div><span class="error"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></span></div>
-                        </td></tr>
-<tr><th class="none_bor">パスワード<span class="imp pc_b_t_02">必須</span></th><td>
-<div class="memadd_t_box_04 clearfix">
-<span class="exp">例）tuuhan0123(半角英数字、8&#65374;20文字)</span>
-<div class="box_01">
-<input m:id="h_pwd_password" type="password" name="password" class="in_w_06" />
-</div>
-<div class="clear"><span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span></div>
-</td></tr>
-<tr><th class="none_bor">パスワード（確認用）<span class="imp pc_b_t_02">必須</span></th><td>
-<div class="memadd_t_box_04 clearfix">
-<span class="exp">確認のためもう一度お願いします。コピー貼り付けはしないでください。</span>
-<div class="box_01">
-<input type="password" name="password_confirm" class="in_w_06"  oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);"/>
-</div>
-<div class="clear"><span class="error"><span m:id="h_err_password_confirm">パスワード確認エラーメッセージ</span></span></div>
-</td></tr>
-</table>
 
 <span m:id="l_notPre_member">
 <h4 class="temp_tit_06 clear"><div>お客様情報の入力</div></h4>
@@ -1107,6 +1089,59 @@ $(window).on('load resize', function(){
 </table>
 </span>
 
+
+
+
+
+
+
+
+
+
+
+
+<h4 class="temp_tit_06 clear"><div>ログインID・パスワードの入力（ログイン時に必要な情報になります）</div></h4>
+
+<table cellpadding="0" cellspacing="0" border="0" class="memadd_table_01">
+<tr><th>希望ログインID<span class="imp">必須</span></th><td class="bor_bottom">
+<div class="memadd_t_box_04 clearfix">
+<span class="exp">例）yamada1234(半角英数字、8&#65374;20文字）<br>※アンダースコア( _ )、ハイフン( - )、ピリオド( . )以外の記号は使用できません。</span>
+
+<div class="box_01">
+<input m:id="h_txt_login_id" type="text" name="login_id" class="in_w_06"/></div>
+<div class="box_02" id="idCheck">
+<a m:id="a_bt_idCheck_scroll" href="" onclick="" class="form-btn">IDチェック</a><p class="supple_01">使用できるIDかチェックします</p>
+</div>
+</div>
+<div><span class="error"><span m:id="h_err_login_id">ログインIDエラーメッセージ</span></span></div>
+						<div><span class="error"><span m:id="h_err_duplicate_login_id">ログインID重複エラーメッセージ</span></span></div>
+                        </td></tr>
+<tr><th class="none_bor">パスワード<span class="imp pc_b_t_02">必須</span></th><td>
+<div class="memadd_t_box_04 clearfix">
+<span class="exp">例）tuuhan0123(半角英数字、8&#65374;20文字）<br>※アンダースコア( _ )、ハイフン( - )、ピリオド( . )以外の記号は使用できません。</span>
+<div class="box_01">
+<input m:id="h_pwd_password" type="password" name="password" class="in_w_06" />
+</div>
+<div class="clear"><span class="error"><span m:id="h_err_password">パスワードエラーメッセージ</span></span></div>
+</td></tr>
+<tr><th class="none_bor">パスワード（確認用）<span class="imp pc_b_t_02">必須</span></th><td>
+<div class="memadd_t_box_04 clearfix">
+<span class="exp">確認のためもう一度お願いします。コピー貼り付けはしないでください。</span>
+<div class="box_01">
+<input type="password" name="password_confirm" class="in_w_06"  oncontextmenu="return false;" onkeydown="return checkConfirmKeyDown(event);"/>
+</div>
+<div class="clear"><span class="error"><span m:id="h_err_password_confirm">パスワード確認エラーメッセージ</span></span></div>
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
 </div>
 
 
@@ -1180,7 +1215,7 @@ $(window).on('load resize', function(){
 
 <div class="memadd_cau_box_02">
 入力いただきました内容、会員規約をご確認のうえ、<br />
-確認ボタンを押してください。個人情報の取り扱いについては<a href="/shop/static/protection/" target="_blank">こちら</a>。
+確認ボタンを押してください。個人情報の取り扱いについては<a href="/shop/static/protection/" target="_blank" style="color:#333;">こちら</a>。
 
 </div>
 
@@ -1220,13 +1255,13 @@ $(window).on('load resize', function(){
 				if (wrapped) {
 					wrapped();
 				}
-				alert("ご指定のIDはご使用になれます。");
+				swal("ご指定のIDはご使用になれます。");
 			};
 		}
 		//--></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 		</div>
 		</span>
-
 
 <!-- InstanceEndEditable --></div>
 
