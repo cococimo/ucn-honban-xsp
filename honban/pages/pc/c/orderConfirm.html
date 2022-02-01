@@ -23,7 +23,7 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css?20210818" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
@@ -606,7 +606,7 @@ $(function(){
 						<span m:id="l_notPre_free_guide">お申込み内容の確認<span m:id="l_pre_free_guide">資料請求情報確認</span>
 					</h1>
 					<span m:id="l_notPre_free_guide">
-						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「この内容で申込む」を押してください。<br>修正したい場合は、「入力内容を修正」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社の「個人情報保護方針」に同意いただいたものとみなします。</p>
+						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「同意して申込む」を押してください。<br>修正したい場合は、「入力内容を修正」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社の「<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報保護方針</a>」に同意いただいたものとみなします。</p>
 					</span>
 					<span m:id="l_msgPre_1"><div class="error red"><span m:id="h_err_1">エラーメッセージ</span></div></span>
 				</div>
@@ -730,7 +730,7 @@ $(function(){
 									<p>
 									商品金額は支払い方法にかかわらず一括払金額を表示しています。<br>
 									獲得予定ポイントは代金完済後に付与されます。<br>
-									上記内容をお確かめの上、間違いがなければ「この内容で申込む」を押してください。</p>
+									上記内容をお確かめの上、間違いがなければ「同意して申込む」を押してください。</p>
 								</div>
 							</div>
 							<!-- /#js-side_sticky -->
@@ -1175,10 +1175,11 @@ $(function(){
 						</span>
 						<!-- /back_link-->
 
-					<!--▼▼▼個人情報保護方針▼▼▼-->
+					<!--▼▼▼個人情報保護方針ココチモ▼▼▼
 					<style>
 						.policy_term {
 							font-size: 14px;
+							display: none;
 						}
 						.policy_term .cmn_tit01 {
 							max-width: 980px;
@@ -1225,9 +1226,9 @@ $(function(){
 							<div class="policy_box">
 								<h2 class="cmn_tit03 tit_top">【ユーキャンは個人情報を厳重に管理します】</h2>
 								<p class="txt">お客様の個人情報は、当社の教材・商品の発送やサービスの提供およびアンケート調査のほか、当社および当社が適切と認めた企業・団体等の商品・サービスに関する当社からの案内等に利用します。
-								<!-- <span class="mt10">なお、今後のご案内資料を希望されない場合は、お手数ですが下記までご連絡願います。</span></p>
+								<!-* <span class="mt10">なお、今後のご案内資料を希望されない場合は、お手数ですが下記までご連絡願います。</span></p>
 								<p class="viewPc img mt15"><img src="/contents/shop/00000003/image/static/guide/img_cancel_pc01.png" alt="ココチモお客様センター 0120-552-186"></p>
-								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> -->
+								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> *->
 								<h2 class="cmn_tit03">個人情報の管理対策</h2>
 								<p class="txt">当社では、「個人情報保護管理委員会」を設置し、流失・漏洩など個人情報に関する問題やトラブルが発生しないよう、社員教育・社内啓発を徹底して行うと共に、各種セキュリティ対策の点検・見直し・改定を実施して、常に個人情報の安全管理に努めます。</p>
 								<h2 class="cmn_tit03">個人情報の委託について</h2>
@@ -1236,8 +1237,8 @@ $(function(){
 								<p class="txt">ご住所、お名前など、お客様の個人情報の開示・訂正・利用停止などにつきましては、ご本人様確認を行ったうえで適宜対応させていただきます。<br>
 								お手数ですが、下記お問い合わせ窓口までご連絡ください。</p>
 								<p class="txt mt10">連絡先：0120-552-476（9:00&#xFF5E;17:30　日祝、年末年始を除く）</p>
-								<!-- <p class="viewPc img mt15"><img src="/contents/shop/00000003/image/static/guide/img_cancel_pc01.png" alt="ココチモお客様センター 0120-552-186"></p>
-								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> -->
+								<!-* <p class="viewPc img mt15"><img src="/contents/shop/00000003/image/static/guide/img_cancel_pc01.png" alt="ココチモお客様センター 0120-552-186"></p>
+								<p class="viewSp img mt10"><a href="tel:0120552186"><img src="/contents/shop/00000003/image/static/guide/img_cancel_sp01.png" alt="ココチモお客様センター 0120-552-186"></a></p> *->
 								<p class="txt mt20">当社の認定個人情報保護団体は、下記の通りです。<br>
 								公益社団法人 日本通信販売協会（ＪＡＤＭＡ 通販110番）</p>
 								<p class="txt mt10 pb1"><a href="https://www.jadma.or.jp/consumers/dm110/" target="_blank">https://www.jadma.or.jp/consumers/dm110/</a><br>
@@ -1254,17 +1255,26 @@ $(function(){
 								<span class="mt10">なお、最適な広告表示のために、クッキー情報を当社の広告を表示・配信する他社サイトを経由して保存し、参照する場合があります。<br>クッキーは、ブラウザの設定を変更いただくことにより無効化、削除することできます。</span>
 								<span class="mt10">ただしその結果、サイトをご利用いただく際の利便性が落ちる、サービスがご利用いただけない等の不具合を生じる可能性がございますので、有効な状態としていただくことをお勧めいたします。なお、このクッキーは、広告配信のみに使用され、その他の目的には使用されません。また、お客様個人を特定・識別する情報は保持しておりませんので、ご安心ください。</span></p>
 							</div>
-							<!-- policy_box -->
+							<!-* policy_box *->
 						</div>
-						<!-- /.policy -->
+						<!-* /.policy *->
 						</span>
-						<!--▲▲▲個人情報保護方針▲▲▲ -->
+						▲▲▲個人情報保護方針ココチモ▲▲▲ -->
+
+
+						<!-- ▼▼▼個人情報保護方針テキスト▼▼▼ -->
+						<h2 class="cmn_tit01"><span class="cmn_tit01_underline">個人情報保護方針</span></h2>
+						<div class="privacy-txt-area mb50 s_mb20" style="line-height: 1.6;">
+							<p>ユーキャンでは<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取り扱いについて</a>に則り、お客様の個人情報を厳重に保管・管理いたします。</p>
+							<p class="mt20">上記の「個人情報保護方針」をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。</p>
+						</div>
+						<!-- ▲▲▲個人情報保護方針テキスト▲▲▲ -->
 
 						<ul class="confirm_main_footer">
 							<object class="xsp_obj" m:id="b_var_prevPageDo"></object>
 							<span m:id="l_msgNotPre_1">
 								<li class="confirm_main_footer_btn" id="confirm_submit">
-									<a m:id="a_bt_settle" name="order_submit_link" href="orderReceipt.html" onclick="" class="cmn_btn cmn_btn_red disable"><span name="order_submit_button">この内容で申し込む</span></a>
+									<a m:id="a_bt_settle" name="order_submit_link" href="orderReceipt.html" onclick="" class="cmn_btn cmn_btn_red disable"><span name="order_submit_button">同意して申込む</span></a>
 								</li>
 								<li id="confirm_non_submit" class="confirm_main_footer_btn" style="display: none;">
 									<p><a href="#confirm_point" class="cmn_btn cmn_btn_red"><span>ポイントを入力してください</span></a></p>
@@ -1421,7 +1431,7 @@ $(function(){
 		<div class="footer_important_in wrapper">
 			<ul class="footer_important_list cf">
 				<li class="first"><a m:id="e_link_inquiry" href="inquiryInput.html">お問い合わせ</a></li>
-				<li><a href="/shop/c/static/protection/">個人情報保護方針</a></li>
+				<li><a class="footer-link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取り扱いについて</a></li>
 				<li><a href="/shop/c/static/notation/">特定商取引に基づく表示</a></li>
 				<li><a href="/shop/c/static/company/">会社情報</a></li>
 			</ul>
