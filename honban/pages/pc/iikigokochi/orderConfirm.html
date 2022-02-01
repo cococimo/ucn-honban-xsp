@@ -137,8 +137,6 @@ pausePlay: false,
 nextText: "",
 
 
-
-
 <!-- スマホ対応 追加 20140905 START-->
 <script defer="defer" language="JavaScript" type="text/javascript">
 jQuery(document).ready(function($){ //ここから
@@ -972,7 +970,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
                         </div>
 
                         <span m:id="l_notPre_free_guide">
-<p class="left memadd_mb_02" style="border: solid 1px #666;padding: 10px;">お申込み内容をお確かめの上、よろしければ「この内容で申込む」を押してください。 修正したい場合は、「戻る」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社<a href="#privacy">「個人情報保護方針」</a>に同意いただいたものとみなします。<br>ご入力いただいた電話番号に、案内資料に関するショートメッセージ（SMS）をお送りする場合がございます。</p>
+<p class="left memadd_mb_02" style="border: solid 1px #666;padding: 10px;">お申込み内容をお確かめの上、よろしければ「同意して申込む」を押してください。 修正したい場合は、「戻る」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">「個人情報保護方針」</a>に同意いただいたものとみなします。</p>
 </span>
                         <span m:id="l_msgPre_1">
 			<div class="error"><span m:id="h_err_1">エラーメッセージ</span></div>
@@ -1081,7 +1079,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
         <div class="confirm_side_txt01">
           <p>獲得予定ポイントは代金完済後に付与されます。<br>
-          上記内容をお確かめの上、間違いがなければ「この内容で申込む」を押してください。</p>
+            上記の「個人情報保護方針」をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。</p>
         </div>
       </div>
 
@@ -1454,7 +1452,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
 
 
-<!------プライバシーポリシー------->
+<!------プライバシーポリシ
 
 <span m:id="l_notPre_free_guide">
 <div class="r_con_box_04_in">
@@ -1495,8 +1493,45 @@ s.tl(this,'o','cartview',null,'navigate');return false
 </div>
 </span>
 
-<!-------/プライバシーポリシー-------------->
+/プライバシーポリシー-------------->
 
+<style>
+    @media screen and (min-width: 768px) {
+        .privacy-policy_area {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .privacy-policy_area .privacy-policy_tit {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: bold;
+            padding: 13px 10px 13px 20px;
+            border-bottom: 1px solid rgb(205, 205, 205);
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .privacy-policy_area {
+            text-align: left;
+            font-size: 12px;
+        }
+        .privacy-policy_area .privacy-policy_tit {
+            font-size: 14px;
+            line-height: 1.4;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px 5px;
+            border-bottom: 1px solid rgb(205, 205, 205);
+            margin-bottom: 10px;
+        }
+    }
+</style>
+
+<div class="privacy-policy_area">
+    <p class="privacy-policy_tit">個人情報保護方針</p>
+    <p>ユーキャンでは<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取り扱いについて</a>に則り、お客様の個人情報を厳重に保管・管理いたします。</p>
+</div>
 
 
 <span m:id="l_notPre_free_guide">
@@ -1504,7 +1539,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div class="memadd_cau_box_01">
 <!--<h3>ご注意</h3>-->
 <p><span  class="fs16"><span m:id="l_equ_point_pres"><span m:id="l_pre_member">獲得予定ポイントは代金完済後に付与されます。<br /></span></span>
-上記内容をお確かめの上、間違いがなければ「この内容で申込む」を押してください。
+上記の「個人情報保護方針」をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。
 </span>
 </p>
 </div>
@@ -1519,7 +1554,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 
                     <span m:id="l_msgNotPre_1">
 <div id="confirm_submit" class="btn_nex_01">
-<a m:id="a_bt_settle"  name="order_submit_link" href="orderReceipt.html" onclick=""><span style="color:#ffffff">この内容で申込む</span></a>
+<a m:id="a_bt_settle"  name="order_submit_link" href="orderReceipt.html" onclick=""><span style="color:#ffffff">同意して申込む</span></a>
 </div>
 <div id="confirm_non_submit" class="btn_nex_01">
 <a style="opacity: 1;" name="none"><span style="color:#ffffff">ポイントを入力してください</span></a>
@@ -1732,7 +1767,7 @@ s.tl(this,'o','cartview',null,'navigate');return false
 <div id="footer02">
     <div id="footer_wrap02">
         <ul>
-            <li><a href="/shop/static/protection/">プライバシーポリシー</a></li>
+            <li><a class="footer-link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取り扱いについて</a></li>
             <li><a href="/shop/static/company/">会社概要</a></li>
             <li><a href="/shop/static/notation/">特定商法</a></li>
         </ul>
