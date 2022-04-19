@@ -19,7 +19,7 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css?20210818" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
@@ -1021,32 +1021,69 @@ $(function() {
                 <script>
                   const ext_goods_code = tagForm.ext_goods_code.value;
                   const cart_addition_targets = document.querySelectorAll('.cart_addition_list li');
-                  console.log('ext_goods_code:' + ext_goods_code.match('DEB71'));
-                  console.log('cart_addition_target:' + cart_addition_targets);
-                  console.log(cart_addition_targets.length);
+                  // const cart_addition_targets = Array.from(cart_addition_targets_object);
+                  // console.log('ext_goods_code:' + ext_goods_code.match('DEB71'));
+                  // console.log('cart_addition_target:' + cart_addition_targets);
+                  // console.log(cart_addition_targets.length);
 
-                  
-                  if(ext_goods_code.match('DEB71') !== null && cart_addition_targets.length) {
+                  if(ext_goods_code.match('DEB74') !== null) {
                     for(let i = 0; i<cart_addition_targets.length;i++) {
-                    const target = cart_addition_targets[i];
-                    if(target.textContent.indexOf('万能ナイフ')) {
-                        const self = cart_addition_targets[i];
-                        const parent = self.parentNode;
-                        const addElm = document.createElement('li');
 
-                        addElm.textContent = "ビスコ保存缶";
-                        self.textContent = "万能ナイフ";
+                        const target = cart_addition_targets[i];
+      
+                        if(target.textContent.indexOf('万能ナイフ') > 0) {
+                      
+                          const self = cart_addition_targets[i];
+                          const parent = self.parentNode;
+                          const addElm = document.createElement('li');
 
-                        // ビスコ缶要素追加
-                        parent.insertBefore(addElm, self.nextSibling)
+                          addElm.textContent = "ビスコ保存缶";
+                          self.textContent = "万能ナイフ";
 
-                        break; 
+                          // ビスコ缶要素追加
+                          parent.insertBefore(addElm, self.nextSibling)
+
+                          break; 
                       }
                     }  
                   }
                 
                 </script>
-                ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
+                 ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
+
+                <!--▼▼▼ カシオキーボード　プレゼント表記変更 20220325▼▼▼ -->
+                <script>
+                  const ext_goods_code = tagForm.ext_goods_code.value;
+                  const cart_addition_targets = document.querySelectorAll('.cart_addition_list li');
+                  // const cart_addition_targets = Array.from(cart_addition_targets_object);
+                  // console.log('ext_goods_code:' + ext_goods_code.match('DEB71'));
+                  // console.log('cart_addition_target:' + cart_addition_targets);
+                  // console.log(cart_addition_targets.length);
+
+                  if(ext_goods_code.match('DDV05') !== null) {
+                    for(let i = 0; i<cart_addition_targets.length;i++) {
+
+                        const target = cart_addition_targets[i];
+      
+                        if(target.textContent.indexOf('デジタル温度・湿度計') > 0) {
+                      
+                          const self = cart_addition_targets[i];
+                          const parent = self.parentNode;
+                          const addElm = document.createElement('li');
+
+                          addElm.textContent = "デジタル温度・湿度計";
+                          self.textContent = "カシオ製　ヘッドホン";
+
+                          // 要素追加
+                          parent.insertBefore(addElm, self.nextSibling)
+
+                          break; 
+                      }
+                    }  
+                  }
+                
+                </script>
+                <!-- ▲▲▲ カシオキーボード　プレゼント表記変更 20220325 ▲▲▲-->
                                 
                 <!--▼▼▼ 送料メッセージ ▼▼▼-->
                   <object class="xsp_obj" m:id="b_var_shopPostage_postage_free"></object>

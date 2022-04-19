@@ -1020,6 +1020,11 @@ $(function () {
         }
 	});
 </script>
+<script>
+	// リファラーURL取得
+	const referrerURL = document.referrer;
+
+</script>
 <!-- InstanceEndEditable -->
 <!--▲▲▲ 固有CSS/Script ▲▲▲-->
 <!-- tracking urchin -->
@@ -1515,6 +1520,16 @@ $(function () {
 					<!-- /.cmn_step -->
 					<!-- /.header_ucan -->
 				</div>
+				<!--▼▼▼ みみ楽ページからの遷移 電話番号変更　▼▼▼
+				<script>
+					const telNumChangeURL01 = "/shop/c/static/item_dmb_fum3/";
+					if(referrerURL.indexOf(telNumChangeURL01) > 0 ) {
+						document.querySelector(".header_top_tel .tel_num").style.display = "none";
+						document.querySelector(".header_top_tel .tel_num").textContent= "0120-552-462";
+						document.querySelector(".header_top_tel .tel_num").style.display = "block";
+					}
+				</script>
+				▲▲▲ みみ楽ページからの遷移　電話番号変更 ▲▲▲-->
 				<div class="header_top_tel viewSp" style="display: none">
 					<span class="tel_ttl">お電話での注文は<br>こちらをタッチ</span>
 					<span class="tel_icon_arrow"></span>
@@ -1630,16 +1645,15 @@ $(function () {
 									<p class="mt10" id="new-client"><a href="/shop/memberAdd.do" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
 
 								</div>
-								<!--▼▼▼ 電子辞書専用ページからの遷移 ▼▼▼-->
+								<!--▼▼▼ みみもとくん・キュットブルからの遷移 ▼▼▼-->
 								<script>
-			
-									const referrerURL = document.referrer;
-									const targetURL01 = "/shop/c/static/item_dcefum/";
-									if(referrerURL.indexOf(targetURL01) > 0) {
+									const targetURL01 = "/item_dccfum/";
+									const targetURL02 = "/item_dgffum/";
+									if(referrerURL.indexOf(targetURL01) > 0 || referrerURL.indexOf(targetURL02) > 0) {
 										document.getElementById("new-client").style.display = "none";
 									}
 								</script>
-								<!--▲▲▲ 電子辞書専用ページからの遷移 ▲▲▲-->
+								<!--▲▲▲ みみもとくん・キュットブルからの遷移 ▲▲▲-->
 
 								<div id="more_login_text">
 								<span m:id="l_msgPre_errors_member_login">
@@ -3243,6 +3257,16 @@ $(function () {
 		</div>
 	</div>
 	<!-- /.tel_area -->
+	<!--▼▼▼ みみ楽ページからの遷移　電話番号変更 ▼▼▼
+	<script>
+		const telFooterNumChangeURL01 = "/shop/c/static/item_dmb_fum3/";
+		if(referrerURL.indexOf(telFooterNumChangeURL01) > 0 ) {
+			$(".tel_area_num img.viewPc").attr("src", "/contents/c/shop/image/txt_tel03.png").attr("alt", "0120-552-462");
+			$(".tel_area_num a.viewSp").attr("href", "tel:0120-552-462");
+			$(".tel_area_num a.viewSp img").attr("src", "/contents/c/shop/image/txt_tel03_sp.png").attr("alt", "0120-552-462");
+		}
+	</script>
+	▲▲▲ みみ楽ページからの遷移　電話番号変更 ▲▲▲-->
 	<div class="footer_info">
 		<div class="footer_info_in wrapper"><div class="footer_info_site">
 			<h3 class="footer_info_tit">安心！ココチモ通販サイト</h3>
