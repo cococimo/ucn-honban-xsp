@@ -137,8 +137,11 @@ $(function(){
 		@media print, screen and (min-width: 767px) {
 			.about_list_price,
 			.about_list_point{display:none !important;width: 0;height: 0;}
-			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
-			.footer .about_list li {height: 286px !important;}
+			.footer .about_list {display: flex; justify-content: space-between;}
+			.footer .about_list li + li + li {margin-top: 0 !important;}
+			.footer .about_list li + li + li+li {margin-left: 0 !important;}
+			.footer .about_list li {width: 390px;}
+			
 		}
 
 		/*ステップ4⇒3調整*/
@@ -179,6 +182,14 @@ $(function(){
 	<!--▲▲▲ 共通CSS/Script ▲▲▲-->
 	<!--▼▼▼ 固有CSS/Script ▼▼▼-->
 <!-- InstanceBeginEditable name="script" -->
+<!-- ▼▼▼featherlight▼▼▼ -->
+<script src="/contents/c/js/new/featherlight.js"></script>
+<style>
+  .featherlight {
+      background: rgba(0,0,0,.6) !important;
+  }
+</style>
+<!-- ▲▲▲featherlight▲▲▲ -->
 <script>
 	$(window).load( function(){
 		/* js-sticky-side
@@ -251,6 +262,83 @@ $(function(){
 		.privilege_area td {
 			padding: 10px 10px 5px;
 		    font-size: 14px;
+		}
+	}
+</style>
+
+<style>
+	/* お申し込み後のキャンセル・返品について */
+	.about_cancel {
+		line-height: 1.6;
+		font-size: 14px;
+	}
+	.about_cancel ul li{
+		padding-left: 1em;
+		text-indent: -1em;
+	}
+	.about_cancel .henpen_content {
+		font-size: 16px;
+	}
+	
+</style>
+<style>
+	/* 注文確定ボタン（ページ内リンク） */
+	.confirm_order_btn {
+		position: relative;
+	}
+	.confirm_order_btn:before {
+		content: "";
+		height: 0;
+		width: 0;
+		display: inline-block;
+		border-top: 14px solid transparent;
+		border-left: 14px solid #fff;
+		border-bottom: 14px solid transparent;
+		position: relative;
+		transform: rotate(90deg);
+		margin: auto;
+		top: 0.4em;
+		bottom: 0;
+		margin-right: 10px;
+	}
+	.confirm_order_btn.cmn_btn_red:hover:before {
+		border-left: 14px solid #cc1010;
+		-webkit-transition: .2s all,.4s color ease-out .2s;
+		transition: .2s all,.4s color ease-out .2s;
+	}
+	.confirm_order_txt {
+		font-size: 14px;
+		margin-bottom: 20px;
+		line-height: 1.6;
+	}
+</style>
+
+<style>
+	/* 注文確定ボタン（表示順変更） */
+	@media screen and (max-width: 767px) {
+		#js-side_sticky {
+			display: flex;
+			flex-flow: column;
+		}
+		/* 順番を最後に変更 */
+		#js-side_sticky #confirm_submit2 {
+			order: 1;
+		}
+		#cart .confirm_side .is-sticky {
+			width: auto;
+		}
+	}
+</style>
+
+<style>
+	/* 注文確定ボタン修正 */
+	@media screen and (max-width: 767px) {
+		#cart .confirm .confirm_main_footer_btn a {
+			font-size: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.1em;
 		}
 	}
 </style>
@@ -606,7 +694,7 @@ $(function(){
 						<span m:id="l_notPre_free_guide">お申込み内容の確認<span m:id="l_pre_free_guide">資料請求情報確認</span>
 					</h1>
 					<span m:id="l_notPre_free_guide">
-						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「同意して申込む」を押してください。<br>修正したい場合は、「入力内容を修正」を押して再度、入力をお願いします。<br>お申し込みを完了いただいた時点で、弊社の「<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報保護方針</a>」に同意いただいたものとみなします。</p>
+						<p class="cart_intro_txt">お申込み内容をお確かめの上、よろしければ「同意して申込む」を押してください。<br>修正される場合は、「入力内容を修正」を押して再度、ご入力をお願いします。<br>お申込みを完了いただいた時点で、弊社の「<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報保護方針</a>」に同意いただいたものとみなします。</p>
 					</span>
 					<span m:id="l_msgPre_1"><div class="error red"><span m:id="h_err_1">エラーメッセージ</span></div></span>
 				</div>
@@ -618,10 +706,11 @@ $(function(){
 							<div id="js-side_sticky">
 								<span m:id="l_msgNotPre_1">
 									<div id="confirm_submit2" class="box_02">
-										<p class="confirm_side_btn01 mb20 viewPc"><a m:id="a_bt_settle" name="order_submit_link" href="orderReceipt.html" onclick="" class="cmn_btn cmn_btn_red btn_middle disable"><span>この内容で申し込む</span></a></p>
+										<p class="confirm_side_btn01 mb10"><a href="#goto_cancel" class="cmn_btn cmn_btn_red btn_middle confirm_order_btn"><span>注文確定ボタンへ進む</span></a></p>
+										<p class="confirm_order_txt">※まだお申込みは確定しません。必要事項をご確認の上、「同意して申込む」ボタンを押してください。</p>
 									</div>
 									<div id="confirm_non_submit2" class="box_02" style="display:none;">
-										<p class="confirm_side_btn01 mb20 viewPc"><a href="#confirm_point" class="cmn_btn cmn_btn_red btn_middle"><span>ポイントを入力してください</span></a></p>
+										<p class="confirm_side_btn01 mb20"><a href="#confirm_point" class="cmn_btn cmn_btn_red btn_middle"><span>ポイントを入力してください</span></a></p>
 										<!-- <img m:id="static_img" name="order_submit_button" src="../../../contents/shop/00000003/shop/image/ord_con_bt_ng.png" alt="ポイントを入力してください" /> -->
 									</div>
 								</span>
@@ -631,7 +720,7 @@ $(function(){
 										<table>
 											<tr m:id="div_shopping_total">
 												<th>請求金額</th>
-												<td><span m:id="b_wr_payment_amount">9000</span> 円</td>
+												<td><span m:id="b_wr_payment_amount">9000</span> 円（税込）</td>
 											</tr>
 											<span m:id="l_notEqu_totalPointAmt">
 												<tr m:id="div_shopping_total">
@@ -648,8 +737,8 @@ $(function(){
 													<th>商品合計</th>
 													<td>
 														<!--<span m:id="b_wr_total_price">9500</span> 円-->
-														<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円</span>
-														<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円</span>
+														<span m:id="l_equ_totalMemberSpecialDiscount"><span m:id="disp_total_special_price">3600</span> 円（税込）</span>
+														<span m:id="l_notEqu_totalMemberSpecialDiscount"><span m:id="b_wr_total_price">4600</span> 円（税込）</span>
 													</td>
 												</tr> 
 											</span>
@@ -720,7 +809,7 @@ $(function(){
 											<span m:id="l_notEqu_fee">
 												<tr m:id="div_shopping_total">
 												<th>決済手数料</th>
-												<td><span m:id="b_wr_fee">700</span> 円</td>
+												<td><span m:id="b_wr_fee">700</span> 円（税込）</td>
 												</tr>
 											</span>
 										</table>
@@ -728,9 +817,8 @@ $(function(){
 								<!--▲▲▲ 価格テーブル ▲▲▲-->
 								<div class="confirm_side_txt01">
 									<p>
-									商品金額は支払い方法にかかわらず一括払金額を表示しています。<br>
-									獲得予定ポイントは代金完済後に付与されます。<br>
-									上記内容をお確かめの上、間違いがなければ「同意して申込む」を押してください。</p>
+									商品金額は支払い方法にかかわらず一括払金額を表示しています。分割払金額は各商品ページでご確認ください。<br>
+									獲得予定ポイントは代金完済後に付与されます。</p>
 								</div>
 							</div>
 							<!-- /#js-side_sticky -->
@@ -753,6 +841,7 @@ $(function(){
 												<div class="txt_box">
 													<p class="confirm_item_list_tit"><span m:id="disp_detail_goods_name">ビール</span>&nbsp;<span m:id="disp_detail_goods_sku_name">ビール2</span></p>
 													<p class="confirm_item_list_price">
+														一括払価格（税込）:
 														<span m:id="l_equ_memberSpecialDiscount">
 															<span m:id="disp_goods_special_price">1000 円　</span> 円
 														</span>
@@ -846,7 +935,7 @@ $(function(){
 								if(privilege_area.length > 0 && getItemNum("防災セット【防災テレビ付き】") !== undefined) {
 									const memadd_all_td = document.querySelectorAll('.privilege_area .memadd_table_02 td');
 
-								  for(let i = 0; i< memadd_all_td.length;i++) {
+								  for(let i = 0; i<　memadd_all_td.length;i++) {
 									  if(memadd_all_td[i].textContent.match("万能ナイフ")) {
 
 										  const self = memadd_all_td[i];
@@ -884,7 +973,7 @@ $(function(){
 								// 購入数を取得
 								function getItemNum(itemName) {
 									const confirm_item_list_tit_targets = document.querySelectorAll('.confirm_item_list_tit');
-									for(let i = 0; i< confirm_item_list_tit_targets.length; i++) {
+									for(let i = 0; i<　confirm_item_list_tit_targets.length; i++) {
 									if(confirm_item_list_tit_targets[i].textContent.match(itemName)) {
 										const self = confirm_item_list_tit_targets[i];
 										const parent = self.parentNode;
@@ -898,67 +987,6 @@ $(function(){
 							
 							</script>
 							 ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
-
-							 <!--▼▼▼ カシオキーボード　プレゼント表記変更 20220325 ▼▼▼ -->
-							<script>
-								//プレゼントが表示されている場合、値を取得
-								const privilege_area = document.querySelectorAll('.privilege_area');
-								
-								if(privilege_area.length > 0 && getItemNum("カシオ 大人の楽らくキーボード") !== undefined) {
-									const memadd_all_td = document.querySelectorAll('.privilege_area .memadd_table_02 td');
-
-								  for(let i = 0; i< memadd_all_td.length;i++) {
-									  if(memadd_all_td[i].textContent.match("デジタル温度・湿度計")) {
-
-										  const self = memadd_all_td[i];
-										  const item_num = self.nextElementSibling;
-										  const item_num_value = getItemNum("カシオ 大人の楽らくキーボード");
-										  const parent = self.parentNode;
-										  const tableElm = parent.parentNode;
-										  const addElmTR = document.createElement("tr");
-										  const addElmItemName = document.createElement("td");
-										  const addElmItemNum = document.createElement("td");
-										  const targetClasses = ["last_02","right","memadd_table_02_w_02"];
-
-										  self.textContent = "カシオ製　ヘッドホン";
-										  item_num.textContent = item_num.textContent.replace(/\d+/g, item_num_value);
-
-
-										  addElmItemName.textContent = "デジタル温度・湿度計";
-
-										  targetClasses.forEach(function(targetClass) {
-											addElmItemNum.classList.add(targetClass);
-											});
-										//   addElmItemNum.classList.add("last_02","right","memadd_table_02_w_02");
-										  addElmItemNum.textContent = item_num.textContent;
-
-										  addElmTR.appendChild(addElmItemName);
-										  addElmTR.appendChild(addElmItemNum);
-		
-											// 要素追加
-											tableElm.insertBefore(addElmTR, parent.nextSibling)
-
-										  }
-									  }
-								}
-
-								// 購入数を取得
-								function getItemNum(itemName) {
-									const confirm_item_list_tit_targets = document.querySelectorAll('.confirm_item_list_tit');
-									for(let i = 0; i< confirm_item_list_tit_targets.length; i++) {
-									if(confirm_item_list_tit_targets[i].textContent.match(itemName)) {
-										const self = confirm_item_list_tit_targets[i];
-										const parent = self.parentNode;
-										const item_count = parent.getElementsByClassName('confirm_item_list_count')[0];
-
-										return item_count.textContent.replace("数量：","");
-										}
-
-									}
-								}
-							
-							</script>
-							<!-- ▲▲▲ カシオキーボード　プレゼント表記変更 20220325 ▲▲▲-->
 
 							<!--▼▼▼ クレジット情報 ▼▼▼-->
 								<div style="display: none;">
@@ -1082,6 +1110,7 @@ $(function(){
 															<span m:id="b_wr_settlement_name2">代引き又は後払い</span>
 														</span>
 													</span>
+													<br><span style="font-size:0.8em">※お支払い方法・時期については<a class="link-new-open" href="/shop/c/static/guide04/" target="_blank">こちら</a></span>
 												</p>
 											</div>
 										<!--▲▲▲ 決済について ▲▲▲-->
@@ -1091,7 +1120,7 @@ $(function(){
 									<!--▼▼▼ 配送先情報 ▼▼▼-->
 										<div class="confirm_delivery confirm_box">
 											<h2 class="confirm_delivery_tit cmn_tit02">配送日指定</h2>
-											<div class="confirm_delivery_list">
+											<div class="confirm_delivery_list mb0">
 												<span m:id="l_ite_destination">
 													<span m:id="l_if_separate">
 														<span m:id="l_ite_detail">
@@ -1142,6 +1171,7 @@ $(function(){
 													</span>
 												</span>
 											</div>
+											<p class="confirm_point_txt mt5">※配送日のご指定がない場合、各商品ページに記載の日数でお届けいたします。</p>
 										</div>
 									<!-- /.confirm_delivery -->
 									<!--▲▲▲ 配送先情報 ▲▲▲-->
@@ -1236,6 +1266,59 @@ $(function(){
 						</span>
 						<!-- /back_link-->
 
+						<div class="about_cancel mt30 mb60 s_mb30" id="goto_cancel">
+							<div class="henpen_content">
+								<p class="ttl">・返品について</p>
+								<p class="bold">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br>また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+								<p class="viewPc">※詳しくは<a class="link-new-open" href="/shop/c/static/guide07/#return" target="_blank">こちら</a></p>
+								<p class="viewSp">※詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a></p>
+
+								<!--▼▼▼モーダル▼▼▼-->
+								<div id="return_goods" class="lightbox">
+									<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+									<p class="bold" style="line-height: 1.6;">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br>また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+											  
+									<p class="mt20" style="line-height: 1.6;">ご返品の際は商品一式を下記宛先へ宅配便等でご返送ください。<br>
+										【商品の返送先】<br>
+										〒350-1111　埼玉県川越市野田1050-1　ココチモ配送センター　返品係または交換係（どちらかを必ず明記してください）
+									</p>
+									<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+								</div>
+								<!-- /#return_goods -->
+							</div>
+
+							<div class="privacy_content">
+								<p class="ttl mt20 s_mt10">・個人関連情報の利用について</p>
+								<p>当社は、その情報単体では個人情報に該当しない情報（例：Cookie、IPアドレス、サイト閲覧履歴、購買履歴といったインターネットの利用にかかるログ情報等の個人に関する情報（以下総称して「個人関連情報」といいます））を取得しています。お客様が当社サービスの利用にあたり当社に個人情報を提供した場合、当社は、当該情報と、当該お客様の個人関連情報を紐付ける場合がありますが、この場合には当該個人関連情報も個人情報として取り扱います。</p>
+		
+								<p class="ttl mt20 s_mt10">・個人情報保護方針</p>
+								<p>ユーキャンでは「<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取扱いについて</a>」に則り、お客様の個人情報を厳重に保管・管理いたします。<br>上記のリンク先をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。</p>
+							</div>
+						</div>
+
+
+
+						<!-- <h2 class="cmn_tit01"><span class="cmn_tit01_underline">お申込み完了後のキャンセル・返品について</span></h2>
+						<div class="about_cancel">
+							<ul>
+								<li>・商品のお申込み完了後のキャンセルは、お電話またはお問い合わせフォームよりご連絡ください。</li>
+								<li>・万一、商品に不備・不足・破損等あった場合は、責任をもって送料・返送料当社負担にて良品とお取替えいたします。</li>
+								<li>・商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</li>
+							</ul>
+							<p class="mt20">※詳しくはご利用ガイド「<a href="/shop/c/static/guide07/#cancel">キャンセル・返品・交換</a>」をご確認ください。</p>
+						</div> -->
+
+
+
+						<!-- ▼▼▼個人情報保護方針テキスト▼▼▼ 
+						<h2 class="cmn_tit01"><span class="cmn_tit01_underline">個人情報保護方針</span></h2>
+						<div class="privacy-txt-area mb50 s_mb20" style="line-height: 1.6;">
+							<p>ユーキャンでは<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取扱いについて</a>に則り、お客様の個人情報を厳重に保管・管理いたします。</p>
+							<p class="mt20">上記のリンク先をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。</p>
+						</div>
+						 ▲▲▲個人情報保護方針テキスト▲▲▲ -->
+
+
 					<!--▼▼▼個人情報保護方針ココチモ▼▼▼
 					<style>
 						.policy_term {
@@ -1323,13 +1406,7 @@ $(function(){
 						▲▲▲個人情報保護方針ココチモ▲▲▲ -->
 
 
-						<!-- ▼▼▼個人情報保護方針テキスト▼▼▼ -->
-						<h2 class="cmn_tit01"><span class="cmn_tit01_underline">個人情報保護方針</span></h2>
-						<div class="privacy-txt-area mb50 s_mb20" style="line-height: 1.6;">
-							<p>ユーキャンでは<a class="link-new-open" href="https://www.u-can.co.jp/info/privacy.html" target="_blank">個人情報の保護と取り扱いについて</a>に則り、お客様の個人情報を厳重に保管・管理いたします。</p>
-							<p class="mt20">上記の「個人情報保護方針」をご一読いただき、内容に同意いただける方は、「同意して申込む」ボタンを押してください。</p>
-						</div>
-						<!-- ▲▲▲個人情報保護方針テキスト▲▲▲ -->
+	
 
 						<ul class="confirm_main_footer">
 							<object class="xsp_obj" m:id="b_var_prevPageDo"></object>
@@ -1405,9 +1482,10 @@ $(function(){
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証について</p>
+					<p class="about_list_tit">返品について</p>
 					<div class="about_list_in">
-						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+						<p class="about_list_txt bold">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br />また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+							<p class="about_list_txt mt0">※詳しくは<a class="link-new-open" href="/shop/c/static/guide07/#return" target="_blank">こちら</a>をご確認ください。</p>
                         <!--<div class="about_list_caution">
                             <p class="about_list_caution_tit">※ご注意※</p>
                             <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>

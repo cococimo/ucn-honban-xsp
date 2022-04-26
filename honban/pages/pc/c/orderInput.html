@@ -138,8 +138,10 @@ $(function(){
 		@media print, screen and (min-width: 767px) {
 			.about_list_price,
 			.about_list_point{display:none !important;width: 0;height: 0;}
-			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
-			.footer .about_list li {height: 286px !important;}
+			.footer .about_list {display: flex; justify-content: space-between;}
+			.footer .about_list li + li + li {margin-top: 0 !important;}
+			.footer .about_list li + li + li+li {margin-left: 0 !important;}
+			.footer .about_list li {width: 390px;}
 		}
 
 		/*ステップ4⇒3調整*/
@@ -803,6 +805,7 @@ $(function(){
 <!-- ▼▼ポップアップ -->
 <script src="/contents/c/js/new/featherlight.js"></script>
 <style>
+.featherlight {background: #333 !important}
 .featherlight .lightbox_close_btn{cursor: pointer;}
 </style>
 <!-- ▲▲ポップアップ -->
@@ -3157,6 +3160,7 @@ $(function () {
 </script>
 
 
+
 <!-- お電話でもご注文いただけます SP版のみ表示 ここまで -->
 
 
@@ -3218,9 +3222,10 @@ $(function () {
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証について</p>
+					<p class="about_list_tit">返品について</p>
 					<div class="about_list_in">
-						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+						<p class="about_list_txt bold">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br />また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+							<p class="about_list_txt mt0">※詳しくは<a class="link-new-open" href="/shop/c/static/guide07/#return" target="_blank">こちら</a>をご確認ください。</p>
                         <!--<div class="about_list_caution">
                             <p class="about_list_caution_tit">※ご注意※</p>
                             <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
@@ -3239,6 +3244,54 @@ $(function () {
 			<div class="about_btn_wrap"><a href="/shop/c/static/guide/" class="about_btn cmn_btn cmn_btn_tri"><span>ご利用ガイドを見る</span></a></div>
 		</div>
 	</div>
+	<!-- 返品について　ここから-->
+	<style>
+		.attention_box {
+			margin: 30px 20px;
+		}
+		.attention_box_tit {
+			margin: 0 0 10px;
+			font-size: 15px;
+			font-weight: 700;
+		}
+		.attention_box_txt {
+			line-height: 1.6;
+		}
+		.attention_box_txt li {
+			padding-left: 1em;
+			text-indent: -1em;
+			font-size: 14px;
+		}
+		@media screen and (max-width:767px) {
+			.attention_box_tit {
+				font-size: 16px;
+			}
+			.attention_box_txt {
+				font-size: 13px;
+				line-height: 1.4;
+			}
+		}
+	</style>
+	<div class="attention_box cart_attention_box viewSp">
+		<p class="attention_box_tit bold">返品について（詳しくは<a href="#return_goods" data-featherlight="#return_goods">こちら</a>）</p>
+		<ul class="attention_box_txt">
+			<li><span style="color: red;font-weight: bold;">※8日以内であれば返品可能。</span></li>
+			<li><span style="color: red;font-weight: bold;">※未使用（未通電）の場合に限ります（試用・試着期間のある商品を除く）。</span></li>
+			<li><span style="color: red;font-weight: bold;">※返品時の送料はお客様負担になります。</span></li>
+		</ul>
+		<!--▼▼▼モーダル▼▼▼-->
+		<div id="return_goods" class="lightbox">
+			<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+			<p class="bold" style="line-height: 1.6;">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br>また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p> 
+			<p class="mt20" style="line-height: 1.6;">ご返品の際は商品一式を下記宛先へ宅配便等でご返送ください。<br>
+				【商品の返送先】<br>
+				〒350-1111　埼玉県川越市野田1050-1　ココチモ配送センター　返品係または交換係（どちらかを必ず明記してください）
+			</p>
+			<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+		</div>
+		<!-- /#return_goods -->
+	</div>
+	<!-- 返品について　ここまで-->
 	<!-- /.about -->
 	<div class="tel_area" id="tel_area">
 		<div class="tel_area_in wrapper">

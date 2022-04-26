@@ -23,7 +23,7 @@
 <!--▼▼▼ 共通CSS/Script ▼▼▼-->
 <link rel="shortcut icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
 <link rel="icon" href="/contents/shop/00000003/shop/image/cococimo.ico" type="image/vnd.microsoft.icon" />
-<link rel="stylesheet" href="/contents/c/css/new/common.css?20210818" type="text/css" media="all" charset="utf-8">
+<link rel="stylesheet" href="/contents/c/css/new/common.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/style.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/general.css" type="text/css" media="all" charset="utf-8">
 <link rel="stylesheet" href="/contents/c/css/new/minimal.css" type="text/css" media="all" charset="utf-8">
@@ -137,8 +137,10 @@ $(function(){
 		@media print, screen and (min-width: 767px) {
 			.about_list_price,
 			.about_list_point{display:none !important;width: 0;height: 0;}
-			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
-			.footer .about_list li {height: 286px !important;}
+			.footer .about_list {display: flex; justify-content: space-between;}
+			.footer .about_list li + li + li {margin-top: 0 !important;}
+			.footer .about_list li + li + li+li {margin-left: 0 !important;}
+			.footer .about_list li {width: 390px;}
 		}
 
 		/*ステップ4⇒3調整*/
@@ -938,9 +940,10 @@ $(function() {
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証について</p>
+					<p class="about_list_tit">返品について</p>
 					<div class="about_list_in">
-						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+						<p class="about_list_txt bold">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br />また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+							<p class="about_list_txt mt0">※詳しくは<a class="link-new-open" href="/shop/c/static/guide07/#return" target="_blank">こちら</a>をご確認ください。</p>
                         <!--<div class="about_list_caution">
                             <p class="about_list_caution_tit">※ご注意※</p>
                             <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
@@ -1086,6 +1089,7 @@ _gaq.push(['_addTrans',
 ]);
 // -->
 </script>
+
 <span m:id="l_ite_detail">
 <script type="text/javascript">
 <!--
@@ -1111,6 +1115,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 </script>
 <!--/ ga ec tracking -->
+
 
 <span m:id="site_prop13"></span>
 

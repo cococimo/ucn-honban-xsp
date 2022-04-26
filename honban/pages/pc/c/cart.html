@@ -13,6 +13,7 @@
 <meta name="format-detection" content="telephone=no"><meta name="description" content="ココチモのお買い物かごページです。今よりもっと“心地いい”をお届けする- ココチモ（cococimo）の通販ショップ">
 <meta name="keywords" content="お買い物かご,ショッピングカート,cococimo,cococimo.jp,ココチモ,ここちも,通販,通信販売,インターネットショッピング,EC,ユーキャン">
 <title>お買い物かご - ココチモ（cococimo）の通販ショップ</title>
+
 <!-- Googleタグマネージャ head用 -->
 <meta m:id="google_tag_manager_head" content="">
 <!-- Googleタグマネージャ head用 -->
@@ -221,8 +222,10 @@ $(function() {
 		@media print, screen and (min-width: 767px) {
 			.about_list_price,
 			.about_list_point{display:none !important;width: 0;height: 0;}
-			.footer .about_list li + li + li {margin-top: 0;margin-left: 15px;}
-			.footer .about_list li {height: 286px !important;}
+			.footer .about_list {display: flex; justify-content: space-between;}
+			.footer .about_list li + li + li {margin-top: 0 !important;}
+			.footer .about_list li + li + li+li {margin-left: 0 !important;}
+			.footer .about_list li {width: 390px;}
 		}
 		@media screen and (max-width: 767px) {
 			body {padding-top: 64px !important;margin-bottom:64px !important;}
@@ -1028,30 +1031,32 @@ $(function() {
 
                   if(ext_goods_code.match('DEB74') !== null) {
                     for(let i = 0; i<cart_addition_targets.length;i++) {
-
-                        const target = cart_addition_targets[i];
-      
-                        if(target.textContent.indexOf('万能ナイフ') > 0) {
                       
-                          const self = cart_addition_targets[i];
-                          const parent = self.parentNode;
-                          const addElm = document.createElement('li');
 
-                          addElm.textContent = "ビスコ保存缶";
-                          self.textContent = "万能ナイフ";
+                      const target = cart_addition_targets[i];
+                      console.log(target)
+      
+                      if(target.textContent.indexOf('万能ナイフ') > 0) {
+                      
+                        const self = cart_addition_targets[i];
+                        const parent = self.parentNode;
+                        const addElm = document.createElement('li');
 
-                          // ビスコ缶要素追加
-                          parent.insertBefore(addElm, self.nextSibling)
+                        addElm.textContent = "ビスコ保存缶";
+                        self.textContent = "万能ナイフ";
 
-                          break; 
+                        // ビスコ缶要素追加
+                        parent.insertBefore(addElm, self.nextSibling)
+
+                        break; 
                       }
                     }  
                   }
                 
                 </script>
-                 ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
+                ▲▲▲ 防災セット　プレゼント表記変更 20210310 ▲▲▲-->
 
-                <!--▼▼▼ カシオキーボード　プレゼント表記変更 20220325▼▼▼ -->
+                <!--▼▼▼ カシオキーボード　プレゼント表記変更 20220325▼▼▼
                 <script>
                   const ext_goods_code = tagForm.ext_goods_code.value;
                   const cart_addition_targets = document.querySelectorAll('.cart_addition_list li');
@@ -1083,7 +1088,7 @@ $(function() {
                   }
                 
                 </script>
-                <!-- ▲▲▲ カシオキーボード　プレゼント表記変更 20220325 ▲▲▲-->
+               ▲▲▲ カシオキーボード　プレゼント表記変更 20220325 ▲▲▲-->
                                 
                 <!--▼▼▼ 送料メッセージ ▼▼▼-->
                   <object class="xsp_obj" m:id="b_var_shopPostage_postage_free"></object>
@@ -1689,14 +1694,18 @@ $(function() {
 			<li><span style="color: red;font-weight: bold;">※未使用（未通電）の場合に限ります（試用・試着期間のある商品を除く）。</span></li>
 			<li><span style="color: red;font-weight: bold;">※返品時の送料はお客様負担になります。</span></li>
 		</ul>
-		<!--▼▼▼モーダル▼▼▼-->
-		<div id="return_goods" class="lightbox">
-			<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
-			<p style="line-height: 1.6">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任をもって良品とお取替えいたします。<span style="color: red;">また商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。</span></p>
-			<p class="mt20 s_mt10" style="line-height: 1.6"><span style="color: red;">※配送中の事故・汚損や、万が一お申込み商品と異なる商品が届いた場合には、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。なお、ご連絡は商品到着後3日以内にお願いいたします。</span></p>
-			<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
-		</div>
-		<!-- /#return_goods -->
+    <!--▼▼▼モーダル▼▼▼-->
+    <div id="return_goods" class="lightbox">
+      <h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+      <p class="bold" style="line-height: 1.6;">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br>また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+				
+				<p class="mt20" style="line-height: 1.6;">ご返品の際は商品一式を下記宛先へ宅配便等でご返送ください。<br>
+          【商品の返送先】<br>
+          〒350-1111　埼玉県川越市野田1050-1　ココチモ配送センター　返品係または交換係（どちらかを必ず明記してください）
+				</p>
+      <p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+    </div>
+    <!-- /#return_goods -->
 	</div>
 	<!-- /.attention_box -->
 
@@ -1875,13 +1884,14 @@ $(function() {
 				</li>
 				<li class="about_list_secure js-matchHeight">
 					<span class="about_list_icon icon-secure"></span>
-					<p class="about_list_tit">品質保証について</p>
+					<p class="about_list_tit">返品について</p>
 					<div class="about_list_in">
-						<p class="about_list_txt">商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
-            <!--<div class="about_list_caution">
-              <p class="about_list_caution_tit">※ご注意※</p>
-              <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
-            </div>-->
+						<p class="about_list_txt bold">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。但し商品の性質上、使用後（通電後）の返品はお受けできませんのでご了承ください（試用・試着期間のある商品を除く）。<br />また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+							<p class="about_list_txt mt0">※詳しくは<a class="link-new-open" href="/shop/c/static/guide07/#return" target="_blank">こちら</a>をご確認ください。</p>
+                        <!--<div class="about_list_caution">
+                            <p class="about_list_caution_tit">※ご注意※</p>
+                            <p class="about_list_caution_txt"><span class="red">食品は商品の性質上、お申し込み後のお客様都合によるキャンセル、返品はお受けできません。</span></p>
+                        </div>-->
 					</div>
 				</li>
 				<li class="about_list_point js-matchHeight">
