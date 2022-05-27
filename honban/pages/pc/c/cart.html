@@ -325,6 +325,11 @@ $(function() {
       text-decoration:underline;
       margin-top: 8px;
     }
+    /* ログイン表示調整 */
+    #cart .purchase_box input[type=text].order_start_in,
+    #cart .purchase_box input[type=password].order_start_in {
+      margin-bottom: 5px;
+    }
 
 </style>
 </head>
@@ -1762,12 +1767,14 @@ $(function() {
                         <span m:id="l_msgPre_login_id">
                           <span class="error"><span m:id="h_err_login_id">ログインID入力エラーメッセージ</span></span>
                         </span>
+                        <p class="mb30 s_mb20"><a class="cmn_link01" m:id="e_link_inquiry" href="inquiryInput.html">IDをお忘れの方はこちら</a></p>
+
                         <h3 class="purchase_box_tit02 cmn_tit03">パスワード<span class="purchase_box_tit02_ex">（例：abcde1234）</span></h3>
                         <input m:id="h_pwd_password" type="password" name="loginForm" property="password" class="order_start_in" maxlength="20" value="" /><br />
                         <span m:id="l_msgPre_password">
                           <span class="error"><span m:id="h_err_password">パスワード入力エラーメッセージ</span></span><br />
                         </span>
-                        <p class="tac mb20"><a m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html.html">パスワードをお忘れの方はこちら</a></p>
+                        <p class="mb30 s_mb20"><a class="cmn_link01" m:id="e_link_reminderPwdInput" href="memberReminderPwdInput.html.html">パスワードをお忘れの方はこちら</a></p>
                         <p class="purchase_box_btn"><a href="" onclick="document.loginForm.submit();return false;" class="cmn_btn cmn_btn_login btn_icon_left"><span class="icon-login purchase_box_btn_icon"></span><span>ログインして購入</span></a></p>
                         <!--/ ログインログイン情報入力 -->
                         <input m:id="h_hid__S" type="hidden" name="shop" property="_S"  value="00000003" />
