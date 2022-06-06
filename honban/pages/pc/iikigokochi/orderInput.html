@@ -34,6 +34,8 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/kigokochi.css?ver=20160222" type="text/css" media="all" />
 <link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/exdropdown.css" type="text/css" media="all" />
+<link rel="stylesheet" m:id="css_file" href="../../../contents/shop/00000006/css/featherlight.css" type="text/css" media="all" />
+
 <!-- common js -->
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/yuga.js"></script>
@@ -42,6 +44,7 @@ if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.ad-gallery.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/heightLine.js"></script>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/jquery.flexslider.js"></script>
+<script type="text/javascript" m:id="static_img" language="JavaScript" src="../../../contents/shop/00000006/js/featherlight.js"></script>
 <!--[if lte IE 8]>
 <script type="text/javascript" m:id="static_img" language="JavaScript" src="../contents/shop/00000006/js/jquery.backgroundSize.js"></script>
 <script>
@@ -774,8 +777,12 @@ border-radius:5px;
 		width: 48% !important;
 	}
 }
-
-
+</style>
+<style>
+    /*モーダルウィンドウ調整*/
+    .featherlight {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
 </style>
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script m:id="static_img"  type="text/javascript" language="JavaScript" src="../../../contents/shop/00000006/js/selectivizr.js"></script>
@@ -3458,8 +3465,31 @@ TEL：090-1234-1234
 
 </div><!--r_con_box_03-->
 
-
-
+<!--返品について-->
+<div class="return_item" style="margin-top: 30px;">
+	<table class="memadd_table_02" cellspacing="0" cellpadding="0" border="0" style="border-bottom: none !important">
+		<tr>	
+		<th class="last_02">返品について</th>
+		</tr>
+		<tr>
+		<td class="last_02 bold">※8日以内であれば返品可能。<br>※未使用の場合に限ります。<br>※返品時の送料はお客様負担となります。<br><a href="javascript:void(0)" data-featherlight="#return_goods"><span style="color:#1e90ff;text-decoration: underline;">→詳しくはこちら</span></a>
+		</td>
+		</tr>
+	</table>
+	<!--▼▼▼モーダル▼▼▼-->
+	<div id="return_goods" class="lightbox">
+		<h2 class="cmn_tit01 mt0 mb30 s_mb15"><span class="cmn_tit01_underline">返品・交換</span></h2>
+		<p class="bold" style="line-height: 1.6;">商品到着後8日以内であれば返送料のみのご負担で返品をお受けいたします。（ただし、商品の性質上、本体の開封後、 または商品使用後の返品をお受けできないものもございます。詳しくは各商品のページをご確認ください）。<br />また商品の品質管理には万全を期しておりますが、万一、不備・不足・破損等あった場合は、責任を持って、送料・返送料当社負担にて良品とお取替えいたします。</p>
+					
+		<p class="mt20" style="line-height: 1.6;">ご返品の際は商品一式を下記宛先へ宅配便等でご返送ください。<br />
+			【商品の返送先】<br />
+			〒350-1111　埼玉県川越市野田1050-1　ココチモ配送センター　返品係または交換係（どちらかを必ず明記してください）
+					</p>
+		<p class="tac mt30 s_mt20"><a href="" class="lightbox_close_btn featherlight-close">閉じる</a></p>
+	</div>
+	<!-- /#return_goods -->
+</div>
+<!--返品について-->
 
 </div><!--contents_r_02-->
 </div>
