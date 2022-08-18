@@ -1648,15 +1648,14 @@ $(function () {
 									<p class="mt10" id="new-client"><a href="/shop/memberAdd.do" class="cmn_link01" style="font-size: .85em;">新規会員登録はこちら</a></p>
 
 								</div>
-								<!--▼▼▼ みみもとくん・キュットブルからの遷移 ▼▼▼-->
+								<!--▼▼▼ 電子辞書からの遷移 ▼▼▼-->
 								<script>
-									const targetURL01 = "/item_dccfum/";
-									const targetURL02 = "/item_dgffum/";
-									if(referrerURL.indexOf(targetURL01) > 0 || referrerURL.indexOf(targetURL02) > 0) {
+									const targetURL01 = "/item_dcefum/";
+									if(referrerURL.indexOf(targetURL01) > 0 ) {
 										document.getElementById("new-client").style.display = "none";
 									}
 								</script>
-								<!--▲▲▲ みみもとくん・キュットブルからの遷移 ▲▲▲-->
+								<!--▲▲▲ 電子辞書からの遷移 ▲▲▲-->
 
 								<div id="more_login_text">
 								<span m:id="l_msgPre_errors_member_login">
@@ -1669,6 +1668,7 @@ $(function () {
 									<tr>
 									<th>ログインID<!-- <br class="viewPc"><span class="exp">例：<span m:id="sample_loginid">yokohama123</span></span> --></th>
 									<td class="bor_bottom"><input m:id="h_txt_login_id" type="text" name="order_login_id" class="in_w_02"/>
+									<div class="mt10"><a m:id="e_link_inquiry" href="inquiryInput.html" class="cmn_link01 s_mt5">IDを忘れた方はこちら</a></div>
 									
 									<span m:id="l_msgPre_login_id">
 									<div>
