@@ -194,6 +194,7 @@ $(function(){
 		.cart_intro_tit {max-width:810px;}
 		.cmn_form_table01 th {width:260px;}
 	}
+	.error.reswfon_m {margin-bottom: 10px;}
 	/* placeholder */
 	.cmn_form_table01 td #post_code::-webkit-input-placeholder,
 	.cmn_form_table01 td #dst_post_code::-webkit-input-placeholder,
@@ -664,7 +665,7 @@ $(function(){
 	.cmn_form_table01 td select {font-size: 1em;}
 	.cmn_form_table01 td .select_box select {max-width: 380px;width: auto;}
 	@media screen and (max-width: 767px){
-		.cmn_form_table01 td.birthday_area {
+		.cmn_form_table01 td.birthday_area  > div {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -1956,7 +1957,7 @@ $(function () {
 										<input type="text" m:id="h_txt_tel_no1" name="tel_no1" id="tel01" placeholder="ó·ÅF03" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no2" name="tel_no2" id="tel02" placeholder="0000" />&nbsp;-&nbsp;<input type="text" m:id="h_txt_tel_no3" name="tel_no3" id="tel03" placeholder="0000" />
 										<!-- <p class="example viewPc mt10">ó·&nbsp;:&nbsp;03-0000-0000</p> -->
 										<span m:id="l_msgPre_tel_no">
-											<span class="error">
+											<span class="error mt10 s_mt10">
 												<span m:id="h_err_tel_no">òAóçêÊìdòbî‘çÜì¸óÕÉGÉâÅ[ÉÅÉbÉZÅ[ÉW</span>
 											</span>
 										</span>
@@ -2014,137 +2015,140 @@ $(function () {
 								<tr>
 									<th>ê∂îNåéì˙<span class="th_info"><span class="required">ïKê{</span></span></th>
 									<td class="birthday_area">
-										<select m:id="h_sel_birthday_year" id="year">
-											<option value=""></option>
-											<option m:id="sel_opt_birthday_year"value="2020">2020(óﬂòa2)</option>
-											<option m:id="sel_opt_birthday_year"value="2019">2019(óﬂòaå≥îN)</option>
-											<option m:id="sel_opt_birthday_year"value="2018">2018(ïΩê¨30)</option>
-											<option m:id="sel_opt_birthday_year"value="2017">2017(ïΩê¨29)</option>
-											<option m:id="sel_opt_birthday_year"value="2016">2016(ïΩê¨28)</option>
-											<option m:id="sel_opt_birthday_year"value="2015">2015(ïΩê¨27)</option>
-											<option m:id="sel_opt_birthday_year"value="2014">2014(ïΩê¨26)</option>
-											<option m:id="sel_opt_birthday_year"value="2013">2013(ïΩê¨25)</option>
-											<option m:id="sel_opt_birthday_year"value="2012">2012(ïΩê¨24)</option>
-											<option m:id="sel_opt_birthday_year"value="2011">2011(ïΩê¨23)</option>
-											<option m:id="sel_opt_birthday_year"value="2010">2010(ïΩê¨22)</option>
-											<option m:id="sel_opt_birthday_year"value="2009">2009(ïΩê¨21)</option>
-											<option m:id="sel_opt_birthday_year"value="2008">2008(ïΩê¨20)</option>
-											<option m:id="sel_opt_birthday_year"value="2007">2007(ïΩê¨19)</option>
-											<option m:id="sel_opt_birthday_year"value="2006">2006(ïΩê¨18)</option>
-											<option m:id="sel_opt_birthday_year"value="2005">2005(ïΩê¨17)</option>
-											<option m:id="sel_opt_birthday_year"value="2004">2004(ïΩê¨16)</option>
-											<option m:id="sel_opt_birthday_year"value="2003">2003(ïΩê¨15)</option>
-											<option m:id="sel_opt_birthday_year"value="2002">2002(ïΩê¨14)</option>
-											<option m:id="sel_opt_birthday_year"value="2001">2001(ïΩê¨13)</option>
-											<option m:id="sel_opt_birthday_year"value="2000">2000(ïΩê¨12)</option>
-											<option m:id="sel_opt_birthday_year"value="1999">1999(ïΩê¨11)</option>
-											<option m:id="sel_opt_birthday_year"value="1998">1998(ïΩê¨10)</option>
-											<option m:id="sel_opt_birthday_year"value="1997">1997(ïΩê¨9)</option>
-											<option m:id="sel_opt_birthday_year"value="1996">1996(ïΩê¨8)</option>
-											<option m:id="sel_opt_birthday_year"value="1995">1995(ïΩê¨7)</option>
-											<option m:id="sel_opt_birthday_year"value="1994">1994(ïΩê¨6)</option>
-											<option m:id="sel_opt_birthday_year"value="1993">1993(ïΩê¨5)</option>
-											<option m:id="sel_opt_birthday_year"value="1992">1992(ïΩê¨4)</option>
-											<option m:id="sel_opt_birthday_year"value="1991">1991(ïΩê¨3)</option>
-											<option m:id="sel_opt_birthday_year"value="1990">1990(ïΩê¨2)</option>
-											<option m:id="sel_opt_birthday_year"value="1989">1989(ïΩê¨å≥îN)</option>
-											<option m:id="sel_opt_birthday_year"value="1988">1988(è∫òa63)</option>
-											<option m:id="sel_opt_birthday_year"value="1987">1987(è∫òa62)</option>
-											<option m:id="sel_opt_birthday_year"value="1986">1986(è∫òa61)</option>
-											<option m:id="sel_opt_birthday_year"value="1985">1985(è∫òa60)</option>
-											<option m:id="sel_opt_birthday_year"value="1984">1984(è∫òa59)</option>
-											<option m:id="sel_opt_birthday_year"value="1983">1983(è∫òa58)</option>
-											<option m:id="sel_opt_birthday_year"value="1982">1982(è∫òa57)</option>
-											<option m:id="sel_opt_birthday_year"value="1981">1981(è∫òa56)</option>
-											<option m:id="sel_opt_birthday_year"value="1980">1980(è∫òa55)</option>
-											<option m:id="sel_opt_birthday_year"value="1979">1979(è∫òa54)</option>
-											<option m:id="sel_opt_birthday_year"value="1978">1978(è∫òa53)</option>
-											<option m:id="sel_opt_birthday_year"value="1977">1977(è∫òa52)</option>
-											<option m:id="sel_opt_birthday_year"value="1976">1976(è∫òa51)</option>
-											<option m:id="sel_opt_birthday_year"value="1975">1975(è∫òa50)</option>
-											<option m:id="sel_opt_birthday_year"value="1974">1974(è∫òa49)</option>
-											<option m:id="sel_opt_birthday_year"value="1973">1973(è∫òa48)</option>
-											<option m:id="sel_opt_birthday_year"value="1972">1972(è∫òa47)</option>
-											<option m:id="sel_opt_birthday_year"value="1971">1971(è∫òa46)</option>
-											<option m:id="sel_opt_birthday_year"value="1970">1970(è∫òa45)</option>
-											<option m:id="sel_opt_birthday_year"value="1969">1969(è∫òa44)</option>
-											<option m:id="sel_opt_birthday_year"value="1968">1968(è∫òa43)</option>
-											<option m:id="sel_opt_birthday_year"value="1967">1967(è∫òa42)</option>
-											<option m:id="sel_opt_birthday_year"value="1966">1966(è∫òa41)</option>
-											<option m:id="sel_opt_birthday_year"value="1965">1965(è∫òa40)</option>
-											<option m:id="sel_opt_birthday_year"value="1964">1964(è∫òa39)</option>
-											<option m:id="sel_opt_birthday_year"value="1963">1963(è∫òa38)</option>
-											<option m:id="sel_opt_birthday_year"value="1962">1962(è∫òa37)</option>
-											<option m:id="sel_opt_birthday_year"value="1961">1961(è∫òa36)</option>
-											<option m:id="sel_opt_birthday_year"value="1960" selected="selected">1960(è∫òa35)</option>
-											<option m:id="sel_opt_birthday_year"value="1959">1959(è∫òa34)</option>
-											<option m:id="sel_opt_birthday_year"value="1958">1958(è∫òa33)</option>
-											<option m:id="sel_opt_birthday_year"value="1957">1957(è∫òa32)</option>
-											<option m:id="sel_opt_birthday_year"value="1956">1956(è∫òa31)</option>
-											<option m:id="sel_opt_birthday_year"value="1955">1955(è∫òa30)</option>
-											<option m:id="sel_opt_birthday_year"value="1954">1954(è∫òa29)</option>
-											<option m:id="sel_opt_birthday_year"value="1953">1953(è∫òa28)</option>
-											<option m:id="sel_opt_birthday_year"value="1952">1952(è∫òa27)</option>
-											<option m:id="sel_opt_birthday_year"value="1951">1951(è∫òa26)</option>
-											<option m:id="sel_opt_birthday_year"value="1950">1950(è∫òa25)</option>
-											<option m:id="sel_opt_birthday_year"value="1949">1949(è∫òa24)</option>
-											<option m:id="sel_opt_birthday_year"value="1948">1948(è∫òa23)</option>
-											<option m:id="sel_opt_birthday_year"value="1947">1947(è∫òa22)</option>
-											<option m:id="sel_opt_birthday_year"value="1946">1946(è∫òa21)</option>
-											<option m:id="sel_opt_birthday_year"value="1945">1945(è∫òa20)</option>
-											<option m:id="sel_opt_birthday_year"value="1944">1944(è∫òa19)</option>
-											<option m:id="sel_opt_birthday_year"value="1943">1943(è∫òa18)</option>
-											<option m:id="sel_opt_birthday_year"value="1942">1942(è∫òa17)</option>
-											<option m:id="sel_opt_birthday_year"value="1941">1941(è∫òa16)</option>
-											<option m:id="sel_opt_birthday_year"value="1940">1940(è∫òa15)</option>
-											<option m:id="sel_opt_birthday_year"value="1939">1939(è∫òa14)</option>
-											<option m:id="sel_opt_birthday_year"value="1938">1938(è∫òa13)</option>
-											<option m:id="sel_opt_birthday_year"value="1937">1937(è∫òa12)</option>
-											<option m:id="sel_opt_birthday_year"value="1936">1936(è∫òa11)</option>
-											<option m:id="sel_opt_birthday_year"value="1935">1935(è∫òa10)</option>
-											<option m:id="sel_opt_birthday_year"value="1934">1934(è∫òa9)</option>
-											<option m:id="sel_opt_birthday_year"value="1933">1933(è∫òa8)</option>
-											<option m:id="sel_opt_birthday_year"value="1932">1932(è∫òa7)</option>
-											<option m:id="sel_opt_birthday_year"value="1931">1931(è∫òa6)</option>
-											<option m:id="sel_opt_birthday_year"value="1930">1930(è∫òa5)</option>
-											<option m:id="sel_opt_birthday_year"value="1929">1929(è∫òa4)</option>
-											<option m:id="sel_opt_birthday_year"value="1928">1928(è∫òa3)</option>
-											<option m:id="sel_opt_birthday_year"value="1927">1927(è∫òa2)</option>
-											<option m:id="sel_opt_birthday_year"value="1926">1926(è∫òaå≥îN)</option>
-											<option m:id="sel_opt_birthday_year"value="1925">1925(ëÂê≥14)</option>
-											<option m:id="sel_opt_birthday_year"value="1924">1924(ëÂê≥13)</option>
-											<option m:id="sel_opt_birthday_year"value="1923">1923(ëÂê≥12)</option>
-											<option m:id="sel_opt_birthday_year"value="1922">1922(ëÂê≥11)</option>
-											<option m:id="sel_opt_birthday_year"value="1921">1921(ëÂê≥10)</option>
-											<option m:id="sel_opt_birthday_year"value="1920">1920(ëÂê≥9)</option>
-											<!-- <option m:id="sel_opt_birthday_year"value="1919">1919(ëÂê≥8)</option>
-											<option m:id="sel_opt_birthday_year"value="1918">1918(ëÂê≥7)</option>
-											<option m:id="sel_opt_birthday_year"value="1917">1917(ëÂê≥6)</option>
-											<option m:id="sel_opt_birthday_year"value="1916">1916(ëÂê≥5)</option>
-											<option m:id="sel_opt_birthday_year"value="1915">1915(ëÂê≥4)</option>
-											<option m:id="sel_opt_birthday_year"value="1914">1914(ëÂê≥3)</option>
-											<option m:id="sel_opt_birthday_year"value="1913">1913(ëÂê≥2)</option>
-											<option m:id="sel_opt_birthday_year"value="1912">1912(ëÂê≥å≥îN)</option>
-											<option m:id="sel_opt_birthday_year"value="1911">1911(ñæé°44)</option>
-											<option m:id="sel_opt_birthday_year"value="1910">1910(ñæé°43)</option>
-											<option m:id="sel_opt_birthday_year"value="1909">1909(ñæé°42)</option>
-											<option m:id="sel_opt_birthday_year"value="1908">1908(ñæé°41)</option>
-											<option m:id="sel_opt_birthday_year"value="1907">1907(ñæé°40)</option>
-											<option m:id="sel_opt_birthday_year"value="1906">1906(ñæé°39)</option> -->
-										</select><span class="suffix">îN</span><br class="viewSp">
-										<select m:id="h_sel_birthday_month" class="memadd_input_03">
-											<option value=""></option>
-											<option m:id="h_opt_birthday_month" value="">1</option>
-											<option m:id="dummy" value="">2</option>
-											<option m:id="dummy" value="">3</option>
-										</select><span class="suffix">åé</span>
-										<select m:id="h_sel_birthday_day" class="memadd_input_03">
-											<option value=""></option>
-											<option m:id="h_opt_birthday_day" value="">1</option>
-											<option m:id="dummy" value="">2</option>
-											<option m:id="dummy" value="">3</option>
-										</select><span class="suffix">ì˙</span>
-										<p class="error"><span m:id="h_err_birthday">ê∂îNåéì˙ÉGÉâÅ[ÉÅÉbÉZÅ[ÉW</span></p>
+										<div>
+											<select m:id="h_sel_birthday_year" id="year">
+												<option value=""></option>
+												<option m:id="sel_opt_birthday_year"value="2020">2020(óﬂòa2)</option>
+												<option m:id="sel_opt_birthday_year"value="2019">2019(óﬂòaå≥îN)</option>
+												<option m:id="sel_opt_birthday_year"value="2018">2018(ïΩê¨30)</option>
+												<option m:id="sel_opt_birthday_year"value="2017">2017(ïΩê¨29)</option>
+												<option m:id="sel_opt_birthday_year"value="2016">2016(ïΩê¨28)</option>
+												<option m:id="sel_opt_birthday_year"value="2015">2015(ïΩê¨27)</option>
+												<option m:id="sel_opt_birthday_year"value="2014">2014(ïΩê¨26)</option>
+												<option m:id="sel_opt_birthday_year"value="2013">2013(ïΩê¨25)</option>
+												<option m:id="sel_opt_birthday_year"value="2012">2012(ïΩê¨24)</option>
+												<option m:id="sel_opt_birthday_year"value="2011">2011(ïΩê¨23)</option>
+												<option m:id="sel_opt_birthday_year"value="2010">2010(ïΩê¨22)</option>
+												<option m:id="sel_opt_birthday_year"value="2009">2009(ïΩê¨21)</option>
+												<option m:id="sel_opt_birthday_year"value="2008">2008(ïΩê¨20)</option>
+												<option m:id="sel_opt_birthday_year"value="2007">2007(ïΩê¨19)</option>
+												<option m:id="sel_opt_birthday_year"value="2006">2006(ïΩê¨18)</option>
+												<option m:id="sel_opt_birthday_year"value="2005">2005(ïΩê¨17)</option>
+												<option m:id="sel_opt_birthday_year"value="2004">2004(ïΩê¨16)</option>
+												<option m:id="sel_opt_birthday_year"value="2003">2003(ïΩê¨15)</option>
+												<option m:id="sel_opt_birthday_year"value="2002">2002(ïΩê¨14)</option>
+												<option m:id="sel_opt_birthday_year"value="2001">2001(ïΩê¨13)</option>
+												<option m:id="sel_opt_birthday_year"value="2000">2000(ïΩê¨12)</option>
+												<option m:id="sel_opt_birthday_year"value="1999">1999(ïΩê¨11)</option>
+												<option m:id="sel_opt_birthday_year"value="1998">1998(ïΩê¨10)</option>
+												<option m:id="sel_opt_birthday_year"value="1997">1997(ïΩê¨9)</option>
+												<option m:id="sel_opt_birthday_year"value="1996">1996(ïΩê¨8)</option>
+												<option m:id="sel_opt_birthday_year"value="1995">1995(ïΩê¨7)</option>
+												<option m:id="sel_opt_birthday_year"value="1994">1994(ïΩê¨6)</option>
+												<option m:id="sel_opt_birthday_year"value="1993">1993(ïΩê¨5)</option>
+												<option m:id="sel_opt_birthday_year"value="1992">1992(ïΩê¨4)</option>
+												<option m:id="sel_opt_birthday_year"value="1991">1991(ïΩê¨3)</option>
+												<option m:id="sel_opt_birthday_year"value="1990">1990(ïΩê¨2)</option>
+												<option m:id="sel_opt_birthday_year"value="1989">1989(ïΩê¨å≥îN)</option>
+												<option m:id="sel_opt_birthday_year"value="1988">1988(è∫òa63)</option>
+												<option m:id="sel_opt_birthday_year"value="1987">1987(è∫òa62)</option>
+												<option m:id="sel_opt_birthday_year"value="1986">1986(è∫òa61)</option>
+												<option m:id="sel_opt_birthday_year"value="1985">1985(è∫òa60)</option>
+												<option m:id="sel_opt_birthday_year"value="1984">1984(è∫òa59)</option>
+												<option m:id="sel_opt_birthday_year"value="1983">1983(è∫òa58)</option>
+												<option m:id="sel_opt_birthday_year"value="1982">1982(è∫òa57)</option>
+												<option m:id="sel_opt_birthday_year"value="1981">1981(è∫òa56)</option>
+												<option m:id="sel_opt_birthday_year"value="1980">1980(è∫òa55)</option>
+												<option m:id="sel_opt_birthday_year"value="1979">1979(è∫òa54)</option>
+												<option m:id="sel_opt_birthday_year"value="1978">1978(è∫òa53)</option>
+												<option m:id="sel_opt_birthday_year"value="1977">1977(è∫òa52)</option>
+												<option m:id="sel_opt_birthday_year"value="1976">1976(è∫òa51)</option>
+												<option m:id="sel_opt_birthday_year"value="1975">1975(è∫òa50)</option>
+												<option m:id="sel_opt_birthday_year"value="1974">1974(è∫òa49)</option>
+												<option m:id="sel_opt_birthday_year"value="1973">1973(è∫òa48)</option>
+												<option m:id="sel_opt_birthday_year"value="1972">1972(è∫òa47)</option>
+												<option m:id="sel_opt_birthday_year"value="1971">1971(è∫òa46)</option>
+												<option m:id="sel_opt_birthday_year"value="1970">1970(è∫òa45)</option>
+												<option m:id="sel_opt_birthday_year"value="1969">1969(è∫òa44)</option>
+												<option m:id="sel_opt_birthday_year"value="1968">1968(è∫òa43)</option>
+												<option m:id="sel_opt_birthday_year"value="1967">1967(è∫òa42)</option>
+												<option m:id="sel_opt_birthday_year"value="1966">1966(è∫òa41)</option>
+												<option m:id="sel_opt_birthday_year"value="1965">1965(è∫òa40)</option>
+												<option m:id="sel_opt_birthday_year"value="1964">1964(è∫òa39)</option>
+												<option m:id="sel_opt_birthday_year"value="1963">1963(è∫òa38)</option>
+												<option m:id="sel_opt_birthday_year"value="1962">1962(è∫òa37)</option>
+												<option m:id="sel_opt_birthday_year"value="1961">1961(è∫òa36)</option>
+												<option m:id="sel_opt_birthday_year"value="1960" selected="selected">1960(è∫òa35)</option>
+												<option m:id="sel_opt_birthday_year"value="1959">1959(è∫òa34)</option>
+												<option m:id="sel_opt_birthday_year"value="1958">1958(è∫òa33)</option>
+												<option m:id="sel_opt_birthday_year"value="1957">1957(è∫òa32)</option>
+												<option m:id="sel_opt_birthday_year"value="1956">1956(è∫òa31)</option>
+												<option m:id="sel_opt_birthday_year"value="1955">1955(è∫òa30)</option>
+												<option m:id="sel_opt_birthday_year"value="1954">1954(è∫òa29)</option>
+												<option m:id="sel_opt_birthday_year"value="1953">1953(è∫òa28)</option>
+												<option m:id="sel_opt_birthday_year"value="1952">1952(è∫òa27)</option>
+												<option m:id="sel_opt_birthday_year"value="1951">1951(è∫òa26)</option>
+												<option m:id="sel_opt_birthday_year"value="1950">1950(è∫òa25)</option>
+												<option m:id="sel_opt_birthday_year"value="1949">1949(è∫òa24)</option>
+												<option m:id="sel_opt_birthday_year"value="1948">1948(è∫òa23)</option>
+												<option m:id="sel_opt_birthday_year"value="1947">1947(è∫òa22)</option>
+												<option m:id="sel_opt_birthday_year"value="1946">1946(è∫òa21)</option>
+												<option m:id="sel_opt_birthday_year"value="1945">1945(è∫òa20)</option>
+												<option m:id="sel_opt_birthday_year"value="1944">1944(è∫òa19)</option>
+												<option m:id="sel_opt_birthday_year"value="1943">1943(è∫òa18)</option>
+												<option m:id="sel_opt_birthday_year"value="1942">1942(è∫òa17)</option>
+												<option m:id="sel_opt_birthday_year"value="1941">1941(è∫òa16)</option>
+												<option m:id="sel_opt_birthday_year"value="1940">1940(è∫òa15)</option>
+												<option m:id="sel_opt_birthday_year"value="1939">1939(è∫òa14)</option>
+												<option m:id="sel_opt_birthday_year"value="1938">1938(è∫òa13)</option>
+												<option m:id="sel_opt_birthday_year"value="1937">1937(è∫òa12)</option>
+												<option m:id="sel_opt_birthday_year"value="1936">1936(è∫òa11)</option>
+												<option m:id="sel_opt_birthday_year"value="1935">1935(è∫òa10)</option>
+												<option m:id="sel_opt_birthday_year"value="1934">1934(è∫òa9)</option>
+												<option m:id="sel_opt_birthday_year"value="1933">1933(è∫òa8)</option>
+												<option m:id="sel_opt_birthday_year"value="1932">1932(è∫òa7)</option>
+												<option m:id="sel_opt_birthday_year"value="1931">1931(è∫òa6)</option>
+												<option m:id="sel_opt_birthday_year"value="1930">1930(è∫òa5)</option>
+												<option m:id="sel_opt_birthday_year"value="1929">1929(è∫òa4)</option>
+												<option m:id="sel_opt_birthday_year"value="1928">1928(è∫òa3)</option>
+												<option m:id="sel_opt_birthday_year"value="1927">1927(è∫òa2)</option>
+												<option m:id="sel_opt_birthday_year"value="1926">1926(è∫òaå≥îN)</option>
+												<option m:id="sel_opt_birthday_year"value="1925">1925(ëÂê≥14)</option>
+												<option m:id="sel_opt_birthday_year"value="1924">1924(ëÂê≥13)</option>
+												<option m:id="sel_opt_birthday_year"value="1923">1923(ëÂê≥12)</option>
+												<option m:id="sel_opt_birthday_year"value="1922">1922(ëÂê≥11)</option>
+												<option m:id="sel_opt_birthday_year"value="1921">1921(ëÂê≥10)</option>
+												<option m:id="sel_opt_birthday_year"value="1920">1920(ëÂê≥9)</option>
+												<!-- <option m:id="sel_opt_birthday_year"value="1919">1919(ëÂê≥8)</option>
+												<option m:id="sel_opt_birthday_year"value="1918">1918(ëÂê≥7)</option>
+												<option m:id="sel_opt_birthday_year"value="1917">1917(ëÂê≥6)</option>
+												<option m:id="sel_opt_birthday_year"value="1916">1916(ëÂê≥5)</option>
+												<option m:id="sel_opt_birthday_year"value="1915">1915(ëÂê≥4)</option>
+												<option m:id="sel_opt_birthday_year"value="1914">1914(ëÂê≥3)</option>
+												<option m:id="sel_opt_birthday_year"value="1913">1913(ëÂê≥2)</option>
+												<option m:id="sel_opt_birthday_year"value="1912">1912(ëÂê≥å≥îN)</option>
+												<option m:id="sel_opt_birthday_year"value="1911">1911(ñæé°44)</option>
+												<option m:id="sel_opt_birthday_year"value="1910">1910(ñæé°43)</option>
+												<option m:id="sel_opt_birthday_year"value="1909">1909(ñæé°42)</option>
+												<option m:id="sel_opt_birthday_year"value="1908">1908(ñæé°41)</option>
+												<option m:id="sel_opt_birthday_year"value="1907">1907(ñæé°40)</option>
+												<option m:id="sel_opt_birthday_year"value="1906">1906(ñæé°39)</option> -->
+											</select><span class="suffix">îN</span><br class="viewSp">
+											<select m:id="h_sel_birthday_month" class="memadd_input_03">
+												<option value=""></option>
+												<option m:id="h_opt_birthday_month" value="">1</option>
+												<option m:id="dummy" value="">2</option>
+												<option m:id="dummy" value="">3</option>
+											</select><span class="suffix">åé</span>
+											<select m:id="h_sel_birthday_day" class="memadd_input_03">
+												<option value=""></option>
+												<option m:id="h_opt_birthday_day" value="">1</option>
+												<option m:id="dummy" value="">2</option>
+												<option m:id="dummy" value="">3</option>
+											</select><span class="suffix">ì˙</span>
+										</div>
+										
+										<p class="error mt10 s_mt10"><span m:id="h_err_birthday">ê∂îNåéì˙ÉGÉâÅ[ÉÅÉbÉZÅ[ÉW</span></p>
 									</td>
 								</tr>
 								<tr>
@@ -3411,9 +3415,6 @@ $(function () {
 <span m:id="site_prop13"></span>
 <span m:id="site_products"></span>
 
-
-
-<script type='text/javascript' src='//formassist.jp/FormAssist_tag.js?user=u-can&num=101'></script>
 
 <!-- InstanceEndEditable -->
 </body>
