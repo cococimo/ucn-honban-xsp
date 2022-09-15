@@ -1,0 +1,436 @@
+@charset "shift_jis";
+
+/* アクセントカラー指定 ここから================ */
+
+#pankuzu,
+#recom-title {
+  background: #d3ede4;
+}
+
+#script h3 {
+  color: #d3ede4;
+}
+#script h4 {
+  border-bottom:3px solid #ccc;
+  padding-bottom: 10px;
+}
+#script h2,
+#script h3,
+#script h4 {
+  border-color: #d3ede4;
+}
+
+.column4 {
+    margin: 2% 0 0 1% !important;
+}
+
+/* アクセントカラー指定 ここまで================ */
+
+h1{
+	font-size: 150%;
+}
+
+h2{
+	font-size: 150% !important;
+	padding-bottom: 5px;
+}
+
+.clear{
+	clear:both;
+}
+
+.column4 img{
+	width:auto !important;
+	height:210px;
+}
+
+.column3_middle{
+	margin-left:2% !important;
+}
+
+#container {
+    text-align: left;
+}
+
+/* トップ画像 */
+
+#main-background {
+  background: #000 url(http://www.u-canshop.jp/nihonnomeisaku/episode/img/kiitetanoshimu-topimg.jpg) top center no-repeat;
+  background-size: cover;
+  height: 160px; /* 2ページ目以降のトップイメージの高さ */
+}
+
+#first-page #main-background {
+  height: 450px; /* 1ページ目のトップイメージの高さ */
+  text-align: right;
+}
+
+#top-wrap {
+  background: rgba(0,0,0,0.3); /* 背景色のブラック透過度を設定(0.3～0.6の範囲で)*/
+}
+
+#main-background,
+#main-background h1 a {
+  color: #fff; /* タイトル文字色 */
+}
+
+#main-background h1 {
+  font-family: NotoserifJP !important; /* NotoserifJP = 明朝体 / NotoSansJP = ゴシック体*/
+  font-size: 28px; /* 2ページ目以降の文字サイズ */
+  font-weight: 700; /* 300 / 500 / 700 */
+  padding-top: 50px; /* 2ページ目以降の上余白 */
+}
+
+#first-page #main-background h1 {
+  padding-top: 80px; /* 1ページ目の上余白 */
+  font-size: 46px; /* 1ページ目の文字サイズ */
+}
+
+.only_sp{
+	display:none;
+}
+
+/* エピソード */
+
+#script .block h2,
+#script .block h3 {
+  font-family: NotoSansJP !important; /* NotoserifJP = 明朝体 / NotoSansJP = ゴシック体*/
+  font-weight: 700; /* 300 / 500 / 700 */
+}
+.block, .section > h2, #bottom-relate-item, #bottom-recom-item, .itemlist3c {
+    width: 100%;
+}
+
+#script .block h2 span {
+  color: #333;
+  font-weight: 500; /* 300 / 500 / 700 */
+}
+.center{
+	text-align:center;
+}
+
+.osusume{
+	font-size:120%;
+	font-weight:bold;
+	text-align:center;
+	padding:25px;	
+	color:#c71585;
+}
+
+.osusume_link{
+	text-decoration: underline;
+	color: #1e90ff!important;
+	text-align:center!important;
+	font-size:90%!important;
+}
+a.osusume_link,
+a.osusume_link:visited {
+  color:#26988f !important;
+}
+.section .sec_item {
+  padding-top: 103px;
+  margin-top: -103px;
+}
+.banner {
+    width: 450px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 20px auto 10px auto;
+    background: #Fdd000;
+    border-radius: 20px;
+    transition: all 400ms 0s ease;
+}
+.block .banner p{
+  margin-top:0px !important;
+  margin-bottom:0px !important;
+}
+.banner:hover {
+    opacity: 0.85;
+}
+.banner a {
+    display: block;
+}
+
+.prof{
+	padding: 10px;
+	background-color: #f0e68c;
+	border-radius: 10px;
+
+}
+
+.column3{
+	width: 31% !important;;
+}
+
+.prof p {
+    font-size: 100% !important;
+}
+
+
+
+/* 送料無料ページ独自CSS */
+
+.paddingtop0{
+	padding-top:0px;
+}
+
+.small{
+	font-size:90% !important;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.rule{
+	background-color: #e8ebe7 !important;
+	padding: 10px;
+}
+
+.rule2{
+	line-height: 180%;
+}
+
+.rule3{
+	display:block;
+	padding-bottom: 5px;
+}
+
+.freeicon{
+	background-color: #76a1b8;
+	color: #fff !important;
+	border-radius: 80px;
+	text-align: center;
+	margin-top: -15px !important;
+}
+
+
+/* 後払いページの装飾 */
+
+
+.tezyun{
+	font-weight: bold !important;
+	color: #329371 !important;
+}
+
+.aftercost a{
+	color:#00a1e9;
+	border-bottom:1px;
+}
+
+.au2{
+	color: #666 !important;
+	font-size: 100% !important;
+}
+.au img{
+	border: solid 1px #aaa5a5;
+}
+
+.backgreen{
+	padding: 0px;
+	border: solid 1px #d3ede4;
+}
+
+.attention_title{
+	font-weight: bold;
+	background-color: #d3ede4;
+	padding: 20px;
+	margin: 0px !important;
+}
+
+.attention_list{
+	padding: 20px;
+}
+
+.ditail_list{
+	padding-left: 30px;
+	text-indent: -1.1em;
+	padding-bottom: 5px;
+}
+
+
+
+/* コーディネートアイテム */
+
+.col4-1, .col4-2, .col4-3, .col4-4 {
+    padding-right: 2%;
+}
+
+.col4-1, .col4-2, .col4-3, .col4-4 {
+    width: 25%;
+    float: left;
+}
+
+.flexbox {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.flexbox img {
+    width: 25px;
+}
+
+.margin-bottom10{
+	margin-bottom:10px !important;
+}
+
+.annotation{
+	margin-top: 5px !important;
+  }
+
+@media screen and (max-width: 767px) {
+
+.annotation{
+      font-size: 70% !important;
+	margin-top: -10px !important;
+  }
+
+}
+
+
+/* スマートフォン用CSSここから */
+@media screen and (max-width: 767px) {
+
+  /* トップ画像 */
+
+  #top-wrap {
+      background: rgba(0,0,0,0.5);
+  }
+
+    #main-background h1,
+    #first-page #main-background h1 {
+      font-size: 20px; /* 2ページ目以降の文字サイズ */
+      font-family: serif !important; /* serif = 明朝体 / sans-serif = ゴシック体*/
+      font-weight: bold; /* normal / bold */
+      padding-top: 40px; /* 2ページ目以降の上余白 */
+    }
+
+    #first-page #main-background h1 {
+      font-size: 26px; /* 1ページ目の文字サイズ */
+      padding-top: 60px; /* 1ページ目の上余白 */
+      padding-bottom: 0;
+    }
+
+
+  /* エピソード */
+
+  #script .block h2,
+  #script .block h3 {
+    font-family: sans-serif !important; /* serif = 明朝体 / sans-serif = ゴシック体*/
+  }
+  .section {
+    padding: 25px 0 10px;
+  }
+  .section h4 {
+    font-size: 16px;
+  }
+  .section p {
+    font-size:100%!important;
+  }
+  .column1 p {
+  	font-size:100%!important;
+  }
+
+  .column2 p{
+  	font-size:100%!important;
+  }
+  .column4 {
+      margin: 2% 0 0 0 !important;
+    }
+
+
+
+  #script .block h2 span {
+    color: #333;
+    font-size:  70%;
+  }
+
+
+
+  .column4 img{
+    width:100% !important;
+    height:auto;
+  }
+  .column4 p .osusume_link {
+      text-decoration: underline;
+      text-align: center!important;
+      font-size: 13px !important;
+      line-height: 1.5;
+      display: block;
+  }
+  .item_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .s_column3 {
+    width:33%
+  }
+  .s_column3 p.center {
+    padding:0 .5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .banner {
+      width: 100%;
+      margin-top: 30px;
+    }
+  .banner p {
+      font-size: 4vw;
+    }
+  .column3 p.center  {
+    font-size: 2.5vw !important;
+    line-height: 1.5;
+  }
+  #script .block .column3 p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .section .sec_item {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+
+/* コーディネートアイテム */
+
+.col4-1sp, .col4-2sp, .col4-3sp, .col4-4sp {
+        width: 48%;
+    float: left;
+}
+
+.flexbox {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.flexbox img {
+    width: 25px;
+}
+
+/* 送料無料LP */
+
+
+.column3 {
+
+    padding-right: 10px !important;
+}
+
+.paddingtop0 {
+    padding-top: 0px !important;
+}
+
+.small {
+
+    margin: 10px;
+}
+
+.annotation {
+    margin-top: 0px !important;
+}
+
+
+/* スマートフォン用CSSここまで */
+} /* @media max-width:566px */
