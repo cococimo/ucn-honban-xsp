@@ -1,0 +1,298 @@
+<!-- 甘噛みハムハム　ここから -->
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/contents/shop/00000003/css/hamham/style.css" media="all" />
+
+<!-- WEBフォント　ここから-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!--/WEBフォント　ここまで-->
+
+<!-- 販売中と完売切り替え ここから -->
+<style>
+	/* 販売中 */
+	.order_btn.soldout,
+	#purchase_btn_keppin {
+		display: none;
+	}
+</style>
+
+<style>
+	/* 完売対応 */
+	/* .order_btn.onsale,
+	.purchase_fixed #purchase_btn_order .pc_only,
+	.purchase_fixed #goodsDetail_tel_btn,
+	.goto_cart {
+		display: none !important;
+	}
+	@media (max-width: 768px) {
+		.purchase_fixed #purchase_btn_order {
+			display: none;
+		}
+	} */
+</style>
+<!-- 販売中と完売切り替え ここまで -->
+
+<!-- 配送日指定の表記を非表示 ここから-->
+<!-- <style>
+	#content_wrap .price_info_area .plice_delivery .pho_box {display:none !important}
+</style> -->
+<!-- 配送日指定の表記を非表示 ここまで -->
+
+<!-- 商品はお申込みから通常3～6日前後でお届け日表示 ここから-->
+<!-- <style>
+	.date_3-6 {
+		display: none;
+	}
+</style> -->
+<!-- 商品はお申込みから通常3～6日前後でお届け日表示 ここまで-->
+
+<div class="goods_wrap">
+	<div class="hamham_wrapper">
+	<div class="item_visual">
+		<h1>
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/hamham/dhb2g_main.jpg" />
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/hamham/dhb2g_main_sp.jpg" />
+			<img src="/contents/shop/00000003/image/static/hamham/dhb2g_main.jpg" alt="甘噛みハムハム" />
+		</picture>
+		</h1>
+		<div class="loopSlider mt30 s_mt20">
+		<ul class="thumb__items">
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum1.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum2.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum3.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum4.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum5.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum6.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum1.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum2.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum3.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum4.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum5.png" alt=""></li>
+			<li><img src="/contents/shop/00000003/goods/image/new/dhb2g/dhb2g_sum6.png" alt=""></li>
+		</ul>
+		</div>
+	</div>
+
+	<!-- お申込みボタン -->
+	<p class="order_btn onsale">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+				<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	 <!-- お申込み完売対応 -->
+	<p class="order_btn soldout">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_sp_2.jpg">
+			<img src="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png" alt="こちらの商品んは好評のため、完売いたしました。">
+		</picture>
+	</p>
+	<!-- /お申込み完売対応 -->
+
+	<!-- インフォメーション　
+	<div class="info_txt">
+		こちらの商品は予約販売となります。<br>
+		商品の発送は11月下旬ごろを予定しております。<br>
+		あらかじめ、ご了承ください。
+	</div>
+	  /インフォメーション-->
+	
+
+	<section class="hamham_lead">
+		<div class="hamham_lead_inner">
+		<div class="hamham_lead_inner--img">
+			<img src="/contents/shop/00000003/image/static/hamham/dhb2g_img01.gif" alt="">
+
+		</div>
+		<div class="hamham_lead_inner--txt">
+			<h2 class="hamham_lead_inner--title">魅惑の「甘噛み」をいつでも。<br class="viewPc">心地いい癒しをあなたへ。</h2>
+			<p>赤ちゃんや幼いペットのほんの短い期間にしか体験できない甘噛み。<br>そんな幸せな時間を再現したくてつくられた甘噛みロボット『甘噛みハムハム』。ミケネコのゆずと、シバイヌのコタロウの2匹セットでお届けします。<br>子育てを懐かしむような、小さな生きものを育むような、思わず笑顔になってしまうそんな幸せをご体感ください。</p>
+		</div>
+		</div>
+	</section><!-- /hamham_lead -->
+
+	<section class="hamham_description">
+		<div class="hamham_description_inner">
+			<div class="hamham_description_inner__imgwrap">
+				<div class="hamham_description_inner__imgwrap--img">
+				<img src="/contents/shop/00000003/image/static/hamham/dhb2g_img02.png" alt="リラックスタイムに">
+				</div>
+				<div class="hamham_description_inner__imgwrap--img">
+				<img src="/contents/shop/00000003/image/static/hamham/dhb2g_img03.png" alt="作業の合間に">
+				</div>
+				<div class="hamham_description_inner__imgwrap--img">
+				<img src="/contents/shop/00000003/image/static/hamham/dhb2g_img04.png" alt="お部屋にいるだけで癒される">
+				</div>
+			</div>
+
+			<div class="hamham_description_inner--txt">
+				<h2 class="hamham_description_inner--title" style="display:none">魅惑のハムゴリズム</h2>
+				<p>口元に指を運ぶと、「ハムハム」「カミカミ」と気持ちいい力加減で甘噛みしてくれます。<br>
+				たくさんの甘噛みのしぐさを生む「ハムゴリズム」というプログラムにより、指を入れるたびに違った甘噛みを体験できます。<br>
+				例えば味わいハム、溺れハム、マッサージハム、空振りハムなど、様々なしぐさを作りました。<br>
+				心地いいけれど、止めさせないといけない― ―そんな魅惑の「甘噛み」をいつでも味わうことができます。
+				</p>
+			</div>
+
+			<div class="hamham_video-uv_inner__video mt60 s_mt30">
+				<video class="video" src="/contents/shop/00000003/image/static/hamham/amagami-ham-ham-PV.mp4" autoplay loop muted playsinline controls></video>
+			</div>
+		</div>
+	</section><!-- /hamham_description -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn onsale">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+				<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	 <!-- お申込み完売対応 -->
+	<p class="order_btn soldout">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_sp_2.jpg">
+			<img src="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png" alt="こちらの商品んは好評のため、完売いたしました。">
+		</picture>
+	</p>
+	<!-- /お申込み完売対応 -->
+
+	<section class="hamham_video-uv">
+		<div class="hamham_video-uv_inner">
+			<div class="hamham_video-uv_inner--txt">
+				<h2 class="hamham_video-uv_inner--title">体験した人の声</h2>
+				<p>理想の甘噛みのしぐさを求めて、様々な方にプロトタイプを先行体験していただきました。<br>その感想を一部ご紹介します。</p>
+			</div>
+			<div class="hamham_text-uv">
+				<div class="hamham_text-uv_inner">
+				<h2 class="hamham_text-uv_inner--title" style="display:none">体験した人のコメント</h2>
+				<div class="hamham_text-uv_inner__commentwrap">
+					<div class="hamham_text-uv_inner__commentwrap--comment">
+					<h3 class="comment-ttl mb5">噛み方が違うのがハマります</h3>
+					<p>これはやり続けたくなる！指を入れるたびに噛み方が違うのがハマります。</p>
+					</div>
+					<div class="hamham_text-uv_inner__commentwrap--comment">
+					<h3 class="comment-ttl mb10">バリエーションが多い</h3>
+					<p>ハムハムのバリエーションが多いのがいいですね。癒される。</p>
+					</div>
+					<div class="hamham_text-uv_inner__commentwrap--comment">
+					<h3 class="comment-ttl mb10">甘噛み体験を思い出しました</h3>
+					<p>飼っている猫の甘噛み体験を思い出しました。とってもいいです。</p>
+					</div>
+					<div class="hamham_text-uv_inner__commentwrap--comment">
+					<h3 class="comment-ttl mb10">懐かしくなりました</h3>
+					<p>子供がいるのですが、ハムハムされると懐かしくなりました。</p>
+					</div>
+				</div>
+				<p class="notice_txt mt5">※お客様の声の提供元は、ユカイ工学（株）。プロトタイプの先行体験者レビューより抜粋・要約。使用感には個人差があります。</p>
+				</div>
+			</div><!-- /hamham_text-uv -->
+
+			<div class="hamham_video-uv_inner__video mt60 s_mt30">
+				<video class="video" src="/contents/shop/00000003/image/static/hamham/ham_first_bite.mp4" autoplay loop muted playsinline controls></video>
+			</div>
+		</div>
+	</section><!-- /hamham_video-uv -->
+
+	<section class="hamham_expert">
+	<div class="hamham_expert_inner">
+		<div class="hamham_expert_inner--txt">
+		<h2 class="hamham_expert_inner--title">専門家の声</h2>
+		<p>甘噛みは、言葉を使わずに様々な感情を伝える手段です。そして、何とも言えない心地よさも与えてくれます。赤ちゃんやペットからの甘噛みを何度も味わいたい人って、実は多いのではないでしょうか。</p>
+		<p class="mt30 s_mt20">甘噛みハムハムは様々な甘噛みを通じて、そんな気持ちを満たしてくれる存在になるでしょう。甘噛みのように親密な関係で行われる触れ合いは、心を通わせるだけではなく、ストレスを減らして癒しをもたらす効果も期待できそうです。</p>
+		</div>
+		<div class="hamham_expert_inner--profile">
+		<img src="/contents/shop/00000003/image/static/hamham/dhb2g_img05.png" alt="">
+		<div class="profile_txt">
+			<p class="profile_txt--name">塩見 昌裕 博士(工学)</p>
+			<p class="profile_txt--job">株式会社 国際電気通信基礎技術研究所(ATR) <br>深層インタラクション総合研究所<br>エージェントインタラクションデザイン研究室 室長</p>
+		</div>
+		</div>
+	</div>
+	</section><!-- /hamham_expert -->
+
+	<!-- お申込みボタン -->
+	<p class="order_btn onsale">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+			<picture>
+				<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+				<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+				<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+			</picture>
+		</a>
+	</p>
+	<!-- お申込みボタン ここまで -->
+
+	 <!-- お申込み完売対応 -->
+	<p class="order_btn soldout">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_sp_2.jpg">
+			<img src="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png" alt="こちらの商品んは好評のため、完売いたしました。">
+		</picture>
+	</p>
+	<!-- /お申込み完売対応 -->
+
+	<section class="hamham_spec mb0">
+	<h2 style="display:none">商品詳細</h2>
+	<div class="hamham_spec_inner">
+		<div class="hamham_spec_inner--img">
+		<img src="/contents/shop/00000003/image/static/hamham/dhb2g_det01.png" alt="">
+		</div>
+		<div class="hamham_spec_inner--table">
+		<table>
+		<tr>
+			<th>●製品名</th>
+			<td>甘噛みハムハム2匹セット(ゆず／ミケネコ、コタロウ／シバイヌ)</td>
+		</tr>
+		<tr>
+			<th>●電源</th>
+			<td>単3形乾電池3本(電池は別売りです)</td>
+		</tr>
+		<tr>
+			<th>●使用可能電池</th>
+			<td>電池(推奨)、ニッケル水素充電池</td>
+		</tr>
+		<tr>
+			<th>●外形寸法</th>
+			<td>ゆず/ミケネコ：W130×H195×D210mm(しっぽ込み)<br>コタロウ/シバイヌ：W120×H190×D190mm(しっぽ込み)</td>
+		</tr>
+		<tr>
+			<th>●重量</th>
+			<td>1つあたり約380g</td>
+		</tr>
+		<tr>
+			<th>●発売元</th>
+			<td>ユカイ工学株式会社</td>
+		</tr>
+		<tr>
+			<th>●保証期間</th>
+			<td>90日</td>
+		</tr>
+		</table>
+		<div class="notice">
+			<ul class="indent-1">
+				<li>※ぬいぐるみは性質上、サイズや表情などに多少の個体差・個性が生じます。予めご了承ください。</li>
+				<li>※モニター環境により、実際の商品と多少色味が異なって見える場合がございます。</li>
+			</ul>
+		</div>
+		</div>
+
+	</div>
+	</section><!-- /hamham_spec -->
+
+	</div><!-- /hamham_wrapper -->
+</div><!-- /goods_wrap -->

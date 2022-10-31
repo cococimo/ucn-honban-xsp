@@ -1,0 +1,365 @@
+<!-- お申込みボタン -->
+<p class="order_btn onsale">
+	<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="">
+		<picture>
+			<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png">
+			<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_btn01_sp.png">
+			<img src="/contents/shop/00000003/image/static/img/order_brn/order_btn01.png" alt="今すぐ申し込む">
+		</picture>
+	</a>
+</p>
+<!-- お申込みボタン ここまで -->
+
+<!-- お申込み完売対応 -->
+<p class="order_btn soldout">
+	<picture>
+		<source media="(min-width: 768px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png">
+		<source media="(max-width: 767px)" srcset="/contents/shop/00000003/image/static/img/order_brn/order_pic_sp_2.jpg">
+		<img src="/contents/shop/00000003/image/static/img/order_brn/order_pic_2.png" alt="こちらの商品んは好評のため、完売いたしました。">
+	</picture>
+</p>
+<!-- /お申込み完売対応 -->
+
+<!-- モーダルウィンドウ用の枠-->
+<div class="modal">
+	<div class="modal__item"><img src=""></div>
+	<!-- <div class="modal__caption"></div> -->
+	<div class="modal__prev"><i class="fas icon-play-left"></i></div>
+	<div class="modal__next"><i class="fas icon-play-right"></i></div>
+  </div>
+
+  <div class="modal-overlay">
+	  <div class="modal__close"><i class="close-btn"></i></div>
+  </div>
+<!-- /モーダルウィンドウ用の枠-->
+
+
+  <script src="/contents/c/js/jquery.pause.min.js" language="JavaScript" type="text/javascript"></script>
+  <script>
+  function switchScroll() {
+	  var windowWidth = $(window).width();
+	  var windowSm = 768;
+	  // if (windowWidth > windowSm) {
+	  // PCのみ動作 ここから
+	  // 自動水平スクロール ここから
+
+	  var setElm = $('.loopSlider'),
+		  slideSpeed = 10000;
+
+	  setElm.each(function(){
+		  var self = $(this),
+		  selfWidth = self.innerWidth(),
+		  findUl = self.find('ul'),
+		  findLi = findUl.find('li'),
+		  listWidth = findLi.outerWidth(),
+		  listCount = findLi.length,
+		  loopWidth = listWidth * listCount;
+
+		  findUl.wrapAll('<div class="loopSliderWrap" />');
+		  var selfWrap = self.find('.loopSliderWrap');
+
+		  if(loopWidth > selfWidth){
+		  findUl.css({width:loopWidth}).clone().appendTo(selfWrap);
+
+		  selfWrap.css({width:loopWidth*2});
+
+		  function loopMove(){
+		  selfWrap.animate({left:'-' + (loopWidth) + 'px'},slideSpeed*listCount,'linear',function(){
+		  selfWrap.css({left:'0'});
+		  loopMove();
+		  });
+		  };
+		  loopMove();
+
+		  // setElm.hover(function() {
+		  // selfWrap.pause();
+		  // }, function() {
+		  // 	selfWrap.resume();
+		  // });
+		  }
+	  });
+	  }
+  // }
+
+
+
+  
+  /* initial
+  ------------------------------------- */
+  switchScroll();
+
+  </script>
+  
+  <script>
+	class Modal {
+		constructor() {
+		//初期値(DOM)
+		this.DOM = {};
+		this.DOM.thumbItems = document.querySelectorAll('.thumb__items li');
+		this.DOM.modal = document.querySelector('.modal');
+		this.DOM.modalOverlay = document.querySelector('.modal-overlay');
+		this.DOM.modalItem = document.querySelector('.modal__item');
+		this.DOM.modalCaption = document.querySelector('.modal__caption');
+		this.DOM.modalClose = document.querySelector('.modal__close');
+		this.DOM.modalPrev = document.querySelector('.modal__prev');
+		this.DOM.modalNext = document.querySelector('.modal__next');
+	
+		// スワイプ座標
+		this.startX;
+		this.endX;
+		// ターゲット要素
+		this.thumbTarget;
+		// 何番めの要素か
+		this.thumbCurrent;
+	
+		// 最初に実行する関数
+		this._init();
+		}
+	
+		_init() {
+		this.DOM.thumbItems.forEach((thumbItem, index, array) => {
+			thumbItem.addEventListener('click', this._appearModal.bind(this, thumbItem, index));
+		});
+		// クリックイベント実行
+		this._clickEvent();
+		// スワイプイベント実行
+		this._swipeEvent();
+		}
+		
+		// クリックイベント
+		_clickEvent() {
+		this.DOM.modalClose.addEventListener('click', this._disappearModal.bind(this));
+		this.DOM.modalOverlay.addEventListener('click', this._disappearModal.bind(this));
+		this.DOM.modalNext.addEventListener('click', this._next.bind(this));
+		this.DOM.modalPrev.addEventListener('click', this._prev.bind(this));
+		}
+		// スワイプイベント
+		_swipeEvent() {
+		this.DOM.modalItem.addEventListener('touchmove', this._swipeStart.bind(this));
+		this.DOM.modalItem.addEventListener('touchstart', this._swipeMove.bind(this));
+		this.DOM.modalItem.addEventListener('touchend', this._swipeEnd.bind(this));
+		}
+		_swipeMove(event) {
+		event.preventDefault();
+		this.endX = event.touches[0].pageX;
+		}
+		_swipeStart(event) {
+		event.preventDefault();
+		this.startX = event.touches[0].pageX;
+		}
+		_swipeEnd(event) {
+		event.preventDefault();
+		console.log('startX:' + this.startX);
+		console.log('endX:' + this.endX);
+		if( 0 < (this.endX - this.startX) ) {
+			this._next();
+		} else {
+			this._prev();
+		}
+		}
+		// モーダル表示
+		_appearModal(thumbItem, index) {
+		this.thumbCurrent = index; // 現在のindex
+		this.DOM.modal.classList.add('visible');
+		this.DOM.modalOverlay.classList.add('visible');
+	
+		this.thumbTarget = thumbItem; //モーダル表示する要素
+		
+		this._modalShow(this.thumbTarget); // モーダル表示
+
+		document.querySelector('body').classList.add('fixed'); //背景固定
+		}
+		// モーダル非表示
+		_disappearModal() {
+		this.DOM.modal.classList.remove('visible');
+		this.DOM.modalOverlay.classList.remove('visible');
+		document.querySelector('body').classList.remove('fixed');
+		}
+		// モーダルに表示する画像
+		_modalShow(self) {
+		const imgElm = self.childNodes[0];
+		const targetmodalItem = this.DOM.modalItem.childNodes[0];
+		targetmodalItem.classList.add('fadein');
+		targetmodalItem.src = imgElm.src;
+		// フェードインのクラス
+		setTimeout(function() {
+			targetmodalItem.classList.add('fadeout');
+			targetmodalItem.classList.remove('fadein');
+			targetmodalItem.classList.remove('fadeout');
+		},300);
+	
+		//   this._modalCaption(imgElm);
+		}
+		// モーダルに表示するキャプション
+		_modalCaption(imgElm) {
+		this.DOM.modalCaption.innerText = imgElm.dataset.caption
+		}
+		_next() {
+		this.thumbCurrent = this._changeCount(1, this.thumbCurrent, this.DOM.thumbItems.length);
+		this.thumbTarget = this.DOM.thumbItems[this.thumbCurrent];
+		this._modalShow(this.thumbTarget); // モーダル表示
+		}
+		_prev() {
+		this.thumbCurrent = this._changeCount(-1, this.thumbCurrent, this.DOM.thumbItems.length);
+		this.thumbTarget = this.DOM.thumbItems[this.thumbCurrent];
+	
+		this._modalShow(this.thumbTarget); // モーダル表示
+		}
+	
+		// 変更する番号を取得
+		_changeCount(num, index, len) {
+		return (index + num + len) % len;
+		}
+	}
+	
+	// インスタンス化
+	const modal = new Modal();
+</script>
+
+
+<script>
+	// ビデオ再生の調整 スマホのみ自動再生しない
+	if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
+		const videElements = document.querySelectorAll('video');
+		videElements.forEach((video) => {
+			video.autoplay =false;
+			video.pause();
+		})
+	}
+	</script>
+
+ <!-- 追従カート（デザイン） -->
+ <style>
+	.goto_cart {
+		width: auto;
+		position: fixed;
+		right: 1px;
+    	bottom: 207px;
+		z-index: 99;
+		filter: none;
+		transition: opacity .4s;
+	}
+	.goto_cart:hover {
+		opacity: .8;
+	}
+ </style>
+<div class="goto_cart viewPc">
+	<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+		<img src="/contents/shop/00000003/image/static/hamham/cart_btn.png" alt="ご注文はこちらから">
+	</a>
+</div>
+<!-- /追従カート（デザイン） -->
+
+<!-- ▼▼▼追従ボタン-->
+<style>
+
+.goto_top #pagetop { width: 50px; position: fixed; z-index: 20; right: 0; bottom: 138px; -webkit-transition: opacity .4s; transition: opacity .4s; }
+.goto_top #pagetop:hover { opacity: .7; }
+@media screen and (max-width: 767px) { .goto_top #pagetop { display: none; } }
+.goto_top #pagetop_sp { display: none; }
+@media screen and (max-width: 767px) { .goto_top #pagetop_sp { display: block; position: fixed; z-index: 7; bottom: 20vw; right: 0; width: 50px; -webkit-transform: translate3d(0, 0, 0); }
+  .goto_top #pagetop_sp.stop { position: absolute; z-index: 7; top: -50px; bottom: auto; right: 10px; }
+  .goto_top #pagetop_sp.view { display: block !important; opacity: 1; }
+}
+
+.goto_top #pagetop {right: 34px;}
+.pagetop_pc img,
+.pagetop_sp img {
+	filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .5));
+}
+</style>
+
+<div class="goto_top">
+	<div id="pagetop" class="pagetop_pc">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る"></a>
+	</div>
+	<div id="pagetop_sp" class="pagetop_sp">
+		<a href="#top"><img src="/contents/c/shop/image/btn_pagetop_sp.png" alt="ページトップに戻る"></a>
+	</div>
+</div>
+
+<!-- ▲▲▲追従ボタン-->
+
+
+<!-- カート追従バナー -->
+<style>
+	.purchase_fixed .inner a:hover {cursor: pointer;}
+	.tel.js-tel_sticky {display:none;}
+	.purchase_fixed .order_btn {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.sp {display: none !important;}
+	.pc {display: block !important;}
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.sp {display: block !important;}
+		.pc {display: none !important;}
+	}
+		.purchase_fixed {display: block;position: fixed;bottom: 0;left: 0;border-top: 4px solid #DB844E;background: #f9f5e8;width: 100%;font-size: 12px;text-align: center;z-index: 10;}
+		.purchase_fixed .inner {max-width: 914px;padding: 1rem;display: flex;align-items: center;margin: 0 auto;justify-content: space-between;}
+		.purchase_fixed .inner > #purchase_btn_order img,
+		.purchase_fixed .inner > #purchase_btn_keppin img {width: 455px;}
+		.purchase_fixed .inner > p:first-of-type span {display: block;margin-top: 5px;}
+		.purchase_fixed .inner a:hover {opacity: .85;}
+
+	@media all and (min-width: 0) and (max-width: 767px) {
+		.inner08 {margin-top: -60px;padding-top: 60px;}
+		.footer #pagetop_sp {bottom: 105px;}
+		.purchase_fixed {background: #f9f5e8;border-top: 0;box-shadow:0px -2px 6px 3px rgba(0, 0, 0, 0.25)}
+		.purchase_fixed .inner {padding: .5em .5em .3em;}
+		.purchase_fixed .inner > p:first-of-type {padding-right: 0;}
+		.purchase_fixed .inner > p:last-of-type {padding-left: 0;}
+		.purchase_fixed .inner > p:first-of-type img {width: 100%;}
+		.purchase_fixed .inner > p:last-of-type img {width: 100%;}
+		.purchase_fixed .inner + p {padding-bottom: .5rem;}
+		#purchase_btn_keppin {width:100%;text-align:center;}
+		.purchase_fixed .inner #purchase_btn_keppin img {max-width:80vw;}
+		.footer #pagetop_sp {bottom: 140px;}
+	}
+	</style>
+	<style>
+		@media (max-width: 767px) and (min-width: 0) {
+			/* SKUの商品ボタン位置調整 */
+			.goto_top #pagetop_sp {
+				bottom: 120px;
+			}
+			/* SKU以外の商品のボタン位置調整 */
+			.goto_top #pagetop_sp {
+				bottom: 93px;
+			}
+			#goods .itemtop_sp {
+				bottom: 93px;
+			}
+		}
+
+	</style>
+
+<div class="purchase_fixed">
+	<div class="inner">
+	  <!-- 欠品対応の場合、非表示 style="display: none;"-->
+	  <p class="sp_only">
+		<a id="goodsDetail_tel_btn" href="tel:0120552186" style="display: inline-block;">
+		  <img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_call_1.png?0731">
+		</a>
+	  </p>
+	  <!-- //欠品対応の場合、非表示 -->
+	  <p class="pc_only">
+		<img src="/contents/shop/00000003/image/static/img/purchase_fixed/call-small.png" alt="フリーダイヤル：お電話でもお申し込みいただけます。0120-552-186（6時?22時 日曜・祝日も受付けます）">
+	  </p>
+	  <p class="order_btn" id="purchase_btn_order">
+		<a onclick="siteCatalistAddCart(document.cartGoodsAddForm.ext_goods_sku_code.value);return false;" href="" >
+		<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_1.png?0731-1" alt="この商品を申し込む"></span>
+		<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn.png" alt="この商品を申し込む"></span>
+		</a>
+	  </p>
+	  <!-- 欠品対応 -->
+	  <p class="order_btn" id="purchase_btn_keppin">
+		<span class="sp_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/sp_btn_keppin_1.png" alt="完売しました"></span>
+		<span class="pc_only"><img src="/contents/shop/00000003/image/static/img/purchase_fixed/btn_keppin.png" alt="完売しました"></span>
+	  </p>
+	  <!-- //欠品対応 -->
+	</div>
+	<!-- <p class="sp">年末は28日の午後10時まで、年始は4日午前6時より受付いたします。</p> -->
+	</div>
+<!-- //カート追従バナー -->
